@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quero jogar — Ruínas de Adamar</title>
+  <meta name="description" content="Monte seu personagem para Ruínas de Adamar: escolha a era, a origem e conte quem ele é. O narrador recebe tudo pelo WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/whatsapp.js" defer></script>
+  <script src="js/site.js" defer></script>
+  <script src="js/jogar.js" defer></script>
+</head>
+<body data-root="./" data-page="jogar.html">
+  <main id="conteudo" class="page page-wide">
+    <article class="scroll">
+      <header class="page-head">
+        <p class="kicker">Quero jogar</p>
+        <h1>Antes da mesa</h1>
+        <p class="lede">Adamar não tem fichas, classes nem raças. Tem pessoas. Responda com calma: o narrador usa isso para encaixar seu personagem no mundo.</p>
+      </header>
+
+      <p class="form-intro">São cinco etapas curtas. No fim, suas respostas viram uma mensagem pronta no WhatsApp do narrador. Não sabe ainda o que quer? Tudo bem: <a data-whats-direto href="https://wa.me/5549999486398" target="_blank" rel="noopener">fale direto com o narrador</a>.</p>
+
+      <ol class="wizard-progress" aria-label="Etapas">
+        <li>A Era</li>
+        <li>O mundo</li>
+        <li>Origem</li>
+        <li>Personagem</li>
+        <li>Enviar</li>
+      </ol>
+
+      <form id="ficha" class="wizard" novalidate>
+
+        <!-- 1. Era -->
+        <fieldset class="step">
+          <legend>Em que era você quer jogar?</legend>
+          <p class="field-hint">Adamar pode ser jogado em três momentos do mesmo mundo. <a href="mundo/eras.html" target="_blank" rel="noopener">Ler sobre as eras</a>.</p>
+          <div class="choice-grid">
+            <label class="choice">
+              <input type="radio" name="era" value="novo-mundo" required data-rotulo="a era">
+              <span class="choice-title">Era do Novo Mundo</span>
+              <span class="choice-tag">cenário padrão</span>
+              <span class="choice-text">Cerca de duzentos anos após a chegada dos antigos reinos a Roestia, fugindo da Praga Vermelha. Um continente jovem, cheio de ruínas que ninguém reconhece. A era do desbravamento e do perigo que se aproxima.</span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="era" value="alta-magia" data-rotulo="a era">
+              <span class="choice-title">Era da Alta Magia</span>
+              <span class="choice-text">Quinhentos anos depois da guerra que pôs fim às invasões. A barreira foi restaurada, os forasteiros malignos expulsos e os amigáveis acolhidos. O mundo onde o bem venceu.</span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="era" value="apocalipse" data-rotulo="a era">
+              <span class="choice-title">Era do Apocalipse</span>
+              <span class="choice-text">Séculos depois da Primeira Lua Negra, a superfície deixou de ser habitável. Os últimos sobreviventes vivem em refúgios subterrâneos, sem saber se há mais alguém lá fora.</span>
+            </label>
+          </div>
+          <p class="form-error" role="alert" hidden></p>
+        </fieldset>
+
+        <!-- 2. Três perguntas sobre o mundo -->
+        <fieldset class="step">
+          <legend>Seu personagem e o mundo</legend>
+          <p class="field-hint">Três perguntas sobre como ele enxerga Adamar. Não existe resposta certa.</p>
+
+          <div class="question">
+            <h3 class="question-title">A magia, para ele, é…</h3>
+            <p class="field-hint" data-eras="novo-mundo">Em Adamar a magia é rara, temida e muitas vezes confundida com superstição. <a href="canone/magia.html" target="_blank" rel="noopener">Sobre a magia</a>.</p>
+            <p class="field-hint" data-eras="alta-magia">Nesta era, humanos controlam plenamente a magia em várias partes de Adamar.</p>
+            <p class="field-hint" data-eras="apocalipse">Nesta era, a magia deixou de ser bela e incrível: virou ferramenta básica de sobrevivência.</p>
+            <div class="choice-grid choice-grid-compact">
+              <label class="choice"><input type="radio" name="magia" value="supersticao" required data-rotulo="a magia"><span class="choice-title">Superstição</span><span class="choice-text">Nunca viu nada que não tivesse explicação.</span></label>
+              <label class="choice"><input type="radio" name="magia" value="boato" data-rotulo="a magia"><span class="choice-title">Um boato que dá medo</span><span class="choice-text">Ouviu histórias e prefere não chegar perto.</span></label>
+              <label class="choice"><input type="radio" name="magia" value="lembranca" data-rotulo="a magia"><span class="choice-title">Uma lembrança</span><span class="choice-text">Viu uma vez algo que não consegue explicar.</span></label>
+              <label class="choice"><input type="radio" name="magia" value="dom" data-rotulo="a magia"><span class="choice-title">Um dom</span><span class="choice-text">Sente o que os outros não sentem. O narrador decide se e como isso existe na mesa.</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <h3 class="question-title">Os deuses…</h3>
+            <p class="field-hint">Os deuses talvez ouçam, ou talvez não; ninguém viveu o suficiente para ter certeza. <a href="personagens/fe.html" target="_blank" rel="noopener">Fé e panteões</a>.</p>
+            <div class="choice-grid choice-grid-compact">
+              <label class="choice"><input type="radio" name="fe" value="devoto" required data-rotulo="os deuses"><span class="choice-title">Ouvem</span><span class="choice-text">É devoto de um deus do panteão de Roestia.</span></label>
+              <label class="choice"><input type="radio" name="fe" value="povo" data-rotulo="os deuses"><span class="choice-title">Têm outros nomes</span><span class="choice-text">Cultua os deuses do seu povo, com seus próprios ritos.</span></label>
+              <label class="choice"><input type="radio" name="fe" value="duvida" data-rotulo="os deuses"><span class="choice-title">Talvez ouçam</span><span class="choice-text">Reza quando a coisa aperta.</span></label>
+              <label class="choice"><input type="radio" name="fe" value="cetico" data-rotulo="os deuses"><span class="choice-title">Não ouvem</span><span class="choice-text">Nunca viu prova de nada.</span></label>
+            </div>
+            <div class="field campo-deus" hidden>
+              <label for="deus">Qual deus?</label>
+              <select id="deus" name="deus" data-rotulo="qual deus">
+                <option value="">Escolha…</option>
+                <option>Almora Thal — morte, julgamento das almas, esquecimento</option>
+                <option>Sirelia — cura, purificação, sacrifício</option>
+                <option>Baleal — justiça, verdade, julgamento moral</option>
+                <option>Yana — senhora da boa fortuna</option>
+                <option>Ecatia — lua, filosofia e ciências</option>
+                <option>Illúvaris — sol, arte e criatividade</option>
+                <option>Varnak — guerra, glória, resistência</option>
+                <option>Venitra — amor e união, lares e famílias</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="question">
+            <h3 class="question-title">O que o leva às ruínas e aos perigos?</h3>
+            <div class="choice-grid choice-grid-compact">
+              <label class="choice"><input type="radio" name="motivacao" value="necessidade" required data-rotulo="o que o move"><span class="choice-title">Necessidade</span><span class="choice-text">Fome, dívida ou fuga. A vida empurrou.</span></label>
+              <label class="choice"><input type="radio" name="motivacao" value="dever" data-rotulo="o que o move"><span class="choice-title">Dever</span><span class="choice-text">Um juramento, uma ordem, alguém para proteger.</span></label>
+              <label class="choice"><input type="radio" name="motivacao" value="curiosidade" data-rotulo="o que o move"><span class="choice-title">Curiosidade</span><span class="choice-text">Quer entender quem ergueu o que ficou para trás.</span></label>
+              <label class="choice"><input type="radio" name="motivacao" value="ambicao" data-rotulo="o que o move"><span class="choice-title">Ambição</span><span class="choice-text">Riqueza, glória, um nome que dure.</span></label>
+              <label class="choice"><input type="radio" name="motivacao" value="pessoal" data-rotulo="o que o move"><span class="choice-title">Algo pessoal</span><span class="choice-text">Vingança, perda, uma promessa.</span></label>
+            </div>
+          </div>
+          <p class="form-error" role="alert" hidden></p>
+        </fieldset>
+
+        <!-- 3. Origem -->
+        <fieldset class="step">
+          <legend>De onde ele vem?</legend>
+          <p class="field-hint">Qualquer arquétipo cultural humano cabe em Adamar, e há sempre uma justificativa narrativa que o trouxe até a campanha. <a href="mundo/geografia.html" target="_blank" rel="noopener">Ver o mapa</a>.</p>
+
+          <div class="origin-group" data-eras="novo-mundo alta-magia">
+            <h3 class="question-title">Os reinos de Roestia</h3>
+            <div class="choice-grid choice-grid-compact">
+              <label class="choice"><input type="radio" name="origem" value="quederia" required data-rotulo="a origem"><span class="choice-title">Quederia</span><span class="choice-text">O mais antigo dos reinos herdeiros das Ilhas do Oeste. Domina a costa sul e as rotas marítimas.</span></label>
+              <label class="choice"><input type="radio" name="origem" value="montar" data-rotulo="a origem"><span class="choice-title">Montar</span><span class="choice-text">Herdeiro das Ilhas do Oeste, ao pé das montanhas centrais. Florestas densas, minério e um povo robusto.</span></label>
+              <label class="choice"><input type="radio" name="origem" value="fontest" data-rotulo="a origem"><span class="choice-title">Fontest</span><span class="choice-text">Herdeiro das Ilhas do Oeste no extremo leste. Reino de fronteira com Indacor, sempre ameaçado.</span></label>
+              <label class="choice"><input type="radio" name="origem" value="indacor" data-rotulo="a origem"><span class="choice-title">Indacor</span><span class="choice-text">Povo das terras frias do norte, hoje no sudeste árido. Militarista, disciplinado, de inspiração romana.</span></label>
+            </div>
+          </div>
+
+          <div class="origin-group" data-eras="novo-mundo alta-magia">
+            <h3 class="question-title">Terras distantes</h3>
+            <div class="choice-grid choice-grid-compact">
+              <label class="choice"><input type="radio" name="origem" value="ilhas" data-rotulo="a origem"><span class="choice-title">Ilhas distantes</span><span class="choice-text">Como um samurai treinado numa ilha longe de tudo.</span></label>
+              <label class="choice"><input type="radio" name="origem" value="costa-fria" data-rotulo="a origem"><span class="choice-title">Costas frias</span><span class="choice-text">Como um viking de mar gelado.</span></label>
+              <label class="choice"><input type="radio" name="origem" value="geleiras" data-rotulo="a origem"><span class="choice-title">Geleiras</span><span class="choice-text">Como um caçador de uma tribo isolada no gelo.</span></label>
+              <label class="choice"><input type="radio" name="origem" value="deserto" data-rotulo="a origem"><span class="choice-title">Desertos</span><span class="choice-text">Como um guerreiro das areias.</span></label>
+              <label class="choice"><input type="radio" name="origem" value="estepes" data-rotulo="a origem"><span class="choice-title">Estepes</span><span class="choice-text">Planícies sem fim, cavalos e vento.</span></label>
+              <label class="choice"><input type="radio" name="origem" value="florestas" data-rotulo="a origem"><span class="choice-title">Florestas tropicais</span><span class="choice-text">Calor, chuva e mata fechada.</span></label>
+            </div>
+          </div>
+
+          <div class="origin-group" data-eras="alta-magia">
+            <h3 class="question-title">Só nesta era</h3>
+            <div class="choice-grid choice-grid-compact">
+              <label class="choice"><input type="radio" name="origem" value="forasteiros" data-rotulo="a origem"><span class="choice-title">Filho de forasteiros</span><span class="choice-text">Descendente de forasteiros amigáveis acolhidos após a guerra. Tratado como igual pelos nativos de Adamar.</span></label>
+            </div>
+          </div>
+
+          <div class="origin-group" data-eras="apocalipse">
+            <h3 class="question-title">Sob a terra</h3>
+            <div class="choice-grid choice-grid-compact">
+              <label class="choice"><input type="radio" name="origem" value="refugio" data-rotulo="a origem"><span class="choice-title">Um refúgio subterrâneo</span><span class="choice-text">Caverna, masmorra antiga, mina ou templo esquecido. Cada abrigo tem sua própria cultura, eco distorcido dos antigos reinos.</span></label>
+              <label class="choice"><input type="radio" name="origem" value="superficie" data-rotulo="a origem"><span class="choice-title">A superfície</span><span class="choice-text">Viver lá fora é possível, mas muito perigoso.</span></label>
+            </div>
+          </div>
+
+          <div class="origin-group" data-eras="novo-mundo alta-magia apocalipse">
+            <div class="choice-grid choice-grid-compact">
+              <label class="choice"><input type="radio" name="origem" value="outro" data-rotulo="a origem"><span class="choice-title">Outro lugar</span><span class="choice-text">Conte abaixo.</span></label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="origemDetalhe">Conte de onde exatamente ele vem e o que o trouxe até aqui</label>
+            <textarea id="origemDetalhe" name="origemDetalhe" rows="3" maxlength="600" placeholder="Ex.: filha de pescadores da costa sul; saiu de casa depois que o barco do pai não voltou."></textarea>
+          </div>
+          <p class="form-error" role="alert" hidden></p>
+        </fieldset>
+
+        <!-- 4. Personagem -->
+        <fieldset class="step">
+          <legend>Quem é ele?</legend>
+          <p class="field-hint">Personagens em Adamar são humanos comuns: treino, talento, esforço e sorte definem o que cada um alcança. Tecnologia medieval, sem nada sobre-humano por padrão.</p>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="nome">Nome do personagem <span class="opcional">(pode deixar em branco)</span></label>
+              <input id="nome" name="nome" type="text" maxlength="80" autocomplete="off">
+            </div>
+            <div class="field field-small">
+              <label for="idade">Idade <span class="opcional">(aproximada)</span></label>
+              <input id="idade" name="idade" type="text" maxlength="20" inputmode="numeric" autocomplete="off">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="oficio">Ofício ou profissão</label>
+            <input id="oficio" name="oficio" type="text" maxlength="80" list="oficios" required data-rotulo="o ofício" placeholder="Ex.: caçador, ferreira, marinheiro, curandeira…">
+            <datalist id="oficios">
+              <option value="Caçador"><option value="Soldado"><option value="Mercenário"><option value="Ferreiro">
+              <option value="Marinheiro"><option value="Pescador"><option value="Curandeiro"><option value="Mercador">
+              <option value="Escriba"><option value="Sacerdote"><option value="Camponês"><option value="Pastor">
+              <option value="Menestrel"><option value="Ladrão"><option value="Estudioso"><option value="Artesão">
+            </datalist>
+          </div>
+
+          <div class="field">
+            <label for="habilidades">O que ele sabe fazer bem? Como ganha a vida?</label>
+            <textarea id="habilidades" name="habilidades" rows="3" maxlength="600" required data-rotulo="o que ele sabe fazer" placeholder="Ex.: rastreia animais, conhece ervas, sabe usar um arco; vendia peles na feira da vila."></textarea>
+          </div>
+
+          <div class="field">
+            <label for="aparencia">Como ele é? Aparência, jeito, personalidade</label>
+            <textarea id="aparencia" name="aparencia" rows="3" maxlength="600" required data-rotulo="como ele é" placeholder="Ex.: magra, calada, ri alto quando bebe; desconfia de quem fala bonito."></textarea>
+          </div>
+
+          <div class="field">
+            <label for="marca">Uma marca ou um medo <span class="opcional">(opcional)</span></label>
+            <textarea id="marca" name="marca" rows="2" maxlength="400" placeholder="Uma cicatriz, uma perda, algo que o faz acordar à noite."></textarea>
+          </div>
+          <p class="form-error" role="alert" hidden></p>
+        </fieldset>
+
+        <!-- 5. Revisão e envio -->
+        <fieldset class="step">
+          <legend>Enviar ao narrador</legend>
+
+          <div class="field">
+            <label for="jogador">Seu nome (de quem vai jogar)</label>
+            <input id="jogador" name="jogador" type="text" maxlength="80" required data-rotulo="seu nome" autocomplete="name">
+          </div>
+
+          <label class="check">
+            <input type="checkbox" name="tom" value="ok" required data-rotulo="a confirmação do tom">
+            <span>Entendo que Adamar é um mundo brutal e simples: o frio importa, a fome enfraquece, um corte mal cuidado deixa marcas, e o combate é perigoso.</span>
+          </label>
+
+          <h3 class="question-title">A mensagem que o narrador vai receber</h3>
+          <pre class="resumo" aria-live="polite"></pre>
+          <p class="resumo-acoes">
+            <button type="button" class="btn btn-ghost" data-copiar>Copiar texto</button>
+            <span class="copiado" role="status" hidden>Copiado.</span>
+            <button type="button" class="btn-link" data-limpar>Recomeçar do zero</button>
+          </p>
+          <p class="form-error" role="alert" hidden></p>
+        </fieldset>
+
+        <div class="wizard-nav">
+          <button type="button" class="btn btn-ghost" data-voltar>‹ Voltar</button>
+          <button type="button" class="btn btn-primary" data-seguir>Continuar ›</button>
+          <button type="submit" class="btn btn-primary" data-enviar><span class="glyph" aria-hidden="true">⚔&#xFE0E;</span> Enviar pelo WhatsApp</button>
+        </div>
+
+        <div id="enviado" class="callout" role="status" hidden>
+          <p>Pronto! O WhatsApp deve ter aberto com sua ficha. Se não abriu, <a href="https://wa.me/5549999486398" target="_blank" rel="noopener">clique aqui</a>, ou copie o texto acima e mande para o narrador.</p>
+        </div>
+      </form>
+    </article>
+  </main>
+  <noscript><p class="noscript">Este formulário precisa de JavaScript. <a href="https://wa.me/5549999486398">Fale direto com o narrador no WhatsApp</a>. Menu: <a href="index.html">Início</a> · <a href="mundo/visao-geral.html">O Mundo</a> · <a href="canone/materialidade.html">Cânone</a> · <a href="personagens/criando.html">Personagens</a> · <a href="mesa/regras.html">À Mesa</a> · <a href="cronicas/mito-da-criacao.html">Crônicas</a></p></noscript>
+</body>
+</html>

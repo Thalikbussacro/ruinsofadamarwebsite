@@ -20,6 +20,7 @@ e acesse `http://localhost:8080/` no navegador.
 
 ```
 index.html          página inicial
+jogar.html          formulário "Quero jogar" (criação de personagem → WhatsApp)
 mundo/               O Mundo (visão geral, eras, linha do tempo, geografia)
 canone/               Cânone (materialidade, magia, entremundos, forasteiros, masmorras, divindades)
 personagens/          Personagens (criando personagem, fé e panteões)
@@ -28,6 +29,7 @@ cronicas/            Crônicas (histórias do cenário)
 css/style.css        estilo único do site
 js/site.js           casca do site (cabeçalho, menu, rodapé, botões "Jogar") e SITE_CONFIG
 js/whatsapp.js       utilitário para montar a URL do WhatsApp
+js/jogar.js          lógica do formulário e montagem da mensagem da ficha
 img/                 imagens (mapa de Adamar)
 tools/               checador do site e testes
 ```
@@ -39,7 +41,7 @@ Tudo fica em `SITE_CONFIG`, no topo de `js/site.js`:
 ```js
 var SITE_CONFIG = {
   whatsapp: {
-    numero: '',   // ex.: '+55 49 99999-0000' — vazio abre o WhatsApp para escolher o contato
+    numero: '+55 49 99948-6398',   // vazio abre o WhatsApp para escolher o contato
     mensagem: 'Olá! Vi o site de Ruínas de Adamar e quero jogar.'
   },
   spotify: 'https://open.spotify.com/playlist/...',
@@ -47,8 +49,9 @@ var SITE_CONFIG = {
 };
 ```
 
-- `whatsapp.numero`: aceita qualquer formatação com dígitos, espaços, parênteses e hífen (ex.: `'+55 49 99999-0000'`). Só os dígitos são usados para montar o link `wa.me`. Deixe em branco (`''`) para que o botão "Jogar" abra o WhatsApp sem um contato pré-definido (o visitante escolhe para quem enviar).
-- `whatsapp.mensagem`: texto que já vem preenchido na conversa do WhatsApp.
+- `whatsapp.numero`: aceita qualquer formatação com dígitos, espaços, parênteses e hífen (ex.: `'+55 49 99999-0000'`). Só os dígitos são usados para montar o link `wa.me`. Deixe em branco (`''`) para que o WhatsApp abra sem um contato pré-definido (o visitante escolhe para quem enviar).
+- Todo botão "Jogar" leva a `jogar.html`. Lá o jogador responde cinco etapas (era, três perguntas sobre o mundo, origem, personagem, envio) e o formulário abre o WhatsApp com a ficha já escrita. As opções e textos do formulário ficam direto em `jogar.html`; a formatação da mensagem fica em `buildCharacterMessage`, em `js/jogar.js`.
+- `whatsapp.mensagem`: texto usado no link "fale direto com o narrador" (sem formulário).
 - `spotify` / `pinterest`: URLs mostradas no rodapé.
 
 Depois de editar, recarregue qualquer página — todas usam o mesmo `js/site.js`.
@@ -69,14 +72,15 @@ Depois de editar, recarregue qualquer página — todas usam o mesmo `js/site.js
 node tools/check-site.mjs
 ```
 
-Confirma, para todas as páginas: `data-root`/`data-page` corretos, `<main id="conteudo">`, `<title>`, links e imagens existentes em disco, tabelas dentro de `.table-wrap`, ausência de termos/marcadores proibidos, e que `js/whatsapp.js` carrega antes de `js/site.js`. Também confere que todo `href` usado em `NAV` (`js/site.js`) existe em disco. Saída esperada com o site completo: `20 páginas ok` (sem falhas).
+Confirma, para todas as páginas: `data-root`/`data-page` corretos, `<main id="conteudo">`, `<title>`, links e imagens existentes em disco, tabelas dentro de `.table-wrap`, ausência de termos/marcadores proibidos, e que `js/whatsapp.js` carrega antes de `js/site.js`. Também confere que todo `href` usado em `NAV` (`js/site.js`) existe em disco. Saída esperada com o site completo: `21 páginas ok` (sem falhas).
 
 ```
 node tools/check-site.test.mjs
 node tools/whatsapp.test.mjs
+node tools/jogar.test.mjs
 ```
 
-São os testes automatizados do próprio checador e do utilitário de WhatsApp — devem terminar com `check-site self-test ok` e `whatsapp ok`, respectivamente.
+São os testes automatizados do próprio checador e do utilitário de WhatsApp — devem terminar com `check-site self-test ok`, `whatsapp ok` e `jogar ok`.
 
 ## Hospedar
 

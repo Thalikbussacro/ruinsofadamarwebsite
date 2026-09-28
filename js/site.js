@@ -2,7 +2,7 @@
 (function () {
   var SITE_CONFIG = {
     whatsapp: {
-      numero: '', // ex.: '+55 49 99999-0000' — vazio abre o WhatsApp para escolher o contato
+      numero: '+55 49 99948-6398', // vazio abre o WhatsApp para escolher o contato
       mensagem: 'Olá! Vi o site de Ruínas de Adamar e quero jogar.'
     },
     spotify: 'https://open.spotify.com/playlist/6LauoSCcWG3fzsGqlEChv6',
@@ -240,22 +240,13 @@
   }
 
   // ---------- botões "Jogar" ----------
-  function whatsAppUrl() {
-    var w = SITE_CONFIG.whatsapp;
-    if (typeof window.buildWhatsAppUrl === 'function') {
-      return window.buildWhatsAppUrl(w.numero, w.mensagem);
-    }
-    // reserva caso js/whatsapp.js não tenha carregado
-    var digits = String(w.numero || '').replace(/\D/g, '');
-    return 'https://wa.me/' + digits + (w.mensagem ? '?text=' + encodeURIComponent(w.mensagem) : '');
-  }
-
+  // Todos levam ao formulário de personagem (jogar.html), que envia a ficha pelo WhatsApp.
   function wireJogar() {
-    var url = whatsAppUrl();
     Array.prototype.forEach.call(document.querySelectorAll('[data-jogar]'), function (a) {
-      a.setAttribute('href', url);
-      a.setAttribute('target', '_blank');
-      a.setAttribute('rel', 'noopener');
+      a.setAttribute('href', ROOT + 'jogar.html');
+      a.removeAttribute('target');
+      a.removeAttribute('rel');
+      if (PAGE === 'jogar.html') a.setAttribute('aria-current', 'page');
     });
   }
 

@@ -1432,3 +1432,72 @@ a.card:hover h3,
   .wizard-nav .btn { flex: 1 1 100%; }
   .wizard-nav [data-seguir], .wizard-nav [data-enviar] { margin-left: 0; order: -1; }
 }
+
+/* ---------- 15. Lista de perícias GURPS ---------- */
+.legenda-status { list-style: none; padding: 0; margin: 1rem 0 0; }
+.legenda-status li { margin: 0.4rem 0; }
+.legenda-status .pericia-status, .legenda-status .pericia-esp { margin-right: 0.4rem; }
+
+.filtros {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 0 1rem;
+  margin: 1.75rem 0 0;
+  padding: 1rem 1.1rem 1.1rem;
+  background: rgba(14, 13, 12, 0.45);
+  border: 1px solid var(--ouro-fio);
+}
+.filtros .field { margin-top: 0; }
+.filtro-status { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.9rem; }
+.chip {
+  padding: 0.4rem 0.85rem;
+  font-family: var(--f-titulo);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  color: var(--osso-fosco);
+  background: rgba(14, 13, 12, 0.6);
+  border: 1px solid var(--ouro-fio);
+  cursor: pointer;
+}
+.chip:hover { color: var(--osso-claro); border-color: var(--ouro-linha); }
+.chip[aria-pressed="true"] {
+  color: var(--osso-claro);
+  border-color: var(--ouro);
+  background: linear-gradient(180deg, rgba(110, 31, 26, 0.45), rgba(28, 26, 23, 0.9));
+}
+.chip:focus-visible { outline: 2px solid var(--ouro-claro); outline-offset: 2px; }
+
+.contagem { margin: 1.25rem 0 0.5rem; font-style: italic; color: var(--osso-fosco); }
+.lista-pericias { display: grid; gap: 0.6rem; }
+.pericia {
+  padding: 0.85rem 1rem 0.8rem;
+  background: linear-gradient(180deg, #211e1a 0%, var(--pedra) 70%);
+  border: 1px solid var(--ouro-fio);
+  border-left: 3px solid var(--ouro-escuro);
+}
+.pericia.st-narrador { border-left-color: var(--brasa); }
+.pericia.st-nao { border-left-color: #4a4640; opacity: 0.8; }
+.pericia-topo { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.25rem 1rem; }
+.pericia-nome { margin: 0; font-size: 1.05rem; color: var(--ouro-claro); }
+.pericia-esp { margin-left: 0.2rem; font-family: var(--f-corpo); color: var(--brasa); }
+.pericia-dif { font-family: var(--f-titulo); font-size: 0.82rem; letter-spacing: 0.05em; color: var(--osso); }
+.pericia-resumo { margin: 0.35rem 0 0.45rem; font-size: 1.02rem; line-height: 1.45; }
+.pericia-meta { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; margin: 0; font-size: 0.9rem; color: var(--osso-fosco); }
+.pericia-status {
+  display: inline-block;
+  padding: 0 0.45rem;
+  font-family: var(--f-titulo);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+.st-livre .pericia-status, .pericia-status.st-livre { color: var(--ouro-claro); }
+.st-narrador .pericia-status, .pericia-status.st-narrador { color: #e08a5e; }
+.st-nao .pericia-status, .pericia-status.st-nao { color: var(--osso-fosco); }
+.pericia-vazio { font-style: italic; color: var(--osso-fosco); }
+
+@media (max-width: 520px) {
+  .filtros { grid-template-columns: minmax(0, 1fr); }
+  .filtros .field + .field { margin-top: 0.8rem; }
+}

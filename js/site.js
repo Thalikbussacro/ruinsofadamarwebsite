@@ -31,6 +31,7 @@
     ]},
     { label: 'À Mesa', children: [
       { label: 'Regras', href: 'mesa/regras.html' },
+      { label: 'Perícias (GURPS)', href: 'mesa/pericias-gurps.html' },
       { label: 'Sugestões aos jogadores', href: 'mesa/sugestoes.html' },
       { label: 'Sessão zero', href: 'mesa/sessao-zero.html' }
     ]},

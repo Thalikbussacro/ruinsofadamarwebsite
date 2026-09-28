@@ -44,7 +44,19 @@ export function validar(dados) {
       if (CATEGORIAS[lista]) {
         if (!CATEGORIAS[lista].includes(it.categoria)) erros.push(`${onde}: categoria inválida "${it.categoria}"`);
         for (const t of it.tipo || []) if (!TIPOS.includes(t)) erros.push(`${onde}: tipo inválido "${t}"`);
+        const ce = it.custo_estruturado;
+        if (lista !== 'equipamento' && ce && !['fixo', 'opcoes', 'faixa', 'niveis', 'minimo', 'variavel'].includes(ce.tipo)) {
+          erros.push(`${onde}: custo_estruturado com tipo inválido "${ce.tipo}"`);
+        }
       }
+    }
+  }
+  // pré-definidos das perícias apontam para perícias que existem
+  const idsPericias = new Set((dados.pericias.itens || []).map((p) => p.id));
+  for (const p of dados.pericias.itens || []) {
+    for (const c of (p.predefinidos && p.predefinidos.caminhos) || []) {
+      if (c.tipo === 'pericia' && !idsPericias.has(c.id)) erros.push(`pericias/${p.id}: pré-definido aponta para perícia inexistente "${c.id}"`);
+      if (c.tipo === 'atributo' && !['st', 'dx', 'iq', 'ht', 'per', 'vontade'].includes(c.atributo)) erros.push(`pericias/${p.id}: pré-definido com atributo inválido "${c.atributo}"`);
     }
   }
   if (dados.regras) {

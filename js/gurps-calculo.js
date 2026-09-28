@@ -105,6 +105,25 @@
       return linha ? { gdp: linha.gdp, geb: linha.geb } : null;
     }
 
+    // Custo de um traço: custo estruturado (data/gurps) + escolha do jogador { nivel, opcao, quantidade, valor, autocontrole }.
+    function custoTraco(custo, escolha) {
+      var e = escolha || {};
+      var base;
+      if (custo.tipo === 'fixo') base = custo.valor;
+      else if (custo.tipo === 'niveis') base = (custo.base || 0) + (e.nivel || 0) * custo.por_nivel;
+      else if (custo.tipo === 'opcoes') base = custo.valores[e.opcao || 0] * (custo.unidade ? (e.quantidade || 1) : 1);
+      else if (custo.tipo === 'faixa') {
+        if (e.valor < custo.min || e.valor > custo.max) throw new Error('custo ' + e.valor + ' fora da faixa ' + custo.min + ' a ' + custo.max);
+        base = e.valor;
+      } else base = e.valor || 0; // minimo e variavel: o jogador informa
+      if (custo.autocontrole && e.autocontrole && e.autocontrole !== regras.autocontrole.padrao) {
+        var nivel = regras.autocontrole.niveis.filter(function (x) { return x.numero === e.autocontrole; })[0];
+        if (!nivel) throw new Error('autocontrole inválido: ' + e.autocontrole);
+        base = emDirecaoAoZero(base * nivel.multiplicador);
+      }
+      return base;
+    }
+
     // ---------- sociedade (págs. 11 e 21–29) ----------
     function porId(lista, id) {
       for (var i = 0; i < lista.length; i++) if (lista[i].id === id) return lista[i];
@@ -205,6 +224,7 @@
       custoPericia: custoPericia,
       nivelPorPontos: nivelPorPontos,
       danoBasico: danoBasico,
+      custoTraco: custoTraco,
       custoAparencia: custoAparencia,
       custoStatus: custoStatus,
       custoIdioma: custoIdioma,

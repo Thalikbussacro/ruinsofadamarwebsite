@@ -49,6 +49,10 @@ const errosRegras = validar(d).join('\n');
 assert.match(errosRegras, /regras\/atributos\[0\]: livro desconhecido "outro"/);
 assert.match(errosRegras, /regras\/carga: página inválida/);
 
+// pré-definido apontando para perícia inexistente
+d = base(); d.pericias.itens[0].predefinidos = { caminhos: [{ tipo: 'pericia', id: 'besta', mod: -4 }, { tipo: 'atributo', atributo: 'dx', mod: -5 }] };
+assert.match(validar(d).join('\n'), /pericias\/arco: pré-definido aponta para perícia inexistente "besta"/);
+
 // equipamento (opcional): categoria fora do conjunto
 d = base(); d.equipamento = { itens: [{ id: 'arco-longo', nome: 'Arco Longo', categoria: 'arco', nt: '0', adamar: 'livre', resumo: 'Arco grande.', ref: { livro: 'modulo-basico', pagina: 275 } }] };
 assert.match(validar(d).join('\n'), /equipamento\/arco-longo: categoria inválida "arco"/);

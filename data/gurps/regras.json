@@ -683,5 +683,35 @@
         "fator": 0.3333333333333333
       }
     ]
+  },
+  "autocontrole": {
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 121
+    },
+    "resumo": "Desvantagens marcadas com * têm um número de autocontrole: quanto menor, mais raro o personagem resistir, e mais pontos a desvantagem dá. Ignore frações.",
+    "padrao": 12,
+    "niveis": [
+      {
+        "numero": 6,
+        "multiplicador": 2,
+        "rotulo": "resiste muito raramente"
+      },
+      {
+        "numero": 9,
+        "multiplicador": 1.5,
+        "rotulo": "resiste às vezes"
+      },
+      {
+        "numero": 12,
+        "multiplicador": 1,
+        "rotulo": "resiste com frequência"
+      },
+      {
+        "numero": 15,
+        "multiplicador": 0.5,
+        "rotulo": "resiste quase sempre"
+      }
+    ]
   }
 }

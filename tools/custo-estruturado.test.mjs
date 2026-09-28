@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import { estruturarCusto as e } from './custo-estruturado.mjs';
+
+assert.deepEqual(e('10'), { tipo: 'fixo', valor: 10 });
+assert.deepEqual(e('-15*'), { tipo: 'fixo', valor: -15, autocontrole: true });
+assert.deepEqual(e('5 ou 15'), { tipo: 'opcoes', valores: [5, 15] });
+assert.deepEqual(e('5, 10 ou 15'), { tipo: 'opcoes', valores: [5, 10, 15] });
+assert.deepEqual(e('-5 ou -10*'), { tipo: 'opcoes', valores: [-5, -10], autocontrole: true });
+assert.deepEqual(e('1 ou 2/cultura'), { tipo: 'opcoes', valores: [1, 2], unidade: 'cultura' });
+assert.deepEqual(e('5 ou 15/identidade'), { tipo: 'opcoes', valores: [5, 15], unidade: 'identidade' });
+assert.deepEqual(e('-5 a -15'), { tipo: 'faixa', min: -15, max: -5 });
+assert.deepEqual(e('-5 a -15*'), { tipo: 'faixa', min: -15, max: -5, autocontrole: true });
+assert.deepEqual(e('5 a 20'), { tipo: 'faixa', min: 5, max: 20 });
+assert.deepEqual(e('5/nível'), { tipo: 'niveis', por_nivel: 5 });
+assert.deepEqual(e('-2/nível'), { tipo: 'niveis', por_nivel: -2 });
+assert.deepEqual(e('3 por +1'), { tipo: 'niveis', por_nivel: 3 });
+assert.deepEqual(e('5/apetrecho'), { tipo: 'niveis', por_nivel: 5, unidade: 'apetrecho' });
+assert.deepEqual(e('5/+1 de reação'), { tipo: 'niveis', por_nivel: 5, unidade: 'reação' });
+assert.deepEqual(e('5 (nível 0), +10/nível'), { tipo: 'niveis', base: 5, por_nivel: 10, nivel_min: 0 });
+assert.deepEqual(e('10 ou mais'), { tipo: 'minimo', valor: 10 });
+assert.deepEqual(e('Variável'), { tipo: 'variavel' });
+assert.deepEqual(e('30 + 5/PV'), { tipo: 'variavel', texto: '30 + 5/PV' });
+console.log('custo-estruturado ok');

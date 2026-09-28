@@ -121,4 +121,20 @@ assert.deepEqual(c.danoBasico(42, tabelaDano), { gdp: '4d+1', geb: '7d-1' }); //
 assert.deepEqual(c.danoBasico(125, tabelaDano), { gdp: '13d', geb: '15d' }); // +1d a cada 10 acima de 100
 assert.equal(c.danoBasico(13, null), null); // sem tabela local
 
+// Custo de um traço a partir do custo estruturado e da escolha do jogador
+assert.equal(c.custoTraco({ tipo: 'fixo', valor: 15 }), 15);
+assert.equal(c.custoTraco({ tipo: 'niveis', por_nivel: 5 }, { nivel: 3 }), 15);
+assert.equal(c.custoTraco({ tipo: 'niveis', base: 5, por_nivel: 10, nivel_min: 0 }, { nivel: 0 }), 5); // Aptidão Mágica 0
+assert.equal(c.custoTraco({ tipo: 'niveis', base: 5, por_nivel: 10, nivel_min: 0 }, { nivel: 2 }), 25);
+assert.equal(c.custoTraco({ tipo: 'opcoes', valores: [5, 15] }, { opcao: 1 }), 15);
+assert.equal(c.custoTraco({ tipo: 'opcoes', valores: [1, 2], unidade: 'cultura' }, { opcao: 0, quantidade: 3 }), 3);
+assert.equal(c.custoTraco({ tipo: 'faixa', min: -15, max: -5 }, { valor: -10 }), -10);
+assert.throws(() => c.custoTraco({ tipo: 'faixa', min: -15, max: -5 }, { valor: -20 }), /fora da faixa/);
+assert.equal(c.custoTraco({ tipo: 'variavel' }, { valor: -7 }), -7);
+// Autocontrole (pág. 121): -15* com 6 → -30, com 9 → -22 (ignora frações), com 15 → -7
+assert.equal(c.custoTraco({ tipo: 'fixo', valor: -15, autocontrole: true }, { autocontrole: 6 }), -30);
+assert.equal(c.custoTraco({ tipo: 'fixo', valor: -15, autocontrole: true }, { autocontrole: 9 }), -22);
+assert.equal(c.custoTraco({ tipo: 'fixo', valor: -15, autocontrole: true }, { autocontrole: 15 }), -7);
+assert.equal(c.custoTraco({ tipo: 'fixo', valor: -15, autocontrole: true }), -15); // padrão 12
+
 console.log('gurps-calculo ok');

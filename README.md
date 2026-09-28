@@ -79,6 +79,8 @@ node tools/gerar-dados.mjs
 
 - `equipamento.json`: armas, armaduras, escudos e equipamento variado, com NT, página e marcação para Adamar. **Sem estatísticas** (dano, custo, peso, RD): elas ficam em `data-local/gurps/equipamento-completo.json`, fora do git, porque a política da Steve Jackson Games não permite publicar as tabelas. Para refazer as duas versões a partir das transcrições: `node tools/importar-equipamento.mjs <pasta-das-secoes>`.
 
+Os campos `custo_estruturado` (traços) e `predefinidos` (perícias) são gerados a partir do texto por `node tools/custo-estruturado.mjs` e `node tools/predefinidos.mjs`; rode de novo se mudar o texto de custo ou de pré-definido.
+
 O gerador valida os dados (ids repetidos, livro inexistente, página inválida, valores fora do padrão) e grava `js/dados-gurps.js`, que é o que as páginas carregam. `node tools/gerar-dados.mjs --check` só confere se o arquivo gerado está em dia.
 
 ## Adicionar uma página
@@ -106,6 +108,8 @@ node tools/jogar.test.mjs
 node tools/gerar-dados.test.mjs
 node tools/gurps-calculo.test.mjs
 node tools/importar-equipamento.test.mjs
+node tools/custo-estruturado.test.mjs
+node tools/predefinidos.test.mjs
 node tools/gerar-dados.mjs --check
 ```
 

@@ -307,7 +307,31 @@
     "limite_desvantagens": {
       "percentual_padrao": 0.5,
       "nota": "Decisão da mesa: o limite sugerido pelo livro, metade dos pontos iniciais (-40 com 80 pontos)."
-    }
+    },
+    "moeda": {
+      "nome": "coroa",
+      "plural": "coroas",
+      "abreviacao": "cr",
+      "por_dolar_gurps": 1,
+      "nota": "Decisão da mesa: a moeda de Adamar é a coroa. 1 coroa vale $1 do GURPS, então os preços e o dinheiro inicial do livro valem direto em coroas (NT3: 1.000 coroas)."
+    },
+    "decisoes": [
+      {
+        "tema": "riqueza-pobre",
+        "decisao": "Pobre custa -15 pontos.",
+        "motivo": "O livro diz -25 na pág. 25 e -15 na pág. 155; -15 é o valor do original."
+      },
+      {
+        "tema": "base-de-carga",
+        "decisao": "Base de Carga arredonda para meio quilo.",
+        "motivo": "O texto manda arredondar para o inteiro, mas a Tabela de Carga usa meios quilos."
+      },
+      {
+        "tema": "arpeu",
+        "decisao": "Arpéu é livre em Adamar.",
+        "motivo": "O livro marca NT5, mas um gancho de ferro com corda cabe no NT3."
+      }
+    ]
   },
   "limite_desvantagens": {
     "resumo": "Tudo que tem custo negativo conta: desvantagens, atributos abaixo de 10, status e riqueza baixos. Peculiaridades ficam à parte (até 5, de -1 cada).",
@@ -480,7 +504,7 @@
         "livro": "modulo-basico",
         "pagina": 27
       },
-      "moeda": "$ (unidade do GURPS: em NT3, algo como uma moeda de cobre)",
+      "moeda": "coroas (1 coroa = $1 do GURPS; ver campanha.moeda)",
       "por_nt": {
         "0": 250,
         "1": 500,

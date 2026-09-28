@@ -6,6 +6,13 @@
   var calc = window.criarCalculo(R);
   var ARMAZENAMENTO = 'adamar-calc-ficha';
 
+  // Dinheiro em coroas, a moeda de Adamar (1 coroa = $1 do GURPS).
+  function moeda(valor) {
+    var m = (R.campanha && R.campanha.moeda) || { nome: 'coroa', plural: 'coroas', por_dolar_gurps: 1 };
+    var v = valor * m.por_dolar_gurps;
+    return v.toLocaleString('pt-BR') + ' ' + (v === 1 ? m.nome : m.plural);
+  }
+
   function el(tag, classe, texto) {
     var n = document.createElement(tag);
     if (classe) n.className = classe;
@@ -200,15 +207,15 @@
       R.aparencia.niveis.filter(function (n) { return n.id === so.aparencia; })[0].reacao;
     document.getElementById('soc-info-status').textContent = sinal(calc.custoStatus(so.status)) + ' pts' +
       (bonusStatus ? ' · +' + bonusStatus + ' grátis pela riqueza (Status ' + sinal(so.status + bonusStatus) + ')' : '');
-    document.getElementById('soc-info-riqueza').textContent = sinal(calc.custoRiqueza(so.riqueza, so.multimilionario)) + ' pts · $' +
-      ficha.recursos.toLocaleString('pt-BR') + ' iniciais';
+    document.getElementById('soc-info-riqueza').textContent = sinal(calc.custoRiqueza(so.riqueza, so.multimilionario)) + ' pts · ' +
+      moeda(ficha.recursos) + ' iniciais';
     document.getElementById('soc-info-alfabetizacao').textContent = sinal(calc.custoAlfabetizacao(so.alfabetizacao)) + ' pts' +
       (so.alfabetizacao !== 'alfabetizado' && so.analfabetismoRegra ? ' · fora do limite' : '');
     document.getElementById('soc-info-culturas').textContent = sinal(so.culturas * R.familiaridade_cultural.custo_mesma_raca) + ' pts';
     var limite = calc.limiteDesvantagens(estado.orcamento, LIMITE.percentual_padrao);
     var desv = document.getElementById('calc-desvantagens');
     desv.textContent = 'Desvantagens: ' + ficha.desvantagens + ' de um limite de ' + limite +
-      ' (fora as peculiaridades) · Dinheiro inicial $' + ficha.recursos.toLocaleString('pt-BR') + ' em NT' + R.nivel_tecnologico.nt_campanha;
+      ' (fora as peculiaridades) · Dinheiro inicial ' + moeda(ficha.recursos) + ' em NT' + R.nivel_tecnologico.nt_campanha;
     desv.className = 'calc-detalhe' + (ficha.desvantagens < limite ? ' calc-estourou' : '');
     if (ficha.desvantagens < limite) avisos.push('As desvantagens (' + ficha.desvantagens + ') passaram do limite de ' + limite + '. Só com o narrador.');
     if (so.aparencia === 'lindo') avisos.push('Aparência Lindo: o livro sugere reservar para anjos e divindades. Com o narrador.');
@@ -301,10 +308,10 @@
   }));
   var baseNT = R.nivel_tecnologico.recursos_iniciais.por_nt[String(R.nivel_tecnologico.nt_campanha)];
   document.getElementById('riqueza-intro').textContent = R.riqueza.resumo + ' Em NT' + R.nivel_tecnologico.nt_campanha +
-    ', a média é $' + baseNT.toLocaleString('pt-BR') + ' (pág. ' + R.nivel_tecnologico.recursos_iniciais.ref.pagina + '). ' +
+    ', a média é ' + moeda(baseNT) + ' (pág. ' + R.nivel_tecnologico.recursos_iniciais.ref.pagina + '). ' +
     R.riqueza.pontos_por_dinheiro.resumo;
   tabela('tabela-riqueza', ['Nível', 'Pontos', 'Dinheiro inicial'], R.riqueza.niveis.map(function (n) {
-    return [n.nome + '<br><small>' + n.resumo + (n.nota ? ' ' + n.nota : '') + '</small>', sinal(n.custo), '$' + calc.recursosIniciais(n.id).toLocaleString('pt-BR')];
+    return [n.nome + '<br><small>' + n.resumo + (n.nota ? ' ' + n.nota : '') + '</small>', sinal(n.custo), moeda(calc.recursosIniciais(n.id))];
   }).concat([['Multimilionário (por nível)', '+' + R.riqueza.multimilionario.custo_por_nivel, '×' + R.riqueza.multimilionario.fator_por_nivel]]));
   document.getElementById('idiomas-intro').textContent = R.idiomas.resumo + ' (pág. ' + R.idiomas.ref.pagina + ') ' + R.idiomas.nota_nt;
   tabela('tabela-idiomas', ['Nível de compreensão', 'Pontos (fala e escrita iguais)'], R.idiomas.niveis.map(function (n) {

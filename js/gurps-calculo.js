@@ -87,14 +87,92 @@
       return nivel;
     }
 
+    // ---------- sociedade (págs. 11 e 21–29) ----------
+    function porId(lista, id) {
+      for (var i = 0; i < lista.length; i++) if (lista[i].id === id) return lista[i];
+      throw new Error('id desconhecido: ' + id);
+    }
+    // Frações do livro arredondam "para baixo"; aqui, em direção ao zero, para uma desvantagem nunca render pontos a mais.
+    function emDirecaoAoZero(v) {
+      return v >= 0 ? Math.floor(v + 1e-9) : Math.ceil(v - 1e-9);
+    }
+
+    function custoAparencia(id) { return porId(regras.aparencia.niveis, id).custo; }
+    function custoStatus(nivel) { return nivel * regras.status.custo_por_nivel; }
+    function custoAlfabetizacao(id) { return porId(regras.idiomas.alfabetizacao_materna, id).custo; }
+
+    function custoIdioma(fala, escrita) {
+      var f = porId(regras.idiomas.niveis, fala).custo;
+      var e = porId(regras.idiomas.niveis, escrita).custo;
+      return fala === escrita ? f : (f + e) / 2;
+    }
+
+    function custoRiqueza(id, multimilionario) {
+      var M = regras.riqueza.multimilionario;
+      if (multimilionario) return M.custo_base + multimilionario * M.custo_por_nivel;
+      return porId(regras.riqueza.niveis, id).custo;
+    }
+
+    function recursosIniciais(id, multimilionario, nt) {
+      var NT = regras.nivel_tecnologico;
+      var base = NT.recursos_iniciais.por_nt[String(nt == null ? NT.nt_campanha : nt)];
+      var mult = porId(regras.riqueza.niveis, id).multiplicador;
+      if (multimilionario) mult *= Math.pow(regras.riqueza.multimilionario.fator_por_nivel, multimilionario);
+      return Math.round(base * mult);
+    }
+
+    function statusPorRiqueza(id, multimilionario) {
+      var G = regras.riqueza.status_gratis;
+      if (multimilionario >= 2) return G.multimilionario_2;
+      if (multimilionario === 1) return G.multimilionario_1;
+      var ordem = regras.riqueza.niveis.map(function (n) { return n.id; });
+      return ordem.indexOf(id) >= ordem.indexOf('rico') ? G.rico_ou_mais : 0;
+    }
+
+    function custoReputacao(modificador, pessoas, frequencia) {
+      var R = regras.reputacao;
+      var mod = Math.max(-R.maximo, Math.min(R.maximo, modificador));
+      var v = emDirecaoAoZero(mod * R.custo_por_nivel * porId(R.pessoas, pessoas).fator);
+      return emDirecaoAoZero(v * porId(R.frequencia, frequencia).fator);
+    }
+
+    function limiteDesvantagens(pontosIniciais, percentual) {
+      var p = percentual == null ? regras.limite_desvantagens.percentual_sugerido : percentual;
+      return -Math.floor(pontosIniciais * p);
+    }
+
+    // social: { aparencia, status, riqueza, multimilionario, alfabetizacao, analfabetismoRegra, culturas }
     function calcularFicha(ficha) {
       var atr = ficha.atributos;
       var aj = ficha.ajustes || {};
+      var soc = ficha.social || {};
       var valores = secundarias(atr, aj);
       Object.keys(atr).forEach(function (k) { valores[k] = atr[k]; });
-      var custoAtr = Object.keys(atr).reduce(function (t, k) { return t + custoAtributo(k, atr[k]); }, 0);
-      var custoSec = Object.keys(aj).reduce(function (t, k) { return t + custoSecundaria(k, aj[k]); }, 0);
-      return { valores: valores, custos: { atributos: custoAtr, secundarias: custoSec }, total: custoAtr + custoSec };
+
+      var partes = [];
+      Object.keys(atr).forEach(function (k) { partes.push({ grupo: 'atributos', custo: custoAtributo(k, atr[k]) }); });
+      Object.keys(aj).forEach(function (k) { partes.push({ grupo: 'secundarias', custo: custoSecundaria(k, aj[k]) }); });
+      if (soc.aparencia) partes.push({ grupo: 'social', custo: custoAparencia(soc.aparencia) });
+      if (soc.status) partes.push({ grupo: 'social', custo: custoStatus(soc.status) });
+      if (soc.riqueza) partes.push({ grupo: 'social', custo: custoRiqueza(soc.riqueza, soc.multimilionario) });
+      if (soc.alfabetizacao) {
+        partes.push({ grupo: 'social', custo: custoAlfabetizacao(soc.alfabetizacao), foraDoLimite: !!soc.analfabetismoRegra });
+      }
+      if (soc.culturas) partes.push({ grupo: 'social', custo: soc.culturas * regras.familiaridade_cultural.custo_mesma_raca });
+
+      var custos = { atributos: 0, secundarias: 0, social: 0 };
+      var desvantagens = 0;
+      partes.forEach(function (p) {
+        custos[p.grupo] += p.custo;
+        if (p.custo < 0 && !p.foraDoLimite) desvantagens += p.custo;
+      });
+      return {
+        valores: valores,
+        custos: custos,
+        total: custos.atributos + custos.secundarias + custos.social,
+        desvantagens: desvantagens,
+        recursos: soc.riqueza ? recursosIniciais(soc.riqueza, soc.multimilionario) : recursosIniciais('medio')
+      };
     }
 
     return {
@@ -108,6 +186,15 @@
       deslocamentoComCarga: deslocamentoComCarga,
       custoPericia: custoPericia,
       nivelPorPontos: nivelPorPontos,
+      custoAparencia: custoAparencia,
+      custoStatus: custoStatus,
+      custoIdioma: custoIdioma,
+      custoAlfabetizacao: custoAlfabetizacao,
+      custoRiqueza: custoRiqueza,
+      recursosIniciais: recursosIniciais,
+      statusPorRiqueza: statusPorRiqueza,
+      custoReputacao: custoReputacao,
+      limiteDesvantagens: limiteDesvantagens,
       calcularFicha: calcularFicha
     };
   }

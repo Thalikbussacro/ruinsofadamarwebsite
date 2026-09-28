@@ -1526,3 +1526,5 @@ a.card:hover h3,
 .calc-orcamento .field[hidden] { display: none; }
 .calc-orcamento .field-hint { grid-column: 1 / -1; margin: 0.5rem 0 0; }
 .calc-estourou { color: #e08a5e; font-weight: 700; }
+.calc-check { margin-top: 1rem; }
+.table-wrap td small { color: var(--osso-fosco); font-size: 0.88em; }

@@ -68,4 +68,47 @@ assert.equal(ficha.custos.atributos, 10 + 40);
 assert.equal(ficha.custos.secundarias, 10 + 2);
 assert.equal(ficha.total, 62);
 
+// ---------- sociedade (págs. 11, 21–29) ----------
+assert.equal(c.custoAparencia('atraente'), 4);
+assert.equal(c.custoAparencia('feio'), -8);
+assert.equal(c.custoStatus(-2), -10);
+assert.equal(c.custoStatus(5), 25); // exemplo do livro
+
+// Idiomas: mesmo nível falado e escrito paga o nível; diferentes pagam metade de cada (exemplo: Francês falado Nenhum / escrito Materna = 3)
+assert.equal(c.custoIdioma('sotaque', 'sotaque'), 4);
+assert.equal(c.custoIdioma('nenhum', 'materna'), 3);
+assert.equal(c.custoAlfabetizacao('analfabeto'), -3);
+
+// Riqueza e dinheiro inicial em NT3 ($1.000)
+assert.equal(c.custoRiqueza('pobre'), -15);
+assert.equal(c.custoRiqueza('confortavel'), 10);
+assert.equal(c.custoRiqueza('podre-de-rico', 1), 75); // Multimilionário 1
+assert.equal(c.recursosIniciais('medio'), 1000);
+assert.equal(c.recursosIniciais('pobre'), 200);
+assert.equal(c.recursosIniciais('rico'), 5000);
+assert.equal(c.recursosIniciais('podre-de-rico', 1), 1000000); // 1.000 vezes a média
+assert.equal(c.recursosIniciais('medio', 0, 2), 750); // NT2
+assert.equal(c.statusPorRiqueza('rico'), 1);
+assert.equal(c.statusPorRiqueza('podre-de-rico', 2), 3);
+assert.equal(c.statusPorRiqueza('medio'), 0);
+
+// Reputação: exemplos do livro. Sir Anacreon: +2, todos, 10 ou menos → 5. Dragão Verde: +3 (todos menos um grupo) e -4 (grupo grande) → 0
+assert.equal(c.custoReputacao(2, 'quase-todos', 'as-vezes'), 5);
+assert.equal(c.custoReputacao(3, 'todos-menos-grupo', 'sempre') + c.custoReputacao(-4, 'grupo-grande', 'sempre'), 0);
+
+// Limite de desvantagens: 50% dos pontos iniciais (exemplo: -75 em 150)
+assert.equal(c.limiteDesvantagens(150, 0.5), -75);
+assert.equal(c.limiteDesvantagens(80, 0.5), -40);
+
+// Ficha com sociedade: soma custos e separa o que conta no limite de desvantagens
+const f2 = c.calcularFicha({
+  atributos: { st: 9, dx: 11, iq: 10, ht: 10 },
+  ajustes: { per: 1 },
+  social: { aparencia: 'feio', status: -1, riqueza: 'batalhador', alfabetizacao: 'analfabeto', analfabetismoRegra: true, culturas: 1 }
+});
+assert.equal(f2.custos.social, -8 - 5 - 10 - 3 + 1);
+assert.equal(f2.total, -10 + 20 + 5 + (-25));
+assert.equal(f2.desvantagens, -10 - 8 - 5 - 10); // analfabetismo como regra do cenário não conta
+assert.equal(f2.recursos, 500);
+
 console.log('gurps-calculo ok');

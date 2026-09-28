@@ -303,6 +303,385 @@
         200
       ],
       "nota": "Depende da mesa; o narrador escolhe. 80 é o padrão de Adamar."
+    },
+    "limite_desvantagens": {
+      "percentual_padrao": 0.5,
+      "nota": "Decisão da mesa: o limite sugerido pelo livro, metade dos pontos iniciais (-40 com 80 pontos)."
     }
+  },
+  "limite_desvantagens": {
+    "resumo": "Tudo que tem custo negativo conta: desvantagens, atributos abaixo de 10, status e riqueza baixos. Peculiaridades ficam à parte (até 5, de -1 cada).",
+    "percentual_sugerido": 0.5,
+    "nao_contam": [
+      "desvantagens que o narrador dá a todos os personagens da campanha",
+      "analfabetismo quando é a regra do cenário"
+    ],
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 11
+    }
+  },
+  "aparencia": {
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 21
+    },
+    "resumo": "Beleza dá bônus de reação e custa pontos; feiura dá penalidade e devolve pontos. Só vale para quem vê o personagem.",
+    "niveis": [
+      {
+        "id": "horrendo",
+        "nome": "Horrendo",
+        "custo": -24,
+        "reacao": "-6",
+        "adamar": "nao",
+        "resumo": "Monstruosidade indescritível; o livro sugere tratar como sobrenatural."
+      },
+      {
+        "id": "monstruoso",
+        "nome": "Monstruoso",
+        "custo": -20,
+        "reacao": "-5",
+        "adamar": "nao",
+        "resumo": "Obviamente anormal; visto como monstro, não como gente."
+      },
+      {
+        "id": "hediondo",
+        "nome": "Hediondo",
+        "custo": -16,
+        "reacao": "-4",
+        "adamar": "livre",
+        "resumo": "Algo repugnante: doença de pele grave, deformidade."
+      },
+      {
+        "id": "feio",
+        "nome": "Feio",
+        "custo": -8,
+        "reacao": "-2",
+        "adamar": "livre",
+        "resumo": "Feio sem exagero: dentes tortos, cabelo sebento."
+      },
+      {
+        "id": "sem-atrativos",
+        "nome": "Sem Atrativos",
+        "custo": -4,
+        "reacao": "-1",
+        "adamar": "livre",
+        "resumo": "Algo antipático que ninguém sabe apontar."
+      },
+      {
+        "id": "comum",
+        "nome": "Comum",
+        "custo": 0,
+        "reacao": "0",
+        "adamar": "livre",
+        "resumo": "Se mistura na multidão."
+      },
+      {
+        "id": "atraente",
+        "nome": "Atraente",
+        "custo": 4,
+        "reacao": "+1",
+        "adamar": "livre",
+        "resumo": "Boa aparência."
+      },
+      {
+        "id": "elegante",
+        "nome": "Elegante (Bonito)",
+        "custo": 12,
+        "reacao": "+4 / +2",
+        "adamar": "livre",
+        "resumo": "Beleza de concurso: +4 com quem se atrai, +2 com os demais."
+      },
+      {
+        "id": "muito-elegante",
+        "nome": "Muito Elegante",
+        "custo": 16,
+        "reacao": "+6 / +2",
+        "adamar": "livre",
+        "resumo": "Vence concursos de beleza; também atrai inveja e problemas."
+      },
+      {
+        "id": "lindo",
+        "nome": "Lindo",
+        "custo": 20,
+        "reacao": "+8 / +2",
+        "adamar": "narrador",
+        "resumo": "O espécime ideal; o livro sugere reservar para anjos e divindades."
+      }
+    ]
+  },
+  "idiomas": {
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 24
+    },
+    "resumo": "Todo personagem fala e escreve a língua materna de graça. Outras línguas custam por nível de compreensão; se fala e escrita forem diferentes, cada uma custa metade.",
+    "niveis": [
+      {
+        "id": "nenhum",
+        "nome": "Nenhum",
+        "custo": 0
+      },
+      {
+        "id": "rudimentar",
+        "nome": "Rudimentar",
+        "custo": 2
+      },
+      {
+        "id": "sotaque",
+        "nome": "Com Sotaque",
+        "custo": 4
+      },
+      {
+        "id": "materna",
+        "nome": "Materna",
+        "custo": 6
+      }
+    ],
+    "alfabetizacao_materna": [
+      {
+        "id": "alfabetizado",
+        "nome": "Lê e escreve",
+        "custo": 0
+      },
+      {
+        "id": "semialfabetizado",
+        "nome": "Lê com dificuldade",
+        "custo": -2
+      },
+      {
+        "id": "analfabeto",
+        "nome": "Não lê",
+        "custo": -3
+      }
+    ],
+    "nota_nt": "Em NT 4 ou menos, não ler é o normal; se for regra do cenário, não conta no limite de desvantagens."
+  },
+  "familiaridade_cultural": {
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 23
+    },
+    "resumo": "O personagem conhece a própria cultura de graça. Em culturas estranhas sofre -3 nas perícias sociais; cada Familiaridade Cultural remove isso.",
+    "custo_mesma_raca": 1,
+    "custo_alienigena": 2,
+    "penalidade_sem": -3
+  },
+  "nivel_tecnologico": {
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 22
+    },
+    "nt_campanha": 3,
+    "custo_por_nt_abaixo": -5,
+    "custo_por_nt_acima": 5,
+    "recursos_iniciais": {
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 27
+      },
+      "moeda": "$ (unidade do GURPS: em NT3, algo como uma moeda de cobre)",
+      "por_nt": {
+        "0": 250,
+        "1": 500,
+        "2": 750,
+        "3": 1000,
+        "4": 2000
+      }
+    }
+  },
+  "riqueza": {
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 25
+    },
+    "resumo": "Multiplica o dinheiro inicial da campanha. Riqueza média não custa nada.",
+    "niveis": [
+      {
+        "id": "falido",
+        "nome": "Falido",
+        "custo": -25,
+        "multiplicador": 0,
+        "resumo": "Só a roupa do corpo e nenhuma renda."
+      },
+      {
+        "id": "pobre",
+        "nome": "Pobre",
+        "custo": -15,
+        "multiplicador": 0.2,
+        "resumo": "Um quinto da média; poucos empregos e mal pagos.",
+        "nota": "O texto da pág. 25 diz -25 pontos, mas a pág. 155 do mesmo livro diz -15, que é o valor do original em inglês. Usamos -15."
+      },
+      {
+        "id": "batalhador",
+        "nome": "Batalhador",
+        "custo": -10,
+        "multiplicador": 0.5,
+        "resumo": "Metade da média."
+      },
+      {
+        "id": "medio",
+        "nome": "Médio",
+        "custo": 0,
+        "multiplicador": 1,
+        "resumo": "Vida comum no seu mundo."
+      },
+      {
+        "id": "confortavel",
+        "nome": "Confortável",
+        "custo": 10,
+        "multiplicador": 2,
+        "resumo": "Trabalha, mas vive melhor que a maioria."
+      },
+      {
+        "id": "rico",
+        "nome": "Rico",
+        "custo": 20,
+        "multiplicador": 5,
+        "resumo": "Vive muito bem."
+      },
+      {
+        "id": "muito-rico",
+        "nome": "Muito Rico",
+        "custo": 30,
+        "multiplicador": 20,
+        "resumo": "Vinte vezes a média."
+      },
+      {
+        "id": "podre-de-rico",
+        "nome": "Podre de Rico",
+        "custo": 50,
+        "multiplicador": 100,
+        "resumo": "Compra quase tudo que quer."
+      }
+    ],
+    "multimilionario": {
+      "custo_base": 50,
+      "custo_por_nivel": 25,
+      "fator_por_nivel": 10
+    },
+    "status_gratis": {
+      "rico_ou_mais": 1,
+      "multimilionario_1": 2,
+      "multimilionario_2": 3
+    },
+    "pontos_por_dinheiro": {
+      "fracao_dos_recursos_por_ponto": 0.1,
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 26
+      },
+      "resumo": "Cada ponto gasto vira 10% dos recursos iniciais médios."
+    },
+    "renda_propria": {
+      "custo_por_nivel": 1,
+      "percentual_mensal_por_nivel": 0.01,
+      "maximo_niveis": 20,
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 26
+      }
+    },
+    "dividas": {
+      "custo_por_nivel": -1,
+      "percentual_mensal_por_nivel": 0.01,
+      "maximo_niveis": 20,
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 26
+      }
+    }
+  },
+  "status": {
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 28
+    },
+    "resumo": "Posição social formal: de escravo ou indigente (-2) a rei (8). Homem livre comum é 0. Manter status alto custa dinheiro.",
+    "custo_por_nivel": 5,
+    "minimo": -2,
+    "maximo": 8,
+    "exemplos": {
+      "-2": "escravo ou indigente",
+      "0": "homem livre, cidadão comum",
+      "8": "imperador ou rei-deus"
+    }
+  },
+  "hierarquia": {
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 29
+    },
+    "resumo": "Posto dentro de uma instituição (exército, templo, administração). Quase sempre vem com um Dever.",
+    "custo_por_nivel": [
+      5,
+      10
+    ],
+    "honoraria_por_nivel": 1,
+    "status_gratis": [
+      {
+        "de": 2,
+        "ate": 4,
+        "bonus": 1
+      },
+      {
+        "de": 5,
+        "ate": 7,
+        "bonus": 2
+      },
+      {
+        "de": 8,
+        "ate": 99,
+        "bonus": 3
+      }
+    ]
+  },
+  "reputacao": {
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 26
+    },
+    "resumo": "5 pontos por +1 de reação (até +4), -5 por -1 (até -4), multiplicado por quem conhece e por quão fácil é reconhecer.",
+    "custo_por_nivel": 5,
+    "maximo": 4,
+    "pessoas": [
+      {
+        "id": "quase-todos",
+        "nome": "Quase todo mundo",
+        "fator": 1
+      },
+      {
+        "id": "todos-menos-grupo",
+        "nome": "Todos, menos um grupo grande",
+        "fator": 0.6666666666666666
+      },
+      {
+        "id": "grupo-grande",
+        "nome": "Um grupo grande",
+        "fator": 0.5
+      },
+      {
+        "id": "grupo-pequeno",
+        "nome": "Um grupo pequeno",
+        "fator": 0.3333333333333333
+      }
+    ],
+    "frequencia": [
+      {
+        "id": "sempre",
+        "nome": "O tempo todo",
+        "fator": 1
+      },
+      {
+        "id": "as-vezes",
+        "nome": "De vez em quando (10 ou menos)",
+        "fator": 0.5
+      },
+      {
+        "id": "ocasional",
+        "nome": "Ocasionalmente (7 ou menos)",
+        "fator": 0.3333333333333333
+      }
+    ]
   }
 }

@@ -37,6 +37,9 @@
     if (salvo && salvo.atributos) estado = salvo;
   } catch (e) { /* sem armazenamento */ }
   if (typeof estado.orcamento !== 'number') estado.orcamento = PONTOS.padrao;
+  var SOCIAL_PADRAO = { aparencia: 'comum', status: 0, riqueza: 'medio', multimilionario: 0, alfabetizacao: 'alfabetizado', analfabetismoRegra: true, culturas: 0 };
+  estado.social = Object.assign({}, SOCIAL_PADRAO, estado.social || {});
+  var LIMITE = (R.campanha && R.campanha.limite_desvantagens) || { percentual_padrao: 0.5 };
 
   // ---------- orçamento de pontos ----------
   var selOrc = document.getElementById('calc-orcamento');
@@ -99,6 +102,56 @@
     boxSec.appendChild(campo(s.id, s.sigla + ' — ' + s.nome, 0, s.passo));
   });
 
+  // ---------- sociedade ----------
+  function opcoes(sel, itens) {
+    itens.forEach(function (it) {
+      var o = el('option', null, it[1]);
+      o.value = it[0];
+      sel.appendChild(o);
+    });
+  }
+  opcoes(document.getElementById('soc-aparencia'), R.aparencia.niveis
+    .filter(function (n) { return n.adamar !== 'nao'; })
+    .map(function (n) { return [n.id, n.nome + ' (' + sinal(n.custo) + ')' + (n.adamar === 'narrador' ? ' — com o narrador' : '')]; }));
+  var niveisStatus = [];
+  for (var st = R.status.minimo; st <= R.status.maximo; st++) {
+    niveisStatus.push([String(st), sinal(st) + (R.status.exemplos[String(st)] ? ' — ' + R.status.exemplos[String(st)] : '') + ' (' + sinal(calc.custoStatus(st)) + ')']);
+  }
+  opcoes(document.getElementById('soc-status'), niveisStatus);
+  opcoes(document.getElementById('soc-riqueza'), R.riqueza.niveis
+    .map(function (n) { return [n.id, n.nome + ' (' + sinal(n.custo) + ')']; })
+    .concat([1, 2, 3].map(function (m) { return ['multi-' + m, 'Multimilionário ' + m + ' (' + sinal(calc.custoRiqueza('podre-de-rico', m)) + ')']; })));
+  opcoes(document.getElementById('soc-alfabetizacao'), R.idiomas.alfabetizacao_materna
+    .map(function (n) { return [n.id, n.nome + ' (' + sinal(n.custo) + ')']; }));
+
+  function mostrarSocial() {
+    var so = estado.social;
+    document.getElementById('soc-aparencia').value = so.aparencia;
+    document.getElementById('soc-status').value = String(so.status);
+    document.getElementById('soc-riqueza').value = so.multimilionario ? 'multi-' + so.multimilionario : so.riqueza;
+    document.getElementById('soc-alfabetizacao').value = so.alfabetizacao;
+    document.getElementById('soc-culturas').value = so.culturas;
+    document.getElementById('soc-analfabetismo').checked = !!so.analfabetismoRegra;
+  }
+
+  function mudarSocial(alvo) {
+    var chave = alvo.getAttribute('data-soc');
+    var so = estado.social;
+    if (chave === 'riqueza') {
+      var m = /^multi-(\d)$/.exec(alvo.value);
+      so.riqueza = m ? 'podre-de-rico' : alvo.value;
+      so.multimilionario = m ? parseInt(m[1], 10) : 0;
+    } else if (chave === 'status' || chave === 'culturas') {
+      var n = parseInt(alvo.value, 10);
+      so[chave] = isNaN(n) ? 0 : Math.max(chave === 'culturas' ? 0 : R.status.minimo, n);
+    } else if (chave === 'analfabetismoRegra') {
+      so.analfabetismoRegra = alvo.checked;
+    } else {
+      so[chave] = alvo.value;
+    }
+    atualizar();
+  }
+
   function preencherSecundarias() {
     var v = calc.secundarias(estado.atributos, estado.ajustes);
     R.secundarias.forEach(function (s) {
@@ -139,7 +192,26 @@
     restante.className = restam < 0 ? 'calc-estourou' : '';
     if (restam < 0) avisos.unshift('Gastou ' + (-restam) + ' pontos além do orçamento. Tire pontos ou pegue desvantagens.');
     document.getElementById('calc-detalhe').textContent =
-      'Atributos ' + sinal(ficha.custos.atributos) + ' · Secundárias ' + sinal(ficha.custos.secundarias);
+      'Atributos ' + sinal(ficha.custos.atributos) + ' · Secundárias ' + sinal(ficha.custos.secundarias) +
+      ' · Sociedade ' + sinal(ficha.custos.social);
+    var so = estado.social;
+    var bonusStatus = calc.statusPorRiqueza(so.riqueza, so.multimilionario);
+    document.getElementById('soc-info-aparencia').textContent = sinal(calc.custoAparencia(so.aparencia)) + ' pts · reação ' +
+      R.aparencia.niveis.filter(function (n) { return n.id === so.aparencia; })[0].reacao;
+    document.getElementById('soc-info-status').textContent = sinal(calc.custoStatus(so.status)) + ' pts' +
+      (bonusStatus ? ' · +' + bonusStatus + ' grátis pela riqueza (Status ' + sinal(so.status + bonusStatus) + ')' : '');
+    document.getElementById('soc-info-riqueza').textContent = sinal(calc.custoRiqueza(so.riqueza, so.multimilionario)) + ' pts · $' +
+      ficha.recursos.toLocaleString('pt-BR') + ' iniciais';
+    document.getElementById('soc-info-alfabetizacao').textContent = sinal(calc.custoAlfabetizacao(so.alfabetizacao)) + ' pts' +
+      (so.alfabetizacao !== 'alfabetizado' && so.analfabetismoRegra ? ' · fora do limite' : '');
+    document.getElementById('soc-info-culturas').textContent = sinal(so.culturas * R.familiaridade_cultural.custo_mesma_raca) + ' pts';
+    var limite = calc.limiteDesvantagens(estado.orcamento, LIMITE.percentual_padrao);
+    var desv = document.getElementById('calc-desvantagens');
+    desv.textContent = 'Desvantagens: ' + ficha.desvantagens + ' de um limite de ' + limite +
+      ' (fora as peculiaridades) · Dinheiro inicial $' + ficha.recursos.toLocaleString('pt-BR') + ' em NT' + R.nivel_tecnologico.nt_campanha;
+    desv.className = 'calc-detalhe' + (ficha.desvantagens < limite ? ' calc-estourou' : '');
+    if (ficha.desvantagens < limite) avisos.push('As desvantagens (' + ficha.desvantagens + ') passaram do limite de ' + limite + '. Só com o narrador.');
+    if (so.aparencia === 'lindo') avisos.push('Aparência Lindo: o livro sugere reservar para anjos e divindades. Com o narrador.');
     document.getElementById('calc-derivadas').textContent =
       'Esquiva ' + calc.esquiva(v.velocidade) + ' · Base de Carga ' + num(calc.baseDeCarga(v.st)) + ' kg';
     var ul = document.getElementById('calc-avisos');
@@ -149,7 +221,9 @@
     try { localStorage.setItem(ARMAZENAMENTO, JSON.stringify(estado)); } catch (e) { /* sem armazenamento */ }
   }
 
-  document.getElementById('calc-ficha').addEventListener('input', function (e) {
+  function aoMudar(e) {
+    if (e.target.hasAttribute('data-soc')) { mudarSocial(e.target); return; }
+    if (e.type === 'change') return;
     var id = e.target.getAttribute('data-id');
     var valor = parseFloat(String(e.target.value).replace(',', '.'));
     if (!id || isNaN(valor)) return;
@@ -165,7 +239,9 @@
       if (id === 'velocidade') preencherSecundarias();
     }
     atualizar();
-  });
+  }
+  document.getElementById('calc-ficha').addEventListener('input', aoMudar);
+  document.getElementById('calc-ficha').addEventListener('change', aoMudar);
 
   // ---------- carga ----------
   function desenharCarga(v) {
@@ -210,7 +286,35 @@
     document.getElementById(id).addEventListener('input', calcularPericia);
   });
 
+  // ---------- tabelas de referência: sociedade ----------
+  function tabela(id, cabecalho, linhas) {
+    document.getElementById(id).innerHTML = '<thead><tr>' + cabecalho.map(function (c) { return '<th>' + c + '</th>'; }).join('') +
+      '</tr></thead><tbody>' + linhas.map(function (l) {
+        return '<tr>' + l.map(function (c) { return '<td>' + c + '</td>'; }).join('') + '</tr>';
+      }).join('') + '</tbody>';
+  }
+  var ADAMAR_ROTULO = { livre: 'Livre', narrador: 'Com o narrador', nao: 'Não existe em Adamar' };
+  document.getElementById('sociedade-intro').textContent = R.status.resumo + ' Cada nível custa ' + R.status.custo_por_nivel +
+    ' pontos (pág. ' + R.status.ref.pagina + '). ' + R.limite_desvantagens.resumo + ' (pág. ' + R.limite_desvantagens.ref.pagina + ')';
+  tabela('tabela-aparencia', ['Nível', 'Pontos', 'Reação', 'Em Adamar'], R.aparencia.niveis.map(function (n) {
+    return [n.nome + '<br><small>' + n.resumo + '</small>', sinal(n.custo), n.reacao, ADAMAR_ROTULO[n.adamar]];
+  }));
+  var baseNT = R.nivel_tecnologico.recursos_iniciais.por_nt[String(R.nivel_tecnologico.nt_campanha)];
+  document.getElementById('riqueza-intro').textContent = R.riqueza.resumo + ' Em NT' + R.nivel_tecnologico.nt_campanha +
+    ', a média é $' + baseNT.toLocaleString('pt-BR') + ' (pág. ' + R.nivel_tecnologico.recursos_iniciais.ref.pagina + '). ' +
+    R.riqueza.pontos_por_dinheiro.resumo;
+  tabela('tabela-riqueza', ['Nível', 'Pontos', 'Dinheiro inicial'], R.riqueza.niveis.map(function (n) {
+    return [n.nome + '<br><small>' + n.resumo + (n.nota ? ' ' + n.nota : '') + '</small>', sinal(n.custo), '$' + calc.recursosIniciais(n.id).toLocaleString('pt-BR')];
+  }).concat([['Multimilionário (por nível)', '+' + R.riqueza.multimilionario.custo_por_nivel, '×' + R.riqueza.multimilionario.fator_por_nivel]]));
+  document.getElementById('idiomas-intro').textContent = R.idiomas.resumo + ' (pág. ' + R.idiomas.ref.pagina + ') ' + R.idiomas.nota_nt;
+  tabela('tabela-idiomas', ['Nível de compreensão', 'Pontos (fala e escrita iguais)'], R.idiomas.niveis.map(function (n) {
+    return [n.nome, sinal(n.custo)];
+  }));
+  document.getElementById('culturas-intro').textContent = R.familiaridade_cultural.resumo + ' Custa ' +
+    R.familiaridade_cultural.custo_mesma_raca + ' ponto por cultura (pág. ' + R.familiaridade_cultural.ref.pagina + ').';
+
   mostrarOrcamento();
+  mostrarSocial();
   preencherSecundarias();
   atualizar();
   calcularPericia();

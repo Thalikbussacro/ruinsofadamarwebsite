@@ -56,13 +56,44 @@
             <p class="field-hint">O valor começa no que os atributos dão. Mude para comprar ou vender.</p>
             <div class="calc-grid" id="calc-secundarias"></div>
           </fieldset>
+          <fieldset class="calc-grupo">
+            <legend>Sociedade</legend>
+            <div class="calc-grid">
+              <div class="field calc-campo"><label for="soc-aparencia">Aparência</label><select id="soc-aparencia" data-soc="aparencia"></select><span class="calc-info" id="soc-info-aparencia"></span></div>
+              <div class="field calc-campo"><label for="soc-status">Status</label><select id="soc-status" data-soc="status"></select><span class="calc-info" id="soc-info-status"></span></div>
+              <div class="field calc-campo"><label for="soc-riqueza">Riqueza</label><select id="soc-riqueza" data-soc="riqueza"></select><span class="calc-info" id="soc-info-riqueza"></span></div>
+              <div class="field calc-campo"><label for="soc-alfabetizacao">Leitura da língua materna</label><select id="soc-alfabetizacao" data-soc="alfabetizacao"></select><span class="calc-info" id="soc-info-alfabetizacao"></span></div>
+              <div class="field calc-campo"><label for="soc-culturas">Outras culturas conhecidas</label><input id="soc-culturas" data-soc="culturas" type="number" min="0" max="10" step="1" value="0"><span class="calc-info" id="soc-info-culturas"></span></div>
+            </div>
+            <label class="check calc-check">
+              <input type="checkbox" id="soc-analfabetismo" data-soc="analfabetismoRegra">
+              <span>Na mesa, não saber ler é o normal: analfabetismo não conta no limite de desvantagens.</span>
+            </label>
+          </fieldset>
         </form>
         <div class="calc-resumo" aria-live="polite">
           <div class="calc-total"><span>Gastos</span><strong id="calc-total">0</strong><span id="calc-restante">pontos</span></div>
           <p id="calc-detalhe" class="calc-detalhe"></p>
           <p id="calc-derivadas" class="calc-detalhe"></p>
+          <p id="calc-desvantagens" class="calc-detalhe"></p>
           <ul id="calc-avisos" class="calc-avisos"></ul>
         </div>
+      </section>
+
+      <div class="ornament" aria-hidden="true"></div>
+
+      <section>
+        <h2>Sociedade</h2>
+        <p id="sociedade-intro"></p>
+        <h3>Aparência</h3>
+        <div class="table-wrap"><table id="tabela-aparencia"></table></div>
+        <h3>Riqueza e dinheiro inicial</h3>
+        <p id="riqueza-intro"></p>
+        <div class="table-wrap"><table id="tabela-riqueza"></table></div>
+        <h3>Idiomas e culturas</h3>
+        <p id="idiomas-intro"></p>
+        <div class="table-wrap"><table id="tabela-idiomas"></table></div>
+        <p id="culturas-intro"></p>
       </section>
 
       <div class="ornament" aria-hidden="true"></div>

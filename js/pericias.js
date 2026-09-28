@@ -1,18 +1,50 @@
-// js/pericias.js — lista filtrável de perícias do GURPS para Adamar (dados em js/dados-pericias-gurps.js).
+// js/pericias.js — listas filtráveis do GURPS para Adamar: perícias, vantagens e desvantagens.
+// A página indica qual lista mostrar em #lista-gurps[data-lista]; os dados vêm de js/dados-*-gurps.js.
 (function () {
-  var dados = window.PERICIAS_GURPS || [];
-  var lista = document.getElementById('lista-pericias');
-  var busca = document.getElementById('busca-pericia');
-  var grupo = document.getElementById('grupo-pericia');
-  var contagem = document.getElementById('contagem-pericias');
-  var botoesStatus = Array.prototype.slice.call(document.querySelectorAll('[data-status]'));
+  var lista = document.getElementById('lista-gurps');
   if (!lista) return;
+  var busca = document.getElementById('busca-gurps');
+  var filtro = document.getElementById('filtro-gurps');
+  var contagem = document.getElementById('contagem-gurps');
+  var botoesStatus = Array.prototype.slice.call(document.querySelectorAll('[data-status]'));
 
-  var GRUPOS = {
+  var GRUPOS_PERICIA = {
     combate: 'Combate', corpo: 'Corpo e movimento', natureza: 'Natureza e viagem',
     oficio: 'Ofícios', social: 'Social', saber: 'Saberes', ladino: 'Ladinagem',
     misterio: 'Mistério e cinematográfico', tecnologia: 'Tecnologia moderna'
   };
+  var TIPOS_TRACO = ['Mental', 'Física', 'Social', 'Exótica', 'Sobrenatural'];
+
+  var TIPOS = {
+    pericias: {
+      dados: window.PERICIAS_GURPS || [],
+      unidade: ['perícia', 'perícias'],
+      opcoes: Object.keys(GRUPOS_PERICIA).map(function (k) { return [k, GRUPOS_PERICIA[k]]; }),
+      filtra: function (p, v) { return p.g === v; },
+      titulo: function (p) { return p.n + (p.nt ? '/NT' : ''); },
+      selo: function (p) { return p.a + '/' + p.d; },
+      meta: function (p) {
+        var m = [GRUPOS_PERICIA[p.g], 'pág. ' + p.p];
+        if (p.pd) m.push('Pré-definido: ' + p.pd);
+        return m;
+      }
+    },
+    vantagens: {
+      dados: window.VANTAGENS_GURPS || [],
+      unidade: ['vantagem', 'vantagens'],
+      opcoes: TIPOS_TRACO.map(function (t) { return [t, t]; }),
+      filtra: function (p, v) { return p.t.indexOf(v) !== -1; },
+      titulo: function (p) { return p.n; },
+      selo: function (p) { return p.c + (/^[\d+]/.test(p.c) ? ' pts' : ''); },
+      meta: function (p) { return [p.t, 'pág. ' + p.p]; }
+    }
+  };
+  TIPOS.desvantagens = Object.create(TIPOS.vantagens);
+  TIPOS.desvantagens.dados = window.DESVANTAGENS_GURPS || [];
+  TIPOS.desvantagens.unidade = ['desvantagem', 'desvantagens'];
+  TIPOS.desvantagens.selo = function (p) { return p.c + (/^-?\d/.test(p.c) ? ' pts' : ''); };
+
+  var tipo = TIPOS[lista.getAttribute('data-lista')] || TIPOS.pericias;
   var STATUS = {
     L: { rotulo: 'Livre', classe: 'st-livre' },
     N: { rotulo: 'Com o narrador', classe: 'st-narrador' },
@@ -34,45 +66,43 @@
   function item(p) {
     var art = el('article', 'pericia ' + STATUS[p.s].classe);
     var topo = el('div', 'pericia-topo');
-    var nome = el('h3', 'pericia-nome', p.n + (p.nt ? '/NT' : ''));
+    var nome = el('h3', 'pericia-nome', tipo.titulo(p));
     if (p.esp) {
       var adaga = el('span', 'pericia-esp', '†');
       adaga.title = 'Exige especialização';
       nome.appendChild(adaga);
     }
     topo.appendChild(nome);
-    topo.appendChild(el('span', 'pericia-dif', p.a + '/' + p.d));
+    topo.appendChild(el('span', 'pericia-dif', tipo.selo(p)));
     art.appendChild(topo);
     art.appendChild(el('p', 'pericia-resumo', p.r));
     var meta = el('p', 'pericia-meta');
     meta.appendChild(el('span', 'pericia-status', STATUS[p.s].rotulo));
-    meta.appendChild(el('span', null, GRUPOS[p.g]));
-    meta.appendChild(el('span', null, 'pág. ' + p.p));
-    if (p.pd) meta.appendChild(el('span', null, 'Pré-definido: ' + p.pd));
+    tipo.meta(p).forEach(function (m) { meta.appendChild(el('span', null, m)); });
     art.appendChild(meta);
     return art;
   }
 
   function render() {
     var q = semAcento(busca.value.trim());
-    var g = grupo.value;
-    var filtrados = dados.filter(function (p) {
+    var v = filtro.value;
+    var filtrados = tipo.dados.filter(function (p) {
       if (statusAtual !== 'todas' && p.s !== statusAtual) return false;
-      if (g && p.g !== g) return false;
+      if (v && !tipo.filtra(p, v)) return false;
       if (q && semAcento(p.n + ' ' + p.r).indexOf(q) === -1) return false;
       return true;
     });
     lista.textContent = '';
     filtrados.forEach(function (p) { lista.appendChild(item(p)); });
-    contagem.textContent = filtrados.length === 1 ? '1 perícia' : filtrados.length + ' perícias';
-    if (!filtrados.length) lista.appendChild(el('p', 'pericia-vazio', 'Nenhuma perícia encontrada com esses filtros.'));
+    contagem.textContent = filtrados.length + ' ' + tipo.unidade[filtrados.length === 1 ? 0 : 1];
+    if (!filtrados.length) lista.appendChild(el('p', 'pericia-vazio', 'Nada encontrado com esses filtros.'));
   }
 
-  Object.keys(GRUPOS).forEach(function (k) {
+  tipo.opcoes.forEach(function (op) {
     var o = document.createElement('option');
-    o.value = k;
-    o.textContent = GRUPOS[k];
-    grupo.appendChild(o);
+    o.value = op[0];
+    o.textContent = op[1];
+    filtro.appendChild(o);
   });
 
   botoesStatus.forEach(function (b) {
@@ -83,7 +113,7 @@
     });
   });
   busca.addEventListener('input', render);
-  grupo.addEventListener('change', render);
+  filtro.addEventListener('change', render);
 
   render();
 })();

@@ -173,4 +173,36 @@ function cleanup(root) {
   }
 }
 
+// --- Test 5: "todo"/"TBD" markers must be case-sensitive: real Portuguese
+// words like "todo dia" / "mundo todo" must pass, an uppercase "TODO" must
+// still fail. ---
+{
+  const root = buildGoodRoot();
+  try {
+    write(root, 'index.html', basePage('index.html').replace(
+      '<p>Conteúdo de teste sem termos proibidos.</p>',
+      '<p>Isso acontece todo dia, em todo o mundo, e vale para todo lugar.</p>'
+    ));
+    const res = run(root);
+    assert.equal(res.status, 0, `esperado exit 0 com "todo" em português, obteve ${res.status}\nstdout:\n${res.stdout}\nstderr:\n${res.stderr}`);
+  } finally {
+    cleanup(root);
+  }
+}
+{
+  const root = buildGoodRoot();
+  try {
+    write(root, 'index.html', basePage('index.html').replace(
+      '<p>Conteúdo de teste sem termos proibidos.</p>',
+      '<p>TODO: revisar isso. TBD também.</p>'
+    ));
+    const res = run(root);
+    assert.equal(res.status, 1, `esperado exit 1 com "TODO"/"TBD" em maiúsculas, obteve ${res.status}\nstdout:\n${res.stdout}`);
+    assert.match(res.stdout, /index\.html:.*TODO/);
+    assert.match(res.stdout, /index\.html:.*TBD/);
+  } finally {
+    cleanup(root);
+  }
+}
+
 console.log('check-site self-test ok');

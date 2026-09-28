@@ -26,6 +26,10 @@ const FORBIDDEN_TERMS = [
 
 const FORBIDDEN_MARKERS = ['TODO', 'TBD', 'lorem'];
 
+// Marcadores que só devem ser tratados como proibidos em MAIÚSCULAS exatas
+// (para não confundir com palavras comuns do português, como "todo"/"toda").
+const CASE_SENSITIVE_MARKERS = new Set(['TODO', 'TBD']);
+
 function stripDiacritics(str) {
   return str.normalize('NFD').replace(/[̀-ͯ]/g, '');
 }
@@ -133,9 +137,18 @@ function checkForbiddenContent(html) {
     }
   }
   for (const marker of FORBIDDEN_MARKERS) {
-    const re = new RegExp('\\b' + escapeRegExp(marker.toLowerCase()) + '\\b', 'i');
-    if (re.test(normalized)) {
-      problems.push(`marcador proibido encontrado: "${marker}"`);
+    if (CASE_SENSITIVE_MARKERS.has(marker)) {
+      // Aplicado ao texto bruto, sem lowercase/stripDiacritics e sem a flag
+      // 'i': só a marca em MAIÚSCULAS conta, não a palavra em português.
+      const re = new RegExp('\\b' + escapeRegExp(marker) + '\\b');
+      if (re.test(html)) {
+        problems.push(`marcador proibido encontrado: "${marker}"`);
+      }
+    } else {
+      const re = new RegExp('\\b' + escapeRegExp(marker.toLowerCase()) + '\\b', 'i');
+      if (re.test(normalized)) {
+        problems.push(`marcador proibido encontrado: "${marker}"`);
+      }
     }
   }
   return problems;

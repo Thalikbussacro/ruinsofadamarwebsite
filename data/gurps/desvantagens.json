@@ -1,0 +1,3376 @@
+{
+  "descricao": "Desvantagens e peculiaridades do GURPS 4e para Adamar.",
+  "adamar": {
+    "livre": "cabe em Adamar sem conversa",
+    "narrador": "só com combinação prévia com o narrador",
+    "nao": "não existe em Adamar"
+  },
+  "itens": [
+    {
+      "id": "acima-do-peso-gordo-muito-gordo",
+      "nome": "Acima do Peso / Gordo / Muito Gordo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-1 a -5",
+      "adamar": "livre",
+      "resumo": "Peso acima do normal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 19
+      }
+    },
+    {
+      "id": "acomodado",
+      "nome": "Acomodado",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Ignora problemas que não o afetam.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 163
+      }
+    },
+    {
+      "id": "alcoolismo",
+      "nome": "Alcoolismo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-15 ou -20",
+      "adamar": "livre",
+      "resumo": "Viciado em bebida.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 122
+      }
+    },
+    {
+      "id": "altruismo",
+      "nome": "Altruísmo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5*",
+      "adamar": "livre",
+      "resumo": "Se sacrifica pelos outros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 122
+      }
+    },
+    {
+      "id": "amigavel",
+      "nome": "Amigável",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5 ou -10",
+      "adamar": "livre",
+      "resumo": "Precisa de companhia e se abala sozinho. Inclui Gregário.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 122
+      }
+    },
+    {
+      "id": "amnesia",
+      "nome": "Amnésia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10 ou -25",
+      "adamar": "narrador",
+      "resumo": "Perdeu a memória. O narrador guarda o passado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 122
+      }
+    },
+    {
+      "id": "antecedentes-mundanos",
+      "nome": "Antecedentes Mundanos",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Não sabe nada de magia nem do sobrenatural. Comum em Adamar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 122
+      }
+    },
+    {
+      "id": "antipatico",
+      "nome": "Antipático",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Prefere fazer as coisas sozinho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 163
+      }
+    },
+    {
+      "id": "aparencia-desvantagem",
+      "nome": "Aparência (desvantagem)",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Feiura: de sem atrativos a repugnante.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 20
+      }
+    },
+    {
+      "id": "assustar-animais",
+      "nome": "Assustar Animais",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "-10",
+      "adamar": "narrador",
+      "resumo": "Animais têm medo do personagem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 123
+      }
+    },
+    {
+      "id": "ataque-infeccioso",
+      "nome": "Ataque Infeccioso",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "sobrenatural"
+      ],
+      "custo": "-5",
+      "adamar": "nao",
+      "resumo": "Seu ataque transmite doença.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 123
+      }
+    },
+    {
+      "id": "atavismo-por-estresse",
+      "nome": "Atavismo por Estresse",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Sob estresse, volta a um estado bestial ancestral.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 123
+      }
+    },
+    {
+      "id": "atento",
+      "nome": "Atento",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Não larga uma tarefa até terminar e se distrai do resto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 163
+      }
+    },
+    {
+      "id": "atrapalhado",
+      "nome": "Atrapalhado",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5 ou -10",
+      "adamar": "livre",
+      "resumo": "Desajeitado com as mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 123
+      }
+    },
+    {
+      "id": "autodestruicao",
+      "nome": "Autodestruição",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "-10",
+      "adamar": "nao",
+      "resumo": "Seu corpo se desfaz com o tempo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 123
+      }
+    },
+    {
+      "id": "avareza",
+      "nome": "Avareza",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10*",
+      "adamar": "livre",
+      "resumo": "Pão-duro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 123
+      }
+    },
+    {
+      "id": "aversao",
+      "nome": "Aversão",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "Variável",
+      "adamar": "narrador",
+      "resumo": "Precisa se afastar de algo, como vampiro de alho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 123
+      }
+    },
+    {
+      "id": "aversoes",
+      "nome": "Aversões",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Evita algo de que não gosta: água funda, gatos, sacerdotes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 163
+      }
+    },
+    {
+      "id": "azar",
+      "nome": "Azar",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Tudo dá errado na pior hora.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 124
+      }
+    },
+    {
+      "id": "baixa-autoestima",
+      "nome": "Baixa Autoestima",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Não confia em si mesmo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 124
+      }
+    },
+    {
+      "id": "barulhento",
+      "nome": "Barulhento",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-2/nível",
+      "adamar": "livre",
+      "resumo": "Faz barulho demais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 124
+      }
+    },
+    {
+      "id": "bestial",
+      "nome": "Bestial",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "-10 ou -15",
+      "adamar": "nao",
+      "resumo": "Pensa como um animal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 124
+      }
+    },
+    {
+      "id": "bioquimica-incomum",
+      "nome": "Bioquímica Incomum",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5",
+      "adamar": "nao",
+      "resumo": "Remédios e venenos agem diferente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 124
+      }
+    },
+    {
+      "id": "briguento",
+      "nome": "Briguento",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10*",
+      "adamar": "livre",
+      "resumo": "Adora intimidar e brigar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 125
+      }
+    },
+    {
+      "id": "caracteristicas-distintas",
+      "nome": "Características Distintas",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Um traço fácil de reconhecer: cabelo branco, cicatriz no rosto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 165
+      }
+    },
+    {
+      "id": "caracteristicas-sobrenaturais",
+      "nome": "Características Sobrenaturais",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "sobrenatural"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Sinais sobrenaturais: sem reflexo, sem sombra.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 125
+      }
+    },
+    {
+      "id": "castrado-ou-assexuado",
+      "nome": "Castrado ou Assexuado",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Não tem os órgãos sexuais típicos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 165
+      }
+    },
+    {
+      "id": "cegueira",
+      "nome": "Cegueira",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-50",
+      "adamar": "livre",
+      "resumo": "Não enxerga.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 125
+      }
+    },
+    {
+      "id": "cegueira-noturna",
+      "nome": "Cegueira Noturna",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Enxerga mal no escuro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 126
+      }
+    },
+    {
+      "id": "chauvinista",
+      "nome": "Chauvinista",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Sempre repara nas diferenças entre povos e sexos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 163
+      }
+    },
+    {
+      "id": "circunspeccao",
+      "nome": "Circunspecção",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Não entende piadas nem ironia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 126
+      }
+    },
+    {
+      "id": "cleptomania",
+      "nome": "Cleptomania",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-15*",
+      "adamar": "livre",
+      "resumo": "Rouba por compulsão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 126
+      }
+    },
+    {
+      "id": "cobica",
+      "nome": "Cobiça",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-15*",
+      "adamar": "livre",
+      "resumo": "Paixão por riquezas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 126
+      }
+    },
+    {
+      "id": "complexo-de-culpa",
+      "nome": "Complexo de Culpa",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Se sente responsável por tudo de ruim.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 127
+      }
+    },
+    {
+      "id": "compreensivo",
+      "nome": "Compreensivo",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Percebe o que os outros sentem e tende a ajudar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 163
+      }
+    },
+    {
+      "id": "compulsao",
+      "nome": "Compulsão",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5 a -15*",
+      "adamar": "livre",
+      "resumo": "Hábito que não consegue largar: jogar, mentir, gastar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 127
+      }
+    },
+    {
+      "id": "confuso",
+      "nome": "Confuso",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10*",
+      "adamar": "livre",
+      "resumo": "Fica perdido quando há estímulos demais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 128
+      }
+    },
+    {
+      "id": "consumo-ampliado",
+      "nome": "Consumo Ampliado",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10/nível",
+      "adamar": "nao",
+      "resumo": "Come muito mais que um humano.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 128
+      }
+    },
+    {
+      "id": "convulsoes-pos-combate",
+      "nome": "Convulsões Pós-Combate",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5*",
+      "adamar": "livre",
+      "resumo": "Treme e passa mal depois de lutar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 129
+      }
+    },
+    {
+      "id": "corcunda",
+      "nome": "Corcunda",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Coluna deformada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 129
+      }
+    },
+    {
+      "id": "covardia",
+      "nome": "Covardia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10*",
+      "adamar": "livre",
+      "resumo": "Evita qualquer risco físico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 129
+      }
+    },
+    {
+      "id": "credulidade",
+      "nome": "Credulidade",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10*",
+      "adamar": "livre",
+      "resumo": "Acredita em tudo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 129
+      }
+    },
+    {
+      "id": "criativo",
+      "nome": "Criativo",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Cheio de ideias, nem todas boas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "cuidadoso",
+      "nome": "Cuidadoso",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Prepara tudo antes de se arriscar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "curiosidade",
+      "nome": "Curiosidade",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5*",
+      "adamar": "livre",
+      "resumo": "Precisa mexer em tudo que é novo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 129
+      }
+    },
+    {
+      "id": "codigo-de-honra",
+      "nome": "Código de Honra",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5 a -15",
+      "adamar": "livre",
+      "resumo": "Segue um código: de cavaleiro, de pirata, de guerreiro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 126
+      }
+    },
+    {
+      "id": "codigo-de-honra-peculiaridade",
+      "nome": "Código de Honra (peculiaridade)",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Uma regra pessoal pequena: nunca recusar um duelo, sempre agradecer ao anfitrião.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 163
+      }
+    },
+    {
+      "id": "daltonismo",
+      "nome": "Daltonismo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Não distingue cores.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 129
+      }
+    },
+    {
+      "id": "deficiencia-fisica",
+      "nome": "Deficiência Física",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10 a -30",
+      "adamar": "livre",
+      "resumo": "Perna manca ou perdida. Comum num mundo onde ferida deixa marca.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 129
+      }
+    },
+    {
+      "id": "deficiencias-menores",
+      "nome": "Deficiências Menores",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Uma limitação física leve: joelho dolorido, dedo duro. Comum em Adamar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 165
+      }
+    },
+    {
+      "id": "dependentes",
+      "nome": "Dependentes",
+      "categoria": "desvantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Alguém que depende do personagem: filho, pai idoso, aprendiz.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 130
+      }
+    },
+    {
+      "id": "dependencia",
+      "nome": "Dependência",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "narrador",
+      "resumo": "Precisa de uma substância para viver.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 130
+      }
+    },
+    {
+      "id": "depressao-cronica",
+      "nome": "Depressão Crônica",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-15*",
+      "adamar": "livre",
+      "resumo": "Perdeu a vontade de viver.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 131
+      }
+    },
+    {
+      "id": "desastrado",
+      "nome": "Desastrado",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5 ou -15",
+      "adamar": "livre",
+      "resumo": "Quebra e derruba tudo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 131
+      }
+    },
+    {
+      "id": "desatento",
+      "nome": "Desatento",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10*",
+      "adamar": "livre",
+      "resumo": "Não consegue se concentrar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 132
+      }
+    },
+    {
+      "id": "desdobramento-de-personalidade",
+      "nome": "Desdobramento de Personalidade",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-15*",
+      "adamar": "livre",
+      "resumo": "Tem mais de uma personalidade.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 132
+      }
+    },
+    {
+      "id": "despretensioso",
+      "nome": "Despretensioso",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Põe os outros antes de si.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "destino-desvantagem",
+      "nome": "Destino (desvantagem)",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "Variável",
+      "adamar": "narrador",
+      "resumo": "Um destino ruim marcado. O narrador decide.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 132
+      }
+    },
+    {
+      "id": "destruidor-da-vida",
+      "nome": "Destruidor da Vida",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "-10",
+      "adamar": "narrador",
+      "resumo": "Plantas murcham e bichos adoecem perto dele.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 132
+      }
+    },
+    {
+      "id": "dever",
+      "nome": "Dever",
+      "categoria": "desvantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Obrigações com um senhor, uma ordem, um exército.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 133
+      }
+    },
+    {
+      "id": "dieta-restrita",
+      "nome": "Dieta Restrita",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10 a -40",
+      "adamar": "narrador",
+      "resumo": "Só come um tipo raro de alimento.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 134
+      }
+    },
+    {
+      "id": "dificuldade-com-numeros",
+      "nome": "Dificuldade com Números",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Não sabe fazer contas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 134
+      }
+    },
+    {
+      "id": "dislexia",
+      "nome": "Dislexia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Não consegue aprender a ler.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 134
+      }
+    },
+    {
+      "id": "disopia",
+      "nome": "Disopia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-25",
+      "adamar": "livre",
+      "resumo": "Enxerga mal. Sem óculos em Adamar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 134
+      }
+    },
+    {
+      "id": "disosmia",
+      "nome": "Disosmia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Não sente cheiro nem gosto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 135
+      }
+    },
+    {
+      "id": "distracao",
+      "nome": "Distração",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-15",
+      "adamar": "livre",
+      "resumo": "Gênio distraído que esquece o básico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 135
+      }
+    },
+    {
+      "id": "distraido",
+      "nome": "Distraído",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Se perde em tarefas longas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "disturbio-neurologico",
+      "nome": "Distúrbio Neurológico",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Tremores ou problemas de coordenação.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 135
+      }
+    },
+    {
+      "id": "doente-terminal",
+      "nome": "Doente Terminal",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-50 a -100",
+      "adamar": "narrador",
+      "resumo": "Vai morrer em breve.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 135
+      }
+    },
+    {
+      "id": "doenca-contagiosa",
+      "nome": "Doença Contagiosa",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Tem uma doença que passa para os outros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 135
+      }
+    },
+    {
+      "id": "dor-cronica",
+      "nome": "Dor Crônica",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Crises de dor de um ferimento antigo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 135
+      }
+    },
+    {
+      "id": "dorminhoco",
+      "nome": "Dorminhoco",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Difícil de acordar e lento ao despertar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 136
+      }
+    },
+    {
+      "id": "doutrinas-religiosas",
+      "nome": "Doutrinas Religiosas",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5 a -15",
+      "adamar": "livre",
+      "resumo": "Segue as regras de uma fé.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 136
+      }
+    },
+    {
+      "id": "drenagem",
+      "nome": "Drenagem",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "sobrenatural"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Perde vida todo dia sem uma substância.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 136
+      }
+    },
+    {
+      "id": "duro-de-ouvido",
+      "nome": "Duro de Ouvido",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Ouve mal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 136
+      }
+    },
+    {
+      "id": "dividas",
+      "nome": "Dívidas",
+      "categoria": "desvantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Deve dinheiro e paga todo mês.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 26
+      }
+    },
+    {
+      "id": "egoismo",
+      "nome": "Egoísmo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5*",
+      "adamar": "livre",
+      "resumo": "Se acha importante demais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 136
+      }
+    },
+    {
+      "id": "eletrico",
+      "nome": "Elétrico",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "-20",
+      "adamar": "nao",
+      "resumo": "Corpo com sistemas elétricos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 136
+      }
+    },
+    {
+      "id": "embotado",
+      "nome": "Embotado",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Só confia no jeito de sempre.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "enjoo",
+      "nome": "Enjoo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Enjoa em barcos e carroças.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 137
+      }
+    },
+    {
+      "id": "enjoo-espacial",
+      "nome": "Enjoo Espacial",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10",
+      "adamar": "nao",
+      "resumo": "Passa mal em gravidade zero.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 137
+      }
+    },
+    {
+      "id": "enjoo-temporal",
+      "nome": "Enjoo Temporal",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10",
+      "adamar": "nao",
+      "resumo": "Passa mal ao viajar no tempo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 137
+      }
+    },
+    {
+      "id": "entorpecido",
+      "nome": "Entorpecido",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-20",
+      "adamar": "nao",
+      "resumo": "Não tem tato.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 137
+      }
+    },
+    {
+      "id": "enxerido",
+      "nome": "Enxerido",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Mete o nariz onde não é chamado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "epilepsia",
+      "nome": "Epilepsia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-30",
+      "adamar": "livre",
+      "resumo": "Tem convulsões.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 137
+      }
+    },
+    {
+      "id": "estigma-social",
+      "nome": "Estigma Social",
+      "categoria": "desvantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "-5 a -20",
+      "adamar": "livre",
+      "resumo": "Grupo desprezado: forasteiro, criminoso marcado, servo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 138
+      }
+    },
+    {
+      "id": "estomago-sensivel",
+      "nome": "Estômago Sensível",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Passa mal com comida forte ou bebida pesada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 165
+      }
+    },
+    {
+      "id": "excesso-de-confianca",
+      "nome": "Excesso de Confiança",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5*",
+      "adamar": "livre",
+      "resumo": "Acha que é melhor do que é.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 139
+      }
+    },
+    {
+      "id": "expectativa-de-vida-reduzida",
+      "nome": "Expectativa de Vida Reduzida",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "-10/nível",
+      "adamar": "nao",
+      "resumo": "Vive menos que um humano.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 139
+      }
+    },
+    {
+      "id": "fanatismo",
+      "nome": "Fanatismo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-15",
+      "adamar": "livre",
+      "resumo": "Fé cega numa causa ou deus.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 139
+      }
+    },
+    {
+      "id": "fantasias",
+      "nome": "Fantasias",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5 a -15",
+      "adamar": "livre",
+      "resumo": "Acredita em algo que não é verdade.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 139
+      }
+    },
+    {
+      "id": "fantasias-peculiaridade",
+      "nome": "Fantasias (peculiaridade)",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Acredita numa bobagem inofensiva.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "feicoes-estranhas",
+      "nome": "Feições Estranhas",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Algo no rosto chama atenção e faz ser lembrado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 22
+      }
+    },
+    {
+      "id": "ferido",
+      "nome": "Ferido",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Tem uma ferida aberta que não fecha.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 140
+      }
+    },
+    {
+      "id": "flashbacks",
+      "nome": "Flashbacks",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Revive traumas passados.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 140
+      }
+    },
+    {
+      "id": "fobias",
+      "nome": "Fobias",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Medo de algo: escuro, altura, mar, magia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 140
+      }
+    },
+    {
+      "id": "fora-de-forma",
+      "nome": "Fora de Forma",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5 ou -15",
+      "adamar": "livre",
+      "resumo": "Saúde fraca e pouco fôlego.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 142
+      }
+    },
+    {
+      "id": "forma-de-sombras-desvantagem",
+      "nome": "Forma de Sombras (desvantagem)",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-20",
+      "adamar": "nao",
+      "resumo": "Preso na forma de sombra.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 142
+      }
+    },
+    {
+      "id": "fragilidade",
+      "nome": "Fragilidade",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Corpo que se quebra ou queima facilmente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 142
+      }
+    },
+    {
+      "id": "fragilidade-em-aceleracao",
+      "nome": "Fragilidade em Aceleração",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-1",
+      "adamar": "nao",
+      "resumo": "Passa mal com acelerações extremas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 165
+      }
+    },
+    {
+      "id": "fraqueza",
+      "nome": "Fraqueza",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Sofre dano só de estar perto de algo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 143
+      }
+    },
+    {
+      "id": "facil-de-decifrar",
+      "nome": "Fácil de Decifrar",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Todo mundo percebe o que ele sente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 139
+      }
+    },
+    {
+      "id": "facil-de-matar",
+      "nome": "Fácil de Matar",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-2/nível",
+      "adamar": "narrador",
+      "resumo": "Morre com menos ferimentos que o normal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 139
+      }
+    },
+    {
+      "id": "furia",
+      "nome": "Fúria",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Perde o controle numa luta.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 143
+      }
+    },
+    {
+      "id": "gagueira",
+      "nome": "Gagueira",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Gagueja.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 143
+      }
+    },
+    {
+      "id": "gigantismo",
+      "nome": "Gigantismo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "0",
+      "adamar": "livre",
+      "resumo": "Estatura bem acima do normal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 19
+      }
+    },
+    {
+      "id": "gula",
+      "nome": "Gula",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5*",
+      "adamar": "livre",
+      "resumo": "Come e bebe demais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 143
+      }
+    },
+    {
+      "id": "hemofilia",
+      "nome": "Hemofilia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-30",
+      "adamar": "livre",
+      "resumo": "Um corte pode matar de hemorragia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 144
+      }
+    },
+    {
+      "id": "hiperalgia",
+      "nome": "Hiperalgia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Sente dor demais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 144
+      }
+    },
+    {
+      "id": "honestidade",
+      "nome": "Honestidade",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10*",
+      "adamar": "livre",
+      "resumo": "Obedece a lei mesmo quando custa caro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 144
+      }
+    },
+    {
+      "id": "horizontal",
+      "nome": "Horizontal",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "-10",
+      "adamar": "nao",
+      "resumo": "Anda sobre quatro patas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 145
+      }
+    },
+    {
+      "id": "habitos-detestaveis",
+      "nome": "Hábitos Detestáveis",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5 a -15",
+      "adamar": "livre",
+      "resumo": "Manias que incomodam os outros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 22
+      }
+    },
+    {
+      "id": "habitos-ou-expressoes",
+      "nome": "Hábitos ou Expressões",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Um bordão, um gesto ou mania que repete sempre.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "identidade-secreta",
+      "nome": "Identidade Secreta",
+      "categoria": "desvantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Esconde quem realmente é.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 145
+      }
+    },
+    {
+      "id": "impulsividade",
+      "nome": "Impulsividade",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10*",
+      "adamar": "livre",
+      "resumo": "Age antes de pensar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 145
+      }
+    },
+    {
+      "id": "incapaz-de-aprender",
+      "nome": "Incapaz de Aprender",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-30",
+      "adamar": "nao",
+      "resumo": "Não aprende nada novo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 145
+      }
+    },
+    {
+      "id": "incapaz-de-falar",
+      "nome": "Incapaz de Falar",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-15 ou -25",
+      "adamar": "livre",
+      "resumo": "Voz fraca ou mudez.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 145
+      }
+    },
+    {
+      "id": "incapaz-de-flutuar",
+      "nome": "Incapaz de Flutuar",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-1",
+      "adamar": "nao",
+      "resumo": "Afunda na água, sempre.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 165
+      }
+    },
+    {
+      "id": "incapaz-de-sentir-prazer",
+      "nome": "Incapaz de Sentir Prazer",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-15",
+      "adamar": "livre",
+      "resumo": "Nada lhe dá prazer.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 145
+      }
+    },
+    {
+      "id": "incompetente",
+      "nome": "Incompetente",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Simplesmente não consegue aprender uma perícia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "indeciso",
+      "nome": "Indeciso",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10*",
+      "adamar": "livre",
+      "resumo": "Não consegue se decidir.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 145
+      }
+    },
+    {
+      "id": "indiferente",
+      "nome": "Indiferente",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5*",
+      "adamar": "livre",
+      "resumo": "Pouco interesse pelo que não é da sua conta.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 146
+      }
+    },
+    {
+      "id": "indulgente",
+      "nome": "Indulgente",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-15*",
+      "adamar": "livre",
+      "resumo": "Bondoso demais, cai em armadilhas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 146
+      }
+    },
+    {
+      "id": "ingenuo",
+      "nome": "Ingênuo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Não entende maldade nem malícia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 146
+      }
+    },
+    {
+      "id": "inimigos",
+      "nome": "Inimigos",
+      "categoria": "desvantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Alguém que quer o seu mal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 146
+      }
+    },
+    {
+      "id": "insensivel",
+      "nome": "Insensível",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Impiedoso e indiferente à dor alheia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 147
+      }
+    },
+    {
+      "id": "insone",
+      "nome": "Insone",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10 ou -15",
+      "adamar": "livre",
+      "resumo": "Passa noites sem dormir.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 147
+      }
+    },
+    {
+      "id": "intolerancia",
+      "nome": "Intolerância",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Não suporta um povo ou grupo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 147
+      }
+    },
+    {
+      "id": "intolerancia-ao-alcool",
+      "nome": "Intolerância ao Álcool",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Fica bêbado com pouco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 165
+      }
+    },
+    {
+      "id": "intolerancia-g",
+      "nome": "Intolerância-G",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10 ou -20",
+      "adamar": "nao",
+      "resumo": "Não aguenta gravidades diferentes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 147
+      }
+    },
+    {
+      "id": "inveja",
+      "nome": "Inveja",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Inveja quem tem mais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 147
+      }
+    },
+    {
+      "id": "invertebrado",
+      "nome": "Invertebrado",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "-20",
+      "adamar": "nao",
+      "resumo": "Não tem coluna.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 147
+      }
+    },
+    {
+      "id": "irritabilidade",
+      "nome": "Irritabilidade",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10*",
+      "adamar": "livre",
+      "resumo": "Pavio curto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 147
+      }
+    },
+    {
+      "id": "lunatico",
+      "nome": "Lunático",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "A lua mexe com o humor dele.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 148
+      }
+    },
+    {
+      "id": "luxuria",
+      "nome": "Luxúria",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-15*",
+      "adamar": "livre",
+      "resumo": "Desejo que não controla.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 148
+      }
+    },
+    {
+      "id": "magnetismo-sobrenatural",
+      "nome": "Magnetismo Sobrenatural",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "-15",
+      "adamar": "narrador",
+      "resumo": "Coisas estranhas acontecem perto dele.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 148
+      }
+    },
+    {
+      "id": "magro",
+      "nome": "Magro",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Muito magro e fraco de corpo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 18
+      }
+    },
+    {
+      "id": "maldicao",
+      "nome": "Maldição",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "-75",
+      "adamar": "nao",
+      "resumo": "Anti-Super Sorte: tudo dá errado sempre.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 148
+      }
+    },
+    {
+      "id": "maldicao-divina",
+      "nome": "Maldição Divina",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "Variável",
+      "adamar": "narrador",
+      "resumo": "Amaldiçoado por um deus ou forasteiro. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 148
+      }
+    },
+    {
+      "id": "maneta-um-braco",
+      "nome": "Maneta (Um Braço)",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-20",
+      "adamar": "livre",
+      "resumo": "Perdeu um braço.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 148
+      }
+    },
+    {
+      "id": "maneta-uma-mao",
+      "nome": "Maneta (Uma Mão)",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-15",
+      "adamar": "livre",
+      "resumo": "Perdeu uma mão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 148
+      }
+    },
+    {
+      "id": "manuseadores-precarios",
+      "nome": "Manuseadores Precários",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "-30 ou -50",
+      "adamar": "nao",
+      "resumo": "Não tem mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 149
+      }
+    },
+    {
+      "id": "manutencao",
+      "nome": "Manutenção",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Precisa de manutenção como uma máquina.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 149
+      }
+    },
+    {
+      "id": "maniaco-depressivo",
+      "nome": "Maníaco-Depressivo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-20",
+      "adamar": "livre",
+      "resumo": "Humor que oscila entre euforia e tristeza.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 149
+      }
+    },
+    {
+      "id": "marca-registrada",
+      "nome": "Marca Registrada",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5 a -15",
+      "adamar": "livre",
+      "resumo": "Deixa sempre uma assinatura no que faz.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 150
+      }
+    },
+    {
+      "id": "marca-registrada-peculiaridade",
+      "nome": "Marca Registrada (peculiaridade)",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Uma assinatura pequena no que faz.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "mau-cheiro",
+      "nome": "Mau Cheiro",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Cheiro terrível.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 150
+      }
+    },
+    {
+      "id": "megalomania",
+      "nome": "Megalomania",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Se acha destinado a grandes feitos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 150
+      }
+    },
+    {
+      "id": "mentalidade-de-escravo",
+      "nome": "Mentalidade de Escravo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-40",
+      "adamar": "nao",
+      "resumo": "Não tem iniciativa própria.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 150
+      }
+    },
+    {
+      "id": "mente-aberta",
+      "nome": "Mente Aberta",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Estranhos e estrangeiros não o incomodam.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "mordida-fraca",
+      "nome": "Mordida Fraca",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "-2",
+      "adamar": "nao",
+      "resumo": "Mandíbula fraca.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 151
+      }
+    },
+    {
+      "id": "mudanca-de-personalidade",
+      "nome": "Mudança de Personalidade",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Vira outra pessoa numa situação específica, como quando bebe.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "mao-fraca",
+      "nome": "Mão Fraca",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5/nível",
+      "adamar": "nao",
+      "resumo": "Penalidade na mão inábil.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 150
+      }
+    },
+    {
+      "id": "nanismo",
+      "nome": "Nanismo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-15",
+      "adamar": "livre",
+      "resumo": "Estatura bem abaixo do normal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 19
+      }
+    },
+    {
+      "id": "no-limite",
+      "nome": "No Limite",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-15*",
+      "adamar": "livre",
+      "resumo": "Busca o risco extremo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 151
+      }
+    },
+    {
+      "id": "noturno",
+      "nome": "Noturno",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "-20",
+      "adamar": "nao",
+      "resumo": "Só consegue ficar ativo à noite.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 151
+      }
+    },
+    {
+      "id": "nt-baixo",
+      "nome": "NT Baixo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5/nível",
+      "adamar": "livre",
+      "resumo": "Vem de um povo com menos tecnologia: tribos isoladas, geleiras.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 22
+      }
+    },
+    {
+      "id": "nao-iconografico",
+      "nome": "Não-Iconográfico",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "nao",
+      "resumo": "Não entende símbolos e imagens.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 151
+      }
+    },
+    {
+      "id": "oblivio",
+      "nome": "Oblívio",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Entende o que as pessoas sentem, mas não por que agem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 151
+      }
+    },
+    {
+      "id": "obsessao",
+      "nome": "Obsessão",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5 ou -10*",
+      "adamar": "livre",
+      "resumo": "Fixado num objetivo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 151
+      }
+    },
+    {
+      "id": "obsessoes-peculiaridade",
+      "nome": "Obsessões (peculiaridade)",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Um objetivo pequeno: juntar dinheiro para um barco, uma terra.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "orgulhoso",
+      "nome": "Orgulhoso",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Status e sucesso importam muito para ele.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "pacifismo",
+      "nome": "Pacifismo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Se opõe à violência em algum grau.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 151
+      }
+    },
+    {
+      "id": "padrao-de-tempo-reduzido",
+      "nome": "Padrão de Tempo Reduzido",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "-100",
+      "adamar": "nao",
+      "resumo": "Age muito mais devagar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 152
+      }
+    },
+    {
+      "id": "paralisia-frente-ao-combate",
+      "nome": "Paralisia Frente ao Combate",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-15",
+      "adamar": "livre",
+      "resumo": "Congela no perigo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 152
+      }
+    },
+    {
+      "id": "paranoia",
+      "nome": "Paranóia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Desconfia de todos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 152
+      }
+    },
+    {
+      "id": "pernas-tortas",
+      "nome": "Pernas Tortas",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Pernas tortas que atrapalham saltos e rendem risadas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 165
+      }
+    },
+    {
+      "id": "pesadelos",
+      "nome": "Pesadelos",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5*",
+      "adamar": "livre",
+      "resumo": "Sonhos terríveis toda noite.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 152
+      }
+    },
+    {
+      "id": "piromania",
+      "nome": "Piromania",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5*",
+      "adamar": "livre",
+      "resumo": "Adora fogo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 152
+      }
+    },
+    {
+      "id": "pobreza-riqueza-baixa",
+      "nome": "Pobreza (Riqueza baixa)",
+      "categoria": "desvantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Riqueza abaixo da média: de pobre a falido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 25
+      }
+    },
+    {
+      "id": "pouca-empatia",
+      "nome": "Pouca Empatia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-20",
+      "adamar": "livre",
+      "resumo": "Não entende emoções alheias.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 153
+      }
+    },
+    {
+      "id": "preferencias",
+      "nome": "Preferências",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Gosta de algo e procura sempre que pode.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "preguica",
+      "nome": "Preguiça",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Evita esforço.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 153
+      }
+    },
+    {
+      "id": "problemas-na-coluna",
+      "nome": "Problemas na Coluna",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-15 ou -25",
+      "adamar": "livre",
+      "resumo": "Coluna ruim: dores e limitações.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 153
+      }
+    },
+    {
+      "id": "recuperacao-lenta",
+      "nome": "Recuperação Lenta",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5/nível",
+      "adamar": "livre",
+      "resumo": "Se cura devagar. Combina com a Materialidade.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 153
+      }
+    },
+    {
+      "id": "refeicao-demorada",
+      "nome": "Refeição Demorada",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "-10",
+      "adamar": "nao",
+      "resumo": "Passa horas comendo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 153
+      }
+    },
+    {
+      "id": "reprogramavel",
+      "nome": "Reprogramável",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "-10",
+      "adamar": "nao",
+      "resumo": "Pode ser programado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 153
+      }
+    },
+    {
+      "id": "repugnancia",
+      "nome": "Repugnância",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "sobrenatural"
+      ],
+      "custo": "-5 a -15",
+      "adamar": "nao",
+      "resumo": "Reação física a uma substância.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 153
+      }
+    },
+    {
+      "id": "reputacao-ruim",
+      "nome": "Reputação ruim",
+      "categoria": "desvantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Fama ruim num grupo ou região.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 26
+      }
+    },
+    {
+      "id": "ressacas-terriveis",
+      "nome": "Ressacas Terríveis",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Ressacas longas e pesadas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 165
+      }
+    },
+    {
+      "id": "sadismo",
+      "nome": "Sadismo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-15*",
+      "adamar": "livre",
+      "resumo": "Gosta de crueldade.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 154
+      }
+    },
+    {
+      "id": "sangue-frio",
+      "nome": "Sangue Frio",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5 ou -10",
+      "adamar": "nao",
+      "resumo": "Fica lento no frio como um réptil.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 154
+      }
+    },
+    {
+      "id": "sanguinolencia",
+      "nome": "Sanguinolência",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10*",
+      "adamar": "livre",
+      "resumo": "Quer ver os inimigos mortos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 154
+      }
+    },
+    {
+      "id": "segredo",
+      "nome": "Segredo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "-5 a -30",
+      "adamar": "livre",
+      "resumo": "Esconde algo que arruinaria sua vida.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 155
+      }
+    },
+    {
+      "id": "sem-imaginacao",
+      "nome": "Sem Imaginação",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Pouca criatividade.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 155
+      }
+    },
+    {
+      "id": "sem-nocao-de-profundidade",
+      "nome": "Sem Noção de Profundidade",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-15",
+      "adamar": "livre",
+      "resumo": "Não calcula distâncias.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 155
+      }
+    },
+    {
+      "id": "sem-pernas",
+      "nome": "Sem Pernas",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "A raça não tem pernas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 155
+      }
+    },
+    {
+      "id": "sem-recuperacao",
+      "nome": "Sem Recuperação",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "-20 ou -30",
+      "adamar": "nao",
+      "resumo": "Não se cura naturalmente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 156
+      }
+    },
+    {
+      "id": "sem-um-dedo",
+      "nome": "Sem Um Dedo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-2 ou -5",
+      "adamar": "livre",
+      "resumo": "Falta um dedo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 156
+      }
+    },
+    {
+      "id": "semiereto",
+      "nome": "Semiereto",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "-5",
+      "adamar": "nao",
+      "resumo": "Postura meio curvada, como um macaco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 156
+      }
+    },
+    {
+      "id": "senso-do-dever",
+      "nome": "Senso do Dever",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-2 a -20",
+      "adamar": "livre",
+      "resumo": "Dever com amigos, família, povo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 156
+      }
+    },
+    {
+      "id": "simpatico",
+      "nome": "Simpático",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Prefere agir em grupo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "solitario",
+      "nome": "Solitário",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5*",
+      "adamar": "livre",
+      "resumo": "Precisa ficar sozinho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 157
+      }
+    },
+    {
+      "id": "sonambulismo",
+      "nome": "Sonambulismo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5*",
+      "adamar": "livre",
+      "resumo": "Anda dormindo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 157
+      }
+    },
+    {
+      "id": "sonhador",
+      "nome": "Sonhador",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Pensa em como fazer melhor em vez de fazer.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "sono-complementar",
+      "nome": "Sono Complementar",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-2/nível",
+      "adamar": "livre",
+      "resumo": "Precisa dormir mais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 157
+      }
+    },
+    {
+      "id": "sono-leve",
+      "nome": "Sono Leve",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Acorda com qualquer barulho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 157
+      }
+    },
+    {
+      "id": "sonolento",
+      "nome": "Sonolento",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Dorme muito mais que um humano: característica racial.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 157
+      }
+    },
+    {
+      "id": "status-baixo",
+      "nome": "Status baixo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "-5/nível",
+      "adamar": "livre",
+      "resumo": "Posição baixa na sociedade: servo, pária.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 28
+      }
+    },
+    {
+      "id": "supersensitivo",
+      "nome": "Supersensitivo",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "-15",
+      "adamar": "narrador",
+      "resumo": "Ouve pensamentos ao redor sem querer.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 157
+      }
+    },
+    {
+      "id": "suporte-de-vida-ampliado",
+      "nome": "Suporte de Vida Ampliado",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Precisa de condições especiais para viver.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 157
+      }
+    },
+    {
+      "id": "surdez",
+      "nome": "Surdez",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-20",
+      "adamar": "livre",
+      "resumo": "Não ouve.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 158
+      }
+    },
+    {
+      "id": "susceptibilidade-a-magia",
+      "nome": "Susceptibilidade à Magia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "-3/nível",
+      "adamar": "narrador",
+      "resumo": "A magia o afeta mais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 158
+      }
+    },
+    {
+      "id": "suscetivel",
+      "nome": "Suscetível",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Mais sensível a doenças, venenos ou frio.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 158
+      }
+    },
+    {
+      "id": "teimosia",
+      "nome": "Teimosia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Sempre quer do seu jeito.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 158
+      }
+    },
+    {
+      "id": "temor",
+      "nome": "Temor",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-2/nível",
+      "adamar": "livre",
+      "resumo": "Vive apreensivo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 158
+      }
+    },
+    {
+      "id": "tetraplegico",
+      "nome": "Tetraplégico",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-80",
+      "adamar": "nao",
+      "resumo": "Não se move.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 158
+      }
+    },
+    {
+      "id": "timidez",
+      "nome": "Timidez",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5 a -20",
+      "adamar": "livre",
+      "resumo": "Desconfortável com estranhos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 159
+      }
+    },
+    {
+      "id": "trapaceiro",
+      "nome": "Trapaceiro",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-15",
+      "adamar": "livre",
+      "resumo": "Precisa da emoção de enganar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 159
+      }
+    },
+    {
+      "id": "veracidade",
+      "nome": "Veracidade",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5*",
+      "adamar": "livre",
+      "resumo": "Não consegue mentir.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 159
+      }
+    },
+    {
+      "id": "viciado-em-trabalho",
+      "nome": "Viciado em Trabalho",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5",
+      "adamar": "livre",
+      "resumo": "Não para de trabalhar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 159
+      }
+    },
+    {
+      "id": "visao-restrita",
+      "nome": "Visão Restrita",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-15 ou -30",
+      "adamar": "livre",
+      "resumo": "Campo de visão estreito.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 160
+      }
+    },
+    {
+      "id": "voto",
+      "nome": "Voto",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5 a -15",
+      "adamar": "livre",
+      "resumo": "Fez um voto: pobreza, silêncio, castidade.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 160
+      }
+    },
+    {
+      "id": "voto-peculiaridade",
+      "nome": "Voto (peculiaridade)",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Uma promessa pequena: não beber, doar parte do que ganha ao templo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 165
+      }
+    },
+    {
+      "id": "voz-irritante",
+      "nome": "Voz Irritante",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-10",
+      "adamar": "livre",
+      "resumo": "Voz desagradável.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 161
+      }
+    },
+    {
+      "id": "vozes-fantasmagoricas",
+      "nome": "Vozes Fantasmagóricas",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-5 a -15",
+      "adamar": "narrador",
+      "resumo": "Ouve vozes que ninguém mais ouve.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 161
+      }
+    },
+    {
+      "id": "vulnerabilidade",
+      "nome": "Vulnerabilidade",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Sofre dano extra de algo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 161
+      }
+    },
+    {
+      "id": "vicio",
+      "nome": "Vício",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Dependência de uma droga ou erva.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 159
+      }
+    },
+    {
+      "id": "vicio-menor",
+      "nome": "Vício Menor",
+      "categoria": "peculiaridade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-1",
+      "adamar": "livre",
+      "resumo": "Um hábito que não chega a ser vício: cachimbo, vinho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 164
+      }
+    },
+    {
+      "id": "xenofilia",
+      "nome": "Xenofilia",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "-10*",
+      "adamar": "livre",
+      "resumo": "Atração por estrangeiros e forasteiros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 161
+      }
+    },
+    {
+      "id": "zarolho",
+      "nome": "Zarolho",
+      "categoria": "desvantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "-15",
+      "adamar": "livre",
+      "resumo": "Perdeu um olho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 162
+      }
+    },
+    {
+      "id": "unico",
+      "nome": "Único",
+      "categoria": "desvantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "-5",
+      "adamar": "nao",
+      "resumo": "Só existe numa linha do tempo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 159
+      }
+    }
+  ]
+}

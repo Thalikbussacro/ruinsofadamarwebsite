@@ -1,0 +1,4058 @@
+{
+  "descricao": "Perícias do GURPS 4e para Adamar. Resumos escritos para o site; regras completas no livro.",
+  "adamar": {
+    "livre": "cabe em Adamar sem conversa",
+    "narrador": "só com combinação prévia com o narrador",
+    "nao": "não existe em Adamar"
+  },
+  "itens": [
+    {
+      "id": "acrobacia",
+      "nome": "Acrobacia",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-6",
+      "grupo": "corpo",
+      "adamar": "livre",
+      "resumo": "Cambalhotas, equilíbrio e quedas controladas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 174
+      }
+    },
+    {
+      "id": "adaga-de-esgrima",
+      "nome": "Adaga de Esgrima",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Arma de mão inábil para aparar: main-gauche.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "adestramento-de-animais",
+      "nome": "Adestramento de Animais",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Treinar e acalmar animais de um tipo escolhido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 174
+      }
+    },
+    {
+      "id": "adivinhacao",
+      "nome": "Adivinhação",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5, Lábia-3 ou Ocultismo-3",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Ler sinais, cartas ou entranhas; funciona como leitura de pessoas, e só é real se o narrador quiser.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 174
+      }
+    },
+    {
+      "id": "administracao",
+      "nome": "Administração",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Comércio-3",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Tocar uma organização: contas de um feudo, uma guilda, um quartel.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 175
+      }
+    },
+    {
+      "id": "alquimia",
+      "nome": "Alquimia",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Preparar elixires mágicos. Em Adamar, só com o narrador: é magia rara.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 175
+      }
+    },
+    {
+      "id": "alvenaria",
+      "nome": "Alvenaria",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-4",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Erguer e reparar construções de pedra e tijolo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 175
+      }
+    },
+    {
+      "id": "antropologia",
+      "nome": "Antropologia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-6, Paleontologia (Paleoantropologia)-2 ou Sociologia-3",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Entender costumes e origem de povos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "analise-da-informacao",
+      "nome": "Análise da Informação",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6 ou Estratégia (qualquer)-6",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Juntar pistas e relatos para entender planos de um inimigo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 175
+      }
+    },
+    {
+      "id": "analise-de-mercado",
+      "nome": "Análise de Mercado",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-6, Comércio-4 ou Economia-5",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Prever preços, oferta e procura.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "aparar-armas-de-projetil",
+      "nome": "Aparar Armas de Projétil",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Desviar flechas e virotes no ar com a arma. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "arco",
+      "nome": "Arco",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-5",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Atirar com arcos curtos, longos e compostos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "arma-de-arremesso",
+      "nome": "Arma de Arremesso",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "DX-4, entre outras",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Arremessar um tipo de arma: faca, lança, machado, dardo, arpão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "armadilhas",
+      "nome": "Armadilhas",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Arrombamento-3",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Montar, achar e desarmar armadilhas, de caça ou de masmorra.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "armas-de-feixe",
+      "nome": "Armas de Feixe",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "DX-4",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Armas de energia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 178
+      }
+    },
+    {
+      "id": "armas-de-fogo",
+      "nome": "Armas de Fogo",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "DX-4",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Armas de fogo. Pólvora não é difundida em Adamar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 178
+      }
+    },
+    {
+      "id": "armas-de-haste",
+      "nome": "Armas de Haste",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Alabardas, glaives e armas de haste longas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "armeiro",
+      "nome": "Armeiro",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-5 ou Engenharia (mesma)-4",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Fabricar e consertar armas ou armaduras de um tipo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 179
+      }
+    },
+    {
+      "id": "arqueiro-zen",
+      "nome": "Arqueiro Zen",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Acertar alvos quase impossíveis pela concentração. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 179
+      }
+    },
+    {
+      "id": "arqueologia",
+      "nome": "Arqueologia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-6",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Estudar ruínas e objetos antigos. Muito útil em Roestia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 179
+      }
+    },
+    {
+      "id": "arquitetura",
+      "nome": "Arquitetura",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Engenharia (Civil)-4",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Projetar construções e ler plantas, achar passagens escondidas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 179
+      }
+    },
+    {
+      "id": "arremedo",
+      "nome": "Arremedo",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-6, entre outras",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Imitar vozes e sons de animais ou pessoas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 179
+      }
+    },
+    {
+      "id": "arremessador-de-lanca",
+      "nome": "Arremessador de Lança",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-5 ou Arma de Arremesso (Lança)-4",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Usar o propulsor (atlatl) para lançar dardos longe.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 180
+      }
+    },
+    {
+      "id": "arremesso",
+      "nome": "Arremesso",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-3 ou Soltar-4",
+      "grupo": "corpo",
+      "adamar": "livre",
+      "resumo": "Atirar pedras, garrafas e objetos que não são armas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 180
+      }
+    },
+    {
+      "id": "arrombamento",
+      "nome": "Arrombamento",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Abrir fechaduras sem a chave.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 180
+      }
+    },
+    {
+      "id": "arte-da-invisibilidade",
+      "nome": "Arte da Invisibilidade",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Não ser notado mesmo à vista. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 181
+      }
+    },
+    {
+      "id": "arte-do-arremesso",
+      "nome": "Arte do Arremesso",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Arremessar qualquer coisa como arma, com precisão fora do comum. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 181
+      }
+    },
+    {
+      "id": "arte-erotica",
+      "nome": "Arte Erótica",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-5 ou Acrobacia-5",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Habilidade na intimidade.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 181
+      }
+    },
+    {
+      "id": "artilharia",
+      "nome": "Artilharia",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-5",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Operar máquinas de cerco: catapultas, trabucos, balistas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 181
+      }
+    },
+    {
+      "id": "artista",
+      "nome": "Artista",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-6",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Criar arte de um tipo: pintura, escultura, desenho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 182
+      }
+    },
+    {
+      "id": "assuntos-atuais",
+      "nome": "Assuntos Atuais",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-4 ou Pesquisa-4",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Estar por dentro das notícias e boatos de uma região.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 182
+      }
+    },
+    {
+      "id": "astronomia",
+      "nome": "Astronomia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Estudar os astros e o céu. A Lua Negra interessa a todo astrônomo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 183
+      }
+    },
+    {
+      "id": "ataque-inato",
+      "nome": "Ataque Inato",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "DX-4",
+      "grupo": "misterio",
+      "adamar": "nao",
+      "resumo": "Usar ataques de habilidades sobre-humanas. Humanos comuns não têm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 183
+      }
+    },
+    {
+      "id": "atuacao",
+      "nome": "Atuação",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5, Dissimulação-2 ou Oratória-2",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Representar um papel, no palco ou numa mentira.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 183
+      }
+    },
+    {
+      "id": "auto-hipnose",
+      "nome": "Auto-Hipnose",
+      "atributo": "Vontade",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Meditação-4",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Entrar em transe para ignorar dor ou fadiga. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 183
+      }
+    },
+    {
+      "id": "bastao",
+      "nome": "Bastão",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Bastão longo usado com as duas mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "besta",
+      "nome": "Besta",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-4",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Atirar com bestas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 184
+      }
+    },
+    {
+      "id": "bioengenharia",
+      "nome": "Bioengenharia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "Biologia-5",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Manipular seres vivos com tecnologia avançada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 184
+      }
+    },
+    {
+      "id": "biologia",
+      "nome": "Biologia",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-6 ou Naturalista-6",
+      "grupo": "saber",
+      "adamar": "nao",
+      "resumo": "Ciência da vida moderna. Em Adamar, use Naturalista.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 184
+      }
+    },
+    {
+      "id": "bloqueio-mental",
+      "nome": "Bloqueio Mental",
+      "atributo": "Vontade",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Vontade-5 ou Meditação-5",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Fechar a mente contra leitura e controle. Útil contra forasteiros, com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 184
+      }
+    },
+    {
+      "id": "boleadeira",
+      "nome": "Boleadeira",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Lançar boleadeiras para enroscar pernas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 184
+      }
+    },
+    {
+      "id": "boxe",
+      "nome": "Boxe",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Luta com socos treinada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 184
+      }
+    },
+    {
+      "id": "boemia",
+      "nome": "Boêmia",
+      "atributo": "HT",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "HT-4",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Beber, farrear e se enturmar em tavernas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 184
+      }
+    },
+    {
+      "id": "briga",
+      "nome": "Briga",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Luta sem treino formal: socos, chutes, cabeçadas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 185
+      }
+    },
+    {
+      "id": "caminhada",
+      "nome": "Caminhada",
+      "atributo": "HT",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "HT-5",
+      "grupo": "corpo",
+      "adamar": "livre",
+      "resumo": "Andar longas distâncias sem se esgotar. Essencial para viagens.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 185
+      }
+    },
+    {
+      "id": "camuflagem",
+      "nome": "Camuflagem",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-4 ou Sobrevivência-2",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Esconder a si ou um acampamento usando o terreno.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 185
+      }
+    },
+    {
+      "id": "canhoneiro",
+      "nome": "Canhoneiro",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "DX-4",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Disparar armas pesadas de pólvora ou energia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 185
+      }
+    },
+    {
+      "id": "canto",
+      "nome": "Canto",
+      "atributo": "HT",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "HT-4",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Cantar bem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 186
+      }
+    },
+    {
+      "id": "capa",
+      "nome": "Capa",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-5, Escudo (qualquer)-4 ou Rede-4",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Lutar com uma capa: enganar, aparar, enroscar a arma do outro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 186
+      }
+    },
+    {
+      "id": "captacao",
+      "nome": "Captação",
+      "atributo": "Per",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Percepção-4",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Ouvir e decifrar conversas no barulho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 186
+      }
+    },
+    {
+      "id": "carate",
+      "nome": "Caratê",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Luta com golpes treinados. Cabe em culturas de ilhas distantes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 186
+      }
+    },
+    {
+      "id": "carpintaria",
+      "nome": "Carpintaria",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-4",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Trabalhar madeira: móveis, barcos pequenos, estruturas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 186
+      }
+    },
+    {
+      "id": "carregamento",
+      "nome": "Carregamento",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Adestramento de Animais (Equinos)-5",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Carregar animais de carga direito, sem ferir nem perder a carga.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 187
+      }
+    },
+    {
+      "id": "carroceiro",
+      "nome": "Carroceiro",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-5, Adestramento de Animais (mesma)-4 ou Cavalgar (mesma)-2",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Conduzir carroças e carruagens puxadas por animais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 187
+      }
+    },
+    {
+      "id": "cartografia",
+      "nome": "Cartografia",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5, Geografia (qualquer)-4, Matemática (Topografia)-2",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Desenhar e ler mapas. Metade de Roestia nunca foi mapeada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 187
+      }
+    },
+    {
+      "id": "cavalgar",
+      "nome": "Cavalgar",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "DX-5 ou Adestramento de Animais (mesma)-3",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Montar e controlar um tipo de animal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 187
+      }
+    },
+    {
+      "id": "chicote",
+      "nome": "Chicote",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Chicote como arma.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "ciclismo",
+      "nome": "Ciclismo",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-4 ou Condução (Motocicleta)-4",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Andar de bicicleta.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 188
+      }
+    },
+    {
+      "id": "cirurgia",
+      "nome": "Cirurgia",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "Fisiologia-8, Primeiros Socorros-12, Medicina-15 ou Veterinária-5",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Operar ferimentos graves. Em NT3 é arriscado e doloroso.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 188
+      }
+    },
+    {
+      "id": "ciencia-estranha",
+      "nome": "Ciência Estranha",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Inventar coisas impossíveis.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 188
+      }
+    },
+    {
+      "id": "composicao-musical",
+      "nome": "Composição Musical",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Instrumento Musical-2 ou Poesia-2 para canções",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Compor músicas e canções.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 188
+      }
+    },
+    {
+      "id": "comercio",
+      "nome": "Comércio",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5, Análise de Mercado-4 ou Finanças-6",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Comprar, vender e pechinchar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 188
+      }
+    },
+    {
+      "id": "conducao",
+      "nome": "Condução",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "DX-5 ou IQ-5",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Dirigir veículos motorizados. Carroças usam Carroceiro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 189
+      }
+    },
+    {
+      "id": "conhecimento-das-ervas",
+      "nome": "Conhecimento das Ervas",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Preparar poções mágicas com ervas. Remédios comuns usam Farmácia (Herbalismo).",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 189
+      }
+    },
+    {
+      "id": "conhecimento-do-terreno",
+      "nome": "Conhecimento do Terreno",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-4 ou Geografia (Local)-3",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Conhecer bem uma área: atalhos, quem manda, onde fica cada coisa.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 189
+      }
+    },
+    {
+      "id": "conhecimento-oculto",
+      "nome": "Conhecimento Oculto",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Saber secreto sobre um assunto sobrenatural específico. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 191
+      }
+    },
+    {
+      "id": "connoisseur",
+      "nome": "Connoisseur",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-5 e outros",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Avaliar a qualidade de algo: vinho, arte, armas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 191
+      }
+    },
+    {
+      "id": "conserto-de-equipamento-eletronico",
+      "nome": "Conserto de Equipamento Eletrônico",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5, Engenharia (Eletrônica)-3 ou Operação de Aparelhos Eletrônicos (mesma)-3",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Consertar eletrônicos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 192
+      }
+    },
+    {
+      "id": "contabilidade",
+      "nome": "Contabilidade",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-6, Comércio-5, Finanças-4 ou Matemática (Estatística)-5",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Manter livros de contas e achar fraudes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 192
+      }
+    },
+    {
+      "id": "contrabando",
+      "nome": "Contrabando",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Esconder mercadorias de guardas e fiscais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 192
+      }
+    },
+    {
+      "id": "controle-da-respiracao",
+      "nome": "Controle da Respiração",
+      "atributo": "HT",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "corpo",
+      "adamar": "narrador",
+      "resumo": "Prender o fôlego e recuperar o fôlego além do normal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 192
+      }
+    },
+    {
+      "id": "controle-das-funcoes-involuntarias",
+      "nome": "Controle das Funções Involuntárias",
+      "atributo": "HT",
+      "dificuldade": "Muito Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Controlar batimentos e sangramento pela mente. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 193
+      }
+    },
+    {
+      "id": "controle-de-carregamento",
+      "nome": "Controle de Carregamento",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Carregar cargas em veículos modernos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 193
+      }
+    },
+    {
+      "id": "corrida",
+      "nome": "Corrida",
+      "atributo": "HT",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "HT-5",
+      "grupo": "corpo",
+      "adamar": "livre",
+      "resumo": "Correr mais rápido e por mais tempo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 193
+      }
+    },
+    {
+      "id": "costura",
+      "nome": "Costura",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "DX-4",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Costurar e consertar roupas e tecidos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 193
+      }
+    },
+    {
+      "id": "criminologia",
+      "nome": "Criminologia",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Psicologia-4",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Investigação criminal moderna.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 193
+      }
+    },
+    {
+      "id": "criptografia",
+      "nome": "Criptografia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "Matemática (Criptologia)-5",
+      "grupo": "saber",
+      "adamar": "narrador",
+      "resumo": "Criar e quebrar códigos. Rara em NT3.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 193
+      }
+    },
+    {
+      "id": "cuidados-com-a-casa",
+      "nome": "Cuidados com a Casa",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-4",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Manter uma casa: limpar, remendar, cozinhar o básico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 194
+      }
+    },
+    {
+      "id": "culinaria",
+      "nome": "Culinária",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Cuidados com a Casa-5",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Cozinhar bem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 194
+      }
+    },
+    {
+      "id": "cultivo",
+      "nome": "Cultivo",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5, Biologia-5 ou Jardinagem-3",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Plantar e colher; trabalho de camponês.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 194
+      }
+    },
+    {
+      "id": "danca",
+      "nome": "Dança",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-5",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Dançar bem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 194
+      }
+    },
+    {
+      "id": "desenho-de-simbolos",
+      "nome": "Desenho de Símbolos",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "Especial",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Traçar símbolos mágicos. Só com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 194
+      }
+    },
+    {
+      "id": "deslumbrar",
+      "nome": "Deslumbrar",
+      "atributo": "Vontade",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Grupo de perícias de bardo (Cativar, Despertar Emoção, Persuadir, Sugerir) que movem plateias. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 194
+      }
+    },
+    {
+      "id": "desviar",
+      "nome": "Desviar",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Usar o chi para desequilibrar quem ataca. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 195
+      }
+    },
+    {
+      "id": "deteccao-de-mentiras",
+      "nome": "Detecção de Mentiras",
+      "atributo": "Per",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Percepção-6, Linguagem Corporal-4 ou Psicologia-4",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Perceber quando alguém mente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 195
+      }
+    },
+    {
+      "id": "diagnose",
+      "nome": "Diagnose",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6, Medicina-4, Primeiros Socorros-8 ou Veterinária-5",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Descobrir que doença ou ferimento alguém tem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 196
+      }
+    },
+    {
+      "id": "digitacao",
+      "nome": "Digitação",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-4, entre outras",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Digitar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 196
+      }
+    },
+    {
+      "id": "diplomacia",
+      "nome": "Diplomacia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-6 ou Política-6",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Negociar e acalmar conflitos sem ofender.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 196
+      }
+    },
+    {
+      "id": "disfarce",
+      "nome": "Disfarce",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-5 ou Maquiagem-3",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Mudar a aparência para se passar por outro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 196
+      }
+    },
+    {
+      "id": "dissimulacao",
+      "nome": "Dissimulação",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5, Atuação-2 ou Oratória-5",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Mentir e enganar de forma convincente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 196
+      }
+    },
+    {
+      "id": "economia",
+      "nome": "Economia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-6, Análise de Mercado-5, Comércio-6 ou Finanças-3",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Entender como funcionam riqueza, comércio e impostos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 196
+      }
+    },
+    {
+      "id": "eletricista",
+      "nome": "Eletricista",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Engenharia (Elétrica)-3",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Instalações elétricas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 197
+      }
+    },
+    {
+      "id": "encenacao-de-combate",
+      "nome": "Encenação de Combate",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Arte ou Esporte de Combate-2, Atuação-3 ou uma perícia de combate verdadeira-3",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Simular lutas convincentes para plateia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 197
+      }
+    },
+    {
+      "id": "engenharia",
+      "nome": "Engenharia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "Especial",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Projetar obras de um tipo: fortificações, pontes, máquinas de cerco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 197
+      }
+    },
+    {
+      "id": "engolidor-de-fogo",
+      "nome": "Engolidor de Fogo",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Truque de artista de rua com fogo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 197
+      }
+    },
+    {
+      "id": "entrada-forcada",
+      "nome": "Entrada Forçada",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Arrombar portas e janelas na força e com técnica.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 197
+      }
+    },
+    {
+      "id": "escalada",
+      "nome": "Escalada",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-5",
+      "grupo": "corpo",
+      "adamar": "livre",
+      "resumo": "Subir muros, árvores e encostas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 198
+      }
+    },
+    {
+      "id": "escrita",
+      "nome": "Escrita",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Escrever com clareza e estilo. Pressupõe saber ler.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 198
+      }
+    },
+    {
+      "id": "escudo",
+      "nome": "Escudo",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "DX-4",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Bloquear e atacar com escudo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 198
+      }
+    },
+    {
+      "id": "espada-de-duas-maos",
+      "nome": "Espada de Duas Mãos",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Montantes e espadas grandes de duas mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "espada-de-lamina-larga",
+      "nome": "Espada de Lâmina Larga",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Espadas de uma mão e porretes equilibrados.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "espadas-curtas",
+      "nome": "Espadas Curtas",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Espadas curtas e porretes curtos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "esportes",
+      "nome": "Esportes",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-5, entre outras",
+      "grupo": "corpo",
+      "adamar": "livre",
+      "resumo": "Jogar bem um esporte específico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 198
+      }
+    },
+    {
+      "id": "esqui",
+      "nome": "Esqui",
+      "atributo": "HT",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "HT-6",
+      "grupo": "corpo",
+      "adamar": "livre",
+      "resumo": "Andar de esquis. Comum em terras geladas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 198
+      }
+    },
+    {
+      "id": "estrategia",
+      "nome": "Estratégia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-6, Análise da Informação-6 ou Tática-6",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Planejar campanhas militares.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 198
+      }
+    },
+    {
+      "id": "exorcismo",
+      "nome": "Exorcismo",
+      "atributo": "Vontade",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Magia Ritualística ou Ritual Religioso-3",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Expulsar espíritos ou forasteiros de um corpo ou lugar. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 198
+      }
+    },
+    {
+      "id": "explosivos",
+      "nome": "Explosivos",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-5, entre outros",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Explosivos modernos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 199
+      }
+    },
+    {
+      "id": "faca",
+      "nome": "Faca",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Facas e punhais em combate.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "falcoaria",
+      "nome": "Falcoaria",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Adestramento de Animais (Aves de Rapina)-3",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Caçar com aves de rapina.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 200
+      }
+    },
+    {
+      "id": "falsificacao",
+      "nome": "Falsificação",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6 ou Falsificação de Dinheiro-2",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Falsificar documentos, selos e cartas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 200
+      }
+    },
+    {
+      "id": "falsificacao-de-dinheiro",
+      "nome": "Falsificação de Dinheiro",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6 ou Falsificação-2",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Falsificar moedas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 200
+      }
+    },
+    {
+      "id": "farmacia",
+      "nome": "Farmácia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6, entre outras",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Preparar remédios. Em Adamar, a especialização é Herbalismo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 200
+      }
+    },
+    {
+      "id": "ferreiro",
+      "nome": "Ferreiro",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-5, entre outras",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Trabalhar um metal: ferro, cobre, estanho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 200
+      }
+    },
+    {
+      "id": "filosofia",
+      "nome": "Filosofia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-6",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Conhecer uma escola de pensamento.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 200
+      }
+    },
+    {
+      "id": "financas",
+      "nome": "Finanças",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Economia-3, Comércio-6 ou Contabilidade-4",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Gerir dinheiro, empréstimos e investimentos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 200
+      }
+    },
+    {
+      "id": "fisiologia",
+      "nome": "Fisiologia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-6, Cirurgia-5, Diagnose-5 ou Medicina-5",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Conhecer o corpo de uma espécie por dentro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 201
+      }
+    },
+    {
+      "id": "forca-mental",
+      "nome": "Força Mental",
+      "atributo": "Vontade",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Resistir a ataques contra a mente. Útil contra forasteiros, com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 201
+      }
+    },
+    {
+      "id": "fotografia",
+      "nome": "Fotografia",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Operação de Aparelhos Eletrônicos (Mídia)-5",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Fotografar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 201
+      }
+    },
+    {
+      "id": "fuga",
+      "nome": "Fuga",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-6",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Escapar de cordas, correntes e algemas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 201
+      }
+    },
+    {
+      "id": "funda",
+      "nome": "Funda",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-6",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Atirar pedras com funda.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 201
+      }
+    },
+    {
+      "id": "furtividade",
+      "nome": "Furtividade",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-5 ou IQ-5",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Mover-se sem ser visto nem ouvido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 201
+      }
+    },
+    {
+      "id": "fisica",
+      "nome": "Física",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Física científica.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 201
+      }
+    },
+    {
+      "id": "garrote",
+      "nome": "Garrote",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-4",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Estrangular com um garrote.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 201
+      }
+    },
+    {
+      "id": "geografia",
+      "nome": "Geografia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6 e outras",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Conhecer regiões, climas e povos de uma área.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 201
+      }
+    },
+    {
+      "id": "geologia",
+      "nome": "Geologia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-6, Geografia (Física)-4 ou Prospecção-5",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Entender rochas, cavernas e o subsolo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 202
+      }
+    },
+    {
+      "id": "golpe-debilitante",
+      "nome": "Golpe Debilitante",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Golpear pontos que paralisam. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 202
+      }
+    },
+    {
+      "id": "golpe-poderoso",
+      "nome": "Golpe Poderoso",
+      "atributo": "Vontade",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Concentrar força num golpe descomunal. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 202
+      }
+    },
+    {
+      "id": "habilidade-com-nos",
+      "nome": "Habilidade com Nós",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-4, Escalada-4",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Dar e desfazer nós de todo tipo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 202
+      }
+    },
+    {
+      "id": "hacking-de-computador",
+      "nome": "Hacking de Computador",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Invadir computadores.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 202
+      }
+    },
+    {
+      "id": "heraldica",
+      "nome": "Heráldica",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Trato Social (Alta Sociedade)-3",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Reconhecer brasões e linhagens nobres.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 202
+      }
+    },
+    {
+      "id": "hipnotismo",
+      "nome": "Hipnotismo",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Induzir transe em outra pessoa.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 202
+      }
+    },
+    {
+      "id": "historia",
+      "nome": "História",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-6",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Conhecer o passado de um povo ou período.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 203
+      }
+    },
+    {
+      "id": "influencia-musical",
+      "nome": "Influência Musical",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Mexer com emoções pela música, de forma sobrenatural. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 203
+      }
+    },
+    {
+      "id": "instrumentos-musicais",
+      "nome": "Instrumentos Musicais",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "Especial",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Tocar um instrumento.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 203
+      }
+    },
+    {
+      "id": "interrogatorio",
+      "nome": "Interrogatório",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5, Intimidação-3 ou Psicologia-4",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Arrancar informações de prisioneiros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 203
+      }
+    },
+    {
+      "id": "intimidacao",
+      "nome": "Intimidação",
+      "atributo": "Vontade",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Vontade-5 ou Dissimulação-3",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Assustar alguém para que obedeça.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 204
+      }
+    },
+    {
+      "id": "jardinagem",
+      "nome": "Jardinagem",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-4 ou Cultivo-3",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Cuidar de hortas e jardins.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 204
+      }
+    },
+    {
+      "id": "jitte-sai",
+      "nome": "Jitte/Sai",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Armas de aparar e prender de culturas de ilhas distantes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "joalheiro",
+      "nome": "Joalheiro",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6, Ferreiro (Chumbo e Estanho)-4 ou Ferreiro (Cobre)-4",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Trabalhar joias, pedras e metais preciosos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 204
+      }
+    },
+    {
+      "id": "jogos-de-azar",
+      "nome": "Jogos de Azar",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Matemática (Estatística)-5",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Jogar dados e cartas apostando, e perceber trapaça.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 204
+      }
+    },
+    {
+      "id": "jogos-de-entretenimento",
+      "nome": "Jogos de Entretenimento",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-4",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Jogar bem um jogo de tabuleiro ou de salão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 204
+      }
+    },
+    {
+      "id": "judo",
+      "nome": "Judô",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Luta com arremessos e imobilizações treinados.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 205
+      }
+    },
+    {
+      "id": "jurisprudencia",
+      "nome": "Jurisprudência",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-6",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Conhecer as leis de um reino.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 205
+      }
+    },
+    {
+      "id": "kiai",
+      "nome": "Kiai",
+      "atributo": "HT",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Um grito que atordoa ou dá força. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 205
+      }
+    },
+    {
+      "id": "kusari",
+      "nome": "Kusari",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Corrente pesada com peso nas pontas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "lanca",
+      "nome": "Lança",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Lanças de uma ou duas mãos em combate.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "lanca-de-justa",
+      "nome": "Lança de Justa",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-5 ou Lança-3",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Carregar a cavalo com lança de justa.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 206
+      }
+    },
+    {
+      "id": "lavagem-cerebral",
+      "nome": "Lavagem Cerebral",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "Especial",
+      "grupo": "social",
+      "adamar": "narrador",
+      "resumo": "Reprogramar a mente de alguém ao longo de dias.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 206
+      }
+    },
+    {
+      "id": "laco",
+      "nome": "Laço",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Laçar pessoas e animais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 206
+      }
+    },
+    {
+      "id": "leitura-dinamica",
+      "nome": "Leitura Dinâmica",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Ler muito rápido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 206
+      }
+    },
+    {
+      "id": "leitura-labial",
+      "nome": "Leitura Labial",
+      "atributo": "Per",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Percepção-10",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Entender o que se fala pelos lábios.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 207
+      }
+    },
+    {
+      "id": "levantamento",
+      "nome": "Levantamento",
+      "atributo": "HT",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Levantar pesos acima do normal pela concentração. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 207
+      }
+    },
+    {
+      "id": "lideranca",
+      "nome": "Liderança",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Comandar e manter a moral de um grupo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 207
+      }
+    },
+    {
+      "id": "linguagem-corporal",
+      "nome": "Linguagem Corporal",
+      "atributo": "Per",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Detecção de Mentiras-4 ou Psicologia-4",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Ler intenções pela postura e gestos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 207
+      }
+    },
+    {
+      "id": "linguistica",
+      "nome": "Linguística",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Estudar idiomas e aprender novos mais rápido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 208
+      }
+    },
+    {
+      "id": "literatura",
+      "nome": "Literatura",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-6",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Conhecer obras escritas e seus autores.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 208
+      }
+    },
+    {
+      "id": "luta-greco-romana",
+      "nome": "Luta Greco-Romana",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Agarrar, derrubar e imobilizar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 208
+      }
+    },
+    {
+      "id": "lutar-as-cegas",
+      "nome": "Lutar às Cegas",
+      "atributo": "Per",
+      "dificuldade": "Muito Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Lutar sem enxergar como se enxergasse. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 208
+      }
+    },
+    {
+      "id": "labia",
+      "nome": "Lábia",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Dissimulação-5",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Enrolar e convencer rapidamente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 205
+      }
+    },
+    {
+      "id": "magia-ritualistica",
+      "nome": "Magia Ritualística",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "Ritual Religioso (mesma)-6",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Magia por rituais de uma tradição. Só com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 208
+      }
+    },
+    {
+      "id": "manejo-de-barcos",
+      "nome": "Manejo de Barcos",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-6, entre outras",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Comandar um tipo de embarcação.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 208
+      }
+    },
+    {
+      "id": "mangual",
+      "nome": "Mangual",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Manguais e morning stars de uma mão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "mangual-de-duas-maos",
+      "nome": "Mangual de Duas Mãos",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Manguais grandes de duas mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "manha",
+      "nome": "Manha",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Circular no submundo e achar quem vende o que é proibido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 209
+      }
+    },
+    {
+      "id": "maquiagem",
+      "nome": "Maquiagem",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-4 ou Disfarce-2",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Maquiar para beleza, teatro ou disfarce.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 209
+      }
+    },
+    {
+      "id": "maquinista",
+      "nome": "Maquinista",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Mecânica (qualquer)-5",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Operar máquinas industriais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 209
+      }
+    },
+    {
+      "id": "marinhagem",
+      "nome": "Marinhagem",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-4",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Trabalhar como marinheiro a bordo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 209
+      }
+    },
+    {
+      "id": "matematica",
+      "nome": "Matemática",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-6, entre outros",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Uma área da matemática: agrimensura, estatística.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 210
+      }
+    },
+    {
+      "id": "materiais-perigosos",
+      "nome": "Materiais Perigosos",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-5",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Lidar com materiais tóxicos modernos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 210
+      }
+    },
+    {
+      "id": "maca-machado",
+      "nome": "Maça/Machado",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Machados, maças e martelos de uma mão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "maca-machado-de-duas-maos",
+      "nome": "Maça/Machado de Duas Mãos",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Machados e malhos grandes de duas mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "mecanica",
+      "nome": "Mecânica",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5, Engenharia (mesma)-4 ou Maquinista-5",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Consertar mecanismos: rodas d'água, moinhos, bestas de cerco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 210
+      }
+    },
+    {
+      "id": "medicina",
+      "nome": "Medicina",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-7, Primeiros Socorros-11 ou Veterinária-5",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Tratar doenças e ferimentos. Em Adamar a cura é lenta e o médico importa.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 211
+      }
+    },
+    {
+      "id": "medicina-alternativa",
+      "nome": "Medicina Alternativa",
+      "atributo": "Per",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Percepção-6",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Curar pelas tradições populares de um povo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 211
+      }
+    },
+    {
+      "id": "meditacao",
+      "nome": "Meditação",
+      "atributo": "Vontade",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Vontade-6 ou Auto-Hipnose-4",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Acalmar a mente para resistir a pressões. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 211
+      }
+    },
+    {
+      "id": "mendicancia",
+      "nome": "Mendicância",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-4, Lábia-2 ou Oratória-3",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Pedir esmolas com sucesso.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 211
+      }
+    },
+    {
+      "id": "mergulho",
+      "nome": "Mergulho",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Traje de Mergulho-2",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Mergulho com equipamento.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 211
+      }
+    },
+    {
+      "id": "metalurgia",
+      "nome": "Metalurgia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "Ferreiro (qualquer)-8, Química-5 ou Joalheiro-8",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Entender ligas e propriedades dos metais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 211
+      }
+    },
+    {
+      "id": "meteorologia",
+      "nome": "Meteorologia",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-5",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Prever o tempo de um tipo de clima. Pode salvar uma viagem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 211
+      }
+    },
+    {
+      "id": "montaria",
+      "nome": "Montaria",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-5",
+      "grupo": "natureza",
+      "adamar": "nao",
+      "resumo": "Perícia do animal montado, não do cavaleiro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 212
+      }
+    },
+    {
+      "id": "mimica-pantomima",
+      "nome": "Mímica/Pantomima",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-4",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Comunicar-se por gestos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 212
+      }
+    },
+    {
+      "id": "natacao",
+      "nome": "Natação",
+      "atributo": "HT",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "HT-4",
+      "grupo": "corpo",
+      "adamar": "livre",
+      "resumo": "Nadar e não se afogar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 212
+      }
+    },
+    {
+      "id": "naturalista",
+      "nome": "Naturalista",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-6 ou Biologia-3",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Conhecer plantas, animais e o mundo natural.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 212
+      }
+    },
+    {
+      "id": "navegacao",
+      "nome": "Navegação",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "Especial",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Achar o caminho em terra ou mar pelos astros e marcos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 212
+      }
+    },
+    {
+      "id": "observador-avancado",
+      "nome": "Observador Avançado",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5, Artilharia (qualquer)-5, entre outras",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Guiar fogo de artilharia moderna.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 213
+      }
+    },
+    {
+      "id": "observacao",
+      "nome": "Observação",
+      "atributo": "Per",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Percepção-5 ou Perseguição-5",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Vigiar um lugar ou pessoa sem ser percebido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 212
+      }
+    },
+    {
+      "id": "ocultamento",
+      "nome": "Ocultamento",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Prestidigitação-3",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Esconder objetos em si ou num lugar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 213
+      }
+    },
+    {
+      "id": "ocultismo",
+      "nome": "Ocultismo",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5",
+      "grupo": "misterio",
+      "adamar": "livre",
+      "resumo": "Saber o que se diz sobre magia, fantasmas e forasteiros. Muito disso é falso.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 213
+      }
+    },
+    {
+      "id": "operacao-de-aparelhos-eletronicos",
+      "nome": "Operação de Aparelhos Eletrônicos",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5, Conserto de",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Operar aparelhos eletrônicos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 214
+      }
+    },
+    {
+      "id": "operacao-de-computadores",
+      "nome": "Operação de Computadores",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-4",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Usar computadores.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 214
+      }
+    },
+    {
+      "id": "oratoria",
+      "nome": "Oratória",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5, Atuação-3, Dissimulação-5 ou Política-5",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Falar em público e convencer multidões.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 214
+      }
+    },
+    {
+      "id": "paleontologia",
+      "nome": "Paleontologia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "Biologia-4, entre outros",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Estudo científico de fósseis.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 215
+      }
+    },
+    {
+      "id": "paraquedismo",
+      "nome": "Paraquedismo",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "DX-4",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Saltar de paraquedas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 215
+      }
+    },
+    {
+      "id": "passos-leves",
+      "nome": "Passos Leves",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Andar sem deixar rastros nem romper superfícies frágeis. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 215
+      }
+    },
+    {
+      "id": "patinacao",
+      "nome": "Patinação",
+      "atributo": "HT",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "HT-6",
+      "grupo": "corpo",
+      "adamar": "livre",
+      "resumo": "Patinar no gelo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 215
+      }
+    },
+    {
+      "id": "pedagogia",
+      "nome": "Pedagogia",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Ensinar outras pessoas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 215
+      }
+    },
+    {
+      "id": "percepcao-do-corpo",
+      "nome": "Percepção do Corpo",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-6 ou Acrobacia-3",
+      "grupo": "corpo",
+      "adamar": "narrador",
+      "resumo": "Reorientar-se depois de quedas, giros ou teletransporte.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 215
+      }
+    },
+    {
+      "id": "performance-em-grupo",
+      "nome": "Performance em Grupo",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-5, entre outras",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Coordenar apresentações coletivas: coro, dança, trupe.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 215
+      }
+    },
+    {
+      "id": "perseguicao",
+      "nome": "Perseguição",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5, Furtividade-4 (a pé) ou Observação-5",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Seguir alguém numa cidade sem ser notado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 217
+      }
+    },
+    {
+      "id": "pericia-abrangente",
+      "nome": "Perícia Abrangente",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "Nenhum",
+      "grupo": "saber",
+      "adamar": "narrador",
+      "resumo": "Conhecimento amplo e raso de uma grande área. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 215
+      }
+    },
+    {
+      "id": "pericia-forense",
+      "nome": "Perícia Forense",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6 ou Criminologia-4",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Análise forense de laboratório.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 216
+      }
+    },
+    {
+      "id": "pericia-profissional",
+      "nome": "Perícia Profissional",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Boemia-3",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Ofício sem perícia própria: tanoeiro, barqueiro, taverneiro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 216
+      }
+    },
+    {
+      "id": "pescaria",
+      "nome": "Pescaria",
+      "atributo": "Per",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Percepção-4",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Pescar com anzol, rede ou arpão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 217
+      }
+    },
+    {
+      "id": "pesquisa",
+      "nome": "Pesquisa",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Escrita-3",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Achar informação em arquivos e bibliotecas. Raras em Adamar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 217
+      }
+    },
+    {
+      "id": "pilotagem",
+      "nome": "Pilotagem",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Pilotar aeronaves.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 217
+      }
+    },
+    {
+      "id": "poesia",
+      "nome": "Poesia",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Escrita-5",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Compor versos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 218
+      }
+    },
+    {
+      "id": "politica",
+      "nome": "Política",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Diplomacia-5",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Entender e jogar o jogo do poder numa corte ou cidade.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 218
+      }
+    },
+    {
+      "id": "pontos-de-pressao",
+      "nome": "Pontos de Pressão",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Golpear pontos vitais para incapacitar. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 218
+      }
+    },
+    {
+      "id": "pontos-secretos",
+      "nome": "Pontos Secretos",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Golpear pontos secretos para efeitos extraordinários. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 218
+      }
+    },
+    {
+      "id": "postura-imovel",
+      "nome": "Postura Imóvel",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Ficar impossível de derrubar. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 219
+      }
+    },
+    {
+      "id": "prestidigitacao",
+      "nome": "Prestidigitação",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Surrupiar-5",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Truques de mão: sumir com moedas, trocar objetos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 219
+      }
+    },
+    {
+      "id": "primeiros-socorros",
+      "nome": "Primeiros Socorros",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-4, Medicina, Medicina Alternativa ou Veterinária-4",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Estancar sangue e cuidar de ferimentos na hora.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 219
+      }
+    },
+    {
+      "id": "programacao-de-computadores",
+      "nome": "Programação de Computadores",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Programar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 219
+      }
+    },
+    {
+      "id": "projetor-de-liquidos",
+      "nome": "Projetor de Líquidos",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "DX-4",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Lança-chamas e similares.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 219
+      }
+    },
+    {
+      "id": "propaganda",
+      "nome": "Propaganda",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5, Comércio-5 ou Psicologia-4",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Espalhar ideias e boatos para mudar a opinião do povo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 220
+      }
+    },
+    {
+      "id": "prospeccao",
+      "nome": "Prospecção",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5 ou Geologia (qualquer)-4",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Achar minérios e veios de metal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 220
+      }
+    },
+    {
+      "id": "psicologia",
+      "nome": "Psicologia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-6 ou Sociologia-4",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Entender o que alguém pensa e sente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 220
+      }
+    },
+    {
+      "id": "punga",
+      "nome": "Punga",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-6, Surrupiar-5 ou Prestidigitação-4",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Bater carteiras.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 220
+      }
+    },
+    {
+      "id": "queda-livre",
+      "nome": "Queda Livre",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-5 ou HT-5",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Controlar-se em queda livre de grandes alturas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 220
+      }
+    },
+    {
+      "id": "quimica",
+      "nome": "Química",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6 ou Alquimia-3",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Química científica. Em Adamar, só Alquimia, com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 220
+      }
+    },
+    {
+      "id": "rapieira",
+      "nome": "Rapieira",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Espada longa e fina de estocada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "rastreamento",
+      "nome": "Rastreamento",
+      "atributo": "Per",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Percepção-5 ou Naturalista-5",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Seguir pegadas e rastros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 220
+      }
+    },
+    {
+      "id": "rede",
+      "nome": "Rede",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Capa-5",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Lutar com rede.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 221
+      }
+    },
+    {
+      "id": "remo-vela",
+      "nome": "Remo/Vela",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "DX-5 ou IQ-5",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Remar ou velejar barcos pequenos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 221
+      }
+    },
+    {
+      "id": "revistar",
+      "nome": "Revistar",
+      "atributo": "Per",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Percepção-5 ou Criminologia-5",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Revistar pessoas e lugares atrás de algo escondido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 221
+      }
+    },
+    {
+      "id": "ritual-religioso",
+      "nome": "Ritual Religioso",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "Magia Ritualística (mesma)-6 ou Teologia (mesma)-4",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Conduzir os ritos de uma fé. Não é milagre, é liturgia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 221
+      }
+    },
+    {
+      "id": "sabre",
+      "nome": "Sabre",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Espada leve de cavalaria.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "sacar-rapido",
+      "nome": "Sacar Rápido",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "Nenhum",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Sacar uma arma ou preparar uma flecha num instante.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 221
+      }
+    },
+    {
+      "id": "salto",
+      "nome": "Salto",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "corpo",
+      "adamar": "livre",
+      "resumo": "Saltar mais longe e mais alto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 222
+      }
+    },
+    {
+      "id": "salto-voador",
+      "nome": "Salto Voador",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Saltos sobre-humanos. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 222
+      }
+    },
+    {
+      "id": "sex-appeal",
+      "nome": "Sex Appeal",
+      "atributo": "HT",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "HT-3",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Atrair e seduzir.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 222
+      }
+    },
+    {
+      "id": "sobrevivencia",
+      "nome": "Sobrevivência",
+      "atributo": "Per",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "Percepção-5 ou Naturalista (mesmo planeta)-3",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Viver da terra num tipo de terreno: água, comida, abrigo. Essencial em Adamar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 222
+      }
+    },
+    {
+      "id": "sobrevivencia-urbana",
+      "nome": "Sobrevivência Urbana",
+      "atributo": "Per",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Percepção-5",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "resumo": "Achar comida, abrigo e caminho numa cidade.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 223
+      }
+    },
+    {
+      "id": "sociologia",
+      "nome": "Sociologia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-6, Antropologia-3 ou Psicologia-4",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Entender como sociedades se organizam.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 223
+      }
+    },
+    {
+      "id": "soldado",
+      "nome": "Soldado",
+      "atributo": "IQ",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-5",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "A vida de soldado: marchar, montar acampamento, cuidar do equipamento.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 223
+      }
+    },
+    {
+      "id": "soltar",
+      "nome": "Soltar",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-3 ou Arremesso-4",
+      "grupo": "corpo",
+      "adamar": "livre",
+      "resumo": "Deixar cair coisas com precisão de cima.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 223
+      }
+    },
+    {
+      "id": "sonhos",
+      "nome": "Sonhos",
+      "atributo": "Vontade",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Vontade-6",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Controlar e lembrar os próprios sonhos. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 223
+      }
+    },
+    {
+      "id": "submarino",
+      "nome": "Submarino",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": true,
+      "predefinido": "IQ-6",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Operar submarinos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 223
+      }
+    },
+    {
+      "id": "sumo",
+      "nome": "Sumo",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Empurrar, derrubar e agarrar com o peso do corpo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 224
+      }
+    },
+    {
+      "id": "surrupiar",
+      "nome": "Surrupiar",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-5, Prestidigitação-4 ou Punga-4",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Pegar objetos à vista sem ser notado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 224
+      }
+    },
+    {
+      "id": "taumatologia",
+      "nome": "Taumatologia",
+      "atributo": "IQ",
+      "dificuldade": "Muito Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-7",
+      "grupo": "misterio",
+      "adamar": "narrador",
+      "resumo": "Teoria da magia arcana. Só existe para quem já viu magia real.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 225
+      }
+    },
+    {
+      "id": "teologia",
+      "nome": "Teologia",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-6 ou Ritual Religioso (mesma)-4",
+      "grupo": "saber",
+      "adamar": "livre",
+      "resumo": "Conhecer as doutrinas de uma fé e seus deuses.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 225
+      }
+    },
+    {
+      "id": "tercado",
+      "nome": "Terçado",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Espadim leve de estocada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "tonfa",
+      "nome": "Tonfa",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": null,
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Bastão com cabo lateral.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 176
+      }
+    },
+    {
+      "id": "trabalhos-em-couro",
+      "nome": "Trabalhos em Couro",
+      "atributo": "DX",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-4",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Trabalhar couro: selas, botas, armaduras leves.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 226
+      }
+    },
+    {
+      "id": "trato-social",
+      "nome": "Trato Social",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": true,
+      "predefinido": "IQ-4, entre outras",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Saber se comportar num meio: nobreza, militares, rua.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 226
+      }
+    },
+    {
+      "id": "tatica",
+      "nome": "Tática",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-6 ou Estratégia (qualquer)-6",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Comandar e posicionar tropas numa luta.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 225
+      }
+    },
+    {
+      "id": "utilizacao-de-traje-especial",
+      "nome": "Utilização de Traje Especial",
+      "atributo": "DX",
+      "dificuldade": "Média",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "DX-5, entre outras",
+      "grupo": "tecnologia",
+      "adamar": "nao",
+      "resumo": "Usar trajes de proteção modernos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 226
+      }
+    },
+    {
+      "id": "veneficio",
+      "nome": "Venefício",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "IQ-6, Farmácia (qualquer)-3, Química-5 ou Medicina-3",
+      "grupo": "ladinagem",
+      "adamar": "livre",
+      "resumo": "Preparar e identificar venenos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 227
+      }
+    },
+    {
+      "id": "ventriloquismo",
+      "nome": "Ventriloquismo",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Nenhum",
+      "grupo": "social",
+      "adamar": "livre",
+      "resumo": "Projetar a voz para parecer vir de outro lugar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 227
+      }
+    },
+    {
+      "id": "veterinaria",
+      "nome": "Veterinária",
+      "atributo": "IQ",
+      "dificuldade": "Difícil",
+      "nt": true,
+      "especializacao": false,
+      "predefinido": "Adestramento de Animais (qualquer)-6, Cirurgia-5 ou Medicina-5",
+      "grupo": "oficio",
+      "adamar": "livre",
+      "resumo": "Tratar animais doentes e feridos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 227
+      }
+    },
+    {
+      "id": "voo",
+      "nome": "Voo",
+      "atributo": "HT",
+      "dificuldade": "Média",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "HT-5",
+      "grupo": "misterio",
+      "adamar": "nao",
+      "resumo": "Voar com asas próprias. Humanos não voam.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 227
+      }
+    },
+    {
+      "id": "zarabatana",
+      "nome": "Zarabatana",
+      "atributo": "DX",
+      "dificuldade": "Difícil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "DX-6",
+      "grupo": "combate",
+      "adamar": "livre",
+      "resumo": "Soprar dardos pela zarabatana.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 227
+      }
+    }
+  ]
+}

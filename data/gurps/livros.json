@@ -1,0 +1,15 @@
+{
+  "itens": [
+    {
+      "id": "modulo-basico",
+      "titulo": "GURPS Módulo Básico: Personagens",
+      "edicao": "4ª edição (Devir, 1ª edição, julho de 2010)",
+      "titulo_original": "GURPS Basic Set: Characters",
+      "isbn": "978-85-7532-172-0",
+      "arquivo": "GURPS 4e - Modulo Basico.pdf",
+      "sha256": "7d56d7c53117e06fe24ccf0157f0c50a02d45abc1113ae602763fa037e58a298",
+      "deslocamento_pdf": 1,
+      "observacao": "Páginas citadas são as do livro impresso; no PDF, página + 1."
+    }
+  ]
+}

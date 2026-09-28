@@ -1,0 +1,3587 @@
+{
+  "descricao": "Vantagens e qualidades do GURPS 4e para Adamar.",
+  "adamar": {
+    "livre": "cabe em Adamar sem conversa",
+    "narrador": "só com combinação prévia com o narrador",
+    "nao": "não existe em Adamar"
+  },
+  "itens": [
+    {
+      "id": "abafador-de-mana",
+      "nome": "Abafador de Mana",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "10/nível",
+      "adamar": "nao",
+      "resumo": "Anula a magia ao redor.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 34
+      }
+    },
+    {
+      "id": "abascanto-resistencia-a-magia",
+      "nome": "Abascanto (Resistência à Magia)",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "2/nível",
+      "adamar": "narrador",
+      "resumo": "Resiste a feitiços, mas também não pode usar magia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 34
+      }
+    },
+    {
+      "id": "abencoado",
+      "nome": "Abençoado",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "10 ou mais",
+      "adamar": "narrador",
+      "resumo": "Um deus fala com o personagem por visões. Magia divina: só com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 35
+      }
+    },
+    {
+      "id": "acessorios",
+      "nome": "Acessórios",
+      "categoria": "qualidade",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "1",
+      "adamar": "nao",
+      "resumo": "Uma ferramenta embutida no corpo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 100
+      }
+    },
+    {
+      "id": "adaptabilidade-cultural",
+      "nome": "Adaptabilidade Cultural",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "10 ou 20",
+      "adamar": "livre",
+      "resumo": "Circula à vontade entre culturas diferentes da sua.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 35
+      }
+    },
+    {
+      "id": "adaptacao-ao-terreno",
+      "nome": "Adaptação ao Terreno",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "0 a 5",
+      "adamar": "livre",
+      "resumo": "Anda sem penalidade num terreno difícil: neve, areia, gelo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 35
+      }
+    },
+    {
+      "id": "aderencia",
+      "nome": "Aderência",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "20",
+      "adamar": "nao",
+      "resumo": "Anda por paredes e tetos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 35
+      }
+    },
+    {
+      "id": "aliados",
+      "nome": "Aliados",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Companheiros de confiança que acompanham o personagem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 35
+      }
+    },
+    {
+      "id": "ambidestria",
+      "nome": "Ambidestria",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "5",
+      "adamar": "livre",
+      "resumo": "Usa as duas mãos igualmente bem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 38
+      }
+    },
+    {
+      "id": "ampliador-de-mana",
+      "nome": "Ampliador de Mana",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "50/nível",
+      "adamar": "nao",
+      "resumo": "Aumenta a magia ao redor.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 38
+      }
+    },
+    {
+      "id": "anfibio",
+      "nome": "Anfíbio",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "10",
+      "adamar": "nao",
+      "resumo": "Adaptado a nadar como a um animal aquático.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 39
+      }
+    },
+    {
+      "id": "antecedentes-incomuns",
+      "nome": "Antecedentes Incomuns",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "Variável",
+      "adamar": "narrador",
+      "resumo": "Paga por algo raro no passado do personagem. Combine com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 39
+      }
+    },
+    {
+      "id": "apagado",
+      "nome": "Apagado",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "10",
+      "adamar": "nao",
+      "resumo": "Não existe em registro oficial nenhum. Pensado para cenários modernos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 39
+      }
+    },
+    {
+      "id": "aparencia",
+      "nome": "Aparência",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Beleza ou feiura, do repugnante ao belíssimo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 21
+      }
+    },
+    {
+      "id": "apetrechos",
+      "nome": "Apetrechos",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5/apetrecho",
+      "adamar": "narrador",
+      "resumo": "Sempre tem um item útil à mão. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 39
+      }
+    },
+    {
+      "id": "aptidao-magica",
+      "nome": "Aptidão Mágica",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "5 (nível 0), +10/nível",
+      "adamar": "narrador",
+      "resumo": "O dom da magia. Em Adamar o nível máximo é 0: sentir a magia, não conjurar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 40
+      }
+    },
+    {
+      "id": "arrebatador",
+      "nome": "Arrebatador",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "80",
+      "adamar": "nao",
+      "resumo": "Encanta quem o vê de forma sobrenatural.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 41
+      }
+    },
+    {
+      "id": "ataque-adicional",
+      "nome": "Ataque Adicional",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "25/nível",
+      "adamar": "nao",
+      "resumo": "Ataca mais de uma vez por turno. Sobre-humano.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 42
+      }
+    },
+    {
+      "id": "ataque-constritivo",
+      "nome": "Ataque Constritivo",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "15",
+      "adamar": "nao",
+      "resumo": "Esmaga como uma serpente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 42
+      }
+    },
+    {
+      "id": "ataque-inato",
+      "nome": "Ataque Inato",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Ataque natural ou poder: rajadas, ferrões, sopros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 42
+      }
+    },
+    {
+      "id": "atirador",
+      "nome": "Atirador",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "25",
+      "adamar": "narrador",
+      "resumo": "Atira com precisão cinematográfica.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 43
+      }
+    },
+    {
+      "id": "atribulacao",
+      "nome": "Atribulação",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "10/nível",
+      "adamar": "nao",
+      "resumo": "Ataque que causa efeitos em vez de dano.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 44
+      }
+    },
+    {
+      "id": "audicao-discriminatoria",
+      "nome": "Audição Discriminatória",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "15",
+      "adamar": "nao",
+      "resumo": "Distingue sons com precisão sobre-humana.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 45
+      }
+    },
+    {
+      "id": "audicao-parabolica",
+      "nome": "Audição Parabólica",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "4/nível",
+      "adamar": "nao",
+      "resumo": "Ouve sons muito distantes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 45
+      }
+    },
+    {
+      "id": "audicao-subsonica",
+      "nome": "Audição Subsônica",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "0 ou 5",
+      "adamar": "nao",
+      "resumo": "Ouve sons graves demais para humanos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 45
+      }
+    },
+    {
+      "id": "autotranse",
+      "nome": "Autotranse",
+      "categoria": "qualidade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "1",
+      "adamar": "narrador",
+      "resumo": "Entra em transe à vontade; ajuda a contatar espíritos. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 100
+      }
+    },
+    {
+      "id": "boa-forma",
+      "nome": "Boa Forma",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "5 ou 15",
+      "adamar": "livre",
+      "resumo": "Fôlego e recuperação acima da média.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 45
+      }
+    },
+    {
+      "id": "boca-adicional",
+      "nome": "Boca Adicional",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5/boca",
+      "adamar": "nao",
+      "resumo": "Tem mais de uma boca.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 45
+      }
+    },
+    {
+      "id": "bom-senso",
+      "nome": "Bom Senso",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "10",
+      "adamar": "narrador",
+      "resumo": "O narrador avisa quando uma ideia é má. Combine antes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 45
+      }
+    },
+    {
+      "id": "bracos-adicionais",
+      "nome": "Braços Adicionais",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Tem mais braços.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 45
+      }
+    },
+    {
+      "id": "cabeca-adicional",
+      "nome": "Cabeça Adicional",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "15/cabeça",
+      "adamar": "nao",
+      "resumo": "Tem mais de uma cabeça.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 46
+      }
+    },
+    {
+      "id": "camaleao",
+      "nome": "Camaleão",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5/nível",
+      "adamar": "nao",
+      "resumo": "Muda de cor para se esconder.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 46
+      }
+    },
+    {
+      "id": "camaleao-social",
+      "nome": "Camaleão Social",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5",
+      "adamar": "livre",
+      "resumo": "Sabe tratar gente de qualquer classe sem ofender.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 46
+      }
+    },
+    {
+      "id": "caminhar-no-ar",
+      "nome": "Caminhar no Ar",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "20",
+      "adamar": "nao",
+      "resumo": "Anda sobre o ar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 47
+      }
+    },
+    {
+      "id": "caminhar-sobre-liquidos",
+      "nome": "Caminhar sobre Líquidos",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "15",
+      "adamar": "nao",
+      "resumo": "Anda sobre a água.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 47
+      }
+    },
+    {
+      "id": "canalizacao",
+      "nome": "Canalização",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "10",
+      "adamar": "narrador",
+      "resumo": "Espíritos podem falar pelo seu corpo. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 47
+      }
+    },
+    {
+      "id": "carga-util",
+      "nome": "Carga Útil",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "1/nível",
+      "adamar": "nao",
+      "resumo": "Carrega coisas dentro do corpo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 47
+      }
+    },
+    {
+      "id": "carisma",
+      "nome": "Carisma",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5/nível",
+      "adamar": "livre",
+      "resumo": "Presença natural que atrai e convence.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 47
+      }
+    },
+    {
+      "id": "cibernetica",
+      "nome": "Cibernética",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Implantes tecnológicos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 47
+      }
+    },
+    {
+      "id": "clarisenciencia",
+      "nome": "Clarisenciência",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "50",
+      "adamar": "nao",
+      "resumo": "Vê e ouve à distância pela mente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 47
+      }
+    },
+    {
+      "id": "clericato",
+      "nome": "Clericato",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "5",
+      "adamar": "livre",
+      "resumo": "Sacerdote ordenado de uma fé. Não concede milagres por si.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 48
+      }
+    },
+    {
+      "id": "consumo-reduzido",
+      "nome": "Consumo Reduzido",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "2/nível",
+      "adamar": "nao",
+      "resumo": "Precisa de menos comida e água que um humano.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 48
+      }
+    },
+    {
+      "id": "contatos",
+      "nome": "Contatos",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Conhece alguém que passa informações de um meio.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 48
+      }
+    },
+    {
+      "id": "controle-da-mente",
+      "nome": "Controle da Mente",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "50",
+      "adamar": "nao",
+      "resumo": "Domina a vontade de outros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 49
+      }
+    },
+    {
+      "id": "controle-do-metabolismo",
+      "nome": "Controle do Metabolismo",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5/nível",
+      "adamar": "narrador",
+      "resumo": "Controla batimentos e respiração. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 50
+      }
+    },
+    {
+      "id": "controle-termico",
+      "nome": "Controle Térmico",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5/nível",
+      "adamar": "nao",
+      "resumo": "Muda a temperatura ao redor.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 50
+      }
+    },
+    {
+      "id": "crescimento",
+      "nome": "Crescimento",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "10/nível",
+      "adamar": "nao",
+      "resumo": "Aumenta de tamanho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 51
+      }
+    },
+    {
+      "id": "cura",
+      "nome": "Cura",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "30",
+      "adamar": "narrador",
+      "resumo": "Cura pelo toque. Magia divina ou arcana: só com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 51
+      }
+    },
+    {
+      "id": "calculos-instantaneos",
+      "nome": "Cálculos Instantâneos",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "2 ou 5",
+      "adamar": "livre",
+      "resumo": "Faz contas de cabeça num instante.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 46
+      }
+    },
+    {
+      "id": "defesas-ampliadas",
+      "nome": "Defesas Ampliadas",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "Variável",
+      "adamar": "narrador",
+      "resumo": "Esquiva, bloqueio ou aparar melhores que o normal. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 52
+      }
+    },
+    {
+      "id": "dentes",
+      "nome": "Dentes",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "0, 1 ou 2",
+      "adamar": "nao",
+      "resumo": "Presas afiadas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 52
+      }
+    },
+    {
+      "id": "desenvolvedor",
+      "nome": "Desenvolvedor",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "25 ou 50",
+      "adamar": "narrador",
+      "resumo": "Inventor genial. Em Adamar, nada além da Idade Média.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 52
+      }
+    },
+    {
+      "id": "deslocamento-ampliado",
+      "nome": "Deslocamento Ampliado",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "20/nível",
+      "adamar": "nao",
+      "resumo": "Velocidade sobre-humana.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 52
+      }
+    },
+    {
+      "id": "destemor",
+      "nome": "Destemor",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "2/nível",
+      "adamar": "livre",
+      "resumo": "Difícil de assustar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 53
+      }
+    },
+    {
+      "id": "destino",
+      "nome": "Destino",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "Variável",
+      "adamar": "narrador",
+      "resumo": "Um destino marcado, bom ou ruim. O narrador decide qual.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 53
+      }
+    },
+    {
+      "id": "destreza-manual-elevada",
+      "nome": "Destreza Manual Elevada",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "5/nível",
+      "adamar": "livre",
+      "resumo": "Mãos habilidosas para trabalhos finos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 53
+      }
+    },
+    {
+      "id": "detectar",
+      "nome": "Detectar",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "Variável",
+      "adamar": "narrador",
+      "resumo": "Sente algo específico: magia, metal, forasteiros. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 53
+      }
+    },
+    {
+      "id": "dificil-de-subjugar",
+      "nome": "Difícil de Subjugar",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "2/nível",
+      "adamar": "livre",
+      "resumo": "Difícil de nocautear.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 54
+      }
+    },
+    {
+      "id": "digestao-universal",
+      "nome": "Digestão Universal",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5",
+      "adamar": "nao",
+      "resumo": "Come qualquer coisa orgânica.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 54
+      }
+    },
+    {
+      "id": "dobra",
+      "nome": "Dobra",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "100",
+      "adamar": "nao",
+      "resumo": "Teleporte.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 54
+      }
+    },
+    {
+      "id": "dominacao",
+      "nome": "Dominação",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "20",
+      "adamar": "nao",
+      "resumo": "Transforma vítimas em servos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 55
+      }
+    },
+    {
+      "id": "dorminhoco-qualidade",
+      "nome": "Dorminhoco (qualidade)",
+      "categoria": "qualidade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "1",
+      "adamar": "livre",
+      "resumo": "Dorme em qualquer lugar e com qualquer barulho. Útil em viagem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 101
+      }
+    },
+    {
+      "id": "duplicacao",
+      "nome": "Duplicação",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "35/cópia",
+      "adamar": "nao",
+      "resumo": "Cria cópias de si.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 56
+      }
+    },
+    {
+      "id": "durabilidade-sobrenatural",
+      "nome": "Durabilidade Sobrenatural",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "150",
+      "adamar": "nao",
+      "resumo": "Só morre de um jeito específico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 56
+      }
+    },
+    {
+      "id": "duro-de-matar",
+      "nome": "Duro de Matar",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "2/nível",
+      "adamar": "livre",
+      "resumo": "Resiste a morrer mesmo muito ferido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 56
+      }
+    },
+    {
+      "id": "dx-bracal",
+      "nome": "DX Braçal",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "12 ou 16 por +1",
+      "adamar": "nao",
+      "resumo": "Braços mais ágeis que o corpo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 57
+      }
+    },
+    {
+      "id": "elasticidade",
+      "nome": "Elasticidade",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "6/nível",
+      "adamar": "nao",
+      "resumo": "Estica o corpo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 57
+      }
+    },
+    {
+      "id": "elo-mental",
+      "nome": "Elo Mental",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Ligação telepática com alguém.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 57
+      }
+    },
+    {
+      "id": "empatia",
+      "nome": "Empatia",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5 ou 15",
+      "adamar": "livre",
+      "resumo": "Percebe o que os outros sentem e quando mentem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 57
+      }
+    },
+    {
+      "id": "empatia-com-animais",
+      "nome": "Empatia com Animais",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5",
+      "adamar": "livre",
+      "resumo": "Entende animais e se dá bem com eles.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 57
+      }
+    },
+    {
+      "id": "empatia-com-espiritos",
+      "nome": "Empatia com Espíritos",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "10",
+      "adamar": "narrador",
+      "resumo": "Sente e entende espíritos. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 57
+      }
+    },
+    {
+      "id": "empatia-com-plantas",
+      "nome": "Empatia com Plantas",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5",
+      "adamar": "livre",
+      "resumo": "Sabe o que uma planta precisa.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 58
+      }
+    },
+    {
+      "id": "encolhimento",
+      "nome": "Encolhimento",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5/nível",
+      "adamar": "nao",
+      "resumo": "Diminui de tamanho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 58
+      }
+    },
+    {
+      "id": "equilibrio-perfeito",
+      "nome": "Equilíbrio Perfeito",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "15",
+      "adamar": "livre",
+      "resumo": "Nunca perde o equilíbrio.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 58
+      }
+    },
+    {
+      "id": "equipamento-caracteristico",
+      "nome": "Equipamento Característico",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Um item próprio e marcante: a espada do avô, um cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 58
+      }
+    },
+    {
+      "id": "escavacao",
+      "nome": "Escavação",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "30 + 5/ponto",
+      "adamar": "nao",
+      "resumo": "Cava túneis como um animal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 58
+      }
+    },
+    {
+      "id": "escorregadio",
+      "nome": "Escorregadio",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "2/nível",
+      "adamar": "nao",
+      "resumo": "Difícil de agarrar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 59
+      }
+    },
+    {
+      "id": "escudo-mental",
+      "nome": "Escudo Mental",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "4/nível",
+      "adamar": "narrador",
+      "resumo": "Proteção contra leitura e controle da mente. Útil contra forasteiros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 59
+      }
+    },
+    {
+      "id": "espinhos",
+      "nome": "Espinhos",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "1 ou 3",
+      "adamar": "nao",
+      "resumo": "Espinhos pelo corpo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 59
+      }
+    },
+    {
+      "id": "estabilidade-no-emprego",
+      "nome": "Estabilidade no Emprego",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "5",
+      "adamar": "livre",
+      "resumo": "Emprego garantido, difícil de perder.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 59
+      }
+    },
+    {
+      "id": "estilo",
+      "nome": "Estilo",
+      "categoria": "qualidade",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "1",
+      "adamar": "livre",
+      "resumo": "Um jeito marcante de se portar ou vestir que nunca se desfaz.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 101
+      }
+    },
+    {
+      "id": "estatica-psiquica",
+      "nome": "Estática Psíquica",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "30",
+      "adamar": "nao",
+      "resumo": "Anula poderes psíquicos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 59
+      }
+    },
+    {
+      "id": "expectativa-de-vida-ampliada",
+      "nome": "Expectativa de Vida Ampliada",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "2/nível",
+      "adamar": "nao",
+      "resumo": "Vive mais que um humano.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 59
+      }
+    },
+    {
+      "id": "experiencia-g",
+      "nome": "Experiência-G",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "1 a 10",
+      "adamar": "nao",
+      "resumo": "Acostumado a gravidades diferentes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 59
+      }
+    },
+    {
+      "id": "facilidade-para-idiomas",
+      "nome": "Facilidade para Idiomas",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "10",
+      "adamar": "livre",
+      "resumo": "Aprende línguas com facilidade.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 60
+      }
+    },
+    {
+      "id": "fala-subaquatica",
+      "nome": "Fala Subaquática",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5",
+      "adamar": "nao",
+      "resumo": "Fala debaixo d'água.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 60
+      }
+    },
+    {
+      "id": "fala-subsonica",
+      "nome": "Fala Subsônica",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "0 a 10",
+      "adamar": "nao",
+      "resumo": "Fala em sons graves demais para humanos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 60
+      }
+    },
+    {
+      "id": "fala-ultrassonica",
+      "nome": "Fala Ultrassônica",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "0 ou 10",
+      "adamar": "nao",
+      "resumo": "Fala em sons agudos demais para humanos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 60
+      }
+    },
+    {
+      "id": "falar-com-animais",
+      "nome": "Falar com Animais",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "25",
+      "adamar": "narrador",
+      "resumo": "Conversa com animais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 60
+      }
+    },
+    {
+      "id": "falar-com-plantas",
+      "nome": "Falar com Plantas",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "15",
+      "adamar": "nao",
+      "resumo": "Conversa com plantas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 60
+      }
+    },
+    {
+      "id": "familiaridade-cultural",
+      "nome": "Familiaridade Cultural",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "1 ou 2/cultura",
+      "adamar": "livre",
+      "resumo": "Conhecer os costumes de outra cultura. Em Adamar: reinos, povos distantes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 23
+      }
+    },
+    {
+      "id": "favor",
+      "nome": "Favor",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Alguém lhe deve um favor.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 60
+      }
+    },
+    {
+      "id": "fleuma",
+      "nome": "Fleuma",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "15",
+      "adamar": "livre",
+      "resumo": "Nada o surpreende nem apavora.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 61
+      }
+    },
+    {
+      "id": "flexibilidade",
+      "nome": "Flexibilidade",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "5 ou 15",
+      "adamar": "livre",
+      "resumo": "Corpo flexível: escapa de amarras e se espreme.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 61
+      }
+    },
+    {
+      "id": "forma-de-sombras",
+      "nome": "Forma de Sombras",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "50",
+      "adamar": "nao",
+      "resumo": "Vira sombra.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 61
+      }
+    },
+    {
+      "id": "fe-verdadeira",
+      "nome": "Fé Verdadeira",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "15",
+      "adamar": "narrador",
+      "resumo": "Fé tão forte que afasta o mal. Magia divina: com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 60
+      }
+    },
+    {
+      "id": "garras",
+      "nome": "Garras",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Garras naturais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 61
+      }
+    },
+    {
+      "id": "golpeadores",
+      "nome": "Golpeadores",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5 a 8",
+      "adamar": "nao",
+      "resumo": "Parte do corpo que serve de arma.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 62
+      }
+    },
+    {
+      "id": "grupo-de-contato",
+      "nome": "Grupo de Contato",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Uma rede de pessoas que passam informação.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 62
+      }
+    },
+    {
+      "id": "habilidades-modulares",
+      "nome": "Habilidades Modulares",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Reserva de pontos para habilidades que mudam.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 63
+      }
+    },
+    {
+      "id": "hermafromorfo",
+      "nome": "Hermafromorfo",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5",
+      "adamar": "nao",
+      "resumo": "Muda de sexo à vontade.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 63
+      }
+    },
+    {
+      "id": "hierarquia",
+      "nome": "Hierarquia",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "5/nível",
+      "adamar": "livre",
+      "resumo": "Posto numa hierarquia: militar, religiosa, de guilda.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 29
+      }
+    },
+    {
+      "id": "hipoalgia-alto-limiar-de-dor",
+      "nome": "Hipoalgia (Alto Limiar de Dor)",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "10",
+      "adamar": "livre",
+      "resumo": "Sente menos dor que o normal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 63
+      }
+    },
+    {
+      "id": "idade-imutavel",
+      "nome": "Idade Imutável",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "15",
+      "adamar": "nao",
+      "resumo": "Nunca envelhece.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 63
+      }
+    },
+    {
+      "id": "identidade-alternativa",
+      "nome": "Identidade Alternativa",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "5 ou 15/identidade",
+      "adamar": "narrador",
+      "resumo": "Outra identidade reconhecida. Rara num mundo sem registros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 63
+      }
+    },
+    {
+      "id": "idiomas",
+      "nome": "Idiomas",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Falar e escrever outras línguas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 23
+      }
+    },
+    {
+      "id": "iluminado",
+      "nome": "Iluminado",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "15",
+      "adamar": "nao",
+      "resumo": "Percebe conspirações cósmicas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 64
+      }
+    },
+    {
+      "id": "impossivel-de-matar",
+      "nome": "Impossível de Matar",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "50 a 150",
+      "adamar": "nao",
+      "resumo": "Não pode ser morto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 64
+      }
+    },
+    {
+      "id": "imunidade-legal",
+      "nome": "Imunidade Legal",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "5 a 20",
+      "adamar": "livre",
+      "resumo": "Isento de certas leis: embaixador, sacerdote, nobre.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 65
+      }
+    },
+    {
+      "id": "indomavel",
+      "nome": "Indomável",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "15",
+      "adamar": "livre",
+      "resumo": "Impossível de seduzir ou manipular.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 65
+      }
+    },
+    {
+      "id": "infravisao",
+      "nome": "Infravisão",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "0 a 10",
+      "adamar": "nao",
+      "resumo": "Vê calor.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 65
+      }
+    },
+    {
+      "id": "insubstancialidade",
+      "nome": "Insubstancialidade",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "80",
+      "adamar": "nao",
+      "resumo": "Atravessa paredes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 65
+      }
+    },
+    {
+      "id": "interposicao",
+      "nome": "Interposição",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Atravessa entre dimensões.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 66
+      }
+    },
+    {
+      "id": "intuicao",
+      "nome": "Intuição",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "15",
+      "adamar": "narrador",
+      "resumo": "Acerta palpites com frequência. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 67
+      }
+    },
+    {
+      "id": "investidura-de-poder",
+      "nome": "Investidura de Poder",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "10/nível",
+      "adamar": "narrador",
+      "resumo": "Um deus concede magia divina. É a magia concedida do cânone: só com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 67
+      }
+    },
+    {
+      "id": "invisibilidade",
+      "nome": "Invisibilidade",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "40",
+      "adamar": "nao",
+      "resumo": "É invisível.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 67
+      }
+    },
+    {
+      "id": "inercia-temporal",
+      "nome": "Inércia Temporal",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "15",
+      "adamar": "nao",
+      "resumo": "Não é afetado por mudanças no tempo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 65
+      }
+    },
+    {
+      "id": "lacrado",
+      "nome": "Lacrado",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "15",
+      "adamar": "nao",
+      "resumo": "Imune a gases e líquidos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 68
+      }
+    },
+    {
+      "id": "lamentavel",
+      "nome": "Lamentável",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "5",
+      "adamar": "livre",
+      "resumo": "Desperta pena e ajuda de estranhos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 22
+      }
+    },
+    {
+      "id": "leitura-da-mente",
+      "nome": "Leitura da Mente",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "30",
+      "adamar": "nao",
+      "resumo": "Lê pensamentos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 68
+      }
+    },
+    {
+      "id": "longevidade",
+      "nome": "Longevidade",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "2",
+      "adamar": "narrador",
+      "resumo": "Vive muito mais que o normal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 69
+      }
+    },
+    {
+      "id": "lingua-ferina",
+      "nome": "Língua Ferina",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5",
+      "adamar": "livre",
+      "resumo": "Respostas afiadas que desestabilizam o adversário.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 68
+      }
+    },
+    {
+      "id": "membrana-nictitante",
+      "nome": "Membrana Nictitante",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "1/nível",
+      "adamar": "nao",
+      "resumo": "Pálpebra extra de proteção.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 69
+      }
+    },
+    {
+      "id": "memoria-eidetica",
+      "nome": "Memória Eidética",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5 ou 10",
+      "adamar": "livre",
+      "resumo": "Memória excepcional ou fotográfica.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 69
+      }
+    },
+    {
+      "id": "memoria-racial",
+      "nome": "Memória Racial",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "15 a 40",
+      "adamar": "nao",
+      "resumo": "Lembra o que os ancestrais viveram.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 69
+      }
+    },
+    {
+      "id": "mente-digital",
+      "nome": "Mente Digital",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5",
+      "adamar": "nao",
+      "resumo": "É um programa de computador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 69
+      }
+    },
+    {
+      "id": "mente-segmentada",
+      "nome": "Mente Segmentada",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "50/nível",
+      "adamar": "nao",
+      "resumo": "Pensa várias coisas ao mesmo tempo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 70
+      }
+    },
+    {
+      "id": "mestre-de-armas",
+      "nome": "Mestre de Armas",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "Variável",
+      "adamar": "narrador",
+      "resumo": "Treino marcial cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 70
+      }
+    },
+    {
+      "id": "metabolismo-impoluto",
+      "nome": "Metabolismo Impoluto",
+      "categoria": "qualidade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "1",
+      "adamar": "narrador",
+      "resumo": "Quase não suja nem cheira; difícil de rastrear pelo faro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 101
+      }
+    },
+    {
+      "id": "metamorfose",
+      "nome": "Metamorfose",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Assume outras formas. Inclui Forma Alternativa e Morfose.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 70
+      }
+    },
+    {
+      "id": "mordida-de-vampiro",
+      "nome": "Mordida de Vampiro",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "30 + 5/PV",
+      "adamar": "nao",
+      "resumo": "Drena sangue.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 72
+      }
+    },
+    {
+      "id": "medium",
+      "nome": "Médium",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "10",
+      "adamar": "narrador",
+      "resumo": "Percebe e fala com espíritos. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 69
+      }
+    },
+    {
+      "id": "neutralizar",
+      "nome": "Neutralizar",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "50",
+      "adamar": "nao",
+      "resumo": "Anula poderes de outros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 73
+      }
+    },
+    {
+      "id": "nocao-do-perigo",
+      "nome": "Noção do Perigo",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "15",
+      "adamar": "narrador",
+      "resumo": "Sente perigo antes que aconteça.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 73
+      }
+    },
+    {
+      "id": "nocao-do-tempo-ampliada",
+      "nome": "Noção do Tempo Ampliada",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "45",
+      "adamar": "nao",
+      "resumo": "Percebe o tempo mais devagar que os outros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 73
+      }
+    },
+    {
+      "id": "nocao-exata-do-tempo",
+      "nome": "Noção Exata do Tempo",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "2 ou 5",
+      "adamar": "livre",
+      "resumo": "Sabe as horas sem relógio.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 74
+      }
+    },
+    {
+      "id": "nt-alto",
+      "nome": "NT Alto",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5/nível",
+      "adamar": "nao",
+      "resumo": "Vem de uma cultura mais avançada. Em Adamar, ninguém passa da Idade Média.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 23
+      }
+    },
+    {
+      "id": "nao-come-nem-bebe",
+      "nome": "Não Come nem Bebe",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "10",
+      "adamar": "nao",
+      "resumo": "Não precisa de comida nem água.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 72
+      }
+    },
+    {
+      "id": "nao-dorme",
+      "nome": "Não Dorme",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "20",
+      "adamar": "nao",
+      "resumo": "Não precisa dormir.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 73
+      }
+    },
+    {
+      "id": "nao-respira",
+      "nome": "Não Respira",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "20",
+      "adamar": "nao",
+      "resumo": "Não precisa de ar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 73
+      }
+    },
+    {
+      "id": "obscurecer",
+      "nome": "Obscurecer",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "2/nível",
+      "adamar": "nao",
+      "resumo": "Cria névoa ou escuridão ao redor.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 74
+      }
+    },
+    {
+      "id": "obstinado",
+      "nome": "Obstinado",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5",
+      "adamar": "livre",
+      "resumo": "Sabe tratar gente difícil e negociar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 74
+      }
+    },
+    {
+      "id": "olfato-discriminatorio",
+      "nome": "Olfato Discriminatório",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "15",
+      "adamar": "nao",
+      "resumo": "Faro de cão de caça.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 74
+      }
+    },
+    {
+      "id": "oraculo",
+      "nome": "Oráculo",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "15",
+      "adamar": "narrador",
+      "resumo": "Lê presságios na natureza. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 74
+      }
+    },
+    {
+      "id": "padrao-de-tempo-alterado",
+      "nome": "Padrão de Tempo Alterado",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "100/nível",
+      "adamar": "nao",
+      "resumo": "Age muito mais rápido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 75
+      }
+    },
+    {
+      "id": "paladar-discriminatorio",
+      "nome": "Paladar Discriminatório",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "10",
+      "adamar": "nao",
+      "resumo": "Paladar sobre-humano.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 75
+      }
+    },
+    {
+      "id": "patronos",
+      "nome": "Patronos",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Alguém poderoso que protege: um senhor, uma ordem, um templo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 75
+      }
+    },
+    {
+      "id": "pelagem",
+      "nome": "Pelagem",
+      "categoria": "qualidade",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "1",
+      "adamar": "nao",
+      "resumo": "Corpo coberto de pelos, como um animal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 101
+      }
+    },
+    {
+      "id": "pele-elastica",
+      "nome": "Pele Elástica",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "20",
+      "adamar": "nao",
+      "resumo": "Muda o rosto e o corpo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 77
+      }
+    },
+    {
+      "id": "pendulear",
+      "nome": "Pendulear",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5",
+      "adamar": "nao",
+      "resumo": "Se desloca pendurado pelos braços.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 77
+      }
+    },
+    {
+      "id": "permissao-de-seguranca",
+      "nome": "Permissão de Segurança",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "narrador",
+      "resumo": "Acesso a segredos de uma organização. Pensado para cenários modernos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 77
+      }
+    },
+    {
+      "id": "pernas-adicionais",
+      "nome": "Pernas Adicionais",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Tem mais pernas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 77
+      }
+    },
+    {
+      "id": "poderes-legais",
+      "nome": "Poderes Legais",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "5, 10 ou 15",
+      "adamar": "livre",
+      "resumo": "Autoridade da lei: guarda, juiz, inquisidor.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 78
+      }
+    },
+    {
+      "id": "por-dentro-da-moda",
+      "nome": "Por Dentro da Moda",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5",
+      "adamar": "livre",
+      "resumo": "Sempre bem-vestido e na moda da sua sociedade.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 21
+      }
+    },
+    {
+      "id": "possessao",
+      "nome": "Possessão",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "100",
+      "adamar": "nao",
+      "resumo": "Toma o corpo de outros. Coisa de forasteiro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 78
+      }
+    },
+    {
+      "id": "pouco-sono",
+      "nome": "Pouco Sono",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "2/nível",
+      "adamar": "livre",
+      "resumo": "Precisa de menos sono.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 80
+      }
+    },
+    {
+      "id": "precognicao",
+      "nome": "Precognição",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "25",
+      "adamar": "nao",
+      "resumo": "Vê o futuro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 80
+      }
+    },
+    {
+      "id": "prender-a-respiracao",
+      "nome": "Prender a Respiração",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "2/nível",
+      "adamar": "livre",
+      "resumo": "Prende o fôlego por muito tempo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 80
+      }
+    },
+    {
+      "id": "proposito-maior",
+      "nome": "Propósito Maior",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "5",
+      "adamar": "narrador",
+      "resumo": "Bônus quando age por uma causa. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 81
+      }
+    },
+    {
+      "id": "psicometria",
+      "nome": "Psicometria",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "20",
+      "adamar": "nao",
+      "resumo": "Sente o passado de objetos e lugares.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 81
+      }
+    },
+    {
+      "id": "pulmoes-com-filtro",
+      "nome": "Pulmões com Filtro",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5",
+      "adamar": "nao",
+      "resumo": "Respira ar sujo sem problema.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 81
+      }
+    },
+    {
+      "id": "queda-de-gato",
+      "nome": "Queda de Gato",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "10",
+      "adamar": "narrador",
+      "resumo": "Cai de pé e se machuca menos. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 81
+      }
+    },
+    {
+      "id": "rastreamento-ampliado",
+      "nome": "Rastreamento Ampliado",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "5/nível",
+      "adamar": "nao",
+      "resumo": "Acompanha muitos alvos ao mesmo tempo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 82
+      }
+    },
+    {
+      "id": "reconhecimento-social",
+      "nome": "Reconhecimento Social",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "5/+1 de reação",
+      "adamar": "livre",
+      "resumo": "Respeito de um grupo: ordem, guilda, clã.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 82
+      }
+    },
+    {
+      "id": "recuperacao-acelerada",
+      "nome": "Recuperação Acelerada",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "5 a 15",
+      "adamar": "narrador",
+      "resumo": "Cura rápido. Pesa contra a Materialidade: com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 82
+      }
+    },
+    {
+      "id": "recuperacao-da-consciencia",
+      "nome": "Recuperação da Consciência",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "10",
+      "adamar": "livre",
+      "resumo": "Recobra a consciência rápido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 82
+      }
+    },
+    {
+      "id": "redespertar",
+      "nome": "Redespertar",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "10",
+      "adamar": "narrador",
+      "resumo": "Relembra perícias de outras vidas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 82
+      }
+    },
+    {
+      "id": "reflexos-em-combate",
+      "nome": "Reflexos em Combate",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "15",
+      "adamar": "livre",
+      "resumo": "Reage rápido e não trava sob surpresa.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 82
+      }
+    },
+    {
+      "id": "regeneracao",
+      "nome": "Regeneração",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Ferimentos se fecham sozinhos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 82
+      }
+    },
+    {
+      "id": "reivindicar-hospitalidade",
+      "nome": "Reivindicar Hospitalidade",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "1 a 10",
+      "adamar": "livre",
+      "resumo": "Pode pedir abrigo e ajuda a membros de um grupo: mercadores, clã, ordem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 83
+      }
+    },
+    {
+      "id": "renda-propria",
+      "nome": "Renda Própria",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "1/nível",
+      "adamar": "livre",
+      "resumo": "Tem uma renda que não depende de trabalhar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 26
+      }
+    },
+    {
+      "id": "reputacao",
+      "nome": "Reputação",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Fama, boa ou má, num grupo ou região.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 26
+      }
+    },
+    {
+      "id": "resistente",
+      "nome": "Resistente",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Resistência a algo comum: doenças, venenos, frio.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 85
+      }
+    },
+    {
+      "id": "resistencia-a-dano",
+      "nome": "Resistência a Dano",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5/nível",
+      "adamar": "nao",
+      "resumo": "Pele que funciona como armadura.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 83
+      }
+    },
+    {
+      "id": "resistencia-ao-vacuo",
+      "nome": "Resistência ao Vácuo",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5",
+      "adamar": "nao",
+      "resumo": "Sobrevive no vácuo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 85
+      }
+    },
+    {
+      "id": "resistencia-a-pressao",
+      "nome": "Resistência à Pressão",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5 a 15",
+      "adamar": "nao",
+      "resumo": "Aguenta pressões extremas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 84
+      }
+    },
+    {
+      "id": "restaurar-membros",
+      "nome": "Restaurar Membros",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "40",
+      "adamar": "nao",
+      "resumo": "Membros perdidos crescem de novo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 85
+      }
+    },
+    {
+      "id": "retencao",
+      "nome": "Retenção",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "2/nível",
+      "adamar": "nao",
+      "resumo": "Ataque que prende o alvo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 85
+      }
+    },
+    {
+      "id": "riqueza",
+      "nome": "Riqueza",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Dinheiro inicial e renda, de falido a muito rico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 25
+      }
+    },
+    {
+      "id": "rosto-sincero",
+      "nome": "Rosto Sincero",
+      "categoria": "qualidade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "1",
+      "adamar": "livre",
+      "resumo": "Parece honesto e inofensivo para quem não o conhece.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 101
+      }
+    },
+    {
+      "id": "saltador",
+      "nome": "Saltador",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "100",
+      "adamar": "nao",
+      "resumo": "Viaja entre mundos. No cânone, só forasteiros atravessam a barreira.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 86
+      }
+    },
+    {
+      "id": "sem-ressaca",
+      "nome": "Sem Ressaca",
+      "categoria": "qualidade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "1",
+      "adamar": "livre",
+      "resumo": "Nunca acorda de ressaca.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 101
+      }
+    },
+    {
+      "id": "senso-de-direcao",
+      "nome": "Senso de Direção",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "5 ou 10",
+      "adamar": "livre",
+      "resumo": "Nunca se perde.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 87
+      }
+    },
+    {
+      "id": "sentido-de-monitoramento",
+      "nome": "Sentido de Monitoramento",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Radar ou sonar natural.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 87
+      }
+    },
+    {
+      "id": "sentido-de-vibracao",
+      "nome": "Sentido de Vibração",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "10",
+      "adamar": "nao",
+      "resumo": "Sente vibrações do chão ou do ar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 88
+      }
+    },
+    {
+      "id": "sentido-protegido",
+      "nome": "Sentido Protegido",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5/sentido",
+      "adamar": "nao",
+      "resumo": "Um sentido que não se ofusca.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 88
+      }
+    },
+    {
+      "id": "sentidos-agucados",
+      "nome": "Sentidos Aguçados",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "2/nível",
+      "adamar": "livre",
+      "resumo": "Visão, audição, olfato, paladar ou tato mais afiados.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 89
+      }
+    },
+    {
+      "id": "serendipidade",
+      "nome": "Serendipidade",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "15/nível",
+      "adamar": "narrador",
+      "resumo": "Coincidências felizes. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 89
+      }
+    },
+    {
+      "id": "silencio",
+      "nome": "Silêncio",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5/nível",
+      "adamar": "narrador",
+      "resumo": "Move-se em silêncio quase absoluto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 89
+      }
+    },
+    {
+      "id": "sonda-mental",
+      "nome": "Sonda Mental",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "20",
+      "adamar": "nao",
+      "resumo": "Vasculha a memória de alguém.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 89
+      }
+    },
+    {
+      "id": "sorte",
+      "nome": "Sorte",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Repete rolagens de vez em quando.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 89
+      }
+    },
+    {
+      "id": "st-bracal",
+      "nome": "ST Braçal",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "3, 5 ou 8 por +1",
+      "adamar": "nao",
+      "resumo": "Braços mais fortes que o corpo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 90
+      }
+    },
+    {
+      "id": "st-de-golpe",
+      "nome": "ST de Golpe",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5 por +1",
+      "adamar": "narrador",
+      "resumo": "Golpeia mais forte do que a ST sugere.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 90
+      }
+    },
+    {
+      "id": "st-de-levantamento",
+      "nome": "ST de Levantamento",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "3 por +1",
+      "adamar": "narrador",
+      "resumo": "Levanta mais peso do que a ST sugere.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 90
+      }
+    },
+    {
+      "id": "status",
+      "nome": "Status",
+      "categoria": "vantagem",
+      "tipo": [
+        "social"
+      ],
+      "custo": "5/nível",
+      "adamar": "livre",
+      "resumo": "Posição na sociedade: servo, plebeu, nobre, rei.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 28
+      }
+    },
+    {
+      "id": "super-escalada",
+      "nome": "Super Escalada",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "3/nível",
+      "adamar": "nao",
+      "resumo": "Escala muito rápido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 90
+      }
+    },
+    {
+      "id": "super-salto",
+      "nome": "Super Salto",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "10/nível",
+      "adamar": "nao",
+      "resumo": "Saltos sobre-humanos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 90
+      }
+    },
+    {
+      "id": "super-sorte",
+      "nome": "Super Sorte",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "100",
+      "adamar": "nao",
+      "resumo": "Sorte absurda.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 90
+      }
+    },
+    {
+      "id": "superaudicao",
+      "nome": "Superaudição",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "0 ou 5",
+      "adamar": "nao",
+      "resumo": "Ouve frequências que humanos não ouvem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 90
+      }
+    },
+    {
+      "id": "talento",
+      "nome": "Talento",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "Variável",
+      "adamar": "livre",
+      "resumo": "Aptidão para um grupo de perícias: Curandeiro, Artífice, Explorador, Companheiro Animal e outros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 90
+      }
+    },
+    {
+      "id": "talento-instintivo",
+      "nome": "Talento Instintivo",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "20/nível",
+      "adamar": "nao",
+      "resumo": "Faz coisas que nunca aprendeu.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 92
+      }
+    },
+    {
+      "id": "telecinese",
+      "nome": "Telecinese",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5/nível",
+      "adamar": "nao",
+      "resumo": "Move objetos com a mente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 92
+      }
+    },
+    {
+      "id": "telecomunicacao",
+      "nome": "Telecomunicação",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Comunica-se à distância: telepatia, rádio.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 93
+      }
+    },
+    {
+      "id": "terror",
+      "nome": "Terror",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "30 + 10/-1",
+      "adamar": "nao",
+      "resumo": "Sua presença apavora.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 94
+      }
+    },
+    {
+      "id": "tolerancia-a-ferimentos",
+      "nome": "Tolerância a Ferimentos",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Corpo sem pontos vitais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 94
+      }
+    },
+    {
+      "id": "tolerancia-ao-alcool",
+      "nome": "Tolerância ao Álcool",
+      "categoria": "qualidade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "1",
+      "adamar": "livre",
+      "resumo": "Aguenta beber muito mais que os outros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 101
+      }
+    },
+    {
+      "id": "tolerancia-a-radiacao",
+      "nome": "Tolerância à Radiação",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "Variável",
+      "adamar": "nao",
+      "resumo": "Resiste a radiação.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 95
+      }
+    },
+    {
+      "id": "tolerancia-a-temperatura",
+      "nome": "Tolerância à Temperatura",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "1/nível",
+      "adamar": "livre",
+      "resumo": "Aguenta mais frio ou calor que o normal.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 96
+      }
+    },
+    {
+      "id": "tolerancia-g-ampliada",
+      "nome": "Tolerância-G Ampliada",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "5 a 25",
+      "adamar": "nao",
+      "resumo": "Aguenta gravidades diferentes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 96
+      }
+    },
+    {
+      "id": "toque-sensivel",
+      "nome": "Toque Sensível",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "10",
+      "adamar": "nao",
+      "resumo": "Tato sobre-humano.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 96
+      }
+    },
+    {
+      "id": "treinado-por-um-mestre",
+      "nome": "Treinado por um Mestre",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "30",
+      "adamar": "narrador",
+      "resumo": "Treino marcial cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 96
+      }
+    },
+    {
+      "id": "titere",
+      "nome": "Títere",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "5 a 10",
+      "adamar": "nao",
+      "resumo": "Aliado que pode ser possuído.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 94
+      }
+    },
+    {
+      "id": "ultravisao",
+      "nome": "Ultravisão",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "0 ou 10",
+      "adamar": "nao",
+      "resumo": "Vê luz ultravioleta.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 96
+      }
+    },
+    {
+      "id": "venturoso",
+      "nome": "Venturoso",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "15",
+      "adamar": "narrador",
+      "resumo": "Acerta o bom momento de agir. Cinematográfico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 96
+      }
+    },
+    {
+      "id": "ver-o-invisivel",
+      "nome": "Ver o Invisível",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "15",
+      "adamar": "narrador",
+      "resumo": "Vê o que é invisível: espíritos, forasteiros. Com o narrador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 96
+      }
+    },
+    {
+      "id": "versatil",
+      "nome": "Versátil",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "5",
+      "adamar": "livre",
+      "resumo": "Criativo, acha soluções diferentes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 96
+      }
+    },
+    {
+      "id": "vida-extra",
+      "nome": "Vida Extra",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "exotica"
+      ],
+      "custo": "25/vida",
+      "adamar": "nao",
+      "resumo": "Volta da morte.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 97
+      }
+    },
+    {
+      "id": "visualizacao",
+      "nome": "Visualização",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental"
+      ],
+      "custo": "10",
+      "adamar": "livre",
+      "resumo": "Imagina a tarefa antes de fazer e se sai melhor.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 98
+      }
+    },
+    {
+      "id": "visao-360-graus",
+      "nome": "Visão 360 Graus",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "25",
+      "adamar": "nao",
+      "resumo": "Vê em todas as direções.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 97
+      }
+    },
+    {
+      "id": "visao-hiperespectral",
+      "nome": "Visão Hiperespectral",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "25",
+      "adamar": "nao",
+      "resumo": "Vê além do espectro visível.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 97
+      }
+    },
+    {
+      "id": "visao-microscopica",
+      "nome": "Visão Microscópica",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5/nível",
+      "adamar": "nao",
+      "resumo": "Vê coisas microscópicas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 97
+      }
+    },
+    {
+      "id": "visao-no-escuro",
+      "nome": "Visão no Escuro",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "25",
+      "adamar": "nao",
+      "resumo": "Vê sem luz nenhuma.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 97
+      }
+    },
+    {
+      "id": "visao-noturna",
+      "nome": "Visão Noturna",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "1/nível",
+      "adamar": "livre",
+      "resumo": "Enxerga melhor à noite.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 97
+      }
+    },
+    {
+      "id": "visao-penetrante",
+      "nome": "Visão Penetrante",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "10/nível",
+      "adamar": "nao",
+      "resumo": "Vê através de paredes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 98
+      }
+    },
+    {
+      "id": "visao-periferica",
+      "nome": "Visão Periférica",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "15",
+      "adamar": "livre",
+      "resumo": "Campo de visão mais largo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 98
+      }
+    },
+    {
+      "id": "visao-telescopica",
+      "nome": "Visão Telescópica",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "5/nível",
+      "adamar": "nao",
+      "resumo": "Vê de muito longe.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 98
+      }
+    },
+    {
+      "id": "voo",
+      "nome": "Voo",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica",
+        "exotica"
+      ],
+      "custo": "40",
+      "adamar": "nao",
+      "resumo": "Voa.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 99
+      }
+    },
+    {
+      "id": "voz-melodiosa",
+      "nome": "Voz Melodiosa",
+      "categoria": "vantagem",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "10",
+      "adamar": "livre",
+      "resumo": "Voz bonita e convincente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 100
+      }
+    },
+    {
+      "id": "voz-penetrante",
+      "nome": "Voz Penetrante",
+      "categoria": "qualidade",
+      "tipo": [
+        "fisica"
+      ],
+      "custo": "1",
+      "adamar": "livre",
+      "resumo": "Se faz ouvir no meio de qualquer barulho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 101
+      }
+    },
+    {
+      "id": "vinculo-especial",
+      "nome": "Vínculo Especial",
+      "categoria": "vantagem",
+      "tipo": [
+        "mental",
+        "sobrenatural"
+      ],
+      "custo": "5",
+      "adamar": "narrador",
+      "resumo": "Vínculo único com uma pessoa, lugar ou item.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 97
+      }
+    }
+  ]
+}

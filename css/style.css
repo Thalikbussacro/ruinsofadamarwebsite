@@ -834,8 +834,39 @@ button.nav-top::after {
 .band > .lede { max-width: var(--largura-texto); margin-left: auto; margin-right: auto; }
 .band > .lede { text-align: center; }
 .band-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.9rem; margin-top: 1.5rem; }
+.band > .kicker { text-align: center; margin-bottom: 0; }
+.band > .band-intro { text-align: center; max-width: 38em; }
+/* grade de três colunas (seis cartões fecham em 3 + 3) */
+.card-grid.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* "Ler mais" sempre no pé do cartão */
+.card-grid .card { display: flex; flex-direction: column; }
+.card-grid .card .card-more { margin-top: auto; padding-top: 0.6rem; }
+
+/* faixa em duas colunas: texto + mapa */
+.band-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+.band-split-text > h2 { margin-top: 0.5rem; }
+.band-split-text .band-actions { justify-content: flex-start; }
+.band-split-map { margin: 0; }
+.band-split-map img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 40%;
+  /* o mapa original é claro: envelhecido para combinar com a pedra */
+  filter: sepia(0.6) saturate(0.65) brightness(0.78) contrast(1.05);
+}
 
 .band.cta-final {
+  width: calc(100% - 2rem); /* respiro lateral no celular */
   max-width: 52rem;
   margin: 1rem auto clamp(2.5rem, 6vw, 4rem);
   padding: clamp(2.5rem, 6vw, 3.5rem) 1.5rem;
@@ -1124,6 +1155,9 @@ a.card:hover h3,
   .sub a { padding: 0.55rem 1.25rem 0.55rem 2rem; }
 
   .nav > .nav-cta { display: none; }
+
+  .band-split { grid-template-columns: minmax(0, 1fr); }
+  .band-split-map { max-width: 26rem; width: 100%; margin: 0 auto; }
 }
 
 @media (max-width: 520px) {

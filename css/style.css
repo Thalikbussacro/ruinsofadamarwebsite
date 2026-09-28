@@ -985,8 +985,8 @@ a.card:hover h3,
 .scroll.chronicle h2 { color: #4a1612; }
 .scroll.chronicle .kicker { color: #6a4f24; }
 .scroll.chronicle .lede { color: #4a3b28; }
-.scroll.chronicle a { color: #6e1f1a; text-decoration-color: rgba(110, 31, 26, 0.5); }
-.scroll.chronicle a:hover { color: #2c1f14; }
+.scroll.chronicle a:not(.btn) { color: #6e1f1a; text-decoration-color: rgba(110, 31, 26, 0.5); }
+.scroll.chronicle a:not(.btn):hover { color: #2c1f14; }
 .scroll.chronicle li::marker { color: #6e1f1a; }
 .scroll.chronicle blockquote { color: #4a3b28; border-left-color: #6f5a30; }
 .scroll.chronicle .page-head::after {
@@ -995,6 +995,22 @@ a.card:hover h3,
 .scroll.chronicle .page-links { border-top-color: rgba(111, 90, 48, 0.4); }
 .scroll.chronicle .page-links a { color: #6e1f1a; }
 .scroll.chronicle ::selection { background: #6e1f1a; color: #efe4c8; }
+.scroll.chronicle .table-wrap {
+  border-color: rgba(111, 90, 48, 0.5);
+  background: rgba(70, 55, 30, 0.08);
+}
+.scroll.chronicle .table-wrap th,
+.scroll.chronicle .table-wrap td { border-top-color: rgba(111, 90, 48, 0.35); color: #2c1f14; }
+.scroll.chronicle .table-wrap thead th {
+  background: linear-gradient(180deg, #cbb989, #b3a077);
+  color: #2c1f14;
+}
+.scroll.chronicle .table-wrap tbody tr:nth-child(even) { background: rgba(70, 55, 30, 0.05); }
+.scroll.chronicle .soon {
+  color: #4a3b28;
+  border-color: rgba(111, 90, 48, 0.5);
+  background: rgba(70, 55, 30, 0.08);
+}
 
 /* capitular na primeira letra do texto */
 .scroll.chronicle > p:first-of-type::first-letter,

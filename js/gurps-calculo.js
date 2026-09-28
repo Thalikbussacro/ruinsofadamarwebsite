@@ -87,6 +87,24 @@
       return nivel;
     }
 
+    // Dano básico por ST (pág. 16). A tabela não é publicada: vem de data-local/gurps/tabela-dano.json.
+    function danoBasico(st, tabela) {
+      if (!tabela || !tabela.linhas || !tabela.linhas.length) return null;
+      function somarDados(expr, extra) {
+        if (!extra) return expr;
+        var m = /^(\d+)d(.*)$/.exec(expr);
+        return (parseInt(m[1], 10) + extra) + 'd' + m[2];
+      }
+      if (st > 100) {
+        var topo = tabela.linhas.filter(function (l) { return l.st === 100; })[0];
+        var extra = Math.floor((st - 100) / 10);
+        return { gdp: somarDados(topo.gdp, extra), geb: somarDados(topo.geb, extra) };
+      }
+      var linha = null;
+      tabela.linhas.forEach(function (l) { if (l.st <= st && (!linha || l.st > linha.st)) linha = l; });
+      return linha ? { gdp: linha.gdp, geb: linha.geb } : null;
+    }
+
     // ---------- sociedade (págs. 11 e 21–29) ----------
     function porId(lista, id) {
       for (var i = 0; i < lista.length; i++) if (lista[i].id === id) return lista[i];
@@ -186,6 +204,7 @@
       deslocamentoComCarga: deslocamentoComCarga,
       custoPericia: custoPericia,
       nivelPorPontos: nivelPorPontos,
+      danoBasico: danoBasico,
       custoAparencia: custoAparencia,
       custoStatus: custoStatus,
       custoIdioma: custoIdioma,

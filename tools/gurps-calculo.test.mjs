@@ -111,4 +111,14 @@ assert.equal(f2.total, -10 + 20 + 5 + (-25));
 assert.equal(f2.desvantagens, -10 - 8 - 5 - 10); // analfabetismo como regra do cenário não conta
 assert.equal(f2.recursos, 500);
 
+// Dano básico: a Tabela de Dano fica fora do repositório público, então a função recebe a tabela.
+const tabelaDano = { linhas: [
+  { st: 10, gdp: '1d-2', geb: '1d' }, { st: 13, gdp: '1d', geb: '2d-1' },
+  { st: 40, gdp: '4d+1', geb: '7d-1' }, { st: 45, gdp: '5d', geb: '7d+1' }, { st: 100, gdp: '11d', geb: '13d' }
+] };
+assert.deepEqual(c.danoBasico(13, tabelaDano), { gdp: '1d', geb: '2d-1' }); // exemplo do livro: ST 13 → 1d/2d-1
+assert.deepEqual(c.danoBasico(42, tabelaDano), { gdp: '4d+1', geb: '7d-1' }); // entre linhas: usa a de baixo
+assert.deepEqual(c.danoBasico(125, tabelaDano), { gdp: '13d', geb: '15d' }); // +1d a cada 10 acima de 100
+assert.equal(c.danoBasico(13, null), null); // sem tabela local
+
 console.log('gurps-calculo ok');

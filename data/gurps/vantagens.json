@@ -46,7 +46,43 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "resistir_magia",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "mágicas lançadas diretamente sobre o personagem"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Quem lança mágica diretamente sobre ele sofre penalidade igual ao nível; não protege contra mágicas de projétil, armas mágicas nem adivinhação."
+        },
+        {
+          "alvo": "teste",
+          "ref": "resistir_elixires",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "teste de HT + nível para resistir a elixires mágicos"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Não pode ser desligada (atrapalha curas mágicas benéficas) e impede o personagem de lançar mágicas, salvo com a ampliação Ampliada (+150%)."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "aptidao-magica"
+        },
+        {
+          "tipo": "exclui",
+          "id": "ampliador-de-mana"
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "A exclusão de Aptidão Mágica deixa de valer se a ampliação Ampliada for comprada."
     },
     {
       "id": "abencoado",
@@ -67,7 +103,41 @@
         "tipo": "minimo",
         "valor": 10
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Abençoado (10): após 1 hora de comunhão, perde 10 PF e o Mestre testa IQ em segredo para lhe dar visões sobre o futuro."
+        },
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "condicao": "Abençoado (10): seguidores da entidade"
+        },
+        {
+          "alvo": "teste",
+          "ref": "interpretar_visoes",
+          "valor": 5,
+          "condicao": "Muito Abençoado (20): teste de IQ para interpretar as visões"
+        },
+        {
+          "alvo": "reacao",
+          "valor": 2,
+          "condicao": "Muito Abençoado (20): seguidores da entidade (substitui o +1)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Feitos Heroicos (10): uma vez por sessão soma 1d a ST, DX ou HT (escolhida na compra) por 3d segundos; depois as penalidades acumuladas voltam."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Agir de acordo com as regras e valores da entidade, ou perde a vantagem."
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "São três variantes (10, 20, 10) e não níveis; o Mestre pode criar outras bênçãos."
     },
     {
       "id": "acessorios",
@@ -111,7 +181,15 @@
           20
         ]
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Nunca sofre a penalidade de -3 por desconhecimento cultural: com todas as culturas da própria raça (10) ou com todas as culturas do cenário (Xeno-Adaptabilidade, 20)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "adaptacao-ao-terreno",
@@ -133,7 +211,15 @@
         "min": 0,
         "max": 5
       },
-      "icone": "garra"
+      "icone": "garra",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Sem penalidades de DX e Deslocamento em um tipo de terreno instável escolhido (areia, gelo, neve...). Na versão de 0 ponto passa a sofrer essas penalidades em chão firme."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "aderencia",
@@ -173,7 +259,24 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "PdM leal que acompanha o personagem durante toda a aventura quando passa no teste de frequência."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "O Mestre mantém os pontos do aliado na mesma fração dos pontos do PdJ conforme este evolui."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Aliado acima de 150% dos pontos do PdJ vira Patrono; hordas podem exigir Antecedentes Incomuns"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "ambidestria",
@@ -193,7 +296,15 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Nunca sofre a penalidade de -4 na DX por usar a mão inábil; não concede ataques extras."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "ampliador-de-mana",
@@ -253,7 +364,20 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Custo livre definido pelo Mestre para justificar acesso a habilidades raras no cenário (magia, vantagens exóticas ou sobrenaturais)."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Aprovação do Mestre; só cobra pontos se houver benefício tangível."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "apagado",
@@ -292,7 +416,44 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "condicao": "Atraente (4 pts)"
+        },
+        {
+          "alvo": "reacao",
+          "valor": 4,
+          "condicao": "Elegante (12 pts): quem se atrai pelo sexo do personagem; +2 para os demais"
+        },
+        {
+          "alvo": "reacao",
+          "valor": 6,
+          "condicao": "Muito Elegante (16 pts): quem se atrai pelo sexo do personagem; +2 para os demais"
+        },
+        {
+          "alvo": "reacao",
+          "valor": 8,
+          "condicao": "Lindo (20 pts): quem se atrai pelo sexo do personagem; +2 para os demais"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Andrógeno ou Impressionante trocam o bônus por um fixo para todos: +3 Elegante, +4 Muito Elegante, +5 Lindo."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Muito Elegante e Lindo: pessoas do mesmo sexo que já reagem com -4 ou pior sofrem -2 adicional; atrai importunos."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Só vale para quem enxerga o personagem e é da mesma raça (ou raça parecida), salvo com a ampliação Universal."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "Níveis abaixo de Comum são a desvantagem aparencia-desvantagem; aqui só constam os níveis positivos."
     },
     {
       "id": "apetrechos",
@@ -313,7 +474,15 @@
         "por_nivel": 5,
         "unidade": "apetrecho"
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Uma vez por sessão por nível, saca um objeto pequeno (cabe no bolso) que plausivelmente estaria carregando; não existe até ser revelado."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 3
     },
     {
       "id": "aptidao-magica",
@@ -336,7 +505,51 @@
         "por_nivel": 10,
         "nivel_min": 0
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Nível 0: o Mestre faz teste de Sentidos ao ver e ao tocar um objeto encantado pela primeira vez; 3 ou 4 revela natureza e força da magia."
+        },
+        {
+          "alvo": "teste",
+          "ref": "aprender_magicas",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "soma à IQ para aprender mágicas (níveis 1+)"
+        },
+        {
+          "alvo": "secundaria",
+          "ref": "per",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "apenas para sentir objetos encantados"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "taumatologia",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "soma à IQ ao aprender Taumatologia"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Reduz em 10% por nível o tempo para aprender mágicas em jogo, até 60% do tempo normal."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "abascanto-resistencia-a-magia"
+        },
+        {
+          "tipo": "exclui",
+          "id": "abafador-de-mana"
+        }
+      ],
+      "nivel_max": 0,
+      "duvida_efeitos": "Nível máximo fica a critério do Mestre (3 sugerido para fantasia clássica). Nível 0 custa 5 e cada nível +10.",
+      "nota_adamar": "Regra da mesa de Adamar: Aptidão Mágica máxima 0 (sente a magia, não conjura). Níveis maiores só com o narrador."
     },
     {
       "id": "arrebatador",
@@ -438,7 +651,19 @@
         "tipo": "fixo",
         "valor": 25
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Com armas de uma mão disparando 1-3 tiros, recebe o bônus de Precisão sem Apontar; com armas de duas mãos ou automáticas, metade (arredondada para cima)."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Vale para Armas de Fogo, Armas de Feixe, Canhoneiro e Projetor de Líquidos; não para armas de projétil movidas a músculo."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "atribulacao",
@@ -545,7 +770,21 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena"
+      "icone": "estrela-pequena",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Entra em transe à vontade após 1 minuto de concentração e um teste de Vontade (-1 por tentativa extra na mesma hora); sair do transe exige outro teste de Vontade, repetível a cada 5 minutos."
+        },
+        {
+          "alvo": "teste",
+          "ref": "contatar_espiritos",
+          "valor": 2,
+          "condicao": "enquanto em transe, em testes para contatar espíritos e similares"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "boa-forma",
@@ -568,7 +807,34 @@
           15
         ]
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "testes_ht",
+          "valor": 1,
+          "condicao": "Boa Forma (5): todos os testes de HT (consciência, morte, doença, veneno), não a HT nem perícias"
+        },
+        {
+          "alvo": "teste",
+          "ref": "testes_ht",
+          "valor": 2,
+          "condicao": "Ótima Forma (15): substitui o +1"
+        },
+        {
+          "alvo": "teste",
+          "ref": "recuperacao_pf",
+          "valor": 2,
+          "condicao": "multiplicador: recupera PF no dobro da velocidade (ambos os níveis)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Ótima Forma: perde PF por esforço na metade da velocidade. Não afeta PF gastos em mágicas ou poderes."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 2,
+      "duvida_efeitos": "O valor de recuperacao_pf é um multiplicador (x2), não um bônus somado."
     },
     {
       "id": "boca-adicional",
@@ -610,7 +876,15 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Quando o personagem vai fazer algo estúpido, o Mestre testa IQ e, se passar, avisa o jogador para repensar."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "bracos-adicionais",
@@ -693,7 +967,20 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Ignora penalidades de reação causadas por diferenças de Status ou Hierarquia."
+        },
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "condicao": "pessoas que exigem respeito (sacerdotes, reis), quando não haveria penalidade"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "caminhar-no-ar",
@@ -756,7 +1043,21 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Entra em transe (1 minuto e teste de Vontade, +2 com Autotranse) e espíritos próximos podem falar ou escrever pelo seu corpo."
+        },
+        {
+          "alvo": "teste",
+          "ref": "resistir_possessao",
+          "valor": 5,
+          "condicao": "contra possessão completa enquanto está em transe"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "carga-util",
@@ -797,7 +1098,35 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "seres inteligentes com quem interage ativamente"
+        },
+        {
+          "alvo": "teste",
+          "ref": "influencia",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "testes de Influência feitos pelo personagem"
+        },
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "adivinhacao",
+            "lideranca",
+            "mendicancia",
+            "oratoria"
+          ],
+          "valor": 1,
+          "por_nivel": true
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "cibernetica",
@@ -857,7 +1186,20 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "condicao": "correligionários e quem respeita sua fé"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Sacerdote ordenado: preside cerimônias e recebe título; inclui Hierarquia Religiosa 0. Não dá poderes milagrosos."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "consumo-reduzido",
@@ -896,7 +1238,29 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Ao procurar o contato, o Mestre testa a frequência; se achá-lo, testa o NH efetivo para cada informação ou pequeno favor."
+        },
+        {
+          "alvo": "teste",
+          "ref": "nh_contato",
+          "valor": -2,
+          "condicao": "cumulativo para cada pergunta após a primeira no mesmo encontro"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Só um encontro por dia; num 17 ou 18 no teste de frequência some pela aventura toda."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Suborno eleva a confiabilidade (dia +1, semana +2, mês +3, ano +4); acima de razoavelmente confiável vira bônus no NH, nunca completamente confiável."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "controle-da-mente",
@@ -938,7 +1302,33 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "garra"
+      "icone": "garra",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "ht_sangramento",
+          "valor": 1,
+          "por_nivel": true
+        },
+        {
+          "alvo": "teste",
+          "ref": "recuperar_doenca_veneno",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "testes de HT para se recuperar (não para resistir) de doenças e venenos, e outros que o controle ajude"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Pode entrar em transe semelhante à morte: cada nível reduz 10% do oxigênio necessário (nível 10+ não respira) e dobra o tempo sem comida e água."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Incompatível com a metacaracterística Máquina."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "controle-termico",
@@ -1000,7 +1390,19 @@
         "tipo": "fixo",
         "valor": 30
       },
-      "icone": "garra"
+      "icone": "garra",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Por toque, 1 s de concentração e teste de IQ (-2 se alvo inconsciente): cura PV a 1 PF por 2 PV, ou doenças gastando PF igual ao dobro da penalidade."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "IQ-6 cura membro incapacitado; não restaura membros perdidos nem ressuscita; -3 cumulativo por cura do mesmo tipo no mesmo alvo no mesmo dia."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "calculos-instantaneos",
@@ -1023,7 +1425,15 @@
           5
         ]
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Faz aritmética de cabeça instantaneamente (2); Matemático Intuitivo (5) resolve qualquer cálculo complexo sem calculadora."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "defesas-ampliadas",
@@ -1042,7 +1452,35 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "defesa",
+          "ref": "aparar",
+          "valor": 1,
+          "condicao": "Aparar Ampliado: mãos nuas ou uma perícia de arma (5) ou todas (10)"
+        },
+        {
+          "alvo": "defesa",
+          "ref": "bloqueio",
+          "valor": 1,
+          "condicao": "Bloqueio Ampliado (5): especializado em Capa ou Escudo"
+        },
+        {
+          "alvo": "defesa",
+          "ref": "esquiva",
+          "valor": 1,
+          "condicao": "Esquiva Ampliada (15)"
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "O Mestre pode exigir Treinado por um Mestre ou Mestre de Armas (cinematográfica)."
+        }
+      ],
+      "nivel_max": 3,
+      "duvida_efeitos": "Normalmente é +1 único; o Mestre pode permitir níveis múltiplos, sendo acima de +3 quase sempre injustificável."
     },
     {
       "id": "dentes",
@@ -1090,7 +1528,15 @@
           50
         ]
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Inventor cinematográfico: cria e modifica engenhocas pelas regras de Invenções; Desenvolvedor Rápido (50) faz em minutos ou horas com sucata."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "deslocamento-ampliado",
@@ -1130,7 +1576,28 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "verificacao_panico",
+          "valor": 1,
+          "por_nivel": true
+        },
+        {
+          "alvo": "teste",
+          "ref": "resistir_medo",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "resistir à perícia Intimidação e a poderes sobrenaturais que induzem medo"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "O nível também é subtraído dos testes de Intimidação feitos contra ele."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "destino",
@@ -1150,7 +1617,15 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "O Mestre define em segredo um destino grandioso (5 menor, 10 maior, 15 superior) e conduz a campanha para cumpri-lo."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "destreza-manual-elevada",
@@ -1170,7 +1645,42 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "arrombamento",
+            "artista",
+            "cirurgia",
+            "costura",
+            "habilidade-com-nos",
+            "joalheiro",
+            "prestidigitacao",
+            "punga",
+            "trabalhos-em-couro"
+          ],
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "testes de DX que exigem toque delicado"
+        },
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "maquinista",
+            "mecanica"
+          ],
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "somente em trabalho de precisão (ex.: relojoaria)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Não vale para tarefas baseadas em IQ, tarefas de DX em grande escala nem combate."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 4
     },
     {
       "id": "detectar",
@@ -1189,7 +1699,15 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Com 1 s de concentração, o Mestre faz teste de Sentidos (com modificador de distância) para indicar direção e quantidade da substância; teste de IQ para analisá-la."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "dificil-de-subjugar",
@@ -1209,7 +1727,19 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "ht_nocaute",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "evitar inconsciência por ferimentos, drogas ou armas, e resistir a poderes que causam inconsciência"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "Em campanha realista o Mestre pode limitar a 2 níveis."
     },
     {
       "id": "digestao-universal",
@@ -1292,7 +1822,21 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena"
+      "icone": "estrela-pequena",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Dorme em quase qualquer situação e em meio a barulho; nunca sofre males por sono ruim; acorda com tumulto com teste de IQ (automático se tiver Reflexos em Combate)."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "sono-leve"
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "Exclusão com Sono Leve é inferência lógica, não está escrita no texto."
     },
     {
       "id": "duplicacao",
@@ -1355,7 +1899,23 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "ht_morte",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "testes de sobrevivência abaixo de -1xPV e testes em que falhar mata instantaneamente"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Se falhar por margem que o bônus cobriria, desmaia e parece morto, mas sobrevive."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "Em campanha realista o Mestre pode limitar a 2 níveis."
     },
     {
       "id": "dx-bracal",
@@ -1439,7 +1999,36 @@
           15
         ]
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Ao conhecer alguém, o Mestre testa IQ e diz o que o personagem sente (lealdade, sinceridade, possessão); falha dá informação falsa. Sensível: IQ-3."
+        },
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "deteccao-de-mentiras",
+            "adivinhacao",
+            "psicologia"
+          ],
+          "valor": 3,
+          "condicao": "Empatia (15)"
+        },
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "deteccao-de-mentiras",
+            "adivinhacao",
+            "psicologia"
+          ],
+          "valor": 1,
+          "condicao": "Sensível (5); Psicologia só para analisar alguém com quem conversa"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 2,
+      "duvida_efeitos": "O texto em português é ambíguo sobre Detecção de Mentiras no nível Empatia; segui o Basic Set (+3 em Detecção de Mentiras, Adivinhação e Psicologia). Só funciona com seres naturais de IQ 6+."
     },
     {
       "id": "empatia-com-animais",
@@ -1459,7 +2048,19 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "O Mestre testa IQ e revela o estado emocional do animal e se está sob controle sobrenatural."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Pode usar perícias de Influência em animais como se fossem racionais, normalmente obtendo reação positiva."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "empatia-com-espiritos",
@@ -1480,7 +2081,15 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Funciona como Empatia com espíritos (teste de IQ revela intenções) e permite usar perícias de Influência normalmente sobre eles."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "empatia-com-plantas",
@@ -1500,7 +2109,15 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de IQ revela saúde e origem (natural ou sobrenatural) de uma planta; funciona como Empatia com plantas inteligentes e permite usar perícias de Influência nelas."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "encolhimento",
@@ -1541,7 +2158,36 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Anda sem teste sobre qualquer superfície fixa estreita (corda bamba, galho)."
+        },
+        {
+          "alvo": "teste",
+          "ref": "manter_equilibrio",
+          "valor": 6,
+          "condicao": "superfície úmida, escorregadia ou instável"
+        },
+        {
+          "alvo": "teste",
+          "ref": "nao_ser_derrubado",
+          "valor": 4,
+          "condicao": "testes de DX e perícias de DX em combate para ficar de pé"
+        },
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "acrobacia",
+            "escalada",
+            "pilotagem"
+          ],
+          "valor": 1
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "equipamento-caracteristico",
@@ -1560,7 +2206,15 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Cada ponto dá equipamento (não dinheiro) de até 50% dos recursos iniciais médios; se perdido sem culpa, o Mestre dá chance de recuperar ou devolve os pontos."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "escavacao",
@@ -1622,7 +2276,22 @@
         "tipo": "niveis",
         "por_nivel": 4
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "resistir_telepatia",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "IQ ou Vontade contra vantagens Telepáticas e mágicas de Comunicação e Empatia ou de Controle da Mente"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Quem tenta localizar sua mente por magia ou psiquismo precisa vencer Disputa Rápida contra Vontade + nível; pode ser desligado como ação livre."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "espinhos",
@@ -1666,7 +2335,15 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Não pode ser demitido; emprego e salário garantidos salvo conduta absurda."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "estilo",
@@ -1686,7 +2363,15 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena"
+      "icone": "estrela-pequena",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Traço de estilo marcante (andar, visual impecável etc.) sem bônus de combate, reação ou renda; o Mestre pode conceder benefícios menores eventuais."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "estatica-psiquica",
@@ -1768,7 +2453,15 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Todo idioma comprado acima de Nenhum conta um nível de compreensão acima: Com Sotaque custa 2 e Materna custa 4."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "fala-subaquatica",
@@ -1856,7 +2549,21 @@
         "tipo": "fixo",
         "valor": 25
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Conversa com animais; a qualidade da informação depende da IQ do animal; cerca de 1 minuto por pergunta."
+        },
+        {
+          "alvo": "teste",
+          "ref": "reacao_animais",
+          "valor": 2,
+          "condicao": "ao oferecer alimento, se o Mestre pedir teste de reação"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "falar-com-plantas",
@@ -1901,7 +2608,15 @@
         ],
         "unidade": "cultura"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Remove a penalidade de -3 em perícias de componente cultural para uma cultura adicional (1 ponto se da mesma raça, 2 se alienígena)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "favor",
@@ -1920,7 +2635,19 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Uso único: ao cobrar, o Mestre testa a frequência da vantagem subjacente; se passar, o personagem recebe a ajuda e o favor sai da ficha."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Num 3 ou 4 no teste o favor é mantido; num fracasso ainda pode tentar em outra aventura."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "fleuma",
@@ -1940,7 +2667,21 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Isento de Verificações de Pânico, imune à Intimidação e raramente afetado por modificadores de reação; trata todos com cortesia distante."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "fobias"
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "O Mestre pode cobrar 20+ pontos em campanhas com muitas Verificações de Pânico."
     },
     {
       "id": "flexibilidade",
@@ -1963,7 +2704,47 @@
           15
         ]
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "escalada",
+            "fuga",
+            "arte-erotica"
+          ],
+          "valor": 3,
+          "condicao": "Flexibilidade (5); Fuga só contra cordas, algemas e similares"
+        },
+        {
+          "alvo": "teste",
+          "ref": "escapar_agarrao",
+          "valor": 3,
+          "condicao": "Flexibilidade (5): tentativas de se libertar em combate corpo a corpo"
+        },
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "escalada",
+            "fuga",
+            "arte-erotica"
+          ],
+          "valor": 5,
+          "condicao": "Ultraflexibilidade das Juntas (15), substitui o +3"
+        },
+        {
+          "alvo": "teste",
+          "ref": "escapar_agarrao",
+          "valor": 5,
+          "condicao": "Ultraflexibilidade das Juntas (15), substitui o +3"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Ignora penalidades por espaço apertado de até -3 (Flexibilidade) ou -5 (Ultraflexibilidade)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 2
     },
     {
       "id": "forma-de-sombras",
@@ -2005,7 +2786,20 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Enquanto afirma a fé (símbolo, cânticos; em combate, Concentrar todo turno), entidades sobrenaturais malignas não se aproximam a menos de 1 m; forçadas, fogem ou testam Vontade para passar, e se falharem se acovardam."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Comportar-se de acordo com a religião, normalmente com desvantagens mentais autoimpostas; já inclui a limitação Pacto."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "garras",
@@ -2066,7 +2860,20 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Funciona como Contatos, mas o NH vale para uma categoria de perícias ligada a uma organização ou camada social de uma cidade."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Limitado a uma organização ou camada social de uma única cidade"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "habilidades-modulares",
@@ -2127,7 +2934,25 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Autoridade sobre níveis inferiores da organização; diferenças de nível funcionam como diferenças de Status dentro dela."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Status gratuito: +1 nos níveis 2-4, +2 nos 5-7, +3 no 8+; custa 10/nível quando substitui o Status. Hierarquia Honorária: 1/nível, só social."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Hierarquia Religiosa exige Clericato; Hierarquia Policial exige Poderes Legais. Normalmente vem com Dever e pode exigir NH mínimo em perícia."
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "O Mestre define o nível inicial máximo (normalmente 3 a 5). O custo base 5/nível vale quando coexiste com Status."
     },
     {
       "id": "hipoalgia-alto-limiar-de-dor",
@@ -2147,7 +2972,32 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Nunca sofre penalidades de choque por ferimentos."
+        },
+        {
+          "alvo": "teste",
+          "ref": "ht_nocaute",
+          "valor": 3,
+          "condicao": "testes de HT para não ser nocauteado ou atordoado"
+        },
+        {
+          "alvo": "teste",
+          "ref": "resistir_tortura",
+          "valor": 3,
+          "condicao": "resistir a tortura física; o Mestre pode dar +3 em Vontade para ignorar dor"
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "durabilidade-sobrenatural"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "idade-imutavel",
@@ -2192,7 +3042,20 @@
         ],
         "unidade": "identidade"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Identidade extra com documentos e registros que resistem a inspeção rigorosa; é perdida se uma agência descobrir a verdadeira. Legal (5) ou Ilegal (15)."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Versão Legal exige pelo menos 10 pontos em Poderes Legais, Imunidade Legal, Hierarquia Policial, Permissão de Segurança etc."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "idiomas",
@@ -2211,7 +3074,21 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Compreensão por idioma: Rudimentar (2) -3 em perícias de idioma e -6 nas artísticas, com teste de IQ sob tensão; Com Sotaque (4) -1/-2; Materna (6) sem penalidade. Fala e escrita separadas custam metade cada."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "atributo",
+          "ref": "iq",
+          "min": 6
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "iluminado",
@@ -2275,7 +3152,24 @@
         "min": 5,
         "max": 20
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Isento das leis comuns; só uma autoridade específica pode julgá-lo. 5 (regras igualmente rígidas), 10 (mais brandas), 15 (quase tudo permitido); +5 pela mala diplomática."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Imunidade Bárdica (10): pode cantar qualquer coisa sem punição grave. Imunidade Diplomática (20): não pode ser processado no exterior."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Imunidade Bárdica exige ao menos 1 ponto em Atuação, Canto e Poesia; Imunidade Diplomática vem com Dever e muitas vezes Hierarquia Administrativa."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "indomavel",
@@ -2295,7 +3189,15 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Testes de Influência contra ele falham automaticamente, a menos que o autor tenha a Empatia adequada ao tipo de criatura."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "infravisao",
@@ -2377,7 +3279,15 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Diante de escolhas sem base lógica, o Mestre testa IQ em segredo (+1 por opção boa, -1 por opção ruim) e indica uma boa opção; uma vez por problema."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "investidura-de-poder",
@@ -2398,7 +3308,28 @@
         "tipo": "niveis",
         "por_nivel": 10
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "aprender_magicas_clericais",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "soma à IQ para aprender as mágicas clericais concedidas pela divindade"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Só aprende mágicas da lista da divindade, sem pré-requisitos; não interage com Aptidão Mágica."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Manter fidelidade às desvantagens mentais autoimpostas exigidas pela divindade (inclui Pacto) e a eventuais exigências físicas."
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "Nível máximo depende da divindade, a critério do Mestre."
     },
     {
       "id": "invisibilidade",
@@ -2480,7 +3411,16 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 3,
+          "condicao": "quem o considera fraco, indefeso ou desamparado (nunca pessoas Insensíveis)"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "leitura-da-mente",
@@ -2521,7 +3461,15 @@
         "tipo": "fixo",
         "valor": 2
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Só falha nos testes de envelhecimento com 17 ou 18; se a HT modificada for 17+, só com 18."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "lingua-ferina",
@@ -2541,7 +3489,20 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Como ação livre em combate, faz Disputa Rápida de Oratória contra a Vontade do alvo; vencendo, o alvo fica mentalmente atordoado (sucesso decisivo causa também 1 ponto de dano); falha crítica enfurece o alvo."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Modificadores da disputa: -2 contra alvos Ingênuos ou com Circunspecção, -1 por alvo adicional do mesmo grupo; alvos com Fleuma são imunes."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "Livro recomenda só em campanhas cômicas; o Mestre pode restringir."
     },
     {
       "id": "membrana-nictitante",
@@ -2585,7 +3546,28 @@
           10
         ]
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Sucesso automático em lembrar eventos; detalhes específicos exigem teste de IQ (Memória Eidética, 5 pts) ou são automáticos (Memória Fotográfica, 10 pts). Não melhora perícias."
+        },
+        {
+          "alvo": "teste",
+          "ref": "aprender_assunto",
+          "valor": 5,
+          "condicao": "teste de IQ pedido pelo Mestre para aprender um assunto; versão Memória Eidética (5 pts)"
+        },
+        {
+          "alvo": "teste",
+          "ref": "aprender_assunto",
+          "valor": 10,
+          "condicao": "teste de IQ pedido pelo Mestre para aprender um assunto; versão Memória Fotográfica (10 pts), substitui o +5"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "Dois níveis com custos 5 e 10; modelado como variantes nas condições, não como nivel_max."
     },
     {
       "id": "memoria-racial",
@@ -2668,7 +3650,41 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "dano",
+          "ref": "todos",
+          "valor": 1,
+          "condicao": "+1 por dado do dano básico (GdP ou GeB) com arma da classe escolhida se NH na perícia = DX+1"
+        },
+        {
+          "alvo": "dano",
+          "ref": "todos",
+          "valor": 2,
+          "condicao": "+2 por dado do dano básico com arma da classe se NH >= DX+2 (substitui o +1); não vale em valores pré-definidos"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Metade da penalidade para Golpe Rápido e para aparar mais de uma vez por turno com armas da classe (não em pré-definidos)."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Pré-definidos melhores com armas da classe: DX-1 (Fácil), DX-2 (Média), DX-3 (Difícil); não podem ser usados para comprar a perícia mais barato."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Permite aprender perícias cinematográficas que exigem Mestre de Armas (ex.: Lutar às Cegas, Golpe Poderoso) com essas armas; benefícios valem também para arremesso delas."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Escolher a classe de armas motoras: todas (45), ampla (40), intermediária (35), pequena (30), par usado em conjunto (25), uma arma (20). Não vale para armas de fogo."
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "Mestre pode proibir em campanha realista."
     },
     {
       "id": "metabolismo-impoluto",
@@ -2688,7 +3704,20 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena"
+      "icone": "estrela-pequena",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Corpo praticamente sem odores ou detritos; quem tenta rastreá-lo pelo faro sofre -1."
+        },
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "condicao": "em ambientes fechados e apertados (naves, submarinos, elevadores)"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "metamorfose",
@@ -2750,7 +3779,15 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Percebe a presença de espíritos (sem vê-los), pode conversar com eles se houver idioma comum e chamá-los; não garante que atendam nem dá bônus de reação ou controle."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "neutralizar",
@@ -2791,7 +3828,20 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Diante de emboscada, desastre ou perigo similar, o Mestre testa a Percepção em segredo; sucesso dá um aviso, e 3 ou 4 revela algo da natureza do perigo."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "precognicao"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "nocao-do-tempo-ampliada",
@@ -2835,7 +3885,15 @@
           5
         ]
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Sempre sabe a hora e mede intervalos com precisão; acorda na hora escolhida. Versão Cronolocalização (5 pts) também não se confunde com viagens no tempo."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "nt-alto",
@@ -2959,7 +4017,23 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "tarefa_mental_prolongada",
+          "valor": 3,
+          "condicao": "tarefas mentais longas que se beneficiam de foco, a critério do Mestre; não vale em tarefas que exigem dividir atenção"
+        },
+        {
+          "alvo": "teste",
+          "ref": "perceber_interrupcao",
+          "valor": -5,
+          "condicao": "enquanto concentrado (evitar o foco exige teste de Vontade)"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "olfato-discriminatorio",
@@ -3001,7 +4075,15 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Uma vez por dia (em geral 1 hora de análise) busca presságios: o Mestre testa Sentidos em segredo para achar (decisivo dá +5 na interpretação) e IQ para interpretar; falhas críticas geram presságios ou leituras falsas."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "padrao-de-tempo-alterado",
@@ -3062,7 +4144,25 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "PdM ou organização que ajuda o personagem, em regra uma vez por aventura, quando passa no teste de frequência."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Vários PdJs com o mesmo patrono pagam o custo integral cada; o Mestre testa para cada um."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Patronos costumam vir com Dever, Inimigos ou desvantagens autoimpostas"
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "Fórmula de custo tratada no lote F."
     },
     {
       "id": "pelagem",
@@ -3144,7 +4244,20 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Acesso a informações secretas de uma organização além do que Hierarquia ou Status dariam; custo 5/10/15 conforme amplitude, metade (arred. para cima) se a organização for pequena."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Exige passar por verificação de antecedentes; Mestre pode negar a quem tiver passado suspeito (Dívidas, Segredo) ou personalidade instável (Paranoia, Sadismo)."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "pernas-adicionais",
@@ -3188,7 +4301,16 @@
           15
         ]
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Autoridade de agente da lei (prender, revistar com mandado, portar arma etc.); níveis 5/10/15 conforme jurisdição e imunidade. Inclui Hierarquia Policial 0."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "Normalmente acompanhado de Dever e às vezes Reputação; não é pré-requisito formal."
     },
     {
       "id": "por-dentro-da-moda",
@@ -3208,7 +4330,20 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "condicao": "situações sociais em que escolheu a roupa com antecedência"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Pode dar +1 de reação a outra pessoa ao criar o visual dela."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "possessao",
@@ -3249,7 +4384,15 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Cada nível reduz em 1 hora as 8 horas de sono necessárias por noite."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 4
     },
     {
       "id": "precognicao",
@@ -3291,7 +4434,20 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "garra"
+      "icone": "garra",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Cada nível dobra o tempo que consegue prender o fôlego."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Humanos comuns não podem comprar (devem usar a perícia Controle da Respiração); disponível para não-humanos e supers."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "proposito-maior",
@@ -3312,7 +4468,21 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "acoes_proposito_maior",
+          "valor": 1,
+          "condicao": "todos os testes diretamente ligados ao objetivo declarado, enquanto o Mestre julgar que o personagem o persegue"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Objetivo específico e arriscado, definido como um Código de Honra; desviar-se dele remove o bônus e pode ser penalizado como má interpretação."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "psicometria",
@@ -3375,7 +4545,15 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "garra"
+      "icone": "garra",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Subtrai automaticamente 5 m de qualquer queda e, com sucesso em DX, reduz o dano de queda à metade; exige membros livres para girar no ar."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "rastreamento-ampliado",
@@ -3416,7 +4594,26 @@
         "por_nivel": 5,
         "unidade": "reação"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "de quem reconhece o grupo respeitado (Respeitado, Temido ou Venerado), 5 pts por +1"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Tipo define o trato após reação favorável: Respeitado (deferência como Status alto), Temido (como Intimidação), Venerado (estranhos protegem e cedem lugar)."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "O mesmo pertencimento social não pode dar Reconhecimento Social e Estigma Social ao mesmo tempo; deve ser óbvio a todos."
+        }
+      ],
+      "nivel_max": 4
     },
     {
       "id": "recuperacao-acelerada",
@@ -3437,7 +4634,37 @@
         "min": 5,
         "max": 15
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "recuperacao_pv",
+          "valor": 5,
+          "condicao": "na HT efetiva para recuperar PV"
+        },
+        {
+          "alvo": "teste",
+          "ref": "recuperar_lesao_incapacitante",
+          "valor": 5,
+          "condicao": "na HT efetiva para se recuperar de lesão incapacitante"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Versão Recuperação Muito Acelerada (15 pts): cada sucesso para recuperar PV cura 2 PV em vez de 1. Não acelera atordoamento ou nocaute."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "atributo",
+          "ref": "ht",
+          "min": 10
+        },
+        {
+          "tipo": "texto",
+          "descricao": "A versão Recuperação Muito Acelerada (15 pts) exige HT 12+."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "recuperacao-da-consciencia",
@@ -3458,7 +4685,15 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "garra"
+      "icone": "garra",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Todo tempo de inconsciência é dividido por 60 (horas viram minutos, minutos viram segundos)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "redespertar",
@@ -3479,7 +4714,20 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Antecedente especial que explica como o personagem recorda perícias de vidas passadas sem professor; as perícias ainda são pagas normalmente."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Só disponível se a reencarnação existir na campanha (a critério do Mestre)."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "reflexos-em-combate",
@@ -3499,7 +4747,47 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "defesa",
+          "ref": "todas",
+          "valor": 1
+        },
+        {
+          "alvo": "pericia",
+          "ref": "sacar-rapido",
+          "valor": 1
+        },
+        {
+          "alvo": "teste",
+          "ref": "verificacao_panico",
+          "valor": 2
+        },
+        {
+          "alvo": "teste",
+          "ref": "recuperar_surpresa",
+          "valor": 6,
+          "condicao": "testes de IQ para se recuperar de surpresa ou atordoamento mental"
+        },
+        {
+          "alvo": "teste",
+          "ref": "iniciativa",
+          "valor": 1,
+          "condicao": "para o grupo, contra ataques surpresa; +2 se o personagem for o líder"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Nunca fica paralisado em situações de surpresa."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "nocao-do-tempo-ampliada"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "regeneracao",
@@ -3540,7 +4828,20 @@
         "min": 1,
         "max": 10
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Pode pedir abrigo, comida e ajuda básica a membros do seu grupo social longe de casa (custo 1 a 10 conforme tamanho e riqueza); deve retribuir quando em casa ou perde a vantagem."
+        },
+        {
+          "alvo": "reacao",
+          "valor": 3,
+          "condicao": "de membros do mesmo grupo"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "renda-propria",
@@ -3560,7 +4861,15 @@
         "tipo": "niveis",
         "por_nivel": 1
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Renda mensal sem trabalho de 1% dos recursos iniciais (ajustados pela Riqueza) por nível."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 20
     },
     {
       "id": "reputacao",
@@ -3579,7 +4888,22 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "pessoas do grupo afetado que o reconhecem (teste de frequência de reconhecimento)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Custo 5 por +1, multiplicado pelo tamanho do grupo afetado (x1, x2/3, x1/2, x1/3) e pela frequência (sempre x1, 10 ou menos x1/2, 7 ou menos x1/3). Total de reputações limitado a +4/-4."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 4,
+      "duvida_efeitos": "O texto traz 'O tempo todo: x 2' por erro de OCR/tradução; no Basic Set é x1 (sempre), x1/2 (10 ou menos), x1/3 (7 ou menos)."
     },
     {
       "id": "resistente",
@@ -3598,7 +4922,37 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "resistir_categoria_escolhida",
+          "valor": 3,
+          "condicao": "testes de HT contra a categoria escolhida (doenças, venenos etc.); nível +3 custa 1/3 do custo base"
+        },
+        {
+          "alvo": "teste",
+          "ref": "resistir_categoria_escolhida",
+          "valor": 8,
+          "condicao": "testes de HT contra a categoria escolhida; nível +8 custa 1/2 do custo base"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Nível Imunidade (custo base ×1): nunca precisa testar contra a categoria. Custo base: Muito Comum 30, Comum 15, Ocasional 10, Raro 5; descartar frações."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Variante Resistência Mental: bônus vale em testes de IQ/Vontade contra ameaças mentais (\"Psiquismo\" é Muito Comum)."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Humanos comuns: qualquer nível contra ameaça mundana Rara, ou Doenças (+3/+8) e Venenos (+3); acima disso é sobre-humano."
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "Categoria varia; usar resistir_doenca ou resistir_veneno como ref quando a categoria for Doenças ou Venenos."
     },
     {
       "id": "resistencia-a-dano",
@@ -3723,7 +5077,20 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Multiplica os recursos iniciais: Confortável x2 (10), Rico x5 (20), Muito Rico x20 (30), Podre de Rico x100 (50), Multimilionário x10 extra por nível (+25/nível)."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Em cenários onde Riqueza gera Status: +1 de Status grátis se Rico ou mais, +2 em Multimilionário 1, +3 em Multimilionário 2."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "Níveis abaixo de Médio são a desvantagem pobreza-riqueza-baixa. Máximo de Multimilionário definido pelo Mestre (normalmente 3 ou 4)."
     },
     {
       "id": "rosto-sincero",
@@ -3743,7 +5110,21 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena"
+      "icone": "estrela-pequena",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "dissimulacao",
+          "valor": 1,
+          "condicao": "ao tentar parecer inocente"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Desconhecidos o julgam confiável; não é revistado por autoridades sem motivo ou sorteio."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "saltador",
@@ -3784,7 +5165,15 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena"
+      "icone": "estrela-pequena",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Nunca sofre ressaca; a embriaguez em si continua normal."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "senso-de-direcao",
@@ -3807,7 +5196,51 @@
           10
         ]
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "percepcao-do-corpo",
+          "valor": 3
+        },
+        {
+          "alvo": "pericia",
+          "ref": "navegacao",
+          "valor": 3,
+          "especializacao": "Aérea, Terrestre ou Marítima"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Sempre sabe onde fica o norte e refaz qualquer trajeto dos últimos 30 dias; não funciona no espaço interestelar ou planos astrais."
+        },
+        {
+          "alvo": "pericia",
+          "ref": "pilotagem",
+          "valor": 1,
+          "condicao": "somente versão Noção Tridimensional do Espaço (10 pts)"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "acrobacia",
+          "valor": 2,
+          "condicao": "somente versão Noção Tridimensional do Espaço (10 pts)"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "queda-livre",
+          "valor": 2,
+          "condicao": "somente versão Noção Tridimensional do Espaço (10 pts)"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "navegacao",
+          "valor": 2,
+          "condicao": "somente versão Noção Tridimensional do Espaço (10 pts)",
+          "especializacao": "Espaço ou Hiperespaço"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "sentido-de-monitoramento",
@@ -3890,7 +5323,43 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "visao",
+          "valor": 1,
+          "condicao": "Visão Aguçada (comprada separadamente)",
+          "por_nivel": true
+        },
+        {
+          "alvo": "teste",
+          "ref": "audicao",
+          "valor": 1,
+          "condicao": "Audição Aguçada (comprada separadamente)",
+          "por_nivel": true
+        },
+        {
+          "alvo": "teste",
+          "ref": "olfato_paladar",
+          "valor": 1,
+          "condicao": "Paladar/Olfato Apurado (comprado separadamente)",
+          "por_nivel": true
+        },
+        {
+          "alvo": "teste",
+          "ref": "tato",
+          "valor": 1,
+          "condicao": "Tato Apurado (comprado separadamente)",
+          "por_nivel": true
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Cada sentido é uma vantagem separada a 2 pts/nível; em geral só pode ser comprada na criação (depois, aumente Percepção), salvo para compensar a perda de um sentido."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "serendipidade",
@@ -3910,7 +5379,15 @@
         "tipo": "niveis",
         "por_nivel": 15
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Por nível, uma coincidência favorável e plausível por sessão, definida pelo Mestre (o jogador pode sugerir); não usadas passam para a próxima sessão."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "silencio",
@@ -3931,7 +5408,25 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "garra"
+      "icone": "garra",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "furtividade",
+          "valor": 2,
+          "condicao": "parado, contra quem depende da audição (escuro, escuta, criaturas cegas)",
+          "por_nivel": true
+        },
+        {
+          "alvo": "pericia",
+          "ref": "furtividade",
+          "valor": 1,
+          "condicao": "em movimento, mesmo de armadura, contra quem depende da audição",
+          "por_nivel": true
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "sonda-mental",
@@ -3971,7 +5466,15 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Uma vez por hora de jogo real, refaz duas vezes um teste de habilidade, dano ou reação e fica com o melhor (ou força o atacante a ficar com o pior); Sorte Extraordinária a cada 30 min (30 pts), Sorte Impossível a cada 10 min (60 pts). Não pode ser acumulada nem compartilhada."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "st-bracal",
@@ -4013,7 +5516,18 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "garra"
+      "icone": "garra",
+      "efeitos": [
+        {
+          "alvo": "atributo",
+          "ref": "st",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "somente para calcular o dano básico GdP/GeB; não afeta PV nem Base de Carga"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "st-de-levantamento",
@@ -4033,7 +5547,18 @@
         "tipo": "niveis",
         "por_nivel": 3
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "atributo",
+          "ref": "st",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "somente para Base de Carga (carregar, erguer, empurrar, puxar) e esforço lento e contínuo (segurar, estrangular); não afeta PV, arremesso nem dano"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "status",
@@ -4053,7 +5578,22 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "coroa"
+      "icone": "coroa",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "diferença de Status ao lidar com pessoas de Status inferior da mesma cultura (a critério do Mestre)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Indica posição social e privilégios; exige custo mensal de manutenção em dinheiro e só vale quando reconhecido."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 8,
+      "duvida_efeitos": "O bônus usa a diferença entre os Status, não o nível absoluto; 8 é o topo usual (imperador), não um limite rígido."
     },
     {
       "id": "super-escalada",
@@ -4159,7 +5699,26 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "por_nivel": true,
+          "condicao": "de quem percebe e pode se impressionar com o talento demonstrado (grupo em 'reacao')"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Reduz em 10% por nível o tempo para aprender as perícias do talento durante o jogo; não muda o custo em pontos."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Só talentos sobrepostos podem somar mais de +4 numa perícia."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "Detalhe tratado no lote F."
     },
     {
       "id": "talento-instintivo",
@@ -4280,7 +5839,21 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena"
+      "icone": "estrela-pequena",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "ht_alcoolismo",
+          "valor": 2,
+          "condicao": "testes de HT relacionados a alcoolismo"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Bebe indefinidamente sem efeitos nocivos no corpo, mas a embriaguez o afeta normalmente."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "tolerancia-a-radiacao",
@@ -4320,7 +5893,20 @@
         "tipo": "niveis",
         "por_nivel": 1
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Cada nível amplia a zona de conforto térmico (normal 2 °C a 32 °C) em graus iguais à HT, distribuídos entre frio e calor; não protege contra ataques de fogo/gelo."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Em campanha realista, humanos comuns ficam limitados a 1 ou 2 níveis."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "tolerancia-g-ampliada",
@@ -4381,7 +5967,25 @@
         "tipo": "fixo",
         "valor": 30
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Metade da penalidade para Golpe Rápido e para aparar mais de uma vez por turno com perícias de combate desarmado e armas brancas."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Permite aprender perícias de chi que o exigem (ex.: Arte da Invisibilidade, Golpe Poderoso, Salto Voador)."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "O Mestre pode exigir pré-requisitos extras, comumente perícias de armas brancas, Caratê, Filosofia, Judô ou Teologia."
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "Mestre pode proibir em campanha realista."
     },
     {
       "id": "titere",
@@ -4447,7 +6051,21 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "habilidade_arriscada",
+          "valor": 1,
+          "condicao": "testes de habilidade ao assumir um risco desnecessário, a juízo do Mestre"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Numa falha crítica durante uma ação ousada de alto risco, pode refazer o teste."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "ver-o-invisivel",
@@ -4468,7 +6086,15 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "garra"
+      "icone": "garra",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Enxerga seres e objetos invisíveis de um tipo específico de invisibilidade; comprar separadamente para cada tipo."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "versatil",
@@ -4488,7 +6114,33 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "tarefas_criativas",
+          "valor": 1,
+          "condicao": "qualquer tarefa que exija criatividade ou inventividade"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "artista",
+          "valor": 1,
+          "condicao": "na maioria dos testes criativos"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "engenharia",
+          "valor": 1,
+          "condicao": "para novas invenções"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "+1 também nos testes para usar a vantagem Desenvolvedor."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "vida-extra",
@@ -4530,7 +6182,15 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "mente"
+      "icone": "mente",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Fora de combate, 1 minuto visualizando uma ação e teste de IQ: bônus igual à margem de sucesso se a situação for quase idêntica, metade (mín. +1) se parecida, um terço se muito diferente; o Mestre ajusta até +2 ou penaliza pela descrição."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "visao-360-graus",
@@ -4634,7 +6294,18 @@
         "tipo": "niveis",
         "por_nivel": 1
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "visao",
+          "valor": 1,
+          "condicao": "anula -1 de penalidade por escuridão parcial por nível (testes de visão e combate); inútil em escuridão total",
+          "por_nivel": true
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 9
     },
     {
       "id": "visao-penetrante",
@@ -4675,7 +6346,21 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Campo de visão de 240°; ataca em corpo a corpo os hexágonos laterais; não sofre penalidade defendendo-se de ataques laterais e só -2 contra ataques pelas costas."
+        },
+        {
+          "alvo": "teste",
+          "ref": "detectar_perseguicao_emboscada",
+          "valor": 3,
+          "condicao": "contra perseguição ou emboscada pelas costas; o Mestre sempre testa Visão para perigos atrás"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "visao-telescopica",
@@ -4737,7 +6422,30 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "punho"
+      "icone": "punho",
+      "efeitos": [
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "arremedo",
+            "atuacao",
+            "canto",
+            "diplomacia",
+            "labia",
+            "oratoria",
+            "politica",
+            "sex-appeal"
+          ],
+          "valor": 2
+        },
+        {
+          "alvo": "reacao",
+          "valor": 2,
+          "condicao": "de quem pode ouvir sua voz"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "voz-penetrante",
@@ -4757,7 +6465,21 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena"
+      "icone": "estrela-pequena",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Em ambiente barulhento, quem tenta ouvi-lo ganha +3 em Audição."
+        },
+        {
+          "alvo": "pericia",
+          "ref": "intimidacao",
+          "valor": 1,
+          "condicao": "ao surpreender alguém com um berro, a critério do Mestre"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "vinculo-especial",
@@ -4778,7 +6500,20 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "sol"
+      "icone": "sol",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Empatia forte com uma única pessoa a qualquer distância: sabe sem teste quando ela está em perigo, com dor, mentindo ou precisando de ajuda; é recíproco."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Ambos os envolvidos precisam comprar a vantagem; o Mestre pode proibir ou exigir Antecedente Incomum com PdMs de nível Patrono."
+        }
+      ],
+      "nivel_max": null
     }
   ]
 }

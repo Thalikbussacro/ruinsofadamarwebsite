@@ -602,9 +602,9 @@
     "minimo": -2,
     "maximo": 8,
     "exemplos": {
-      "-2": "escravo ou indigente",
       "0": "homem livre, cidadão comum",
-      "8": "imperador ou rei-deus"
+      "8": "imperador ou rei-deus",
+      "-2": "escravo ou indigente"
     }
   },
   "hierarquia": {
@@ -713,5 +713,1327 @@
         "rotulo": "resiste quase sempre"
       }
     ]
+  },
+  "formulas": {
+    "aliados": {
+      "entradas": [
+        {
+          "id": "pontos_relativos",
+          "descricao": "pontos do aliado em fração dos pontos iniciais do PdJ; entre categorias usa a maior",
+          "opcoes": [
+            {
+              "ate": 0.25,
+              "custo": 1
+            },
+            {
+              "ate": 0.5,
+              "custo": 2
+            },
+            {
+              "ate": 0.75,
+              "custo": 3
+            },
+            {
+              "ate": 1,
+              "custo": 5
+            },
+            {
+              "ate": 1.5,
+              "custo": 10
+            }
+          ],
+          "extensao": {
+            "condicao": "só aliados não sencientes (IQ 0) acima de 150%",
+            "por_cada": 0.5,
+            "custo_adicional": 5
+          },
+          "maximo": 1.5
+        },
+        {
+          "id": "tamanho_grupo",
+          "descricao": "só para grupos com mais de 5 aliados idênticos numa só planilha; multiplica o custo de um membro",
+          "opcional": true,
+          "opcoes": [
+            {
+              "de": 6,
+              "ate": 10,
+              "multiplicador": 6
+            },
+            {
+              "de": 11,
+              "ate": 20,
+              "multiplicador": 8
+            },
+            {
+              "de": 21,
+              "ate": 50,
+              "multiplicador": 10
+            },
+            {
+              "de": 51,
+              "ate": 100,
+              "multiplicador": 12
+            }
+          ],
+          "extensao": {
+            "regra": "+6 no multiplicador a cada x10 no tamanho (101-1000 x18, 1001-10000 x24, até 100.000 x30)"
+          }
+        },
+        {
+          "id": "frequencia",
+          "descricao": "frequência de participação (3d no início da aventura, pág. 36)",
+          "opcoes": [
+            {
+              "rotulo": "constantemente (sem teste)",
+              "nr": null,
+              "multiplicador": 4
+            },
+            {
+              "rotulo": "quase o tempo todo (15 ou menos)",
+              "nr": 15,
+              "multiplicador": 3
+            },
+            {
+              "rotulo": "com bastante frequência (12 ou menos)",
+              "nr": 12,
+              "multiplicador": 2
+            },
+            {
+              "rotulo": "com frequência (9 ou menos)",
+              "nr": 9,
+              "multiplicador": 1
+            },
+            {
+              "rotulo": "esporadicamente (6 ou menos)",
+              "nr": 6,
+              "multiplicador": 0.5,
+              "arredondamento": "para cima"
+            }
+          ]
+        }
+      ],
+      "calculo": "base = custo(pontos_relativos) × multiplicador(tamanho_grupo) [ou soma dos custos individuais para aliados distintos agrupados]; custo = arred_cima(base × multiplicador(frequencia)); final = arred_cima(custo × (1 + soma(modificadores%)/100))",
+      "modificadores": [
+        {
+          "nome": "Habilidades Especiais",
+          "percentual": 50,
+          "tipo": "ampliacao"
+        },
+        {
+          "nome": "Invocável",
+          "percentual": 100,
+          "tipo": "ampliacao"
+        },
+        {
+          "nome": "Lacaio (IQ 0 ou Mentalidade de Escravo)",
+          "percentual": 0,
+          "tipo": "ampliacao",
+          "exclusivo_grupo": "lacaio"
+        },
+        {
+          "nome": "Lacaio",
+          "percentual": 50,
+          "tipo": "ampliacao",
+          "exclusivo_grupo": "lacaio"
+        },
+        {
+          "nome": "Empatia",
+          "percentual": -25,
+          "tipo": "limitacao",
+          "fonte": "Basic Set (pág. 38 ausente no texto)"
+        },
+        {
+          "nome": "Relutante",
+          "percentual": -50,
+          "tipo": "limitacao",
+          "fonte": "Basic Set (pág. 38 ausente no texto)"
+        }
+      ],
+      "combinacoes": [
+        {
+          "com": "dependentes",
+          "regra": "aliado com até 100% dos pontos pode também ser Dependente: soma os dois custos numa característica só (vantagem se positivo, desvantagem se negativo)"
+        },
+        {
+          "regra": "familiar: calcule como aliado; poderes concedidos pelo familiar são comprados à parte com Acesso -40% (concedido pelo familiar)"
+        }
+      ],
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 35
+      }
+    },
+    "contatos": {
+      "entradas": [
+        {
+          "id": "nh_efetivo",
+          "descricao": "NH efetivo do contato (reflete cargo, status etc.)",
+          "opcoes": [
+            {
+              "nh": 12,
+              "custo": 1
+            },
+            {
+              "nh": 15,
+              "custo": 2
+            },
+            {
+              "nh": 18,
+              "custo": 3
+            },
+            {
+              "nh": 21,
+              "custo": 4
+            }
+          ]
+        },
+        {
+          "id": "informacao_sobrenatural",
+          "descricao": "obtém informação por PES, adivinhação mágica etc.",
+          "tipo": "booleano",
+          "custo_adicional": 1
+        },
+        {
+          "id": "frequencia",
+          "descricao": "frequência de participação (3d no início da aventura, pág. 36)",
+          "opcoes": [
+            {
+              "rotulo": "constantemente (sem teste)",
+              "nr": null,
+              "multiplicador": 4
+            },
+            {
+              "rotulo": "quase o tempo todo (15 ou menos)",
+              "nr": 15,
+              "multiplicador": 3
+            },
+            {
+              "rotulo": "com bastante frequência (12 ou menos)",
+              "nr": 12,
+              "multiplicador": 2
+            },
+            {
+              "rotulo": "com frequência (9 ou menos)",
+              "nr": 9,
+              "multiplicador": 1
+            },
+            {
+              "rotulo": "esporadicamente (6 ou menos)",
+              "nr": 6,
+              "multiplicador": 0.5,
+              "arredondamento": "para cima"
+            }
+          ]
+        },
+        {
+          "id": "confiabilidade",
+          "opcoes": [
+            {
+              "rotulo": "completamente confiável",
+              "multiplicador": 3
+            },
+            {
+              "rotulo": "razoavelmente confiável",
+              "multiplicador": 2
+            },
+            {
+              "rotulo": "meio confiável",
+              "multiplicador": 1
+            },
+            {
+              "rotulo": "não confiável",
+              "multiplicador": 0.5,
+              "arredondamento": "para cima",
+              "ajuste_nh": -2,
+              "custo_minimo": 1
+            }
+          ]
+        }
+      ],
+      "calculo": "base = custo(nh_efetivo) + (informacao_sobrenatural ? 1 : 0); custo = arred_cima(base × multiplicador(frequencia) × multiplicador(confiabilidade)), mínimo 1",
+      "modificadores": [],
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 48
+      }
+    },
+    "grupo-de-contato": {
+      "entradas": [
+        {
+          "id": "nh_efetivo",
+          "descricao": "NH efetivo numa categoria inteira de perícias (ex.: perícias policiais)",
+          "opcoes": [
+            {
+              "nh": 12,
+              "custo": 1
+            },
+            {
+              "nh": 15,
+              "custo": 2
+            },
+            {
+              "nh": 18,
+              "custo": 3
+            },
+            {
+              "nh": 21,
+              "custo": 4
+            }
+          ]
+        },
+        {
+          "id": "frequencia",
+          "descricao": "frequência de participação (3d no início da aventura, pág. 36)",
+          "opcoes": [
+            {
+              "rotulo": "constantemente (sem teste)",
+              "nr": null,
+              "multiplicador": 4
+            },
+            {
+              "rotulo": "quase o tempo todo (15 ou menos)",
+              "nr": 15,
+              "multiplicador": 3
+            },
+            {
+              "rotulo": "com bastante frequência (12 ou menos)",
+              "nr": 12,
+              "multiplicador": 2
+            },
+            {
+              "rotulo": "com frequência (9 ou menos)",
+              "nr": 9,
+              "multiplicador": 1
+            },
+            {
+              "rotulo": "esporadicamente (6 ou menos)",
+              "nr": 6,
+              "multiplicador": 0.5,
+              "arredondamento": "para cima"
+            }
+          ]
+        },
+        {
+          "id": "confiabilidade",
+          "opcoes": [
+            {
+              "rotulo": "completamente confiável",
+              "multiplicador": 3
+            },
+            {
+              "rotulo": "razoavelmente confiável",
+              "multiplicador": 2
+            },
+            {
+              "rotulo": "meio confiável",
+              "multiplicador": 1
+            },
+            {
+              "rotulo": "não confiável",
+              "multiplicador": 0.5,
+              "arredondamento": "para cima",
+              "ajuste_nh": -2,
+              "custo_minimo": 1
+            }
+          ]
+        }
+      ],
+      "calculo": "custo = arred_cima(custo(nh_efetivo) × multiplicador(frequencia) × multiplicador(confiabilidade)) × 5",
+      "modificadores": [],
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 62
+      }
+    },
+    "favor": {
+      "entradas": [
+        {
+          "id": "vantagem_subjacente",
+          "descricao": "tipo de vantagem que o favor representa",
+          "opcoes": [
+            {
+              "rotulo": "aliados",
+              "traco": "aliados"
+            },
+            {
+              "rotulo": "contatos",
+              "traco": "contatos"
+            },
+            {
+              "rotulo": "grupo de contato",
+              "traco": "grupo-de-contato"
+            },
+            {
+              "rotulo": "patronos",
+              "traco": "patronos"
+            }
+          ]
+        },
+        {
+          "id": "custo_subjacente",
+          "descricao": "custo final calculado da vantagem subjacente, com frequência e modificadores",
+          "tipo": "numero"
+        }
+      ],
+      "calculo": "custo = arred_cima(custo_subjacente / 5)",
+      "modificadores": [],
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 60
+      }
+    },
+    "patronos": {
+      "entradas": [
+        {
+          "id": "poder",
+          "opcoes": [
+            {
+              "rotulo": "indivíduo poderoso (≥150% dos pontos) ou organização com ≥1.000× recursos iniciais",
+              "custo": 10
+            },
+            {
+              "rotulo": "indivíduo muito poderoso (≥200%) ou organização com ≥10.000× recursos",
+              "custo": 15
+            },
+            {
+              "rotulo": "indivíduo ultrapoderoso ou organização com ≥100.000× recursos",
+              "custo": 20
+            },
+            {
+              "rotulo": "organização extremamente poderosa (≥1.000.000× recursos)",
+              "custo": 25
+            },
+            {
+              "rotulo": "governo nacional, multinacional gigante ou deus verdadeiro",
+              "custo": 30
+            }
+          ]
+        },
+        {
+          "id": "frequencia",
+          "descricao": "frequência de participação (3d no início da aventura, pág. 36)",
+          "opcoes": [
+            {
+              "rotulo": "constantemente (sem teste)",
+              "nr": null,
+              "multiplicador": 4
+            },
+            {
+              "rotulo": "quase o tempo todo (15 ou menos)",
+              "nr": 15,
+              "multiplicador": 3
+            },
+            {
+              "rotulo": "com bastante frequência (12 ou menos)",
+              "nr": 12,
+              "multiplicador": 2
+            },
+            {
+              "rotulo": "com frequência (9 ou menos)",
+              "nr": 9,
+              "multiplicador": 1
+            },
+            {
+              "rotulo": "esporadicamente (6 ou menos)",
+              "nr": 6,
+              "multiplicador": 0.5,
+              "arredondamento": "para cima"
+            }
+          ]
+        }
+      ],
+      "calculo": "custo = arred_cima(custo(poder) × multiplicador(frequencia)); final = arred_cima(custo × (1 + soma(modificadores%)/100))",
+      "modificadores": [
+        {
+          "nome": "Altamente Acessível",
+          "percentual": 50,
+          "tipo": "ampliacao"
+        },
+        {
+          "nome": "Equipamento (valor abaixo dos recursos iniciais médios)",
+          "percentual": 50,
+          "tipo": "ampliacao",
+          "exclusivo_grupo": "equipamento"
+        },
+        {
+          "nome": "Equipamento (valor acima dos recursos iniciais médios)",
+          "percentual": 100,
+          "tipo": "ampliacao",
+          "exclusivo_grupo": "equipamento"
+        },
+        {
+          "nome": "Habilidades Especiais (poder social/político amplo)",
+          "percentual": 50,
+          "tipo": "ampliacao",
+          "exclusivo_grupo": "habilidades"
+        },
+        {
+          "nome": "Habilidades Especiais (magia em mundo sem magia, NT superior, concede poderes, viagem incomum)",
+          "percentual": 100,
+          "tipo": "ampliacao",
+          "exclusivo_grupo": "habilidades"
+        },
+        {
+          "nome": "Intervenção Mínima",
+          "percentual": -50,
+          "tipo": "limitacao"
+        },
+        {
+          "nome": "Relutante",
+          "percentual": -50,
+          "tipo": "limitacao"
+        },
+        {
+          "nome": "Segredo",
+          "percentual": -50,
+          "tipo": "limitacao"
+        }
+      ],
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 75
+      }
+    },
+    "dependentes": {
+      "entradas": [
+        {
+          "id": "pontos_relativos",
+          "descricao": "pontos do dependente em fração dos pontos iniciais do PdJ; última linha é absoluta; usar a linha mais baixa que ele satisfaz",
+          "opcoes": [
+            {
+              "ate": 1,
+              "custo": -1
+            },
+            {
+              "ate": 0.75,
+              "custo": -2
+            },
+            {
+              "ate": 0.5,
+              "custo": -5
+            },
+            {
+              "ate": 0.25,
+              "custo": -10
+            },
+            {
+              "pontos_absolutos_max": 0,
+              "custo": -15
+            }
+          ]
+        },
+        {
+          "id": "importancia",
+          "opcoes": [
+            {
+              "rotulo": "empregado ou conhecido",
+              "multiplicador": 0.5
+            },
+            {
+              "rotulo": "amigo",
+              "multiplicador": 1
+            },
+            {
+              "rotulo": "ser amado",
+              "multiplicador": 2
+            }
+          ]
+        },
+        {
+          "id": "frequencia",
+          "descricao": "frequência de participação (3d no início da aventura, pág. 36)",
+          "opcoes": [
+            {
+              "rotulo": "quase o tempo todo (15 ou menos)",
+              "nr": 15,
+              "multiplicador": 3
+            },
+            {
+              "rotulo": "com bastante frequência (12 ou menos)",
+              "nr": 12,
+              "multiplicador": 2
+            },
+            {
+              "rotulo": "com frequência (9 ou menos)",
+              "nr": 9,
+              "multiplicador": 1
+            },
+            {
+              "rotulo": "esporadicamente (6 ou menos)",
+              "nr": 6,
+              "multiplicador": 0.5,
+              "arredondamento": "para cima"
+            }
+          ]
+        }
+      ],
+      "calculo": "custo = custo(pontos_relativos) × multiplicador(importancia) × multiplicador(frequencia), frações arredondadas para cima em valor absoluto; grupo de dependentes genéricos = 2 × custo de um membro",
+      "limites": {
+        "max_dependentes_com_pontos": 2
+      },
+      "modificadores": [],
+      "combinacoes": [
+        {
+          "com": "aliados",
+          "regra": "mesma pessoa pode ser Aliado e Dependente: soma os custos (mesmo total de pontos, frequências podem diferir)"
+        }
+      ],
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 130
+      }
+    },
+    "dever": {
+      "entradas": [
+        {
+          "id": "frequencia",
+          "opcoes": [
+            {
+              "rotulo": "quase o tempo todo (15 ou menos)",
+              "nr": 15,
+              "custo": -15
+            },
+            {
+              "rotulo": "com bastante frequência (12 ou menos)",
+              "nr": 12,
+              "custo": -10
+            },
+            {
+              "rotulo": "com pouca frequência (9 ou menos)",
+              "nr": 9,
+              "custo": -5
+            },
+            {
+              "rotulo": "esporadicamente (6 ou menos)",
+              "nr": 6,
+              "custo": -2
+            }
+          ]
+        },
+        {
+          "id": "perigo",
+          "opcoes": [
+            {
+              "rotulo": "ocasionalmente perigoso (padrão)",
+              "ajuste": 0
+            },
+            {
+              "rotulo": "Extremamente Perigoso",
+              "ajuste": -5
+            },
+            {
+              "rotulo": "Inofensivo",
+              "ajuste": 5
+            }
+          ]
+        },
+        {
+          "id": "involuntario",
+          "tipo": "booleano",
+          "ajuste": -5
+        }
+      ],
+      "calculo": "custo = custo(frequencia) + ajuste(perigo) + (involuntario ? -5 : 0); se resultado >= 0 não é Dever",
+      "modificadores": [],
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 133
+      }
+    },
+    "inimigos": {
+      "entradas": [
+        {
+          "id": "poder",
+          "opcoes": [
+            {
+              "rotulo": "indivíduo mais fraco (~50% dos pontos)",
+              "custo": -5
+            },
+            {
+              "rotulo": "indivíduo igual (~100%) ou grupo pequeno de 3-5 mais fracos",
+              "custo": -10
+            },
+            {
+              "rotulo": "indivíduo mais forte (~150%) ou grupo médio de 6-20 mais fracos",
+              "custo": -20
+            },
+            {
+              "rotulo": "grupo grande de 21-1000 mais fracos ou grupo médio com membros formidáveis",
+              "custo": -30
+            },
+            {
+              "rotulo": "governo inteiro, escola de feiticeiros ou grupo formidável",
+              "custo": -40
+            }
+          ]
+        },
+        {
+          "id": "caso_especial",
+          "descricao": "ajusta a base antes dos multiplicadores",
+          "opcional": true,
+          "opcoes": [
+            {
+              "rotulo": "Desconhecido",
+              "ajuste": -5
+            },
+            {
+              "rotulo": "Gêmeo Maligno equivalente",
+              "custo_base_fixo": -10
+            },
+            {
+              "rotulo": "Gêmeo Maligno mais capacitado ou com habilidades extras",
+              "custo_base_fixo": -10,
+              "ajuste": -5
+            },
+            {
+              "rotulo": "Gêmeo Maligno mais capacitado e com habilidades extras",
+              "custo_base_fixo": -10,
+              "ajuste": -10
+            }
+          ]
+        },
+        {
+          "id": "intencao",
+          "opcoes": [
+            {
+              "rotulo": "Observador",
+              "multiplicador": 0.25
+            },
+            {
+              "rotulo": "Rival",
+              "multiplicador": 0.5
+            },
+            {
+              "rotulo": "Perseguidor",
+              "multiplicador": 1
+            }
+          ]
+        },
+        {
+          "id": "frequencia",
+          "descricao": "frequência de participação (3d no início da aventura, pág. 36)",
+          "opcoes": [
+            {
+              "rotulo": "quase o tempo todo (15 ou menos)",
+              "nr": 15,
+              "multiplicador": 3
+            },
+            {
+              "rotulo": "com bastante frequência (12 ou menos)",
+              "nr": 12,
+              "multiplicador": 2
+            },
+            {
+              "rotulo": "com frequência (9 ou menos)",
+              "nr": 9,
+              "multiplicador": 1
+            },
+            {
+              "rotulo": "esporadicamente (6 ou menos)",
+              "nr": 6,
+              "multiplicador": 0.5,
+              "arredondamento": "para cima"
+            }
+          ]
+        }
+      ],
+      "calculo": "base = custo(poder) + ajuste(caso_especial) [Gêmeo Maligno substitui o poder por -10 + ajuste]; custo = base × multiplicador(intencao) × multiplicador(frequencia), frações arredondadas para cima em valor absoluto",
+      "limites": {
+        "max_inimigos": 2,
+        "total_min": -60
+      },
+      "modificadores": [],
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 146
+      }
+    }
+  },
+  "talentos": [
+    {
+      "id": "agente-cativante",
+      "nome": "Agente Cativante",
+      "custo_por_nivel": 15,
+      "pericias": [
+        "boemia",
+        "deteccao-de-mentiras",
+        "diplomacia",
+        "dissimulacao",
+        "intimidacao",
+        "labia",
+        "lideranca",
+        "manha",
+        "mendicancia",
+        "oratoria",
+        "politica",
+        "sex-appeal",
+        "trato-social"
+      ],
+      "reacao": "enganadores, políticos, vendedores etc., se não estiver tentando manipulá-los",
+      "nivel_max": 4
+    },
+    {
+      "id": "artifice",
+      "nome": "Artífice",
+      "custo_por_nivel": 10,
+      "pericias": [
+        "alvenaria",
+        "armeiro",
+        "carpintaria",
+        "conserto-de-equipamento-eletronico",
+        "eletricista",
+        "engenharia",
+        "maquinista",
+        "mecanica",
+        "ferreiro"
+      ],
+      "reacao": "qualquer pessoa para quem trabalha",
+      "nivel_max": 4
+    },
+    {
+      "id": "artista-talentoso",
+      "nome": "Artista Talentoso",
+      "custo_por_nivel": 5,
+      "pericias": [
+        "artista",
+        "costura",
+        "fotografia",
+        "joalheiro",
+        "trabalhos-em-couro"
+      ],
+      "reacao": "quem compra ou aprecia seu trabalho",
+      "nivel_max": 4
+    },
+    {
+      "id": "companheiro-animal",
+      "nome": "Companheiro Animal",
+      "custo_por_nivel": 5,
+      "pericias": [
+        "adestramento-de-animais",
+        "carregamento",
+        "carroceiro",
+        "cavalgar",
+        "falcoaria",
+        "veterinaria"
+      ],
+      "reacao": "todos os animais",
+      "nivel_max": 4
+    },
+    {
+      "id": "curandeiro",
+      "nome": "Curandeiro",
+      "custo_por_nivel": 10,
+      "pericias": [
+        "cirurgia",
+        "diagnose",
+        "farmacia",
+        "fisiologia",
+        "medicina",
+        "medicina-alternativa",
+        "primeiros-socorros",
+        "psicologia",
+        "veterinaria"
+      ],
+      "reacao": "pacientes atuais e antigos",
+      "nivel_max": 4
+    },
+    {
+      "id": "dedos-verdes",
+      "nome": "Dedos Verdes",
+      "custo_por_nivel": 5,
+      "pericias": [
+        "biologia",
+        "conhecimento-das-ervas",
+        "cultivo",
+        "jardinagem",
+        "naturalista"
+      ],
+      "reacao": "jardineiros e plantas inteligentes",
+      "nivel_max": 4,
+      "observacao": "A edição PT-BR inclui Naturalista, que o Basic Set em inglês não lista."
+    },
+    {
+      "id": "explorador",
+      "nome": "Explorador",
+      "custo_por_nivel": 10,
+      "pericias": [
+        "arremedo",
+        "camuflagem",
+        "naturalista",
+        "navegacao",
+        "pescaria",
+        "rastreamento",
+        "sobrevivencia"
+      ],
+      "reacao": "exploradores, amantes da natureza e afins",
+      "nivel_max": 4,
+      "observacao": "Arremedo aqui é o de sons de animais/aves (Basic Set)."
+    },
+    {
+      "id": "habilidade-matematica",
+      "nome": "Habilidade Matemática",
+      "custo_por_nivel": 10,
+      "pericias": [
+        "analise-de-mercado",
+        "astronomia",
+        "contabilidade",
+        "criptografia",
+        "engenharia",
+        "financas",
+        "fisica",
+        "matematica"
+      ],
+      "reacao": "engenheiros e cientistas",
+      "nivel_max": 4
+    },
+    {
+      "id": "habilidade-musical",
+      "nome": "Habilidade Musical",
+      "custo_por_nivel": 5,
+      "pericias": [
+        "canto",
+        "composicao-musical",
+        "influencia-musical",
+        "instrumentos-musicais",
+        "performance-em-grupo"
+      ],
+      "reacao": "quem ouve ou aprecia seu trabalho",
+      "nivel_max": 4,
+      "observacao": "Performance em Grupo só na especialização Condução."
+    },
+    {
+      "id": "perspicacia-comercial",
+      "nome": "Perspicácia Comercial",
+      "custo_por_nivel": 10,
+      "pericias": [
+        "administracao",
+        "analise-de-mercado",
+        "comercio",
+        "contabilidade",
+        "economia",
+        "financas",
+        "jogos-de-azar",
+        "propaganda"
+      ],
+      "reacao": "quem faz negócios com ele",
+      "nivel_max": 4
+    }
+  ],
+  "catalogo_testes": {
+    "acoes_proposito_maior": {
+      "descricao": "todos os testes diretamente ligados ao objetivo declarado, enquanto o Mestre julgar que o personagem o persegue",
+      "usado_por": [
+        "proposito-maior"
+      ]
+    },
+    "aprender_assunto": {
+      "descricao": "teste de IQ pedido pelo Mestre para aprender um assunto; versão Memória Eidética (5 pts)",
+      "usado_por": [
+        "memoria-eidetica"
+      ]
+    },
+    "aprender_magicas": {
+      "descricao": "soma à IQ para aprender mágicas (níveis 1+)",
+      "usado_por": [
+        "aptidao-magica"
+      ]
+    },
+    "aprender_magicas_clericais": {
+      "descricao": "soma à IQ para aprender as mágicas clericais concedidas pela divindade",
+      "usado_por": [
+        "investidura-de-poder"
+      ]
+    },
+    "ataque_distancia": {
+      "descricao": "ataques à distância sem Apontar e conduzir veículos mais rápidos que um cavalo",
+      "usado_por": [
+        "sem-nocao-de-profundidade",
+        "zarolho"
+      ]
+    },
+    "ataque_letal_pessoa": {
+      "descricao": "só Assassino Relutante: ataque letal contra pessoa que vê (-2 se não vê o rosto, fora do corpo a corpo); também não pode Apontar",
+      "usado_por": [
+        "pacifismo"
+      ]
+    },
+    "audicao": {
+      "descricao": "Testes de Audição",
+      "usado_por": [
+        "duro-de-ouvido",
+        "sentidos-agucados"
+      ]
+    },
+    "autocontrole": {
+      "descricao": "até 1 hora depois de acordar",
+      "usado_por": [
+        "dorminhoco"
+      ]
+    },
+    "compreender_fala": {
+      "descricao": "testes de idioma para entender o que alguém diz",
+      "usado_por": [
+        "duro-de-ouvido"
+      ]
+    },
+    "contatar_espiritos": {
+      "descricao": "enquanto em transe, em testes para contatar espíritos e similares",
+      "usado_por": [
+        "autotranse"
+      ]
+    },
+    "criatividade": {
+      "descricao": "qualquer tarefa que exija criatividade, incluindo testes da vantagem Desenvolvedor",
+      "usado_por": [
+        "sem-imaginacao"
+      ]
+    },
+    "destreza_manual": {
+      "descricao": "testes de DX para trabalho delicado (perícias de Destreza Manual Elevada); -6 no nível de -10 pontos",
+      "usado_por": [
+        "atrapalhado"
+      ]
+    },
+    "detectar_perseguicao_emboscada": {
+      "descricao": "contra perseguição ou emboscada pelas costas; o Mestre sempre testa Visão para perigos atrás",
+      "usado_por": [
+        "visao-periferica"
+      ]
+    },
+    "escapar_agarrao": {
+      "descricao": "Flexibilidade (5): tentativas de se libertar em combate corpo a corpo",
+      "usado_por": [
+        "flexibilidade"
+      ]
+    },
+    "habilidade_arriscada": {
+      "descricao": "testes de habilidade ao assumir um risco desnecessário, a juízo do Mestre",
+      "usado_por": [
+        "venturoso"
+      ]
+    },
+    "ht_alcoolismo": {
+      "descricao": "testes de HT relacionados a alcoolismo",
+      "usado_por": [
+        "tolerancia-ao-alcool"
+      ]
+    },
+    "ht_bebida": {
+      "descricao": "testes de HT ligados a embriaguez",
+      "usado_por": [
+        "intolerancia-ao-alcool"
+      ]
+    },
+    "ht_comida_bebida": {
+      "descricao": "teste de HT contra mal-estar por comida muito temperada, bebida forte etc.",
+      "usado_por": [
+        "estomago-sensivel"
+      ]
+    },
+    "ht_morte": {
+      "descricao": "HT para não morrer com PV negativos",
+      "usado_por": [
+        "duro-de-matar",
+        "facil-de-matar",
+        "fora-de-forma"
+      ]
+    },
+    "ht_nocaute": {
+      "descricao": "HT para não desmaiar ou ser atordoado",
+      "usado_por": [
+        "dificil-de-subjugar",
+        "fora-de-forma",
+        "hiperalgia",
+        "hipoalgia-alto-limiar-de-dor"
+      ]
+    },
+    "ht_resistir_suscetibilidade": {
+      "descricao": "testes de HT contra a classe de agentes escolhida (ex.: doenças, venenos)",
+      "usado_por": [
+        "suscetivel"
+      ]
+    },
+    "ht_sangramento": {
+      "descricao": "HT contra sangramento",
+      "usado_por": [
+        "controle-do-metabolismo"
+      ]
+    },
+    "influencia": {
+      "descricao": "testes de Influência feitos pelo personagem",
+      "usado_por": [
+        "carisma"
+      ]
+    },
+    "iniciativa": {
+      "descricao": "Iniciativa e surpresa",
+      "usado_por": [
+        "reflexos-em-combate"
+      ]
+    },
+    "interpretar_visoes": {
+      "descricao": "Muito Abençoado (20): teste de IQ para interpretar as visões",
+      "usado_por": [
+        "abencoado"
+      ]
+    },
+    "lidar_com_vitimas": {
+      "descricao": "ao lidar com quem já sofreu com sua insensibilidade",
+      "usado_por": [
+        "insensivel"
+      ]
+    },
+    "manipulacao_precisa": {
+      "descricao": "Suave -2 (tempo x2); Grave -4 (x4); Incapacitante -6 (x6)",
+      "usado_por": [
+        "disturbio-neurologico"
+      ]
+    },
+    "manter_equilibrio": {
+      "descricao": "superfície úmida, escorregadia ou instável",
+      "usado_por": [
+        "equilibrio-perfeito"
+      ]
+    },
+    "nao_ser_derrubado": {
+      "descricao": "testes de DX e perícias de DX em combate para ficar de pé",
+      "usado_por": [
+        "equilibrio-perfeito"
+      ]
+    },
+    "nh_contato": {
+      "descricao": "cumulativo para cada pergunta após a primeira no mesmo encontro",
+      "usado_por": [
+        "contatos"
+      ]
+    },
+    "olfato_paladar": {
+      "descricao": "Testes de Olfato e Paladar",
+      "usado_por": [
+        "sentidos-agucados"
+      ]
+    },
+    "perceber_interrupcao": {
+      "descricao": "enquanto concentrado (evitar o foco exige teste de Vontade)",
+      "usado_por": [
+        "atento",
+        "obstinado"
+      ]
+    },
+    "perceber_trapaca": {
+      "descricao": "para perceber que um comerciante o está enganando",
+      "usado_por": [
+        "dificuldade-com-numeros"
+      ]
+    },
+    "pericias_combate": {
+      "descricao": "cego acostumado; quem perde a visão de repente sofre -10",
+      "usado_por": [
+        "cegueira"
+      ]
+    },
+    "pericias_iq": {
+      "descricao": "perícias baseadas em IQ quando está sozinho; Gregário -2 (ou -1 em grupo de 4 pessoas ou menos)",
+      "usado_por": [
+        "amigavel",
+        "amnesia"
+      ]
+    },
+    "reacao_animais": {
+      "descricao": "Reação de animais",
+      "usado_por": [
+        "assustar-animais",
+        "falar-com-animais",
+        "mau-cheiro"
+      ]
+    },
+    "recuperacao_pf": {
+      "descricao": "Recuperação de PF",
+      "usado_por": [
+        "boa-forma"
+      ]
+    },
+    "recuperacao_pv": {
+      "descricao": "Recuperação de PV",
+      "usado_por": [
+        "recuperacao-acelerada"
+      ]
+    },
+    "recuperar_doenca_veneno": {
+      "descricao": "testes de HT para se recuperar (não para resistir) de doenças e venenos, e outros que o controle ajude",
+      "usado_por": [
+        "controle-do-metabolismo"
+      ]
+    },
+    "recuperar_lesao_incapacitante": {
+      "descricao": "na HT efetiva para se recuperar de lesão incapacitante",
+      "usado_por": [
+        "recuperacao-acelerada"
+      ]
+    },
+    "recuperar_surpresa": {
+      "descricao": "testes de IQ para se recuperar de surpresa ou atordoamento mental",
+      "usado_por": [
+        "reflexos-em-combate"
+      ]
+    },
+    "resistir_categoria_escolhida": {
+      "descricao": "testes de HT contra a categoria escolhida (doenças, venenos etc.); nível +3 custa 1/3 do custo base",
+      "usado_por": [
+        "resistente"
+      ]
+    },
+    "resistir_doenca": {
+      "descricao": "HT para resistir a doenças",
+      "usado_por": [
+        "fora-de-forma"
+      ]
+    },
+    "resistir_elixires": {
+      "descricao": "teste de HT + nível para resistir a elixires mágicos",
+      "usado_por": [
+        "abascanto-resistencia-a-magia"
+      ]
+    },
+    "resistir_influencia": {
+      "descricao": "Resistir a perícias de Influência (Lábia, Intimidação, Sex Appeal…)",
+      "usado_por": [
+        "ingenuo",
+        "oblivio",
+        "temor"
+      ]
+    },
+    "resistir_magia": {
+      "descricao": "Resistir a magia",
+      "usado_por": [
+        "abascanto-resistencia-a-magia",
+        "susceptibilidade-a-magia"
+      ]
+    },
+    "resistir_medo": {
+      "descricao": "resistir à perícia Intimidação e a poderes sobrenaturais que induzem medo",
+      "usado_por": [
+        "destemor"
+      ]
+    },
+    "resistir_possessao": {
+      "descricao": "contra possessão completa enquanto está em transe",
+      "usado_por": [
+        "canalizacao"
+      ]
+    },
+    "resistir_telepatia": {
+      "descricao": "IQ ou Vontade contra vantagens Telepáticas e mágicas de Comunicação e Empatia ou de Controle da Mente",
+      "usado_por": [
+        "escudo-mental"
+      ]
+    },
+    "resistir_tortura": {
+      "descricao": "resistir a tortura física; o Mestre pode dar +3 em Vontade para ignorar dor",
+      "usado_por": [
+        "hipoalgia-alto-limiar-de-dor"
+      ]
+    },
+    "resistir_veneno": {
+      "descricao": "HT para resistir a venenos",
+      "usado_por": [
+        "fora-de-forma"
+      ]
+    },
+    "ressaca": {
+      "descricao": "no dia seguinte a beber muito, além de outras penalidades de ressaca",
+      "usado_por": [
+        "ressacas-terriveis"
+      ]
+    },
+    "st_resistir_derrubada": {
+      "descricao": "ST para resistir a ser derrubado; Acima do Peso +1, Gordo +2, Muito Gordo +3",
+      "usado_por": [
+        "acima-do-peso-gordo-muito-gordo",
+        "magro"
+      ]
+    },
+    "tarefa_mental_prolongada": {
+      "descricao": "tarefas mentais longas que se beneficiam de foco, a critério do Mestre; não vale em tarefas que exigem dividir atenção",
+      "usado_por": [
+        "obstinado"
+      ]
+    },
+    "tarefas_criativas": {
+      "descricao": "qualquer tarefa que exija criatividade ou inventividade",
+      "usado_por": [
+        "versatil"
+      ]
+    },
+    "tarefas_dois_bracos": {
+      "descricao": "tarefas possíveis com um braço mas que normalmente usam dois (ex.: Escalada, Luta Greco-Romana)",
+      "usado_por": [
+        "maneta-um-braco",
+        "maneta-uma-mao"
+      ]
+    },
+    "tarefas_longas": {
+      "descricao": "ao trabalhar numa tarefa longa",
+      "usado_por": [
+        "atento",
+        "distraido",
+        "sonhador"
+      ]
+    },
+    "tato": {
+      "descricao": "Testes de Tato",
+      "usado_por": [
+        "sentidos-agucados"
+      ]
+    },
+    "testes_habilidade": {
+      "descricao": "quando acredita que não tem chance ou que esperam seu fracasso",
+      "usado_por": [
+        "baixa-autoestima"
+      ]
+    },
+    "testes_ht": {
+      "descricao": "Boa Forma (5): todos os testes de HT (consciência, morte, doença, veneno), não a HT nem perícias",
+      "usado_por": [
+        "boa-forma"
+      ]
+    },
+    "testes_iq": {
+      "descricao": "exceto os ligados à tarefa em que está concentrado",
+      "usado_por": [
+        "distracao"
+      ]
+    },
+    "uso_pernas": {
+      "descricao": "testes que exigem as pernas, incluindo combate corpo a corpo e desarmado; Perna Incapacitada -3, demais graus -6",
+      "usado_por": [
+        "deficiencia-fisica"
+      ]
+    },
+    "verificacao_panico": {
+      "descricao": "Verificação de Pânico (medo)",
+      "usado_por": [
+        "covardia",
+        "destemor",
+        "paralisia-frente-ao-combate",
+        "reflexos-em-combate",
+        "temor",
+        "xenofilia"
+      ]
+    },
+    "visao": {
+      "descricao": "Testes de Visão",
+      "usado_por": [
+        "disopia",
+        "sentidos-agucados",
+        "visao-noturna"
+      ]
+    },
+    "vontade_autocontrole": {
+      "descricao": "durante a lua cheia, em todos os testes de Vontade e de autocontrole",
+      "usado_por": [
+        "lunatico"
+      ]
+    }
   }
 }

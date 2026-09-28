@@ -25,7 +25,48 @@
         "min": -5,
         "max": -1
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "disfarce",
+          "valor": -1,
+          "condicao": "Acima do Peso; -2 Gordo; -3 Muito Gordo"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "perseguicao",
+          "valor": -1,
+          "condicao": "ao seguir alguém na multidão; Acima do Peso -1, Gordo -2, Muito Gordo -3"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "natacao",
+          "valor": 1,
+          "condicao": "Acima do Peso; +3 Gordo; +5 Muito Gordo"
+        },
+        {
+          "alvo": "teste",
+          "ref": "st_resistir_derrubada",
+          "valor": 1,
+          "condicao": "ST para resistir a ser derrubado; Acima do Peso +1, Gordo +2, Muito Gordo +3"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Três graus de constituição (-1, -3, -5 pontos); roupas e armaduras comuns podem não servir (Muito Gordo paga 10-20% a mais)."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Gordo: HT máxima 15. Muito Gordo: HT máxima 13."
+        },
+        {
+          "tipo": "exclui",
+          "id": "magro"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "acomodado",
@@ -45,7 +86,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Versão leve de Indiferente: não liga para problemas que não o atingem diretamente."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "alcoolismo",
@@ -68,7 +117,15 @@
           -20
         ]
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Diante de álcool faz teste de Vontade ou entra em bebedeira de 2d horas; teste anual de HT+2 ou perde 1 ponto num atributo aleatório. -20 se o álcool for ilegal."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "altruismo",
@@ -89,7 +146,15 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Coloca as necessidades dos outros acima das próprias; precisa de teste de autocontrole para agir em benefício próprio."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "amigavel",
@@ -112,7 +177,27 @@
           -10
         ]
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "pericias_iq",
+          "valor": -1,
+          "condicao": "perícias baseadas em IQ quando está sozinho; Gregário -2 (ou -1 em grupo de 4 pessoas ou menos)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "O personagem reage aos outros com +2 (Amigável) ou +4 (Gregário) na maioria das vezes; busca sempre companhia."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "solitario"
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "Exclusão com Solitário é inferência lógica, não está explícita no texto."
     },
     {
       "id": "amnesia",
@@ -135,7 +220,22 @@
           -25
         ]
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "pericias_iq",
+          "valor": -2,
+          "condicao": "apenas Amnésia Total, salvo quando a memória não importa"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Parcial: o Mestre pode esconder até -30 pontos de desvantagens secretas. Total: o Mestre controla a ficha e faz os testes até a memória voltar."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "O texto OCR diz -35 para Amnésia Total; o custo listado e o Basic Set indicam -25."
     },
     {
       "id": "antecedentes-mundanos",
@@ -155,7 +255,20 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Começa só com perícias e equipamentos mundanos; não sabe usar vantagens sobrenaturais nem aprender perícias ligadas ao sobrenatural até recomprar."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Só em cenários com elementos sobrenaturais. Não pode ter mágicas, perícias cinematográficas, Conhecimento Oculto ou Ocultismo no início."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "antipatico",
@@ -175,7 +288,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Versão leve de Solitário: prefere ficar só e agir sozinho."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "aparencia-desvantagem",
@@ -194,7 +315,45 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -1,
+          "condicao": "Sem Atrativos (-4 pts)"
+        },
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "Feio (-8 pts)"
+        },
+        {
+          "alvo": "reacao",
+          "valor": -4,
+          "condicao": "Hediondo (-16 pts)"
+        },
+        {
+          "alvo": "reacao",
+          "valor": -5,
+          "condicao": "Monstruoso (-20 pts)"
+        },
+        {
+          "alvo": "reacao",
+          "valor": -6,
+          "condicao": "Horrendo (-24 pts)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Afeta só quem vê o personagem e é da mesma raça ou de raça semelhante; Monstruoso e Horrendo podem ser restritos a seres sobrenaturais."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "aparencia"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "assustar-animais",
@@ -215,7 +374,20 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "lua-negra"
+      "icone": "lua-negra",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "reacao_animais",
+          "valor": -4
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Animais ficam assustados ou agressivos; quem vê a reação do animal (e quem tem Empatia com Animais) reage com -1."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "ataque-infeccioso",
@@ -276,7 +448,23 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "tarefas_longas",
+          "valor": 1,
+          "condicao": "ao trabalhar numa tarefa longa"
+        },
+        {
+          "alvo": "teste",
+          "ref": "perceber_interrupcao",
+          "valor": -3,
+          "condicao": "para notar interrupções importantes enquanto está focado"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "atrapalhado",
@@ -299,7 +487,32 @@
           -10
         ]
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "destreza_manual",
+          "valor": -3,
+          "condicao": "testes de DX para trabalho delicado (perícias de Destreza Manual Elevada); -6 no nível de -10 pontos"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "sacar-rapido",
+          "valor": -3,
+          "condicao": "-6 no nível de -10 pontos"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Pode sofrer -1 por nível em testes de reação/Influência onde boas maneiras importam."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "destreza-manual-elevada"
+        }
+      ],
+      "nivel_max": 2
     },
     {
       "id": "autodestruicao",
@@ -341,7 +554,15 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole sempre que precisa gastar dinheiro (-5 ou pior em gastos grandes); se falhar recusa ou regateia sem parar."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "aversao",
@@ -361,7 +582,15 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "lua-negra"
+      "icone": "lua-negra",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Não consegue ficar a menos de um raio escolhido de uma substância; se forçado, foge pelo caminho mais direto ou fica indefeso. Custo: -10 (1 m), -1 por metro extra até -20, vezes a raridade (como Fraqueza)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "aversoes",
@@ -381,7 +610,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Evita um objeto ou situação de que não gosta sempre que puder, sem os efeitos de uma fobia."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "azar",
@@ -401,7 +638,20 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Uma vez por sessão o Mestre faz algo dar errado para o personagem, sem matá-lo diretamente."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "sorte"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "baixa-autoestima",
@@ -421,7 +671,17 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "testes_habilidade",
+          "valor": -3,
+          "condicao": "quando acredita que não tem chance ou que esperam seu fracasso"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "barulhento",
@@ -441,7 +701,22 @@
         "tipo": "niveis",
         "por_nivel": -2
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "furtividade",
+          "valor": -2,
+          "por_nivel": true
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Outros ganham +2 por nível nos testes de Audição para percebê-lo; em certos ambientes, -1 por nível na reação."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 5,
+      "duvida_efeitos": "Mais de 5 níveis só com permissão do Mestre."
     },
     {
       "id": "bestial",
@@ -506,7 +781,19 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -2
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Intimida e provoca os outros sempre que pode; teste de autocontrole para evitar bravatas quando não deve."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "caracteristicas-distintas",
@@ -526,7 +813,26 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "disfarce",
+          "valor": -1
+        },
+        {
+          "alvo": "pericia",
+          "ref": "perseguicao",
+          "valor": -1
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Quem tenta identificá-lo ou segui-lo ganha +1."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "O livro cita a perícia 'Sombra'; mapeei para 'perseguicao' (Shadowing no Basic Set)."
     },
     {
       "id": "caracteristicas-sobrenaturais",
@@ -566,7 +872,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Imune a sedução e nunca gera filhos; em alguns cenários pode implicar aparência diferente, Estigma Social ou Feições Estranhas."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "cegueira",
@@ -586,7 +900,38 @@
         "tipo": "fixo",
         "valor": -50
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "pericias_combate",
+          "valor": -6,
+          "condicao": "cego acostumado; quem perde a visão de repente sofre -10"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Não enxerga; não mira pontos de impacto nem usa armas à distância (salvo alvo que ouça). Não sofre penalidade extra por escuridão."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "visao-noturna"
+        },
+        {
+          "tipo": "exclui",
+          "id": "visao-no-escuro"
+        },
+        {
+          "tipo": "exclui",
+          "id": "visao-telescopica"
+        },
+        {
+          "tipo": "texto",
+          "descricao": "Não pode comprar visão sobre-humana; Infravisão/Ultravisão só na versão de 0 ponto. Sentido de Monitoramento e de Vibração são permitidos."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "cegueira-noturna",
@@ -606,7 +951,25 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Penalidades de escuridão entre -1 e -4 são dobradas (mínimo -3); com -5 ou pior age como cego."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "visao-noturna"
+        },
+        {
+          "tipo": "exclui",
+          "id": "visao-no-escuro"
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "OCR ambíguo em 'duas vezes pior ou -3'; interpretado como o pior entre o dobro e -3."
     },
     {
       "id": "chauvinista",
@@ -626,7 +989,16 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -1,
+          "condicao": "de pessoas sensíveis ao tema"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "circunspeccao",
@@ -646,7 +1018,20 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "quando a falta de humor fica evidente"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Nunca entende nem faz piadas."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "cleptomania",
@@ -667,7 +1052,15 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole (até -3 se o objeto interessar) sempre que pode roubar; se falhar, tenta furtar e nunca devolve."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "cobica",
@@ -688,7 +1081,15 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole quando lhe oferecem riqueza; se falhar, faz o que for preciso para obtê-la."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "complexo-de-culpa",
@@ -708,7 +1109,15 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Se algo ruim acontece a quem está sob sua responsabilidade, sofre Depressão Crônica por (15-Vontade) dias, ou (20-Vontade) dias com autocontrole Vontade-3 se a culpa foi dele."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "compreensivo",
@@ -728,7 +1137,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Versão leve de Indulgente: percebe o que os outros sentem e tende a ajudá-los."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "compulsao",
@@ -750,7 +1167,15 @@
         "max": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Precisa satisfazer um hábito ao menos uma vez por dia salvo teste de autocontrole; afastado dele fica Irritável. Variantes (Gastar, Generosidade) aumentam o custo de vida e podem mudar reações."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "confuso",
@@ -771,7 +1196,15 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Em lugares estranhos ou agitados, teste de autocontrole (de 0 a -10 conforme o estímulo); se falhar, fica paralisado e em combate só reage (Fazer Nada)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "consumo-ampliado",
@@ -812,7 +1245,15 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Ao fim de cada combate, teste de autocontrole; se falhar, Verificação de Pânico com 3d + margem de fracasso."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "corcunda",
@@ -832,7 +1273,40 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "atributo",
+          "ref": "dx",
+          "valor": -1,
+          "condicao": "com roupas e armaduras que não sejam sob medida"
+        },
+        {
+          "alvo": "reacao",
+          "valor": -1
+        },
+        {
+          "alvo": "pericia",
+          "ref": "disfarce",
+          "valor": -3
+        },
+        {
+          "alvo": "pericia",
+          "ref": "perseguicao",
+          "valor": -3
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Altura 15 cm menor; outros ganham +3 para identificá-lo ou rastreá-lo; equipamento sob medida custa 10% a mais."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Aparência não pode ser melhor que Comum."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "covardia",
@@ -853,7 +1327,22 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "verificacao_panico",
+          "valor": -2,
+          "condicao": "com risco de dano físico; autocontrole 12 dá -2, autocontrole 15 dá -1"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole para se arriscar fisicamente (-5 se houver risco de vida); se falhar, recusa."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "A tabela OCR só mostra autocontrole 12 (-2) e 15 (-1); valores para 6 e 9 ausentes."
     },
     {
       "id": "credulidade",
@@ -874,7 +1363,25 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "comercio",
+          "valor": -3
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole para não acreditar numa mentira (-6 bem contada ou tema desconhecido, -3 tema familiar); -3 em situações em que a credulidade seja explorada."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Nunca pode aprender Detecção de Mentiras."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "criativo",
@@ -894,7 +1401,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Vive propondo ideias, boas ou não."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "cuidadoso",
@@ -914,7 +1429,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Versão leve de Covardia: gasta tempo e dinheiro se preparando antes de riscos."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "curiosidade",
@@ -935,7 +1458,20 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole diante de algo interessante; se falhar, examina tudo mesmo sabendo do perigo."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "indiferente"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "codigo-de-honra",
@@ -956,7 +1492,15 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Segue um código de conduta honrado mesmo com risco de vida; -5 a -15 conforme formalidade e rigidez do código."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "codigo-de-honra-peculiaridade",
@@ -976,7 +1520,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Segue um código de conduta menor que precisa ser interpretado."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "daltonismo",
@@ -996,7 +1548,40 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "comercio",
+          "valor": -1
+        },
+        {
+          "alvo": "pericia",
+          "ref": "conducao",
+          "valor": -1
+        },
+        {
+          "alvo": "pericia",
+          "ref": "pilotagem",
+          "valor": -1
+        },
+        {
+          "alvo": "pericia",
+          "ref": "quimica",
+          "valor": -1
+        },
+        {
+          "alvo": "pericia",
+          "ref": "rastreamento",
+          "valor": -1
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Não distingue cores; o Mestre impõe dificuldades em tarefas que dependam delas."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "deficiencia-fisica",
@@ -1017,7 +1602,26 @@
         "min": -30,
         "max": -10
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "uso_pernas",
+          "valor": -3,
+          "condicao": "testes que exigem as pernas, incluindo combate corpo a corpo e desarmado; Perna Incapacitada -3, demais graus -6"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Perna Incapacitada (-10): Deslocamento = metade da Velocidade. Pernas Faltando (-20): Deslocamento 2 com muletas. Nenhuma Perna/Paraplégico (-30): Deslocamento 0. Os pontos do Deslocamento reduzido são somados."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "sem-pernas"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "deficiencias-menores",
@@ -1037,7 +1641,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Versão leve de uma desvantagem física; quando a condição atrapalha, o Mestre pode aplicar -1 em testes de habilidade, atributo ou reação."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "dependentes",
@@ -1056,7 +1668,19 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa-rachado"
+      "icone": "coroa-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "O personagem deve socorrer o dependente em perigo; não ganha pontos na aventura em que ele morre ou fica gravemente ferido."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Se o dependente sai da campanha, os pontos devem ser recomprados, trocados por outra desvantagem ou por novo dependente."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "dependencia",
@@ -1076,7 +1700,15 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "garra",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Precisa de uma substância, objeto ou ambiente em intervalos regulares ou perde PV até morrer. Custo pela raridade (-5 a -30, -5 extra se ilegal) × frequência (×5 constante a ×1/10 anual)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "depressao-cronica",
@@ -1097,7 +1729,15 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole para fazer qualquer coisa além do mínimo para sobreviver ou para escolher entre opções; se falhar, escolhe o menor esforço."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "desastrado",
@@ -1120,7 +1760,20 @@
           -15
         ]
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Desastrado (-5): teste de DX por dia para evitar pequenos desastres. Completamente Desastrado (-15): qualquer fracasso em DX ou perícia de DX vira falha crítica."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "DX máxima 13."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "desatento",
@@ -1141,7 +1794,15 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole para manter o foco numa tarefa longa ou quando algo o distrai; se falhar, fracassa na tarefa."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "desdobramento-de-personalidade",
@@ -1162,7 +1823,19 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -1
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Em situações tensas (até 1 teste/hora), teste de autocontrole ou outra personalidade assume; testemunhas da troca reagem com -3 adicional. Cada personalidade tem um pacote de desvantagens mentais de mesmo custo, contado uma vez."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "despretensioso",
@@ -1182,7 +1855,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Versão leve de Altruísmo: põe os interesses alheios à frente dos seus."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "destino-desvantagem",
@@ -1202,7 +1883,15 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "lua-negra"
+      "icone": "lua-negra",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Destino ruim: Menor (-5), Maior (-10) ou Superior (-15, morte certa). Deve ser recomprado quando se cumprir; sem pontos, vira Azar."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "destruidor-da-vida",
@@ -1223,7 +1912,20 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "lua-negra"
+      "icone": "lua-negra",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "de quem percebe a devastação"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Aura mata plantas e pequenos animais a menos de 1 m; observadores ganham +2 para localizá-lo ao ar livre e para descobrir seu segredo sobrenatural."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "dever",
@@ -1242,7 +1944,20 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa-rachado"
+      "icone": "coroa-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "No início de cada aventura o Mestre testa a frequência; num sucesso o dever exige algo do personagem, que não pode ignorá-lo sem penalidade por má interpretação."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Não vale por obrigações com um Dependente; dever autoimposto é Senso do Dever (senso-do-dever), não Dever"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "dieta-restrita",
@@ -1263,7 +1978,15 @@
         "min": -40,
         "max": -10
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Só se alimenta de um item especial (Muito Comum -10 a Raro -40); sem ele passa fome, sem perder PV diretamente."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "dificuldade-com-numeros",
@@ -1283,7 +2006,22 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "perceber_trapaca",
+          "valor": -4,
+          "condicao": "para perceber que um comerciante o está enganando"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Não pode aprender Programação de Computadores, Economia nem perícias de Habilidade Matemática; é Incompetente nelas."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "Em culturas NT4 ou inferior o texto sugere que não conte no limite de desvantagens (relevante para Adamar)."
     },
     {
       "id": "dislexia",
@@ -1303,7 +2041,15 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Nível de escrita Nenhum em todos os idiomas, sem poder melhorar; estuda perícias mentais sem professor a 1/4 da velocidade; em fantasia tradicional impede aprender magia de livros."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "disopia",
@@ -1323,7 +2069,21 @@
         "tipo": "fixo",
         "valor": -25
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "visao",
+          "valor": -6,
+          "condicao": "hipermetrope: objetos a menos de 1 m; míope: objetos a mais de 1 m"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Hipermetrope: -3 em DX para tarefas de perto (inclui corpo a corpo) e leitura 3x mais lenta. Míope: -2 em ataques corpo a corpo e dobra a distância nos ataques à distância. Óculos (NT5+) viram limitação Mitigador -60%."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "disosmia",
@@ -1343,7 +2103,15 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Não sente cheiro nem sabor; não percebe perigos detectáveis pelo olfato, mas nunca é afetado por odores."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "distracao",
@@ -1363,7 +2131,21 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "testes_iq",
+          "valor": -5,
+          "condicao": "exceto os ligados à tarefa em que está concentrado"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Absorto, precisa de IQ-5 para notar eventos; Vontade-5 a cada 5 min para focar em tarefa maçante; IQ-2 para lembrar objetos e tarefas triviais."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "distraido",
@@ -1383,7 +2165,17 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "tarefas_longas",
+          "valor": -1,
+          "condicao": "para concluir tarefas longas"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "disturbio-neurologico",
@@ -1402,7 +2194,34 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "manipulacao_precisa",
+          "valor": -2,
+          "condicao": "Suave -2 (tempo x2); Grave -4 (x4); Incapacitante -6 (x6)"
+        },
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "atuacao",
+            "dissimulacao",
+            "lideranca",
+            "oratoria",
+            "sex-appeal"
+          ],
+          "valor": -2,
+          "condicao": "quando o problema fica aparente; Suave -2, Grave -4, Incapacitante -6"
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Grave: DX e Deslocamento Básico no máximo 10 e 5. Incapacitante: no máximo 8 e 4."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "doente-terminal",
@@ -1423,7 +2242,21 @@
         "min": -100,
         "max": -50
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Morre dentro do prazo escolhido; se escapar disso, precisa recomprar a desvantagem."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "autodestruicao"
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "A tabela OCR mostra só 'até um ano -75' e 'até dois anos -50'; a linha de -100 (até um mês, pelo Basic Set) se perdeu."
     },
     {
       "id": "doenca-contagiosa",
@@ -1443,7 +2276,20 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -1,
+          "condicao": "de quem sabe da doença"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Transmissível por contato direto; quem sabe resiste automaticamente a sedução."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "dor-cronica",
@@ -1462,7 +2308,27 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "atributo",
+          "ref": "dx",
+          "valor": -2,
+          "condicao": "durante um surto; Moderada -2, Grave -4, Excruciante -6"
+        },
+        {
+          "alvo": "atributo",
+          "ref": "iq",
+          "valor": -2,
+          "condicao": "durante um surto; Moderada -2, Grave -4, Excruciante -6"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Teste diário contra a frequência para ter surto; a penalidade também vale nos testes de autocontrole. Custo = gravidade × intervalo (x0,5 a x2) × frequência (x1/2 a x3)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "dorminhoco",
@@ -1482,7 +2348,27 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "atributo",
+          "ref": "iq",
+          "valor": -1,
+          "condicao": "até 1 hora depois de acordar de sono de mais de 1 hora (inclui perícias de IQ)"
+        },
+        {
+          "alvo": "teste",
+          "ref": "autocontrole",
+          "valor": -2,
+          "condicao": "até 1 hora depois de acordar"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "-1 adicional sempre que sofrer penalidades por falta de sono."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "doutrinas-religiosas",
@@ -1503,7 +2389,15 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Segue regras religiosas rigorosas: Ritualismo (-5), Misticismo (-10, reação -2 de não devotos), Monaquismo (-10) ou Asceticismo (-15), limitando Riqueza e Status nos dois últimos."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "drenagem",
@@ -1543,7 +2437,27 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "audicao",
+          "valor": -4
+        },
+        {
+          "alvo": "teste",
+          "ref": "compreender_fala",
+          "valor": -4,
+          "condicao": "testes de idioma para entender o que alguém diz"
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Não pode ter Sentidos Aguçados (Audição)."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "dividas",
@@ -1562,7 +2476,20 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa-rachado"
+      "icone": "coroa-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Paga todo mês 1% dos recursos iniciais por nível (máx. 20%); não pagar traz problemas legais ou criminais."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Qualquer nível de Riqueza acima de Falido."
+        }
+      ],
+      "nivel_max": 20
     },
     {
       "id": "egoismo",
@@ -1583,7 +2510,15 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Obcecado por status; teste de autocontrole quando é desprezado, ou ofende a pessoa como se fosse Irritável."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "eletrico",
@@ -1624,7 +2559,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Prefere métodos já testados a soluções novas."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "enjoo",
@@ -1644,7 +2587,15 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de HT ao entrar em veículo em movimento: falha dá -5 em habilidades, DX e IQ pelo resto da viagem, sucesso dá -2. Não pode aprender perícias de operar veículos."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "enjoo-espacial",
@@ -1724,7 +2675,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Versão leve de Curiosidade: mete o nariz onde não é chamado, às vezes com pequena penalidade de reação."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "epilepsia",
@@ -1744,7 +2703,15 @@
         "tipo": "fixo",
         "valor": -30
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Em situações de tensão faz teste de HT; se falhar, crise de 1d minutos, perde 1d PF e fica incapaz de agir."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "estigma-social",
@@ -1765,7 +2732,22 @@
         "min": -20,
         "max": -5
       },
-      "icone": "coroa-rachado"
+      "icone": "coroa-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -1,
+          "por_nivel": true,
+          "condicao": "cada -5 pontos dá -1 na reação, mas varia por tipo (ex.: Minoria -2, Monstro -3; Propriedade Valiosa restringe em vez de dar penalidade)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Pertence a um grupo considerado inferior; pode restringir direitos e ascensão social e deve ser interpretado."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "Cada nível representa -5 pontos; o efeito exato depende do tipo escolhido."
     },
     {
       "id": "estomago-sensivel",
@@ -1785,7 +2767,17 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "ht_comida_bebida",
+          "valor": -3,
+          "condicao": "teste de HT contra mal-estar por comida muito temperada, bebida forte etc."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "excesso-de-confianca",
@@ -1806,7 +2798,25 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 2,
+          "condicao": "de pessoas jovens ou ingênuas"
+        },
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "de PdMs experientes"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole quando deveria ser cauteloso; se falhar, avança como se dominasse a situação."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "expectativa-de-vida-reduzida",
@@ -1847,7 +2857,15 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Põe uma causa acima de tudo e segue suas regras rigidamente. Extremista: +3 na Vontade contra lavagem cerebral e interrogatório que levem a trair a causa, e aceita missões suicidas."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "fantasias",
@@ -1868,7 +2886,25 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -1,
+          "condicao": "Menor -1, Maior -2, Grave -3 (de quem percebe)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Acredita em algo falso e age sempre de acordo."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "No máximo -40 pontos em Fantasias; Grave exige permissão do Mestre."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "fantasias-peculiaridade",
@@ -1888,7 +2924,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Acredita numa ideia falsa trivial que não altera seu comportamento normal."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "feicoes-estranhas",
@@ -1908,7 +2952,33 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "disfarce",
+          "valor": -1,
+          "por_nivel": true
+        },
+        {
+          "alvo": "pericia",
+          "ref": "perseguicao",
+          "valor": -1,
+          "por_nivel": true
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Outros ganham +1 por nível para identificá-lo ou segui-lo (Observação, Perseguição), salvo se a multidão tiver os mesmos traços."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Os traços devem ser estranhos para a própria raça."
+        }
+      ],
+      "nivel_max": 5,
+      "duvida_efeitos": "O texto dá -1 ponto/nível até 5 níveis; o custo listado '-5' é o máximo."
     },
     {
       "id": "ferido",
@@ -1928,7 +2998,15 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Ferida aberta: inimigo ciente pode mirá-la com -7 para ferimento x1,5; precisa de curativo diário (Primeiros Socorros ou Medicina) ou sofre -3 na HT contra infecções."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "flashbacks",
@@ -1947,7 +3025,15 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Em situações estressantes o Mestre rola 3d; com 6 ou menos há flashback: Suave (-5, 2d s, -2 em habilidades), Grave (-10, 1d min, -5) ou Incapacitante (-20, 3d min, sem perícias)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "fobias",
@@ -1966,7 +3052,16 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole ao ser exposto ao medo; se falhar, Verificação de Pânico com 3d + margem; se passar, penalidade em habilidades, DX e IQ enquanto o medo persistir (-4 a -1 conforme o autocontrole)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "A tabela de penalidade por autocontrole se perdeu no OCR; valores (-4/6, -3/9, -2/12, -1/15) vêm do Basic Set."
     },
     {
       "id": "fora-de-forma",
@@ -1989,7 +3084,48 @@
           -15
         ]
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "ht_nocaute",
+          "valor": -1,
+          "condicao": "Fora de Forma -1; Muito Fora de Forma -2"
+        },
+        {
+          "alvo": "teste",
+          "ref": "ht_morte",
+          "valor": -1,
+          "condicao": "Fora de Forma -1; Muito Fora de Forma -2"
+        },
+        {
+          "alvo": "teste",
+          "ref": "resistir_doenca",
+          "valor": -1,
+          "condicao": "Fora de Forma -1; Muito Fora de Forma -2"
+        },
+        {
+          "alvo": "teste",
+          "ref": "resistir_veneno",
+          "valor": -1,
+          "condicao": "Fora de Forma -1; Muito Fora de Forma -2"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Perde PF por esforço ou calor no dobro da velocidade; Muito Fora de Forma também recupera PF à metade da velocidade. Não afeta a HT nem as perícias de HT."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "boa-forma"
+        },
+        {
+          "tipo": "texto",
+          "descricao": "Muito Fora de Forma: não pode ter Resistente."
+        }
+      ],
+      "nivel_max": 2
     },
     {
       "id": "forma-de-sombras-desvantagem",
@@ -2089,7 +3225,15 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Outros ganham +4 em Empatia, Linguagem Corporal e Psicologia para ler suas intenções, e o mesmo bônus em IQ, Detecção de Mentiras e Jogos de Azar contra seus blefes."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "facil-de-matar",
@@ -2109,7 +3253,23 @@
         "tipo": "niveis",
         "por_nivel": -2
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "ht_morte",
+          "valor": -1,
+          "por_nivel": true,
+          "condicao": "testes de HT para sobreviver ou evitar morte súbita"
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "O teste de HT resultante não pode cair abaixo de 3 (nível máximo = HT-3)."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "furia",
@@ -2129,7 +3289,15 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Ao sofrer mais de 1/4 dos PV num golpe (ou ver isso num ente querido), teste de autocontrole ou entra em fúria: Ataque Total, ignora atordoamento e choque, testes de HT para ficar vivo e consciente a HT+4."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "gagueira",
@@ -2149,7 +3317,33 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "quando precisa conversar"
+        },
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "atuacao",
+            "canto",
+            "diplomacia",
+            "labia",
+            "oratoria",
+            "sex-appeal"
+          ],
+          "valor": -2
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "incapaz-de-falar"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "gigantismo",
@@ -2169,7 +3363,36 @@
         "tipo": "fixo",
         "valor": 0
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "secundaria",
+          "ref": "deslocamento",
+          "valor": 1
+        },
+        {
+          "alvo": "pericia",
+          "ref": "disfarce",
+          "valor": -2
+        },
+        {
+          "alvo": "pericia",
+          "ref": "perseguicao",
+          "valor": -2,
+          "condicao": "ao seguir alguém na multidão"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Modificador de Tamanho +1; ST e PV mais baratos; costuma ganhar bônus em Intimidação; equipamento sob medida custa 10-20% a mais."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "nanismo"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "gula",
@@ -2190,7 +3413,15 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole para resistir a boa comida ou bebida; sempre leva provisões extras e nunca pula refeições."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "hemofilia",
@@ -2210,7 +3441,20 @@
         "tipo": "fixo",
         "valor": -30
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Ferimentos não tratados sangram o dano original a cada minuto; ferimentos perfurantes no tronco causam hemorragia interna que só Cirurgia ou cura sobrenatural resolve."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "HT básica máxima 10."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "hiperalgia",
@@ -2230,7 +3474,26 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "ht_nocaute",
+          "valor": -4,
+          "condicao": "para resistir a nocaute, atordoamento e tortura física"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Choque por ferimento é dobrado; ao sofrer mais de 1 PV, teste de Vontade para não gritar."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "hipoalgia-alto-limiar-de-dor"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "honestidade",
@@ -2251,7 +3514,20 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "condicao": "a critério do Mestre, quando é conhecido no lugar; +3 em questões de verdade ou honra; não vale em combate"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Obedece às leis; teste de autocontrole para violar leis irracionais e para não se entregar depois de agir desonestamente."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "horizontal",
@@ -2293,7 +3569,17 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -1,
+          "por_nivel": true,
+          "condicao": "de quem percebe o hábito, da mesma raça; cada nível vale -5 pontos"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 3
     },
     {
       "id": "habitos-ou-expressoes",
@@ -2313,7 +3599,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Tem um bordão, tique ou mania característica que deve interpretar."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "identidade-secreta",
@@ -2332,7 +3626,15 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa-rachado"
+      "icone": "coroa-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Funciona como Segredo: o Mestre rola a cada sessão se alguém ameaça revelar a identidade; custo conforme a gravidade da exposição (com Status 3+ recebe -10 extra e o teste passa a 7 ou menos)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "impulsividade",
@@ -2353,7 +3655,15 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Age antes de pensar; precisa de teste de autocontrole para esperar e ponderar."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "incapaz-de-aprender",
@@ -2396,7 +3706,21 @@
           -25
         ]
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Incapaz de Falar: emite sons, mas não articula linguagem. Mudez: nenhum som; comunica-se por escrita, sinais etc. e não pode ter outros traços de fala."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "gagueira"
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "O OCR dá -25 para os dois níveis; pelo custo listado e pelo Basic Set, Incapaz de Falar vale -15 e Mudez -25."
     },
     {
       "id": "incapaz-de-flutuar",
@@ -2436,7 +3760,26 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "boemia",
+            "connoisseur",
+            "arte-erotica",
+            "jogos-de-azar"
+          ],
+          "valor": -3
+        },
+        {
+          "alvo": "reacao",
+          "valor": -1,
+          "condicao": "de -1 a -3 quando a incapacidade fica evidente"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "incompetente",
@@ -2456,7 +3799,20 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Não pode aprender uma perícia escolhida (inteira, não só uma especialização) e o pré-definido dela sofre -4 adicional."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "A perícia escolhida deve ser relevante para o personagem e a campanha."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "indeciso",
@@ -2477,7 +3833,15 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole para cada escolha, com -1 por alternativa além da primeira (-2 com duas); se falhar, não faz nada e repete o teste a cada minuto (ou segundo, em combate)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "indiferente",
@@ -2498,7 +3862,15 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole ao encontrar algo estranho; se falhar, ignora. Reage a tudo que é novo com -1."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "indulgente",
@@ -2519,7 +3891,15 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole para não ajudar quem precisa ou pede ajuda, até inimigos; se falhar, ajuda mesmo contra ordens ou sob risco de armadilha."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "ingenuo",
@@ -2539,7 +3919,31 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "resistir_influencia",
+          "valor": 4,
+          "condicao": "apenas para resistir a Sex Appeal"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "trato-social",
+          "valor": -4
+        },
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "da maioria das pessoas"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Raramente entende humor verbal (IQ-4 para perceber que é alvo da piada)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "inimigos",
@@ -2558,7 +3962,24 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa-rachado"
+      "icone": "coroa-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "O Mestre testa a frequência a cada aventura ou sessão; num sucesso o inimigo age contra o personagem conforme sua intenção."
+        },
+        {
+          "alvo": "reacao",
+          "valor": -3,
+          "condicao": "Gêmeo Maligno: os outros acham que o personagem tem Desdobramento de Personalidade"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Inimigo eliminado exige recomprar os pontos, trocá-los por outra desvantagem ou adotar novo inimigo do mesmo tipo."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "insensivel",
@@ -2578,7 +3999,50 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "pedagogia",
+          "valor": -3
+        },
+        {
+          "alvo": "pericia",
+          "ref": "psicologia",
+          "valor": -3,
+          "condicao": "quando usada para ajudar alguém"
+        },
+        {
+          "alvo": "teste",
+          "ref": "lidar_com_vitimas",
+          "valor": -3,
+          "condicao": "ao lidar com quem já sofreu com sua insensibilidade"
+        },
+        {
+          "alvo": "reacao",
+          "valor": -1,
+          "condicao": "de vítimas antigas e de quem tem Empatia"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "interrogatorio",
+          "valor": 1,
+          "condicao": "usando ameaças ou tortura"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "intimidacao",
+          "valor": 1,
+          "condicao": "usando ameaças ou tortura"
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "pouca-empatia"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "insone",
@@ -2601,7 +4065,15 @@
           -15
         ]
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Em episódios de insônia, teste de HT-1 por noite: falha perde 2h de sono e o episódio continua; falha crítica não dorme. Episódios a cada 3d dias (Suave, -10) ou 2d-1 dias (Grave, -15); estresse prolongado pode exigir HT para iniciar um episódio."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "intolerancia",
@@ -2620,7 +4092,15 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "As vítimas do preconceito reagem a ele com -1 a -5 (Mestre). Intolerância total: ele reage com -3 a todos fora do seu grupo (-10 pts); contra um grupo específico vale de -5 a -1 conforme a frequência."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "intolerancia-ao-alcool",
@@ -2640,7 +4120,17 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "ht_bebida",
+          "valor": -2,
+          "condicao": "testes de HT ligados a embriaguez"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "intolerancia-g",
@@ -2683,7 +4173,15 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Reage mal a quem parece melhor que ele e se opõe aos planos de 'rivais'; como PdM, impõe -2 a -4 nas reações às vítimas da inveja."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "invertebrado",
@@ -2725,7 +4223,15 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole em situações de tensão; se falhar, perde a paciência e insulta ou ataca a causa."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "lunatico",
@@ -2745,7 +4251,21 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "vontade_autocontrole",
+          "valor": -2,
+          "condicao": "durante a lua cheia, em todos os testes de Vontade e de autocontrole"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Na lua nova sofre temporariamente de Preguiça; humor muda com as fases."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "luxuria",
@@ -2766,7 +4286,15 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole ao ter contato com pessoa atraente (-5 se Elegante, -10 se Muito Elegante); se falhar, tenta seduzi-la."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "magnetismo-sobrenatural",
@@ -2787,7 +4315,20 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "lua-negra"
+      "icone": "lua-negra",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "de quem conhece a desvantagem e sabe que ele a tem"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Eventos e criaturas sobrenaturais o procuram com frequência."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "magro",
@@ -2807,7 +4348,37 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "st_resistir_derrubada",
+          "valor": -2,
+          "condicao": "ST para resistir a ser derrubado"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "disfarce",
+          "valor": -2
+        },
+        {
+          "alvo": "pericia",
+          "ref": "perseguicao",
+          "valor": -2,
+          "condicao": "ao seguir alguém na multidão"
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "HT máxima 14."
+        },
+        {
+          "tipo": "exclui",
+          "id": "acima-do-peso-gordo-muito-gordo"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "maldicao",
@@ -2848,7 +4419,15 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "lua-negra"
+      "icone": "lua-negra",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Maldição definida pelo Mestre (ordem contínua, tragédia ou desvantagem); pode ser removida no jogo resolvendo sua causa. Vale metade se a remoção for fácil."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "maneta-um-braco",
@@ -2868,7 +4447,21 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "tarefas_dois_bracos",
+          "valor": -4,
+          "condicao": "tarefas possíveis com um braço mas que normalmente usam dois (ex.: Escalada, Luta Greco-Romana)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Não usa armas de duas mãos, duas armas ou arma e escudo, nem faz tarefas que exijam dois braços."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "maneta-uma-mao",
@@ -2888,7 +4481,21 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "tarefas_dois_bracos",
+          "valor": -4,
+          "condicao": "tarefas possíveis com uma mão mas que normalmente usam duas"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Como Maneta (Um Braço), mas pode aparar desarmado com o coto e prender algo nele (ex.: escudo). Gancho improvisado funciona como faca que não cai e dá +1 em Intimidação."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "manuseadores-precarios",
@@ -2951,7 +4558,15 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Alterna entre fase eufórica (Excesso de Confiança e Viciado em Trabalho) e depressiva (Depressão Crônica), rolando 1d no início da sessão e 3d a cada 5h ou em emergências (10 ou menos troca)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "marca-registrada",
@@ -2972,7 +4587,15 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Deve deixar sua marca antes de sair da cena. Simples (-5): rápida, sem pistas; Complexa (-10): 30 s ou mais e dá +2 a Criminologia/Perícia Forense de quem investiga; Elaborada (-15): o Mestre pode dar pistas sem teste."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "marca-registrada-peculiaridade",
@@ -2992,7 +4615,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Marca rápida que não permite rastreá-lo e pode ser deixada de lado quando inconveniente."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "mau-cheiro",
@@ -3012,7 +4643,25 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "da maioria das pessoas"
+        },
+        {
+          "alvo": "teste",
+          "ref": "reacao_animais",
+          "valor": -2
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Perfume em quantidade suficiente para disfarçar impõe a mesma penalidade."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "megalomania",
@@ -3032,7 +4681,25 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 2,
+          "condicao": "de jovens, ingênuos ou Fanáticos em busca de uma causa"
+        },
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "de todas as outras pessoas"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Persegue um objetivo grandioso e nada pode ficar entre ele e esse objetivo."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "mentalidade-de-escravo",
@@ -3072,7 +4739,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Versão leve de Xenofilia: se dá bem com outras raças e aparências estranhas."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "mordida-fraca",
@@ -3113,7 +4788,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Sofre uma desvantagem mental completa só em circunstâncias que costuma controlar (ex.: Briguento quando bebe)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "mao-fraca",
@@ -3153,7 +4836,36 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "secundaria",
+          "ref": "deslocamento",
+          "valor": -1
+        },
+        {
+          "alvo": "pericia",
+          "ref": "disfarce",
+          "valor": -2
+        },
+        {
+          "alvo": "pericia",
+          "ref": "perseguicao",
+          "valor": -2,
+          "condicao": "ao seguir alguém na multidão"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Modificador de Tamanho -1 e alcance em combate reduzido em 1 m; o Mestre pode exigir Estigma Social em cenários atrasados."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "gigantismo"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "no-limite",
@@ -3174,7 +4886,25 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "da maioria de quem vê seu comportamento"
+        },
+        {
+          "alvo": "reacao",
+          "valor": 2,
+          "condicao": "de quem valoriza coragem acima de autopreservação"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole diante de riscos mortais para não aceitar o desafio; em combate, testa a cada turno e, se falhar, faz Ataque Total ou algo suicida."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "noturno",
@@ -3215,7 +4945,15 @@
         "tipo": "niveis",
         "por_nivel": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Não tem perícias nem pré-definidos para tecnologia acima do seu NT; pode aprender perícias tecnológicas de DX com professor, mas nunca as de IQ, até recomprar."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "nao-iconografico",
@@ -3255,7 +4993,34 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "diplomacia",
+            "intimidacao",
+            "labia",
+            "manha",
+            "sex-appeal",
+            "trato-social"
+          ],
+          "valor": -1
+        },
+        {
+          "alvo": "teste",
+          "ref": "resistir_influencia",
+          "valor": -1
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "pouca-empatia"
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "No texto OCR o título 'Oblívio' se perdeu; o bloco '-5 pontos / ... clássico nerd' foi atribuído a ele pela ordem e pelo Basic Set (Oblivious)."
     },
     {
       "id": "obsessao",
@@ -3279,7 +5044,15 @@
         ],
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Fixado num objetivo; teste de autocontrole sempre que for mais sensato desviar dele, e se falhar persiste. -5 para metas de curto prazo, -10 para metas grandes."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "obsessoes-peculiaridade",
@@ -3299,7 +5072,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Tem um objetivo secundário quase racional que o motiva."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "orgulhoso",
@@ -3319,7 +5100,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Versão leve de Egoísmo: dá muito valor a sucesso, riqueza e status; como PdM reage com -1 a ordens, insultos ou desprezo."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "pacifismo",
@@ -3338,7 +5127,21 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "ataque_letal_pessoa",
+          "valor": -4,
+          "condicao": "só Assassino Relutante: ataque letal contra pessoa que vê (-2 se não vê o rosto, fora do corpo a corpo); também não pode Apontar"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Escolha uma forma: Assassino Relutante (-5), Incapaz de Ferir Inocentes (-10), Incapaz de Matar (-15; matar causa colapso por 3d dias), Legítima Defesa (-15) ou Não-Violência Total (-30)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "padrao-de-tempo-reduzido",
@@ -3379,7 +5182,25 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "verificacao_panico",
+          "valor": -2
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Quando uma lesão parece iminente e precisa agir, faz teste de HT (resultado acima de 13 sempre falha); se falhar fica mentalmente atordoado, repetindo a cada segundo com +1 cumulativo."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "reflexos-em-combate"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "paranoia",
@@ -3399,7 +5220,20 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "da maioria das pessoas"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Não confia em ninguém além de velhos amigos; como PdM reage com -4 a estranhos e dobra redutores de reação legítimos."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "pernas-tortas",
@@ -3419,7 +5253,21 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "salto",
+          "valor": -1
+        },
+        {
+          "alvo": "reacao",
+          "valor": -1,
+          "condicao": "de quem acha graça no seu jeito de andar"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "pesadelos",
@@ -3440,7 +5288,15 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole toda manhã; se falhar perde 1 PF que só volta com uma noite de sono; em 17-18 sofre -1 em todos os testes de habilidade e Percepção naquele dia."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "piromania",
@@ -3461,7 +5317,15 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole sempre que tiver chance de provocar um incêndio."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "pobreza-riqueza-baixa",
@@ -3480,7 +5344,21 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa-rachado"
+      "icone": "coroa-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Batalhador (-10): 1/2 dos recursos iniciais; Pobre (-15): 1/5; Falido (-25): sem recursos nem emprego. Restringe empregos e salário."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "riqueza"
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "O OCR dá -25 para Pobre; o Basic Set indica -15 para Pobre e -25 para Falido."
     },
     {
       "id": "pouca-empatia",
@@ -3500,7 +5378,46 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "boemia",
+            "comercio",
+            "criminologia",
+            "deslumbrar",
+            "deteccao-de-mentiras",
+            "diplomacia",
+            "dissimulacao",
+            "interrogatorio",
+            "labia",
+            "lideranca",
+            "manha",
+            "politica",
+            "psicologia",
+            "sex-appeal",
+            "sociologia",
+            "trato-social"
+          ],
+          "valor": -3
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "empatia"
+        },
+        {
+          "tipo": "exclui",
+          "id": "insensivel"
+        },
+        {
+          "tipo": "exclui",
+          "id": "oblivio"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "preferencias",
@@ -3520,7 +5437,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Busca sempre que possível algo de que gosta, sem chegar a compulsão."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "preguica",
@@ -3540,7 +5465,15 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Evita trabalho, sobretudo pesado; chance de aumento no emprego cai pela metade e renda de autônomo é reduzida à metade."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "problemas-na-coluna",
@@ -3563,7 +5496,15 @@
           -25
         ]
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de HT ao fazer teste de ST, perícia atlética ou tirar 17-18 em ataque/defesa corpo a corpo; se falhar a coluna trava. Moderado (-15): -3 até descansar, IQ-3 no próximo segundo. Grave (-25): HT-2 no teste e DX/IQ -4 até descansar; falha crítica causa dano e penalidades maiores."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "recuperacao-lenta",
@@ -3583,7 +5524,20 @@
         "tipo": "niveis",
         "por_nivel": -5
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Cada nível dobra o intervalo entre testes de HT para recuperar PV (2, 4 ou 8 dias) e o intervalo entre testes de Medicina sob cuidados médicos."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Humanos normais só podem ter 1 nível."
+        }
+      ],
+      "nivel_max": 3
     },
     {
       "id": "refeicao-demorada",
@@ -3666,7 +5620,17 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa-rachado"
+      "icone": "coroa-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -1,
+          "por_nivel": true,
+          "condicao": "de quem o reconhece; custo base -5 por nível, ajustado por pessoas afetadas e frequência de reconhecimento"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 4
     },
     {
       "id": "ressacas-terriveis",
@@ -3686,7 +5650,21 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "ressaca",
+          "valor": -3,
+          "condicao": "no dia seguinte a beber muito, além de outras penalidades de ressaca"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Ressacas duram 3 horas a mais."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "sadismo",
@@ -3707,7 +5685,20 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -3,
+          "condicao": "de quem sabe do problema, salvo culturas que desprezam a vida"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole para não ser cruel quando tem oportunidade."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "sangue-frio",
@@ -3751,7 +5742,15 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole para aceitar rendição, fazer prisioneiros ou deixar inimigos vivos; se falhar tenta matar."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "segredo",
@@ -3772,7 +5771,15 @@
         "min": -30,
         "max": -5
       },
-      "icone": "coroa-rachado"
+      "icone": "coroa-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Aparece na sessão com 6 ou menos em 3d; se revelado, é trocado por desvantagens no valor do dobro do Segredo. Custo: -5, -10, -20 ou -30 conforme a gravidade."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "sem-imaginacao",
@@ -3792,7 +5799,29 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "artista",
+          "valor": -2,
+          "condicao": "na maioria dos testes"
+        },
+        {
+          "alvo": "pericia",
+          "ref": "engenharia",
+          "valor": -2,
+          "condicao": "para criar invenções"
+        },
+        {
+          "alvo": "teste",
+          "ref": "criatividade",
+          "valor": -2,
+          "condicao": "qualquer tarefa que exija criatividade, incluindo testes da vantagem Desenvolvedor"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "sem-nocao-de-profundidade",
@@ -3812,7 +5841,28 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "atributo",
+          "ref": "dx",
+          "valor": -1,
+          "condicao": "em combate e tarefas de coordenação mão-olho"
+        },
+        {
+          "alvo": "teste",
+          "ref": "ataque_distancia",
+          "valor": -3,
+          "condicao": "ataques à distância sem Apontar e conduzir veículos mais rápidos que um cavalo"
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "zarolho"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "sem-pernas",
@@ -3879,7 +5929,23 @@
           -5
         ]
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "atributo",
+          "ref": "dx",
+          "valor": -1,
+          "condicao": "só com a mão afetada; versão Sem Um Dedo (-2)"
+        },
+        {
+          "alvo": "atributo",
+          "ref": "dx",
+          "valor": -5,
+          "condicao": "só com a mão afetada; versão Sem o Polegar (-5)"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "semiereto",
@@ -3921,7 +5987,25 @@
         "min": -20,
         "max": -2
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 2,
+          "condicao": "quando sabem do Senso do Dever e avaliam se confiam nele em perigo"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Nunca trai ou abandona o grupo protegido. Custo pelo tamanho: indivíduo -2, grupo pequeno -5, grupo grande -10, raça inteira -15, todos os seres vivos -20."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Não vale pontos se for para com seus próprios Aliados, Dependentes ou Patronos."
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "simpatico",
@@ -3941,7 +6025,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Versão leve de Amigável: gosta de companhia e prefere agir em grupo."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "solitario",
@@ -3962,7 +6054,15 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole quando alguém fica perto demais; se falhar afasta a pessoa como com Irritabilidade. Como PdM, reage com penalidade (-1 a -4 conforme o número de autocontrole)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "sonambulismo",
@@ -3983,7 +6083,15 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "O Mestre testa autocontrole quando ele adormece; se falhar anda dormindo por 1d minutos, fica suscetível a telepatia e pode tropeçar e acordar atordoado."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "sonhador",
@@ -4003,7 +6111,17 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "tarefas_longas",
+          "valor": -1,
+          "condicao": "em qualquer tarefa extensa"
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "sono-complementar",
@@ -4023,7 +6141,15 @@
         "tipo": "niveis",
         "por_nivel": -2
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Precisa de 1 hora extra de sono por nível além das 8 horas normais."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": 4
     },
     {
       "id": "sono-leve",
@@ -4043,7 +6169,15 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Precisa de teste de HT para dormir em lugar desconfortável ou barulhento (falha: perde 1h de sono e repete); acorda com qualquer atividade próxima, atordoado sem Reflexos em Combate."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "sonolento",
@@ -4083,7 +6217,21 @@
         "tipo": "niveis",
         "por_nivel": -5
       },
-      "icone": "coroa-rachado"
+      "icone": "coroa-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Status negativo: pessoas de Status mais alto reagem mal, com penalidade igual à diferença de Status (máx. -4)."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "status"
+        }
+      ],
+      "nivel_max": 2,
+      "duvida_efeitos": "Nível máximo 2 (Status -2) é o mínimo usual indicado; o Mestre pode variar."
     },
     {
       "id": "supersensitivo",
@@ -4104,7 +6252,27 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "lua-negra"
+      "icone": "lua-negra",
+      "efeitos": [
+        {
+          "alvo": "atributo",
+          "ref": "dx",
+          "valor": -1,
+          "condicao": "com ser inteligente a até 20 m; -2 com 10+, -3 com 100+, -4 com 1.000+ etc."
+        },
+        {
+          "alvo": "atributo",
+          "ref": "iq",
+          "valor": -1,
+          "condicao": "com ser inteligente a até 20 m; -2 com 10+, -3 com 100+, -4 com 1.000+ etc."
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Se DX ou IQ caírem à metade, entra em colapso; em compensação sabe aproximadamente quantas pessoas há a até 20 m."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "suporte-de-vida-ampliado",
@@ -4144,7 +6312,15 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Não ouve nada; comunica-se por escrita ou sinais e falha automaticamente em testes de Audição."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "susceptibilidade-a-magia",
@@ -4165,7 +6341,27 @@
         "tipo": "niveis",
         "por_nivel": -3
       },
-      "icone": "lua-negra"
+      "icone": "lua-negra",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "resistir_magia",
+          "valor": -1,
+          "por_nivel": true,
+          "condicao": "só mágicas lançadas diretamente contra ele"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Quem lança mágica diretamente contra ele soma o nível ao NH; não afeta projéteis, armas mágicas nem outros poderes sobrenaturais."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "abascanto-resistencia-a-magia"
+        }
+      ],
+      "nivel_max": 5
     },
     {
       "id": "suscetivel",
@@ -4184,7 +6380,27 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "ht_resistir_suscetibilidade",
+          "valor": -1,
+          "por_nivel": true,
+          "condicao": "testes de HT contra a classe de agentes escolhida (ex.: doenças, venenos)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Até doses mínimas exigem HT+1 (com a penalidade); falha causa metade dos efeitos. Custo por -1: -4 (muito comum), -2 (comum), -1 (ocasional)."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "texto",
+          "descricao": "Máx. 5 níveis por agente e 2 Suscetíveis diferentes sem permissão; não pode reduzir a HT efetiva a 3; incompatível com Resistente ao mesmo agente."
+        }
+      ],
+      "nivel_max": 5
     },
     {
       "id": "teimosia",
@@ -4204,7 +6420,19 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -1
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Quer tudo do seu jeito; é difícil convencê-lo até de planos razoáveis."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "temor",
@@ -4224,7 +6452,34 @@
         "tipo": "niveis",
         "por_nivel": -2
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "verificacao_panico",
+          "valor": -1,
+          "por_nivel": true
+        },
+        {
+          "alvo": "teste",
+          "ref": "resistir_influencia",
+          "valor": -1,
+          "por_nivel": true,
+          "condicao": "só contra Intimidação e poderes sobrenaturais de medo"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Quem usa Intimidação contra ele soma o nível de Temor; a Vontade efetiva nesses testes não pode ficar abaixo de 3."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "destemor"
+        }
+      ],
+      "nivel_max": null,
+      "duvida_efeitos": "Nível máximo depende da Vontade (Vontade - 3), não é fixo."
     },
     {
       "id": "tetraplegico",
@@ -4265,7 +6520,37 @@
         "min": -20,
         "max": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "atuacao",
+            "boemia",
+            "comercio",
+            "diplomacia",
+            "dissimulacao",
+            "intimidacao",
+            "labia",
+            "lideranca",
+            "manha",
+            "mendicancia",
+            "oratoria",
+            "pedagogia",
+            "politica",
+            "sex-appeal",
+            "trato-social"
+          ],
+          "valor": -1,
+          "condicao": "Suave (-5); -2 se Grave (-10)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Incapacitante (-20): não pode aprender essas perícias e o pré-definido sofre -4 adicional. Pode ser recomprada um nível por vez."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "trapaceiro",
@@ -4285,7 +6570,15 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole diário; se falhar precisa tentar enganar alguém perigoso. Cada dia resistido dá -1 cumulativo no teste seguinte."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "veracidade",
@@ -4306,7 +6599,26 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "pericia",
+          "ref": "labia",
+          "valor": -5
+        },
+        {
+          "alvo": "pericia",
+          "ref": "dissimulacao",
+          "valor": -5,
+          "condicao": "quando quer enganar alguém"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole para omitir uma verdade e com -5 para mentir; se falhar a verdade escapa."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "viciado-em-trabalho",
@@ -4326,7 +6638,25 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": 1,
+          "condicao": "no início, da maioria das pessoas"
+        },
+        {
+          "alvo": "reacao",
+          "valor": -1,
+          "condicao": "com o tempo, de amigos e entes queridos (até -2)"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Trabalha pelo menos o dobro do expediente, o que costuma causar sono perdido."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "visao-restrita",
@@ -4349,7 +6679,15 @@
           -30
         ]
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Sem Visão Periférica (-15): só vê 120° à frente e os hexes laterais contam como costas. Visão Estreita (-30): só 60° à frente; defesas -2 nos laterais, que só pode atacar com Golpe Desenfreado."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "voto",
@@ -4370,7 +6708,15 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Cumpre um voto a sério: Menor -5, Importante -10, Muito Importante -15. Não acumula pontos com outra desvantagem que represente o mesmo voto."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "voto-peculiaridade",
@@ -4390,7 +6736,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Cumpre um voto trivial (ex.: não beber álcool)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "voz-irritante",
@@ -4410,7 +6764,37 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "quando é preciso conversar"
+        },
+        {
+          "alvo": "grupo_pericias",
+          "ref": [
+            "atuacao",
+            "canto",
+            "diplomacia",
+            "labia",
+            "oratoria",
+            "sex-appeal"
+          ],
+          "valor": -2
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Efeitos iguais aos de Gagueira."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "voz-melodiosa"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "vozes-fantasmagoricas",
@@ -4431,7 +6815,20 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "reacao",
+          "valor": -2,
+          "condicao": "de quem o vê respondendo às vozes"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Em situações de estresse o Mestre rola 3d (6 ou menos: ouve vozes). Irritante (-10) pode assustá-lo e exigir Verificação de Pânico; Diabólica (-15) manda fazer coisas terríveis, podendo exigir teste de Vontade."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "vulnerabilidade",
@@ -4470,7 +6867,15 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Precisa da droga ou atividade todo dia ou sofre abstinência. Custo = custo diário (-5/-10/-20) + efeitos (incapacitante -10, altamente viciante -5, totalmente -10) + legalidade (legal +5)."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "vicio-menor",
@@ -4490,7 +6895,15 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "espiral",
+      "efeitos": [
+        {
+          "alvo": "regra",
+          "descricao": "Vício psicológico cujo custo calculado é 0; sem ela pode sofrer -1 temporário em DX, IQ, autocontrole ou reação."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null
     },
     {
       "id": "xenofilia",
@@ -4511,7 +6924,22 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado"
+      "icone": "mente-rachado",
+      "efeitos": [
+        {
+          "alvo": "teste",
+          "ref": "verificacao_panico",
+          "valor": 2,
+          "condicao": "ao encontrar criaturas estranhas; +4 com autocontrole 6, +3 com 9, +2 com 12, +1 com 15"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Teste de autocontrole ao encontrar algo estranho ou alienígena; se falhar, assume que ele quer interagir socialmente."
+        }
+      ],
+      "prerequisitos": [],
+      "nivel_max": null,
+      "duvida_efeitos": "Bônus de Verificação de Pânico varia com o número de autocontrole; valor 2 corresponde ao padrão (12)."
     },
     {
       "id": "zarolho",
@@ -4531,7 +6959,32 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "punho-rachado"
+      "icone": "punho-rachado",
+      "efeitos": [
+        {
+          "alvo": "atributo",
+          "ref": "dx",
+          "valor": -1,
+          "condicao": "em combate e tarefas de coordenação mão-olho"
+        },
+        {
+          "alvo": "teste",
+          "ref": "ataque_distancia",
+          "valor": -3,
+          "condicao": "ataques à distância sem Apontar e conduzir veículos mais rápidos que um cavalo"
+        },
+        {
+          "alvo": "regra",
+          "descricao": "Em algumas culturas reduz um nível de aparência."
+        }
+      ],
+      "prerequisitos": [
+        {
+          "tipo": "exclui",
+          "id": "sem-nocao-de-profundidade"
+        }
+      ],
+      "nivel_max": null
     },
     {
       "id": "unico",

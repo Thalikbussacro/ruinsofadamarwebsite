@@ -253,7 +253,20 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "livro",
+      "especializacoes": [
+        {
+          "nome": "Própria espécie (Humano)",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Outra espécie",
+          "adamar": "narrador"
+        }
+      ],
+      "regra_troca": "Especializa-se por espécie (sem indicação, é a do próprio personagem). Espécies diferentes se pré-definem entre -2 e -5; espécies totalmente estranhas podem não ter pré-definido.",
+      "livre_escolha": true,
+      "duvida_especializacoes": "Marquei outras espécies como 'narrador' porque dependem das raças que existem em Adamar."
     },
     {
       "id": "analise-da-informacao",
@@ -394,7 +407,38 @@
         ],
         "parcial": true
       },
-      "icone": "espadas-cruzadas"
+      "icone": "espadas-cruzadas",
+      "especializacoes": [
+        {
+          "nome": "Arpão",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Dardo",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Faca",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Lança",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Maça/Machado",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Shuriken",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Vara",
+          "adamar": "livre"
+        }
+      ],
+      "regra_troca": "Não há regra geral de troca; algumas têm pré-definidos específicos: Arpão e Lança entre si -2; Lança também vale Arremessador de Lança -4; Dardo e Shuriken valem Arremesso -2."
     },
     {
       "id": "armadilhas",
@@ -550,7 +594,43 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "martelo",
+      "especializacoes": [
+        {
+          "nome": "Armas de Combate Corpo a Corpo",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Armas de Projétil",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Blindagem Individual",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Armas Pesadas",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Armas Pequenas",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Blindagem de Veículos",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Escudos de Força",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Trajes de Combate",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "A maioria se pré-define entre si com -4; acima de NT4 não há pré-definido entre as de armadura e as de armas. Corpo a Corpo e Blindagem Individual também valem Ferreiro (Bronze/Ferro) -3 em NT baixo.",
+      "duvida_especializacoes": "Armas Pesadas em NT≤3 cobre máquinas de cerco (catapultas, balistas); Armas Pequenas marcada 'nao' por ser armas de fogo."
     },
     {
       "id": "arqueiro-zen",
@@ -655,7 +735,22 @@
         ],
         "parcial": true
       },
-      "icone": "mascaras"
+      "icone": "mascaras",
+      "especializacoes": [
+        {
+          "nome": "Chamados dos Pássaros",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Fala",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Sons de Animais",
+          "adamar": "livre"
+        }
+      ],
+      "regra_troca": "Sons de Animais e Chamados dos Pássaros se pré-definem entre si com -6; não há pré-definido entre elas e Fala."
     },
     {
       "id": "arremessador-de-lanca",
@@ -841,7 +936,35 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "espadas-cruzadas",
+      "especializacoes": [
+        {
+          "nome": "Catapulta",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Canhão",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Bombas",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Míssil Guiado",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Torpedos",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Armas de Feixe",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Não há pré-definido entre as especializações; as armas cobertas variam com o NT.",
+      "duvida_especializacoes": "O livro diz que Canhão cobre bombardas primitivas de NT3; marquei 'nao' supondo Adamar sem pólvora. Rever se o cenário tiver pólvora."
     },
     {
       "id": "artista",
@@ -867,7 +990,55 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "martelo",
+      "especializacoes": [
+        {
+          "nome": "Arte Corporal",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Caligrafia",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Cerâmica",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Decoração de Cena",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Decoração de Interiores",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Desenho",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Escultura",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Iluminuras",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Marcenaria",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Pintura",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Ilusionismo",
+          "adamar": "narrador"
+        }
+      ],
+      "regra_troca": "Caligrafia, Desenho, Iluminuras e Pintura: -2 entre si (Arte Corporal -4). Decoração de Interiores, Decoração de Cena e Marcenaria: -4 entre si. Demais combinações: -6. Pode-se somar uma especialização opcional por técnica ou meio.",
+      "livre_escolha": true
     },
     {
       "id": "assuntos-atuais",
@@ -898,7 +1069,51 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "mascaras",
+      "especializacoes": [
+        {
+          "nome": "Alta Cultura",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Ciência & Tecnologia",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Cultura Popular",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Esportes",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Manchetes",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Negócios",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Pessoas",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Política",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Regional",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Viagem",
+          "adamar": "livre"
+        }
+      ],
+      "regra_troca": "Todas se pré-definem entre si com -4. Regional exige escolher a região.",
+      "duvida_especializacoes": "Em NT≤3 as notícias correm por boatos e arautos; Ciência & Tecnologia terá pouco uso, mas não é tecnologia em si."
     },
     {
       "id": "astronomia",
@@ -1536,7 +1751,24 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "folha",
+      "especializacoes": [
+        {
+          "nome": "Equinos",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Bovinos",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Cães",
+          "adamar": "livre"
+        }
+      ],
+      "regra_troca": "Especializa-se por tipo de animal de tração; as especializações se pré-definem entre si com -3.",
+      "livre_escolha": true,
+      "duvida_especializacoes": "O livro só cita Equinos (cavalos e mulas); Bovinos e Cães são exemplos meus."
     },
     {
       "id": "cartografia",
@@ -1606,7 +1838,31 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "folha",
+      "especializacoes": [
+        {
+          "nome": "Cavalo",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Mula",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Camelo",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Golfinho",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Dragão",
+          "adamar": "narrador"
+        }
+      ],
+      "regra_troca": "Especializa-se por animal; o pré-definido entre espécies vai de 0 a -10 conforme a semelhança (ex.: a partir de Cavalo: Mula 0, Camelo -3, Golfinho -6, Dragão -10).",
+      "livre_escolha": true
     },
     {
       "id": "chicote",
@@ -1877,7 +2133,52 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "folha",
+      "especializacoes": [
+        {
+          "nome": "Vizinhança",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Aldeia, Vila ou Cidade Pequena",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Cidade",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Baronato, Condado, Ducado ou País Pequeno",
+          "adamar": "livre"
+        },
+        {
+          "nome": "País Grande",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Planeta",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Federação Interplanetária",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Galáxia",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Ciberespaço",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Mundo dos Sonhos",
+          "adamar": "narrador"
+        }
+      ],
+      "regra_troca": "Especializa-se por uma região concreta de qualquer tamanho (as classes acima são escalas). Usar fora da área: -2/-4/-8... por classe de área menor dentro da sua; -2 por classe para perguntas sobre área maior; distância e tempo usam os modificadores de longa distância. O pré-definido IQ-4 vale só para onde o personagem viveu e só até a escala típica do seu NT.",
+      "livre_escolha": true,
+      "duvida_especializacoes": "'Planeta' marcado 'livre' por ser o mundo de Adamar inteiro, mas o livro indica que em NT baixo o pré-definido não chega a essa escala."
     },
     {
       "id": "conhecimento-oculto",
@@ -1897,7 +2198,28 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "olho",
+      "especializacoes": [
+        {
+          "nome": "Conhecimento Demoníaco",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Conhecimento Espiritual",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Conhecimento Feérico",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Conspirações",
+          "adamar": "narrador"
+        }
+      ],
+      "regra_troca": "Sem pré-definido. Especializa-se por área de saber oculto; começar com ela exige justificativa no histórico (o Mestre pode exigir Antecedentes Incomuns) e, em jogo, uma fonte confiável.",
+      "livre_escolha": true,
+      "duvida_especializacoes": "Conspirações não é sobrenatural, mas só existe se o cenário tiver grandes conspirações; marquei 'narrador'."
     },
     {
       "id": "connoisseur",
@@ -1924,7 +2246,31 @@
         ],
         "parcial": true
       },
-      "icone": "mascaras"
+      "icone": "mascaras",
+      "especializacoes": [
+        {
+          "nome": "Artes Visuais",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Dança",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Literatura",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Música",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Vinhos",
+          "adamar": "livre"
+        }
+      ],
+      "regra_troca": "Cada especialização vale -3 das perícias de criar/estudar aquela arte (ex.: Música vem de Instrumentos Musicais, Composição Musical ou Performance em Grupo (Condução de Orquestra) -3).",
+      "livre_escolha": true
     },
     {
       "id": "conserto-de-equipamento-eletronico",
@@ -2346,7 +2692,19 @@
         "caminhos": [],
         "especial": "Especial"
       },
-      "icone": "olho"
+      "icone": "olho",
+      "especializacoes": [
+        {
+          "nome": "Vudu",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Runas Futhark (cada runa separada)",
+          "adamar": "narrador"
+        }
+      ],
+      "regra_troca": "Especializa-se por tradição mágica. Onde o símbolo é só foco, vale Magia Ritualística (mesma tradição) -4. Na magia rúnica, cada runa é uma perícia própria sem pré-definido.",
+      "livre_escolha": true
     },
     {
       "id": "deslumbrar",
@@ -2552,7 +2910,23 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "gazua",
+      "especializacoes": [
+        {
+          "nome": "Própria espécie (Humano)",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Animal",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Outra espécie",
+          "adamar": "narrador"
+        }
+      ],
+      "regra_troca": "Só exige especialização se houver várias raças inteligentes; a da própria espécie pode ser anotada só como 'Disfarce'. Espécies de aparência parecida se pré-definem entre -2 e -4. Disfarce (Animal) não tem pré-definido com as demais.",
+      "livre_escolha": true
     },
     {
       "id": "dissimulacao",
@@ -2709,7 +3083,75 @@
         "caminhos": [],
         "especial": "Especial"
       },
-      "icone": "martelo"
+      "icone": "martelo",
+      "especializacoes": [
+        {
+          "nome": "Engenharia Civil",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Engenharia Bélica",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Engenharia de Artilharia",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Engenharia de Minerais",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Engenharia de Mecanismos",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Engenharia de Materiais",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Tipo de Veículo (ex.: Navios, Carroças)",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Armas Pequenas",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Engenharia Elétrica",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Engenharia Eletrônica",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Microtecnologia",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Nanotecnologia",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Robótica",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Paracrônica",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Psicotrônica",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Temporal",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Em geral -4 entre especializações; o Mestre pode cortar o pré-definido entre as exóticas e as mundanas. Cada uma também vale a perícia de conserto correspondente -6. Tipo de Veículo é aberta por classe de veículo.",
+      "duvida_especializacoes": "Engenharia de Materiais exige Química ou Metalurgia; o pré-requisito Matemática (Aplicada) só vale em NT5+, então não se aplica em Adamar."
     },
     {
       "id": "engolidor-de-fogo",
@@ -2827,7 +3269,23 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "espadas-cruzadas",
+      "especializacoes": [
+        {
+          "nome": "Escudo",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Broquel",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Escudo de Energia",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "As três se pré-definem entre si com -2. 'Escudo' é a mais comum e pode ser anotada sem parênteses.",
+      "duvida_especializacoes": "O texto chama a terceira de 'Escudo de Energia' e depois de 'Escudo (de Força)'; é a mesma (Force Shield)."
     },
     {
       "id": "espada-de-duas-maos",
@@ -3052,7 +3510,22 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "livro",
+      "especializacoes": [
+        {
+          "nome": "Terrestre",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Naval",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Espacial",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Todas se pré-definem entre si com -4. Comandar unidades de outro país ou NT dá no máximo -1 ou -2."
     },
     {
       "id": "exorcismo",
@@ -3295,7 +3768,22 @@
         ],
         "parcial": true
       },
-      "icone": "martelo"
+      "icone": "martelo",
+      "especializacoes": [
+        {
+          "nome": "Cobre",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Chumbo e Estanho",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Ferro",
+          "adamar": "livre"
+        }
+      ],
+      "regra_troca": "Todas se pré-definem entre si com -4. Cobre e Chumbo e Estanho também valem Joalheiro -4."
     },
     {
       "id": "filosofia",
@@ -3321,7 +3809,24 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "livro",
+      "especializacoes": [
+        {
+          "nome": "Estoicismo",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Confucionismo",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Marxismo",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Especializa-se por escola filosófica; o livro não dá pré-definido entre escolas. Filosofias religiosas são Teologia.",
+      "livre_escolha": true,
+      "duvida_especializacoes": "Os exemplos do livro são do mundo real; em Adamar valem as escolas do cenário. Marquei Marxismo 'nao' por ser da era industrial."
     },
     {
       "id": "financas",
@@ -3398,7 +3903,19 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "livro",
+      "especializacoes": [
+        {
+          "nome": "Humano",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Outra raça",
+          "adamar": "narrador"
+        }
+      ],
+      "regra_troca": "Só exige especialização quando há várias espécies inteligentes; o pré-definido entre espécies (se houver) fica a critério do Mestre.",
+      "livre_escolha": true
     },
     {
       "id": "forca-mental",
@@ -3649,7 +4166,35 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "livro",
+      "especializacoes": [
+        {
+          "nome": "Tipo Terra",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Terrestre Hostil",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Mundo Rochoso",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Mundo Gelado",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Gigante Gasoso",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Cinturão de Asteroides",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Especializa-se por tipo de planeta; o texto não dá pré-definido entre tipos.",
+      "duvida_especializacoes": "A lista de tipos de planeta está na pág. 184 (quadro Tipos de Planetas), que não veio no texto; os nomes vêm do Basic Set e podem diferir da tradução. Num mundo único, só Tipo Terra importa."
     },
     {
       "id": "golpe-debilitante",
@@ -3818,7 +4363,19 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "livro",
+      "especializacoes": [
+        {
+          "nome": "Região limitada, várias eras (ex.: Irlanda)",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Uma era + área ampla, cultura ou ideia (ex.: Exército de Napoleão)",
+          "adamar": "livre"
+        }
+      ],
+      "regra_troca": "Há duas formas de escolher a especialização (acima). Especializações que se sobrepõem se pré-definem entre -2 e -4, a critério do Mestre.",
+      "livre_escolha": true
     },
     {
       "id": "influencia-musical",
@@ -3859,7 +4416,32 @@
         "caminhos": [],
         "especial": "Especial"
       },
-      "icone": "martelo"
+      "icone": "martelo",
+      "especializacoes": [
+        {
+          "nome": "Harpa",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Alaúde",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Flauta",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Tambor",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Bateria",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Especializa-se por instrumento. Instrumentos parecidos se pré-definem com -3; instrumentos muito diferentes não têm pré-definido. Sistemas de notação diferentes são familiaridades.",
+      "livre_escolha": true,
+      "duvida_especializacoes": "O livro só cita bateria e harpa como contraste; Alaúde, Flauta e Tambor são exemplos meus. O OCR traz 'batem', que li como bateria."
     },
     {
       "id": "interrogatorio",
@@ -4091,7 +4673,47 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "mascaras",
+      "especializacoes": [
+        {
+          "nome": "Xadrez",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Go",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Hnefatafl",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Mankala",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Jogos de Cartas",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Jogos de Guerra",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Dardos",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Esporte (regras e arbitragem, ex.: Justas)",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Jogos de Computador",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Especializa-se por jogo. Esportes dão só conhecimento de juiz e exigem citar o esporte e a liga; ligas diferentes do mesmo esporte se pré-definem com -2.",
+      "livre_escolha": true
     },
     {
       "id": "judo",
@@ -4137,7 +4759,27 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "livro",
+      "especializacoes": [
+        {
+          "nome": "Região + área do direito (ex.: Criminal de um reino)",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Lei Canônica",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Internacional",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Espacial",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Mesma região ou mesma área do direito: -4 entre si; região e área diferentes: -6 ou pior.",
+      "livre_escolha": true
     },
     {
       "id": "kiai",
@@ -4569,7 +5211,19 @@
           }
         ]
       },
-      "icone": "olho"
+      "icone": "olho",
+      "especializacoes": [
+        {
+          "nome": "Vudu",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Bruxaria",
+          "adamar": "narrador"
+        }
+      ],
+      "regra_troca": "Especializa-se por tradição; tradições diferentes se pré-definem entre si com -5. Também vale Ritual Religioso (mesma) -6.",
+      "livre_escolha": true
     },
     {
       "id": "manejo-de-barcos",
@@ -4596,7 +5250,31 @@
         ],
         "parcial": true
       },
-      "icone": "folha"
+      "icone": "folha",
+      "especializacoes": [
+        {
+          "nome": "Navio",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Dirigível",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Submarino",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Espaçonave",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Nave Estelar",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "O livro não dá pré-definido entre especializações; cada uma tem pré-requisitos próprios (Liderança, a Navegação adequada e a perícia de tripulante) e pré-definido na perícia de tripulante ou pilotagem -5.",
+      "duvida_especializacoes": "O texto da especialização Navio lista 'Tripulante Aéreo' como pré-requisito e pré-definido; deve ser erro de tradução/OCR para Tripulante de Navio (Marinhagem)."
     },
     {
       "id": "mangual",
@@ -4815,7 +5493,35 @@
         ],
         "parcial": true
       },
-      "icone": "livro"
+      "icone": "livro",
+      "especializacoes": [
+        {
+          "nome": "Matemática Aplicada",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Matemática Pura",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Topografia",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Criptologia",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Estatística",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Ciência da Computação",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Todas se pré-definem entre si com -5. Matemática Pura aceita ainda uma especialização opcional.",
+      "duvida_especializacoes": "Estatística como ciência formal é pós-medieval; marquei 'livre' por não depender de tecnologia."
     },
     {
       "id": "materiais-perigosos",
@@ -5174,7 +5880,23 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "folha",
+      "especializacoes": [
+        {
+          "nome": "Noção do Clima (NT≤4, sem especialização)",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Tipo Terra (NT5+)",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Outros tipos de planeta (NT5+)",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Em NT≤4 a perícia se chama Noção do Clima, não tem especialização e dá +2 na região onde o personagem vive. Em NT5+ vira perícia científica e exige especialização por tipo de planeta.",
+      "duvida_especializacoes": "Em Adamar (NT≤3) a perícia não exige especialização; as especializações por planeta só existem em NT5+."
     },
     {
       "id": "montaria",
@@ -5283,7 +6005,19 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "folha",
+      "especializacoes": [
+        {
+          "nome": "Planeta natal (Adamar)",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Outro planeta",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Só exige especialização se for possível visitar outros mundos: planetas do mesmo tipo se pré-definem entre si com -4; tipos diferentes não têm pré-definido.",
+      "duvida_especializacoes": "Num mundo único a perícia na prática não tem especialização."
     },
     {
       "id": "navegacao",
@@ -5304,7 +6038,30 @@
         "caminhos": [],
         "especial": "Especial"
       },
-      "icone": "folha"
+      "icone": "folha",
+      "especializacoes": [
+        {
+          "nome": "Terra",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Mar",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Ar",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Espaço",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Hiperespaço",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Ar, Terra e Mar: -2 entre si. Espaço e Hiperespaço: -5 entre si. Não há pré-definido entre os dois grupos."
     },
     {
       "id": "observador-avancado",
@@ -5702,7 +6459,27 @@
         ],
         "parcial": true
       },
-      "icone": "mascaras"
+      "icone": "mascaras",
+      "especializacoes": [
+        {
+          "nome": "Condução de Orquestra",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Coreografia",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Coreografia de Combate",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Direção",
+          "adamar": "livre"
+        }
+      ],
+      "regra_troca": "O livro não dá pré-definido entre especializações. Todas exigem Diplomacia, Intimidação ou Liderança, mais a perícia de base (instrumentos/Canto, Dança, Encenação de Combate ou Atuação), e têm pré-definido nessa perícia de base.",
+      "duvida_especializacoes": "Li 'qualquer tipo de Diplomacia, Intimidação e Liderança' como 'uma delas', como no Basic Set."
     },
     {
       "id": "perseguicao",
@@ -5759,7 +6536,56 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "livro"
+      "icone": "livro",
+      "especializacoes": [
+        {
+          "nome": "Ciência Militar",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Ciência Política",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Filosofia Natural",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Hidrologia",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Tanatologia",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Egiptologia (estudo de uma civilização antiga)",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Teoria da Conspiração",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Psiquismo",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Xenologia",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Epidemiologia",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Segurança de Computadores",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Sem pré-definido. Especializa-se por tema; o Mestre pode vetar temas amplos demais. Substitui testes de IQ de outras perícias só para responder perguntas sobre o tema.",
+      "livre_escolha": true,
+      "duvida_especializacoes": "Egiptologia no cenário equivaleria ao estudo de uma civilização antiga local (ex.: as ruínas de Adamar). Epidemiologia marcada 'nao' por ser ciência moderna."
     },
     {
       "id": "pericia-forense",
@@ -6470,7 +7296,26 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "folha",
+      "especializacoes": [
+        {
+          "nome": "Sem Motor",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Veleiro",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Lancha",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Barco Grande a Motor",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Lancha e Barco Grande a Motor: -2 entre si; Veleiro, Sem Motor e Lancha: -3 entre si; Barco Grande a Motor com Veleiro ou Sem Motor: -4."
     },
     {
       "id": "revistar",
@@ -6534,7 +7379,29 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "livro",
+      "especializacoes": [
+        {
+          "nome": "Panteão de Roestia",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Panteão das Ilhas do Oeste",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Panteão do Mar das Nações",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Panteão de Indacor",
+          "adamar": "livre"
+        }
+      ],
+      "regra_troca": "Especializa-se por religião; o livro não dá pré-definido entre religiões. Vale Magia Ritualística (mesma) -6 ou Teologia (mesma) -4.",
+      "livre_escolha": true,
+      "duvida_especializacoes": "O livro não dá exemplos de religiões.",
+      "nota_adamar": "Especializações de Adamar: os panteões do cânone (ver Divindades). Cultos de povos distantes podem ser outra especialização, com o narrador."
     },
     {
       "id": "sabre",
@@ -6605,7 +7472,43 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "espadas-cruzadas"
+      "icone": "espadas-cruzadas",
+      "especializacoes": [
+        {
+          "nome": "Espada",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Espada de Duas Mãos",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Faca",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Flecha",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Arma Longa",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Pistola",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Munição",
+          "adamar": "nao"
+        },
+        {
+          "nome": "Espada de Energia",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Sem pré-definido. O Mestre pode criar novas especializações para qualquer arma ou ferramenta que possa ser sacada rápido.",
+      "livre_escolha": true
     },
     {
       "id": "salto",
@@ -6703,7 +7606,79 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "folha",
+      "especializacoes": [
+        {
+          "nome": "Ártico",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Deserto",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Florestas",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Ilha/Litoral",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Montanha",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Pântano",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Planícies",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Selva",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Cavidade Marítima",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Lago de Água Doce",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Lagoa Tropical",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Mar Aberto",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Mar de Água Salgada",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Margem",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Recife",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Rio/Córrego",
+          "adamar": "narrador"
+        },
+        {
+          "nome": "Radioativo",
+          "adamar": "nao"
+        }
+      ],
+      "regra_troca": "Terrestres: -3 entre si. Aquáticas: -4 entre si. Entre os dois grupos só há Ilha/Litoral com Lagoa Tropical e Pântano com Rio/Córrego, ambos -4. Com vários mundos, especializa-se também por planeta (mesmo terreno em planeta do mesmo tipo: -4). Terrenos muito alterados pelo homem podem ter especializações próprias, em geral sem pré-definido.",
+      "duvida_especializacoes": "As aquáticas são para seres que vivem na água; marquei 'narrador' porque dependem de haver raças aquáticas jogáveis. O texto da regra de troca está truncado; completei pelo Basic Set."
     },
     {
       "id": "sobrevivencia-urbana",
@@ -6988,7 +7963,27 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "livro",
+      "especializacoes": [
+        {
+          "nome": "Panteão de Roestia",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Panteão das Ilhas do Oeste",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Panteão do Mar das Nações",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Panteão de Indacor",
+          "adamar": "livre"
+        }
+      ],
+      "livre_escolha": true,
+      "nota_adamar": "Especializações de Adamar: os panteões do cânone (ver Divindades). Cultos de povos distantes podem ser outra especialização, com o narrador."
     },
     {
       "id": "tercado",
@@ -7119,7 +8114,36 @@
         ],
         "parcial": true
       },
-      "icone": "mascaras"
+      "icone": "mascaras",
+      "especializacoes": [
+        {
+          "nome": "Alta Sociedade",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Servo",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Exército",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Polícia",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Dojo",
+          "adamar": "livre"
+        },
+        {
+          "nome": "Máfia",
+          "adamar": "livre"
+        }
+      ],
+      "regra_troca": "Alta Sociedade e Servo: -2 entre si; demais sem pré-definido entre si. Alta Sociedade é a padrão e pode ser anotada sem parênteses. Máfia também vale Manha -3; Dojo vale Jogos de Entretenimento relevante -3 para artes marciais de competição.",
+      "livre_escolha": true,
+      "duvida_especializacoes": "Em Adamar, Polícia seria a guarda da cidade, Máfia uma guilda de ladrões e Dojo uma escola de armas."
     },
     {
       "id": "tatica",

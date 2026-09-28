@@ -60,6 +60,13 @@ d.equipamento.itens[0].categoria = 'arma-distancia';
 assert.deepEqual(validar(d), []);
 assert.equal(new Function('window', montarJs(d) + 'return window;')({}).GURPS.equipamento[0].id, 'arco-longo');
 
+// efeitos e pré-requisitos inválidos
+d = base(); d.vantagens.itens[0].efeitos = [{ alvo: 'pericia', ref: 'inexistente', valor: 1 }];
+d.vantagens.itens[0].prerequisitos = [{ tipo: 'traco', id: 'nada' }];
+const errosEf = validar(d).join(String.fromCharCode(10));
+assert.match(errosEf, /vantagens\/carisma: efeito com perícia inexistente "inexistente"/);
+assert.match(errosEf, /vantagens\/carisma: pré-requisito com traço inexistente "nada"/);
+
 // porte da grade fora do conjunto
 d = base(); d.equipamento = { itens: [{ id: 'faca', nome: 'Faca', categoria: 'arma-corpo-a-corpo', nt: '0', adamar: 'livre', resumo: 'x', ref: { livro: 'modulo-basico', pagina: 272 }, grade: { porte: 'bolso' } }] };
 assert.match(validar(d).join(String.fromCharCode(10)), /equipamento\/faca: porte inválido "bolso"/);

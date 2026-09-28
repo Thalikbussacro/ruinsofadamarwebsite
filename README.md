@@ -111,6 +111,7 @@ node tools/importar-equipamento.test.mjs
 node tools/custo-estruturado.test.mjs
 node tools/predefinidos.test.mjs
 node tools/icones-e-grade.test.mjs
+node tools/importar-efeitos.test.mjs
 node tools/gerar-dados.mjs --check
 ```
 

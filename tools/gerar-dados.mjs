@@ -4,6 +4,7 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { conferirEfeito, conferirPrerequisito } from './importar-efeitos.mjs';
 
 const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
 const ARQUIVOS = ['livros', 'pericias', 'vantagens', 'desvantagens', 'regras'];
@@ -59,6 +60,20 @@ export function validar(dados) {
       if (c.tipo === 'atributo' && !['st', 'dx', 'iq', 'ht', 'per', 'vontade'].includes(c.atributo)) erros.push(`pericias/${p.id}: pré-definido com atributo inválido "${c.atributo}"`);
     }
   }
+  // efeitos e pré-requisitos dos traços
+  const idsTracos = new Set([...(dados.vantagens.itens || []), ...(dados.desvantagens.itens || [])].map((t) => t.id));
+  const ids = { pericias: idsPericias, tracos: idsTracos };
+  const catalogo = dados.regras && dados.regras.catalogo_testes;
+  for (const lista of ['vantagens', 'desvantagens']) {
+    for (const t of dados[lista].itens || []) {
+      for (const e of t.efeitos || []) {
+        for (const p of conferirEfeito(e, ids)) erros.push(`${lista}/${t.id}: efeito com ${p}`);
+        if (catalogo && e.alvo === 'teste' && !catalogo[e.ref]) erros.push(`${lista}/${t.id}: teste "${e.ref}" fora do catálogo`);
+      }
+      for (const r of t.prerequisitos || []) for (const p of conferirPrerequisito(r, ids)) erros.push(`${lista}/${t.id}: pré-requisito com ${p}`);
+    }
+  }
+
   // grade do inventário de Adamar (equipamento)
   for (const it of (dados.equipamento && dados.equipamento.itens) || []) {
     if (it.grade && !['grade', 'longo', 'montaria', 'vestido'].includes(it.grade.porte)) erros.push(`equipamento/${it.id}: porte inválido "${it.grade.porte}"`);

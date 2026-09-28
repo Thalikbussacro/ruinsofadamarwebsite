@@ -33,7 +33,7 @@ function basePage(pageRelPath, { dataRoot = './', bodyAttrs, main = true, title 
         : `<script src="js/whatsapp.js" defer></script>\n<script src="js/site.js" defer></script>`;
   const mainOpen = main ? '<main id="conteudo">' : '<div id="conteudo">';
   const mainClose = main ? '</main>' : '</div>';
-  const titleTag = title ? '<title>Teste — Ruínas de Adamar</title>' : '';
+  const titleTag = title === 'empty' ? '<title></title>' : title ? '<title>Teste — Ruínas de Adamar</title>' : '';
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -200,6 +200,36 @@ function cleanup(root) {
     assert.equal(res.status, 1, `esperado exit 1 com "TODO"/"TBD" em maiúsculas, obteve ${res.status}\nstdout:\n${res.stdout}`);
     assert.match(res.stdout, /index\.html:.*TODO/);
     assert.match(res.stdout, /index\.html:.*TBD/);
+  } finally {
+    cleanup(root);
+  }
+}
+
+// --- Test 6: extractAttr must be anchored — a stray "xdata-page" attribute
+// must not be misread as the real "data-page" attribute (unanchored regex
+// would match "data-page=" as a substring of "xdata-page="). ---
+{
+  const root = buildGoodRoot();
+  try {
+    write(root, 'anchor-attr.html', basePage('anchor-attr.html', {
+      bodyAttrs: 'data-root="./" xdata-page="wrong.html"',
+    }));
+    const res = run(root);
+    assert.equal(res.status, 1, `esperado exit 1 (data-page real ausente), obteve ${res.status}\nstdout:\n${res.stdout}`);
+    assert.match(res.stdout, /anchor-attr\.html:.*falta data-page/i);
+  } finally {
+    cleanup(root);
+  }
+}
+
+// --- Test 7: <title></title> (empty content) must fail, not pass silently. ---
+{
+  const root = buildGoodRoot();
+  try {
+    write(root, 'empty-title.html', basePage('empty-title.html', { title: 'empty' }));
+    const res = run(root);
+    assert.equal(res.status, 1, `esperado exit 1 (title vazio), obteve ${res.status}\nstdout:\n${res.stdout}`);
+    assert.match(res.stdout, /empty-title\.html:.*title/i);
   } finally {
     cleanup(root);
   }

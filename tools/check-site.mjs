@@ -86,7 +86,7 @@ function stripQueryHash(value) {
 }
 
 function extractAttr(tagAttrs, name) {
-  const re = new RegExp(name + '=["\']([^"\']*)["\']');
+  const re = new RegExp('(?:^|\\s)' + escapeRegExp(name) + '\\s*=\\s*["\']([^"\']*)["\']');
   const m = tagAttrs.match(re);
   return m ? m[1] : undefined;
 }
@@ -189,7 +189,7 @@ function checkPage(absPath, rootDir) {
   if (!/<main\b[^>]*\bid=["']conteudo["'][^>]*>/i.test(html)) {
     failures.push('falta <main id="conteudo">');
   }
-  if (!/<title>[^<]*<\/title>/i.test(html)) {
+  if (!/<title>[^<]+<\/title>/i.test(html)) {
     failures.push('falta <title>');
   }
 

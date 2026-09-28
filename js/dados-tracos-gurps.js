@@ -1,4 +1,5 @@
 // Vantagens e desvantagens do GURPS 4e — Módulo Básico: Personagens (Devir, 2010).
+// Inclui qualidades (1 ponto, págs. 100–101) e peculiaridades (-1 ponto, págs. 163–165).
 // Nome, custo, tipo e página conferidos na tabela do livro; resumos escritos para o site, não transcritos.
 // s: L = livre, N = com o narrador, X = não existe em Adamar.
 window.VANTAGENS_GURPS = [
@@ -25,6 +26,14 @@ window.VANTAGENS_GURPS = [
 "t": "Mental · Sobrenatural",
 "s": "N",
 "r": "Um deus fala com o personagem por visões. Magia divina: só com o narrador."
+},
+{
+"n": "Acessórios",
+"c": "1",
+"p": 100,
+"t": "Física · Exótica · Qualidade",
+"s": "X",
+"r": "Uma ferramenta embutida no corpo."
 },
 {
 "n": "Adaptabilidade Cultural",
@@ -193,6 +202,14 @@ window.VANTAGENS_GURPS = [
 "t": "Física · Exótica",
 "s": "X",
 "r": "Ouve sons graves demais para humanos."
+},
+{
+"n": "Autotranse",
+"c": "1",
+"p": 100,
+"t": "Mental · Qualidade",
+"s": "N",
+"r": "Entra em transe à vontade; ajuda a contatar espíritos. Com o narrador."
 },
 {
 "n": "Boa Forma",
@@ -475,6 +492,14 @@ window.VANTAGENS_GURPS = [
 "r": "Transforma vítimas em servos."
 },
 {
+"n": "Dorminhoco (qualidade)",
+"c": "1",
+"p": 101,
+"t": "Física · Qualidade",
+"s": "L",
+"r": "Dorme em qualquer lugar e com qualquer barulho. Útil em viagem."
+},
+{
 "n": "Duplicação",
 "c": "35/cópia",
 "p": 56,
@@ -617,6 +642,14 @@ window.VANTAGENS_GURPS = [
 "t": "Social",
 "s": "L",
 "r": "Emprego garantido, difícil de perder."
+},
+{
+"n": "Estilo",
+"c": "1",
+"p": 101,
+"t": "Mental · Qualidade",
+"s": "L",
+"r": "Um jeito marcante de se portar ou vestir que nunca se desfaz."
 },
 {
 "n": "Estática Psíquica",
@@ -995,6 +1028,14 @@ window.VANTAGENS_GURPS = [
 "r": "Treino marcial cinematográfico."
 },
 {
+"n": "Metabolismo Impoluto",
+"c": "1",
+"p": 101,
+"t": "Física · Qualidade",
+"s": "N",
+"r": "Quase não suja nem cheira; difícil de rastrear pelo faro."
+},
+{
 "n": "Metamorfose",
 "c": "Variável",
 "p": 70,
@@ -1137,6 +1178,14 @@ window.VANTAGENS_GURPS = [
 "t": "Social",
 "s": "L",
 "r": "Alguém poderoso que protege: um senhor, uma ordem, um templo."
+},
+{
+"n": "Pelagem",
+"c": "1",
+"p": 101,
+"t": "Física · Exótica · Qualidade",
+"s": "X",
+"r": "Corpo coberto de pelos, como um animal."
 },
 {
 "n": "Pele Elástica",
@@ -1387,12 +1436,28 @@ window.VANTAGENS_GURPS = [
 "r": "Dinheiro inicial e renda, de falido a muito rico."
 },
 {
+"n": "Rosto Sincero",
+"c": "1",
+"p": 101,
+"t": "Física · Qualidade",
+"s": "L",
+"r": "Parece honesto e inofensivo para quem não o conhece."
+},
+{
 "n": "Saltador",
 "c": "100",
 "p": 86,
 "t": "Mental · Sobrenatural",
 "s": "X",
 "r": "Viaja entre mundos. No cânone, só forasteiros atravessam a barreira."
+},
+{
+"n": "Sem Ressaca",
+"c": "1",
+"p": 101,
+"t": "Física · Qualidade",
+"s": "L",
+"r": "Nunca acorda de ressaca."
 },
 {
 "n": "Senso de Direção",
@@ -1579,6 +1644,14 @@ window.VANTAGENS_GURPS = [
 "r": "Corpo sem pontos vitais."
 },
 {
+"n": "Tolerância ao Álcool",
+"c": "1",
+"p": 101,
+"t": "Física · Qualidade",
+"s": "L",
+"r": "Aguenta beber muito mais que os outros."
+},
+{
 "n": "Tolerância à Radiação",
 "c": "Variável",
 "p": 95,
@@ -1755,6 +1828,14 @@ window.VANTAGENS_GURPS = [
 "r": "Voz bonita e convincente."
 },
 {
+"n": "Voz Penetrante",
+"c": "1",
+"p": 101,
+"t": "Física · Qualidade",
+"s": "L",
+"r": "Se faz ouvir no meio de qualquer barulho."
+},
+{
 "n": "Vínculo Especial",
 "c": "5",
 "p": 97,
@@ -1771,6 +1852,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Física",
 "s": "L",
 "r": "Peso acima do normal."
+},
+{
+"n": "Acomodado",
+"c": "-1",
+"p": 163,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Ignora problemas que não o afetam."
 },
 {
 "n": "Alcoolismo",
@@ -1813,6 +1902,14 @@ window.DESVANTAGENS_GURPS = [
 "r": "Não sabe nada de magia nem do sobrenatural. Comum em Adamar."
 },
 {
+"n": "Antipático",
+"c": "-1",
+"p": 163,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Prefere fazer as coisas sozinho."
+},
+{
 "n": "Aparência (desvantagem)",
 "c": "Variável",
 "p": 20,
@@ -1845,6 +1942,14 @@ window.DESVANTAGENS_GURPS = [
 "r": "Sob estresse, volta a um estado bestial ancestral."
 },
 {
+"n": "Atento",
+"c": "-1",
+"p": 163,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Não larga uma tarefa até terminar e se distrai do resto."
+},
+{
 "n": "Atrapalhado",
 "c": "-5 ou -10",
 "p": 123,
@@ -1875,6 +1980,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Mental · Sobrenatural",
 "s": "N",
 "r": "Precisa se afastar de algo, como vampiro de alho."
+},
+{
+"n": "Aversões",
+"c": "-1",
+"p": 163,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Evita algo de que não gosta: água funda, gatos, sacerdotes."
 },
 {
 "n": "Azar",
@@ -1925,12 +2038,28 @@ window.DESVANTAGENS_GURPS = [
 "r": "Adora intimidar e brigar."
 },
 {
+"n": "Características Distintas",
+"c": "-1",
+"p": 165,
+"t": "Física · Peculiaridade",
+"s": "L",
+"r": "Um traço fácil de reconhecer: cabelo branco, cicatriz no rosto."
+},
+{
 "n": "Características Sobrenaturais",
 "c": "Variável",
 "p": 125,
 "t": "Física · Sobrenatural",
 "s": "X",
 "r": "Sinais sobrenaturais: sem reflexo, sem sombra."
+},
+{
+"n": "Castrado ou Assexuado",
+"c": "-1",
+"p": 165,
+"t": "Física · Peculiaridade",
+"s": "L",
+"r": "Não tem os órgãos sexuais típicos."
 },
 {
 "n": "Cegueira",
@@ -1947,6 +2076,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Física",
 "s": "L",
 "r": "Enxerga mal no escuro."
+},
+{
+"n": "Chauvinista",
+"c": "-1",
+"p": 163,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Sempre repara nas diferenças entre povos e sexos."
 },
 {
 "n": "Circunspecção",
@@ -1979,6 +2116,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Mental",
 "s": "L",
 "r": "Se sente responsável por tudo de ruim."
+},
+{
+"n": "Compreensivo",
+"c": "-1",
+"p": 163,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Percebe o que os outros sentem e tende a ajudar."
 },
 {
 "n": "Compulsão",
@@ -2037,6 +2182,22 @@ window.DESVANTAGENS_GURPS = [
 "r": "Acredita em tudo."
 },
 {
+"n": "Criativo",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Cheio de ideias, nem todas boas."
+},
+{
+"n": "Cuidadoso",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Prepara tudo antes de se arriscar."
+},
+{
 "n": "Curiosidade",
 "c": "-5*",
 "p": 129,
@@ -2053,6 +2214,14 @@ window.DESVANTAGENS_GURPS = [
 "r": "Segue um código: de cavaleiro, de pirata, de guerreiro."
 },
 {
+"n": "Código de Honra (peculiaridade)",
+"c": "-1",
+"p": 163,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Uma regra pessoal pequena: nunca recusar um duelo, sempre agradecer ao anfitrião."
+},
+{
 "n": "Daltonismo",
 "c": "-10",
 "p": 129,
@@ -2067,6 +2236,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Física",
 "s": "L",
 "r": "Perna manca ou perdida. Comum num mundo onde ferida deixa marca."
+},
+{
+"n": "Deficiências Menores",
+"c": "-1",
+"p": 165,
+"t": "Física · Peculiaridade",
+"s": "L",
+"r": "Uma limitação física leve: joelho dolorido, dedo duro. Comum em Adamar."
 },
 {
 "n": "Dependentes",
@@ -2115,6 +2292,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Mental",
 "s": "L",
 "r": "Tem mais de uma personalidade."
+},
+{
+"n": "Despretensioso",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Põe os outros antes de si."
 },
 {
 "n": "Destino (desvantagem)",
@@ -2187,6 +2372,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Mental",
 "s": "L",
 "r": "Gênio distraído que esquece o básico."
+},
+{
+"n": "Distraído",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Se perde em tarefas longas."
 },
 {
 "n": "Distúrbio Neurológico",
@@ -2277,6 +2470,14 @@ window.DESVANTAGENS_GURPS = [
 "r": "Corpo com sistemas elétricos."
 },
 {
+"n": "Embotado",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Só confia no jeito de sempre."
+},
+{
 "n": "Enjoo",
 "c": "-10",
 "p": 137,
@@ -2309,6 +2510,14 @@ window.DESVANTAGENS_GURPS = [
 "r": "Não tem tato."
 },
 {
+"n": "Enxerido",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Mete o nariz onde não é chamado."
+},
+{
 "n": "Epilepsia",
 "c": "-30",
 "p": 137,
@@ -2323,6 +2532,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Social",
 "s": "L",
 "r": "Grupo desprezado: forasteiro, criminoso marcado, servo."
+},
+{
+"n": "Estômago Sensível",
+"c": "-1",
+"p": 165,
+"t": "Física · Peculiaridade",
+"s": "L",
+"r": "Passa mal com comida forte ou bebida pesada."
 },
 {
 "n": "Excesso de Confiança",
@@ -2355,6 +2572,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Mental",
 "s": "L",
 "r": "Acredita em algo que não é verdade."
+},
+{
+"n": "Fantasias (peculiaridade)",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Acredita numa bobagem inofensiva."
 },
 {
 "n": "Feições Estranhas",
@@ -2411,6 +2636,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Física · Exótica",
 "s": "X",
 "r": "Corpo que se quebra ou queima facilmente."
+},
+{
+"n": "Fragilidade em Aceleração",
+"c": "-1",
+"p": 165,
+"t": "Física · Peculiaridade",
+"s": "X",
+"r": "Passa mal com acelerações extremas."
 },
 {
 "n": "Fraqueza",
@@ -2509,6 +2742,14 @@ window.DESVANTAGENS_GURPS = [
 "r": "Manias que incomodam os outros."
 },
 {
+"n": "Hábitos ou Expressões",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Um bordão, um gesto ou mania que repete sempre."
+},
+{
 "n": "Identidade Secreta",
 "c": "Variável",
 "p": 145,
@@ -2541,12 +2782,28 @@ window.DESVANTAGENS_GURPS = [
 "r": "Voz fraca ou mudez."
 },
 {
+"n": "Incapaz de Flutuar",
+"c": "-1",
+"p": 165,
+"t": "Física · Peculiaridade",
+"s": "X",
+"r": "Afunda na água, sempre."
+},
+{
 "n": "Incapaz de Sentir Prazer",
 "c": "-15",
 "p": 145,
 "t": "Física",
 "s": "L",
 "r": "Nada lhe dá prazer."
+},
+{
+"n": "Incompetente",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Simplesmente não consegue aprender uma perícia."
 },
 {
 "n": "Indeciso",
@@ -2611,6 +2868,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Mental",
 "s": "L",
 "r": "Não suporta um povo ou grupo."
+},
+{
+"n": "Intolerância ao Álcool",
+"c": "-1",
+"p": 165,
+"t": "Física · Peculiaridade",
+"s": "L",
+"r": "Fica bêbado com pouco."
 },
 {
 "n": "Intolerância-G",
@@ -2741,6 +3006,14 @@ window.DESVANTAGENS_GURPS = [
 "r": "Deixa sempre uma assinatura no que faz."
 },
 {
+"n": "Marca Registrada (peculiaridade)",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Uma assinatura pequena no que faz."
+},
+{
 "n": "Mau Cheiro",
 "c": "-10",
 "p": 150,
@@ -2765,12 +3038,28 @@ window.DESVANTAGENS_GURPS = [
 "r": "Não tem iniciativa própria."
 },
 {
+"n": "Mente Aberta",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Estranhos e estrangeiros não o incomodam."
+},
+{
 "n": "Mordida Fraca",
 "c": "-2",
 "p": 151,
 "t": "Física · Exótica",
 "s": "X",
 "r": "Mandíbula fraca."
+},
+{
+"n": "Mudança de Personalidade",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Vira outra pessoa numa situação específica, como quando bebe."
 },
 {
 "n": "Mão Fraca",
@@ -2837,6 +3126,22 @@ window.DESVANTAGENS_GURPS = [
 "r": "Fixado num objetivo."
 },
 {
+"n": "Obsessões (peculiaridade)",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Um objetivo pequeno: juntar dinheiro para um barco, uma terra."
+},
+{
+"n": "Orgulhoso",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Status e sucesso importam muito para ele."
+},
+{
 "n": "Pacifismo",
 "c": "Variável",
 "p": 151,
@@ -2869,6 +3174,14 @@ window.DESVANTAGENS_GURPS = [
 "r": "Desconfia de todos."
 },
 {
+"n": "Pernas Tortas",
+"c": "-1",
+"p": 165,
+"t": "Física · Peculiaridade",
+"s": "L",
+"r": "Pernas tortas que atrapalham saltos e rendem risadas."
+},
+{
 "n": "Pesadelos",
 "c": "-5*",
 "p": 152,
@@ -2899,6 +3212,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Mental",
 "s": "L",
 "r": "Não entende emoções alheias."
+},
+{
+"n": "Preferências",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Gosta de algo e procura sempre que pode."
 },
 {
 "n": "Preguiça",
@@ -2955,6 +3276,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Social",
 "s": "L",
 "r": "Fama ruim num grupo ou região."
+},
+{
+"n": "Ressacas Terríveis",
+"c": "-1",
+"p": 165,
+"t": "Física · Peculiaridade",
+"s": "L",
+"r": "Ressacas longas e pesadas."
 },
 {
 "n": "Sadismo",
@@ -3045,6 +3374,14 @@ window.DESVANTAGENS_GURPS = [
 "r": "Dever com amigos, família, povo."
 },
 {
+"n": "Simpático",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Prefere agir em grupo."
+},
+{
 "n": "Solitário",
 "c": "-5*",
 "p": 157,
@@ -3059,6 +3396,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Mental",
 "s": "L",
 "r": "Anda dormindo."
+},
+{
+"n": "Sonhador",
+"c": "-1",
+"p": 164,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Pensa em como fazer melhor em vez de fazer."
 },
 {
 "n": "Sono Complementar",
@@ -3205,6 +3550,14 @@ window.DESVANTAGENS_GURPS = [
 "r": "Fez um voto: pobreza, silêncio, castidade."
 },
 {
+"n": "Voto (peculiaridade)",
+"c": "-1",
+"p": 165,
+"t": "Mental · Peculiaridade",
+"s": "L",
+"r": "Uma promessa pequena: não beber, doar parte do que ganha ao templo."
+},
+{
 "n": "Voz Irritante",
 "c": "-10",
 "p": 161,
@@ -3235,6 +3588,14 @@ window.DESVANTAGENS_GURPS = [
 "t": "Física",
 "s": "L",
 "r": "Dependência de uma droga ou erva."
+},
+{
+"n": "Vício Menor",
+"c": "-1",
+"p": 164,
+"t": "Física · Peculiaridade",
+"s": "L",
+"r": "Um hábito que não chega a ser vício: cachimbo, vinho."
 },
 {
 "n": "Xenofilia",

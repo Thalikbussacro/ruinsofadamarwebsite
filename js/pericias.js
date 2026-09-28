@@ -15,6 +15,12 @@
   };
   var TIPOS_TRACO = ['Mental', 'Física', 'Social', 'Exótica', 'Sobrenatural'];
 
+  // "Variável" e custos por nível ("5/nível") ficam sem unidade; "1" e "-1" levam "pt"; o resto, "pts".
+  function unidadePontos(c) {
+    if (!/^[-+]?\d/.test(c) || c.indexOf('/') !== -1) return '';
+    return /^-?1$/.test(c) ? ' pt' : ' pts';
+  }
+
   var TIPOS = {
     pericias: {
       dados: window.PERICIAS_GURPS || [],
@@ -35,15 +41,17 @@
       opcoes: TIPOS_TRACO.map(function (t) { return [t, t]; }),
       filtra: function (p, v) { return p.t.indexOf(v) !== -1; },
       titulo: function (p) { return p.n; },
-      selo: function (p) { return p.c + (/^[\d+]/.test(p.c) ? ' pts' : ''); },
+      selo: function (p) { return p.c + unidadePontos(p.c); },
       meta: function (p) { return [p.t, 'pág. ' + p.p]; }
     }
   };
+  TIPOS.vantagens.opcoes = TIPOS.vantagens.opcoes.concat([['Qualidade', 'Qualidades (1 ponto)']]);
   TIPOS.desvantagens = Object.create(TIPOS.vantagens);
   TIPOS.desvantagens.dados = window.DESVANTAGENS_GURPS || [];
+  TIPOS.desvantagens.opcoes = TIPOS_TRACO.map(function (t) { return [t, t]; })
+    .concat([['Peculiaridade', 'Peculiaridades (-1 ponto)']]);
   TIPOS.desvantagens.unidade = ['desvantagem', 'desvantagens'];
-  TIPOS.desvantagens.selo = function (p) { return p.c + (/^-?\d/.test(p.c) ? ' pts' : ''); };
-
+  
   var tipo = TIPOS[lista.getAttribute('data-lista')] || TIPOS.pericias;
   var STATUS = {
     L: { rotulo: 'Livre', classe: 'st-livre' },

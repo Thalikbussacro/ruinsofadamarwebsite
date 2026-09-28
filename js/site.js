@@ -35,6 +35,7 @@
       { label: 'Perícias (GURPS)', href: 'mesa/pericias-gurps.html' },
       { label: 'Vantagens (GURPS)', href: 'mesa/vantagens-gurps.html' },
       { label: 'Desvantagens (GURPS)', href: 'mesa/desvantagens-gurps.html' },
+      { label: 'Equipamento (GURPS)', href: 'mesa/equipamento-gurps.html' },
       { label: 'Sugestões aos jogadores', href: 'mesa/sugestoes.html' },
       { label: 'Sessão zero', href: 'mesa/sessao-zero.html' }
     ]},

@@ -18,6 +18,11 @@
   var TIPOS_TRACO = {
     mental: 'Mental', fisica: 'Física', social: 'Social', exotica: 'Exótica', sobrenatural: 'Sobrenatural'
   };
+  var CATEGORIAS_EQUIP = {
+    'arma-corpo-a-corpo': 'Armas de combate corpo a corpo', 'arma-distancia': 'Armas de combate à distância',
+    'arma-de-fogo': 'Armas de fogo', 'arma-pesada': 'Armas pesadas', 'municao': 'Munição e projéteis',
+    'armadura': 'Armaduras', 'armadura-cavalo': 'Armaduras para cavalos', 'escudo': 'Escudos', 'equipamento': 'Equipamento variado'
+  };
   var ADAMAR = {
     livre: { rotulo: 'Livre', classe: 'st-livre' },
     narrador: { rotulo: 'Com o narrador', classe: 'st-narrador' },
@@ -67,6 +72,20 @@
       titulo: function (p) { return p.nome; },
       selo: function (p) { return p.custo + unidadePontos(p.custo); },
       meta: metaTraco
+    },
+    equipamento: {
+      dados: GURPS.equipamento || [],
+      unidade: ['item', 'itens'],
+      opcoes: Object.keys(CATEGORIAS_EQUIP).map(function (k) { return [k, CATEGORIAS_EQUIP[k]]; }),
+      filtra: function (p, v) { return p.categoria === v; },
+      titulo: function (p) { return p.nome; },
+      selo: function (p) { return p.nt === '^' ? 'Superciência' : 'NT' + p.nt; },
+      meta: function (p) {
+        var m = [p.subcategoria || CATEGORIAS_EQUIP[p.categoria]];
+        if (p.pericia && p.pericia !== p.subcategoria) m.push('Perícia: ' + p.pericia);
+        m.push('pág. ' + p.ref.pagina);
+        return m;
+      }
     },
     desvantagens: {
       dados: GURPS.desvantagens,
@@ -120,7 +139,7 @@
     var filtrados = tipo.dados.filter(function (p) {
       if (statusAtual !== 'todas' && p.adamar !== statusAtual) return false;
       if (v && !tipo.filtra(p, v)) return false;
-      if (q && semAcento(p.nome + ' ' + p.resumo).indexOf(q) === -1) return false;
+      if (q && semAcento(p.nome + ' ' + p.resumo + ' ' + (p.subcategoria || '')).indexOf(q) === -1) return false;
       return true;
     });
     lista.textContent = '';

@@ -7,21 +7,29 @@ import { fileURLToPath } from 'node:url';
 
 const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
 const ARQUIVOS = ['livros', 'pericias', 'vantagens', 'desvantagens', 'regras'];
+const OPCIONAIS = ['equipamento'];
 const SAIDA = join(RAIZ, 'js', 'dados-gurps.js');
 
 const ADAMAR = ['livre', 'narrador', 'nao'];
 const TIPOS = ['mental', 'fisica', 'social', 'exotica', 'sobrenatural'];
-const CATEGORIAS = { vantagens: ['vantagem', 'qualidade'], desvantagens: ['desvantagem', 'peculiaridade'] };
+const CATEGORIAS = {
+  vantagens: ['vantagem', 'qualidade'],
+  desvantagens: ['desvantagem', 'peculiaridade'],
+  equipamento: ['arma-corpo-a-corpo', 'arma-distancia', 'arma-de-fogo', 'arma-pesada', 'municao', 'armadura', 'armadura-cavalo', 'escudo', 'equipamento']
+};
+const LISTAS = ['pericias', 'vantagens', 'desvantagens', 'equipamento'];
 const OBRIGATORIOS = {
   pericias: ['id', 'nome', 'atributo', 'dificuldade', 'grupo', 'adamar', 'resumo'],
   vantagens: ['id', 'nome', 'categoria', 'custo', 'adamar', 'resumo'],
-  desvantagens: ['id', 'nome', 'categoria', 'custo', 'adamar', 'resumo']
+  desvantagens: ['id', 'nome', 'categoria', 'custo', 'adamar', 'resumo'],
+  equipamento: ['id', 'nome', 'categoria', 'nt', 'adamar', 'resumo']
 };
 
 export function validar(dados) {
   const erros = [];
   const livros = new Set((dados.livros.itens || []).map((l) => l.id));
-  for (const lista of ['pericias', 'vantagens', 'desvantagens']) {
+  for (const lista of LISTAS) {
+    if (!dados[lista]) continue;
     const vistos = new Set();
     for (const it of dados[lista].itens || []) {
       const onde = `${lista}/${it.id}`;
@@ -59,7 +67,11 @@ export function validar(dados) {
 export function montarJs(dados) {
   const livros = {};
   for (const l of dados.livros.itens) livros[l.id] = l;
-  const GURPS = { livros, regras: dados.regras || null, pericias: dados.pericias.itens, vantagens: dados.vantagens.itens, desvantagens: dados.desvantagens.itens };
+  const GURPS = {
+    livros, regras: dados.regras || null,
+    pericias: dados.pericias.itens, vantagens: dados.vantagens.itens, desvantagens: dados.desvantagens.itens,
+    equipamento: dados.equipamento ? dados.equipamento.itens : []
+  };
   return '// ARQUIVO GERADO por tools/gerar-dados.mjs a partir de data/gurps/*.json. Não edite à mão.\n' +
     'window.GURPS = ' + JSON.stringify(GURPS) + ';\n';
 }
@@ -67,6 +79,10 @@ export function montarJs(dados) {
 function carregar() {
   const dados = {};
   for (const nome of ARQUIVOS) dados[nome] = JSON.parse(readFileSync(join(RAIZ, 'data', 'gurps', nome + '.json'), 'utf8'));
+  for (const nome of OPCIONAIS) {
+    const arq = join(RAIZ, 'data', 'gurps', nome + '.json');
+    if (existsSync(arq)) dados[nome] = JSON.parse(readFileSync(arq, 'utf8'));
+  }
   return dados;
 }
 
@@ -88,6 +104,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   } else {
     writeFileSync(SAIDA, js);
     const n = (k) => dados[k].itens.length;
-    console.log(`js/dados-gurps.js gerado: ${n('pericias')} perícias, ${n('vantagens')} vantagens, ${n('desvantagens')} desvantagens`);
+    const eq = dados.equipamento ? dados.equipamento.itens.length : 0;
+    console.log(`js/dados-gurps.js gerado: ${n('pericias')} perícias, ${n('vantagens')} vantagens, ${n('desvantagens')} desvantagens, ${eq} itens de equipamento`);
   }
 }

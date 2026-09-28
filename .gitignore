@@ -1,2 +1,4 @@
 # PDFs de referência: só nesta máquina, nunca no repositório público.
 referencias/
+# Dados completos com estatísticas do livro: só nesta máquina.
+data-local/

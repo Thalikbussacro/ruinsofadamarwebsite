@@ -36,6 +36,7 @@ js/ficha-gurps.js    página de atributos com calculadora
 js/dados-gurps.js    GERADO a partir de data/gurps/ — não editar à mão
 data/gurps/          base de conhecimento GURPS em JSON (fonte oficial)
 referencias/         PDFs de referência, só local (fora do git)
+data-local/          base completa com estatísticas do livro, só local (fora do git)
 img/                 imagens (mapa de Adamar)
 tools/               checador do site e testes
 ```
@@ -76,6 +77,8 @@ Para mudar algo (um resumo, uma marcação para Adamar, um item novo), edite o J
 node tools/gerar-dados.mjs
 ```
 
+- `equipamento.json`: armas, armaduras, escudos e equipamento variado, com NT, página e marcação para Adamar. **Sem estatísticas** (dano, custo, peso, RD): elas ficam em `data-local/gurps/equipamento-completo.json`, fora do git, porque a política da Steve Jackson Games não permite publicar as tabelas. Para refazer as duas versões a partir das transcrições: `node tools/importar-equipamento.mjs <pasta-das-secoes>`.
+
 O gerador valida os dados (ids repetidos, livro inexistente, página inválida, valores fora do padrão) e grava `js/dados-gurps.js`, que é o que as páginas carregam. `node tools/gerar-dados.mjs --check` só confere se o arquivo gerado está em dia.
 
 ## Adicionar uma página
@@ -94,7 +97,7 @@ O gerador valida os dados (ids repetidos, livro inexistente, página inválida, 
 node tools/check-site.mjs
 ```
 
-Confirma, para todas as páginas: `data-root`/`data-page` corretos, `<main id="conteudo">`, `<title>`, links e imagens existentes em disco, tabelas dentro de `.table-wrap`, ausência de termos/marcadores proibidos, e que `js/whatsapp.js` carrega antes de `js/site.js`. Também confere que todo `href` usado em `NAV` (`js/site.js`) existe em disco. Saída esperada com o site completo: `25 páginas ok` (sem falhas).
+Confirma, para todas as páginas: `data-root`/`data-page` corretos, `<main id="conteudo">`, `<title>`, links e imagens existentes em disco, tabelas dentro de `.table-wrap`, ausência de termos/marcadores proibidos, e que `js/whatsapp.js` carrega antes de `js/site.js`. Também confere que todo `href` usado em `NAV` (`js/site.js`) existe em disco. Saída esperada com o site completo: `26 páginas ok` (sem falhas).
 
 ```
 node tools/check-site.test.mjs
@@ -102,6 +105,7 @@ node tools/whatsapp.test.mjs
 node tools/jogar.test.mjs
 node tools/gerar-dados.test.mjs
 node tools/gurps-calculo.test.mjs
+node tools/importar-equipamento.test.mjs
 node tools/gerar-dados.mjs --check
 ```
 

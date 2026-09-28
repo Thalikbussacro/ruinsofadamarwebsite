@@ -49,6 +49,13 @@ const errosRegras = validar(d).join('\n');
 assert.match(errosRegras, /regras\/atributos\[0\]: livro desconhecido "outro"/);
 assert.match(errosRegras, /regras\/carga: página inválida/);
 
+// equipamento (opcional): categoria fora do conjunto
+d = base(); d.equipamento = { itens: [{ id: 'arco-longo', nome: 'Arco Longo', categoria: 'arco', nt: '0', adamar: 'livre', resumo: 'Arco grande.', ref: { livro: 'modulo-basico', pagina: 275 } }] };
+assert.match(validar(d).join('\n'), /equipamento\/arco-longo: categoria inválida "arco"/);
+d.equipamento.itens[0].categoria = 'arma-distancia';
+assert.deepEqual(validar(d), []);
+assert.equal(new Function('window', montarJs(d) + 'return window;')({}).GURPS.equipamento[0].id, 'arco-longo');
+
 // o JS gerado expõe window.GURPS com as listas e é determinístico
 const js = montarJs(base());
 assert.match(js, /^\/\/ ARQUIVO GERADO/);
@@ -60,5 +67,6 @@ assert.equal(window.GURPS.vantagens[0].nome, 'Carisma');
 assert.deepEqual(window.GURPS.desvantagens, []);
 assert.equal(window.GURPS.livros['modulo-basico'].titulo, 'Módulo Básico');
 assert.equal(window.GURPS.regras, null);
+assert.deepEqual(window.GURPS.equipamento, []);
 
 console.log('gerar-dados ok');

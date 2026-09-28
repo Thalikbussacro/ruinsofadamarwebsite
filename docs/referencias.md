@@ -13,6 +13,10 @@ As listas de GURPS do site (perícias, vantagens, desvantagens, qualidades e pec
 
 As páginas citadas no site são as do livro impresso (no PDF, página do livro + 1).
 
+## Dados locais
+
+`data-local/gurps/equipamento-completo.json` guarda o equipamento com todas as estatísticas do livro (dano, alcance, custo, peso, RD, notas), transcrito do PDF e revisado item a item, com as dúvidas de OCR anotadas no campo `duvida`. `data-local/gurps/equipamento-fontes/` guarda as transcrições por seção. Tudo fora do git, pelo mesmo motivo do PDF.
+
 ## Onde está o PDF
 
 O PDF fica em `referencias/`, na raiz do projeto, **fora do git** (a pasta está no `.gitignore`). O repositório é público e o livro é protegido por direitos autorais, então ele nunca deve ser commitado.

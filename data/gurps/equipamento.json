@@ -1,0 +1,5498 @@
+{
+  "descricao": "Equipamento do GURPS 4e para Adamar: nome, categoria, NT, página e marcação. As estatísticas ficam no livro (e na base local).",
+  "adamar": {
+    "livre": "existe em Adamar",
+    "narrador": "raro ou exótico: só com o narrador",
+    "nao": "não existe em Adamar (pólvora ou tecnologia além da Idade Média)"
+  },
+  "itens": [
+    {
+      "id": "machado",
+      "nome": "Machado",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Maça/Machado",
+      "pericia": "Maça/Machado",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Machado de guerra de uma mão, com cabeça pesada e desbalanceada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "machadinha",
+      "nome": "Machadinha",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Maça/Machado",
+      "pericia": "Maça/Machado",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Machado pequeno de uma mão, simples e comum.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "machado-de-arremesso",
+      "nome": "Machado de Arremesso",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Maça/Machado",
+      "pericia": "Maça/Machado",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Machado leve balanceado para ser arremessado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "maca",
+      "nome": "Maça",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Maça/Machado",
+      "pericia": "Maça/Machado",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Maça de guerra comum de uma mão, causa dano por contusão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "maca-pequena",
+      "nome": "Maça Pequena",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Maça/Machado",
+      "pericia": "Maça/Machado",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Versão menor da maça, ainda assim de uma mão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "picareta",
+      "nome": "Picareta",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Maça/Machado",
+      "pericia": "Maça/Machado",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Picareta de guerra com ponta perfurante que pode ficar presa no alvo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "soco",
+      "nome": "Soco",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Boxe, Briga, Caratê ou DX",
+      "pericia": "Boxe, Briga, Caratê ou DX",
+      "nt": "—",
+      "adamar": "livre",
+      "resumo": "Ataque desarmado básico com o punho.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "soco-ingles",
+      "nome": "Soco Inglês",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Boxe, Briga, Caratê ou DX",
+      "pericia": "Boxe, Briga, Caratê ou DX",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Manopla de metal vestida na mão para dar mais força ao soco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "chute",
+      "nome": "Chute",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Briga-2, Caratê-2 ou DX-2",
+      "pericia": "Briga-2, Caratê-2 ou DX-2",
+      "nt": "—",
+      "adamar": "livre",
+      "resumo": "Ataque desarmado com o pé, mais penalizado que o soco mas com mais alcance.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "chute-com-botas",
+      "nome": "Chute com Botas",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Briga-2, Caratê-2 ou DX-2",
+      "pericia": "Briga-2, Caratê-2 ou DX-2",
+      "nt": "—",
+      "adamar": "livre",
+      "resumo": "Chute usando botas, causa mais dano que o chute descalço.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "dentes-rombos",
+      "nome": "Dentes Rombos",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Briga ou DX",
+      "pericia": "Briga ou DX",
+      "nt": "—",
+      "adamar": "livre",
+      "resumo": "Ataque natural de mordida com dentes sem corte, causa apenas contusão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "presas",
+      "nome": "Presas",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Briga ou DX",
+      "pericia": "Briga ou DX",
+      "nt": "—",
+      "adamar": "livre",
+      "resumo": "Ataque natural de mordida com presas perfurantes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "bico-afiado",
+      "nome": "Bico Afiado",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Briga ou DX",
+      "pericia": "Briga ou DX",
+      "nt": "—",
+      "adamar": "livre",
+      "resumo": "Ataque natural de bicada, muito perfurante.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "dentes-afiados",
+      "nome": "Dentes Afiados",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Briga ou DX",
+      "pericia": "Briga ou DX",
+      "nt": "—",
+      "adamar": "livre",
+      "resumo": "Ataque natural de mordida com dentes afiados que cortam.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "golpeador",
+      "nome": "Golpeador",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Briga ou DX",
+      "pericia": "Briga ou DX",
+      "nt": "—",
+      "adamar": "livre",
+      "resumo": "Ataque natural genérico (chifre, cauda, etc.) cujas estatísticas variam conforme a criatura.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "cassetete",
+      "nome": "Cassetete",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Briga ou DX",
+      "pericia": "Briga ou DX",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Porrete curto e pesado, de couro recheado, para derrubar alguém com golpes na cabeça.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "pistola-paralisante",
+      "nome": "Pistola Paralisante",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Briga ou DX",
+      "pericia": "Briga ou DX",
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Arma de choque usada por toque que atordoa o alvo em caso de fracasso no teste de HT.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "porrete",
+      "nome": "Porrete",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espadas de Lâmina Larga",
+      "pericia": "Espadas de Lâmina Larga",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Porrete simples de madeira, uma mão, pode golpear ou golpear com a ponta.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "espada-larga",
+      "nome": "Espada Larga",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espadas de Lâmina Larga",
+      "pericia": "Espadas de Lâmina Larga",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Espada larga de uma mão, corta com o fio ou golpeia com o punho/pomo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "espada-larga-em-gdp",
+      "nome": "Espada Larga em GdP",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espadas de Lâmina Larga",
+      "pericia": "Espadas de Lâmina Larga",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Espada larga com ponta feita para estocadas perfurantes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "espada-bastarda",
+      "nome": "Espada Bastarda",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espadas de Lâmina Larga",
+      "pericia": "Espadas de Lâmina Larga",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Espada bastarda usada com uma mão; pode ser empunhada com duas mãos na tabela de Espada de Duas Mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "katana",
+      "nome": "Katana",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espadas de Lâmina Larga",
+      "pericia": "Espadas de Lâmina Larga",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Espada longa e curva usada com uma mão pelos samurais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "espada-bastarda-em-gdp",
+      "nome": "Espada Bastarda em GdP",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espadas de Lâmina Larga",
+      "pericia": "Espadas de Lâmina Larga",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Espada bastarda de uma mão com ponta feita para estocadas perfurantes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 271
+      }
+    },
+    {
+      "id": "maca-estrela",
+      "nome": "Maça-Estrela",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Mangual",
+      "pericia": "Mangual",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Mangual com bola de metal com cravos, ligada por corrente a um cabo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "nunchaku",
+      "nome": "Nunchaku",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Mangual",
+      "pericia": "Mangual",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Par de clavas curtas ligadas por uma corrente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "espada-de-energia",
+      "nome": "Espada de Energia",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espada de Energia",
+      "pericia": "Espada de Energia",
+      "nt": "^",
+      "adamar": "nao",
+      "resumo": "Lâmina de energia de superciência, inquebrável e extremamente destrutiva.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "garrote",
+      "nome": "Garrote",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Garrote",
+      "pericia": "Garrote",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Corda simples usada para estrangular a vítima.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "facao",
+      "nome": "Facão",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Faca",
+      "pericia": "Faca",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Faca grande, tipo facão, que corta ou perfura e pode ser arremessada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "faca",
+      "nome": "Faca",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Faca",
+      "pericia": "Faca",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Faca comum, pequena, que corta ou perfura e pode ser arremessada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "estaca-de-madeira",
+      "nome": "Estaca de Madeira",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Faca",
+      "pericia": "Faca",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Estaca improvisada de madeira, perfurante mas fraca contra armaduras.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "adaga",
+      "nome": "Adaga",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Faca",
+      "pericia": "Faca",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Adaga pequena e leve, perfurante.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "kusari",
+      "nome": "Kusari",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Kusari",
+      "pericia": "Kusari",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Corrente japonesa com peso na ponta, usada como arma flexível de alcance variável.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "lanca-de-justa",
+      "nome": "Lança de Justa",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Lança de Justa",
+      "pericia": "Lança de Justa",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Lança longa de cavaleiro, usada apenas montado em torneios ou combate de cavalaria.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "chicote-monofio",
+      "nome": "Chicote Monofio",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Chicote Monofio",
+      "pericia": "Chicote Monofio",
+      "nt": "^",
+      "adamar": "nao",
+      "resumo": "Chicote de superciência com fio monomolecular que corta quase tudo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "glaive",
+      "nome": "Glaive",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Armas de Haste",
+      "pericia": "Armas de Haste",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Bastão longo com lâmina pesada de corte na ponta.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "naginata-armas-de-haste",
+      "nome": "Naginata",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Armas de Haste",
+      "pericia": "Armas de Haste",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Bastão japonês longo com lâmina leve de corte na ponta.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "alabarda",
+      "nome": "Alabarda",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Armas de Haste",
+      "pericia": "Armas de Haste",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Arma de haste pesada com lâmina de corte, espigão perfurante e ponta de lança.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "machado-de-haste",
+      "nome": "Machado de Haste",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Armas de Haste",
+      "pericia": "Armas de Haste",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Machado de cabo longo, podendo golpear com o corpo (contusão) ou com o fio (corte).",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 272
+      }
+    },
+    {
+      "id": "rapieira",
+      "nome": "Rapieira",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Rapieira",
+      "pericia": "Rapieira",
+      "nt": "4",
+      "adamar": "narrador",
+      "resumo": "Espada leve e fina, feita para estocadas rápidas, arma de esgrima.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "sabre",
+      "nome": "Sabre",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Sabre",
+      "pericia": "Sabre",
+      "nt": "4",
+      "adamar": "narrador",
+      "resumo": "Espada curva leve de uma mão, arma de esgrima que corta ou estoca.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "golpe-com-escudo",
+      "nome": "Golpe com o Escudo",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Escudo",
+      "pericia": "Escudo",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Golpear o inimigo com a borda do próprio escudo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "golpe-com-escudo-de-espiculos",
+      "nome": "Golpe com Escudo de Espículos",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Escudo",
+      "pericia": "Escudo",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Escudo equipado com espículos de metal, causando mais dano ao golpear com ele.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "bastao-curto",
+      "nome": "Bastão Curto",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espadas Curtas",
+      "pericia": "Espadas Curtas",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Bastão curto de madeira, uma mão, usado para golpear ou estocar por contusão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "espada-curta",
+      "nome": "Espada Curta",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espadas Curtas",
+      "pericia": "Espadas Curtas",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Espada curta de uma mão, corta ou perfura.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "cutelo",
+      "nome": "Cutelo",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espadas Curtas",
+      "pericia": "Espadas Curtas",
+      "nt": "4",
+      "adamar": "narrador",
+      "resumo": "Espada curta e larga de marinheiro, com guarda que protege a mão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "arreador",
+      "nome": "Arreador",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espadas Curtas",
+      "pericia": "Espadas Curtas",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Bastão elétrico (tipo cutucador de gado) que queima e pode atordoar com choque.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "bastao-curto-tercado",
+      "nome": "Bastão Curto",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Terçado",
+      "pericia": "Terçado",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Mesmo bastão curto, listado de novo aqui por também poder ser usado com a perícia Terçado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "tercado",
+      "nome": "Terçado",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Terçado",
+      "pericia": "Terçado",
+      "nt": "4",
+      "adamar": "narrador",
+      "resumo": "Espadim leve de estocada, arma de esgrima de uma mão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "lanca",
+      "nome": "Lança",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Lança",
+      "pericia": "Lança",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Lança simples, pode ser usada com uma mão ou empunhada com as duas para mais dano; pode ser arremessada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "azagaia",
+      "nome": "Azagaia",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Lança",
+      "pericia": "Lança",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Lança curta e leve, feita sobretudo para ser arremessada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "lanca-longa",
+      "nome": "Lança Longa",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Lança",
+      "pericia": "Lança",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Lança mais longa que a comum, com mais alcance, podendo ser usada com uma ou duas mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "bordao-bastao",
+      "nome": "Bordão",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Bastão",
+      "pericia": "Bastão",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Bordão longo de madeira, empunhado com as duas mãos, dá bônus para aparar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "naginata-bastao",
+      "nome": "Naginata",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Bastão",
+      "pericia": "Bastão",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Naginata usada com a perícia Bastão, golpeando também com a ponta sem lâmina.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 273
+      }
+    },
+    {
+      "id": "malho",
+      "nome": "Malho",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Maça/Machado de Duas Mãos",
+      "pericia": "Maça/Machado de Duas Mãos",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Marreta pesada de duas mãos, causa contusão severa.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "machado-duas-maos",
+      "nome": "Machado",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Maça/Machado de Duas Mãos",
+      "pericia": "Maça/Machado de Duas Mãos",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Machado de guerra grande, empunhado com as duas mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "segadeira",
+      "nome": "Segadeira",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Maça/Machado de Duas Mãos",
+      "pericia": "Maça/Machado de Duas Mãos",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Ferramenta agrícola de lâmina longa e curva usada improvisadamente como arma; pode ficar presa no alvo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "martelo-de-guerra",
+      "nome": "Martelo de Guerra",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Maça/Machado de Duas Mãos",
+      "pericia": "Maça/Machado de Duas Mãos",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Martelo de duas mãos com espigão perfurante, pode ficar preso no alvo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "moto-serra",
+      "nome": "Moto-Serra",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Maça/Machado de Duas Mãos",
+      "pericia": "Maça/Machado de Duas Mãos",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Motosserra a gasolina usada como arma, muito barulhenta e com combustível limitado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "mangual-duas-maos",
+      "nome": "Mangual",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Mangual de Duas Mãos",
+      "pericia": "Mangual de Duas Mãos",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Mangual grande de duas mãos, com cabeça pesada ligada por corrente a um cabo longo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "bordao-espada-duas-maos",
+      "nome": "Bordão",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espada de Duas Mãos",
+      "pericia": "Espada de Duas Mãos",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Mesmo bordão, aqui listado como podendo ser usado com a perícia Espada de Duas Mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "naginata-espada-duas-maos",
+      "nome": "Naginata",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espada de Duas Mãos",
+      "pericia": "Espada de Duas Mãos",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Naginata usada com a perícia Espada de Duas Mãos, com a lâmina afiada de fato.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "espada-bastarda-duas-maos",
+      "nome": "Espada Bastarda",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espada de Duas Mãos",
+      "pericia": "Espada de Duas Mãos",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Espada bastarda empunhada com as duas mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "espada-grande",
+      "nome": "Espada Grande",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espada de Duas Mãos",
+      "pericia": "Espada de Duas Mãos",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Espadão grande de duas mãos, feito para golpes de corte poderosos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "katana-duas-maos",
+      "nome": "Katana",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espada de Duas Mãos",
+      "pericia": "Espada de Duas Mãos",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Katana empunhada com as duas mãos para mais força.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "espada-bastarda-em-gdp-duas-maos",
+      "nome": "Espada Bastarda em GdP",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espada de Duas Mãos",
+      "pericia": "Espada de Duas Mãos",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Espada bastarda de duas mãos com ponta feita para estocadas perfurantes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "espada-grande-em-gdp",
+      "nome": "Espada Grande em GdP",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Espada de Duas Mãos",
+      "pericia": "Espada de Duas Mãos",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Espada grande de duas mãos com ponta feita para estocadas perfurantes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "chicote",
+      "nome": "Chicote",
+      "categoria": "arma-corpo-a-corpo",
+      "subcategoria": "Chicote",
+      "pericia": "Chicote",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Chicote comum de couro, alcance ajustável na compra até 7 metros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 274
+      }
+    },
+    {
+      "id": "zarabatana",
+      "nome": "Zarabatana",
+      "categoria": "arma-distancia",
+      "subcategoria": "Zarabatana",
+      "pericia": "Zarabatana",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Tubo comprido usado para soprar dardos pequenos e silenciosos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 275
+      }
+    },
+    {
+      "id": "boleadeira",
+      "nome": "Boleadeira",
+      "categoria": "arma-distancia",
+      "subcategoria": "Boleadeira",
+      "pericia": "Boleadeira",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Cordas com pesos nas pontas, arremessadas para enrolar as pernas do alvo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 275
+      }
+    },
+    {
+      "id": "arco-longo",
+      "nome": "Arco Longo",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arco",
+      "pericia": "Arco",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Arco grande e potente, exige força considerável para ser usado bem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 275
+      }
+    },
+    {
+      "id": "arco-comum",
+      "nome": "Arco Comum",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arco",
+      "pericia": "Arco",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Arco de tamanho médio, equilíbrio entre alcance e facilidade de uso.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 275
+      }
+    },
+    {
+      "id": "arco-curto",
+      "nome": "Arco Curto",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arco",
+      "pericia": "Arco",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Arco pequeno e leve, mais fácil de manejar, porém com menos alcance.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 275
+      }
+    },
+    {
+      "id": "arco-composto",
+      "nome": "Arco Composto",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arco",
+      "pericia": "Arco",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Arco reforçado com camadas de materiais diferentes, mais caro e potente que os arcos simples.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 275
+      }
+    },
+    {
+      "id": "capa-pesada",
+      "nome": "Capa Pesada",
+      "categoria": "arma-distancia",
+      "subcategoria": "Capa",
+      "pericia": "Capa",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Capa grossa usada para enredar ou cegar um oponente ao ser lançada sobre ele.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 275
+      }
+    },
+    {
+      "id": "capa-leve",
+      "nome": "Capa Leve",
+      "categoria": "arma-distancia",
+      "subcategoria": "Capa",
+      "pericia": "Capa",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Versão mais leve da capa de combate, mais fácil de arremessar, porém menos eficaz.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 275
+      }
+    },
+    {
+      "id": "besta",
+      "nome": "Besta",
+      "categoria": "arma-distancia",
+      "subcategoria": "Besta",
+      "pericia": "Besta",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Arma de disparo mecânico que usa uma manivela ou trava para armazenar força antes do tiro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "besta-de-garrucha",
+      "nome": "Besta de Garrucha",
+      "categoria": "arma-distancia",
+      "subcategoria": "Besta",
+      "pericia": "Besta",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Besta pequena de uma mão, feita para ser escondida ou usada com rapidez.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "besta-de-pelouro",
+      "nome": "Besta de Pelouro",
+      "categoria": "arma-distancia",
+      "subcategoria": "Besta",
+      "pericia": "Besta",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Besta modificada para lançar pedras ou bolinhas de chumbo em vez de virotes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "besta-de-alavanca",
+      "nome": "Besta de Alavanca",
+      "categoria": "arma-distancia",
+      "subcategoria": "Besta",
+      "pericia": "Besta",
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Alavanca (pé de cabra) para armar bestas ou bestas de pelouro mais fortes que o atirador; não é uma arma.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "laco",
+      "nome": "Laço",
+      "categoria": "arma-distancia",
+      "subcategoria": "Laço",
+      "pericia": "Laço",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Corda com um laço corrediço na ponta, usada para capturar um alvo sem feri-lo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "rede-grande",
+      "nome": "Rede Grande",
+      "categoria": "arma-distancia",
+      "subcategoria": "Rede",
+      "pericia": "Rede",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Rede pesada lançada para prender um oponente inteiro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "rede-de-combate",
+      "nome": "Rede de Combate",
+      "categoria": "arma-distancia",
+      "subcategoria": "Rede",
+      "pericia": "Rede",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Rede menor e mais leve, feita para ser usada em combate corpo a corpo à curta distância.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "funda",
+      "nome": "Funda",
+      "categoria": "arma-distancia",
+      "subcategoria": "Funda",
+      "pericia": "Funda",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Tira de couro ou tecido usada para arremessar pedras com força.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "fustibalo",
+      "nome": "Fustíbalo",
+      "categoria": "arma-distancia",
+      "subcategoria": "Funda",
+      "pericia": "Funda",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Funda montada na ponta de um bastão, permitindo lançar projéteis mais longe.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "arremessador-de-lanca",
+      "nome": "Arremessador de Lança",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arremessador de Lança",
+      "pericia": "Arremessador de Lança",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Bastão que aumenta o alcance e a força do lançamento de dardos ou lanças pequenas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "machadinha-distancia",
+      "nome": "Machadinha",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arma de Arremesso (Maça/Machado)",
+      "pericia": "Arma de Arremesso (Maça/Machado)",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Machado pequeno equilibrado para ser lançado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "machado-de-arremesso-distancia",
+      "nome": "Machado de Arremesso",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arma de Arremesso (Maça/Machado)",
+      "pericia": "Arma de Arremesso (Maça/Machado)",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Machado maior, ainda balanceado para arremesso, mais pesado que a machadinha.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "maca-de-arremesso",
+      "nome": "Maça",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arma de Arremesso (Maça/Machado)",
+      "pericia": "Arma de Arremesso (Maça/Machado)",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Maça pesada adaptada para ser lançada a curta distância.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "maca-pequena-de-arremesso",
+      "nome": "Maça Pequena",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arma de Arremesso (Maça/Machado)",
+      "pericia": "Arma de Arremesso (Maça/Machado)",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Versão menor e mais leve da maça de arremesso.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "arpao",
+      "nome": "Arpão",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arma de Arremesso (Arpão)",
+      "pericia": "Arma de Arremesso (Arpão)",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Ponta de metal grande com farpas, ligada a uma corda, usada para prender ou ferir à distância.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "faca-grande-de-arremesso",
+      "nome": "Faca Grande",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arma de Arremesso (Faca)",
+      "pericia": "Arma de Arremesso (Faca)",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Faca de lâmina longa balanceada para ser lançada com precisão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "faca-pequena-de-arremesso",
+      "nome": "Faca Pequena",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arma de Arremesso (Faca)",
+      "pericia": "Arma de Arremesso (Faca)",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Faca pequena e leve, fácil de esconder e lançar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "estaca-de-madeira-distancia",
+      "nome": "Estaca de Madeira",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arma de Arremesso (Faca)",
+      "pericia": "Arma de Arremesso (Faca)",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Estaca de madeira simples, usada principalmente para lançar contra criaturas vulneráveis a ela.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "adaga-de-arremesso",
+      "nome": "Adaga",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arma de Arremesso (Faca)",
+      "pericia": "Arma de Arremesso (Faca)",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Lâmina curta e fina, equilibrada para ser arremessada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "shuriken",
+      "nome": "Shuriken",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arma de Arremesso (Shuriken)",
+      "pericia": "Arma de Arremesso (Shuriken)",
+      "nt": "2",
+      "adamar": "narrador",
+      "resumo": "Pequena estrela de metal com pontas afiadas, lançada com um giro do pulso; arma de tradição oriental, exótica em Adamar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "lanca-de-arremesso",
+      "nome": "Lança",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arma de Arremesso (Lança)",
+      "pericia": "Arma de Arremesso (Lança)",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Lança comum usada como arma de arremesso.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "azagaia-distancia",
+      "nome": "Azagaia",
+      "categoria": "arma-distancia",
+      "subcategoria": "Arma de Arremesso (Lança)",
+      "pericia": "Arma de Arremesso (Lança)",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Lança leve feita especificamente para ser lançada a distâncias maiores.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 276
+      }
+    },
+    {
+      "id": "granada-polvora-negra",
+      "nome": "Granada de Pólvora Negra",
+      "categoria": "arma-distancia",
+      "subcategoria": "Granadas de Mão e Bombas Incendiárias",
+      "pericia": "Arremesso",
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Granada primitiva feita com pólvora negra, que explode alguns segundos depois de o estopim ser aceso.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 277
+      }
+    },
+    {
+      "id": "granada-concussao-nt6",
+      "nome": "Granada de Concussão",
+      "categoria": "arma-distancia",
+      "subcategoria": "Granadas de Mão e Bombas Incendiárias",
+      "pericia": "Arremesso",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Granada explosiva que causa dano por concussão em uma área.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 277
+      }
+    },
+    {
+      "id": "granada-fragmentacao-nt6",
+      "nome": "Granada de Fragmentação",
+      "categoria": "arma-distancia",
+      "subcategoria": "Granadas de Mão e Bombas Incendiárias",
+      "pericia": "Arremesso",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Granada que espalha fragmentos ao explodir, somando dano por concussão e por corte.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 277
+      }
+    },
+    {
+      "id": "coquetel-molotov",
+      "nome": "Coquetel Molotov",
+      "categoria": "arma-distancia",
+      "subcategoria": "Granadas de Mão e Bombas Incendiárias",
+      "pericia": "Arremesso",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Garrafa de vidro com gasolina, incendiada por um pano em chamas antes de ser lançada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 277
+      }
+    },
+    {
+      "id": "bomba-quimica",
+      "nome": "Bomba Química",
+      "categoria": "arma-distancia",
+      "subcategoria": "Granadas de Mão e Bombas Incendiárias",
+      "pericia": "Arremesso",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Bomba que libera fumaça, gás lacrimogêneo ou outra substância química em uma área.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 277
+      }
+    },
+    {
+      "id": "granada-concussao-nt7",
+      "nome": "Granada de Concussão (Avançada)",
+      "categoria": "arma-distancia",
+      "subcategoria": "Granadas de Mão e Bombas Incendiárias",
+      "pericia": "Arremesso",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Versão mais avançada e potente da granada de concussão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 277
+      }
+    },
+    {
+      "id": "granada-fragmentacao-nt7",
+      "nome": "Granada de Fragmentação (Avançada)",
+      "categoria": "arma-distancia",
+      "subcategoria": "Granadas de Mão e Bombas Incendiárias",
+      "pericia": "Arremesso",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Versão mais avançada e potente da granada de fragmentação.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 277
+      }
+    },
+    {
+      "id": "granada-atordoamento",
+      "nome": "Granada de Atordoamento",
+      "categoria": "arma-distancia",
+      "subcategoria": "Granadas de Mão e Bombas Incendiárias",
+      "pericia": "Arremesso",
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Granada que ofusca a visão e a audição dos alvos próximos, deixando-os atordoados.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 277
+      }
+    },
+    {
+      "id": "granada-plasma",
+      "nome": "Granada de Plasma",
+      "categoria": "arma-distancia",
+      "subcategoria": "Granadas de Mão e Bombas Incendiárias",
+      "pericia": "Arremesso",
+      "nt": "^",
+      "adamar": "nao",
+      "resumo": "Granada futurista que causa queimaduras intensas em uma área através de energia de plasma.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 277
+      }
+    },
+    {
+      "id": "pistola-pederneira-51",
+      "nome": "Pistola de Pederneira, .51",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "4",
+      "adamar": "nao",
+      "resumo": "Pistola de pederneira de um tiro, calibre .51, arma de pólvora antiga.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "pistola-fecho-de-roda-60",
+      "nome": "Pistola com Fecho de Roda, .60",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "4",
+      "adamar": "nao",
+      "resumo": "Pistola de mecanismo de roda, calibre .60, de um tiro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "derringer-41",
+      "nome": "Derringer, .41",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Pistola pequena de dois tiros, fácil de esconder, calibre .41.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "revolver-36",
+      "nome": "Revólver, .36",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Revólver antigo de seis tiros, calibre .36.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "pistola-auto-45",
+      "nome": "Pistola Automática, .45",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Pistola semiautomática clássica, calibre .45.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "pistola-auto-9mm-nt6",
+      "nome": "Pistola Automática, 9 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Pistola semiautomática 9 mm compacta de NT6.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "revolver-38",
+      "nome": "Revólver, .38",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Revólver moderno de seis tiros, calibre .38.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "revolver-cano-curto-38",
+      "nome": "Revólver de Cano Curto, .38",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Versão compacta de cano curto do revólver .38, mais fácil de esconder.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "pistola-auto-9mm-nt7",
+      "nome": "Pistola Automática, 9 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Pistola semiautomática 9 mm de alta capacidade, NT7.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "pistola-de-ocultacao-380",
+      "nome": "Pistola de Ocultação, .380",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Pistola pequena de bolso, calibre .380, feita para esconder.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "revolver-357m",
+      "nome": "Revólver, .357 Magnum",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Revólver potente calibre .357 Magnum.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "revolver-44m",
+      "nome": "Revólver, .44 Magnum",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Revólver muito potente, calibre .44 Magnum.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "pistola-auto-44m",
+      "nome": "Pistola Automática, .44 Magnum",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Pistola semiautomática pesada, calibre .44 Magnum.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "pistola-auto-40",
+      "nome": "Pistola Automática, .40",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Pistola semiautomática moderna, calibre .40.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "pistola-auto-9mm-nt9",
+      "nome": "Pistola Automática, 9 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Pistola",
+      "pericia": "Armas de Fogo (Pistola)",
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Pistola semiautomática 9 mm de última geração, com sistemas de arma inteligente.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "pistola-girofoguete-15mm",
+      "nome": "Pistola Girofoguete, 15 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Girofoguetes",
+      "pericia": "Armas de Fogo (Girofoguetes)",
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Pistola que dispara minifoguetes autopropelidos de 15 mm, fracos à queima-roupa.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "mm-45",
+      "nome": "Metralhadora de Mão, .45",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "MM (Metralhadora de Mão)",
+      "pericia": "Armas de Fogo (MM)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Metralhadora de mão (submetralhadora) pesada, calibre .45.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "mm-9mm-nt6",
+      "nome": "Metralhadora de Mão, 9 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "MM (Metralhadora de Mão)",
+      "pericia": "Armas de Fogo (MM)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Metralhadora de mão (submetralhadora) 9 mm de NT6.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "pistola-metralha-9mm",
+      "nome": "Pistola-Metralha, 9 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "MM (Metralhadora de Mão)",
+      "pericia": "Armas de Fogo (MM)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Submetralhadora compacta 9 mm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "mm-9mm-nt7",
+      "nome": "Metralhadora de Mão, 9 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "MM (Metralhadora de Mão)",
+      "pericia": "Armas de Fogo (MM)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Versão mais moderna da metralhadora de mão 9 mm, de NT7.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "adp-4-6mm",
+      "nome": "ADP, 4,6 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "MM (Metralhadora de Mão)",
+      "pericia": "Armas de Fogo (MM)",
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Arma de defesa pessoal (ADP) compacta, calibre 4,6 mm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "adp-gauss-4mm",
+      "nome": "ADP Gauss, 4 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "MM (Metralhadora de Mão)",
+      "pericia": "Armas de Fogo (MM)",
+      "nt": "10",
+      "adamar": "nao",
+      "resumo": "Arma de defesa pessoal que usa aceleração eletromagnética (Gauss), calibre 4 mm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 278
+      }
+    },
+    {
+      "id": "canhao-de-mao-90",
+      "nome": "Canhão de Mão, .90",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Mosquete",
+      "pericia": "Armas de Fogo (Mosquete)",
+      "nt": "3",
+      "adamar": "nao",
+      "resumo": "Tubo de ferro primitivo disparado com pavio, a arma de pólvora mais antiga da tabela.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "mosquete-de-mecha-80",
+      "nome": "Mosquete de Mecha, .80",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Mosquete",
+      "pericia": "Armas de Fogo (Mosquete)",
+      "nt": "4",
+      "adamar": "nao",
+      "resumo": "Mosquete de mecha (matchlock), arma de pólvora antiga e pesada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "mosquete-de-pederneira-75",
+      "nome": "Mosquete de Pederneira, .75",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Mosquete",
+      "pericia": "Armas de Fogo (Mosquete)",
+      "nt": "4",
+      "adamar": "nao",
+      "resumo": "Mosquete de pederneira (flintlock), arma de pólvora clássica.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "rifle-mosquete-577",
+      "nome": "Rifle-Mosquete, .577",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Rifle de cano estriado com carregamento por boca, calibre .577.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "rifle-com-cartucho-45",
+      "nome": "Rifle com Cartucho, .45",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Rifle de ferrolho que já usa cartuchos metálicos, calibre .45.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "carabina-a-manivela-30",
+      "nome": "Carabina a Manivela, .30",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Carabina de ação por manivela (lever-action), calibre .30.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "rifle-de-cavilha-762mm",
+      "nome": "Rifle de Cavilha, 7,62 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Rifle de ferrolho (cavilha/bolt-action), calibre 7,62 mm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "rifle-autorrecarregavel-762mm",
+      "nome": "Rifle Autorrecarregável, 7,62 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Rifle semiautomático clássico, calibre 7,62 mm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "rifle-de-assalto-556mm",
+      "nome": "Rifle de Assalto, 5,56 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Rifle de assalto moderno, calibre 5,56 mm, com versão civil semiautomática.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "rifle-de-assalto-762mmc",
+      "nome": "Rifle de Assalto, 7,62 mm C",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Rifle de assalto em calibre 7,62 mm curto (versão carabina).",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "rifle-de-combate-762mm",
+      "nome": "Rifle de Combate, 7,62 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Fuzil de combate automático de calibre completo 7,62 mm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "carabina-de-assalto-556mm",
+      "nome": "Carabina de Assalto, 5,56 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Versão carabina, mais curta, do rifle de assalto 5,56 mm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "rifle-de-dardos-11mm",
+      "nome": "Rifle de Dardos, 11 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Rifle que dispara dardos capazes de injetar drogas ou venenos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "rifle-de-atirador-338",
+      "nome": "Rifle de Atirador, .338",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Rifle de precisão (sniper) de longo alcance, calibre .338.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "aci-68mm",
+      "nome": "ACI, 6,8 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Arma de combate individual (ACI) avançada, calibre 6,8 mm, com lançador de granadas embutido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "rifle-de-gauss-4mm",
+      "nome": "Rifle de Gauss, 4 mm",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Rifle",
+      "pericia": "Armas de Fogo (Rifle)",
+      "nt": "10",
+      "adamar": "nao",
+      "resumo": "Rifle que acelera projéteis eletromagneticamente (Gauss), calibre 4 mm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "bacamarte-c8",
+      "nome": "Bacamarte, C8",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Espingarda",
+      "pericia": "Armas de Fogo (Espingarda)",
+      "nt": "4",
+      "adamar": "nao",
+      "resumo": "Bacamarte antigo de boca larga, calibre 8, de um tiro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "espingarda-dupla-c10",
+      "nome": "Espingarda Dupla, C10",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Espingarda",
+      "pericia": "Armas de Fogo (Espingarda)",
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Espingarda de dois canos lado a lado, calibre 10.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "espingarda-pump-c12",
+      "nome": "Espingarda Pump, C12",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Espingarda",
+      "pericia": "Armas de Fogo (Espingarda)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Espingarda de ação por bombeamento (pump-action), calibre 12.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "espingarda-semiautomatica-c12",
+      "nome": "Espingarda Semiautomática, C12",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Espingarda",
+      "pericia": "Armas de Fogo (Espingarda)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Espingarda semiautomática, calibre 12.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 279
+      }
+    },
+    {
+      "id": "pistola-eletrolaser",
+      "nome": "Pistola Eletrolaser",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Armas de Feixe (Pistola)",
+      "pericia": "Armas de Feixe (Pistola)",
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Pistola de feixe elétrico que causa queimadura leve e pode atordoar o alvo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 280
+      }
+    },
+    {
+      "id": "pistola-laser",
+      "nome": "Pistola Laser",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Armas de Feixe (Pistola)",
+      "pericia": "Armas de Feixe (Pistola)",
+      "nt": "10",
+      "adamar": "nao",
+      "resumo": "Pistola de ultra-tecnologia que dispara um feixe de laser que queima o alvo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 280
+      }
+    },
+    {
+      "id": "pistola-de-feixe-ionico",
+      "nome": "Pistola de Feixe Iônico",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Armas de Feixe (Pistola)",
+      "pericia": "Armas de Feixe (Pistola)",
+      "nt": "11",
+      "adamar": "nao",
+      "resumo": "Pistola de feixe de partículas iônicas, arma de ultra-tecnologia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 280
+      }
+    },
+    {
+      "id": "carabina-eletrolaser",
+      "nome": "Carabina Eletrolaser",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Armas de Feixe (Rifle)",
+      "pericia": "Armas de Feixe (Rifle)",
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Versão de ombro da pistola eletrolaser, com mais alcance e carga, que queima e atordoa.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 280
+      }
+    },
+    {
+      "id": "rifle-de-atirador-a-laser",
+      "nome": "Rifle de Atirador a Laser",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Armas de Feixe (Rifle)",
+      "pericia": "Armas de Feixe (Rifle)",
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Rifle de precisão a laser, de longo alcance e alto custo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 280
+      }
+    },
+    {
+      "id": "rifle-laser",
+      "nome": "Rifle Laser",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Armas de Feixe (Rifle)",
+      "pericia": "Armas de Feixe (Rifle)",
+      "nt": "10",
+      "adamar": "nao",
+      "resumo": "Rifle a laser padrão de NT10, mais leve e barato que o modelo de atirador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 280
+      }
+    },
+    {
+      "id": "rifle-de-feixe-ionico",
+      "nome": "Rifle de Feixe Iônico",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Armas de Feixe (Rifle)",
+      "pericia": "Armas de Feixe (Rifle)",
+      "nt": "11",
+      "adamar": "nao",
+      "resumo": "Rifle de feixe de partículas iônicas de NT11.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 280
+      }
+    },
+    {
+      "id": "feixe-ionico-pesado",
+      "nome": "Feixe Iônico Pesado",
+      "categoria": "arma-de-fogo",
+      "subcategoria": "Armas de Feixe (Rifle)",
+      "pericia": "Armas de Feixe (Rifle)",
+      "nt": "11",
+      "adamar": "nao",
+      "resumo": "Versão pesada e mais poderosa do rifle de feixe iônico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 280
+      }
+    },
+    {
+      "id": "mta-115mm",
+      "nome": "MTA, 115 mm",
+      "categoria": "arma-pesada",
+      "subcategoria": "Artilharia (Míssil Guiado)",
+      "pericia": "Artilharia (Míssil Guiado)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Míssil antitanque guiado de 115 mm, disparado de um lançador portátil.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "mas-70mm",
+      "nome": "MAS, 70 mm",
+      "categoria": "arma-pesada",
+      "subcategoria": "Artilharia (Míssil Guiado)",
+      "pericia": "Artilharia (Míssil Guiado)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Míssil portátil de ombro que busca o alvo sozinho (visão hiperespectral), de longo alcance.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "scorpion",
+      "nome": "Scorpion",
+      "categoria": "arma-pesada",
+      "subcategoria": "Canhoneiro (Catapulta)",
+      "pericia": "Canhoneiro (Catapulta)",
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Balista leve de torção, montada, que dispara grandes virotes; exige equipe/montagem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "mp-50",
+      "nome": "Metralhadora Pesada, .50",
+      "categoria": "arma-pesada",
+      "subcategoria": "Canhoneiro (Metralhadora)",
+      "pericia": "Canhoneiro (Metralhadora)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Metralhadora pesada montada, calibre .50, usada em veículos ou tripés.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "sob-tambor-40mm",
+      "nome": "Sob-Tambor, 40 mm",
+      "categoria": "arma-pesada",
+      "subcategoria": "Lançador de Granadas",
+      "pericia": "Armas (Lançador de Granadas)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Lançador de granadas de 40 mm que se anexa sob o cano de um rifle.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "integrado-lancador-granadas-ici",
+      "nome": "Integrado, 25 mm",
+      "categoria": "arma-pesada",
+      "subcategoria": "Lançador de Granadas",
+      "pericia": "Armas (Lançador de Granadas)",
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Lançador de granadas de 25 mm embutido na arma de combate individual (ACI) de NT9.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "bazuca-60mm",
+      "nome": "Bazuca, 60 mm",
+      "categoria": "arma-pesada",
+      "subcategoria": "ALA",
+      "pericia": "Armas (ALA)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Lança-foguete de ombro clássico, calibre 60 mm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "gif-85mm",
+      "nome": "GIF, 85 mm",
+      "categoria": "arma-pesada",
+      "subcategoria": "ALA",
+      "pericia": "Armas (ALA)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Lança-granadas de foguete de ombro (tipo RPG), de 85 mm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "ala-84mm",
+      "nome": "ALA, 84 mm",
+      "categoria": "arma-pesada",
+      "subcategoria": "ALA",
+      "pericia": "Armas (ALA)",
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Arma antitanque leve e descartável de ombro, de 84 mm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "rifle-automatico-762mm",
+      "nome": "Rifle Automático, 7,62 mm",
+      "categoria": "arma-pesada",
+      "subcategoria": "ML",
+      "pericia": "Armas (ML)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Rifle automático de apoio, calibre 7,62 mm, usado como arma de esquadrão.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "ml-762mm",
+      "nome": "ML, 7,62 mm",
+      "categoria": "arma-pesada",
+      "subcategoria": "ML",
+      "pericia": "Armas (ML)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Metralhadora ligeira (de esquadrão) calibre 7,62 mm, alimentada por correia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "aae-556mm",
+      "nome": "AAE, 5,56 mm",
+      "categoria": "arma-pesada",
+      "subcategoria": "ML",
+      "pericia": "Armas (ML)",
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Metralhadora ligeira de esquadrão em calibre 5,56 mm.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "lanca-chama",
+      "nome": "Lança-Chama",
+      "categoria": "arma-pesada",
+      "subcategoria": "Projetor de Líquido (Lança-Chama)",
+      "pericia": "Projetor de Líquido (Lança-Chama)",
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Arma que lança um jato de líquido inflamável em chamas, de curto alcance.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 281
+      }
+    },
+    {
+      "id": "tanga-de-pele",
+      "nome": "Tanga de Pele",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Peça mínima de couro que cobre só a virilha; quase não protege.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "tunica-de-pele",
+      "nome": "Túnica de Pele",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Veste simples de pele de animal sobre o tronco; proteção mínima, mas passa por roupa.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "peitoral-de-bronze",
+      "nome": "Peitoral de Bronze",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Peitoral rígido de bronze; protege bem o tronco, mas só contra ataques frontais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "corselete-de-bronze",
+      "nome": "Corselete de Bronze",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Armadura completa de bronze cobrindo tronco e virilha de todos os lados.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "tunica-armadura",
+      "nome": "Túnica",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Túnica acolchoada leve que cobre tronco e virilha; fácil de esconder.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "jaqueta-de-couro",
+      "nome": "Jaqueta de Couro",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Jaqueta simples de couro que protege braços e tronco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "armadura-de-couro",
+      "nome": "Armadura de Couro",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Couro grosso e rígido cobrindo tronco e virilha.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "armadura-de-escamas-leve",
+      "nome": "Armadura de Escamas Leve",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Escamas leves de metal ou osso costuradas sobre o tronco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "loriga-segmentada",
+      "nome": "Loriga Segmentada",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Couraça de faixas de metal sobrepostas presas por tiras, protegendo o tronco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "cota-de-malha-longa",
+      "nome": "Cota de Malha Longa",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Cota de anéis metálicos flexível cobrindo tronco e virilha; fraca contra golpes de impacto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "camisa-de-cota-de-malha",
+      "nome": "Camisa de Cota de Malha",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Camisa curta de malha metálica, cobrindo só o tronco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "armadura-de-escamas",
+      "nome": "Armadura de Escamas",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Escamas metálicas mais pesadas cobrindo tronco e virilha.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "cota-de-malha-longa-dupla",
+      "nome": "Cota de Malha Longa Dupla",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Cota de malha com camada dupla de anéis, mais protegida que a comum.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "corselete-de-aco-reforcado",
+      "nome": "Corselete de Aço Reforçado",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Corselete metálico reforçado com ótima proteção para tronco e virilha.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "peitoral-de-aco",
+      "nome": "Peitoral de Aço",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Placa de aço no peito; boa proteção, mas só contra ataques frontais.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "corselete-de-aco",
+      "nome": "Corselete de Aço",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Peitoral e dorsal de aço cobrindo tronco e virilha por completo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "armadura-de-placas-laminadas-de-aco",
+      "nome": "Armadura de Placas Laminadas de Aço",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Placas de aço sobrepostas em camadas, cobrindo tronco e virilha.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "casaco-de-couro-de-bufalo",
+      "nome": "Casaco de Couro de Búfalo",
+      "categoria": "armadura",
+      "subcategoria": "Armadura Corporal",
+      "pericia": null,
+      "nt": "4",
+      "adamar": "narrador",
+      "resumo": "Casaco grosso de couro de búfalo cobrindo corpo e membros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "bracadeiras-de-bronze",
+      "nome": "Braçadeiras de Bronze",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Protetores rígidos de bronze para os braços.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "grevas-de-bronze",
+      "nome": "Grevas de Bronze",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Protetores rígidos de bronze para as pernas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "mangas-de-tecido",
+      "nome": "Mangas de Tecido",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Mangas acolchoadas simples, quase sem proteção, fáceis de esconder.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "perneiras-de-couro-reforcado",
+      "nome": "Perneiras de Couro Reforçado",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Perneiras de couro grosso e reforçado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "mangas-de-couro-reforcado",
+      "nome": "Mangas de Couro Reforçado",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Mangas de couro grosso e reforçado para os braços.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "perneiras-de-couro",
+      "nome": "Perneiras de Couro",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Perneiras finas de couro, fáceis de ocultar sob roupas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "calcas-de-couro",
+      "nome": "Calças de Couro",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Calças de couro cobrindo pernas e virilha.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "saiote-de-couro-batido",
+      "nome": "Saiote de Couro Batido",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Saiote de couro batido com tiras protegendo virilha e coxas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "perneiras-de-cota-de-malha",
+      "nome": "Perneiras de Cota de Malha",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Perneiras flexíveis de malha metálica.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "mangas-de-cota-de-malha",
+      "nome": "Mangas de Cota de Malha",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Mangas flexíveis de malha metálica para os braços.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "perneiras-de-escamas",
+      "nome": "Perneiras de Escamas",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Perneiras cobertas por escamas metálicas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "mangas-de-escamas",
+      "nome": "Mangas de Escamas",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Mangas cobertas por escamas metálicas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "bracadeiras-de-placas-reforcadas",
+      "nome": "Braçadeiras de Placas Reforçadas",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Braçadeiras de placas de aço bem reforçadas, pesadas e resistentes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "perneiras-de-placas-reforcadas",
+      "nome": "Perneiras de Placas Reforçadas",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Perneiras de placas de aço bem reforçadas, pesadas e resistentes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "bracadeira-de-placas",
+      "nome": "Braçadeira de Placas",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Braçadeira comum de placas de aço.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "perneiras-de-placas",
+      "nome": "Perneiras de Placas",
+      "categoria": "armadura",
+      "subcategoria": "Peças de Armadura",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Perneiras comuns de placas de aço.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 283
+      }
+    },
+    {
+      "id": "barrete-de-tecido",
+      "nome": "Barrete de Tecido",
+      "categoria": "armadura",
+      "subcategoria": "Proteção para a Cabeça",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Boné acolchoado simples, quase sem proteção, fácil de esconder.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "barrete-de-couro",
+      "nome": "Barrete de Couro",
+      "categoria": "armadura",
+      "subcategoria": "Proteção para a Cabeça",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Gorro rígido de couro, proteção mínima para o crânio.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "elmo-de-bronze",
+      "nome": "Elmo de Bronze",
+      "categoria": "armadura",
+      "subcategoria": "Proteção para a Cabeça",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Elmo de bronze que cobre crânio e rosto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "celada-de-bronze",
+      "nome": "Celada de Bronze",
+      "categoria": "armadura",
+      "subcategoria": "Proteção para a Cabeça",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Elmo simples de bronze cobrindo só o crânio.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "elmo-de-couro",
+      "nome": "Elmo de Couro",
+      "categoria": "armadura",
+      "subcategoria": "Proteção para a Cabeça",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Elmo reforçado de couro cobrindo crânio e rosto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "elmo-de-legionario",
+      "nome": "Elmo de Legionário",
+      "categoria": "armadura",
+      "subcategoria": "Proteção para a Cabeça",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Elmo metálico robusto usado por tropas de infantaria.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "coifa-de-cota-de-malha",
+      "nome": "Coifa de Cota de Malha",
+      "categoria": "armadura",
+      "subcategoria": "Proteção para a Cabeça",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Capuz flexível de malha metálica cobrindo crânio e pescoço.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "elmo-circular",
+      "nome": "Elmo Circular",
+      "categoria": "armadura",
+      "subcategoria": "Proteção para a Cabeça",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Elmo de aço arredondado que cobre crânio e rosto, mas tira a visão periférica.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "mascara-facial-nt3",
+      "nome": "Máscara",
+      "categoria": "armadura",
+      "subcategoria": "Proteção para a Cabeça",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Máscara metálica rígida que cobre o rosto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "elmo-grande",
+      "nome": "Elmo Grande",
+      "categoria": "armadura",
+      "subcategoria": "Proteção para a Cabeça",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Elmo pesado que cobre crânio, rosto e pescoço, mas tira a visão periférica.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "celada",
+      "nome": "Celada",
+      "categoria": "armadura",
+      "subcategoria": "Proteção para a Cabeça",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Elmo de aço leve cobrindo só o crânio.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "luvas-de-tecido",
+      "nome": "Luvas de Tecido",
+      "categoria": "armadura",
+      "subcategoria": "Luvas",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Luvas de pano simples, quase sem proteção.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "luvas-de-couro",
+      "nome": "Luvas de Couro",
+      "categoria": "armadura",
+      "subcategoria": "Luvas",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Luvas comuns de couro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "manoplas",
+      "nome": "Manoplas",
+      "categoria": "armadura",
+      "subcategoria": "Luvas",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Luvas de metal articuladas, boa proteção para as mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "manoplas-reforcadas",
+      "nome": "Manoplas Reforçadas",
+      "categoria": "armadura",
+      "subcategoria": "Luvas",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Manoplas de metal mais pesadas e resistentes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "sandalias",
+      "nome": "Sandálias",
+      "categoria": "armadura",
+      "subcategoria": "Calçados",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Sandálias simples que protegem só a sola do pé.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "sapatos",
+      "nome": "Sapatos",
+      "categoria": "armadura",
+      "subcategoria": "Calçados",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Sapatos comuns de couro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "botas",
+      "nome": "Botas",
+      "categoria": "armadura",
+      "subcategoria": "Calçados",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Botas de couro reforçadas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "sollerets",
+      "nome": "Sollerets",
+      "categoria": "armadura",
+      "subcategoria": "Calçados",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Botas articuladas feitas de placas de aço.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "colete-de-campanha",
+      "nome": "Colete de Campanha",
+      "categoria": "armadura",
+      "subcategoria": "Coletes e Trajes Balísticos",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Colete militar acolchoado que protege o tronco contra estilhaços.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "colete-fragmentado",
+      "nome": "Colete Fragmentado",
+      "categoria": "armadura",
+      "subcategoria": "Coletes e Trajes Balísticos",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Colete leve contra estilhaços, cobrindo tronco e virilha.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "encartes-de-placas",
+      "nome": "+Encartes de Placas",
+      "categoria": "armadura",
+      "subcategoria": "Coletes e Trajes Balísticos",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Placas extras que se encaixam no Colete Fragmentado, somando proteção ao tronco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "colete-balistico",
+      "nome": "Colete Balístico",
+      "categoria": "armadura",
+      "subcategoria": "Coletes e Trajes Balísticos",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Colete à prova de balas que cobre o tronco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "colete-tatico",
+      "nome": "Colete Tático",
+      "categoria": "armadura",
+      "subcategoria": "Coletes e Trajes Balísticos",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Colete balístico tático reforçado, cobrindo tronco e virilha.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "placas-antitrauma",
+      "nome": "+Placas Antitrauma",
+      "categoria": "armadura",
+      "subcategoria": "Coletes e Trajes Balísticos",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Placas rígidas extras acopladas ao Colete Tático para reduzir o impacto de balas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "traje-balistico",
+      "nome": "Traje Balístico",
+      "categoria": "armadura",
+      "subcategoria": "Coletes e Trajes Balísticos",
+      "pericia": null,
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Traje balístico completo cobrindo corpo e membros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "traje-tatico",
+      "nome": "Traje Tático",
+      "categoria": "armadura",
+      "subcategoria": "Coletes e Trajes Balísticos",
+      "pericia": null,
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Traje balístico de corpo inteiro para uso militar tático.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "botas-reforcadas",
+      "nome": "Botas Reforçadas",
+      "categoria": "armadura",
+      "subcategoria": "Luvas e Calçados (Alta Tecnologia)",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Botas militares com proteção balística extra para os pés.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "botas-de-assalto",
+      "nome": "Botas de Assalto",
+      "categoria": "armadura",
+      "subcategoria": "Luvas e Calçados (Alta Tecnologia)",
+      "pericia": null,
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Botas de combate fortemente blindadas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "luvas-balisticas",
+      "nome": "Luvas Balísticas",
+      "categoria": "armadura",
+      "subcategoria": "Luvas e Calçados (Alta Tecnologia)",
+      "pericia": null,
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Luvas com proteção balística para as mãos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 284
+      }
+    },
+    {
+      "id": "mascara-de-oxigenio",
+      "nome": "Máscara de Oxigênio",
+      "categoria": "armadura",
+      "subcategoria": "Capacetes",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Máscara que filtra o ar respirado e protege olhos e rosto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "celada-de-aco",
+      "nome": "Celada de Aço",
+      "categoria": "armadura",
+      "subcategoria": "Capacetes",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Capacete de aço simples cobrindo o crânio.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "capacete-antifragmentos",
+      "nome": "Capacete Antifragmentos",
+      "categoria": "armadura",
+      "subcategoria": "Capacetes",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Capacete militar de proteção contra estilhaços.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "visor-antifragmentos",
+      "nome": "+Visor (Capacete Antifragmentos)",
+      "categoria": "armadura",
+      "subcategoria": "Capacetes",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Visor que se acopla ao Capacete Antifragmentos, protegendo olhos e rosto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "capacete-balistico",
+      "nome": "Capacete Balístico",
+      "categoria": "armadura",
+      "subcategoria": "Capacetes",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Capacete moderno à prova de balas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "visor-balistico",
+      "nome": "+Visor (Capacete Balístico)",
+      "categoria": "armadura",
+      "subcategoria": "Capacetes",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Visor que se acopla ao Capacete Balístico, protegendo olhos e rosto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "traje-nbq",
+      "nome": "Traje NBQ",
+      "categoria": "armadura",
+      "subcategoria": "Trajes para Ambientes",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Traje hermético de proteção contra armas nucleares, biológicas e químicas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "traje-espacial",
+      "nome": "Traje Espacial",
+      "categoria": "armadura",
+      "subcategoria": "Trajes para Ambientes",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Traje pressurizado para sobreviver no vácuo do espaço.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "capacete-espacial",
+      "nome": "+Capacete Espacial",
+      "categoria": "armadura",
+      "subcategoria": "Trajes para Ambientes",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Capacete hermético que completa o Traje Espacial.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "traje-de-combate",
+      "nome": "Traje de Combate",
+      "categoria": "armadura",
+      "subcategoria": "Trajes para Ambientes",
+      "pericia": null,
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Exoesqueleto de combate pesado que aumenta muito a força e o salto do usuário.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "capacete-traje-combate",
+      "nome": "+Capacete (Traje de Combate)",
+      "categoria": "armadura",
+      "subcategoria": "Trajes para Ambientes",
+      "pericia": null,
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Capacete que completa o Traje de Combate.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "armadura-de-combate",
+      "nome": "Armadura de Combate",
+      "categoria": "armadura",
+      "subcategoria": "Trajes para Ambientes",
+      "pericia": null,
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Armadura corporal pesada de combate moderna, sem os bônus do exoesqueleto do Traje de Combate.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "capacete-armadura-combate",
+      "nome": "+Capacete (Armadura de Combate)",
+      "categoria": "armadura",
+      "subcategoria": "Trajes para Ambientes",
+      "pericia": null,
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Capacete que completa a Armadura de Combate.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "armadura-espacial",
+      "nome": "Armadura Espacial",
+      "categoria": "armadura",
+      "subcategoria": "Trajes para Ambientes",
+      "pericia": null,
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Versão blindada de combate do traje espacial.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "capacete-armadura-espacial",
+      "nome": "+Capacete (Armadura Espacial)",
+      "categoria": "armadura",
+      "subcategoria": "Trajes para Ambientes",
+      "pericia": null,
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Capacete que completa a Armadura Espacial.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "traje-pressurizado",
+      "nome": "Traje Pressurizado",
+      "categoria": "armadura",
+      "subcategoria": "Trajes para Ambientes",
+      "pericia": null,
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Traje que mantém pressão e respiração em ambientes hostis.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "capacete-pressurizado",
+      "nome": "+Capacete Pressurizado",
+      "categoria": "armadura",
+      "subcategoria": "Trajes para Ambientes",
+      "pericia": null,
+      "nt": "9",
+      "adamar": "nao",
+      "resumo": "Capacete que completa o Traje Pressurizado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 285
+      }
+    },
+    {
+      "id": "barda-mascara-couro-tecido",
+      "nome": "Máscara de Couro e Tecido (Barda)",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Máscaras",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Máscara de couro e tecido protegendo o rosto do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-mascara-malha",
+      "nome": "Máscara de Malha (Barda)",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Máscaras",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Máscara de malha metálica flexível para o rosto do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-mascara-escamas",
+      "nome": "Máscara de Escamas (Barda)",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Máscaras",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Máscara de escamas metálicas para o rosto do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-mascara-placas",
+      "nome": "Máscara de Placas (Barda)",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Máscaras",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Máscara de placas metálicas para o rosto do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-cabeca-pescoco-couro-tecido",
+      "nome": "Cabeça e Pescoço de Couro e Tecido (Barda)",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Armadura para a Cabeça e o Pescoço",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Proteção de couro e tecido para a cabeça e o pescoço do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-cabeca-pescoco-malha",
+      "nome": "Cabeça e Pescoço de Malha (Barda)",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Armadura para a Cabeça e o Pescoço",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Proteção de malha metálica flexível para a cabeça e o pescoço do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-cabeca-pescoco-escamas",
+      "nome": "Cabeça e Pescoço de Escamas (Barda)",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Armadura para a Cabeça e o Pescoço",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Proteção de escamas metálicas para a cabeça e o pescoço do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-cabeca-pescoco-placas",
+      "nome": "Cabeça e Pescoço de Placas (Barda)",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Armadura para a Cabeça e o Pescoço",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Proteção de placas metálicas para a cabeça e o pescoço do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-parcial-couro-tecido",
+      "nome": "Barda Parcial de Couro e Tecido",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Barda Parcial",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Cobertura frontal de couro e tecido para o tronco do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-parcial-malha",
+      "nome": "Barda Parcial de Malha",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Barda Parcial",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Cobertura frontal de malha metálica flexível para o tronco do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-parcial-escamas",
+      "nome": "Barda Parcial de Escamas",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Barda Parcial",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Cobertura frontal de escamas metálicas para o tronco do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-completa-couro-tecido",
+      "nome": "Barda Completa de Couro e Tecido",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Barda Completa",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Cobertura completa de couro e tecido para tronco e virilha do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-completa-malha",
+      "nome": "Barda Completa de Malha",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Barda Completa",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Cobertura completa de malha metálica flexível para tronco e virilha do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-completa-placas",
+      "nome": "Barda Completa de Placas",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Barda Completa",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Cobertura completa de placas metálicas para tronco e virilha do cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "barda-perneiras-placas",
+      "nome": "Perneiras de Placas (Barda)",
+      "categoria": "armadura-cavalo",
+      "subcategoria": "Perneiras",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Placas de metal protegendo as pernas do cavalo; deixam a montaria mais lenta.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 286
+      }
+    },
+    {
+      "id": "capa-leve-escudo",
+      "nome": "Capa Leve",
+      "categoria": "escudo",
+      "subcategoria": "Capa",
+      "pericia": "Capa",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Capa fina que também pode ser usada como defesa improvisada, para prender o inimigo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 287
+      }
+    },
+    {
+      "id": "capa-pesada-escudo",
+      "nome": "Capa Pesada",
+      "categoria": "escudo",
+      "subcategoria": "Capa",
+      "pericia": "Capa",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Capa grossa e reforçada, melhor que a leve para defesa improvisada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 287
+      }
+    },
+    {
+      "id": "escudo-leve",
+      "nome": "Escudo Leve",
+      "categoria": "escudo",
+      "subcategoria": "Escudo",
+      "pericia": "Escudo",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "O menor e mais leve dos escudos comuns.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 287
+      }
+    },
+    {
+      "id": "escudo-pequeno",
+      "nome": "Escudo Pequeno",
+      "categoria": "escudo",
+      "subcategoria": "Escudo",
+      "pericia": "Escudo",
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Escudo de tamanho pequeno, equilíbrio entre peso e proteção.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 287
+      }
+    },
+    {
+      "id": "escudo-medio",
+      "nome": "Escudo Médio",
+      "categoria": "escudo",
+      "subcategoria": "Escudo",
+      "pericia": "Escudo",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Escudo de tamanho médio, boa defesa sem ser excessivamente pesado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 287
+      }
+    },
+    {
+      "id": "escudo-grande",
+      "nome": "Escudo Grande",
+      "categoria": "escudo",
+      "subcategoria": "Escudo",
+      "pericia": "Escudo",
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "O maior e mais protetor dos escudos comuns, também o mais pesado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 287
+      }
+    },
+    {
+      "id": "escudo-de-energia",
+      "nome": "Escudo de Energia",
+      "categoria": "escudo",
+      "subcategoria": "Escudo (de Força)",
+      "pericia": "Escudo",
+      "nt": "^",
+      "adamar": "nao",
+      "resumo": "Escudo de campo de força feito de tecnologia de superciência, quase indestrutível.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 287
+      }
+    },
+    {
+      "id": "algibeira-bolsa-pequena",
+      "nome": "Algibeira ou Bolsa Pequena",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Bolsa pequena de cintura para carregar itens leves.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "anzol-e-linha",
+      "nome": "Anzol e Linha",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Anzol e linha básicos para pescar, precisa de uma vara.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "arpeu",
+      "nome": "Arpéu",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "5",
+      "adamar": "livre",
+      "resumo": "Gancho de escalada arremessável, aguenta bastante peso.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "barraca-20-pessoas",
+      "nome": "Barraca, 20 pessoas",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Barraca grande para vinte pessoas, exige várias varas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "barraca-1-pessoa",
+      "nome": "Barraca, 1 pessoa",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Barraca individual simples, sem necessidade de varas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "barraca-2-pessoas",
+      "nome": "Barraca, 2 pessoas",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Barraca para duas pessoas, precisa de uma vara curta.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "barraca-4-pessoas",
+      "nome": "Barraca, 4 pessoas",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Barraca para quatro pessoas, precisa de duas varas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "bussola",
+      "nome": "Bússola",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Instrumento magnético que ajuda a se orientar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "cabo-de-aco-375cm",
+      "nome": "Cabo de Aço, 3,75 cm",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Cabo de aço reforçado, vendido em rolos de 10 metros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "cantil",
+      "nome": "Cantil",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Cantil metálico para água ou outro líquido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "cobertor",
+      "nome": "Cobertor",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Cobertor quente para usar durante o sono.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "colete-salva-vidas",
+      "nome": "Colete Salva-vidas",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Colete que mantém a pessoa flutuando na água.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "corda-3-4",
+      "nome": "Corda, 3/4\"",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Corda grossa e resistente, vendida por rolo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "corda-3-8",
+      "nome": "Corda, 3/8\"",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Corda comum, mais fina que a de 3/4 polegada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "cordel-3-16",
+      "nome": "Cordel de 3/16\"",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Cordel fino, aguenta pouco peso comparado às cordas maiores.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "equipamento-basico-para-grupo",
+      "nome": "Equipamento Básico para Grupo",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Kit de acampamento coletivo para vários campistas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "equipamento-basico-pessoal",
+      "nome": "Equipamento Básico Pessoal",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Kit pessoal mínimo para sobreviver ao ar livre.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "equipamento-de-alpinismo",
+      "nome": "Equipamento de Alpinismo",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Kit básico para escalar montanhas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "equipamento-de-mergulho",
+      "nome": "Equipamento de Mergulho",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Kit completo de mergulho com tanque de oxigênio.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "espigoes-de-ferro-escalador",
+      "nome": "Espigos de Ferro (Esracador)",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Cravo de ferro para escalada ou para travar portas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "fogao-pequeno",
+      "nome": "Fogão Pequeno",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Fogareiro portátil a querosene.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "fosforos",
+      "nome": "Fósforos",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Caixa de fósforos à prova de água.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "garrafa-ceramica",
+      "nome": "Garrafa Cerâmica",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Garrafa de cerâmica simples para líquidos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "garrafa-termica",
+      "nome": "Garrafa Térmica",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Garrafa que mantém líquidos quentes ou frios por horas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "gasolina",
+      "nome": "Gasolina",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Combustível líquido vendido por litro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "isqueiro",
+      "nome": "Isqueiro",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Pequeno dispositivo para acender fogo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "lampiao",
+      "nome": "Lampião",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Lâmpada a óleo para iluminação prolongada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "lanterna-pesada",
+      "nome": "Lanterna Pesada",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Lanterna elétrica robusta de longo alcance.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "maleta-resistente",
+      "nome": "Maleta Resistente",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Maleta reforçada e trancável para guardar objetos valiosos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "minilanterna",
+      "nome": "Minilanterna",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Lanterna pequena e leve, alcance curto.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "mochila-pequena",
+      "nome": "Mochila Pequena",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Mochila pequena para carregar itens.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "mochila",
+      "nome": "Mochila",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Mochila grande de carga.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "odre-de-vinho",
+      "nome": "Odre de Vinho",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Odre de couro para vinho ou água.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "oleo",
+      "nome": "Óleo",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Óleo combustível vendido em pequenas porções, usado em lampiões.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "paraquedas",
+      "nome": "Paraquedas",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Equipamento para saltos e quedas controladas do ar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "pastilhas-purificar-agua",
+      "nome": "Pastilhas para Purificar a Água",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Pastilhas que purificam água para beber.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "pelagem-de-animal",
+      "nome": "Pelagem de Animal",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Leito de peles para dormir ao relento, quente enquanto seco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "querosene",
+      "nome": "Querosene",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Combustível líquido vendido por litro, usado em fogões.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "racao-de-viagem",
+      "nome": "Ração de Viagem",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Refeição simples e durável para viagens.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "receptor-gps",
+      "nome": "Receptor GPS",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Dispositivo de navegação por satélite.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "relogio-de-pulso",
+      "nome": "Relógio de Pulso",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Relógio simples usado no pulso.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "saco-de-dormir-reforcado",
+      "nome": "Saco de Dormir Reforçado",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Saco de dormir especial para climas muito frios.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "saco-de-dormir",
+      "nome": "Saco de Dormir",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Saco de dormir comum.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "tocha",
+      "nome": "Tocha",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Tocha comum para iluminação.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "vara-2m",
+      "nome": "Vara, 2 m",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Vara de madeira de dois metros, para diversos usos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "vara-3m",
+      "nome": "Vara, 3 m",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Vara de madeira mais longa, três metros.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "vela-de-sebo",
+      "nome": "Vela de Sebo",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Camping e Sobrevivência",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Vela de sebo, meio fumacenta, dura bastante.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "baterias",
+      "nome": "Baterias",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Pilhas comuns para equipamentos elétricos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "celular",
+      "nome": "Celular",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Telefone móvel de cobertura limitada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "computador-laptop",
+      "nome": "Computador, Laptop",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Computador portátil com modem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "computador-acessorio",
+      "nome": "Computador, Acessório",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Óculos-monitor com conexão sem fio para computador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "fone-de-ouvido-com-radio",
+      "nome": "Fone de Ouvido com Rádio",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Rádio de comunicação usado como fone de ouvido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "kit-de-escriba",
+      "nome": "Kit de Escriba",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Kit de escrita com penas, tinta e papel.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "maquina-de-escrever",
+      "nome": "Máquina de Escrever",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Máquina mecânica de escrever.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "minigravador",
+      "nome": "Minigravador",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Gravador portátil de fitas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "minigravador-digital",
+      "nome": "Minigravador Digital",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Gravador digital, não usa fitas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "minitelevisor",
+      "nome": "Minitelevisor",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Televisor portátil pequeno.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "mochila-com-radio",
+      "nome": "Mochila com Rádio",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Mochila com rádio VHF de longo alcance.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "radio-de-mao",
+      "nome": "Rádio de Mão",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Rádio portátil de curto alcance (walkie-talkie).",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "radio-transistor",
+      "nome": "Rádio Transistor",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Rádio receptor simples, apenas para ouvir estações.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "tablete-de-cera",
+      "nome": "Tablete de Cera",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Tábua de cera reutilizável para escrever.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "tambor",
+      "nome": "Tambor",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Tambor usado para comunicação a distância.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "telefone-por-satelite",
+      "nome": "Telefone por Satélite",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Comunicação e Informação",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Telefone com alcance mundial via satélite.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 288
+      }
+    },
+    {
+      "id": "alforjes",
+      "nome": "Alforjes",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento de Equitação",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Bolsas de carga presas à montaria.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "bridao-e-redea",
+      "nome": "Bridão e Rédea",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento de Equitação",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Freio e rédeas para guiar o cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "esporas",
+      "nome": "Esporas",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento de Equitação",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Presas às botas, ajudam a controlar o cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "estribos",
+      "nome": "Estribos",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento de Equitação",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Apoios para os pés que ajudam a montar e a controlar o cavalo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "ferraduras",
+      "nome": "Ferraduras",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento de Equitação",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Ferraduras que protegem os cascos do cavalo em viagens longas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "sela-de-combate",
+      "nome": "Sela de Combate",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento de Equitação",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Sela reforçada para combate montado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "sela-e-arreios",
+      "nome": "Sela e Arreios",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento de Equitação",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Sela comum e arreios básicos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "algemas",
+      "nome": "Algemas",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Ladrões, Defensores da Lei e Espiões",
+      "pericia": null,
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Algemas metálicas para prender alguém.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "danificador-de-escutas",
+      "nome": "Danificador de Escutas",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Ladrões, Defensores da Lei e Espiões",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Dispositivo que estraga microfones espiões próximos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "escuta",
+      "nome": "Escuta",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Ladrões, Defensores da Lei e Espiões",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Microfone escondido para espionagem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "escuta-microscopica",
+      "nome": "Escuta Microscópica",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Ladrões, Defensores da Lei e Espiões",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Escuta minúscula, quase impossível de notar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "gazuas",
+      "nome": "Gazuas",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Ladrões, Defensores da Lei e Espiões",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Ferramentas para arrombar fechaduras.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "gazuas-eletronicas",
+      "nome": "\"Gazuas\" Eletrônicas",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Ladrões, Defensores da Lei e Espiões",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Dispositivo eletrônico para abrir fechaduras modernas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "kit-de-disfarces",
+      "nome": "Kit de Disfarces",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Ladrões, Defensores da Lei e Espiões",
+      "pericia": null,
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Kit de maquiagem e acessórios para se disfarçar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "microfone-a-laser",
+      "nome": "Microfone a Laser",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Ladrões, Defensores da Lei e Espiões",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Microfone que escuta através de janelas de vidro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "microfone-direcional",
+      "nome": "Microfone Direcional",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Ladrões, Defensores da Lei e Espiões",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Microfone que amplia sons de uma direção específica.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "sinal-teleguiado",
+      "nome": "Sinal Teleguiado",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamentos de Ladrões, Defensores da Lei e Espiões",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Pequeno transmissor de rastreamento.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "antibiotico",
+      "nome": "Antibiótico",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento Médico",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Remédio que combate infecções.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "bandagens",
+      "nome": "Bandagens",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento Médico",
+      "pericia": null,
+      "nt": "var.",
+      "adamar": "livre",
+      "resumo": "Faixas e panos para tratar feridas leves.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "instrumentos-cirurgicos",
+      "nome": "Instrumentos Cirúrgicos",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento Médico",
+      "pericia": null,
+      "nt": "var.",
+      "adamar": "livre",
+      "resumo": "Conjunto de instrumentos para cirurgia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "kit-antitoxinas",
+      "nome": "Kit Antitoxinas",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento Médico",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Antídoto contra um veneno específico.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "kit-de-emergencia",
+      "nome": "Kit de Emergência",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento Médico",
+      "pericia": null,
+      "nt": "var.",
+      "adamar": "livre",
+      "resumo": "Kit médico completo para emergências graves.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "kit-de-primeiros-socorros",
+      "nome": "Kit de Primeiros Socorros",
+      "categoria": "equipamento",
+      "subcategoria": "Equipamento Médico",
+      "pericia": null,
+      "nt": "var.",
+      "adamar": "livre",
+      "resumo": "Kit básico para tratar feridas comuns.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "binoculos",
+      "nome": "Binóculos",
+      "categoria": "equipamento",
+      "subcategoria": "Sensores e Equipamentos Ópticos",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Óculos de longo alcance para ver de perto coisas distantes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "camera-de-espiao",
+      "nome": "Câmera de Espião",
+      "categoria": "equipamento",
+      "subcategoria": "Sensores e Equipamentos Ópticos",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Câmera pequena e discreta para espionagem.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "camera-de-video",
+      "nome": "Câmera de Vídeo",
+      "categoria": "equipamento",
+      "subcategoria": "Sensores e Equipamentos Ópticos",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Câmera de filmar com zoom e visão noturna.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "camera-fotografica-35mm",
+      "nome": "Câmera Fotográfica 35 mm",
+      "categoria": "equipamento",
+      "subcategoria": "Sensores e Equipamentos Ópticos",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Câmera fotográfica comum de filme.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "detector-de-metais-portatil",
+      "nome": "Detector de Metais Portátil",
+      "categoria": "equipamento",
+      "subcategoria": "Sensores e Equipamentos Ópticos",
+      "pericia": null,
+      "nt": "7",
+      "adamar": "nao",
+      "resumo": "Aparelho que ajuda a achar objetos metálicos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "minicamera-digital",
+      "nome": "Minicâmera Digital",
+      "categoria": "equipamento",
+      "subcategoria": "Sensores e Equipamentos Ópticos",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Câmera digital pequena, guarda fotos em disco.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "oculos-de-visao-noturna",
+      "nome": "Óculos de Visão Noturna",
+      "categoria": "equipamento",
+      "subcategoria": "Sensores e Equipamentos Ópticos",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Óculos que permitem ver bem no escuro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "telescopio",
+      "nome": "Telescópio",
+      "categoria": "equipamento",
+      "subcategoria": "Sensores e Equipamentos Ópticos",
+      "pericia": null,
+      "nt": "4",
+      "adamar": "narrador",
+      "resumo": "Instrumento óptico para observar coisas distantes.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "agulhas-de-tricot",
+      "nome": "Agulhas de Tricô",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Par de agulhas para tricotar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "arado-de-ferro",
+      "nome": "Arado de Ferro",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Arado resistente para lavrar terrenos difíceis.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "arado-de-madeira",
+      "nome": "Arado de Madeira",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Arado simples de madeira puxado por bois.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "balanca-e-pesos",
+      "nome": "Balança e Pesos",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Balança com pesos para medir mercadorias.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "caixa-de-ferramentas-portatil",
+      "nome": "Caixa de Ferramentas Portátil",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "var.",
+      "adamar": "livre",
+      "resumo": "Caixa de ferramentas básica de um ofício, varia de preço conforme a perícia.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "carrinho-de-mao",
+      "nome": "Carrinho de Mão",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Carrinho de uma roda para transportar cargas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "laboratorio-portatil",
+      "nome": "Laboratório Portátil",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "var.",
+      "adamar": "livre",
+      "resumo": "Kit de laboratório para uma ciência específica.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "macarico",
+      "nome": "Maçarico",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Ferramenta de corte a gás, causa queimaduras.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "pa",
+      "nome": "Pá",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Pá comum para escavar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "pe-de-cabra-1m",
+      "nome": "Pé-de-Cabra, 1 m",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Barra de metal para arrombar, também serve como arma improvisada.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "pedra-de-amolar",
+      "nome": "Pedra de Amolar",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "1",
+      "adamar": "livre",
+      "resumo": "Pedra usada para afiar lâminas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "picareta-equipamento",
+      "nome": "Picareta",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "2",
+      "adamar": "livre",
+      "resumo": "Ferramenta para escavar terra e rocha.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "roca-de-tear",
+      "nome": "Roca de Tear",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "3",
+      "adamar": "livre",
+      "resumo": "Roda de fiar para produzir fios mais rápido.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "serra",
+      "nome": "Serra",
+      "categoria": "equipamento",
+      "subcategoria": "Ferramentas",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Serra grande de lenhador.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "abafadores-de-ouvido",
+      "nome": "Abafadores de Ouvido",
+      "categoria": "equipamento",
+      "subcategoria": "Armas e Acessórios de Combate",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Protetores de ouvido contra ruídos altos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "aljava-de-cintura",
+      "nome": "Aljava de Cintura",
+      "categoria": "equipamento",
+      "subcategoria": "Armas e Acessórios de Combate",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Carcaz de cintura para flechas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "aljava-de-ombro",
+      "nome": "Aljava de Ombro",
+      "categoria": "equipamento",
+      "subcategoria": "Armas e Acessórios de Combate",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Carcaz de ombro para flechas, menor que a de cintura.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "cinturao-de-ferramentas",
+      "nome": "Cinturão de Ferramentas",
+      "categoria": "equipamento",
+      "subcategoria": "Armas e Acessórios de Combate",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Cinto cheio de bolsos e presilhas para equipamento.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "coldre-de-cintura",
+      "nome": "Coldre de Cintura",
+      "categoria": "equipamento",
+      "subcategoria": "Armas e Acessórios de Combate",
+      "pericia": null,
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Coldre de cintura para pistolas.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "coldre-de-ombro",
+      "nome": "Coldre de Ombro",
+      "categoria": "equipamento",
+      "subcategoria": "Armas e Acessórios de Combate",
+      "pericia": null,
+      "nt": "5",
+      "adamar": "nao",
+      "resumo": "Coldre escondido debaixo do braço.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "correia-de-couro",
+      "nome": "Correia de Couro",
+      "categoria": "equipamento",
+      "subcategoria": "Armas e Acessórios de Combate",
+      "pericia": null,
+      "nt": "0",
+      "adamar": "livre",
+      "resumo": "Correia que prende a arma ao pulso, evita perdê-la.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "correia-de-aco-trancado",
+      "nome": "Correia de Aço Trançado",
+      "categoria": "equipamento",
+      "subcategoria": "Armas e Acessórios de Combate",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Versão mais resistente da correia de couro, feita de aço trançado.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "mira-laser",
+      "nome": "Mira Laser",
+      "categoria": "equipamento",
+      "subcategoria": "Armas e Acessórios de Combate",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Mira a laser que ajuda a acertar o alvo.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "mira-4x",
+      "nome": "Mira, 4x",
+      "categoria": "equipamento",
+      "subcategoria": "Armas e Acessórios de Combate",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Mira telescópica de aumento 4x.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "mira-de-imagem-termica-4x",
+      "nome": "Mira de Imagem Térmica, 4x",
+      "categoria": "equipamento",
+      "subcategoria": "Armas e Acessórios de Combate",
+      "pericia": null,
+      "nt": "8",
+      "adamar": "nao",
+      "resumo": "Mira térmica que também detecta calor.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    },
+    {
+      "id": "silenciador-de-pistola-ou-mm",
+      "nome": "Silenciador de Pistola ou MM",
+      "categoria": "equipamento",
+      "subcategoria": "Armas e Acessórios de Combate",
+      "pericia": null,
+      "nt": "6",
+      "adamar": "nao",
+      "resumo": "Silenciador que reduz o ruído e o dano do tiro.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 289
+      }
+    }
+  ]
+}

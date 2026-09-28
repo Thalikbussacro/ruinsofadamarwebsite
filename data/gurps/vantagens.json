@@ -24,7 +24,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 10
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "abascanto-resistencia-a-magia",
@@ -44,7 +45,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 2
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "abencoado",
@@ -64,7 +66,8 @@
       "custo_estruturado": {
         "tipo": "minimo",
         "valor": 10
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "acessorios",
@@ -84,7 +87,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 1
-      }
+      },
+      "icone": "estrela-pequena"
     },
     {
       "id": "adaptabilidade-cultural",
@@ -106,7 +110,8 @@
           10,
           20
         ]
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "adaptacao-ao-terreno",
@@ -127,7 +132,8 @@
         "tipo": "faixa",
         "min": 0,
         "max": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "aderencia",
@@ -147,7 +153,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 20
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "aliados",
@@ -165,7 +172,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "ambidestria",
@@ -184,7 +192,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "ampliador-de-mana",
@@ -204,7 +213,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 50
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "anfibio",
@@ -223,7 +233,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "antecedentes-incomuns",
@@ -241,7 +252,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "apagado",
@@ -260,7 +272,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "aparencia",
@@ -278,7 +291,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "apetrechos",
@@ -298,7 +312,8 @@
         "tipo": "niveis",
         "por_nivel": 5,
         "unidade": "apetrecho"
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "aptidao-magica",
@@ -320,7 +335,8 @@
         "base": 5,
         "por_nivel": 10,
         "nivel_min": 0
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "arrebatador",
@@ -340,7 +356,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 80
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "ataque-adicional",
@@ -359,7 +376,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 25
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "ataque-constritivo",
@@ -379,7 +397,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "ataque-inato",
@@ -398,7 +417,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "atirador",
@@ -417,7 +437,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 25
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "atribulacao",
@@ -437,7 +458,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "audicao-discriminatoria",
@@ -457,7 +479,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "audicao-parabolica",
@@ -477,7 +500,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 4
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "audicao-subsonica",
@@ -500,7 +524,8 @@
           0,
           5
         ]
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "autotranse",
@@ -519,7 +544,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 1
-      }
+      },
+      "icone": "estrela-pequena"
     },
     {
       "id": "boa-forma",
@@ -541,7 +567,8 @@
           5,
           15
         ]
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "boca-adicional",
@@ -562,7 +589,8 @@
         "tipo": "niveis",
         "por_nivel": 5,
         "unidade": "boca"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "bom-senso",
@@ -581,7 +609,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "bracos-adicionais",
@@ -600,7 +629,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "cabeca-adicional",
@@ -621,7 +651,8 @@
         "tipo": "niveis",
         "por_nivel": 15,
         "unidade": "cabeça"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "camaleao",
@@ -641,7 +672,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "camaleao-social",
@@ -660,7 +692,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "caminhar-no-ar",
@@ -680,7 +713,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 20
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "caminhar-sobre-liquidos",
@@ -700,7 +734,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "canalizacao",
@@ -720,7 +755,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "carga-util",
@@ -740,7 +776,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 1
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "carisma",
@@ -759,7 +796,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "cibernetica",
@@ -777,7 +815,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "clarisenciencia",
@@ -797,7 +836,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 50
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "clericato",
@@ -816,7 +856,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "consumo-reduzido",
@@ -835,7 +876,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 2
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "contatos",
@@ -853,7 +895,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "controle-da-mente",
@@ -873,7 +916,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 50
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "controle-do-metabolismo",
@@ -893,7 +937,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "controle-termico",
@@ -912,7 +957,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "crescimento",
@@ -932,7 +978,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "cura",
@@ -952,7 +999,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 30
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "calculos-instantaneos",
@@ -974,7 +1022,8 @@
           2,
           5
         ]
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "defesas-ampliadas",
@@ -992,7 +1041,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "dentes",
@@ -1016,7 +1066,8 @@
           1,
           2
         ]
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "desenvolvedor",
@@ -1038,7 +1089,8 @@
           25,
           50
         ]
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "deslocamento-ampliado",
@@ -1057,7 +1109,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 20
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "destemor",
@@ -1076,7 +1129,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 2
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "destino",
@@ -1095,7 +1149,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "destreza-manual-elevada",
@@ -1114,7 +1169,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "detectar",
@@ -1132,7 +1188,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "dificil-de-subjugar",
@@ -1151,7 +1208,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 2
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "digestao-universal",
@@ -1171,7 +1229,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "dobra",
@@ -1191,7 +1250,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 100
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "dominacao",
@@ -1211,7 +1271,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 20
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "dorminhoco-qualidade",
@@ -1230,7 +1291,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 1
-      }
+      },
+      "icone": "estrela-pequena"
     },
     {
       "id": "duplicacao",
@@ -1251,7 +1313,8 @@
         "tipo": "niveis",
         "por_nivel": 35,
         "unidade": "cópia"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "durabilidade-sobrenatural",
@@ -1271,7 +1334,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 150
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "duro-de-matar",
@@ -1290,7 +1354,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 2
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "dx-bracal",
@@ -1309,7 +1374,8 @@
       "custo_estruturado": {
         "tipo": "variavel",
         "texto": "12 ou 16 por +1"
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "elasticidade",
@@ -1329,7 +1395,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 6
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "elo-mental",
@@ -1348,7 +1415,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "empatia",
@@ -1370,7 +1438,8 @@
           5,
           15
         ]
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "empatia-com-animais",
@@ -1389,7 +1458,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "empatia-com-espiritos",
@@ -1409,7 +1479,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "empatia-com-plantas",
@@ -1428,7 +1499,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "encolhimento",
@@ -1448,7 +1520,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "equilibrio-perfeito",
@@ -1467,7 +1540,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "equipamento-caracteristico",
@@ -1485,7 +1559,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "escavacao",
@@ -1505,7 +1580,8 @@
       "custo_estruturado": {
         "tipo": "variavel",
         "texto": "30 + 5/ponto"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "escorregadio",
@@ -1524,7 +1600,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 2
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "escudo-mental",
@@ -1544,7 +1621,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 4
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "espinhos",
@@ -1567,7 +1645,8 @@
           1,
           3
         ]
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "estabilidade-no-emprego",
@@ -1586,7 +1665,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "estilo",
@@ -1605,7 +1685,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 1
-      }
+      },
+      "icone": "estrela-pequena"
     },
     {
       "id": "estatica-psiquica",
@@ -1625,7 +1706,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 30
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "expectativa-de-vida-ampliada",
@@ -1644,7 +1726,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 2
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "experiencia-g",
@@ -1664,7 +1747,8 @@
         "tipo": "faixa",
         "min": 1,
         "max": 10
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "facilidade-para-idiomas",
@@ -1683,7 +1767,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "fala-subaquatica",
@@ -1703,7 +1788,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "fala-subsonica",
@@ -1724,7 +1810,8 @@
         "tipo": "faixa",
         "min": 0,
         "max": 10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "fala-ultrassonica",
@@ -1747,7 +1834,8 @@
           0,
           10
         ]
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "falar-com-animais",
@@ -1767,7 +1855,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 25
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "falar-com-plantas",
@@ -1787,7 +1876,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "familiaridade-cultural",
@@ -1810,7 +1900,8 @@
           2
         ],
         "unidade": "cultura"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "favor",
@@ -1828,7 +1919,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "fleuma",
@@ -1847,7 +1939,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "flexibilidade",
@@ -1869,7 +1962,8 @@
           5,
           15
         ]
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "forma-de-sombras",
@@ -1889,7 +1983,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 50
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "fe-verdadeira",
@@ -1909,7 +2004,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "garras",
@@ -1928,7 +2024,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "golpeadores",
@@ -1949,7 +2046,8 @@
         "tipo": "faixa",
         "min": 5,
         "max": 8
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "grupo-de-contato",
@@ -1967,7 +2065,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "habilidades-modulares",
@@ -1986,7 +2085,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "hermafromorfo",
@@ -2006,7 +2106,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "hierarquia",
@@ -2025,7 +2126,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "hipoalgia-alto-limiar-de-dor",
@@ -2044,7 +2146,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "idade-imutavel",
@@ -2064,7 +2167,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "identidade-alternativa",
@@ -2087,7 +2191,8 @@
           15
         ],
         "unidade": "identidade"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "idiomas",
@@ -2105,7 +2210,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "iluminado",
@@ -2125,7 +2231,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "impossivel-de-matar",
@@ -2146,7 +2253,8 @@
         "tipo": "faixa",
         "min": 50,
         "max": 150
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "imunidade-legal",
@@ -2166,7 +2274,8 @@
         "tipo": "faixa",
         "min": 5,
         "max": 20
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "indomavel",
@@ -2185,7 +2294,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "infravisao",
@@ -2206,7 +2316,8 @@
         "tipo": "faixa",
         "min": 0,
         "max": 10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "insubstancialidade",
@@ -2225,7 +2336,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 80
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "interposicao",
@@ -2244,7 +2356,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "intuicao",
@@ -2263,7 +2376,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "investidura-de-poder",
@@ -2283,7 +2397,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 10
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "invisibilidade",
@@ -2302,7 +2417,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 40
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "inercia-temporal",
@@ -2322,7 +2438,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "lacrado",
@@ -2342,7 +2459,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "lamentavel",
@@ -2361,7 +2479,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "leitura-da-mente",
@@ -2381,7 +2500,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 30
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "longevidade",
@@ -2400,7 +2520,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 2
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "lingua-ferina",
@@ -2419,7 +2540,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "membrana-nictitante",
@@ -2439,7 +2561,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 1
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "memoria-eidetica",
@@ -2461,7 +2584,8 @@
           5,
           10
         ]
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "memoria-racial",
@@ -2482,7 +2606,8 @@
         "tipo": "faixa",
         "min": 15,
         "max": 40
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "mente-digital",
@@ -2502,7 +2627,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "mente-segmentada",
@@ -2522,7 +2648,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 50
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "mestre-de-armas",
@@ -2540,7 +2667,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "metabolismo-impoluto",
@@ -2559,7 +2687,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 1
-      }
+      },
+      "icone": "estrela-pequena"
     },
     {
       "id": "metamorfose",
@@ -2578,7 +2707,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "mordida-de-vampiro",
@@ -2598,7 +2728,8 @@
       "custo_estruturado": {
         "tipo": "variavel",
         "texto": "30 + 5/PV"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "medium",
@@ -2618,7 +2749,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "neutralizar",
@@ -2638,7 +2770,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 50
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "nocao-do-perigo",
@@ -2657,7 +2790,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "nocao-do-tempo-ampliada",
@@ -2677,7 +2811,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 45
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "nocao-exata-do-tempo",
@@ -2699,7 +2834,8 @@
           2,
           5
         ]
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "nt-alto",
@@ -2718,7 +2854,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "nao-come-nem-bebe",
@@ -2738,7 +2875,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "nao-dorme",
@@ -2758,7 +2896,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 20
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "nao-respira",
@@ -2778,7 +2917,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 20
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "obscurecer",
@@ -2798,7 +2938,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 2
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "obstinado",
@@ -2817,7 +2958,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "olfato-discriminatorio",
@@ -2837,7 +2979,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "oraculo",
@@ -2857,7 +3000,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "padrao-de-tempo-alterado",
@@ -2877,7 +3021,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 100
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "paladar-discriminatorio",
@@ -2897,7 +3042,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "patronos",
@@ -2915,7 +3061,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "pelagem",
@@ -2935,7 +3082,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 1
-      }
+      },
+      "icone": "estrela-pequena"
     },
     {
       "id": "pele-elastica",
@@ -2955,7 +3103,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 20
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "pendulear",
@@ -2975,7 +3124,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "permissao-de-seguranca",
@@ -2993,7 +3143,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "pernas-adicionais",
@@ -3012,7 +3163,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "poderes-legais",
@@ -3035,7 +3187,8 @@
           10,
           15
         ]
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "por-dentro-da-moda",
@@ -3054,7 +3207,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "possessao",
@@ -3074,7 +3228,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 100
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "pouco-sono",
@@ -3093,7 +3248,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 2
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "precognicao",
@@ -3113,7 +3269,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 25
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "prender-a-respiracao",
@@ -3133,7 +3290,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 2
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "proposito-maior",
@@ -3153,7 +3311,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "psicometria",
@@ -3173,7 +3332,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 20
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "pulmoes-com-filtro",
@@ -3193,7 +3353,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "queda-de-gato",
@@ -3213,7 +3374,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "rastreamento-ampliado",
@@ -3232,7 +3394,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "reconhecimento-social",
@@ -3252,7 +3415,8 @@
         "tipo": "niveis",
         "por_nivel": 5,
         "unidade": "reação"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "recuperacao-acelerada",
@@ -3272,7 +3436,8 @@
         "tipo": "faixa",
         "min": 5,
         "max": 15
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "recuperacao-da-consciencia",
@@ -3292,7 +3457,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "redespertar",
@@ -3312,7 +3478,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "reflexos-em-combate",
@@ -3331,7 +3498,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "regeneracao",
@@ -3350,7 +3518,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "reivindicar-hospitalidade",
@@ -3370,7 +3539,8 @@
         "tipo": "faixa",
         "min": 1,
         "max": 10
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "renda-propria",
@@ -3389,7 +3559,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 1
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "reputacao",
@@ -3407,7 +3578,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "resistente",
@@ -3425,7 +3597,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "resistencia-a-dano",
@@ -3445,7 +3618,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "resistencia-ao-vacuo",
@@ -3465,7 +3639,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "resistencia-a-pressao",
@@ -3486,7 +3661,8 @@
         "tipo": "faixa",
         "min": 5,
         "max": 15
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "restaurar-membros",
@@ -3506,7 +3682,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 40
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "retencao",
@@ -3526,7 +3703,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 2
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "riqueza",
@@ -3544,7 +3722,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "rosto-sincero",
@@ -3563,7 +3742,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 1
-      }
+      },
+      "icone": "estrela-pequena"
     },
     {
       "id": "saltador",
@@ -3583,7 +3763,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 100
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "sem-ressaca",
@@ -3602,7 +3783,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 1
-      }
+      },
+      "icone": "estrela-pequena"
     },
     {
       "id": "senso-de-direcao",
@@ -3624,7 +3806,8 @@
           5,
           10
         ]
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "sentido-de-monitoramento",
@@ -3643,7 +3826,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "sentido-de-vibracao",
@@ -3663,7 +3847,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "sentido-protegido",
@@ -3684,7 +3869,8 @@
         "tipo": "niveis",
         "por_nivel": 5,
         "unidade": "sentido"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "sentidos-agucados",
@@ -3703,7 +3889,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 2
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "serendipidade",
@@ -3722,7 +3909,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 15
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "silencio",
@@ -3742,7 +3930,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "sonda-mental",
@@ -3762,7 +3951,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 20
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "sorte",
@@ -3780,7 +3970,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "st-bracal",
@@ -3800,7 +3991,8 @@
       "custo_estruturado": {
         "tipo": "variavel",
         "texto": "3, 5 ou 8 por +1"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "st-de-golpe",
@@ -3820,7 +4012,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "st-de-levantamento",
@@ -3839,7 +4032,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 3
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "status",
@@ -3858,7 +4052,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "coroa"
     },
     {
       "id": "super-escalada",
@@ -3878,7 +4073,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 3
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "super-salto",
@@ -3898,7 +4094,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "super-sorte",
@@ -3918,7 +4115,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 100
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "superaudicao",
@@ -3941,7 +4139,8 @@
           0,
           5
         ]
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "talento",
@@ -3959,7 +4158,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "talento-instintivo",
@@ -3979,7 +4179,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 20
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "telecinese",
@@ -3998,7 +4199,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "telecomunicacao",
@@ -4016,7 +4218,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "terror",
@@ -4036,7 +4239,8 @@
       "custo_estruturado": {
         "tipo": "variavel",
         "texto": "30 + 10/-1"
-      }
+      },
+      "icone": "sol"
     },
     {
       "id": "tolerancia-a-ferimentos",
@@ -4055,7 +4259,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "tolerancia-ao-alcool",
@@ -4074,7 +4279,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 1
-      }
+      },
+      "icone": "estrela-pequena"
     },
     {
       "id": "tolerancia-a-radiacao",
@@ -4093,7 +4299,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "tolerancia-a-temperatura",
@@ -4112,7 +4319,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 1
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "tolerancia-g-ampliada",
@@ -4132,7 +4340,8 @@
         "tipo": "faixa",
         "min": 5,
         "max": 25
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "toque-sensivel",
@@ -4151,7 +4360,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "treinado-por-um-mestre",
@@ -4170,7 +4380,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 30
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "titere",
@@ -4191,7 +4402,8 @@
         "tipo": "faixa",
         "min": 5,
         "max": 10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "ultravisao",
@@ -4214,7 +4426,8 @@
           0,
           10
         ]
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "venturoso",
@@ -4233,7 +4446,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "ver-o-invisivel",
@@ -4253,7 +4467,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "versatil",
@@ -4272,7 +4487,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "vida-extra",
@@ -4293,7 +4509,8 @@
         "tipo": "niveis",
         "por_nivel": 25,
         "unidade": "vida"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "visualizacao",
@@ -4312,7 +4529,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "mente"
     },
     {
       "id": "visao-360-graus",
@@ -4332,7 +4550,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 25
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "visao-hiperespectral",
@@ -4352,7 +4571,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 25
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "visao-microscopica",
@@ -4372,7 +4592,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "visao-no-escuro",
@@ -4392,7 +4613,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 25
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "visao-noturna",
@@ -4411,7 +4633,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 1
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "visao-penetrante",
@@ -4431,7 +4654,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "visao-periferica",
@@ -4450,7 +4674,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 15
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "visao-telescopica",
@@ -4470,7 +4695,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": 5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "voo",
@@ -4490,7 +4716,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 40
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "voz-melodiosa",
@@ -4509,7 +4736,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 10
-      }
+      },
+      "icone": "punho"
     },
     {
       "id": "voz-penetrante",
@@ -4528,7 +4756,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 1
-      }
+      },
+      "icone": "estrela-pequena"
     },
     {
       "id": "vinculo-especial",
@@ -4548,7 +4777,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 5
-      }
+      },
+      "icone": "sol"
     }
   ]
 }

@@ -24,7 +24,8 @@
         "tipo": "faixa",
         "min": -5,
         "max": -1
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "acomodado",
@@ -43,7 +44,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "alcoolismo",
@@ -65,7 +67,8 @@
           -15,
           -20
         ]
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "altruismo",
@@ -85,7 +88,8 @@
         "tipo": "fixo",
         "valor": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "amigavel",
@@ -107,7 +111,8 @@
           -5,
           -10
         ]
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "amnesia",
@@ -129,7 +134,8 @@
           -10,
           -25
         ]
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "antecedentes-mundanos",
@@ -148,7 +154,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "antipatico",
@@ -167,7 +174,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "aparencia-desvantagem",
@@ -185,7 +193,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "assustar-animais",
@@ -205,7 +214,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "ataque-infeccioso",
@@ -225,7 +235,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "atavismo-por-estresse",
@@ -244,7 +255,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "atento",
@@ -263,7 +275,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "atrapalhado",
@@ -285,7 +298,8 @@
           -5,
           -10
         ]
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "autodestruicao",
@@ -305,7 +319,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "avareza",
@@ -325,7 +340,8 @@
         "tipo": "fixo",
         "valor": -10,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "aversao",
@@ -344,7 +360,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "aversoes",
@@ -363,7 +380,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "azar",
@@ -382,7 +400,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "baixa-autoestima",
@@ -401,7 +420,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "barulhento",
@@ -420,7 +440,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": -2
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "bestial",
@@ -443,7 +464,8 @@
           -10,
           -15
         ]
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "bioquimica-incomum",
@@ -462,7 +484,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "briguento",
@@ -482,7 +505,8 @@
         "tipo": "fixo",
         "valor": -10,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "caracteristicas-distintas",
@@ -501,7 +525,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "caracteristicas-sobrenaturais",
@@ -520,7 +545,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "castrado-ou-assexuado",
@@ -539,7 +565,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "cegueira",
@@ -558,7 +585,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -50
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "cegueira-noturna",
@@ -577,7 +605,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "chauvinista",
@@ -596,7 +625,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "circunspeccao",
@@ -615,7 +645,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "cleptomania",
@@ -635,7 +666,8 @@
         "tipo": "fixo",
         "valor": -15,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "cobica",
@@ -655,7 +687,8 @@
         "tipo": "fixo",
         "valor": -15,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "complexo-de-culpa",
@@ -674,7 +707,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "compreensivo",
@@ -693,7 +727,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "compulsao",
@@ -714,7 +749,8 @@
         "min": -15,
         "max": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "confuso",
@@ -734,7 +770,8 @@
         "tipo": "fixo",
         "valor": -10,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "consumo-ampliado",
@@ -753,7 +790,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "convulsoes-pos-combate",
@@ -773,7 +811,8 @@
         "tipo": "fixo",
         "valor": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "corcunda",
@@ -792,7 +831,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "covardia",
@@ -812,7 +852,8 @@
         "tipo": "fixo",
         "valor": -10,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "credulidade",
@@ -832,7 +873,8 @@
         "tipo": "fixo",
         "valor": -10,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "criativo",
@@ -851,7 +893,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "cuidadoso",
@@ -870,7 +913,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "curiosidade",
@@ -890,7 +934,8 @@
         "tipo": "fixo",
         "valor": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "codigo-de-honra",
@@ -910,7 +955,8 @@
         "tipo": "faixa",
         "min": -15,
         "max": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "codigo-de-honra-peculiaridade",
@@ -929,7 +975,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "daltonismo",
@@ -948,7 +995,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "deficiencia-fisica",
@@ -968,7 +1016,8 @@
         "tipo": "faixa",
         "min": -30,
         "max": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "deficiencias-menores",
@@ -987,7 +1036,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "dependentes",
@@ -1005,7 +1055,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa-rachado"
     },
     {
       "id": "dependencia",
@@ -1024,7 +1075,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "depressao-cronica",
@@ -1044,7 +1096,8 @@
         "tipo": "fixo",
         "valor": -15,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "desastrado",
@@ -1066,7 +1119,8 @@
           -5,
           -15
         ]
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "desatento",
@@ -1086,7 +1140,8 @@
         "tipo": "fixo",
         "valor": -10,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "desdobramento-de-personalidade",
@@ -1106,7 +1161,8 @@
         "tipo": "fixo",
         "valor": -15,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "despretensioso",
@@ -1125,7 +1181,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "destino-desvantagem",
@@ -1144,7 +1201,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "destruidor-da-vida",
@@ -1164,7 +1222,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "dever",
@@ -1182,7 +1241,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa-rachado"
     },
     {
       "id": "dieta-restrita",
@@ -1202,7 +1262,8 @@
         "tipo": "faixa",
         "min": -40,
         "max": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "dificuldade-com-numeros",
@@ -1221,7 +1282,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "dislexia",
@@ -1240,7 +1302,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "disopia",
@@ -1259,7 +1322,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -25
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "disosmia",
@@ -1278,7 +1342,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "distracao",
@@ -1297,7 +1362,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -15
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "distraido",
@@ -1316,7 +1382,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "disturbio-neurologico",
@@ -1334,7 +1401,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "doente-terminal",
@@ -1354,7 +1422,8 @@
         "tipo": "faixa",
         "min": -100,
         "max": -50
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "doenca-contagiosa",
@@ -1373,7 +1442,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "dor-cronica",
@@ -1391,7 +1461,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "dorminhoco",
@@ -1410,7 +1481,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "doutrinas-religiosas",
@@ -1430,7 +1502,8 @@
         "tipo": "faixa",
         "min": -15,
         "max": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "drenagem",
@@ -1449,7 +1522,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "duro-de-ouvido",
@@ -1468,7 +1542,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "dividas",
@@ -1486,7 +1561,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa-rachado"
     },
     {
       "id": "egoismo",
@@ -1506,7 +1582,8 @@
         "tipo": "fixo",
         "valor": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "eletrico",
@@ -1526,7 +1603,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -20
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "embotado",
@@ -1545,7 +1623,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "enjoo",
@@ -1564,7 +1643,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "enjoo-espacial",
@@ -1583,7 +1663,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "enjoo-temporal",
@@ -1602,7 +1683,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "entorpecido",
@@ -1621,7 +1703,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -20
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "enxerido",
@@ -1640,7 +1723,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "epilepsia",
@@ -1659,7 +1743,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -30
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "estigma-social",
@@ -1679,7 +1764,8 @@
         "tipo": "faixa",
         "min": -20,
         "max": -5
-      }
+      },
+      "icone": "coroa-rachado"
     },
     {
       "id": "estomago-sensivel",
@@ -1698,7 +1784,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "excesso-de-confianca",
@@ -1718,7 +1805,8 @@
         "tipo": "fixo",
         "valor": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "expectativa-de-vida-reduzida",
@@ -1738,7 +1826,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": -10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "fanatismo",
@@ -1757,7 +1846,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -15
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "fantasias",
@@ -1777,7 +1867,8 @@
         "tipo": "faixa",
         "min": -15,
         "max": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "fantasias-peculiaridade",
@@ -1796,7 +1887,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "feicoes-estranhas",
@@ -1815,7 +1907,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "ferido",
@@ -1834,7 +1927,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "flashbacks",
@@ -1852,7 +1946,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "fobias",
@@ -1870,7 +1965,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "fora-de-forma",
@@ -1892,7 +1988,8 @@
           -5,
           -15
         ]
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "forma-de-sombras-desvantagem",
@@ -1911,7 +2008,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -20
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "fragilidade",
@@ -1930,7 +2028,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "fragilidade-em-aceleracao",
@@ -1949,7 +2048,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "fraqueza",
@@ -1968,7 +2068,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "facil-de-decifrar",
@@ -1987,7 +2088,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "facil-de-matar",
@@ -2006,7 +2108,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": -2
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "furia",
@@ -2025,7 +2128,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "gagueira",
@@ -2044,7 +2148,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "gigantismo",
@@ -2063,7 +2168,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": 0
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "gula",
@@ -2083,7 +2189,8 @@
         "tipo": "fixo",
         "valor": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "hemofilia",
@@ -2102,7 +2209,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -30
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "hiperalgia",
@@ -2121,7 +2229,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "honestidade",
@@ -2141,7 +2250,8 @@
         "tipo": "fixo",
         "valor": -10,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "horizontal",
@@ -2161,7 +2271,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "habitos-detestaveis",
@@ -2181,7 +2292,8 @@
         "tipo": "faixa",
         "min": -15,
         "max": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "habitos-ou-expressoes",
@@ -2200,7 +2312,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "identidade-secreta",
@@ -2218,7 +2331,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa-rachado"
     },
     {
       "id": "impulsividade",
@@ -2238,7 +2352,8 @@
         "tipo": "fixo",
         "valor": -10,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "incapaz-de-aprender",
@@ -2257,7 +2372,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -30
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "incapaz-de-falar",
@@ -2279,7 +2395,8 @@
           -15,
           -25
         ]
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "incapaz-de-flutuar",
@@ -2298,7 +2415,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "incapaz-de-sentir-prazer",
@@ -2317,7 +2435,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -15
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "incompetente",
@@ -2336,7 +2455,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "indeciso",
@@ -2356,7 +2476,8 @@
         "tipo": "fixo",
         "valor": -10,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "indiferente",
@@ -2376,7 +2497,8 @@
         "tipo": "fixo",
         "valor": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "indulgente",
@@ -2396,7 +2518,8 @@
         "tipo": "fixo",
         "valor": -15,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "ingenuo",
@@ -2415,7 +2538,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "inimigos",
@@ -2433,7 +2557,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa-rachado"
     },
     {
       "id": "insensivel",
@@ -2452,7 +2577,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "insone",
@@ -2474,7 +2600,8 @@
           -10,
           -15
         ]
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "intolerancia",
@@ -2492,7 +2619,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "intolerancia-ao-alcool",
@@ -2511,7 +2639,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "intolerancia-g",
@@ -2533,7 +2662,8 @@
           -10,
           -20
         ]
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "inveja",
@@ -2552,7 +2682,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "invertebrado",
@@ -2572,7 +2703,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -20
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "irritabilidade",
@@ -2592,7 +2724,8 @@
         "tipo": "fixo",
         "valor": -10,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "lunatico",
@@ -2611,7 +2744,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "luxuria",
@@ -2631,7 +2765,8 @@
         "tipo": "fixo",
         "valor": -15,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "magnetismo-sobrenatural",
@@ -2651,7 +2786,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -15
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "magro",
@@ -2670,7 +2806,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "maldicao",
@@ -2690,7 +2827,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -75
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "maldicao-divina",
@@ -2709,7 +2847,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "maneta-um-braco",
@@ -2728,7 +2867,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -20
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "maneta-uma-mao",
@@ -2747,7 +2887,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -15
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "manuseadores-precarios",
@@ -2770,7 +2911,8 @@
           -30,
           -50
         ]
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "manutencao",
@@ -2788,7 +2930,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "maniaco-depressivo",
@@ -2807,7 +2950,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -20
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "marca-registrada",
@@ -2827,7 +2971,8 @@
         "tipo": "faixa",
         "min": -15,
         "max": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "marca-registrada-peculiaridade",
@@ -2846,7 +2991,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "mau-cheiro",
@@ -2865,7 +3011,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "megalomania",
@@ -2884,7 +3031,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "mentalidade-de-escravo",
@@ -2903,7 +3051,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -40
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "mente-aberta",
@@ -2922,7 +3071,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "mordida-fraca",
@@ -2942,7 +3092,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -2
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "mudanca-de-personalidade",
@@ -2961,7 +3112,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "mao-fraca",
@@ -2980,7 +3132,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": -5
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "nanismo",
@@ -2999,7 +3152,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -15
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "no-limite",
@@ -3019,7 +3173,8 @@
         "tipo": "fixo",
         "valor": -15,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "noturno",
@@ -3039,7 +3194,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -20
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "nt-baixo",
@@ -3058,7 +3214,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "nao-iconografico",
@@ -3077,7 +3234,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "oblivio",
@@ -3096,7 +3254,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "obsessao",
@@ -3119,7 +3278,8 @@
           -10
         ],
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "obsessoes-peculiaridade",
@@ -3138,7 +3298,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "orgulhoso",
@@ -3157,7 +3318,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "pacifismo",
@@ -3175,7 +3337,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "padrao-de-tempo-reduzido",
@@ -3195,7 +3358,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -100
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "paralisia-frente-ao-combate",
@@ -3214,7 +3378,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -15
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "paranoia",
@@ -3233,7 +3398,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "pernas-tortas",
@@ -3252,7 +3418,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "pesadelos",
@@ -3272,7 +3439,8 @@
         "tipo": "fixo",
         "valor": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "piromania",
@@ -3292,7 +3460,8 @@
         "tipo": "fixo",
         "valor": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "pobreza-riqueza-baixa",
@@ -3310,7 +3479,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa-rachado"
     },
     {
       "id": "pouca-empatia",
@@ -3329,7 +3499,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -20
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "preferencias",
@@ -3348,7 +3519,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "preguica",
@@ -3367,7 +3539,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "problemas-na-coluna",
@@ -3389,7 +3562,8 @@
           -15,
           -25
         ]
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "recuperacao-lenta",
@@ -3408,7 +3582,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": -5
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "refeicao-demorada",
@@ -3428,7 +3603,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "reprogramavel",
@@ -3448,7 +3624,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "repugnancia",
@@ -3469,7 +3646,8 @@
         "tipo": "faixa",
         "min": -15,
         "max": -5
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "reputacao-ruim",
@@ -3487,7 +3665,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "coroa-rachado"
     },
     {
       "id": "ressacas-terriveis",
@@ -3506,7 +3685,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "sadismo",
@@ -3526,7 +3706,8 @@
         "tipo": "fixo",
         "valor": -15,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "sangue-frio",
@@ -3548,7 +3729,8 @@
           -5,
           -10
         ]
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "sanguinolencia",
@@ -3568,7 +3750,8 @@
         "tipo": "fixo",
         "valor": -10,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "segredo",
@@ -3588,7 +3771,8 @@
         "tipo": "faixa",
         "min": -30,
         "max": -5
-      }
+      },
+      "icone": "coroa-rachado"
     },
     {
       "id": "sem-imaginacao",
@@ -3607,7 +3791,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "sem-nocao-de-profundidade",
@@ -3626,7 +3811,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -15
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "sem-pernas",
@@ -3645,7 +3831,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "sem-recuperacao",
@@ -3668,7 +3855,8 @@
           -20,
           -30
         ]
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "sem-um-dedo",
@@ -3690,7 +3878,8 @@
           -2,
           -5
         ]
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "semiereto",
@@ -3710,7 +3899,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "senso-do-dever",
@@ -3730,7 +3920,8 @@
         "tipo": "faixa",
         "min": -20,
         "max": -2
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "simpatico",
@@ -3749,7 +3940,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "solitario",
@@ -3769,7 +3961,8 @@
         "tipo": "fixo",
         "valor": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "sonambulismo",
@@ -3789,7 +3982,8 @@
         "tipo": "fixo",
         "valor": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "sonhador",
@@ -3808,7 +4002,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "sono-complementar",
@@ -3827,7 +4022,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": -2
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "sono-leve",
@@ -3846,7 +4042,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "sonolento",
@@ -3865,7 +4062,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "status-baixo",
@@ -3884,7 +4082,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": -5
-      }
+      },
+      "icone": "coroa-rachado"
     },
     {
       "id": "supersensitivo",
@@ -3904,7 +4103,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -15
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "suporte-de-vida-ampliado",
@@ -3923,7 +4123,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "surdez",
@@ -3942,7 +4143,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -20
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "susceptibilidade-a-magia",
@@ -3962,7 +4164,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": -3
-      }
+      },
+      "icone": "lua-negra"
     },
     {
       "id": "suscetivel",
@@ -3980,7 +4183,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "teimosia",
@@ -3999,7 +4203,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "temor",
@@ -4018,7 +4223,8 @@
       "custo_estruturado": {
         "tipo": "niveis",
         "por_nivel": -2
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "tetraplegico",
@@ -4037,7 +4243,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -80
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "timidez",
@@ -4057,7 +4264,8 @@
         "tipo": "faixa",
         "min": -20,
         "max": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "trapaceiro",
@@ -4076,7 +4284,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -15
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "veracidade",
@@ -4096,7 +4305,8 @@
         "tipo": "fixo",
         "valor": -5,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "viciado-em-trabalho",
@@ -4115,7 +4325,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "visao-restrita",
@@ -4137,7 +4348,8 @@
           -15,
           -30
         ]
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "voto",
@@ -4157,7 +4369,8 @@
         "tipo": "faixa",
         "min": -15,
         "max": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "voto-peculiaridade",
@@ -4176,7 +4389,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "voz-irritante",
@@ -4195,7 +4409,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -10
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "vozes-fantasmagoricas",
@@ -4215,7 +4430,8 @@
         "tipo": "faixa",
         "min": -15,
         "max": -5
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "vulnerabilidade",
@@ -4234,7 +4450,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "garra"
     },
     {
       "id": "vicio",
@@ -4252,7 +4469,8 @@
       },
       "custo_estruturado": {
         "tipo": "variavel"
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "vicio-menor",
@@ -4271,7 +4489,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -1
-      }
+      },
+      "icone": "espiral"
     },
     {
       "id": "xenofilia",
@@ -4291,7 +4510,8 @@
         "tipo": "fixo",
         "valor": -10,
         "autocontrole": true
-      }
+      },
+      "icone": "mente-rachado"
     },
     {
       "id": "zarolho",
@@ -4310,7 +4530,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -15
-      }
+      },
+      "icone": "punho-rachado"
     },
     {
       "id": "unico",
@@ -4330,7 +4551,8 @@
       "custo_estruturado": {
         "tipo": "fixo",
         "valor": -5
-      }
+      },
+      "icone": "lua-negra"
     }
   ]
 }

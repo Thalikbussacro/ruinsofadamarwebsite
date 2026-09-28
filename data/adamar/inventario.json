@@ -1,0 +1,32 @@
+{
+  "descricao": "Inventário em grade de Ruínas de Adamar (regra do cenário, não do GURPS). O peso do GURPS continua definindo a carga; a grade define o espaço. Tamanhos e grades são decisões da mesa e podem ser ajustados.",
+  "ref": { "canone": "Materialidade", "nota": "Carregar é decisão: frio, fome e peso pesam como no mundo real." },
+  "celula_cm": 10,
+  "portes": {
+    "grade": "cabe na grade de um recipiente, ocupando largura × altura células",
+    "longo": "comprido demais para qualquer mochila (lanças, armas de haste, arco longo, varas): vai na mão ou preso às costas",
+    "montaria": "é da montaria ou da carroça (sela, barda, arado, barraca grande): não entra no inventário pessoal",
+    "vestido": "é vestido (armadura, roupa): ocupa o corpo, não a grade, enquanto estiver no corpo"
+  },
+  "encaixes": [
+    { "id": "mao-principal", "nome": "Mão principal", "cabe": 1 },
+    { "id": "mao-inabil", "nome": "Mão inábil", "cabe": 1 },
+    { "id": "costas", "nome": "Costas", "cabe": 2, "nota": "um item longo ou escudo e uma mochila" },
+    { "id": "cinto", "nome": "Cinto", "cabe": 3, "nota": "armas curtas (até 4 células de comprimento), algibeira, aljava de cintura" },
+    { "id": "corpo", "nome": "Corpo", "nota": "armaduras e roupas vestidas, por local" }
+  ],
+  "recipientes": {
+    "algibeira-ou-bolsa-pequena": { "largura": 2, "altura": 2, "encaixe": "cinto" },
+    "mochila-pequena": { "largura": 4, "altura": 5, "encaixe": "costas" },
+    "mochila": { "largura": 6, "altura": 7, "encaixe": "costas" },
+    "alforjes": { "largura": 4, "altura": 4, "quantidade": 2, "encaixe": "montaria", "nota": "um par, um de cada lado da montaria" },
+    "aljava-de-cintura": { "capacidade": "flechas ou virotes (ver livro)", "encaixe": "cinto" },
+    "aljava-de-ombro": { "capacidade": "flechas ou virotes (ver livro)", "encaixe": "costas" }
+  },
+  "regras": [
+    "Itens podem girar 90° na grade.",
+    "Itens de 1×1 marcados com empilha guardam várias unidades na mesma célula (ex.: rações, velas).",
+    "Uma arma no cinto ou nas costas sai da grade e pode ser sacada; na mochila, precisa ser tirada primeiro.",
+    "Armadura tirada e guardada ocupa a grade com o tamanho indicado em 'guardado'."
+  ]
+}

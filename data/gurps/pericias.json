@@ -29,7 +29,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "adaga-de-esgrima",
@@ -75,7 +76,8 @@
           }
         ]
       },
-      "nota_predefinido": "Basic Set B208; o cabeçalho da tabela em PT não trouxe esta perícia"
+      "nota_predefinido": "Basic Set B208; o cabeçalho da tabela em PT não trouxe esta perícia",
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "adestramento-de-animais",
@@ -100,7 +102,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "adivinhacao",
@@ -135,7 +138,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "administracao",
@@ -165,7 +169,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "alquimia",
@@ -184,7 +189,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "alvenaria",
@@ -209,7 +215,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "antropologia",
@@ -245,7 +252,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "analise-da-informacao",
@@ -276,7 +284,8 @@
             "especializacao": "qualquer"
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "analise-de-mercado",
@@ -311,7 +320,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "aparar-armas-de-projetil",
@@ -330,7 +340,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "arco",
@@ -355,7 +366,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "arma-de-arremesso",
@@ -381,7 +393,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "armadilhas",
@@ -411,7 +424,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "armas-de-feixe",
@@ -436,7 +450,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "armas-de-fogo",
@@ -461,7 +476,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "armas-de-haste",
@@ -501,7 +517,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "armeiro",
@@ -532,7 +549,8 @@
             "especializacao": "mesma"
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "arqueiro-zen",
@@ -551,7 +569,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "arqueologia",
@@ -576,7 +595,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "arquitetura",
@@ -607,7 +627,8 @@
             "especializacao": "Civil"
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "arremedo",
@@ -633,7 +654,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "arremessador-de-lanca",
@@ -664,7 +686,8 @@
             "especializacao": "Lança"
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "arremesso",
@@ -694,7 +717,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "arrombamento",
@@ -719,7 +743,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "arte-da-invisibilidade",
@@ -738,7 +763,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "arte-do-arremesso",
@@ -757,7 +783,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "arte-erotica",
@@ -787,7 +814,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "artilharia",
@@ -812,7 +840,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "artista",
@@ -837,7 +866,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "assuntos-atuais",
@@ -867,7 +897,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "astronomia",
@@ -892,7 +923,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "ataque-inato",
@@ -917,7 +949,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "atuacao",
@@ -952,7 +985,8 @@
             "mod": -2
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "auto-hipnose",
@@ -977,7 +1011,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "bastao",
@@ -1012,7 +1047,8 @@
             "mod": -2
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "besta",
@@ -1037,7 +1073,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "bioengenharia",
@@ -1062,7 +1099,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "biologia",
@@ -1092,7 +1130,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "bloqueio-mental",
@@ -1122,7 +1161,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "boleadeira",
@@ -1141,7 +1181,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "boxe",
@@ -1160,7 +1201,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "boemia",
@@ -1185,7 +1227,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "briga",
@@ -1204,7 +1247,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "caminhada",
@@ -1229,7 +1273,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "camuflagem",
@@ -1259,7 +1304,8 @@
             "mod": -2
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "canhoneiro",
@@ -1284,7 +1330,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "canto",
@@ -1309,7 +1356,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "capa",
@@ -1345,7 +1393,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "captacao",
@@ -1370,7 +1419,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "carate",
@@ -1389,7 +1439,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "carpintaria",
@@ -1414,7 +1465,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "carregamento",
@@ -1445,7 +1497,8 @@
             "especializacao": "Equinos"
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "carroceiro",
@@ -1482,7 +1535,8 @@
             "especializacao": "mesma"
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "cartografia",
@@ -1519,7 +1573,8 @@
             "especializacao": "Topografia"
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "cavalgar",
@@ -1550,7 +1605,8 @@
             "especializacao": "mesma"
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "chicote",
@@ -1581,7 +1637,8 @@
           }
         ],
         "especial": "Chicote Monofio-3"
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "ciclismo",
@@ -1612,7 +1669,8 @@
             "especializacao": "Motocicleta"
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "cirurgia",
@@ -1652,7 +1710,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "ciencia-estranha",
@@ -1671,7 +1730,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "composicao-musical",
@@ -1697,7 +1757,8 @@
           }
         ],
         "especial": "Poesia-2 para canções"
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "comercio",
@@ -1732,7 +1793,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "conducao",
@@ -1762,7 +1824,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "conhecimento-das-ervas",
@@ -1781,7 +1844,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "conhecimento-do-terreno",
@@ -1812,7 +1876,8 @@
             "especializacao": "Local"
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "conhecimento-oculto",
@@ -1831,7 +1896,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "connoisseur",
@@ -1857,7 +1923,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "conserto-de-equipamento-eletronico",
@@ -1894,7 +1961,8 @@
             "especializacao": "mesma"
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "contabilidade",
@@ -1935,7 +2003,8 @@
             "especializacao": "Estatística"
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "contrabando",
@@ -1960,7 +2029,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "controle-da-respiracao",
@@ -1979,7 +2049,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "controle-das-funcoes-involuntarias",
@@ -1998,7 +2069,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "controle-de-carregamento",
@@ -2023,7 +2095,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "corrida",
@@ -2048,7 +2121,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "costura",
@@ -2073,7 +2147,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "criminologia",
@@ -2103,7 +2178,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "criptografia",
@@ -2129,7 +2205,8 @@
             "especializacao": "Criptologia"
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "cuidados-com-a-casa",
@@ -2154,7 +2231,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "culinaria",
@@ -2184,7 +2262,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "cultivo",
@@ -2219,7 +2298,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "danca",
@@ -2244,7 +2324,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "desenho-de-simbolos",
@@ -2264,7 +2345,8 @@
       "predefinidos": {
         "caminhos": [],
         "especial": "Especial"
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "deslumbrar",
@@ -2283,7 +2365,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "desviar",
@@ -2302,7 +2385,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "deteccao-de-mentiras",
@@ -2337,7 +2421,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "diagnose",
@@ -2377,7 +2462,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "digitacao",
@@ -2403,7 +2489,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "diplomacia",
@@ -2433,7 +2520,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "disfarce",
@@ -2463,7 +2551,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "dissimulacao",
@@ -2498,7 +2587,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "economia",
@@ -2538,7 +2628,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "eletricista",
@@ -2569,7 +2660,8 @@
             "especializacao": "Elétrica"
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "encenacao-de-combate",
@@ -2595,7 +2687,8 @@
           }
         ],
         "especial": "Arte-2; Esporte de Combate-2; uma perícia de combate verdadeira-3"
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "engenharia",
@@ -2615,7 +2708,8 @@
       "predefinidos": {
         "caminhos": [],
         "especial": "Especial"
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "engolidor-de-fogo",
@@ -2634,7 +2728,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "entrada-forcada",
@@ -2653,7 +2748,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "escalada",
@@ -2678,7 +2774,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "escrita",
@@ -2703,7 +2800,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "escudo",
@@ -2728,7 +2826,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "espada-de-duas-maos",
@@ -2759,7 +2858,8 @@
           }
         ],
         "especial": "Espada de Energia-4"
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "espada-de-lamina-larga",
@@ -2805,7 +2905,8 @@
           }
         ],
         "especial": "Espada de Energia-4"
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "espadas-curtas",
@@ -2861,7 +2962,8 @@
           }
         ],
         "especial": "Espada de Energia-3"
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "esportes",
@@ -2887,7 +2989,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "esqui",
@@ -2912,7 +3015,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "estrategia",
@@ -2947,7 +3051,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "exorcismo",
@@ -2977,7 +3082,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "explosivos",
@@ -3003,7 +3109,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "faca",
@@ -3039,7 +3146,8 @@
           }
         ],
         "especial": "Espada de Energia-3"
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "falcoaria",
@@ -3070,7 +3178,8 @@
             "especializacao": "Aves de Rapina"
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "falsificacao",
@@ -3100,7 +3209,8 @@
             "mod": -2
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "falsificacao-de-dinheiro",
@@ -3130,7 +3240,8 @@
             "mod": -2
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "farmacia",
@@ -3156,7 +3267,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "ferreiro",
@@ -3182,7 +3294,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "filosofia",
@@ -3207,7 +3320,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "financas",
@@ -3242,7 +3356,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "fisiologia",
@@ -3282,7 +3397,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "forca-mental",
@@ -3301,7 +3417,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "fotografia",
@@ -3332,7 +3449,8 @@
             "especializacao": "Mídia"
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "fuga",
@@ -3357,7 +3475,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "funda",
@@ -3382,7 +3501,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "furtividade",
@@ -3412,7 +3532,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "fisica",
@@ -3437,7 +3558,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "garrote",
@@ -3462,7 +3584,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "geografia",
@@ -3488,7 +3611,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "geologia",
@@ -3524,7 +3648,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "golpe-debilitante",
@@ -3543,7 +3668,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "golpe-poderoso",
@@ -3562,7 +3688,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "habilidade-com-nos",
@@ -3592,7 +3719,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "hacking-de-computador",
@@ -3611,7 +3739,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "heraldica",
@@ -3642,7 +3771,8 @@
             "especializacao": "Alta Sociedade"
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "hipnotismo",
@@ -3661,7 +3791,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "historia",
@@ -3686,7 +3817,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "influencia-musical",
@@ -3705,7 +3837,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "instrumentos-musicais",
@@ -3725,7 +3858,8 @@
       "predefinidos": {
         "caminhos": [],
         "especial": "Especial"
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "interrogatorio",
@@ -3760,7 +3894,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "intimidacao",
@@ -3790,7 +3925,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "jardinagem",
@@ -3820,7 +3956,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "jitte-sai",
@@ -3857,7 +3994,8 @@
         ],
         "especial": "Espada de Energia-4"
       },
-      "nota_predefinido": "Basic Set B208; o cabeçalho da tabela em PT não trouxe esta perícia"
+      "nota_predefinido": "Basic Set B208; o cabeçalho da tabela em PT não trouxe esta perícia",
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "joalheiro",
@@ -3894,7 +4032,8 @@
             "especializacao": "Cobre"
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "jogos-de-azar",
@@ -3925,7 +4064,8 @@
             "especializacao": "Estatística"
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "jogos-de-entretenimento",
@@ -3950,7 +4090,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "judo",
@@ -3969,7 +4110,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "jurisprudencia",
@@ -3994,7 +4136,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "kiai",
@@ -4013,7 +4156,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "kusari",
@@ -4049,7 +4193,8 @@
           }
         ],
         "especial": "Chicote Monofio-3"
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "lanca",
@@ -4084,7 +4229,8 @@
             "mod": -2
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "lanca-de-justa",
@@ -4114,7 +4260,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "lavagem-cerebral",
@@ -4134,7 +4281,8 @@
       "predefinidos": {
         "caminhos": [],
         "especial": "Especial"
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "laco",
@@ -4153,7 +4301,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "leitura-dinamica",
@@ -4172,7 +4321,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "leitura-labial",
@@ -4197,7 +4347,8 @@
             "mod": -10
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "levantamento",
@@ -4216,7 +4367,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "lideranca",
@@ -4241,7 +4393,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "linguagem-corporal",
@@ -4271,7 +4424,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "linguistica",
@@ -4290,7 +4444,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "literatura",
@@ -4315,7 +4470,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "luta-greco-romana",
@@ -4334,7 +4490,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "lutar-as-cegas",
@@ -4353,7 +4510,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "labia",
@@ -4383,7 +4541,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "magia-ritualistica",
@@ -4409,7 +4568,8 @@
             "especializacao": "mesma"
           }
         ]
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "manejo-de-barcos",
@@ -4435,7 +4595,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "mangual",
@@ -4470,7 +4631,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "mangual-de-duas-maos",
@@ -4510,7 +4672,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "manha",
@@ -4535,7 +4698,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "maquiagem",
@@ -4565,7 +4729,8 @@
             "mod": -2
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "maquinista",
@@ -4596,7 +4761,8 @@
             "especializacao": "qualquer"
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "marinhagem",
@@ -4621,7 +4787,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "matematica",
@@ -4647,7 +4814,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "materiais-perigosos",
@@ -4672,7 +4840,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "maca-machado",
@@ -4707,7 +4876,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "maca-machado-de-duas-maos",
@@ -4747,7 +4917,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "mecanica",
@@ -4783,7 +4954,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "medicina",
@@ -4818,7 +4990,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "medicina-alternativa",
@@ -4843,7 +5016,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "meditacao",
@@ -4873,7 +5047,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "mendicancia",
@@ -4908,7 +5083,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "mergulho",
@@ -4934,7 +5110,8 @@
           }
         ],
         "especial": "Traje de Mergulho-2"
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "metalurgia",
@@ -4970,7 +5147,8 @@
             "mod": -8
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "meteorologia",
@@ -4995,7 +5173,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "montaria",
@@ -5020,7 +5199,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "mimica-pantomima",
@@ -5045,7 +5225,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "natacao",
@@ -5070,7 +5251,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "naturalista",
@@ -5100,7 +5282,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "navegacao",
@@ -5120,7 +5303,8 @@
       "predefinidos": {
         "caminhos": [],
         "especial": "Especial"
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "observador-avancado",
@@ -5152,7 +5336,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "observacao",
@@ -5182,7 +5367,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "ocultamento",
@@ -5212,7 +5398,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "ocultismo",
@@ -5237,7 +5424,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "operacao-de-aparelhos-eletronicos",
@@ -5263,7 +5451,8 @@
           }
         ],
         "especial": "Conserto de"
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "operacao-de-computadores",
@@ -5288,7 +5477,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "oratoria",
@@ -5328,7 +5518,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "paleontologia",
@@ -5354,7 +5545,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "paraquedismo",
@@ -5379,7 +5571,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "passos-leves",
@@ -5398,7 +5591,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "patinacao",
@@ -5423,7 +5617,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "pedagogia",
@@ -5448,7 +5643,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "percepcao-do-corpo",
@@ -5478,7 +5674,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "performance-em-grupo",
@@ -5504,7 +5701,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "perseguicao",
@@ -5540,7 +5738,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "pericia-abrangente",
@@ -5559,7 +5758,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "pericia-forense",
@@ -5589,7 +5789,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "pericia-profissional",
@@ -5619,7 +5820,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "pescaria",
@@ -5644,7 +5846,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "pesquisa",
@@ -5674,7 +5877,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "pilotagem",
@@ -5699,7 +5903,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "poesia",
@@ -5729,7 +5934,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "politica",
@@ -5759,7 +5965,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "pontos-de-pressao",
@@ -5778,7 +5985,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "pontos-secretos",
@@ -5797,7 +6005,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "postura-imovel",
@@ -5816,7 +6025,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "prestidigitacao",
@@ -5841,7 +6051,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "primeiros-socorros",
@@ -5881,7 +6092,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "programacao-de-computadores",
@@ -5900,7 +6112,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "projetor-de-liquidos",
@@ -5925,7 +6138,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "propaganda",
@@ -5960,7 +6174,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "prospeccao",
@@ -5991,7 +6206,8 @@
             "especializacao": "qualquer"
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "psicologia",
@@ -6021,7 +6237,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "punga",
@@ -6056,7 +6273,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "queda-livre",
@@ -6086,7 +6304,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "quimica",
@@ -6116,7 +6335,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "rapieira",
@@ -6161,7 +6381,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "rastreamento",
@@ -6191,7 +6412,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "rede",
@@ -6216,7 +6438,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "remo-vela",
@@ -6246,7 +6469,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "revistar",
@@ -6276,7 +6500,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "ritual-religioso",
@@ -6308,7 +6533,8 @@
             "especializacao": "mesma"
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "sabre",
@@ -6358,7 +6584,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "sacar-rapido",
@@ -6377,7 +6604,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "salto",
@@ -6396,7 +6624,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "salto-voador",
@@ -6415,7 +6644,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "sex-appeal",
@@ -6440,7 +6670,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "sobrevivencia",
@@ -6471,7 +6702,8 @@
             "especializacao": "mesmo planeta"
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "sobrevivencia-urbana",
@@ -6496,7 +6728,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "folha"
     },
     {
       "id": "sociologia",
@@ -6531,7 +6764,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "soldado",
@@ -6556,7 +6790,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "soltar",
@@ -6586,7 +6821,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "pegada"
     },
     {
       "id": "sonhos",
@@ -6611,7 +6847,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "submarino",
@@ -6636,7 +6873,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "sumo",
@@ -6655,7 +6893,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "surrupiar",
@@ -6690,7 +6929,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "taumatologia",
@@ -6715,7 +6955,8 @@
             "mod": -7
           }
         ]
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "teologia",
@@ -6746,7 +6987,8 @@
             "especializacao": "mesma"
           }
         ]
-      }
+      },
+      "icone": "livro"
     },
     {
       "id": "tercado",
@@ -6791,7 +7033,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "tonfa",
@@ -6822,7 +7065,8 @@
           }
         ]
       },
-      "nota_predefinido": "Basic Set B208; o cabeçalho da tabela em PT não trouxe esta perícia"
+      "nota_predefinido": "Basic Set B208; o cabeçalho da tabela em PT não trouxe esta perícia",
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "trabalhos-em-couro",
@@ -6847,7 +7091,8 @@
             "mod": -4
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "trato-social",
@@ -6873,7 +7118,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "tatica",
@@ -6904,7 +7150,8 @@
             "especializacao": "qualquer"
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     },
     {
       "id": "utilizacao-de-traje-especial",
@@ -6930,7 +7177,8 @@
           }
         ],
         "parcial": true
-      }
+      },
+      "icone": "engrenagem"
     },
     {
       "id": "veneficio",
@@ -6971,7 +7219,8 @@
             "mod": -3
           }
         ]
-      }
+      },
+      "icone": "gazua"
     },
     {
       "id": "ventriloquismo",
@@ -6990,7 +7239,8 @@
       },
       "predefinidos": {
         "caminhos": []
-      }
+      },
+      "icone": "mascaras"
     },
     {
       "id": "veterinaria",
@@ -7026,7 +7276,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "martelo"
     },
     {
       "id": "voo",
@@ -7051,7 +7302,8 @@
             "mod": -5
           }
         ]
-      }
+      },
+      "icone": "olho"
     },
     {
       "id": "zarabatana",
@@ -7076,7 +7328,8 @@
             "mod": -6
           }
         ]
-      }
+      },
+      "icone": "espadas-cruzadas"
     }
   ]
 }

@@ -18,6 +18,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "machado",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 4
       }
     },
     {
@@ -32,6 +38,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "machado",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -46,6 +58,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "machado",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 3
       }
     },
     {
@@ -60,6 +78,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 3
       }
     },
     {
@@ -74,6 +98,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -88,6 +118,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "machado",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -102,7 +138,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
-      }
+      },
+      "icone": "punho",
+      "grade": null
     },
     {
       "id": "soco-ingles",
@@ -116,7 +154,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
-      }
+      },
+      "icone": "punho",
+      "grade": null
     },
     {
       "id": "chute",
@@ -130,7 +170,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
-      }
+      },
+      "icone": "punho",
+      "grade": null
     },
     {
       "id": "chute-com-botas",
@@ -144,7 +186,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
-      }
+      },
+      "icone": "punho",
+      "grade": null
     },
     {
       "id": "dentes-rombos",
@@ -158,7 +202,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
-      }
+      },
+      "icone": "punho",
+      "grade": null
     },
     {
       "id": "presas",
@@ -172,7 +218,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
-      }
+      },
+      "icone": "punho",
+      "grade": null
     },
     {
       "id": "bico-afiado",
@@ -186,7 +234,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
-      }
+      },
+      "icone": "punho",
+      "grade": null
     },
     {
       "id": "dentes-afiados",
@@ -200,7 +250,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
-      }
+      },
+      "icone": "punho",
+      "grade": null
     },
     {
       "id": "golpeador",
@@ -214,7 +266,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
-      }
+      },
+      "icone": "punho",
+      "grade": null
     },
     {
       "id": "cassetete",
@@ -228,6 +282,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -242,7 +302,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "porrete",
@@ -256,6 +318,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 4
       }
     },
     {
@@ -270,6 +338,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 4
       }
     },
     {
@@ -284,6 +358,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 4
       }
     },
     {
@@ -298,6 +378,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 5
       }
     },
     {
@@ -312,6 +398,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 5
       }
     },
     {
@@ -326,6 +418,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 271
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 5
       }
     },
     {
@@ -340,6 +438,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 3
       }
     },
     {
@@ -354,6 +458,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -368,7 +478,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
-      }
+      },
+      "icone": "espada",
+      "grade": null
     },
     {
       "id": "garrote",
@@ -382,6 +494,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "arremesso",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 1
       }
     },
     {
@@ -396,6 +514,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "faca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -410,6 +534,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "faca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -424,6 +554,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "faca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -438,6 +574,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "faca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -452,6 +594,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "mangual",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 3
       }
     },
     {
@@ -466,6 +614,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -480,7 +632,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
-      }
+      },
+      "icone": "arremesso",
+      "grade": null
     },
     {
       "id": "glaive",
@@ -494,6 +648,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -508,6 +666,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -522,6 +684,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -536,6 +702,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 272
+      },
+      "icone": "machado",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -550,6 +720,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 4
       }
     },
     {
@@ -564,6 +740,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 4
       }
     },
     {
@@ -578,7 +760,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
-      }
+      },
+      "icone": "escudo",
+      "grade": null
     },
     {
       "id": "golpe-com-escudo-de-espiculos",
@@ -592,7 +776,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
-      }
+      },
+      "icone": "escudo",
+      "grade": null
     },
     {
       "id": "bastao-curto",
@@ -606,6 +792,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -620,6 +812,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -634,6 +832,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -648,7 +852,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "bastao-curto-tercado",
@@ -662,6 +868,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -676,6 +888,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -690,6 +908,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -704,6 +926,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 5
       }
     },
     {
@@ -718,6 +946,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -732,6 +964,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -746,6 +982,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 273
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -760,6 +1000,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 4
       }
     },
     {
@@ -774,6 +1020,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "machado",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 4
       }
     },
     {
@@ -788,6 +1040,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "foice",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 4
       }
     },
     {
@@ -802,6 +1060,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 3
       }
     },
     {
@@ -816,7 +1080,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
-      }
+      },
+      "icone": "ferramenta",
+      "grade": null
     },
     {
       "id": "mangual-duas-maos",
@@ -830,6 +1096,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "mangual",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 3
       }
     },
     {
@@ -844,6 +1116,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -858,6 +1134,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -872,6 +1152,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 5
       }
     },
     {
@@ -886,6 +1172,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 6
       }
     },
     {
@@ -900,6 +1192,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 5
       }
     },
     {
@@ -914,6 +1212,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 5
       }
     },
     {
@@ -928,6 +1232,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "espada",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 6
       }
     },
     {
@@ -942,6 +1252,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 274
+      },
+      "icone": "arremesso",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -956,6 +1272,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 275
+      },
+      "icone": "arremesso",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 4
       }
     },
     {
@@ -970,6 +1292,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 275
+      },
+      "icone": "arremesso",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -984,6 +1312,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 275
+      },
+      "icone": "arco",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -998,6 +1330,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 275
+      },
+      "icone": "arco",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 5
       }
     },
     {
@@ -1012,6 +1350,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 275
+      },
+      "icone": "arco",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 4
       }
     },
     {
@@ -1026,6 +1370,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 275
+      },
+      "icone": "arco",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 5
       }
     },
     {
@@ -1040,6 +1390,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 275
+      },
+      "icone": "capa",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -1054,6 +1410,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 275
+      },
+      "icone": "capa",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -1068,6 +1430,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "besta",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -1082,6 +1450,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "besta",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -1096,6 +1470,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "besta",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -1110,6 +1490,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "besta",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -1124,6 +1510,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "arremesso",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -1138,6 +1530,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "arremesso",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -1152,6 +1550,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "arremesso",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -1166,6 +1570,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "arremesso",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -1180,6 +1590,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "arremesso",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -1194,6 +1608,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -1208,6 +1628,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "machado",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -1222,6 +1648,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "machado",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 3
       }
     },
     {
@@ -1236,6 +1668,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 3
       }
     },
     {
@@ -1250,6 +1688,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "maca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -1264,6 +1708,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -1278,6 +1726,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "faca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -1292,6 +1746,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "faca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -1306,6 +1766,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "faca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -1320,6 +1786,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "faca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -1334,6 +1806,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "arremesso",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 1
       }
     },
     {
@@ -1348,6 +1826,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -1362,6 +1844,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 276
+      },
+      "icone": "lanca",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 5
       }
     },
     {
@@ -1376,7 +1864,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 277
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "granada-concussao-nt6",
@@ -1390,7 +1880,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 277
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "granada-fragmentacao-nt6",
@@ -1404,7 +1896,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 277
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "coquetel-molotov",
@@ -1418,7 +1912,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 277
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "bomba-quimica",
@@ -1432,7 +1928,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 277
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "granada-concussao-nt7",
@@ -1446,7 +1944,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 277
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "granada-fragmentacao-nt7",
@@ -1460,7 +1960,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 277
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "granada-atordoamento",
@@ -1474,7 +1976,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 277
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "granada-plasma",
@@ -1488,7 +1992,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 277
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-pederneira-51",
@@ -1502,7 +2008,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-fecho-de-roda-60",
@@ -1516,7 +2024,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "derringer-41",
@@ -1530,7 +2040,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "revolver-36",
@@ -1544,7 +2056,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-auto-45",
@@ -1558,7 +2072,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-auto-9mm-nt6",
@@ -1572,7 +2088,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "revolver-38",
@@ -1586,7 +2104,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "revolver-cano-curto-38",
@@ -1600,7 +2120,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-auto-9mm-nt7",
@@ -1614,7 +2136,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-de-ocultacao-380",
@@ -1628,7 +2152,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "revolver-357m",
@@ -1642,7 +2168,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "revolver-44m",
@@ -1656,7 +2184,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-auto-44m",
@@ -1670,7 +2200,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-auto-40",
@@ -1684,7 +2216,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-auto-9mm-nt9",
@@ -1698,7 +2232,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-girofoguete-15mm",
@@ -1712,7 +2248,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "mm-45",
@@ -1726,7 +2264,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "mm-9mm-nt6",
@@ -1740,7 +2280,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-metralha-9mm",
@@ -1754,7 +2296,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "mm-9mm-nt7",
@@ -1768,7 +2312,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "adp-4-6mm",
@@ -1782,7 +2328,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "adp-gauss-4mm",
@@ -1796,7 +2344,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 278
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "canhao-de-mao-90",
@@ -1810,7 +2360,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "mosquete-de-mecha-80",
@@ -1824,7 +2376,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "mosquete-de-pederneira-75",
@@ -1838,7 +2392,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-mosquete-577",
@@ -1852,7 +2408,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-com-cartucho-45",
@@ -1866,7 +2424,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "carabina-a-manivela-30",
@@ -1880,7 +2440,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "chama",
+      "grade": null
     },
     {
       "id": "rifle-de-cavilha-762mm",
@@ -1894,7 +2456,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-autorrecarregavel-762mm",
@@ -1908,7 +2472,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-de-assalto-556mm",
@@ -1922,7 +2488,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-de-assalto-762mmc",
@@ -1936,7 +2504,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-de-combate-762mm",
@@ -1950,7 +2520,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "carabina-de-assalto-556mm",
@@ -1964,7 +2536,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-de-dardos-11mm",
@@ -1978,7 +2552,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-de-atirador-338",
@@ -1992,7 +2568,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "aci-68mm",
@@ -2006,7 +2584,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-de-gauss-4mm",
@@ -2020,7 +2600,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "bacamarte-c8",
@@ -2034,7 +2616,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "espingarda-dupla-c10",
@@ -2048,7 +2632,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "espingarda-pump-c12",
@@ -2062,7 +2648,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "espingarda-semiautomatica-c12",
@@ -2076,7 +2664,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 279
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-eletrolaser",
@@ -2090,7 +2680,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 280
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-laser",
@@ -2104,7 +2696,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 280
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "pistola-de-feixe-ionico",
@@ -2118,7 +2712,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 280
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "carabina-eletrolaser",
@@ -2132,7 +2728,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 280
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-de-atirador-a-laser",
@@ -2146,7 +2744,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 280
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-laser",
@@ -2160,7 +2760,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 280
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-de-feixe-ionico",
@@ -2174,7 +2776,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 280
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "feixe-ionico-pesado",
@@ -2188,7 +2792,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 280
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "mta-115mm",
@@ -2202,7 +2808,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "mas-70mm",
@@ -2216,7 +2824,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "scorpion",
@@ -2230,6 +2840,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
+      },
+      "icone": "catapulta",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -2244,7 +2858,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "sob-tambor-40mm",
@@ -2258,7 +2874,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
-      }
+      },
+      "icone": "pergaminho",
+      "grade": null
     },
     {
       "id": "integrado-lancador-granadas-ici",
@@ -2272,7 +2890,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "bazuca-60mm",
@@ -2286,7 +2906,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "gif-85mm",
@@ -2300,7 +2922,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "ala-84mm",
@@ -2314,7 +2938,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "rifle-automatico-762mm",
@@ -2328,7 +2954,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "ml-762mm",
@@ -2342,7 +2970,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "aae-556mm",
@@ -2356,7 +2986,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
-      }
+      },
+      "icone": "arma",
+      "grade": null
     },
     {
       "id": "lanca-chama",
@@ -2370,7 +3002,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 281
-      }
+      },
+      "icone": "lanca",
+      "grade": null
     },
     {
       "id": "tanga-de-pele",
@@ -2384,6 +3018,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 2
+        }
       }
     },
     {
@@ -2398,6 +3040,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 2
+        }
       }
     },
     {
@@ -2412,6 +3062,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 4
+        }
       }
     },
     {
@@ -2426,6 +3084,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 4,
+          "altura": 4
+        }
       }
     },
     {
@@ -2440,6 +3106,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 3
+        }
       }
     },
     {
@@ -2454,6 +3128,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 3
+        }
       }
     },
     {
@@ -2468,6 +3150,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -2482,6 +3172,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -2496,6 +3194,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 4
+        }
       }
     },
     {
@@ -2510,6 +3216,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 4
+        }
       }
     },
     {
@@ -2524,6 +3238,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -2538,6 +3260,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 4,
+          "altura": 4
+        }
       }
     },
     {
@@ -2552,6 +3282,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 4,
+          "altura": 4
+        }
       }
     },
     {
@@ -2566,6 +3304,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 4,
+          "altura": 4
+        }
       }
     },
     {
@@ -2580,6 +3326,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 4
+        }
       }
     },
     {
@@ -2594,6 +3348,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 4,
+          "altura": 4
+        }
       }
     },
     {
@@ -2608,6 +3370,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 4
+        }
       }
     },
     {
@@ -2622,6 +3392,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -2636,6 +3414,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -2650,6 +3436,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 4
+        }
       }
     },
     {
@@ -2664,6 +3458,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 2
+        }
       }
     },
     {
@@ -2678,6 +3480,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 3
+        }
       }
     },
     {
@@ -2692,6 +3502,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 2
+        }
       }
     },
     {
@@ -2706,6 +3524,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 2
+        }
       }
     },
     {
@@ -2720,6 +3546,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 3
+        }
       }
     },
     {
@@ -2734,6 +3568,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 3
+        }
       }
     },
     {
@@ -2748,6 +3590,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -2762,6 +3612,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -2776,6 +3634,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 4
+        }
       }
     },
     {
@@ -2790,6 +3656,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -2804,6 +3678,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 4
+        }
       }
     },
     {
@@ -2818,6 +3700,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 4
+        }
       }
     },
     {
@@ -2832,6 +3722,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -2846,6 +3744,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 283
+      },
+      "icone": "armadura",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 4
+        }
       }
     },
     {
@@ -2860,6 +3766,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "elmo",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 2
+        }
       }
     },
     {
@@ -2874,6 +3788,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "elmo",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 2
+        }
       }
     },
     {
@@ -2888,6 +3810,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "elmo",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -2902,6 +3832,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "elmo",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 3
+        }
       }
     },
     {
@@ -2916,6 +3854,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "elmo",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 2
+        }
       }
     },
     {
@@ -2930,6 +3876,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "elmo",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 3
+        }
       }
     },
     {
@@ -2944,6 +3898,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "elmo",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 3
+        }
       }
     },
     {
@@ -2958,6 +3920,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "elmo",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -2972,6 +3942,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "elmo",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 2
+        }
       }
     },
     {
@@ -2986,6 +3964,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "elmo",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -3000,6 +3986,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "elmo",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 3
+        }
       }
     },
     {
@@ -3014,6 +4008,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "luva",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 1,
+          "altura": 2
+        }
       }
     },
     {
@@ -3028,6 +4030,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "luva",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 1,
+          "altura": 2
+        }
       }
     },
     {
@@ -3042,6 +4052,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "luva",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 1,
+          "altura": 2
+        }
       }
     },
     {
@@ -3056,6 +4074,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "luva",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 1,
+          "altura": 2
+        }
       }
     },
     {
@@ -3070,6 +4096,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "bota",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 2
+        }
       }
     },
     {
@@ -3084,6 +4118,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "bota",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 2
+        }
       }
     },
     {
@@ -3098,6 +4140,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "bota",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 2,
+          "altura": 3
+        }
       }
     },
     {
@@ -3112,6 +4162,14 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
+      },
+      "icone": "bota",
+      "grade": {
+        "porte": "vestido",
+        "guardado": {
+          "largura": 3,
+          "altura": 3
+        }
       }
     },
     {
@@ -3126,7 +4184,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "colete-fragmentado",
@@ -3140,7 +4200,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "encartes-de-placas",
@@ -3154,7 +4216,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "colete-balistico",
@@ -3168,7 +4232,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "colete-tatico",
@@ -3182,7 +4248,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "placas-antitrauma",
@@ -3196,7 +4264,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "traje-balistico",
@@ -3210,7 +4280,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "traje-tatico",
@@ -3224,7 +4296,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "botas-reforcadas",
@@ -3238,7 +4312,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
-      }
+      },
+      "icone": "bota",
+      "grade": null
     },
     {
       "id": "botas-de-assalto",
@@ -3252,7 +4328,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
-      }
+      },
+      "icone": "bota",
+      "grade": null
     },
     {
       "id": "luvas-balisticas",
@@ -3266,7 +4344,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 284
-      }
+      },
+      "icone": "luva",
+      "grade": null
     },
     {
       "id": "mascara-de-oxigenio",
@@ -3280,7 +4360,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "elmo",
+      "grade": null
     },
     {
       "id": "celada-de-aco",
@@ -3294,7 +4376,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "elmo",
+      "grade": null
     },
     {
       "id": "capacete-antifragmentos",
@@ -3308,7 +4392,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "capa",
+      "grade": null
     },
     {
       "id": "visor-antifragmentos",
@@ -3322,7 +4408,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "capa",
+      "grade": null
     },
     {
       "id": "capacete-balistico",
@@ -3336,7 +4424,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "capa",
+      "grade": null
     },
     {
       "id": "visor-balistico",
@@ -3350,7 +4440,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "capa",
+      "grade": null
     },
     {
       "id": "traje-nbq",
@@ -3364,7 +4456,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "traje-espacial",
@@ -3378,7 +4472,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "capacete-espacial",
@@ -3392,7 +4488,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "capa",
+      "grade": null
     },
     {
       "id": "traje-de-combate",
@@ -3406,7 +4504,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "capacete-traje-combate",
@@ -3420,7 +4520,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "capa",
+      "grade": null
     },
     {
       "id": "armadura-de-combate",
@@ -3434,7 +4536,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "capacete-armadura-combate",
@@ -3448,7 +4552,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "capa",
+      "grade": null
     },
     {
       "id": "armadura-espacial",
@@ -3462,7 +4568,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "capacete-armadura-espacial",
@@ -3476,7 +4584,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "capa",
+      "grade": null
     },
     {
       "id": "traje-pressurizado",
@@ -3490,7 +4600,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "armadura",
+      "grade": null
     },
     {
       "id": "capacete-pressurizado",
@@ -3504,7 +4616,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 285
-      }
+      },
+      "icone": "capa",
+      "grade": null
     },
     {
       "id": "barda-mascara-couro-tecido",
@@ -3518,6 +4632,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3532,6 +4650,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3546,6 +4668,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3560,6 +4686,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3574,6 +4704,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3588,6 +4722,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3602,6 +4740,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3616,6 +4758,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3630,6 +4776,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3644,6 +4794,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3658,6 +4812,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3672,6 +4830,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3686,6 +4848,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3700,6 +4866,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3714,6 +4884,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 286
+      },
+      "icone": "cavalo",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3728,6 +4902,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 287
+      },
+      "icone": "capa",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -3742,6 +4922,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 287
+      },
+      "icone": "capa",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -3756,6 +4942,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 287
+      },
+      "icone": "escudo",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -3770,6 +4962,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 287
+      },
+      "icone": "escudo",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -3784,6 +4982,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 287
+      },
+      "icone": "escudo",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 4
       }
     },
     {
@@ -3798,6 +5002,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 287
+      },
+      "icone": "escudo",
+      "grade": {
+        "porte": "grade",
+        "largura": 4,
+        "altura": 5
       }
     },
     {
@@ -3812,7 +5022,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 287
-      }
+      },
+      "icone": "escudo",
+      "grade": null
     },
     {
       "id": "algibeira-bolsa-pequena",
@@ -3826,6 +5038,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "mochila",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 1
       }
     },
     {
@@ -3840,6 +5058,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "bau",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 1
       }
     },
     {
@@ -3854,6 +5078,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "corda",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -3868,6 +5098,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "barraca",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3882,6 +5116,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "barraca",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 4
       }
     },
     {
@@ -3896,6 +5136,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "barraca",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 4
       }
     },
     {
@@ -3910,6 +5156,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "barraca",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -3924,7 +5174,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "cabo-de-aco-375cm",
@@ -3938,7 +5190,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "cantil",
@@ -3952,7 +5206,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "cobertor",
@@ -3966,6 +5222,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "barraca",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 2
       }
     },
     {
@@ -3980,7 +5242,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "corda-3-4",
@@ -3994,6 +5258,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "corda",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -4008,6 +5278,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "corda",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -4022,6 +5298,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "corda",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 1
       }
     },
     {
@@ -4036,6 +5318,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "bau",
+      "grade": {
+        "porte": "grade",
+        "largura": 4,
+        "altura": 4
       }
     },
     {
@@ -4050,6 +5338,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "bau",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -4064,6 +5358,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "bau",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -4078,7 +5378,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "espigoes-de-ferro-escalador",
@@ -4092,6 +5394,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "bau",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 1
       }
     },
     {
@@ -4106,7 +5414,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "fosforos",
@@ -4120,7 +5430,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "garrafa-ceramica",
@@ -4134,6 +5446,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "comida",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -4148,7 +5466,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "comida",
+      "grade": null
     },
     {
       "id": "gasolina",
@@ -4162,7 +5482,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "isqueiro",
@@ -4176,7 +5498,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "lampiao",
@@ -4190,6 +5514,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "chama",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -4204,7 +5534,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "maleta-resistente",
@@ -4218,7 +5550,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "minilanterna",
@@ -4232,7 +5566,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "mochila-pequena",
@@ -4246,6 +5582,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "mochila",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 3
       }
     },
     {
@@ -4260,6 +5602,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "mochila",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -4274,6 +5622,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "comida",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -4288,6 +5642,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "chama",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -4302,7 +5662,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "pastilhas-purificar-agua",
@@ -4316,7 +5678,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "pelagem-de-animal",
@@ -4330,6 +5694,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "barraca",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -4344,7 +5714,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "racao-de-viagem",
@@ -4358,6 +5730,13 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "comida",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 1,
+        "empilha": 3
       }
     },
     {
@@ -4372,7 +5751,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "relogio-de-pulso",
@@ -4386,7 +5767,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "saco-de-dormir-reforcado",
@@ -4400,7 +5783,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "saco-de-dormir",
@@ -4414,7 +5799,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "tocha",
@@ -4428,6 +5815,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "chama",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -4442,6 +5835,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "bau",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -4456,6 +5853,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "bau",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -4470,6 +5871,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "chama",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -4484,7 +5891,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "celular",
@@ -4498,7 +5907,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "computador-laptop",
@@ -4512,7 +5923,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "computador-acessorio",
@@ -4526,7 +5939,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "fone-de-ouvido-com-radio",
@@ -4540,7 +5955,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "kit-de-escriba",
@@ -4554,6 +5971,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "pergaminho",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -4568,7 +5991,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "minigravador",
@@ -4582,7 +6007,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "minigravador-digital",
@@ -4596,7 +6023,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "minitelevisor",
@@ -4610,7 +6039,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "mochila-com-radio",
@@ -4624,7 +6055,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "mochila",
+      "grade": null
     },
     {
       "id": "radio-de-mao",
@@ -4638,7 +6071,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "radio-transistor",
@@ -4652,7 +6087,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "tablete-de-cera",
@@ -4666,6 +6103,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "pergaminho",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -4680,6 +6123,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
+      },
+      "icone": "pergaminho",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -4694,7 +6143,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 288
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "alforjes",
@@ -4708,6 +6159,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "mochila",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -4722,6 +6177,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferradura",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -4736,6 +6197,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferradura",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 1
       }
     },
     {
@@ -4750,6 +6217,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferradura",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -4764,6 +6235,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferradura",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -4778,6 +6255,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferradura",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -4792,6 +6273,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferradura",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -4806,7 +6291,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "danificador-de-escutas",
@@ -4820,7 +6307,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "escuta",
@@ -4834,7 +6323,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "escuta-microscopica",
@@ -4848,7 +6339,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "gazuas",
@@ -4862,6 +6355,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "gazua",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 1
       }
     },
     {
@@ -4876,7 +6375,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "gazua",
+      "grade": null
     },
     {
       "id": "kit-de-disfarces",
@@ -4890,7 +6391,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "microfone-a-laser",
@@ -4904,7 +6407,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "microfone-direcional",
@@ -4918,7 +6423,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "sinal-teleguiado",
@@ -4932,7 +6439,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "antibiotico",
@@ -4946,7 +6455,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "bandagens",
@@ -4960,6 +6471,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "cura",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 2
       }
     },
     {
@@ -4974,6 +6491,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "cura",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -4988,7 +6511,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "kit-de-emergencia",
@@ -5002,6 +6527,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "cura",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 2
       }
     },
     {
@@ -5016,6 +6547,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "cura",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -5030,7 +6567,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "camera-de-espiao",
@@ -5044,7 +6583,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "camera-de-video",
@@ -5058,7 +6599,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "camera-fotografica-35mm",
@@ -5072,7 +6615,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "detector-de-metais-portatil",
@@ -5086,7 +6631,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "minicamera-digital",
@@ -5100,7 +6647,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "oculos-de-visao-noturna",
@@ -5114,7 +6663,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "telescopio",
@@ -5128,6 +6679,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "luneta",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 3
       }
     },
     {
@@ -5142,6 +6699,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferramenta",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 1
       }
     },
     {
@@ -5156,6 +6719,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferramenta",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -5170,6 +6737,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferramenta",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -5184,6 +6755,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "balanca",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 2
       }
     },
     {
@@ -5198,6 +6775,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferramenta",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -5212,6 +6795,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferramenta",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -5226,6 +6813,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferramenta",
+      "grade": {
+        "porte": "grade",
+        "largura": 3,
+        "altura": 3
       }
     },
     {
@@ -5240,7 +6833,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "maca",
+      "grade": null
     },
     {
       "id": "pa",
@@ -5254,6 +6849,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferramenta",
+      "grade": {
+        "porte": "longo"
       }
     },
     {
@@ -5268,6 +6867,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferramenta",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 4
       }
     },
     {
@@ -5282,6 +6887,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferramenta",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 1
       }
     },
     {
@@ -5296,6 +6907,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "machado",
+      "grade": {
+        "porte": "grade",
+        "largura": 2,
+        "altura": 4
       }
     },
     {
@@ -5310,6 +6927,10 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferramenta",
+      "grade": {
+        "porte": "montaria"
       }
     },
     {
@@ -5324,6 +6945,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "ferramenta",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 4
       }
     },
     {
@@ -5338,7 +6965,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "aljava-de-cintura",
@@ -5352,6 +6981,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "mochila",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 4
       }
     },
     {
@@ -5366,6 +7001,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "mochila",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 4
       }
     },
     {
@@ -5380,7 +7021,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "ferramenta",
+      "grade": null
     },
     {
       "id": "coldre-de-cintura",
@@ -5394,7 +7037,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "coldre-de-ombro",
@@ -5408,7 +7053,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "correia-de-couro",
@@ -5422,6 +7069,12 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
+      },
+      "icone": "bau",
+      "grade": {
+        "porte": "grade",
+        "largura": 1,
+        "altura": 1
       }
     },
     {
@@ -5436,7 +7089,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "mira-laser",
@@ -5450,7 +7105,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "mira-4x",
@@ -5464,7 +7121,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "mira-de-imagem-termica-4x",
@@ -5478,7 +7137,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     },
     {
       "id": "silenciador-de-pistola-ou-mm",
@@ -5492,7 +7153,9 @@
       "ref": {
         "livro": "modulo-basico",
         "pagina": 289
-      }
+      },
+      "icone": "bau",
+      "grade": null
     }
   ]
 }

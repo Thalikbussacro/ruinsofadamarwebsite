@@ -60,6 +60,10 @@ d.equipamento.itens[0].categoria = 'arma-distancia';
 assert.deepEqual(validar(d), []);
 assert.equal(new Function('window', montarJs(d) + 'return window;')({}).GURPS.equipamento[0].id, 'arco-longo');
 
+// porte da grade fora do conjunto
+d = base(); d.equipamento = { itens: [{ id: 'faca', nome: 'Faca', categoria: 'arma-corpo-a-corpo', nt: '0', adamar: 'livre', resumo: 'x', ref: { livro: 'modulo-basico', pagina: 272 }, grade: { porte: 'bolso' } }] };
+assert.match(validar(d).join(String.fromCharCode(10)), /equipamento\/faca: porte inválido "bolso"/);
+
 // o JS gerado expõe window.GURPS com as listas e é determinístico
 const js = montarJs(base());
 assert.match(js, /^\/\/ ARQUIVO GERADO/);
@@ -72,5 +76,6 @@ assert.deepEqual(window.GURPS.desvantagens, []);
 assert.equal(window.GURPS.livros['modulo-basico'].titulo, 'Módulo Básico');
 assert.equal(window.GURPS.regras, null);
 assert.deepEqual(window.GURPS.equipamento, []);
+assert.deepEqual(window.GURPS.adamar, {});
 
 console.log('gerar-dados ok');

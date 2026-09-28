@@ -1,7 +1,7 @@
 // tools/gerar-dados.mjs — gera js/dados-gurps.js a partir de data/gurps/*.json.
 // Uso: node tools/gerar-dados.mjs          (valida e grava)
 //      node tools/gerar-dados.mjs --check  (valida e falha se o JS estiver desatualizado)
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -59,6 +59,11 @@ export function validar(dados) {
       if (c.tipo === 'atributo' && !['st', 'dx', 'iq', 'ht', 'per', 'vontade'].includes(c.atributo)) erros.push(`pericias/${p.id}: pré-definido com atributo inválido "${c.atributo}"`);
     }
   }
+  // grade do inventário de Adamar (equipamento)
+  for (const it of (dados.equipamento && dados.equipamento.itens) || []) {
+    if (it.grade && !['grade', 'longo', 'montaria', 'vestido'].includes(it.grade.porte)) erros.push(`equipamento/${it.id}: porte inválido "${it.grade.porte}"`);
+    if (it.grade && it.grade.porte === 'grade' && !(it.grade.largura >= 1 && it.grade.altura >= 1)) erros.push(`equipamento/${it.id}: grade sem largura/altura`);
+  }
   if (dados.regras) {
     const refs = [];
     (function coletar(no, caminho) {
@@ -82,7 +87,8 @@ export function montarJs(dados) {
   const GURPS = {
     livros, regras: dados.regras || null,
     pericias: dados.pericias.itens, vantagens: dados.vantagens.itens, desvantagens: dados.desvantagens.itens,
-    equipamento: dados.equipamento ? dados.equipamento.itens : []
+    equipamento: dados.equipamento ? dados.equipamento.itens : [],
+    adamar: dados.adamar || {}
   };
   return '// ARQUIVO GERADO por tools/gerar-dados.mjs a partir de data/gurps/*.json. Não edite à mão.\n' +
     'window.GURPS = ' + JSON.stringify(GURPS) + ';\n';
@@ -94,6 +100,14 @@ function carregar() {
   for (const nome of OPCIONAIS) {
     const arq = join(RAIZ, 'data', 'gurps', nome + '.json');
     if (existsSync(arq)) dados[nome] = JSON.parse(readFileSync(arq, 'utf8'));
+  }
+  // regras do cenário: data/adamar/<nome>.json → GURPS.adamar.<nome>
+  const pastaAdamar = join(RAIZ, 'data', 'adamar');
+  dados.adamar = {};
+  if (existsSync(pastaAdamar)) {
+    for (const f of readdirSync(pastaAdamar).filter((x) => x.endsWith('.json')).sort()) {
+      dados.adamar[f.replace(/\.json$/, '')] = JSON.parse(readFileSync(join(pastaAdamar, f), 'utf8'));
+    }
   }
   return dados;
 }

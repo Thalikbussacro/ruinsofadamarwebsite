@@ -30,11 +30,47 @@
   });
 
   // ---------- calculadora ----------
-  var estado = { atributos: { st: 10, dx: 10, iq: 10, ht: 10 }, ajustes: {} };
+  var PONTOS = (R.campanha && R.campanha.pontos_iniciais) || { padrao: 80, sugestoes: [80] };
+  var estado = { orcamento: PONTOS.padrao, atributos: { st: 10, dx: 10, iq: 10, ht: 10 }, ajustes: {} };
   try {
     var salvo = JSON.parse(localStorage.getItem(ARMAZENAMENTO) || 'null');
     if (salvo && salvo.atributos) estado = salvo;
   } catch (e) { /* sem armazenamento */ }
+  if (typeof estado.orcamento !== 'number') estado.orcamento = PONTOS.padrao;
+
+  // ---------- orçamento de pontos ----------
+  var selOrc = document.getElementById('calc-orcamento');
+  var campoLivre = document.getElementById('campo-orcamento-livre');
+  var inputLivre = document.getElementById('calc-orcamento-livre');
+  PONTOS.sugestoes.forEach(function (v) {
+    var o = el('option', null, v + ' pontos' + (v === PONTOS.padrao ? ' (padrão de Adamar)' : ''));
+    o.value = String(v);
+    selOrc.appendChild(o);
+  });
+  var outro = el('option', null, 'Outro valor…');
+  outro.value = 'outro';
+  selOrc.appendChild(outro);
+  document.getElementById('calc-orcamento-nota').textContent = PONTOS.nota || '';
+  function mostrarOrcamento() {
+    var sugerido = PONTOS.sugestoes.indexOf(estado.orcamento) !== -1;
+    selOrc.value = sugerido ? String(estado.orcamento) : 'outro';
+    campoLivre.hidden = sugerido;
+    inputLivre.value = estado.orcamento;
+  }
+  selOrc.addEventListener('change', function () {
+    if (selOrc.value === 'outro') {
+      campoLivre.hidden = false;
+      inputLivre.focus();
+    } else {
+      estado.orcamento = parseInt(selOrc.value, 10);
+      campoLivre.hidden = true;
+      atualizar();
+    }
+  });
+  inputLivre.addEventListener('input', function () {
+    var v = parseInt(inputLivre.value, 10);
+    if (!isNaN(v) && v >= 0) { estado.orcamento = v; atualizar(); }
+  });
 
   function campo(id, rotulo, valor, passo, dica) {
     var wrap = el('div', 'field calc-campo');
@@ -95,7 +131,13 @@
       if (x < 8) avisos.push(a.nome + ' ' + x + ': o livro sugere que o narrador pode proibir valores abaixo de 8 para aventureiros.');
       if (x > 20) avisos.push(a.nome + ' ' + x + ': acima de 20 é coisa de criaturas lendárias, não de humanos de Adamar.');
     });
-    document.getElementById('calc-total').textContent = sinal(ficha.total);
+    document.getElementById('calc-total').textContent = String(ficha.total);
+    var restam = estado.orcamento - ficha.total;
+    var restante = document.getElementById('calc-restante');
+    restante.textContent = 'de ' + estado.orcamento + ' pontos · ' +
+      (restam >= 0 ? 'restam ' + restam : 'passou ' + (-restam));
+    restante.className = restam < 0 ? 'calc-estourou' : '';
+    if (restam < 0) avisos.unshift('Gastou ' + (-restam) + ' pontos além do orçamento. Tire pontos ou pegue desvantagens.');
     document.getElementById('calc-detalhe').textContent =
       'Atributos ' + sinal(ficha.custos.atributos) + ' · Secundárias ' + sinal(ficha.custos.secundarias);
     document.getElementById('calc-derivadas').textContent =
@@ -168,6 +210,7 @@
     document.getElementById(id).addEventListener('input', calcularPericia);
   });
 
+  mostrarOrcamento();
   preencherSecundarias();
   atualizar();
   calcularPericia();

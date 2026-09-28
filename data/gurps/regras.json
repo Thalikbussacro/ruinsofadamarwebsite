@@ -1,51 +1,308 @@
 {
   "descricao": "Regras numéricas de criação de personagem do GURPS 4e: atributos, características secundárias, carga e custo de perícias. Valores conferidos no Módulo Básico; textos escritos para o site.",
   "atributos": [
-    { "id": "st", "sigla": "ST", "nome": "Força", "base": 10, "custo_por_nivel": 10, "resumo": "Poder físico: dano corpo a corpo, peso que carrega, Pontos de Vida.", "ref": { "livro": "modulo-basico", "pagina": 14 } },
-    { "id": "dx", "sigla": "DX", "nome": "Destreza", "base": 10, "custo_por_nivel": 20, "resumo": "Agilidade e coordenação: combate, esportes, trabalhos manuais finos.", "ref": { "livro": "modulo-basico", "pagina": 15 } },
-    { "id": "iq", "sigla": "IQ", "nome": "Inteligência", "base": 10, "custo_por_nivel": 20, "resumo": "Capacidade mental: perícias de saber, sociais e magia; base de Vontade e Percepção.", "ref": { "livro": "modulo-basico", "pagina": 15 } },
-    { "id": "ht", "sigla": "HT", "nome": "Vitalidade", "base": 10, "custo_por_nivel": 10, "resumo": "Saúde e resistência: doenças, venenos, fadiga; base dos Pontos de Fadiga.", "ref": { "livro": "modulo-basico", "pagina": 15 } }
+    {
+      "id": "st",
+      "sigla": "ST",
+      "nome": "Força",
+      "base": 10,
+      "custo_por_nivel": 10,
+      "resumo": "Poder físico: dano corpo a corpo, peso que carrega, Pontos de Vida.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 14
+      }
+    },
+    {
+      "id": "dx",
+      "sigla": "DX",
+      "nome": "Destreza",
+      "base": 10,
+      "custo_por_nivel": 20,
+      "resumo": "Agilidade e coordenação: combate, esportes, trabalhos manuais finos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 15
+      }
+    },
+    {
+      "id": "iq",
+      "sigla": "IQ",
+      "nome": "Inteligência",
+      "base": 10,
+      "custo_por_nivel": 20,
+      "resumo": "Capacidade mental: perícias de saber, sociais e magia; base de Vontade e Percepção.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 15
+      }
+    },
+    {
+      "id": "ht",
+      "sigla": "HT",
+      "nome": "Vitalidade",
+      "base": 10,
+      "custo_por_nivel": 10,
+      "resumo": "Saúde e resistência: doenças, venenos, fadiga; base dos Pontos de Fadiga.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 15
+      }
+    }
   ],
   "faixas_atributo": {
-    "ref": { "livro": "modulo-basico", "pagina": 14 },
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 14
+    },
     "itens": [
-      { "min": 1, "max": 6, "rotulo": "Incapacitante" },
-      { "min": 7, "max": 7, "rotulo": "Ruim" },
-      { "min": 8, "max": 9, "rotulo": "Abaixo da média" },
-      { "min": 10, "max": 10, "rotulo": "Média" },
-      { "min": 11, "max": 12, "rotulo": "Acima da média" },
-      { "min": 13, "max": 14, "rotulo": "Excepcional" },
-      { "min": 15, "max": 99, "rotulo": "Impressionante" }
+      {
+        "min": 1,
+        "max": 6,
+        "rotulo": "Incapacitante"
+      },
+      {
+        "min": 7,
+        "max": 7,
+        "rotulo": "Ruim"
+      },
+      {
+        "min": 8,
+        "max": 9,
+        "rotulo": "Abaixo da média"
+      },
+      {
+        "min": 10,
+        "max": 10,
+        "rotulo": "Média"
+      },
+      {
+        "min": 11,
+        "max": 12,
+        "rotulo": "Acima da média"
+      },
+      {
+        "min": 13,
+        "max": 14,
+        "rotulo": "Excepcional"
+      },
+      {
+        "min": 15,
+        "max": 99,
+        "rotulo": "Impressionante"
+      }
     ]
   },
   "secundarias": [
-    { "id": "pv", "sigla": "PV", "nome": "Pontos de Vida", "base": "st", "passo": 1, "custo_por_passo": 2, "limite": { "tipo": "percentual", "de": "st", "valor": 0.3 }, "resumo": "Quanto dano o corpo aguenta. Começa igual à ST.", "ref": { "livro": "modulo-basico", "pagina": 16 } },
-    { "id": "vontade", "sigla": "Vont", "nome": "Vontade", "base": "iq", "passo": 1, "custo_por_passo": 5, "limite": { "tipo": "maximo", "valor": 20 }, "resumo": "Resistência a medo, pressão, tortura e ataques à mente. Começa igual à IQ.", "ref": { "livro": "modulo-basico", "pagina": 16 } },
-    { "id": "per", "sigla": "Per", "nome": "Percepção", "base": "iq", "passo": 1, "custo_por_passo": 5, "limite": { "tipo": "maximo", "valor": 20, "reducao_maxima": 4 }, "resumo": "Atenção aos arredores; usada nos testes de sentidos. Começa igual à IQ.", "ref": { "livro": "modulo-basico", "pagina": 16 } },
-    { "id": "pf", "sigla": "PF", "nome": "Pontos de Fadiga", "base": "ht", "passo": 1, "custo_por_passo": 3, "limite": { "tipo": "percentual", "de": "ht", "valor": 0.3 }, "resumo": "Energia para esforço, viagem e magia. Começa igual à HT.", "ref": { "livro": "modulo-basico", "pagina": 16 } },
-    { "id": "velocidade", "sigla": "Vel", "nome": "Velocidade Básica", "base": "(ht+dx)/4", "passo": 0.25, "custo_por_passo": 5, "limite": { "tipo": "absoluto", "valor": 2 }, "resumo": "Reflexos: ordem de ação no combate e Esquiva. (HT + DX) / 4, sem arredondar.", "ref": { "livro": "modulo-basico", "pagina": 17 } },
-    { "id": "deslocamento", "sigla": "Desl", "nome": "Deslocamento Básico", "base": "piso(velocidade)", "passo": 1, "custo_por_passo": 5, "limite": { "tipo": "absoluto", "valor": 3 }, "resumo": "Metros por segundo correndo sem carga. Velocidade Básica sem as frações.", "ref": { "livro": "modulo-basico", "pagina": 17 } }
+    {
+      "id": "pv",
+      "sigla": "PV",
+      "nome": "Pontos de Vida",
+      "base": "st",
+      "passo": 1,
+      "custo_por_passo": 2,
+      "limite": {
+        "tipo": "percentual",
+        "de": "st",
+        "valor": 0.3
+      },
+      "resumo": "Quanto dano o corpo aguenta. Começa igual à ST.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 16
+      }
+    },
+    {
+      "id": "vontade",
+      "sigla": "Vont",
+      "nome": "Vontade",
+      "base": "iq",
+      "passo": 1,
+      "custo_por_passo": 5,
+      "limite": {
+        "tipo": "maximo",
+        "valor": 20
+      },
+      "resumo": "Resistência a medo, pressão, tortura e ataques à mente. Começa igual à IQ.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 16
+      }
+    },
+    {
+      "id": "per",
+      "sigla": "Per",
+      "nome": "Percepção",
+      "base": "iq",
+      "passo": 1,
+      "custo_por_passo": 5,
+      "limite": {
+        "tipo": "maximo",
+        "valor": 20,
+        "reducao_maxima": 4
+      },
+      "resumo": "Atenção aos arredores; usada nos testes de sentidos. Começa igual à IQ.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 16
+      }
+    },
+    {
+      "id": "pf",
+      "sigla": "PF",
+      "nome": "Pontos de Fadiga",
+      "base": "ht",
+      "passo": 1,
+      "custo_por_passo": 3,
+      "limite": {
+        "tipo": "percentual",
+        "de": "ht",
+        "valor": 0.3
+      },
+      "resumo": "Energia para esforço, viagem e magia. Começa igual à HT.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 16
+      }
+    },
+    {
+      "id": "velocidade",
+      "sigla": "Vel",
+      "nome": "Velocidade Básica",
+      "base": "(ht+dx)/4",
+      "passo": 0.25,
+      "custo_por_passo": 5,
+      "limite": {
+        "tipo": "absoluto",
+        "valor": 2
+      },
+      "resumo": "Reflexos: ordem de ação no combate e Esquiva. (HT + DX) / 4, sem arredondar.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 17
+      }
+    },
+    {
+      "id": "deslocamento",
+      "sigla": "Desl",
+      "nome": "Deslocamento Básico",
+      "base": "piso(velocidade)",
+      "passo": 1,
+      "custo_por_passo": 5,
+      "limite": {
+        "tipo": "absoluto",
+        "valor": 3
+      },
+      "resumo": "Metros por segundo correndo sem carga. Velocidade Básica sem as frações.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 17
+      }
+    }
   ],
   "derivadas": [
-    { "id": "esquiva", "nome": "Esquiva", "formula": "piso(velocidade) + 3 - nivel_de_carga", "resumo": "Defesa de se esquivar de um ataque.", "ref": { "livro": "modulo-basico", "pagina": 17 } },
-    { "id": "base_de_carga", "sigla": "BC", "nome": "Base de Carga", "formula": "st * st / 10", "unidade": "kg", "arredondamento": 0.5, "nota": "O texto do livro manda arredondar para o inteiro mais próximo, mas a Tabela de Carga da mesma página usa meios quilos (ST 15 = 22,5 kg). Seguimos a tabela.", "resumo": "Peso que ergue acima da cabeça com uma mão em um segundo; base da carga.", "ref": { "livro": "modulo-basico", "pagina": 15 } }
+    {
+      "id": "esquiva",
+      "nome": "Esquiva",
+      "formula": "piso(velocidade) + 3 - nivel_de_carga",
+      "resumo": "Defesa de se esquivar de um ataque.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 17
+      }
+    },
+    {
+      "id": "base_de_carga",
+      "sigla": "BC",
+      "nome": "Base de Carga",
+      "formula": "st * st / 10",
+      "unidade": "kg",
+      "arredondamento": 0.5,
+      "nota": "O texto do livro manda arredondar para o inteiro mais próximo, mas a Tabela de Carga da mesma página usa meios quilos (ST 15 = 22,5 kg). Seguimos a tabela.",
+      "resumo": "Peso que ergue acima da cabeça com uma mão em um segundo; base da carga.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 15
+      }
+    }
   ],
   "carga": {
-    "ref": { "livro": "modulo-basico", "pagina": 17 },
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 17
+    },
     "nota": "Ignore frações. A carga nunca reduz Deslocamento ou Esquiva abaixo de 1.",
     "niveis": [
-      { "nivel": 0, "nome": "Nenhuma", "peso_max_bc": 1, "deslocamento": 1, "esquiva": 0 },
-      { "nivel": 1, "nome": "Leve", "peso_max_bc": 2, "deslocamento": 0.8, "esquiva": -1 },
-      { "nivel": 2, "nome": "Média", "peso_max_bc": 3, "deslocamento": 0.6, "esquiva": -2 },
-      { "nivel": 3, "nome": "Pesada", "peso_max_bc": 6, "deslocamento": 0.4, "esquiva": -3 },
-      { "nivel": 4, "nome": "Muito Pesada", "peso_max_bc": 10, "deslocamento": 0.2, "esquiva": -4 }
+      {
+        "nivel": 0,
+        "nome": "Nenhuma",
+        "peso_max_bc": 1,
+        "deslocamento": 1,
+        "esquiva": 0
+      },
+      {
+        "nivel": 1,
+        "nome": "Leve",
+        "peso_max_bc": 2,
+        "deslocamento": 0.8,
+        "esquiva": -1
+      },
+      {
+        "nivel": 2,
+        "nome": "Média",
+        "peso_max_bc": 3,
+        "deslocamento": 0.6,
+        "esquiva": -2
+      },
+      {
+        "nivel": 3,
+        "nome": "Pesada",
+        "peso_max_bc": 6,
+        "deslocamento": 0.4,
+        "esquiva": -3
+      },
+      {
+        "nivel": 4,
+        "nome": "Muito Pesada",
+        "peso_max_bc": 10,
+        "deslocamento": 0.2,
+        "esquiva": -4
+      }
     ]
   },
   "custo_pericias": {
-    "ref": { "livro": "modulo-basico", "pagina": 170 },
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 170
+    },
     "resumo": "O custo depende da dificuldade e do nível desejado em relação ao atributo. O nível mais baixo que se pode comprar custa 1 ponto; os seguintes custam 2, 4 e 8, e daí em diante +4 por nível.",
-    "nivel_relativo_minimo": { "Fácil": 0, "Média": -1, "Difícil": -2, "Muito Difícil": -3 },
-    "custos": [1, 2, 4, 8],
+    "nivel_relativo_minimo": {
+      "Fácil": 0,
+      "Média": -1,
+      "Difícil": -2,
+      "Muito Difícil": -3
+    },
+    "custos": [
+      1,
+      2,
+      4,
+      8
+    ],
     "acrescimo_por_nivel": 4
+  },
+  "campanha": {
+    "descricao": "Decisões da mesa de Adamar, não do livro.",
+    "pontos_iniciais": {
+      "padrao": 80,
+      "sugestoes": [
+        50,
+        80,
+        100,
+        125,
+        150,
+        200
+      ],
+      "nota": "Depende da mesa; o narrador escolhe. 80 é o padrão de Adamar."
+    }
   }
 }

@@ -1521,3 +1521,8 @@ a.card:hover h3,
 .calc-pericia { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); gap: 0.9rem 1rem; align-items: end; margin-top: 1.25rem; }
 .calc-pericia .field { margin: 0; }
 .calc-pericia .calc-detalhe { grid-column: 1 / -1; }
+.calc-orcamento { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: 0 1rem; align-items: end; margin-bottom: 1.25rem; }
+.calc-orcamento .field { margin: 0; }
+.calc-orcamento .field[hidden] { display: none; }
+.calc-orcamento .field-hint { grid-column: 1 / -1; margin: 0.5rem 0 0; }
+.calc-estourou { color: #e08a5e; font-weight: 700; }

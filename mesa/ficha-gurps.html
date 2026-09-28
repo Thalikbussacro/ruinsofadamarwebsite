@@ -36,6 +36,17 @@
         <h2>Calculadora</h2>
         <p>Ajuste os atributos e, se quiser, compre ou venda características secundárias. O custo total aparece embaixo. As faixas de "campanha realista" do livro aparecem como aviso.</p>
         <form id="calc-ficha" class="calc" onsubmit="return false">
+          <div class="calc-orcamento">
+            <div class="field">
+              <label for="calc-orcamento">Pontos iniciais</label>
+              <select id="calc-orcamento"></select>
+            </div>
+            <div class="field" id="campo-orcamento-livre" hidden>
+              <label for="calc-orcamento-livre">Quantos pontos?</label>
+              <input id="calc-orcamento-livre" type="number" min="0" step="5">
+            </div>
+            <p class="field-hint" id="calc-orcamento-nota"></p>
+          </div>
           <fieldset class="calc-grupo">
             <legend>Atributos</legend>
             <div class="calc-grid" id="calc-atributos"></div>
@@ -47,7 +58,7 @@
           </fieldset>
         </form>
         <div class="calc-resumo" aria-live="polite">
-          <div class="calc-total"><span>Total</span><strong id="calc-total">0</strong><span>pontos</span></div>
+          <div class="calc-total"><span>Gastos</span><strong id="calc-total">0</strong><span id="calc-restante">pontos</span></div>
           <p id="calc-detalhe" class="calc-detalhe"></p>
           <p id="calc-derivadas" class="calc-detalhe"></p>
           <ul id="calc-avisos" class="calc-avisos"></ul>

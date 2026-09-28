@@ -6,7 +6,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
-const ARQUIVOS = ['livros', 'pericias', 'vantagens', 'desvantagens'];
+const ARQUIVOS = ['livros', 'pericias', 'vantagens', 'desvantagens', 'regras'];
 const SAIDA = join(RAIZ, 'js', 'dados-gurps.js');
 
 const ADAMAR = ['livre', 'narrador', 'nao'];
@@ -39,13 +39,27 @@ export function validar(dados) {
       }
     }
   }
+  if (dados.regras) {
+    const refs = [];
+    (function coletar(no, caminho) {
+      if (Array.isArray(no)) no.forEach((x, i) => coletar(x, `${caminho}[${i}]`));
+      else if (no && typeof no === 'object') {
+        if (no.ref) refs.push([caminho, no.ref]);
+        for (const k of Object.keys(no)) if (k !== 'ref') coletar(no[k], caminho ? `${caminho}.${k}` : k);
+      }
+    })(dados.regras, '');
+    for (const [caminho, ref] of refs) {
+      if (!livros.has(ref.livro)) erros.push(`regras/${caminho}: livro desconhecido "${ref.livro}"`);
+      if (!Number.isInteger(ref.pagina) || ref.pagina < 1) erros.push(`regras/${caminho}: página inválida`);
+    }
+  }
   return erros;
 }
 
 export function montarJs(dados) {
   const livros = {};
   for (const l of dados.livros.itens) livros[l.id] = l;
-  const GURPS = { livros, pericias: dados.pericias.itens, vantagens: dados.vantagens.itens, desvantagens: dados.desvantagens.itens };
+  const GURPS = { livros, regras: dados.regras || null, pericias: dados.pericias.itens, vantagens: dados.vantagens.itens, desvantagens: dados.desvantagens.itens };
   return '// ARQUIVO GERADO por tools/gerar-dados.mjs a partir de data/gurps/*.json. Não edite à mão.\n' +
     'window.GURPS = ' + JSON.stringify(GURPS) + ';\n';
 }

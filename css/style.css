@@ -1501,3 +1501,23 @@ a.card:hover h3,
   .filtros { grid-template-columns: minmax(0, 1fr); }
   .filtros .field + .field { margin-top: 0.8rem; }
 }
+
+/* ---------- 16. Calculadora de ficha GURPS ---------- */
+.grid-atributos { grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); }
+.calc { margin-top: 1.25rem; }
+.calc-grupo { margin: 0 0 1.25rem; padding: 1rem 1.1rem 1.1rem; border: 1px solid var(--ouro-fio); background: rgba(14, 13, 12, 0.45); min-width: 0; }
+.calc-grupo legend { padding: 0 0.4rem; font-family: var(--f-titulo); font-size: 1rem; color: var(--ouro-claro); }
+.calc-grupo .field-hint { margin-top: 0; }
+.calc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11.5rem), 1fr)); gap: 0.9rem 1rem; }
+.calc-campo { margin: 0; }
+.calc-campo label { font-size: 0.85rem; }
+.calc-info { display: block; margin-top: 0.3rem; font-size: 0.9rem; font-style: italic; color: var(--osso-fosco); }
+.calc-resumo { padding: 1rem 1.1rem; border: 1px solid var(--ouro-linha); border-left: 3px solid var(--sangue-vivo); background: linear-gradient(90deg, rgba(110, 31, 26, 0.18), rgba(14, 13, 12, 0.45)); }
+.calc-total { display: flex; align-items: baseline; gap: 0.6rem; font-family: var(--f-titulo); color: var(--osso-fosco); }
+.calc-total strong { font-size: 2rem; color: var(--ouro-claro); }
+.calc-detalhe { margin: 0.35rem 0 0; }
+.calc-avisos { margin: 0.6rem 0 0; padding-left: 1.2rem; color: #e08a5e; }
+.calc-avisos:empty { display: none; }
+.calc-pericia { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); gap: 0.9rem 1rem; align-items: end; margin-top: 1.25rem; }
+.calc-pericia .field { margin: 0; }
+.calc-pericia .calc-detalhe { grid-column: 1 / -1; }

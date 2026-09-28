@@ -43,6 +43,12 @@ assert.match(validar(d).join('\n'), /pericias\/arco: falta "resumo"/);
 d = base(); d.vantagens.itens[0].tipo = ['magica'];
 assert.match(validar(d).join('\n'), /vantagens\/carisma: tipo inválido "magica"/);
 
+// referências dentro de regras também são conferidas
+d = base(); d.regras = { atributos: [{ id: 'st', ref: { livro: 'outro', pagina: 14 } }], carga: { ref: { livro: 'modulo-basico', pagina: 0 } } };
+const errosRegras = validar(d).join('\n');
+assert.match(errosRegras, /regras\/atributos\[0\]: livro desconhecido "outro"/);
+assert.match(errosRegras, /regras\/carga: página inválida/);
+
 // o JS gerado expõe window.GURPS com as listas e é determinístico
 const js = montarJs(base());
 assert.match(js, /^\/\/ ARQUIVO GERADO/);
@@ -53,5 +59,6 @@ assert.equal(window.GURPS.pericias[0].id, 'arco');
 assert.equal(window.GURPS.vantagens[0].nome, 'Carisma');
 assert.deepEqual(window.GURPS.desvantagens, []);
 assert.equal(window.GURPS.livros['modulo-basico'].titulo, 'Módulo Básico');
+assert.equal(window.GURPS.regras, null);
 
 console.log('gerar-dados ok');

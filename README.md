@@ -31,6 +31,8 @@ js/site.js           casca do site (cabeçalho, menu, rodapé, botões "Jogar") 
 js/whatsapp.js       utilitário para montar a URL do WhatsApp
 js/jogar.js          lógica do formulário e montagem da mensagem da ficha
 js/pericias.js       listas filtráveis de GURPS (perícias, vantagens, desvantagens)
+js/gurps-calculo.js  cálculos de ficha (custos, secundárias, carga, perícias)
+js/ficha-gurps.js    página de atributos com calculadora
 js/dados-gurps.js    GERADO a partir de data/gurps/ — não editar à mão
 data/gurps/          base de conhecimento GURPS em JSON (fonte oficial)
 referencias/         PDFs de referência, só local (fora do git)
@@ -65,6 +67,7 @@ Depois de editar, recarregue qualquer página — todas usam o mesmo `js/site.js
 As listas de perícias, vantagens e desvantagens vêm de `data/gurps/*.json`:
 
 - `livros.json`: os livros de referência (título, ISBN, SHA-256 do PDF). Ver também `docs/referencias.md`.
+- `regras.json`: atributos, características secundárias, carga e custo de perícias (os números da criação de personagem). `js/gurps-calculo.js` faz as contas a partir dele.
 - `pericias.json`, `vantagens.json`, `desvantagens.json`: um item por traço, com `id` estável, `nome`, custo ou atributo/dificuldade, `adamar` (`livre`, `narrador` ou `nao`), `resumo` e `ref` (`livro` + `pagina` do livro impresso).
 
 Para mudar algo (um resumo, uma marcação para Adamar, um item novo), edite o JSON e rode:
@@ -91,13 +94,14 @@ O gerador valida os dados (ids repetidos, livro inexistente, página inválida, 
 node tools/check-site.mjs
 ```
 
-Confirma, para todas as páginas: `data-root`/`data-page` corretos, `<main id="conteudo">`, `<title>`, links e imagens existentes em disco, tabelas dentro de `.table-wrap`, ausência de termos/marcadores proibidos, e que `js/whatsapp.js` carrega antes de `js/site.js`. Também confere que todo `href` usado em `NAV` (`js/site.js`) existe em disco. Saída esperada com o site completo: `24 páginas ok` (sem falhas).
+Confirma, para todas as páginas: `data-root`/`data-page` corretos, `<main id="conteudo">`, `<title>`, links e imagens existentes em disco, tabelas dentro de `.table-wrap`, ausência de termos/marcadores proibidos, e que `js/whatsapp.js` carrega antes de `js/site.js`. Também confere que todo `href` usado em `NAV` (`js/site.js`) existe em disco. Saída esperada com o site completo: `25 páginas ok` (sem falhas).
 
 ```
 node tools/check-site.test.mjs
 node tools/whatsapp.test.mjs
 node tools/jogar.test.mjs
 node tools/gerar-dados.test.mjs
+node tools/gurps-calculo.test.mjs
 node tools/gerar-dados.mjs --check
 ```
 

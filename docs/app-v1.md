@@ -91,7 +91,7 @@ Só para itens `livre` e `narrador` (o que é `nao` fica fora do app):
 3. ~~**Efeitos dos traços**~~ — feito: `efeitos` nos 287 traços permitidos (134 com números, 153 descritivos), com `catalogo_testes` em regras.json. Limitação: traços com variantes (Boa Forma/Ótima Forma, Fora de Forma/Muito Fora de Forma, Aparência…) têm os valores das variantes só em `condicao`; o app precisa de um campo `variantes` estruturado.
 4. ~~**Pré-requisitos**~~ — feito: `prerequisitos` (traço, perícia, atributo, exclusão, texto) em 74 traços; `nivel_max` onde o livro limita.
 5. ~~**Especializações**~~ — feito: `especializacoes` com marcação de Adamar nas 38 perícias com †; Ritual Religioso e Teologia usam os panteões do cânone. Fórmulas de Aliados, Patronos, Inimigos, Dependentes, Dever, Favor, Contatos e Grupo de Contato e a lista de Talentos estão em `regras.json` (`formulas`, `talentos`).
-6. **Modos de ataque estruturados** das armas (base local), ligados às perícias.
+6. ~~**Modos de ataque estruturados**~~ — feito (só na base local): `modos_estruturados` nas 176 armas e escudos (dano GdP/GeB ou dados + tipo + divisor de armadura, alcance, aparar com desbalanceada/esgrima, ST mínima com duas mãos, precisão, CdT, tiros, magnitude), `pericias_uso` ligando cada arma às perícias do banco e `bonus_defesa` nos escudos. Armas de efeito especial (rede, laço, garrote, capas) ficam com `especial: true`. Gerado por `node tools/estruturar-armas.mjs`.
 7. ~~**Ícones** e **tamanho na grade**~~ — feito: `icone` (chave genérica) em perícias, traços e itens; `grade` nos itens de Adamar; regras do inventário em `data/adamar/inventario.json`.
 
 ## Cuidado com licença

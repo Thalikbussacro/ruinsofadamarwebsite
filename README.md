@@ -77,7 +77,7 @@ Para mudar algo (um resumo, uma marcação para Adamar, um item novo), edite o J
 node tools/gerar-dados.mjs
 ```
 
-- `equipamento.json`: armas, armaduras, escudos e equipamento variado, com NT, página e marcação para Adamar. **Sem estatísticas** (dano, custo, peso, RD): elas ficam em `data-local/gurps/equipamento-completo.json`, fora do git, porque a política da Steve Jackson Games não permite publicar as tabelas. Para refazer as duas versões a partir das transcrições: `node tools/importar-equipamento.mjs <pasta-das-secoes>`.
+- `equipamento.json`: armas, armaduras, escudos e equipamento variado, com NT, página e marcação para Adamar. **Sem estatísticas** (dano, custo, peso, RD): elas ficam em `data-local/gurps/equipamento-completo.json`, fora do git, porque a política da Steve Jackson Games não permite publicar as tabelas. Para refazer as duas versões a partir das transcrições: `node tools/importar-equipamento.mjs <pasta-das-secoes>`; depois `node tools/estruturar-armas.mjs` estrutura os modos de ataque das armas na base local.
 
 Os campos `custo_estruturado` (traços) e `predefinidos` (perícias) são gerados a partir do texto por `node tools/custo-estruturado.mjs` e `node tools/predefinidos.mjs`; rode de novo se mudar o texto de custo ou de pré-definido.
 
@@ -112,6 +112,7 @@ node tools/custo-estruturado.test.mjs
 node tools/predefinidos.test.mjs
 node tools/icones-e-grade.test.mjs
 node tools/importar-efeitos.test.mjs
+node tools/estruturar-armas.test.mjs
 node tools/gerar-dados.mjs --check
 ```
 

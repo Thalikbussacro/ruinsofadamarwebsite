@@ -1762,7 +1762,7 @@ body.modo-app .site-footer { display: none; }
 .app-rodape-status.tem-erro { color: #e08a5e; }
 
 @media (min-width: 900px) {
-  body.modo-app { height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
+  body.modo-app { height: 100vh; height: 100dvh; min-height: 0; display: flex; flex-direction: column; overflow: hidden; }
   body.modo-app .site-header { flex: none; }
   body.modo-app .app { flex: 1; min-height: 0; grid-template-rows: minmax(0, 1fr); }
 }
@@ -2016,7 +2016,7 @@ body.modo-app .deco { display: none; }
 /* Celular: a tela também fica parada. Em cima, o saldo numa linha e as etapas; embaixo, Voltar · Salvar · Continuar;
    no meio, só o conteúdo rola. */
 @media (max-width: 899px) {
-  body.modo-app { height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
+  body.modo-app { height: 100vh; height: 100dvh; min-height: 0; display: flex; flex-direction: column; overflow: hidden; }
   body.modo-app .site-header { flex: none; }
   body.modo-app .app { flex: 1; min-height: 0; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); }
   .app-lado { gap: 0.4rem; padding: 0.45rem 12px 0.35rem; border-right: 0; border-bottom: 1px solid var(--ouro-linha); overflow: visible; }
@@ -2056,3 +2056,5 @@ body.modo-app .deco { display: none; }
   .filtros-linha .filtro-ordem { flex: 1 1 auto; max-width: 12rem; }
   .filtro-toggle { margin-left: auto; }
 }
+/* no celular, "100vh" inclui a área escondida pela barra do navegador: a altura mínima da base não pode valer aqui */
+html:has(body.modo-app) { height: 100%; overflow: hidden; }

@@ -19,7 +19,7 @@ assert.equal(f.orcamento, 80);
 assert.equal(r.total, 0);
 assert.equal(r.restante, 80);
 assert.match(erros(r), /Falta o nome/);
-assert.match(erros(r), /Faltam 80 pontos/);
+assert.doesNotMatch(erros(r), /pontos/); // saldo sobrando não é pendência
 assert.equal(r.valida, false);
 
 // atributos + perícia: DX 12 (+40), Espada Curta? usa Faca (Fácil, DX): 2 pontos → DX+1 = 13
@@ -127,16 +127,17 @@ r = c.resumir(f);
 assert.equal(r.total, 80);
 assert.deepEqual(r.erros, []);
 assert.equal(r.valida, true);
-// sobra ou excesso de pontos é erro
+// saldo: sobrar pontos é permitido (ficam guardados); saldo negativo é erro
 f.pericias[1].pontos = 12;
 r = c.resumir(f);
-assert.match(erros(r), /Faltam 4 pontos/);
-assert.equal(r.incompletos.length, 1); // faltar pontos é "incompleto", não erro
-assert.equal(r.problemas.length, 0);
+assert.equal(r.restante, 4);
+assert.equal(r.valida, true);
+assert.match(c.textoFicha(f, r), /guardados 4/);
+assert.equal(r.pontos_gastos - r.pontos_devolvidos, r.total);
 f.pericias[1].pontos = 20;
 r = c.resumir(f);
-assert.match(erros(r), /Gastou 4 pontos além/);
-assert.equal(r.problemas.length, 1); // passar dos pontos é erro
+assert.match(erros(r), /Saldo negativo: faltam 4 pontos/);
+assert.equal(r.problemas.length, 1);
 f.pericias[1].pontos = 16;
 
 // peculiaridade do catálogo conta como peculiaridade (-1), não como desvantagem nem no limite

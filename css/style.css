@@ -1685,6 +1685,7 @@ body.modo-app .site-footer { display: none; }
 .app-item-erro:empty { display: none; }
 .app-item-texto { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
 .app-nh { font-size: 1.05rem; }
+.criador-custo.devolve { color: #a9c47f; }
 .app-remover {
   width: 1.7rem;
   height: 1.7rem;

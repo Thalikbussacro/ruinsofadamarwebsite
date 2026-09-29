@@ -63,7 +63,7 @@
         h.appendChild(link);
         card.appendChild(h);
         if (p.conceito) card.appendChild(el('p', 'personagem-conceito', p.conceito));
-        card.appendChild(el('p', 'card-more', [ficha.era, ficha.origem].filter(Boolean).concat([r.total + ' de ' + ficha.orcamento + ' pontos']).join(' · ')));
+        card.appendChild(el('p', 'card-more', [ficha.era, ficha.origem].filter(Boolean).concat([ficha.orcamento + ' pontos' + (r.restante > 0 ? ' · ' + r.restante + ' guardados' : r.restante < 0 ? ' · saldo negativo' : '')]).join(' · ')));
         card.appendChild(el('p', 'card-more', 'Salvo em ' + quando(p.atualizado)));
         card.appendChild(el('span', 'personagem-selo ' + (r.valida ? 'pronta' : 'rascunho'),
           r.valida ? 'Pronta' : 'Rascunho · ' + r.erros.length + (r.erros.length === 1 ? ' pendência' : ' pendências')));
@@ -180,9 +180,9 @@
 
     // pontos
     var pts = el('div', 'ficha-pontos');
-    pts.appendChild(el('strong', null, String(r.total)));
-    pts.appendChild(el('span', null, 'de ' + f.orcamento + ' pontos' + (f.jogador ? ' · jogador: ' + f.jogador : '')));
-    pts.appendChild(el('span', r.restante ? 'calc-estourou' : null, r.restante === 0 ? 'pontos fechados' : r.restante > 0 ? 'faltam ' + r.restante : 'passou ' + (-r.restante)));
+    pts.appendChild(el('strong', null, String(f.orcamento)));
+    pts.appendChild(el('span', null, 'pontos iniciais · gastou ' + r.pontos_gastos + ' · desvantagens devolveram ' + r.pontos_devolvidos + (f.jogador ? ' · jogador: ' + f.jogador : '')));
+    pts.appendChild(el('span', r.restante < 0 ? 'calc-estourou' : null, r.restante >= 0 ? (r.restante ? r.restante + ' guardados para depois' : 'todos usados') : 'saldo negativo: ' + r.restante));
     pts.appendChild(el('span', 'personagem-selo ' + (r.valida ? 'pronta' : 'rascunho'), r.valida ? 'Pronta' : 'Rascunho'));
     if (!r.valida) document.getElementById('f-whats').classList.add('is-disabled');
     box.appendChild(pts);

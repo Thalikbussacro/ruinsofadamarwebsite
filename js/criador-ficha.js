@@ -260,9 +260,12 @@
         pericias: custoPericias
       };
       var total = Object.keys(custos).reduce(function (s, k) { return s + custos[k]; }, 0);
+      // o que voltou ao saldo: tudo que tem custo negativo (desvantagens, atributos baixos, peculiaridades, analfabetismo)
+      var alf = calc.custoAlfabetizacao(ficha.social.alfabetizacao);
+      var devolvidos = -desvantagens - peculiaridades + (alf < 0 && ficha.social.analfabetismoRegra ? -alf : 0);
       var restante = ficha.orcamento - total;
-      if (restante > 0) incompleto('geral', 'Faltam ' + restante + ' pontos para gastar: a ficha precisa fechar em ' + ficha.orcamento + '.');
-      if (restante < 0) erro('geral', 'Gastou ' + (-restante) + ' pontos além dos ' + ficha.orcamento + '.');
+      // saldo: começa no orçamento; o que custa tira, desvantagem devolve. Sobrar é permitido (fica guardado).
+      if (restante < 0) erro('geral', 'Saldo negativo: faltam ' + (-restante) + ' pontos. Tire algo ou pegue desvantagens.');
 
       // equipamento: preço em coroas (1 coroa = $1 do GURPS)
       var gasto = 0;
@@ -286,6 +289,8 @@
         custos: custos,
         total: total,
         restante: restante,
+        pontos_devolvidos: devolvidos,
+        pontos_gastos: total + devolvidos,
         desvantagens: desvantagens,
         limite: limite,
         peculiaridades: -peculiaridades,
@@ -353,7 +358,8 @@
       if (ficha.conceito) L.push(ficha.conceito);
       if (ficha.era || ficha.origem) L.push([ficha.era, ficha.origem].filter(Boolean).join(' · '));
       L.push('');
-      L.push('Pontos: ' + r.total + ' de ' + ficha.orcamento + (r.restante ? ' (' + (r.restante > 0 ? 'faltam ' + r.restante : 'passou ' + (-r.restante)) + ')' : ''));
+      L.push('Pontos: começou com ' + ficha.orcamento + ', gastou ' + r.pontos_gastos + ', recebeu ' + r.pontos_devolvidos + ' de desvantagens · ' +
+        (r.restante >= 0 ? 'guardados ' + r.restante : 'saldo negativo ' + r.restante));
       L.push('ST ' + v.st + ' · DX ' + v.dx + ' · IQ ' + v.iq + ' · HT ' + v.ht);
       L.push('PV ' + v.pv + ' · Vontade ' + v.vontade + ' · Per ' + v.per + ' · PF ' + v.pf + ' · Velocidade ' + num(v.velocidade) + ' · Deslocamento ' + v.deslocamento + ' · Esquiva ' + r.esquiva);
       var so = ficha.social;

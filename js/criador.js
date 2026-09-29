@@ -45,6 +45,11 @@
     if (!it.preco) return 'preço com o narrador';
     return (it.preco.adicional ? '+' : '') + moeda(it.preco.valor) + (it.preco.por ? ' (' + it.preco.por + ')' : '');
   }
+  // Linguagem de saldo: o que custa tira pontos, desvantagem devolve.
+  function custoTexto(c) {
+    if (!c) return 'grátis';
+    return c > 0 ? 'custa ' + c : 'devolve ' + (-c);
+  }
   function selo(adamar) { return el('span', 'pericia-status st-' + adamar, ADAMAR[adamar] || adamar); }
   function selectCom(opcoes, valor, rotulo) {
     var s = el('select');
@@ -191,13 +196,15 @@
   // ---------- coluna lateral ----------
   atualizadores.push(function (r) {
     document.getElementById('lado-nome').textContent = ficha.nome || 'Sem nome';
-    document.getElementById('lado-total').textContent = String(r.total);
-    document.getElementById('lado-orcamento').textContent = '/ ' + ficha.orcamento + ' pontos';
+    var total = document.getElementById('lado-total');
+    total.textContent = String(r.restante);
+    total.className = r.restante < 0 ? 'tem-erro' : '';
+    document.getElementById('lado-orcamento').textContent = 'pontos de saldo';
     var rest = document.getElementById('lado-restante');
-    rest.textContent = r.restante === 0 ? 'Pontos fechados' : r.restante > 0 ? 'Faltam ' + r.restante + ' pontos' : 'Passou ' + (-r.restante) + ' pontos';
-    rest.className = r.restante === 0 ? 'ok' : r.restante < 0 ? 'tem-erro' : '';
+    rest.textContent = ficha.orcamento + ' iniciais − ' + r.pontos_gastos + ' gastos + ' + r.pontos_devolvidos + ' devolvidos' + (r.restante < 0 ? ' · saldo negativo!' : '');
+    rest.className = r.restante < 0 ? 'tem-erro' : '';
     var d = document.getElementById('lado-desv');
-    d.textContent = r.desvantagens + ' / ' + r.limite;
+    d.textContent = (-r.desvantagens) + ' de ' + (-r.limite);
     d.className = r.desvantagens < r.limite ? 'tem-erro' : '';
     var p = document.getElementById('lado-pec');
     p.textContent = r.peculiaridades + ' / ' + criador.LIMITE_PECULIARIDADES;
@@ -298,12 +305,12 @@
   }
   atualizadores.push(function (r) {
     R.atributos.forEach(function (a) {
-      camposAtr[a.id].info.textContent = sinal(calc.custoAtributo(a.id, ficha.atributos[a.id])) + ' pts';
+      camposAtr[a.id].info.textContent = custoTexto(calc.custoAtributo(a.id, ficha.atributos[a.id]));
     });
     R.secundarias.forEach(function (s) {
       var aj = ficha.ajustes[s.id] || 0;
       var lim = calc.limitesSecundaria(s.id, ficha.atributos);
-      camposSec[s.id].info.textContent = (aj ? sinal(calc.custoSecundaria(s.id, aj)) + ' pts' : 'sem custo') +
+      camposSec[s.id].info.textContent = custoTexto(aj ? calc.custoSecundaria(s.id, aj) : 0) +
         ' · faixa ' + num(lim.min) + ' a ' + num(lim.max);
       var fora = calc.secundarias(ficha.atributos, ficha.ajustes)[s.id];
       camposSec[s.id].input.classList.toggle('campo-erro', fora < lim.min || fora > lim.max);
@@ -362,11 +369,11 @@
   atualizadores.push(function (r) {
     var so = ficha.social;
     var ap = porId(R.aparencia.niveis, so.aparencia);
-    document.getElementById('c-info-aparencia').textContent = sinal(calc.custoAparencia(so.aparencia)) + ' pts · reação ' + (ap ? ap.reacao : '');
+    document.getElementById('c-info-aparencia').textContent = custoTexto(calc.custoAparencia(so.aparencia)) + ' · reação ' + (ap ? ap.reacao : '');
     var gratis = calc.statusPorRiqueza(so.riqueza, so.multimilionario);
-    document.getElementById('c-info-status').textContent = sinal(calc.custoStatus(so.status)) + ' pts' + (gratis ? ' · +' + gratis + ' grátis pela riqueza' : '');
-    document.getElementById('c-info-riqueza').textContent = sinal(calc.custoRiqueza(so.riqueza, so.multimilionario)) + ' pts · ' + moeda(r.recursos);
-    document.getElementById('c-info-alfabetizacao').textContent = sinal(calc.custoAlfabetizacao(so.alfabetizacao)) + ' pts' +
+    document.getElementById('c-info-status').textContent = custoTexto(calc.custoStatus(so.status)) + (gratis ? ' · +' + gratis + ' grátis pela riqueza' : '');
+    document.getElementById('c-info-riqueza').textContent = custoTexto(calc.custoRiqueza(so.riqueza, so.multimilionario)) + ' · ' + moeda(r.recursos);
+    document.getElementById('c-info-alfabetizacao').textContent = custoTexto(calc.custoAlfabetizacao(so.alfabetizacao)) +
       (so.alfabetizacao !== 'alfabetizado' && so.analfabetismoRegra ? ' · fora do limite' : '');
   });
 
@@ -399,7 +406,7 @@
       campos.appendChild(campoRotulado('Escrita', escrita));
       row.appendChild(campos);
       infosIdioma.push(function () {
-        custo.textContent = sinal(calc.custoIdioma(idioma.fala, idioma.escrita)) + ' pts';
+        custo.textContent = custoTexto(calc.custoIdioma(idioma.fala, idioma.escrita));
         nome.classList.toggle('campo-falta', !String(idioma.nome || '').trim());
       });
       box.appendChild(row);
@@ -763,7 +770,8 @@
         infos.push(function (r) {
           var c = t.custo_estruturado || {};
           var aCombinar = c.tipo === 'variavel' && (sel.escolha || {}).valor == null;
-          custo.textContent = aCombinar ? '—' : sinal(criador.custoDoTraco(sel)) + ' pts';
+          custo.textContent = aCombinar ? 'a combinar' : custoTexto(criador.custoDoTraco(sel));
+          custo.classList.toggle('devolve', !aCombinar && criador.custoDoTraco(sel) < 0);
           escolha.textContent = resumoDaEscolha(sel, t);
           ef.atualizar();
           var meus = problemasDoItem(r, t.nome);
@@ -802,7 +810,7 @@
       infos.forEach(function (f) { f(r); });
       var meus = r.tracos.filter(function (x) { return x.traco && ehNegativo(x.traco) === negativo; });
       var soma = meus.reduce(function (s, x) { return s + x.custo; }, 0);
-      conta.textContent = meus.length + (meus.length === 1 ? ' item · ' : ' itens · ') + sinal(soma) + ' pts';
+      conta.textContent = meus.length + (meus.length === 1 ? ' item · ' : ' itens · ') + (soma < 0 ? 'devolvem ' + (-soma) : 'custam ' + soma);
     });
     return { desenhar: function () { desenhar(); catalogo.desenhar(); } };
   }
@@ -810,7 +818,7 @@
   var listaDesvantagens = listaDeTracos('desvantagens', true);
   atualizadores.push(function (r) {
     var d = document.getElementById('c-desv-limite');
-    d.textContent = 'Limite de ' + r.limite + ' pontos em desvantagens (contando atributos baixos e sociedade). Agora: ' + r.desvantagens + '. Peculiaridades à parte, até ' + criador.LIMITE_PECULIARIDADES + '.';
+    d.textContent = 'Desvantagens devolvem pontos ao saldo, até ' + (-r.limite) + ' no total (contando atributos baixos e sociedade). Já devolveram ' + (-r.desvantagens) + '. Peculiaridades devolvem 1 cada, até ' + criador.LIMITE_PECULIARIDADES + '.';
     d.className = r.desvantagens < r.limite ? 'tem-erro' : '';
   });
 
@@ -841,7 +849,7 @@
       var campos = el('div', 'criador-campos');
       campos.appendChild(campoRotulado('Nível (1 a ' + (t.nivel_max || 4) + ')', inteiro(sel.nivel || 1, 1, t.nivel_max || 4, function (v) { sel.nivel = v; })));
       row.appendChild(campos);
-      infosTalento.push(function () { custo.textContent = sinal(t.custo_por_nivel * (sel.nivel || 0)) + ' pts'; });
+      infosTalento.push(function () { custo.textContent = custoTexto(t.custo_por_nivel * (sel.nivel || 0)); });
       box.appendChild(row);
     });
     Array.prototype.forEach.call(selTalento.options, function (o) {
@@ -962,7 +970,7 @@
   }
   atualizadores.push(function (r) {
     infosPericia.forEach(function (f) { f(r); });
-    document.getElementById('c-pericias-conta').textContent = ficha.pericias.length + (ficha.pericias.length === 1 ? ' perícia · ' : ' perícias · ') + r.custos.pericias + ' pts';
+    document.getElementById('c-pericias-conta').textContent = ficha.pericias.length + (ficha.pericias.length === 1 ? ' perícia · ' : ' perícias · ') + 'custam ' + r.custos.pericias;
   });
   var ATRIBUTOS_PERICIA = [['DX', 'DX'], ['IQ', 'IQ'], ['HT', 'HT'], ['Per', 'Percepção'], ['Vontade', 'Vontade']];
   var catalogoPericias = criarCatalogo(document.getElementById('c-pericias-catalogo'), {

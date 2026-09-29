@@ -137,62 +137,105 @@
       var valores = calc.secundarias(atrEfetivo, ficha.ajustes);
       Object.keys(atrEfetivo).forEach(function (k) { valores[k] = atrEfetivo[k]; });
       Object.keys(fixos.secundarias).forEach(function (k) { valores[k] += fixos.secundarias[k]; });
-      var avisos = [];
 
-      // traços
-      var vant = 0, desv = 0;
+      // erros impedem salvar a ficha como pronta e enviar; avisos só informam (coisas para combinar com o narrador)
+      var erros = [], avisos = [];
+      function erro(etapa, texto) { erros.push({ etapa: etapa, texto: texto }); }
+      function aviso(etapa, texto) { avisos.push({ etapa: etapa, texto: texto }); }
+      function virgula(v) { return String(v).replace('.', ','); }
+
+      if (!String(ficha.nome || '').trim()) erro('conceito', 'Falta o nome do personagem.');
+
+      // atributos e secundárias
+      R.atributos.forEach(function (a) {
+        var x = ficha.atributos[a.id];
+        if (!(x >= 1)) erro('atributos', a.nome + ' precisa ser pelo menos 1.');
+        else if (x < 8) aviso('atributos', a.nome + ' ' + x + ': abaixo de 8 o narrador pode vetar para aventureiros.');
+        else if (x > 20) erro('atributos', a.nome + ' ' + x + ': acima de 20 não existe em humanos de Adamar.');
+      });
+      R.secundarias.forEach(function (s) {
+        var lim = calc.limitesSecundaria(s.id, ficha.atributos);
+        var v = base.valores[s.id];
+        if (v < lim.min || v > lim.max) {
+          erro('atributos', s.nome + ' ' + virgula(v) + ' está fora da faixa permitida (' + virgula(lim.min) + ' a ' + virgula(lim.max) + ').');
+        }
+      });
+      if (ficha.social.aparencia === 'lindo') aviso('sociedade', 'Aparência Lindo: o livro reserva para anjos e divindades. Com o narrador.');
+      ficha.idiomas.forEach(function (i) {
+        if (!String(i.nome || '').trim()) erro('sociedade', 'Há um idioma sem nome.');
+        if (i.fala === 'nenhum' && i.escrita === 'nenhum') erro('sociedade', (i.nome || 'Um idioma') + ': escolha como fala ou escreve, ou remova.');
+      });
+
+      // traços: vantagens, desvantagens, qualidades e peculiaridades do catálogo
+      var vant = 0, desv = 0, qualidades = 0, peculiaridades = 0;
       var tracos = ficha.tracos.map(function (sel) {
         var t = TRACO[sel.id];
+        if (!t) { erro('vantagens', 'Traço desconhecido: ' + sel.id + '.'); return { sel: sel, custo: 0 }; }
         var custo = custoDoTraco(sel);
-        if (custo >= 0) vant += custo; else desv += custo;
-        if (!t) { avisos.push('Traço desconhecido: ' + sel.id + '.'); return { sel: sel, custo: 0 }; }
-        if (t.adamar === 'nao') avisos.push(t.nome + ' não existe em Adamar.');
-        if (t.adamar === 'narrador') avisos.push(t.nome + ': só com o narrador.');
+        if (t.categoria === 'qualidade') qualidades += custo;
+        else if (t.categoria === 'peculiaridade') peculiaridades += custo;
+        else if (custo >= 0) vant += custo;
+        else desv += custo;
+        var etapa = t.categoria === 'desvantagem' || t.categoria === 'peculiaridade' ? 'desvantagens' : 'vantagens';
+        if (t.adamar === 'nao') erro(etapa, t.nome + ' não existe em Adamar.');
+        if (t.adamar === 'narrador') aviso(etapa, t.nome + ': só com o narrador.');
         var c = t.custo_estruturado || {};
         var e = sel.escolha || {};
-        if (c.tipo === 'niveis' && t.nivel_max != null && e.nivel > t.nivel_max) avisos.push(t.nome + ': nível máximo ' + t.nivel_max + ' em Adamar.');
-        if (c.tipo === 'niveis' && !e.nivel) avisos.push(t.nome + ': escolha o nível.');
-        if ((c.tipo === 'variavel' || c.tipo === 'minimo') && !e.valor) avisos.push(t.nome + ': combine o custo com o narrador e anote aqui.');
-        if (c.tipo === 'minimo' && e.valor && Math.abs(e.valor) < Math.abs(c.valor)) avisos.push(t.nome + ': custa no mínimo ' + c.valor + '.');
+        if (c.tipo === 'niveis' && t.nivel_max != null && e.nivel > t.nivel_max) erro(etapa, t.nome + ': nível máximo ' + t.nivel_max + ' em Adamar.');
+        if (c.tipo === 'niveis' && !e.nivel) erro(etapa, t.nome + ': escolha o nível.');
+        if ((c.tipo === 'variavel' || c.tipo === 'minimo') && !e.valor) erro(etapa, t.nome + ': combine o custo com o narrador e anote os pontos.');
+        if (c.tipo === 'minimo' && e.valor && Math.abs(e.valor) < Math.abs(c.valor)) erro(etapa, t.nome + ': custa no mínimo ' + c.valor + '.');
+        if (c.tipo === 'faixa' && (e.valor == null || e.valor < Math.min(c.min, c.max) || e.valor > Math.max(c.min, c.max))) {
+          erro(etapa, t.nome + ': pontos fora da faixa ' + c.min + ' a ' + c.max + '.');
+        }
         (t.prerequisitos || []).forEach(function (p) {
           var msg = prerequisitoFalho(p, ficha, valores);
-          if (msg) avisos.push(t.nome + ': ' + msg);
+          if (msg) erro(etapa, t.nome + ': ' + msg);
         });
         return { sel: sel, traco: t, custo: custo };
       });
 
-      // talentos (vantagens)
       var talentos = ficha.talentos.map(function (sel) {
         var t = TALENTO[sel.id];
         var custo = t ? t.custo_por_nivel * (sel.nivel || 0) : 0;
         vant += custo;
-        if (t && sel.nivel > (t.nivel_max || 4)) avisos.push('Talento ' + t.nome + ': no máximo ' + (t.nivel_max || 4) + ' níveis.');
+        if (t && (!(sel.nivel >= 1) || sel.nivel > (t.nivel_max || 4))) erro('vantagens', 'Talento ' + t.nome + ': de 1 a ' + (t.nivel_max || 4) + ' níveis.');
         return { sel: sel, talento: t, custo: custo };
       });
 
-      var qualidades = ficha.qualidades.filter(Boolean).length;
-      var peculiaridades = -ficha.peculiaridades.filter(Boolean).length;
-      if (-peculiaridades > LIMITE_PECULIARIDADES) avisos.push('No máximo ' + LIMITE_PECULIARIDADES + ' peculiaridades (-' + LIMITE_PECULIARIDADES + ' pontos).');
+      function preenchido(q) { return String(q || '').trim() !== ''; }
+      qualidades += ficha.qualidades.filter(preenchido).length;
+      peculiaridades -= ficha.peculiaridades.filter(preenchido).length;
+      if (ficha.qualidades.some(function (q) { return !preenchido(q); })) erro('vantagens', 'Há uma qualidade em branco: escreva ou remova.');
+      if (ficha.peculiaridades.some(function (q) { return !preenchido(q); })) erro('desvantagens', 'Há uma peculiaridade em branco: escreva ou remova.');
+      if (-peculiaridades > LIMITE_PECULIARIDADES) {
+        erro('desvantagens', 'No máximo ' + LIMITE_PECULIARIDADES + ' peculiaridades; você tem ' + (-peculiaridades) + '.');
+      }
       var idiomas = custoIdiomas(ficha);
 
       // perícias
       var bonus = bonusDePericias(ficha);
       var custoPericias = 0;
+      var vistas = {};
       var pericias = ficha.pericias.map(function (sel) {
         var p = PERICIA[sel.id];
-        if (!p) { avisos.push('Perícia desconhecida: ' + sel.id + '.'); return { sel: sel, nh: null }; }
+        if (!p) { erro('pericias', 'Perícia desconhecida: ' + sel.id + '.'); return { sel: sel, nh: null }; }
         custoPericias += sel.pontos || 0;
-        if (p.adamar === 'nao') avisos.push(p.nome + ' não existe em Adamar.');
-        if (p.adamar === 'narrador') avisos.push(p.nome + ': só com o narrador.');
-        if (p.especializacao && !sel.especializacao) avisos.push(p.nome + ': escolha a especialização.');
+        var rotulo = p.nome + (sel.especializacao ? ' (' + sel.especializacao + ')' : '');
+        if (p.adamar === 'nao') erro('pericias', p.nome + ' não existe em Adamar.');
+        if (p.adamar === 'narrador') aviso('pericias', p.nome + ': só com o narrador.');
+        if (p.especializacao && !preenchido(sel.especializacao)) erro('pericias', p.nome + ': escolha a especialização.');
+        var chave = p.id + '|' + String(sel.especializacao || '').trim().toLowerCase();
+        if (vistas[chave]) erro('pericias', rotulo + ' aparece duas vezes.');
+        vistas[chave] = true;
         var esp = (p.especializacoes || []).filter(function (x) { return x.nome === sel.especializacao; })[0];
-        if (esp && esp.adamar === 'narrador') avisos.push(p.nome + ' (' + esp.nome + '): só com o narrador.');
-        if (esp && esp.adamar === 'nao') avisos.push(p.nome + ' (' + esp.nome + ') não existe em Adamar.');
+        if (esp && esp.adamar === 'narrador') aviso('pericias', rotulo + ': só com o narrador.');
+        if (esp && esp.adamar === 'nao') erro('pericias', rotulo + ' não existe em Adamar.');
         var rel = sel.pontos ? calc.nivelPorPontos(p.dificuldade, sel.pontos) : null;
         var atributo = valorAtributo(ficha, valores, p.atributo);
         var extra = (bonus.fixos[p.id] || []).reduce(function (s, b) { return s + b.valor; }, 0);
         var nh = rel == null ? null : atributo + rel + extra;
-        if (sel.pontos && rel == null) avisos.push(p.nome + ': pontos insuficientes para o primeiro nível.');
+        if (rel == null) erro('pericias', rotulo + ': pontos insuficientes para o primeiro nível.');
         return {
           sel: sel, pericia: p, relativo: rel, nh: nh, atributo: p.atributo,
           bonus: bonus.fixos[p.id] || [], situacional: bonus.situacionais[p.id] || []
@@ -200,15 +243,14 @@
       });
 
       // limites
-      var social = base.custos.social;
-      var desvantagens = base.desvantagens + desv; // atributos/secundárias/sociedade negativos + desvantagens
+      var desvantagens = base.desvantagens + desv; // atributos/secundárias/sociedade negativos + desvantagens (peculiaridades à parte)
       var limite = calc.limiteDesvantagens(ficha.orcamento, ((R.campanha || {}).limite_desvantagens || {}).percentual_padrao);
-      if (desvantagens < limite) avisos.push('As desvantagens (' + desvantagens + ') passaram do limite de ' + limite + '. Só com o narrador.');
+      if (desvantagens < limite) erro('desvantagens', 'As desvantagens somam ' + desvantagens + ', além do limite de ' + limite + '.');
 
       var custos = {
         atributos: base.custos.atributos,
         secundarias: base.custos.secundarias,
-        social: social + idiomas,
+        social: base.custos.social + idiomas,
         vantagens: vant,
         desvantagens: desv,
         qualidades: qualidades,
@@ -217,19 +259,25 @@
       };
       var total = Object.keys(custos).reduce(function (s, k) { return s + custos[k]; }, 0);
       var restante = ficha.orcamento - total;
-      if (restante < 0) avisos.unshift('Gastou ' + (-restante) + ' pontos além do orçamento.');
-      if (!ficha.nome) avisos.push('Falta o nome do personagem.');
+      if (restante > 0) erro('geral', 'Faltam ' + restante + ' pontos para gastar: a ficha precisa fechar em ' + ficha.orcamento + '.');
+      if (restante < 0) erro('geral', 'Gastou ' + (-restante) + ' pontos além dos ' + ficha.orcamento + '.');
 
       // equipamento: preço em coroas (1 coroa = $1 do GURPS)
       var gasto = 0;
       var equipamento = ficha.equipamento.map(function (sel) {
         var it = ITEM[sel.id];
+        if (!it) erro('equipamento', 'Item desconhecido: ' + sel.id + '.');
+        else if (it.adamar === 'nao') erro('equipamento', it.nome + ' não existe em Adamar.');
+        else if (it.adamar === 'narrador') aviso('equipamento', it.nome + ': só com o narrador.');
+        if (!(sel.quantidade >= 1)) erro('equipamento', (it ? it.nome : sel.id) + ': quantidade inválida.');
         var preco = it && it.preco ? it.preco.valor * (sel.quantidade || 1) : null;
         if (preco != null) gasto += preco;
         return { sel: sel, item: it, preco: preco };
       });
       gasto = Math.round(gasto * 100) / 100;
-      if (gasto > base.recursos) avisos.push('O equipamento custa ' + gasto + ' coroas, mais que o dinheiro inicial (' + base.recursos + ').');
+      if (gasto > base.recursos) {
+        erro('equipamento', 'O equipamento custa ' + gasto.toLocaleString('pt-BR') + ' coroas, mais que o dinheiro inicial (' + base.recursos.toLocaleString('pt-BR') + ').');
+      }
 
       return {
         valores: valores,
@@ -238,6 +286,7 @@
         restante: restante,
         desvantagens: desvantagens,
         limite: limite,
+        peculiaridades: -peculiaridades,
         recursos: base.recursos,
         gasto_equipamento: gasto,
         dinheiro_restante: Math.round((base.recursos - gasto) * 100) / 100,
@@ -248,7 +297,9 @@
         pericias: pericias,
         esquiva: calc.esquiva(valores.velocidade) + fixos.esquiva,
         base_carga: calc.baseDeCarga(valores.st),
-        avisos: avisos
+        erros: erros,
+        avisos: avisos,
+        valida: erros.length === 0
       };
     }
 
@@ -298,7 +349,7 @@
       if (ficha.conceito) L.push(ficha.conceito);
       if (ficha.era || ficha.origem) L.push([ficha.era, ficha.origem].filter(Boolean).join(' · '));
       L.push('');
-      L.push('Pontos: ' + r.total + ' de ' + ficha.orcamento + (r.restante ? ' (' + (r.restante > 0 ? 'sobram ' + r.restante : 'passou ' + (-r.restante)) + ')' : ''));
+      L.push('Pontos: ' + r.total + ' de ' + ficha.orcamento + (r.restante ? ' (' + (r.restante > 0 ? 'faltam ' + r.restante : 'passou ' + (-r.restante)) + ')' : ''));
       L.push('ST ' + v.st + ' · DX ' + v.dx + ' · IQ ' + v.iq + ' · HT ' + v.ht);
       L.push('PV ' + v.pv + ' · Vontade ' + v.vontade + ' · Per ' + v.per + ' · PF ' + v.pf + ' · Velocidade ' + num(v.velocidade) + ' · Deslocamento ' + v.deslocamento + ' · Esquiva ' + r.esquiva);
       var so = ficha.social;
@@ -344,7 +395,8 @@
         });
       });
       if (lembrar.length) { L.push(''); L.push('*Lembrar na mesa:*'); lembrar.forEach(function (a) { L.push('- ' + a); }); }
-      if (r.avisos.length) { L.push(''); L.push('*Para conversar com o narrador:*'); r.avisos.forEach(function (a) { L.push('- ' + a); }); }
+      if (r.erros.length) { L.push(''); L.push('*Pendências (ficha incompleta):*'); r.erros.forEach(function (a) { L.push('- ' + a.texto); }); }
+      if (r.avisos.length) { L.push(''); L.push('*Para conversar com o narrador:*'); r.avisos.forEach(function (a) { L.push('- ' + a.texto); }); }
       return L.join('\n');
     }
 

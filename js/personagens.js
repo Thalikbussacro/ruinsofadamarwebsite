@@ -33,6 +33,12 @@
     return d.toLocaleDateString('pt-BR') + ' às ' + d.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
   }
 
+  function alertaInline(msg) {
+    var acoes = document.querySelector('.ficha-acoes');
+    var n = acoes.querySelector('.copiado') || acoes.appendChild(el('span', 'copiado'));
+    n.textContent = msg;
+  }
+
   var id = (/[?&]id=([^&]+)/.exec(location.search) || [])[1];
   if (id) mostrarFicha(decodeURIComponent(id)); else mostrarLista();
 
@@ -59,6 +65,8 @@
         if (p.conceito) card.appendChild(el('p', 'personagem-conceito', p.conceito));
         card.appendChild(el('p', 'card-more', [ficha.era, ficha.origem].filter(Boolean).concat([r.total + ' de ' + ficha.orcamento + ' pontos']).join(' · ')));
         card.appendChild(el('p', 'card-more', 'Salvo em ' + quando(p.atualizado)));
+        card.appendChild(el('span', 'personagem-selo ' + (r.valida ? 'pronta' : 'rascunho'),
+          r.valida ? 'Pronta' : 'Rascunho · ' + r.erros.length + (r.erros.length === 1 ? ' pendência' : ' pendências')));
         var acoes = el('div', 'personagem-acoes');
         var ver = el('a', 'btn btn-ghost', 'Ver ficha');
         ver.href = link.href;
@@ -162,6 +170,9 @@
     document.getElementById('f-conceito').textContent = f.conceito || '';
     document.getElementById('f-editar').href = 'criador.html?editar=' + encodeURIComponent(idFicha);
     var cfg = (window.SITE_CONFIG && window.SITE_CONFIG.whatsapp) || { numero: '' };
+    document.getElementById('f-whats').addEventListener('click', function (ev) {
+      if (!r.valida) { ev.preventDefault(); alertaInline('Resolva as pendências no criador antes de enviar.'); }
+    });
     document.getElementById('f-whats').href = window.buildWhatsAppUrl
       ? window.buildWhatsAppUrl(cfg.numero, 'Olá! Montei meu personagem de Adamar:\n\n' + criador.textoFicha(f, r)) : '#';
     document.getElementById('f-baixar').addEventListener('click', function () { baixar(f); });
@@ -171,7 +182,9 @@
     var pts = el('div', 'ficha-pontos');
     pts.appendChild(el('strong', null, String(r.total)));
     pts.appendChild(el('span', null, 'de ' + f.orcamento + ' pontos' + (f.jogador ? ' · jogador: ' + f.jogador : '')));
-    pts.appendChild(el('span', r.restante < 0 ? 'calc-estourou' : null, r.restante >= 0 ? 'sobram ' + r.restante : 'passou ' + (-r.restante)));
+    pts.appendChild(el('span', r.restante ? 'calc-estourou' : null, r.restante === 0 ? 'pontos fechados' : r.restante > 0 ? 'faltam ' + r.restante : 'passou ' + (-r.restante)));
+    pts.appendChild(el('span', 'personagem-selo ' + (r.valida ? 'pronta' : 'rascunho'), r.valida ? 'Pronta' : 'Rascunho'));
+    if (!r.valida) document.getElementById('f-whats').classList.add('is-disabled');
     box.appendChild(pts);
 
     var grade = el('div', 'ficha-grade');
@@ -290,10 +303,17 @@
       box.appendChild(b);
     });
 
+    if (r.erros.length) {
+      var pe = bloco('Pendências: ficha incompleta', 'ficha-largo');
+      var ule = el('ul', 'calc-avisos');
+      r.erros.forEach(function (a) { ule.appendChild(el('li', null, a.texto)); });
+      pe.appendChild(ule);
+      box.insertBefore(pe, box.children[1]);
+    }
     if (r.avisos.length) {
       var av = bloco('Para conversar com o narrador', 'ficha-largo');
-      var ul = el('ul', 'calc-avisos');
-      r.avisos.forEach(function (a) { ul.appendChild(el('li', null, a)); });
+      var ul = el('ul', 'app-pendencias');
+      r.avisos.forEach(function (a) { ul.appendChild(el('li', null, a.texto)); });
       av.appendChild(ul);
       box.appendChild(av);
     }

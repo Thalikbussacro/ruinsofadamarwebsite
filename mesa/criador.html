@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Criador de personagem — Ruínas de Adamar</title>
-  <meta name="description" content="Monte a ficha GURPS do seu personagem de Adamar passo a passo: atributos, vantagens, desvantagens, perícias e equipamento, só com o que existe no mundo.">
+  <meta name="description" content="Monte a ficha GURPS do seu personagem de Adamar: atributos, vantagens, desvantagens, perícias e equipamento, só com o que existe no mundo.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
@@ -18,167 +18,225 @@
   <script src="../js/personagens-salvos.js" defer></script>
   <script src="../js/criador.js" defer></script>
 </head>
-<body data-root="../" data-page="mesa/criador.html">
-  <main id="conteudo" class="page page-wide">
-    <article class="scroll">
-      <header class="page-head">
-        <p class="kicker">À Mesa · GURPS</p>
-        <h1>Criador de personagem</h1>
-        <p class="lede">Monte a ficha passo a passo. Só aparece o que existe em Adamar; o que depende do narrador vem marcado.</p>
-      </header>
-
-      <p class="form-intro">O rascunho fica guardado enquanto você monta. Use <strong>Salvar no navegador</strong> para guardar o personagem em <a href="personagens.html">Meus personagens</a>, onde dá para ver a ficha pronta. No fim, mande para o narrador pelo WhatsApp ou baixe o arquivo para continuar em outro aparelho. Na dúvida sobre uma regra, veja <a href="ficha-gurps.html">Atributos</a>, <a href="vantagens-gurps.html">Vantagens</a>, <a href="desvantagens-gurps.html">Desvantagens</a> e <a href="pericias-gurps.html">Perícias</a>.</p>
-
-      <div class="criador-barra" id="criador-barra" aria-live="polite">
-        <span class="criador-pontos"><strong id="barra-total">0</strong> <span id="barra-orcamento">de 80 pontos</span></span>
-        <span id="barra-restante"></span>
-        <span id="barra-desv"></span>
-        <span class="criador-salvar">
-          <button type="button" class="btn btn-ghost" id="c-salvar">Salvar no navegador</button>
-          <span id="c-salvo" class="criador-salvo"></span>
-        </span>
+<body data-root="../" data-page="mesa/criador.html" class="modo-app">
+  <main id="conteudo" class="app">
+    <!-- coluna lateral: pontos, etapas e salvar -->
+    <aside class="app-lado" aria-label="Resumo e etapas">
+      <div class="app-quem">
+        <span class="kicker">Criador de personagem</span>
+        <strong id="lado-nome">Sem nome</strong>
       </div>
+      <div class="app-pontos" aria-live="polite">
+        <div class="app-total"><strong id="lado-total">0</strong><span id="lado-orcamento">/ 80</span></div>
+        <p id="lado-restante"></p>
+        <dl class="app-medidores">
+          <div><dt>Desvantagens</dt><dd id="lado-desv"></dd></div>
+          <div><dt>Peculiaridades</dt><dd id="lado-pec"></dd></div>
+          <div><dt>Dinheiro</dt><dd id="lado-dinheiro"></dd></div>
+        </dl>
+      </div>
+      <nav class="app-etapas" id="criador-etapas" aria-label="Etapas"></nav>
+      <div class="app-salvar">
+        <button type="button" class="btn btn-primary" id="c-salvar">Salvar</button>
+        <p id="c-salvo" class="app-status" role="status"></p>
+        <a class="btn-link" href="personagens.html">Meus personagens</a>
+      </div>
+    </aside>
 
-      <ol class="wizard-progress criador-etapas" id="criador-etapas" aria-label="Etapas"></ol>
-
-      <div id="criador" class="wizard is-wizard">
+    <div class="app-principal">
+      <div id="criador">
 
         <!-- 1. Conceito -->
-        <section class="step" data-etapa="Conceito">
-          <h2 class="step-titulo">Quem é o personagem?</h2>
-          <p class="field-hint">Comece pela pessoa, não pelos números. Se ainda não pensou nisso, o formulário <a href="../jogar.html">Quero jogar</a> ajuda.</p>
-          <div class="field-row">
-            <div class="field"><label for="c-nome">Nome do personagem</label><input id="c-nome" data-campo="nome" maxlength="80"></div>
-            <div class="field"><label for="c-orcamento">Pontos</label><select id="c-orcamento"></select></div>
-          </div>
-          <div class="field" id="campo-orcamento-livre" hidden><label for="c-orcamento-livre">Quantos pontos?</label><input id="c-orcamento-livre" type="number" min="0" step="5"></div>
-          <div class="field"><label for="c-jogador">Seu nome <span class="opcional">(opcional)</span></label><input id="c-jogador" data-campo="jogador" maxlength="80"></div>
-          <div class="field"><label for="c-conceito">Em uma frase</label><input id="c-conceito" data-campo="conceito" maxlength="160" placeholder="Ex.: caçador de Montar que perdeu o irmão nas minas"></div>
-          <div class="field-row">
-            <div class="field"><label for="c-era">Era</label>
-              <select id="c-era" data-campo="era">
-                <option value="">Escolha…</option>
-                <option>Era do Novo Mundo</option>
-                <option>Era da Alta Magia</option>
-                <option>Era do Apocalipse</option>
-              </select>
+        <section class="app-etapa" data-id="conceito" data-etapa="Conceito">
+          <header class="app-cab">
+            <h1>Quem é o personagem?</h1>
+            <p>Comece pela pessoa, não pelos números. Sem ideia ainda? O <a href="../jogar.html">Quero jogar</a> ajuda.</p>
+          </header>
+          <div class="app-corpo app-form">
+            <div class="app-colunas">
+              <div class="field"><label for="c-nome">Nome do personagem</label><input id="c-nome" data-campo="nome" maxlength="80" required></div>
+              <div class="field"><label for="c-jogador">Seu nome <span class="opcional">(opcional)</span></label><input id="c-jogador" data-campo="jogador" maxlength="80"></div>
+              <div class="field"><label for="c-orcamento">Pontos da campanha</label><select id="c-orcamento"></select></div>
+              <div class="field" id="campo-orcamento-livre" hidden><label for="c-orcamento-livre">Quantos pontos?</label><input id="c-orcamento-livre" type="number" min="0" max="1000" step="5"></div>
+              <div class="field"><label for="c-era">Era</label>
+                <select id="c-era" data-campo="era">
+                  <option value="">Escolha…</option>
+                  <option>Era do Novo Mundo</option>
+                  <option>Era da Alta Magia</option>
+                  <option>Era do Apocalipse</option>
+                </select>
+              </div>
+              <div class="field"><label for="c-origem">Origem</label><input id="c-origem" data-campo="origem" list="origens" maxlength="80"></div>
             </div>
-            <div class="field"><label for="c-origem">Origem</label><input id="c-origem" data-campo="origem" list="origens" maxlength="80"></div>
+            <datalist id="origens">
+              <option value="Quederia"></option><option value="Montar"></option><option value="Fontest"></option><option value="Indacor"></option>
+              <option value="Ilhas distantes"></option><option value="Costas frias"></option><option value="Geleiras"></option><option value="Desertos"></option>
+              <option value="Estepes"></option><option value="Florestas tropicais"></option><option value="Filho de forasteiros"></option><option value="Refúgio subterrâneo"></option>
+            </datalist>
+            <div class="field"><label for="c-conceito">Em uma frase</label><input id="c-conceito" data-campo="conceito" maxlength="160" placeholder="Ex.: caçador de Montar que perdeu o irmão nas minas"></div>
+            <div class="app-colunas">
+              <div class="field"><label for="c-aparencia-fisica">Aparência <span class="opcional">(opcional)</span></label><textarea id="c-aparencia-fisica" data-campo="aparencia_fisica" rows="4" maxlength="600"></textarea></div>
+              <div class="field"><label for="c-historia">História e o que faz da vida <span class="opcional">(opcional)</span></label><textarea id="c-historia" data-campo="historia" rows="4" maxlength="2000"></textarea></div>
+            </div>
           </div>
-          <datalist id="origens">
-            <option value="Quederia"></option><option value="Montar"></option><option value="Fontest"></option><option value="Indacor"></option>
-            <option value="Ilhas distantes"></option><option value="Costas frias"></option><option value="Geleiras"></option><option value="Desertos"></option>
-            <option value="Estepes"></option><option value="Florestas tropicais"></option><option value="Filho de forasteiros"></option><option value="Refúgio subterrâneo"></option>
-          </datalist>
-          <div class="field"><label for="c-aparencia-fisica">Aparência <span class="opcional">(opcional)</span></label><textarea id="c-aparencia-fisica" data-campo="aparencia_fisica" rows="2" maxlength="600"></textarea></div>
-          <div class="field"><label for="c-historia">História e o que faz da vida <span class="opcional">(opcional)</span></label><textarea id="c-historia" data-campo="historia" rows="4" maxlength="2000"></textarea></div>
         </section>
 
         <!-- 2. Atributos -->
-        <section class="step" data-etapa="Atributos">
-          <h2 class="step-titulo">Atributos</h2>
-          <p class="field-hint">10 é a média humana e não custa nada. Entre 8 e 12 é gente comum; 13 ou 14 já chamam atenção.</p>
-          <div class="calc-grid" id="c-atributos"></div>
-          <h3 class="question-title">Características secundárias</h3>
-          <p class="field-hint">Começam no que os atributos dão. Mude para comprar ou vender.</p>
-          <div class="calc-grid" id="c-secundarias"></div>
-          <p class="calc-detalhe" id="c-derivadas"></p>
+        <section class="app-etapa" data-id="atributos" data-etapa="Atributos">
+          <header class="app-cab">
+            <h1>Atributos</h1>
+            <p>10 é a média humana e não custa nada. Entre 8 e 12 é gente comum; 13 ou 14 já chamam atenção.</p>
+          </header>
+          <div class="app-corpo app-form">
+            <div class="app-atributos" id="c-atributos"></div>
+            <h2 class="app-sub">Características secundárias</h2>
+            <p class="field-hint">Começam no que os atributos dão. Mude para comprar ou vender.</p>
+            <div class="app-atributos" id="c-secundarias"></div>
+            <p class="calc-detalhe" id="c-derivadas"></p>
+          </div>
         </section>
 
         <!-- 3. Sociedade -->
-        <section class="step" data-etapa="Sociedade">
-          <h2 class="step-titulo">Lugar no mundo</h2>
-          <div class="calc-grid">
-            <div class="field calc-campo"><label for="c-soc-aparencia">Aparência</label><select id="c-soc-aparencia" data-soc="aparencia"></select><span class="calc-info" id="c-info-aparencia"></span></div>
-            <div class="field calc-campo"><label for="c-soc-status">Status</label><select id="c-soc-status" data-soc="status"></select><span class="calc-info" id="c-info-status"></span></div>
-            <div class="field calc-campo"><label for="c-soc-riqueza">Riqueza</label><select id="c-soc-riqueza" data-soc="riqueza"></select><span class="calc-info" id="c-info-riqueza"></span></div>
-            <div class="field calc-campo"><label for="c-soc-alfabetizacao">Leitura</label><select id="c-soc-alfabetizacao" data-soc="alfabetizacao"></select><span class="calc-info" id="c-info-alfabetizacao"></span></div>
+        <section class="app-etapa" data-id="sociedade" data-etapa="Sociedade">
+          <header class="app-cab">
+            <h1>Lugar no mundo</h1>
+            <p>Aparência, posição, dinheiro e idiomas.</p>
+          </header>
+          <div class="app-corpo app-form">
+            <div class="app-atributos">
+              <div class="field calc-campo"><label for="c-soc-aparencia">Aparência</label><select id="c-soc-aparencia" data-soc="aparencia"></select><span class="calc-info" id="c-info-aparencia"></span></div>
+              <div class="field calc-campo"><label for="c-soc-status">Status</label><select id="c-soc-status" data-soc="status"></select><span class="calc-info" id="c-info-status"></span></div>
+              <div class="field calc-campo"><label for="c-soc-riqueza">Riqueza</label><select id="c-soc-riqueza" data-soc="riqueza"></select><span class="calc-info" id="c-info-riqueza"></span></div>
+              <div class="field calc-campo"><label for="c-soc-alfabetizacao">Leitura</label><select id="c-soc-alfabetizacao" data-soc="alfabetizacao"></select><span class="calc-info" id="c-info-alfabetizacao"></span></div>
+            </div>
+            <label class="check calc-check">
+              <input type="checkbox" id="c-soc-analfabetismo" data-soc="analfabetismoRegra">
+              <span>Na mesa, não saber ler é o normal: analfabetismo não conta no limite de desvantagens.</span>
+            </label>
+            <h2 class="app-sub">Idiomas</h2>
+            <p class="field-hint">A língua materna vem de graça. Outras custam conforme o quanto o personagem fala e escreve.</p>
+            <div class="field app-estreito"><label for="c-idioma-materno">Língua materna</label><input id="c-idioma-materno" data-campo="idioma_materno" maxlength="60"></div>
+            <div id="c-idiomas" class="criador-lista"></div>
+            <button type="button" class="btn btn-ghost criador-add" id="c-add-idioma">+ Outro idioma</button>
           </div>
-          <label class="check calc-check">
-            <input type="checkbox" id="c-soc-analfabetismo" data-soc="analfabetismoRegra">
-            <span>Na mesa, não saber ler é o normal: analfabetismo não conta no limite de desvantagens.</span>
-          </label>
-          <h3 class="question-title">Idiomas</h3>
-          <p class="field-hint">A língua materna vem de graça. Outras custam conforme o quanto o personagem fala e escreve.</p>
-          <div class="field"><label for="c-idioma-materno">Língua materna</label><input id="c-idioma-materno" data-campo="idioma_materno" maxlength="60"></div>
-          <div id="c-idiomas" class="criador-lista"></div>
-          <button type="button" class="btn btn-ghost criador-add" id="c-add-idioma">+ Outro idioma</button>
         </section>
 
         <!-- 4. Vantagens -->
-        <section class="step" data-etapa="Vantagens">
-          <h2 class="step-titulo">Vantagens</h2>
-          <p class="field-hint">Talentos naturais, contatos, dons. Aparência, riqueza, status e idiomas ficam na etapa anterior.</p>
-          <div id="c-vantagens-escolhidas" class="criador-lista"></div>
-          <div class="criador-seletor" id="c-vantagens-seletor"></div>
-          <h3 class="question-title">Talentos</h3>
-          <p class="field-hint">Um Talento dá +1 por nível num grupo de perícias.</p>
-          <div id="c-talentos" class="criador-lista"></div>
-          <div class="criador-inline">
-            <select id="c-talento-novo" aria-label="Talento"></select>
-            <button type="button" class="btn btn-ghost" id="c-add-talento">+ Talento</button>
+        <section class="app-etapa app-etapa-lista" data-id="vantagens" data-etapa="Vantagens">
+          <header class="app-cab">
+            <h1>Vantagens</h1>
+            <p>Escolha no catálogo à esquerda; o que está na ficha fica à direita. Aparência, riqueza, status e idiomas ficam em Sociedade.</p>
+          </header>
+          <div class="app-corpo app-duplo">
+            <div class="painel" id="c-vantagens-catalogo"></div>
+            <div class="painel">
+              <div class="painel-cab"><h2>Na ficha</h2><span class="painel-conta" id="c-vantagens-conta"></span></div>
+              <div class="painel-rolagem">
+                <div id="c-vantagens-escolhidas" class="criador-lista"></div>
+                <h3 class="app-sub">Talentos</h3>
+                <p class="field-hint">+1 por nível num grupo de perícias.</p>
+                <div id="c-talentos" class="criador-lista"></div>
+                <div class="criador-inline">
+                  <select id="c-talento-novo" aria-label="Talento"></select>
+                  <button type="button" class="btn btn-ghost" id="c-add-talento">+ Talento</button>
+                </div>
+                <h3 class="app-sub">Qualidades com suas palavras</h3>
+                <p class="field-hint">Pequenas vantagens de 1 ponto que não estão no catálogo.</p>
+                <div id="c-qualidades" class="criador-lista"></div>
+                <button type="button" class="btn btn-ghost criador-add" id="c-add-qualidade">+ Qualidade</button>
+              </div>
+            </div>
           </div>
-          <h3 class="question-title">Qualidades</h3>
-          <p class="field-hint">Pequenas vantagens de 1 ponto, com suas palavras. Ex.: "sempre acha comida na cidade".</p>
-          <div id="c-qualidades" class="criador-lista"></div>
-          <button type="button" class="btn btn-ghost criador-add" id="c-add-qualidade">+ Qualidade</button>
         </section>
 
         <!-- 5. Desvantagens -->
-        <section class="step" data-etapa="Desvantagens">
-          <h2 class="step-titulo">Desvantagens</h2>
-          <p class="field-hint" id="c-desv-limite"></p>
-          <div id="c-desvantagens-escolhidas" class="criador-lista"></div>
-          <div class="criador-seletor" id="c-desvantagens-seletor"></div>
-          <h3 class="question-title">Peculiaridades</h3>
-          <p class="field-hint">Manias e detalhes de -1 ponto cada, até cinco. Não contam no limite.</p>
-          <div id="c-peculiaridades" class="criador-lista"></div>
-          <button type="button" class="btn btn-ghost criador-add" id="c-add-peculiaridade">+ Peculiaridade</button>
+        <section class="app-etapa app-etapa-lista" data-id="desvantagens" data-etapa="Desvantagens">
+          <header class="app-cab">
+            <h1>Desvantagens</h1>
+            <p id="c-desv-limite"></p>
+          </header>
+          <div class="app-corpo app-duplo">
+            <div class="painel" id="c-desvantagens-catalogo"></div>
+            <div class="painel">
+              <div class="painel-cab"><h2>Na ficha</h2><span class="painel-conta" id="c-desvantagens-conta"></span></div>
+              <div class="painel-rolagem">
+                <div id="c-desvantagens-escolhidas" class="criador-lista"></div>
+                <h3 class="app-sub">Peculiaridades com suas palavras</h3>
+                <p class="field-hint">Manias de -1 ponto que não estão no catálogo. Até cinco no total; não contam no limite.</p>
+                <div id="c-peculiaridades" class="criador-lista"></div>
+                <button type="button" class="btn btn-ghost criador-add" id="c-add-peculiaridade">+ Peculiaridade</button>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- 6. Perícias -->
-        <section class="step" data-etapa="Perícias">
-          <h2 class="step-titulo">Perícias</h2>
-          <p class="field-hint">O NH é o número que você rola para acertar. Os bônus de vantagens e Talentos já entram na conta.</p>
-          <div id="c-pericias-escolhidas" class="criador-lista"></div>
-          <div class="criador-seletor" id="c-pericias-seletor"></div>
+        <section class="app-etapa app-etapa-lista" data-id="pericias" data-etapa="Perícias">
+          <header class="app-cab">
+            <h1>Perícias</h1>
+            <p>O NH é o número que você rola para acertar. Os bônus de vantagens e Talentos já entram na conta.</p>
+          </header>
+          <div class="app-corpo app-duplo">
+            <div class="painel" id="c-pericias-catalogo"></div>
+            <div class="painel">
+              <div class="painel-cab"><h2>Na ficha</h2><span class="painel-conta" id="c-pericias-conta"></span></div>
+              <div class="painel-rolagem"><div id="c-pericias-escolhidas" class="criador-lista"></div></div>
+            </div>
+          </div>
         </section>
 
         <!-- 7. Equipamento -->
-        <section class="step" data-etapa="Equipamento">
-          <h2 class="step-titulo">Equipamento</h2>
-          <p class="field-hint" id="c-dinheiro"></p>
-          <div id="c-equipamento-escolhido" class="criador-lista"></div>
-          <div class="criador-seletor" id="c-equipamento-seletor"></div>
+        <section class="app-etapa app-etapa-lista" data-id="equipamento" data-etapa="Equipamento">
+          <header class="app-cab">
+            <h1>Equipamento</h1>
+            <p id="c-dinheiro"></p>
+          </header>
+          <div class="app-corpo app-duplo">
+            <div class="painel" id="c-equipamento-catalogo"></div>
+            <div class="painel">
+              <div class="painel-cab"><h2>Na mochila</h2><span class="painel-conta" id="c-equipamento-conta"></span></div>
+              <div class="painel-rolagem"><div id="c-equipamento-escolhido" class="criador-lista"></div></div>
+            </div>
+          </div>
         </section>
 
         <!-- 8. Revisão -->
-        <section class="step" data-etapa="Revisão">
-          <h2 class="step-titulo">Revisão</h2>
-          <ul id="c-avisos" class="calc-avisos"></ul>
-          <div class="field"><label for="c-notas">Recado para o narrador <span class="opcional">(opcional)</span></label><textarea id="c-notas" data-campo="notas" rows="3" maxlength="1000"></textarea></div>
-          <pre class="resumo" id="c-texto"></pre>
-          <div class="resumo-acoes">
-            <a class="btn btn-primary" id="c-whats" href="#" target="_blank" rel="noopener"><span class="glyph" aria-hidden="true">⚔&#xFE0E;</span> Enviar pelo WhatsApp</a>
-            <button type="button" class="btn btn-ghost" id="c-copiar">Copiar texto</button>
-            <button type="button" class="btn btn-ghost" id="c-baixar">Baixar ficha (.json)</button>
-            <label class="btn btn-ghost criador-arquivo">Abrir ficha…<input type="file" id="c-abrir" accept=".json,application/json"></label>
-            <span class="copiado" id="c-copiado" role="status"></span>
+        <section class="app-etapa app-etapa-lista" data-id="revisao" data-etapa="Revisão">
+          <header class="app-cab">
+            <h1>Revisão</h1>
+            <p id="c-revisao-status"></p>
+          </header>
+          <div class="app-corpo app-duplo">
+            <div class="painel">
+              <div class="painel-cab"><h2>Pendências e avisos</h2></div>
+              <div class="painel-rolagem">
+                <ul id="c-erros" class="app-pendencias"></ul>
+                <ul id="c-avisos" class="app-pendencias app-avisos"></ul>
+                <div class="field"><label for="c-notas">Recado para o narrador <span class="opcional">(opcional)</span></label><textarea id="c-notas" data-campo="notas" rows="3" maxlength="1000"></textarea></div>
+              </div>
+            </div>
+            <div class="painel">
+              <div class="painel-cab"><h2>Ficha em texto</h2></div>
+              <div class="painel-rolagem"><pre class="resumo app-texto" id="c-texto"></pre></div>
+              <div class="painel-pe resumo-acoes">
+                <a class="btn btn-primary" id="c-whats" href="#" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+                <button type="button" class="btn btn-ghost" id="c-copiar">Copiar</button>
+                <button type="button" class="btn btn-ghost" id="c-baixar">Baixar .json</button>
+                <label class="btn btn-ghost criador-arquivo">Abrir…<input type="file" id="c-abrir" accept=".json,application/json"></label>
+                <button type="button" class="btn-link" id="c-nova">Ficha nova</button>
+                <span class="copiado" id="c-copiado" role="status"></span>
+              </div>
+            </div>
           </div>
-          <p class="resumo-acoes"><button type="button" class="btn-link" id="c-nova">Começar uma ficha nova</button></p>
         </section>
-
-        <div class="wizard-nav">
-          <button type="button" class="btn btn-ghost" data-voltar>‹ Voltar</button>
-          <button type="button" class="btn btn-primary" data-seguir>Continuar ›</button>
-        </div>
       </div>
 
-      <nav class="page-links">
-        <a rel="prev" href="ficha-gurps.html">‹ Atributos (GURPS)</a>
-        <a class="next" rel="next" href="pericias-gurps.html">Perícias (GURPS) ›</a>
-      </nav>
-    </article>
+      <footer class="app-rodape">
+        <button type="button" class="btn btn-ghost" data-voltar>‹ Voltar</button>
+        <p class="app-rodape-status" id="c-rodape-status"></p>
+        <button type="button" class="btn btn-primary" data-seguir>Continuar ›</button>
+      </footer>
+    </div>
   </main>
   <noscript><p class="noscript">O criador de personagem precisa de JavaScript. Menu: <a href="../index.html">Início</a> · <a href="../mundo/visao-geral.html">O Mundo</a> · <a href="../canone/materialidade.html">Cânone</a> · <a href="../personagens/criando.html">Personagens</a> · <a href="../mesa/regras.html">À Mesa</a> · <a href="../cronicas/mito-da-criacao.html">Crônicas</a></p></noscript>
 </body>

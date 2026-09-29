@@ -199,12 +199,12 @@
     var total = document.getElementById('lado-total');
     total.textContent = String(r.restante);
     total.className = r.restante < 0 ? 'tem-erro' : '';
-    document.getElementById('lado-orcamento').textContent = 'pontos de saldo';
+    document.getElementById('lado-orcamento').textContent = 'de saldo';
     var rest = document.getElementById('lado-restante');
-    rest.textContent = ficha.orcamento + ' iniciais − ' + r.pontos_gastos + ' gastos + ' + r.pontos_devolvidos + ' devolvidos' + (r.restante < 0 ? ' · saldo negativo!' : '');
+    rest.textContent = r.restante < 0 ? 'Saldo negativo' : 'de ' + ficha.orcamento + ' · gastou ' + r.pontos_gastos + (r.pontos_devolvidos ? ' · voltou ' + r.pontos_devolvidos : '');
     rest.className = r.restante < 0 ? 'tem-erro' : '';
     var d = document.getElementById('lado-desv');
-    d.textContent = (-r.desvantagens) + ' de ' + (-r.limite);
+    d.textContent = (-r.desvantagens) + ' / ' + (-r.limite);
     d.className = r.desvantagens < r.limite ? 'tem-erro' : '';
     var p = document.getElementById('lado-pec');
     p.textContent = r.peculiaridades + ' / ' + criador.LIMITE_PECULIARIDADES;

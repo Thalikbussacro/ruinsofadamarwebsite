@@ -1971,3 +1971,64 @@ body.modo-app .deco { display: none; }
 .pericia-nome .icone-item { width: 1.25em; height: 1.25em; }
 .app-cat-topo .icone-item, .app-item-topo .icone-item { margin-right: 0; width: 1.2rem; height: 1.2rem; }
 .st-narrador .icone-item { color: var(--osso); }
+
+/* ---------- 20. Criador: limpeza visual (menos caixas, rótulos legíveis, mais contraste) ---------- */
+.app { --texto-2: #c4b89f; --texto-3: #a39780; --fundo-card: rgba(255, 244, 220, 0.035); --fundo-card-hover: rgba(255, 244, 220, 0.06); }
+/* lateral */
+.app-lado { width: auto; gap: 0.8rem; }
+.app-pontos { padding: 0.75rem 0.85rem; border: 0; border-left: 3px solid var(--sangue-vivo); background: rgba(110, 31, 26, 0.22); }
+.app-total { flex-wrap: nowrap; gap: 0.45rem; white-space: nowrap; }
+.app-total span { font-family: var(--f-corpo); font-size: 1rem; color: var(--texto-2); }
+.app-pontos p { margin: 0.15rem 0 0.6rem; font-family: var(--f-corpo); font-size: 0.92rem; color: var(--texto-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.app-medidores { font-size: 0.92rem; }
+.app-medidores dt { color: var(--texto-2); white-space: nowrap; }
+.app-medidores dd { white-space: nowrap; }
+.app-quem .kicker { color: var(--texto-3); }
+.app-etapa-botao { font-family: var(--f-corpo); font-size: 1rem; letter-spacing: 0; text-transform: none; border: 0; border-left: 3px solid transparent; background: transparent; padding: 0.4rem 0.55rem; }
+.app-etapa-botao:hover { background: var(--fundo-card); }
+.app-etapa-botao.is-current { background: rgba(110, 31, 26, 0.3); }
+.app-salvar { border: 0; background: transparent; padding: 0; }
+/* cabeçalho da etapa */
+.app-cab p { color: var(--texto-2); }
+/* painéis: sem moldura dupla */
+.painel { background: transparent; border: 0; }
+.painel-cab { border-bottom: 1px solid var(--ouro-fio); padding: 0.4rem 0.2rem 0.6rem; }
+.painel-rolagem { padding: 0.5rem 0.2rem; }
+.painel-cab h2 { font-size: 0.95rem; }
+.painel-conta, .painel-conta-catalogo { font-family: var(--f-corpo); font-style: normal; font-size: 0.92rem; color: var(--texto-3); }
+/* filtros: rótulos normais e chips sem borda */
+.filtro-rotulo { min-width: 3.8rem; font-family: var(--f-corpo); font-size: 0.9rem; letter-spacing: 0; text-transform: none; color: var(--texto-3); }
+.chip-p { padding: 0.15rem 0.6rem; font-family: var(--f-corpo); font-size: 0.9rem; letter-spacing: 0; text-transform: none; color: var(--texto-2); background: var(--fundo-card); border: 1px solid transparent; border-radius: 1rem; }
+.chip-p:hover { color: var(--osso-claro); background: var(--fundo-card-hover); border-color: transparent; }
+.chip-p[aria-pressed="true"] { color: #1b140c; background: var(--ouro-claro); border-color: var(--ouro-claro); }
+.filtro-narrador { color: var(--texto-2); }
+/* catálogo: sem linhas; destaque só no hover */
+.app-catalogo { padding: 0.2rem 0; }
+.app-cat-item { border-bottom: 0; padding: 0.45rem 0.5rem; border-radius: 2px; }
+.app-cat-item:hover { background: var(--fundo-card-hover); }
+.app-cat-resumo { color: var(--texto-2); font-size: 0.95rem; }
+.app-cat-selo { font-family: var(--f-corpo); font-size: 0.92rem; color: var(--ouro-claro); }
+.app-adicionar { width: 1.9rem; height: 1.9rem; border-radius: 50%; border: 1px solid var(--ouro-linha); background: transparent; color: var(--ouro-claro); }
+.app-adicionar:hover:not(:disabled) { background: var(--sangue-vivo); color: var(--osso-claro); border-color: var(--sangue-vivo); }
+.app-adicionar:disabled { border-color: transparent; }
+/* cards da ficha: fundo suave + faixa lateral, sem moldura */
+.app-item { background: var(--fundo-card); border: 0; border-left: 3px solid var(--ouro-escuro); padding: 0.45rem 0.6rem; }
+.app-item.aberto { background: var(--fundo-card-hover); }
+.app-item-escolha { color: var(--texto-2); }
+.app-item-cat { font-family: var(--f-corpo); font-size: 0.88rem; letter-spacing: 0; text-transform: none; color: var(--texto-3); }
+.app-item-meta, .criador-variante { color: var(--texto-2); }
+.criador-campo > span { font-family: var(--f-corpo); font-size: 0.88rem; letter-spacing: 0; color: var(--texto-3); }
+.app-item input, .app-item select, .criador-inline select, .painel-filtros .filtro-ordem, .criador-busca {
+  background: rgba(0, 0, 0, 0.35);
+  border-color: rgba(168, 136, 74, 0.22);
+}
+.app-remover { border: 0; color: var(--texto-3); font-size: 1.2rem; }
+.app-sub { font-family: var(--f-corpo); font-size: 1.05rem; letter-spacing: 0; text-transform: none; color: var(--osso-claro); }
+.field-hint { color: var(--texto-2); }
+/* etiquetas de efeito: pílulas sem borda */
+.app .efeito-tag { min-width: 0; padding: 0.05rem 0.5rem; font-family: var(--f-corpo); font-size: 0.8rem; letter-spacing: 0; text-transform: none; border: 0; border-radius: 1rem; background: rgba(168, 136, 74, 0.14); }
+.app .tag-condicional { background: rgba(224, 138, 94, 0.18); }
+.app .tag-regra { background: rgba(255, 244, 220, 0.06); }
+.app-efeitos summary { color: var(--texto-3); }
+/* rodapé */
+.app-rodape { background: transparent; }

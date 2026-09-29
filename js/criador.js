@@ -19,8 +19,8 @@
     social: 'Social', saber: 'Saberes', ladinagem: 'Ladinagem', misterio: 'Mistério'
   };
   var CATEGORIAS_EQUIP = {
-    'arma-corpo-a-corpo': 'Armas corpo a corpo', 'arma-distancia': 'Armas à distância', 'arma-pesada': 'Armas pesadas',
-    armadura: 'Armaduras', 'armadura-cavalo': 'Armaduras de cavalo', escudo: 'Escudos', equipamento: 'Equipamento variado'
+    'arma-corpo-a-corpo': 'Corpo a corpo', 'arma-distancia': 'À distância', 'arma-pesada': 'Pesadas',
+    armadura: 'Armaduras', 'armadura-cavalo': 'De cavalo', escudo: 'Escudos', equipamento: 'Variado'
   };
   var DIFICULDADES = ['Fácil', 'Média', 'Difícil', 'Muito Difícil'];
 
@@ -151,6 +151,7 @@
     voltar.disabled = i === 0;
     seguir.hidden = i === etapas.length - 1;
     try { localStorage.setItem(ARMAZENAMENTO_ETAPA, String(i)); } catch (e) { /* sem armazenamento */ }
+    if (etapas[i].getAttribute('data-id') === 'revisao') mostrarIncompletos = true;
     atualizar();
     var corpo = etapas[i].querySelector('.app-corpo');
     if (corpo) corpo.scrollTop = 0;
@@ -161,19 +162,30 @@
     for (var i = 0; i < etapas.length; i++) if (etapas[i].getAttribute('data-id') === id) return irPara(i);
   }
 
-  // marcas nas etapas: número de pendências (erros) ou ✓
+  // Marcas nas etapas. Erro (contra as regras) aparece sempre, com número; o que só falta preencher
+  // vira "○" até a pessoa tentar salvar ou abrir a revisão, e aí passa a mostrar o número.
+  var mostrarIncompletos = false;
+  function daEtapa(lista, id) {
+    return lista.filter(function (e) { return e.etapa === id || (id === 'revisao' && e.etapa === 'geral'); });
+  }
   atualizadores.push(function (r) {
     botoesEtapa.forEach(function (b) {
-      var n = r.erros.filter(function (e) { return e.etapa === b.id || (b.id === 'revisao' && e.etapa === 'geral'); }).length;
-      var a = r.avisos.filter(function (e) { return e.etapa === b.id; }).length;
-      b.marca.textContent = n ? String(n) : (a ? '!' : '✓');
-      b.marca.className = 'app-etapa-marca ' + (n ? 'tem-erro' : a ? 'tem-aviso' : 'ok');
-      b.marca.title = n ? n + ' pendência(s)' : a ? a + ' aviso(s)' : 'sem pendências';
+      var n = daEtapa(r.problemas, b.id).length;
+      var inc = daEtapa(r.incompletos, b.id).length;
+      var a = daEtapa(r.avisos, b.id).length;
+      if (n) { b.marca.textContent = String(n); b.marca.className = 'app-etapa-marca tem-erro'; b.marca.title = n + ' problema(s)'; }
+      else if (inc && mostrarIncompletos) { b.marca.textContent = String(inc); b.marca.className = 'app-etapa-marca tem-pendente'; b.marca.title = inc + ' coisa(s) a preencher'; }
+      else if (inc) { b.marca.textContent = '○'; b.marca.className = 'app-etapa-marca em-andamento'; b.marca.title = 'falta preencher'; }
+      else if (a) { b.marca.textContent = '!'; b.marca.className = 'app-etapa-marca tem-aviso'; b.marca.title = a + ' aviso(s)'; }
+      else { b.marca.textContent = '✓'; b.marca.className = 'app-etapa-marca ok'; b.marca.title = 'tudo certo'; }
     });
-    var daqui = r.erros.filter(function (e) { return e.etapa === botoesEtapa[atual].id; });
+    var id = botoesEtapa[atual].id;
+    var n = daEtapa(r.problemas, id).length;
+    var inc = mostrarIncompletos ? daEtapa(r.incompletos, id).length : 0;
     var rod = document.getElementById('c-rodape-status');
-    rod.textContent = daqui.length ? daqui[0].texto + (daqui.length > 1 ? ' (+' + (daqui.length - 1) + ')' : '') : '';
-    rod.className = 'app-rodape-status' + (daqui.length ? ' tem-erro' : '');
+    rod.textContent = id === 'revisao' ? '' : [n ? n + (n === 1 ? ' problema' : ' problemas') : '', inc ? inc + ' a preencher' : ''].filter(Boolean).join(' · ') + (n || inc ? ' nesta etapa' : '');
+    rod.className = 'app-rodape-status' + (n ? ' tem-erro' : inc ? ' tem-aviso' : '');
+    raiz.classList.toggle('mostrar-incompletos', mostrarIncompletos);
   });
 
   // ---------- coluna lateral ----------
@@ -183,7 +195,7 @@
     document.getElementById('lado-orcamento').textContent = '/ ' + ficha.orcamento + ' pontos';
     var rest = document.getElementById('lado-restante');
     rest.textContent = r.restante === 0 ? 'Pontos fechados' : r.restante > 0 ? 'Faltam ' + r.restante + ' pontos' : 'Passou ' + (-r.restante) + ' pontos';
-    rest.className = r.restante === 0 ? 'ok' : 'tem-erro';
+    rest.className = r.restante === 0 ? 'ok' : r.restante < 0 ? 'tem-erro' : '';
     var d = document.getElementById('lado-desv');
     d.textContent = r.desvantagens + ' / ' + r.limite;
     d.className = r.desvantagens < r.limite ? 'tem-erro' : '';
@@ -229,8 +241,8 @@
     c.addEventListener('input', function () { ficha[c.getAttribute('data-campo')] = c.value; mudou(); });
   });
   atualizadores.push(function (r) {
-    var semNome = r.erros.some(function (e) { return e.etapa === 'conceito'; });
-    document.getElementById('c-nome').classList.toggle('campo-erro', semNome);
+    var semNome = !String(ficha.nome || '').trim();
+    document.getElementById('c-nome').classList.toggle('campo-falta', semNome);
   });
 
   // ---------- 2. atributos ----------
@@ -388,7 +400,7 @@
       row.appendChild(campos);
       infosIdioma.push(function () {
         custo.textContent = sinal(calc.custoIdioma(idioma.fala, idioma.escrita)) + ' pts';
-        nome.classList.toggle('campo-erro', !String(idioma.nome || '').trim());
+        nome.classList.toggle('campo-falta', !String(idioma.nome || '').trim());
       });
       box.appendChild(row);
     });
@@ -408,42 +420,76 @@
   function criarCatalogo(caixa, opcoes) {
     caixa.textContent = '';
     var cab = el('div', 'painel-cab painel-filtros');
+    var linha = el('div', 'filtros-linha');
     var busca = el('input', 'criador-busca');
     busca.type = 'search';
     busca.placeholder = 'Buscar…';
     busca.setAttribute('aria-label', 'Buscar no catálogo');
-    cab.appendChild(busca);
-    var selects = opcoes.filtros.map(function (f) {
-      var s = selectCom([['', f.rotulo + ': todos']].concat(f.opcoes), '', f.rotulo);
-      s.addEventListener('change', desenhar);
-      cab.appendChild(s);
-      return s;
-    });
-    var ordem = selectCom(opcoes.ordens.map(function (o) { return [o[0], 'Ordem: ' + o[1]]; }), opcoes.ordens[0][0], 'Ordenar');
+    linha.appendChild(busca);
+    var ordem = selectCom(opcoes.ordens.map(function (o) { return [o[0], 'Ordem: ' + o[1]]; }), opcoes.ordens[0][0], 'Ordenar por');
+    ordem.className = 'filtro-ordem';
     ordem.addEventListener('change', desenhar);
-    cab.appendChild(ordem);
-    var limpar = el('button', 'btn-link', 'Limpar');
+    linha.appendChild(ordem);
+    cab.appendChild(linha);
+
+    // cada filtro vira uma fileira de chips; clicar no chip ativo desliga o filtro
+    var escolhidos = opcoes.filtros.map(function () { return ''; });
+    var chipsPorFiltro = opcoes.filtros.map(function (f, k) {
+      var grupo = el('div', 'filtro-chips');
+      grupo.setAttribute('role', 'group');
+      grupo.setAttribute('aria-label', f.rotulo);
+      grupo.appendChild(el('span', 'filtro-rotulo', f.rotulo));
+      var chips = f.opcoes.map(function (o) {
+        var c = el('button', 'chip chip-p', o[1]);
+        c.type = 'button';
+        c.setAttribute('aria-pressed', 'false');
+        c.addEventListener('click', function () {
+          escolhidos[k] = escolhidos[k] === o[0] ? '' : o[0];
+          chips.forEach(function (x, j) { x.setAttribute('aria-pressed', String(escolhidos[k] === f.opcoes[j][0])); });
+          desenhar();
+        });
+        grupo.appendChild(c);
+        return c;
+      });
+      cab.appendChild(grupo);
+      return chips;
+    });
+    // "com o narrador" fica escondido por padrão: é exceção, não o normal
+    var comNarrador = false;
+    var rodape = el('div', 'filtros-pe');
+    var toggle = el('label', 'check filtro-narrador');
+    var caixaNarr = el('input');
+    caixaNarr.type = 'checkbox';
+    caixaNarr.addEventListener('change', function () { comNarrador = caixaNarr.checked; desenhar(); });
+    toggle.appendChild(caixaNarr);
+    toggle.appendChild(el('span', null, 'Mostrar também os raros (com o narrador)'));
+    rodape.appendChild(toggle);
+    var contagem = el('span', 'painel-conta-catalogo');
+    rodape.appendChild(contagem);
+    var limpar = el('button', 'btn-link', 'Limpar filtros');
     limpar.type = 'button';
     limpar.addEventListener('click', function () {
       busca.value = '';
-      selects.forEach(function (s) { s.value = ''; });
+      escolhidos = escolhidos.map(function () { return ''; });
+      chipsPorFiltro.forEach(function (chips) { chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); }); });
       ordem.value = opcoes.ordens[0][0];
       desenhar();
     });
-    cab.appendChild(limpar);
-    var contagem = el('p', 'painel-conta-catalogo');
-    cab.appendChild(contagem);
+    rodape.appendChild(limpar);
+    cab.appendChild(rodape);
     var lista = el('ul', 'app-catalogo painel-rolagem');
     caixa.appendChild(cab);
     caixa.appendChild(lista);
 
     function desenhar() {
       var q = semAcento(busca.value.trim());
+      var ocultos = 0;
       var achados = opcoes.itens().filter(function (it) {
         if (q && semAcento(opcoes.texto(it)).indexOf(q) === -1) return false;
-        for (var i = 0; i < selects.length; i++) {
-          if (selects[i].value && !opcoes.filtros[i].testa(it, selects[i].value)) return false;
+        for (var i = 0; i < escolhidos.length; i++) {
+          if (escolhidos[i] && !opcoes.filtros[i].testa(it, escolhidos[i])) return false;
         }
+        if (it.adamar === 'narrador' && !comNarrador && !opcoes.jaTem(it)) { ocultos++; return false; }
         return true;
       });
       var cmp = opcoes.ordens.filter(function (o) { return o[0] === ordem.value; })[0][2];
@@ -454,19 +500,27 @@
         }
         return cmp(a, b) || a.nome.localeCompare(b.nome, 'pt-BR');
       });
-      contagem.textContent = achados.length + (achados.length === 1 ? ' item' : ' itens');
+      contagem.textContent = achados.length + (achados.length === 1 ? ' item' : ' itens') + (ocultos ? ' (+' + ocultos + ' raros ocultos)' : '');
       lista.textContent = '';
       achados.forEach(function (it) {
         var jaTem = opcoes.jaTem(it);
-        var li = el('li', 'app-cat-item st-' + (it.adamar || 'livre') + (jaTem ? ' ja-tem' : ''));
-        var texto = el('div', 'app-cat-texto');
-        var topo = el('div', 'app-cat-topo');
+        var li = el('li', 'app-cat-item' + (jaTem ? ' ja-tem' : ''));
+        var texto = el('button', 'app-cat-texto');
+        texto.type = 'button';
+        texto.setAttribute('aria-expanded', 'false');
+        var topo = el('span', 'app-cat-topo');
         topo.appendChild(el('strong', null, it.nome));
-        if (it.adamar === 'narrador') topo.appendChild(selo('narrador'));
+        if (it.adamar === 'narrador') {
+          var m = el('span', 'marca-narrador', '◆');
+          m.title = 'Com o narrador: raro, combine antes';
+          topo.appendChild(m);
+        }
         texto.appendChild(topo);
-        var resumo = el('p', 'app-cat-resumo', it.resumo || '');
-        resumo.title = it.resumo || '';
-        texto.appendChild(resumo);
+        texto.appendChild(el('span', 'app-cat-resumo', it.resumo || ''));
+        texto.addEventListener('click', function () {
+          var aberto = li.classList.toggle('aberto');
+          texto.setAttribute('aria-expanded', String(aberto));
+        });
         li.appendChild(texto);
         li.appendChild(el('span', 'app-cat-selo', opcoes.selo(it)));
         var b = el('button', 'app-adicionar', jaTem ? '✓' : '+');
@@ -482,7 +536,7 @@
         li.appendChild(b);
         lista.appendChild(li);
       });
-      if (!achados.length) lista.appendChild(el('li', 'pericia-vazio', 'Nada com esses filtros.'));
+      if (!achados.length) lista.appendChild(el('li', 'pericia-vazio', ocultos ? 'Só há itens raros com esses filtros. Marque "Mostrar também os raros".' : 'Nada com esses filtros.'));
     }
     busca.addEventListener('input', desenhar);
     desenhar();
@@ -510,7 +564,7 @@
   }
   var FILTRO_CUSTO = {
     rotulo: 'Custo',
-    opcoes: [['1', 'até 5'], ['2', '6 a 15'], ['3', '16 ou mais'], ['v', 'variável']],
+    opcoes: [['1', 'até 5'], ['2', '6 a 15'], ['3', '16+'], ['v', 'a combinar']],
     testa: function (t, v) {
       var x = custoTipico(t);
       if (v === 'v') return x == null;
@@ -518,11 +572,6 @@
       x = Math.abs(x);
       return v === '1' ? x <= 5 : v === '2' ? x > 5 && x <= 15 : x > 15;
     }
-  };
-  var FILTRO_STATUS = {
-    rotulo: 'Adamar',
-    opcoes: [['livre', 'livre'], ['narrador', 'com o narrador']],
-    testa: function (it, v) { return it.adamar === v; }
   };
   var ORDENS_TRACO = [
     ['nome', 'nome', function (a, b) { return a.nome.localeCompare(b.nome, 'pt-BR'); }],
@@ -568,13 +617,30 @@
       var lo = Math.min(c.min, c.max), hi = Math.max(c.min, c.max);
       if (e.valor == null) e.valor = Math.abs(c.min) < Math.abs(c.max) ? c.min : c.max;
       campos.appendChild(campoRotulado('Pontos (' + c.min + ' a ' + c.max + ')', inteiro(e.valor, lo, hi, function (v) { e.valor = v; })));
-    } else if (c.tipo === 'minimo' || c.tipo === 'variavel') {
-      if (c.tipo === 'minimo' && e.valor == null) e.valor = c.valor;
-      var sinalMin = negativo ? -1 : 1;
-      campos.appendChild(campoRotulado(c.tipo === 'minimo' ? 'Pontos (mín. ' + c.valor + ')' : 'Pontos combinados com o narrador',
-        inteiro(e.valor == null ? null : Math.abs(e.valor), c.tipo === 'minimo' ? Math.abs(c.valor) : 1, 300, function (v) {
-          e.valor = v == null ? null : sinalMin * Math.abs(v);
-        })));
+    } else if (c.tipo === 'minimo') {
+      if (e.valor == null) e.valor = c.valor;
+      campos.appendChild(campoRotulado('Pontos (mín. ' + c.valor + ')', inteiro(Math.abs(e.valor), Math.abs(c.valor), 300, function (v) {
+        e.valor = (negativo ? -1 : 1) * Math.abs(v);
+      })));
+    } else if (c.tipo === 'variavel') {
+      // custo que depende de vários fatores: fica "a combinar" até o jogador anotar o que acertou com o narrador
+      if (c.como_calcular) campos.appendChild(el('p', 'criador-variante', c.como_calcular));
+      var campoPts = inteiro(e.valor == null ? null : Math.abs(e.valor), c.minimo != null ? Math.abs(c.minimo) : 1, c.maximo != null ? Math.abs(c.maximo) : 300, function (v) {
+        e.valor = v == null ? null : (negativo ? -1 : 1) * Math.abs(v);
+      });
+      campoPts.placeholder = 'a combinar';
+      campos.appendChild(campoRotulado('Pontos combinados com o narrador', campoPts));
+      if (c.exemplos && c.exemplos.length) {
+        var ex = el('div', 'exemplos-custo');
+        ex.appendChild(el('span', 'filtro-rotulo', 'Exemplos'));
+        c.exemplos.forEach(function (x) {
+          var b = el('button', 'chip chip-p', x.descricao + ' (' + sinal(x.custo) + ')');
+          b.type = 'button';
+          b.addEventListener('click', function () { e.valor = x.custo; campoPts.value = Math.abs(x.custo); mudou(); });
+          ex.appendChild(b);
+        });
+        campos.appendChild(ex);
+      }
     }
     if (c.autocontrole) {
       var auto = selectCom(R.autocontrole.niveis.map(function (n) {
@@ -617,6 +683,51 @@
     };
   }
 
+  // Cards da ficha ficam fechados numa linha; abrem ao clicar, ao serem adicionados ou quando têm problema.
+  var abertos = typeof WeakSet === 'function' ? new WeakSet() : { has: function () { return true; }, add: function () {}, delete: function () {} };
+  function resumoDaEscolha(sel, t) {
+    var c = t.custo_estruturado || {};
+    var e = sel.escolha || {};
+    var partes = [];
+    if (c.tipo === 'niveis') partes.push('nível ' + (e.nivel || 0));
+    if (c.tipo === 'opcoes') {
+      var v = criador.nomeVariante(t, e.opcao);
+      partes.push(v && v !== t.nome ? v : sinal(c.valores[e.opcao || 0]));
+      if (c.unidade && (e.quantidade || 1) > 1) partes.push('×' + e.quantidade);
+    }
+    if (c.tipo === 'variavel' && e.valor == null) partes.push('a combinar');
+    if (c.autocontrole && e.autocontrole && e.autocontrole !== R.autocontrole.padrao) partes.push('autocontrole ' + e.autocontrole);
+    if (sel.nota) partes.push(sel.nota);
+    return partes.join(' · ');
+  }
+  function cardRetratil(row, sel, conteudo) {
+    var botao = el('button', 'app-abrir', '▸');
+    botao.type = 'button';
+    botao.setAttribute('aria-label', 'Mostrar detalhes');
+    var corpo = el('div', 'app-item-corpo');
+    conteudo.forEach(function (n) { corpo.appendChild(n); });
+    function aplicar() {
+      var aberto = abertos.has(sel);
+      corpo.hidden = !aberto;
+      botao.textContent = aberto ? '▾' : '▸';
+      botao.setAttribute('aria-expanded', String(aberto));
+      row.classList.toggle('aberto', aberto);
+    }
+    botao.addEventListener('click', function () {
+      if (abertos.has(sel)) abertos.delete(sel); else abertos.add(sel);
+      aplicar();
+    });
+    aplicar();
+    return { botao: botao, corpo: corpo };
+  }
+  function problemasDoItem(r, nome) {
+    var lista = r.problemas.concat(mostrarIncompletos ? r.incompletos : []);
+    return lista.filter(function (e) {
+      return e.texto.indexOf(nome + ':') === 0 || e.texto.indexOf(nome + ' não') === 0 ||
+        e.texto.indexOf(nome + ' (') === 0 || e.texto.indexOf(nome + ' aparece') === 0;
+    });
+  }
+
   function listaDeTracos(prefixo, negativo) {
     var box = document.getElementById('c-' + prefixo + '-escolhidas');
     var conta = document.getElementById('c-' + prefixo + '-conta');
@@ -629,26 +740,33 @@
         if (!t || ehNegativo(t) !== negativo) return;
         var row = el('div', 'app-item st-' + t.adamar);
         var topo = el('div', 'app-item-topo');
+        var ef = blocoEfeitos(sel);
+        var card = cardRetratil(row, sel, [el('p', 'app-item-meta', t.resumo), controlesDoTraco(sel, t, negativo), ef.no]);
+        topo.appendChild(card.botao);
         var nome = el('strong', 'app-item-nome', t.nome);
         nome.title = t.resumo;
+        nome.addEventListener('click', function () { card.botao.click(); });
         topo.appendChild(nome);
-        if (t.adamar === 'narrador') topo.appendChild(selo('narrador'));
+        if (t.adamar === 'narrador') { var m = el('span', 'marca-narrador', '◆'); m.title = 'Com o narrador'; topo.appendChild(m); }
         if (t.categoria === 'qualidade' || t.categoria === 'peculiaridade') topo.appendChild(el('span', 'app-item-cat', t.categoria));
+        var escolha = el('span', 'app-item-escolha');
+        topo.appendChild(escolha);
         var custo = el('span', 'criador-custo');
         topo.appendChild(custo);
         topo.appendChild(botaoRemover(t.nome, function () { ficha.tracos.splice(i, 1); desenhar(); catalogo.desenhar(); mudou(); }));
         row.appendChild(topo);
-        row.appendChild(controlesDoTraco(sel, t, negativo));
-        var ef = blocoEfeitos(sel);
-        row.appendChild(ef.no);
+        row.appendChild(card.corpo);
         var erroEl = el('p', 'app-item-erro');
         row.appendChild(erroEl);
         infos.push(function (r) {
-          custo.textContent = sinal(criador.custoDoTraco(sel)) + ' pts';
+          var c = t.custo_estruturado || {};
+          var aCombinar = c.tipo === 'variavel' && (sel.escolha || {}).valor == null;
+          custo.textContent = aCombinar ? '—' : sinal(criador.custoDoTraco(sel)) + ' pts';
+          escolha.textContent = resumoDaEscolha(sel, t);
           ef.atualizar();
-          var meus = r.erros.filter(function (e) { return e.texto.indexOf(t.nome + ':') === 0 || e.texto.indexOf(t.nome + ' não') === 0; });
-          erroEl.textContent = meus.map(function (e) { return e.texto; }).join(' ');
-          row.classList.toggle('com-erro', !!meus.length);
+          var meus = problemasDoItem(r, t.nome);
+          erroEl.textContent = meus.map(function (e) { return e.texto.replace(t.nome + ': ', ''); }).join(' · ');
+          row.classList.toggle('com-erro', meus.some(function (e) { return e.tipo === 'erro'; }));
         });
         box.appendChild(row);
       });
@@ -665,12 +783,18 @@
             .concat([[negativo ? 'peculiaridade' : 'qualidade', negativo ? 'Peculiaridade (-1)' : 'Qualidade (+1)']]),
           testa: function (t, v) { return t.categoria === v || (t.tipo || []).indexOf(v) !== -1; }
         },
-        FILTRO_CUSTO,
-        FILTRO_STATUS
+        FILTRO_CUSTO
       ],
       ordens: ORDENS_TRACO,
       jaTem: function (t) { return ficha.tracos.some(function (s) { return s.id === t.id; }); },
-      adicionar: function (t) { ficha.tracos.push({ id: t.id, escolha: {} }); desenhar(); }
+      adicionar: function (t) {
+        var sel = { id: t.id, escolha: {} };
+        ficha.tracos.push(sel);
+        // abre sozinho só quando há algo a escolher
+        var c = t.custo_estruturado || {};
+        if (c.tipo !== 'fixo' || c.autocontrole) abertos.add(sel);
+        desenhar();
+      }
     });
     atualizadores.push(function (r) {
       infos.forEach(function (f) { f(r); });
@@ -759,7 +883,7 @@
       if (entradas.length) entradas[entradas.length - 1].focus();
     });
     atualizadores.push(function (r) {
-      entradas.forEach(function (i) { i.classList.toggle('campo-erro', !i.value.trim()); });
+      entradas.forEach(function (i) { i.classList.toggle('campo-falta', !i.value.trim()); });
       if (limite) botao.disabled = r.peculiaridades >= limite;
     });
     return { desenhar: desenhar };
@@ -782,6 +906,12 @@
       nome.title = p.resumo;
       topo.appendChild(nome);
       topo.appendChild(el('span', 'app-item-cat', p.atributo + '/' + p.dificuldade));
+      if (p.adamar === 'narrador') { var m = el('span', 'marca-narrador', '◆'); m.title = 'Com o narrador'; topo.appendChild(m); }
+      // pontos na mesma linha do nome: é o que mais se mexe
+      var pts = selectCom(PONTOS_PERICIA.map(function (v) { return [v, v + ' pt' + (v === 1 ? '' : 's')]; }), sel.pontos || 1, 'Pontos em ' + p.nome);
+      pts.className = 'app-pontos-pericia';
+      pts.addEventListener('change', function () { sel.pontos = parseInt(pts.value, 10); mudou(); });
+      topo.appendChild(pts);
       var nh = el('span', 'criador-custo app-nh');
       topo.appendChild(nh);
       topo.appendChild(botaoRemover(p.nome, function () { ficha.pericias.splice(i, 1); desenharPericias(); catalogoPericias.desenhar(); mudou(); }));
@@ -804,10 +934,7 @@
         }
         campos.appendChild(campoRotulado('Especialização', controleEsp));
       }
-      var pts = selectCom(PONTOS_PERICIA.map(function (v) { return [v, v + (v === 1 ? ' ponto' : ' pontos')]; }), sel.pontos || 1, 'Pontos');
-      pts.addEventListener('change', function () { sel.pontos = parseInt(pts.value, 10); mudou(); });
-      campos.appendChild(campoRotulado('Pontos', pts));
-      row.appendChild(campos);
+      if (campos.children.length) row.appendChild(campos);
       var bonus = el('ul', 'efeitos');
       row.appendChild(bonus);
       var erroEl = el('p', 'app-item-erro');
@@ -822,10 +949,10 @@
         }).concat(item.situacional.map(function (b) {
           return { tipo: 'condicional', texto: sinal(b.valor) + ' de ' + b.origem + ' — ' + b.condicao };
         })));
-        if (controleEsp) controleEsp.classList.toggle('campo-erro', !String(sel.especializacao || '').trim());
-        var meus = r.erros.filter(function (e) { return e.etapa === 'pericias' && e.texto.indexOf(p.nome) === 0 && !/escolha a especialização/.test(e.texto); });
-        erroEl.textContent = meus.map(function (e) { return e.texto; }).join(' ');
-        row.classList.toggle('com-erro', !!meus.length);
+        if (controleEsp) controleEsp.classList.toggle('campo-falta', !String(sel.especializacao || '').trim());
+        var meus = problemasDoItem(r, p.nome).filter(function (e) { return !/escolha a especialização/.test(e.texto); });
+        erroEl.textContent = meus.map(function (e) { return e.texto; }).join(' · ');
+        row.classList.toggle('com-erro', meus.some(function (e) { return e.tipo === 'erro'; }));
       });
       box.appendChild(row);
     });
@@ -843,8 +970,7 @@
     filtros: [
       { rotulo: 'Atributo', opcoes: ATRIBUTOS_PERICIA, testa: function (p, v) { return p.atributo === v; } },
       { rotulo: 'Dificuldade', opcoes: DIFICULDADES.map(function (d) { return [d, d]; }), testa: function (p, v) { return p.dificuldade === v; } },
-      { rotulo: 'Grupo', opcoes: Object.keys(GRUPOS).map(function (k) { return [k, GRUPOS[k]]; }), testa: function (p, v) { return p.grupo === v; } },
-      FILTRO_STATUS
+      { rotulo: 'Grupo', opcoes: Object.keys(GRUPOS).map(function (k) { return [k, GRUPOS[k]]; }), testa: function (p, v) { return p.grupo === v; } }
     ],
     ordens: [
       ['nome', 'nome', function (a, b) { return a.nome.localeCompare(b.nome, 'pt-BR'); }],
@@ -892,15 +1018,14 @@
       { rotulo: 'Tipo', opcoes: Object.keys(CATEGORIAS_EQUIP).map(function (k) { return [k, CATEGORIAS_EQUIP[k]]; }), testa: function (i, v) { return i.categoria === v; } },
       {
         rotulo: 'Preço',
-        opcoes: [['1', 'até 50'], ['2', '51 a 200'], ['3', '201 a 1.000'], ['4', 'acima de 1.000'], ['cabe', 'cabe no dinheiro que sobra']],
+        opcoes: [['cabe', 'cabe no dinheiro'], ['1', 'até 50'], ['2', '51–200'], ['3', '201–1.000'], ['4', '1.000+']],
         testa: function (i, v) {
           var p = precoDe(i);
           if (p == null) return false;
           if (v === 'cabe') return !ultimo || p <= ultimo.dinheiro_restante;
           return v === '1' ? p <= 50 : v === '2' ? p > 50 && p <= 200 : v === '3' ? p > 200 && p <= 1000 : p > 1000;
         }
-      },
-      FILTRO_STATUS
+      }
     ],
     ordens: [
       ['nome', 'nome', function (a, b) { return a.nome.localeCompare(b.nome, 'pt-BR'); }],
@@ -926,7 +1051,7 @@
   function listaPendencias(ul, itens, classe) {
     ul.textContent = '';
     itens.forEach(function (e) {
-      var li = el('li', classe);
+      var li = el('li', classe || (e.tipo === 'erro' ? 'tem-erro' : 'tem-pendente'));
       var destino = e.etapa === 'geral' ? null : e.etapa;
       if (destino) {
         var b = el('button', 'app-ir', NOMES_ETAPA[destino] || destino);
@@ -942,12 +1067,14 @@
   var whats = document.getElementById('c-whats');
   var copiado = document.getElementById('c-copiado');
   atualizadores.push(function (r) {
-    listaPendencias(document.getElementById('c-erros'), r.erros, 'tem-erro');
+    listaPendencias(document.getElementById('c-erros'), r.problemas.concat(r.incompletos));
     listaPendencias(document.getElementById('c-avisos'), r.avisos, 'tem-aviso');
     var st = document.getElementById('c-revisao-status');
     st.textContent = r.valida
       ? 'A ficha está completa. Salve e mande para o narrador.' + (r.avisos.length ? ' Os avisos são coisas para combinar com ele.' : '')
-      : r.erros.length + (r.erros.length === 1 ? ' pendência impede' : ' pendências impedem') + ' salvar como pronta e enviar. Clique no nome da etapa para ir até lá.';
+      : [r.problemas.length ? r.problemas.length + (r.problemas.length === 1 ? ' problema' : ' problemas') : '',
+        r.incompletos.length ? r.incompletos.length + ' a preencher' : ''].filter(Boolean).join(' e ') +
+        ': resolva para salvar como pronta e enviar. Clique no nome da etapa para ir até lá.';
     st.className = r.valida ? 'ok' : 'tem-erro';
     var t = criador.textoFicha(ficha, r);
     texto.textContent = t;
@@ -1029,6 +1156,7 @@
   botaoSalvar.addEventListener('click', function () {
     if (ultimo.valida || pedindoRascunho) { gravar(); return; }
     pedindoRascunho = true;
+    mostrarIncompletos = true;
     atualizar();
   });
   atualizadores.push(function (r) {

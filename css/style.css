@@ -1787,6 +1787,42 @@ body.modo-app .site-footer { display: none; }
   .app-rodape-status { flex-basis: 100%; order: -1; }
 }
 
+/* criador: chips de filtro, cards retráteis, marcas */
+.filtros-linha { display: flex; gap: 0.5rem; flex: 1 1 100%; }
+.filtros-linha .criador-busca { flex: 1 1 auto; }
+.painel-filtros .filtro-ordem { flex: 0 0 auto; padding: 0.35rem 0.5rem; font-family: var(--f-corpo); font-size: 0.92rem; color: var(--osso-claro); background: rgba(14, 13, 12, 0.8); border: 1px solid var(--ouro-linha); }
+.filtro-ordem option { color: var(--osso-claro); background: var(--pedra); }
+.filtro-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem; flex: 1 1 100%; }
+.filtro-rotulo { min-width: 4.6rem; font-family: var(--f-titulo); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--osso-fosco); }
+.chip-p { padding: 0.15rem 0.55rem; font-size: 0.74rem; }
+.filtros-pe { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.9rem; flex: 1 1 100%; }
+.filtro-narrador { gap: 0.4rem; align-items: center; margin: 0; padding: 0; font-size: 0.9rem; background: none; border: 0; }
+.filtro-narrador input { margin-top: 0; }
+.filtros-pe .painel-conta-catalogo { flex: 1 1 auto; }
+.marca-narrador { font-size: 0.72rem; color: var(--ouro-claro); cursor: help; }
+.app-cat-texto { display: grid; gap: 0.1rem; min-width: 0; padding: 0; font: inherit; text-align: left; color: inherit; background: none; border: 0; cursor: pointer; }
+.app-cat-topo { display: flex; flex-wrap: wrap; align-items: center; gap: 0.2rem 0.4rem; }
+.app-cat-item.aberto .app-cat-resumo { white-space: normal; }
+.app-cat-texto:focus-visible { outline: 2px solid var(--ouro-claro); outline-offset: 2px; }
+.app-abrir { width: 1.4rem; padding: 0; font-size: 0.8rem; color: var(--osso-fosco); background: none; border: 0; cursor: pointer; }
+.app-abrir:hover { color: var(--osso-claro); }
+.app-item-topo .app-item-nome { cursor: pointer; }
+.app-item-escolha { flex: 1 1 auto; min-width: 0; overflow: hidden; font-size: 0.9rem; font-style: italic; color: var(--osso-fosco); white-space: nowrap; text-overflow: ellipsis; }
+.app-item-topo .criador-custo { margin-left: 0; }
+.app-item-corpo { display: grid; gap: 0.4rem; padding: 0.2rem 0 0.1rem 1.8rem; }
+.app-item-corpo[hidden] { display: none; }
+.app-item-corpo .app-item-meta { font-style: italic; }
+.app-item { gap: 0.2rem; padding: 0.35rem 0.55rem; }
+.app-pontos-pericia { width: auto !important; margin-left: auto; padding: 0.15rem 0.35rem !important; font-size: 0.88rem !important; }
+.app-item-topo .app-nh { min-width: 3.4rem; text-align: right; }
+.exemplos-custo { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem; flex: 1 1 100%; }
+.app-etapa-marca.tem-pendente { color: #1b0d0a; background: var(--ouro-claro); font-weight: 700; }
+.app-etapa-marca.em-andamento { color: var(--osso-fosco); }
+.app-pendencias .tem-pendente { color: var(--ouro-claro); }
+.campo-falta { transition: box-shadow 0.2s; }
+.mostrar-incompletos .campo-falta { border-color: var(--ouro-claro) !important; box-shadow: 0 0 0 1px rgba(201, 171, 107, 0.5) !important; }
+.app-salvar { padding: 0.6rem; border: 1px solid var(--ouro-fio); background: rgba(14, 13, 12, 0.5); }
+
 /* etiquetas dos efeitos dos traços */
 .efeitos { display: grid; gap: 0.3rem; margin: 0.2rem 0 0.4rem; padding: 0; list-style: none; font-size: 0.95rem; line-height: 1.4; }
 .efeitos[hidden] { display: none; }

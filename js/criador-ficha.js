@@ -140,11 +140,13 @@
 
       // erros impedem salvar a ficha como pronta e enviar; avisos só informam (coisas para combinar com o narrador)
       var erros = [], avisos = [];
-      function erro(etapa, texto) { erros.push({ etapa: etapa, texto: texto }); }
+      // incompleto: falta preencher algo (só aparece na revisão e ao salvar); erro: algo está contra as regras
+      function erro(etapa, texto) { erros.push({ etapa: etapa, texto: texto, tipo: 'erro' }); }
+      function incompleto(etapa, texto) { erros.push({ etapa: etapa, texto: texto, tipo: 'incompleto' }); }
       function aviso(etapa, texto) { avisos.push({ etapa: etapa, texto: texto }); }
       function virgula(v) { return String(v).replace('.', ','); }
 
-      if (!String(ficha.nome || '').trim()) erro('conceito', 'Falta o nome do personagem.');
+      if (!String(ficha.nome || '').trim()) incompleto('conceito', 'Falta o nome do personagem.');
 
       // atributos e secundárias
       R.atributos.forEach(function (a) {
@@ -162,8 +164,8 @@
       });
       if (ficha.social.aparencia === 'lindo') aviso('sociedade', 'Aparência Lindo: o livro reserva para anjos e divindades. Com o narrador.');
       ficha.idiomas.forEach(function (i) {
-        if (!String(i.nome || '').trim()) erro('sociedade', 'Há um idioma sem nome.');
-        if (i.fala === 'nenhum' && i.escrita === 'nenhum') erro('sociedade', (i.nome || 'Um idioma') + ': escolha como fala ou escreve, ou remova.');
+        if (!String(i.nome || '').trim()) incompleto('sociedade', 'Há um idioma sem nome.');
+        if (i.fala === 'nenhum' && i.escrita === 'nenhum') incompleto('sociedade', (i.nome || 'Um idioma') + ': escolha como fala ou escreve, ou remova.');
       });
 
       // traços: vantagens, desvantagens, qualidades e peculiaridades do catálogo
@@ -182,8 +184,8 @@
         var c = t.custo_estruturado || {};
         var e = sel.escolha || {};
         if (c.tipo === 'niveis' && t.nivel_max != null && e.nivel > t.nivel_max) erro(etapa, t.nome + ': nível máximo ' + t.nivel_max + ' em Adamar.');
-        if (c.tipo === 'niveis' && !e.nivel) erro(etapa, t.nome + ': escolha o nível.');
-        if ((c.tipo === 'variavel' || c.tipo === 'minimo') && !e.valor) erro(etapa, t.nome + ': combine o custo com o narrador e anote os pontos.');
+        if (c.tipo === 'niveis' && !e.nivel) incompleto(etapa, t.nome + ': escolha o nível.');
+        if ((c.tipo === 'variavel' || c.tipo === 'minimo') && !e.valor) incompleto(etapa, t.nome + ': custo a combinar com o narrador.');
         if (c.tipo === 'minimo' && e.valor && Math.abs(e.valor) < Math.abs(c.valor)) erro(etapa, t.nome + ': custa no mínimo ' + c.valor + '.');
         if (c.tipo === 'faixa' && (e.valor == null || e.valor < Math.min(c.min, c.max) || e.valor > Math.max(c.min, c.max))) {
           erro(etapa, t.nome + ': pontos fora da faixa ' + c.min + ' a ' + c.max + '.');
@@ -206,8 +208,8 @@
       function preenchido(q) { return String(q || '').trim() !== ''; }
       qualidades += ficha.qualidades.filter(preenchido).length;
       peculiaridades -= ficha.peculiaridades.filter(preenchido).length;
-      if (ficha.qualidades.some(function (q) { return !preenchido(q); })) erro('vantagens', 'Há uma qualidade em branco: escreva ou remova.');
-      if (ficha.peculiaridades.some(function (q) { return !preenchido(q); })) erro('desvantagens', 'Há uma peculiaridade em branco: escreva ou remova.');
+      if (ficha.qualidades.some(function (q) { return !preenchido(q); })) incompleto('vantagens', 'Há uma qualidade em branco: escreva ou remova.');
+      if (ficha.peculiaridades.some(function (q) { return !preenchido(q); })) incompleto('desvantagens', 'Há uma peculiaridade em branco: escreva ou remova.');
       if (-peculiaridades > LIMITE_PECULIARIDADES) {
         erro('desvantagens', 'No máximo ' + LIMITE_PECULIARIDADES + ' peculiaridades; você tem ' + (-peculiaridades) + '.');
       }
@@ -224,7 +226,7 @@
         var rotulo = p.nome + (sel.especializacao ? ' (' + sel.especializacao + ')' : '');
         if (p.adamar === 'nao') erro('pericias', p.nome + ' não existe em Adamar.');
         if (p.adamar === 'narrador') aviso('pericias', p.nome + ': só com o narrador.');
-        if (p.especializacao && !preenchido(sel.especializacao)) erro('pericias', p.nome + ': escolha a especialização.');
+        if (p.especializacao && !preenchido(sel.especializacao)) incompleto('pericias', p.nome + ': escolha a especialização.');
         var chave = p.id + '|' + String(sel.especializacao || '').trim().toLowerCase();
         if (vistas[chave]) erro('pericias', rotulo + ' aparece duas vezes.');
         vistas[chave] = true;
@@ -259,7 +261,7 @@
       };
       var total = Object.keys(custos).reduce(function (s, k) { return s + custos[k]; }, 0);
       var restante = ficha.orcamento - total;
-      if (restante > 0) erro('geral', 'Faltam ' + restante + ' pontos para gastar: a ficha precisa fechar em ' + ficha.orcamento + '.');
+      if (restante > 0) incompleto('geral', 'Faltam ' + restante + ' pontos para gastar: a ficha precisa fechar em ' + ficha.orcamento + '.');
       if (restante < 0) erro('geral', 'Gastou ' + (-restante) + ' pontos além dos ' + ficha.orcamento + '.');
 
       // equipamento: preço em coroas (1 coroa = $1 do GURPS)
@@ -299,7 +301,9 @@
         base_carga: calc.baseDeCarga(valores.st),
         erros: erros,
         avisos: avisos,
-        valida: erros.length === 0
+        valida: erros.length === 0,
+        problemas: erros.filter(function (e) { return e.tipo === 'erro'; }),
+        incompletos: erros.filter(function (e) { return e.tipo === 'incompleto'; })
       };
     }
 

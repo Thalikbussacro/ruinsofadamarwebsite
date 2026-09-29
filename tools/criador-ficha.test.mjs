@@ -129,9 +129,14 @@ assert.deepEqual(r.erros, []);
 assert.equal(r.valida, true);
 // sobra ou excesso de pontos é erro
 f.pericias[1].pontos = 12;
-assert.match(erros(c.resumir(f)), /Faltam 4 pontos/);
+r = c.resumir(f);
+assert.match(erros(r), /Faltam 4 pontos/);
+assert.equal(r.incompletos.length, 1); // faltar pontos é "incompleto", não erro
+assert.equal(r.problemas.length, 0);
 f.pericias[1].pontos = 20;
-assert.match(erros(c.resumir(f)), /Gastou 4 pontos além/);
+r = c.resumir(f);
+assert.match(erros(r), /Gastou 4 pontos além/);
+assert.equal(r.problemas.length, 1); // passar dos pontos é erro
 f.pericias[1].pontos = 16;
 
 // peculiaridade do catálogo conta como peculiaridade (-1), não como desvantagem nem no limite

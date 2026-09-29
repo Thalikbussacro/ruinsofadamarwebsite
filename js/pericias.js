@@ -83,6 +83,10 @@
       meta: function (p) {
         var m = [p.subcategoria || CATEGORIAS_EQUIP[p.categoria]];
         if (p.pericia && p.pericia !== p.subcategoria) m.push('Perícia: ' + p.pericia);
+        if (p.preco) {
+          m.push((p.preco.adicional ? '+' : '') + p.preco.valor.toLocaleString('pt-BR') + (p.preco.valor === 1 ? ' coroa' : ' coroas') +
+            (p.preco.por ? ' (' + p.preco.por + ')' : '') + (p.preco.nota ? ' ' + p.preco.nota : ''));
+        }
         m.push('pág. ' + p.ref.pagina);
         return m;
       }

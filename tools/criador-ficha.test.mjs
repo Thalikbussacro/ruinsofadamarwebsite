@@ -85,4 +85,24 @@ r = c.resumir(f);
 assert.equal(r.pericias[0].nh, 10);
 assert.equal(r.pericias[0].situacional[0].valor, 1);
 assert.match(c.textoFicha(f, r), /Empatia \(Sensível\)/);
+// efeitos sem condição entram sozinhos: Reflexos em Combate soma +1 na Esquiva
+f = c.fichaNova();
+const esquivaBase = c.resumir(f).esquiva;
+f.tracos.push({ id: 'reflexos-em-combate', escolha: {} });
+assert.equal(c.resumir(f).esquiva, esquivaBase + 1);
+// com condição, não: Zarolho (-1 DX só em combate) não muda a DX
+f.tracos.push({ id: 'zarolho', escolha: {} });
+assert.equal(c.resumir(f).valores.dx, 10);
+
+// equipamento: soma os preços em coroas e avisa se passar do dinheiro inicial
+f = c.fichaNova();
+const comPreco = G.equipamento.filter((i) => i.preco && i.adamar === 'livre');
+const item = comPreco[0];
+f.equipamento.push({ id: item.id, quantidade: 2 });
+r = c.resumir(f);
+assert.equal(r.gasto_equipamento, item.preco.valor * 2);
+assert.equal(r.dinheiro_restante, r.recursos - item.preco.valor * 2);
+const caro = comPreco.reduce((a, b) => (b.preco.valor > a.preco.valor ? b : a));
+f.equipamento = [{ id: caro.id, quantidade: 100 }];
+assert.match(c.resumir(f).avisos.join('|'), /mais que o dinheiro inicial/);
 console.log('criador-ficha ok');

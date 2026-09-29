@@ -28,6 +28,10 @@
     var v = valor * m.por_dolar_gurps;
     return v.toLocaleString('pt-BR') + ' ' + (v === 1 ? m.nome : m.plural);
   }
+  function textoPreco(it) {
+    if (!it.preco) return 'preço com o narrador';
+    return (it.preco.adicional ? '+' : '') + moeda(it.preco.valor) + (it.preco.por ? ' (' + it.preco.por + ')' : '') + (it.preco.nota ? ' — ' + it.preco.nota : '');
+  }
   function selo(adamar) {
     return el('span', 'pericia-status st-' + adamar, ADAMAR[adamar] || adamar);
   }
@@ -181,7 +185,10 @@
       var aj = ficha.ajustes[s.id] || 0;
       camposSec[s.id].info.textContent = aj ? sinal(calc.custoSecundaria(s.id, aj)) + ' pts' : 'sem custo';
     });
-    document.getElementById('c-derivadas').textContent = 'Esquiva ' + r.esquiva + ' · Base de Carga ' + num(r.base_carga) + ' kg';
+    var ALVO = { esquiva: 'Esquiva', todas: 'defesas', deslocamento: 'Deslocamento', pv: 'PV', pf: 'PF', per: 'Per', vontade: 'Vontade', velocidade: 'Velocidade', st: 'ST', dx: 'DX', iq: 'IQ', ht: 'HT' };
+    var vindos = r.efeitos_fixos.map(function (e) { return sinal(e.valor) + ' ' + (ALVO[e.ref] || e.ref) + ' de ' + e.traco; });
+    document.getElementById('c-derivadas').textContent = 'Esquiva ' + r.esquiva + ' · Base de Carga ' + num(r.base_carga) + ' kg' +
+      (vindos.length ? ' · já contando ' + vindos.join(', ') : '');
   });
 
   // ---------- 3. sociedade e idiomas ----------
@@ -608,17 +615,25 @@
   });
 
   // ---------- 7. equipamento ----------
+  var infosEquip = [];
   function desenharEquipamento() {
     var box = document.getElementById('c-equipamento-escolhido');
     box.textContent = '';
+    infosEquip = [];
     ficha.equipamento.forEach(function (sel, i) {
       var it = porId(G.equipamento, sel.id);
       if (!it) return;
       var row = el('div', 'criador-item st-' + it.adamar);
       var topo = el('div', 'pericia-topo');
       topo.appendChild(el('strong', 'pericia-nome', it.nome));
-      topo.appendChild(el('span', 'pericia-dif', it.subcategoria || it.categoria));
+      var custoItem = el('span', 'criador-custo');
+      topo.appendChild(custoItem);
       row.appendChild(topo);
+      row.appendChild(el('p', 'pericia-meta', (it.subcategoria || it.categoria) + ' · ' + textoPreco(it)));
+      infosEquip.push(function (r) {
+        var x = r.equipamento[i];
+        custoItem.textContent = x && x.preco != null ? moeda(x.preco) : '—';
+      });
       var campos = el('div', 'criador-campos');
       var w = el('label', 'criador-campo');
       w.appendChild(el('span', null, 'Quantidade'));
@@ -637,13 +652,17 @@
     placeholder: 'Procurar item…',
     itens: function () { return (G.equipamento || []).filter(function (i) { return i.adamar !== 'nao'; }); },
     texto: function (i) { return i.nome + ' ' + (i.subcategoria || '') + ' ' + (i.resumo || ''); },
-    selo: function (i) { return i.subcategoria || i.categoria; },
+    selo: textoPreco,
     jaTem: function (i) { return ficha.equipamento.some(function (s) { return s.id === i.id; }); },
     adicionar: function (i) { ficha.equipamento.push({ id: i.id, quantidade: 1 }); desenharEquipamento(); }
   });
   atualizadores.push(function (r) {
-    document.getElementById('c-dinheiro').textContent = 'Dinheiro inicial: ' + moeda(r.recursos) +
-      '. Preço e peso de cada item você acerta com o narrador, que tem as tabelas do livro. Escolha o que o personagem leva de verdade.';
+    infosEquip.forEach(function (f) { f(r); });
+    var d = document.getElementById('c-dinheiro');
+    d.textContent = 'Dinheiro inicial ' + moeda(r.recursos) + ' · gasto ' + moeda(r.gasto_equipamento) + ' · ' +
+      (r.dinheiro_restante >= 0 ? 'sobram ' + moeda(r.dinheiro_restante) : 'faltam ' + moeda(-r.dinheiro_restante)) +
+      '. O peso de cada item fica com o narrador.';
+    d.className = 'field-hint' + (r.dinheiro_restante < 0 ? ' calc-estourou' : '');
   });
 
   // ---------- 8. revisão e envio ----------

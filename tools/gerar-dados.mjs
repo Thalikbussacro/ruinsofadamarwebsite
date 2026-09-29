@@ -87,6 +87,8 @@ export function validar(dados) {
   // grade do inventário de Adamar (equipamento)
   for (const it of (dados.equipamento && dados.equipamento.itens) || []) {
     if (it.grade && !['grade', 'longo', 'montaria', 'vestido'].includes(it.grade.porte)) erros.push(`equipamento/${it.id}: porte inválido "${it.grade.porte}"`);
+    if (it.preco && !(typeof it.preco.valor === 'number' && it.preco.valor >= 0)) erros.push(`equipamento/${it.id}: preço inválido`);
+    if (it.preco && it.adamar === 'nao') erros.push(`equipamento/${it.id}: item fora de Adamar não leva preço`);
     if (it.grade && it.grade.porte === 'grade' && !(it.grade.largura >= 1 && it.grade.altura >= 1)) erros.push(`equipamento/${it.id}: grade sem largura/altura`);
   }
   if (dados.regras) {

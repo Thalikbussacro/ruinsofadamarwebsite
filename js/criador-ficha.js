@@ -89,13 +89,40 @@
       return { fixos: fixos, situacionais: situacionais };
     }
 
+    // Efeitos sem condição em atributos, secundárias e defesas (ex.: Reflexos em Combate, Nanismo).
+    // Os com condição valem só em certas situações e ficam na descrição do traço.
+    function efeitosFixos(ficha) {
+      var r = { atributos: {}, secundarias: {}, esquiva: 0, origens: [] };
+      ficha.tracos.forEach(function (sel) {
+        var t = TRACO[sel.id];
+        if (!t) return;
+        var nivel = nivelDoTraco(sel);
+        (t.efeitos || []).forEach(function (e) {
+          if (e.condicao || typeof e.valor !== 'number' || !efeitoValeParaEscolha(e, sel)) return;
+          var valor = e.por_nivel ? e.valor * nivel : e.valor;
+          if (!valor) return;
+          if (e.alvo === 'atributo') r.atributos[e.ref] = (r.atributos[e.ref] || 0) + valor;
+          else if (e.alvo === 'secundaria') r.secundarias[e.ref] = (r.secundarias[e.ref] || 0) + valor;
+          else if (e.alvo === 'defesa' && (e.ref === 'esquiva' || e.ref === 'todas')) r.esquiva += valor;
+          else return;
+          r.origens.push({ traco: t.nome, alvo: e.alvo, ref: e.ref, valor: valor });
+        });
+      });
+      return r;
+    }
+
     function custoIdiomas(ficha) {
       return ficha.idiomas.reduce(function (s, i) { return s + calc.custoIdioma(i.fala, i.escrita); }, 0);
     }
 
     function resumir(ficha) {
       var base = calc.calcularFicha({ atributos: ficha.atributos, ajustes: ficha.ajustes, social: ficha.social });
-      var valores = base.valores;
+      var fixos = efeitosFixos(ficha);
+      var atrEfetivo = {};
+      Object.keys(ficha.atributos).forEach(function (k) { atrEfetivo[k] = ficha.atributos[k] + (fixos.atributos[k] || 0); });
+      var valores = calc.secundarias(atrEfetivo, ficha.ajustes);
+      Object.keys(atrEfetivo).forEach(function (k) { valores[k] = atrEfetivo[k]; });
+      Object.keys(fixos.secundarias).forEach(function (k) { valores[k] += fixos.secundarias[k]; });
       var avisos = [];
 
       // traços
@@ -179,6 +206,17 @@
       if (restante < 0) avisos.unshift('Gastou ' + (-restante) + ' pontos além do orçamento.');
       if (!ficha.nome) avisos.push('Falta o nome do personagem.');
 
+      // equipamento: preço em coroas (1 coroa = $1 do GURPS)
+      var gasto = 0;
+      var equipamento = ficha.equipamento.map(function (sel) {
+        var it = ITEM[sel.id];
+        var preco = it && it.preco ? it.preco.valor * (sel.quantidade || 1) : null;
+        if (preco != null) gasto += preco;
+        return { sel: sel, item: it, preco: preco };
+      });
+      gasto = Math.round(gasto * 100) / 100;
+      if (gasto > base.recursos) avisos.push('O equipamento custa ' + gasto + ' coroas, mais que o dinheiro inicial (' + base.recursos + ').');
+
       return {
         valores: valores,
         custos: custos,
@@ -187,10 +225,14 @@
         desvantagens: desvantagens,
         limite: limite,
         recursos: base.recursos,
+        gasto_equipamento: gasto,
+        dinheiro_restante: Math.round((base.recursos - gasto) * 100) / 100,
+        equipamento: equipamento,
+        efeitos_fixos: fixos.origens,
         tracos: tracos,
         talentos: talentos,
         pericias: pericias,
-        esquiva: calc.esquiva(valores.velocidade),
+        esquiva: calc.esquiva(valores.velocidade) + fixos.esquiva,
         base_carga: calc.baseDeCarga(valores.st),
         avisos: avisos
       };
@@ -271,7 +313,12 @@
         var it = ITEM[e.id];
         return (it ? it.nome : e.id) + (e.quantidade > 1 ? ' ×' + e.quantidade : '');
       });
-      if (eq.length) { L.push(''); L.push('*Equipamento:* ' + eq.join(', ')); }
+      if (eq.length) {
+        L.push('');
+        L.push('*Equipamento:* ' + eq.join(', '));
+        var fmt = function (v) { return v.toLocaleString('pt-BR'); };
+        L.push('Gasto: ' + fmt(r.gasto_equipamento) + ' de ' + fmt(r.recursos) + ' coroas (' + (r.dinheiro_restante >= 0 ? 'sobram ' + fmt(r.dinheiro_restante) : 'faltam ' + fmt(-r.dinheiro_restante)) + ')');
+      }
       if (ficha.aparencia_fisica) { L.push(''); L.push('*Aparência:* ' + ficha.aparencia_fisica); }
       if (ficha.historia) { L.push(''); L.push('*História:* ' + ficha.historia); }
       if (ficha.notas) { L.push(''); L.push('*Notas:* ' + ficha.notas); }

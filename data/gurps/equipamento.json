@@ -24,6 +24,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 4
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -44,6 +47,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -64,6 +70,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 3
+      },
+      "preco": {
+        "valor": 60
       }
     },
     {
@@ -84,6 +93,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 3
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -104,6 +116,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 35
       }
     },
     {
@@ -124,6 +139,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 70
       }
     },
     {
@@ -156,7 +174,10 @@
         "pagina": 271
       },
       "icone": "punho",
-      "grade": null
+      "grade": null,
+      "preco": {
+        "valor": 10
+      }
     },
     {
       "id": "chute",
@@ -288,6 +309,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -324,6 +348,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 4
+      },
+      "preco": {
+        "valor": 5
       }
     },
     {
@@ -344,6 +371,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 4
+      },
+      "preco": {
+        "valor": 500
       }
     },
     {
@@ -364,6 +394,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 4
+      },
+      "preco": {
+        "valor": 600
       }
     },
     {
@@ -384,6 +417,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 5
+      },
+      "preco": {
+        "valor": 650
       }
     },
     {
@@ -404,6 +440,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 5
+      },
+      "preco": {
+        "valor": 650
       }
     },
     {
@@ -424,6 +463,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 5
+      },
+      "preco": {
+        "valor": 750
       }
     },
     {
@@ -444,6 +486,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 3
+      },
+      "preco": {
+        "valor": 80
       }
     },
     {
@@ -464,6 +509,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -500,6 +548,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 1
+      },
+      "preco": {
+        "valor": 2
       }
     },
     {
@@ -520,6 +571,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -540,6 +594,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 30
       }
     },
     {
@@ -560,6 +617,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 4
       }
     },
     {
@@ -580,6 +640,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -600,6 +663,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 3
+      },
+      "preco": {
+        "valor": 70
       }
     },
     {
@@ -618,6 +684,9 @@
       "icone": "lanca",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 60
       }
     },
     {
@@ -652,6 +721,9 @@
       "icone": "lanca",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -670,6 +742,9 @@
       "icone": "lanca",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -688,6 +763,9 @@
       "icone": "lanca",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 150
       }
     },
     {
@@ -706,6 +784,9 @@
       "icone": "machado",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 120
       }
     },
     {
@@ -726,6 +807,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 4
+      },
+      "preco": {
+        "valor": 500
       }
     },
     {
@@ -746,6 +830,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 4
+      },
+      "preco": {
+        "valor": 700
       }
     },
     {
@@ -778,7 +865,11 @@
         "pagina": 273
       },
       "icone": "escudo",
-      "grade": null
+      "grade": null,
+      "preco": {
+        "valor": 20,
+        "adicional": true
+      }
     },
     {
       "id": "bastao-curto",
@@ -798,6 +889,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -818,6 +912,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 400
       }
     },
     {
@@ -838,6 +935,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 300
       }
     },
     {
@@ -874,6 +974,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -894,6 +997,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 400
       }
     },
     {
@@ -912,6 +1018,9 @@
       "icone": "lanca",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -932,6 +1041,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 5
+      },
+      "preco": {
+        "valor": 30
       }
     },
     {
@@ -950,6 +1062,9 @@
       "icone": "lanca",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 60
       }
     },
     {
@@ -968,6 +1083,9 @@
       "icone": "maca",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 10
       }
     },
     {
@@ -986,6 +1104,9 @@
       "icone": "lanca",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -1006,6 +1127,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 4
+      },
+      "preco": {
+        "valor": 80
       }
     },
     {
@@ -1026,6 +1150,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 4
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -1046,6 +1173,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 4
+      },
+      "preco": {
+        "valor": 15
       }
     },
     {
@@ -1066,6 +1196,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 3
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -1102,6 +1235,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 3
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -1120,6 +1256,9 @@
       "icone": "maca",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 10
       }
     },
     {
@@ -1138,6 +1277,9 @@
       "icone": "lanca",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -1158,6 +1300,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 5
+      },
+      "preco": {
+        "valor": 650
       }
     },
     {
@@ -1178,6 +1323,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 6
+      },
+      "preco": {
+        "valor": 800
       }
     },
     {
@@ -1198,6 +1346,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 5
+      },
+      "preco": {
+        "valor": 650
       }
     },
     {
@@ -1218,6 +1369,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 5
+      },
+      "preco": {
+        "valor": 750
       }
     },
     {
@@ -1238,6 +1392,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 6
+      },
+      "preco": {
+        "valor": 900
       }
     },
     {
@@ -1258,6 +1415,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -1278,6 +1438,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 4
+      },
+      "preco": {
+        "valor": 30
       }
     },
     {
@@ -1298,6 +1461,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -1316,6 +1482,9 @@
       "icone": "arco",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 200
       }
     },
     {
@@ -1336,6 +1505,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 5
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -1356,6 +1528,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 4
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -1376,6 +1551,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 5
+      },
+      "preco": {
+        "valor": 900
       }
     },
     {
@@ -1396,6 +1574,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -1416,6 +1597,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -1436,6 +1620,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 150
       }
     },
     {
@@ -1456,6 +1643,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 150
       }
     },
     {
@@ -1476,6 +1666,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 150
       }
     },
     {
@@ -1496,6 +1689,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -1516,6 +1712,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -1536,6 +1735,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -1556,6 +1758,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -1576,6 +1781,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -1594,6 +1802,9 @@
       "icone": "arremesso",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -1614,6 +1825,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -1634,6 +1848,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -1654,6 +1871,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 3
+      },
+      "preco": {
+        "valor": 60
       }
     },
     {
@@ -1674,6 +1894,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 3
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -1694,6 +1917,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 35
       }
     },
     {
@@ -1712,6 +1938,9 @@
       "icone": "lanca",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 60
       }
     },
     {
@@ -1732,6 +1961,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -1752,6 +1984,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 30
       }
     },
     {
@@ -1772,6 +2007,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 4
       }
     },
     {
@@ -1792,6 +2030,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -1812,6 +2053,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 1
+      },
+      "preco": {
+        "valor": 3
       }
     },
     {
@@ -1830,6 +2074,9 @@
       "icone": "lanca",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -1850,6 +2097,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 5
+      },
+      "preco": {
+        "valor": 30
       }
     },
     {
@@ -2844,6 +3094,9 @@
       "icone": "catapulta",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 5000
       }
     },
     {
@@ -3026,6 +3279,9 @@
           "largura": 2,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 10
       }
     },
     {
@@ -3048,6 +3304,9 @@
           "largura": 2,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 25
       }
     },
     {
@@ -3070,6 +3329,9 @@
           "largura": 3,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 400
       }
     },
     {
@@ -3092,6 +3354,9 @@
           "largura": 4,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 1300
       }
     },
     {
@@ -3114,6 +3379,9 @@
           "largura": 2,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 30
       }
     },
     {
@@ -3136,6 +3404,9 @@
           "largura": 2,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -3158,6 +3429,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -3180,6 +3454,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 150
       }
     },
     {
@@ -3202,6 +3479,9 @@
           "largura": 3,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 680
       }
     },
     {
@@ -3224,6 +3504,9 @@
           "largura": 3,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 230
       }
     },
     {
@@ -3246,6 +3529,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 150
       }
     },
     {
@@ -3268,6 +3554,9 @@
           "largura": 4,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 420
       }
     },
     {
@@ -3290,6 +3579,9 @@
           "largura": 4,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 520
       }
     },
     {
@@ -3312,6 +3604,9 @@
           "largura": 4,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 2300
       }
     },
     {
@@ -3334,6 +3629,9 @@
           "largura": 3,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 500
       }
     },
     {
@@ -3356,6 +3654,9 @@
           "largura": 4,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 1300
       }
     },
     {
@@ -3378,6 +3679,9 @@
           "largura": 3,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 900
       }
     },
     {
@@ -3400,6 +3704,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 210
       }
     },
     {
@@ -3422,6 +3729,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 180
       }
     },
     {
@@ -3444,6 +3754,9 @@
           "largura": 3,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 270
       }
     },
     {
@@ -3466,6 +3779,9 @@
           "largura": 2,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -3488,6 +3804,9 @@
           "largura": 2,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 60
       }
     },
     {
@@ -3510,6 +3829,9 @@
           "largura": 2,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -3532,6 +3854,9 @@
           "largura": 2,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -3554,6 +3879,9 @@
           "largura": 2,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -3576,6 +3904,9 @@
           "largura": 2,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 60
       }
     },
     {
@@ -3598,6 +3929,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 110
       }
     },
     {
@@ -3620,6 +3954,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 70
       }
     },
     {
@@ -3642,6 +3979,9 @@
           "largura": 3,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 250
       }
     },
     {
@@ -3664,6 +4004,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 210
       }
     },
     {
@@ -3686,6 +4029,9 @@
           "largura": 3,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 1500
       }
     },
     {
@@ -3708,6 +4054,9 @@
           "largura": 3,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 1600
       }
     },
     {
@@ -3730,6 +4079,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 1000
       }
     },
     {
@@ -3752,6 +4104,9 @@
           "largura": 3,
           "altura": 4
         }
+      },
+      "preco": {
+        "valor": 1100
       }
     },
     {
@@ -3774,6 +4129,9 @@
           "largura": 2,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 5
       }
     },
     {
@@ -3796,6 +4154,9 @@
           "largura": 2,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 32
       }
     },
     {
@@ -3818,6 +4179,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 160
       }
     },
     {
@@ -3840,6 +4204,9 @@
           "largura": 2,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 60
       }
     },
     {
@@ -3862,6 +4229,9 @@
           "largura": 2,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -3884,6 +4254,9 @@
           "largura": 2,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 150
       }
     },
     {
@@ -3906,6 +4279,9 @@
           "largura": 2,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 55
       }
     },
     {
@@ -3928,6 +4304,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 240
       }
     },
     {
@@ -3950,6 +4329,9 @@
           "largura": 2,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -3972,6 +4354,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 340
       }
     },
     {
@@ -3994,6 +4379,9 @@
           "largura": 2,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -4016,6 +4404,9 @@
           "largura": 1,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 15
       }
     },
     {
@@ -4038,6 +4429,9 @@
           "largura": 1,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 30
       }
     },
     {
@@ -4060,6 +4454,9 @@
           "largura": 1,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -4082,6 +4479,9 @@
           "largura": 1,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 250
       }
     },
     {
@@ -4104,6 +4504,9 @@
           "largura": 2,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 25
       }
     },
     {
@@ -4126,6 +4529,9 @@
           "largura": 2,
           "altura": 2
         }
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -4148,6 +4554,9 @@
           "largura": 2,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 80
       }
     },
     {
@@ -4170,6 +4579,9 @@
           "largura": 3,
           "altura": 3
         }
+      },
+      "preco": {
+        "valor": 150
       }
     },
     {
@@ -4636,6 +5048,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -4654,6 +5069,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 60
       }
     },
     {
@@ -4672,6 +5090,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 200
       }
     },
     {
@@ -4690,6 +5111,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 200
       }
     },
     {
@@ -4708,6 +5132,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 80
       }
     },
     {
@@ -4726,6 +5153,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -4744,6 +5174,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 320
       }
     },
     {
@@ -4762,6 +5195,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 330
       }
     },
     {
@@ -4780,6 +5216,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 260
       }
     },
     {
@@ -4798,6 +5237,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 440
       }
     },
     {
@@ -4816,6 +5258,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 480
       }
     },
     {
@@ -4834,6 +5279,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 345
       }
     },
     {
@@ -4852,6 +5300,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 670
       }
     },
     {
@@ -4870,6 +5321,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 1650
       }
     },
     {
@@ -4888,6 +5342,9 @@
       "icone": "cavalo",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 400
       }
     },
     {
@@ -4908,6 +5365,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -4928,6 +5388,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -4948,6 +5411,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 25
       }
     },
     {
@@ -4968,6 +5434,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -4988,6 +5457,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 4
+      },
+      "preco": {
+        "valor": 60
       }
     },
     {
@@ -5008,6 +5480,9 @@
         "porte": "grade",
         "largura": 4,
         "altura": 5
+      },
+      "preco": {
+        "valor": 90
       }
     },
     {
@@ -5044,6 +5519,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 1
+      },
+      "preco": {
+        "valor": 10
       }
     },
     {
@@ -5064,6 +5542,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 1
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -5085,7 +5566,10 @@
         "largura": 2,
         "altura": 2
       },
-      "nota_adamar": "Decisão da mesa: livre, apesar do NT5 do livro."
+      "nota_adamar": "Decisão da mesa: livre, apesar do NT5 do livro.",
+      "preco": {
+        "valor": 20
+      }
     },
     {
       "id": "barraca-20-pessoas",
@@ -5103,6 +5587,9 @@
       "icone": "barraca",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 300
       }
     },
     {
@@ -5123,6 +5610,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 4
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -5143,6 +5633,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 4
+      },
+      "preco": {
+        "valor": 80
       }
     },
     {
@@ -5161,6 +5654,9 @@
       "icone": "barraca",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 150
       }
     },
     {
@@ -5229,6 +5725,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -5265,6 +5764,10 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 25,
+        "por": "cada 10 m"
       }
     },
     {
@@ -5285,6 +5788,10 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 5,
+        "por": "cada 10 m"
       }
     },
     {
@@ -5305,6 +5812,10 @@
         "porte": "grade",
         "largura": 1,
         "altura": 1
+      },
+      "preco": {
+        "valor": 1,
+        "por": "cada 10 m"
       }
     },
     {
@@ -5325,6 +5836,9 @@
         "porte": "grade",
         "largura": 4,
         "altura": 4
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -5345,6 +5859,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 5
       }
     },
     {
@@ -5365,6 +5882,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -5401,6 +5921,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 1
+      },
+      "preco": {
+        "valor": 1
       }
     },
     {
@@ -5453,6 +5976,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 3
       }
     },
     {
@@ -5521,6 +6047,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -5589,6 +6118,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 3
+      },
+      "preco": {
+        "valor": 60
       }
     },
     {
@@ -5609,6 +6141,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -5629,6 +6164,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 10
       }
     },
     {
@@ -5649,6 +6187,10 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 2,
+        "por": "cada 0,5 l"
       }
     },
     {
@@ -5701,6 +6243,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -5738,6 +6283,9 @@
         "largura": 1,
         "altura": 1,
         "empilha": 3
+      },
+      "preco": {
+        "valor": 2
       }
     },
     {
@@ -5822,6 +6370,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 3
       }
     },
     {
@@ -5840,6 +6391,9 @@
       "icone": "bau",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 5
       }
     },
     {
@@ -5858,6 +6412,9 @@
       "icone": "bau",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 8
       }
     },
     {
@@ -5878,6 +6435,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 5
       }
     },
     {
@@ -5978,6 +6538,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -6110,6 +6673,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 10
       }
     },
     {
@@ -6130,6 +6696,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 40
       }
     },
     {
@@ -6164,6 +6733,9 @@
       "icone": "mochila",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -6184,6 +6756,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 35
       }
     },
     {
@@ -6204,6 +6779,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 1
+      },
+      "preco": {
+        "valor": 25
       }
     },
     {
@@ -6222,6 +6800,10 @@
       "icone": "ferradura",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 125,
+        "por": "com sela comum"
       }
     },
     {
@@ -6242,6 +6824,10 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 50,
+        "por": "conjunto com 4"
       }
     },
     {
@@ -6260,6 +6846,10 @@
       "icone": "ferradura",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 250,
+        "por": "com estribos"
       }
     },
     {
@@ -6278,6 +6868,9 @@
       "icone": "ferradura",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 150
       }
     },
     {
@@ -6362,6 +6955,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 1
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -6478,6 +7074,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 2
+      },
+      "preco": {
+        "valor": 10
       }
     },
     {
@@ -6498,6 +7097,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 300
       }
     },
     {
@@ -6534,6 +7136,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 2
+      },
+      "preco": {
+        "valor": 200
       }
     },
     {
@@ -6554,6 +7159,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 50
       }
     },
     {
@@ -6686,6 +7294,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 3
+      },
+      "preco": {
+        "valor": 500
       }
     },
     {
@@ -6706,6 +7317,10 @@
         "porte": "grade",
         "largura": 1,
         "altura": 1
+      },
+      "preco": {
+        "valor": 5,
+        "por": "o par"
       }
     },
     {
@@ -6724,6 +7339,9 @@
       "icone": "ferramenta",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 220
       }
     },
     {
@@ -6742,6 +7360,9 @@
       "icone": "ferramenta",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 55
       }
     },
     {
@@ -6762,6 +7383,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 2
+      },
+      "preco": {
+        "valor": 35
       }
     },
     {
@@ -6782,6 +7406,10 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 300,
+        "nota": "de Carpintaria; a de Armeiro custa 600"
       }
     },
     {
@@ -6800,6 +7428,9 @@
       "icone": "ferramenta",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 60
       }
     },
     {
@@ -6820,6 +7451,9 @@
         "porte": "grade",
         "largura": 3,
         "altura": 3
+      },
+      "preco": {
+        "valor": 3000
       }
     },
     {
@@ -6854,6 +7488,9 @@
       "icone": "ferramenta",
       "grade": {
         "porte": "longo"
+      },
+      "preco": {
+        "valor": 12
       }
     },
     {
@@ -6874,6 +7511,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 4
+      },
+      "preco": {
+        "valor": 20
       }
     },
     {
@@ -6894,6 +7534,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 1
+      },
+      "preco": {
+        "valor": 5
       }
     },
     {
@@ -6914,6 +7557,9 @@
         "porte": "grade",
         "largura": 2,
         "altura": 4
+      },
+      "preco": {
+        "valor": 15
       }
     },
     {
@@ -6932,6 +7578,9 @@
       "icone": "ferramenta",
       "grade": {
         "porte": "montaria"
+      },
+      "preco": {
+        "valor": 100
       }
     },
     {
@@ -6952,6 +7601,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 4
+      },
+      "preco": {
+        "valor": 150
       }
     },
     {
@@ -6988,6 +7640,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 4
+      },
+      "preco": {
+        "valor": 15
       }
     },
     {
@@ -7008,6 +7663,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 4
+      },
+      "preco": {
+        "valor": 10
       }
     },
     {
@@ -7076,6 +7734,9 @@
         "porte": "grade",
         "largura": 1,
         "altura": 1
+      },
+      "preco": {
+        "valor": 1
       }
     },
     {

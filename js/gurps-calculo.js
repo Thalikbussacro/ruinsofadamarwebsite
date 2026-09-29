@@ -105,6 +105,44 @@
       return linha ? { gdp: linha.gdp, geb: linha.geb } : null;
     }
 
+    // "1d-2" + 1 → "1d-1"; "2d" + 3 → "2d+3". (Sem converter +4 em +1d: a mesa decide se usa essa regra opcional.)
+    function somarDano(expr, mod) {
+      var m = /^(\d+)d([+-]\d+)?$/.exec(String(expr || '').trim());
+      if (!m) return null;
+      var t = (m[2] ? parseInt(m[2], 10) : 0) + (mod || 0);
+      return m[1] + 'd' + (t ? (t > 0 ? '+' : '') + t : '');
+    }
+
+    // Custo de Aliados, Patronos, Inimigos e Dependentes pelas fórmulas de regras.formulas.
+    // escolhas: { <id da entrada>: índice da opção, modificadores: [nomes] }. null se faltar escolher algo obrigatório.
+    function custoFormula(id, escolhas) {
+      var f = (regras.formulas || {})[id];
+      if (!f || !f.entradas) return null;
+      var e = escolhas || {};
+      var base = null, fixo = null, ajuste = 0, mult = 1;
+      for (var i = 0; i < f.entradas.length; i++) {
+        var ent = f.entradas[i];
+        var k = e[ent.id];
+        if (k == null || !ent.opcoes || !ent.opcoes[k]) {
+          if (ent.opcional) continue;
+          return null;
+        }
+        var o = ent.opcoes[k];
+        if (o.custo != null) base = (base || 0) + o.custo;
+        if (o.custo_base_fixo != null) fixo = o.custo_base_fixo;
+        if (o.ajuste != null) ajuste += o.ajuste;
+        if (o.multiplicador != null) mult *= o.multiplicador;
+      }
+      if (fixo != null) base = fixo;
+      if (base == null) return null;
+      var custo = arredAfastado((base + ajuste) * mult);
+      var pct = (f.modificadores || []).filter(function (m) { return (e.modificadores || []).indexOf(m.nome) !== -1; })
+        .reduce(function (s, m) { return s + m.percentual; }, 0);
+      return pct ? arredAfastado(custo * (1 + pct / 100)) : custo;
+    }
+    // frações "arredondadas para cima em valor absoluto"
+    function arredAfastado(v) { return v >= 0 ? Math.ceil(v - 1e-9) : -Math.ceil(-v - 1e-9); }
+
     // Custo de um traço: custo estruturado (data/gurps) + escolha do jogador { nivel, opcao, quantidade, valor, autocontrole }.
     function custoTraco(custo, escolha) {
       var e = escolha || {};
@@ -224,6 +262,8 @@
       custoPericia: custoPericia,
       nivelPorPontos: nivelPorPontos,
       danoBasico: danoBasico,
+      somarDano: somarDano,
+      custoFormula: custoFormula,
       custoTraco: custoTraco,
       custoAparencia: custoAparencia,
       custoStatus: custoStatus,

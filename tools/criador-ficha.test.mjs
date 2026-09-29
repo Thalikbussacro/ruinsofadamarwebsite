@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const { criarCalculo } = require('../js/gurps-calculo.js');
@@ -174,12 +174,50 @@ for (const m of modelos) {
   const base = c.fichaNova();
   base.nome = 'Teste';
   base.era = 'Era do Novo Mundo';
+  base.idade = '30';
   const fm = c.aplicarModelo(base, m);
   const rm = c.resumir(fm);
   assert.deepEqual(rm.erros.map((e) => e.texto), [], 'modelo ' + m.id);
   assert.ok(rm.restante >= 0 && rm.restante <= 15, 'modelo ' + m.id + ' deixa ' + rm.restante + ' pontos');
   assert.equal(fm.nome, 'Teste');
   assert.equal(fm.era, 'Era do Novo Mundo');
+  assert.equal(fm.idade, '30');
   assert.ok(G.equipamento.length && rm.gasto_equipamento <= rm.recursos);
 }
-console.log('criador-ficha ok');
+// combate: só roda se os números de jogo estiverem na base pública (tabela de dano e peso/dano/RD dos itens)
+const arqTabela = new URL('../data/gurps/tabela-dano.json', import.meta.url);
+const comNumeros = existsSync(arqTabela) && G.equipamento.some((i) => i.combate);
+if (comNumeros) {
+const G2 = { ...G, tabela_dano: JSON.parse(readFileSync(arqTabela, 'utf8')) };
+const c2 = criarCriador(G2, calc);
+const sold = c2.resumir(c2.aplicarModelo(c2.fichaNova(), modelos.find((m) => m.id === 'soldado')));
+assert.deepEqual(sold.combate.dano_basico, { gdp: '1d-1', geb: '1d+2' });
+const golpe = sold.combate.armas.find((a) => /corte/.test(a.dano));
+assert.equal(golpe.dano, '1d+3 corte');
+assert.equal(golpe.nh, 13);
+assert.equal(sold.combate.db, 2);
+assert.equal(sold.combate.defesas.aparar, 9 + 2); // 13/2+3 = 9, +2 do escudo
+assert.equal(sold.combate.protecao['tronco'].rd, 4);
+assert.equal(sold.combate.carga.nome, 'Leve');
+// faca: alcance C
+const cac = c2.resumir(c2.aplicarModelo(c2.fichaNova(), modelos.find((m) => m.id === 'cacador')));
+assert.ok(cac.combate.armas.some((a) => a.nome === 'Faca' && a.alcance === 'C'));
+// sem treino: arma sem a perícia usa o pré-definido (Arco: DX-5)
+const sem = c2.fichaNova();
+sem.atributos.dx = 12;
+sem.equipamento.push({ id: 'arco-comum', quantidade: 1 });
+const rs = c2.resumir(sem);
+assert.equal(rs.combate.armas[0].nh, 12 - 5);
+assert.match(rs.combate.armas[0].pericia, /sem treino/);
+// ST abaixo da mínima da arma gera aviso e penalidade
+sem.atributos.st = 8;
+sem.equipamento = [{ id: 'arco-longo', quantidade: 1 }];
+const rst = c2.resumir(sem);
+assert.match(rst.avisos.map((a) => a.texto).join('|'), /pede ST 11/);
+} else {
+  // sem os números, a ficha continua funcionando: combate vazio, sem erro
+  const r0 = c.resumir(c.aplicarModelo(c.fichaNova(), modelos.find((m) => m.id === 'soldado')));
+  assert.equal(r0.combate.dano_basico, null);
+  assert.ok(Array.isArray(r0.combate.armas));
+}
+console.log('criador-ficha ok' + (comNumeros ? '' : ' (sem números de combate)'));

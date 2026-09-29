@@ -8,7 +8,7 @@ import { conferirEfeito, conferirPrerequisito } from './importar-efeitos.mjs';
 
 const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
 const ARQUIVOS = ['livros', 'pericias', 'vantagens', 'desvantagens', 'regras'];
-const OPCIONAIS = ['equipamento', 'icones'];
+const OPCIONAIS = ['equipamento', 'icones', 'tabela-dano'];
 const SAIDA = join(RAIZ, 'js', 'dados-gurps.js');
 
 const ADAMAR = ['livre', 'narrador', 'nao'];
@@ -125,6 +125,7 @@ export function montarJs(dados) {
     pericias: dados.pericias.itens, vantagens: dados.vantagens.itens, desvantagens: dados.desvantagens.itens,
     equipamento: dados.equipamento ? dados.equipamento.itens : [],
     adamar: dados.adamar || {},
+    tabela_dano: dados['tabela-dano'] || null,
     // só o desenho: nome do ícone → miolo do SVG 24×24
     icones: dados.icones ? Object.fromEntries(Object.entries(dados.icones.icones).map(([k, v]) => [k, v.svg])) : {}
   };

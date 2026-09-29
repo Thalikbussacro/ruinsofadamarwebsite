@@ -2203,6 +2203,19 @@ body.modo-app .deco { display: none; }
 .config-pe .btn { flex: 1 1 auto; }
 @media (min-width: 520px) { .config-pe { flex-wrap: nowrap; } .config-custo { flex: 1 1 auto; min-width: 0; } .config-pe .btn { flex: 0 0 auto; } }
 
+/* combate: resumo (criador, cofre, ficha completa) */
+.combate-linha { display: grid; grid-template-columns: repeat(auto-fit, minmax(5.2rem, 1fr)); gap: 0.35rem; }
+.combate-caixa { display: grid; justify-items: center; padding: 0.35rem 0.2rem; background: rgba(0, 0, 0, 0.35); border: 1px solid var(--ouro-fio); }
+.combate-caixa span { font-family: var(--f-titulo); font-size: 0.72rem; letter-spacing: 0.08em; color: #a39780; }
+.combate-caixa strong { font-family: var(--f-titulo); font-size: 1.15rem; color: var(--ouro-claro); white-space: nowrap; }
+.combate-nota { margin: 0.4rem 0 0; font-size: 0.92rem; color: #c4b89f; }
+.combate-armas { width: 100%; margin: 0.6rem 0 0; border-collapse: collapse; font-size: 0.95rem; }
+.combate-armas th { padding: 0.25rem 0.4rem; font-family: var(--f-titulo); font-size: 0.75rem; letter-spacing: 0.06em; text-align: left; color: #a39780; border-bottom: 1px solid var(--ouro-fio); }
+.combate-armas td { padding: 0.3rem 0.4rem; border-bottom: 1px solid rgba(168, 136, 74, 0.1); white-space: nowrap; }
+.combate-armas td:first-child { white-space: normal; }
+.combate-resumo { margin-bottom: 1rem; padding-bottom: 0.8rem; border-bottom: 1px solid var(--ouro-fio); }
+.app-fisico { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
 /* Celular: a tela também fica parada. Em cima, o saldo numa linha e as etapas; embaixo, Voltar · Salvar · Continuar;
    no meio, só o conteúdo rola. */
 @media (max-width: 899px) {
@@ -2248,3 +2261,36 @@ body.modo-app .deco { display: none; }
 }
 /* no celular, "100vh" inclui a área escondida pela barra do navegador: a altura mínima da base não pode valer aqui */
 html:has(body.modo-app) { height: 100%; overflow: hidden; }
+
+/* ---------- 23. Ficha para imprimir (A4, preto no branco, duas colunas) ---------- */
+@media print {
+  @page { size: A4; margin: 12mm 11mm; }
+  html, body { background: #fff !important; font-size: 10pt; line-height: 1.35; }
+  body::before, .deco, .banner, .site-header, .site-footer, .ficha-acoes, #modo-lista, .page-links, .noscript, .jogar-dialogo { display: none !important; }
+  .page, .page-wide, .page-cofre { max-width: none !important; padding: 0 !important; margin: 0 !important; }
+  .scroll { padding: 0 !important; border: 0 !important; background: none !important; box-shadow: none !important; }
+  .scroll::before, .scroll::after, .page-head::after { display: none !important; }
+  .page-head { margin: 0 0 3mm !important; padding: 0 0 2mm !important; text-align: left !important; border-bottom: 1.5pt solid #000; }
+  .page-head h1 { margin: 0 !important; font-size: 20pt !important; color: #000 !important; text-shadow: none !important; }
+  .page-head .kicker, .page-head .lede { margin: 0 !important; font-size: 9.5pt !important; color: #000 !important; }
+  .ficha { columns: 2; column-gap: 7mm; }
+  .ficha * { color: #000 !important; text-shadow: none !important; }
+  .ficha-pontos, .ficha-grade, .ficha-bloco, .combate-resumo, .ficha-traco, .combate-armas tr { break-inside: avoid; }
+  .ficha-pontos { column-span: all; display: flex; gap: 6mm; padding: 1.5mm 2mm !important; background: none !important; border: 1pt solid #000 !important; }
+  .ficha-pontos strong { font-size: 14pt !important; }
+  .ficha-grade { column-span: all; display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 3mm !important; margin: 2mm 0 !important; }
+  .ficha-bloco { margin: 0 0 3mm !important; padding: 1.5mm 2mm !important; background: none !important; border: 0.75pt solid #000 !important; }
+  .ficha-combate { column-span: all; }
+  .ficha-titulo { margin: 0 0 1mm !important; font-size: 10pt !important; border-bottom: 0.5pt solid #000; }
+  .ficha-valores > div { padding: 0.3mm 0 !important; border-bottom: 0.3pt solid #999 !important; }
+  .combate-caixa, .cofre-atr { background: none !important; border: 0.75pt solid #000 !important; padding: 0.8mm !important; }
+  .combate-caixa strong { font-size: 11pt !important; }
+  .combate-armas th, .combate-armas td, .table-wrap th, .table-wrap td { padding: 0.5mm 1mm !important; border-bottom: 0.3pt solid #999 !important; background: none !important; font-size: 9pt; }
+  .table-wrap { overflow: visible !important; border: 0 !important; background: none !important; box-shadow: none !important; }
+  .efeito-tag { border: 0.5pt solid #000 !important; background: none !important; }
+  .efeitos { font-size: 8.5pt; }
+  .icone { color: #000 !important; }
+  a { text-decoration: none !important; }
+  .table-wrap table, .table-wrap thead, .table-wrap tbody, .table-wrap tr, .table-wrap th { background: none !important; }
+  .ornament, .page-head::before, .page-head::after, .page-head > *::after { display: none !important; }
+}

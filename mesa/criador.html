@@ -8,16 +8,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=8b07f5d3">
+  <link rel="stylesheet" href="../css/style.css?v=e23076d6">
   <script src="../js/whatsapp.js?v=07e0615b" defer></script>
   <script src="../js/site.js?v=d5627230" defer></script>
-  <script src="../js/dados-gurps.js?v=da19171b" defer></script>
+  <script src="../js/dados-gurps.js?v=8938abd9" defer></script>
   <script src="../js/icones.js?v=bd7344e7" defer></script>
   <script src="../js/gurps-efeitos.js?v=0c7368a3" defer></script>
-  <script src="../js/gurps-calculo.js?v=1a5bd31b" defer></script>
-  <script src="../js/criador-ficha.js?v=7fae59ef" defer></script>
+  <script src="../js/gurps-calculo.js?v=f2b73de6" defer></script>
+  <script src="../js/criador-ficha.js?v=f1022551" defer></script>
   <script src="../js/personagens-salvos.js?v=4989026d" defer></script>
-  <script src="../js/criador.js?v=6230834e" defer></script>
+  <script src="../js/criador.js?v=0150d627" defer></script>
 </head>
 <body data-root="../" data-page="mesa/criador.html" class="modo-app">
   <main id="conteudo" class="app">
@@ -79,6 +79,11 @@
               <option value="Estepes"></option><option value="Florestas tropicais"></option><option value="Filho de forasteiros"></option><option value="Refúgio subterrâneo"></option>
             </datalist>
             <div class="field"><label for="c-conceito">Em uma frase</label><input id="c-conceito" data-campo="conceito" maxlength="160" placeholder="Ex.: caçador de Montar que perdeu o irmão nas minas"></div>
+            <div class="app-colunas app-fisico">
+              <div class="field"><label for="c-idade">Idade <span class="opcional">(opcional)</span></label><input id="c-idade" data-campo="idade" maxlength="12" inputmode="numeric" placeholder="ex.: 27"></div>
+              <div class="field"><label for="c-altura">Altura <span class="opcional">(opcional)</span></label><input id="c-altura" data-campo="altura" maxlength="12" placeholder="ex.: 1,72 m"></div>
+              <div class="field"><label for="c-peso-corporal">Peso <span class="opcional">(opcional)</span></label><input id="c-peso-corporal" data-campo="peso_corporal" maxlength="12" placeholder="ex.: 70 kg"></div>
+            </div>
             <div class="app-colunas">
               <div class="field"><label for="c-aparencia-fisica">Aparência <span class="opcional">(opcional)</span></label><textarea id="c-aparencia-fisica" data-campo="aparencia_fisica" rows="4" maxlength="600"></textarea></div>
               <div class="field"><label for="c-historia">História e o que faz da vida <span class="opcional">(opcional)</span></label><textarea id="c-historia" data-campo="historia" rows="4" maxlength="2000"></textarea></div>
@@ -213,8 +218,9 @@
           </header>
           <div class="app-corpo app-duplo">
             <div class="painel">
-              <div class="painel-cab"><h2>Pendências e avisos</h2></div>
+              <div class="painel-cab"><h2>Pendências e combate</h2></div>
               <div class="painel-rolagem">
+                <div id="c-combate" class="combate-resumo"></div>
                 <ul id="c-erros" class="app-pendencias"></ul>
                 <ul id="c-avisos" class="app-pendencias app-avisos"></ul>
                 <div class="field"><label for="c-notas">Recado para o narrador <span class="opcional">(opcional)</span></label><textarea id="c-notas" data-campo="notas" rows="3" maxlength="1000"></textarea></div>

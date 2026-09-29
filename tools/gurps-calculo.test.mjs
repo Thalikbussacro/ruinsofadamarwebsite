@@ -137,4 +137,24 @@ assert.equal(c.custoTraco({ tipo: 'fixo', valor: -15, autocontrole: true }, { au
 assert.equal(c.custoTraco({ tipo: 'fixo', valor: -15, autocontrole: true }, { autocontrole: 15 }), -7);
 assert.equal(c.custoTraco({ tipo: 'fixo', valor: -15, autocontrole: true }), -15); // padrão 12
 
+// somar dano
+assert.equal(c.somarDano('1d-2', 1), '1d-1');
+assert.equal(c.somarDano('1d-1', 1), '1d');
+assert.equal(c.somarDano('2d', 3), '2d+3');
+assert.equal(c.somarDano('1d+2', -3), '1d-1');
+assert.equal(c.somarDano('xx', 1), null);
+// fórmulas: aliado com 100% dos pontos (5) presente constantemente (×4) = 20
+assert.equal(c.custoFormula('aliados', { pontos_relativos: 3, frequencia: 0 }), 20);
+// aliado 50% (2), com frequência (×1) = 2; esporadicamente (×0,5) = 1
+assert.equal(c.custoFormula('aliados', { pontos_relativos: 1, frequencia: 3 }), 2);
+assert.equal(c.custoFormula('aliados', { pontos_relativos: 1, frequencia: 4 }), 1);
+// patrono poderoso (10), 12 ou menos (×2) = 20; com Relutante (-50%) = 10
+assert.equal(c.custoFormula('patronos', { poder: 0, frequencia: 2 }), 20);
+assert.equal(c.custoFormula('patronos', { poder: 0, frequencia: 2, modificadores: ['Relutante'] }), 10);
+// inimigo mais forte (-20), Rival (×0,5), 9 ou menos (×1) = -10
+assert.equal(c.custoFormula('inimigos', { poder: 2, intencao: 1, frequencia: 2 }), -10);
+// dependente com 50% dos pontos (-5), amigo (×1), 12 ou menos (×2) = -10
+assert.equal(c.custoFormula('dependentes', { pontos_relativos: 2, importancia: 1, frequencia: 1 }), -10);
+// falta escolher algo obrigatório
+assert.equal(c.custoFormula('patronos', { poder: 0 }), null);
 console.log('gurps-calculo ok');

@@ -10,6 +10,7 @@
       versao: 1,
       id_salvo: '',
       nome: '', jogador: '', conceito: '', era: '', origem: '', aparencia_fisica: '', historia: '',
+      idade: '', altura: '', peso_corporal: '',
       orcamento: pontos.padrao,
       atributos: { st: 10, dx: 10, iq: 10, ht: 10 },
       ajustes: {},
@@ -123,6 +124,130 @@
         .filter(function (e) { return !(e.por_nivel && typeof e.valor === 'number' && !nivel); })
         .map(function (e) { return { tipo: Efeitos.tipoEfeito(e), texto: Efeitos.textoEfeito(e, G, nivel) }; })
         .filter(function (x) { return x.texto; });
+    }
+
+
+    // ---------- perícias sem treino e combate ----------
+    var ATRIBUTO_DE = { DX: 'dx', IQ: 'iq', HT: 'ht', ST: 'st', Per: 'per', Vontade: 'vontade' };
+    var TIPO_CURTO = {
+      contusao: 'cont', corte: 'corte', perfuracao: 'perf', queimadura: 'qmd', corrosao: 'cor', toxico: 'tox', fadiga: 'fad',
+      perfurante: 'pa', 'perfurante-pequeno': 'pa-', 'perfurante-grande': 'pa+', 'perfurante-enorme': 'pa++'
+    };
+
+    // NH de quem usa a perícia sem ter treinado (o "pré-definido"): o melhor caminho entre atributo−X e outra perícia−X.
+    function nhSemTreino(p, valores, nhTreinado) {
+      var melhor = null;
+      ((p.predefinidos || {}).caminhos || []).forEach(function (c) {
+        var v = null;
+        if (c.tipo === 'atributo') v = valores[c.atributo] != null ? valores[c.atributo] + c.mod : null;
+        else if (c.tipo === 'pericia' && nhTreinado[c.id] != null) v = nhTreinado[c.id] + c.mod;
+        if (v != null && (melhor == null || v > melhor)) melhor = v;
+      });
+      return melhor;
+    }
+
+    function nhParaUso(uso, valores, nhTreinado) {
+      if (uso.tipo === 'atributo') return valores[uso.atributo] != null ? { nh: valores[uso.atributo] + (uso.mod || 0), como: uso.atributo.toUpperCase() + (uso.mod ? (uso.mod > 0 ? '+' : '') + uso.mod : '') } : null;
+      if (uso.tipo !== 'pericia') return null;
+      var p = PERICIA[uso.id];
+      if (!p) return null;
+      if (nhTreinado[uso.id] != null) return { nh: nhTreinado[uso.id] + (uso.mod || 0), como: p.nome, treinada: true };
+      var st = nhSemTreino(p, valores, nhTreinado);
+      return st == null ? null : { nh: st + (uso.mod || 0), como: p.nome + ' sem treino' };
+    }
+
+    function textoDano(d, basico) {
+      if (!d) return '—';
+      if (d.especial) return 'especial';
+      var tipo = TIPO_CURTO[d.tipo] || d.tipo || '';
+      var div = d.divisor_armadura ? ' (' + String(d.divisor_armadura).replace('.', ',') + ')' : '';
+      if (d.base) {
+        var b = basico && basico[d.base];
+        var soma = b ? calc.somarDano(b, d.mod) : null;
+        return (soma || (d.base === 'gdp' ? 'GdP' : 'GeB') + (d.mod ? (d.mod > 0 ? '+' : '') + d.mod : '')) + div + ' ' + tipo;
+      }
+      if (d.dados != null) return d.dados + 'd' + (d.mod ? (d.mod > 0 ? '+' : '') + d.mod : '') + div + ' ' + tipo;
+      return d.texto || '—';
+    }
+    function textoAlcance(a, st) {
+      if (!a) return '—';
+      if (a.especial) return 'especial';
+      if (a.meio_st != null || a.max_st != null) {
+        var mx = a.max_st != null ? Math.round(a.max_st * st) : null, mt = a.meio_st != null ? Math.round(a.meio_st * st) : null;
+        return (mt != null ? mt + ' / ' : '') + (mx != null ? mx : '') + ' m';
+      }
+      if (a.min != null) {
+        var ini = a.min === 0 ? 'C' : String(a.min), fim = a.max === 0 ? 'C' : String(a.max);
+        return (ini === fim ? fim : ini + '–' + fim) + (a.preparar ? '*' : '');
+      }
+      return a.texto || '—';
+    }
+
+    function combate(ficha, valores, pericias, avisos) {
+      var nhTreinado = {};
+      pericias.forEach(function (x) { if (x.pericia && x.nh != null && (nhTreinado[x.pericia.id] == null || x.nh > nhTreinado[x.pericia.id])) nhTreinado[x.pericia.id] = x.nh; });
+      var basico = calc.danoBasico(valores.st, G.tabela_dano) || null;
+      var armas = [], protecao = {}, pesoTotal = 0, db = 0, bloqueio = null;
+      ficha.equipamento.forEach(function (sel) {
+        var it = ITEM[sel.id];
+        if (!it) return;
+        var q = sel.quantidade || 1;
+        if (it.peso) pesoTotal += it.peso.kg * q;
+        if (it.escudo) {
+          db = Math.max(db, it.escudo.bd || 0);
+          var usoEsc = nhParaUso({ tipo: 'pericia', id: 'escudo' }, valores, nhTreinado);
+          if (usoEsc) bloqueio = Math.max(bloqueio || 0, Math.floor(usoEsc.nh / 2) + 3);
+        }
+        if (it.protecao) {
+          String(it.protecao.local || '').split(/,\s*/).filter(Boolean).forEach(function (l) {
+            var atual = protecao[l] || { rd: 0, itens: [] };
+            atual.rd += it.protecao.rd || 0;
+            atual.itens.push(it.nome + ' (' + it.protecao.texto + ')');
+            protecao[l] = atual;
+          });
+        }
+        if (it.combate) {
+          it.combate.modos.forEach(function (m) {
+            var melhor = null;
+            (it.combate.pericias || []).forEach(function (u) {
+              var r = nhParaUso(u, valores, nhTreinado);
+              if (r && (!melhor || r.nh > melhor.nh)) melhor = r;
+            });
+            var nh = melhor ? melhor.nh : null;
+            var stMin = m.st && m.st.min;
+            if (stMin && valores.st < stMin) {
+              avisos.push({ etapa: 'equipamento', texto: it.nome + ': pede ST ' + stMin + '; com ST ' + valores.st + ' o personagem tem -' + (stMin - valores.st) + ' no NH.' });
+              if (nh != null) nh -= stMin - valores.st;
+            }
+            armas.push({
+              item: it, nome: it.nome + (m.nome ? ' — ' + m.nome : ''), dano: textoDano(m.dano, basico),
+              alcance: textoAlcance(m.alcance, valores.st), nh: nh, pericia: melhor ? melhor.como : 'sem perícia',
+              aparar: m.aparar && m.aparar.mod != null && nh != null ? Math.floor(nh / 2) + 3 + m.aparar.mod + (m.aparar.desbalanceada ? 'D' : '') : null,
+              st: stMin || null, precisao: m.precisao != null ? m.precisao : null
+            });
+          });
+        }
+      });
+      pesoTotal = Math.round(pesoTotal * 100) / 100;
+      var nivel = calc.nivelDeCarga(valores.st, pesoTotal);
+      var niveis = R.carga.niveis;
+      var nomeNivel = nivel < niveis.length ? niveis[nivel].nome : 'Não consegue se mover';
+      if (nivel >= niveis.length) avisos.push({ etapa: 'equipamento', texto: 'Peso demais: ' + String(pesoTotal).replace('.', ',') + ' kg passa de 10× a Base de Carga.' });
+      var aparar = armas.reduce(function (m, a) { var v = parseInt(a.aparar, 10); return !isNaN(v) && (m == null || v > m) ? v : m; }, null);
+      return {
+        dano_basico: basico,
+        armas: armas,
+        protecao: protecao,
+        peso_total: pesoTotal,
+        carga: { nivel: nivel, nome: nomeNivel, deslocamento: nivel < niveis.length ? calc.deslocamentoComCarga(valores.deslocamento, nivel) : 0 },
+        db: db,
+        defesas: {
+          esquiva: nivel < niveis.length ? calc.esquiva(valores.velocidade, nivel) : 0,
+          aparar: aparar,
+          bloqueio: bloqueio
+        },
+        sem_treino: function (p) { return nhSemTreino(p, valores, nhTreinado); }
+      };
     }
 
     function custoIdiomas(ficha) {
@@ -284,8 +409,14 @@
         erro('equipamento', 'O equipamento custa ' + gasto.toLocaleString('pt-BR') + ' coroas, mais que o dinheiro inicial (' + base.recursos.toLocaleString('pt-BR') + ').');
       }
 
+      var cb = combate(ficha, valores, pericias, avisos);
+      // bônus fixos (Reflexos em Combate…) e o bônus do escudo valem para todas as defesas
+      cb.defesas.esquiva += fixos.esquiva + cb.db;
+      if (cb.defesas.aparar != null) cb.defesas.aparar += cb.db;
+      if (cb.defesas.bloqueio != null) cb.defesas.bloqueio += cb.db;
       return {
         valores: valores,
+        combate: cb,
         custos: custos,
         total: total,
         restante: restante,
@@ -357,11 +488,13 @@
       L.push('*' + (ficha.nome || 'Personagem sem nome') + '*' + (ficha.jogador ? ' (jogador: ' + ficha.jogador + ')' : ''));
       if (ficha.conceito) L.push(ficha.conceito);
       if (ficha.era || ficha.origem) L.push([ficha.era, ficha.origem].filter(Boolean).join(' · '));
+      var fis = [ficha.idade ? ficha.idade + ' anos' : '', ficha.altura, ficha.peso_corporal].filter(Boolean);
+      if (fis.length) L.push(fis.join(' · '));
       L.push('');
       L.push('Pontos: começou com ' + ficha.orcamento + ', gastou ' + r.pontos_gastos + ', recebeu ' + r.pontos_devolvidos + ' de desvantagens · ' +
         (r.restante >= 0 ? 'guardados ' + r.restante : 'saldo negativo ' + r.restante));
       L.push('ST ' + v.st + ' · DX ' + v.dx + ' · IQ ' + v.iq + ' · HT ' + v.ht);
-      L.push('PV ' + v.pv + ' · Vontade ' + v.vontade + ' · Per ' + v.per + ' · PF ' + v.pf + ' · Velocidade ' + num(v.velocidade) + ' · Deslocamento ' + v.deslocamento + ' · Esquiva ' + r.esquiva);
+      L.push('PV ' + v.pv + ' · Vontade ' + v.vontade + ' · Per ' + v.per + ' · PF ' + v.pf + ' · Velocidade ' + num(v.velocidade) + ' · Deslocamento ' + v.deslocamento);
       var so = ficha.social;
       var ap = R.aparencia.niveis.filter(function (n) { return n.id === so.aparencia; })[0];
       var rq = R.riqueza.niveis.filter(function (n) { return n.id === so.riqueza; })[0];
@@ -384,6 +517,16 @@
         return nome + ' ' + (x.nh == null ? '—' : x.nh) + ' [' + (x.sel.pontos || 0) + ']';
       });
       if (ps.length) { L.push(''); L.push('*Perícias:* ' + ps.join('; ')); }
+      var cb = r.combate;
+      if (cb) {
+        L.push('');
+        L.push('*Combate:* dano básico GdP ' + (cb.dano_basico ? cb.dano_basico.gdp : '—') + ', GeB ' + (cb.dano_basico ? cb.dano_basico.geb : '—') +
+          ' · Esquiva ' + cb.defesas.esquiva + (cb.defesas.aparar != null ? ' · Aparar ' + cb.defesas.aparar : '') +
+          (cb.defesas.bloqueio != null ? ' · Bloqueio ' + cb.defesas.bloqueio : '') + ' · carga ' + cb.carga.nome + ' (' + num(cb.peso_total) + ' kg, deslocamento ' + cb.carga.deslocamento + ')');
+        cb.armas.forEach(function (a) { L.push('- ' + a.nome + ': ' + a.dano + ', NH ' + (a.nh == null ? '—' : a.nh) + (a.aparar != null ? ', aparar ' + a.aparar : '') + ', alcance ' + a.alcance); });
+        var locais = Object.keys(cb.protecao);
+        if (locais.length) L.push('RD: ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd; }).join(', '));
+      }
       var eq = ficha.equipamento.map(function (e) {
         var it = ITEM[e.id];
         return (it ? it.nome : e.id) + (e.quantidade > 1 ? ' ×' + e.quantidade : '');
@@ -414,7 +557,7 @@
     function aplicarModelo(atual, modelo) {
       var m = modelo.ficha || {};
       var f = carregar(JSON.parse(JSON.stringify(m)));
-      ['id_salvo', 'nome', 'jogador', 'era', 'origem', 'aparencia_fisica', 'historia', 'notas', 'orcamento', 'idioma_materno'].forEach(function (k) {
+      ['id_salvo', 'nome', 'jogador', 'era', 'origem', 'aparencia_fisica', 'historia', 'notas', 'orcamento', 'idioma_materno', 'idade', 'altura', 'peso_corporal'].forEach(function (k) {
         if (atual[k] != null && atual[k] !== '') f[k] = atual[k];
       });
       if (atual.conceito) f.conceito = atual.conceito;

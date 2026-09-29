@@ -40,6 +40,45 @@
   }
 
 
+  // ---------- combate: caixas de dano/defesas, tabela de armas e proteção ----------
+  function blocoCombate(r, compacto) {
+    var cb = r.combate;
+    var box = el('div', 'combate-resumo');
+    var linha = el('div', 'combate-linha');
+    [['GdP', cb.dano_basico ? cb.dano_basico.gdp : '—'], ['GeB', cb.dano_basico ? cb.dano_basico.geb : '—'],
+      ['Esquiva', cb.defesas.esquiva], ['Aparar', cb.defesas.aparar == null ? '—' : cb.defesas.aparar],
+      ['Bloqueio', cb.defesas.bloqueio == null ? '—' : cb.defesas.bloqueio], ['Carga', cb.carga.nome]].forEach(function (x) {
+      var c = el('div', 'combate-caixa');
+      c.appendChild(el('span', null, x[0]));
+      c.appendChild(el('strong', null, String(x[1])));
+      linha.appendChild(c);
+    });
+    box.appendChild(linha);
+    box.appendChild(el('p', 'combate-nota', num(cb.peso_total) + ' kg carregados · deslocamento ' + cb.carga.deslocamento + (cb.db ? ' · escudo +' + cb.db + ' em todas as defesas' : '')));
+    if (cb.armas.length) {
+      var t = el('table', 'combate-armas');
+      var h = el('tr');
+      (compacto ? ['Arma', 'Dano', 'NH', 'Aparar'] : ['Arma', 'Dano', 'NH', 'Aparar', 'Alcance', 'ST', 'Perícia']).forEach(function (x) { h.appendChild(el('th', null, x)); });
+      t.appendChild(h);
+      cb.armas.forEach(function (a) {
+        var tr = el('tr');
+        var n = el('td');
+        var ic = window.iconeSvg && window.iconeSvg(a.item.icone, 'icone-item');
+        if (ic) n.appendChild(ic);
+        n.appendChild(document.createTextNode(a.nome));
+        tr.appendChild(n);
+        var vals = [a.dano, a.nh == null ? '—' : a.nh, a.aparar == null ? '—' : a.aparar];
+        if (!compacto) vals.push(a.alcance, a.st || '—', a.pericia);
+        vals.forEach(function (x) { tr.appendChild(el('td', null, String(x))); });
+        t.appendChild(tr);
+      });
+      box.appendChild(t);
+    }
+    var locais = Object.keys(cb.protecao);
+    if (locais.length) box.appendChild(el('p', 'combate-nota', 'Proteção (RD): ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd; }).join(' · ')));
+    return box;
+  }
+
   // ---------- cofre: grade de personagens + painel da ficha (tela de seleção de MMO antigo) ----------
   var ARMAZENAMENTO_SELECAO = 'adamar-cofre-selecionado';
   var RASCUNHO = 'adamar-criador';
@@ -156,12 +195,13 @@
       });
       painel.appendChild(atr);
       var sec = el('p', 'cofre-secundarias');
-      sec.textContent = ['PV ' + v.pv, 'Vont ' + v.vontade, 'Per ' + v.per, 'PF ' + v.pf, 'Vel ' + num(v.velocidade), 'Desl ' + v.deslocamento, 'Esquiva ' + r.esquiva].join('  ·  ');
+      sec.textContent = ['PV ' + v.pv, 'Vont ' + v.vontade, 'Per ' + v.per, 'PF ' + v.pf, 'Vel ' + num(v.velocidade), 'Desl ' + v.deslocamento].join('  ·  ');
       painel.appendChild(sec);
       var saldo = el('p', 'cofre-saldo');
       saldo.textContent = f.orcamento + ' pontos · ' + (r.restante >= 0 ? (r.restante ? r.restante + ' guardados' : 'todos usados') : 'saldo negativo ' + r.restante) +
         ' · ' + moeda(r.dinheiro_restante) + ' na bolsa';
       painel.appendChild(saldo);
+      painel.appendChild(blocoCombate(r, true));
 
       function secao(titulo, itens) {
         var b = el('section', 'cofre-secao');
@@ -320,7 +360,7 @@
     var v = r.valores;
     document.title = (f.nome || 'Personagem') + ' — Ruínas de Adamar';
     document.getElementById('f-nome').textContent = f.nome || 'Sem nome';
-    document.getElementById('f-kicker').textContent = [f.era, f.origem].filter(Boolean).join(' · ') || 'Personagem';
+    document.getElementById('f-kicker').textContent = [f.era, f.origem, f.idade ? f.idade + ' anos' : '', f.altura, f.peso_corporal].filter(Boolean).join(' · ') || 'Personagem';
     document.getElementById('f-conceito').textContent = f.conceito || '';
     document.getElementById('f-editar').href = 'criador.html?editar=' + encodeURIComponent(idFicha);
     var cfg = (window.SITE_CONFIG && window.SITE_CONFIG.whatsapp) || { numero: '' };
@@ -354,7 +394,7 @@
     sec.appendChild(linhas(R.secundarias.map(function (s) {
       var aj = f.ajustes[s.id] || 0;
       return [s.sigla, num(v[s.id]), aj ? sinal(calc.custoSecundaria(s.id, aj)) : ''];
-    }).concat([['Esquiva', String(r.esquiva)], ['Base de Carga', num(r.base_carga) + ' kg']])));
+    }).concat([['Base de Carga', num(r.base_carga) + ' kg']])));
     grade.appendChild(sec);
 
     var so = f.social;
@@ -374,6 +414,10 @@
         return [i.nome || 'Idioma', 'fala ' + (nf ? nf.nome : i.fala) + ', escrita ' + (ne ? ne.nome : i.escrita), sinal(calc.custoIdioma(i.fala, i.escrita))];
       }))));
     grade.appendChild(soc);
+
+    var comb = bloco('Combate', 'ficha-largo ficha-combate');
+    comb.appendChild(blocoCombate(r, false));
+    box.appendChild(comb);
 
     // traços
     function listaTracos(titulo, itens, extras) {

@@ -256,7 +256,7 @@
     modeloPendente = null;
     if (m.id === 'zero') {
       var limpa = criador.fichaNova();
-      ['id_salvo', 'nome', 'jogador', 'conceito', 'era', 'origem', 'aparencia_fisica', 'historia', 'notas', 'orcamento'].forEach(function (k) { limpa[k] = ficha[k]; });
+      ['id_salvo', 'nome', 'jogador', 'conceito', 'era', 'origem', 'aparencia_fisica', 'historia', 'notas', 'orcamento', 'idade', 'altura', 'peso_corporal'].forEach(function (k) { limpa[k] = ficha[k]; });
       ficha = limpa;
       avisoModelo.textContent = 'Ficha limpa. Monte do seu jeito nas próximas etapas.';
     } else {
@@ -377,7 +377,7 @@
     });
     var ALVO = { esquiva: 'Esquiva', todas: 'defesas', deslocamento: 'Deslocamento' };
     var vindos = r.efeitos_fixos.map(function (e) { return sinal(e.valor) + ' ' + (ALVO[e.ref] || e.ref) + ' de ' + e.traco; });
-    document.getElementById('c-derivadas').textContent = 'Esquiva ' + r.esquiva + ' · Base de Carga ' + num(r.base_carga) + ' kg' +
+    document.getElementById('c-derivadas').textContent = 'Esquiva ' + r.combate.defesas.esquiva + ' (com carga e escudo) · Base de Carga ' + num(r.base_carga) + ' kg' +
       (vindos.length ? ' · já contando ' + vindos.join(', ') : '');
   });
 
@@ -868,6 +868,53 @@
       } else if (c.tipo === 'minimo') {
         corpo.appendChild(el('h3', null, 'Quantos pontos? (mínimo ' + c.valor + ')'));
         corpo.appendChild(inteiro(Math.abs(c.valor), Math.abs(c.valor), 300, function (v) { e.valor = (negativo ? -1 : 1) * v; atualizar(); }));
+      } else if (c.tipo === 'variavel' && (R.formulas || {})[t.id] && R.formulas[t.id].entradas) {
+        // calculadora: um seletor por fator da fórmula do livro, e os modificadores
+        var fo = R.formulas[t.id];
+        e.formula = { modificadores: [] };
+        var recalcular = function () {
+          var v = calc.custoFormula(t.id, e.formula);
+          e.valor = v == null ? null : v;
+          atualizar();
+        };
+        corpo.appendChild(el('p', 'config-dica', 'Escolha cada fator: o custo sai pela fórmula do livro (pág. ' + (fo.ref ? fo.ref.pagina : t.ref.pagina) + '). Combine os detalhes com o narrador.'));
+        fo.entradas.forEach(function (ent) {
+          corpo.appendChild(el('h3', null, (ent.descricao ? ent.descricao.charAt(0).toUpperCase() + ent.descricao.slice(1) : ent.id.replace(/_/g, ' ')) + (ent.opcional ? ' (opcional)' : '')));
+          var ops = [['', ent.opcional ? 'Não se aplica' : 'Escolha…']].concat(ent.opcoes.map(function (o, k) {
+            var rot = o.rotulo || (o.ate != null ? 'até ' + Math.round(o.ate * 100) + '% dos seus pontos' : o.pontos_absolutos_max != null ? 'até ' + o.pontos_absolutos_max + ' pontos' : o.de != null ? o.de + ' a ' + o.ate : 'opção ' + (k + 1));
+            var efeito = o.custo != null ? ' (' + sinal(o.custo) + ')' : o.multiplicador != null ? ' (×' + num(o.multiplicador) + ')' : o.ajuste != null ? ' (' + sinal(o.ajuste) + ')' : '';
+            return [k, rot + efeito];
+          }));
+          var s = selectCom(ops, '', ent.id);
+          s.className = 'config-texto';
+          s.addEventListener('change', function () {
+            if (s.value === '') delete e.formula[ent.id]; else e.formula[ent.id] = parseInt(s.value, 10);
+            recalcular();
+          });
+          corpo.appendChild(s);
+        });
+        if (fo.modificadores && fo.modificadores.length) {
+          corpo.appendChild(el('h3', null, 'Modificadores (opcional)'));
+          fo.modificadores.forEach(function (m) {
+            var lab = el('label', 'check filtro-narrador config-mod');
+            var cx = el('input');
+            cx.type = 'checkbox';
+            cx.addEventListener('change', function () {
+              var lista = e.formula.modificadores;
+              if (cx.checked) {
+                // do mesmo grupo, só um
+                if (m.exclusivo_grupo) fo.modificadores.forEach(function (o) { if (o.exclusivo_grupo === m.exclusivo_grupo && o.nome !== m.nome) { var i = lista.indexOf(o.nome); if (i !== -1) lista.splice(i, 1); } });
+                lista.push(m.nome);
+              } else lista.splice(lista.indexOf(m.nome), 1);
+              Array.prototype.forEach.call(corpo.querySelectorAll('.config-mod input'), function (x) { x.checked = lista.indexOf(x.getAttribute('data-nome')) !== -1; });
+              recalcular();
+            });
+            cx.setAttribute('data-nome', m.nome);
+            lab.appendChild(cx);
+            lab.appendChild(el('span', null, m.nome + ' (' + (m.percentual > 0 ? '+' : '') + m.percentual + '%)'));
+            corpo.appendChild(lab);
+          });
+        }
       } else if (c.tipo === 'variavel') {
         corpo.appendChild(el('h3', null, 'Como se calcula'));
         corpo.appendChild(el('p', 'config-dica', c.como_calcular || 'O custo depende de vários fatores. Combine com o narrador.'));
@@ -1253,7 +1300,10 @@
   var catalogoPericias = criarCatalogo(document.getElementById('c-pericias-catalogo'), {
     itens: function () { return G.pericias.filter(function (p) { return p.adamar !== 'nao'; }); },
     texto: function (p) { return p.nome + ' ' + p.resumo; },
-    selo: function (p) { return p.atributo + '/' + p.dificuldade; },
+    selo: function (p) {
+      var st = ultimo && ultimo.combate ? ultimo.combate.sem_treino(p) : null;
+      return p.atributo + '/' + p.dificuldade + (st != null ? ' · sem treino ' + st : '');
+    },
     filtros: [
       { rotulo: 'Atributo', opcoes: ATRIBUTOS_PERICIA, testa: function (p, v) { return p.atributo === v; } },
       { rotulo: 'Dificuldade', opcoes: DIFICULDADES.map(function (d) { return [d, d]; }), testa: function (p, v) { return p.dificuldade === v; } },
@@ -1314,7 +1364,7 @@
   var catalogoEquip = criarCatalogo(document.getElementById('c-equipamento-catalogo'), {
     itens: function () { return (G.equipamento || []).filter(function (i) { return i.adamar !== 'nao'; }); },
     texto: function (i) { return i.nome + ' ' + (i.subcategoria || '') + ' ' + (i.resumo || ''); },
-    selo: textoPreco,
+    selo: function (i) { return textoPreco(i) + (i.peso ? ' · ' + num(i.peso.kg) + ' kg' : ''); },
     filtros: [
       { rotulo: 'Tipo', opcoes: Object.keys(CATEGORIAS_EQUIP).map(function (k) { return [k, CATEGORIAS_EQUIP[k]]; }), testa: function (i, v) { return i.categoria === v; } },
       {
@@ -1339,9 +1389,10 @@
   atualizadores.push(function (r) {
     infosEquip.forEach(function (f) { f(r); });
     var d = document.getElementById('c-dinheiro');
+    var cb = r.combate;
     d.textContent = 'Dinheiro inicial ' + moeda(r.recursos) + ' · gasto ' + moeda(r.gasto_equipamento) + ' · ' +
       (r.dinheiro_restante >= 0 ? 'sobram ' + moeda(r.dinheiro_restante) : 'faltam ' + moeda(-r.dinheiro_restante)) +
-      '. Peso fica com o narrador.';
+      ' · peso ' + num(cb.peso_total) + ' kg, carga ' + cb.carga.nome + ' (Base de Carga ' + num(r.base_carga) + ' kg)';
     d.className = r.dinheiro_restante < 0 ? 'tem-erro' : '';
     document.getElementById('c-equipamento-conta').textContent = ficha.equipamento.length + (ficha.equipamento.length === 1 ? ' item · ' : ' itens · ') + moeda(r.gasto_equipamento);
   });
@@ -1364,6 +1415,44 @@
       ul.appendChild(li);
     });
   }
+  // resumo de combate (revisão): dano, defesas, carga, armas e proteção
+  function desenharCombate(box, r) {
+    var cb = r.combate;
+    box.textContent = '';
+    var linha = el('div', 'combate-linha');
+    [['GdP', cb.dano_basico ? cb.dano_basico.gdp : '—'], ['GeB', cb.dano_basico ? cb.dano_basico.geb : '—'],
+      ['Esquiva', cb.defesas.esquiva], ['Aparar', cb.defesas.aparar == null ? '—' : cb.defesas.aparar],
+      ['Bloqueio', cb.defesas.bloqueio == null ? '—' : cb.defesas.bloqueio], ['Carga', cb.carga.nome]].forEach(function (x) {
+      var c = el('div', 'combate-caixa');
+      c.appendChild(el('span', null, x[0]));
+      c.appendChild(el('strong', null, String(x[1])));
+      linha.appendChild(c);
+    });
+    box.appendChild(linha);
+    box.appendChild(el('p', 'combate-nota', num(cb.peso_total) + ' kg carregados · deslocamento ' + cb.carga.deslocamento + (cb.db ? ' · escudo +' + cb.db + ' em todas as defesas' : '')));
+    if (cb.armas.length) {
+      var t = el('table', 'combate-armas');
+      var h = el('tr');
+      ['Arma', 'Dano', 'NH', 'Aparar', 'Alcance'].forEach(function (x) { h.appendChild(el('th', null, x)); });
+      t.appendChild(h);
+      cb.armas.forEach(function (a) {
+        var tr = el('tr');
+        var n = el('td');
+        var ic = window.iconeSvg && window.iconeSvg(a.item.icone, 'icone-item');
+        if (ic) n.appendChild(ic);
+        n.appendChild(document.createTextNode(a.nome));
+        n.title = a.pericia;
+        tr.appendChild(n);
+        [a.dano, a.nh == null ? '—' : a.nh, a.aparar == null ? '—' : a.aparar, a.alcance].forEach(function (x) { tr.appendChild(el('td', null, String(x))); });
+        t.appendChild(tr);
+      });
+      box.appendChild(t);
+    }
+    var locais = Object.keys(cb.protecao);
+    if (locais.length) box.appendChild(el('p', 'combate-nota', 'Proteção (RD): ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd; }).join(' · ')));
+  }
+  atualizadores.push(function (r) { desenharCombate(document.getElementById('c-combate'), r); });
+
   var texto = document.getElementById('c-texto');
   var whats = document.getElementById('c-whats');
   var copiado = document.getElementById('c-copiado');

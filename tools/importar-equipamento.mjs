@@ -4,7 +4,7 @@
 //   data/gurps/equipamento.json                 só o que pode ser público: nome, categoria, NT, página, Adamar, resumo, preço
 // Uso: node tools/importar-equipamento.mjs <pasta-com-os-json-das-secoes>
 //      node tools/importar-equipamento.mjs --precos   (só atualiza o preço na base pública, a partir da local)
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, copyFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, copyFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -49,6 +49,65 @@ export function precoEstruturado(texto) {
   return r;
 }
 
+// "1,5" / "1,5 kg" → { kg: 1.5 }; "1,5/0,05" → { kg: 1.5, municao: 0.05 }; "desprezível" → { kg: 0 }; "—"/"var." → null.
+// Texto entre parênteses vira "por" ("cada 10 m", "com estribos").
+export function pesoEstruturado(texto) {
+  const t = String(texto == null ? '' : texto).trim();
+  if (/^desp/i.test(t)) return { kg: 0 };
+  const m = /^\+?(\d+(?:,\d+)?)(?:\s*\/\s*(\d+(?:,\d+)?))?\s*(?:kg)?\s*(?:\((.+)\))?$/i.exec(t);
+  if (!m) return null;
+  const n = (x) => parseFloat(x.replace(',', '.'));
+  const r = { kg: n(m[1]) };
+  if (m[2]) r.municao = n(m[2]);
+  if (m[3]) r.por = m[3].trim();
+  return r;
+}
+
+// Proteção de armadura: "4/2*" → { rd: 4, contusao: 2, flexivel: true }; "4D" → { rd: 4, so_frente: true }.
+// (* = flexível: contusão atravessa; D = só na parte da frente do corpo)
+export function rdEstruturada(texto) {
+  const t = String(texto == null ? '' : texto).trim();
+  const m = /^(\d+)(?:\/(\d+))?(D)?(\*)?$/i.exec(t);
+  if (!m) return null;
+  const r = { rd: parseInt(m[1], 10) };
+  if (m[2]) r.contusao = parseInt(m[2], 10);
+  if (m[3]) r.so_frente = true;
+  if (m[4]) r.flexivel = true;
+  return r;
+}
+
+// Peso que o livro só dá na descrição (vale a versão de Adamar).
+const PESO_MANUAL = { 'caixa-de-ferramentas-portatil': { kg: 10, por: 'de Carpintaria' } };
+
+// Números de jogo (peso, dano, alcance, aparar, ST mínima, RD, bônus de defesa) dos itens que existem em Adamar.
+// Decisão do narrador (29/09/2026): publicar, para a ficha de combate funcionar no site.
+export function numerosDeJogo(item) {
+  if (item.adamar === 'nao') return {};
+  const est = item.estatisticas || {};
+  const out = {};
+  const peso = PESO_MANUAL[item.id] || pesoEstruturado(est.peso != null ? est.peso : ((est.modos || [])[0] || {}).peso);
+  if (peso) out.peso = peso;
+  const modos = (item.modos_estruturados || []).filter((m) => m.dano || m.alcance);
+  if (modos.length) {
+    out.combate = {
+      modos: modos.map((m, i) => {
+        const bruto = (est.modos || [])[i] || est;
+        const r = {};
+        if (bruto.modo) r.nome = bruto.modo;
+        ['dano', 'alcance', 'aparar', 'st', 'precisao', 'cdt', 'tiros', 'magnitude'].forEach((k) => { if (m[k] != null) r[k] = m[k]; });
+        return r;
+      }),
+      pericias: item.pericias_uso || []
+    };
+  }
+  if (est.rd != null) {
+    const rd = rdEstruturada(est.rd);
+    out.protecao = { local: est.local || '', texto: String(est.rd), ...(rd || {}) };
+  }
+  if (est.bd != null) out.escudo = { bd: parseInt(est.bd, 10), rd_pv: est.rd_pv || null };
+  return out;
+}
+
 // Só o preço vai para a base pública, e só dos itens que existem em Adamar (em coroas: 1 coroa = $1).
 // Itens cujo preço no livro depende da versão: vale a versão que existe em Adamar.
 const PRECO_MANUAL = {
@@ -70,24 +129,34 @@ export function publico(item) {
     adamar: item.adamar,
     resumo: item.resumo,
     ref: { livro: LIVRO, pagina: item.pagina },
-    ...(preco ? { preco } : {})
+    ...(preco ? { preco } : {}),
+    ...numerosDeJogo(item)
   };
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const pasta = process.argv[2];
-  if (pasta === '--precos') {
+  if (pasta === '--precos' || pasta === '--publicar') {
     const local = JSON.parse(readFileSync(join(RAIZ, 'data-local', 'gurps', 'equipamento-completo.json'), 'utf8'));
     const arqPublico = join(RAIZ, 'data', 'gurps', 'equipamento.json');
     const pub = JSON.parse(readFileSync(arqPublico, 'utf8'));
     const porId = new Map(local.itens.map((i) => [i.id, i]));
     let n = 0;
+    let nNum = 0;
     for (const it of pub.itens) {
-      const { preco } = publico(porId.get(it.id) || it);
+      const local = porId.get(it.id) || it;
+      const { preco } = publico(local);
       if (preco) { it.preco = preco; n++; } else delete it.preco;
+      for (const k of ['peso', 'combate', 'protecao', 'escudo']) delete it[k];
+      const num = numerosDeJogo(local);
+      Object.assign(it, num);
+      if (Object.keys(num).length) nNum++;
     }
     writeFileSync(arqPublico, JSON.stringify(pub, null, 2) + '\n');
-    console.log(`${n} itens com preço`);
+    // a tabela de dano básico por ST também vai para a base pública
+    const tabela = join(RAIZ, 'data-local', 'gurps', 'tabela-dano.json');
+    if (existsSync(tabela)) writeFileSync(join(RAIZ, 'data', 'gurps', 'tabela-dano.json'), readFileSync(tabela, 'utf8'));
+    console.log(`${n} itens com preço, ${nNum} com números de jogo`);
     process.exit(0);
   }
   if (!pasta) {

@@ -153,6 +153,7 @@
       b.botao.classList.toggle('is-current', k === i);
       b.botao.setAttribute('aria-current', k === i ? 'step' : 'false');
     });
+    centralizarEtapa(i, true);
     voltar.disabled = i === 0;
     seguir.hidden = i === etapas.length - 1;
     try { localStorage.setItem(ARMAZENAMENTO_ETAPA, String(i)); } catch (e) { /* sem armazenamento */ }
@@ -160,6 +161,14 @@
     atualizar();
     var corpo = etapas[i].querySelector('.app-corpo');
     if (corpo) corpo.scrollTop = 0;
+  }
+  // no celular a faixa de etapas rola na horizontal: mantém a etapa atual no meio
+  function centralizarEtapa(i, suave) {
+    var faixa = navEtapas;
+    if (faixa.scrollWidth <= faixa.clientWidth) return;
+    var b = botoesEtapa[i].botao;
+    var pos = b.getBoundingClientRect().left - faixa.getBoundingClientRect().left + faixa.scrollLeft;
+    faixa.scrollTo({ left: pos - (faixa.clientWidth - b.offsetWidth) / 2, behavior: suave ? 'smooth' : 'auto' });
   }
   voltar.addEventListener('click', function () { irPara(Math.max(0, atual - 1)); });
   seguir.addEventListener('click', function () { irPara(Math.min(etapas.length - 1, atual + 1)); });
@@ -437,6 +446,14 @@
     ordem.className = 'filtro-ordem';
     ordem.addEventListener('change', desenhar);
     linha.appendChild(ordem);
+    var abreFiltros = el('button', 'btn-link filtro-toggle', 'Filtros');
+    abreFiltros.type = 'button';
+    abreFiltros.setAttribute('aria-expanded', 'false');
+    abreFiltros.addEventListener('click', function () {
+      var aberto = cab.classList.toggle('filtros-abertos');
+      abreFiltros.setAttribute('aria-expanded', String(aberto));
+    });
+    linha.appendChild(abreFiltros);
     cab.appendChild(linha);
 
     // cada filtro vira uma fileira de chips; clicar no chip ativo desliga o filtro
@@ -508,6 +525,8 @@
         return cmp(a, b) || a.nome.localeCompare(b.nome, 'pt-BR');
       });
       contagem.textContent = achados.length + (achados.length === 1 ? ' item' : ' itens') + (ocultos ? ' (+' + ocultos + ' raros ocultos)' : '');
+      var ligados = escolhidos.filter(Boolean).length + (comNarrador ? 1 : 0);
+      abreFiltros.textContent = 'Filtros' + (ligados ? ' (' + ligados + ')' : '');
       lista.textContent = '';
       achados.forEach(function (it) {
         var jaTem = opcoes.jaTem(it);
@@ -1162,6 +1181,9 @@
   var statusSalvo = document.getElementById('c-salvo');
   var pedindoRascunho = false;
   if (!arquivo) botaoSalvar.hidden = true;
+  var salvarMovel = document.getElementById('c-salvar-movel');
+  salvarMovel.hidden = !arquivo;
+  salvarMovel.addEventListener('click', function () { botaoSalvar.click(); });
   function gravar() {
     var id = arquivo.salvar(ficha);
     if (!id) { statusSalvo.textContent = 'Não deu para salvar (navegador sem espaço ou bloqueado).'; return; }
@@ -1184,6 +1206,7 @@
     var salvaIgual = ficha.id_salvo && versaoSalva === JSON.stringify(ficha);
     if (pedindoRascunho && !r.valida) {
       botaoSalvar.textContent = 'Salvar como rascunho';
+      salvarMovel.textContent = 'Salvar rascunho';
       statusSalvo.appendChild(document.createTextNode(r.erros.length + (r.erros.length === 1 ? ' pendência' : ' pendências') + ': a ficha ainda não está pronta. '));
       var ver = el('button', 'btn-link', 'Ver pendências');
       ver.type = 'button';
@@ -1194,6 +1217,7 @@
     }
     pedindoRascunho = false;
     botaoSalvar.textContent = ficha.id_salvo && versaoSalva ? 'Salvar alterações' : 'Salvar';
+    salvarMovel.textContent = ficha.id_salvo && versaoSalva === JSON.stringify(ficha) ? 'Salvo ✓' : 'Salvar';
     if (salvaIgual) {
       statusSalvo.appendChild(document.createTextNode(r.valida ? 'Salvo. ' : 'Salvo como rascunho. '));
       var link = el('a', null, 'Ver ficha');
@@ -1228,4 +1252,5 @@
 
   desenharTudo();
   irPara(atual);
+  window.addEventListener('load', function () { centralizarEtapa(atual, false); });
 })();

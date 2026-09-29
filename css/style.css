@@ -1766,28 +1766,8 @@ body.modo-app .site-footer { display: none; }
   body.modo-app .site-header { flex: none; }
   body.modo-app .app { flex: 1; min-height: 0; grid-template-rows: minmax(0, 1fr); }
 }
-@media (max-width: 899px) {
-  .app { grid-template-columns: minmax(0, 1fr); }
-  .app-lado { gap: 0.6rem; padding: 0.7rem 16px; border-right: 0; border-bottom: 1px solid var(--ouro-linha); overflow: visible; }
-  .app-quem strong { font-size: 1rem; }
-  .app-pontos { padding: 0.5rem 0.7rem; }
-  .app-total strong { font-size: 1.5rem; }
-  .app-medidores { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.4rem; font-size: 0.8rem; }
-  .app-medidores div { flex-direction: column; gap: 0; }
-  .app-medidores dd { text-align: left; }
-  .app-etapas { display: flex; gap: 0.3rem; overflow-x: auto; padding-bottom: 0.2rem; }
-  .app-etapa-botao { flex: none; width: auto; grid-template-columns: auto auto auto; padding: 0.35rem 0.5rem; font-size: 0.78rem; }
-  .app-salvar { grid-template-columns: auto minmax(0, 1fr); align-items: center; margin-top: 0; }
-  .app-salvar .btn { width: auto; }
-  .app-salvar .btn-link { grid-column: 1 / -1; }
-  .app-cab, .app-corpo { padding-left: 16px; padding-right: 16px; }
-  .app-duplo { grid-template-columns: minmax(0, 1fr); overflow: visible; }
-  .painel-rolagem { max-height: 60vh; }
-  .app-corpo { overflow: visible; }
-  .app-rodape { position: sticky; bottom: 0; z-index: 10; flex-wrap: wrap; }
-  .app-rodape-status { flex-basis: 100%; order: -1; }
-}
-
+.app-salvar-movel { display: none; }
+.filtro-toggle { display: none; }
 /* criador: chips de filtro, cards retráteis, marcas */
 .filtros-linha { display: flex; gap: 0.5rem; flex: 1 1 100%; }
 .filtros-linha .criador-busca { flex: 1 1 auto; }
@@ -2032,3 +2012,47 @@ body.modo-app .deco { display: none; }
 .app-efeitos summary { color: var(--texto-3); }
 /* rodapé */
 .app-rodape { background: transparent; }
+
+/* Celular: a tela também fica parada. Em cima, o saldo numa linha e as etapas; embaixo, Voltar · Salvar · Continuar;
+   no meio, só o conteúdo rola. */
+@media (max-width: 899px) {
+  body.modo-app { height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
+  body.modo-app .site-header { flex: none; }
+  body.modo-app .app { flex: 1; min-height: 0; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); }
+  .app-lado { gap: 0.4rem; padding: 0.45rem 12px 0.35rem; border-right: 0; border-bottom: 1px solid var(--ouro-linha); overflow: visible; }
+  .app-quem, .app-salvar { display: none; }
+  .app-pontos { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.1rem 0.8rem; padding: 0.35rem 0.6rem; }
+  .app-total strong { font-size: 1.4rem; }
+  .app-total span { font-size: 0.9rem; }
+  .app-pontos p { margin: 0; font-size: 0.85rem; }
+  .app-medidores { display: flex; flex-wrap: wrap; gap: 0 0.8rem; flex: 1 1 100%; font-size: 0.82rem; }
+  .app-medidores div { gap: 0.3rem; }
+  .app-etapas { display: flex; gap: 0.2rem; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; }
+  .app-etapas::-webkit-scrollbar { display: none; }
+  .app-etapa-botao { flex: none; width: auto; grid-template-columns: auto auto auto; gap: 0.3rem; padding: 0.3rem 0.55rem; font-size: 0.9rem; scroll-snap-align: center; }
+  .app-principal { min-height: 0; }
+  .app-cab { padding: 0.5rem 12px 0.4rem; }
+  .app-cab h1 { font-size: 1.2rem; }
+  .app-cab p { font-size: 0.88rem; }
+  .app-corpo { overflow: auto; padding: 0.6rem 12px 1rem; }
+  .app-duplo { display: flex; flex-direction: column; overflow: auto; }
+  .app-duplo .painel { flex: none; }
+  .painel-rolagem { max-height: none; overflow: visible; }
+  .app-catalogo { max-height: 55vh; overflow: auto; }
+  .app-rodape { position: static; flex: none; flex-wrap: wrap; gap: 0.4rem; padding: 0.45rem 12px calc(0.45rem + env(safe-area-inset-bottom)); border-top: 1px solid var(--ouro-linha); background: #13110f; }
+  .app-rodape-status { flex-basis: 100%; order: -1; font-size: 0.82rem; }
+  .app-rodape-status:empty { display: none; }
+  .app-rodape .btn { flex: 1 1 0; padding: 0.55rem 0.5rem; font-size: 0.8rem; }
+  .app-rodape [data-seguir] { margin-left: 0; }
+  .app-rodape [data-seguir][hidden] { display: none; }
+  .app-salvar-movel { display: inline-flex; justify-content: center; }
+  .app-salvar-movel[hidden] { display: none; }
+  /* filtros recolhidos atrás do botão "Filtros" */
+  .filtro-toggle { display: inline-block; flex: none; font-size: 0.95rem; }
+  .painel-filtros .filtro-chips, .painel-filtros .filtros-pe { display: none; }
+  .painel-filtros.filtros-abertos .filtro-chips, .painel-filtros.filtros-abertos .filtros-pe { display: flex; }
+  .filtros-linha { flex-wrap: wrap; align-items: center; }
+  .filtros-linha .criador-busca { flex: 1 1 100%; }
+  .filtros-linha .filtro-ordem { flex: 1 1 auto; max-width: 12rem; }
+  .filtro-toggle { margin-left: auto; }
+}

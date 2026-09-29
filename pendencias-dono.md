@@ -23,6 +23,14 @@ Coisas que dependem de você (decisão, acesso ou teste no seu aparelho). Vou ac
 - [ ] **Diário da sessão:** na ficha completa (Cofre › personagem), painel Em jogo. Escreva uma entrada; role algo e clique "→ diário" no quadro de rolagens.
 - [ ] **Consulta rápida de combate** (À Mesa › Combate): ver se o resumo está do jeito que a mesa usa, se falta algo (ex.: agarrar, derrubar, tabela de distância).
 
+## Enriquecimento dos itens (próximo grande trabalho)
+
+Plano completo em `docs/enriquecimento-itens.md`: os 1097 itens (perícias, vantagens, desvantagens, peculiaridades e equipamento) ganham `descricao`, `exemplos`, `em_adamar` e `dica_mesa`, em 21 fatias mais uma de estrutura. Andamento: `node tools/enriquecimento.mjs`.
+
+- [ ] **Aprovar o formato** (campos e o exemplo no fim do documento) antes de eu começar a S0.
+- [ ] **Definir a ordem**, se quiser outra. Hoje o plano começa pelas perícias livres, que a mesa mais usa.
+- [ ] **Texto do livro:** as descrições serão com palavras próprias e página citada, nunca cópia do *Módulo Básico* (repositório público; direitos autorais). Os exemplos podem ser inventados, mas a lore de Adamar não: onde o cânone não diz nada, o `em_adamar` fica vazio para você completar.
+
 ## Ideias para a próxima rodada
 
 - **Modo mestre:** uma tela com vários personagens ao mesmo tempo (PV, PF, defesas) e a ordem de ação da luta.

@@ -11,6 +11,7 @@
       id_salvo: '',
       nome: '', jogador: '', conceito: '', era: '', origem: '', aparencia_fisica: '', historia: '',
       idade: '', altura: '', peso_corporal: '',
+      em_jogo: {},       // { pv, pf, pontos, dinheiro, notas } — estado durante as sessões
       orcamento: pontos.padrao,
       atributos: { st: 10, dx: 10, iq: 10, ht: 10 },
       ajustes: {},
@@ -563,6 +564,40 @@
       return L.join('\n');
     }
 
+    // Estado "em jogo": PV e PF atuais e o que eles causam (Módulo Básico, págs. 327–328).
+    // Os efeitos de ferimento e de fadiga se acumulam.
+    function estadoEmJogo(ficha, r) {
+      var v = r.valores, j = ficha.em_jogo || {};
+      var pvMax = v.pv, pfMax = v.pf;
+      var pv = typeof j.pv === 'number' ? j.pv : pvMax;
+      var pf = typeof j.pf === 'number' ? j.pf : pfMax;
+      var desl = r.combate ? r.combate.carga.deslocamento : v.deslocamento;
+      var esq = r.combate ? r.combate.defesas.esquiva : r.esquiva;
+      var st = v.st;
+      var efeitos = [];
+      var metade = function (x) { return Math.ceil(x / 2); };
+      if (pv <= -5 * pvMax) efeitos.push({ grave: 3, texto: 'Morto: chegou a −5× os PV.' });
+      else {
+        if (pv < pvMax / 3) { desl = metade(desl); esq = metade(esq); efeitos.push({ grave: 1, texto: 'Menos de 1/3 dos PV: cambaleando, deslocamento e esquiva pela metade.' }); }
+        if (pv <= 0) efeitos.push({ grave: 2, texto: 'PV zero ou negativo: teste de HT a cada turno para não desmaiar.' });
+        if (pv <= -pvMax) {
+          var mult = Math.floor(-pv / pvMax);
+          efeitos.push({ grave: 3, texto: 'Risco de morte: a −' + mult + '× os PV, teste de HT para não morrer (de novo a cada novo múltiplo; −5× é morte).' });
+        }
+      }
+      if (pf <= -pfMax) efeitos.push({ grave: 3, texto: 'Inconsciente de exaustão (−1× os PF); acorda quando os PF voltarem a ser positivos.' });
+      else {
+        if (pf < pfMax / 3) { desl = metade(desl); esq = metade(esq); st = metade(st); efeitos.push({ grave: 1, texto: 'Menos de 1/3 dos PF: muito cansado, deslocamento, esquiva e ST pela metade (não muda PV nem dano).' }); }
+        if (pf <= 0) efeitos.push({ grave: 2, texto: 'PF zero ou negativo: à beira do colapso; cada PF perdido tira também 1 PV, e agir exige força de vontade (veja a pág. 328).' });
+      }
+      return {
+        pv: pv, pv_max: pvMax, pf: pf, pf_max: pfMax,
+        deslocamento: desl, esquiva: esq, st: st,
+        pontos: j.pontos || 0, dinheiro: typeof j.dinheiro === 'number' ? j.dinheiro : r.dinheiro_restante, notas: j.notas || '',
+        efeitos: efeitos
+      };
+    }
+
     // Aplica um modelo (ponto de partida) mantendo quem o personagem é: nome, jogador, era, origem, textos e orçamento.
     function aplicarModelo(atual, modelo) {
       var m = modelo.ficha || {};
@@ -593,6 +628,7 @@
       fichaNova: function () { return fichaNova(R); },
       carregar: carregar,
       aplicarModelo: aplicarModelo,
+      estadoEmJogo: estadoEmJogo,
       resumir: resumir,
       textoFicha: textoFicha,
       custoDoTraco: custoDoTraco,

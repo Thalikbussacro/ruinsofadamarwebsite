@@ -2218,6 +2218,29 @@ body.modo-app .deco { display: none; }
 
 .sem-treino { grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); column-gap: 1.2rem; }
 
+/* em jogo: PV, PF e efeitos durante a sessão */
+.em-jogo { margin: 1rem 0; padding: 0.8rem 0.9rem; background: rgba(110, 31, 26, 0.12); border: 1px solid var(--ouro-linha); border-left: 3px solid var(--sangue-vivo); }
+.em-jogo-compacto { margin: 0.8rem 0 0.4rem; }
+.em-jogo-cab { display: flex; align-items: baseline; justify-content: space-between; gap: 0.6rem; }
+.scroll .em-jogo-cab h3, .em-jogo-cab h3 { margin: 0; font-size: 1rem; letter-spacing: 0.06em; color: var(--ouro-claro); }
+.em-jogo-grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); gap: 0.6rem 1rem; margin-top: 0.5rem; }
+.em-jogo-rotulo { font-family: var(--f-titulo); font-size: 0.78rem; letter-spacing: 0.08em; color: #a39780; }
+.em-jogo-linha { display: flex; align-items: center; gap: 0.35rem; margin-top: 0.15rem; }
+.em-jogo-linha .btn { width: 2.1rem; padding: 0.2rem 0; font-size: 1.1rem; }
+.em-jogo-valor { width: 3.6rem; padding: 0.2rem 0.3rem; font-family: var(--f-titulo); font-size: 1.2rem; text-align: center; color: var(--osso-claro); background: rgba(0, 0, 0, 0.4); border: 1px solid var(--ouro-linha); }
+.em-jogo-max { font-family: var(--f-titulo); color: #a39780; }
+.em-jogo-barra { height: 0.3rem; margin-top: 0.3rem; background: rgba(0, 0, 0, 0.5); }
+.em-jogo-barra span { display: block; height: 100%; background: var(--ouro-escuro); transition: width 0.2s; }
+.em-jogo-barra.baixo span { background: #c0563a; }
+.em-jogo-agora { margin: 0.5rem 0 0; font-size: 0.95rem; color: #c4b89f; }
+.em-jogo-efeitos { margin: 0.4rem 0 0; padding-left: 1.1rem; font-size: 0.95rem; }
+.em-jogo-efeitos li { margin: 0.1rem 0; }
+.em-jogo-efeitos .grave-1 { color: var(--ouro-claro); }
+.em-jogo-efeitos .grave-2 { color: #e08a5e; }
+.em-jogo-efeitos .grave-3 { color: #ff7a5c; font-weight: 700; }
+.em-jogo-notas { width: 100%; margin-top: 0.6rem; padding: 0.45rem 0.6rem; font-family: var(--f-corpo); font-size: 1rem; color: var(--osso-claro); background: rgba(0, 0, 0, 0.35); border: 1px solid var(--ouro-linha); resize: vertical; }
+@media print { .em-jogo { display: none !important; } }
+
 /* Celular: a tela também fica parada. Em cima, o saldo numa linha e as etapas; embaixo, Voltar · Salvar · Continuar;
    no meio, só o conteúdo rola. */
 @media (max-width: 899px) {

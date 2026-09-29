@@ -79,6 +79,90 @@
     return box;
   }
 
+  // ---------- em jogo: PV, PF, pontos ganhos, dinheiro e anotações da sessão (salvos no personagem) ----------
+  function painelEmJogo(idFicha, compacto) {
+    var box = el('section', 'em-jogo' + (compacto ? ' em-jogo-compacto' : ''));
+    function salvarEmJogo(mudanca) {
+      var salvo = arquivo.obter(idFicha);
+      if (!salvo) return;
+      salvo.em_jogo = Object.assign({}, salvo.em_jogo || {}, mudanca);
+      arquivo.salvar(salvo);
+      desenhar();
+    }
+    function contador(rotulo, valor, max, chave, extra) {
+      var c = el('div', 'em-jogo-contador');
+      c.appendChild(el('span', 'em-jogo-rotulo', rotulo));
+      var linha = el('div', 'em-jogo-linha');
+      var menos = el('button', 'btn btn-ghost', '−');
+      var mais = el('button', 'btn btn-ghost', '+');
+      menos.type = mais.type = 'button';
+      menos.setAttribute('aria-label', 'Diminuir ' + rotulo);
+      mais.setAttribute('aria-label', 'Aumentar ' + rotulo);
+      var campo = el('input', 'em-jogo-valor');
+      campo.type = 'number';
+      campo.value = valor;
+      campo.setAttribute('aria-label', rotulo);
+      menos.addEventListener('click', function () { var m = {}; m[chave] = valor - 1; salvarEmJogo(m); });
+      mais.addEventListener('click', function () { var m = {}; m[chave] = max != null ? Math.min(max, valor + 1) : valor + 1; salvarEmJogo(m); });
+      campo.addEventListener('change', function () { var n = parseInt(campo.value, 10); if (!isNaN(n)) { var m = {}; m[chave] = n; salvarEmJogo(m); } });
+      linha.appendChild(menos);
+      linha.appendChild(campo);
+      if (max != null) linha.appendChild(el('span', 'em-jogo-max', '/ ' + max));
+      linha.appendChild(mais);
+      c.appendChild(linha);
+      if (max != null && max > 0) {
+        var barra = el('div', 'em-jogo-barra');
+        var cheio = el('span');
+        cheio.style.width = Math.max(0, Math.min(100, valor / max * 100)) + '%';
+        if (valor < max / 3) barra.classList.add('baixo');
+        barra.appendChild(cheio);
+        c.appendChild(barra);
+      }
+      if (extra) c.appendChild(extra);
+      return c;
+    }
+    function desenhar() {
+      box.textContent = '';
+      var salvo = arquivo.obter(idFicha);
+      if (!salvo) return;
+      var f = criador.carregar(salvo), r = criador.resumir(f), e = criador.estadoEmJogo(f, r);
+      var cab = el('div', 'em-jogo-cab');
+      cab.appendChild(el('h3', null, 'Em jogo'));
+      var descansar = el('button', 'btn-link', 'Descansar (PV e PF cheios)');
+      descansar.type = 'button';
+      descansar.addEventListener('click', function () { salvarEmJogo({ pv: e.pv_max, pf: e.pf_max }); });
+      cab.appendChild(descansar);
+      box.appendChild(cab);
+      var grade = el('div', 'em-jogo-grade');
+      grade.appendChild(contador('PV', e.pv, e.pv_max, 'pv'));
+      grade.appendChild(contador('PF', e.pf, e.pf_max, 'pf'));
+      if (!compacto) {
+        grade.appendChild(contador('Pontos ganhos', e.pontos, null, 'pontos'));
+        grade.appendChild(contador('Coroas', e.dinheiro, null, 'dinheiro'));
+      }
+      box.appendChild(grade);
+      var agora = el('p', 'em-jogo-agora', 'Agora: deslocamento ' + e.deslocamento + ' · esquiva ' + e.esquiva + (e.st !== r.valores.st ? ' · ST ' + e.st : ''));
+      box.appendChild(agora);
+      if (e.efeitos.length) {
+        var ul = el('ul', 'em-jogo-efeitos');
+        e.efeitos.forEach(function (x) { ul.appendChild(el('li', 'grave-' + x.grave, x.texto)); });
+        box.appendChild(ul);
+      }
+      if (!compacto) {
+        var notas = el('textarea', 'em-jogo-notas');
+        notas.rows = 3;
+        notas.maxLength = 2000;
+        notas.placeholder = 'Anotações da sessão: ferimentos, promessas, dívidas, nomes…';
+        notas.value = e.notas;
+        notas.setAttribute('aria-label', 'Anotações da sessão');
+        notas.addEventListener('change', function () { salvarEmJogo({ notas: notas.value }); });
+        box.appendChild(notas);
+      }
+    }
+    desenhar();
+    return box;
+  }
+
   // ---------- cofre: grade de personagens + painel da ficha (tela de seleção de MMO antigo) ----------
   var ARMAZENAMENTO_SELECAO = 'adamar-cofre-selecionado';
   var RASCUNHO = 'adamar-criador';
@@ -91,7 +175,8 @@
       if (!f) return null;
       f = criador.carregar(f);
       if (JSON.stringify(f) === JSON.stringify(criador.fichaNova())) return null;
-      if (f.id_salvo && arquivo.obter(f.id_salvo) && JSON.stringify(arquivo.obter(f.id_salvo)) === JSON.stringify(f)) return null;
+      var sem = function (x) { var c = Object.assign({}, x); delete c.em_jogo; return JSON.stringify(c); };
+      if (f.id_salvo && arquivo.obter(f.id_salvo) && sem(criador.carregar(arquivo.obter(f.id_salvo))) === sem(f)) return null;
       return f;
     } catch (e) { return null; }
   }
@@ -194,6 +279,7 @@
         atr.appendChild(c);
       });
       painel.appendChild(atr);
+      if (!s.rascunho) painel.appendChild(painelEmJogo(s.id, true));
       var sec = el('p', 'cofre-secundarias');
       sec.textContent = ['PV ' + v.pv, 'Vont ' + v.vontade, 'Per ' + v.per, 'PF ' + v.pf, 'Vel ' + num(v.velocidade), 'Desl ' + v.deslocamento].join('  ·  ');
       painel.appendChild(sec);
@@ -380,6 +466,8 @@
     pts.appendChild(el('span', 'personagem-selo ' + (r.valida ? 'pronta' : 'rascunho'), r.valida ? 'Pronta' : 'Rascunho'));
     if (!r.valida) document.getElementById('f-whats').classList.add('is-disabled');
     box.appendChild(pts);
+
+    box.appendChild(painelEmJogo(idFicha, false));
 
     var grade = el('div', 'ficha-grade');
     box.appendChild(grade);

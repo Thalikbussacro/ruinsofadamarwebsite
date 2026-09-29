@@ -223,4 +223,28 @@ assert.match(rst.avisos.map((a) => a.texto).join('|'), /pede ST 11/);
   assert.equal(r0.combate.dano_basico, null);
   assert.ok(Array.isArray(r0.combate.armas));
 }
+// em jogo: PV e PF atuais e seus efeitos (págs. 327-328)
+const ej = c.fichaNova();
+ej.atributos.ht = 12; // PV 10 (ST 10), PF 12
+let est = c.estadoEmJogo(ej, c.resumir(ej));
+assert.equal(est.pv, 10);
+assert.equal(est.pf, 12);
+assert.deepEqual(est.efeitos, []);
+const base = c.resumir(ej);
+ej.em_jogo = { pv: 3 }; // menos de 1/3: metade do deslocamento e da esquiva
+est = c.estadoEmJogo(ej, c.resumir(ej));
+assert.equal(est.deslocamento, Math.ceil(base.combate.carga.deslocamento / 2));
+assert.match(est.efeitos.map((e) => e.texto).join('|'), /cambaleando/);
+ej.em_jogo = { pv: -10 };
+assert.match(c.estadoEmJogo(ej, c.resumir(ej)).efeitos.map((e) => e.texto).join('|'), /a −1× os PV/);
+ej.em_jogo = { pv: -50 };
+assert.match(c.estadoEmJogo(ej, c.resumir(ej)).efeitos[0].texto, /Morto/);
+ej.em_jogo = { pf: 3 }; // menos de 1/3 dos PF: ST pela metade
+est = c.estadoEmJogo(ej, c.resumir(ej));
+assert.equal(est.st, 5);
+ej.em_jogo = { pv: 3, pf: 3 }; // os dois efeitos se acumulam
+est = c.estadoEmJogo(ej, c.resumir(ej));
+assert.equal(est.esquiva, Math.ceil(Math.ceil(base.combate.defesas.esquiva / 2) / 2));
+// carregar mantém o estado em jogo
+assert.equal(c.carregar({ em_jogo: { pv: 4 } }).em_jogo.pv, 4);
 console.log('criador-ficha ok' + (comNumeros ? '' : ' (sem números de combate)'));

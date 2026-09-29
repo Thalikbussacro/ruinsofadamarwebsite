@@ -109,12 +109,14 @@
   // ?novo=1: ficha em branco; um rascunho com conteúdo e sem salvar vai antes para Meus personagens
   if (/[?&]novo=1/.test(location.search)) {
     var vazio = JSON.stringify(criador.fichaNova());
-    var semSalvar = !ficha.id_salvo || !arquivo || JSON.stringify(arquivo.obter(ficha.id_salvo)) !== JSON.stringify(ficha);
+    var semSalvar = !ficha.id_salvo || !arquivo || !arquivo.obter(ficha.id_salvo) || assinatura(arquivo.obter(ficha.id_salvo)) !== assinatura(ficha);
     if (arquivo && semSalvar && JSON.stringify(ficha) !== vazio) arquivo.salvar(ficha);
     ficha = criador.fichaNova();
     try { localStorage.setItem(ARMAZENAMENTO_ETAPA, '0'); history.replaceState(null, '', location.pathname); } catch (e) { /* sem armazenamento */ }
   }
-  function versaoSalvaDe(f) { return f.id_salvo && arquivo && arquivo.obter(f.id_salvo) ? JSON.stringify(arquivo.obter(f.id_salvo)) : null; }
+  // compara fichas sem o estado "em jogo" (PV/PF atuais mudam no cofre durante a sessão, não são edição da ficha)
+  function assinatura(f) { var c = Object.assign({}, f); delete c.em_jogo; return JSON.stringify(c); }
+  function versaoSalvaDe(f) { return f.id_salvo && arquivo && arquivo.obter(f.id_salvo) ? assinatura(arquivo.obter(f.id_salvo)) : null; }
   var versaoSalva = versaoSalvaDe(ficha);
   var atualizadores = [];
   var ultimo = null; // último resumo calculado
@@ -1555,10 +1557,13 @@
   salvarMovel.hidden = !arquivo;
   salvarMovel.addEventListener('click', function () { botaoSalvar.click(); });
   function gravar() {
+    // mantém o PV/PF/anotações da sessão que estão no cofre
+    var noCofre = ficha.id_salvo && arquivo.obter(ficha.id_salvo);
+    if (noCofre && noCofre.em_jogo) ficha.em_jogo = noCofre.em_jogo;
     var id = arquivo.salvar(ficha);
     if (!id) { statusSalvo.textContent = 'Não deu para salvar (navegador sem espaço ou bloqueado).'; return; }
     ficha.id_salvo = id;
-    versaoSalva = JSON.stringify(arquivo.obter(id));
+    versaoSalva = assinatura(arquivo.obter(id));
     pedindoRascunho = false;
     guardarRascunho();
     atualizar();
@@ -1573,7 +1578,7 @@
     if (!arquivo) return;
     statusSalvo.textContent = '';
     statusSalvo.className = 'app-status';
-    var salvaIgual = ficha.id_salvo && versaoSalva === JSON.stringify(ficha);
+    var salvaIgual = ficha.id_salvo && versaoSalva === assinatura(ficha);
     if (pedindoRascunho && !r.valida) {
       botaoSalvar.textContent = 'Salvar como rascunho';
       salvarMovel.textContent = 'Salvar rascunho';
@@ -1587,7 +1592,7 @@
     }
     pedindoRascunho = false;
     botaoSalvar.textContent = ficha.id_salvo && versaoSalva ? 'Salvar alterações' : 'Salvar';
-    salvarMovel.textContent = ficha.id_salvo && versaoSalva === JSON.stringify(ficha) ? 'Salvo ✓' : 'Salvar';
+    salvarMovel.textContent = ficha.id_salvo && versaoSalva === assinatura(ficha) ? 'Salvo ✓' : 'Salvar';
     if (salvaIgual) {
       statusSalvo.appendChild(document.createTextNode(r.valida ? 'Salvo. ' : 'Salvo como rascunho. '));
       var link = el('a', null, 'Ver ficha');

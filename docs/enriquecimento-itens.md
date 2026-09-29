@@ -10,7 +10,9 @@ Andamento: `node tools/enriquecimento.mjs` (resumo por fatia), `node tools/enriq
 
 Cada fatia tem um arquivo em `data/gurps/enriquecimento/<FATIA>.json`, no formato `{ "lista": "pericias", "itens": { "<id>": { descricao, exemplos, em_adamar, dica_mesa, relacionados } } }`. As listas (`pericias.json` etc.) continuam enxutas; `tools/gerar-dados.mjs` junta os textos aos itens, valida (campo desconhecido, id inexistente, relacionado inexistente, descrição curta) e grava tudo em `js/dados-gurps.js`. Para mudar um texto, edite o arquivo da fatia e rode o gerador.
 
-No site, `js/detalhes.js` desenha o "Mais sobre" de cada item: nas listas de À Mesa (a busca também procura na descrição), na janela de escolha e nos itens abertos do criador, e nos traços da ficha completa.
+No site, `js/detalhes.js` (`window.ItemUI`) mostra cada item como um **card compacto** (ícone, nome, custo ou preço, status em Adamar, resumo de duas linhas) e, ao clicar, abre a **janela de detalhes**: descrição, "Na mesa", "Em Adamar", dica, relacionados clicáveis, versões, efeitos na ficha e a ficha técnica (página, pré-definido, preço, GCS). Vale nas listas de À Mesa (o endereço `#id` abre o item direto, dá para mandar o link), no catálogo do criador (com o botão "Adicionar à ficha") e nos nomes dos itens escolhidos no criador e na ficha completa.
+
+Campos já previstos para o futuro, sem mudar o código: `raridade` (texto; aparece no card e na janela) e `imagem` (caminho a partir da raiz do site; miniatura no card e imagem grande na janela). Basta acrescentar ao item, direto na lista ou num arquivo de enriquecimento (nesse caso, incluir o campo em `CAMPOS_ENRIQUECIMENTO`, em `tools/gerar-dados.mjs`).
 
 ## Vínculo com o GCS
 

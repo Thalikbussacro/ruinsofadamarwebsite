@@ -585,7 +585,7 @@
         var li = el('li', 'app-cat-item' + (jaTem ? ' ja-tem' : ''));
         var texto = el('button', 'app-cat-texto');
         texto.type = 'button';
-        texto.setAttribute('aria-expanded', 'false');
+        texto.setAttribute('aria-haspopup', 'dialog');
         var topo = el('span', 'app-cat-topo');
         var icCat = window.iconeSvg && window.iconeSvg(it.icone, 'icone-item');
         if (icCat) topo.appendChild(icCat);
@@ -597,10 +597,6 @@
         }
         texto.appendChild(topo);
         texto.appendChild(el('span', 'app-cat-resumo', it.resumo || ''));
-        texto.addEventListener('click', function () {
-          var aberto = li.classList.toggle('aberto');
-          texto.setAttribute('aria-expanded', String(aberto));
-        });
         li.appendChild(texto);
         li.appendChild(el('span', 'app-cat-selo', opcoes.selo(it)));
         var b = el('button', 'app-adicionar', jaTem ? '✓' : '+');
@@ -614,9 +610,9 @@
           desenhar();
         });
         li.appendChild(b);
-        // aberto, o item mostra também o "Mais sobre" (descrição, exemplos, Adamar)
-        var mais = window.detalhesItem && window.detalhesItem(it, true);
-        if (mais) { mais.classList.add('app-cat-mais'); li.appendChild(mais); }
+        texto.addEventListener('click', function () {
+          verDetalhes(it, jaTem ? { rotulo: 'Já está na ficha', desabilitado: true, fazer: function () {} } : { rotulo: 'Adicionar à ficha', fazer: function () { b.click(); } });
+        });
         lista.appendChild(li);
       });
       if (!achados.length) lista.appendChild(el('li', 'pericia-vazio', ocultos ? 'Só há itens raros com esses filtros. Marque "Mostrar também os raros".' : 'Nada com esses filtros.'));
@@ -1050,6 +1046,18 @@
     if (sel.nota) partes.push(sel.nota);
     return partes.join(' · ');
   }
+  // janela de detalhes do item (js/detalhes.js); sem mexer no endereço da página
+  function verDetalhes(item, acao) {
+    if (window.ItemUI) window.ItemUI.abrir(item, { link: false, acao: acao });
+  }
+  function nomeComDetalhes(item) {
+    var b = el('button', 'app-item-nome app-item-nome-btn', item.nome);
+    b.type = 'button';
+    b.title = 'Ver detalhes de ' + item.nome;
+    b.setAttribute('aria-haspopup', 'dialog');
+    b.addEventListener('click', function () { verDetalhes(item); });
+    return b;
+  }
   function cardRetratil(row, sel, conteudo) {
     var botao = el('button', 'app-abrir', '▸');
     botao.type = 'button';
@@ -1091,14 +1099,11 @@
         var row = el('div', 'app-item st-' + t.adamar);
         var topo = el('div', 'app-item-topo');
         var ef = blocoEfeitos(sel);
-        var card = cardRetratil(row, sel, [el('p', 'app-item-meta', t.resumo), window.detalhesItem && window.detalhesItem(t), controlesDoTraco(sel, t, negativo), ef.no].filter(Boolean));
+        var card = cardRetratil(row, sel, [el('p', 'app-item-meta', t.resumo), controlesDoTraco(sel, t, negativo), ef.no]);
         topo.appendChild(card.botao);
         var icT = window.iconeSvg && window.iconeSvg(t.icone, 'icone-item');
         if (icT) topo.appendChild(icT);
-        var nome = el('strong', 'app-item-nome', t.nome);
-        nome.title = t.resumo;
-        nome.addEventListener('click', function () { card.botao.click(); });
-        topo.appendChild(nome);
+        topo.appendChild(nomeComDetalhes(t));
         if (t.adamar === 'narrador') { var m = el('span', 'marca-narrador', '◆'); m.title = 'Com o narrador'; topo.appendChild(m); }
         if (t.categoria === 'qualidade' || t.categoria === 'peculiaridade') topo.appendChild(el('span', 'app-item-cat', t.categoria));
         var escolha = el('span', 'app-item-escolha');
@@ -1262,9 +1267,7 @@
       var topo = el('div', 'app-item-topo');
       var icP = window.iconeSvg && window.iconeSvg(p.icone, 'icone-item');
       if (icP) topo.appendChild(icP);
-      var nome = el('strong', 'app-item-nome', p.nome);
-      nome.title = p.resumo;
-      topo.appendChild(nome);
+      topo.appendChild(nomeComDetalhes(p));
       topo.appendChild(el('span', 'app-item-cat', p.atributo + '/' + p.dificuldade));
       if (p.adamar === 'narrador') { var m = el('span', 'marca-narrador', '◆'); m.title = 'Com o narrador'; topo.appendChild(m); }
       // pontos na mesma linha do nome: é o que mais se mexe
@@ -1369,7 +1372,7 @@
       var topo = el('div', 'app-item-topo');
       var icE = window.iconeSvg && window.iconeSvg(it.icone, 'icone-item');
       if (icE) topo.appendChild(icE);
-      topo.appendChild(el('strong', 'app-item-nome', it.nome));
+      topo.appendChild(nomeComDetalhes(it));
       topo.appendChild(el('span', 'app-item-cat', textoPreco(it)));
       var custoItem = el('span', 'criador-custo');
       topo.appendChild(custoItem);

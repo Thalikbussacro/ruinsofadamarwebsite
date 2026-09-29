@@ -841,7 +841,11 @@
         var variante = criador.nomeVariante(t, e.opcao);
         if (c.tipo === 'opcoes' && variante && variante !== t.nome) nome += ' (' + variante + ')';
         if (x.sel.nota) nome += ' — ' + x.sel.nota;
-        var forte = el('strong', 'pericia-nome', nome);
+        var forte = el('button', 'pericia-nome app-item-nome-btn', nome);
+        forte.type = 'button';
+        forte.title = 'Ver detalhes de ' + t.nome;
+        forte.setAttribute('aria-haspopup', 'dialog');
+        forte.addEventListener('click', function () { if (window.ItemUI) window.ItemUI.abrir(t, { link: false }); });
         var icT = window.iconeSvg && window.iconeSvg(t.icone, 'icone-item');
         if (icT) forte.insertBefore(icT, forte.firstChild);
         topo.appendChild(forte);
@@ -851,8 +855,6 @@
         Efeitos.desenharEfeitos(ul, criador.efeitosDoTraco(x.sel));
         if (ul.hidden) d.appendChild(el('p', 'pericia-resumo', t.resumo));
         else d.appendChild(ul);
-        var mais = window.detalhesItem && window.detalhesItem(t);
-        if (mais) d.appendChild(mais);
         b.appendChild(d);
       });
       extras.forEach(function (x) {

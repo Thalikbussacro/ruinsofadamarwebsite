@@ -2322,9 +2322,77 @@ body.modo-app .deco { display: none; }
 .detalhes-exemplos { margin: 0.2rem 0 0; padding-left: 1.1rem; }
 .detalhes-exemplos li { margin: 0.1rem 0; }
 .detalhes-dica, .detalhes-rel { font-style: italic; color: #c4b89f; }
-.app-cat-mais { display: none; grid-column: 1 / -1; }
-.app-cat-item.aberto .app-cat-mais { display: block; }
-.app-cat-mais > summary { display: none; }
+/* itens: card compacto + janela de detalhes (js/detalhes.js) */
+.lista-pericias { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); gap: 0.6rem; }
+.lista-pericias .pericia-vazio { grid-column: 1 / -1; }
+.item-card {
+  display: grid;
+  align-content: start;
+  gap: 0.3rem;
+  min-width: 0;
+  padding: 0.65rem 0.75rem 0.6rem;
+  font: inherit;
+  text-align: left;
+  color: var(--osso);
+  background: rgba(255, 244, 220, 0.035);
+  border: 1px solid var(--ouro-fio);
+  border-left: 3px solid var(--ouro);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, transform 0.15s;
+}
+.item-card:hover, .item-card:focus-visible { background: rgba(110, 31, 26, 0.22); border-color: var(--ouro-linha); transform: translateY(-1px); }
+.item-card.st-narrador { border-left-color: var(--brasa); }
+.item-card.st-nao { border-left-color: #4a4640; opacity: 0.8; }
+.item-card-img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--ouro-fio); }
+.item-card-topo { display: flex; align-items: flex-start; gap: 0.45rem; min-width: 0; }
+.item-card-icone { flex: none; width: 1.3rem; height: 1.3rem; color: var(--ouro-claro); }
+.item-card-nome { flex: 1 1 auto; min-width: 0; font-family: var(--f-titulo); font-size: 0.98rem; font-weight: 600; line-height: 1.25; color: var(--ouro-claro); overflow-wrap: anywhere; }
+.item-card-selo { flex: none; max-width: 45%; text-align: right; padding-top: 0.15rem; font-family: var(--f-titulo); font-size: 0.78rem; letter-spacing: 0.04em; color: var(--osso); }
+.item-card-resumo { display: -webkit-box; overflow: hidden; font-size: 0.95rem; line-height: 1.4; color: #d8ccb4; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.item-card-pe { display: flex; flex-wrap: wrap; gap: 0.25rem 0.6rem; font-size: 0.8rem; color: var(--osso-fosco); }
+.item-card-status { font-family: var(--f-titulo); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #a9c47f; }
+.st-narrador .item-card-status { color: var(--brasa); }
+.st-nao .item-card-status { color: #8f887c; }
+.item-card-raridade { font-family: var(--f-titulo); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ouro-claro); }
+.item-card-cat { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.item-dialogo {
+  width: min(40rem, calc(100vw - 1.5rem));
+  max-height: calc(100dvh - 2rem);
+  padding: 1.2rem 1.3rem 1.1rem;
+  overflow: auto;
+  color: var(--osso);
+  background: linear-gradient(180deg, #221f1b, #141210);
+  border: 1px solid var(--ouro-linha);
+  border-top: 3px solid var(--ouro);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8), 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+.item-dialogo.st-narrador { border-top-color: var(--brasa); }
+.item-dialogo.st-nao { border-top-color: #4a4640; }
+.item-dialogo::backdrop { background: rgba(5, 4, 3, 0.75); backdrop-filter: blur(2px); }
+.item-dialogo-img { display: block; width: 100%; max-height: 16rem; margin: 0 0 0.8rem; object-fit: cover; border: 1px solid var(--ouro-fio); }
+.item-dialogo-cab { display: flex; align-items: center; gap: 0.7rem; padding-right: 2rem; }
+.item-dialogo-icone { flex: none; width: 2.4rem; height: 2.4rem; color: var(--ouro-claro); }
+.item-dialogo-titulos { flex: 1 1 auto; min-width: 0; }
+.item-dialogo-tipo { margin: 0; font-family: var(--f-titulo); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #a39780; }
+.item-dialogo-cab h2 { margin: 0; font-size: 1.4rem; line-height: 1.2; color: var(--ouro-claro); }
+.item-dialogo-selo { flex: none; font-family: var(--f-titulo); font-size: 0.9rem; color: var(--osso-claro); }
+.item-dialogo-chips { display: flex; flex-wrap: wrap; gap: 0.4rem 0.8rem; margin-top: 0.5rem; }
+.item-dialogo-resumo { margin: 0.6rem 0 0; font-size: 1.05rem; font-style: italic; color: #d8ccb4; }
+.item-dialogo-corpo { font-size: 1rem; line-height: 1.55; }
+.item-dialogo-corpo p { margin: 0.6rem 0 0; }
+.item-dialogo-corpo h4 { margin: 0.9rem 0 0.1rem; font-family: var(--f-titulo); font-size: 0.78rem; letter-spacing: 0.08em; color: #a39780; }
+.item-dialogo-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 0.35rem 1rem; margin: 1rem 0 0; padding-top: 0.7rem; border-top: 1px solid var(--ouro-fio); font-size: 0.9rem; }
+.item-dialogo-meta dt { font-family: var(--f-titulo); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #a39780; }
+.item-dialogo-meta dd { margin: 0; color: var(--osso-claro); }
+.item-dialogo-pe { display: flex; justify-content: flex-end; margin-top: 1rem; }
+.item-rel { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.3rem; }
+.item-rel-chip { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.2rem 0.55rem; font: inherit; font-size: 0.88rem; color: var(--osso-claro); background: rgba(255, 244, 220, 0.04); border: 1px solid var(--ouro-fio); cursor: pointer; }
+.item-rel-chip:hover, .item-rel-chip:focus-visible { border-color: var(--ouro); background: rgba(110, 31, 26, 0.3); }
+.item-rel-chip .icone-item { width: 1rem; height: 1rem; }
+.app-item-nome-btn { padding: 0; font: inherit; font-weight: 700; text-align: left; color: inherit; background: none; border: 0; cursor: pointer; text-decoration: underline dotted rgba(201, 169, 110, 0.45); text-underline-offset: 3px; }
+.app-item-nome-btn:hover, .app-item-nome-btn:focus-visible { color: var(--ouro-claro); }
+@media print { .item-dialogo { display: none !important; } }
 @media print { .detalhes-item { display: none !important; } }
 
 /* Celular: a tela também fica parada. Em cima, o saldo numa linha e as etapas; embaixo, Voltar · Salvar · Continuar;

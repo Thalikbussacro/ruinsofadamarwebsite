@@ -45,7 +45,7 @@ js/gurps-efeitos.js  texto e etiqueta (aplicado, sempre, condicional, regra) dos
 js/personagens-salvos.js  personagens guardados no navegador (localStorage)
 js/personagens.js    Cofre de personagens: grade estilo seleção de MMO, painel da ficha e ficha completa (mesa/personagens.html)
 js/icones.js         desenha o ícone de um item (window.iconeSvg)
-js/detalhes.js       "Mais sobre" de um item: descrição, exemplos, Adamar, dica (window.detalhesItem)
+js/detalhes.js       itens em card compacto + janela de detalhes (window.ItemUI): listas, criador e ficha
 js/criador.js        página do criador de personagem (mesa/criador.html)
 js/combate.js        consulta rápida de combate (manobras e iniciativa de regras.json)
 js/dados-gurps.js    GERADO a partir de data/gurps/ — não editar à mão

@@ -15,7 +15,8 @@
       { label: 'Visão geral', href: 'mundo/visao-geral.html' },
       { label: 'Eras', href: 'mundo/eras.html' },
       { label: 'Linha do Tempo', href: 'mundo/linha-do-tempo.html' },
-      { label: 'Geografia', href: 'mundo/geografia.html' }
+      { label: 'Geografia', href: 'mundo/geografia.html' },
+      { label: 'Inspiração visual', href: 'mundo/inspiracao.html' }
     ]},
     { label: 'Cânone', children: [
       { label: 'Materialidade', href: 'canone/materialidade.html' },
@@ -161,7 +162,8 @@
         el('p', { className: 'footer-credit', text: 'Um cenário de Thalik Bussacro' }),
         el('ul', { className: 'footer-links' }, [
           el('li', null, [ext(SITE_CONFIG.spotify, 'Playlist no Spotify')]),
-          el('li', null, [ext(SITE_CONFIG.pinterest, 'Referências no Pinterest')])
+          el('li', null, [ext(SITE_CONFIG.pinterest, 'Referências no Pinterest')]),
+          el('li', null, [el('a', { href: ROOT + 'creditos.html', text: 'Créditos das imagens' })])
         ]),
         jogarButton()
       ])
@@ -257,6 +259,18 @@
     });
   }
 
+  // ---------- arte da seção ----------
+  // A seção (primeira pasta do endereço) escolhe a pintura do cabeçalho e as ilustrações dos cantos (css, parte 19).
+  function marcarSecao() {
+    var secao = PAGE.indexOf('/') !== -1 ? PAGE.split('/')[0] : PAGE.replace(/\.html$/, '') || 'index';
+    body.setAttribute('data-secao', secao === 'index' ? 'inicio' : secao);
+    if (body.classList.contains('modo-app')) return;
+    ['esq', 'dir'].forEach(function (lado) {
+      body.appendChild(el('div', { className: 'deco deco-' + lado, 'aria-hidden': 'true' }));
+    });
+  }
+
+  marcarSecao();
   var header = renderHeader();
   renderFooter();
   setupMenu(header);

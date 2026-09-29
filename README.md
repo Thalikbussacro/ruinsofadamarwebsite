@@ -42,7 +42,7 @@ js/dados-gurps.js    GERADO a partir de data/gurps/ — não editar à mão
 data/gurps/          base de conhecimento GURPS em JSON (fonte oficial)
 referencias/         PDFs de referência, só local (fora do git)
 data-local/          base completa com estatísticas do livro, só local (fora do git)
-img/                 imagens (mapa de Adamar)
+img/                 imagens (mapa de Adamar; img/arte: pinturas em domínio público, créditos em creditos.html)
 tools/               checador do site e testes
 ```
 

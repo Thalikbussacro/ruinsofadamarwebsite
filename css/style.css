@@ -1885,3 +1885,73 @@ body.modo-app .site-footer { display: none; }
   .ficha *, .page-head * { color: #000 !important; }
   .efeito-tag { border-color: #000 !important; }
 }
+
+/* ---------- 19. Arte: pinturas em domínio público (créditos em creditos.html) ---------- */
+/* Cabeçalho: a pintura da seção, escurecida para o logo continuar legível. */
+.banner {
+  padding: clamp(3rem, 8vw, 5.5rem) 1rem clamp(2.2rem, 5vw, 3.4rem);
+  background:
+    linear-gradient(180deg, rgba(8, 7, 6, 0.3) 0%, rgba(14, 13, 12, 0.45) 55%, rgba(26, 24, 21, 0.95) 100%),
+    radial-gradient(ellipse 45% 70% at 50% 55%, rgba(110, 31, 26, 0.3), transparent 70%),
+    var(--arte-banner, none) center var(--arte-y, 45%) / cover no-repeat,
+    linear-gradient(180deg, #0a0908 0%, #13110f 60%, #1a1815 100%);
+}
+.banner .logo-title { text-shadow: 0 2px 18px rgba(0, 0, 0, 0.9), 0 0 4px rgba(0, 0, 0, 0.8); }
+.banner .logo-sub { text-shadow: 0 1px 8px rgba(0, 0, 0, 0.95); }
+body[data-secao="mundo"],
+body[data-secao="jogar"] { --arte-banner: url('../img/arte/mundo.webp'); --arte-y: 38%; --deco-esq: url('../img/arte/canto-tuvstarr.webp'); --deco-dir: url('../img/arte/canto-troll.webp'); }
+body[data-secao="canone"] { --arte-banner: url('../img/arte/canone.webp'); --arte-y: 55%; --deco-esq: url('../img/arte/canto-pesta.webp'); --deco-dir: url('../img/arte/canto-troll.webp'); }
+body[data-secao="personagens"] { --arte-banner: url('../img/arte/personagens.webp'); --arte-y: 42%; --deco-esq: url('../img/arte/canto-troll.webp'); --deco-dir: url('../img/arte/canto-tuvstarr.webp'); }
+body[data-secao="mesa"] { --arte-banner: url('../img/arte/mesa.webp'); --arte-y: 30%; --deco-esq: url('../img/arte/canto-troll.webp'); --deco-dir: url('../img/arte/canto-pesta.webp'); }
+body[data-secao="cronicas"] { --arte-banner: url('../img/arte/cronicas.webp'); --arte-y: 50%; --deco-esq: url('../img/arte/canto-pesta.webp'); --deco-dir: url('../img/arte/canto-tuvstarr.webp'); }
+body[data-secao="inicio"],
+body[data-secao="creditos"] { --deco-esq: url('../img/arte/canto-troll.webp'); --deco-dir: url('../img/arte/canto-pesta.webp'); }
+body[data-secao="creditos"] { --arte-banner: url('../img/arte/heroi.webp'); }
+
+/* Início: a abadia em ruínas ocupa a largura toda atrás do texto e se dissolve no fundo. */
+body[data-secao="inicio"] .hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
+  z-index: -2;
+  background:
+    linear-gradient(180deg, rgba(14, 13, 12, 0.55) 0%, rgba(14, 13, 12, 0.42) 40%, rgba(14, 13, 12, 0.8) 80%, var(--carvao) 100%),
+    url('../img/arte/heroi.webp') center 55% / cover no-repeat;
+  pointer-events: none;
+}
+body[data-secao="inicio"] .hero { padding-top: clamp(4rem, 12vw, 9rem); padding-bottom: clamp(4rem, 10vw, 7rem); }
+body[data-secao="inicio"] .hero p:not(.lede):not(.kicker) { text-shadow: 0 1px 8px rgba(0, 0, 0, 0.95); color: var(--osso-claro); }
+
+/* Cantos: ilustrações esmaecidas nas margens laterais, só quando sobra espaço ao redor da moldura. */
+.deco { display: none; }
+@media (min-width: 1360px) {
+  .deco {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    width: clamp(13rem, calc((100vw - 62rem) / 2), 24rem);
+    aspect-ratio: 4 / 5;
+    background: var(--deco-img) center / cover no-repeat;
+    opacity: 0.4;
+    filter: sepia(0.35) saturate(0.75) brightness(0.8);
+    -webkit-mask-image: radial-gradient(ellipse 72% 70% at 50% 58%, #000 30%, transparent 74%);
+    mask-image: radial-gradient(ellipse 72% 70% at 50% 58%, #000 30%, transparent 74%);
+    pointer-events: none;
+  }
+  .deco-esq { left: 0; --deco-img: var(--deco-esq); }
+  .deco-dir { right: 0; --deco-img: var(--deco-dir); }
+}
+body.modo-app .deco { display: none; }
+@media print { .deco { display: none !important; } }
+
+/* páginas de inspiração e créditos */
+.pin-quadro { display: flex; justify-content: center; margin: 1.5rem 0; min-height: 12rem; max-width: 100%; overflow-x: auto; }
+.creditos-lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: 1rem; margin: 1.25rem 0 0; padding: 0; list-style: none; }
+.creditos-lista li { margin: 0; padding: 0; background: rgba(14, 13, 12, 0.45); border: 1px solid var(--ouro-fio); }
+.creditos-lista img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; filter: sepia(0.2); }
+.creditos-lista p { margin: 0; padding: 0.55rem 0.7rem 0.7rem; font-size: 0.98rem; line-height: 1.45; }
+.creditos-lista strong { color: var(--osso-claro); }

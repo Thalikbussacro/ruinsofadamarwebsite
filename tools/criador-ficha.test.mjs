@@ -105,4 +105,9 @@ assert.equal(r.dinheiro_restante, r.recursos - item.preco.valor * 2);
 const caro = comPreco.reduce((a, b) => (b.preco.valor > a.preco.valor ? b : a));
 f.equipamento = [{ id: caro.id, quantidade: 100 }];
 assert.match(c.resumir(f).avisos.join('|'), /mais que o dinheiro inicial/);
+// efeitos com etiqueta: Zarolho é condicional e vai para "Lembrar na mesa"
+f = c.fichaNova();
+f.tracos.push({ id: 'zarolho', escolha: {} });
+assert.ok(c.efeitosDoTraco(f.tracos[0]).some((e) => e.tipo === 'condicional'));
+assert.match(c.textoFicha(f, c.resumir(f)), /Lembrar na mesa:[\s\S]*\[CONDICIONAL\]/);
 console.log('criador-ficha ok');

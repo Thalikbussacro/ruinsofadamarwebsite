@@ -140,6 +140,14 @@
       });
       art.appendChild(versoes);
     }
+    if (p.efeitos && p.efeitos.length && window.GurpsEfeitos) {
+      var ul = el('ul', 'efeitos');
+      window.GurpsEfeitos.desenharEfeitos(ul, p.efeitos.map(function (e) {
+        var nomeVar = e.variante != null && p.variantes ? p.variantes[e.variante].nome + ': ' : '';
+        return { tipo: window.GurpsEfeitos.tipoEfeito(e), texto: nomeVar + window.GurpsEfeitos.textoEfeito(e, GURPS) };
+      }));
+      art.appendChild(ul);
+    }
     var meta = el('p', 'pericia-meta');
     meta.appendChild(el('span', 'pericia-status', ADAMAR[p.adamar].rotulo));
     tipo.meta(p).forEach(function (m) { meta.appendChild(el('span', null, m)); });

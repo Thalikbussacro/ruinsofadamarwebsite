@@ -443,8 +443,13 @@
         if (t.nota_adamar) meta.appendChild(el('span', null, t.nota_adamar));
         row.appendChild(meta);
         row.appendChild(controlesDoTraco(sel, t, negativo));
+        var efeitos = el('ul', 'efeitos');
+        row.appendChild(efeitos);
         row.appendChild(botaoRemover(t.nome, function () { ficha.tracos.splice(i, 1); desenhar(); seletor.desenhar(); mudou(); }));
-        infos.push(function () { custo.textContent = sinal(criador.custoDoTraco(sel)) + ' pts'; });
+        infos.push(function () {
+          custo.textContent = sinal(criador.custoDoTraco(sel)) + ' pts';
+          window.GurpsEfeitos.desenharEfeitos(efeitos, criador.efeitosDoTraco(sel));
+        });
         box.appendChild(row);
       });
       if (!box.children.length) box.appendChild(el('p', 'pericia-vazio', negativo ? 'Nenhuma desvantagem ainda.' : 'Nenhuma vantagem ainda.'));
@@ -561,9 +566,9 @@
       var meta = el('div', 'pericia-meta');
       meta.appendChild(selo(p.adamar));
       meta.appendChild(el('span', null, p.atributo + '/' + p.dificuldade));
-      var bonus = el('span');
-      meta.appendChild(bonus);
       row.appendChild(meta);
+      var bonus = el('ul', 'efeitos');
+      row.appendChild(bonus);
       var campos = el('div', 'criador-campos');
       if (p.especializacao) {
         var w = el('label', 'criador-campo');
@@ -596,9 +601,11 @@
         var item = r.pericias[i];
         if (!item) return;
         nh.textContent = item.nh == null ? 'NH —' : 'NH ' + item.nh + ' (' + p.atributo + (item.relativo ? sinal(item.relativo) : '') + ')';
-        var partes = item.bonus.map(function (b) { return sinal(b.valor) + ' de ' + b.origem; })
-          .concat(item.situacional.map(function (b) { return sinal(b.valor) + ' de ' + b.origem + ' (' + b.condicao + ')'; }));
-        bonus.textContent = partes.join(' · ');
+        window.GurpsEfeitos.desenharEfeitos(bonus, item.bonus.map(function (b) {
+          return { tipo: 'aplicado', texto: sinal(b.valor) + ' de ' + b.origem };
+        }).concat(item.situacional.map(function (b) {
+          return { tipo: 'condicional', texto: sinal(b.valor) + ' de ' + b.origem + ' — ' + b.condicao };
+        })));
       });
       box.appendChild(row);
     });

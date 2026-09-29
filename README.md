@@ -34,6 +34,7 @@ js/pericias.js       listas filtráveis de GURPS (perícias, vantagens, desvanta
 js/gurps-calculo.js  cálculos de ficha (custos, secundárias, carga, perícias)
 js/ficha-gurps.js    página de atributos com calculadora
 js/criador-ficha.js  lógica do criador de personagem (custo, NH, limites, avisos, texto da ficha)
+js/gurps-efeitos.js  texto e etiqueta (aplicado, sempre, condicional, regra) dos efeitos dos traços
 js/criador.js        página do criador de personagem (mesa/criador.html)
 js/dados-gurps.js    GERADO a partir de data/gurps/ — não editar à mão
 data/gurps/          base de conhecimento GURPS em JSON (fonte oficial)
@@ -116,6 +117,7 @@ node tools/icones-e-grade.test.mjs
 node tools/importar-efeitos.test.mjs
 node tools/estruturar-armas.test.mjs
 node tools/criador-ficha.test.mjs
+node tools/gurps-efeitos.test.mjs
 node tools/gerar-dados.mjs --check
 ```
 

@@ -25,6 +25,8 @@
     };
   }
 
+  var Efeitos = root.GurpsEfeitos || (typeof require === 'function' ? require('./gurps-efeitos.js') : null);
+
   function criarCriador(G, calc) {
     var R = G.regras;
     var PERICIA = {}, TRACO = {}, TALENTO = {}, ITEM = {};
@@ -109,6 +111,17 @@
         });
       });
       return r;
+    }
+
+    // Efeitos do traço já com a versão e o nível escolhidos, cada um com seu tipo (aplicado, sempre, condicional, regra).
+    function efeitosDoTraco(sel) {
+      var t = TRACO[sel.id];
+      if (!t) return [];
+      var nivel = nivelDoTraco(sel);
+      return (t.efeitos || []).filter(function (e) { return efeitoValeParaEscolha(e, sel); })
+        .filter(function (e) { return !(e.por_nivel && typeof e.valor === 'number' && !nivel); })
+        .map(function (e) { return { tipo: Efeitos.tipoEfeito(e), texto: Efeitos.textoEfeito(e, G, nivel) }; })
+        .filter(function (x) { return x.texto; });
     }
 
     function custoIdiomas(ficha) {
@@ -322,6 +335,14 @@
       if (ficha.aparencia_fisica) { L.push(''); L.push('*Aparência:* ' + ficha.aparencia_fisica); }
       if (ficha.historia) { L.push(''); L.push('*História:* ' + ficha.historia); }
       if (ficha.notas) { L.push(''); L.push('*Notas:* ' + ficha.notas); }
+      var lembrar = [];
+      r.tracos.forEach(function (x) {
+        if (!x.traco) return;
+        efeitosDoTraco(x.sel).forEach(function (e) {
+          if (e.tipo === 'condicional' || e.tipo === 'sempre') lembrar.push(x.traco.nome + ': ' + e.texto + (e.tipo === 'condicional' ? ' [CONDICIONAL]' : ''));
+        });
+      });
+      if (lembrar.length) { L.push(''); L.push('*Lembrar na mesa:*'); lembrar.forEach(function (a) { L.push('- ' + a); }); }
       if (r.avisos.length) { L.push(''); L.push('*Para conversar com o narrador:*'); r.avisos.forEach(function (a) { L.push('- ' + a); }); }
       return L.join('\n');
     }
@@ -346,6 +367,7 @@
       resumir: resumir,
       textoFicha: textoFicha,
       custoDoTraco: custoDoTraco,
+      efeitosDoTraco: efeitosDoTraco,
       nomeVariante: nomeVariante,
       tracoSocial: function (id) { return TRACOS_SOCIAIS.indexOf(id) !== -1; },
       LIMITE_PECULIARIDADES: LIMITE_PECULIARIDADES

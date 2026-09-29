@@ -195,7 +195,15 @@
           "alvo": "teste",
           "ref": "pericias_iq",
           "valor": -1,
-          "condicao": "perícias baseadas em IQ quando está sozinho; Gregário -2 (ou -1 em grupo de 4 pessoas ou menos)"
+          "condicao": "perícias baseadas em IQ quando está sozinho",
+          "variante": 0
+        },
+        {
+          "alvo": "teste",
+          "ref": "pericias_iq",
+          "valor": -2,
+          "condicao": "perícias baseadas em IQ quando está sozinho (-1 em grupo de 4 pessoas ou menos)",
+          "variante": 1
         },
         {
           "alvo": "regra",
@@ -530,13 +538,27 @@
           "alvo": "teste",
           "ref": "destreza_manual",
           "valor": -3,
-          "condicao": "testes de DX para trabalho delicado (perícias de Destreza Manual Elevada); -6 no nível de -10 pontos"
+          "condicao": "testes de DX para trabalho delicado (perícias de Destreza Manual Elevada)",
+          "variante": 0
+        },
+        {
+          "alvo": "teste",
+          "ref": "destreza_manual",
+          "valor": -6,
+          "condicao": "testes de DX para trabalho delicado (perícias de Destreza Manual Elevada)",
+          "variante": 1
         },
         {
           "alvo": "pericia",
           "ref": "sacar-rapido",
           "valor": -3,
-          "condicao": "-6 no nível de -10 pontos"
+          "variante": 0
+        },
+        {
+          "alvo": "pericia",
+          "ref": "sacar-rapido",
+          "valor": -6,
+          "variante": 1
         },
         {
           "alvo": "regra",
@@ -3151,25 +3173,49 @@
           "alvo": "teste",
           "ref": "ht_nocaute",
           "valor": -1,
-          "condicao": "Fora de Forma -1; Muito Fora de Forma -2"
+          "variante": 0
+        },
+        {
+          "alvo": "teste",
+          "ref": "ht_nocaute",
+          "valor": -2,
+          "variante": 1
         },
         {
           "alvo": "teste",
           "ref": "ht_morte",
           "valor": -1,
-          "condicao": "Fora de Forma -1; Muito Fora de Forma -2"
+          "variante": 0
+        },
+        {
+          "alvo": "teste",
+          "ref": "ht_morte",
+          "valor": -2,
+          "variante": 1
         },
         {
           "alvo": "teste",
           "ref": "resistir_doenca",
           "valor": -1,
-          "condicao": "Fora de Forma -1; Muito Fora de Forma -2"
+          "variante": 0
+        },
+        {
+          "alvo": "teste",
+          "ref": "resistir_doenca",
+          "valor": -2,
+          "variante": 1
         },
         {
           "alvo": "teste",
           "ref": "resistir_veneno",
           "valor": -1,
-          "condicao": "Fora de Forma -1; Muito Fora de Forma -2"
+          "variante": 0
+        },
+        {
+          "alvo": "teste",
+          "ref": "resistir_veneno",
+          "valor": -2,
+          "variante": 1
         },
         {
           "alvo": "regra",

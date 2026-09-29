@@ -1626,3 +1626,24 @@ a.card:hover h3,
   .criador-etapa { padding: 0.4rem 0.2rem 0.35rem; }
   .criador-adicionar { margin-left: 0; }
 }
+
+/* etiquetas dos efeitos dos traços */
+.efeitos { display: grid; gap: 0.3rem; margin: 0.2rem 0 0.4rem; padding: 0; list-style: none; font-size: 0.95rem; line-height: 1.4; }
+.efeitos[hidden] { display: none; }
+.efeito-tag {
+  display: inline-block;
+  min-width: 6.2rem;
+  margin-right: 0.35rem;
+  padding: 0 0.4rem;
+  font-family: var(--f-titulo);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: 0.1em;
+  border: 1px solid currentColor;
+}
+.tag-aplicado { color: var(--ouro-claro); }
+.tag-sempre { color: var(--osso); }
+.tag-condicional { color: #e08a5e; background: rgba(134, 39, 31, 0.25); }
+.tag-regra { color: var(--osso-fosco); }

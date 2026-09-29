@@ -124,6 +124,8 @@ node tools/criador-ficha.test.mjs
 node tools/gurps-efeitos.test.mjs
 node tools/personagens-salvos.test.mjs
 node tools/icones.test.mjs
+node tools/versionar.test.mjs
+node tools/versionar.mjs --check   # links de css/js com a versão certa (rode node tools/versionar.mjs antes de publicar)
 node tools/gerar-dados.mjs --check
 ```
 

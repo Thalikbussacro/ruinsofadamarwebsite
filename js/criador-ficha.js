@@ -596,7 +596,7 @@
       return {
         pv: pv, pv_max: pvMax, pf: pf, pf_max: pfMax,
         deslocamento: desl, esquiva: esq, st: st,
-        pontos: j.pontos || 0, dinheiro: typeof j.dinheiro === 'number' ? j.dinheiro : r.dinheiro_restante, notas: j.notas || '',
+        pontos: j.pontos || 0, historico: j.historico || [], dinheiro: typeof j.dinheiro === 'number' ? j.dinheiro : r.dinheiro_restante, notas: j.notas || '',
         efeitos: efeitos
       };
     }

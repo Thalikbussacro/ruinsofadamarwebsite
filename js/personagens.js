@@ -42,6 +42,9 @@
 
   // ---------- rolador: clicar num número rola 3d contra ele (ou o dano); quadro com as últimas rolagens ----------
   var ARMAZENAMENTO_ROLAGENS = 'adamar-rolagens';
+  var ARMAZENAMENTO_MOD = 'adamar-rolagens-mod';
+  var modificador = { valor: 0, motivo: '' };
+  try { modificador = JSON.parse(sessionStorage.getItem(ARMAZENAMENTO_MOD) || 'null') || modificador; } catch (e) { /* sem armazenamento */ }
   var rolagens = [];
   try { rolagens = JSON.parse(sessionStorage.getItem(ARMAZENAMENTO_ROLAGENS) || '[]'); } catch (e) { rolagens = []; }
   // sorteio com a aleatoriedade forte do navegador
@@ -56,12 +59,12 @@
   var quadro = null;
   function quadroRolagens() {
     if (quadro) return quadro;
-    quadro = el('aside', 'rolagens');
+    quadro = el('aside', 'rolagens' + (window.matchMedia('(max-width: 699px)').matches ? ' fechado' : ''));
     quadro.setAttribute('aria-label', 'Rolagens');
     var cab = el('div', 'rolagens-cab');
     var titulo = el('button', 'rolagens-titulo', 'Rolagens');
     titulo.type = 'button';
-    titulo.setAttribute('aria-expanded', 'true');
+    titulo.setAttribute('aria-expanded', String(!quadro.classList.contains('fechado')));
     titulo.addEventListener('click', function () {
       var fechado = quadro.classList.toggle('fechado');
       titulo.setAttribute('aria-expanded', String(!fechado));
@@ -79,6 +82,34 @@
     limpar.addEventListener('click', function () { rolagens = []; guardarRolagens(); desenharRolagens(); });
     cab.appendChild(limpar);
     quadro.appendChild(cab);
+    // modificador de situação: vale para os próximos testes até ser zerado
+    var linhaMod = el('div', 'rolagens-mod');
+    var rotMod = el('label', null, 'Modificador');
+    var campoMod = el('input');
+    campoMod.type = 'number';
+    campoMod.min = -20;
+    campoMod.max = 20;
+    campoMod.value = modificador.valor || 0;
+    campoMod.id = 'rolagens-mod';
+    rotMod.htmlFor = 'rolagens-mod';
+    var motivoMod = el('input');
+    motivoMod.placeholder = 'motivo (escuridão, pressa…)';
+    motivoMod.maxLength = 40;
+    motivoMod.value = modificador.motivo || '';
+    motivoMod.setAttribute('aria-label', 'Motivo do modificador');
+    var zerar = el('button', 'btn-link', 'zerar');
+    zerar.type = 'button';
+    function guardarMod() {
+      modificador = { valor: parseInt(campoMod.value, 10) || 0, motivo: motivoMod.value };
+      try { sessionStorage.setItem(ARMAZENAMENTO_MOD, JSON.stringify(modificador)); } catch (e) { /* sem armazenamento */ }
+      linhaMod.classList.toggle('ativo', !!modificador.valor);
+    }
+    campoMod.addEventListener('input', guardarMod);
+    motivoMod.addEventListener('input', guardarMod);
+    zerar.addEventListener('click', function () { campoMod.value = 0; motivoMod.value = ''; guardarMod(); });
+    [rotMod, campoMod, motivoMod, zerar].forEach(function (x) { linhaMod.appendChild(x); });
+    quadro.appendChild(linhaMod);
+    guardarMod();
     quadro.appendChild(el('ol', 'rolagens-lista'));
     quadro.setAttribute('aria-live', 'polite');
     document.body.appendChild(quadro);
@@ -89,9 +120,10 @@
   }
   function desenharRolagens() {
     var q = quadroRolagens();
-    q.hidden = !rolagens.length;
+    q.hidden = !document.querySelector('[data-rolar]') && !rolagens.length;
     var ul = q.querySelector('.rolagens-lista');
     ul.textContent = '';
+    if (!rolagens.length) ul.appendChild(el('li', 'rolagem rolagem-dica', 'Clique num número da ficha (atributo, perícia, arma, defesa ou dano) para rolar.'));
     rolagens.slice(0, 8).forEach(function (x, i) {
       var li = el('li', 'rolagem ' + (x.classe || '') + (i === 0 ? ' nova' : ''));
       li.appendChild(el('strong', null, x.rotulo));
@@ -106,14 +138,17 @@
     guardarRolagens();
     desenharRolagens();
   }
-  function rolarTeste(rotulo, nh) {
+  function rolarTeste(rotulo, nhBase) {
+    quadroRolagens();
+    var mod = modificador.valor || 0;
+    var nh = nhBase + mod;
     var r = calc.rolarDados('3d', sorteio);
     var a = calc.avaliarTeste(nh, r.total);
     var resultado = a.critico ? 'Sucesso decisivo!' : a.falha_critica ? 'Falha crítica!' :
       a.sucesso ? 'Sucesso' + (a.margem ? ' por ' + a.margem : ' (no limite)') : 'Falha por ' + (-a.margem);
     registrar({
       rotulo: rotulo,
-      conta: r.total + ' (' + r.dados.join('+') + ') contra ' + nh,
+      conta: r.total + ' (' + r.dados.join('+') + ') contra ' + (mod ? nhBase + (mod > 0 ? '+' : '−') + Math.abs(mod) + (modificador.motivo ? ' ' + modificador.motivo : '') + ' = ' + nh : nh),
       resultado: resultado,
       classe: a.critico ? 'critico' : a.falha_critica ? 'falha-critica' : a.sucesso ? 'sucesso' : 'falha'
     });
@@ -152,7 +187,8 @@
   }
   document.addEventListener('click', aoRolar);
   document.addEventListener('keydown', aoRolar);
-  if (rolagens.length) desenharRolagens();
+  // o quadro aparece quando a tela tem números roláveis (depois de montar o cofre ou a ficha)
+  setTimeout(desenharRolagens, 0);
 
   // marca os números da ficha completa que dá para rolar
   function marcarRolaveis(raiz) {
@@ -212,11 +248,29 @@
     }
     var locais = Object.keys(cb.protecao);
     if (locais.length) box.appendChild(el('p', 'combate-nota', 'Proteção (RD): ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd + (cb.protecao[l].so_frente ? ' (só frente)' : ''); }).join(' · ')));
+    if (!compacto) {
+      box.appendChild(el('p', 'combate-nota', 'Ordem de ação: Velocidade ' + num(r.valores.velocidade) + ' (no empate, DX ' + r.valores.dx + '). ' + (R.iniciativa ? R.iniciativa.resumo : '')));
+      if (R.manobras) {
+        var det = el('details', 'manobras');
+        det.appendChild(el('summary', null, 'Manobras de combate (resumo, pág. ' + R.manobras.ref.pagina + '–' + (R.manobras.ref.pagina + 1) + ')'));
+        det.appendChild(el('p', 'combate-nota', R.manobras.resumo));
+        var dl = el('dl', 'manobras-lista');
+        R.manobras.itens.forEach(function (m) {
+          var d = el('div');
+          d.appendChild(el('dt', null, m.nome));
+          d.appendChild(el('dd', null, m.resumo));
+          d.appendChild(el('dd', 'manobra-meta', 'Movimento: ' + m.movimento + ' · Defesa: ' + m.defesa));
+          dl.appendChild(d);
+        });
+        det.appendChild(dl);
+        box.appendChild(det);
+      }
+    }
     return box;
   }
 
   // ---------- em jogo: PV, PF, pontos ganhos, dinheiro e anotações da sessão (salvos no personagem) ----------
-  function painelEmJogo(idFicha, compacto) {
+  function painelEmJogo(idFicha, compacto, aoMudar) {
     var box = el('section', 'em-jogo' + (compacto ? ' em-jogo-compacto' : ''));
     function salvarEmJogo(mudanca) {
       var salvo = arquivo.obter(idFicha);
@@ -224,6 +278,7 @@
       salvo.em_jogo = Object.assign({}, salvo.em_jogo || {}, mudanca);
       arquivo.salvar(salvo);
       desenhar();
+      if (aoMudar) aoMudar();
     }
     function contador(rotulo, valor, max, chave, extra) {
       var c = el('div', 'em-jogo-contador');
@@ -277,6 +332,54 @@
         grade.appendChild(contador('Coroas', e.dinheiro, null, 'dinheiro'));
       }
       box.appendChild(grade);
+      if (!compacto) {
+        // ganhar pontos com motivo: fica registrado no histórico do personagem
+        var ganho = el('form', 'em-jogo-ganho');
+        ganho.setAttribute('aria-label', 'Registrar pontos ganhos');
+        var qtd = el('input');
+        qtd.type = 'number';
+        qtd.min = 1;
+        qtd.max = 50;
+        qtd.value = 1;
+        qtd.setAttribute('aria-label', 'Quantos pontos');
+        var motivo = el('input');
+        motivo.placeholder = 'motivo (ex.: sessão 3, salvou a vila)';
+        motivo.maxLength = 80;
+        motivo.setAttribute('aria-label', 'Motivo');
+        var btG = el('button', 'btn btn-ghost', '+ Ganhar pontos');
+        btG.type = 'submit';
+        ganho.appendChild(qtd);
+        ganho.appendChild(motivo);
+        ganho.appendChild(btG);
+        ganho.addEventListener('submit', function (ev) {
+          ev.preventDefault();
+          var n = parseInt(qtd.value, 10);
+          if (!(n > 0)) return;
+          var hist = (e.historico || []).slice();
+          hist.unshift({ data: new Date().toISOString().slice(0, 10), pontos: n, motivo: motivo.value.trim() });
+          salvarEmJogo({ pontos: e.pontos + n, historico: hist.slice(0, 100) });
+        });
+        box.appendChild(ganho);
+        if (e.historico && e.historico.length) {
+          var hl = el('ul', 'em-jogo-historico');
+          e.historico.slice(0, 8).forEach(function (h, i) {
+            var li = el('li');
+            li.appendChild(el('span', 'em-jogo-hist-pts', '+' + h.pontos));
+            li.appendChild(el('span', null, (h.motivo || 'sem motivo') + ' · ' + h.data.split('-').reverse().join('/')));
+            var desfaz = el('button', 'btn-link', 'desfazer');
+            desfaz.type = 'button';
+            desfaz.setAttribute('aria-label', 'Desfazer ganho de ' + h.pontos + ' pontos');
+            desfaz.addEventListener('click', function () {
+              var hist = e.historico.slice();
+              hist.splice(i, 1);
+              salvarEmJogo({ pontos: Math.max(0, e.pontos - h.pontos), historico: hist });
+            });
+            li.appendChild(desfaz);
+            hl.appendChild(li);
+          });
+          box.appendChild(hl);
+        }
+      }
       if (!compacto && e.pontos > 0) {
         var dica = el('p', 'em-jogo-agora');
         dica.appendChild(document.createTextNode('Os ' + e.pontos + ' pontos ganhos já somam no saldo: '));
@@ -606,14 +709,20 @@
 
     // pontos
     var pts = el('div', 'ficha-pontos');
-    pts.appendChild(el('strong', null, String(f.orcamento + (r.pontos_ganhos || 0))));
-    pts.appendChild(el('span', null, 'pontos' + (r.pontos_ganhos ? ' (' + f.orcamento + ' iniciais + ' + r.pontos_ganhos + ' ganhos em jogo)' : ' iniciais') + ' · gastou ' + r.pontos_gastos + ' · desvantagens devolveram ' + r.pontos_devolvidos + (f.jogador ? ' · jogador: ' + f.jogador : '')));
-    pts.appendChild(el('span', r.restante < 0 ? 'calc-estourou' : null, r.restante >= 0 ? (r.restante ? r.restante + ' guardados para depois' : 'todos usados') : 'saldo negativo: ' + r.restante));
-    pts.appendChild(el('span', 'personagem-selo ' + (r.valida ? 'pronta' : 'rascunho'), r.valida ? 'Pronta' : 'Rascunho'));
+    // o topo se refaz quando o painel "Em jogo" muda os pontos ganhos
+    function desenharPontos() {
+      var fx = criador.carregar(arquivo.obter(idFicha) || salvo), rx = criador.resumir(fx);
+      pts.textContent = '';
+      pts.appendChild(el('strong', null, String(fx.orcamento + (rx.pontos_ganhos || 0))));
+      pts.appendChild(el('span', null, 'pontos' + (rx.pontos_ganhos ? ' (' + fx.orcamento + ' iniciais + ' + rx.pontos_ganhos + ' ganhos em jogo)' : ' iniciais') + ' · gastou ' + rx.pontos_gastos + ' · desvantagens devolveram ' + rx.pontos_devolvidos + (fx.jogador ? ' · jogador: ' + fx.jogador : '')));
+      pts.appendChild(el('span', rx.restante < 0 ? 'calc-estourou' : null, rx.restante >= 0 ? (rx.restante ? rx.restante + ' guardados para depois' : 'todos usados') : 'saldo negativo: ' + rx.restante));
+      pts.appendChild(el('span', 'personagem-selo ' + (rx.valida ? 'pronta' : 'rascunho'), rx.valida ? 'Pronta' : 'Rascunho'));
+    }
+    desenharPontos();
     if (!r.valida) document.getElementById('f-whats').classList.add('is-disabled');
     box.appendChild(pts);
 
-    box.appendChild(painelEmJogo(idFicha, false));
+    box.appendChild(painelEmJogo(idFicha, false, desenharPontos));
 
     var grade = el('div', 'ficha-grade');
     box.appendChild(grade);

@@ -2261,7 +2261,8 @@ body.modo-app .deco { display: none; }
 .rolagens-cab { display: flex; align-items: center; gap: 0.7rem; padding: 0.4rem 0.7rem; border-bottom: 1px solid var(--ouro-fio); }
 .rolagens-titulo { flex: 1; padding: 0; font-family: var(--f-titulo); font-size: 0.85rem; letter-spacing: 0.08em; text-align: left; color: var(--ouro-claro); background: none; border: 0; cursor: pointer; }
 .rolagens .btn-link { font-size: 0.9rem; }
-.rolagens.fechado .rolagens-lista { display: none; }
+.rolagens.fechado .rolagens-lista, .rolagens.fechado .rolagens-mod { display: none; }
+.rolagem-dica { font-style: italic; color: #a39780; }
 .rolagens-lista { margin: 0; padding: 0.3rem 0.5rem 0.5rem; list-style: none; }
 .rolagem { display: grid; gap: 0.05rem; margin: 0; padding: 0.35rem 0.4rem; border-bottom: 1px solid rgba(168, 136, 74, 0.1); font-size: 0.92rem; }
 .rolagem.nova { background: rgba(168, 136, 74, 0.1); animation: rolagem-entra 0.35s ease-out; }
@@ -2276,6 +2277,29 @@ body.modo-app .deco { display: none; }
 @keyframes rolagem-entra { from { transform: translateY(-4px); opacity: 0.4; } to { transform: none; opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { .rolagem.nova { animation: none; } }
 @media print { .rolagens { display: none !important; } }
+
+/* rolagens: modificador; histórico de pontos; manobras */
+.rolagens-mod { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.5rem; padding: 0.4rem 0.7rem; font-size: 0.88rem; border-bottom: 1px solid var(--ouro-fio); }
+.rolagens-mod.ativo { background: rgba(224, 138, 94, 0.12); }
+.rolagens-mod label { font-family: var(--f-titulo); font-size: 0.75rem; letter-spacing: 0.06em; color: #a39780; }
+.rolagens-mod input { padding: 0.15rem 0.35rem; font-family: var(--f-corpo); font-size: 0.92rem; color: var(--osso-claro); background: rgba(0, 0, 0, 0.4); border: 1px solid var(--ouro-linha); }
+.rolagens-mod input[type="number"] { width: 3.6rem; text-align: center; }
+.rolagens-mod input:not([type]) { flex: 1 1 8rem; min-width: 0; }
+.em-jogo-ganho { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.7rem; }
+.em-jogo-ganho input { padding: 0.3rem 0.45rem; font-family: var(--f-corpo); font-size: 0.95rem; color: var(--osso-claro); background: rgba(0, 0, 0, 0.4); border: 1px solid var(--ouro-linha); }
+.em-jogo-ganho input[type="number"] { width: 4rem; text-align: center; }
+.em-jogo-ganho input:not([type]) { flex: 1 1 12rem; min-width: 0; }
+.em-jogo-ganho .btn { padding: 0.3rem 0.8rem; font-size: 0.8rem; }
+.em-jogo-historico { margin: 0.5rem 0 0; padding: 0; list-style: none; font-size: 0.92rem; }
+.em-jogo-historico li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.6rem; margin: 0.15rem 0; color: #c4b89f; }
+.em-jogo-hist-pts { min-width: 2rem; font-family: var(--f-titulo); color: #a9c47f; }
+.manobras { margin-top: 0.6rem; }
+.manobras summary { cursor: pointer; font-family: var(--f-titulo); font-size: 0.9rem; letter-spacing: 0.04em; color: var(--ouro-claro); }
+.manobras-lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: 0.6rem 1.2rem; margin: 0.6rem 0 0; }
+.manobras-lista dt { font-family: var(--f-titulo); font-size: 0.95rem; color: var(--osso-claro); }
+.manobras-lista dd { margin: 0.1rem 0 0; font-size: 0.92rem; line-height: 1.4; }
+.manobras-lista .manobra-meta { font-style: italic; color: #a39780; }
+@media print { .manobras { display: none !important; } }
 
 /* Celular: a tela também fica parada. Em cima, o saldo numa linha e as etapas; embaixo, Voltar · Salvar · Continuar;
    no meio, só o conteúdo rola. */

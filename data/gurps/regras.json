@@ -2066,5 +2066,112 @@
         "lunatico"
       ]
     }
+  },
+  "iniciativa": {
+    "resumo": "Quem tem a maior Velocidade Básica age primeiro, e a ordem vale para o combate inteiro. Empate: age antes quem tem mais DX; se ainda empatar, o Mestre sorteia.",
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 324
+    }
+  },
+  "manobras": {
+    "resumo": "A cada segundo de combate, o personagem escolhe uma manobra. Ela define o que ele faz, quanto se move e como pode se defender.",
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 324
+    },
+    "itens": [
+      {
+        "id": "ataque",
+        "nome": "Ataque",
+        "resumo": "Ataca com uma arma preparada (corpo a corpo no alcance, ou à distância até o alcance máximo).",
+        "movimento": "um passo",
+        "defesa": "normal"
+      },
+      {
+        "id": "ataque-total",
+        "nome": "Ataque Total",
+        "resumo": "Ataca sem se defender. Corpo a corpo: +4 no acerto, ou dois ataques, ou finta e ataque, ou +2 de dano (+1 por dado, o que for maior). À distância: +1 no acerto.",
+        "movimento": "até metade do Deslocamento, só para a frente",
+        "defesa": "nenhuma até o próximo turno"
+      },
+      {
+        "id": "avancar-e-atacar",
+        "nome": "Avançar e Atacar",
+        "resumo": "Anda e ataca no mesmo turno, com pouca precisão: −4 corpo a corpo (NH máximo 9), ou −2 ou a Magnitude da arma à distância.",
+        "movimento": "como em Deslocamento",
+        "defesa": "só bloquear ou esquivar"
+      },
+      {
+        "id": "defesa-total",
+        "nome": "Defesa Total",
+        "resumo": "Só se defende: +2 numa defesa escolhida, ou pode tentar uma segunda defesa diferente se a primeira falhar.",
+        "movimento": "um passo (metade do Deslocamento com esquiva aumentada)",
+        "defesa": "melhorada"
+      },
+      {
+        "id": "deslocamento",
+        "nome": "Deslocamento",
+        "resumo": "Só se move, até o valor do Deslocamento.",
+        "movimento": "Deslocamento inteiro",
+        "defesa": "normal"
+      },
+      {
+        "id": "apontar",
+        "nome": "Apontar",
+        "resumo": "Mira uma arma de distância num alvo visível. No ataque seguinte soma a Precisão da arma (+1 por 2 segundos, +2 por 3 ou mais). Defender-se estraga a mira.",
+        "movimento": "um passo",
+        "defesa": "perde a mira se usar"
+      },
+      {
+        "id": "avaliar",
+        "nome": "Avaliar",
+        "resumo": "Estuda um oponente próximo: +1 no próximo ataque ou finta contra ele, acumulando até três turnos.",
+        "movimento": "um passo",
+        "defesa": "normal"
+      },
+      {
+        "id": "fintar",
+        "nome": "Fintar",
+        "resumo": "Finge um ataque: disputa de perícias com o oponente; a margem vencida sai da defesa dele no próximo turno.",
+        "movimento": "um passo",
+        "defesa": "normal"
+      },
+      {
+        "id": "preparar",
+        "nome": "Preparar",
+        "resumo": "Saca ou prepara um item, recupera o controle de uma arma pesada, abre uma porta, ativa uma vantagem…",
+        "movimento": "um passo",
+        "defesa": "normal"
+      },
+      {
+        "id": "concentrar",
+        "nome": "Concentrar",
+        "resumo": "Faz algo mental (magia, perceber algo, a maioria das perícias de IQ). Se for ferido ou precisar se defender, teste de Vontade−3 para não perder a concentração.",
+        "movimento": "um passo",
+        "defesa": "pode, mas arrisca a concentração"
+      },
+      {
+        "id": "aguardar",
+        "nome": "Aguardar",
+        "resumo": "Espera um acontecimento combinado antes (ex.: o inimigo entrar no alcance) e então age com Ataque, Ataque Total, Fintar ou Preparar, interrompendo a ordem.",
+        "movimento": "nenhum até agir",
+        "defesa": "normal"
+      },
+      {
+        "id": "mudanca-de-posicao",
+        "nome": "Mudança de Posição",
+        "resumo": "Troca de posição: em pé, ajoelhado, sentado, rastejando, deitado. Levantar do chão leva duas manobras.",
+        "movimento": "nenhum",
+        "defesa": "normal"
+      },
+      {
+        "id": "fazer-nada",
+        "nome": "Fazer Nada",
+        "resumo": "Fica parado. É obrigatória para quem está atordoado ou surpreso; atordoado, defende com −4 e faz teste de HT ou IQ para se recuperar.",
+        "movimento": "nenhum",
+        "defesa": "normal (−4 se atordoado)"
+      }
+    ]
   }
 }

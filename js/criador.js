@@ -55,8 +55,25 @@
   }
 
   // ---------- estado ----------
+  var arquivo = window.criarArquivo ? window.criarArquivo(window.localStorage) : null;
   var ficha;
   try { ficha = criador.carregar(JSON.parse(localStorage.getItem(ARMAZENAMENTO) || 'null')); } catch (e) { ficha = criador.fichaNova(); }
+  // ?editar=<id>: abre um personagem salvo no lugar do rascunho
+  var editar = /[?&]editar=([^&]+)/.exec(location.search);
+  if (editar && arquivo) {
+    var salvoAntes = arquivo.obter(decodeURIComponent(editar[1]));
+    if (salvoAntes) ficha = criador.carregar(salvoAntes);
+    try { history.replaceState(null, '', location.pathname); } catch (e) { /* sem history */ }
+  }
+  // ?novo=1: começa uma ficha em branco; um rascunho com conteúdo e sem salvar vai antes para Meus personagens
+  if (/[?&]novo=1/.test(location.search)) {
+    var vazio = JSON.stringify(criador.fichaNova());
+    var semSalvar = !ficha.id_salvo || !arquivo || JSON.stringify(arquivo.obter(ficha.id_salvo)) !== JSON.stringify(ficha);
+    if (arquivo && semSalvar && JSON.stringify(ficha) !== vazio) arquivo.salvar(ficha);
+    ficha = criador.fichaNova();
+    try { localStorage.setItem(ARMAZENAMENTO_ETAPA, '0'); history.replaceState(null, '', location.pathname); } catch (e) { /* sem armazenamento */ }
+  }
+  var versaoSalva = ficha.id_salvo && arquivo && arquivo.obter(ficha.id_salvo) ? JSON.stringify(arquivo.obter(ficha.id_salvo)) : null;
   var atualizadores = [];
   function salvar() {
     try { localStorage.setItem(ARMAZENAMENTO, JSON.stringify(ficha)); } catch (e) { /* sem armazenamento */ }
@@ -711,6 +728,7 @@
     leitor.onload = function () {
       try {
         ficha = criador.carregar(JSON.parse(leitor.result));
+        versaoSalva = ficha.id_salvo && arquivo && arquivo.obter(ficha.id_salvo) ? JSON.stringify(arquivo.obter(ficha.id_salvo)) : null;
         desenharTudo();
         mudou();
         avisar('Ficha aberta.');
@@ -731,9 +749,36 @@
     confirmando = null;
     nova.textContent = 'Começar uma ficha nova';
     ficha = criador.fichaNova();
+    versaoSalva = null;
     desenharTudo();
     mudou();
     irPara(0);
+  });
+
+  // ---------- salvar no navegador ----------
+  var botaoSalvar = document.getElementById('c-salvar');
+  var statusSalvo = document.getElementById('c-salvo');
+  if (!arquivo) botaoSalvar.hidden = true;
+  botaoSalvar.addEventListener('click', function () {
+    var id = arquivo.salvar(ficha);
+    if (!id) { statusSalvo.textContent = 'Não deu para salvar (navegador sem espaço ou bloqueado).'; return; }
+    ficha.id_salvo = id;
+    versaoSalva = JSON.stringify(arquivo.obter(id));
+    salvar();
+    atualizar();
+  });
+  atualizadores.push(function () {
+    if (!arquivo) return;
+    if (!ficha.id_salvo || !versaoSalva) {
+      statusSalvo.innerHTML = '';
+      botaoSalvar.textContent = 'Salvar no navegador';
+    } else if (versaoSalva === JSON.stringify(ficha)) {
+      statusSalvo.innerHTML = 'Salvo · <a href="personagens.html?id=' + encodeURIComponent(ficha.id_salvo) + '">ver ficha</a>';
+      botaoSalvar.textContent = 'Salvar alterações';
+    } else {
+      statusSalvo.textContent = 'Alterações não salvas';
+      botaoSalvar.textContent = 'Salvar alterações';
+    }
   });
 
   // ---------- barra de pontos ----------

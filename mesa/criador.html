@@ -15,6 +15,7 @@
   <script src="../js/gurps-efeitos.js" defer></script>
   <script src="../js/gurps-calculo.js" defer></script>
   <script src="../js/criador-ficha.js" defer></script>
+  <script src="../js/personagens-salvos.js" defer></script>
   <script src="../js/criador.js" defer></script>
 </head>
 <body data-root="../" data-page="mesa/criador.html">
@@ -26,12 +27,16 @@
         <p class="lede">Monte a ficha passo a passo. Só aparece o que existe em Adamar; o que depende do narrador vem marcado.</p>
       </header>
 
-      <p class="form-intro">A ficha fica salva neste navegador enquanto você monta. No fim, mande para o narrador pelo WhatsApp ou baixe o arquivo para continuar em outro lugar. Na dúvida sobre uma regra, veja <a href="ficha-gurps.html">Atributos</a>, <a href="vantagens-gurps.html">Vantagens</a>, <a href="desvantagens-gurps.html">Desvantagens</a> e <a href="pericias-gurps.html">Perícias</a>.</p>
+      <p class="form-intro">O rascunho fica guardado enquanto você monta. Use <strong>Salvar no navegador</strong> para guardar o personagem em <a href="personagens.html">Meus personagens</a>, onde dá para ver a ficha pronta. No fim, mande para o narrador pelo WhatsApp ou baixe o arquivo para continuar em outro aparelho. Na dúvida sobre uma regra, veja <a href="ficha-gurps.html">Atributos</a>, <a href="vantagens-gurps.html">Vantagens</a>, <a href="desvantagens-gurps.html">Desvantagens</a> e <a href="pericias-gurps.html">Perícias</a>.</p>
 
       <div class="criador-barra" id="criador-barra" aria-live="polite">
         <span class="criador-pontos"><strong id="barra-total">0</strong> <span id="barra-orcamento">de 80 pontos</span></span>
         <span id="barra-restante"></span>
         <span id="barra-desv"></span>
+        <span class="criador-salvar">
+          <button type="button" class="btn btn-ghost" id="c-salvar">Salvar no navegador</button>
+          <span id="c-salvo" class="criador-salvo"></span>
+        </span>
       </div>
 
       <ol class="wizard-progress criador-etapas" id="criador-etapas" aria-label="Etapas"></ol>

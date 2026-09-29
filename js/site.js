@@ -32,6 +32,7 @@
     { label: 'À Mesa', children: [
       { label: 'Regras', href: 'mesa/regras.html' },
       { label: 'Criar personagem', href: 'mesa/criador.html' },
+      { label: 'Meus personagens', href: 'mesa/personagens.html' },
       { label: 'Atributos (GURPS)', href: 'mesa/ficha-gurps.html' },
       { label: 'Perícias (GURPS)', href: 'mesa/pericias-gurps.html' },
       { label: 'Vantagens (GURPS)', href: 'mesa/vantagens-gurps.html' },

@@ -1550,6 +1550,9 @@ a.card:hover h3,
   border-left: 3px solid var(--sangue-vivo);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.55);
 }
+.criador-salvar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.7rem; margin-left: auto; }
+.criador-salvar .btn { padding: 0.35rem 0.8rem; font-size: 0.78rem; }
+.criador-salvo { font-family: var(--f-corpo); font-style: italic; letter-spacing: 0; color: var(--osso-fosco); }
 .criador-pontos strong { font-size: 1.5rem; color: var(--ouro-claro); }
 .criador-etapas li { flex-basis: 5.5rem; padding: 0; }
 .criador-etapa {
@@ -1647,3 +1650,41 @@ a.card:hover h3,
 .tag-sempre { color: var(--osso); }
 .tag-condicional { color: #e08a5e; background: rgba(134, 39, 31, 0.25); }
 .tag-regra { color: var(--osso-fosco); }
+
+/* ---------- 18. Meus personagens e ficha ---------- */
+.personagens-lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.personagem-card { display: flex; flex-direction: column; gap: 0.35rem; }
+.personagem-nome { margin: 0; font-size: 1.3rem; }
+.personagem-nome a { color: var(--ouro-claro); text-decoration: none; }
+.personagem-nome a:hover { text-decoration: underline; }
+.personagem-conceito { margin: 0; font-style: italic; }
+.personagem-card .card-more { margin: 0; }
+.personagem-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; margin-top: auto; padding-top: 0.6rem; }
+.personagem-acoes .btn { padding: 0.35rem 0.8rem; font-size: 0.8rem; }
+.ficha-acoes { margin-bottom: 1.25rem; }
+.ficha-pontos { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 1rem; padding: 0.7rem 1rem; font-family: var(--f-titulo); color: var(--osso-fosco); border: 1px solid var(--ouro-linha); border-left: 3px solid var(--sangue-vivo); background: linear-gradient(90deg, rgba(110, 31, 26, 0.3), rgba(14, 13, 12, 0.45)); }
+.ficha-pontos strong { font-size: 1.8rem; color: var(--ouro-claro); }
+.ficha-grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem; margin-top: 1rem; }
+.ficha-bloco { padding: 0.9rem 1rem; background: rgba(14, 13, 12, 0.45); border: 1px solid var(--ouro-fio); min-width: 0; }
+.ficha-largo { margin-top: 1rem; }
+.scroll .ficha-bloco > .ficha-titulo { margin-top: 0; }
+.ficha-valores dd { font-size: 1rem; }
+.ficha-titulo { margin: 0 0 0.6rem; font-size: 1.05rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ouro-claro); }
+.ficha-valores { display: grid; gap: 0.25rem; margin: 0; }
+.ficha-valores > div { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 0.6rem; align-items: baseline; padding: 0.15rem 0; border-bottom: 1px solid var(--ouro-fio); }
+.ficha-valores dt { font-family: var(--f-titulo); font-size: 0.85rem; color: var(--osso-fosco); }
+.ficha-valores dd { margin: 0; text-align: right; color: var(--osso-claro); }
+.ficha-valores .ficha-custo { min-width: 2.5rem; font-size: 0.85rem; color: var(--osso-fosco); }
+.ficha-traco { padding: 0.5rem 0; border-top: 1px solid var(--ouro-fio); }
+.ficha-traco:first-of-type { border-top: 0; }
+.ficha-traco .pericia-resumo { margin: 0.2rem 0 0; }
+.ficha .table-wrap .efeitos { margin: 0.25rem 0 0; font-size: 0.88rem; }
+
+@media print {
+  .site-header, .site-nav, .site-footer, .ficha-acoes, .skip-link, .noscript { display: none !important; }
+  body, .scroll, .page { background: #fff !important; color: #000 !important; box-shadow: none !important; }
+  .scroll::before, .scroll::after { display: none !important; }
+  .ficha-bloco, .ficha-pontos { background: none !important; border-color: #999 !important; break-inside: avoid; }
+  .ficha *, .page-head * { color: #000 !important; }
+  .efeito-tag { border-color: #000 !important; }
+}

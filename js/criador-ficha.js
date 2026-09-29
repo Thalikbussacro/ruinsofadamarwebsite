@@ -8,6 +8,7 @@
     var pontos = (regras.campanha && regras.campanha.pontos_iniciais) || { padrao: 80 };
     return {
       versao: 1,
+      id_salvo: '',
       nome: '', jogador: '', conceito: '', era: '', origem: '', aparencia_fisica: '', historia: '',
       orcamento: pontos.padrao,
       atributos: { st: 10, dx: 10, iq: 10, ht: 10 },

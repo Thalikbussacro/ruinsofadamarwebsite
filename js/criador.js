@@ -605,7 +605,7 @@
         b.title = jaTem ? 'Já está na ficha' : 'Adicionar à ficha';
         b.setAttribute('aria-label', (jaTem ? 'Já na ficha: ' : 'Adicionar ') + it.nome);
         b.addEventListener('click', function () {
-          opcoes.adicionar(it);
+          if (opcoes.adicionar(it, function () { mudou(); desenhar(); }) === false) return;
           mudou();
           desenhar();
         });
@@ -734,6 +734,205 @@
     nota.addEventListener('input', function () { sel.nota = nota.value; mudou(); });
     campos.appendChild(campoRotulado('Detalhe', nota));
     return campos;
+  }
+
+  // ---------- janela de escolha: antes de entrar na ficha, o que tem opções pede a escolha ----------
+  // Traços com versões, níveis, faixa, custo a combinar ou autocontrole; perícias com especialização.
+  var dialogoConfig = null;
+  function janelaConfig() {
+    if (dialogoConfig) return dialogoConfig;
+    var d = el('dialog', 'config-dialogo');
+    d.setAttribute('aria-labelledby', 'config-titulo');
+    d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+    document.body.appendChild(d);
+    dialogoConfig = d;
+    return d;
+  }
+  function precisaEscolha(t) {
+    var c = t.custo_estruturado || {};
+    return (c.tipo && c.tipo !== 'fixo') || !!c.autocontrole;
+  }
+  // monta a janela: cabeçalho, corpo (preenchido por quem chama), rodapé com custo ao vivo e botões
+  function abrirJanela(titulo, icone, resumo, montarCorpo, custoAgora, aoConfirmar, rotuloConfirmar) {
+    var d = janelaConfig();
+    d.textContent = '';
+    var fechar = el('button', 'jogar-fechar', '×');
+    fechar.type = 'button';
+    fechar.setAttribute('aria-label', 'Fechar');
+    fechar.addEventListener('click', function () { d.close(); });
+    d.appendChild(fechar);
+    var cab = el('div', 'config-cab');
+    var ic = window.iconeSvg && window.iconeSvg(icone, 'config-icone');
+    if (ic) cab.appendChild(ic);
+    var h = el('h2', null, titulo);
+    h.id = 'config-titulo';
+    cab.appendChild(h);
+    d.appendChild(cab);
+    if (resumo) d.appendChild(el('p', 'config-resumo', resumo));
+    var corpo = el('div', 'config-corpo');
+    d.appendChild(corpo);
+    var pe = el('div', 'config-pe');
+    var custo = el('strong', 'config-custo');
+    var cancelar = el('button', 'btn btn-ghost', 'Cancelar');
+    cancelar.type = 'button';
+    cancelar.addEventListener('click', function () { d.close(); });
+    var ok = el('button', 'btn btn-primary', rotuloConfirmar || 'Adicionar à ficha');
+    ok.type = 'button';
+    ok.addEventListener('click', function () { d.close(); aoConfirmar(); });
+    pe.appendChild(custo);
+    pe.appendChild(cancelar);
+    pe.appendChild(ok);
+    d.appendChild(pe);
+    function atualizarCusto() { custo.textContent = custoAgora(); }
+    montarCorpo(corpo, atualizarCusto);
+    atualizarCusto();
+    d.showModal();
+    var primeiro = corpo.querySelector('input, select, button');
+    if (primeiro) primeiro.focus();
+  }
+  // grupo de opções em cartões (um só marcado)
+  function cartoes(nome, itens, marcado, aoMudar) {
+    var g = el('div', 'config-opcoes');
+    g.setAttribute('role', 'radiogroup');
+    itens.forEach(function (it, k) {
+      var lab = el('label', 'config-opcao');
+      var r = el('input');
+      r.type = 'radio';
+      r.name = nome;
+      r.checked = k === marcado;
+      r.addEventListener('change', function () { if (r.checked) aoMudar(k); });
+      lab.appendChild(r);
+      var txt = el('span', 'config-opcao-texto');
+      txt.appendChild(el('strong', null, it.titulo));
+      if (it.valor) txt.appendChild(el('span', 'config-opcao-valor', it.valor));
+      if (it.texto) txt.appendChild(el('span', 'config-opcao-desc', it.texto));
+      lab.appendChild(txt);
+      g.appendChild(lab);
+    });
+    return g;
+  }
+
+  function configurarTraco(t, aoConfirmar) {
+    var c = t.custo_estruturado || {};
+    var negativo = ehNegativo(t);
+    var sel = { id: t.id, escolha: {} };
+    var e = sel.escolha;
+    if (c.tipo === 'niveis') e.nivel = 1;
+    if (c.tipo === 'opcoes') e.opcao = 0;
+    if (c.tipo === 'faixa') e.valor = Math.abs(c.min) < Math.abs(c.max) ? c.min : c.max;
+    if (c.tipo === 'minimo') e.valor = c.valor;
+    if (c.unidade) e.quantidade = 1;
+    if (c.autocontrole) e.autocontrole = R.autocontrole.padrao;
+    function custoAgora() {
+      if (c.tipo === 'variavel' && e.valor == null) return 'Custo a combinar com o narrador';
+      var v = criador.custoDoTraco(sel);
+      return v === 0 ? 'Grátis' : v > 0 ? 'Custa ' + v + ' pontos' : 'Devolve ' + (-v) + ' pontos';
+    }
+    abrirJanela(t.nome, t.icone, t.resumo, function (corpo, atualizar) {
+      if (c.tipo === 'opcoes') {
+        corpo.appendChild(el('h3', null, 'Qual versão?'));
+        corpo.appendChild(cartoes('versao', c.valores.map(function (v, k) {
+          var va = t.variantes && t.variantes[k];
+          return { titulo: va ? va.nome : 'Opção ' + (k + 1), valor: custoTexto(v) + (c.unidade ? ' por ' + c.unidade : ''), texto: va ? va.resumo : '' };
+        }), 0, function (k) { e.opcao = k; atualizar(); }));
+        if (c.unidade) {
+          corpo.appendChild(el('h3', null, 'Quantas (' + c.unidade + ')?'));
+          corpo.appendChild(inteiro(1, 1, 20, function (v) { e.quantidade = v; atualizar(); }));
+        }
+      } else if (c.tipo === 'niveis') {
+        var max = t.nivel_max || 10;
+        corpo.appendChild(el('h3', null, 'Qual nível?' + (t.nivel_max ? ' (máximo ' + t.nivel_max + ' em Adamar)' : '')));
+        var passo = el('div', 'config-passo');
+        var menos = el('button', 'btn btn-ghost', '−');
+        var mais = el('button', 'btn btn-ghost', '+');
+        var valor = el('strong', 'config-nivel', '1');
+        menos.type = mais.type = 'button';
+        menos.setAttribute('aria-label', 'Diminuir nível');
+        mais.setAttribute('aria-label', 'Aumentar nível');
+        function mostrar() { valor.textContent = String(e.nivel); menos.disabled = e.nivel <= 1; mais.disabled = e.nivel >= max; atualizar(); }
+        menos.addEventListener('click', function () { e.nivel = Math.max(1, e.nivel - 1); mostrar(); });
+        mais.addEventListener('click', function () { e.nivel = Math.min(max, e.nivel + 1); mostrar(); });
+        passo.appendChild(menos); passo.appendChild(valor); passo.appendChild(mais);
+        corpo.appendChild(passo);
+        if (c.rotulo_nivel) corpo.appendChild(el('p', 'config-dica', 'Cada nível: ' + c.rotulo_nivel + '.'));
+        setTimeout(mostrar, 0);
+      } else if (c.tipo === 'faixa') {
+        var lo = Math.min(c.min, c.max), hi = Math.max(c.min, c.max);
+        corpo.appendChild(el('h3', null, 'Quantos pontos? (' + c.min + ' a ' + c.max + ')'));
+        var r = el('input', 'config-faixa');
+        r.type = 'range'; r.min = lo; r.max = hi; r.step = 1; r.value = e.valor;
+        var mostra = el('strong', 'config-nivel', String(e.valor));
+        r.addEventListener('input', function () { e.valor = parseInt(r.value, 10); mostra.textContent = String(e.valor); atualizar(); });
+        corpo.appendChild(r);
+        corpo.appendChild(mostra);
+      } else if (c.tipo === 'minimo') {
+        corpo.appendChild(el('h3', null, 'Quantos pontos? (mínimo ' + c.valor + ')'));
+        corpo.appendChild(inteiro(Math.abs(c.valor), Math.abs(c.valor), 300, function (v) { e.valor = (negativo ? -1 : 1) * v; atualizar(); }));
+      } else if (c.tipo === 'variavel') {
+        corpo.appendChild(el('h3', null, 'Como se calcula'));
+        corpo.appendChild(el('p', 'config-dica', c.como_calcular || 'O custo depende de vários fatores. Combine com o narrador.'));
+        var campo = inteiro(null, 1, 300, function (v) { e.valor = v == null ? null : (negativo ? -1 : 1) * v; atualizar(); });
+        campo.placeholder = 'a combinar';
+        if (c.exemplos && c.exemplos.length) {
+          corpo.appendChild(el('h3', null, 'Exemplos (clique para usar)'));
+          var ex = el('div', 'exemplos-custo');
+          c.exemplos.forEach(function (x) {
+            var b = el('button', 'chip chip-p', x.descricao + ' (' + sinal(x.custo) + ')');
+            b.type = 'button';
+            b.addEventListener('click', function () { e.valor = x.custo; campo.value = Math.abs(x.custo); atualizar(); });
+            ex.appendChild(b);
+          });
+          corpo.appendChild(ex);
+        }
+        corpo.appendChild(el('h3', null, 'Pontos combinados'));
+        corpo.appendChild(campo);
+        corpo.appendChild(el('p', 'config-dica', 'Pode deixar em branco e combinar depois: a ficha fica com esta pendência até você anotar.'));
+      }
+      if (c.autocontrole) {
+        corpo.appendChild(el('h3', null, 'Autocontrole: com que frequência resiste?'));
+        var niveis = R.autocontrole.niveis;
+        corpo.appendChild(cartoes('auto', niveis.map(function (n) {
+          return { titulo: n.numero + ' — ' + n.rotulo, valor: '×' + num(n.multiplicador) };
+        }), niveis.map(function (n) { return n.numero; }).indexOf(R.autocontrole.padrao), function (k) { e.autocontrole = niveis[k].numero; atualizar(); }));
+      }
+      corpo.appendChild(el('h3', null, 'Detalhe (opcional)'));
+      var nota = el('input', 'config-texto');
+      nota.placeholder = 'ex.: de quê, de quem, como se manifesta';
+      nota.maxLength = 120;
+      nota.addEventListener('input', function () { sel.nota = nota.value; });
+      corpo.appendChild(nota);
+    }, custoAgora, function () { aoConfirmar(sel); });
+  }
+
+  function configurarPericia(p, aoConfirmar) {
+    var sel = { id: p.id, pontos: 1, especializacao: '' };
+    function nhAgora() {
+      var rel = calc.nivelPorPontos(p.dificuldade, sel.pontos);
+      var base = (ultimo || criador.resumir(ficha)).valores;
+      var mapa = { DX: 'dx', IQ: 'iq', HT: 'ht', Per: 'per', Vontade: 'vontade' };
+      return 'Custa ' + sel.pontos + (sel.pontos === 1 ? ' ponto' : ' pontos') + (rel == null ? '' : ' · NH ' + (base[mapa[p.atributo]] + rel) + ' (antes de bônus)');
+    }
+    abrirJanela(p.nome, p.icone, p.resumo + ' ' + p.atributo + '/' + p.dificuldade + '.', function (corpo, atualizar) {
+      var lista = (p.especializacoes || []).filter(function (x) { return x.adamar !== 'nao'; });
+      corpo.appendChild(el('h3', null, 'Qual especialização?'));
+      if (lista.length && !p.livre_escolha) {
+        sel.especializacao = lista[0].nome;
+        corpo.appendChild(cartoes('esp', lista.map(function (x) {
+          return { titulo: x.nome, valor: x.adamar === 'narrador' ? 'com o narrador' : '' };
+        }), 0, function (k) { sel.especializacao = lista[k].nome; }));
+      } else {
+        var t = el('input', 'config-texto');
+        t.placeholder = 'escreva qual';
+        t.maxLength = 60;
+        t.addEventListener('input', function () { sel.especializacao = t.value; });
+        corpo.appendChild(t);
+      }
+      corpo.appendChild(el('h3', null, 'Quantos pontos?'));
+      var pts = selectCom(PONTOS_PERICIA.map(function (v) { return [v, v + (v === 1 ? ' ponto' : ' pontos')]; }), 1, 'Pontos');
+      pts.className = 'config-texto';
+      pts.addEventListener('change', function () { sel.pontos = parseInt(pts.value, 10); atualizar(); });
+      corpo.appendChild(pts);
+    }, nhAgora, function () { aoConfirmar(sel); });
   }
 
   // efeitos recolhidos: o resumo mostra quantos de cada tipo; abrir mostra a lista com etiquetas
@@ -868,13 +1067,18 @@
       ],
       ordens: ORDENS_TRACO,
       jaTem: function (t) { return ficha.tracos.some(function (s) { return s.id === t.id; }); },
-      adicionar: function (t) {
-        var sel = { id: t.id, escolha: {} };
-        ficha.tracos.push(sel);
-        // abre sozinho só quando há algo a escolher
-        var c = t.custo_estruturado || {};
-        if (c.tipo !== 'fixo' || c.autocontrole) abertos.add(sel);
-        desenhar();
+      adicionar: function (t, depois) {
+        if (!precisaEscolha(t) || typeof HTMLDialogElement === 'undefined') {
+          ficha.tracos.push({ id: t.id, escolha: {} });
+          desenhar();
+          return true;
+        }
+        configurarTraco(t, function (sel) {
+          ficha.tracos.push(sel);
+          desenhar();
+          depois();
+        });
+        return false;
       }
     });
     atualizadores.push(function (r) {
@@ -1061,7 +1265,19 @@
       ['atributo', 'atributo', function (a, b) { return a.atributo.localeCompare(b.atributo); }]
     ],
     jaTem: function (p) { return !p.especializacao && ficha.pericias.some(function (s) { return s.id === p.id; }); },
-    adicionar: function (p) { ficha.pericias.push({ id: p.id, pontos: 1, especializacao: '' }); desenharPericias(); }
+    adicionar: function (p, depois) {
+      if (!p.especializacao || typeof HTMLDialogElement === 'undefined') {
+        ficha.pericias.push({ id: p.id, pontos: 1, especializacao: '' });
+        desenharPericias();
+        return true;
+      }
+      configurarPericia(p, function (sel) {
+        ficha.pericias.push(sel);
+        desenharPericias();
+        depois();
+      });
+      return false;
+    }
   });
 
   // ---------- 7. equipamento ----------

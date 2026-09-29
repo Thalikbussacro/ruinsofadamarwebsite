@@ -2158,6 +2158,51 @@ body.modo-app .deco { display: none; }
 .jogar-opcao span { font-size: 0.95rem; line-height: 1.4; color: #c4b89f; }
 .jogar-opcao .jogar-glifo { font-size: 1.8rem; line-height: 1; color: var(--ouro-claro); }
 
+/* criador: janela de escolha (versão, nível, autocontrole, especialização) */
+.config-dialogo {
+  width: min(36rem, calc(100vw - 1.5rem));
+  max-height: calc(100dvh - 2rem);
+  padding: 1.2rem 1.25rem 1rem;
+  overflow: auto;
+  color: var(--osso);
+  background: linear-gradient(180deg, #221f1b, #141210);
+  border: 1px solid var(--ouro-linha);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8), 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+.config-dialogo::backdrop { background: rgba(5, 4, 3, 0.75); }
+.config-cab { display: flex; align-items: center; gap: 0.6rem; padding-right: 2rem; }
+.config-cab h2 { margin: 0; font-size: 1.35rem; color: var(--ouro-claro); }
+.config-icone { width: 1.8rem; height: 1.8rem; color: var(--ouro-claro); }
+.config-resumo { margin: 0.4rem 0 0; color: #c4b89f; }
+.config-corpo h3 { margin: 1rem 0 0.4rem; font-family: var(--f-corpo); font-size: 1rem; font-weight: 700; letter-spacing: 0; color: var(--osso-claro); }
+.config-opcoes { display: grid; gap: 0.4rem; }
+.config-opcao { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.6rem; align-items: start; padding: 0.55rem 0.7rem; background: rgba(255, 244, 220, 0.035); border: 1px solid var(--ouro-fio); cursor: pointer; }
+.config-opcao:has(input:checked) { border-color: var(--ouro); background: rgba(110, 31, 26, 0.3); }
+.config-opcao input { margin-top: 0.3rem; accent-color: var(--sangue-vivo); }
+.config-opcao-texto { display: grid; gap: 0.1rem; }
+.config-opcao-texto strong { color: var(--osso-claro); }
+.config-opcao-valor { font-family: var(--f-titulo); font-size: 0.85rem; color: var(--ouro-claro); }
+.config-opcao-desc { font-size: 0.92rem; color: #c4b89f; }
+.config-passo { display: flex; align-items: center; gap: 0.9rem; }
+.config-passo .btn { width: 2.6rem; padding: 0.3rem 0; font-size: 1.2rem; }
+.config-nivel { min-width: 2rem; font-family: var(--f-titulo); font-size: 1.6rem; text-align: center; color: var(--ouro-claro); }
+.config-faixa { width: 100%; accent-color: var(--sangue-vivo); }
+.config-dica { margin: 0.2rem 0 0; font-size: 0.92rem; color: #c4b89f; }
+.config-corpo input[type="number"], .config-texto {
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  font-family: var(--f-corpo);
+  font-size: 1rem;
+  color: var(--osso-claro);
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--ouro-linha);
+}
+.config-texto option { color: var(--osso-claro); background: var(--pedra); }
+.config-pe { position: sticky; bottom: -1rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin: 1.1rem -1.25rem -1rem; padding: 0.8rem 1.25rem; background: #141210; border-top: 1px solid var(--ouro-fio); }
+.config-custo { flex: 1 1 100%; font-family: var(--f-titulo); color: var(--ouro-claro); }
+.config-pe .btn { flex: 1 1 auto; }
+@media (min-width: 520px) { .config-pe { flex-wrap: nowrap; } .config-custo { flex: 1 1 auto; min-width: 0; } .config-pe .btn { flex: 0 0 auto; } }
+
 /* Celular: a tela também fica parada. Em cima, o saldo numa linha e as etapas; embaixo, Voltar · Salvar · Continuar;
    no meio, só o conteúdo rola. */
 @media (max-width: 899px) {

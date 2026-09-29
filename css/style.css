@@ -2301,6 +2301,18 @@ body.modo-app .deco { display: none; }
 .manobras-lista .manobra-meta { font-style: italic; color: #a39780; }
 @media print { .manobras { display: none !important; } }
 
+.combate-indice { margin: 1rem 0 0; padding: 0.5rem 0.8rem; font-family: var(--f-titulo); font-size: 0.9rem; letter-spacing: 0.04em; text-align: center; background: rgba(14, 13, 12, 0.45); border: 1px solid var(--ouro-fio); }
+
+/* diário da sessão */
+.diario { margin-top: 0.8rem; }
+.scroll .diario h4, .diario h4 { margin: 0 0 0.2rem; font-size: 0.9rem; letter-spacing: 0.06em; color: var(--ouro-claro); }
+.diario-lista { margin: 0.5rem 0 0; padding: 0; list-style: none; font-size: 0.93rem; }
+.diario-lista li { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 0.6rem; align-items: baseline; margin: 0; padding: 0.2rem 0; border-bottom: 1px solid rgba(168, 136, 74, 0.1); }
+.diario-quando { font-family: var(--f-titulo); font-size: 0.78rem; color: #a39780; white-space: nowrap; }
+.diario-rolagem .diario-texto { color: #c4b89f; font-style: italic; }
+.rolagem-diario { justify-self: start; font-size: 0.8rem; }
+.rolagem-diario:disabled { color: #a9c47f; text-decoration: none; cursor: default; }
+
 /* Celular: a tela também fica parada. Em cima, o saldo numa linha e as etapas; embaixo, Voltar · Salvar · Continuar;
    no meio, só o conteúdo rola. */
 @media (max-width: 899px) {

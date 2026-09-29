@@ -42,6 +42,7 @@
 
   // ---------- rolador: clicar num número rola 3d contra ele (ou o dano); quadro com as últimas rolagens ----------
   var ARMAZENAMENTO_ROLAGENS = 'adamar-rolagens';
+  var diarioAlvo = null; // { registrar(entrada) } quando uma ficha completa está aberta
   var ARMAZENAMENTO_MOD = 'adamar-rolagens-mod';
   var modificador = { valor: 0, motivo: '' };
   try { modificador = JSON.parse(sessionStorage.getItem(ARMAZENAMENTO_MOD) || 'null') || modificador; } catch (e) { /* sem armazenamento */ }
@@ -129,6 +130,18 @@
       li.appendChild(el('strong', null, x.rotulo));
       li.appendChild(el('span', 'rolagem-conta', x.conta));
       if (x.resultado) li.appendChild(el('span', 'rolagem-resultado', x.resultado));
+      if (diarioAlvo) {
+        var paraDiario = el('button', 'btn-link rolagem-diario', x.noDiario ? 'no diário ✓' : '→ diário');
+        paraDiario.type = 'button';
+        paraDiario.disabled = !!x.noDiario;
+        paraDiario.addEventListener('click', function () {
+          diarioAlvo.registrar({ tipo: 'rolagem', texto: x.rotulo + ': ' + x.conta + (x.resultado ? ' → ' + x.resultado : '') });
+          x.noDiario = true;
+          guardarRolagens();
+          desenharRolagens();
+        });
+        li.appendChild(paraDiario);
+      }
       ul.appendChild(li);
     });
   }
@@ -253,6 +266,11 @@
       if (R.manobras) {
         var det = el('details', 'manobras');
         det.appendChild(el('summary', null, 'Manobras de combate (resumo, pág. ' + R.manobras.ref.pagina + '–' + (R.manobras.ref.pagina + 1) + ')'));
+        var lk = el('p', 'combate-nota');
+        var aLk = el('a', null, 'Consulta rápida de combate completa');
+        aLk.href = 'combate.html';
+        lk.appendChild(aLk);
+        det.appendChild(lk);
         det.appendChild(el('p', 'combate-nota', R.manobras.resumo));
         var dl = el('dl', 'manobras-lista');
         R.manobras.itens.forEach(function (m) {
@@ -312,6 +330,15 @@
       if (extra) c.appendChild(extra);
       return c;
     }
+    function registrarNoDiario(entrada) {
+      var salvo = arquivo.obter(idFicha);
+      if (!salvo) return;
+      var agora = new Date();
+      var lista = ((salvo.em_jogo || {}).diario || []).slice();
+      lista.unshift(Object.assign({ data: agora.toISOString().slice(0, 10), hora: agora.toTimeString().slice(0, 5) }, entrada));
+      salvarEmJogo({ diario: lista.slice(0, 300) });
+    }
+    if (!compacto) diarioAlvo = { registrar: registrarNoDiario };
     function desenhar() {
       box.textContent = '';
       var salvo = arquivo.obter(idFicha);
@@ -397,6 +424,44 @@
         box.appendChild(ul);
       }
       if (!compacto) {
+        var diario = el('div', 'diario');
+        diario.appendChild(el('h4', null, 'Diário'));
+        var novo = el('form', 'em-jogo-ganho');
+        var texto = el('input');
+        texto.placeholder = 'o que aconteceu (ex.: sessão 3, chegamos a Fontest)';
+        texto.maxLength = 200;
+        texto.setAttribute('aria-label', 'Nova entrada do diário');
+        var btD = el('button', 'btn btn-ghost', 'Registrar');
+        btD.type = 'submit';
+        novo.appendChild(texto);
+        novo.appendChild(btD);
+        novo.addEventListener('submit', function (ev) {
+          ev.preventDefault();
+          if (!texto.value.trim()) return;
+          registrarNoDiario({ tipo: 'nota', texto: texto.value.trim() });
+        });
+        diario.appendChild(novo);
+        if (e.diario && e.diario.length) {
+          var dl = el('ol', 'diario-lista');
+          e.diario.slice(0, 15).forEach(function (d, i) {
+            var li = el('li', 'diario-' + d.tipo);
+            li.appendChild(el('span', 'diario-quando', d.data.split('-').reverse().join('/') + (d.hora ? ' ' + d.hora : '')));
+            li.appendChild(el('span', 'diario-texto', d.texto));
+            var apaga = el('button', 'btn-link', '×');
+            apaga.type = 'button';
+            apaga.setAttribute('aria-label', 'Apagar entrada');
+            apaga.addEventListener('click', function () {
+              var lista = e.diario.slice();
+              lista.splice(i, 1);
+              salvarEmJogo({ diario: lista });
+            });
+            li.appendChild(apaga);
+            dl.appendChild(li);
+          });
+          diario.appendChild(dl);
+          if (e.diario.length > 15) diario.appendChild(el('p', 'combate-nota', '+' + (e.diario.length - 15) + ' entradas mais antigas guardadas.'));
+        }
+        box.appendChild(diario);
         var notas = el('textarea', 'em-jogo-notas');
         notas.rows = 3;
         notas.maxLength = 2000;

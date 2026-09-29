@@ -591,12 +591,12 @@
       if (pf <= -pfMax) efeitos.push({ grave: 3, texto: 'Inconsciente de exaustão (−1× os PF); acorda quando os PF voltarem a ser positivos.' });
       else {
         if (pf < pfMax / 3) { desl = metade(desl); esq = metade(esq); st = metade(st); efeitos.push({ grave: 1, texto: 'Menos de 1/3 dos PF: muito cansado, deslocamento, esquiva e ST pela metade (não muda PV nem dano).' }); }
-        if (pf <= 0) efeitos.push({ grave: 2, texto: 'PF zero ou negativo: à beira do colapso; cada PF perdido tira também 1 PV, e agir exige força de vontade (veja a pág. 328).' });
+        if (pf <= 0) efeitos.push({ grave: 2, texto: 'PF zero ou negativo: à beira do colapso; cada PF perdido tira também 1 PV, e é preciso um teste de Vontade antes de qualquer manobra que não seja Fazer Nada.' });
       }
       return {
         pv: pv, pv_max: pvMax, pf: pf, pf_max: pfMax,
         deslocamento: desl, esquiva: esq, st: st,
-        pontos: j.pontos || 0, historico: j.historico || [], dinheiro: typeof j.dinheiro === 'number' ? j.dinheiro : r.dinheiro_restante, notas: j.notas || '',
+        pontos: j.pontos || 0, historico: j.historico || [], diario: j.diario || [], dinheiro: typeof j.dinheiro === 'number' ? j.dinheiro : r.dinheiro_restante, notas: j.notas || '',
         efeitos: efeitos
       };
     }

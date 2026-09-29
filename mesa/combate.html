@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Combate: consulta rápida — Ruínas de Adamar</title>
+  <meta name="description" content="Consulta rápida de combate GURPS para a mesa de Adamar: ordem de ação, manobras, ataque, defesas, dano, ferimentos e fadiga, com a página do livro.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=099a90c2">
+  <script src="../js/whatsapp.js?v=07e0615b" defer></script>
+  <script src="../js/site.js?v=49e4758b" defer></script>
+  <script src="../js/dados-gurps.js?v=0d371ac3" defer></script>
+  <script src="../js/combate.js?v=e7f0767d" defer></script>
+</head>
+<body data-root="../" data-page="mesa/combate.html">
+  <main id="conteudo" class="page page-wide">
+    <article class="scroll">
+      <header class="page-head">
+        <p class="kicker">À Mesa · GURPS</p>
+        <h1>Combate: consulta rápida</h1>
+        <p class="lede">Um segundo por turno, uma manobra por segundo. O resto está aqui.</p>
+      </header>
+
+      <p>Resumo com as nossas palavras das regras de combate do <em>Módulo Básico</em> (Combate Lite, págs. 324–328). Na dúvida, vale o livro e a palavra do narrador. Os números de cada personagem ficam na ficha, no <a href="personagens.html">Cofre</a>, onde dá para clicar e rolar.</p>
+
+      <nav class="combate-indice" aria-label="Nesta página">
+        <a href="#turno">Turno</a> · <a href="#manobras">Manobras</a> · <a href="#ataque">Ataque</a> · <a href="#defesa">Defesa</a> · <a href="#dano">Dano</a> · <a href="#ferimentos">Ferimentos</a> · <a href="#fadiga">Fadiga</a>
+      </nav>
+
+      <section id="turno">
+        <h2>Turno e ordem de ação</h2>
+        <p id="c-iniciativa">Quem tem a maior Velocidade Básica age primeiro, e a ordem vale para o combate inteiro. Empate: age antes quem tem mais DX; se ainda empatar, o Mestre sorteia.</p>
+        <p>Cada turno representa um segundo. No seu turno, o personagem escolhe <strong>uma manobra</strong>. Ela diz o que ele faz, quanto se move e como pode se defender até o próximo turno.</p>
+      </section>
+
+      <div class="ornament" aria-hidden="true"></div>
+
+      <section id="manobras">
+        <h2>Manobras</h2>
+        <div class="table-wrap"><table id="c-manobras"></table></div>
+        <p class="field-hint">Págs. 324–325.</p>
+      </section>
+
+      <div class="ornament" aria-hidden="true"></div>
+
+      <section id="ataque">
+        <h2>Ataque</h2>
+        <ol>
+          <li><strong>Jogada de ataque:</strong> 3d contra o NH na arma, com os modificadores da situação. Tirou o NH ou menos, acertou, a não ser que o alvo se defenda.</li>
+          <li><strong>Defesa do alvo:</strong> se ele puder e souber do ataque, rola uma defesa ativa (veja abaixo). Conseguiu, escapou.</li>
+          <li><strong>Dano:</strong> se a defesa falhou, rola o dano da arma.</li>
+        </ol>
+        <h3>Crítico</h3>
+        <ul>
+          <li><strong>Golpe fulminante (sucesso decisivo):</strong> 3 ou 4 sempre; 5 com NH 15 ou mais; 6 com NH 16 ou mais. Ignora a defesa do alvo. Com 3, o dano é o máximo possível, sem rolar.</li>
+          <li><strong>Sempre erra:</strong> 17 ou 18, qualquer que seja o NH.</li>
+        </ul>
+        <h3>Ajustes comuns</h3>
+        <ul>
+          <li><strong>Apontar</strong> antes de atirar: soma a Precisão da arma (+1 com 2 segundos mirando, +2 com 3 ou mais).</li>
+          <li><strong>Ataque Total:</strong> +4 no acerto corpo a corpo (ou +1 à distância), sem defesa até o próximo turno.</li>
+          <li><strong>Avançar e Atacar:</strong> −4 corpo a corpo (NH no máximo 9) ou −2 (ou a Magnitude da arma) à distância.</li>
+          <li><strong>Distância, velocidade e tamanho do alvo</strong> também mudam o NH à distância: veja a tabela do livro (pág. 326).</li>
+        </ul>
+      </section>
+
+      <div class="ornament" aria-hidden="true"></div>
+
+      <section id="defesa">
+        <h2>Defesas ativas</h2>
+        <p>O alvo escolhe <strong>uma</strong> defesa e rola 3d contra ela. Quem não sabe do ataque, está inconsciente ou imobilizado não se defende.</p>
+        <ul>
+          <li><strong>Esquiva:</strong> Velocidade Básica + 3 (sem frações), menos o nível de carga. Serve contra quase tudo que o personagem vê vindo.</li>
+          <li><strong>Aparar:</strong> metade do NH na arma + 3 (arredondando para baixo), mais o bônus de aparar da arma. Precisa de uma arma preparada ou, desarmado, de uma mão livre.</li>
+          <li><strong>Bloqueio:</strong> metade do NH em Escudo (ou Capa) + 3.</li>
+          <li><strong>Escudo:</strong> o bônus de defesa dele soma em todas as defesas contra ataques vindos da frente.</li>
+          <li><strong>Atordoado:</strong> −4 nas defesas.</li>
+        </ul>
+        <p class="field-hint">Págs. 324–327.</p>
+      </section>
+
+      <div class="ornament" aria-hidden="true"></div>
+
+      <section id="dano">
+        <h2>Dano</h2>
+        <ol>
+          <li>Rola o dano da arma.</li>
+          <li>Tira a RD (proteção) da armadura no local atingido. O que passar é o <strong>dano penetrante</strong>; se não passar nada, a armadura segurou.</li>
+          <li>Multiplica pelo tipo do golpe: <strong>contusão ×1</strong>, <strong>corte ×1,5</strong>, <strong>perfuração ×2</strong>. Outros tipos no livro (pág. 326).</li>
+          <li>O resultado sai dos PV do alvo.</li>
+        </ol>
+        <ul>
+          <li><strong>Choque:</strong> no turno seguinte, −1 em DX, IQ e perícias por PV perdido (no máximo −4).</li>
+          <li><strong>Ferimento grave:</strong> um único golpe que tira mais da metade dos PV. Teste de HT: falhou, fica atordoado ou cai; falhou por 5 ou mais, desmaia.</li>
+        </ul>
+      </section>
+
+      <div class="ornament" aria-hidden="true"></div>
+
+      <section id="ferimentos">
+        <h2>Ferimentos (PV)</h2>
+        <ul>
+          <li><strong>Menos de 1/3 dos PV:</strong> cambaleando. Deslocamento e Esquiva pela metade (arredondando para cima).</li>
+          <li><strong>0 PV ou menos:</strong> teste de HT a cada turno para não desmaiar.</li>
+          <li><strong>−1× os PV</strong> (ex.: −10 para quem tem 10 PV): teste de HT para não morrer. Repete a cada novo múltiplo (−2×, −3×…).</li>
+          <li><strong>−5× os PV:</strong> morte.</li>
+        </ul>
+        <h3>Recuperação</h3>
+        <ul>
+          <li><strong>Desmaiado com 1 PV ou mais:</strong> acorda sozinho depois de 15 minutos.</li>
+          <li><strong>Desmaiado com 0 PV ou menos:</strong> teste de HT por hora para acordar.</li>
+          <li><strong>Desmaiado a −1× os PV ou pior:</strong> um único teste de HT depois de 12 horas; sem ajuda médica, novos testes a cada 12 horas, e uma falha é a morte.</li>
+          <li><strong>Cura natural:</strong> descansando e comendo bem, teste de HT no fim de cada dia; sucesso recupera 1 PV.</li>
+        </ul>
+        <p class="field-hint">Págs. 327–328.</p>
+      </section>
+
+      <div class="ornament" aria-hidden="true"></div>
+
+      <section id="fadiga">
+        <h2>Fadiga (PF)</h2>
+        <ul>
+          <li><strong>Menos de 1/3 dos PF:</strong> muito cansado. Deslocamento, Esquiva e ST pela metade (não muda PV nem dano).</li>
+          <li><strong>0 PF ou menos:</strong> à beira do colapso. Cada PF perdido também tira 1 PV, e é preciso um teste de Vontade antes de qualquer manobra que não seja Fazer Nada.</li>
+          <li><strong>−1× os PF:</strong> desmaia de exaustão e só acorda quando os PF voltarem a ser positivos.</li>
+          <li><strong>Descanso:</strong> recupera 1 PF a cada 10 minutos (ler, falar e pensar não atrapalham).</li>
+        </ul>
+        <p class="field-hint">Pág. 328.</p>
+      </section>
+
+      <nav class="page-links">
+        <a rel="prev" href="regras.html">‹ Regras</a>
+        <a class="next" rel="next" href="personagens.html">Cofre de personagens ›</a>
+      </nav>
+    </article>
+  </main>
+  <noscript><p class="noscript">Menu: <a href="../index.html">Início</a> · <a href="../mundo/visao-geral.html">O Mundo</a> · <a href="../canone/materialidade.html">Cânone</a> · <a href="../personagens/criando.html">Personagens</a> · <a href="../mesa/regras.html">À Mesa</a> · <a href="../cronicas/mito-da-criacao.html">Crônicas</a></p></noscript>
+</body>
+</html>

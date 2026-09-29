@@ -120,9 +120,12 @@
       if (!f || !f.entradas) return null;
       var e = escolhas || {};
       var base = null, fixo = null, ajuste = 0, mult = 1;
+      var numero = null;
       for (var i = 0; i < f.entradas.length; i++) {
         var ent = f.entradas[i];
         var k = e[ent.id];
+        if (ent.tipo === 'booleano') { if (k) base = (base || 0) + (ent.custo_adicional || 0); continue; }
+        if (ent.tipo === 'numero') { if (typeof k !== 'number' || isNaN(k)) return null; numero = k; continue; }
         if (k == null || !ent.opcoes || !ent.opcoes[k]) {
           if (ent.opcional) continue;
           return null;
@@ -134,8 +137,12 @@
         if (o.multiplicador != null) mult *= o.multiplicador;
       }
       if (fixo != null) base = fixo;
+      // Favor: um quinto do custo da vantagem que ele representa
+      if (id === 'favor') return numero == null ? null : arredAfastado(numero / 5);
       if (base == null) return null;
       var custo = arredAfastado((base + ajuste) * mult);
+      if (id === 'contatos') custo = Math.max(1, custo);
+      if (id === 'grupo-de-contato') custo *= 5;
       var pct = (f.modificadores || []).filter(function (m) { return (e.modificadores || []).indexOf(m.nome) !== -1; })
         .reduce(function (s, m) { return s + m.percentual; }, 0);
       return pct ? arredAfastado(custo * (1 + pct / 100)) : custo;

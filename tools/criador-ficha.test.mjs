@@ -199,6 +199,9 @@ assert.equal(sold.combate.db, 2);
 assert.equal(sold.combate.defesas.aparar, 9 + 2); // 13/2+3 = 9, +2 do escudo
 assert.equal(sold.combate.protecao['tronco'].rd, 4);
 assert.equal(sold.combate.carga.nome, 'Leve');
+// ataques desarmados: soco sempre; o Soldado está de botas, então chute com botas
+assert.ok(sold.combate.armas.some((a) => a.nome === 'Soco' && a.natural));
+assert.ok(sold.combate.armas.some((a) => a.nome === 'Chute com Botas'));
 // faca: alcance C
 const cac = c2.resumir(c2.aplicarModelo(c2.fichaNova(), modelos.find((m) => m.id === 'cacador')));
 assert.ok(cac.combate.armas.some((a) => a.nome === 'Faca' && a.alcance === 'C'));

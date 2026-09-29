@@ -879,9 +879,26 @@
         };
         corpo.appendChild(el('p', 'config-dica', 'Escolha cada fator: o custo sai pela fórmula do livro (pág. ' + (fo.ref ? fo.ref.pagina : t.ref.pagina) + '). Combine os detalhes com o narrador.'));
         fo.entradas.forEach(function (ent) {
-          corpo.appendChild(el('h3', null, (ent.descricao ? ent.descricao.charAt(0).toUpperCase() + ent.descricao.slice(1) : ent.id.replace(/_/g, ' ')) + (ent.opcional ? ' (opcional)' : '')));
+          var titulo = (ent.descricao ? ent.descricao.charAt(0).toUpperCase() + ent.descricao.slice(1) : ent.id.charAt(0).toUpperCase() + ent.id.slice(1).replace(/_/g, ' '));
+          if (ent.tipo === 'booleano') {
+            var lb = el('label', 'check filtro-narrador config-mod');
+            var cb = el('input');
+            cb.type = 'checkbox';
+            cb.addEventListener('change', function () { e.formula[ent.id] = cb.checked; recalcular(); });
+            lb.appendChild(cb);
+            lb.appendChild(el('span', null, titulo + ' (+' + (ent.custo_adicional || 0) + ')'));
+            corpo.appendChild(lb);
+            return;
+          }
+          corpo.appendChild(el('h3', null, titulo + (ent.opcional ? ' (opcional)' : '')));
+          if (ent.tipo === 'numero') {
+            var n = inteiro(null, 1, 300, function (v) { if (v == null) delete e.formula[ent.id]; else e.formula[ent.id] = v; recalcular(); });
+            n.className = 'config-texto';
+            corpo.appendChild(n);
+            return;
+          }
           var ops = [['', ent.opcional ? 'Não se aplica' : 'Escolha…']].concat(ent.opcoes.map(function (o, k) {
-            var rot = o.rotulo || (o.ate != null ? 'até ' + Math.round(o.ate * 100) + '% dos seus pontos' : o.pontos_absolutos_max != null ? 'até ' + o.pontos_absolutos_max + ' pontos' : o.de != null ? o.de + ' a ' + o.ate : 'opção ' + (k + 1));
+            var rot = o.rotulo || (o.nh != null ? 'NH ' + o.nh : null) || (o.ate != null ? 'até ' + Math.round(o.ate * 100) + '% dos seus pontos' : o.pontos_absolutos_max != null ? 'até ' + o.pontos_absolutos_max + ' pontos' : o.de != null ? o.de + ' a ' + o.ate : 'opção ' + (k + 1));
             var efeito = o.custo != null ? ' (' + sinal(o.custo) + ')' : o.multiplicador != null ? ' (×' + num(o.multiplicador) + ')' : o.ajuste != null ? ' (' + sinal(o.ajuste) + ')' : '';
             return [k, rot + efeito];
           }));
@@ -1449,7 +1466,7 @@
       box.appendChild(t);
     }
     var locais = Object.keys(cb.protecao);
-    if (locais.length) box.appendChild(el('p', 'combate-nota', 'Proteção (RD): ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd; }).join(' · ')));
+    if (locais.length) box.appendChild(el('p', 'combate-nota', 'Proteção (RD): ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd + (cb.protecao[l].so_frente ? ' (só frente)' : ''); }).join(' · ')));
   }
   atualizadores.push(function (r) { desenharCombate(document.getElementById('c-combate'), r); });
 

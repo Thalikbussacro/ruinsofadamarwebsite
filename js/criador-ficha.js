@@ -202,11 +202,21 @@
           String(it.protecao.local || '').split(/,\s*/).filter(Boolean).forEach(function (l) {
             var atual = protecao[l] || { rd: 0, itens: [] };
             atual.rd += it.protecao.rd || 0;
+            if (it.protecao.so_frente) atual.so_frente = true;
+            if (it.protecao.flexivel) atual.flexivel = true;
             atual.itens.push(it.nome + ' (' + it.protecao.texto + ')');
             protecao[l] = atual;
           });
         }
-        if (it.combate) {
+        if (it.combate) adicionarArma(it);
+      });
+      // ataques desarmados: todo mundo tem soco e chute (com botas, o chute é mais forte)
+      var calcado = ficha.equipamento.some(function (sel) { return /^(botas|sollerets)$/.test(sel.id); });
+      [ITEM.soco, calcado ? ITEM['chute-com-botas'] : ITEM.chute].forEach(function (it) {
+        if (it && it.combate) adicionarArma(it, true);
+      });
+      function adicionarArma(it, natural) {
+        {
           it.combate.modos.forEach(function (m) {
             var melhor = null;
             (it.combate.pericias || []).forEach(function (u) {
@@ -223,11 +233,11 @@
               item: it, nome: it.nome + (m.nome ? ' — ' + m.nome : ''), dano: textoDano(m.dano, basico),
               alcance: textoAlcance(m.alcance, valores.st), nh: nh, pericia: melhor ? melhor.como : 'sem perícia',
               aparar: m.aparar && m.aparar.mod != null && nh != null ? Math.floor(nh / 2) + 3 + m.aparar.mod + (m.aparar.desbalanceada ? 'D' : '') : null,
-              st: stMin || null, precisao: m.precisao != null ? m.precisao : null
+              st: stMin || null, precisao: m.precisao != null ? m.precisao : null, natural: !!natural
             });
           });
         }
-      });
+      }
       pesoTotal = Math.round(pesoTotal * 100) / 100;
       var nivel = calc.nivelDeCarga(valores.st, pesoTotal);
       var niveis = R.carga.niveis;
@@ -525,7 +535,7 @@
           (cb.defesas.bloqueio != null ? ' · Bloqueio ' + cb.defesas.bloqueio : '') + ' · carga ' + cb.carga.nome + ' (' + num(cb.peso_total) + ' kg, deslocamento ' + cb.carga.deslocamento + ')');
         cb.armas.forEach(function (a) { L.push('- ' + a.nome + ': ' + a.dano + ', NH ' + (a.nh == null ? '—' : a.nh) + (a.aparar != null ? ', aparar ' + a.aparar : '') + ', alcance ' + a.alcance); });
         var locais = Object.keys(cb.protecao);
-        if (locais.length) L.push('RD: ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd; }).join(', '));
+        if (locais.length) L.push('RD: ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd + (cb.protecao[l].so_frente ? ' (só frente)' : ''); }).join(', '));
       }
       var eq = ficha.equipamento.map(function (e) {
         var it = ITEM[e.id];

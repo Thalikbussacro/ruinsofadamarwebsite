@@ -75,7 +75,7 @@
       box.appendChild(t);
     }
     var locais = Object.keys(cb.protecao);
-    if (locais.length) box.appendChild(el('p', 'combate-nota', 'Proteção (RD): ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd; }).join(' · ')));
+    if (locais.length) box.appendChild(el('p', 'combate-nota', 'Proteção (RD): ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd + (cb.protecao[l].so_frente ? ' (só frente)' : ''); }).join(' · ')));
     return box;
   }
 
@@ -484,6 +484,30 @@
       })));
     }
     box.appendChild(per);
+
+    // perícias sem treino: o que o personagem ainda consegue tentar (as melhores entre as de Adamar)
+    var compradas = {};
+    r.pericias.forEach(function (x) { if (x.pericia) compradas[x.pericia.id] = true; });
+    var semTreino = G.pericias.filter(function (p) { return p.adamar === 'livre' && !compradas[p.id]; })
+      .map(function (p) { return { p: p, nh: r.combate.sem_treino(p) }; })
+      .filter(function (x) { return x.nh != null; })
+      .sort(function (a, b) { return b.nh - a.nh || a.p.nome.localeCompare(b.p.nome, 'pt-BR'); })
+      .slice(0, 15);
+    if (semTreino.length) {
+      var st = bloco('Sem treino (as melhores)', 'ficha-largo');
+      st.appendChild(el('p', 'combate-nota', 'Perícias que o personagem não comprou, mas pode tentar pelo valor pré-definido do livro.'));
+      var ul = el('ul', 'cofre-lista sem-treino');
+      semTreino.forEach(function (x) {
+        var li = el('li');
+        var ic = window.iconeSvg && window.iconeSvg(x.p.icone, 'icone-item');
+        if (ic) li.appendChild(ic);
+        li.appendChild(el('span', 'cofre-item-nome', x.p.nome));
+        li.appendChild(el('span', 'cofre-item-valor', String(x.nh)));
+        ul.appendChild(li);
+      });
+      st.appendChild(ul);
+      box.appendChild(st);
+    }
 
     // equipamento
     var eq = bloco('Equipamento', 'ficha-largo');

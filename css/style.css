@@ -2216,6 +2216,8 @@ body.modo-app .deco { display: none; }
 .combate-resumo { margin-bottom: 1rem; padding-bottom: 0.8rem; border-bottom: 1px solid var(--ouro-fio); }
 .app-fisico { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
+.sem-treino { grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); column-gap: 1.2rem; }
+
 /* Celular: a tela também fica parada. Em cima, o saldo numa linha e as etapas; embaixo, Voltar · Salvar · Continuar;
    no meio, só o conteúdo rola. */
 @media (max-width: 899px) {

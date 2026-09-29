@@ -155,6 +155,16 @@ assert.equal(c.custoFormula('patronos', { poder: 0, frequencia: 2, modificadores
 assert.equal(c.custoFormula('inimigos', { poder: 2, intencao: 1, frequencia: 2 }), -10);
 // dependente com 50% dos pontos (-5), amigo (×1), 12 ou menos (×2) = -10
 assert.equal(c.custoFormula('dependentes', { pontos_relativos: 2, importancia: 1, frequencia: 1 }), -10);
+// contato NH 15 (2), com frequência (×1), razoavelmente confiável (×2) = 4; com informação sobrenatural (+1) = 6
+assert.equal(c.custoFormula('contatos', { nh_efetivo: 1, frequencia: 3, confiabilidade: 1 }), 4);
+assert.equal(c.custoFormula('contatos', { nh_efetivo: 1, informacao_sobrenatural: true, frequencia: 3, confiabilidade: 1 }), 6);
+// mínimo 1: NH 12 (1), esporadicamente (×0,5), não confiável (×0,5) = 0,25 → 1
+assert.equal(c.custoFormula('contatos', { nh_efetivo: 0, frequencia: 4, confiabilidade: 3 }), 1);
+// grupo de contato NH 12 (1), com frequência (×1), meio confiável (×1) = 1 × 5 = 5
+assert.equal(c.custoFormula('grupo-de-contato', { nh_efetivo: 0, frequencia: 3, confiabilidade: 2 }), 5);
+// favor de um aliado que custaria 12 = 12/5 → 3
+assert.equal(c.custoFormula('favor', { vantagem_subjacente: 0, custo_subjacente: 12 }), 3);
+assert.equal(c.custoFormula('favor', { vantagem_subjacente: 0 }), null);
 // falta escolher algo obrigatório
 assert.equal(c.custoFormula('patronos', { poder: 0 }), null);
 console.log('gurps-calculo ok');

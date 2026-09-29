@@ -1,0 +1,748 @@
+{
+  "lista": "pericias",
+  "itens": {
+    "danca": {
+      "descricao": "Dança serve para se sair bem em bailes, festas e danças cerimoniais, do salão do senhor feudal à celebração de aldeia. O teste mede se você acompanha o ritmo, os passos combinados e a etiqueta de par sem pisar em ninguém nem parecer deslocado.\n\nTambém cobre dançar como parte de um espetáculo ou ritual, e pode ser usada para causar boa impressão numa reunião social importante. Não ajuda em combate nem substitui perícias de acrobacia ou furtividade: um bom dançarino pode ainda tropeçar numa masmorra escura.",
+      "exemplos": [
+        "Você tenta impressionar a corte de um barão dançando na estação sem pisar no vestido da acompanhante.",
+        "Numa festa de colheita na aldeia, dançar bem rende bebida grátis e boa vontade dos moradores.",
+        "Um espião finge ser um nobre visitante e precisa dançar de forma convincente para não levantar suspeita."
+      ],
+      "dica_mesa": "Use como teste social de cor, não como substituto de Furtividade ou Acrobacia.",
+      "relacionados": [
+        "esportes",
+        "encenacao-de-combate"
+      ]
+    },
+    "deteccao-de-mentiras": {
+      "descricao": "Detecção de Mentiras permite perceber que alguém está mentindo, não qual é a verdade. Ao suspeitar de uma fala, você faz um teste; se a outra pessoa estiver realmente blefando com jeito, vira uma disputa entre as duas perícias, e não um teste isolado seu.\n\nA perícia não funciona sobre afirmações vagas ou meias-verdades bem construídas, só sobre mentiras deliberadas na conversa. Falhar não significa que a pessoa disse a verdade, só que você não percebeu nada de estranho; testar de novo sobre a mesma fala não ajuda.",
+      "exemplos": [
+        "O guarda da muralha jura que não viu ninguém passar à noite; você desconfia pelo jeito como ele evita seu olhar.",
+        "Um mercador de ervas garante que o frasco é remédio legítimo; algo no tom dele soa falso.",
+        "Durante o interrogatório de um prisioneiro, você tenta perceber quando ele começa a inventar detalhes."
+      ],
+      "dica_mesa": "Narre a sensação (algo não bate), não a mentira em si; o jogador ainda precisa investigar para confirmar.",
+      "relacionados": [
+        "linguagem-corporal",
+        "dissimulacao",
+        "interrogatorio"
+      ]
+    },
+    "diagnose": {
+      "descricao": "Diagnose é a perícia de examinar alguém e descobrir que doença ou ferimento ele tem, e não de tratá-lo. Você observa sintomas, faz perguntas, apalpa e escuta, levando um tempo para chegar a uma conclusão; pressa e falta de luz ou privacidade atrapalham o exame.\n\nÉ o passo que normalmente vem antes de Medicina, Primeiros Socorros ou Cirurgia: primeiro se descobre o problema, depois se aplica o tratamento certo. Sem instrumentos e sem tempo, mesmo um bom médico pode errar o diagnóstico de um mal raro ou disfarçado.",
+      "exemplos": [
+        "Um viajante desmaia na estrada com febre alta; você tenta descobrir se é peste, veneno ou só exaustão.",
+        "O ferido de uma emboscada parece bem por fora, mas você suspeita de um sangramento interno.",
+        "Uma criança da aldeia emagrece sem motivo aparente e a família pede que você examine o caso."
+      ],
+      "dica_mesa": "Peça o teste antes de liberar qualquer cura de Primeiros Socorros ou Medicina; errar o diagnóstico pode até piorar o tratamento.",
+      "relacionados": [
+        "farmacia",
+        "fisiologia"
+      ]
+    },
+    "diplomacia": {
+      "descricao": "Diplomacia é negociar um acordo entre partes com interesses opostos sem que ninguém se sinta insultado, geralmente ao longo de uma conversa mais longa ou de várias reuniões. Serve para evitar uma guerra entre duas famílias nobres, fechar uma trégua entre facções ou convencer um conselho a ceder um pouco dos dois lados.\n\nÉ diferente de Dissimulação (mentira rápida) e de Liderança (comandar os seus): aqui você trata com iguais ou rivais, buscando um meio-termo aceitável. Falhar não significa necessariamente ofender ninguém, mas o impasse continua e pode custar tempo ou prestígio.",
+      "exemplos": [
+        "Duas famílias de mercadores disputam a mesma rota e você tenta fechar um acordo de uso alternado.",
+        "O senhor de um vilarejo e o líder de um bando de refugiados quase entram em conflito por terras; você medeia.",
+        "Você negocia com o capitão da guarda a libertação de um companheiro preso por engano."
+      ],
+      "dica_mesa": "Negociações longas rendem mais cena que um teste único; use o teste para decidir se a proposta final é aceita.",
+      "relacionados": [
+        "lideranca",
+        "financas",
+        "economia"
+      ]
+    },
+    "disfarce": {
+      "descricao": "Disfarce é mudar sua aparência (ou a de outra pessoa) para passar por alguém diferente: outra pessoa específica, um tipo genérico como guarda ou mendigo, ou até um animal. Precisa de tempo e, em geral, de roupas e maquiagem adequadas; fazer isso às pressas ou sem material é bem mais difícil.\n\nO disfarce só é testado de verdade quando alguém observador o examina de perto; um olhar rápido costuma passar batido. Em cenários com só uma raça inteligente, a especialização normal é a própria espécie, já que não há para quem se disfarçar de outra.",
+      "exemplos": [
+        "Um fugitivo se disfarça de monge itinerante para atravessar um posto de guarda sem ser reconhecido.",
+        "Uma espiã se veste como serva da casa para circular sem levantar suspeita durante o jantar do senhor.",
+        "Um batedor cobre o cheiro e a silhueta para se disfarçar de lobo aos olhos de sentinelas distantes."
+      ],
+      "em_adamar": "Como Adamar só tem humanos, a especialização em outra espécie fica com o narrador; disfarçar-se de outro humano ou de um animal é de uso livre.",
+      "dica_mesa": "Combine com Dissimulação quando o disfarçado também precisa falar para sustentar o papel.",
+      "relacionados": [
+        "dissimulacao",
+        "furtividade",
+        "falsificacao"
+      ]
+    },
+    "dissimulacao": {
+      "descricao": "Dissimulação é a arte de fingir: mostrar uma emoção que você não sente, esconder a que sente, sustentar uma mentira com a cara certa ou se fazer passar por outra pessoa. Não muda a sua aparência (isso é Disfarce); muda o jeito como você se comporta, fala e reage, para que os outros acreditem no papel.\n\nQuando alguém tenta enxergar através da encenação, costuma ser uma disputa entre a sua Dissimulação e a percepção ou a perícia de quem observa (Detecção de Mentiras, por exemplo). Quanto mais tempo e mais perto a pessoa convive com o papel, mais difícil fica manter a farsa. Não confunda com Lábia, que é convencer alguém rápido a fazer algo; e com Atuação, que é representar para uma plateia que sabe que é teatro.",
+      "exemplos": [
+        "Fingir calma diante do capitão da guarda enquanto o companheiro ferido está escondido na carroça.",
+        "Passar-se por criado da casa para circular pelo salão sem ser questionado.",
+        "Chorar a morte de um mercador que você mesmo enganou, para não levantar suspeitas.",
+        "Negar com toda a naturalidade que conhece o homem preso no tronco da praça."
+      ],
+      "relacionados": [
+        "labia",
+        "disfarce",
+        "deteccao-de-mentiras",
+        "atuacao"
+      ]
+    },
+    "economia": {
+      "descricao": "Economia é entender como funcionam riqueza, comércio, moedas e impostos numa escala ampla: por que os preços sobem depois de uma guerra, como uma cunhagem ruim desvaloriza a moeda, o que uma safra perdida faz com o mercado de uma região. É conhecimento teórico, não a habilidade de regatear um preço específico.\n\nServe para prever tendências, entender por que um reino está endividado ou avaliar se um plano de enriquecimento faz sentido. Complementa Finanças (gerir dinheiro na prática), mas nenhuma das duas substitui o panorama que Economia dá.",
+      "exemplos": [
+        "Você percebe que o preço do sal triplicou porque a estrada da costa está bloqueada há semanas.",
+        "Um conselheiro pede sua opinião sobre se vale a pena desvalorizar a moeda do burgo para pagar dívidas de guerra.",
+        "Você avalia se a promessa de um mercador de dobrar o investimento em pouco tempo faz o menor sentido."
+      ],
+      "relacionados": [
+        "financas",
+        "diplomacia"
+      ]
+    },
+    "encenacao-de-combate": {
+      "descricao": "Encenação de Combate é simular uma luta de mentira que pareça real para quem assiste, sem que ninguém se machuque de verdade. Você e o parceiro coreografam golpes, quedas e aparadas, controlando a força e o timing para vender a cena a uma plateia de festival, teatro ou treinamento.\n\nFalhar pode significar um golpe real por engano, uma queda mal calculada ou uma encenação que convence menos gente do que o esperado. É bem diferente de lutar de verdade: aqui o objetivo é a plateia, não vencer o oponente.",
+      "exemplos": [
+        "Dois atores itinerantes encenam o duelo lendário de um herói local na praça da vila, no dia de festa.",
+        "Um instrutor demonstra uma sequência de espada para recrutas sem realmente feri-los.",
+        "Você finge perder uma luta combinada para deixar um nobre se exibir diante de convidados importantes."
+      ],
+      "dica_mesa": "Bom gancho para cenas de teatro, treino ou para disfarçar uma emboscada como espetáculo.",
+      "relacionados": [
+        "danca",
+        "disfarce"
+      ]
+    },
+    "engenharia": {
+      "descricao": "Engenharia é projetar obras de um tipo específico: fortificações, pontes, máquinas de cerco, minas, mecanismos ou os materiais usados nelas. Quem tem essa perícia desenha a estrutura, calcula se ela vai aguentar e resolve os problemas do projeto antes da primeira pedra ser assentada; quem constrói de fato usa uma perícia de ofício correspondente.\n\nCada especialização cobre uma área (civil, bélica, de artilharia, de minerais, de mecanismos, de materiais ou um tipo de veículo) e se pré-define nas outras com penalidade, já que os princípios se parecem mas os detalhes técnicos mudam bastante de uma para outra.",
+      "exemplos": [
+        "Você projeta os reforços para a muralha de uma vila cercada, decidindo onde erguer torres e onde cavar um fosso.",
+        "Um bando de guerra pede um projeto de aríete e torre de cerco para tomar um forte inimigo.",
+        "Uma mina antiga ameaça desabar e você é chamado para calcular onde escorar as galerias."
+      ],
+      "em_adamar": "Só valem as especializações de um mundo simples: civil, bélica, artilharia, minerais, mecanismos, materiais e veículos; ramos que dependem de eletricidade, robótica ou tecnologia muito além disso ficam fora do cenário.",
+      "relacionados": [
+        "ferreiro",
+        "geologia"
+      ]
+    },
+    "engolidor-de-fogo": {
+      "descricao": "Engolidor de Fogo é o truque de artista de rua de manipular e engolir chamas de forma controlada, arrancando suspiros da plateia. É puro espetáculo: não serve para lutar nem para acender nada com praticidade, só para impressionar.\n\nUm erro no teste normalmente significa uma queimadura, do jeito mais constrangedor possível na frente de todo mundo. É uma perícia rara, mais de artistas itinerantes e feirantes do que de aventureiros comuns.",
+      "exemplos": [
+        "Numa feira de vilarejo, você arranca aplausos e moedas engolindo tochas acesas.",
+        "Você usa o truque para distrair uma multidão enquanto um comparsa esvazia bolsos por perto.",
+        "Um artista rival desafia você a repetir o número dele, mais perigoso, diante do público."
+      ],
+      "dica_mesa": "Boa perícia de cor para um personagem com passado de feira ou circo itinerante."
+    },
+    "entrada-forcada": {
+      "descricao": "Entrada Forçada é arrombar portas e janelas trancadas ou emperradas na base do impulso e da técnica: um chute certeiro, o ombro no ponto fraco da dobradiça, uma alavanca improvisada. É rápido e barulhento, ao contrário de trabalhar a fechadura com calma, que é lento e discreto.\n\nA dificuldade depende de quão robusta é a porta e do que você tem à mão para forçá-la; falhar pode machucar você mesmo ou só chamar atenção sem abrir nada.",
+      "exemplos": [
+        "Guardas perseguem vocês e a única saída é uma porta de serviço trancada; alguém precisa arrombá-la depressa.",
+        "Você chuta a porta de um celeiro abandonado à procura de abrigo antes da nevasca chegar.",
+        "Durante um resgate, é preciso arrombar a cela sem tempo para procurar a chave."
+      ],
+      "dica_mesa": "Use quando o barulho e a pressa importam mais que a discrição.",
+      "relacionados": [
+        "furtividade",
+        "fuga"
+      ]
+    },
+    "escalada": {
+      "descricao": "Escalada é subir e descer muros, árvores, encostas e rochedos usando mãos, pés e o que houver de apoio, com ou sem corda. O teste considera a inclinação, o tipo de superfície e se há vento, chuva ou gelo atrapalhando a aderência.\n\nUma queda numa escalada malsucedida costuma doer bastante, então equipamento de segurança e um bom ponto de apoio fazem diferença. É comum entre batedores, ladrões e quem cruza terrenos acidentados sem estrada.",
+      "exemplos": [
+        "Vocês escalam a muralha nos fundos de uma fortaleza para evitar o portão vigiado.",
+        "Uma trilha de montanha termina num paredão rochoso que só dá para vencer escalando.",
+        "Fugindo de lobos, você sobe rápido numa árvore alta para ganhar distância do chão."
+      ],
+      "relacionados": [
+        "habilidade-com-nos",
+        "fuga",
+        "furtividade"
+      ]
+    },
+    "escrita": {
+      "descricao": "Escrita é redigir bem: organizar ideias, escolher palavras e dar ritmo a um texto para que ele convença, emocione ou informe como pretendido. Pressupõe que você já sabe ler e escrever; a perícia mede a qualidade do texto, não a caligrafia nem a alfabetização em si.\n\nServe para cartas que realmente comovem, relatórios claros, panfletos persuasivos ou até uma história que se espalha pelas tavernas. É diferente de Literatura, que é conhecer as obras dos outros, não produzir as suas.",
+      "exemplos": [
+        "Você escreve uma carta de súplica tão bem construída que o senhor local aceita reconsiderar uma sentença.",
+        "Um panfleto bem escrito espalha rumores contra um mercador corrupto pela cidade toda.",
+        "Você redige as memórias de um veterano de guerra de um jeito que emociona quem lê."
+      ],
+      "relacionados": [
+        "literatura",
+        "linguistica"
+      ]
+    },
+    "escudo": {
+      "descricao": "Escudo é a perícia de usar um escudo de forma ativa em combate: aparar golpes com ele, empurrar e golpear com a borda, e manter a posição atrás dele. É uma perícia separada da arma que você usa na outra mão, então lutar bem de espada não significa lutar bem de escudo.\n\nAs variantes (escudo comum e broquel) se pré-definem entre si com uma penalidade pequena, já que os fundamentos de bloquear são parecidos, mudando o tamanho e o alcance da proteção.",
+      "exemplos": [
+        "Você avança numa fileira de guardas mantendo o escudo à frente para abrir espaço aos aliados atrás.",
+        "Sozinho contra dois assaltantes, você usa o escudo para bloquear um golpe enquanto acerta o outro com a espada.",
+        "Um broquel pequeno ajuda a aparar uma adaga de perto num beco estreito demais para um escudo grande."
+      ],
+      "relacionados": [
+        "espada-de-lamina-larga",
+        "espadas-curtas"
+      ]
+    },
+    "espada-de-duas-maos": {
+      "descricao": "Espada de Duas Mãos cobre montantes e espadas grandes demais para usar com uma mão só, empunhadas com as duas para golpes fortes e alcance maior. O tamanho da arma custa em agilidade: ela é mais lenta para recuperar entre um golpe e outro do que uma espada de uma mão.\n\nÉ uma arma de linha de frente, boa para abrir espaço e impor respeito, mas incômoda em corredores estreitos ou lutas muito próximas, onde não há espaço para o giro completo da lâmina.",
+      "exemplos": [
+        "Você enfrenta um grupo de saqueadores num pátio aberto, onde o alcance da espada de duas mãos vale mais.",
+        "Um guerreiro treinado usa o montante para atravessar a fileira de couraças à frente do bando inimigo.",
+        "Numa masmorra estreita, o comprimento da lâmina atrapalha e você troca de arma antes de entrar."
+      ],
+      "relacionados": [
+        "espada-de-lamina-larga",
+        "espadas-curtas"
+      ]
+    },
+    "espada-de-lamina-larga": {
+      "descricao": "Espada de Lâmina Larga cobre espadas de uma mão equilibradas entre corte e ponta, além de porretes de peso e alcance parecidos: a arma clássica de guerreiro versátil, boa para golpear e aparar ao mesmo tempo. É o meio-termo entre a agilidade das espadas curtas e a força das de duas mãos.\n\nPor ser tão comum, várias outras perícias de espada se pré-definem a partir dela e vice-versa, já que os fundamentos de postura e corte se parecem bastante entre as famílias de lâminas.",
+      "exemplos": [
+        "Um mercenário de estrada carrega uma espada de lâmina larga como arma principal, boa em quase qualquer situação.",
+        "Você apara o golpe de um bandido e responde no mesmo movimento, aproveitando o equilíbrio da arma.",
+        "Um cavaleiro empunha a espada em uma mão e o escudo na outra para lutar de forma mais defensiva."
+      ],
+      "relacionados": [
+        "espada-de-duas-maos",
+        "espadas-curtas",
+        "escudo",
+        "faca"
+      ]
+    },
+    "espadas-curtas": {
+      "descricao": "Espadas Curtas cobre lâminas e porretes curtos, feitos para lutar de perto com rapidez, mais fáceis de esconder ou carregar no dia a dia do que uma lâmina longa. Ganham em agilidade e velocidade de recuperação o que perdem em alcance.\n\nSão a escolha natural de quem precisa de uma arma discreta ou de reserva, e se dão bem em espaços apertados onde uma lâmina maior atrapalharia.",
+      "exemplos": [
+        "Um ladino carrega uma espada curta escondida sob a capa, pronta para um combate inesperado.",
+        "Em um corredor estreito de masmorra, a espada curta se move melhor que a lâmina longa do companheiro.",
+        "Você usa a espada curta como arma secundária, caso perca a lança na confusão da batalha."
+      ],
+      "relacionados": [
+        "faca",
+        "espada-de-lamina-larga",
+        "jitte-sai"
+      ]
+    },
+    "esportes": {
+      "descricao": "Esportes é jogar bem um esporte físico específico, escolhido quando você aprende a perícia: corridas, arremessos, jogos de bola, provas de força organizadas em torneios e feiras. O teste mede desempenho dentro das regras do jogo, não combate de verdade.\n\nÉ útil para se destacar em competições, apostas e festivais, e pode render fama local a quem vence torneios importantes, mas não ajuda diretamente numa briga ou perseguição de verdade.",
+      "exemplos": [
+        "Você compete na corrida do festival da colheita para ganhar o prêmio da temporada.",
+        "Um torneio de arremesso de machado atrai apostadores de toda a região à feira anual.",
+        "Você desafia o campeão da guarnição para uma prova de força e ganha respeito entre os soldados."
+      ],
+      "dica_mesa": "Peça ao jogador para nomear o esporte ao escolher a perícia; ela não cobre esportes diferentes automaticamente.",
+      "relacionados": [
+        "jogos-de-entretenimento",
+        "esqui"
+      ]
+    },
+    "esqui": {
+      "descricao": "Esqui é se deslocar sobre neve usando esquis, aproveitando terrenos que a pé seriam lentos ou impossíveis de atravessar no inverno. Depende tanto de equilíbrio quanto de resistência física, já que manter o ritmo em declives cansa bastante.\n\nÉ comum entre caçadores, mensageiros e moradores de regiões geladas que precisam se mover rápido sobre a neve; sem prática, uma descida mais íngreme termina em queda.",
+      "exemplos": [
+        "Um mensageiro cruza o vale nevado em esquis para levar o aviso antes da tempestade fechar o passo.",
+        "Vocês perseguem um fugitivo que desce a encosta gelada em disparada, escapando por pouco de uma queda.",
+        "Um caçador das terras altas ensina o grupo a atravessar a neve funda sem afundar a cada passo."
+      ],
+      "em_adamar": "Faz sentido nas regiões mais frias e nevadas do cenário, onde o inverno é rigoroso.",
+      "relacionados": [
+        "esportes"
+      ]
+    },
+    "estrategia": {
+      "descricao": "Estratégia é planejar campanhas inteiras: onde posicionar exércitos, como abastecer uma marcha longa, quando arriscar uma batalha e quando evitar. É pensamento de comandante-geral, de grande escala, bem diferente de Tática, que decide o que fazer numa batalha específica já em andamento.\n\nAs especializações terrestre e naval se pré-definem entre si com penalidade, já que os princípios de logística e movimento se parecem, mesmo com terreno e meios de transporte completamente diferentes.",
+      "exemplos": [
+        "Você aconselha o comandante sobre por onde a coluna de suprimentos deve passar sem ser emboscada.",
+        "Um general pede sua opinião sobre atacar o cerco agora ou esperar o inverno enfraquecer a guarnição inimiga.",
+        "Você traça o plano de uma campanha inteira contra um bando de saqueadores que assola a região há meses."
+      ],
+      "em_adamar": "Só a especialização terrestre e, onde houver navegação relevante, a naval fazem sentido; não há guerra no espaço.",
+      "relacionados": [
+        "lideranca",
+        "diplomacia"
+      ]
+    },
+    "faca": {
+      "descricao": "Faca cobre o uso de facas e punhais em combate: golpes rápidos e curtos, fáceis de disfarçar antes do ataque. É uma arma leve, simples de carregar no dia a dia e de recuperar depressa entre um golpe e outro, mas com pouco alcance e força de impacto perto de armas maiores.\n\nAlém de arma, a mesma perícia serve para o manuseio geral de uma faca num confronto corpo a corpo, mas não cobre tarefas de artesanato ou culinária, que usam outras perícias.",
+      "exemplos": [
+        "Você esconde uma faca na manga como último recurso, caso desarmem sua arma principal.",
+        "Um assaltante de beco ataca de surpresa com a faca antes que você perceba a emboscada.",
+        "Em uma luta corpo a corpo dentro de uma taverna lotada, a faca se move melhor que uma espada longa."
+      ],
+      "relacionados": [
+        "espadas-curtas",
+        "jitte-sai"
+      ]
+    },
+    "falcoaria": {
+      "descricao": "Falcoaria é treinar e caçar com aves de rapina: ensinar a ave a voltar ao chamado, a atacar a presa certa e a se manter calma perto de pessoas e cavalos. Exige tempo de convívio com a ave e cuidado constante, não é algo que se aprende só na teoria.\n\nÉ tradicionalmente ligada à nobreza e à caça como esporte, mas também serve a quem vive da caça de verdade, usando a ave para localizar e abater presas pequenas.",
+      "exemplos": [
+        "Um nobre local se orgulha do próprio falcão e o exibe durante caçadas com convidados importantes.",
+        "Você usa um falcão treinado para localizar uma trilha de coelhos numa floresta escassa de caça.",
+        "Um falcão foge assustado durante uma tempestade e seu dono pede ajuda para recuperá-lo."
+      ]
+    },
+    "falsificacao": {
+      "descricao": "Falsificação é produzir documentos, selos e cartas falsos que passam por autênticos: uma carta de recomendação, um salvo-conduto, um título de posse. Exige materiais e referências adequadas e leva tempo; fazer isso às pressas ou sem um modelo para copiar é bem mais arriscado.\n\nUm documento malfeito pode enganar um leitor desatento, mas alguém que conheça bem o selo ou a letra original pode perceber a fraude, especialmente se comparar os dois lado a lado.",
+      "exemplos": [
+        "Você forja uma carta de salvo-conduto assinada por um oficial para atravessar um posto de controle.",
+        "Um golpista falsifica o título de posse de uma propriedade para vendê-la a um comprador desavisado.",
+        "Vocês precisam de um documento com o selo de uma guilda para convencer o mestre do armazém a liberar a carga."
+      ],
+      "relacionados": [
+        "falsificacao-de-dinheiro",
+        "disfarce"
+      ]
+    },
+    "falsificacao-de-dinheiro": {
+      "descricao": "Falsificação de Dinheiro é fabricar moedas falsas que passem por verdadeiras no peso, na cor e na marca cunhada. Exige conhecimento de metais e ferramentas próprias de cunhagem, e o resultado só engana quem não examina a moeda com atenção ou não tem como testá-la.\n\nÉ diferente de Falsificação de documentos: aqui o problema técnico é reproduzir uma peça metálica pequena e padronizada, não imitar uma caligrafia ou um selo de cera.",
+      "exemplos": [
+        "Uma quadrilha cunha moedas falsas para pagar dívidas numa cidade que não examina de perto o metal.",
+        "Você desconfia de um punhado de moedas recebidas num mercado por soarem diferente ao cair na mesa.",
+        "Um artesão marginal é contratado para reproduzir o cunho oficial de uma casa da moeda."
+      ],
+      "em_adamar": "Fica interessante quando várias moedas locais circulam ao mesmo tempo, já que poucas pessoas conseguem comparar todas de cor.",
+      "relacionados": [
+        "falsificacao",
+        "joalheiro"
+      ]
+    },
+    "farmacia": {
+      "descricao": "Farmácia é preparar remédios a partir de ingredientes conhecidos: xaropes, pomadas, cataplasmas e outras preparações que tratam doenças ou ajudam na recuperação de ferimentos. Ela não diagnostica o problema (isso é Diagnose) nem substitui os cuidados imediatos de Primeiros Socorros; ela fornece o remédio certo depois que se sabe o que tratar.\n\nEm um cenário sem indústria farmacêutica, essa perícia se apoia em plantas, minerais e receitas de conhecimento popular ou de curandeiros treinados.",
+      "exemplos": [
+        "Você prepara uma pomada para a ferida infeccionada de um companheiro de viagem.",
+        "Um curandeiro de aldeia pede ajuda para preparar remédio suficiente antes que a febre se espalhe.",
+        "Você tenta reproduzir uma receita antiga anotada num caderno encontrado em uma ruína."
+      ],
+      "em_adamar": "Em Adamar, essa perícia se apoia sobretudo em Herbalismo: os remédios vêm de plantas e preparos conhecidos, não de laboratórios.",
+      "relacionados": [
+        "diagnose",
+        "fisiologia"
+      ]
+    },
+    "ferreiro": {
+      "descricao": "Ferreiro é trabalhar um metal específico na forja: aquecer, martelar, dobrar e temperar até virar ferramenta, arma ou peça de armadura. Cada metal (cobre, chumbo e estanho, ferro) tem suas manhas próprias de temperatura e dureza, por isso a perícia se especializa por metal, com as variantes se pré-definindo entre si com uma penalidade.\n\nÉ a perícia de quem produz e conserta itens de metal em geral, incluindo boa parte do trabalho de reparo de armas e ferramentas, não só a fabricação do zero.",
+      "exemplos": [
+        "O ferreiro da aldeia forja pontas de lança novas para equipar a milícia antes do inverno.",
+        "Você conserta a lâmina cravejada de uma espada quebrada em combate.",
+        "Um andarilho troca o serviço de reforçar as dobradiças da porta de uma estalagem por uma noite de hospedagem."
+      ],
+      "relacionados": [
+        "engenharia",
+        "joalheiro"
+      ]
+    },
+    "filosofia": {
+      "descricao": "Filosofia é conhecer a fundo uma escola de pensamento específica: seus argumentos centrais, seus autores, como ela responde às grandes perguntas sobre viver bem, o certo e o errado, o lugar da pessoa no mundo. Serve para debater com propriedade, ensinar a doutrina ou reconhecer quando alguém a está distorcendo.\n\nCada escola é uma especialização separada, e escolas que se sobrepõem podem se pré-definir entre si a critério do narrador. Filosofias essencialmente religiosas entram como Teologia, não aqui.",
+      "exemplos": [
+        "Um estudioso itinerante debate com você os fundamentos de sua escola de pensamento numa hospedaria.",
+        "Você reconhece que o discurso de um pregador de rua é uma versão distorcida de uma filosofia conhecida.",
+        "Um mestre lhe ensina os princípios centrais de uma escola de pensamento em troca de favores."
+      ],
+      "em_adamar": "Valem as escolas de pensamento já estabelecidas no cânone do cenário; não invente correntes ou nomes novos.",
+      "relacionados": [
+        "historia",
+        "jurisprudencia"
+      ]
+    },
+    "financas": {
+      "descricao": "Finanças é administrar dinheiro na prática: conceder e cobrar empréstimos, decidir onde investir, calcular juros e avaliar se um negócio vai dar lucro. É a perícia de banqueiros, agiotas e administradores de grandes fortunas, focada em gestão, não em teoria de mercado, que é Economia.\n\nUm bom uso da perícia evita que alguém entre numa dívida ruim ou perca uma fortuna em um investimento mal calculado.",
+      "exemplos": [
+        "Um mercador rico pede sua ajuda para decidir se deve financiar a expedição de um grupo de aventureiros.",
+        "Você calcula se os juros cobrados por um agiota da cidade são abusivos o bastante para levar o caso a um juiz.",
+        "Um senhor local pede conselho sobre como administrar as rendas de suas terras depois de uma colheita ruim."
+      ],
+      "relacionados": [
+        "economia",
+        "diplomacia"
+      ]
+    },
+    "fisiologia": {
+      "descricao": "Fisiologia é conhecer por dentro o corpo de uma espécie: como os órgãos funcionam, onde ficam os pontos vitais, como ela reage a ferimentos e venenos. É conhecimento de base que apoia Diagnose, Cirurgia e Medicina quando o paciente foge do comum, e é essencial para tratar criaturas muito diferentes de um humano.\n\nCada espécie exige sua própria especialização; conhecer a fisiologia humana não ajuda muito a entender a de uma fera ou de uma criatura exótica, a não ser que sejam parecidas o bastante.",
+      "exemplos": [
+        "Um estudioso examina com respeito o corpo de uma criatura desconhecida para entender como ela foi morta.",
+        "Você precisa saber onde golpear com precisão para abater uma fera sem desperdiçar a caçada.",
+        "Um médico de campo usa o conhecimento do corpo humano para estabilizar um ferido grave em plena batalha."
+      ],
+      "em_adamar": "Como Adamar só tem humanos, a fisiologia de outra raça fica com o narrador; a especialização humana é de uso livre.",
+      "relacionados": [
+        "diagnose",
+        "farmacia"
+      ]
+    },
+    "fuga": {
+      "descricao": "Fuga é se soltar de cordas, correntes e algemas que prendem seu corpo, torcendo e deslocando articulações ou aproveitando folgas na amarração. Exige espaço para se contorcer e tempo, então raramente funciona no meio de uma luta contra alguém prestando atenção em você.\n\nQuanto mais bem feita a amarração, mais difícil o teste; correntes reforçadas e algemas de metal são bem mais duras de vencer do que uma corda malfeita.",
+      "exemplos": [
+        "Capturado por bandidos, você se contorce discretamente para afrouxar as cordas enquanto eles discutem o que fazer com você.",
+        "Um prisioneiro tenta se soltar das algemas antes que o carcereiro volte para a ronda.",
+        "Amarrado a uma cadeira num interrogatório, você usa o tempo em que ficam sozinhos para tentar se libertar."
+      ],
+      "relacionados": [
+        "escalada",
+        "habilidade-com-nos"
+      ]
+    },
+    "funda": {
+      "descricao": "Funda é atirar pedras ou projéteis semelhantes usando uma funda: uma arma simples e barata de fazer, mas surpreendentemente difícil de dominar de verdade, considerada mais complicada de aprender do que muitas armas de longo alcance mais sofisticadas.\n\nÉ a arma clássica de pastor e caçador de pequenas presas, fácil de carregar munição para ela, já que qualquer pedra do chão serve em aperto, e silenciosa comparada a um arco.",
+      "exemplos": [
+        "Um pastor das colinas usa a funda para afugentar lobos que se aproximam do rebanho.",
+        "Sem flechas sobrando, você recorre a pedras e à funda improvisada para se defender à distância.",
+        "Um garoto da aldeia se orgulha da pontaria com a funda, treinada acertando latas numa cerca."
+      ],
+      "relacionados": [
+        "lanca"
+      ]
+    },
+    "furtividade": {
+      "descricao": "Furtividade é se mover sem ser visto nem ouvido: andar em silêncio, aproveitar sombras e cobertura, controlar a respiração e o ritmo dos passos. É uma disputa contra a Percepção de quem poderia notar você, e piora bastante se o terreno range, estala ou está mal iluminado a seu favor.\n\nCarregar peso, vestir armadura pesada ou tentar se mover rápido demais atrapalha muito o teste; furtividade de verdade costuma significar ir devagar.",
+      "exemplos": [
+        "Vocês avançam por um acampamento inimigo à noite, evitando pisar em galhos secos.",
+        "Você se esgueira pelos corredores de uma masmorra para passar por um guarda distraído sem ser notado.",
+        "Perseguindo um suspeito pela cidade, você mantém distância e se cola às sombras dos becos."
+      ],
+      "relacionados": [
+        "disfarce",
+        "linguagem-corporal"
+      ]
+    },
+    "garrote": {
+      "descricao": "Garrote é usar uma corda, corrente fina ou fio para estrangular alguém por trás, geralmente como ataque de surpresa contra um alvo desprevenido. É uma arma silenciosa e fácil de esconder, mas exige ficar bem próximo e pegar o alvo de jeito, sem chance de reação.\n\nContra alguém alerta e de frente, o garrote perde quase toda a utilidade: ele depende do elemento surpresa para funcionar.",
+      "exemplos": [
+        "Um assassino se aproxima por trás do guarda sonolento com o garrote já esticado entre as mãos.",
+        "Você usa uma corda de escalada como garrote improvisado numa emergência.",
+        "Um prisioneiro desesperado tenta reduzir o carcereiro usando a própria corda das amarras."
+      ],
+      "relacionados": [
+        "furtividade"
+      ]
+    },
+    "geografia": {
+      "descricao": "Geografia é conhecer o relevo, o clima, os rios, as rotas e os povos de uma área: o suficiente para planejar uma viagem, prever quando as estradas ficam intransitáveis ou saber que região é hostil, fértil ou perigosa. É conhecimento de mapa e de terreno, não de história ou de leis do lugar.\n\nQuanto mais distante e menos conhecida a região, mais difícil o teste, e informações desatualizadas podem levar a surpresas mesmo para quem tira um bom resultado.",
+      "exemplos": [
+        "Você recomenda um desvio pela floresta porque sabe que a estrada principal inunda todo outono.",
+        "Um guia experiente avalia quanto tempo a travessia da cordilheira vai levar antes da primeira neve.",
+        "Vocês tentam identificar, pelo relevo ao redor, a que distância estão da vila mais próxima."
+      ],
+      "relacionados": [
+        "geologia",
+        "historia"
+      ]
+    },
+    "geologia": {
+      "descricao": "Geologia é entender rochas, solo, cavernas e o que existe por baixo da superfície: onde é provável encontrar minério, quando uma galeria de mina está prestes a desabar, como interpretar uma formação rochosa incomum. É a base teórica por trás de mineração e prospecção, embora não seja a mesma coisa que cavar de fato.\n\nEm um mundo só, praticamente toda geologia relevante é a de terreno comum; não há necessidade de especializações para outros tipos de mundo.",
+      "exemplos": [
+        "Você examina as paredes de uma caverna para decidir se é seguro acampar ali durante a tempestade.",
+        "Um prospector avalia se vale a pena escavar mais fundo atrás de veios de minério na encosta.",
+        "Vocês percebem, pelas rachaduras no teto da mina, que a galeria pode ceder a qualquer momento."
+      ],
+      "em_adamar": "Só a especialização de mundo comum importa aqui, já que Adamar tem um único mundo natural.",
+      "relacionados": [
+        "geografia",
+        "engenharia"
+      ]
+    },
+    "habilidade-com-nos": {
+      "descricao": "Habilidade com Nós é dar e desfazer nós de todo tipo com rapidez e confiança: prender uma carga, amarrar uma corda de escalada com segurança, fazer um nó que aguenta peso sem escorregar, ou soltar um nó complicado sem cortar a corda. Também ajuda a reconhecer se um nó feito por outra pessoa é confiável ou está malfeito.\n\nÉ uma perícia simples e barata de aprender, mas útil o tempo todo em viagem, navegação, escalada e até para prender um prisioneiro de forma que ele não escape fácil.",
+      "exemplos": [
+        "Você amarra as cordas do carroção com nós que aguentam o peso da carga na estrada esburacada.",
+        "Antes de escalar o paredão, você confere se o nó da corda foi bem feito.",
+        "Vocês amarram o prisioneiro com nós difíceis de desfazer sem faca."
+      ],
+      "relacionados": [
+        "escalada",
+        "fuga"
+      ]
+    },
+    "heraldica": {
+      "descricao": "Heráldica é reconhecer brasões, cores e símbolos usados por famílias nobres, ordens e casas, e saber a quem eles pertencem e o que significam. Serve para identificar um cavaleiro pelo escudo antes de ele se apresentar, reconhecer uma bandeira em um campo de batalha ou perceber que um selo foi usado de forma indevida.\n\nÉ conhecimento de corte e de campo de batalha ao mesmo tempo: tão útil numa recepção formal quanto para saber de longe quem está atacando quem.",
+      "exemplos": [
+        "Você reconhece o brasão bordado na capa do cavaleiro que acabou de entrar na taverna.",
+        "Ao ver os estandartes ao longe, vocês identificam a que casa pertence o exército que se aproxima.",
+        "Um selo de cera numa carta parece usar um brasão que não corresponde à família que a assina."
+      ],
+      "relacionados": [
+        "historia",
+        "jurisprudencia"
+      ]
+    },
+    "historia": {
+      "descricao": "História é conhecer a fundo o passado de um povo, região ou período: eventos importantes, figuras marcantes, causas e consequências que ainda ecoam no presente. A especialização pode ser uma região ao longo de várias eras, ou uma época mais ampla ligada a uma cultura, ideia ou conflito específico.\n\nÉ útil para reconhecer o significado de uma ruína, entender por que duas famílias se odeiam há gerações ou perceber quando alguém está reescrevendo a história a seu favor. Especializações que se sobrepõem podem se pré-definir entre si, a critério do narrador.",
+      "exemplos": [
+        "Você reconhece nas ruínas os sinais de uma batalha famosa ocorrida séculos atrás.",
+        "Um erudito explica por que duas casas nobres guardam rancor desde uma guerra antiga.",
+        "Vocês desconfiam que a versão oficial de um evento recente esconde algo, comparando com registros mais velhos."
+      ],
+      "em_adamar": "Use os povos, guerras e períodos já estabelecidos no cânone do cenário; não crie eventos históricos novos.",
+      "relacionados": [
+        "heraldica",
+        "jurisprudencia",
+        "geografia"
+      ]
+    },
+    "instrumentos-musicais": {
+      "descricao": "Instrumentos Musicais é tocar bem um instrumento específico, escolhido ao aprender a perícia: harpa, alaúde, flauta, tambor, entre outros. Instrumentos parecidos entre si se pré-definem com uma penalidade pequena; instrumentos muito diferentes praticamente não ajudam um ao outro.\n\nServe tanto para apresentações formais quanto para animar uma taverna, e costuma andar junto de Canto ou Atuação quando a apresentação envolve mais do que só o instrumento.",
+      "exemplos": [
+        "Um bardo itinerante toca alaúde na praça da vila para arrecadar moedas.",
+        "Você usa a flauta para acalmar um cavalo assustado durante uma tempestade.",
+        "Numa celebração na corte, tocar bem a harpa rende um convite para se apresentar de novo."
+      ],
+      "em_adamar": "Instrumentos comuns de época, como harpa, alaúde, flauta e tambor, são de uso livre; instrumentos elétricos ou eletrônicos não existem no cenário.",
+      "relacionados": [
+        "danca",
+        "encenacao-de-combate"
+      ]
+    },
+    "interrogatorio": {
+      "descricao": "Interrogatório é extrair informação verdadeira de alguém que não quer falar, ao longo de uma sessão mais longa de perguntas, pressão psicológica e observação das reações. É diferente de Intimidação, que é um susto pontual, porque aqui o processo todo importa: como as perguntas são feitas, o tempo dedicado e o que se promete ou ameaça.\n\nUm interrogatório malfeito pode arrancar informação falsa só para fazer a pressão parar, então o resultado sempre merece ser conferido antes de se agir sobre ele.",
+      "exemplos": [
+        "Vocês interrogam um batedor capturado para descobrir onde fica o acampamento do bando.",
+        "Um guarda experiente interroga um suspeito de contrabando, alternando perguntas diretas e silêncios calculados.",
+        "Você percebe, no meio do interrogatório, que o prisioneiro está prestes a inventar qualquer coisa só para parar."
+      ],
+      "relacionados": [
+        "intimidacao",
+        "deteccao-de-mentiras"
+      ]
+    },
+    "intimidacao": {
+      "descricao": "Intimidação é fazer alguém obedecer ou recuar por medo de você, seja por ameaça direta, presença física ou reputação. É uma disputa de Vontade: quanto mais firme e destemido for o alvo, mais difícil convencê-lo a ceder, e alguém realmente destemido pode simplesmente não se abalar.\n\nFunciona bem para arrancar uma reação imediata, mas o medo tende a azedar qualquer relação depois; não é uma boa ferramenta para conquistar lealdade de verdade.",
+      "exemplos": [
+        "Você encara o batedor do bando rival e o convence a recuar sem trocar um golpe.",
+        "Um mercenário ameaça o dono da taverna para conseguir informação sobre um fugitivo.",
+        "Diante de um prisioneiro teimoso, você deixa claro o que acontece se ele continuar em silêncio."
+      ],
+      "relacionados": [
+        "interrogatorio",
+        "lideranca"
+      ]
+    },
+    "jardinagem": {
+      "descricao": "Jardinagem é cuidar de hortas e jardins em pequena escala: preparar a terra, plantar, regar, podar e manter as plantas saudáveis ao longo das estações. É uma perícia simples e útil para quem cultiva o próprio alimento ou ervas, mas não cobre o cultivo de lavouras extensas em campo aberto.\n\nUm jardim bem cuidado rende comida extra, ervas frescas e até um lugar tranquilo para conversar longe de ouvidos curiosos.",
+      "exemplos": [
+        "Você cuida da pequena horta atrás da casa da curandeira, garantindo ervas frescas o ano todo.",
+        "Depois de meses viajando, alguém precisa recuperar o jardim abandonado do templo.",
+        "Um jardim bem cuidado no meio da vila arruinada mostra que ainda há gente cuidando do lugar."
+      ],
+      "relacionados": [
+        "farmacia"
+      ]
+    },
+    "jitte-sai": {
+      "descricao": "Jitte/Sai cobre armas curtas de aparar, feitas para travar e quebrar a lâmina do oponente além de golpear com a ponta ou o cabo. São armas essencialmente defensivas: brilham mais parando ataques e desarmando do que causando dano por si mesmas.\n\nSão armas exóticas, vindas de culturas distantes; num cenário onde poucas pessoas as conhecem, encontrar um par delas ou alguém que ensine a usá-las de verdade tende a ser incomum, embora nada nas regras impeça um personagem de já ter aprendido.",
+      "exemplos": [
+        "Um mestre de armas estrangeiro ensina a usar o par de jitte para desarmar oponentes sem matar.",
+        "Você trava a lâmina de um assaltante entre as pontas da arma e a arranca da mão dele.",
+        "Um colecionador de curiosidades exibe um par de sai trazido de terras distantes."
+      ],
+      "em_adamar": "São armas exóticas e raras de se ver na prática, mas quem já as aprendeu (por herança, viagem ou treino incomum) pode usá-las normalmente.",
+      "relacionados": [
+        "espadas-curtas",
+        "faca"
+      ]
+    },
+    "joalheiro": {
+      "descricao": "Joalheiro é trabalhar joias, pedras preciosas e metais nobres: lapidar uma gema, engastar uma pedra num anel, avaliar se uma peça é genuína ou se o metal é de qualidade inferior disfarçada de fina. É uma perícia de detalhe fino, distinta do trabalho mais bruto de Ferreiro.\n\nÚtil tanto para produzir peças de luxo quanto para não ser enganado comprando bijuteria disfarçada de joia verdadeira.",
+      "exemplos": [
+        "Você lapida uma gema encontrada em uma ruína, aumentando bastante seu valor de venda.",
+        "Um comprador suspeita que o colar oferecido é falso e pede que você examine o engaste.",
+        "Um nobre encomenda um anel de noivado com uma pedra rara trazida de uma expedição."
+      ],
+      "relacionados": [
+        "ferreiro",
+        "falsificacao-de-dinheiro"
+      ]
+    },
+    "jogos-de-azar": {
+      "descricao": "Jogos de Azar é jogar bem em dados, cartas e outros jogos de aposta, entendendo probabilidades na prática e blefando quando preciso. A mesma perícia também serve para perceber quando alguém está trapaceando na mesa, já que ambas as coisas exigem entender como o jogo deveria se comportar.\n\nÉ uma perícia de taverna por excelência, boa para ganhar (ou perder) dinheiro, reunir informação em conversas de mesa de jogo e reconhecer golpes armados contra você.",
+      "exemplos": [
+        "Você aposta numa mesa de dados na taverna, tentando recuperar o dinheiro perdido na estrada.",
+        "Um jogador suspeito parece sortudo demais e você observa de perto suas mãos.",
+        "Vocês usam uma partida de cartas para puxar informação de um viajante desconfiado, sem parecer interrogatório."
+      ],
+      "relacionados": [
+        "jogos-de-entretenimento",
+        "deteccao-de-mentiras"
+      ]
+    },
+    "jogos-de-entretenimento": {
+      "descricao": "Jogos de Entretenimento é jogar bem um jogo de tabuleiro, cartas ou salão específico, escolhido ao aprender a perícia: um jogo de peças, cartas, dardos, ou até arbitrar as regras de um esporte como juiz. Cada jogo é sua própria especialização.\n\nServe para se destacar em partidas amistosas ou torneios de entretenimento, e pode render boa reputação, ou dinheiro combinada com Jogos de Azar, em ambientes sociais.",
+      "exemplos": [
+        "Você desafia o velho estalajadeiro para uma partida do jogo de tabuleiro favorito dele, para ganhar sua confiança.",
+        "Numa noite de inverno, o grupo todo se reúne para jogar cartas à luz da fogueira.",
+        "Você atua como juiz de uma justa amistosa entre escudeiros, aplicando as regras do torneio."
+      ],
+      "relacionados": [
+        "jogos-de-azar",
+        "esportes"
+      ]
+    },
+    "judo": {
+      "descricao": "Judô é uma arte marcial desarmada de arremessos, chaves e imobilizações, feita para controlar ou derrubar um oponente aproveitando o próprio peso e movimento dele contra si mesmo. É especialmente boa para desarmar, prender ou neutralizar alguém sem necessariamente matá-lo.\n\nTambém ajuda a se defender de ataques desarmado, aparando e desviando golpes com o corpo, o que a torna útil mesmo contra um oponente armado, dentro de certos limites.",
+      "exemplos": [
+        "Você desarma um assaltante torcendo o pulso dele no momento em que tenta esfaquear.",
+        "Numa briga de taverna, você derruba o valentão sem sacar arma nenhuma.",
+        "Guardas tentam prender um suspeito vivo, e o judô ajuda a imobilizá-lo sem feri-lo gravemente."
+      ],
+      "relacionados": [
+        "luta-greco-romana"
+      ]
+    },
+    "jurisprudencia": {
+      "descricao": "Jurisprudência é conhecer a fundo as leis de uma região ou área do direito: os procedimentos de um julgamento, as punições previstas, os precedentes que podem pesar a favor ou contra alguém. Serve tanto para defender ou acusar alguém formalmente quanto para saber até onde ir sem cruzar a lei.\n\nA mesma região ou a mesma área do direito se pré-definem entre si com uma penalidade; leis de lugares e assuntos muito diferentes quase não ajudam uma à outra.",
+      "exemplos": [
+        "Você defende um companheiro acusado injustamente, citando um precedente que favorece o caso.",
+        "Um mercador quer saber se determinado contrato é mesmo válido segundo as leis locais.",
+        "Vocês precisam entender que autoridade tem poder de julgar um crime cometido na fronteira entre dois domínios."
+      ],
+      "em_adamar": "Use as leis e autoridades já estabelecidas no cânone; não invente reinos, códigos ou tribunais novos.",
+      "relacionados": [
+        "heraldica",
+        "historia",
+        "diplomacia"
+      ]
+    },
+    "kusari": {
+      "descricao": "Kusari é uma arma de corrente pesada com pontas ou pesos nas extremidades, usada para golpear, enrolar e prender membros ou armas do oponente a distâncias incomuns para uma arma corpo a corpo. É flexível e imprevisível: difícil de aparar do jeito normal, mas também difícil de controlar bem.\n\nÉ uma arma exótica e exige bastante prática para não se enroscar em você mesmo ou nos aliados por perto.",
+      "exemplos": [
+        "Um monge guerreiro usa a corrente para prender o braço armado de um oponente antes de desarmá-lo.",
+        "Você mantém distância de um adversário girando a corrente para impedir que ele se aproxime.",
+        "Um mestre de armas raro ensina o uso do kusari a um punhado de discípulos dedicados."
+      ],
+      "relacionados": [
+        "lanca"
+      ]
+    },
+    "lanca": {
+      "descricao": "Lança cobre o uso de lanças em combate corpo a corpo, empunhadas com uma ou duas mãos, aproveitando o alcance maior para atingir o oponente antes que ele chegue perto. É arma comum entre milícias, caçadores e guardas, simples de fabricar e de aprender o básico.\n\nO alcance é sua maior vantagem: uma fileira de lanças bem posicionada segura um avanço melhor do que armas mais curtas, mas em espaços apertados a lança perde grande parte da utilidade.",
+      "exemplos": [
+        "A milícia da vila forma uma fileira de lanças para conter o avanço de uma fera enfurecida.",
+        "Você usa a lança para manter distância de um oponente armado de faca.",
+        "Um caçador finaliza um javali ferido com um golpe certeiro de lança."
+      ],
+      "relacionados": [
+        "lanca-de-justa",
+        "funda"
+      ]
+    },
+    "lanca-de-justa": {
+      "descricao": "Lança de Justa é usar uma lança longa e pesada montado a cavalo, em geral encaixada sob o braço para uma carga em disparada. É devastadora no momento do impacto, mas praticamente inútil depois do primeiro golpe: a lança costuma se quebrar ou ficar impossível de manejar de novo na mesma investida.\n\nÉ a arma clássica de torneios e cargas de cavalaria, e pede espaço aberto e um cavalo bem treinado para funcionar.",
+      "exemplos": [
+        "Um cavaleiro desce a lança e carrega contra o oponente no campo de justas do torneio.",
+        "A cavalaria abre a batalha com uma carga de lanças de justa contra a linha inimiga desorganizada.",
+        "Depois do primeiro golpe, o cavaleiro descarta a lança quebrada e saca a espada para o resto da luta."
+      ],
+      "em_adamar": "Faz mais sentido em torneios, cargas de cavalaria aberta ou justas formais do que em combates de rua ou masmorra.",
+      "relacionados": [
+        "lanca"
+      ]
+    },
+    "laco": {
+      "descricao": "Laço é arremessar uma corda em nó corrediço para prender uma pessoa ou animal à distância, puxando-o ou imobilizando-o sem necessariamente feri-lo. É útil para capturar alguém vivo, deter um animal em disparada ou até derrubar um oponente em movimento.\n\nExige espaço para o arremesso e um bom ângulo; alvos muito próximos ou em terreno apertado dificultam bastante o lance.",
+      "exemplos": [
+        "Um vaqueiro laça um cavalo assustado antes que ele se machuque fugindo pela vila.",
+        "Vocês tentam capturar um fugitivo vivo laçando-o antes que ele alcance o rio.",
+        "Um caçador usa o laço para conter um animal ferido sem precisar golpeá-lo de novo."
+      ],
+      "relacionados": [
+        "lanca"
+      ]
+    },
+    "leitura-dinamica": {
+      "descricao": "Leitura Dinâmica é ler muito mais rápido que o normal, absorvendo o essencial de um texto extenso em uma fração do tempo que levaria uma leitura cuidadosa. É ótima para vasculhar pilhas de documentos ou livros em busca de uma informação específica sob pressão de tempo.\n\nEm troca da velocidade, uma leitura dinâmica malfeita pode deixar passar detalhes importantes; para estudar algo a fundo, uma leitura normal e demorada ainda vale mais a pena.",
+      "exemplos": [
+        "Você vasculha rapidamente os registros do arquivo da guilda em busca de um único nome antes que alguém note sua ausência.",
+        "Com pouco tempo antes do amanhecer, você folheia depressa um livro antigo em busca de uma única passagem relevante.",
+        "Um estudioso lê uma pilha de cartas apreendidas em busca de qualquer menção a um plano de traição."
+      ],
+      "relacionados": [
+        "linguistica",
+        "literatura"
+      ]
+    },
+    "leitura-labial": {
+      "descricao": "Leitura Labial é entender o que alguém está dizendo observando o movimento dos lábios e da boca, sem ouvir o som. Exige linha de visão clara do rosto de quem fala, boa iluminação e, de preferência, que a pessoa fale um idioma que você conhece; sotaques fortes, barbas ou pouca luz atrapalham bastante.\n\nÉ útil para captar conversas à distância, através de vidro ou em ambientes barulhentos demais para ouvir, mas não funciona bem de perfil ou com a boca coberta.",
+      "exemplos": [
+        "Do outro lado do salão, você tenta ler o que dois conspiradores dizem sem ouvir uma palavra.",
+        "Através da janela fechada, você acompanha a discussão entre o mercador e o cobrador de impostos.",
+        "Numa taverna barulhenta demais para ouvir, você lê os lábios do informante à distância."
+      ],
+      "relacionados": [
+        "linguagem-corporal",
+        "deteccao-de-mentiras"
+      ]
+    },
+    "lideranca": {
+      "descricao": "Liderança é comandar um grupo que já reconhece sua autoridade, mantendo a disciplina e a moral em situações difíceis: uma marcha cansativa, uma batalha, uma crise. Diferente de Diplomacia, que negocia com iguais, e de Intimidação, que impõe pelo medo, aqui as pessoas seguem porque confiam ou respeitam seu comando.\n\nUm bom teste pode evitar que um grupo entre em pânico ou desista no meio de uma tarefa árdua; falhar não significa motim imediato, mas a confiança do grupo em você racha um pouco.",
+      "exemplos": [
+        "Você mantém a milícia da vila firme na muralha mesmo com o cerco se arrastando por dias.",
+        "Um capitão anima a tripulação exausta a continuar remando contra a corrente até o próximo porto seguro.",
+        "Você assume o comando de um grupo de refugiados perdido, organizando a travessia da floresta."
+      ],
+      "relacionados": [
+        "diplomacia",
+        "intimidacao",
+        "estrategia"
+      ]
+    },
+    "linguagem-corporal": {
+      "descricao": "Linguagem Corporal é ler intenções e emoções pela postura, gestos e expressões de alguém, mesmo sem ouvir o que a pessoa diz. Ajuda a perceber nervosismo, hostilidade contida, hesitação antes de um ataque ou o incômodo de alguém escondendo algo.\n\nComplementa Detecção de Mentiras, que percebe a mentira em si, e pode ser usada mesmo à distância ou através de uma janela, desde que dê para ver a pessoa.",
+      "exemplos": [
+        "Você percebe pela postura tensa do guarda que ele está prestes a sacar a arma.",
+        "Num negócio suspeito, a inquietação nas mãos do vendedor entrega que ele está escondendo algo.",
+        "Você nota, pelo jeito como o prisioneiro evita olhar para a porta, que alguém deve vir buscá-lo em breve."
+      ],
+      "relacionados": [
+        "deteccao-de-mentiras",
+        "interrogatorio"
+      ]
+    },
+    "linguistica": {
+      "descricao": "Linguística é o estudo teórico de como os idiomas funcionam: gramática, som, origem e parentesco entre línguas. Não substitui saber falar um idioma específico, mas torna mais fácil aprender idiomas novos, reconhecer de que família uma língua desconhecida provavelmente vem, ou tentar decifrar um texto num idioma esquecido.\n\nÉ conhecimento de estudioso, útil sobretudo para quem viaja entre povos diferentes ou lida com textos antigos e línguas mortas.",
+      "exemplos": [
+        "Você percebe que um dialeto estranho ouvido na fronteira compartilha raízes com um idioma que já conhece.",
+        "Um estudioso tenta decifrar uma inscrição num idioma extinto encontrada numa ruína.",
+        "Aprender o idioma de uma região vizinha fica bem mais rápido para quem domina Linguística."
+      ],
+      "relacionados": [
+        "literatura",
+        "leitura-dinamica"
+      ]
+    },
+    "literatura": {
+      "descricao": "Literatura é conhecer as obras escritas e seus autores: poemas, crônicas, peças, contos populares e o que eles significam dentro de uma cultura. Serve para reconhecer uma citação, identificar o estilo de um autor específico ou perceber o valor de um livro raro.\n\nÉ diferente de Escrita, que é produzir textos novos, e de História, que trata de eventos do passado: aqui o foco é a obra em si e o lugar dela na cultura que a produziu.",
+      "exemplos": [
+        "Você reconhece o verso citado por um estranho como parte de um poema clássico conhecido.",
+        "Um colecionador pede sua opinião sobre a autenticidade de um manuscrito raro encontrado numa biblioteca esquecida.",
+        "Você identifica o estilo de um autor específico numa carta anônima, ajudando a rastrear quem a escreveu."
+      ],
+      "relacionados": [
+        "escrita",
+        "historia",
+        "linguistica"
+      ]
+    },
+    "luta-greco-romana": {
+      "descricao": "Luta Greco-Romana é uma técnica de combate desarmado focada em agarrar, derrubar e imobilizar o oponente no chão, sem golpes de socos ou chutes. É especialmente boa para controlar alguém sem matá-lo, prender um adversário no chão ou tirá-lo de uma posição vantajosa.\n\nAssim como o Judô, ajuda a se defender de ataques desarmados, mas seu foco está mais em prender e manter o controle do que em arremessar o oponente para longe.",
+      "exemplos": [
+        "Você derruba e imobiliza um bêbado briguento antes que ele machuque alguém na taverna.",
+        "Numa disputa por um objeto entre dois aventureiros, a luta greco-romana resolve sem sangue derramado.",
+        "Guardas treinados em luta greco-romana prendem um suspeito no chão até as amarras chegarem."
+      ],
+      "relacionados": [
+        "judo"
+      ]
+    },
+    "labia": {
+      "descricao": "Lábia é convencer alguém, rápido e na conversa, a fazer algo que ele normalmente não faria: deixar você passar, acreditar numa história inventada na hora, entregar uma informação, aceitar um negócio ruim. É o conto do vigário, a enrolação, a conversa que não dá tempo de o outro pensar direito.\n\nCostuma ser uma disputa contra a Vontade de quem ouve, e o efeito é de curto prazo: passada a conversa, a vítima pode perceber que foi enrolada. Pedidos absurdos ou contra os interesses graves da pessoa ficam mais difíceis. Diplomacia é o caminho lento e honesto; Dissimulação é sustentar uma encenação; Lábia é o golpe de conversa.",
+      "exemplos": [
+        "Convencer o porteiro de que o mestre da guilda mandou você buscar um pacote lá dentro.",
+        "Enrolar o cobrador de pedágio com uma história de salvo-conduto que ninguém consegue conferir.",
+        "Vender como relíquia um amuleto comprado na feira do vilarejo anterior.",
+        "Tirar o guarda do posto por um instante com um aviso falso de briga na taverna."
+      ],
+      "dica_mesa": "Diga ao narrador o que você quer que a pessoa faça antes de rolar: a Lábia resolve uma cena, não uma amizade.",
+      "relacionados": [
+        "dissimulacao",
+        "diplomacia",
+        "deteccao-de-mentiras"
+      ]
+    }
+  }
+}

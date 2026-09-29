@@ -1,0 +1,1129 @@
+{
+  "lista": "equipamento",
+  "itens": {
+    "tanga-de-pele": {
+      "descricao": "A tanga de pele é a armadura mais primitiva que existe: uma tira de couro cru amarrada na cintura, cobrindo apenas a virilha. Mais parece um traje de sobrevivência do que uma peça de guerra, e é isso que costuma ser: protege o mínimo indispensável e ainda assim quase não impede um corte ou uma perfuração de chegar à carne.\n\nO valor dela está em ser barata, leve e discreta — ninguém estranha um caçador, um escravo ou um selvagem das terras frias usando uma. Ela não atrapalha em nada os movimentos e pode ser usada por baixo de qualquer roupa sem que ninguém perceba, mas não se engane: contra uma espada, uma lança ou as garras de uma fera, ela é pouco melhor do que estar nu. Quem depende dela para sobreviver está contando muito mais com a sorte e a esquiva do que com qualquer proteção real (ver pág. 283).",
+      "exemplos": [
+        "Um eremita das montanhas veste só uma tanga de pele e confia na fé e na fuga para sobreviver.",
+        "Um prisioneiro fugitivo, despojado de tudo, improvisa uma tanga de couro de um animal morto na estrada.",
+        "Um selvagem das terras geladas a usa como parte de um traje maior, mais por costume tribal do que por proteção."
+      ],
+      "em_adamar": "É item comum e primitivo, sem nenhuma tecnologia especial; qualquer PC ou PdN de origem humilde, tribal ou miserável pode tê-la sem restrição.",
+      "dica_mesa": "Trate-a mais como figurino de personagem pobre ou selvagem do que como armadura de verdade.",
+      "relacionados": [
+        "tunica-de-pele"
+      ]
+    },
+    "tunica-de-pele": {
+      "descricao": "A túnica de pele é uma vestimenta de couro cru ou peles cosidas, usada sobre o tronco como uma segunda camada rústica de roupa. Serve tanto para aquecer nas noites frias quanto para servir de proteção improvisada, e por isso é comum entre caçadores, pastores e povos que vivem longe das cidades.\n\nComo armadura, ela é modesta: ajuda um pouco contra um galho, uma queda ou uma garra distraída, mas não segura de verdade o fio de uma lâmina ou a ponta de uma flecha. A grande vantagem é que ninguém a reconhece como armadura — ela passa perfeitamente por roupa comum, então quem a usa pode entrar em qualquer vila ou taverna sem levantar suspeita (ver pág. 283).",
+      "exemplos": [
+        "Um batedor usa a túnica de pele para se camuflar e se aquecer numa expedição pela floresta.",
+        "Um mercador cauteloso veste uma por baixo do casaco, sem que ninguém desconfie que está \"armado\".",
+        "Um jovem caçador de aldeia sai atrás de lobos vestindo só a túnica de pele e uma faca."
+      ],
+      "em_adamar": "É roupa e proteção rústica ao mesmo tempo, sem nada além do NT0 do cenário; está liberada para qualquer humano de Adamar.",
+      "dica_mesa": "Bom figurino para personagens rurais, pobres ou fora da lei que não têm acesso a um ferreiro.",
+      "relacionados": [
+        "tanga-de-pele",
+        "jaqueta-de-couro"
+      ]
+    },
+    "peitoral-de-bronze": {
+      "descricao": "O peitoral de bronze é uma placa rígida moldada para cobrir a frente do tronco, presa por tiras de couro nos ombros e na cintura. É um símbolo clássico do guerreiro antigo: brilhante, resistente e capaz de aguentar um bom golpe de espada ou lança sem ceder.\n\nO problema é que ele só cobre a frente do corpo. Contra um ataque vindo de lado ou pelas costas — uma emboscada, um inimigo que consegue flanquear, um golpe que acerta de raspão pela lateral — a placa simplesmente não está lá para proteger. Também é rígido e pesado o bastante para ser óbvio: ninguém confunde quem usa um peitoral de bronze com um civil desarmado (ver pág. 283).",
+      "exemplos": [
+        "Um capitão de guarda usa o peitoral de bronze nas paradas e nas batalhas campais, onde encara o inimigo de frente.",
+        "Um mercenário desconfiado evita virar as costas em combate, sabendo que o peitoral não o protege por trás.",
+        "Um nobre decadente ainda guarda o peitoral de bronze da família, mais como relíquia do que como equipamento atual."
+      ],
+      "em_adamar": "É armadura mundana de NT1, dentro da tecnologia comum de Adamar; qualquer ferreiro de porte médio sabe fazer uma.",
+      "dica_mesa": "Lembre o jogador de que golpes pela lateral ou pelas costas ignoram essa proteção.",
+      "relacionados": [
+        "corselete-de-bronze",
+        "peitoral-de-aco"
+      ]
+    },
+    "corselete-de-bronze": {
+      "descricao": "O corselete de bronze é a versão completa do peitoral: duas placas rígidas, uma na frente e outra nas costas, presas nos ombros e nas laterais, cobrindo o tronco inteiro e a virilha. É a armadura clássica de exércitos antigos, pesada, cara e vistosa, feita para quem luta em linha de batalha e precisa aguentar golpes vindos de qualquer direção.\n\nPor ser rígido e bem ajustado ao corpo, protege igualmente bem contra cortes, perfurações e pancadas, mas exige manutenção e um bom ferreiro para ajustar o caimento. É volumoso demais para esconder sob roupas comuns e pesado o suficiente para cansar quem não está acostumado a lutar com ele (ver pág. 283).",
+      "exemplos": [
+        "Uma companhia de lanceiros marcha em formação vestindo corseletes de bronze idênticos.",
+        "Um campeão de arena escolhe o corselete de bronze para durar mais rounds contra vários oponentes.",
+        "Um veterano aposentado guarda o corselete como lembrança da última grande guerra que lutou."
+      ],
+      "em_adamar": "É armadura pesada e cara, mas plenamente mundana para o NT1 de Adamar; costuma equipar tropas regulares e nobres guerreiros.",
+      "dica_mesa": "Ideal para quem quer proteção equilibrada em todas as direções e não se importa com o peso e o preço.",
+      "relacionados": [
+        "peitoral-de-bronze",
+        "corselete-de-aco"
+      ]
+    },
+    "tunica-armadura": {
+      "descricao": "Essa túnica é uma peça de tecido grosso, acolchoada com várias camadas de linho ou algodão costuradas, cobrindo o tronco e a virilha. É a armadura dos que não podem pagar por metal: leve, barata, fácil de mover e, principalmente, discreta — por fora, parece só uma roupa comum um pouco mais grossa.\n\nO acolchoamento absorve razoavelmente bem pancadas e amortece um pouco cortes e perfurações, mas está longe de barrar um golpe sério de arma branca. Muitos guerreiros a usam por baixo de uma armadura de metal, como camada extra de conforto e proteção, mas ela também funciona sozinha para quem precisa passar despercebido (ver pág. 283).",
+      "exemplos": [
+        "Um batedor disfarçado de camponês usa a túnica acolchoada por baixo do manto, sem levantar suspeita.",
+        "Um recruta pobre entra em seu primeiro combate só com essa túnica, sem dinheiro para nada melhor.",
+        "Um cavaleiro veste a túnica por baixo da cota de malha para amortecer o peso do metal."
+      ],
+      "em_adamar": "Armadura simples e barata, plenamente comum no NT1 de Adamar; qualquer alfaiate ou costureira sabe fazer uma.",
+      "dica_mesa": "Boa escolha para personagens que precisam de disfarce ou de uma segunda camada sob armadura de metal.",
+      "relacionados": [
+        "jaqueta-de-couro",
+        "cota-de-malha-longa"
+      ]
+    },
+    "jaqueta-de-couro": {
+      "descricao": "A jaqueta de couro é uma peça de couro curtido, mais flexível que uma armadura de couro rígida, cobrindo o tronco e parte dos braços. É popular entre viajantes, batedores e aventureiros porque protege razoavelmente sem pesar tanto quanto metal, e ainda serve como roupa de viagem resistente ao frio e ao mato fechado.\n\nEla não impressiona ninguém pela proteção — um golpe forte de espada ou machado ainda a atravessa sem muito esforço —, mas cumpre bem o papel de primeira linha de defesa contra facas, garras e quedas. Por ser flexível e relativamente fina, pode ser usada por baixo de um manto sem ficar óbvia (ver pág. 283).",
+      "exemplos": [
+        "Um batedor de fronteira usa a jaqueta de couro em toda expedição pela mata, sem se preocupar com o peso.",
+        "Um ladrão de estrada a veste como proteção mínima que não atrapalha uma fuga rápida.",
+        "Um caçador de recompensas prefere a jaqueta a uma armadura pesada, priorizando mobilidade."
+      ],
+      "em_adamar": "É armadura simples e barata, plenamente disponível no NT1 de Adamar em qualquer curtume ou mercado de couros.",
+      "dica_mesa": "Boa opção padrão para personagens que valorizam mobilidade e discrição sobre proteção máxima.",
+      "relacionados": [
+        "armadura-de-couro",
+        "tunica-armadura"
+      ]
+    },
+    "armadura-de-couro": {
+      "descricao": "A armadura de couro é feita de couro grosso, fervido ou tratado até endurecer, moldado em placas ou uma peça única que cobre o tronco e a virilha. É mais rígida e resistente que uma simples jaqueta, mas ainda bem mais leve e barata que qualquer coisa em metal, o que a torna a escolha clássica de quem precisa de proteção real sem gastar uma fortuna.\n\nEla aguenta bem cortes superficiais e perfurações fracas, mas um golpe de machado ou de maça ainda machuca bastante quem a usa por baixo. É comum em regiões pobres em minério, entre mercenários iniciantes e batedores que preferem não fazer barulho de metal ao caminhar (ver pág. 283).",
+      "exemplos": [
+        "Uma companhia de mercenários recém-formada equipa todos os novatos com armadura de couro.",
+        "Um explorador de ruínas prefere o couro ao metal, para não fazer barulho nas câmaras escuras.",
+        "Um bandido de estrada usa uma armadura de couro surrada, remendada várias vezes."
+      ],
+      "em_adamar": "Equipamento mundano e comum no NT1 de Adamar; qualquer curtidor de couro ou armeiro modesto sabe produzi-la.",
+      "dica_mesa": "É o ponto de partida clássico para um personagem de baixo orçamento que ainda quer alguma proteção de verdade.",
+      "relacionados": [
+        "jaqueta-de-couro",
+        "armadura-de-escamas-leve"
+      ]
+    },
+    "armadura-de-escamas-leve": {
+      "descricao": "Essa armadura é feita de pequenas escamas de metal ou osso costuradas sobre uma base de couro ou tecido, cobrindo o tronco como uma pele extra rígida. As escamas se sobrepõem como as de um peixe, permitindo alguma flexibilidade no torso enquanto ainda oferecem uma camada dura contra cortes.\n\nPor ser leve, é mais confortável de usar por longos períodos que uma armadura de escamas completa, mas em troca oferece proteção um pouco mais fraca e não cobre a virilha. É um meio-termo popular entre quem quer mais que couro, mas ainda não pode bancar uma cota de malha inteira (ver pág. 283).",
+      "exemplos": [
+        "Um arqueiro de elite usa a armadura de escamas leve, valorizando mobilidade para atirar e recarregar.",
+        "Um guarda de caravana a veste em longas viagens, por ser mais leve que uma cota completa.",
+        "Um mercenário estrangeiro chega à cidade usando uma armadura de escamas de aparência exótica."
+      ],
+      "em_adamar": "É armadura mundana de NT2, plenamente disponível a qualquer combatente de Adamar com algum recurso.",
+      "dica_mesa": "Bom meio-termo para quem quer mais proteção que couro sem abrir mão de agilidade.",
+      "relacionados": [
+        "armadura-de-escamas",
+        "armadura-de-couro"
+      ]
+    },
+    "loriga-segmentada": {
+      "descricao": "A loriga segmentada é feita de faixas curvas de metal, sobrepostas horizontalmente e presas por tiras de couro e fivelas, cobrindo o tronco como uma couraça articulada. O desenho em segmentos permite que o torso se curve um pouco ao se mover, algo que uma peça rígida única não permitiria.\n\nÉ um equipamento de fabricação relativamente trabalhosa — exige um armeiro competente para montar e ajustar as tiras —, mas em troca entrega uma boa defesa contra cortes e pancadas na região mais vital do corpo. Por ser feita de metal exposto, faz barulho ao se mover e é impossível de disfarçar como roupa comum (ver pág. 283).",
+      "exemplos": [
+        "Uma legião disciplinada equipa suas fileiras da frente com loriga segmentada padronizada.",
+        "Um oficial exige que seus soldados façam manutenção regular das tiras de couro da loriga.",
+        "Um veterano reconhece o som metálico da loriga segmentada se aproximando na escuridão."
+      ],
+      "em_adamar": "Armadura mundana de NT2, condizente com exércitos organizados de Adamar; qualquer arsenal militar de porte pode ter algumas.",
+      "dica_mesa": "Combine com a menção do barulho metálico ao se mover para cenas de furtividade.",
+      "relacionados": [
+        "corselete-de-aco",
+        "armadura-de-escamas"
+      ]
+    },
+    "cota-de-malha-longa": {
+      "descricao": "A cota de malha longa é feita de milhares de pequenos anéis de metal entrelaçados, formando um tecido metálico flexível que cobre o tronco e a virilha, geralmente até a altura das coxas. É uma das armaduras mais versáteis que existem: se molda ao corpo, permite quase todos os movimentos e pode ser vestida por baixo de um manto para passar quase despercebida.\n\nSua grande fraqueza é contra golpes de impacto: como os anéis apenas se entrelaçam sem travar rigidamente, uma maça ou um martelo ainda transmite boa parte do choque para quem está por baixo, mesmo sem romper a malha. Já contra cortes e perfurações ela se sai bem melhor, distribuindo e desviando o fio da lâmina (ver pág. 283).",
+      "exemplos": [
+        "Um cavaleiro veste a cota de malha longa por baixo do sobretudo para viajar incógnito.",
+        "Um mercenário evita duelar com um adversário armado de maça, sabendo da fraqueza da malha contra pancadas.",
+        "Um ferreiro passa dias inteiros consertando os anéis rompidos de uma cota de malha após uma batalha."
+      ],
+      "em_adamar": "É armadura mundana de NT2, plenamente disponível no cenário; produzi-la exige um bom ferreiro, mas nada fora do comum.",
+      "dica_mesa": "Lembre o jogador de que ela protege melhor contra corte e perfuração do que contra pancadas fortes.",
+      "relacionados": [
+        "camisa-de-cota-de-malha",
+        "cota-de-malha-longa-dupla",
+        "perneiras-de-cota-de-malha"
+      ]
+    },
+    "camisa-de-cota-de-malha": {
+      "descricao": "A camisa de cota de malha é uma versão curta da cota longa, cobrindo apenas o tronco, sem descer até a virilha ou as coxas. É mais leve, mais barata e mais fácil de vestir rápido, o que a torna popular entre quem precisa de proteção decente sem carregar o peso e o custo de uma malha completa.\n\nAssim como qualquer malha, ela lida bem com cortes e perfurações, mas deixa passar boa parte do impacto de golpes contundentes. Por cobrir menos área, também deixa a virilha e as coxas mais expostas, algo que muitos complementam com perneiras ou calças de couro por baixo (ver pág. 283).",
+      "exemplos": [
+        "Um guarda urbano usa a camisa de malha por baixo do uniforme, pronto para brigas de rua.",
+        "Um mercador que viaja por estradas perigosas a veste como seguro barato contra assaltantes.",
+        "Um aventureiro combina a camisa de malha com calças de couro para cobrir o que a malha curta deixa de fora."
+      ],
+      "em_adamar": "Armadura mundana de NT2, comum entre viajantes e guardas de Adamar que não precisam de proteção total.",
+      "dica_mesa": "Incentive o jogador a completar a proteção das pernas com outra peça, já que a camisa não cobre a virilha.",
+      "relacionados": [
+        "cota-de-malha-longa",
+        "calcas-de-couro"
+      ]
+    },
+    "armadura-de-escamas": {
+      "descricao": "Essa é a versão pesada da armadura de escamas: placas metálicas maiores e mais grossas, costuradas em fileiras sobrepostas sobre uma base de couro, cobrindo o tronco e a virilha por completo. O resultado lembra a pele de um réptil gigante e impressiona tanto quanto protege.\n\nComparada à versão leve, ela aguenta melhor golpes fortes, mas pesa mais e restringe um pouco mais os movimentos de torção do tronco. As escamas também podem se soltar ou entortar com o uso, exigindo manutenção constante de um armeiro para continuar oferecendo proteção plena (ver pág. 283).",
+      "exemplos": [
+        "Um capitão mercenário de renome usa a armadura de escamas completa como símbolo de status e poder.",
+        "Um guerreiro tribal do norte adorna sua armadura de escamas com trófeus de caça.",
+        "Um armeiro cobra caro para trocar escamas soltas após uma longa campanha militar."
+      ],
+      "em_adamar": "Armadura mundana de NT2, plenamente disponível a quem tem recursos para bancá-la em Adamar.",
+      "dica_mesa": "Ótima escolha visual para PdNs de destaque, como capitães ou campeões de arena.",
+      "relacionados": [
+        "armadura-de-escamas-leve",
+        "perneiras-de-escamas",
+        "mangas-de-escamas"
+      ]
+    },
+    "cota-de-malha-longa-dupla": {
+      "descricao": "A cota de malha longa dupla usa duas camadas sobrepostas de anéis entrelaçados, quase dobrando a espessura da malha comum. O resultado é uma das armaduras flexíveis mais protegidas que existem, ainda permitindo boa liberdade de movimento por não ser rígida.\n\nO preço dessa proteção extra é o peso: vestir duas camadas de anéis cansa muito mais do que uma só, e ainda carrega a fraqueza clássica da malha contra pancadas fortes, só que um pouco atenuada pela camada dupla. É armadura para quem espera enfrentar combates longos e sérios e está disposto a pagar o preço em fadiga (ver pág. 283).",
+      "exemplos": [
+        "Um cavaleiro veterano prefere a malha dupla para campanhas longas contra inimigos bem armados.",
+        "Um guarda-costas de um nobre rico usa a versão dupla, pronto para o pior.",
+        "Um saqueador de ruínas avalia se vale a pena o peso extra antes de entrar numa masmorra."
+      ],
+      "em_adamar": "Armadura mundana de NT3, plenamente disponível a quem pode pagar por ela em Adamar.",
+      "dica_mesa": "Deixe claro que o peso extra pode pesar na fadiga em jornadas longas, não só no combate.",
+      "relacionados": [
+        "cota-de-malha-longa",
+        "corselete-de-aco"
+      ]
+    },
+    "corselete-de-aco-reforcado": {
+      "descricao": "Esse corselete é o topo de linha das armaduras rígidas de placa: aço de boa qualidade, moldado e reforçado nos pontos de maior risco, cobrindo o tronco e a virilha na frente e atrás. É a armadura de quem pode pagar o melhor que um armeiro tem a oferecer, feita sob medida e ajustada ao corpo de quem vai usá-la.\n\nEla protege muito bem contra qualquer tipo de dano — corte, perfuração ou impacto —, mas é cara, pesada e exige manutenção constante contra ferrugem. Também não é algo que se esconde: só heróis, campeões e nobres guerreiros costumam ter uma peça dessas (ver pág. 283).",
+      "exemplos": [
+        "Um campeão de torneio veste o corselete de aço reforçado na final de uma justa importante.",
+        "Um general encomenda um corselete sob medida ao melhor armeiro da região.",
+        "Um herói lendário é lembrado nas canções por seu corselete reforçado, forjado para durar gerações."
+      ],
+      "em_adamar": "Armadura mundana de NT3, no topo do que Adamar produz; reservada a quem tem prestígio ou riqueza suficiente.",
+      "dica_mesa": "Use-a como marca visual de destaque para PdNs importantes, dado o custo e a raridade de encomendá-la.",
+      "relacionados": [
+        "corselete-de-aco",
+        "peitoral-de-aco"
+      ]
+    },
+    "peitoral-de-aco": {
+      "descricao": "O peitoral de aço é uma placa única e rígida cobrindo a frente do tronco, mais avançada e resistente que seu equivalente em bronze, mas com a mesma limitação: não cobre as costas nem as laterais. É a escolha de quem quer boa proteção frontal sem o peso e o custo de uma armadura completa.\n\nContra um ataque de frente, ele é excelente, distribuindo bem o impacto de golpes fortes e resistindo a cortes e perfurações. Mas quem depende dele precisa manter o inimigo sempre à frente — um flanco ou uma emboscada pelas costas encontram o corpo praticamente desprotegido ali (ver pág. 283).",
+      "exemplos": [
+        "Um duelista profissional usa o peitoral de aço, confiante em nunca dar as costas ao adversário.",
+        "Um guarda de portão o veste em pé, encarando quem se aproxima de frente.",
+        "Um mercenário aprende, da pior forma, a importância de vigiar as costas ao usar só o peitoral."
+      ],
+      "em_adamar": "Armadura mundana de NT3, plenamente disponível a quem tem recursos em Adamar.",
+      "dica_mesa": "Reforce que ele não protege as costas — bom gancho para emboscadas e flancos em combate.",
+      "relacionados": [
+        "peitoral-de-bronze",
+        "corselete-de-aco"
+      ]
+    },
+    "corselete-de-aco": {
+      "descricao": "O corselete de aço cobre o tronco e a virilha por completo, com uma placa na frente e outra nas costas, unidas nos ombros e nas laterais. É a armadura de placa clássica de cavaleiros e soldados de elite, resistente, imponente e cara o bastante para não estar ao alcance de qualquer um.\n\nDiferente do peitoral simples, ele protege igualmente bem de qualquer direção, o que o torna ideal para quem espera lutar cercado ou em formações apertadas. Em compensação, é pesado, rígido e impossível de esconder — ninguém confunde alguém vestindo um corselete de aço com um civil desarmado (ver pág. 283).",
+      "exemplos": [
+        "Uma guarda de elite equipa seus melhores soldados com corseletes de aço combinando.",
+        "Um cavaleiro encara uma emboscada por todos os lados, confiante na proteção completa do corselete.",
+        "Um artesão negocia meses para pagar por um corselete de aço feito sob medida."
+      ],
+      "em_adamar": "Armadura mundana de NT3, no topo do que Adamar produz para tropas de elite e nobres guerreiros.",
+      "dica_mesa": "Boa escolha para personagens que esperam lutar cercados ou em formação fechada.",
+      "relacionados": [
+        "corselete-de-aco-reforcado",
+        "peitoral-de-aco",
+        "armadura-de-placas-laminadas-de-aco"
+      ]
+    },
+    "armadura-de-placas-laminadas-de-aco": {
+      "descricao": "Essa armadura é feita de placas de aço sobrepostas em camadas horizontais, presas por tiras de couro ou correntes, cobrindo o tronco e a virilha. O desenho em camadas dá um pouco mais de flexibilidade que um corselete rígido de peça única, já que as placas podem deslizar levemente umas sobre as outras ao mover o tronco.\n\nÉ uma armadura sólida e versátil, com boa proteção contra corte e impacto, um meio-termo entre a rigidez total do corselete e a flexibilidade da malha. Como toda armadura de placas metálicas expostas, é pesada, ruidosa e impossível de disfarçar como roupa (ver pág. 283).",
+      "exemplos": [
+        "Um oficial de cavalaria escolhe a armadura laminada por equilibrar proteção e mobilidade no cavalo.",
+        "Um mercenário experiente valoriza a leve flexibilidade que as camadas de placas oferecem.",
+        "Um armeiro mostra com orgulho como as placas se sobrepõem, permitindo o tronco se curvar."
+      ],
+      "em_adamar": "Armadura mundana de NT3, plenamente disponível em Adamar para quem tem recursos.",
+      "dica_mesa": "Apresente-a como opção intermediária entre a rigidez do corselete e a flexibilidade da malha.",
+      "relacionados": [
+        "corselete-de-aco",
+        "loriga-segmentada"
+      ]
+    },
+    "casaco-de-couro-de-bufalo": {
+      "descricao": "O casaco de couro de búfalo é um sobretudo longo e extremamente grosso, feito do couro mais resistente que se consegue curtir, cobrindo o tronco e boa parte dos braços e das pernas como uma segunda pele espessa. Historicamente é uma armadura de transição, usada por soldados que já carregam armas de fogo primitivas mas ainda enfrentam lâminas e flechas no campo de batalha.\n\nEle protege surpreendentemente bem para algo feito só de couro, graças à espessura e ao tratamento cuidadoso do material, mas é pesado, quente e rígido o bastante para incomodar em climas quentes. É uma peça rara e cara de se produzir, que exige um mestre curtidor, não um simples artesão de vila (ver pág. 283).",
+      "exemplos": [
+        "Um mercador de itens estranhos oferece um casaco de couro de búfalo por um preço exorbitante.",
+        "Um caçador de monstros importado de terras distantes veste um casaco assim, jurando que já parou uma lâmina de aço.",
+        "Um narrador pode usar essa peça como recompensa rara de uma missão especial."
+      ],
+      "em_adamar": "Fica com o narrador: é um traje de NT4, um passo além da tecnologia comum de Adamar, então só deve aparecer como importação raríssima, saque exótico ou recompensa especial, nunca à venda livre.",
+      "dica_mesa": "Use-o com moderação, como item único de campanha, não como equipamento comprável em qualquer loja.",
+      "relacionados": [
+        "armadura-de-couro",
+        "jaqueta-de-couro"
+      ]
+    },
+    "bracadeiras-de-bronze": {
+      "descricao": "As braçadeiras de bronze são placas rígidas moldadas para envolver os antebraços, presas por tiras de couro. Complementam uma armadura de tronco, cobrindo uma parte do corpo que muitas peças principais deixam exposta.\n\nSendo rígidas, protegem bem contra cortes e pancadas na região, mas podem incomodar um pouco movimentos finos das mãos e pulsos, como manejar uma tranca ou amarrar um nó rápido. Combinam bem com um peitoral ou corselete do mesmo material, formando um conjunto visualmente coerente (ver pág. 283).",
+      "exemplos": [
+        "Um guerreiro veste braçadeiras de bronze combinando com seu corselete, completando o visual de um soldado antigo.",
+        "Um instrutor de combate recomenda braçadeiras a um aluno que sempre erra bloqueios com o antebraço.",
+        "Um saqueador de túmulos as encontra numa câmara funerária, ainda brilhando sob a poeira."
+      ],
+      "em_adamar": "Peça mundana de NT1, plenamente disponível em Adamar como complemento de armadura de tronco.",
+      "dica_mesa": "Lembre que ela cobre só os braços — combine com outra peça para proteger o tronco.",
+      "relacionados": [
+        "peitoral-de-bronze",
+        "grevas-de-bronze",
+        "mangas-de-couro-reforcado"
+      ]
+    },
+    "grevas-de-bronze": {
+      "descricao": "As grevas de bronze são placas rígidas moldadas para cobrir as canelas, presas por tiras atrás da perna. São um item clássico de infantaria pesada desde tempos antigos, protegendo uma das partes mais expostas e vulneráveis do corpo em combate corpo a corpo.\n\nAssim como as braçadeiras, oferecem boa defesa rígida contra corte e impacto na região, mas podem atrapalhar levemente corridas longas ou terrenos muito irregulares, já que não se dobram com o tornozelo. São quase sempre usadas em conjunto com um peitoral ou corselete do mesmo conjunto (ver pág. 283).",
+      "exemplos": [
+        "Uma linha de lanceiros avança em formação, grevas de bronze reluzindo ao sol.",
+        "Um guerreiro veterano jura que as grevas já salvaram suas pernas de mais golpes do que consegue contar.",
+        "Um recruta reclama que as grevas atrapalham correr por terreno acidentado."
+      ],
+      "em_adamar": "Peça mundana de NT1, plenamente disponível em Adamar como complemento de armadura de tronco.",
+      "dica_mesa": "Bom detalhe narrativo: combatentes de infantaria pesada costumam usá-las como parte do uniforme.",
+      "relacionados": [
+        "bracadeiras-de-bronze",
+        "perneiras-de-couro"
+      ]
+    },
+    "mangas-de-tecido": {
+      "descricao": "As mangas de tecido são faixas acolchoadas de linho ou algodão grosso, amarradas ou costuradas sobre os braços. Assim como a túnica acolchoada para o tronco, servem como a proteção mais barata e discreta que existe para os membros superiores.\n\nElas amortecem levemente pancadas e desviam um pouco de cortes superficiais, mas não seguram um golpe sério de arma alguma. A vantagem é que, por serem só tecido, passam completamente despercebidas por baixo de uma manga de roupa comum, sem denunciar que quem as usa está preparado para briga (ver pág. 283).",
+      "exemplos": [
+        "Um espião disfarçado de servo usa mangas de tecido escondidas sob a libré, só por precaução.",
+        "Um mendigo de rua que sabe se defender esconde mangas acolchoadas sob os trapos.",
+        "Um jovem aprendiz de guerreiro treina com mangas de tecido antes de merecer algo melhor."
+      ],
+      "em_adamar": "Peça mundana e barata de NT1, plenamente disponível em Adamar para qualquer pessoa.",
+      "dica_mesa": "Ótima para personagens disfarçados que não podem parecer armados.",
+      "relacionados": [
+        "barrete-de-tecido",
+        "luvas-de-tecido"
+      ]
+    },
+    "perneiras-de-couro-reforcado": {
+      "descricao": "Essas perneiras são feitas de couro grosso, tratado e reforçado com costuras extras, cobrindo as pernas da coxa ao tornozelo. São mais resistentes que perneiras de couro comuns, mas ainda bem mais leves e baratas que qualquer coisa em metal.\n\nProtegem razoavelmente contra cortes superficiais e mordidas de animais, um risco constante para quem caça ou explora terrenos selvagens, mas cedem fácil diante de uma lâmina bem afiada ou um golpe forte. São confortáveis o bastante para longas caminhadas, o que as torna populares entre viajantes e batedores (ver pág. 283).",
+      "exemplos": [
+        "Um batedor florestal usa perneiras de couro reforçado para se proteger de espinhos e mordidas.",
+        "Um guia de caravana recomenda a peça a viajantes que atravessam terreno de matagal fechado.",
+        "Um caçador de recompensas as veste em toda perseguição por mato denso."
+      ],
+      "em_adamar": "Peça mundana de NT1, plenamente disponível em Adamar em qualquer curtume.",
+      "dica_mesa": "Combine com cenas de exploração selvagem, mais que combate direto contra armas.",
+      "relacionados": [
+        "perneiras-de-couro",
+        "mangas-de-couro-reforcado",
+        "botas"
+      ]
+    },
+    "mangas-de-couro-reforcado": {
+      "descricao": "As mangas de couro reforçado cobrem os braços com o mesmo couro grosso e tratado das perneiras equivalentes, oferecendo proteção decente contra cortes leves e mordidas sem pesar muito. São a contraparte natural das perneiras de couro reforçado, completando a proteção dos membros.\n\nMuita gente as combina com uma armadura de tronco mais leve, como uma jaqueta de couro ou túnica acolchoada, formando um conjunto barato mas razoavelmente completo. Não seguram bem um golpe de lâmina afiada ou de arma contundente pesada (ver pág. 283).",
+      "exemplos": [
+        "Um lenhador que também sabe se defender usa mangas de couro reforçado no trabalho diário.",
+        "Um batedor completa seu traje de couro com essas mangas antes de entrar na floresta.",
+        "Um artesão as remenda depois de um encontro ruim com um urso faminto."
+      ],
+      "em_adamar": "Peça mundana de NT1, plenamente disponível em Adamar em qualquer curtume.",
+      "dica_mesa": "Combine bem com jaqueta ou armadura de couro para um conjunto barato e coerente.",
+      "relacionados": [
+        "perneiras-de-couro-reforcado",
+        "jaqueta-de-couro"
+      ]
+    },
+    "perneiras-de-couro": {
+      "descricao": "Essas perneiras são feitas de couro mais fino e maleável que a versão reforçada, priorizando o conforto e a discrição sobre a proteção máxima. Cobrem as pernas mas se dobram com facilidade, quase como uma calça comum um pouco mais resistente.\n\nSua proteção real é mínima, boa apenas contra arranhões e cortes muito superficiais, mas em compensação são fáceis de esconder sob uma calça ou saia comum. Muita gente as usa mais por costume de viagem do que esperando que façam diferença numa luta séria (ver pág. 283).",
+      "exemplos": [
+        "Um viajante as usa por hábito em estradas perigosas, sem esperar muito delas numa emboscada.",
+        "Um ladrão as veste por baixo das calças comuns, para não levantar suspeita ao entrar numa cidade.",
+        "Um jovem escudeiro treina com elas antes de ganhar uma armadura de verdade."
+      ],
+      "em_adamar": "Peça mundana e barata de NT1, plenamente disponível em Adamar.",
+      "dica_mesa": "Trate-a mais como vestuário resistente do que proteção de combate de verdade.",
+      "relacionados": [
+        "perneiras-de-couro-reforcado",
+        "calcas-de-couro"
+      ]
+    },
+    "calcas-de-couro": {
+      "descricao": "As calças de couro cobrem as pernas e a virilha numa peça só, como uma calça comum mas feita de couro tratado e mais resistente. São uma escolha prática para quem quer proteger a virilha — um ponto vulnerável que muitas armaduras de tronco curtas deixam de fora — sem carregar peso extra de metal.\n\nAssim como outras peças de couro simples, protegem bem contra o dia a dia (mato, quedas, mordidas) mas pouco contra uma lâmina ou golpe sério. São frequentemente usadas junto com uma camisa de malha ou peitoral, que cobrem só o tronco (ver pág. 283).",
+      "exemplos": [
+        "Um mercenário completa a camisa de malha curta com calças de couro para cobrir a virilha.",
+        "Um cavaleiro as usa por baixo da armadura de placas, como camada de conforto e proteção extra.",
+        "Um viajante confia nelas para atravessar terreno espinhoso sem se ferir."
+      ],
+      "em_adamar": "Peça mundana de NT1, plenamente disponível em Adamar em qualquer curtume.",
+      "dica_mesa": "Ótimo complemento para peças de tronco que não cobrem a virilha, como a camisa de malha.",
+      "relacionados": [
+        "camisa-de-cota-de-malha",
+        "perneiras-de-couro"
+      ]
+    },
+    "saiote-de-couro-batido": {
+      "descricao": "O saiote de couro batido é feito de várias tiras largas de couro endurecido, presas num cinto e penduradas ao redor da cintura, cobrindo a virilha e o topo das coxas como uma saia protetora. É um desenho antigo, comum entre soldados de infantaria que precisam de liberdade total de movimento nas pernas.\n\nAs tiras se separam facilmente ao caminhar ou correr, então a proteção não é perfeita — um golpe bem colocado pode passar entre elas —, mas cobre bem contra ataques vindos de baixo ou de raspão. É uma peça leve, barulhenta ao balançar e visualmente marcante em qualquer formação militar (ver pág. 283).",
+      "exemplos": [
+        "Uma legião veterana marcha com o característico balanço dos saiotes de couro batido.",
+        "Um gladiador de arena o usa por permitir chutes e passadas largas sem restrição.",
+        "Um recruta aprende que o saiote não cobre tudo, quando um golpe passa entre as tiras."
+      ],
+      "em_adamar": "Peça mundana de NT1, plenamente disponível em Adamar, comum a exércitos organizados.",
+      "dica_mesa": "Lembre que as tiras deixam brechas — um golpe bem posicionado pode passar entre elas.",
+      "relacionados": [
+        "calcas-de-couro",
+        "corselete-de-bronze"
+      ]
+    },
+    "perneiras-de-cota-de-malha": {
+      "descricao": "Essas perneiras são feitas da mesma malha de anéis entrelaçados das cotas de tronco, moldadas para cobrir as pernas mantendo boa flexibilidade nos joelhos e quadris. Complementam uma cota de malha de tronco, oferecendo proteção coerente para o corpo inteiro.\n\nAssim como qualquer malha, lidam bem com cortes e perfurações mas deixam passar boa parte do impacto de pancadas fortes. Pesam o suficiente para cansar em jornadas muito longas, mas ainda permitem caminhar, correr e montar a cavalo sem grande dificuldade (ver pág. 283).",
+      "exemplos": [
+        "Um cavaleiro completo veste perneiras de malha para não deixar as pernas mais fracas que o tronco.",
+        "Um guarda de elite treina horas por dia para se acostumar ao peso extra nas pernas.",
+        "Um ferreiro cobra caro para consertar os anéis rompidos de uma perneira de malha."
+      ],
+      "em_adamar": "Peça mundana de NT2, plenamente disponível em Adamar como complemento da cota de malha.",
+      "dica_mesa": "Combine com uma cota de malha de tronco para um conjunto coerente e bem protegido.",
+      "relacionados": [
+        "cota-de-malha-longa",
+        "mangas-de-cota-de-malha"
+      ]
+    },
+    "mangas-de-cota-de-malha": {
+      "descricao": "Essas mangas de malha cobrem os braços com o mesmo entrelaçado de anéis metálicos das cotas de tronco, mantendo boa liberdade de movimento nos cotovelos e pulsos. São o complemento natural de uma cota de malha para quem quer os braços tão protegidos quanto o resto do corpo.\n\nAssim como toda malha, defendem bem contra cortes e perfurações, mas ainda deixam passar parte do impacto de pancadas fortes nos braços. São relativamente leves comparadas a braçadeiras rígidas, o que ajuda a manter a destreza para manejar armas e escudos (ver pág. 283).",
+      "exemplos": [
+        "Um espadachim de duelo prefere mangas de malha às braçadeiras rígidas, por manterem mais destreza.",
+        "Um cavaleiro completa seu conjunto de malha com essas mangas antes de partir para a guerra.",
+        "Um armeiro demonstra como os anéis se movem livremente ao dobrar o cotovelo."
+      ],
+      "em_adamar": "Peça mundana de NT2, plenamente disponível em Adamar como complemento da cota de malha.",
+      "dica_mesa": "Boa escolha para quem quer manter destreza nas mãos mesmo com os braços protegidos.",
+      "relacionados": [
+        "cota-de-malha-longa",
+        "perneiras-de-cota-de-malha"
+      ]
+    },
+    "perneiras-de-escamas": {
+      "descricao": "Essas perneiras usam pequenas placas de metal ou osso costuradas em fileiras sobre uma base de couro, cobrindo as pernas como uma continuação natural de uma armadura de escamas de tronco. As escamas se sobrepõem, permitindo alguma flexão no joelho apesar da rigidez de cada placa individual.\n\nElas oferecem boa proteção contra corte e impacto, mas as escamas podem se soltar ou entortar com o uso constante, exigindo manutenção de um armeiro. São mais pesadas que perneiras de malha, mas mais baratas que peças de placa completa (ver pág. 283).",
+      "exemplos": [
+        "Um guerreiro tribal completa sua armadura de escamas com perneiras do mesmo material.",
+        "Um mercenário nota que várias escamas das pernas se soltaram após uma longa marcha.",
+        "Um capitão exige inspeção regular das escamas antes de qualquer campanha."
+      ],
+      "em_adamar": "Peça mundana de NT2, plenamente disponível em Adamar como complemento da armadura de escamas.",
+      "dica_mesa": "Mencione a manutenção das escamas soltas como gancho para cenas de descanso entre aventuras.",
+      "relacionados": [
+        "armadura-de-escamas",
+        "mangas-de-escamas"
+      ]
+    },
+    "mangas-de-escamas": {
+      "descricao": "Essas mangas usam o mesmo princípio de pequenas placas sobrepostas costuradas sobre couro, cobrindo os braços como extensão de uma armadura de escamas de tronco. Oferecem boa proteção rígida com alguma flexibilidade nos cotovelos, graças à sobreposição das placas.\n\nAssim como toda peça de escamas, pesam mais que equivalentes de malha e exigem manutenção contra placas soltas ou entortadas, mas custam menos que peças de placa completa. É comum ver um conjunto inteiro de escamas — tronco, braços e pernas — em guerreiros de destaque (ver pág. 283).",
+      "exemplos": [
+        "Um campeão de arena usa um conjunto completo de escamas, das mangas às perneiras.",
+        "Um armeiro cobra uma boa soma para substituir placas soltas nas mangas de escamas.",
+        "Um guerreiro estrangeiro impressiona a cidade com sua armadura de escamas reluzente."
+      ],
+      "em_adamar": "Peça mundana de NT2, plenamente disponível em Adamar como complemento da armadura de escamas.",
+      "dica_mesa": "Combine com perneiras e armadura de escamas para um conjunto visualmente marcante.",
+      "relacionados": [
+        "armadura-de-escamas",
+        "perneiras-de-escamas"
+      ]
+    },
+    "bracadeiras-de-placas-reforcadas": {
+      "descricao": "Essas braçadeiras são placas de aço grossas e reforçadas nos pontos de maior impacto, moldadas para envolver todo o antebraço e, em alguns casos, parte do cotovelo. São a versão mais protegida das braçadeiras de placa, pensada para quem espera aparar golpes diretamente com os braços.\n\nSão pesadas o bastante para cansar o braço em combates longos, mas oferecem excelente proteção contra corte, perfuração e impacto. Combinam bem com um corselete de aço reforçado do mesmo conjunto, formando uma armadura de elite completa (ver pág. 283).",
+      "exemplos": [
+        "Um campeão de torneio as usa para aparar golpes de espada diretamente com o antebraço.",
+        "Um cavaleiro de elite completa seu corselete reforçado com braçadeiras do mesmo padrão.",
+        "Um armeiro de renome as forja sob encomenda para um general importante."
+      ],
+      "em_adamar": "Peça mundana de NT3, no topo do que Adamar produz; reservada a quem tem recursos e prestígio.",
+      "dica_mesa": "Combine com um corselete reforçado para um conjunto de elite coerente.",
+      "relacionados": [
+        "corselete-de-aco-reforcado",
+        "bracadeira-de-placas"
+      ]
+    },
+    "perneiras-de-placas-reforcadas": {
+      "descricao": "Essas perneiras são placas de aço reforçadas, cobrindo a perna inteira da coxa ao tornozelo com camadas extras nos pontos mais vulneráveis, como o joelho. Formam a contraparte natural das braçadeiras reforçadas, completando uma armadura de elite de cima a baixo.\n\nAssim como a versão para os braços, são pesadas e caras, mas oferecem excelente defesa contra qualquer tipo de dano. Restringem um pouco a agilidade das pernas, o que pode custar caro em terrenos irregulares ou ao precisar correr rápido (ver pág. 283).",
+      "exemplos": [
+        "Um cavaleiro de elite as veste para uma batalha campal decisiva, sabendo que não vai precisar correr.",
+        "Um herdeiro nobre encomenda um conjunto completo, incluindo essas perneiras, para sua sagração como cavaleiro.",
+        "Um general avalia que o peso extra vale a pena para a linha de frente de uma batalha."
+      ],
+      "em_adamar": "Peça mundana de NT3, no topo do que Adamar produz; reservada a quem tem recursos e prestígio.",
+      "dica_mesa": "Avise que a agilidade cai bastante — não é a escolha certa para quem precisa fugir rápido.",
+      "relacionados": [
+        "bracadeiras-de-placas-reforcadas",
+        "perneiras-de-placas"
+      ]
+    },
+    "bracadeira-de-placas": {
+      "descricao": "Essa braçadeira é a versão comum de placa de aço para os antebraços, sem os reforços extras da variante mais pesada. Ainda assim, oferece proteção sólida contra corte, perfuração e impacto, sendo uma peça padrão em qualquer armadura de placas completa.\n\nÉ mais leve e barata que a versão reforçada, um equilíbrio razoável entre proteção e peso que agrada a maioria dos combatentes profissionais. Costuma vir em conjunto com um corselete de aço e perneiras de placas do mesmo padrão (ver pág. 283).",
+      "exemplos": [
+        "Um soldado de infantaria pesada usa braçadeiras de placas como parte do equipamento padrão.",
+        "Um armeiro monta um conjunto completo de placas para um cliente de posses médias.",
+        "Um mercenário experiente prefere essa versão à reforçada, por pesar menos no dia a dia."
+      ],
+      "em_adamar": "Peça mundana de NT3, plenamente disponível em Adamar para quem pode pagar armadura de placas.",
+      "dica_mesa": "Bom padrão intermediário entre custo e proteção para tropas regulares bem equipadas.",
+      "relacionados": [
+        "corselete-de-aco",
+        "perneiras-de-placas"
+      ]
+    },
+    "perneiras-de-placas": {
+      "descricao": "Essas são as perneiras de placa de aço padrão, cobrindo a perna da coxa ao tornozelo sem os reforços extras da versão mais pesada. Formam a contraparte natural da braçadeira de placas comum, completando um conjunto de armadura de placas equilibrado.\n\nOferecem boa proteção geral sem pesar tanto quanto a versão reforçada, o que as torna a escolha padrão de soldados de infantaria pesada e cavaleiros de recursos médios. São, ainda assim, rígidas o bastante para restringir um pouco a agilidade (ver pág. 283).",
+      "exemplos": [
+        "Um cavaleiro de recursos médios monta seu conjunto com perneiras de placas comuns.",
+        "Uma tropa de elite regular usa esse padrão de perneiras como equipamento oficial.",
+        "Um escudeiro ajuda seu senhor a calçar as perneiras de placas antes da batalha."
+      ],
+      "em_adamar": "Peça mundana de NT3, plenamente disponível em Adamar para quem pode pagar armadura de placas.",
+      "dica_mesa": "Combine com braçadeira de placas e corselete de aço para um conjunto padrão coerente.",
+      "relacionados": [
+        "bracadeira-de-placas",
+        "corselete-de-aco"
+      ]
+    },
+    "barrete-de-tecido": {
+      "descricao": "O barrete de tecido é um boné ou touca acolchoada, feita de várias camadas de pano grosso costurado, cobrindo o topo da cabeça. É a proteção mais simples e barata que existe para o crânio, mal servindo para amortecer uma queda ou uma pancada leve.\n\nSua vantagem real não é a defesa, mas a discrição: por fora, parece só um chapéu comum, então pode ser usado por qualquer pessoa em qualquer lugar sem levantar suspeita alguma. Muitos o usam por baixo de um capacete de metal, como camada de conforto contra o atrito do metal (ver pág. 284).",
+      "exemplos": [
+        "Um mendigo esperto esconde um pouco de proteção sob um barrete de tecido comum.",
+        "Um recruta o usa por baixo do elmo emprestado, para amenizar o desconforto do metal.",
+        "Um espião disfarçado de aldeão conta com o barrete como única proteção para a cabeça."
+      ],
+      "em_adamar": "Peça mundana e barata de NT1, plenamente disponível em Adamar para qualquer pessoa.",
+      "dica_mesa": "Trate-o mais como chapéu comum do que proteção de combate de verdade.",
+      "relacionados": [
+        "mangas-de-tecido",
+        "barrete-de-couro"
+      ]
+    },
+    "barrete-de-couro": {
+      "descricao": "O barrete de couro é um gorro rígido, feito de couro endurecido moldado para cobrir o topo do crânio. Oferece um pouco mais de proteção real que a versão de tecido, mantendo o mesmo baixo custo e a discrição de parecer apenas um chapéu comum.\n\nAinda assim, é uma proteção mínima: um golpe sério de arma o atravessa sem muito esforço. É popular entre quem não pode pagar metal, mas quer algo melhor que nada para a cabeça, e entre quem precisa disfarçar que está preparado para briga (ver pág. 284).",
+      "exemplos": [
+        "Um batedor de fronteira usa o barrete de couro por ser leve e discreto em longas jornadas.",
+        "Um ladrão de rua conta com ele como única proteção antes de uma briga inesperada.",
+        "Um jovem escudeiro o usa enquanto treina, antes de merecer um elmo de verdade."
+      ],
+      "em_adamar": "Peça mundana de NT1, plenamente disponível em Adamar em qualquer curtume.",
+      "dica_mesa": "Bom ponto de partida barato para personagens que ainda não têm um elmo de metal.",
+      "relacionados": [
+        "barrete-de-tecido",
+        "elmo-de-couro"
+      ]
+    },
+    "elmo-de-bronze": {
+      "descricao": "O elmo de bronze é um capacete rígido que cobre o crânio inteiro e desce sobre o rosto, deixando geralmente só uma abertura para os olhos e a boca. É uma peça clássica de guerreiros antigos, imponente e bem protetora, mas que troca parte da visão e da audição por essa cobertura extra.\n\nContra golpes na cabeça — uma das regiões mais perigosas de se acertar — ele é uma excelente defesa, aguentando cortes e pancadas fortes sem ceder fácil. Em compensação, reconhecer vozes ou perceber alguém se aproximando pela lateral fica bem mais difícil com o metal cobrindo o rosto (ver pág. 284).",
+      "exemplos": [
+        "Um capitão de guarda usa o elmo de bronze em cerimônias e em batalha, embora reconheça vozes com dificuldade.",
+        "Um oponente sussurra uma ameaça e o guerreiro de elmo cerrado mal consegue entender de onde vem.",
+        "Um veterano prefere levantar a viseira do elmo em momentos de calma, só a fechando ao entrar em combate."
+      ],
+      "em_adamar": "Peça mundana de NT1, plenamente disponível em Adamar em qualquer ferraria.",
+      "dica_mesa": "Lembre que a audição e a visão periférica ficam prejudicadas com o rosto coberto.",
+      "relacionados": [
+        "celada-de-bronze",
+        "elmo-de-couro"
+      ]
+    },
+    "celada-de-bronze": {
+      "descricao": "A celada de bronze é um capacete simples que cobre só o topo e as laterais do crânio, deixando o rosto totalmente livre. É uma escolha popular entre quem quer proteger a cabeça sem perder a visão, a audição ou a capacidade de gritar ordens claramente em batalha.\n\nSua proteção é boa contra golpes vindos de cima ou de raspão no crânio, mas o rosto — incluindo os olhos — fica completamente exposto a qualquer ataque direto. É um equilíbrio comum entre segurança e praticidade para oficiais e batedores (ver pág. 284).",
+      "exemplos": [
+        "Um oficial usa a celada de bronze para poder gritar ordens claramente durante a batalha.",
+        "Um batedor prefere a visão completa da celada a um elmo fechado, mesmo arriscando o rosto.",
+        "Um duelista aposta que sua destreza compensa a falta de proteção facial."
+      ],
+      "em_adamar": "Peça mundana de NT1, plenamente disponível em Adamar em qualquer ferraria.",
+      "dica_mesa": "Bom equilíbrio para quem precisa se comunicar claramente ou observar bem o campo de batalha.",
+      "relacionados": [
+        "elmo-de-bronze",
+        "celada"
+      ]
+    },
+    "elmo-de-couro": {
+      "descricao": "O elmo de couro é uma alternativa mais barata ao elmo de metal, feito de couro grosso e endurecido moldado para cobrir o crânio e o rosto, geralmente com aberturas para os olhos. É comum entre quem não pode pagar metal, mas ainda quer cobertura facial completa.\n\nEle protege razoavelmente contra cortes leves e pancadas, mas está longe da resistência de um elmo de bronze ou aço equivalente. Assim como qualquer peça que cobre o rosto, também prejudica um pouco a audição e o reconhecimento de vozes (ver pág. 284).",
+      "exemplos": [
+        "Um recruta pobre usa o elmo de couro por não poder pagar um de metal.",
+        "Um mercenário itinerante o prefere por ser mais leve e barato de substituir.",
+        "Um armeiro modesto vende elmos de couro a preços que qualquer soldado raso pode pagar."
+      ],
+      "em_adamar": "Peça mundana de NT1, plenamente disponível em Adamar em qualquer curtume.",
+      "dica_mesa": "Boa opção barata para tropas de baixo orçamento ou personagens iniciantes.",
+      "relacionados": [
+        "elmo-de-bronze",
+        "barrete-de-couro"
+      ]
+    },
+    "elmo-de-legionario": {
+      "descricao": "O elmo de legionário é um capacete metálico robusto, desenhado para tropas de infantaria disciplinada, cobrindo bem o crânio com proteções adicionais para as bochechas e a nuca. É um equipamento pensado para durar campanhas inteiras nas mãos de soldados regulares.\n\nEle protege bem o crânio e boa parte do rosto lateral, sem cobrir totalmente o rosto como um elmo fechado, o que mantém boa visão e comunicação em batalha. É um padrão comum de exércitos organizados, fabricado em série por armeiros que atendem tropas inteiras (ver pág. 284).",
+      "exemplos": [
+        "Uma legião inteira marcha com elmos de legionário idênticos, sinal de disciplina militar.",
+        "Um oficial reconhece um desertor pela falta do elmo padrão do exército.",
+        "Um armeiro fabrica dezenas de elmos de legionário para equipar uma nova leva de recrutas."
+      ],
+      "em_adamar": "Peça mundana de NT2, plenamente disponível em Adamar, comum a exércitos organizados.",
+      "dica_mesa": "Bom símbolo visual de tropas regulares e disciplinadas, mais que de heróis individuais.",
+      "relacionados": [
+        "loriga-segmentada",
+        "celada"
+      ]
+    },
+    "coifa-de-cota-de-malha": {
+      "descricao": "A coifa de malha é um capuz flexível feito da mesma malha de anéis entrelaçados das cotas de tronco, cobrindo o crânio e descendo até o pescoço e os ombros. Pode ser usada sozinha, sobre um barrete acolchoado para conforto, ou por baixo de um elmo rígido para reforçar a proteção.\n\nAssim como toda malha, protege bem contra cortes e perfurações, mas menos contra pancadas fortes. Sua flexibilidade permite virar a cabeça livremente, uma vantagem real sobre elmos rígidos fechados, ao custo de menos proteção contra impacto direto (ver pág. 284).",
+      "exemplos": [
+        "Um cavaleiro veste a coifa de malha por baixo do elmo, somando duas camadas de proteção.",
+        "Um guarda de muralha prefere a coifa sozinha, valorizando a liberdade de virar a cabeça.",
+        "Um ferreiro conserta os elos rompidos de uma coifa após uma emboscada."
+      ],
+      "em_adamar": "Peça mundana de NT2, plenamente disponível em Adamar como complemento de armadura de malha.",
+      "dica_mesa": "Sugira combiná-la com um elmo rígido por cima, para dobrar a proteção do crânio.",
+      "relacionados": [
+        "cota-de-malha-longa",
+        "elmo-de-legionario"
+      ]
+    },
+    "elmo-circular": {
+      "descricao": "O elmo circular é um capacete arredondado de aço que cobre o crânio inteiro e desce sobre o rosto, oferecendo excelente proteção contra golpes vindos de qualquer ângulo. Seu formato curvo ajuda a desviar lâminas que deslizam pela superfície em vez de encontrar um ponto de apoio.\n\nO preço dessa proteção total é a visão: a abertura estreita para os olhos elimina quase toda a visão periférica, deixando quem o usa vulnerável a ataques vindos de lado sem perceber. É comum baixar a viseira só no momento do combate, mantendo-a aberta no resto do tempo (ver pág. 284).",
+      "exemplos": [
+        "Um cavaleiro de torneio baixa o elmo circular só no momento de cruzar lanças com o rival.",
+        "Um guerreiro perde de vista um inimigo que se aproxima pela lateral, cego pela viseira estreita.",
+        "Um instrutor de combate ensina a compensar a falta de visão periférica virando o corpo inteiro."
+      ],
+      "em_adamar": "Peça mundana de NT3, plenamente disponível em Adamar em qualquer ferraria de qualidade.",
+      "dica_mesa": "Ótimo gancho narrativo: aproveite a visão periférica reduzida para ameaças vindas de lado.",
+      "relacionados": [
+        "elmo-grande",
+        "mascara-facial-nt3"
+      ]
+    },
+    "mascara-facial-nt3": {
+      "descricao": "Essa máscara é uma peça rígida de metal moldada para cobrir só o rosto, geralmente presa a um elmo aberto que já protege o crânio. Muitas vezes é forjada com feições estilizadas ou assustadoras, servindo tanto de proteção quanto de intimidação em combate.\n\nEla protege bem contra golpes diretos no rosto, uma das áreas mais vulneráveis do corpo, mas normalmente vem acoplada a outro elmo que cuida do crânio — sozinha, deixa o topo da cabeça exposto. O rosto coberto também prejudica um pouco a audição e o reconhecimento de expressões (ver pág. 284).",
+      "exemplos": [
+        "Um campeão de arena usa uma máscara com feições de fera para intimidar o público e os rivais.",
+        "Um guerreiro esconde uma cicatriz antiga atrás da máscara de metal.",
+        "Uma criança foge assustada ao ver o rosto metálico sem expressão se aproximar."
+      ],
+      "em_adamar": "Peça mundana de NT3, plenamente disponível em Adamar em qualquer ferraria de qualidade.",
+      "dica_mesa": "Ótima para dar um visual intimidador e memorável a um PdN ou campeão.",
+      "relacionados": [
+        "elmo-circular",
+        "celada"
+      ]
+    },
+    "elmo-grande": {
+      "descricao": "O elmo grande é um capacete pesado que cobre o crânio, o rosto e boa parte do pescoço numa única peça sólida, sem partes móveis. É a proteção de cabeça mais completa que existe entre as armaduras comuns, praticamente eliminando pontos vulneráveis na região.\n\nO custo dessa proteção total é alto: além do peso considerável, a visão periférica e a audição ficam bastante prejudicadas, e a comunicação verbal fica abafada e difícil de entender. É mais comum em combates formais, como justas e batalhas campais organizadas, do que em situações que exigem reação rápida a ameaças inesperadas (ver pág. 284).",
+      "exemplos": [
+        "Um cavaleiro só veste o elmo grande na hora de entrar na lista de justa, tirando-o no resto do torneio.",
+        "Um comandante prefere não usá-lo em emboscadas, sabendo o quanto prejudica a percepção do entorno.",
+        "Um poeta descreve o elmo grande como uma fortaleza de aço ao redor da cabeça de um herói."
+      ],
+      "em_adamar": "Peça mundana de NT3, plenamente disponível em Adamar em qualquer ferraria de qualidade.",
+      "dica_mesa": "Ideal para combates formais e previsíveis; péssima escolha para quem espera ser emboscado.",
+      "relacionados": [
+        "elmo-circular",
+        "corselete-de-aco-reforcado"
+      ]
+    },
+    "celada": {
+      "descricao": "A celada é um capacete leve de aço que cobre apenas o topo e as laterais do crânio, deixando o rosto totalmente exposto. É a evolução em aço da celada de bronze mais antiga, mantendo a mesma filosofia: boa proteção no crânio sem sacrificar visão, audição ou comunicação.\n\nÉ uma escolha popular entre oficiais, batedores e qualquer combatente que precise observar o campo de batalha com clareza ou dar ordens que sejam ouvidas sem distorção. Em troca dessa praticidade, o rosto fica sem nenhuma defesa contra um golpe direto (ver pág. 284).",
+      "exemplos": [
+        "Um sargento usa a celada para poder berrar ordens que todos ouçam com clareza.",
+        "Um batedor a prefere para manter visão total do terreno ao redor.",
+        "Um arqueiro confia na celada leve para não atrapalhar a mira."
+      ],
+      "em_adamar": "Peça mundana de NT3, plenamente disponível em Adamar em qualquer ferraria.",
+      "dica_mesa": "Boa escolha para arqueiros, oficiais e batedores que precisam de visão e comunicação claras.",
+      "relacionados": [
+        "celada-de-bronze",
+        "elmo-de-legionario"
+      ]
+    },
+    "luvas-de-tecido": {
+      "descricao": "As luvas de tecido são simples luvas de pano ou lã, usadas principalmente para aquecer as mãos no frio. Como proteção, servem quase de nada: mal amortecem uma pancada leve e não seguram corte algum.\n\nSua vantagem é a total discrição — ninguém pensa duas vezes ao ver alguém de luvas de pano, mesmo em lugares onde armas estão proibidas. São mais um item de vestuário comum do que uma peça de armadura de verdade, mas ainda contam como alguma cobertura para as mãos (ver pág. 284).",
+      "exemplos": [
+        "Um mercador as usa contra o frio do inverno, sem pensar nelas como proteção.",
+        "Um espião prefere luvas de tecido simples para não levantar suspeita ao entrar num salão nobre.",
+        "Um jovem aprendiz treina esgrima de mãos nuas, só com luvas de tecido para conforto."
+      ],
+      "em_adamar": "Peça mundana e barata de NT1, plenamente disponível em Adamar para qualquer pessoa.",
+      "dica_mesa": "Trate-a mais como vestuário contra o frio do que proteção de combate.",
+      "relacionados": [
+        "luvas-de-couro",
+        "mangas-de-tecido"
+      ]
+    },
+    "luvas-de-couro": {
+      "descricao": "As luvas de couro são feitas de couro tratado, cobrindo as mãos e os dedos com uma camada resistente mas ainda flexível o bastante para manejar armas, cordas e ferramentas com destreza. São um item comum entre praticamente qualquer pessoa que trabalhe com as mãos, guerreiro ou não.\n\nElas oferecem proteção modesta contra cortes leves e queimaduras de atrito, como segurar uma corda ou uma lâmina pelo cabo com força, mas não seguram um golpe sério de arma. São o tipo de item que quase todo aventureiro carrega, mesmo sem pensar nelas como armadura (ver pág. 284).",
+      "exemplos": [
+        "Um escalador de ruínas usa luvas de couro para não ferir as mãos nas pedras ásperas.",
+        "Um espadachim as veste para ter uma pegada mais firme no punho da arma.",
+        "Um cocheiro as usa todos os dias para segurar as rédeas sem calos."
+      ],
+      "em_adamar": "Peça mundana de NT1, plenamente disponível em Adamar em qualquer curtume.",
+      "dica_mesa": "Item básico esperado em quase qualquer inventário de aventureiro, não só de guerreiros.",
+      "relacionados": [
+        "luvas-de-tecido",
+        "manoplas"
+      ]
+    },
+    "manoplas": {
+      "descricao": "As manoplas são luvas de metal articuladas, feitas de pequenas placas presas entre si para permitir que os dedos se dobrem enquanto o dorso da mão fica bem protegido. São uma peça de armadura de verdade, não apenas um acessório de couro.\n\nElas defendem bem as mãos contra cortes, perfurações e pancadas, uma proteção importante já que as mãos costumam ser o primeiro alvo em duelos com armas brancas. Em compensação, são menos flexíveis que o couro, o que pode atrapalhar um pouco tarefas que exigem destreza fina, como abrir uma fechadura ou amarrar um nó complexo (ver pág. 284).",
+      "exemplos": [
+        "Um duelista de elite confia nas manoplas para aparar golpes diretamente com as mãos.",
+        "Um ladrão evita usar manoplas em trabalhos que exigem destreza fina, como arrombar fechaduras.",
+        "Um cavaleiro completa sua armadura de placas com um par de manoplas reluzentes."
+      ],
+      "em_adamar": "Peça mundana de NT2, plenamente disponível em Adamar como complemento de armadura de placas ou malha.",
+      "dica_mesa": "Avise que elas atrapalham tarefas de destreza fina, como arrombar ou desarmar armadilhas.",
+      "relacionados": [
+        "luvas-de-couro",
+        "manoplas-reforcadas"
+      ]
+    },
+    "manoplas-reforcadas": {
+      "descricao": "Essas são manoplas de metal mais pesadas e reforçadas, com placas mais grossas e melhor articulação nos pontos de maior risco de impacto. Oferecem a melhor proteção disponível para as mãos entre as armaduras comuns, ao custo de ainda mais peso e rigidez.\n\nSão a escolha de quem espera parar golpes diretos com as mãos ou lutar com armas pesadas que exigem boa proteção nos punhos. Como qualquer peça rígida de metal, prejudicam tarefas que exigem destreza fina das mãos (ver pág. 284).",
+      "exemplos": [
+        "Um guerreiro de arma pesada as usa para aguentar o impacto de golpes retribuídos.",
+        "Um campeão de torneio as veste como parte de um conjunto de armadura de elite.",
+        "Um mercenário reclama da dificuldade de contar moedas com manoplas reforçadas nas mãos."
+      ],
+      "em_adamar": "Peça mundana de NT3, no topo do que Adamar produz para armadura de mãos.",
+      "dica_mesa": "Reforce que tarefas de destreza fina ficam ainda mais difíceis do que com a manopla comum.",
+      "relacionados": [
+        "manoplas",
+        "bracadeiras-de-placas-reforcadas"
+      ]
+    },
+    "sandalias": {
+      "descricao": "As sandálias são o calçado mais básico que existe, cobrindo apenas a sola do pé com tiras simples de couro ou corda. Servem para caminhar sobre terreno quente ou irregular sem ferir a planta do pé, mas não oferecem quase nenhuma proteção contra um golpe, uma queda de objeto ou o frio.\n\nSão o calçado natural de climas quentes, de povos humildes ou de quem simplesmente não tem acesso a algo melhor. Em terrenos frios, pantanosos ou hostis, quem as usa sofre bem mais que alguém com botas de verdade (ver pág. 284).",
+      "exemplos": [
+        "Um peregrino atravessa estradas poeirentas usando só sandálias simples.",
+        "Um escravo fugitivo sofre com os pés doloridos ao cruzar terreno pedregoso de sandálias.",
+        "Um monge errante despreza calçados melhores, vivendo com o mínimo necessário."
+      ],
+      "em_adamar": "Peça mundana e primitiva de NT0, plenamente disponível em Adamar para qualquer humano.",
+      "dica_mesa": "Bom detalhe para personagens humildes, ascetas ou que vêm de terras quentes.",
+      "relacionados": [
+        "sapatos"
+      ]
+    },
+    "sapatos": {
+      "descricao": "Os sapatos são o calçado comum de couro usado pela maioria das pessoas em Adamar, cobrindo o pé inteiro com uma sola resistente. Não são pensados como armadura, mas protegem bem contra o desgaste do dia a dia: pedras, lama, frio moderado e pequenos objetos cortantes no chão.\n\nContra um ataque direto — um pisão de bota pesada ou uma arma alcançando o pé — eles não oferecem quase nada. São o calçado padrão de cidades e vilas, o tipo de item que ninguém pensa duas vezes ao usar (ver pág. 284).",
+      "exemplos": [
+        "Um mercador de cidade usa sapatos comuns no dia a dia, sem pensar neles como proteção.",
+        "Um aventureiro novato só percebe a falta de botas melhores ao entrar numa masmorra gelada.",
+        "Um artesão remenda os sapatos gastos de tanto caminhar entre vilas."
+      ],
+      "em_adamar": "Peça mundana de NT1, plenamente disponível em Adamar em qualquer sapataria.",
+      "dica_mesa": "Trate-o como calçado comum do cotidiano, não como equipamento de combate.",
+      "relacionados": [
+        "sandalias",
+        "botas"
+      ]
+    },
+    "botas": {
+      "descricao": "As botas são calçados de couro reforçado que cobrem o pé e parte da canela, com sola grossa e boa proteção contra terreno hostil, frio e pequenos impactos. São o calçado padrão de quem viaja, luta ou trabalha em condições difíceis, das estradas enlameadas às masmorras úmidas.\n\nAlém de proteger melhor que sapatos comuns, dão mais firmeza para caminhar em terreno irregular e podem esconder uma faca ou uma bolsa de moedas na haste. É o calçado esperado de qualquer aventureiro sério (ver pág. 284).",
+      "exemplos": [
+        "Um mercenário nunca sai sem suas botas de couro, gastas de tantas estradas percorridas.",
+        "Um contrabandista esconde moedas na haste da bota, longe de olhos curiosos.",
+        "Um guarda de fronteira as usa para atravessar pântanos gelados sem sofrer com o frio."
+      ],
+      "em_adamar": "Peça mundana de NT2, plenamente disponível em Adamar em qualquer sapataria de qualidade.",
+      "dica_mesa": "Ótimo lugar para esconder um item pequeno, como uma faca ou uma bolsa de moedas.",
+      "relacionados": [
+        "sapatos",
+        "sollerets"
+      ]
+    },
+    "sollerets": {
+      "descricao": "Os sollerets são botas articuladas feitas de placas de aço sobrepostas, cobrindo o pé inteiro numa armadura rígida que ainda permite alguma flexão ao caminhar. São a peça final de uma armadura de placas completa, geralmente reservada a cavaleiros e nobres guerreiros.\n\nOferecem excelente proteção contra qualquer ataque direto aos pés, mas são pesados e desconfortáveis para caminhadas longas fora de combate, e praticamente impossíveis de correr rápido com eles. A maioria só os veste na hora da batalha, trocando por botas comuns no resto do tempo (ver pág. 284).",
+      "exemplos": [
+        "Um cavaleiro só calça os sollerets na hora de entrar em campo de batalha, evitando-os em marchas longas.",
+        "Um escudeiro ajuda seu senhor a prender as fivelas complicadas dos sollerets.",
+        "Um poeta descreve o som metálico dos sollerets ecoando pelo salão do castelo."
+      ],
+      "em_adamar": "Peça mundana de NT3, no topo do que Adamar produz; reservada a quem tem recursos e prestígio.",
+      "dica_mesa": "Lembre que são impraticáveis para caminhar ou correr fora de combate.",
+      "relacionados": [
+        "botas",
+        "corselete-de-aco-reforcado"
+      ]
+    },
+    "colete-de-campanha": {
+      "descricao": "O colete de campanha é uma peça de armadura militar moderna, feita de várias camadas de tecido resistente e acolchoamento grosso, cobrindo o tronco. Seu propósito não é parar uma bala, mas sim os estilhaços de granadas, bombas e artilharia, que voam em grande quantidade mas geralmente têm pouca energia individual.\n\nÉ um item pensado para guerras industriais em grande escala, onde o inimigo mais comum não é uma lâmina ou uma flecha, mas fragmentos metálicos espalhados por explosões. Cobre bem o tronco, mas não protege contra um tiro direto de arma de fogo bem mirado nem contra golpes de armas brancas mais fortes.",
+      "exemplos": [
+        "Um soldado de infantaria o veste antes de avançar por um campo cheio de estilhaços de artilharia.",
+        "Uma equipe de resgate o usa ao entrar numa área ainda sob risco de bombardeio.",
+        "Um recruta aprende que ele não segura um tiro direto, só fragmentos dispersos."
+      ],
+      "em_adamar": "Fica fora de Adamar: é equipamento de tecnologia muito além do NT3 do cenário, pensado para guerras com artilharia e explosivos, que não existem no mundo.",
+      "dica_mesa": "Use só se alguma aventura excepcional levar o grupo para fora do NT3 de Adamar.",
+      "relacionados": []
+    },
+    "colete-fragmentado": {
+      "descricao": "O colete fragmentado é uma evolução mais leve e eficiente do colete de campanha, feito com materiais mais avançados que oferecem boa proteção contra estilhaços com menos peso e volume. Cobre o tronco e a virilha, uma área maior que a versão anterior.\n\nAssim como seu predecessor, seu foco é proteger contra fragmentos de explosões, não contra tiros diretos de arma de fogo, que exigem placas rígidas adicionais para serem bloqueados de verdade. É um item típico de forças militares modernas bem equipadas.",
+      "exemplos": [
+        "Uma patrulha moderna o veste em território minado, esperando risco de explosões.",
+        "Um fuzileiro prefere essa versão mais leve para longas marchas em zona de combate.",
+        "Um instrutor lembra aos recrutas que ele não substitui as placas contra tiros diretos."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de materiais sintéticos avançados e de um cenário de guerra moderna que não existe no mundo do cenário.",
+      "dica_mesa": "Sem uso prático em Adamar; ignore-o a menos que o narrador crie uma exceção especial.",
+      "relacionados": [
+        "colete-de-campanha",
+        "encartes-de-placas"
+      ]
+    },
+    "encartes-de-placas": {
+      "descricao": "Os encartes de placas são placas rígidas adicionais que se encaixam em bolsos do colete fragmentado, somando proteção extra no peito e nas costas contra impactos mais fortes, incluindo tiros de armas de fogo que a versão sem placas não consegue deter. É um acessório, não uma armadura completa por si só.\n\nEsse tipo de modularidade — reforçar uma armadura básica com placas extras conforme a ameaça esperada — é uma marca registrada dos equipamentos militares modernos, que buscam equilibrar peso e proteção de acordo com a missão.",
+      "exemplos": [
+        "Um soldado encaixa os encartes de placas antes de uma missão com risco alto de tiroteio.",
+        "Um comandante ordena o uso das placas extras ao entrar em território hostil conhecido.",
+        "Um recruta sente o peso extra assim que encaixa as placas no colete."
+      ],
+      "em_adamar": "Fica fora de Adamar: é um acessório de uma armadura de tecnologia muito além do NT3 do cenário, sem lugar num mundo de ferro e couro.",
+      "dica_mesa": "Item sem função fora de campanhas modernas; não precisa nem ser mencionado numa mesa de Adamar.",
+      "relacionados": [
+        "colete-fragmentado"
+      ]
+    },
+    "colete-balistico": {
+      "descricao": "O colete balístico é uma armadura macia, feita de fibras sintéticas entrelaçadas capazes de deter projéteis de arma de fogo de baixa a média energia, sem usar placas rígidas. É fino e flexível o bastante para ser usado por baixo de uma camisa ou paletó comum, passando despercebido.\n\nÉ o tipo de armadura usada por guarda-costas, policiais à paisana e agentes que precisam de proteção discreta no dia a dia, não em combates declarados de longa duração. Cobre bem o tronco, mas nada além disso.",
+      "exemplos": [
+        "Um guarda-costas o usa por baixo do terno, invisível a olhos curiosos.",
+        "Um agente disfarçado confia nele para uma reunião que pode dar errado.",
+        "Um policial à paisana nunca sai de casa sem vestir o colete primeiro."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de fibras sintéticas e de armas de fogo modernas, tecnologia muito além do NT3 do cenário.",
+      "dica_mesa": "Sem equivalente em Adamar; para proteção discreta, use antes uma cota de malha ou couro leve.",
+      "relacionados": [
+        "colete-tatico"
+      ]
+    },
+    "colete-tatico": {
+      "descricao": "O colete tático é uma versão reforçada e mais completa do colete balístico, cobrindo tronco e virilha, com bolsos e alças para prender munição, rádios e outros equipamentos militares. É volumoso e claramente identificável como equipamento de combate, ao contrário da versão discreta.\n\nÉ o tipo de armadura usada por forças militares e policiais em operações declaradas, priorizando proteção e praticidade de carregar equipamento sobre a discrição. Pode receber placas rígidas adicionais para aumentar ainda mais a proteção contra tiros diretos.",
+      "exemplos": [
+        "Uma equipe tática o veste antes de uma invasão armada.",
+        "Um operador prende rádio e munição extra nas alças do colete.",
+        "Um recruta demora para se acostumar com o volume do colete completo."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de tecnologia militar muito além do NT3 do cenário, incluindo armas de fogo modernas.",
+      "dica_mesa": "Sem uso em Adamar; ignore a menos que o narrador abra uma exceção especial de campanha.",
+      "relacionados": [
+        "colete-balistico",
+        "placas-antitrauma"
+      ]
+    },
+    "placas-antitrauma": {
+      "descricao": "As placas antitrauma são placas rígidas que se acoplam ao colete tático, reduzindo ainda mais o impacto de projéteis de arma de fogo que a armadura macia sozinha não consegue deter por completo. Assim como os encartes de placas de gerações anteriores, são um acessório modular, não uma armadura por si só.\n\nSão feitas de materiais avançados capazes de resistir a múltiplos impactos sem se deformar, um nível de engenharia muito distante de qualquer coisa produzida por um ferreiro comum.",
+      "exemplos": [
+        "Um operador tático encaixa as placas antitrauma antes de uma operação de alto risco.",
+        "Um comandante exige o uso das placas em missões com risco confirmado de tiroteio.",
+        "Um técnico revisa as placas em busca de rachaduras após um confronto."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de materiais e engenharia muito além do NT3 do cenário.",
+      "dica_mesa": "Item sem função fora de campanhas modernas; não precisa ser mencionado numa mesa de Adamar.",
+      "relacionados": [
+        "colete-tatico"
+      ]
+    },
+    "traje-balistico": {
+      "descricao": "O traje balístico é uma armadura macia completa, cobrindo não só o tronco mas também braços e pernas com o mesmo material de fibras sintéticas usado no colete balístico. É pensado para quem precisa de proteção contra armas de fogo por todo o corpo, mantendo flexibilidade e discrição relativas.\n\nÉ um item de tecnologia de ponta, usado em cenários de conflito muito além de qualquer coisa que exista num mundo de espadas e armaduras de metal.",
+      "exemplos": [
+        "Um agente especial o veste para uma operação de resgate em território hostil.",
+        "Um piloto o usa como camada extra de segurança numa missão de risco.",
+        "Um recruta estranha a mobilidade reduzida ao vestir o traje completo pela primeira vez."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de tecnologia de fibras avançadas muito além do NT3 do cenário.",
+      "dica_mesa": "Sem equivalente em Adamar; ignore a menos que o narrador crie uma exceção especial.",
+      "relacionados": [
+        "traje-tatico",
+        "colete-balistico"
+      ]
+    },
+    "traje-tatico": {
+      "descricao": "O traje tático é a versão militar completa do traje balístico, cobrindo todo o corpo com armadura macia reforçada e compartimentos para equipamento de combate moderno. É o tipo de traje usado por forças de operações especiais em missões de alto risco.\n\nAssim como o colete tático, prioriza proteção e praticidade operacional sobre discrição, sendo claramente identificável como equipamento militar avançado.",
+      "exemplos": [
+        "Uma equipe de operações especiais o veste para uma missão noturna de alto risco.",
+        "Um operador prende equipamento tático em cada compartimento do traje.",
+        "Um comandante escolhe o traje tático completo para uma incursão prolongada."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de tecnologia militar muito além do NT3 do cenário.",
+      "dica_mesa": "Sem uso em Adamar; ignore a menos que o narrador abra uma exceção especial de campanha.",
+      "relacionados": [
+        "traje-balistico",
+        "colete-tatico"
+      ]
+    },
+    "botas-reforcadas": {
+      "descricao": "As botas reforçadas são calçados militares modernos com camadas de material balístico embutidas na sola e na haste, protegendo os pés contra estilhaços, minas terrestres leves e impactos que calçados comuns não aguentam. Fazem parte de um conjunto tático completo, junto com coletes e capacetes equivalentes.\n\nSão pesadas e rígidas comparadas a botas comuns, priorizando proteção sobre conforto em longas caminhadas, um equilíbrio típico de equipamento militar de combate.",
+      "exemplos": [
+        "Um soldado as usa ao patrulhar uma área com risco de minas leves.",
+        "Uma equipe de desminagem confia nelas para reduzir o risco de ferimentos nos pés.",
+        "Um recruta nota o peso extra comparado a botas comuns de combate."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de materiais balísticos modernos muito além do NT3 do cenário.",
+      "dica_mesa": "Sem equivalente em Adamar; para os pés, use antes sollerets ou botas de couro reforçado.",
+      "relacionados": [
+        "sollerets",
+        "botas"
+      ]
+    },
+    "botas-de-assalto": {
+      "descricao": "As botas de assalto são calçados de combate fortemente blindados, usados por tropas de elite em operações de alto risco, oferecendo o máximo de proteção balística disponível para os pés e tornozelos. Costumam integrar sistemas eletrônicos, como sensores de pressão ou comunicação com o restante do traje tático.\n\nSão a versão mais avançada de calçado militar, pensada para combates com armas de fogo pesadas e ambientes extremamente hostis.",
+      "exemplos": [
+        "Uma tropa de elite as veste para uma incursão em território fortemente armado.",
+        "Um operador confia nos sensores embutidos para avaliar o terreno à frente.",
+        "Um comandante exige o uso delas em qualquer missão de assalto direto."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de blindagem e eletrônica muito além do NT3 do cenário.",
+      "dica_mesa": "Sem uso em Adamar; ignore a menos que o narrador crie uma exceção especial de campanha.",
+      "relacionados": [
+        "botas-reforcadas",
+        "traje-tatico"
+      ]
+    },
+    "luvas-balisticas": {
+      "descricao": "As luvas balísticas são luvas de combate modernas, com camadas de material resistente a corte e a fragmentos embutidas no tecido, protegendo as mãos sem comprometer muito a destreza para manejar armas e equipamentos táticos. São parte do traje completo de forças especiais modernas.\n\nDiferente das manoplas de metal rígido, seu material flexível e leve permite operar gatilhos, painéis e outros equipamentos finos com facilidade, uma prioridade em combates modernos.",
+      "exemplos": [
+        "Um operador as veste para manejar armas com segurança em combate próximo.",
+        "Um técnico as usa ao lidar com estilhaços e superfícies cortantes.",
+        "Um recruta aprecia como elas protegem sem atrapalhar o gatilho."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de materiais sintéticos avançados muito além do NT3 do cenário.",
+      "dica_mesa": "Sem equivalente em Adamar; para as mãos, use antes luvas de couro ou manoplas de metal.",
+      "relacionados": [
+        "manoplas",
+        "traje-tatico"
+      ]
+    },
+    "mascara-de-oxigenio": {
+      "descricao": "A máscara de oxigênio é um equipamento que cobre o rosto e filtra ou fornece ar respirável, protegendo contra gases tóxicos, fumaça densa ou altitudes onde o ar é rarefeito demais para respirar normalmente. De quebra, também protege os olhos e o rosto de estilhaços e respingos.\n\nÉ um equipamento pensado para ambientes de guerra industrial, como campos cobertos de gás venenoso, algo que exige fabricação de precisão e suprimento constante de filtros ou ar comprimido.",
+      "exemplos": [
+        "Um soldado a veste ao atravessar uma área tomada por gás tóxico.",
+        "Um alpinista de alta montanha depende dela para respirar em altitude extrema.",
+        "Um bombeiro a usa para entrar numa construção em chamas cheia de fumaça."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de tecnologia de filtragem de ar e de ameaças químicas modernas, muito além do NT3 do cenário.",
+      "dica_mesa": "Sem uso em Adamar; se magia rara criar um gás tóxico, resolva com regras narrativas, não com este item.",
+      "relacionados": [
+        "traje-nbq"
+      ]
+    },
+    "celada-de-aco": {
+      "descricao": "Essa celada é um capacete de aço estampado industrialmente, simples e barato de produzir em massa, cobrindo só o topo do crânio. É o tipo de capacete usado por exércitos de conscritos em guerras de grande escala, priorizando quantidade e velocidade de fabricação sobre qualquer refinamento.\n\nApesar do nome parecido com a celada medieval, é fabricada por processos industriais de estampagem em prensa, não forjada à mão por um armeiro, o que a torna muito mais barata e uniforme.",
+      "exemplos": [
+        "Um conscrito recebe uma celada de aço junto com o resto do uniforme padrão.",
+        "Um sargento distribui centenas delas antes de uma grande ofensiva.",
+        "Um soldado percebe como ela protege menos que um capacete moderno completo."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de fabricação industrial em massa muito além do NT3 do cenário; use a celada forjada à mão em seu lugar.",
+      "dica_mesa": "Sem uso em Adamar; para um capacete simples de crânio, use a celada normal do cenário.",
+      "relacionados": [
+        "celada",
+        "elmo-de-legionario"
+      ]
+    },
+    "capacete-antifragmentos": {
+      "descricao": "O capacete antifragmentos é um capacete militar moderno, moldado com materiais compostos leves e resistentes, protegendo o crânio contra estilhaços de explosões e impactos moderados. É o tipo de capacete usado por infantaria regular em conflitos com artilharia e explosivos.\n\nPode receber um visor adicional que se acopla à peça, estendendo a proteção ao rosto contra os mesmos estilhaços.",
+      "exemplos": [
+        "Um soldado de infantaria o usa em zona de combate com risco de morteiro.",
+        "Uma patrulha o veste ao avançar por uma área recém-bombardeada.",
+        "Um recruta acopla o visor ao capacete antes de uma missão perigosa."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de materiais compostos modernos e de ameaças de artilharia que não existem no cenário.",
+      "dica_mesa": "Sem uso em Adamar; para proteção de crânio, use um elmo ou celada do cenário.",
+      "relacionados": [
+        "visor-antifragmentos",
+        "colete-de-campanha"
+      ]
+    },
+    "visor-antifragmentos": {
+      "descricao": "Esse visor é um acessório transparente e resistente que se acopla ao capacete antifragmentos, estendendo a proteção contra estilhaços aos olhos e ao rosto sem bloquear completamente a visão, ao contrário de uma máscara sólida. É um material composto avançado, moldado para resistir a impactos sem estilhaçar como um vidro comum.\n\nAssim como o capacete ao qual se acopla, é um acessório modular de equipamento militar moderno, não uma peça isolada de armadura.",
+      "exemplos": [
+        "Um soldado acopla o visor ao capacete antes de entrar numa zona de bombardeio.",
+        "Um recruta aprecia poder ver claramente mesmo protegido contra estilhaços.",
+        "Um técnico troca um visor rachado após um confronto recente."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de materiais compostos transparentes muito além do NT3 do cenário.",
+      "dica_mesa": "Sem uso em Adamar; para proteger o rosto mantendo visão, use uma celada com uma máscara acoplada.",
+      "relacionados": [
+        "capacete-antifragmentos",
+        "mascara-facial-nt3"
+      ]
+    },
+    "capacete-balistico": {
+      "descricao": "O capacete balístico é a evolução do capacete antifragmentos, feito de materiais compostos ainda mais avançados capazes de deter não só estilhaços mas também tiros diretos de arma de fogo de energia moderada. É o padrão de proteção de cabeça de exércitos modernos bem equipados.\n\nAssim como seu predecessor, pode receber um visor acoplado, estendendo a proteção balística ao rosto.",
+      "exemplos": [
+        "Um soldado moderno o veste em qualquer operação com risco de tiroteio.",
+        "Uma equipe tática confia nele para reduzir baixas por tiros na cabeça.",
+        "Um recruta é instruído a nunca remover o capacete em combate ativo."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de materiais avançados e de armas de fogo modernas, muito além do NT3 do cenário.",
+      "dica_mesa": "Sem uso em Adamar; para proteção de cabeça de elite, use o elmo grande ou o corselete reforçado como referência de qualidade.",
+      "relacionados": [
+        "visor-balistico",
+        "capacete-antifragmentos"
+      ]
+    },
+    "visor-balistico": {
+      "descricao": "Esse visor é a versão mais avançada do acessório transparente que se acopla a um capacete, agora resistente o bastante para ajudar a deter tiros diretos de arma de fogo sem deixar de ser transparente. Estende a proteção do capacete balístico ao rosto e aos olhos.\n\nÉ um exemplo do tipo de engenharia de materiais muito além de qualquer coisa produzida por um armeiro ou vidraceiro comum, exigindo indústria avançada para ser fabricado.",
+      "exemplos": [
+        "Um operador acopla o visor balístico antes de uma operação de alto risco.",
+        "Um soldado confia no visor para proteger o rosto sem perder a visão do combate.",
+        "Um técnico substitui o visor após ele deter um tiro certeiro."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de materiais avançados muito além do NT3 do cenário.",
+      "dica_mesa": "Sem uso em Adamar; mantenha proteção facial em couro ou metal forjado à mão.",
+      "relacionados": [
+        "capacete-balistico",
+        "mascara-facial-nt3"
+      ]
+    },
+    "traje-nbq": {
+      "descricao": "O traje NBQ é um traje hermético completo, selado contra a entrada de agentes nucleares, biológicos e químicos, cobrindo o corpo inteiro com um material impermeável e resistente. Vem acompanhado de um sistema de filtragem de ar próprio, já que respirar o ar externo seria fatal na presença desses agentes.\n\nÉ um equipamento altamente especializado, pensado para cenários de guerra ou desastre com armas de destruição em massa, algo completamente estranho a um mundo de ferro, couro e magia rara.",
+      "exemplos": [
+        "Uma equipe de resposta o veste ao investigar um vazamento químico.",
+        "Um soldado o usa ao atravessar uma zona contaminada por armas biológicas.",
+        "Um cientista confia nele para coletar amostras em ambiente tóxico."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de armas nucleares, biológicas e químicas modernas, ameaças que não existem no cenário.",
+      "dica_mesa": "Sem uso em Adamar; perigos ambientais no cenário devem ser resolvidos com magia, veneno ou doença narrados, não com este traje.",
+      "relacionados": [
+        "mascara-de-oxigenio"
+      ]
+    },
+    "traje-espacial": {
+      "descricao": "O traje espacial é um traje pressurizado completo, feito para manter uma pessoa viva no vácuo do espaço, isolando-a da falta de pressão, do frio extremo e da ausência de ar respirável. Cobre o corpo inteiro e normalmente vem acompanhado de um capacete hermético separado.\n\nÉ um dos equipamentos mais avançados que existem, dependendo de engenharia aeroespacial completa, algo tão distante da realidade de Adamar quanto se pode imaginar.",
+      "exemplos": [
+        "Um astronauta o veste para uma caminhada espacial fora da nave.",
+        "Um engenheiro o usa para reparar equipamento na superfície externa de uma estação.",
+        "Um tripulante confia nele para sobreviver a uma despressurização de emergência."
+      ],
+      "em_adamar": "Fica fora de Adamar: pressupõe viagem espacial e engenharia muito além do NT3 do cenário, sem qualquer lugar num mundo de fantasia sombria medieval.",
+      "dica_mesa": "Sem uso em Adamar sob qualquer circunstância normal de campanha.",
+      "relacionados": [
+        "capacete-espacial",
+        "armadura-espacial"
+      ]
+    },
+    "capacete-espacial": {
+      "descricao": "Esse capacete hermético completa o traje espacial, isolando a cabeça do vácuo e fornecendo ar respirável através de um sistema conectado ao resto do traje. Costuma incluir um visor resistente e, às vezes, comunicação por rádio embutida.\n\nAssim como o traje ao qual se acopla, depende de engenharia aeroespacial completa para funcionar.",
+      "exemplos": [
+        "Um astronauta o acopla ao traje antes de sair para o vácuo.",
+        "Um engenheiro depende do rádio embutido para se comunicar durante o reparo externo.",
+        "Um tripulante verifica a vedação do capacete antes de qualquer saída."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende do traje espacial e da engenharia aeroespacial, ausentes de um cenário de fantasia medieval.",
+      "dica_mesa": "Sem uso em Adamar sob qualquer circunstância normal de campanha.",
+      "relacionados": [
+        "traje-espacial"
+      ]
+    },
+    "traje-de-combate": {
+      "descricao": "O traje de combate é uma armadura pesada com um exoesqueleto motorizado embutido, que amplifica muito a força física e a capacidade de salto de quem o veste, além de oferecer proteção balística considerável. É o auge da tecnologia de armadura pessoal, misturando robótica e blindagem numa peça só.\n\nExige fonte de energia própria, manutenção especializada e treinamento extenso para operar sem se ferir com o próprio exoesqueleto, algo impensável em qualquer forja ou oficina de Adamar.",
+      "exemplos": [
+        "Um soldado de elite o veste para carregar equipamento pesado em campo.",
+        "Um operador salta distâncias impossíveis graças ao exoesqueleto do traje.",
+        "Um técnico passa horas fazendo manutenção no sistema motorizado antes da missão."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de robótica e exoesqueletos motorizados, tecnologia muitíssimo além do NT3 do cenário.",
+      "dica_mesa": "Sem uso em Adamar; qualquer força sobre-humana no cenário deve vir de magia rara, não de tecnologia.",
+      "relacionados": [
+        "capacete-traje-combate",
+        "armadura-de-combate"
+      ]
+    },
+    "capacete-traje-combate": {
+      "descricao": "Esse capacete completa o traje de combate, protegendo a cabeça com o mesmo padrão de blindagem avançada e frequentemente incluindo sistemas eletrônicos de mira, comunicação ou visão noturna integrados ao exoesqueleto do traje.\n\nAssim como o traje ao qual se acopla, depende de tecnologia eletrônica e de engenharia muito além de qualquer coisa concebível num mundo sem indústria.",
+      "exemplos": [
+        "Um operador o acopla ao traje antes de uma missão de combate pesado.",
+        "Um soldado usa a mira integrada do capacete para identificar alvos distantes.",
+        "Um técnico calibra os sistemas eletrônicos do capacete antes da operação."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende do traje de combate e de eletrônica avançada, ausentes de um cenário de fantasia medieval.",
+      "dica_mesa": "Sem uso em Adamar sob qualquer circunstância normal de campanha.",
+      "relacionados": [
+        "traje-de-combate"
+      ]
+    },
+    "armadura-de-combate": {
+      "descricao": "A armadura de combate é uma armadura corporal pesada e moderna, cobrindo o corpo com blindagem avançada equivalente à do traje de combate, mas sem o exoesqueleto motorizado que amplifica força e salto. É uma opção mais simples e barata dentro do mesmo nível tecnológico, ainda assim muito além de qualquer coisa forjada à mão.\n\nÉ usada por tropas de elite que precisam de proteção máxima sem depender de um sistema robótico complexo para operar.",
+      "exemplos": [
+        "Uma tropa de elite a veste em operações de alto risco sem precisar do exoesqueleto motorizado.",
+        "Um soldado confia na blindagem pesada para avançar sob fogo intenso.",
+        "Um comandante a escolhe por ser mais barata e simples de manter que o traje motorizado."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de blindagem e fabricação industrial muito além do NT3 do cenário.",
+      "dica_mesa": "Sem uso em Adamar; para proteção de elite no cenário, use o corselete de aço reforçado como referência.",
+      "relacionados": [
+        "capacete-armadura-combate",
+        "traje-de-combate"
+      ]
+    },
+    "capacete-armadura-combate": {
+      "descricao": "Esse capacete completa a armadura de combate, oferecendo o mesmo padrão de blindagem avançada para a cabeça, geralmente com sistemas eletrônicos de visão e comunicação embutidos.\n\nAssim como a armadura à qual se acopla, é fruto de fabricação industrial avançada, sem equivalente possível numa forja comum.",
+      "exemplos": [
+        "Um soldado o acopla à armadura de combate antes de uma operação pesada.",
+        "Um operador usa a visão noturna embutida para avançar à noite.",
+        "Um técnico verifica os sistemas eletrônicos do capacete antes da missão."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende da armadura de combate e de eletrônica avançada, ausentes de um cenário de fantasia medieval.",
+      "dica_mesa": "Sem uso em Adamar sob qualquer circunstância normal de campanha.",
+      "relacionados": [
+        "armadura-de-combate"
+      ]
+    },
+    "armadura-espacial": {
+      "descricao": "A armadura espacial é uma versão blindada e reforçada do traje espacial, capaz de suportar tanto o vácuo do espaço quanto combate direto, com blindagem equivalente à de uma armadura de combate moderna. É o equipamento de tropas que precisam lutar fora de qualquer atmosfera respirável.\n\nCombina engenharia aeroespacial com blindagem militar avançada, dois campos de tecnologia completamente ausentes de Adamar.",
+      "exemplos": [
+        "Um soldado a veste para combater fora de qualquer atmosfera respirável.",
+        "Uma tropa espacial confia na blindagem reforçada durante um assalto orbital.",
+        "Um engenheiro reforça a armadura antes de uma operação de combate no vácuo."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de engenharia aeroespacial e blindagem militar muito além do NT3 do cenário.",
+      "dica_mesa": "Sem uso em Adamar sob qualquer circunstância normal de campanha.",
+      "relacionados": [
+        "traje-espacial",
+        "capacete-armadura-espacial"
+      ]
+    },
+    "capacete-armadura-espacial": {
+      "descricao": "Esse capacete completa a armadura espacial, protegendo a cabeça contra o vácuo e contra combate direto ao mesmo tempo, com sistemas de suporte de vida e blindagem reforçada embutidos.\n\nAssim como a armadura à qual se acopla, depende de tecnologia aeroespacial e militar muito além de qualquer coisa concebível num mundo sem indústria.",
+      "exemplos": [
+        "Um soldado o acopla à armadura espacial antes de uma operação orbital.",
+        "Um operador confia no suporte de vida embutido durante o combate no vácuo.",
+        "Um técnico revisa a vedação do capacete antes de qualquer saída."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende da armadura espacial e de engenharia aeroespacial, ausentes de um cenário de fantasia medieval.",
+      "dica_mesa": "Sem uso em Adamar sob qualquer circunstância normal de campanha.",
+      "relacionados": [
+        "armadura-espacial"
+      ]
+    },
+    "traje-pressurizado": {
+      "descricao": "O traje pressurizado é um traje hermético que mantém uma bolha de pressão e ar respirável ao redor de quem o veste, permitindo sobreviver em ambientes hostis como grandes profundezas submarinas, altitudes extremas ou atmosferas tóxicas, sem chegar a ser tão especializado quanto um traje espacial completo.\n\nÉ um equipamento versátil dentro da tecnologia avançada, usado sempre que o ambiente ao redor, e não um inimigo, é a principal ameaça à sobrevivência.",
+      "exemplos": [
+        "Um mergulhador de profundidade extrema o veste para explorar as maiores fossas oceânicas.",
+        "Um explorador de altitude extrema confia nele para respirar onde o ar é rarefeito demais.",
+        "Um cientista o usa para estudar um ambiente tóxico sem sistema hermético completo."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende de tecnologia de pressurização muito além do NT3 do cenário.",
+      "dica_mesa": "Sem uso em Adamar; ambientes hostis do cenário devem ser resolvidos com magia, equipamento mundano ou risco narrado.",
+      "relacionados": [
+        "capacete-pressurizado",
+        "traje-espacial"
+      ]
+    },
+    "capacete-pressurizado": {
+      "descricao": "Esse capacete completa o traje pressurizado, selando a cabeça e mantendo a mesma bolha de pressão e ar respirável do restante do traje. Costuma incluir um visor resistente para permitir visão em ambientes hostis.\n\nAssim como o traje ao qual se acopla, depende de tecnologia de pressurização avançada, sem equivalente em Adamar.",
+      "exemplos": [
+        "Um mergulhador o acopla ao traje antes de descer a profundidades extremas.",
+        "Um explorador confia no visor resistente para enxergar em condições extremas.",
+        "Um técnico verifica a vedação do capacete antes de qualquer expedição."
+      ],
+      "em_adamar": "Fica fora de Adamar: depende do traje pressurizado e de tecnologia avançada, ausentes de um cenário de fantasia medieval.",
+      "dica_mesa": "Sem uso em Adamar sob qualquer circunstância normal de campanha.",
+      "relacionados": [
+        "traje-pressurizado"
+      ]
+    }
+  }
+}

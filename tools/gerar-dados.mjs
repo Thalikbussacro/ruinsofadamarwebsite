@@ -84,6 +84,27 @@ export function validar(dados) {
     }
   }
 
+  // enriquecimento: só campos conhecidos, com o tipo certo
+  const todosIds = new Set(LISTAS.flatMap((l) => ((dados[l] && dados[l].itens) || []).map((it) => it.id)));
+  for (const lista of LISTAS) {
+    for (const it of (dados[lista] && dados[lista].itens) || []) {
+      const onde = `${lista}/${it.id}`;
+      if (it.descricao != null && !(typeof it.descricao === 'string' && it.descricao.trim().length >= 80)) erros.push(`${onde}: descrição curta demais ou inválida`);
+      if (it.exemplos != null && !(Array.isArray(it.exemplos) && it.exemplos.length && it.exemplos.every((x) => typeof x === 'string' && x.trim()))) erros.push(`${onde}: exemplos inválidos`);
+      for (const c of ['em_adamar', 'dica_mesa']) if (it[c] != null && !(typeof it[c] === 'string' && it[c].trim())) erros.push(`${onde}: ${c} inválido`);
+      if (it.relacionados != null) {
+        if (!Array.isArray(it.relacionados)) erros.push(`${onde}: relacionados inválido`);
+        else for (const r of it.relacionados) if (!todosIds.has(r) || r === it.id) erros.push(`${onde}: relacionado inexistente "${r}"`);
+      }
+    }
+  }
+  for (const lista of LISTAS) {
+    for (const it of (dados[lista] && dados[lista].itens) || []) {
+      if (it.gcs && !(typeof it.gcs.id === 'string' && it.gcs.id && typeof it.gcs.nome === 'string' && it.gcs.nome)) erros.push(`${lista}/${it.id}: vínculo com o GCS sem id ou nome`);
+    }
+  }
+  for (const e of dados.erros_enriquecimento || []) erros.push(e);
+
   // todo ícone usado precisa ter desenho em icones.json (gerado por tools/icones.mjs)
   if (dados.icones) {
     for (const lista of LISTAS) {
@@ -133,6 +154,43 @@ export function montarJs(dados) {
     'window.GURPS = ' + JSON.stringify(GURPS) + ';\n';
 }
 
+// data/gurps/enriquecimento/<fatia>.json = { lista, itens: { id: { descricao, exemplos, em_adamar?, dica_mesa?, relacionados? } } }
+// Os textos ficam em arquivos separados por fatia para não inchar as listas; aqui entram nos itens.
+export const CAMPOS_ENRIQUECIMENTO = ['descricao', 'exemplos', 'em_adamar', 'dica_mesa', 'relacionados'];
+export function juntarEnriquecimento(dados, pasta = join(RAIZ, 'data', 'gurps', 'enriquecimento')) {
+  dados.erros_enriquecimento = [];
+  if (!existsSync(pasta)) return;
+  for (const f of readdirSync(pasta).filter((x) => x.endsWith('.json')).sort()) {
+    const arq = JSON.parse(readFileSync(join(pasta, f), 'utf8'));
+    const alvo = dados[arq.lista] && dados[arq.lista].itens;
+    if (!alvo) { dados.erros_enriquecimento.push(`enriquecimento/${f}: lista desconhecida "${arq.lista}"`); continue; }
+    const porId = new Map(alvo.map((it) => [it.id, it]));
+    for (const [id, extra] of Object.entries(arq.itens || {})) {
+      const it = porId.get(id);
+      if (!it) { dados.erros_enriquecimento.push(`enriquecimento/${f}: item inexistente "${id}"`); continue; }
+      for (const k of Object.keys(extra)) {
+        if (!CAMPOS_ENRIQUECIMENTO.includes(k)) dados.erros_enriquecimento.push(`enriquecimento/${f}/${id}: campo desconhecido "${k}"`);
+        else it[k] = extra[k];
+      }
+    }
+  }
+}
+
+// data/gurps/gcs.json = { pericias: { id: { id, nome, ref } }, vantagens, desvantagens, equipamento }:
+// o item correspondente na biblioteca do GCS (Basic Set, em inglês). Vira o campo "gcs" do item.
+export function juntarGcs(dados, arquivo = join(RAIZ, 'data', 'gurps', 'gcs.json')) {
+  if (!existsSync(arquivo)) return;
+  const v = JSON.parse(readFileSync(arquivo, 'utf8'));
+  for (const lista of LISTAS) {
+    const porId = new Map(((dados[lista] && dados[lista].itens) || []).map((it) => [it.id, it]));
+    for (const [id, g] of Object.entries(v[lista] || {})) {
+      const it = porId.get(id);
+      if (!it) { (dados.erros_enriquecimento = dados.erros_enriquecimento || []).push(`gcs.json: ${lista}/${id} não existe`); continue; }
+      it.gcs = { id: g.id, nome: g.nome, ref: g.ref };
+    }
+  }
+}
+
 function carregar() {
   const dados = {};
   for (const nome of ARQUIVOS) dados[nome] = JSON.parse(readFileSync(join(RAIZ, 'data', 'gurps', nome + '.json'), 'utf8'));
@@ -140,6 +198,8 @@ function carregar() {
     const arq = join(RAIZ, 'data', 'gurps', nome + '.json');
     if (existsSync(arq)) dados[nome] = JSON.parse(readFileSync(arq, 'utf8'));
   }
+  juntarEnriquecimento(dados);
+  juntarGcs(dados);
   // regras do cenário: data/adamar/<nome>.json → GURPS.adamar.<nome>
   const pastaAdamar = join(RAIZ, 'data', 'adamar');
   dados.adamar = {};

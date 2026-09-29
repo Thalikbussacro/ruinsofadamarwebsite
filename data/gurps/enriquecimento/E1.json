@@ -1,0 +1,390 @@
+{
+ "lista": "equipamento",
+ "itens": {
+  "machado": {
+   "descricao": "O machado de guerra é uma arma de uma mão testada com a perícia Maça/Machado. O golpe principal vem do fio da cabeça pesada e causa dano de corte; alguns modelos também permitem golpear com a ponta ou o dorso da cabeça para dano de contusão. Por ter o peso concentrado longe da mão, ele é mais lento para voltar à guarda entre um ataque e outro do que uma espada equivalente, e é um pouco pior para aparar — a cabeça larga atrapalha o encaixe rápido de outra lâmina.\n\nÉ arma comum de milicianos, lenhadores armados às pressas e bandidos de estrada: fácil de conseguir, fácil de manter afiada numa pedra e assustadora só de ver na mão de alguém.",
+   "exemplos": ["Um guarda de vila pega o machado da lenha ao som do sino de alarme.", "Um bandido ataca a caravana brandindo o machado com as duas mãos erguidas.", "Um lenhador usa o mesmo machado tanto para cortar lenha quanto para se defender de lobos."],
+   "em_adamar": "É ferramenta e arma ao mesmo tempo em qualquer vila de Adamar; qualquer personagem pode ter um sem explicação especial.",
+   "dica_mesa": "Lembre ao jogador que o machado é mais lento para recuar à guarda, então trocar golpes rápidos com ele é arriscado.",
+   "relacionados": ["machadinha", "machado-de-haste", "maca"]
+  },
+  "machadinha": {
+   "descricao": "A machadinha é a versão pequena do machado de guerra, testada com a mesma perícia Maça/Machado. É mais leve e mais fácil de manejar rapidamente do que o machado grande, o que a torna um pouco menos lenta para recuperar a guarda, mas o golpe de corte que ela causa é mais fraco por ter menos massa na cabeça.\n\nÉ a arma mais barata e mais comum da categoria: qualquer ferreiro de aldeia fabrica uma, e é fácil de esconder debaixo de uma capa ou pendurada no cinto, o que a torna também escolha de quem quer uma arma discreta de reserva.",
+   "exemplos": ["Um mercador guarda uma machadinha sob o banco da carroça, por precaução.", "Um batedor de floresta carrega a machadinha tanto para abrir caminho no mato quanto para lutar.", "Um assaltante saca a machadinha escondida na bota quando a negociação desanda."],
+   "em_adamar": "É item comum e barato, vendido em qualquer feira ou ferraria de Adamar.",
+   "relacionados": ["machado", "machado-de-arremesso"]
+  },
+  "machado-de-arremesso": {
+   "descricao": "O machado de arremesso é balanceado especificamente para ser lançado, ao contrário do machado comum, feito sobretudo para golpear de perto. Ele também pode ser usado em combate corpo a corpo com a perícia Maça/Machado, mas seu ponto forte é a versão arremessada, testada com a perícia de arremesso equivalente.\n\nComo é leve e pequeno, muitos guerreiros carregam dois ou três presos ao cinto ou às costas, para lançar em sequência antes de o inimigo fechar distância, guardando um golpe corpo a corpo só como último recurso.",
+   "exemplos": ["Um guerreiro lança dois machados de arremesso contra os batedores antes de sacar a espada.", "Um caçador usa o machado de arremesso tanto para abater caça pequena quanto para se defender.", "Um mercenário mantém três machadinhas de arremesso presas no peitoral do arreio."],
+   "em_adamar": "É arma comum entre batedores e mercenários de Adamar, vendida em qualquer cidade com ferreiro.",
+   "relacionados": ["machadinha", "azagaia"]
+  },
+  "maca": {
+   "descricao": "A maça de guerra é uma arma de uma mão testada com Maça/Machado que causa apenas dano por contusão: não tem fio nem ponta, só uma cabeça pesada de metal ou madeira reforçada na ponta de um cabo curto. É a arma clássica de quem quer derrubar um oponente sem necessariamente crivá-lo de feridas abertas — e também a preferida de quem, por juramento ou crença, evita derramar sangue com lâminas.\n\nAssim como o machado, é desbalanceada e um tanto lenta para voltar à guarda, mas o golpe de contusão que ela causa é especialmente bom contra quem usa armadura pesada e rígida, já que a força do impacto se transmite através do metal.",
+   "exemplos": ["Um clérigo que fez voto de não derramar sangue com lâmina luta apenas com a maça.", "Um guarda de masmorra usa a maça para nocautear um prisioneiro em fuga sem matá-lo.", "Um cavaleiro troca a espada pela maça ao enfrentar um oponente todo emplacado."],
+   "em_adamar": "É arma comum de guardas, clérigos e milícias em Adamar.",
+   "dica_mesa": "Bom lembrete para quem quer capturar em vez de matar: a maça é a arma corpo a corpo mais natural para isso.",
+   "relacionados": ["maca-pequena", "malho"]
+  },
+  "maca-pequena": {
+   "descricao": "A maça pequena é uma versão reduzida da maça de guerra, ainda usada com uma mão e testada com Maça/Machado. É mais leve e mais rápida de recuperar entre golpes do que a maça grande, mas bate com menos força.\n\nPor ser compacta, é fácil de esconder sob uma capa ou levar como arma secundária amarrada ao cinto, servindo de reserva para quando a arma principal se perde ou quebra em combate.",
+   "exemplos": ["Um viajante leva a maça pequena escondida na bagagem, para não chamar atenção na estrada.", "Um guarda de taverna resolve brigas de bêbados só com a maça pequena, sem sacar lâmina.", "Depois de perder a espada numa queda, o aventureiro saca a maça pequena que trazia de reserva."],
+   "em_adamar": "É item barato e discreto, comum entre viajantes e guardas de taverna em Adamar.",
+   "relacionados": ["maca"]
+  },
+  "picareta": {
+   "descricao": "A picareta de guerra é uma arma de uma mão testada com Maça/Machado, com uma ponta estreita e curva feita para perfurar. Ela é excelente para furar armaduras rígidas, já que toda a força do golpe se concentra numa área pequena — mas essa mesma ponta fina tende a ficar presa no alvo ou no escudo dele depois de um golpe bem-sucedido, atrasando o próximo ataque enquanto o usuário puxa a arma de volta.\n\nÉ arma menos comum que o machado ou a maça, associada a mineiros e sapadores que adaptaram sua ferramenta de trabalho para a guerra, e por isso também aparece nas mãos de quem cava túneis, escava ruínas ou trabalha em minas.",
+   "exemplos": ["Um ex-mineiro luta com a mesma picareta que usava para escavar minério.", "Um cavaleiro emplacado é surpreendido por uma picareta que encontra a brecha entre as placas.", "A picareta do aventureiro fica presa no escudo do bandido, dando um instante de vantagem ao inimigo."],
+   "em_adamar": "É ferramenta comum de mineiros e escavadores de ruínas em Adamar, também usada como arma.",
+   "dica_mesa": "Avise o jogador sobre o risco de a picareta ficar presa no alvo — é um detalhe de cena, não só uma regra.",
+   "relacionados": ["martelo-de-guerra"]
+  },
+  "soco": {
+   "descricao": "O soco é o ataque desarmado mais básico, testado com Boxe, Briga, Caratê ou DX (a que for melhor ou tiver sido treinada). Causa apenas dano por contusão e costuma ser fraco comparado a uma arma de verdade, mas tem a vantagem de estar sempre disponível: ninguém pode desarmar as próprias mãos.\n\nÉ o recurso de quem é pego de surpresa sem arma, de quem quer resolver uma briga de taverna sem matar ninguém, ou de quem simplesmente não tem treino ou dinheiro para armas melhores. Personagens com perícias de combate desarmado como Boxe ou Caratê tiram muito mais proveito dele do que alguém sem treino nenhum.",
+   "exemplos": ["Dois bêbados resolvem a discussão na taverna trocando socos, sem sacar faca.", "Desarmado e encurralado num beco, o aventureiro só tem os punhos para se defender.", "Um monge treinado em Caratê derruba dois assaltantes a soco antes que eles saquem as facas."],
+   "em_adamar": "Disponível para qualquer personagem, sem exigir nada além do próprio corpo.",
+   "relacionados": ["soco-ingles", "chute"]
+  },
+  "soco-ingles": {
+   "descricao": "O soco inglês é uma manopla de metal vestida sobre os nós dos dedos para dar mais força a um soco comum, ainda testado com Boxe, Briga, Caratê ou DX. Ele transforma o dano de contusão do soco desarmado em algo bem mais sério, sem abrir mão da discrição de uma arma pequena e fácil de esconder na mão fechada.\n\nÉ item popular entre desordeiros, seguranças de taverna e criminosos de rua, justamente porque, ao contrário de uma faca ou espada, pode passar despercebido até o momento do golpe.",
+   "exemplos": ["Um capanga esconde o soco inglês na manga antes de entrar na negociação.", "Um segurança de taverna usa o soco inglês para expulsar brigões sem sacar lâmina.", "A guarda revista o suspeito e encontra um soco inglês escondido no bolso do casaco."],
+   "em_adamar": "É item barato e comum entre desordeiros e seguranças em Adamar.",
+   "relacionados": ["soco", "cassetete"]
+  },
+  "chute": {
+   "descricao": "O chute é um ataque desarmado com o pé, testado com a perícia de combate desarmado (Briga, Caratê ou DX) com uma penalidade em relação ao soco, já que mirar e equilibrar um golpe de perna é mais difícil. Em troca, ele alcança um pouco mais longe do que um soco e permite atacar sem aproximar tanto o corpo do adversário.\n\nÉ útil sobretudo para manter distância de um oponente desarmado ou para golpear algo baixo, como a perna de quem tenta agarrar o personagem, mas raramente é a primeira escolha de quem já sabe lutar bem com os punhos.",
+   "exemplos": ["Encurralada contra a parede, a aventureira chuta o joelho do assaltante para abrir espaço.", "Um brigão de taverna aplica um chute na canela do rival antes de fechar a distância.", "Surpreendido sem arma na mão, o guarda chuta o cão que avança sobre ele."],
+   "relacionados": ["soco", "chute-com-botas"]
+  },
+  "chute-com-botas": {
+   "descricao": "É o mesmo chute desarmado, mas dado com botas resistentes em vez de descalço ou com sapatos leves, o que aumenta o dano do golpe sem mudar a perícia usada (Briga, Caratê ou DX) nem a penalidade de mirar num alvo baixo. A diferença toda está no calçado: uma bota de couro grosso ou reforçada com metal na ponta machuca muito mais do que um pé descalço.\n\nÉ um detalhe simples de equipamento que muda o resultado de uma briga de rua: quem luta de bota tem vantagem sobre quem está descalço ou de sandália, mesmo com a mesma perícia.",
+   "exemplos": ["O guarda, de botas reforçadas, chuta o ladrão caído para mantê-lo no chão.", "Descalço na cela, o prisioneiro sente na pele a diferença de enfrentar alguém de botas.", "Antes de entrar na briga, o mercenário troca as sandálias por botas de sola grossa."],
+   "dica_mesa": "Vale lembrar o jogador de que o efeito vem do calçado, então personagens descalços usam o chute comum.",
+   "relacionados": ["chute"]
+  },
+  "dentes-rombos": {
+   "descricao": "Dentes rombos é o ataque natural de mordida de criaturas cuja boca não tem fio ou ponta afiada — cavalos, muitas feras grandes e alguns monstros —, causando apenas dano por contusão em vez de corte ou perfuração. É testado com Briga ou DX, geralmente da própria criatura, não de personagens humanos comuns.\n\nÉ o tipo de mordida que machuca mais por pressão e esmagamento do que por ferida aberta: pode quebrar ossos ou derrubar alguém, mas não corta como a mordida de um lobo ou de um predador com presas de verdade.",
+   "exemplos": ["A mula assustada morde o cavalariço que tenta segurá-la pelas rédeas.", "Um urso ferido morde o caçador com força bruta, mais para esmagar do que para rasgar.", "Um jumento de carga morde o ladrão que tenta roubar sua carga."],
+   "relacionados": ["presas", "dentes-afiados"]
+  },
+  "presas": {
+   "descricao": "Presas é o ataque natural de mordida de criaturas com dentes longos e perfurantes, como lobos, grandes felinos ou monstros predadores. Ao contrário dos dentes rombos, causa dano perfurante, ótimo para atravessar carne e roupas leves, ainda que menos eficiente contra armadura rígida. É testado com Briga ou DX.\n\nÉ a mordida clássica de predador em fantasia sombria: a criatura fecha as presas em torno de um braço ou perna e não larga, muitas vezes como parte de uma investida que tenta arrastar a vítima ou prendê-la no lugar.",
+   "exemplos": ["A alcateia de lobos ataca o rebanho isolado, cravando as presas nas ovelhas.", "Uma criatura das ruínas prende o braço do aventureiro entre as presas e não solta.", "O cão de guarda selvagem morde o intruso com as presas antes de ele conseguir sacar a faca."],
+   "relacionados": ["dentes-rombos", "dentes-afiados"]
+  },
+  "bico-afiado": {
+   "descricao": "Bico afiado é o ataque natural de aves de rapina, corvos gigantes e outras criaturas aladas ou de bico córneo, testado com Briga ou DX. É um golpe muito concentrado numa ponta fina, o que o torna especialmente bom para perfurar — capaz de mirar os olhos ou pontos vulneráveis com precisão cruel.\n\nÉ comum em criaturas que atacam de cima, mergulhando sobre a vítima antes de voltar a ganhar altura, o que torna a bicada um golpe rápido e difícil de antecipar.",
+   "exemplos": ["Um corvo gigante mergulha sobre o viajante caído, bicando o rosto exposto.", "A ave de rapina ataca o pastor que se aproxima demais do ninho.", "Nas ruínas cobertas de neve, uma criatura alada bica os olhos de quem se descuida."],
+   "relacionados": ["presas", "golpeador"]
+  },
+  "dentes-afiados": {
+   "descricao": "Dentes afiados é o ataque natural de mordida de criaturas cuja boca tem fio cortante além de força de mordida, como certos répteis, monstros e feras de fantasia. Diferente das presas perfurantes, o golpe aqui é de corte, capaz de abrir feridas largas em vez de furar fundo num só ponto. É testado com Briga ou DX.\n\nÉ o tipo de mordida que deixa cortes feios e sangrentos, e costuma vir acompanhada de um sacudir violento da cabeça da criatura, que rasga ainda mais o ferimento.",
+   "exemplos": ["A criatura das cavernas morde o braço do explorador, deixando um corte profundo.", "Um monstro de pântano sacode a cabeça depois de morder, rasgando a ferida ainda mais.", "O réptil gigante ataca o cavalo com os dentes afiados antes de o cavaleiro reagir."],
+   "relacionados": ["presas", "dentes-rombos"]
+  },
+  "golpeador": {
+   "descricao": "Golpeador é o nome genérico para ataques naturais de criaturas que golpeiam com partes do corpo diferentes de dentes ou garras — chifres, caudas, cascos, tentáculos ou apêndices semelhantes —, testado com Briga ou DX. As estatísticas exatas variam muito de criatura para criatura, então cabe ao narrador definir os detalhes quando cria ou adapta um monstro.\n\nÉ a categoria coringa para qualquer ataque natural que não se encaixe nas categorias mais específicas de mordida, servindo tanto para uma cabeçada com chifres quanto para uma cauda que varre pernas.",
+   "exemplos": ["O touro selvagem golpeia o fazendeiro com os chifres antes de disparar.", "Uma criatura das ruínas ataca com uma cauda pesada, varrendo as pernas do grupo.", "O cavalo assustado golpeia o atacante com um coice certeiro."],
+   "em_adamar": "Fica com o narrador definir os detalhes exatos de cada criatura que usa esse tipo de golpe em Adamar.",
+   "relacionados": ["dentes-rombos", "presas"]
+  },
+  "cassetete": {
+   "descricao": "O cassetete é um porrete curto e pesado, geralmente forrado de couro, testado com Briga ou DX em vez de uma perícia de arma dedicada. É pensado para bater na cabeça e derrubar sem necessariamente matar, o que o torna a arma preferida de quem quer prender alguém vivo em vez de abatê-lo.\n\nÉ item comum entre guardas, carcereiros e capangas: pequeno o bastante para prender ao cinto ou esconder na manga, e discreto o bastante para não assustar quem vê de longe, ao contrário de uma espada à mostra.",
+   "exemplos": ["A guarda da cidade usa o cassetete para render o bêbado desordeiro sem matá-lo.", "Um carcereiro bate com o cassetete na cabeça do prisioneiro que tenta fugir.", "Escondido na manga, o cassetete some no instante em que a negociação parece calma outra vez."],
+   "em_adamar": "É item comum de guardas e carcereiros em qualquer cidade de Adamar.",
+   "dica_mesa": "Boa arma para quem quer capturar em vez de matar, já que causa só contusão e é fácil de esconder.",
+   "relacionados": ["soco-ingles", "porrete"]
+  },
+  "pistola-paralisante": {
+   "descricao": "A pistola paralisante é uma arma de choque usada por toque direto: em vez de ferir, ela aplica uma descarga que, se o alvo falhar num teste de resistência física, o deixa atordoado e incapaz de agir por um instante. É testada com Briga ou DX, já que funciona como um soco com um efeito elétrico embutido, não como uma arma de corte ou perfuração.\n\nÉ equipamento de segurança não letal, pensado para render alguém sem matá-lo, mas depende de eletrônica e uma fonte de energia portátil sofisticada para funcionar.",
+   "exemplos": ["Um agente de segurança encosta a pistola paralisante no braço do invasor para render sem matar.", "A arma de choque falha justamente quando a bateria acaba no pior momento possível.", "Um guarda treinado usa o choque para conter um prisioneiro violento sem feri-lo de verdade."],
+   "em_adamar": "Não existe em Adamar: o cenário é de NT3, sem eletrônica portátil nem baterias, e esse tipo de arma fica de fora.",
+   "relacionados": ["cassetete"]
+  },
+  "porrete": {
+   "descricao": "O porrete é um pedaço de madeira dura, sem fio nem ponta de metal, mas aqui é testado com a perícia Espadas de Lâmina Larga porque seu formato e equilíbrio se parecem mais com o de uma espada larga do que com o de um machado. Causa apenas dano de contusão, seja golpeando com o corpo do porrete, seja estocando com a ponta.\n\nÉ a arma mais simples e barata da categoria: qualquer galho grosso e reto talhado às pressas serve, o que o torna comum entre camponeses armados de última hora, viajantes desesperados e quem simplesmente não tem acesso a uma arma de metal.",
+   "exemplos": ["Um camponês pega o porrete de madeira ao ver os saqueadores se aproximarem da vila.", "Sem outra arma à mão, o viajante talha um porrete de um galho caído na estrada.", "O bêbado brande um porrete improvisado na briga de taverna."],
+   "em_adamar": "É a arma mais acessível de Adamar: qualquer pessoa pode arrumar um pedaço de madeira talhado.",
+   "relacionados": ["bastao-curto", "malho"]
+  },
+  "espada-larga": {
+   "descricao": "A espada larga é a espada de uma mão mais versátil do jogo, testada com Espadas de Lâmina Larga: corta com o fio, estoca com a ponta e ainda pode golpear com o punho ou o pomo para causar contusão de perto. Tem bom equilíbrio entre alcance, dano e facilidade de aparar, o que a torna a escolha padrão de guerreiros, cavaleiros e aventureiros de toda sorte.\n\nÉ também um símbolo social: portar uma espada larga bem cuidada costuma indicar treino formal, posição ou riqueza, ao contrário de armas mais rústicas como o machado ou o porrete.",
+   "exemplos": ["Um cavaleiro recém-armado recebe a espada larga da família como símbolo de sua nova condição.", "Numa emboscada na estrada, o mercenário saca a espada larga e para o primeiro golpe com a lâmina.", "O duelo na praça da vila é decidido no fio das espadas largas dos dois rivais."],
+   "em_adamar": "É a arma corpo a corpo mais associada a guerreiros treinados e nobreza menor em Adamar.",
+   "dica_mesa": "É uma boa arma padrão para recomendar a um jogador iniciante, por ser versátil e não exigir escolhas difíceis.",
+   "relacionados": ["espada-larga-em-gdp", "espada-bastarda", "katana"]
+  },
+  "espada-larga-em-gdp": {
+   "descricao": "É a mesma espada larga, mas com a ponta afiada e alinhada especificamente para estocadas perfurantes, em vez do golpe padrão que também serve para cortar ou golpear com o pomo por contusão. Usa a mesma perícia Espadas de Lâmina Larga e o mesmo corpo da arma, mudando só o perfil da ponta e, por consequência, o tipo de dano da estocada.\n\nÉ a escolha de quem espera enfrentar alvos com armadura leve ou nenhuma, onde uma estocada bem colocada é mais eficiente do que um corte largo, sem abrir mão do golpe de corte nas situações em que ele funciona melhor.",
+   "exemplos": ["Contra o assassino sem armadura, o duelista prefere a estocada da espada larga em GdP.", "O ferreiro da vila oferece a lâmina em GdP para quem pede uma espada mais perfurante.", "Encurralado num corredor estreito da masmorra, o aventureiro estoca em vez de cortar."],
+   "relacionados": ["espada-larga"]
+  },
+  "espada-bastarda": {
+   "descricao": "A espada bastarda é maior e mais pesada que a espada larga comum, mas ainda pode ser empunhada com uma mão só, testada com Espadas de Lâmina Larga; quem prefere usá-la com as duas mãos consulta a tabela de Espada de Duas Mãos em vez desta. Bate mais forte que uma espada larga de uma mão, ao custo de ser um pouco mais difícil de manejar com agilidade.\n\nÉ arma de guerreiros experientes que já dominam a espada e querem mais poder de fogo sem perder de vez a opção de usar um escudo ou uma segunda arma na outra mão.",
+   "exemplos": ["O cavaleiro luta com a espada bastarda numa mão e o escudo na outra.", "Quando precisa de mais força, o guerreiro passa a empunhar a bastarda com as duas mãos.", "A espada bastarda herdada do pai é grande demais para o jovem escudeiro manejar bem ainda."],
+   "relacionados": ["espada-larga", "espada-bastarda-duas-maos", "espada-bastarda-em-gdp"]
+  },
+  "katana": {
+   "descricao": "A katana é uma espada longa e curva usada com uma mão, testada com Espadas de Lâmina Larga, valorizada por um fio de corte excelente e um equilíbrio que privilegia golpes rápidos e precisos em vez de força bruta. Também pode ser empunhada com as duas mãos (ver a versão listada em Espada de Duas Mãos) para golpes ainda mais fortes.\n\nÉ uma arma estrangeira em qualquer ambientação de fantasia medieval europeia, associada a tradições marciais distantes e a guerreiros ou viajantes vindos de terras longínquas.",
+   "exemplos": ["Um espadachim estrangeiro chama atenção na vila ao carregar uma katana na cintura.", "O mestre de esgrima reconhece de longe o fio impecável da lâmina curva.", "Um viajante de terras distantes ensina alguns golpes de katana a um aprendiz curioso."],
+   "em_adamar": "É uma arma estrangeira e rara em Adamar, associada a viajantes de terras distantes; combine com o narrador se um personagem local puder tê-la.",
+   "relacionados": ["espada-larga", "katana-duas-maos"]
+  },
+  "espada-bastarda-em-gdp": {
+   "descricao": "É a espada bastarda com a ponta preparada para estocadas perfurantes em vez do golpe padrão de corte, usada com uma mão e testada com Espadas de Lâmina Larga (ou com Espada de Duas Mãos se empunhada com as duas). O corpo da arma e o alcance são os mesmos da bastarda comum; muda apenas o formato da ponta.\n\nÉ escolhida por quem já decidiu usar uma bastarda mas prefere garantir uma boa estocada perfurante contra alvos sem armadura pesada.",
+   "exemplos": ["O ferreiro forja a bastarda com ponta em GdP a pedido de um cliente que enfrenta muitos bandidos sem couraça.", "Na estocada final do duelo, a ponta afiada da bastarda em GdP decide a luta.", "O viajante estrangeiro prefere a bastarda em GdP à versão de corte padrão."],
+   "relacionados": ["espada-bastarda", "espada-bastarda-em-gdp-duas-maos"]
+  },
+  "maca-estrela": {
+   "descricao": "A maça-estrela é um mangual de uma mão: uma bola de metal coberta de cravos, presa por uma corrente curta a um cabo, testada com a perícia Mangual. A corrente faz a cabeça da arma chicotear no momento do impacto, tornando o golpe muito difícil de aparar ou bloquear com um escudo, já que a trajetória não é reta e previsível como a de uma espada.\n\nEm compensação, é uma arma difícil de controlar com precisão: o mesmo balanço que a torna imprevisível para o oponente também dificulta mirar com cuidado ou reagir rápido a uma abertura.",
+   "exemplos": ["O bárbaro gira a maça-estrela sobre a cabeça antes de golpear com força total.", "O escudo do guarda quase falha em deter o giro imprevisível da corrente da maça-estrela.", "Num duelo de treino, o mestre de armas avisa que a maça-estrela machuca até quem a maneja mal."],
+   "dica_mesa": "É uma arma temática ótima para um personagem selvagem ou bárbaro, mas avise que ela também é traiçoeira de usar.",
+   "relacionados": ["mangual-duas-maos", "nunchaku"]
+  },
+  "nunchaku": {
+   "descricao": "O nunchaku é um par de bastões curtos ligados por uma corrente, testado com a perícia Mangual. É uma arma pequena e leve, fácil de esconder sob uma roupa e de treinar em espaços fechados, mas, como qualquer mangual, seu golpe é imprevisível de aparar e também difícil de controlar com precisão pelo próprio usuário.\n\nÉ associada a tradições marciais orientais e a monges ou lutadores itinerantes, mais do que a guerreiros de armadura pesada, e costuma aparecer em mãos de quem valoriza mobilidade e surpresa sobre força bruta.",
+   "exemplos": ["O monge itinerante treina com o nunchaku no pátio do templo abandonado.", "Escondido sob a capa, o nunchaku surpreende o assaltante que esperava um oponente desarmado.", "Numa masmorra estreita, o giro do nunchaku quase acerta o próprio aliado ao lado."],
+   "em_adamar": "É uma arma exótica em Adamar, associada a tradições marciais estrangeiras; combine com o narrador a origem de quem a usa.",
+   "relacionados": ["maca-estrela"]
+  },
+  "espada-de-energia": {
+   "descricao": "A espada de energia é uma lâmina feita de campo de força ou plasma contido por tecnologia de superciência muito além de qualquer forja: não tem fio material, é praticamente inquebrável e corta com uma facilidade absurda através de quase qualquer material, inclusive metal e pedra. É testada com a perícia própria de Espada de Energia, separada das perícias de espadas comuns.\n\nÉ um símbolo de ficção científica ou super-heróis, não de fantasia medieval: depende de fontes de energia e miniaturização que não existem fora de cenários muito mais avançados.",
+   "exemplos": ["Um herói futurista corta o portão de aço com um único golpe da espada de energia.", "A lâmina de energia atravessa a armadura do robô como se ela não existisse.", "Sem carga na fonte de energia, a espada de energia se apaga e vira um cabo inútil."],
+   "em_adamar": "Não existe em Adamar: o cenário é NT3 e sem tecnologia de superciência; essa arma é muito acima do que o mundo permite.",
+   "relacionados": ["chicote-monofio"]
+  },
+  "garrote": {
+   "descricao": "O garrote é uma corda, fio ou tira simples usada para estrangular a vítima por trás, testado com a perícia Garrote. Não corta nem perfura: ele trabalha fechando a garganta, cortando a respiração e o fluxo de sangue, o que o torna uma arma silenciosa por excelência — perfeita para eliminar uma sentinela sem alarde, mas quase inútil num combate aberto e barulhento.\n\nÉ arma de assassinos, ladrões e espiões, quase nunca de guerreiros de linha de frente, e depende de pegar o alvo desprevenido e por trás para funcionar bem.",
+   "exemplos": ["O assassino se aproxima da sentinela por trás e usa o garrote antes que ela grite.", "Um ladrão mantém um garrote de corda fina escondido na manga, por precaução.", "Numa cela escura, o prisioneiro improvisa um garrote com a própria manta para escapar."],
+   "em_adamar": "É item discreto e barato, associado a ladrões e assassinos em Adamar; qualquer corda serve na emergência.",
+   "dica_mesa": "Funciona melhor como arma de surpresa e assassinato do que numa luta aberta — ajuste a cena de acordo.",
+   "relacionados": ["faca", "adaga"]
+  },
+  "facao": {
+   "descricao": "O facão é uma faca grande, testada com a perícia Faca, capaz tanto de cortar quanto de perfurar, e ainda pode ser arremessado em uma emergência. É maior e mais pesado que uma faca comum, o que lhe dá mais alcance e força de golpe sem perder de vez a leveza e a versatilidade da categoria.\n\nÉ ferramenta tanto quanto arma: usado para abrir caminho em mato fechado, cortar cordas grossas ou processar caça, ele acompanha viajantes, batedores e camponeses tanto quanto guerreiros.",
+   "exemplos": ["O batedor usa o facão para abrir caminho na vegetação fechada perto das ruínas.", "Encurralado sem outra arma, o viajante saca o facão que carrega para tarefas do dia a dia.", "O caçador usa o mesmo facão para esfolar a caça e para se defender de um lobo."],
+   "em_adamar": "É ferramenta comum de viajantes, batedores e camponeses em Adamar.",
+   "relacionados": ["faca", "estaca-de-madeira"]
+  },
+  "faca": {
+   "descricao": "A faca é a arma mais simples e comum da categoria testada pela perícia Faca: pequena, leve, barata e fácil de esconder, capaz de cortar ou perfurar, e ainda pode ser arremessada a curta distância. Não tem o alcance nem a força de uma espada, mas está em toda cozinha, cinto de viajante e bota de ladrão, o que a torna a arma de reserva mais universal do mundo.\n\nÉ também a arma de quem precisa agir sem ser notado: fácil de esconder na manga ou na bota, e rápida de sacar num aperto.",
+   "exemplos": ["O cozinheiro da estalagem defende a cozinha com a mesma faca que usa para cortar legumes.", "Escondida na bota, a faca é a última linha de defesa do viajante assaltado.", "Um ladrão arremessa a faca contra o guarda que grita por reforços."],
+   "em_adamar": "É o item mais comum e barato de Adamar: praticamente todo mundo tem uma faca à mão.",
+   "relacionados": ["facao", "adaga", "estaca-de-madeira"]
+  },
+  "estaca-de-madeira": {
+   "descricao": "A estaca de madeira é uma arma perfurante improvisada, testada com a perícia Faca, feita de um pedaço de madeira talhado numa ponta afiada. É frágil e fraca contra qualquer armadura de verdade, servindo mais como arma de última hora ou como ferramenta ritual do que como equipamento de combate sério.\n\nÉ associada, sobretudo, ao combate contra certos mortos-vivos e criaturas sobrenaturais em histórias de terror e fantasia sombria, onde a lenda diz que atravessar o coração com madeira tem um efeito que o aço não tem.",
+   "exemplos": ["O caçador de mortos-vivos carrega um feixe de estacas de madeira talhadas à mão.", "Sem outra arma, o aldeão talha uma estaca de um galho seco para se defender.", "A lenda da vila diz que só a estaca de madeira realmente encerra certos horrores da noite."],
+   "em_adamar": "É item improvisado e barato, ligado a superstições locais contra mortos-vivos; o narrador decide se essas lendas têm fundo de verdade em Adamar.",
+   "dica_mesa": "É fraca como arma de combate sério; trate-a mais como recurso ritual ou de desespero do que como equipamento principal.",
+   "relacionados": ["faca"]
+  },
+  "adaga": {
+   "descricao": "A adaga é uma faca pequena, leve e bem-feita, testada com a perícia Faca, pensada sobretudo para perfurar com precisão. É mais refinada e cara que uma faca comum de cozinha, e por isso costuma ser vista tanto como arma quanto como objeto de status — muitas vezes ricamente decorada e carregada por nobres, duelistas e diplomatas como acessório e último recurso.\n\nAssim como a faca, pode ser arremessada, e é fácil de esconder sob uma manga ou numa bainha de cinto, o que a torna arma discreta favorita de espiões e assassinos também.",
+   "exemplos": ["O nobre carrega uma adaga adornada mais como símbolo de status do que como arma principal.", "A espiã esconde a adaga na manga para o momento em que a conversa desandar.", "No escuro do beco, a adaga é sacada antes mesmo de o assaltante perceber o perigo."],
+   "em_adamar": "É item comum entre nobres, diplomatas e gente da cidade em Adamar, tanto como arma quanto como acessório.",
+   "relacionados": ["faca", "garrote"]
+  },
+  "kusari": {
+   "descricao": "O kusari é uma corrente com um peso ou lâmina na ponta, testado com a perícia própria Kusari, usado como arma flexível de alcance variável: pode golpear ou se enroscar em um braço, perna ou arma do oponente para desequilibrá-lo ou desarmá-lo. Assim como outras armas de corrente, é difícil de aparar de forma convencional, já que seu movimento não é reto e previsível.\n\nÉ arma exótica e pouco comum, exigindo bastante treino para ser usada bem, e é mais associada a tradições marciais estrangeiras do que ao equipamento padrão de um guerreiro local.",
+   "exemplos": ["O monge itinerante enrosca a corrente do kusari no braço do assaltante para desarmá-lo.", "Poucos ferreiros locais sabem sequer como forjar um kusari decente.", "No treino, o mestre avisa que o kusari machuca tanto o adversário quanto o iniciante descuidado."],
+   "em_adamar": "É arma exótica e rara em Adamar, vinda de tradições marciais estrangeiras; combine a origem com o narrador.",
+   "relacionados": ["maca-estrela", "nunchaku"]
+  },
+  "lanca-de-justa": {
+   "descricao": "A lança de justa é uma lança longa e pesada de cavaleiro, testada com a perícia própria Lança de Justa, feita para ser usada apenas montado, em carga a galope contra outro cavaleiro ou alvo à frente — seja num torneio de justa, seja num combate real de cavalaria. É pesada e desajeitada demais para qualquer uso a pé, e depende inteiramente do impulso do cavalo para causar o dano que a torna famosa.\n\nÉ item ligado a cavaleiros, torneios e cerimônia tanto quanto a guerra de verdade, e costuma ser pintada com as cores e o brasão de quem a maneja.",
+   "exemplos": ["Os cavaleiros se enfrentam na justa do torneio, lanças em riste, diante da multidão.", "A carga de cavalaria decide a batalha quando as lanças de justa se abaixam ao mesmo tempo.", "Sem cavalo, o cavaleiro desmontado larga a lança de justa, inútil a pé."],
+   "em_adamar": "É equipamento de cavaleiros e torneios, ligado a quem tem condição de manter cavalo e treino de cavalaria em Adamar.",
+   "relacionados": ["lanca", "lanca-longa"]
+  },
+  "chicote-monofio": {
+   "descricao": "O chicote monofio é uma arma de superciência com um fio monomolecular tão fino e afiado que corta praticamente qualquer material com o mínimo de força, incluindo metal e pedra. É tratado como uma variante de altíssima tecnologia do chicote comum, extremamente perigoso de manusear até para quem o empunha, já que um deslize pode cortar o próprio usuário.\n\nÉ tecnologia de ficção científica avançada, não de forja ou artesanato comum, e depende de materiais e processos muito além de qualquer coisa produzida por um ferreiro.",
+   "exemplos": ["O agente de elite corta as grades de metal com um único estalo do chicote monofio.", "Um erro de manuseio quase custa o próprio braço de quem empunha o chicote monofio.", "A lâmina invisível do chicote monofio atravessa a armadura como se ela não existisse."],
+   "em_adamar": "Não existe em Adamar: exige tecnologia de superciência muito acima do NT3 do cenário.",
+   "relacionados": ["espada-de-energia", "chicote"]
+  },
+  "glaive": {
+   "descricao": "O glaive é uma arma de haste longa com uma lâmina pesada de corte fixada na ponta, testada com a perícia Armas de Haste. Empunhado com as duas mãos, oferece alcance bem maior do que qualquer arma de uma mão, permitindo golpear antes que o oponente consiga se aproximar — mas esse mesmo alcance o torna ruim em espaços apertados, como corredores estreitos ou masmorras baixas, onde não há espaço para o cabo longo circular.\n\nÉ arma de infantaria e de guarda de portões e corredores largos, mais do que de duelo individual ou combate em ambientes fechados.",
+   "exemplos": ["A guarda do portão forma linha com glaives, mantendo os invasores a distância.", "Na masmorra estreita, o glaive esbarra nas paredes e atrapalha o próprio usuário.", "O soldado usa o alcance do glaive para atingir o cavaleiro antes que ele desmonte."],
+   "relacionados": ["naginata-armas-de-haste", "alabarda"]
+  },
+  "naginata-armas-de-haste": {
+   "descricao": "É a naginata, um bastão longo japonês com uma lâmina de corte mais leve que a do glaive, usada aqui com a perícia Armas de Haste (a mesma arma também pode ser empunhada com a perícia Bastão ou Espada de Duas Mãos, dependendo de como o personagem foi treinado). Empunhada com as duas mãos, une bom alcance a golpes de corte relativamente ágeis para uma arma de haste.\n\nÉ associada a tradições marciais orientais, e em muitas histórias é a arma preferida de guerreiros ou guardiãs treinadas desde jovens em templos ou escolas de armas.",
+   "exemplos": ["A guardiã do templo distante gira a naginata com fluidez treinada desde a infância.", "O viajante estrangeiro chama atenção na vila ao carregar uma naginata nas costas.", "Num duelo de treino, a naginata mostra sua vantagem de alcance sobre a espada curta."],
+   "em_adamar": "É arma estrangeira e rara em Adamar; combine com o narrador a origem de quem a usa.",
+   "relacionados": ["glaive", "naginata-bastao", "naginata-espada-duas-maos"]
+  },
+  "alabarda": {
+   "descricao": "A alabarda é uma arma de haste pesada, testada com Armas de Haste, que combina numa só cabeça uma lâmina de corte, um espigão perfurante e uma ponta de lança, dando ao usuário várias opções de golpe sem trocar de arma. É a mais versátil das armas de haste, mas também uma das mais pesadas e difíceis de manejar com rapidez.\n\nÉ arma clássica de infantaria pesada e de guardas de fortaleza formados em linha, boa tanto contra outra infantaria quanto contra cavalaria que tente atropelar a formação, mas exige espaço livre ao redor para ser usada bem.",
+   "exemplos": ["A guarnição da muralha forma linha de alabardeiros contra a carga de cavalaria.", "O sargento treina os recrutas a alternar entre o corte, a estocada e o gancho da alabarda.", "Na masmorra de teto baixo, a alabarda é praticamente inútil de balançar."],
+   "relacionados": ["glaive", "machado-de-haste"]
+  },
+  "machado-de-haste": {
+   "descricao": "O machado de haste é um machado de cabo longo, testado com Armas de Haste, que pode golpear tanto com o corpo pesado da cabeça, para causar contusão, quanto com o fio, para causar corte. Empunhado com as duas mãos, ele une o alcance de uma arma de haste ao golpe pesado característico dos machados.\n\nÉ comum entre infantaria pesada e milícias de vila que precisam de uma arma com alcance mas não têm acesso a algo tão sofisticado quanto uma alabarda forjada especialmente.",
+   "exemplos": ["A milícia da vila improvisa machados de haste a partir de ferramentas agrícolas modificadas.", "O soldado alterna entre o golpe de corte e a pancada de contusão do machado de haste.", "Formados em linha, os soldados usam o alcance do machado de haste para conter a carga."],
+   "relacionados": ["alabarda", "machado"]
+  },
+  "rapieira": {
+   "descricao": "A rapieira é uma espada leve, longa e fina, testada com a perícia própria Rapieira, feita quase exclusivamente para estocadas rápidas e precisas em vez de golpes de corte com força. É arma de esgrima refinada, associada a duelos formais entre nobres e a escolas de esgrima com regras e etiqueta próprias, não ao combate bruto de campo de batalha.\n\nExige um treino técnico específico e uma forja mais refinada do que a maioria das espadas rústicas, para produzir uma lâmina tão fina sem que ela quebre.",
+   "exemplos": ["Os dois nobres resolvem a ofensa num duelo formal de rapieiras, sob regras estritas.", "O mestre de esgrima ensina a estocada rápida da rapieira a um punhado de alunos pagantes.", "Contra uma armadura pesada, a rapieira do duelista de pouco adianta."],
+   "em_adamar": "Fica com o narrador: é uma arma de esgrima refinada que pode existir em círculos nobres específicos de Adamar, mas não é equipamento padrão de qualquer aventureiro; combine a disponibilidade com a mesa.",
+   "dica_mesa": "Combine com o narrador se existe uma escola de esgrima ou tradição de duelo que ensine essa arma na campanha.",
+   "relacionados": ["sabre", "tercado"]
+  },
+  "sabre": {
+   "descricao": "O sabre é uma espada curva e leve de uma mão, testada com a perícia própria Sabre, que une corte e estocada num equilíbrio pensado para esgrima ágil e golpes rápidos. É mais versátil que a rapieira, que só estoca bem, mas ainda exige um treino técnico específico, diferente da abordagem mais bruta de uma espada larga comum.\n\nÉ associada a cavalaria leve, oficiais e duelistas de tradição marcial mais recente do que a espada larga tradicional, e costuma ser vista como arma elegante tanto quanto prática.",
+   "exemplos": ["O oficial de cavalaria leve prefere o sabre à espada larga, pela agilidade em cima do cavalo.", "Num duelo de honra, os sabres se cruzam sob as regras de uma escola de esgrima.", "O mestre de armas ensina o corte e a estocada do sabre a um punhado de alunos seletos."],
+   "em_adamar": "Fica com o narrador: é arma de tradição de esgrima mais específica, que pode existir em certos círculos de Adamar mas não é item padrão de qualquer combatente.",
+   "relacionados": ["rapieira", "espada-larga"]
+  },
+  "golpe-com-escudo": {
+   "descricao": "Golpe com o escudo é o ataque de usar a borda ou a face do próprio escudo como arma de contusão, testado com a perícia Escudo (a mesma usada para defender-se com ele). É um golpe fraco comparado a uma arma de verdade, mas está sempre disponível para quem já carrega um escudo, sem precisar sacar outra arma.\n\nÉ útil sobretudo para empurrar, desequilibrar ou atordoar um oponente a curta distância, abrindo espaço para um golpe melhor da arma principal na mão livre, ou simplesmente para afastar alguém sem intenção de matar.",
+   "exemplos": ["O guarda usa o escudo para empurrar o desordeiro para fora da taverna.", "Encostado na parede da masmorra, o aventureiro golpeia com o escudo antes de erguer a espada.", "O cavaleiro atordoa o oponente com o escudo antes do golpe final."],
+   "relacionados": ["golpe-com-escudo-de-espiculos", "escudo-medio"]
+  },
+  "golpe-com-escudo-de-espiculos": {
+   "descricao": "É o mesmo golpe com o escudo, mas dado com um escudo equipado com espículos ou rebites de metal na face ou na borda, o que transforma o impacto de contusão pura em algo capaz de ferir de verdade. Ainda é testado com a perícia Escudo, e o resto do uso do escudo, como defender-se com ele, não muda em nada.\n\nÉ escolha de quem quer que o escudo seja também uma arma secundária confiável, e não apenas um objeto de defesa, ao custo de um pequeno gasto extra para equipar os espículos.",
+   "exemplos": ["O ferreiro rebita espículos de metal na face do escudo do mercenário, a pedido dele.", "O golpe do escudo com espículos deixa um corte onde antes só haveria um hematoma.", "Além de defender, o escudo cravejado do guerreiro serve de arma extra em qualquer aperto."],
+   "relacionados": ["golpe-com-escudo", "escudo-grande"]
+  },
+  "bastao-curto": {
+   "descricao": "O bastão curto é um pedaço curto de madeira dura, empunhado com uma mão, testado aqui com a perícia Espadas Curtas — a mesma arma também pode ser usada com a perícia Terçado, conforme o treino do personagem. Golpeia ou estoca causando apenas dano por contusão, sem fio nem ponta de metal.\n\nÉ arma simples e barata, fácil de conseguir ou improvisar, e por isso comum entre camponeses, monges que evitam lâminas e qualquer personagem que prefira resolver as coisas sem derramar sangue.",
+   "exemplos": ["O monge da ordem local resolve treinar apenas com o bastão curto, por princípio.", "Sem outra arma à mão, o viajante talha um bastão curto de um galho reto.", "O guarda usa o bastão curto para conter o desordeiro sem feri-lo gravemente."],
+   "relacionados": ["bastao-curto-tercado", "porrete", "bordao-bastao"]
+  },
+  "espada-curta": {
+   "descricao": "A espada curta é uma espada de uma mão menor e mais leve que a espada larga, testada com a perícia Espadas Curtas, capaz de cortar ou perfurar. É mais rápida de manejar e mais fácil de aparar rapidamente com ela do que com armas maiores, ainda que bata com menos força.\n\nÉ boa escolha para quem valoriza agilidade e reação rápida sobre força bruta, e também para combate em espaços apertados — corredores de masmorra, becos estreitos — onde uma lâmina mais longa esbarraria nas paredes.",
+   "exemplos": ["Na masmorra estreita, o ladrão prefere a espada curta à espada larga do companheiro.", "O duelista aposta na velocidade da espada curta contra o golpe mais lento do rival.", "Um guarda de cidade usa a espada curta como arma de patrulha, discreta e ágil."],
+   "em_adamar": "É arma comum entre guardas urbanos e quem prefere agilidade em espaços fechados em Adamar.",
+   "relacionados": ["espada-larga", "bastao-curto", "cutelo"]
+  },
+  "cutelo": {
+   "descricao": "O cutelo é uma espada curta e larga, testada com a perícia Espadas Curtas, tradicionalmente associada a marinheiros e piratas, com uma guarda robusta que protege bem a mão de quem a empunha. É mais pesado que uma espada curta comum, o que lhe dá golpes de corte mais fortes ao custo de um pouco de agilidade.\n\nÉ arma pensada para combates confusos e apertados, como o convés de um navio, onde uma lâmina longa atrapalharia e a proteção da mão importa tanto quanto o próprio golpe.",
+   "exemplos": ["O capitão do navio mercante mantém um cutelo sempre à mão contra piratas.", "No convés apertado, o cutelo se prova mais prático que a espada larga do oficial.", "A guarda robusta do cutelo salva a mão do marinheiro de um golpe certeiro."],
+   "em_adamar": "Fica com o narrador: é arma associada a tradição marítima específica, que só faz sentido se a campanha tiver esse contexto em Adamar.",
+   "relacionados": ["espada-curta", "tercado"]
+  },
+  "arreador": {
+   "descricao": "O arreador é um bastão elétrico, do tipo usado para conduzir gado, adaptado como arma de choque: além de queimar no toque, pode atordoar o alvo que falhar num teste de resistência à descarga. É testado com Briga ou DX, funcionando como um golpe de contusão com um efeito elétrico extra embutido.\n\nÉ equipamento agrícola ou de contenção adaptado, e depende de eletricidade portátil, algo que não existe em ambientações medievais comuns.",
+   "exemplos": ["O fazendeiro usa o arreador para conduzir o gado teimoso ao curral.", "Um segurança usa o arreador para conter o prisioneiro violento sem lâmina.", "Sem carga na bateria, o arreador vira apenas um bastão comum e inofensivo."],
+   "em_adamar": "Não existe em Adamar: depende de eletricidade portátil, tecnologia muito acima do NT3 do cenário.",
+   "relacionados": ["pistola-paralisante"]
+  },
+  "bastao-curto-tercado": {
+   "descricao": "É o mesmo bastão curto de madeira, listado de novo aqui porque também pode ser usado com a perícia Terçado, dependendo de como o personagem foi treinado — o objeto físico é idêntico ao bastão curto usado com Espadas Curtas, só muda a perícia de combate associada. Continua sendo uma arma simples de contusão, sem fio nem ponta.\n\nA escolha entre treinar Espadas Curtas ou Terçado para o bastão costuma refletir a escola ou o mestre que ensinou o personagem, mais do que qualquer diferença no objeto em si.",
+   "exemplos": ["O mestre de esgrima ensina o bastão curto como introdução aos golpes do terçado.", "O aluno pratica com o bastão curto antes de subir para uma lâmina de verdade.", "Sem lâmina disponível, o duelista treina a forma do terçado com um simples bastão."],
+   "relacionados": ["bastao-curto", "tercado"]
+  },
+  "tercado": {
+   "descricao": "O terçado é um espadim leve de estocada, arma de esgrima de uma mão testada com a perícia própria Terçado, semelhante em espírito à rapieira mas geralmente um pouco mais curto e prático. É pensado quase inteiramente para estocadas rápidas e precisas, não para golpes de corte com força.\n\nAssim como a rapieira e o sabre, está mais associado a escolas de esgrima, duelo formal e nobreza do que ao equipamento padrão de um guerreiro de linha de frente.",
+   "exemplos": ["O duelista resolve a disputa de honra com o terçado, sob regras estritas de esgrima.", "O mestre de armas cobra caro para ensinar a estocada precisa do terçado.", "Contra um oponente encouraçado, a estocada do terçado rende pouco efeito."],
+   "em_adamar": "Fica com o narrador: é arma de esgrima de tradição específica, que pode existir em certos círculos de Adamar mas não é padrão para todo mundo.",
+   "relacionados": ["rapieira", "sabre", "bastao-curto-tercado"]
+  },
+  "lanca": {
+   "descricao": "A lança é uma arma de haste simples, testada com a perícia Lança, que pode ser usada com uma mão (deixando a outra livre para um escudo) ou empunhada com as duas mãos para golpes mais fortes; também pode ser arremessada em caso de necessidade. É uma das armas mais versáteis e baratas do jogo, com bom alcance contra oponentes desarmados de haste.\n\nÉ item universal de milícias, guardas de fronteira e caçadores: fácil de fabricar, fácil de aprender o básico, e útil tanto para guerra quanto para caça de animais grandes.",
+   "exemplos": ["A milícia da vila se forma com lanças e escudos contra o ataque anunciado.", "O caçador usa a lança para enfrentar a fera grande que ameaça o rebanho.", "Sem outra arma, o pastor arma uma lança improvisada com um cabo de ferramenta."],
+   "em_adamar": "É a arma de haste mais barata e comum em Adamar, item padrão de milícias e guardas.",
+   "relacionados": ["azagaia", "lanca-longa", "lanca-de-justa"]
+  },
+  "azagaia": {
+   "descricao": "A azagaia é uma lança curta e leve, testada com a perícia Lança, feita sobretudo para ser arremessada em vez de usada em combate corpo a corpo prolongado, embora ainda funcione de perto em caso de necessidade. Muitos guerreiros carregam várias azagaias para lançar em sequência antes de o combate fechar à queima-roupa.\n\nÉ arma comum entre batedores, caçadores e povos que valorizam mobilidade sobre uma linha de infantaria pesada e parada.",
+   "exemplos": ["O batedor lança duas azagaias contra os lobos antes que eles alcancem o rebanho.", "O caçador carrega um feixe de azagaias presas às costas para a expedição.", "Cercado, o guerreiro usa a última azagaia como lança comum, de perto."],
+   "relacionados": ["lanca", "machado-de-arremesso"]
+  },
+  "lanca-longa": {
+   "descricao": "A lança longa é uma versão mais comprida da lança comum, testada com a mesma perícia Lança, oferecendo mais alcance à custa de ser um pouco mais lenta e menos maneável, mais difícil de usar bem em espaços apertados. Pode ser empunhada com uma ou duas mãos, dependendo de quanto alcance e força o usuário quer priorizar.\n\nÉ arma de formação, mais eficiente quando várias pessoas a empunham lado a lado do que em duelo individual, já que seu alcance brilha em manter o inimigo a distância antes que ele feche a luta.",
+   "exemplos": ["A linha de milicianos aponta as lanças longas para deter a carga do inimigo.", "Na masmorra de corredor estreito, a lança longa atrapalha mais do que ajuda.", "O guarda de torre usa o alcance da lança longa para atingir quem tenta escalar a muralha."],
+   "relacionados": ["lanca", "lanca-de-justa"]
+  },
+  "bordao-bastao": {
+   "descricao": "O bordão é um bastão longo de madeira, empunhado com as duas mãos, testado aqui com a perícia Bastão (o mesmo objeto também pode ser usado com a perícia Espada de Duas Mãos, conforme o treino do personagem). É uma arma puramente de contusão, mas o comprimento e o jeito de empunhá-lo com as duas mãos dão um bônus considerável para aparar golpes, tornando-o surpreendentemente defensivo para uma arma tão simples.\n\nÉ comum entre monges, peregrinos, viajantes e qualquer personagem que prefira uma arma discreta: passa por simples apoio de caminhada até o momento em que é usada para lutar.",
+   "exemplos": ["O peregrino usa o bordão tanto para apoiar a caminhada quanto para se defender de assaltantes.", "O monge treinado no bordão apara golpe após golpe antes de revidar.", "Disfarçado de simples bastão de viagem, o bordão surpreende quem espera um alvo indefeso."],
+   "dica_mesa": "É uma ótima arma temática para monges, peregrinos ou eremitas, e passa despercebida até o momento de lutar.",
+   "relacionados": ["bastao-curto", "naginata-bastao", "bordao-espada-duas-maos"]
+  },
+  "naginata-bastao": {
+   "descricao": "É a mesma naginata, o bastão longo japonês com lâmina na ponta, mas usada aqui com a perícia Bastão, golpeando principalmente com o corpo do cabo em vez de depender do fio da lâmina; o mesmo objeto também aparece listado sob a perícia Armas de Haste ou Espada de Duas Mãos, conforme o treino do personagem. O golpe de contusão do cabo é uma opção útil quando o usuário não quer necessariamente ferir com corte.\n\nÉ escolhida por quem foi treinado a tratar a naginata mais como um bastão longo com uma lâmina extra do que como uma arma de corte dedicada.",
+   "exemplos": ["A guardiã do templo usa o corpo da naginata para derrubar o intruso sem cortá-lo.", "Treinada como bastão, a naginata serve tanto para contusão quanto para corte, conforme a necessidade.", "O mestre ensina primeiro os golpes de bastão da naginata antes de liberar o fio da lâmina."],
+   "em_adamar": "É arma estrangeira e rara em Adamar; combine a origem de quem a usa com o narrador.",
+   "relacionados": ["naginata-armas-de-haste", "naginata-espada-duas-maos", "bordao-bastao"]
+  },
+  "malho": {
+   "descricao": "O malho é uma marreta pesada de duas mãos, testada com Maça/Machado de Duas Mãos, que causa dano de contusão severo — o tipo de arma capaz de esmagar ossos e amassar armadura mesmo sem atravessá-la. É lenta para golpear e ainda mais lenta para recuperar entre um golpe e outro, o que a torna arriscada contra oponentes rápidos.\n\nÉ arma associada a ferreiros, demolidores e guerreiros de força bruta acima da média, mais pensada para derrubar de uma vez do que para trocar golpes rápidos numa esgrima.",
+   "exemplos": ["O ferreiro da vila defende a forja com o próprio malho de trabalho.", "O golpe do malho amassa o elmo do cavaleiro mesmo sem atravessar o metal.", "Lento para recuperar, o guerreiro do malho fica exposto depois de errar o golpe."],
+   "em_adamar": "É ferramenta de ferreiros e demolidores usada também como arma em Adamar.",
+   "relacionados": ["maca", "martelo-de-guerra"]
+  },
+  "machado-duas-maos": {
+   "descricao": "É um machado de guerra grande, empunhado com as duas mãos, testado com Maça/Machado de Duas Mãos. Bate consideravelmente mais forte que a versão de uma mão, mas exige as duas mãos livres, abrindo mão da opção de usar escudo ou uma arma secundária.\n\nÉ arma de guerreiros que apostam tudo no poder do golpe, comum entre lenhadores que viraram soldados e guerreiros tribais que valorizam força bruta sobre defesa refinada.",
+   "exemplos": ["O guerreiro tribal ergue o machado de duas mãos sobre a cabeça antes da carga final.", "Sem escudo, o guerreiro do machado grande aposta tudo na força do próximo golpe.", "O lenhador que virou soldado troca o machado de uma mão pela versão grande, mais familiar ao seu ofício."],
+   "relacionados": ["machado", "malho"]
+  },
+  "segadeira": {
+   "descricao": "A segadeira é uma ferramenta agrícola de lâmina longa e curva, usada improvisadamente como arma com a perícia Maça/Machado de Duas Mãos. Não foi desenhada para combate, então tem um golpe estranho e desengonçado, e a lâmina curva tende a ficar presa no alvo ou em roupas grossas depois de um golpe bem-sucedido, atrasando o próximo ataque.\n\nÉ arma de última hora de camponeses e trabalhadores rurais que pegam em armas pela primeira vez, mais símbolo de revolta desesperada do que equipamento de guerreiro treinado.",
+   "exemplos": ["Os camponeses revoltados marcham contra o castelo empunhando segadeiras e forcados.", "A lâmina da segadeira fica presa na capa grossa do bandido, atrasando o próximo golpe.", "Sem treino formal, o fazendeiro usa a segadeira do jeito que sabe: com força e sem técnica."],
+   "dica_mesa": "Boa arma temática para uma revolta camponesa ou personagem sem treino militar formal.",
+   "relacionados": ["machado-duas-maos"]
+  },
+  "martelo-de-guerra": {
+   "descricao": "O martelo de guerra é uma arma de duas mãos testada com Maça/Machado de Duas Mãos, com um espigão perfurante na cabeça além da face de contusão, permitindo escolher entre esmagar ou furar dependendo do lado usado no golpe. Assim como a picareta, o espigão fino tende a ficar preso no alvo ou no escudo dele depois de acertar, atrasando o golpe seguinte.\n\nÉ arma pensada especificamente contra armadura pesada: a face de contusão amassa placas, e o espigão perfurante encontra as brechas entre elas.",
+   "exemplos": ["O cavaleiro escolhe o martelo de guerra justamente para enfrentar oponentes emplacados.", "O espigão do martelo fica preso no escudo do inimigo, atrasando o próximo golpe.", "Contra a armadura pesada da guarda do castelo, o martelo de guerra é a arma certa."],
+   "relacionados": ["picareta", "malho"]
+  },
+  "moto-serra": {
+   "descricao": "A moto-serra é uma serra motorizada movida a combustível, usada como arma improvisada com Maça/Machado de Duas Mãos. Causa ferimentos brutais de corte, mas é extremamente barulhenta, impossível de usar furtivamente, pesada, e depende de combustível limitado que acaba no meio do combate se o usuário não prestar atenção.\n\nÉ tecnologia industrial de um mundo com motores a combustão, muito além de qualquer coisa produzida por ferreiros ou artesãos comuns.",
+   "exemplos": ["O barulho da moto-serra denuncia a posição do atacante a um quarteirão de distância.", "No meio da luta, o combustível acaba e a moto-serra vira um peso morto e inútil.", "O ferimento deixado pela moto-serra é reconhecidamente mais brutal que o de qualquer lâmina comum."],
+   "em_adamar": "Não existe em Adamar: depende de motores a combustível, tecnologia muito acima do NT3 do cenário.",
+   "relacionados": ["malho"]
+  },
+  "mangual-duas-maos": {
+   "descricao": "O mangual de duas mãos é a versão grande da arma de corrente, testada com a perícia Mangual de Duas Mãos: uma cabeça pesada de metal, ligada por corrente a um cabo comprido empunhado com as duas mãos. O movimento imprevisível da corrente torna esse golpe muito difícil de aparar ou bloquear com um escudo, mas pelo mesmo motivo é difícil de controlar com precisão, mesmo para quem tem treino.\n\nÉ arma pesada e intimidadora, mais associada a guerreiros brutais e mercenários de reputação sinistra do que a soldados de linha disciplinados.",
+   "exemplos": ["O mercenário gira o mangual de duas mãos sobre a cabeça antes da carga final.", "O escudo do cavaleiro falha em deter a trajetória imprevisível da corrente do mangual.", "Num espaço apertado, o próprio giro do mangual quase acerta um aliado ao lado."],
+   "relacionados": ["maca-estrela", "malho"]
+  },
+  "bordao-espada-duas-maos": {
+   "descricao": "É o mesmo bordão de madeira longo, listado de novo aqui porque também pode ser usado com a perícia Espada de Duas Mãos, dependendo do estilo de treino do personagem; o objeto é idêntico ao bordão comum, e continua causando só dano de contusão. Empunhado com as duas mãos, oferece o mesmo bônus generoso para aparar que faz do bordão uma arma defensiva surpreendente.\n\nA escolha entre treinar essa arma como Bastão ou como Espada de Duas Mãos costuma refletir a tradição marcial do mestre que ensinou o personagem.",
+   "exemplos": ["O monge treinado em esgrima de duas mãos prefere o bordão ao aço, por princípio.", "O peregrino apara golpe após golpe com o bordão longo, surpreendendo o assaltante.", "Disfarçado de bastão de apoio, o bordão se revela uma arma defensiva competente."],
+   "relacionados": ["bordao-bastao", "naginata-espada-duas-maos"]
+  },
+  "naginata-espada-duas-maos": {
+   "descricao": "É a naginata usada com a perícia Espada de Duas Mãos, com foco no fio afiado da lâmina em vez do corpo do cabo; a mesma arma também aparece sob as perícias Bastão e Armas de Haste, conforme o treino do personagem. Empunhada com as duas mãos, une bom alcance a golpes de corte ágeis para os padrões de uma arma de haste.\n\nÉ tratada aqui como uma espada de haste longa, refletindo um treino que prioriza o corte da lâmina sobre o uso do cabo como bastão.",
+   "exemplos": ["A guardiã treinada em esgrima usa o fio da naginata com precisão cirúrgica.", "O golpe de corte da naginata alcança o cavaleiro antes que a lança dele feche a distância.", "Num duelo de treino, a naginata mostra que corta tão bem quanto uma espada comum, com mais alcance."],
+   "em_adamar": "É arma estrangeira e rara em Adamar; combine com o narrador a origem de quem a usa.",
+   "relacionados": ["naginata-armas-de-haste", "naginata-bastao"]
+  },
+  "espada-bastarda-duas-maos": {
+   "descricao": "É a espada bastarda empunhada com as duas mãos, testada com Espada de Duas Mãos, causando um golpe de corte consideravelmente mais forte do que quando usada apenas com uma mão, a mesma arma listada em Espadas de Lâmina Larga para uso de uma mão só. Abrir mão de uma das mãos significa abrir mão também de escudo ou arma secundária.\n\nÉ escolha de guerreiros que preferem apostar mais força no golpe do que manter uma defesa extra na outra mão, geralmente contra oponentes bem protegidos por armadura.",
+   "exemplos": ["Contra o cavaleiro emplacado, o guerreiro empunha a bastarda com as duas mãos para mais força.", "Sem escudo, o mercenário aposta tudo no golpe pesado da bastarda de duas mãos.", "O jovem escudeiro ainda treina para conseguir controlar bem a bastarda com as duas mãos."],
+   "relacionados": ["espada-bastarda", "espada-grande"]
+  },
+  "espada-grande": {
+   "descricao": "A espada grande é um espadão de duas mãos, testado com Espada de Duas Mãos, feito para golpes de corte poderosos que aproveitam todo o comprimento e peso da lâmina. É a mais pesada das espadas comuns de duas mãos, exigindo força considerável para manejar bem e abrindo mão de qualquer escudo ou arma secundária.\n\nÉ arma de guerreiros de elite e campeões: cara, difícil de fabricar bem, e associada a quem já provou força e habilidade suficientes para justificar carregá-la.",
+   "exemplos": ["O campeão do torneio ergue a espada grande diante da multidão antes do duelo decisivo.", "Poucos ferreiros da região sabem forjar uma lâmina tão longa e equilibrada quanto a espada grande.", "O golpe da espada grande atravessa o escudo de madeira do bandido de uma vez."],
+   "relacionados": ["espada-bastarda-duas-maos", "katana-duas-maos", "espada-grande-em-gdp"]
+  },
+  "katana-duas-maos": {
+   "descricao": "É a katana empunhada com as duas mãos, testada com Espada de Duas Mãos, permitindo golpes mais fortes do que o uso de uma mão só listado em Espadas de Lâmina Larga. É a forma tradicional de empunhar essa espada estrangeira, com as duas mãos no cabo alongado para controlar melhor a força do golpe.\n\nÉ associada a tradições marciais distantes e a guerreiros ou viajantes vindos de terras longínquas, raramente vista como equipamento padrão de um exército local.",
+   "exemplos": ["O espadachim estrangeiro empunha a katana com as duas mãos para o golpe decisivo.", "Poucos na vila já viram alguém lutar com uma katana de duas mãos antes.", "O viajante ensina a um aprendiz curioso a forma tradicional de segurar a katana."],
+   "em_adamar": "É arma estrangeira e rara em Adamar; combine com o narrador se um personagem local puder tê-la.",
+   "relacionados": ["katana", "espada-grande"]
+  },
+  "espada-bastarda-em-gdp-duas-maos": {
+   "descricao": "É a espada bastarda com ponta em GdP, empunhada com as duas mãos e testada com Espada de Duas Mãos, o mesmo corpo de arma que aparece com uma mão só em Espadas de Lâmina Larga, mudando apenas o formato da ponta para privilegiar a estocada perfurante. Empunhar com as duas mãos dá mais força ao golpe, ao custo de abrir mão de escudo ou arma secundária.\n\nÉ escolhida por quem já decidiu usar a bastarda de duas mãos mas prefere garantir uma boa estocada perfurante contra alvos com pouca proteção.",
+   "exemplos": ["Na estocada final, a ponta afiada da bastarda em GdP decide o duelo.", "O guerreiro troca o corte pela estocada ao perceber que o bandido não usa couraça.", "Empunhada com as duas mãos, a estocada da bastarda em GdP ganha ainda mais força."],
+   "relacionados": ["espada-bastarda-em-gdp", "espada-bastarda-duas-maos"]
+  },
+  "espada-grande-em-gdp": {
+   "descricao": "É a espada grande com a ponta preparada para estocadas perfurantes em vez do golpe de corte padrão, testada com Espada de Duas Mãos. O corpo pesado e o alcance são os mesmos da espada grande comum; muda apenas o formato da ponta, privilegiando quem quer garantir uma boa estocada contra alvos com pouca proteção sem abrir mão do peso e da força da arma.\n\nÉ ainda mais rara que a espada grande comum, já que combina o custo elevado de uma lâmina longa e pesada com o trabalho extra de moldar uma ponta perfurante eficiente.",
+   "exemplos": ["O campeão encomenda a espada grande em GdP para enfrentar duelistas sem armadura pesada.", "A estocada da espada grande em GdP atravessa o gibão de couro do bandido de lado a lado.", "Poucos ferreiros da região aceitam o desafio de forjar uma lâmina tão longa e ainda perfurante."],
+   "relacionados": ["espada-grande", "espada-bastarda-em-gdp-duas-maos"]
+  },
+  "chicote": {
+   "descricao": "O chicote é uma arma flexível de couro, testada com a perícia própria Chicote, com alcance ajustável desde curto até bem mais longo que o de qualquer arma rígida de uma mão. Causa dano relativamente fraco, e é difícil de aparar de forma convencional, mas também é difícil de usar bem, exigindo prática para acertar com precisão em vez de só estalar no ar.\n\nÉ associada a domadores de animais, artistas de circo e alguns duelistas exóticos mais do que a guerreiros de linha de frente, e serve tanto para golpear à distância quanto para tentar enroscar um braço ou uma arma do oponente.",
+   "exemplos": ["O domador de feras usa o chicote tanto para conduzir os animais quanto para se defender.", "No picadeiro itinerante, o artista impressiona a plateia com estalos precisos do chicote.", "O duelista tenta enroscar o chicote na espada do rival para desarmá-lo."],
+   "em_adamar": "É item ligado a domadores, criadores de animais e artistas itinerantes em Adamar.",
+   "relacionados": ["chicote-monofio"]
+  }
+ }
+}

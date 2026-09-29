@@ -614,6 +614,9 @@
           desenhar();
         });
         li.appendChild(b);
+        // aberto, o item mostra também o "Mais sobre" (descrição, exemplos, Adamar)
+        var mais = window.detalhesItem && window.detalhesItem(it, true);
+        if (mais) { mais.classList.add('app-cat-mais'); li.appendChild(mais); }
         lista.appendChild(li);
       });
       if (!achados.length) lista.appendChild(el('li', 'pericia-vazio', ocultos ? 'Só há itens raros com esses filtros. Marque "Mostrar também os raros".' : 'Nada com esses filtros.'));
@@ -757,7 +760,7 @@
     return (c.tipo && c.tipo !== 'fixo') || !!c.autocontrole;
   }
   // monta a janela: cabeçalho, corpo (preenchido por quem chama), rodapé com custo ao vivo e botões
-  function abrirJanela(titulo, icone, resumo, montarCorpo, custoAgora, aoConfirmar, rotuloConfirmar) {
+  function abrirJanela(titulo, icone, resumo, montarCorpo, custoAgora, aoConfirmar, rotuloConfirmar, item) {
     var d = janelaConfig();
     d.textContent = '';
     var fechar = el('button', 'jogar-fechar', '×');
@@ -773,6 +776,8 @@
     cab.appendChild(h);
     d.appendChild(cab);
     if (resumo) d.appendChild(el('p', 'config-resumo', resumo));
+    var mais = item && window.detalhesItem && window.detalhesItem(item);
+    if (mais) d.appendChild(mais);
     var corpo = el('div', 'config-corpo');
     d.appendChild(corpo);
     var pe = el('div', 'config-pe');
@@ -969,7 +974,7 @@
       nota.maxLength = 120;
       nota.addEventListener('input', function () { sel.nota = nota.value; });
       corpo.appendChild(nota);
-    }, custoAgora, function () { aoConfirmar(sel); });
+    }, custoAgora, function () { aoConfirmar(sel); }, null, t);
   }
 
   function configurarPericia(p, aoConfirmar) {
@@ -1000,7 +1005,7 @@
       pts.className = 'config-texto';
       pts.addEventListener('change', function () { sel.pontos = parseInt(pts.value, 10); atualizar(); });
       corpo.appendChild(pts);
-    }, nhAgora, function () { aoConfirmar(sel); });
+    }, nhAgora, function () { aoConfirmar(sel); }, null, p);
   }
 
   // efeitos recolhidos: o resumo mostra quantos de cada tipo; abrir mostra a lista com etiquetas
@@ -1086,7 +1091,7 @@
         var row = el('div', 'app-item st-' + t.adamar);
         var topo = el('div', 'app-item-topo');
         var ef = blocoEfeitos(sel);
-        var card = cardRetratil(row, sel, [el('p', 'app-item-meta', t.resumo), controlesDoTraco(sel, t, negativo), ef.no]);
+        var card = cardRetratil(row, sel, [el('p', 'app-item-meta', t.resumo), window.detalhesItem && window.detalhesItem(t), controlesDoTraco(sel, t, negativo), ef.no].filter(Boolean));
         topo.appendChild(card.botao);
         var icT = window.iconeSvg && window.iconeSvg(t.icone, 'icone-item');
         if (icT) topo.appendChild(icT);

@@ -1,0 +1,124 @@
+{
+ "lista": "equipamento",
+ "itens": {
+  "barda-mascara-couro-tecido": {
+   "descricao": "A máscara de couro e tecido é a proteção mais leve para a cabeça do cavalo dentro da barda, cobrindo o focinho e parte do rosto do animal com camadas reforçadas de couro e tecido grosso. Não impede tanto quanto uma máscara de metal, mas também pesa pouco e incomoda menos a montaria, o que a torna a escolha natural de quem não pode ou não quer sobrecarregar o cavalo com metal.\n\nÉ o tipo de proteção mais comum em cavalos de trabalho ou de patrulha que às vezes cruzam perigo, mas que não são propriamente montarias de guerra pesada.",
+   "exemplos": ["O patrulheiro equipa a máscara de couro no cavalo antes de cruzar a floresta com feras.", "O mercador de caravana protege os cavalos de carga com máscaras simples de couro e tecido.", "Mesmo leve, a máscara evita que o focinho do cavalo seja o primeiro alvo de um ataque."],
+   "em_adamar": "É equipamento comum para cavalos de trabalho e patrulha em Adamar, acessível a qualquer dono de montaria.",
+   "relacionados": ["barda-mascara-malha", "barda-cabeca-pescoco-couro-tecido"]
+  },
+  "barda-mascara-malha": {
+   "descricao": "A máscara de malha é feita de metal flexível entrelaçado, cobrindo o rosto do cavalo com uma proteção bem melhor que a de couro contra golpes de corte, sem ficar tão rígida quanto uma máscara de placas. É mais pesada que a versão de couro e tecido, então já pede um cavalo mais robusto ou acostumado a carregar peso extra na cabeça.\n\nÉ equipamento de cavalaria mais séria: cavaleiros, guardas montados de elite e mercenários que podem pagar um ferreiro competente para trabalhar a malha.",
+   "exemplos": ["O cavaleiro manda equipar a máscara de malha no corcel antes da campanha.", "A guarda montada da cidade usa máscaras de malha em todos os cavalos de patrulha de fronteira.", "O ferreiro cobra caro pela malha fina o bastante para cobrir bem o focinho do animal."],
+   "relacionados": ["barda-mascara-couro-tecido", "barda-mascara-escamas"]
+  },
+  "barda-mascara-escamas": {
+   "descricao": "A máscara de escamas cobre o rosto do cavalo com pequenas placas de metal sobrepostas, presas a uma base flexível, oferecendo uma proteção sólida contra corte e perfuração com um pouco mais de rigidez do que a malha. É mais cara e trabalhosa de fabricar do que a versão de couro ou de malha, exigindo um ferreiro habilidoso para montar as escamas de forma que não travem o movimento do animal.\n\nÉ equipamento de cavalaria bem equipada, mais associado a cavaleiros de posses ou tropas de elite do que a cavalos de patrulha comuns.",
+   "exemplos": ["O cavaleiro de posses exibe o brilho das escamas na máscara do corcel de parada.", "A tropa de elite equipa todos os cavalos com máscaras de escamas antes da batalha.", "O ferreiro leva dias para montar as escamas sem travar o movimento do focinho do animal."],
+   "relacionados": ["barda-mascara-malha", "barda-mascara-placas"]
+  },
+  "barda-mascara-placas": {
+   "descricao": "A máscara de placas é a proteção mais rígida para o rosto do cavalo, feita de peças sólidas de metal moldadas ao formato da cabeça do animal. Oferece a melhor proteção contra golpes diretos entre as versões de máscara, mas é a mais pesada e a mais cara, e uma placa mal ajustada pode incomodar ou até ferir o animal em vez de protegê-lo.\n\nÉ equipamento de cavalaria pesada de elite, reservado a cavalos de guerra bem treinados e a cavaleiros com recursos para mandar forjar peças sob medida.",
+   "exemplos": ["Só o corcel de guerra do capitão usa a máscara de placas completa.", "O ferreiro mede cuidadosamente a cabeça do cavalo antes de forjar a máscara de placas.", "Mal ajustada, a máscara de placas incomoda o animal mais do que protege."],
+   "em_adamar": "É equipamento raro e caro, reservado a cavalaria pesada de elite em Adamar.",
+   "relacionados": ["barda-mascara-escamas", "barda-cabeca-pescoco-placas"]
+  },
+  "barda-cabeca-pescoco-couro-tecido": {
+   "descricao": "É a proteção de couro e tecido que cobre não só o rosto, mas toda a cabeça e o pescoço do cavalo, ampliando a área protegida em relação à máscara simples. Continua sendo leve o bastante para não sobrecarregar a montaria, mas cobre um alvo maior: o pescoço é onde um cavaleiro inimigo tentaria mirar para derrubar o cavalo rapidamente.\n\nÉ opção comum para quem quer mais proteção do que uma simples máscara sem partir para o peso e o custo do metal.",
+   "exemplos": ["O patrulheiro reforça a proteção do cavalo cobrindo também o pescoço, não só o focinho.", "Na emboscada, o couro grosso do pescoço evita um corte que poderia derrubar a montaria.", "A caravana equipa os cavalos de carga com essa proteção mais completa antes da travessia perigosa."],
+   "relacionados": ["barda-mascara-couro-tecido", "barda-cabeca-pescoco-malha"]
+  },
+  "barda-cabeca-pescoco-malha": {
+   "descricao": "É a proteção de malha metálica flexível cobrindo cabeça e pescoço do cavalo, um passo acima da versão de couro e tecido em proteção contra corte, mas também mais pesada. O pescoço é um alvo particularmente perigoso num cavalo de guerra, então cobri-lo bem com malha é prioridade de quem monta em combate sério.\n\nÉ equipamento padrão de cavalaria de guerra que enfrenta oponentes armados de verdade, não apenas patrulha de rotina.",
+   "exemplos": ["O cavaleiro de guerra não dispensa a malha protegendo o pescoço do corcel em batalha.", "A malha no pescoço evita que um golpe lateral derrube a montaria de uma vez.", "O ferreiro da guarnição trabalha semanas para equipar todos os cavalos de cavalaria com essa malha."],
+   "relacionados": ["barda-cabeca-pescoco-couro-tecido", "barda-cabeca-pescoco-escamas"]
+  },
+  "barda-cabeca-pescoco-escamas": {
+   "descricao": "É a proteção de escamas metálicas cobrindo cabeça e pescoço do cavalo, unindo a boa defesa das escamas contra corte e perfuração a uma cobertura mais ampla do que a máscara sozinha. É pesada e cara, feita de muitas peças pequenas sobrepostas que exigem manutenção cuidadosa para não enferrujar ou travar.\n\nÉ equipamento de cavalaria de elite bem financiada, mais visto em tropas de cavaleiros ricos ou guardas de nobreza do que em milícias comuns.",
+   "exemplos": ["A cavalaria de elite do senhor local exibe escamas brilhantes cobrindo pescoço e cabeça dos cavalos.", "O ferreiro cobra uma fortuna para montar escamas o bastante para cobrir todo o pescoço do animal.", "Depois da chuva, o cavalariço passa a manhã limpando a ferrugem das escamas do cavalo."],
+   "relacionados": ["barda-cabeca-pescoco-malha", "barda-cabeca-pescoco-placas"]
+  },
+  "barda-cabeca-pescoco-placas": {
+   "descricao": "É a proteção de placas metálicas rígidas cobrindo cabeça e pescoço do cavalo, a mais protetora e a mais pesada das opções para essa parte do animal. Exige um cavalo forte e bem treinado para carregar o peso extra sem perder mobilidade demais, e um ferreiro habilidoso para moldar as placas sem machucar o pescoço do animal a cada movimento.\n\nÉ equipamento reservado a cavalos de guerra de elite, montados por cavaleiros que podem pagar tanto pela armadura quanto pelo treino do animal para carregá-la bem.",
+   "exemplos": ["Só os corcéis de guerra mais bem treinados aguentam o peso da armadura de placas completa.", "O cavaleiro de elite investe tanto no cavalo quanto na armadura dele antes da grande batalha.", "Mal ajustada, a placa do pescoço poderia ferir o próprio animal a cada galope."],
+   "em_adamar": "É equipamento raro e caríssimo, reservado a cavalaria pesada de elite em Adamar.",
+   "relacionados": ["barda-mascara-placas", "barda-completa-placas"]
+  },
+  "barda-parcial-couro-tecido": {
+   "descricao": "A barda parcial de couro e tecido é uma cobertura frontal para o tronco do cavalo, protegendo o peito e os flancos dianteiros, a parte que normalmente recebe o primeiro golpe numa carga ou confronto de frente. Não cobre o animal inteiro, mas já é uma proteção considerável para um peso relativamente baixo, adequada a cavalos que não são propriamente destriers de guerra pesada.\n\nÉ opção intermediária entre não proteger o cavalo e investir numa barda completa cara e pesada.",
+   "exemplos": ["O mercenário equipa o cavalo de patrulha com a barda parcial, suficiente para os perigos da estrada.", "Na carga contra os bandidos, a cobertura frontal do cavalo absorve o primeiro impacto.", "Sem recursos para uma barda completa, o cavaleiro se contenta com a proteção parcial de couro."],
+   "relacionados": ["barda-completa-couro-tecido", "barda-parcial-malha"]
+  },
+  "barda-parcial-malha": {
+   "descricao": "É a barda parcial feita de malha metálica flexível, cobrindo o peito e os flancos dianteiros do cavalo com proteção melhor contra corte do que a versão de couro, ao custo de mais peso. Continua sendo uma cobertura frontal, não completa, o que a torna um meio-termo de custo e peso entre a barda parcial simples e uma barda completa de metal.\n\nÉ escolha de cavalaria que enfrenta combate sério com regularidade, mas ainda quer poupar peso e custo em relação a cobrir o animal inteiro.",
+   "exemplos": ["A cavalaria da guarnição equipa os cavalos com barda parcial de malha antes de sair em patrulha de fronteira.", "O golpe de lança resvala na malha do peito do cavalo sem penetrar.", "O ferreiro recomenda a malha parcial como bom equilíbrio entre proteção e peso para o cavalo do cliente."],
+   "relacionados": ["barda-parcial-couro-tecido", "barda-parcial-escamas", "barda-completa-malha"]
+  },
+  "barda-parcial-escamas": {
+   "descricao": "É a barda parcial feita de escamas metálicas sobrepostas, cobrindo peito e flancos dianteiros do cavalo com uma proteção sólida contra corte e perfuração, mais rígida que a malha equivalente. É pesada e cara para uma cobertura que ainda não é completa, o que a torna escolha de quem já tem recursos consideráveis mas ainda pondera entre custo e proteção total.\n\nÉ vista sobretudo em cavalaria bem financiada que espera enfrentar combate direto e sério com frequência.",
+   "exemplos": ["O capitão de cavalaria equipa o próprio corcel com escamas parciais antes da campanha.", "As escamas no peito do cavalo resistem ao primeiro golpe da emboscada.", "Mesmo sem cobrir o animal inteiro, o brilho das escamas já impressiona quem vê de longe."],
+   "relacionados": ["barda-parcial-malha", "barda-cabeca-pescoco-escamas"]
+  },
+  "barda-completa-couro-tecido": {
+   "descricao": "A barda completa de couro e tecido cobre não só o peito, mas todo o tronco e a virilha do cavalo, oferecendo proteção ao redor de quase todo o corpo do animal contra golpes vindos de qualquer ângulo, não só de frente. Ainda é a versão mais leve entre as bardas completas, adequada a cavalos que precisam de proteção ampla sem o peso do metal.\n\nÉ escolha de quem quer cobrir bem o animal, inclusive contra golpes laterais e por trás numa emboscada, sem comprometer demais a resistência da montaria em marchas longas.",
+   "exemplos": ["Antes de cruzar o território de bandidos, a caravana cobre os cavalos com barda completa de couro.", "Cercado, o cavaleiro percebe que a proteção lateral da barda completa evitou um golpe perigoso no flanco do cavalo.", "Mesmo com a barda completa, o cavalo aguenta bem uma marcha longa pelas estradas."],
+   "relacionados": ["barda-parcial-couro-tecido", "barda-completa-malha"]
+  },
+  "barda-completa-malha": {
+   "descricao": "É a barda completa feita de malha metálica flexível, cobrindo tronco e virilha do cavalo por inteiro com proteção sólida contra corte, mantendo alguma flexibilidade de movimento apesar do peso extra do metal. É consideravelmente mais pesada que a versão de couro e tecido, exigindo um cavalo mais robusto e acostumado ao peso.\n\nÉ equipamento padrão de cavalaria de guerra séria, encontrado nos cavalos de cavaleiros e mercenários que esperam entrar em combate direto com regularidade.",
+   "exemplos": ["A cavalaria pesada da guarnição não sai em campanha sem a barda completa de malha nos cavalos.", "O peso extra da malha cansa o cavalo mais rápido numa marcha longa, mas protege bem em combate.", "O golpe de espada do bandido resvala na malha que cobre o flanco do cavalo."],
+   "relacionados": ["barda-completa-couro-tecido", "barda-completa-placas"]
+  },
+  "barda-completa-placas": {
+   "descricao": "É a barda completa mais protetora e mais pesada, feita de placas rígidas de metal cobrindo todo o tronco e a virilha do cavalo. Oferece a melhor proteção entre as bardas completas, mas exige um cavalo de guerra forte e bem treinado para carregar tanto peso sem perder mobilidade demais, além de um ferreiro habilidoso para ajustar as placas ao corpo do animal.\n\nÉ equipamento raro e caríssimo, associado a cavaleiros de elite, campeões de torneio e nobreza com recursos para manter tanto a armadura quanto o cavalo certo para usá-la.",
+   "exemplos": ["Só o corcel de guerra do senhor local carrega a barda completa de placas com folga.", "No torneio, o brilho da barda de placas do campeão impressiona toda a multidão.", "Sem o treino certo, um cavalo comum mal consegue se mover sob o peso da barda de placas."],
+   "em_adamar": "É o equipamento de cavalaria mais raro e caro de Adamar, reservado a poucos cavaleiros de elite.",
+   "relacionados": ["barda-completa-malha", "barda-mascara-placas", "barda-perneiras-placas"]
+  },
+  "barda-perneiras-placas": {
+   "descricao": "As perneiras de placas são proteções de metal para as pernas do cavalo, complementando a cobertura do tronco oferecida pela barda completa ou parcial. Protegem uma parte do corpo do animal normalmente exposta e vulnerável a golpes baixos, mas o peso extra nas pernas deixa a montaria visivelmente mais lenta, já que atrapalha diretamente o movimento das patas.\n\nÉ equipamento raro, reservado a cavalos de guerra de elite cujo dono prioriza proteção máxima acima de velocidade e resistência em marcha.",
+   "exemplos": ["O cavaleiro só equipa as perneiras de placas para uma batalha decisiva, sabendo que o cavalo ficará mais lento.", "As perneiras evitam que um golpe baixo derrube o cavalo pelas pernas.", "Fora de combate, o cavalariço retira as perneiras pesadas para o animal descansar melhor."],
+   "dica_mesa": "Lembre que o peso nas pernas deixa o cavalo mais lento; é uma troca real entre proteção e mobilidade, não só estética.",
+   "relacionados": ["barda-completa-placas"]
+  },
+  "capa-leve-escudo": {
+   "descricao": "A capa leve, usada como defesa improvisada com a perícia Capa, é um tecido fino manejado com um braço para desviar, enredar ou prender a arma ou o braço de um oponente, servindo de defesa alternativa a quem não carrega escudo. Não protege tão bem quanto um escudo de verdade, mas tem a vantagem de passar despercebida: ninguém suspeita de combate ao ver alguém só com uma capa nas costas.\n\nÉ recurso de duelistas e espadachins de estilo mais teatral, e também de quem foi surpreendido sem escudo à mão mas ainda tem a própria capa para usar.",
+   "exemplos": ["O duelista enrosca a capa no braço para desviar a estocada do rival.", "Surpreendido sem escudo, o viajante usa a própria capa para aparar o primeiro golpe.", "Num beco escuro, a capa esvoaçante confunde o atacante por um instante crucial."],
+   "dica_mesa": "É uma boa opção de defesa alternativa para um duelista ou espadachim que não usa escudo por estilo.",
+   "relacionados": ["capa-pesada-escudo", "golpe-com-escudo"]
+  },
+  "capa-pesada-escudo": {
+   "descricao": "É a mesma ideia da capa leve, defesa improvisada testada com a perícia Capa, mas com um tecido mais grosso e reforçado, que aguenta melhor um golpe do que a versão fina. Ainda não substitui um escudo de verdade em proteção, mas rende uma defesa mais confiável para quem investe tempo treinando esse estilo específico.\n\nÉ escolha de duelistas mais dedicados a essa técnica incomum, que preferem manter as duas mãos livres, uma para a arma, outra para a capa, em vez de carregar um escudo tradicional.",
+   "exemplos": ["O espadachim veste a capa reforçada especificamente pensando em usá-la na defesa.", "A capa pesada aguenta o golpe que rasgaria uma capa comum de viagem.", "Treinado nesse estilo incomum, o duelista dispensa o escudo e confia na própria capa."],
+   "relacionados": ["capa-leve-escudo"]
+  },
+  "escudo-leve": {
+   "descricao": "O escudo leve é o menor e mais leve dos escudos comuns, testado com a perícia Escudo. Por ser pequeno, cobre menos o corpo e detém golpes com menos margem de erro do que um escudo maior, mas em troca é fácil de carregar por muito tempo sem cansar o braço, e atrapalha pouco a mobilidade de quem o usa.\n\nÉ escolha de quem prioriza agilidade sobre proteção máxima, ou de quem combina o escudo com uma arma que já exige atenção e rapidez, como uma espada curta ou uma adaga.",
+   "exemplos": ["O batedor prefere o escudo leve, que não atrapalha a agilidade de que precisa na floresta.", "Numa perseguição pelos telhados, o escudo leve não pesa tanto quanto um escudo maior pesaria.", "O duelista combina o escudo leve com a espada curta, priorizando velocidade."],
+   "relacionados": ["escudo-pequeno", "golpe-com-escudo"]
+  },
+  "escudo-pequeno": {
+   "descricao": "O escudo pequeno é um meio-termo entre o escudo leve e o médio, testado com a perícia Escudo, equilibrando peso e proteção sem pender fortemente para nenhum dos dois extremos. Cobre um pouco mais do corpo do que o escudo leve, ainda sem pesar tanto quanto um escudo médio ou grande.\n\nÉ escolha versátil e comum entre guerreiros que não querem abrir mão nem de mobilidade nem de uma defesa razoável, servindo bem tanto a pé quanto montado.",
+   "exemplos": ["O guarda de patrulha carrega o escudo pequeno, prático tanto a pé quanto a cavalo.", "Sem pesar demais, o escudo pequeno ainda para bem o golpe do machado do bandido.", "O mercenário recomenda o escudo pequeno a quem está começando e ainda não decidiu seu estilo de luta."],
+   "relacionados": ["escudo-leve", "escudo-medio"]
+  },
+  "escudo-medio": {
+   "descricao": "O escudo médio é um bom equilíbrio entre proteção e peso, testado com a perícia Escudo: protege consideravelmente mais do que os escudos pequenos, sem chegar ao peso e à fadiga do escudo grande. É a escolha mais comum entre guerreiros e soldados de linha, que precisam aguentar um combate prolongado sem exaurir o braço.\n\nÉ item padrão de exércitos e milícias organizadas, geralmente pintado com as cores ou o brasão de quem o carrega.",
+   "exemplos": ["A linha de soldados avança com escudos médios erguidos, formando uma parede contra flechas.", "O escudo médio do cavaleiro traz pintado o brasão de sua casa.", "Depois de horas de combate, o escudo médio ainda não cansou o braço do soldado como um maior cansaria."],
+   "em_adamar": "É o escudo mais comum de exércitos e milícias organizadas em Adamar.",
+   "relacionados": ["escudo-pequeno", "escudo-grande"]
+  },
+  "escudo-grande": {
+   "descricao": "O escudo grande é o maior e mais protetor dos escudos comuns, testado com a perícia Escudo, cobrindo boa parte do corpo do usuário contra golpes e projéteis. É também o mais pesado, cansando o braço mais rápido e atrapalhando mais a mobilidade do que qualquer outro escudo, uma troca clara de agilidade por segurança.\n\nÉ item de infantaria pesada e de linhas de frente que precisam suportar cargas de flechas ou o choque de uma investida, formando muralhas de escudos lado a lado.",
+   "exemplos": ["A linha de frente forma uma muralha de escudos grandes contra a chuva de flechas.", "Cansado do peso, o soldado troca o escudo grande por um menor depois da batalha.", "Atrás do escudo grande, o guerreiro avança quase sem medo do que vem pela frente."],
+   "dica_mesa": "Lembre o jogador de que o peso do escudo grande cobra seu preço em mobilidade ao longo de um combate prolongado.",
+   "relacionados": ["escudo-medio", "golpe-com-escudo-de-espiculos"]
+  },
+  "escudo-de-energia": {
+   "descricao": "O escudo de energia é um campo de força gerado por tecnologia de superciência, testado com a perícia Escudo, capaz de deter golpes com uma eficácia muito além de qualquer escudo físico de madeira ou metal, e praticamente impossível de danificar por meios convencionais. Depende de uma fonte de energia portátil sofisticada para funcionar, e para de proteger assim que essa energia se esgota.\n\nÉ tecnologia de ficção científica, não de artesanato de forja: nenhum ferreiro medieval produz algo assim, por mais habilidoso que seja.",
+   "exemplos": ["O soldado futurista ativa o escudo de energia bem a tempo de deter os disparos.", "Sem carga na fonte de energia, o escudo de energia simplesmente desliga no meio do combate.", "A tecnologia do escudo de energia impressiona qualquer um que nunca tenha visto algo do tipo."],
+   "em_adamar": "Não existe em Adamar: o cenário é NT3, sem tecnologia de campos de força; esse item fica de fora.",
+   "relacionados": ["espada-de-energia"]
+  }
+ }
+}

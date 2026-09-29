@@ -1,5 +1,8 @@
 import assert from 'node:assert/strict';
-import { validar, montarJs } from './gerar-dados.mjs';
+import { validar, montarJs, juntarEnriquecimento } from './gerar-dados.mjs';
+import { mkdtempSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 
 const livros = { itens: [{ id: 'modulo-basico', titulo: 'Módulo Básico' }] };
 const pericia = {
@@ -100,5 +103,28 @@ assert.equal(window.GURPS.livros['modulo-basico'].titulo, 'Módulo Básico');
 assert.equal(window.GURPS.regras, null);
 assert.deepEqual(window.GURPS.equipamento, []);
 assert.deepEqual(window.GURPS.adamar, {});
+
+// enriquecimento: arquivos por fatia entram nos itens; campos e ids desconhecidos viram erro
+{
+  const pasta = mkdtempSync(join(tmpdir(), 'enr-'));
+  const texto = 'Cobre atirar com arco de guerra ou de caça, cuidar da corda e escolher a flecha certa para cada alvo, com ou sem mira.';
+  writeFileSync(join(pasta, 'P1.json'), JSON.stringify({ lista: 'pericias', itens: {
+    arco: { descricao: texto, exemplos: ['Caçar um cervo.', 'Acertar a sentinela.'], relacionados: ['carisma'] },
+    fantasma: { descricao: texto }
+  } }));
+  writeFileSync(join(pasta, 'V1.json'), JSON.stringify({ lista: 'vantagens', itens: { carisma: { descricao: texto, cor: 'azul' } } }));
+  const e = base();
+  juntarEnriquecimento(e, pasta);
+  assert.equal(e.pericias.itens[0].descricao, texto);
+  assert.equal(e.pericias.itens[0].exemplos.length, 2);
+  const erros = validar(e).join('\n');
+  assert.match(erros, /P1.json: item inexistente "fantasma"/);
+  assert.match(erros, /V1.json\/carisma: campo desconhecido "cor"/);
+  e.pericias.itens[0].relacionados = ['nada'];
+  e.vantagens.itens[0].descricao = 'curta';
+  const erros2 = validar(e).join('\n');
+  assert.match(erros2, /pericias\/arco: relacionado inexistente "nada"/);
+  assert.match(erros2, /vantagens\/carisma: descrição curta demais/);
+}
 
 console.log('gerar-dados ok');

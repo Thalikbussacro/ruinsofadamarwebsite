@@ -1,0 +1,721 @@
+{
+  "lista": "vantagens",
+  "itens": {
+    "abafador-de-mana": {
+      "descricao": "Abafador de Mana cria ao seu redor uma zona onde a magia fica mais fraca ou simplesmente para de funcionar, dependendo do quanto você investiu na vantagem. Quem tenta lançar um feitiço dentro dessa área sente a energia arcana escapar por entre os dedos: o efeito falha, sai capenga ou custa muito mais esforço, conforme o narrador decidir pelo nível da vantagem.\n\nA vantagem é passiva: não exige ação nem concentração, só estar por perto. Ela não distingue amigo de inimigo — se você anda com um conjurador aliado, o abafador atrapalha os dois igualmente, o que costuma gerar discussão de grupo sobre onde e quando usá-la.",
+      "exemplos": [
+        "Um guardião amaldiçoado protege uma cripta e qualquer feitiço lançado perto dele simplesmente racha e se desfaz.",
+        "Um exilado usa a presença constante do dom para escapar de perseguidores que dependiam de magia para rastreá-lo.",
+        "Um item sagrado antigo carrega esse efeito e apaga rituais menores lançados perto demais dele."
+      ],
+      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "dica_mesa": "Se o narrador introduzir isso como poder de uma criatura ou lugar, decida o alcance antes da cena para não travar a mesa no meio de um combate mágico.",
+      "relacionados": [
+        "ampliador-de-mana",
+        "estatica-psiquica"
+      ]
+    },
+    "aderencia": {
+      "descricao": "Aderência deixa você grudar em paredes, tetos e outras superfícies verticais como uma lagartixa ou uma aranha, andando por elas sem precisar de corda, gancho ou apoio. Na maior parte das vezes você nem precisa testar perícia para isso: simplesmente sobe, desce e anda de cabeça para baixo dentro do seu passo normal, exceto quando a superfície é escorregadia demais (gelo liso, óleo) ou está sendo atacado enquanto escala.\n\nÉ diferente de escalar com perícia: aqui não há corda, não há cansaço extra e não há risco de queda por falha, salvo circunstâncias especiais que o narrador decida impor.",
+      "exemplos": [
+        "Algo sobe pela parede externa da torre e surge por uma janela que ninguém vigiava.",
+        "Uma criatura foge de um combate correndo pelo teto de uma cripta, fora do alcance das armas comuns.",
+        "Um caçador usa a vantagem para espiar acampamentos inimigos pendurado sob um teto de pedra."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Ótima para descrever perseguições verticais em ruínas e masmorras; combine com boa iluminação de cena para o jogador visualizar o cenário em três dimensões.",
+      "relacionados": [
+        "super-escalada"
+      ]
+    },
+    "ampliador-de-mana": {
+      "descricao": "Ampliador de Mana é o espelho do Abafador de Mana: em vez de apagar a magia ao redor, ele a fortalece. Feitiços lançados perto de quem tem essa vantagem saem mais fáceis, mais confiáveis ou mais fortes, dependendo de quanto foi investido nela e de como o narrador decide aplicar o bônus em jogo.\n\nComo todo efeito de área passivo, ele não escolhe quem beneficia: se há inimigos conjurando por perto, eles também sentem a energia mais forte, então a vantagem é tão perigosa de carregar quanto útil.",
+      "exemplos": [
+        "Uma relíquia esquecida faz qualquer ritual lançado ao seu redor sair mais potente do que deveria.",
+        "Um lugar antigo e estranho na floresta deixa os feitiços de um viajante distraidamente mais fortes, para o bem e para o mal.",
+        "Um vilão usa esse poder para sustentar um ritual longo que sozinho ele não conseguiria terminar."
+      ],
+      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "dica_mesa": "Pense nele como cenário, não como vantagem de personagem: um narrador pode usar a ideia para justificar por que um lugar específico \"puxa\" mais magia.",
+      "relacionados": [
+        "abafador-de-mana"
+      ]
+    },
+    "anfibio": {
+      "descricao": "Anfíbio significa que seu corpo está tão adaptado à água quanto à terra: você nada com a mesma naturalidade com que caminha, sem penalidade nos seus testes físicos dentro d'água e sem o cansaço extra que um humano comum sentiria tentando nadar por muito tempo. Isso não quer dizer que você respira debaixo d'água — para isso existe uma vantagem separada; aqui você só se move tão bem molhado quanto seco.\n\nÉ uma vantagem de corpo, não de talento: não te dá perícia de Natação de graça, só tira a maior parte das desvantagens de estar na água.",
+      "exemplos": [
+        "Um povo lendário de beira de lago atravessa correntezas fortes sem esforço, deixando perseguidores comuns para trás.",
+        "Uma criatura de pântano ataca viajantes tanto na margem quanto na água funda, sem perder ritmo na transição.",
+        "Um mercador teria dificuldade para cruzar um rio cheio; para essa criatura, é só mais um caminho."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Não confunda com respirar debaixo d'água: são vantagens diferentes, e um narrador pode dar uma sem a outra."
+    },
+    "apagado": {
+      "descricao": "Apagado representa não existir em nenhum registro oficial: sem certidão, sem cadastro, sem ficha em arquivo de autoridade nenhuma. Documentos, sistemas de identificação e verificações administrativas simplesmente não encontram nada sobre você, mesmo que você seja bem conhecido pessoalmente por quem já te viu.\n\nÉ uma vantagem pensada para cenários com burocracia, arquivos e identificação formal — o tipo de estrutura que um mundo mais moderno tem e que Adamar, feudal e de tecnologia simples, não possui do mesmo jeito.",
+      "exemplos": [
+        "Um espião de uma cidade grande sumiria de qualquer lista de cidadãos, mesmo sob investigação oficial.",
+        "Um fugitivo não aparece em nenhum cadastro de impostos ou recrutamento, por mais que as autoridades procurem.",
+        "Alguém pode negar sua própria existência formal a um funcionário, mesmo estando bem à sua frente."
+      ],
+      "em_adamar": "O cenário é de Idade Média baixa (NT3); qualquer coisa que dependa de tecnologia avançada ou de registros modernos simplesmente não existe em Adamar.",
+      "dica_mesa": "Se quiser o mesmo efeito narrativo em Adamar, resolva por interpretação e relações sociais, não por vantagem de ficha."
+    },
+    "arrebatador": {
+      "descricao": "Arrebatador dá a você um fascínio sobrenatural sobre quem olha para você: à primeira vista, testemunhas sentem uma atração ou admiração fora do normal, capaz de fazê-las hesitar em atacar, baixar a guarda ou simplesmente ficar paradas admirando você por um instante. Vítimas com vontade forte ou motivos fortes o bastante podem resistir, mas o efeito é automático e não exige esforço nenhum da sua parte — é só olhar para você.\n\nÉ um poder de presença, não de persuasão: não convence ninguém de nada, só distrai e desarma pela impressão que causa.",
+      "exemplos": [
+        "Guardas de um portão hesitam um instante longo demais ao ver o rosto de quem se aproxima, tempo suficiente para passar sem ser detido.",
+        "Uma criatura de conto de fadas usa esse encanto para atrair viajantes incautos para longe da estrada.",
+        "Numa taverna cheia, todos os olhos se voltam para a mesma pessoa sem que ela precise dizer uma palavra."
+      ],
+      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "dica_mesa": "Como toda vantagem de fascínio automático, use com moderação para não tirar a autonomia dos outros jogadores por rodadas inteiras."
+    },
+    "ataque-adicional": {
+      "descricao": "Ataque Adicional permite golpear mais de uma vez no seu turno, além do ataque normal que qualquer personagem já pode tentar. Cada nível representa mais um ataque extra, geralmente vindo de membros, órgãos ou reflexos fora do padrão humano — um monstro com várias garras, uma criatura com braços demais para contar.\n\nÉ uma vantagem de ofensiva pura: não melhora sua defesa nem sua pontaria, só multiplica quantas vezes você tenta bater por rodada, o que a torna cara e reservada a criaturas feitas para serem ameaças de combate memoráveis.",
+      "exemplos": [
+        "Uma fera com garras nas quatro patas ataca com todas ao mesmo tempo, encurralando quem tenta fugir.",
+        "Um horror de masmorra golpeia com cada um dos seus braços extras na mesma rodada de combate.",
+        "Um campeão lendário de história antiga é descrito golpeando \"com a fúria de três guerreiros\" no mesmo instante."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Reserve para monstros e ameaças especiais; um humano comum de Adamar não golpeia mais de uma vez por puro talento marcial — isso é outro tipo de vantagem.",
+      "relacionados": [
+        "bracos-adicionais",
+        "ataque-inato"
+      ]
+    },
+    "ataque-constritivo": {
+      "descricao": "Ataque Constritivo é a capacidade de prender e esmagar um alvo entre seus membros ou seu corpo, como uma serpente que se enrola na presa. Uma vez que você agarra o alvo, ele fica preso e sofre dano contínuo a cada rodada que continua enlaçado, e soltar-se exige força e sorte contra a sua.\n\nÉ pensado para criaturas de corpo alongado ou muito flexível — tentáculos, caudas, corpos serpentiformes — e costuma vir acompanhado de alguma vantagem de agarrão ou alcance extra para funcionar bem em jogo.",
+      "exemplos": [
+        "Uma serpente gigante das ruínas se enrola em um viajante e aperta cada vez mais enquanto ele luta para se libertar.",
+        "Algo com tentáculos saído da água prende um pescador pela cintura e o arrasta para o fundo.",
+        "Um monstro de masmorra usa o próprio corpo como corda viva para imobilizar quem entra primeiro na sala."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Boa vantagem para desenhar uma criatura de masmorra que ameaça prender e não apenas ferir.",
+      "relacionados": [
+        "ataque-inato"
+      ]
+    },
+    "ataque-inato": {
+      "descricao": "Ataque Inato é a vantagem genérica usada para dar a uma criatura ou personagem um ataque natural que não vem de arma comum: sopro de fogo, rajada de energia, ferrão venenoso, disparo de espinhos. Você escolhe o tipo de dano e alguns detalhes (alcance, se precisa de mira, se pode ser usado repetidas vezes), e o custo em pontos varia bastante conforme essas escolhas — por isso o custo aparece como \"variável\".\n\nEla é a base de muitos outros poderes exóticos deste livro: sempre que uma criatura tem \"um sopro\" ou \"uma rajada\" como parte do que faz, é essa vantagem, com sabores diferentes, que está por trás.",
+      "exemplos": [
+        "Uma fera cospe uma rajada corrosiva quando encurralada, forçando o grupo a se espalhar.",
+        "Um guardião de pedra dispara estilhaços afiados de dentro do próprio corpo contra quem se aproxima demais.",
+        "Uma criatura das profundezas ataca com um ferrão na cauda sem nunca precisar chegar perto o bastante para ser agarrada."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Quando o narrador criar um monstro, é aqui que a maior parte dos \"poderes especiais\" de ataque dele vai morar.",
+      "relacionados": [
+        "ataque-constritivo",
+        "atribulacao",
+        "golpeadores"
+      ]
+    },
+    "atribulacao": {
+      "descricao": "Atribulação é um ataque que, em vez de ferir, causa um efeito sobre a vítima: paralisia, cegueira temporária, sono forçado, náusea, entre outras opções que o criador da vantagem escolhe. O alvo geralmente tem direito a resistir, e o efeito dura por um tempo ou até ser removido de algum jeito.\n\nÉ útil para criaturas e vilões que preferem incapacitar a matar — um veneno que não fere mas imobiliza, um sopro que cega, um toque que adormece —, e costuma ser combinada com Ataque Inato para dar forma ao alcance e à entrega do efeito.",
+      "exemplos": [
+        "O bafo de uma criatura de caverna deixa quem respira fundo demais tonto e incapaz de reagir por um instante.",
+        "Um veneno de aranha gigante não mata na hora, mas paralisa a presa para ser arrastada depois.",
+        "Um guardião mágico sopra uma névoa que faz os invasores caírem no sono no meio do corredor."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Boa ferramenta para criar ameaças que capturam em vez de matar, útil para ganchos de resgate.",
+      "relacionados": [
+        "ataque-inato"
+      ]
+    },
+    "audicao-discriminatoria": {
+      "descricao": "Audição Discriminatória dá um ouvido tão apurado que você consegue distinguir sons que se misturariam para qualquer outra pessoa: reconhecer uma voz específica em meio a uma multidão, notar o batimento cardíaco de alguém escondido, perceber diferenças finas entre passos parecidos. Funciona como um sentido quase sobre-humano de análise sonora, não apenas de captar sons distantes.\n\nNão é o mesmo que ouvir mais longe (isso é Audição Parabólica) nem ouvir frequências que humanos não ouvem (isso é Audição Subsônica) — aqui o que muda é a precisão em separar e identificar o que já está ao alcance do ouvido.",
+      "exemplos": [
+        "Uma criatura reconhece pelo som dos passos qual dos guardas está se aproximando, mesmo sem vê-lo.",
+        "Algo percebe que há um coração batendo rápido demais atrás de uma porta trancada.",
+        "Uma fera identifica, entre dezenas de vozes de um mercado, a única que está mentindo pelo tremor sutil na fala."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Ótima vantagem para uma criatura-sentinela que \"sabe\" coisas que deveriam ser secretas, sem recorrer a magia."
+    },
+    "audicao-parabolica": {
+      "descricao": "Audição Parabólica estende o alcance da sua audição muito além do normal, permitindo escutar conversas, passos ou sons de perigo a distâncias que um humano jamais perceberia. Quanto mais pontos investidos, mais longe o ouvido alcança.\n\nÉ puramente sobre distância: não ajuda a identificar quem está falando nem a entender sons abafados ou embaralhados — para isso, outras vantagens de sentido entram em jogo.",
+      "exemplos": [
+        "Uma criatura de caverna ouve o eco de picaretas batendo em pedra vários corredores antes do grupo chegar.",
+        "Algo no topo de uma torre escuta um plano sendo sussurrado no pátio, bem lá embaixo.",
+        "Uma fera percebe passos se aproximando na estrada muito antes de qualquer aviso natural."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Use para criaturas-sentinela que avisam o resto do bando com muita antecedência."
+    },
+    "audicao-subsonica": {
+      "descricao": "Audição Subsônica permite ouvir sons graves demais para o ouvido humano captar: vibrações profundas da terra, o rugido baixo de algo enorme se movendo, tremores que antecedem um desmoronamento. Pode vir \"de graça\" em criaturas já adaptadas a isso ou ser comprada como vantagem à parte.\n\nComo as outras vantagens de audição exótica, ela não melhora a compreensão do que é ouvido, só amplia a faixa de frequências que o ouvido capta.",
+      "exemplos": [
+        "Uma criatura subterrânea sente o rangido grave da rocha um instante antes de um desabamento.",
+        "Algo enorme se aproxima e é \"ouvido\" pelas vibrações do chão muito antes de ser visto.",
+        "Uma fera percebe o zumbido baixo de um ritual sendo conduzido longe dali."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Combine com descrições físicas — tremores, vibração no chão — para deixar esse sentido diferente da audição comum na narração."
+    },
+    "boca-adicional": {
+      "descricao": "Boca Adicional dá a uma criatura mais de uma boca funcional, cada uma podendo morder, falar ou fazer o que uma boca normal faz, dependendo de como o narrador descreve a anatomia. O custo cresce por boca extra, e cada uma pode, em tese, agir de forma independente da principal.\n\nÉ puramente uma vantagem de design de criatura, quase sempre puxando junto outras vantagens (como Dentes ou Ataque Adicional) para que a boca extra realmente faça alguma coisa em jogo, além de assustar.",
+      "exemplos": [
+        "Um horror de masmorra tem uma segunda boca escondida sob o pescoço que morde quem tenta um golpe final por trás.",
+        "Uma criatura de conto sombrio fala com uma boca e range dentes ameaçadoramente com outra ao mesmo tempo.",
+        "Algo descrito por sobreviventes como \"com uma boca a mais do que deveria\" vira lenda de aldeia."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Serve mais para o horror visual da criatura do que para mecânica; combine com uma vantagem de ataque para ter efeito real na mesa."
+    },
+    "bracos-adicionais": {
+      "descricao": "Braços Adicionais dá a uma criatura mais braços do que o par comum, cada um podendo segurar, atacar ou manipular objetos de forma independente. O custo varia conforme quantos braços extras e o quanto eles são plenamente funcionais (alguns podem ser mais fracos ou limitados que os principais).\n\nCombinada com Ataque Adicional, ela permite golpear várias vezes por rodada com armas ou garras diferentes; sozinha, ela só resolve o problema de \"quantas coisas você consegue segurar ao mesmo tempo\".",
+      "exemplos": [
+        "Uma criatura de seis braços empunha três armas diferentes ao mesmo tempo, uma para cada ameaça ao redor.",
+        "Algo consegue escalar uma parede e ainda segurar a presa com os braços que sobram.",
+        "Um ídolo animado descrito em lendas antigas carrega quatro braços erguidos em posição de ataque."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Pense em quantos ataques por rodada isso realmente permite antes de dar a vantagem a um monstro — sem Ataque Adicional, os braços extras só ajudam fora de combate.",
+      "relacionados": [
+        "ataque-adicional"
+      ]
+    },
+    "cabeca-adicional": {
+      "descricao": "Cabeça Adicional dá a uma criatura mais de uma cabeça, cada uma com seus próprios sentidos e, dependendo da criatura, sua própria vontade parcial. Isso costuma tornar a criatura mais difícil de cegar, surpreender ou nocautear de um só golpe, já que perder uma cabeça nem sempre significa perder a criatura inteira.\n\nÉ uma vantagem cara por cabeça, geralmente reservada a monstros de destaque em vez de ameaças comuns, e costuma vir acompanhada de descrições sobre como as cabeças se comunicam ou discordam entre si.",
+      "exemplos": [
+        "Um dragão menor de três cabeças observa três direções diferentes ao mesmo tempo, impossível de flanquear.",
+        "Uma fera das lendas locais é descrita com duas cabeças que rosnam coisas diferentes para a mesma presa.",
+        "Um guardião de pedra esculpido com várias faces sempre parece estar olhando para quem se aproxima."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Ótimo gancho de lenda e horror; use as cabeças extras para dar personalidade e não só números ao monstro."
+    },
+    "camaleao": {
+      "descricao": "Camaleão permite mudar a cor da própria pele para se misturar com o ambiente, tornando mais difícil ser visto enquanto parado ou se movendo devagar. Quanto mais pontos investidos, melhor o disfarce funciona, mas o efeito é sempre visual — não esconde cheiro, som ou calor.\n\nDiferente de simplesmente se esconder atrás de algo, essa vantagem funciona mesmo em espaços abertos, desde que você fique parado ou quieto o suficiente para o padrão de cor se ajustar.",
+      "exemplos": [
+        "Uma criatura de floresta se cala e, em poucos instantes, sua pele imita a casca da árvore ao lado.",
+        "Algo emboscado numa masmorra passa despercebido encostado numa parede de pedra até o último momento.",
+        "Um caçador lendário some de vista assim que para de se mover no meio da vegetação."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Lembre que o efeito cai muito se a criatura se move rápido ou ataca — é uma vantagem de emboscada, não de fuga."
+    },
+    "caminhar-no-ar": {
+      "descricao": "Caminhar no Ar permite literalmente andar sobre o ar como se houvesse um chão invisível sob os pés, sem voar de verdade nem flutuar livremente — você ainda se move como se estivesse andando, só que no espaço vazio. É diferente de Voo, que dá controle total de movimento em três dimensões.\n\nCostuma ser um poder de aparição impressionante: alguém subindo uma escada que não existe, ou cruzando um abismo sem tocar as bordas.",
+      "exemplos": [
+        "Uma aparição sobe degraus invisíveis até o topo de uma torre em ruínas, para o espanto de quem observa.",
+        "Algo atravessa um precipício em linha reta, como se pisasse em pedras que ninguém mais vê.",
+        "Um ser lendário desce lentamente do céu, andando, como se uma escada invisível o guiasse ao chão."
+      ],
+      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "dica_mesa": "Ótimo efeito visual para uma entidade sobrenatural; descreva o movimento como \"andar\", não como \"flutuar\", para reforçar a diferença de Voo.",
+      "relacionados": [
+        "caminhar-sobre-liquidos",
+        "voo"
+      ]
+    },
+    "caminhar-sobre-liquidos": {
+      "descricao": "Caminhar sobre Líquidos permite andar sobre a superfície de água, lama ou outros líquidos como se fosse chão firme, sem afundar nem precisar nadar. Você ainda pode ser empurrado, agarrado ou puxado para dentro do líquido por uma força externa — a vantagem só resolve o problema de flutuar em cima, não de ser imune ao que está embaixo.\n\nÉ uma vantagem de deslocamento, não de proteção: não te deixa mais rápido nem imune a correntezas fortes, só tira o líquido do caminho como obstáculo de piso.",
+      "exemplos": [
+        "Um espírito de lago atravessa a água parada sem deixar uma única onda para trás.",
+        "Algo cruza um pântano traiçoeiro em linha reta enquanto o resto do grupo tenta achar terreno firme.",
+        "Uma aparição noturna é vista \"andando\" sobre um rio, gerando lendas em toda a região."
+      ],
+      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "dica_mesa": "Combine com uma boa descrição de cenário — névoa, reflexo, silêncio — para o momento render a cena sobrenatural que merece.",
+      "relacionados": [
+        "caminhar-no-ar"
+      ]
+    },
+    "carga-util": {
+      "descricao": "Carga Útil representa espaço dentro do próprio corpo da criatura para guardar objetos, como uma bolsa interna feita de carne — um sapo que engole e guarda coisas pequenas, uma criatura com uma bolsa marsupial, algo com um compartimento estranho sob a pele. Cada nível investido representa mais capacidade de carga guardada dessa forma.\n\nÉ puramente sobre armazenamento: não protege o que está guardado, não facilita pegar de volta rapidamente em combate, só resolve \"onde a criatura guarda coisas\" sem bolsos ou mochila.",
+      "exemplos": [
+        "Uma criatura de conto folclórico guarda moedas roubadas em uma bolsa de pele que carrega sob o próprio corpo.",
+        "Algo consegue \"engolir\" pequenos itens e devolvê-los intactos depois, para confusão de quem revista.",
+        "Um monstro de masmorra é encontrado com objetos de vítimas anteriores guardados de um jeito perturbador dentro do próprio corpo."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Boa vantagem para dar um detalhe grotesco e memorável a um monstro sem afetar muito o equilíbrio de combate."
+    },
+    "cibernetica": {
+      "descricao": "Cibernética cobre implantes tecnológicos que substituem ou reforçam partes do corpo — membros mecânicos, olhos artificiais, reforços internos — cada um funcionando como uma vantagem própria com seu próprio custo, dependendo do que o implante faz. É mais uma categoria de origem para vantagens físicas do que uma vantagem única.\n\nEla pressupõe uma sociedade capaz de projetar, construir e manter esse tipo de tecnologia, algo bem além de ferreiros e curandeiros de um mundo medieval.",
+      "exemplos": [
+        "Um mercenário de um mundo distante tem um braço inteiro substituído por metal e engrenagens.",
+        "Uma cidade avançada é capaz de trocar um olho perdido por uma lente mecânica que enxerga no escuro.",
+        "Um implante permite a alguém erguer pesos muito além do que o corpo natural suportaria."
+      ],
+      "em_adamar": "O cenário é de Idade Média baixa (NT3); qualquer coisa que dependa de tecnologia avançada ou de registros modernos simplesmente não existe em Adamar.",
+      "dica_mesa": "Se aparecer em jogo, provavelmente é como artefato estranho de fora do mundo conhecido, não como opção normal de personagem."
+    },
+    "clarisenciencia": {
+      "descricao": "Clarisenciência permite projetar sua visão e audição para um lugar distante sem sair do lugar onde está seu corpo, como se abrisse uma janela invisível para outro ponto do mundo. Enquanto o poder está ativo, você normalmente fica alheio ao que acontece ao seu redor de verdade, então costuma ser usada em momentos de segurança, não no meio de um combate.\n\nÉ diferente de viajar de verdade ou de ler mentes: você só vê e ouve à distância, sem interagir com o que está observando.",
+      "exemplos": [
+        "Um vidente fecha os olhos junto à fogueira e \"vê\" o que se passa no vilarejo vizinho.",
+        "Algo observa uma emboscada se armar a quilômetros de distância, tempo o bastante para avisar os viajantes por outro meio.",
+        "Uma aparição usa esse dom para espionar salões que jamais poderia visitar em pessoa."
+      ],
+      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "dica_mesa": "Um bom gancho de narrador quando ele quer que um NPC \"saiba de tudo\" sem explicar como uma rede de espiões chegaria tão longe."
+    },
+    "consumo-reduzido": {
+      "descricao": "Consumo Reduzido significa que seu corpo precisa de muito menos comida e água do que um humano comum para se manter saudável. Quanto mais pontos investidos, menos você precisa comer e beber, podendo chegar ao ponto de sobreviver quase sem se alimentar por longos períodos.\n\nNão muda seu apetite nem o prazer de comer — só o quanto seu corpo realmente exige para não sofrer com fome ou sede.",
+      "exemplos": [
+        "Um eremita das montanhas passa semanas com quase nenhuma comida sem mostrar sinais de fraqueza.",
+        "Uma criatura sobrevive a um cerco prolongado enquanto todos ao redor já sentem fome severa.",
+        "Um viajante lendário atravessa um deserto com muito menos água do que qualquer guia recomendaria."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Se usada por um NPC importante, ajuda a explicar como ele sobrevive sozinho em lugares hostis por muito tempo."
+    },
+    "controle-da-mente": {
+      "descricao": "Controle da Mente permite dominar completamente a vontade de outra pessoa, fazendo-a agir como um fantoche enquanto o efeito durar — falar, lutar ou trair quem ama, se for essa a ordem. Diferente de apenas convencer ou intimidar, aqui a vítima perde o controle sobre as próprias ações, sujeita apenas a limites que o narrador decidir (nem toda vítima aceita ordens que vão contra o próprio instinto de sobrevivência, por exemplo).\n\nÉ considerada uma das vantagens mentais mais graves do jogo, e por isso costuma vir cercada de condições, custos e chances de resistência para a vítima, definidas pelo narrador.",
+      "exemplos": [
+        "Um culto secreto usa esse domínio para colocar um guarda de confiança para abrir os portões à noite.",
+        "Uma aparição sombria faz uma vítima caminhar direto para um perigo mortal sem perceber o que está fazendo.",
+        "Um vilão de história antiga é lembrado por virar aliados contra os próprios companheiros com um simples olhar."
+      ],
+      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "dica_mesa": "Use com cautela mesmo como poder de vilão: tirar o controle de um personagem jogador por muito tempo tende a frustrar a mesa.",
+      "relacionados": [
+        "dominacao",
+        "leitura-da-mente"
+      ]
+    },
+    "controle-termico": {
+      "descricao": "Controle Térmico permite esquentar ou esfriar o ambiente ao seu redor à vontade, dentro de um alcance limitado, sem precisar de fogo, gelo ou qualquer fonte externa. Pode ser usado para criar desconforto, causar dano por temperatura extrema ou simplesmente ajustar o clima ao redor para conforto próprio, dependendo de quanto foi investido na vantagem.\n\nÉ um efeito de área, não um ataque preciso: costuma afetar todo mundo perto o bastante, aliados incluídos, a menos que o personagem tenha cuidado de afastar quem não deveria sofrer o efeito.",
+      "exemplos": [
+        "Uma criatura de inverno esfria o ar ao redor até formar gelo nas paredes de uma sala fechada.",
+        "Algo aquece uma caverna gelada o bastante para forçar invasores a tirar os casacos pesados, perdendo proteção contra o frio.",
+        "Um espírito do fogo deixa metais próximos incomodamente quentes só de passar perto."
+      ],
+      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "dica_mesa": "Lembre que o efeito é de área: pense em quem mais está na cena antes de aplicá-lo."
+    },
+    "crescimento": {
+      "descricao": "Crescimento aumenta o seu tamanho físico além do normal, ficando mais alto e mais pesado conforme o nível investido, o que costuma vir com mais força bruta e alcance de golpe, mas também torna mais fácil de acertar e de notar à distância. Algumas versões da vantagem são permanentes, outras podem ser ativadas e desativadas à vontade.\n\nÉ a contraparte de Encolhimento: enquanto uma reduz o corpo, essa amplia, e ambas mudam bastante como a criatura se encaixa (ou não) em espaços apertados como corredores de masmorra.",
+      "exemplos": [
+        "Um guardião de pedra dobra de tamanho ao ser despertado, rachando o teto baixo da câmara onde dormia.",
+        "Uma criatura de floresta cresce até a altura de uma árvore jovem quando encolerizada.",
+        "Um gigante de lenda é descrito crescendo ainda mais ao pisar em terreno sagrado para ele."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Pense no espaço da cena: uma criatura muito maior pode simplesmente não caber em certos corredores ou portas.",
+      "relacionados": [
+        "encolhimento"
+      ]
+    },
+    "dentes": {
+      "descricao": "Dentes representa ter presas ou dentição naturalmente afiada o bastante para morder como arma, em vez de apenas mastigar comida. Existem graus diferentes: dentes que só ajudam um pouco em uma mordida desesperada, e dentes verdadeiramente perigosos, prontos para rasgar carne com eficiência.\n\nSozinha, essa vantagem só garante que morder machuca de verdade; combinada com Ataque Adicional ou Boca Adicional, ela pode virar parte de uma rotina de combate mais elaborada.",
+      "exemplos": [
+        "Um cão selvagem das ruínas morde com presas afiadas o bastante para atravessar roupas grossas de viagem.",
+        "Uma criatura das cavernas é reconhecida pelas marcas de mordida profundas deixadas nas vítimas.",
+        "Um guarda ferido descreve, apavorado, os dentes da fera que quase o pegou pela garganta."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Simples e barata: útil para dar uma opção de ataque extra a um animal ou monstro sem complicar a ficha."
+    },
+    "deslocamento-ampliado": {
+      "descricao": "Deslocamento Ampliado dá uma velocidade de movimento muito acima da humana, seja correndo, nadando ou voando, dependendo de que tipo de deslocamento a vantagem cobre. Cada nível representa um salto considerável de velocidade, deixando a criatura capaz de alcançar ou fugir de quase qualquer coisa comum.\n\nÉ puramente sobre rapidez de deslocamento: não muda reflexos, iniciativa ou capacidade de lutar, só o quanto de terreno a criatura cobre no mesmo tempo que os outros.",
+      "exemplos": [
+        "Um cavalo selvagem lendário deixa qualquer perseguidor comum para trás em poucos instantes.",
+        "Uma criatura das planícies atravessa distâncias que levariam dias a pé em questão de horas.",
+        "Algo passa correndo tão rápido por uma vila que ninguém consegue descrever direito o que viu."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Boa vantagem para criaturas de perseguição ou fuga; pense em como isso muda a geografia de uma cena de caça."
+    },
+    "digestao-universal": {
+      "descricao": "Digestão Universal permite comer praticamente qualquer coisa de origem orgânica sem passar mal, mesmo o que estaria estragado, cru demais ou impróprio para um humano comum. Não te faz precisar comer menos (isso é Consumo Reduzido) nem te protege de venenos de verdade — só tira o risco de intoxicação alimentar comum.\n\nÉ uma vantagem discreta, mas útil em situações de sobrevivência: nunca falta o que comer quando quase tudo serve.",
+      "exemplos": [
+        "Uma criatura de masmorra se alimenta de carne havia muito apodrecida sem qualquer problema.",
+        "Um sobrevivente de terras arrasadas come raízes e restos que deixariam qualquer outro doente.",
+        "Algo devora até mesmo partes normalmente descartadas de uma carcaça sem hesitar."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Boa vantagem de cor para criaturas ou eremitas de sobrevivência extrema; raramente muda o resultado de um combate."
+    },
+    "dobra": {
+      "descricao": "Dobra é a capacidade de se teleportar: desaparecer de um lugar e reaparecer em outro sem atravessar o espaço entre os dois pontos. Normalmente exige que você já conheça ou consiga ver o destino, e tem limites de alcance e de quantas vezes pode ser usada, definidos pelo nível investido e pelas escolhas do narrador.\n\nÉ uma das vantagens de deslocamento mais poderosas do jogo, porque ignora portas trancadas, fossos, muralhas e qualquer obstáculo puramente físico entre origem e destino.",
+      "exemplos": [
+        "Uma aparição sombria desaparece de dentro de uma cela trancada e reaparece do lado de fora dos muros.",
+        "Algo se desloca instantaneamente para escapar de um golpe certeiro, reaparecendo alguns passos atrás do atacante.",
+        "Um ser lendário atravessa uma muralha inteira sem deixar marca de ter passado por ela."
+      ],
+      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "dica_mesa": "Vantagem de alto impacto narrativo: se um NPC tiver isso, pense em como isso muda perseguições e prisões antes da sessão.",
+      "relacionados": [
+        "interposicao"
+      ]
+    },
+    "dominacao": {
+      "descricao": "Dominação transforma vítimas derrotadas ou subjugadas em servos permanentemente leais, presos por um vínculo que vai além de simples medo ou lealdade comum. Diferente de Controle da Mente, que comanda ações momento a momento, aqui o efeito costuma ser duradouro: a vítima passa a servir de boa vontade (dentro da própria cabeça), mesmo que isso contrarie quem ela era antes.\n\nÉ um poder associado a entidades capazes de \"criar\" seguidores ou súditos a partir de outras pessoas, geralmente ligado a rituais, mordidas ou toques especiais definidos pelo narrador.",
+      "exemplos": [
+        "Uma criatura antiga transforma aldeões capturados em servos fiéis que nunca mais tentam fugir.",
+        "Um culto secreto usa esse domínio para garantir que ninguém traído jamais volte a se voltar contra o líder.",
+        "Uma vítima resgatada continua, para tristeza dos companheiros, defendendo quem a dominou."
+      ],
+      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "dica_mesa": "Bom gerador de ganchos de resgate e redenção — um servo dominado pode ser libertado como parte de uma aventura.",
+      "relacionados": [
+        "controle-da-mente"
+      ]
+    },
+    "duplicacao": {
+      "descricao": "Duplicação permite criar cópias funcionais de si mesmo, cada uma capaz de agir de forma independente, geralmente compartilhando memórias até o momento da divisão. O custo é por cópia, então ter várias ao mesmo tempo fica caro rapidamente, e o narrador costuma decidir o que acontece quando uma cópia é destruída ou quando elas se reencontram.\n\nÉ uma vantagem rara mesmo para padrões sobrenaturais, geralmente reservada a entidades muito estranhas, não a criaturas comuns de masmorra.",
+      "exemplos": [
+        "Uma entidade estranha se divide em duas ao ser encurralada, confundindo quem tentava prendê-la.",
+        "Uma aparição é vista em dois lugares distantes na mesma noite, alimentando rumores contraditórios.",
+        "Algo se multiplica para vigiar várias entradas de uma ruína ao mesmo tempo."
+      ],
+      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "dica_mesa": "Reserve para uma entidade muito especial; usar em excesso banaliza o impacto de \"existir mais de uma vez\"."
+    },
+    "durabilidade-sobrenatural": {
+      "descricao": "Durabilidade Sobrenatural torna a criatura praticamente impossível de matar por meios comuns: fogo, lâmina, veneno, queda, quase nada funciona de verdade. A única forma real de acabar com ela é um método bem específico, definido pelo narrador quando a vantagem é criada — uma arma em particular, um ritual, um segredo que precisa ser descoberto antes.\n\nÉ uma vantagem quase sempre reservada a vilões e entidades centrais de uma campanha, porque transforma a própria busca por essa \"única fraqueza\" em um arco de aventura inteiro.",
+      "exemplos": [
+        "Um tirano antigo sobrevive a golpes que matariam qualquer exército, e ninguém sabe ainda o que realmente o derrotaria.",
+        "Uma criatura das lendas se ergue de novo depois de ferimentos que deveriam ter sido fatais.",
+        "Um culto guarda em segredo qual é o único jeito de destruir seu guardião imortal."
+      ],
+      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "dica_mesa": "Excelente para um vilão de campanha longa; a fraqueza secreta pode ser o objetivo de toda uma crônica.",
+      "relacionados": [
+        "impossivel-de-matar"
+      ]
+    },
+    "dx-bracal": {
+      "descricao": "DX Braçal dá aos seus braços destreza acima do resto do corpo, deixando as mãos mais precisas e ágeis do que a média do personagem sugeriria. É útil para criaturas com braços muito especializados — muitos, estranhos ou muito diferentes do resto do corpo — que precisam ser hábeis com eles mesmo sem um corpo inteiro igualmente ágil.\n\nNão afeta força nem qualquer outra parte do corpo, só a destreza usada em tarefas feitas com os braços e as mãos.",
+      "exemplos": [
+        "Uma criatura de muitos braços manipula ferramentas delicadas com uma precisão que seu corpo desajeitado não sugere.",
+        "Algo com membros estranhos ainda assim desarma uma armadilha complexa sem hesitar.",
+        "Um artesão de origem incerta produz trabalho fino demais para as mãos rudes que aparenta ter."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Vantagem de nicho: só compensa quando o resto do corpo da criatura é claramente menos ágil que os braços."
+    },
+    "elasticidade": {
+      "descricao": "Elasticidade permite esticar, achatar e torcer o próprio corpo muito além do que ossos normais permitiriam, ajudando a passar por espaços apertados, alcançar objetos distantes ou escapar de agarrões. Quanto mais pontos investidos, mais extremo o alongamento possível.\n\nÉ uma vantagem de flexibilidade extrema, não de invulnerabilidade: o corpo ainda sofre dano normalmente, só que se movimenta e se contorce de um jeito que nenhum humano consegue.",
+      "exemplos": [
+        "Uma criatura se espreme por uma grade estreita esticando o próprio corpo como massa mole.",
+        "Algo alcança um objeto do outro lado da sala esticando um braço muito além do normal.",
+        "Uma aparição escorrega de um agarrão retorcendo o corpo de um jeito que não deveria ser possível."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Boa vantagem visual para criaturas de horror sutil: o corpo errado se movendo do jeito errado incomoda mais do que um monstro óbvio."
+    },
+    "elo-mental": {
+      "descricao": "Elo Mental cria uma ligação telepática permanente entre você e uma ou mais pessoas específicas, permitindo trocar pensamentos, sensações ou emoções à distância, dependendo de quanto foi investido na vantagem. Diferente de Leitura da Mente, aqui a comunicação é de mão dupla e combinada previamente — não serve para espionar quem não faz parte do vínculo.\n\nÉ comum em duplas ou grupos com um laço especial (irmãos, animais de estimação incomuns, aliados de longa data), e o alcance e a profundidade da ligação variam conforme o custo pago.",
+      "exemplos": [
+        "Duas irmãs separadas na infância sempre souberam quando a outra estava em perigo, mesmo a quilômetros de distância.",
+        "Um caçador e seu companheiro animal trocam impressões simples de perigo sem precisar de palavras.",
+        "Um par de guardiões antigos coordena um ataque surpresa sem trocar um único sinal visível."
+      ],
+      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "dica_mesa": "Ótimo para um vínculo narrativo entre dois NPCs importantes; deixe claro os limites (distância, o que pode ser sentido) antes de usar em jogo."
+    },
+    "encolhimento": {
+      "descricao": "Encolhimento reduz o seu tamanho físico abaixo do normal, ficando mais baixo e mais leve conforme o nível investido. Isso costuma facilitar se esconder e passar por espaços apertados, mas também reduz alcance de golpe e força bruta disponível, e pode tornar a criatura vulnerável a coisas que um tamanho normal ignoraria (vento forte, ser pisada).\n\nÉ o oposto de Crescimento, e como ele, pode ser permanente ou algo que a criatura ativa e desativa à vontade.",
+      "exemplos": [
+        "Uma criatura de conto de fadas encolhe para se esconder dentro de um vaso de flores no jardim.",
+        "Algo se torna pequeno o bastante para se esgueirar por baixo de uma porta trancada.",
+        "Um espírito travesso encolhe para escapar de mãos que tentam agarrá-lo, escorregando por entre os dedos."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Combine com boas descrições de escala — o mundo parece enorme quando você encolhe, e isso vale a pena narrar.",
+      "relacionados": [
+        "crescimento"
+      ]
+    },
+    "escavacao": {
+      "descricao": "Escavação dá a capacidade de cavar através da terra e de outros materiais macios com rapidez e facilidade de um animal escavador, abrindo túneis à medida que avança. Materiais mais duros (rocha maciça, metal) tornam a escavação mais lenta ou impossível, dependendo do quanto foi investido na vantagem.\n\nÉ uma vantagem de deslocamento e infiltração: útil tanto para fugir sob o chão quanto para surgir de surpresa em um lugar que parecia seguro.",
+      "exemplos": [
+        "Uma criatura das profundezas surge no meio de um acampamento vindo direto de baixo da terra.",
+        "Algo escava um túnel de fuga sob os fundamentos de uma prisão improvisada em uma noite só.",
+        "Uma fera desaparece sob o solo assim que percebe que está em desvantagem numa luta."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Pense no tipo de solo da cena antes de usar: pedra maciça e masmorras construídas costumam limitar bastante essa vantagem."
+    },
+    "escorregadio": {
+      "descricao": "Escorregadio torna você muito mais difícil de agarrar, prender ou manter preso, seja por causa de pele oleosa, escamas lisas ou apenas flexibilidade fora do comum. Quem tenta te segurar, imobilizar ou lutar corpo a corpo sente que você sempre escapa um pouco do controle esperado.\n\nNão ajuda a evitar ser atingido por golpes normais, só a evitar ser mantido preso depois que alguém já te agarrou ou tenta fazê-lo.",
+      "exemplos": [
+        "Um guarda tenta prender uma criatura pelas mãos e ela simplesmente escorrega do aperto.",
+        "Algo se solta de uma corda que deveria estar bem amarrada, para frustração de quem a amarrou.",
+        "Uma criatura de pântano escapa de um agarrão decisivo bem no momento em que parecia derrotada."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Ótima para uma criatura que o grupo tenta capturar viva: ela sempre parece prestes a escapar."
+    },
+    "espinhos": {
+      "descricao": "Espinhos cobre o corpo com pontas naturais que ferem quem tenta te agarrar, te atacar corpo a corpo de perto ou até mesmo tocar sem cuidado. Existem versões mais simples, que só incomodam, e versões mais perigosas, capazes de ferir de verdade quem se aproxima demais.\n\nÉ uma defesa passiva: você não precisa fazer nada para ela funcionar, só estar perto o suficiente de quem tentou o contato.",
+      "exemplos": [
+        "Um guarda aprende da pior forma que agarrar aquela criatura pelo braço tem um custo doloroso.",
+        "Uma fera coberta de espinhos afasta predadores maiores só de ser tocada de leve.",
+        "Algo se enrosca propositalmente em quem tenta prendê-lo, deixando a lição bem clara."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Boa vantagem defensiva para uma criatura que não quer ser agarrada nem por aliados descuidados."
+    },
+    "estatica-psiquica": {
+      "descricao": "Estática Psíquica cria uma interferência que anula ou atrapalha poderes psíquicos e mentais ao seu redor, de um jeito parecido com o que o Abafador de Mana faz com a magia arcana. Quem depende de telepatia, controle mental ou sentidos psíquicos perto de você sente o próprio poder falhar ou enfraquecer.\n\nComo toda vantagem de interferência de área, ela não escolhe quem afeta: um aliado com dons psíquicos sofre tanto quanto um inimigo.",
+      "exemplos": [
+        "Uma vítima de controle mental recupera a própria vontade assim que alguém com esse dom se aproxima.",
+        "Um vidente sente a própria visão embaçar sem explicação sempre que essa pessoa está por perto.",
+        "Um culto que depende de telepatia para se coordenar falha justamente quando essa presença aparece na sala."
+      ],
+      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "dica_mesa": "Bom contraponto de enredo para poderes mentais de vilão: dá ao grupo uma ferramenta narrativa contra controle da mente.",
+      "relacionados": [
+        "abafador-de-mana",
+        "controle-da-mente"
+      ]
+    },
+    "expectativa-de-vida-ampliada": {
+      "descricao": "Expectativa de Vida Ampliada faz você envelhecer mais devagar do que um humano comum, vivendo consideravelmente mais e demorando muito mais para sentir os efeitos da velhice. Não te torna imune a acidentes, doenças ou combate — só estica o relógio biológico.\n\nÉ diferente de Idade Imutável, que trava a idade num ponto fixo: aqui você ainda envelhece, só que num ritmo bem mais lento.",
+      "exemplos": [
+        "Um sábio é procurado justamente porque ainda se lembra, com clareza, de eventos que os outros só conhecem por lenda.",
+        "Uma linhagem antiga é conhecida por seus membros viverem muito além do esperado para qualquer família comum.",
+        "Um guardião de biblioteca esquecida cuidou do lugar por gerações, envelhecendo devagar demais para o resto do mundo perceber."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Boa vantagem para um NPC \"que já viu de tudo\"; use para justificar conhecimento histórico raro.",
+      "relacionados": [
+        "idade-imutavel"
+      ]
+    },
+    "experiencia-g": {
+      "descricao": "Experiência-G representa estar acostumado a níveis de gravidade diferentes do normal, evitando as penalidades que qualquer outra pessoa sentiria ao operar em um lugar muito mais pesado ou muito mais leve do que está habituada. Quanto mais pontos investidos, mais ampla a faixa de gravidades em que você se sente em casa.\n\nÉ uma vantagem de nicho bem específico, praticamente só relevante em cenários com viagens entre lugares de gravidade muito diferente.",
+      "exemplos": [
+        "Um viajante de terras muito distantes se move com naturalidade onde outros tropeçam, pesados demais ou leves demais.",
+        "Alguém acostumado a picos altíssimos não sente o mesmo desconforto de quem acabou de chegar da planície.",
+        "Uma lenda fala de um povo que caminha sem esforço em lugares onde ninguém mais consegue ficar de pé direito."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Raramente relevante fora de cenários com viagens muito exóticas; use só se o narrador criar esse tipo de cenário específico."
+    },
+    "fala-subaquatica": {
+      "descricao": "Fala Subaquática permite falar de forma compreensível enquanto está debaixo d'água, algo que normalmente seria impossível ou produziria só bolhas e sons abafados. Não te dá a capacidade de respirar debaixo d'água — isso é outra vantagem — só resolve o problema de se comunicar claramente enquanto está submerso.\n\nÉ uma vantagem de nicho, quase sempre combinada com outras vantagens aquáticas para fazer sentido em uma criatura ou personagem adaptado à água.",
+      "exemplos": [
+        "Um povo lendário de fundo de lago conversa normalmente entre si mesmo completamente submerso.",
+        "Uma criatura aquática negocia com um mergulhador sem que nenhuma palavra se perca em bolhas.",
+        "Algo canta debaixo d'água uma melodia perfeitamente clara para quem está por perto na superfície."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Combine com Anfíbio ou outra vantagem aquática para uma criatura de água fazer sentido completo."
+    },
+    "fala-subsonica": {
+      "descricao": "Fala Subsônica permite emitir sons de fala em frequências graves demais para o ouvido humano captar, tornando possível se comunicar sem que a maioria das pessoas perceba que uma conversa está acontecendo. Quem tem Audição Subsônica consegue ouvir normalmente.\n\nÉ mais uma vantagem de comunicação discreta do que de combate: útil para coordenar ações sem alertar quem está por perto.",
+      "exemplos": [
+        "Duas criaturas subterrâneas trocam avisos em um registro que nenhum guarda humano percebe.",
+        "Um bando de feras se coordena silenciosamente antes de emboscar viajantes.",
+        "Algo parece estar em silêncio total, mas na verdade está avisando um companheiro do perigo."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Boa ferramenta narrativa para criaturas que se coordenam \"sem motivo aparente\" aos olhos do grupo.",
+      "relacionados": [
+        "audicao-subsonica"
+      ]
+    },
+    "fala-ultrassonica": {
+      "descricao": "Fala Ultrassônica é o espelho da Fala Subsônica: permite emitir sons de fala agudos demais para o ouvido humano, imperceptíveis para quem não tem um sentido especial para captá-los. Serve para os mesmos propósitos de comunicação discreta, só que na outra ponta do espectro sonoro.\n\nComo a versão grave, não ajuda em combate direto, só em coordenação silenciosa entre quem consegue se ouvir.",
+      "exemplos": [
+        "Um bando de morcegos gigantes se comunica em tons agudos demais para qualquer humano perceber.",
+        "Uma criatura avisa companheiros distantes sem que ninguém na sala perceba um único som.",
+        "Algo parece mudo para os viajantes, mas está, na verdade, gritando ordens o tempo todo."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Funciona bem em pares com uma criatura que também tenha um sentido de audição igualmente exótico."
+    },
+    "falar-com-plantas": {
+      "descricao": "Falar com Plantas permite se comunicar com vegetais como se fossem seres capazes de entender e responder, obtendo informações simples sobre o que aconteceu por perto — quem passou, o que caiu no chão, há quanto tempo. As plantas não têm memória detalhada nem visão como um ser vivo comum, então as respostas tendem a ser vagas e sensoriais.\n\nÉ uma vantagem de investigação alternativa: não substitui testemunhas de verdade, mas pode confirmar detalhes que ninguém mais saberia contar.",
+      "exemplos": [
+        "Uma erva à beira da estrada \"lembra\" do som de passos pesados que passaram na noite anterior.",
+        "Uma árvore antiga entende, à sua maneira, que algo foi enterrado sob suas raízes há muito tempo.",
+        "Um jardim inteiro parece \"incomodado\" com a presença de algo que passou por ali antes do grupo chegar."
+      ],
+      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "dica_mesa": "Ótimo recurso de mistério ambiental sem precisar de magia de detecção mais forte; use para pistas atmosféricas, não provas concretas."
+    },
+    "familiaridade-cultural": {
+      "descricao": "Familiaridade Cultural representa conhecer bem os costumes, gestos, tabus e formas de convivência de uma cultura que não é a sua, evitando gafes e mal-entendidos que alguém de fora sentiria. Sem ela, lidar com uma cultura estrangeira pode custar penalidades em testes sociais até você aprender na prática como aquele povo se comporta.\n\nÉ uma vantagem comprada por cultura: quanto mais culturas diferentes de Adamar você conhece bem, mais vezes precisa investir nela.",
+      "exemplos": [
+        "Um mercador que conhece bem os costumes de um povo distante evita ofender um anfitrião logo na primeira visita.",
+        "Um diplomata sabe exatamente como cumprimentar uma corte estrangeira sem parecer rude.",
+        "Um viajante reconhece um gesto de saudação que, em outra cultura, teria sido tomado como insulto."
+      ],
+      "dica_mesa": "A mesa de Adamar decidiu não usar a regra de culturas separadas; resolva choque cultural e sotaques por interpretação e pelos idiomas do personagem, sem gastar pontos nisso."
+    },
+    "forma-de-sombras": {
+      "descricao": "Forma de Sombras permite se transformar em uma sombra viva, deslizando por frestas, passando por baixo de portas e se movendo de um jeito que um corpo sólido jamais conseguiria. Nessa forma, você normalmente fica imune a ataques físicos comuns, mas também não consegue atacar ou manipular objetos normalmente.\n\nÉ uma vantagem de infiltração e fuga extrema, mais do que de combate: brilha ao entrar em lugares trancados, não ao lutar dentro deles.",
+      "exemplos": [
+        "Uma aparição escorrega por baixo de uma porta trancada como uma mancha escura no chão.",
+        "Algo escapa de uma cela apertando-se pelas frestas da grade como se fosse feito de fumaça negra.",
+        "Uma criatura sombria se esconde encostada numa parede, indistinguível da própria sombra do lugar."
+      ],
+      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "dica_mesa": "Ótima vantagem para um NPC \"impossível de prender\"; decida com antecedência o que ainda pode feri-lo nessa forma.",
+      "relacionados": [
+        "insubstancialidade"
+      ]
+    },
+    "garras": {
+      "descricao": "Garras dá a você garras naturais afiadas o bastante para funcionar como arma, além de ajudar a escalar e segurar superfícies. Existem graus diferentes: garras que só arranham de leve e garras verdadeiramente perigosas, capazes de rasgar como uma lâmina curta.\n\nÉ uma das vantagens de ataque natural mais comuns em criaturas do bestiário, muitas vezes combinada com Ataque Adicional para golpes múltiplos por rodada.",
+      "exemplos": [
+        "Um urso das montanhas rasga a armadura de couro de um caçador com um só golpe de pata.",
+        "Uma criatura das cavernas escala paredes de pedra usando as próprias garras como apoio.",
+        "Um horror de masmorra deixa marcas profundas na pedra só de arranhar a parede de raiva."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Vantagem básica e barata para qualquer besta ou monstro que precise de um ataque natural simples.",
+      "relacionados": [
+        "ataque-adicional",
+        "dentes"
+      ]
+    },
+    "golpeadores": {
+      "descricao": "Golpeadores cobre partes do corpo (cascos, chifres, cauda, cabeça) treinadas ou naturalmente adaptadas para servir de arma, mesmo sem ser garras ou dentes. É uma forma flexível de dar a uma criatura um ataque natural de encontrão, chifrada ou coice, conforme a anatomia descrita.\n\nComo Garras e Dentes, costuma vir combinada com outras vantagens de ataque quando a criatura precisa golpear várias vezes ou de vários jeitos na mesma rodada.",
+      "exemplos": [
+        "Um touro selvagem embesta com os chifres contra quem se aproxima demais do rebanho.",
+        "Uma criatura de couraça pesada usa a própria cabeça como aríete contra portas fracas.",
+        "Um cavalo de guerra assustado acerta um coice certeiro em quem tenta se aproximar por trás."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Boa vantagem para dar identidade de combate a animais e monstros sem depender de garras ou presas."
+    },
+    "habilidades-modulares": {
+      "descricao": "Habilidades Modulares representa uma reserva de pontos guardada para vantagens ou perícias que podem ser trocadas conforme a necessidade, dentro de regras específicas de quanto tempo leva para reconfigurar e que tipo de habilidade pode entrar na reserva. É pensada para personagens ou criaturas capazes de \"reprogramar\" parte do que sabem fazer.\n\nÉ uma vantagem mecanicamente complexa, normalmente associada a construtos, autômatos ou seres com conhecimento adquirido de forma não natural.",
+      "exemplos": [
+        "Um autômato antigo é reconfigurado por um artesão para aprender uma nova função específica.",
+        "Uma entidade estranha parece \"trocar\" de talento dependendo de quanto tempo teve para se preparar.",
+        "Um artefato vivo se adapta lentamente às necessidades de quem o desperta."
+      ],
+      "em_adamar": "O cenário é de Idade Média baixa (NT3); qualquer coisa que dependa de tecnologia avançada ou de registros modernos simplesmente não existe em Adamar.",
+      "dica_mesa": "Vantagem rara e complexa; só vale a pena trazer para a mesa se o narrador tiver um propósito narrativo bem claro para ela."
+    },
+    "hermafromorfo": {
+      "descricao": "Hermafromorfo representa a capacidade de mudar de sexo à vontade, sem custo de tempo ou esforço relevante, mantendo a mesma identidade e memórias. É puramente uma vantagem de corpo e identidade, sem qualquer efeito mecânico em combate ou testes.\n\nCostuma aparecer em criaturas de origem mágica ou muito diferentes do humano comum, mais como característica de mundo do que como poder de combate.",
+      "exemplos": [
+        "Uma entidade de história antiga aparece ora como homem, ora como mulher, conforme a lenda contada.",
+        "Uma criatura muda de forma para se passar por outra pessoa em uma investigação.",
+        "Um espírito da natureza não vê diferença alguma entre suas duas formas."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Vantagem de identidade e interpretação, quase sem efeito mecânico; use para dar profundidade a um NPC, não a combates."
+    },
+    "idade-imutavel": {
+      "descricao": "Idade Imutável trava a sua aparência e as condições físicas ligadas à idade num ponto fixo: você para de envelhecer visivelmente e não sofre as penalidades da velhice, mesmo vivendo por muito tempo. Diferente de Expectativa de Vida Ampliada, aqui não é que você envelhece devagar — você simplesmente não muda mais.\n\nNão te torna imortal nem imune a ferimentos: você ainda pode morrer normalmente, só não vai morrer de velhice nem parecer mais velho com o tempo.",
+      "exemplos": [
+        "Um guardião de um lugar sagrado tem exatamente a mesma aparência descrita em relatos de várias gerações atrás.",
+        "Alguém que deveria ser um ancião ainda se move como um jovem, para espanto de quem o conheceu há décadas.",
+        "Uma pintura antiga retrata alguém que parece não ter mudado nem um pouco desde então."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Ótima para um NPC misterioso e antigo; deixe que os outros personagens percebam isso aos poucos, não de uma vez.",
+      "relacionados": [
+        "expectativa-de-vida-ampliada"
+      ]
+    },
+    "iluminado": {
+      "descricao": "Iluminado dá a percepção de padrões e conexões ocultas do mundo que a maioria das pessoas jamais notaria: coincidências que não são coincidências, sinais de algo maior se movendo nos bastidores da realidade. Quem tem essa vantagem enxerga fragmentos de verdades maiores, ainda que nem sempre saiba o que fazer com elas.\n\nÉ mais uma vantagem de tom e mistério do que de utilidade mecânica direta, geralmente usada para justificar por que um personagem \"sabe coisas que não deveria saber\".",
+      "exemplos": [
+        "Um eremita nota um padrão estranho de eventos que ninguém mais percebeu conectar.",
+        "Alguém sente, sem saber explicar, que uma sequência de mortes recentes não é acaso.",
+        "Um sábio esquecido insiste que um pequeno detalhe é sinal de algo muito maior por vir."
+      ],
+      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "dica_mesa": "Boa vantagem para um NPC oráculo-like; use com moderação para não entregar respostas fáceis demais ao mistério da campanha."
+    },
+    "impossivel-de-matar": {
+      "descricao": "Impossível de Matar dá chances extras de sobreviver a ferimentos que normalmente seriam fatais, permitindo à criatura voltar de um estado que mataria qualquer outra coisa. Diferente de Durabilidade Sobrenatural, aqui não existe uma fraqueza única específica: a criatura simplesmente resiste à morte com uma persistência fora do comum, dentro de limites definidos pelo narrador.\n\nÉ uma vantagem cara, reservada a monstros de destaque e vilões recorrentes que o narrador quer trazer de volta mais de uma vez.",
+      "exemplos": [
+        "Um chefe de masmorra se ergue de novo depois de um golpe que deveria tê-lo derrubado de vez.",
+        "Uma fera lendária sobrevive a ferimentos que despedaçariam qualquer animal comum.",
+        "Um vilão recorrente sempre parece escapar da morte por um triz, para frustração do grupo."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Use com moderação — sobreviver demais tira o peso das vitórias do grupo.",
+      "relacionados": [
+        "durabilidade-sobrenatural"
+      ]
+    },
+    "infravisao": {
+      "descricao": "Infravisão permite enxergar calor em vez de luz visível, tornando possível notar corpos quentes (pessoas, animais, fogueiras recém-apagadas) mesmo na escuridão total, desde que haja diferença de temperatura para detectar. É diferente de Visão no Escuro, que amplifica pouca luz existente — aqui, o que importa é o calor, não a luz.\n\nIsso significa que criaturas ou objetos com a mesma temperatura do ambiente ficam praticamente invisíveis para esse sentido, e superfícies muito quentes ou muito frias podem ofuscar a percepção.",
+      "exemplos": [
+        "Uma criatura das cavernas percebe o calor de tochas apagadas há pouco tempo, revelando que alguém passou por ali.",
+        "Algo enxerga claramente o contorno de um viajante escondido atrás de uma rocha fria.",
+        "Uma fera nota o calor residual de pegadas recentes na neve, seguindo o rastro sem precisar de luz."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Lembre-se que essa visão falha contra criaturas de temperatura corporal igual ao ambiente, como mortos-vivos frios ou constructos de pedra."
+    },
+    "insubstancialidade": {
+      "descricao": "Insubstancialidade permite atravessar objetos sólidos — paredes, portas, grades — como se você mesmo não tivesse substância física, geralmente incapaz de tocar ou ser tocado por coisas físicas enquanto o efeito está ativo. É uma das formas mais extremas de escapar de qualquer prisão ou obstáculo físico do jogo.\n\nCostuma vir com limitações importantes (não poder atacar fisicamente enquanto insubstancial, vulnerabilidade a certos tipos específicos de efeito) definidas pelo narrador junto da vantagem.",
+      "exemplos": [
+        "Uma aparição atravessa a porta trancada de uma cripta como se ela nem estivesse ali.",
+        "Algo escapa de uma cela de pedra maciça sem deixar vestígio de como saiu.",
+        "Um espírito perturbado passa direto por uma parede na frente de testemunhas apavoradas."
+      ],
+      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "dica_mesa": "Excelente para um fantasma ou espírito; combine com uma fraqueza clara para que a criatura ainda seja derrotável.",
+      "relacionados": [
+        "forma-de-sombras"
+      ]
+    },
+    "interposicao": {
+      "descricao": "Interposição cobre a capacidade de atravessar entre diferentes planos ou camadas da realidade, usando isso como atalho de movimento ou como forma de escapar de um perigo puramente físico. O custo varia bastante conforme o alcance e o controle que a criatura tem sobre para onde vai.\n\nÉ uma vantagem rara e de alto impacto narrativo, geralmente reservada a entidades ligadas a outros mundos ou dimensões, não a criaturas comuns do dia a dia.",
+      "exemplos": [
+        "Uma entidade de além da barreira desliza para fora deste mundo bem quando parecia encurralada.",
+        "Algo surge de um ponto que não deveria existir no meio de uma sala fechada.",
+        "Uma criatura escapa de uma emboscada desaparecendo por uma fenda que se fecha logo depois."
+      ],
+      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "dica_mesa": "Se aparecer em jogo, deixe claro os limites de quando e onde a criatura pode fazer essa travessia, para não virar uma fuga garantida sempre.",
+      "relacionados": [
+        "dobra"
+      ]
+    },
+    "invisibilidade": {
+      "descricao": "Invisibilidade torna você impossível de ver a olho nu, embora ainda possa ser detectado por outros sentidos (som, cheiro, tato) dependendo de como você se move e do que está fazendo. Objetos e roupas que você carrega geralmente também precisam de uma escolha específica para ficarem invisíveis junto com você.\n\nÉ uma das vantagens de furtividade mais fortes do jogo, mas está longe de ser indetectável por completo: passos, cheiro e o próprio ambiente ainda podem denunciar sua presença.",
+      "exemplos": [
+        "Uma aparição observa uma reunião secreta sem que ninguém saiba que está ali.",
+        "Algo se move por um corredor guardado sem ser visto, ainda que os passos ecoem levemente.",
+        "Uma criatura ataca de surpresa vindo de um ponto onde ninguém via absolutamente nada."
+      ],
+      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "dica_mesa": "Lembre a todos que invisível não é indetectável: sons, cheiro e pegadas ainda contam a história."
+    },
+    "inercia-temporal": {
+      "descricao": "Inércia Temporal protege você de ser afetado por mudanças retroativas no tempo: se alguém reescrever a história, apagar um evento ou criar uma linha do tempo alternativa, você se lembra do que realmente aconteceu e permanece do jeito que era antes da mudança. É uma vantagem quase conceitual, pensada para cenários com viagem no tempo ou realidades instáveis.\n\nFora desse tipo específico de ameaça, ela não tem efeito perceptível em jogo — não te protege de nada além dessa forma muito particular de perigo.",
+      "exemplos": [
+        "Um viajante percebe que a cidade mudou de nome do dia para a noite, mas ele ainda se lembra do nome antigo.",
+        "Uma entidade nota que os outros esqueceram um evento que ela recorda com perfeita clareza.",
+        "Alguém insiste, para a confusão geral, que uma pessoa desaparecida da história ainda existiu de verdade."
+      ],
+      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "dica_mesa": "Vantagem de nicho muito específico; só faz sentido se a campanha lidar com viagem no tempo ou realidades alteradas."
+    },
+    "lacrado": {
+      "descricao": "Lacrado significa que seu corpo é completamente selado contra gases, líquidos e substâncias externas, sem aberturas vulneráveis a venenos no ar, gases tóxicos ou líquidos corrosivos que penetrariam em um corpo comum. Você ainda respira e se alimenta normalmente (a menos que tenha outra vantagem para isso); só fica protegido do que tentaria entrar por vias indevidas.\n\nÉ uma vantagem defensiva bem específica: não protege contra golpes físicos nem contra venenos que entram por um ferimento aberto, só contra o que tentaria penetrar por poros, olhos ou vias respiratórias de fora para dentro.",
+      "exemplos": [
+        "Uma criatura de pântano atravessa uma nuvem de gás venenoso sem sentir efeito algum.",
+        "Algo mergulha em água contaminada sem se preocupar em ser envenenado pelo contato.",
+        "Um guardião de masmorra ignora completamente as armadilhas de gás espalhadas pelos corredores."
+      ],
+      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "dica_mesa": "Vantagem específica de defesa; útil principalmente contra armadilhas de gás e ambientes tóxicos."
+    },
+    "leitura-da-mente": {
+      "descricao": "Leitura da Mente permite acessar pensamentos alheios, indo de impressões superficiais de emoção até, em níveis mais altos, informações detalhadas guardadas na memória de alguém, dependendo de quanto foi investido e de quanto a vítima resiste. É invasiva por natureza: a maioria das vítimas tem direito de perceber ou resistir ao toque na própria mente, conforme o narrador decidir.\n\nDiferente de Elo Mental, aqui não existe consentimento prévio nem via de mão dupla — é sempre você entrando na cabeça de outra pessoa, o que a torna uma das vantagens mentais mais delicadas de usar em mesa.",
+      "exemplos": [
+        "Um vidente sente o medo genuíno por trás da calma fingida de um suspeito durante um interrogatório.",
+        "Uma entidade sombria extrai de um prisioneiro a localização exata de um esconderijo secreto.",
+        "Algo percebe, sem que ninguém diga uma palavra, que um dos viajantes está escondendo algo grave."
+      ],
+      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "dica_mesa": "Use com cuidado quando envolver personagens jogadores: avise antes se pretende ler pensamentos deles em jogo.",
+      "relacionados": [
+        "controle-da-mente",
+        "elo-mental"
+      ]
+    }
+  }
+}

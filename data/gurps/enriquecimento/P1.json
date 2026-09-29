@@ -1,0 +1,284 @@
+{
+ "lista": "pericias",
+ "itens": {
+  "acrobacia": {
+   "descricao": "Acrobacia é a perícia de controlar o próprio corpo em movimentos difíceis: cambalhotas, saltos mortais, giros no ar, mergulhos e quedas amortecidas. Ela deixa você atravessar uma viga estreita sem cair, escapar rolando de um tombo que machucaria qualquer um, ou aterrissar de pé depois de um salto maior do que parece seguro.\n\nEm combate, um teste bem-sucedido pode ajudar a driblar um oponente, sair de uma posição ruim sem tropeçar ou fazer uma manobra vistosa sob pressão. Ela se confunde com força bruta e fôlego, mas é outra coisa: cobre equilíbrio e controle fino, não resistência. Armadura pesada, chão instável ou pouco espaço tornam o teste mais difícil.",
+   "exemplos": ["Pular de telhado em telhado numa perseguição pelos becos de uma vila.", "Rolar ao cair de um alçapão de masmorra para não se machucar.", "Fugir de um golpe de espada com uma cambalhota para trás.", "Atravessar uma viga podre sobre um fosso dentro de uma ruína."],
+   "dica_mesa": "Vale a pena narrar a cena mesmo num teste rotineiro: Acrobacia costuma render boas imagens na masmorra."
+  },
+  "adaga-de-esgrima": {
+   "descricao": "Adaga de Esgrima é a perícia de usar uma lâmina curta segurada na mão que não empunha a arma principal, quase sempre só para aparar e criar aberturas, e não para golpear com força. É a arma clássica do duelista que luta com uma espada numa mão e uma faca curta na outra.\n\nEla não substitui a perícia da arma principal: você ainda testa a arma de ataque para golpear, e usa esta perícia apenas quando quer aparar ou estorvar com a lâmina secundária. Quem já sabe lutar com facas ou espadas curtas tem alguma facilidade para pegar o jeito.",
+   "exemplos": ["Um duelista de capa e espada apara com a adaga curta enquanto ataca com a lâmina longa.", "Um mercenário treinado guarda uma faca na outra mão só para desviar golpes num confronto de rua.", "Um espadachim de escola antiga ensina o aluno a usar as duas mãos numa briga de taverna."],
+   "relacionados": ["capa"]
+  },
+  "adestramento-de-animais": {
+   "descricao": "Adestramento de Animais é ensinar truques, comandos e comportamentos a um animal, e também acalmar bichos assustados ou agressivos. Ela cobre tanto o treino paciente ao longo de semanas quanto o momento de tentar controlar um animal alterado ali na hora.\n\nCada personagem costuma escolher um tipo de animal como foco (cavalos, cães de guarda, aves de caça), e o treino em um tipo ajuda pouco com bichos muito diferentes. Ela não é o mesmo que apenas montar ou conduzir um animal já treinado — isso é outra perícia; Adestramento é sobre ensinar e domar, não sobre usar o resultado.",
+   "exemplos": ["Domar um cão selvagem que ronda as ruínas de uma fazenda abandonada.", "Acalmar os cavalos da caravana durante uma tempestade de inverno.", "Ensinar um falcão a voltar ao punho depois de caçar.", "Treinar o cão de guarda de uma vila para reconhecer forasteiros."],
+   "relacionados": ["cavalgar", "carregamento", "carroceiro"]
+  },
+  "administracao": {
+   "descricao": "Administração é a perícia de tocar uma organização: manter as contas em dia, distribuir tarefas, resolver disputas internas e fazer os recursos renderem. Serve tanto para dirigir um feudo pequeno quanto uma guilda de artesãos ou o quartel de uma guarnição.\n\nEla não substitui perícias técnicas específicas (um administrador de guilda de ferreiros não precisa saber forjar), mas permite planejar orçamento, prever problemas de gestão e cobrar resultado das pessoas certas. Um teste malsucedido costuma significar atraso, desperdício ou um funcionário insatisfeito, não um desastre imediato.",
+   "exemplos": ["Organizar os estoques de inverno de uma pequena vila antes da neve fechar as estradas.", "Resolver uma disputa entre dois mestres de uma guilda de comércio.", "Administrar o pagamento e o rancho de uma guarnição isolada.", "Reorganizar as tarefas de uma propriedade depois que o senhor morreu em campanha."],
+   "relacionados": ["comercio", "contabilidade"]
+  },
+  "alvenaria": {
+   "descricao": "Alvenaria é o ofício de erguer e reparar construções de pedra e tijolo: paredes, muros, fundações, arcos e abóbadas simples. Cobre tanto o trabalho de obra nova quanto o reparo de rachaduras, desmoronamentos parciais e infiltrações.\n\nÉ uma perícia fácil de aprender no básico, mas trabalhos ambiciosos (uma torre alta, um arco decorativo) pedem testes mais difíceis ou a ajuda de um mestre de obras. Ela também serve para avaliar se uma construção antiga está prestes a desabar, o que é comum em ruínas exploradas por aventureiros.",
+   "exemplos": ["Reparar o muro de uma vila depois de um cerco malsucedido.", "Avaliar se o teto de uma masmorra em ruínas vai aguentar mais um passo.", "Erguer um poço de pedra novo para um povoado sem água limpa.", "Consertar a fundação rachada de uma torre de guarda esquecida."],
+   "relacionados": ["arquitetura", "carpintaria"]
+  },
+  "antropologia": {
+   "descricao": "Antropologia é o estudo erudito dos costumes, crenças, estrutura social e origem dos povos: como vivem, o que consideram sagrado ou proibido, como se organizam em famílias e clãs. É trabalho de estudioso, feito lendo, entrevistando e comparando culturas, não de simples convívio no dia a dia.\n\nEla se especializa por povo: um antropólogo que estudou a fundo o próprio povo pode ter dificuldade real diante de costumes completamente estranhos, sem qualquer referência prévia. A perícia se confunde com Sociologia (mais voltada a estruturas sociais amplas) e com o simples conhecimento de etiqueta de um viajante experiente, que é superficial e prático, não acadêmico.",
+   "exemplos": ["Um erudito tenta entender por que um vilarejo isolado ainda segue ritos que a igreja local proíbe.", "Um estudioso analisa relatos de viajantes para reconstruir os costumes de um povo já desaparecido.", "Um sábio de corte é chamado para explicar por que uma tribo das montanhas trata certo gesto como grave insulto."],
+   "em_adamar": "O estudo do próprio povo humano é livre; especializações em outros povos ficam com o narrador, porque dependem de quais culturas humanas distintas existem em Adamar.",
+   "relacionados": ["sociologia"]
+  },
+  "analise-da-informacao": {
+   "descricao": "Análise da Informação é juntar pistas soltas, relatos incompletos e boatos contraditórios para montar um quadro coerente do que está de fato acontecendo, em geral sobre os planos ou movimentos de um adversário. É trabalho de mesa e de raciocínio, cruzando relatórios com o que já se sabe do inimigo.\n\nEla não é a mesma coisa que investigar uma cena de crime ou farejar uma mentira: parte do princípio de que a informação bruta já foi coletada por outra via (espiões, testemunhas, documentos), e o trabalho aqui é interpretá-la corretamente, separando o que é relevante do que é ruído ou desinformação plantada.",
+   "exemplos": ["Cruzar relatos de batedores para adivinhar por onde o exército inimigo vai atacar a vila.", "Juntar boatos de taverna e cartas interceptadas para descobrir quem financia um bando de salteadores.", "Analisar os movimentos recentes de uma casa nobre rival para prever sua próxima jogada política."],
+   "relacionados": ["administracao"]
+  },
+  "analise-de-mercado": {
+   "descricao": "Análise de Mercado é a perícia de entender e prever o comportamento de preços, oferta e procura de bens numa região: quando um produto vai ficar caro, onde ele está em falta, que rota comercial é mais lucrativa no momento. É trabalho de raciocínio econômico, não de barganha cara a cara.\n\nEla ajuda a planejar com antecedência — comprar barato antes de uma alta previsível, evitar carregar mercadoria que vai desvalorizar — mas não substitui Comércio na hora de efetivamente negociar um preço com alguém.",
+   "exemplos": ["Prever que o preço do sal vai disparar antes do inverno fechar as estradas de montanha.", "Descobrir qual feira regional paga melhor por peles de caça neste ano.", "Avisar um mercador de que carregar tecidos finos para uma vila arrasada pela guerra vai dar prejuízo."],
+   "relacionados": ["comercio"]
+  },
+  "arco": {
+   "descricao": "Arco é a perícia de atirar com arcos de mão, do arco curto simples ao arco longo e ao composto, mirando e soltando a flecha com precisão. Cobre a pontaria, o ritmo de disparo e o ajuste para vento, distância e alvo em movimento.\n\nÉla não inclui bestas, que usam gatilho e mecanismo diferentes e têm perícia própria, nem lançar dardos ou lanças com as mãos. É a arma de projétil mais comum entre caçadores, batedores e milícias, útil tanto para combate quanto para caçar comida na estrada.",
+   "exemplos": ["Um batedor abate um cervo para o jantar da caravana antes de acampar.", "Um arqueiro na muralha da vila atira em atacantes que se aproximam pelo campo.", "Caçar um lobo que ronda o rebanho nas noites frias.", "Disparar de cima de uma árvore para cobrir a fuga dos companheiros num emboscada."],
+   "dica_mesa": "Lembre o jogador de contar as flechas: sem munição, o Arco vira uma arma cara para pendurar na parede.",
+   "relacionados": ["besta", "arma-de-arremesso"]
+  },
+  "arma-de-arremesso": {
+   "descricao": "Arma de Arremesso é a perícia de lançar à mão uma arma feita para isso, como facas de arremesso, lanças curtas, dardos ou machados de arremesso, acertando o alvo com força e precisão suficientes para ferir de verdade. Cada tipo de arma pede uma especialização própria, embora treinar em uma ajude um pouco com as outras parecidas.\n\nEla é diferente de Arremesso comum, que serve para objetos que não foram desenhados como armas (pedras, garrafas, ferramentas). Uma arma de arremesso bem balanceada rende muito mais precisão e alcance útil do que atirar qualquer objeto improvisado.",
+   "exemplos": ["Arremessar facas contra um assaltante antes que ele chegue perto.", "Lançar uma lança curta contra um javali que carrega direto para o caçador.", "Acertar um machado de arremesso na porta de um celeiro só para intimidar quem está dentro.", "Um batedor arremessa dardos de cima de um muro contra invasores no fosso."],
+   "relacionados": ["arremesso", "arremessador-de-lanca"]
+  },
+  "armadilhas": {
+   "descricao": "Armadilhas cobre tanto montar dispositivos para capturar ou ferir quanto encontrar e desarmar os que outros armaram: laços de caça, fossos cobertos, gatilhos escondidos numa porta de masmorra. É uma perícia dupla de propósito — quem sabe montar bem também entende como detectar e neutralizar.\n\nEla exige alguma familiaridade com o tipo de armadilha: um caçador que só monta laços simples pode ter dificuldade diante de um mecanismo elaborado deixado por um construtor de masmorras antigo. Encontrar uma armadilha bem escondida também depende de atenção ao ambiente, e um teste malsucedido pode significar não perceber o perigo a tempo.",
+   "exemplos": ["Armar um laço na trilha para capturar um coelho antes do anoitecer.", "Desarmar um gatilho de dardos escondido no corredor de uma tumba antiga.", "Notar que uma tábua do chão de uma cabana está solta demais para ser natural.", "Montar uma armadilha simples na entrada do acampamento para avisar de intrusos noturnos."],
+   "relacionados": ["arrombamento"]
+  },
+  "armas-de-haste": {
+   "descricao": "Armas de Haste cobre o uso de armas longas de haste com lâmina ou ponta elaborada na extremidade — alabardas, glaives e afins — que combinam alcance de lança com corte ou gancho. São armas de duas mãos, pesadas para manejar em espaço apertado, mas fortes em linha de batalha ou num corredor estreito.\n\nElas se diferenciam de lanças simples e de bastões por terem uma cabeça de combate mais complexa, capaz de golpes de corte, estocada e até puxões e ganchos contra cavaleiros. Quem já manuseia lanças ou bastões tem alguma facilidade para se adaptar.",
+   "exemplos": ["Um guarda de milícia forma fileira com uma alabarda para deter uma carga inimiga.", "Usar o gancho de um glaive para derrubar um cavaleiro da sela.", "Defender a entrada estreita de uma masmorra com uma arma de haste comprida.", "Treinar recrutas de vila a manter distância do inimigo com armas de haste."],
+   "relacionados": ["bastao", "arma-de-arremesso"]
+  },
+  "armeiro": {
+   "descricao": "Armeiro é o ofício de fabricar, ajustar e consertar equipamento de combate: armas ou armaduras de um tipo específico, escolhido como especialização. Cobre desde forjar uma peça nova até afiar, reformar encaixes e corrigir defeitos que atrapalham o uso.\n\nCada especialização cobre uma família de equipamento (armas corpo a corpo, armas de projétil, armaduras, ou máquinas pesadas de cerco), e a maioria delas se ajuda mutuamente com alguma facilidade. Ela não é o mesmo que apenas usar bem a arma em combate — um armeiro habilidoso pode nunca ter lutado de verdade.",
+   "exemplos": ["Reforjar a lâmina de uma espada rachada num duelo.", "Ajustar uma armadura de couro para caber num novo dono depois de um saque.", "Consertar a corda arrebentada de uma besta antes da próxima caçada.", "Avaliar se vale a pena recuperar as armas enferrujadas encontradas numa cripta."],
+   "em_adamar": "As especializações em armas de fogo, blindagem de veículos e equipamento de tecnologia avançada ficam fora porque Adamar é NT3, sem essas tecnologias.",
+   "relacionados": ["arqueologia"]
+  },
+  "arqueologia": {
+   "descricao": "Arqueologia é o estudo de ruínas, objetos antigos e civilizações desaparecidas: escavar com cuidado, datar achados, reconhecer o que é valioso e o que é armadilha ou maldição disfarçada de tesouro. É trabalho de estudioso paciente, bem diferente de simplesmente saquear uma tumba.\n\nUm bom teste pode revelar a função original de uma sala, identificar um artefato genuíno em meio a falsificações, ou perceber que uma escavação malfeita vai desmoronar. Ela se confunde com História, mas é mais prática e de campo: lida com o objeto físico e o sítio, não apenas com registros escritos.",
+   "exemplos": ["Reconhecer que os símbolos numa parede de ruína indicam uma câmara funerária abaixo.", "Datar corretamente uma espada enferrujada achada num túmulo esquecido.", "Avisar o grupo que escavar apressado pode desabar uma galeria antiga.", "Identificar que um ídolo vendido como relíquia genuína é uma cópia recente."],
+   "em_adamar": "Encaixa direto no cenário: as ruínas de Roestia são um dos principais motivos para explorar o mundo.",
+   "relacionados": ["arquitetura", "antropologia"]
+  },
+  "arquitetura": {
+   "descricao": "Arquitetura é projetar construções e entender as já existentes: ler uma planta, calcular se uma estrutura é sólida, reconhecer o estilo e a época de um prédio, e notar detalhes de construção que escapam ao olhar comum, como passagens escondidas ou pontos fracos numa parede.\n\nEla se sobrepõe a Alvenaria e Carpintaria, mas é mais sobre projetar e compreender do que sobre executar com as mãos: um arquiteto pode nunca ter erguido uma parede sozinho. É também útil para planejar um assalto ou uma defesa, entendendo como um prédio se comporta.",
+   "exemplos": ["Encontrar a passagem secreta que os construtores originais de uma fortaleza deixaram.", "Avaliar se vale reformar as ruínas de uma torre para morar ali.", "Planejar por onde invadir um forte estudando sua planta.", "Reconhecer que um salão de banquetes é antigo demais para o estilo da região."],
+   "relacionados": ["alvenaria", "carpintaria"]
+  },
+  "arremedo": {
+   "descricao": "Arremedo é imitar sons com a própria voz: vozes de pessoas específicas, sotaques, ou chamados e ruídos de animais, dependendo da especialização escolhida. É uma perícia de performance vocal, diferente de Disfarce (que muda a aparência) e de Atuação (que é representar um papel inteiro, corpo e tudo).\n\nUm bom teste pode enganar alguém no escuro, imitar o grito de um pássaro para se comunicar sem chamar atenção, ou fazer uma plateia rir imitando a voz de uma autoridade local. Falhar costuma soar artificial o bastante para ser notado por quem prestar atenção.",
+   "exemplos": ["Imitar o canto de um pássaro da região para avisar os companheiros escondidos na mata.", "Imitar a voz rouca de um capitão de guarda para dar uma ordem falsa.", "Fazer os sons de um lobo para afastar curiosos de um acampamento à noite.", "Divertir a plateia de uma taverna imitando o sotaque de um nobre visitante."]
+  },
+  "arremessador-de-lanca": {
+   "descricao": "Arremessador de Lança é usar um propulsor de mão — uma haste curta com encaixe na ponta — para lançar dardos ou lanças curtas com muito mais força e alcance do que o braço sozinho conseguiria. É uma arma antiga, útil sobretudo para caça e para hostilizar um inimigo antes do combate corpo a corpo.\n\nQuem já sabe arremessar lanças à mão tem alguma facilidade para aprender o propulsor, mas o manejo do instrumento em si pede prática própria: o momento de soltar e o ângulo do lance são diferentes do arremesso comum.",
+   "exemplos": ["Caçar veados grandes com um propulsor antes que percebam a presença do caçador.", "Hostilizar batedores inimigos de longe antes que cheguem perto do acampamento.", "Um povo isolado das montanhas usa propulsores para caçar em terreno aberto.", "Treinar um jovem caçador a lançar mais longe do que o braço sozinho permite."],
+   "relacionados": ["arma-de-arremesso"]
+  },
+  "arremesso": {
+   "descricao": "Arremesso é atirar objetos comuns com pontaria e força — pedras, garrafas, ferramentas, tochas acesas — em coisas que não foram desenhadas como armas de arremesso. É bem menos precisa e mais fraca que uma arma de arremesso de verdade, mas serve em qualquer aperto onde não há nada melhor à mão.\n\nEla também é usada para lançar objetos não hostis com precisão, como jogar uma corda para alguém ou acertar um alvo com um objeto qualquer numa aposta de taverna. Quem já sabe soltar cargas com jeito tem alguma facilidade extra.",
+   "exemplos": ["Jogar uma pedra para distrair um guarda enquanto o grupo passa despercebido.", "Arremessar uma tocha acesa contra um bando de ratazanas gigantes numa masmorra.", "Acertar uma garrafa vazia numa aposta de bebedeira na taverna.", "Lançar uma corda amarrada a uma pedra para o companheiro preso do outro lado do fosso."],
+   "relacionados": ["arma-de-arremesso"]
+  },
+  "arrombamento": {
+   "descricao": "Arrombamento é abrir fechaduras sem a chave, usando gazuas ou ferramentas improvisadas, e também travar uma fechadura por dentro de forma que seja mais difícil de forçar. É trabalho silencioso e paciente: quanto mais elaborada a fechadura, mais difícil e demorado o teste.\n\nEla não cobre arrombar uma porta na força bruta (isso é Força), nem encontrar ou desarmar armadilhas ligadas à fechadura (isso entra em Armadilhas), embora as três costumem andar juntas no repertório de um ladrão ou de um aventureiro que precisa entrar onde não é bem-vindo.",
+   "exemplos": ["Abrir a fechadura da adega de um mercador desconfiado à meia-noite.", "Forçar o cadeado enferrujado de uma cripta sem fazer barulho.", "Trancar uma porta por dentro improvisadamente para atrasar perseguidores.", "Testar a fechadura de uma cela para libertar um prisioneiro injustiçado."],
+   "relacionados": ["armadilhas", "contrabando"]
+  },
+  "arte-erotica": {
+   "descricao": "Arte Erótica é a habilidade e o refinamento na intimidade física, incluindo o conhecimento de como agradar e ler as reações do parceiro. É tratada como qualquer outra perícia técnica, sem julgamento moral embutido nas regras, e entra em jogo apenas quando a mesa decide que a cena merece ser resolvida com um teste em vez de simplesmente narrada.\n\nAlgum jeito com o próprio corpo (equilíbrio, controle, flexibilidade) ajuda a desenvolvê-la, mas ela é uma perícia à parte, não algo automático para quem é ágil.",
+   "exemplos": ["Uma cortesã de uma casa refinada é procurada por sua fama de talento e discrição.", "Um casal de aventureiros aproveita uma noite de folga numa estalagem depois de semanas de estrada.", "Um espião usa a intimidade para conseguir a confiança de um alvo importante."],
+   "dica_mesa": "Use com discrição narrativa: normalmente basta declarar sucesso e seguir a cena sem detalhar a rolagem."
+  },
+  "artilharia": {
+   "descricao": "Artilharia é operar máquinas de cerco de grande porte: catapultas, trabucos, balistas e afins, calculando trajetória, força de disparo e ajuste para acertar um alvo distante ou uma muralha. É trabalho de equipe na maioria das vezes, com uma pessoa comandando a mira e o disparo.\n\nCada tipo de máquina pede alguma familiaridade própria, embora o princípio de mirar e calcular a trajetória seja parecido entre elas. Errar o teste costuma significar desperdiçar um disparo caro e demorado de preparar, não uma explosão ou desastre imediato.",
+   "exemplos": ["Comandar uma catapulta durante o cerco a um castelo rebelde.", "Ajustar a mira de uma balista para acertar o portão de uma fortaleza distante.", "Calcular a distância certa para um trabuco lançar pedras sobre uma muralha alta.", "Treinar a guarnição de uma torre a operar a única catapulta disponível."],
+   "em_adamar": "Só a especialização em catapultas e máquinas semelhantes é livre; armas de pólvora, mísseis e outras tecnologias avançadas não existem em Adamar, que é NT3."
+  },
+  "artista": {
+   "descricao": "Artista é a perícia de criar obras de arte visual ou aplicada num meio escolhido como especialização: pintura, escultura, desenho, cerâmica, marcenaria decorativa, entre outros. Ela mede tanto a técnica quanto o resultado estético da obra, e pode ser usada tanto para criar quanto para reproduzir um estilo já existente.\n\nEspecializações próximas (como desenho e pintura) ajudam bastante uma à outra; meios muito diferentes (como cerâmica e marcenaria) quase não se ajudam. Um artista habilidoso também pode falsificar o estilo de outro artista com esforço extra.",
+   "exemplos": ["Pintar o retrato de um nobre local em troca de hospedagem e comida.", "Esculpir uma imagem votiva para o altar de uma vila.", "Desenhar o mapa ilustrado de uma expedição para vender depois nas cidades.", "Reproduzir o estilo de um pintor famoso para disfarçar uma cópia como original."],
+   "relacionados": ["connoisseur", "cartografia"]
+  },
+  "assuntos-atuais": {
+   "descricao": "Assuntos Atuais é estar por dentro do que se comenta agora numa região: notícias recentes, boatos de taverna, o humor da população, disputas de poder em andamento. É conhecimento superficial e passageiro, ganho por conviver e prestar atenção, bem diferente do estudo profundo de História ou Política.\n\nCada especialização cobre um tipo de assunto (política local, boatos populares, notícias de negócios, e assim por diante), e elas se ajudam bastante entre si. Ela perde valor rápido: notícia velha não serve de nada, e um personagem que passou meses isolado fica desatualizado.",
+   "exemplos": ["Saber quem anda comprando terras suspeitas ao redor da vila.", "Ouvir na taverna que um bando de salteadores foi visto perto da estrada norte.", "Estar ciente da disputa recente entre dois mercadores importantes da cidade.", "Perceber que o clima político mudou depois da morte súbita de um nobre local."],
+   "em_adamar": "Sem imprensa ou correio rápido, as notícias correm por boatos, arautos e viajantes; a especialização em ciência e tecnologia tem pouco uso prático num cenário NT3."
+  },
+  "astronomia": {
+   "descricao": "Astronomia é o estudo erudito dos astros e do céu: prever movimentos de estrelas e planetas, calcular calendários, interpretar eclipses e fenômenos raros. É trabalho de observação paciente e cálculo, feito por estudiosos com acesso a instrumentos e registros antigos.\n\nEla também serve de base para orientação por estrelas em viagens longas, embora a navegação prática do dia a dia costume usar uma perícia mais simples. Um bom teste pode prever quando um fenômeno raro vai se repetir, o que interessa tanto a estudiosos quanto a quem lê presságios no céu.",
+   "exemplos": ["Calcular a data exata do próximo eclipse para um templo que marca festivais por ele.", "Estudar os registros antigos de uma torre de observação abandonada.", "Orientar-se por estrelas numa travessia noturna sem estradas.", "Investigar por que a Lua Negra aparece maior em certas noites do ano."],
+   "em_adamar": "Combina bem com o interesse do cenário pela Lua Negra, um fenômeno celeste que desperta curiosidade de estudiosos e supersticiosos.",
+   "relacionados": ["cartografia"]
+  },
+  "atuacao": {
+   "descricao": "Atuação é representar um papel de forma convincente diante de uma plateia ou de uma única pessoa: um personagem no palco, uma identidade falsa sustentada numa mentira elaborada, uma emoção fingida na hora certa. Ela cobre a interpretação como um todo — voz, gesto, postura — e não apenas as palavras.\n\nSe confunde com Dissimulação (mentir de forma pontual e convincente) e com Oratória (convencer uma plateia com discurso), mas Atuação é sobre sustentar um papel inteiro por tempo prolongado, inclusive sob perguntas incômodas ou situações inesperadas dentro do personagem fingido.",
+   "exemplos": ["Encenar uma peça de teatro itinerante para a plateia de uma feira de vila.", "Sustentar a identidade de um nobre forasteiro para enganar um guarda de fronteira.", "Fingir estar bêbado para escutar conversas alheias numa taverna sem levantar suspeita.", "Fazer o papel de um mendigo por dias para vigiar um mercado sem ser notado."],
+   "relacionados": ["arremedo"]
+  },
+  "bastao": {
+   "descricao": "Bastão é o uso de uma vara longa segurada com as duas mãos como arma: golpes de ponta, tacadas e bloqueios rápidos. É uma arma simples e barata, comum entre camponeses, monges, peregrinos e qualquer um que precise de uma arma discreta e fácil de arranjar.\n\nEla compartilha princípios com armas de haste e com a lança, então quem já treina uma dessas tem alguma facilidade a mais. Apesar de simples, um bastão bem manejado é rápido e versátil, útil tanto para atordoar sem matar quanto para se defender de armas mais pesadas.",
+   "exemplos": ["Um monge peregrino se defende de assaltantes na estrada só com o próprio bastão.", "Um camponês recruta usa uma vara comprida por não ter acesso a armas de verdade.", "Treinar recrutas de milícia com bastões antes de confiar a eles armas de metal.", "Usar o bastão para desarmar um oponente sem feri-lo gravemente."],
+   "relacionados": ["armas-de-haste"]
+  },
+  "besta": {
+   "descricao": "Besta é atirar com bestas de mão, mirando e acionando o gatilho que solta a corda tensionada por um mecanismo. É mais fácil de aprender o básico do que o Arco, já que o mecanismo faz parte do trabalho de mirar, mas recarregar costuma ser mais lento.\n\nEla não substitui Arco nem é substituída por ele: são armas com mecânica diferente e cada uma pede a própria perícia, embora ambas sirvam ao mesmo papel de arma de longa distância em combate ou caça.",
+   "exemplos": ["Um guarda de caravana atira com a besta contra assaltantes na estrada.", "Caçar javalis com uma besta pesada, mais fácil de mirer sem tanto treino.", "Defender uma muralha com bestas quando não há arqueiros treinados suficientes.", "Um caçador furtivo prefere a besta por poder mirar com calma antes de disparar."],
+   "relacionados": ["arco"]
+  },
+  "boleadeira": {
+   "descricao": "Boleadeira é lançar um conjunto de pesos amarrados por cordas para enroscar as pernas (ou os braços) de um alvo, derrubando-o ou imobilizando-o sem necessariamente feri-lo com gravidade. É uma arma incomum, mais usada por caçadores e pastores do que por soldados regulares.\n\nEla exige prática própria, sem pré-definido fácil vindo de outras perícias, porque o jeito de girar e soltar é bem particular. Uma boleadeira bem lançada pode deter um alvo em movimento sem matar, o que a torna útil para capturar em vez de eliminar.",
+   "exemplos": ["Um pastor das planícies usa boleadeiras para deter animais fugidos do rebanho.", "Derrubar um ladrão em fuga sem matá-lo, para interrogá-lo depois.", "Prender as pernas de um cavalo inimigo numa emboscada na estrada.", "Um caçador experiente ensina o uso da boleadeira para caçar sem desperdiçar flechas."]
+  },
+  "boxe": {
+   "descricao": "Boxe é a luta desarmada com socos treinada de verdade, com jogo de pernas, guarda e combinações, diferente da briga de rua sem método. Um boxeador acerta com mais precisão e se defende melhor de outros socos do que alguém sem treino.\n\nEla não cobre chutes, agarrões ou quedas — para isso seria preciso outra perícia de luta —, e se concentra especificamente em golpes de mão. É comum em culturas com tradição de combate desportivo ou entre soldados que treinam à parte de armas.",
+   "exemplos": ["Um lutador de feira desafia forasteiros a um combate de socos por prêmio em moedas.", "Um guarda treinado detém um bêbado violento sem sacar a espada.", "Treinar recrutas em combate desarmado antes de confiar armas a eles.", "Vencer uma disputa de honra numa taverna sem derramar sangue de verdade."],
+   "relacionados": ["briga", "carate"]
+  },
+  "boemia": {
+   "descricao": "Boêmia é o traquejo de beber, farrear e se enturmar em ambientes de bebedeira: aguentar rodadas sem passar vergonha, cair bem numa roda de desconhecidos, saber quando parar antes de causar um problema sério. É meio social, meio físico, testado quando a cena de taverna vira algo além de simples narração.\n\nUm bom teste pode significar conseguir informação de um bêbado tagarela, ganhar respeito numa disputa de bebida, ou simplesmente não fazer papel de bobo diante de estranhos. Falhar pode significar ficar bêbado demais, ofender alguém ou perder a noção da hora.",
+   "exemplos": ["Ganhar a confiança de mercenários numa taverna disputando rodadas de bebida.", "Extrair um segredo de um guarda bêbado depois de bebericar junto com ele a noite toda.", "Cair bem entre estranhos numa festa de colheita numa vila desconhecida.", "Saber a hora de parar antes que a farra vire uma briga generalizada."],
+   "relacionados": ["carroceiro"]
+  },
+  "briga": {
+   "descricao": "Briga é a luta corpo a corpo sem treino formal: socos, chutes, cabeçadas, joelhadas, o tipo de combate que qualquer pessoa aprende na base da experiência de rua. É a perícia desarmada mais comum entre quem nunca teve mestre, mas ainda assim sabe se virar numa confusão.\n\nEla é menos refinada que Boxe ou Caratê, que treinam golpes específicos com método, mas cobre um repertório mais variado de golpes sujos e improvisados. Muita gente comum tem alguma noção básica de Briga só de ter apanhado e revidado ao longo da vida.",
+   "exemplos": ["Um camponês se defende de um assaltante bêbado na volta do mercado.", "Uma briga de taverna explode depois de uma acusação de trapaça no jogo.", "Um prisioneiro tenta dominar o carcereiro distraído para escapar.", "Dois rivais resolvem uma desavença nos punhos, sem armas, atrás do celeiro."],
+   "relacionados": ["boxe", "carate"]
+  },
+  "caminhada": {
+   "descricao": "Caminhada é a capacidade de andar longas distâncias a pé sem se esgotar, mantendo ritmo mesmo em terreno difícil ou clima ruim. É essencial para qualquer viagem prolongada, especialmente quando não há montaria ou carroça disponível.\n\nUm teste bem-sucedido pode significar chegar ao destino a tempo apesar do cansaço, ou aguentar uma marcha forçada quando a pressa é vital. Falhar costuma significar exaustão, atraso ou a necessidade de descanso extra antes de continuar.",
+   "exemplos": ["Marchar dias a fio por estradas de montanha para chegar antes do inverno fechar a passagem.", "Aguentar uma marcha forçada para levar um aviso urgente a uma vila distante.", "Continuar andando mesmo com a bota furada e os pés doloridos.", "Atravessar uma planície a pé depois que os cavalos morreram numa emboscada."],
+   "relacionados": ["corrida"]
+  },
+  "camuflagem": {
+   "descricao": "Camuflagem é usar o terreno e materiais ao redor para esconder a si mesmo, um companheiro ou um acampamento inteiro da vista alheia: folhagem, barro, lonas cobertas de terra, disposição cuidadosa de um abrigo. É diferente de simplesmente se esconder atrás de algo (isso é Furtividade); aqui o trabalho é fazer com que o observador nem note que há algo para se esconder.\n\nUm bom teste pode enganar até quem está procurando ativamente, se a distância e a luz ajudarem. Quem já sabe sobreviver ao ar livre tem alguma noção de como usar o ambiente dessa forma.",
+   "exemplos": ["Esconder um acampamento de batedores inimigos usando galhos e barro.", "Camuflar uma armadilha de caça para que pareça parte natural do chão.", "Cobrir os rastros de uma trilha usada por fugitivos.", "Disfarçar a entrada de um esconderijo na floresta com folhagem arrumada."],
+   "relacionados": ["armadilhas"]
+  },
+  "canto": {
+   "descricao": "Canto é simplesmente cantar bem: afinação, projeção de voz, controle de respiração e expressão. Serve tanto para entreter quanto para acompanhar rituais, cerimônias e celebrações que pedem música vocal.\n\nÉ perícia fácil de pegar o básico, mas cantar diante de uma plateia exigente, sustentar uma apresentação longa ou cantar sob condições ruins (frio, cansaço, ferimento) pede testes mais difíceis. Combina bem com Instrumento Musical para quem quer se apresentar por completo.",
+   "exemplos": ["Animar a taverna com uma canção conhecida em troca de bebida e moedas.", "Cantar um hino num funeral de vila para consolar os enlutados.", "Entoar uma canção de trabalho para manter o ritmo de uma equipe de remadores.", "Impressionar a corte de um nobre com uma balada bem cantada."],
+   "relacionados": ["composicao-musical"]
+  },
+  "capa": {
+   "descricao": "Capa é lutar usando uma capa como arma auxiliar: jogá-la sobre a visão de um oponente, enroscar a arma dele, usá-la para aparar um golpe ou criar uma abertura enganosa. É uma técnica vistosa e incomum, associada a duelistas de estilo mais teatral.\n\nEla se ajuda com o manejo de escudos e de redes, já que o princípio de usar um objeto flexível para atrapalhar o inimigo é parecido. Sozinha, a capa não fere ninguém — ela serve para abrir espaço e confundir, enquanto a outra mão ataca com a arma de verdade.",
+   "exemplos": ["Jogar a capa sobre o rosto de um oponente para cegá-lo por um instante decisivo.", "Enroscar a lâmina de um adversário na capa para desarmá-lo.", "Um duelista de estilo teatral usa a capa para impressionar a plateia numa disputa de honra.", "Usar a capa molhada para amortecer um golpe de faca numa emboscada."],
+   "relacionados": ["adaga-de-esgrima"]
+  },
+  "captacao": {
+   "descricao": "Captação é a capacidade de ouvir e entender conversas específicas em meio a muito barulho: numa taverna cheia, numa feira agitada, sob o som de uma tempestade. Ela não é sobre escutar escondido (isso é Furtividade combinada com Percepção geral), mas sobre separar o que importa dentro de uma bagunça de sons.\n\nUm bom teste permite captar uma frase importante dita a alguns passos de distância apesar da confusão ao redor. Falhar significa perder detalhes, ou entender só pedaços soltos da conversa.",
+   "exemplos": ["Distinguir uma ameaça sussurrada em meio à algazarra de uma feira de vila.", "Ouvir o comando de um capitão de guarda apesar do vento forte.", "Captar uma conversa suspeita entre mercadores numa taverna lotada.", "Entender o grito de socorro de alguém no meio de uma multidão em pânico."]
+  },
+  "carate": {
+   "descricao": "Caratê é um estilo de luta desarmada com golpes de mão e pé treinados com rigor e disciplina, geralmente ensinado como parte de uma tradição fechada, transmitida de mestre a aluno por anos. É mais versátil que Boxe (que só cobre socos), incluindo chutes, defesas e alguns agarrões.\n\nEla não tem pré-definido fácil vindo de outras perícias: exige treino dedicado, refletindo o fato de ser um sistema de combate completo e específico, não uma habilidade que se pega apenas brigando na rua.",
+   "exemplos": ["Um mestre de uma tradição marcial distante ensina o estilo a poucos alunos escolhidos.", "Vencer um valentão da vila sem usar nenhuma arma, só golpes precisos.", "Demonstrar disciplina e controle numa exibição pública do estilo.", "Derrubar um oponente armado com um golpe certeiro antes que ele chegue perto."],
+   "em_adamar": "Cabe melhor em tradições de combate de povos ou regiões distantes e fechadas, algo raro e quase lendário dentro do cenário, e não uma habilidade comum de soldado.",
+   "relacionados": ["boxe", "briga"]
+  },
+  "carpintaria": {
+   "descricao": "Carpintaria é trabalhar madeira: construir móveis, portas, carroças, estruturas simples e até pequenos barcos, além de reparar o que já existe. É um ofício básico e comum, presente em quase toda vila e propriedade.\n\nTrabalhos simples (um banco, uma prateleira, um reparo de porta) são fáceis; construções maiores ou mais elaboradas (uma ponte, um telhado complexo) pedem testes mais difíceis ou mais tempo. Ela se combina bem com Alvenaria e Arquitetura em projetos de construção maiores.",
+   "exemplos": ["Consertar a porta arrombada de uma estalagem depois de uma briga.", "Construir uma carroça nova para substituir a que quebrou na estrada.", "Reparar o casco de um pequeno barco de pesca de uma vila costeira.", "Erguer uma armadilha de madeira simples para proteger um acampamento."],
+   "relacionados": ["alvenaria", "arquitetura"]
+  },
+  "carregamento": {
+   "descricao": "Carregamento é saber carregar animais de carga corretamente: distribuir o peso, prender bem os fardos, evitar que o animal se machuque ou que a carga escorregue e se perca pelo caminho. Parece simples, mas malfeito pode ferir o animal, atrasar a viagem ou custar mercadorias valiosas.\n\nEla não é o mesmo que montar ou conduzir o animal (isso é Cavalgar ou Carroceiro), e sim especificamente sobre arrumar e equilibrar a carga que ele transporta. Quem já lida bem com animais de carga em geral tem alguma facilidade extra.",
+   "exemplos": ["Carregar as mulas de uma expedição para que aguentem dias de trilha de montanha sem se machucar.", "Reorganizar a carga de um cavalo de carga depois que um fardo escorregou numa descida.", "Garantir que os suprimentos de uma caravana não caiam numa travessia de rio.", "Ensinar um aprendiz a distribuir o peso certo entre dois animais de carga."],
+   "relacionados": ["adestramento-de-animais", "carroceiro"]
+  },
+  "carroceiro": {
+   "descricao": "Carroceiro é conduzir carroças e carruagens puxadas por animais: guiar em estrada boa e ruim, fazer curvas fechadas, controlar a velocidade numa descida e reagir quando algo assusta os animais de tração. Especializa-se pelo tipo de animal usado na tração.\n\nEla não é o mesmo que Adestramento de Animais (treinar o bicho do zero) nem que Cavalgar (montar diretamente sobre ele): aqui o carroceiro controla os animais a partir das rédeas, de cima do veículo. Quem já sabe lidar com aquele tipo de animal, seja montando ou treinando, tem alguma facilidade extra.",
+   "exemplos": ["Conduzir a carroça da caravana por uma estrada de montanha esburacada.", "Controlar os cavalos assustados quando um lobo aparece na estrada à noite.", "Guiar uma carruagem de nobre por ruas estreitas e cheias de gente numa cidade.", "Manter o rumo de uma carroça puxada por bois numa travessia lamacenta."],
+   "relacionados": ["cavalgar", "adestramento-de-animais", "carregamento"]
+  },
+  "cartografia": {
+   "descricao": "Cartografia é desenhar mapas precisos a partir de observação e medição, e também ler e interpretar mapas já existentes, incluindo perceber erros ou lacunas neles. Exige entender proporção, direção e distância, e registrar tudo de forma que outra pessoa consiga seguir depois.\n\nÉ diferente de Conhecimento do Terreno (saber uma área de cor, por vivência) e de Geografia (entender o mundo em termos gerais): Cartografia é a técnica específica de registrar e ler esse conhecimento em forma de mapa. Regiões nunca mapeadas de verdade pedem trabalho de campo antes de qualquer desenho.",
+   "exemplos": ["Desenhar o mapa de uma masmorra recém-explorada para vender a outros aventureiros.", "Perceber que um mapa antigo de Roestia está errado numa curva importante do rio.", "Registrar a rota de uma expedição para que outra caravana possa seguir depois.", "Corrigir um mapa de vila desatualizado depois de uma enchente que mudou o curso de um riacho."],
+   "em_adamar": "Combina bem com o fato de metade de Roestia nunca ter sido mapeada, o que dá trabalho constante a cartógrafos aventureiros.",
+   "relacionados": ["arqueologia", "astronomia"]
+  },
+  "cavalgar": {
+   "descricao": "Cavalgar é montar e controlar diretamente um animal de montaria: manter o equilíbrio, guiar com pernas e rédeas, reagir quando o animal se assusta ou tropeça. Especializa-se por tipo de animal, e animais parecidos entre si (como cavalo e mula) se ajudam bastante; animais muito diferentes, quase nada.\n\nEla não substitui Adestramento de Animais (ensinar do zero) nem Carroceiro (conduzir de cima de um veículo puxado): aqui o personagem está montado diretamente sobre o animal, e o teste entra em jogo sobretudo quando algo sai do esperado — o animal empina, escorrega, ou precisa saltar um obstáculo.",
+   "exemplos": ["Manter-se na sela quando o cavalo empina ao ver uma cobra na estrada.", "Guiar a montaria por uma trilha estreita à beira de um precipício.", "Saltar um pequeno fosso durante uma perseguição a cavalo.", "Acalmar o animal e continuar montado depois de um trovão repentino."],
+   "em_adamar": "Montarias comuns como cavalo, mula e camelo são livres; montar criaturas incomuns como dragões fica com o narrador, por depender de que animais extraordinários existem em Adamar.",
+   "relacionados": ["carroceiro", "adestramento-de-animais"]
+  },
+  "chicote": {
+   "descricao": "Chicote é usar um chicote como arma: golpes de alcance maior que o braço, capazes de acertar, enroscar um membro ou uma arma do oponente, e até desarmar à distância. É uma arma incomum em combate direto, mais lembrada por pastores e domadores do que por soldados regulares.\n\nEla exige prática própria para o timing e o alcance variável do golpe, embora quem já lute com outras armas flexíveis tenha alguma facilidade a mais. Um chicote bem manejado é mais útil para atrapalhar e desarmar do que para causar dano grave.",
+   "exemplos": ["Um domador de feira usa o chicote para afastar um animal enfurecido.", "Enroscar a espada de um oponente com um golpe certeiro de chicote.", "Desarmar um assaltante à distância antes que ele chegue perto o bastante para golpear.", "Um pastor experiente afasta lobos do rebanho só com estalos de chicote."]
+  },
+  "cirurgia": {
+   "descricao": "Cirurgia é operar ferimentos graves demais para tratamento simples: remover um objeto cravado fundo, estancar uma hemorragia interna, amputar um membro que já não tem salvação. Sem os recursos de medicina avançada, é um procedimento arriscado, doloroso e demorado, feito com instrumentos rudimentares e boa dose de coragem tanto do médico quanto do paciente.\n\nÉ a perícia médica mais difícil de todas, e um teste malsucedido pode piorar a situação do paciente em vez de ajudar. Antes de chegar a este ponto, quase sempre alguém já tentou Primeiros Socorros ou Medicina; a cirurgia entra quando isso não basta.",
+   "exemplos": ["Remover a ponta de flecha cravada fundo no ombro de um companheiro ferido.", "Amputar um pé necrosado por frio extremo antes que o mal se espalhe.", "Estancar um sangramento interno depois de uma queda grave numa ruína.", "Operar um ferido de guerra numa tenda improvisada, sem instrumentos adequados."],
+   "em_adamar": "Sem os recursos da medicina avançada, a cirurgia em Adamar é arriscada, dolorosa e de resultado incerto, coerente com o NT3 do cenário.",
+   "relacionados": []
+  },
+  "composicao-musical": {
+   "descricao": "Composição Musical é criar músicas e canções originais: melodia, letra, estrutura, o encaixe entre a ideia e a forma final. É trabalho de criação, diferente de simplesmente tocar um instrumento ou cantar bem uma canção já existente.\n\nQuem já sabe tocar um instrumento ou já compõe versos tem alguma facilidade extra para compor canções, já que parte do trabalho se sobrepõe. Uma boa composição pode marcar época numa região, ser cantada por gerações ou virar hino de uma causa.",
+   "exemplos": ["Compor uma canção para celebrar a vitória de uma vila contra um bando de saqueadores.", "Escrever um lamento fúnebre para um herói local caído em combate.", "Criar uma melodia nova para acompanhar um poema de amor já famoso na região.", "Compor uma canção de trabalho para acompanhar o ritmo da colheita."],
+   "relacionados": ["canto"]
+  },
+  "comercio": {
+   "descricao": "Comércio é comprar, vender e negociar preços cara a cara: perceber quanto um item realmente vale, regatear sem ofender, reconhecer quando um vendedor está desesperado ou blefando. É a perícia do dia a dia de mercado, diferente de Análise de Mercado, que é mais sobre prever tendências de preço a médio prazo.\n\nUm bom teste pode render um preço melhor numa compra ou venda, ou perceber que um mercador está tentando passar a perna. Ela também ajuda a avaliar rapidamente se vale a pena fechar um negócio ali mesmo ou procurar outro comprador.",
+   "exemplos": ["Regatear o preço de suprimentos antes de uma longa viagem.", "Vender o espólio de uma masmorra pelo melhor preço possível numa cidade.", "Perceber que um mercador está inflando o preço por saber que o comprador está desesperado.", "Fechar um bom acordo de fornecimento regular com um ferreiro local."],
+   "relacionados": ["analise-de-mercado", "contabilidade"]
+  },
+  "conhecimento-do-terreno": {
+   "descricao": "Conhecimento do Terreno é conhecer bem uma área concreta por vivência: atalhos, quem manda em cada canto, onde fica cada coisa importante, os perigos e hábitos locais. Especializa-se numa região específica de qualquer tamanho, da vizinhança de uma vila a um país inteiro, e usar o conhecimento fora dessa área específica fica cada vez mais difícil.\n\nÉ diferente de Geografia (entendimento mais amplo e teórico de regiões) e de Cartografia (a técnica de desenhar mapas): aqui o que conta é ter vivido ou visitado o lugar o bastante para conhecê-lo de cor, não ter estudado sobre ele.",
+   "exemplos": ["Saber o atalho que evita a patrulha da guarda ao entrar numa cidade à noite.", "Conhecer qual taberneiro de uma pequena vila é digno de confiança.", "Levar o grupo por uma trilha segura que não aparece em nenhum mapa oficial.", "Reconhecer que um forasteiro mentiu sobre conhecer bem a região."],
+   "relacionados": ["cartografia"]
+  },
+  "connoisseur": {
+   "descricao": "Connoisseur é a capacidade de avaliar a qualidade real de algo dentro de uma área de interesse escolhida como especialização: vinhos, artes visuais, literatura, dança, música. Permite distinguir o excelente do medíocre, reconhecer uma falsificação grosseira e impressionar quem também entende do assunto.\n\nCada especialização se apoia nas perícias de quem cria ou estuda aquele tipo de arte: um connoisseur de música, por exemplo, tem mais facilidade se já toca instrumento ou compõe. Ela não ensina a criar a obra, só a julgá-la com precisão.",
+   "exemplos": ["Reconhecer que um vinho servido como raro é, na verdade, uma mistura comum disfarçada.", "Avaliar se uma pintura vendida como antiga é realmente da época alegada.", "Impressionar um mecenas discutindo com propriedade sobre poesia e literatura.", "Perceber que a apresentação de dança de uma trupe itinerante é de qualidade excepcional."],
+   "relacionados": ["artista"]
+  },
+  "contabilidade": {
+   "descricao": "Contabilidade é manter livros de contas organizados e corretos, e também examinar registros alheios em busca de erros ou fraudes escondidas. É trabalho minucioso de números e registros, diferente de Comércio (negociar) ou Administração (gerir pessoas e recursos de forma mais ampla).\n\nUm bom teste pode revelar que um funcionário está desviando moedas aos poucos, ou organizar as contas bagunçadas de um comerciante que nunca aprendeu a fazer isso direito. Falhar pode significar não perceber uma fraude bem escondida, ou levar mais tempo do que o esperado para fechar os livros.",
+   "exemplos": ["Descobrir que o administrador de uma propriedade vem desviando moedas há meses.", "Organizar os livros de um mercador desleixado antes de uma inspeção da guilda.", "Auditar as contas de uma guilda suspeita de corrupção interna.", "Perceber uma discrepância pequena demais para ser um simples erro de cálculo."],
+   "relacionados": ["comercio", "administracao"]
+  },
+  "contrabando": {
+   "descricao": "Contrabando é esconder mercadorias proibidas ou taxadas da vista de guardas, fiscais e inspetores: compartimentos falsos, disfarces de carga, rotas que evitam postos de controle. Cobre tanto o preparo cuidadoso antes da viagem quanto a reação rápida quando uma inspeção surpresa acontece.\n\nUm bom teste pode significar passar por um posto de fiscalização sem levantar suspeita, mesmo carregando algo que não deveria estar ali. Falhar não revela a carga na hora, mas deixa o fiscal desconfiado o bastante para investigar mais a fundo.",
+   "exemplos": ["Esconder sal não taxado no fundo falso de uma carroça de feno.", "Passar por um posto de fronteira carregando mercadoria proibida disfarçada de suprimento comum.", "Disfarçar armas dentro de fardos de tecido para entregar a um grupo rebelde.", "Convencer um fiscal desatento de que a carga suspeita é só mantimento de viagem."],
+   "relacionados": ["arrombamento"]
+  },
+  "corrida": {
+   "descricao": "Corrida é correr mais rápido e por mais tempo do que o normal, mantendo ritmo mesmo sob cansaço ou terreno irregular. É diferente de Caminhada, que é sobre resistir a longas distâncias em ritmo constante; Corrida é sobre velocidade e explosão, útil em perseguições e fugas.\n\nUm bom teste pode significar alcançar alguém que está fugindo, escapar de um perigo mais rápido, ou aguentar um sprint mais longo do que o esperado antes de precisar parar para respirar.",
+   "exemplos": ["Correr para alcançar um ladrão que acabou de roubar a bolsa de um mercador.", "Fugir correndo de uma fera que despertou numa ruína.", "Correr para avisar a guarda antes que os invasores cheguem ao portão da vila.", "Vencer uma corrida de aposta na feira anual de uma cidade."],
+   "relacionados": ["caminhada"]
+  },
+  "costura": {
+   "descricao": "Costura é costurar e consertar roupas e tecidos: remendar um rasgo, ajustar uma peça ao corpo de outra pessoa, confeccionar uma roupa simples do zero. É um ofício básico, presente em quase toda casa, embora peças finas ou elaboradas peçam mais tempo e um teste mais difícil.\n\nEla também serve para reparos de campo em itens de tecido além de roupas, como uma mochila rasgada ou uma tenda com um furo, desde que o material básico esteja à mão.",
+   "exemplos": ["Remendar a capa rasgada por espinhos numa travessia de floresta.", "Ajustar as roupas herdadas de um parente para caber no dono atual.", "Costurar uma tenda rasgada antes que a chuva entre à noite.", "Confeccionar roupas simples de inverno para uma família pobre da vila."]
+  },
+  "cuidados-com-a-casa": {
+   "descricao": "Cuidados com a Casa cobre as tarefas básicas de manter um lar funcionando: limpar, organizar, fazer pequenos remendos, cozinhar o básico do dia a dia. É uma perícia ampla e simples, o tipo de conhecimento prático que a maioria das pessoas comuns tem em algum grau.\n\nEla não substitui Culinária de verdade (cozinhar bem, com técnica) nem Costura elaborada, mas cobre o suficiente para uma casa não cair aos pedaços nem passar fome com o básico disponível.",
+   "exemplos": ["Manter a casa em ordem enquanto o resto da família trabalha no campo.", "Fazer um reparo simples num telhado que começou a vazar.", "Preparar uma refeição simples e nutritiva com o que sobrou na despensa.", "Organizar a casa de um parente idoso que já não consegue cuidar sozinho dela."],
+   "relacionados": ["culinaria", "costura"]
+  },
+  "culinaria": {
+   "descricao": "Culinária é cozinhar bem de verdade: temperar com equilíbrio, aproveitar ingredientes de qualidade duvidosa, preparar pratos que alimentam e ainda erguem o moral de quem come. É mais refinada que Cuidados com a Casa, que cobre só o básico do dia a dia.\n\nUm bom teste pode transformar racionamento de viagem numa refeição decente, ou impressionar um anfitrião importante com um prato bem preparado. Falhar costuma significar uma comida sem graça ou mal aproveitada, não necessariamente perigosa.",
+   "exemplos": ["Transformar rações secas de viagem numa refeição que anima o grupo depois de um dia ruim.", "Preparar um banquete para impressionar um senhor local em busca de favores.", "Aproveitar a carne de caça recém-abatida antes que estrague na estrada.", "Cozinhar para uma taverna e ganhar fama pelo prato da casa."],
+   "relacionados": ["cuidados-com-a-casa", "cultivo"]
+  },
+  "cultivo": {
+   "descricao": "Cultivo é o trabalho de plantar, cuidar e colher a terra: preparar o solo, escolher a época certa, lidar com pragas e clima ruim, guardar sementes para o ano seguinte. É o ofício da maior parte da população em qualquer cenário de vida camponesa, base da alimentação de vilas e feudos.\n\nUm bom teste pode significar uma colheita melhor do que o esperado apesar de um verão ruim, ou perceber a tempo que uma praga está destruindo a plantação. Falhar costuma significar perda parcial da colheita, não desastre total, a menos que as condições já estivessem péssimas.",
+   "exemplos": ["Salvar parte da colheita de uma vila depois de uma praga inesperada.", "Escolher a época certa para plantar antes que o inverno chegue cedo demais.", "Ensinar técnicas melhores de cultivo a uma comunidade que sofre com solo pobre.", "Perceber que um campo foi sabotado de propósito antes da colheita."],
+   "relacionados": ["culinaria"]
+  }
+ }
+}

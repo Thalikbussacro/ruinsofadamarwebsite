@@ -1,0 +1,308 @@
+{
+  "lista": "desvantagens",
+  "itens": {
+    "acomodado": {
+      "descricao": "Acomodado é uma peculiaridade de personalidade: o personagem simplesmente não se abala com problemas que não o atingem diretamente. Uma briga na taverna ao lado, uma vila vizinha em dificuldades, um amigo reclamando de algo que não o afeta em nada — tudo isso escorrega pela atenção dele sem gerar reação forte.\n\nNão é crueldade nem falta de compaixão profunda; é só uma tendência de poupar energia emocional para o que realmente bate à própria porta. Companheiros mais engajados podem estranhar essa calma, às vezes confundindo-a com desinteresse.",
+      "exemplos": [
+        "Enquanto os companheiros se enfurecem com a injustiça sofrida por um estranho na estrada, o personagem só dá de ombros e sugere seguir viagem.",
+        "Ao ouvir rumores de problemas numa vila vizinha que o grupo não pretende visitar, ele nem se dá ao trabalho de perguntar detalhes."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem qualquer ligação com magia ou regra especial, por isso cabe livremente em qualquer personagem de Adamar.",
+      "dica_mesa": "Use essa peculiaridade para criar contraste com companheiros mais apaixonados por causas alheias."
+    },
+    "antipatico": {
+      "descricao": "Antipático descreve um personagem que prefere resolver as coisas por conta própria, mesmo quando companhia ajudaria. Não é hostilidade ativa — ele apenas se sente mais confortável trabalhando, viajando ou enfrentando problemas sozinho, e tende a recusar ajuda por reflexo antes mesmo de considerar se ela seria útil.\n\nEm grupo, isso pode gerar atrito: colegas de aventura podem interpretar a recusa como desconfiança ou orgulho, quando na verdade é só um hábito profundamente enraizado de não depender de ninguém.",
+      "exemplos": [
+        "Diante de uma armadilha complexa, o personagem dispensa a ajuda oferecida e insiste em desarmá-la sozinho, mesmo demorando mais.",
+        "Ao planejar uma incursão numa masmorra, ele prefere explorar um corredor separado do grupo, só para não precisar coordenar com ninguém."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "dica_mesa": "Aproveite esse traço para gerar tensão leve quando o grupo realmente precisa agir em conjunto.",
+      "relacionados": ["simpatico"]
+    },
+    "atento": {
+      "descricao": "Atento, no sentido de fixação, descreve um personagem que, ao começar uma tarefa, tem dificuldade de largá-la até terminar, mesmo que isso signifique ignorar o que acontece ao redor. É uma dedicação extrema à concentração: uma vez envolvido em algo, o resto do mundo vira ruído de fundo.\n\nEssa mesma qualidade que o torna excelente em terminar o que começa também o torna vulnerável a ser pego desprevenido, já que sua atenção raramente se divide bem entre a tarefa e o ambiente.",
+      "exemplos": [
+        "Absorto em decifrar uma inscrição antiga, o estudioso só percebe os passos se aproximando quando já estão a poucos metros.",
+        "Ao consertar uma roda de carroça quebrada na estrada, ele insiste em terminar o reparo mesmo com a noite caindo rápido demais."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["distraido"]
+    },
+    "aversoes": {
+      "descricao": "Aversões dá ao personagem um ou mais desconfortos pequenos e específicos com coisas comuns — água funda, gatos, sacerdotes, multidões — que ele evita sempre que possível, sem que isso chegue ao ponto de uma fobia paralisante. É um desconforto real, mas administrável: ele consegue enfrentar aquilo se precisar, só prefere não precisar.\n\nCada aversão costuma ser pequena o bastante para não travar a aventura, mas grande o bastante para render hesitação, uma piada dos companheiros ou uma escolha de rota diferente.",
+      "exemplos": [
+        "Ao precisar atravessar um rio fundo para escapar de perseguidores, o personagem hesita visivelmente antes de entrar na água.",
+        "Convidado a jantar na casa de um sacerdote local, ele arruma desculpas educadas para recusar, sem saber explicar bem o motivo."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar."
+    },
+    "caracteristicas-distintas": {
+      "descricao": "Características Distintas dá ao personagem um traço físico marcante e fácil de lembrar — um cabelo branco incomum para a idade, uma cicatriz visível no rosto, olhos de cor rara. Não atrapalha nada no dia a dia comum, mas torna o personagem muito mais fácil de reconhecer e descrever depois, para o bem ou para o mal.\n\nEm situações onde passar despercebido importa — fugir de perseguidores, se disfarçar, evitar ser lembrado — esse traço pode virar um problema real, já que qualquer testemunha vai citá-lo primeiro.",
+      "exemplos": [
+        "Um cartaz de procurado descreve o fugitivo principalmente pela cicatriz que atravessa sua sobrancelha, tornando o disfarce quase inútil.",
+        "Numa multidão de mercado, o personagem é reconhecido de longe pelos cabelos brancos que destoam de sua idade jovem."
+      ],
+      "em_adamar": "É um traço físico comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "dica_mesa": "Escolha um traço que você goste de descrever sempre: ele vai aparecer com frequência nas cenas."
+    },
+    "castrado-ou-assexuado": {
+      "descricao": "Castrado ou Assexuado descreve um personagem que não possui os órgãos sexuais típicos de seu corpo, seja por condição de nascença, mutilação ou escolha. Na prática de jogo, isso raramente muda alguma coisa: é sobretudo um detalhe de identidade e de história pessoal, sem efeito mecânico direto na maioria das situações.\n\nPode, dependendo da cultura ou da cena, gerar reações sociais específicas — curiosidade, preconceito, ou simplesmente indiferença — mas isso fica a critério do narrador e do contexto da história.",
+      "exemplos": [
+        "Um eunuco que serviu numa corte estrangeira antes de se tornar aventureiro carrega essa história como parte de seu passado, sem que isso o defina em combate.",
+        "Numa vila conservadora, rumores sobre a condição do personagem circulam por curiosidade, mas não mudam como ele é tratado pelos que já o conhecem."
+      ],
+      "em_adamar": "É um traço pessoal comum, sem ligação com magia, e por isso é livre em Adamar."
+    },
+    "chauvinista": {
+      "descricao": "Chauvinista faz o personagem reparar, quase automaticamente, nas diferenças entre povos, sexos ou culturas — e costuma ter opiniões prontas sobre o que cada grupo 'é' ou 'faz'. Não precisa ser hostil ou violento nisso; muitas vezes é só um comentário, uma piada ou um pressuposto solto na conversa que revela o preconceito por trás.\n\nEm um mundo com povos e costumes variados, esse traço tende a gerar atrito social pequeno, mas constante, especialmente diante de quem não compartilha da mesma visão.",
+      "exemplos": [
+        "Ao negociar com uma mercadora de outra região, o personagem solta um comentário sobre 'como o povo dela sempre regateia', gerando um silêncio incômodo.",
+        "Diante de uma guerreira forasteira, ele questiona em voz alta se mulheres deveriam mesmo carregar espada."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "dica_mesa": "Use com cuidado: esse traço rende boa tensão social, mas vale combinar com a mesa o tom que ele deve ter.",
+      "relacionados": ["mente-aberta"]
+    },
+    "compreensivo": {
+      "descricao": "Compreensivo descreve um personagem que percebe com facilidade o que os outros sentem e tende, quase por reflexo, a tentar ajudar ou consolar quem sofre — mesmo estranhos, mesmo em momentos inconvenientes. É uma sensibilidade genuína às emoções alheias que às vezes atrapalha decisões mais frias ou pragmáticas.\n\nEsse traço pode custar tempo, recursos ou atenção que o grupo preferiria guardar para si, já que o personagem dificilmente ignora alguém visivelmente aflito.",
+      "exemplos": [
+        "Mesmo com pressa para chegar à cidade antes do anoitecer, o personagem para para consolar um viajante chorando à beira da estrada.",
+        "Ao notar o desconforto silencioso de um companheiro após uma perda, ele insiste em conversar sobre isso, mesmo sem ser convidado."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar."
+    },
+    "criativo": {
+      "descricao": "Criativo descreve um personagem cheio de ideias e soluções alternativas para qualquer problema — nem todas boas, mas sempre numerosas. Ele tende a propor abordagens pouco convencionais antes de considerar a mais óbvia, o que às vezes economiza tempo e às vezes só cria confusão desnecessária.\n\nCompanheiros mais práticos podem se cansar de ouvir sugestões elaboradas demais para problemas simples, mas de vez em quando uma dessas ideias estranhas acaba sendo exatamente o que a situação precisava.",
+      "exemplos": [
+        "Diante de um portão trancado, o personagem sugere seis formas diferentes de contorná-lo antes que alguém lembre de simplesmente arrombar a fechadura.",
+        "Ao planejar como cruzar um rio sem ponte, ele propõe construir uma balsa improvisada em vez de procurar um vau conhecido."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["sonhador"]
+    },
+    "cuidadoso": {
+      "descricao": "Cuidadoso descreve um personagem que prefere se preparar bem antes de se arriscar, checando equipamento, planejando rotas e considerando o pior cenário antes de agir. É o oposto do aventureiro impulsivo: ele prefere perder um pouco de tempo a entrar despreparado numa situação perigosa.\n\nEsse cuidado costuma render segurança extra, mas também pode frustrar companheiros mais apressados, que veem a cautela constante como demora desnecessária.",
+      "exemplos": [
+        "Antes de entrar numa masmorra, o personagem insiste em checar cada corda, tocha e ração, mesmo sob reclamação dos outros.",
+        "Diante de uma porta suspeita, ele prefere procurar armadilhas com calma a simplesmente empurrá-la e ver o que acontece."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar."
+    },
+    "codigo-de-honra-peculiaridade": {
+      "descricao": "Código de Honra, na versão de peculiaridade, é uma regra pessoal pequena e específica que o personagem segue por princípio, mesmo quando ninguém cobraria isso dele — nunca recusar um duelo justo, sempre agradecer publicamente ao anfitrião, jamais mentir sobre o próprio nome. Diferente do Código de Honra maior, uma desvantagem de peso completo, essa versão custa pouco porque raramente exige um sacrifício sério.\n\nAinda assim, de vez em quando a regra pode custar caro justamente por ser seguida à risca, mesmo numa situação em que quebrá-la seria mais seguro ou mais prático.",
+      "exemplos": [
+        "Desafiado abertamente por um rival bêbado numa taverna, o personagem aceita o duelo mesmo sabendo que poderia simplesmente ir embora.",
+        "Hospedado na casa de um estranho, ele insiste em elogiar publicamente a hospitalidade recebida, mesmo constrangendo o anfitrião tímido."
+      ],
+      "em_adamar": "É um código pessoal comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "dica_mesa": "Escreva a regra de forma bem específica: quanto mais concreta, mais fácil para o narrador saber quando ela pesa de verdade."
+    },
+    "deficiencias-menores": {
+      "descricao": "Deficiências Menores representa uma limitação física leve e permanente — um joelho que dói no frio, um dedo que não dobra direito, uma vista um pouco fraca de um olho — que incomoda sem chegar a atrapalhar de forma séria as atividades do dia a dia. É o tipo de marca física corriqueira que qualquer pessoa que já viveu o bastante costuma carregar.\n\nÉ especialmente comum em Adamar, onde ferimentos deixam marca e a cura mágica é rara: quase todo veterano de estrada, guerra ou trabalho pesado tem alguma dessas pequenas sequelas.",
+      "exemplos": [
+        "Um velho guerreiro sente o joelho travar sempre que o inverno chega, lembrança de uma queda antiga que nunca sarou direito.",
+        "Um ferreiro perdeu parte do movimento de um dedo anos atrás, e ainda assim segue batendo o martelo com a mesma perícia de sempre."
+      ],
+      "em_adamar": "Marcas físicas leves e permanentes combinam bem com a Materialidade de Adamar, onde o corpo guarda o que passou, e por isso são livres.",
+      "dica_mesa": "Use essa peculiaridade para dar história ao corpo do personagem: toda marca pequena pode virar uma cena de origem."
+    },
+    "despretensioso": {
+      "descricao": "Despretensioso descreve um personagem que naturalmente coloca os outros antes de si — divide comida antes de comer, cede a melhor cama, evita se gabar de conquistas próprias. Não é fraqueza nem falta de confiança; é apenas um hábito de humildade que às vezes o deixa em desvantagem material por escolha própria.\n\nEsse traço costuma render respeito e afeto de companheiros de viagem, mesmo quando o próprio personagem nunca busca reconhecimento por isso.",
+      "exemplos": [
+        "Ao dividir as últimas rações da viagem, o personagem serve os outros primeiro e fica satisfeito com o que sobra.",
+        "Elogiado por um feito importante, ele desvia o crédito para os companheiros, insistindo que fez só sua parte."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["orgulhoso"]
+    },
+    "distraido": {
+      "descricao": "Distraído faz o personagem se perder com facilidade em tarefas longas ou repetitivas, deixando a mente vagar para outros assuntos no meio do que deveria estar fazendo. Não é falta de inteligência — é apenas dificuldade de manter o foco quando a atividade não prende totalmente sua atenção.\n\nIsso costuma gerar pequenos deslizes: um detalhe esquecido, uma instrução mal seguida, um momento em que ele simplesmente não estava prestando atenção no que acontecia ao redor.",
+      "exemplos": [
+        "No meio de uma vigília noturna, o personagem se pega pensando em outra coisa e só percebe o barulho suspeito segundos depois do normal.",
+        "Encarregado de vigiar as bagagens no acampamento, ele se distrai observando o céu e nem nota quando um item some."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["atento"]
+    },
+    "embotado": {
+      "descricao": "Embotado descreve um personagem que confia quase exclusivamente no jeito que já conhece de fazer as coisas, resistindo a métodos novos mesmo quando eles poderiam ser melhores. Não é burrice — é conforto com o familiar, e desconfiança natural do que ainda não foi testado por ele mesmo.\n\nEsse traço pode atrasar soluções criativas em grupo, já que o personagem tende a insistir na abordagem de sempre antes de considerar alternativas sugeridas pelos outros.",
+      "exemplos": [
+        "Diante de uma nova técnica de escalada sugerida por um companheiro, o personagem insiste em usar seu método de sempre, mesmo mais lento.",
+        "Convidado a experimentar uma ferramenta estrangeira desconhecida, ele prefere seguir usando a velha, já surrada, com que sempre trabalhou."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar."
+    },
+    "enxerido": {
+      "descricao": "Enxerido descreve um personagem que não consegue deixar de se meter em assuntos que não são da sua conta — conversas alheias, segredos de vizinhos, problemas de estranhos. A curiosidade fala mais alto que a discrição, e isso costuma render tanto informações úteis quanto encrencas evitáveis.\n\nÉ um traço que rende boas cenas de investigação informal, mas também irrita facilmente quem prefere manter a própria vida privada.",
+      "exemplos": [
+        "Ao ouvir dois mercadores discutindo baixinho numa esquina, o personagem se aproxima com uma desculpa qualquer só para escutar melhor.",
+        "Curioso demais com uma carta lacrada sobre a mesa de um anfitrião, ele arrisca dar uma espiada quando ninguém está olhando."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar."
+    },
+    "estomago-sensivel": {
+      "descricao": "Estômago Sensível faz o personagem passar mal com facilidade diante de comida estranha, bebida forte ou excessos à mesa, mesmo quando ninguém mais ao redor sente nada. Não é uma doença grave — é só um corpo que reage mal a exageros que outros toleram sem problema.\n\nEm viagens onde a comida disponível nem sempre é a ideal, esse traço pode render desconforto real, além de uma piada recorrente entre companheiros mais resistentes.",
+      "exemplos": [
+        "Numa taverna de beira de estrada, o personagem passa a noite mal depois de aceitar um ensopado de origem duvidosa que os outros comeram sem problema.",
+        "Convidado a participar de uma competição de bebida numa festa de vila, ele desiste bem antes dos rivais, já sentindo o estômago revirar."
+      ],
+      "em_adamar": "É um traço físico comum, sem ligação com magia, e por isso é livre em Adamar."
+    },
+    "fantasias-peculiaridade": {
+      "descricao": "Fantasias, como peculiaridade, é uma crença pequena e inofensiva que o personagem sustenta mesmo sem provas — um talismã que 'só funciona' se carregado de um jeito específico, uma superstição sobre determinado número, a certeza de que certo animal traz sorte. Não afeta nada de fato no mundo, mas o personagem age como se afetasse.\n\nÉ o tipo de mania que os companheiros aprendem a tolerar, às vezes até acabam seguindo por hábito, sem realmente acreditar nela.",
+      "exemplos": [
+        "O personagem insiste em tocar o próprio amuleto três vezes antes de entrar em qualquer masmorra, e fica visivelmente incomodado se esquece o gesto.",
+        "Convencido de que gatos pretos cruzando o caminho trazem má sorte, ele sempre dá a volta, por mais que isso atrase o grupo."
+      ],
+      "em_adamar": "É uma crença pessoal pequena e sem efeito real no mundo, por isso é livre em Adamar."
+    },
+    "fragilidade-em-aceleracao": {
+      "descricao": "Fragilidade em Aceleração é uma desvantagem física que faz o personagem sofrer efeitos ruins — náusea, desmaio, até dano real — quando exposto a acelerações e forças muito acima do que o corpo humano enfrenta normalmente, como as de veículos motorizados rápidos, quedas livres prolongadas ou manobras violentas em alta velocidade. Fora desses contextos extremos, ela não tem efeito nenhum: um cavalo a galope ou uma queda comum não bastam para acioná-la.\n\nÉ uma peculiaridade pensada para cenários com tecnologia de veículos rápidos — carros, aviões, foguetes — onde esse tipo de força realmente acontece com frequência.",
+      "exemplos": [
+        "Um piloto de outro mundo sofreria mal-estar terrível ao ser lançado por uma catapulta de guerra improvisada, algo raro de acontecer numa estrada medieval comum.",
+        "Mesmo numa carruagem desgovernada descendo uma ladeira íngreme, dificilmente as forças envolvidas chegariam perto do que essa peculiaridade exige para se manifestar."
+      ],
+      "em_adamar": "Adamar não tem veículos capazes de gerar acelerações tão extremas quanto as que essa peculiaridade pressupõe, então ela não existe no cenário: não há carruagens motoras, aviões ou artilharia moderna para acioná-la."
+    },
+    "habitos-ou-expressoes": {
+      "descricao": "Hábitos ou Expressões é um bordão, gesto ou trejeito pequeno que o personagem repete com frequência o bastante para ser reconhecido por quem convive com ele — uma frase de efeito antes de lutar, o hábito de assobiar baixinho enquanto pensa, um gesto de mão específico ao concordar. Não afeta nada mecanicamente; é puramente uma marca de personalidade que ajuda a torná-lo memorável.\n\nEm situações de disfarce ou fuga, esse hábito pode inclusive atrapalhar, já que testemunhas costumam se lembrar dele com facilidade.",
+      "exemplos": [
+        "Antes de qualquer combate sério, o personagem sempre estala os dedos da mesma forma, um tique que os companheiros já aprenderam a reconhecer como aviso.",
+        "Sempre que mente, ele coça a nuca sem perceber — um hábito que um velho amigo já identificou, mas estranhos ainda não."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["marca-registrada-peculiaridade"]
+    },
+    "incapaz-de-flutuar": {
+      "descricao": "Incapaz de Flutuar é uma peculiaridade física rara que faz o personagem afundar na água de forma consistente, mesmo tentando boiar, por causa de uma densidade corporal ou composição incomum. É diferente de simplesmente não saber nadar: mesmo alguém habilidoso na água teria dificuldade real de se manter na superfície com essa condição.\n\nÉ um traço pensado sobretudo para personagens de composição não totalmente humana ou incomum, cujo corpo reage à água de um jeito que um corpo humano comum não reagiria.",
+      "exemplos": [
+        "Uma criatura feita de pedra ou metal afundaria instantaneamente ao cair num rio, não importa o quanto tentasse boiar.",
+        "Um ser incomum, mais denso que a água por natureza, precisaria sempre de ajuda ou de uma corda para atravessar qualquer travessia aquática."
+      ],
+      "em_adamar": "Adamar tem apenas humanos comuns, cujo corpo flutua como o de qualquer pessoa; essa peculiaridade pressupõe uma composição corporal fora do humano, e por isso não existe no cenário."
+    },
+    "incompetente": {
+      "descricao": "Incompetente marca uma perícia específica que o personagem simplesmente não consegue aprender direito, não importa o quanto treine ou tente — algo como um ponto cego pessoal, uma habilidade que sempre escapa por completo. Diferente de ser apenas ruim em algo, aqui a dificuldade é quase absoluta: o personagem nunca vai ser bom naquilo, e melhor aceitar isso.\n\nÉ um traço de caracterização mais do que uma limitação séria de jogo, já que costuma recair sobre uma única perícia bem específica, deixando o resto das capacidades do personagem intactas.",
+      "exemplos": [
+        "Apesar de anos tentando, o personagem nunca conseguiu aprender a cantar sem desafinar de forma vergonhosa, e todos ao redor sabem disso.",
+        "Ele simplesmente não consegue montar a cavalo com qualquer dignidade, sempre escorregando ou perdendo o equilíbrio nos momentos mais inconvenientes."
+      ],
+      "em_adamar": "É uma limitação pessoal comum, sem ligação com magia, e por isso é livre em Adamar."
+    },
+    "intolerancia-ao-alcool": {
+      "descricao": "Intolerância ao Álcool faz o personagem ficar bêbado com muito menos bebida do que a maioria das pessoas tolera, sentindo os efeitos de forma mais rápida e mais intensa. Não impede que ele beba — só garante que, quando bebe, os efeitos chegam antes e pesam mais do que chegariam para um companheiro qualquer.\n\nÉ um traço que rende boas cenas cômicas em tavernas e festas, mas também pode virar problema sério se o personagem precisar manter a cabeça no lugar durante uma negociação ou emboscada regada a bebida.",
+      "exemplos": [
+        "Depois de apenas duas canecas de cerveja numa festa de vila, o personagem já está cambaleando, para a diversão dos companheiros.",
+        "Numa negociação disfarçada de brinde entre mercadores, ele precisa fingir beber para não trair sua língua solta pelo álcool."
+      ],
+      "em_adamar": "É um traço físico comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["ressacas-terriveis", "vicio-menor"]
+    },
+    "marca-registrada-peculiaridade": {
+      "descricao": "Marca Registrada, como peculiaridade, é uma assinatura pequena e deliberada que o personagem deixa no que faz — um nó específico nas cordas que usa, uma flecha gravada com um símbolo pessoal, um corte característico nas próprias vítimas. Diferente de um simples hábito, aqui a marca é proposital: o personagem quer que aquilo seja reconhecido como obra sua.\n\nEsse traço rende reconhecimento e reputação, mas também facilita que investigadores, rivais ou vítimas conectem diferentes eventos ao mesmo autor.",
+      "exemplos": [
+        "Um ladrão de estradas sempre deixa uma pena amarrada no local do assalto, e mercadores já reconhecem o sinal antes mesmo de contar a história.",
+        "Uma arqueira grava suas iniciais em cada flecha que usa, e um caçador de recompensas já a identificou por essa mania."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["habitos-ou-expressoes"]
+    },
+    "mente-aberta": {
+      "descricao": "Mente Aberta descreve um personagem que não se incomoda com estranhos, forasteiros ou costumes diferentes dos seus, recebendo o desconhecido com curiosidade em vez de desconfiança. Onde a maioria hesitaria diante do incomum, ele tende a se aproximar, perguntar e tentar entender antes de julgar.\n\nÉ um traço valioso em viagens por terras alheias, mas também pode deixá-lo mais vulnerável a ser enganado por quem se aproveita dessa abertura.",
+      "exemplos": [
+        "Ao encontrar um viajante de costumes e roupas estranhas na estrada, o personagem puxa conversa com genuína curiosidade, enquanto os companheiros mantêm distância.",
+        "Numa vila desconfiada de forasteiros, ele é o único do grupo que trata os moradores locais com a mesma naturalidade de sempre."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["chauvinista"]
+    },
+    "mudanca-de-personalidade": {
+      "descricao": "Mudança de Personalidade faz o personagem se comportar de forma notavelmente diferente numa situação específica e recorrente — ao beber, sob muita pressão, diante de determinado tipo de pessoa — como se outra faceta sua assumisse o controle temporariamente. Fora desse gatilho específico, ele volta ao normal sem sequelas.\n\nÉ diferente de uma desvantagem mental mais séria: aqui a mudança é previsível, ligada a um gatilho claro, e raramente perigosa — mais estranha ou embaraçosa do que ameaçadora.",
+      "exemplos": [
+        "Depois de poucas doses de bebida, o guerreiro normalmente reservado vira o centro extrovertido de qualquer festa, para surpresa de quem só o conhece sóbrio.",
+        "Sob pressão extrema de combate, a personagem calma se torna fria e cortante, dando ordens secas que ninguém reconhece como seu jeito de sempre."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar."
+    },
+    "obsessoes-peculiaridade": {
+      "descricao": "Obsessões, como peculiaridade, é um objetivo pessoal pequeno e persistente que o personagem persegue sempre que a oportunidade aparece, sem que isso domine sua vida por completo — juntar dinheiro para comprar um barco, adquirir uma parcela de terra, encontrar um livro raro específico. Diferente da desvantagem maior de Obsessão, aqui o objetivo não consome cada decisão, só aparece com frequência na conversa e nas escolhas do personagem.\n\nÉ um ótimo gancho de história: metas pequenas e concretas dão ao narrador ideias fáceis de recompensa e complicação.",
+      "exemplos": [
+        "Sempre que passa por um porto, o personagem pergunta pelo preço de barcos à venda, guardando cada moeda extra para esse sonho.",
+        "Ao ouvir falar de terras férteis à venda numa região distante, ela interrompe qualquer conversa para perguntar os detalhes."
+      ],
+      "em_adamar": "É uma meta pessoal comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "dica_mesa": "Compartilhe essa meta com o narrador: pequenas obsessões são ótimos ganchos de recompensa numa campanha."
+    },
+    "orgulhoso": {
+      "descricao": "Orgulhoso descreve um personagem para quem status, reconhecimento e sucesso público importam muito, mesmo quando isso custa mais do que vale a pena. Ele se ofende com facilidade diante de desrespeito, real ou percebido, e tende a agir de formas que preservem sua imagem, às vezes em detrimento de soluções mais práticas ou discretas.\n\nEsse traço rende boas cenas de conflito social, especialmente quando a situação pede humildade ou anonimato e o personagem simplesmente não consegue abrir mão do próprio reconhecimento.",
+      "exemplos": [
+        "Ofendido por ser tratado como um aventureiro qualquer por um nobre local, o personagem insiste em corrigir publicamente o mal-entendido, mesmo sem necessidade.",
+        "Ao precisar se disfarçar de mendigo para entrar numa cidade sitiada, ele reluta profundamente em abrir mão até das próprias roupas finas."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["despretensioso"]
+    },
+    "pernas-tortas": {
+      "descricao": "Pernas Tortas é um traço físico que deixa as pernas do personagem visivelmente arqueadas, o que não chega a incapacitar o dia a dia normal, mas atrapalha um pouco em saltos, corridas de precisão ou qualquer movimento que dependa de pernas alinhadas — além de render comentários e risadas de quem repara na aparência.\n\nÉ mais um detalhe de caracterização física e social do que uma limitação séria: o personagem sente o efeito, mas raramente é impedido de fazer o que precisa.",
+      "exemplos": [
+        "Ao tentar saltar de uma pedra para outra atravessando um riacho, o personagem se desequilibra mais do que os companheiros, para risadas discretas.",
+        "Crianças de uma vila zombam abertamente do jeito de andar do viajante, sem imaginar quantas batalhas aquelas pernas já sobreviveram."
+      ],
+      "em_adamar": "É um traço físico comum, sem ligação com magia, e por isso é livre em Adamar."
+    },
+    "preferencias": {
+      "descricao": "Preferências descreve um gosto pessoal marcante que o personagem procura satisfazer sempre que pode — uma comida específica, um tipo de música, o conforto de dormir sempre voltado para a mesma direção. Não é um vício nem uma necessidade real: é só algo que o deixa visivelmente mais feliz quando presente, e um pouco mais rabugento quando ausente por muito tempo.\n\nÉ um traço leve, mais sobre caracterização e pequenas cenas de conforto do que sobre qualquer limitação de jogo.",
+      "exemplos": [
+        "Sempre que passa por um mercado, o personagem procura por um doce específico de sua infância, mesmo que isso atrase o grupo por alguns minutos.",
+        "Ele insiste em armar sua cama de acampamento sempre virada para o leste, um costume que ninguém entende, mas que o deixa visivelmente mais tranquilo."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar."
+    },
+    "ressacas-terriveis": {
+      "descricao": "Ressacas Terríveis faz o personagem sofrer ressacas muito mais longas e pesadas do que o normal depois de beber além da conta, com dores de cabeça, náusea e mau humor que se estendem bem além do que um bebedor comum sentiria. Diferente de Intolerância ao Álcool, aqui o problema não é embebedar rápido — é pagar caro no dia seguinte.\n\nÉ um traço que costuma render boas cenas cômicas na manhã seguinte a uma festa, especialmente se a aventura exige que o personagem esteja em plena forma logo cedo.",
+      "exemplos": [
+        "Depois de uma noite de comemoração na vila, o personagem mal consegue erguer a cabeça na manhã seguinte, enquanto o resto do grupo já está pronto para partir.",
+        "Uma ressaca daquelas obriga o guerreiro a viajar o dia inteiro sentindo o mundo girar, arrependido de cada gole da noite anterior."
+      ],
+      "em_adamar": "É um traço físico comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["intolerancia-ao-alcool"]
+    },
+    "simpatico": {
+      "descricao": "Simpático descreve um personagem que prefere fazer quase tudo acompanhado, sentindo-se mais confortável e mais eficaz em grupo do que sozinho. Não é medo de estar só — é uma preferência genuína pela companhia, que o leva a buscar parceria mesmo em tarefas que poderia perfeitamente resolver sozinho.\n\nÉ o oposto do traço Antipático, e costuma tornar o personagem um bom elo social dentro do grupo, sempre disposto a puxar companhia para qualquer empreitada.",
+      "exemplos": [
+        "Mesmo numa tarefa simples como buscar água no poço, o personagem convida alguém para ir junto, só pela companhia.",
+        "Ao precisar montar guarda sozinho durante a noite, ele insiste em revezar com outra pessoa, mesmo sem necessidade real."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["antipatico"]
+    },
+    "sonhador": {
+      "descricao": "Sonhador descreve um personagem que passa mais tempo imaginando como fazer algo melhor do que efetivamente fazendo, perdendo-se em planos elaborados e ideias grandiosas que nem sempre saem do papel. Não falta talento nem vontade — falta o empurrão final entre pensar e agir.\n\nEsse traço costuma render boas ideias adiadas indefinidamente, e frustração de companheiros mais práticos que só quereriam ver o plano em ação.",
+      "exemplos": [
+        "Diante de uma vila em ruínas, o personagem passa a tarde imaginando como reconstruiria tudo, sem levantar um só tijolo.",
+        "Ele elabora um plano brilhante para escapar da masmorra, mas demora tanto detalhando cada etapa que quase perde a janela de oportunidade real."
+      ],
+      "em_adamar": "É um traço de personalidade comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["criativo"]
+    },
+    "voto-peculiaridade": {
+      "descricao": "Voto, como peculiaridade, é uma promessa pessoal pequena que o personagem faz e cumpre com disciplina, mesmo sem ninguém cobrando — nunca beber álcool, doar parte de tudo que ganha a um templo, jamais dormir sob um teto que não seja seu. Diferente do Voto como desvantagem maior, essa versão custa pouco porque raramente exige um sacrifício realmente grande.\n\nAinda assim, cumprir a promessa à risca pode gerar situações incômodas, especialmente quando quebrar o voto resolveria um problema com muito mais facilidade.",
+      "exemplos": [
+        "Convidado a brindar uma vitória importante, o personagem recusa educadamente a bebida, fiel à promessa que fez havia anos.",
+        "Mesmo precisando de cada moeda para reparar seu equipamento, ele separa uma parte do pagamento recebido para doar ao templo local, como sempre faz."
+      ],
+      "em_adamar": "É uma promessa pessoal comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["codigo-de-honra-peculiaridade"]
+    },
+    "vicio-menor": {
+      "descricao": "Vício Menor descreve um hábito de consumo que o personagem gosta de manter sempre que possível — um cachimbo depois das refeições, uma taça de vinho à noite, um doce específico — sem que isso chegue a ser um vício de verdade capaz de atrapalhar sua vida. Ele sente falta quando não tem acesso àquilo, mas consegue passar sem, se precisar.\n\nÉ mais uma questão de conforto e caracterização do que de dependência real: o personagem funciona normalmente sem o hábito, só prefere não precisar.",
+      "exemplos": [
+        "Depois de um dia inteiro de viagem, o personagem sente falta do cachimbo que deixou para trás na última cidade.",
+        "Numa masmorra sem qualquer chance de conseguir vinho, ele reclama baixinho da abstinência forçada, mas segue firme na missão."
+      ],
+      "em_adamar": "É um hábito pessoal comum, sem ligação com magia, e por isso é livre em Adamar.",
+      "relacionados": ["intolerancia-ao-alcool"]
+    }
+  }
+}

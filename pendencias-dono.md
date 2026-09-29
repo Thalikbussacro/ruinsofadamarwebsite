@@ -23,13 +23,16 @@ Coisas que dependem de você (decisão, acesso ou teste no seu aparelho). Vou ac
 - [ ] **Diário da sessão:** na ficha completa (Cofre › personagem), painel Em jogo. Escreva uma entrada; role algo e clique "→ diário" no quadro de rolagens.
 - [ ] **Consulta rápida de combate** (À Mesa › Combate): ver se o resumo está do jeito que a mesa usa, se falta algo (ex.: agarrar, derrubar, tabela de distância).
 
-## Enriquecimento dos itens (próximo grande trabalho)
+## Enriquecimento dos itens (feito — revisar quando puder)
 
-Plano completo em `docs/enriquecimento-itens.md`: os 1097 itens (perícias, vantagens, desvantagens, peculiaridades e equipamento) ganham `descricao`, `exemplos`, `em_adamar` e `dica_mesa`, em 21 fatias mais uma de estrutura. Andamento: `node tools/enriquecimento.mjs`.
+Os 1097 itens ganharam "Mais sobre" (descrição, exemplos na mesa, Adamar, dica, relacionados) e 1049 foram ligados ao GCS. Detalhes em `docs/enriquecimento-itens.md`. Os textos são com palavras próprias, a partir do conhecimento de GURPS, não do livro: vale conferir com o livro na mão os que você mais usa.
 
-- [ ] **Aprovar o formato** (campos e o exemplo no fim do documento) antes de eu começar a S0.
-- [ ] **Definir a ordem**, se quiser outra. Hoje o plano começa pelas perícias livres, que a mesa mais usa.
-- [ ] **Texto do livro:** as descrições serão com palavras próprias e página citada, nunca cópia do *Módulo Básico* (repositório público; direitos autorais). Os exemplos podem ser inventados, mas a lore de Adamar não: onde o cânone não diz nada, o `em_adamar` fica vazio para você completar.
+- [ ] **Conferir com o livro** (fiquei em dúvida sobre qual regra o nome traduzido representa):
+  - **Arrebatador** (vantagem, 80 pts, pág. 41): não achei o correspondente em inglês; o texto descreve um fascínio sobrenatural.
+  - **Interposição** (vantagem, pág. 66): suspeito que seja o *Jumper* (viajar entre mundos ou épocas); o texto está genérico.
+  - Já corrigidos por mim, mas vale olhar: Dissimulação (= *Acting*), Lábia (= *Fast-Talk*), Temor (= *Fearfulness*) e Mão Fraca (= *Bad Grip*, pegada fraca; o resumo antigo falava em mão inábil e estava errado).
+- [ ] **Texto do livro para consulta pessoal:** a proteção do Claude Code não me deixa extrair texto do PDF, nem para uso local. Se quiser, dá para você mesmo extrair para `data-local/` (fora do git) e eu faço o site mostrar esse texto só quando ele existir na sua máquina, do mesmo jeito que os números de combate.
+- [ ] **Itens sem vínculo com o GCS** (48): ataques naturais, armaduras de cavalo e alguns traços sem equivalente direto. Se souber o nome em inglês de algum, é só me dizer.
 
 ## Ideias para a próxima rodada
 

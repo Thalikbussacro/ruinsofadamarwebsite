@@ -45,10 +45,13 @@ js/gurps-efeitos.js  texto e etiqueta (aplicado, sempre, condicional, regra) dos
 js/personagens-salvos.js  personagens guardados no navegador (localStorage)
 js/personagens.js    Cofre de personagens: grade estilo seleção de MMO, painel da ficha e ficha completa (mesa/personagens.html)
 js/icones.js         desenha o ícone de um item (window.iconeSvg)
+js/detalhes.js       "Mais sobre" de um item: descrição, exemplos, Adamar, dica (window.detalhesItem)
 js/criador.js        página do criador de personagem (mesa/criador.html)
 js/combate.js        consulta rápida de combate (manobras e iniciativa de regras.json)
 js/dados-gurps.js    GERADO a partir de data/gurps/ — não editar à mão
 data/gurps/          base de conhecimento GURPS em JSON (fonte oficial)
+data/gurps/enriquecimento/  textos longos de cada item, um arquivo por fatia (ver docs/enriquecimento-itens.md)
+data/gurps/gcs.json  vínculo de cada item com o GCS (id, nome em inglês, página do Basic Set)
 data/adamar/         dados do cenário (modelos prontos de personagem)
 referencias/         PDFs de referência, só local (fora do git)
 data-local/          base completa com estatísticas do livro, só local (fora do git)
@@ -95,6 +98,9 @@ node tools/gerar-dados.mjs
 - `tabela-dano.json` (só quando publicada com `--publicar`): dano básico (GdP/GeB) por ST, usado na ficha de combate.
 - `icones.json`: o desenho (SVG 24×24, só contorno) de cada ícone usado no campo `icone` das listas. Vem do [Tabler Icons](https://tabler.io/icons) (MIT), com o link de origem de cada um; os `custom:…` são desenhos próprios em `data/icones-proprios.json`. Depois de trocar ícones, rode `node tools/icones.mjs` e `node tools/gerar-dados.mjs`.
 - `equipamento.json`: armas, armaduras, escudos e equipamento variado, com NT, página e marcação para Adamar. Traz o **preço** (em coroas) dos itens de Adamar. `node tools/importar-equipamento.mjs --publicar` acrescenta também **peso**, **modos de ataque** (dano, alcance, aparar, ST mínima, precisão), **proteção** das armaduras, **bônus de defesa** dos escudos e a tabela de dano (`tabela-dano.json`); a ficha de combate do site usa esses números quando eles estão presentes e funciona sem eles. Publicá-los no repositório é decisão do narrador. A transcrição completa do livro fica em `data-local/gurps/equipamento-completo.json`, fora do git. Para refazer a partir das transcrições: `node tools/importar-equipamento.mjs <pasta-das-secoes>`, depois `node tools/estruturar-armas.mjs` (estrutura os modos de ataque na base local) e por fim `node tools/importar-equipamento.mjs --publicar` (leva preço, peso e números de combate para a base pública, junto com a tabela de dano).
+
+- `enriquecimento/*.json`: descrição, exemplos na mesa, o que o item é em Adamar, dica e itens relacionados, escritos com palavras próprias (nunca texto do livro). O gerador junta aos itens. Andamento e fatias: `node tools/enriquecimento.mjs` e `docs/enriquecimento-itens.md`.
+- `gcs.json`: o item correspondente no GCS (GURPS Character Sheet). Conferir com `node tools/gcs.mjs conferir` (lê a biblioteca do GCS instalada na máquina).
 
 Os campos `custo_estruturado` (traços) e `predefinidos` (perícias) são gerados a partir do texto por `node tools/custo-estruturado.mjs` e `node tools/predefinidos.mjs`; rode de novo se mudar o texto de custo ou de pré-definido.
 

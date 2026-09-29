@@ -1,0 +1,517 @@
+{
+  "lista": "equipamento",
+  "itens": {
+    "zarabatana": {
+      "descricao": "A zarabatana é um tubo comprido pelo qual você sopra dardos pequenos e leves, usando a perícia própria Zarabatana. É uma das armas de distância mais silenciosas que existem: não faz estalo de corda nem estrondo, só o sopro do atirador, o que a torna ideal para quem precisa agir sem ser notado. Em compensação, o dardo carrega pouca força e o alcance útil é curto, então sozinha ela quase não fere ninguém — seu verdadeiro valor aparece quando o dardo carrega algum veneno ou toxina, já que aí o problema não é o ferimento em si, mas o que ele injeta.\n\nExige fôlego e concentração no momento do sopro, então correr, estar ferido ou ter acabado de se esforçar atrapalha a pontaria. Também não serve para nada em combate corpo a corpo.",
+      "exemplos": [
+        "Um batedor sopra um dardo silencioso contra o cão de guarda antes que ele possa latir.",
+        "Escondido entre as vigas do telhado, alguém usa a zarabatana para acertar o guarda isolado sem alarmar os outros.",
+        "Sem veneno nos dardos, o ferimento da zarabatana mal incomoda um adversário decidido."
+      ],
+      "em_adamar": "É uma ferramenta simples de caça e furtividade, plenamente dentro da tecnologia medieval de Adamar.",
+      "dica_mesa": "Ela só vira ameaça de verdade combinada com algum veneno nos dardos.",
+      "relacionados": ["boleadeira"]
+    },
+    "boleadeira": {
+      "descricao": "A boleadeira é um conjunto de cordas com pesos nas pontas, arremessado girando no ar para se enrolar nas pernas do alvo e derrubá-lo ou impedir que corra. Usa a perícia própria Boleadeira e não foi feita para ferir: seu efeito principal é imobilizar, então funciona melhor contra quem você quer capturar vivo ou impedir de fugir do que contra um inimigo que precisa ser derrotado em combate direto.\n\nSoltar-se de uma boleadeira bem lançada exige tempo e atenção, o que a torna útil para separar um alvo do resto do grupo antes que ele reaja ou peça ajuda. Contra alguém já parado ou preso, ela não acrescenta nada.",
+      "exemplos": [
+        "Um caçador de recompensas derruba o fugitivo com a boleadeira em vez de sacar a espada.",
+        "Um pastor da fronteira prende as patas de um lobo que ronda o rebanho à noite.",
+        "Um batedor lança a boleadeira nas pernas do sentinela antes que ele consiga soar o alarme."
+      ],
+      "em_adamar": "É uma arma simples de captura, comum entre caçadores e pastores das terras de Adamar.",
+      "dica_mesa": "Ótima escolha quando o objetivo é capturar alguém vivo sem entrar em combate direto.",
+      "relacionados": ["laco", "rede-grande", "rede-de-combate"]
+    },
+    "arco-longo": {
+      "descricao": "O arco longo é a versão mais alta e potente da família de arcos, todos usados com a mesma perícia Arco. Puxar a corda até a orelha exige bastante força física, mas em troca ele acerta mais forte e alcança mais longe que os arcos menores — é a escolha clássica de companhias de arqueiros e de caçadores de presas grandes. Por ser comprido, atrapalha em espaços fechados, matas cerradas, corredores de masmorra ou a cavalo: você precisa de espaço de sobra para erguer e puxar a arma inteira.\n\nEle não tem trava nem gatilho, então manter o alvo na mira por muito tempo cansa o braço, e usá-lo sem o treino certo é lento e impreciso — a diferença entre um arqueiro comum e um mestre é enorme.",
+      "exemplos": [
+        "Arqueiros na muralha da vila disparam o arco longo contra os saqueadores antes que cheguem ao portão.",
+        "Um caçador experiente abate um javali a uma distância segura, sem precisar se aproximar da fera.",
+        "Um guarda tenta usar o arco longo dentro de uma cripta estreita e a ponta bate na parede."
+      ],
+      "dica_mesa": "Se o personagem não tem força suficiente, considere um arco menor antes de investir tudo no alcance.",
+      "relacionados": ["arco-comum", "arco-curto", "arco-composto"]
+    },
+    "arco-comum": {
+      "descricao": "O arco comum é o meio-termo da família de arcos, todos usados com a mesma perícia Arco. Nem tão grande quanto o arco longo, nem tão compacto quanto o curto, ele equilibra alcance, força necessária para puxar e facilidade de transporte, o que o torna a escolha mais comum entre milícias, caçadores e viajantes que precisam de uma arma versátil para o dia a dia.\n\nÉ mais barato que o arco composto e mais fácil de substituir se quebrar ou se perder numa fuga pela floresta, o que o torna também a arma mais fácil de encontrar à venda em qualquer vila ou cidade.",
+      "exemplos": [
+        "Um batedor carrega um arco comum na estrada, pronto tanto para caçar quanto para se defender de assaltantes.",
+        "Uma miliciana treina com o arco comum porque é o que a guarda local consegue fornecer a todos.",
+        "Um grupo de aventureiros repõe flechas para o arco comum na primeira cidade que encontra."
+      ],
+      "dica_mesa": "Bom arco para começar: não penaliza tanto quem tem pouca força e ainda cobre boa parte das situações.",
+      "relacionados": ["arco-longo", "arco-curto", "arco-composto"]
+    },
+    "arco-curto": {
+      "descricao": "O arco curto é a versão mais compacta da família de arcos, usada com a mesma perícia Arco dos demais. Sua vantagem é a facilidade de manejo: pode ser usado a cavalo, dentro de matas fechadas, barcos ou corredores estreitos, onde um arco maior esbarraria nas paredes ou nos galhos.\n\nEm troca, alcança menos longe e bate mais fraco que os arcos maiores, então costuma ser a escolha de batedores, cavaleiros montados e caçadores de presas pequenas, não de quem quer deter um inimigo pesado a boa distância.",
+      "exemplos": [
+        "Um batedor a cavalo usa o arco curto para caçar aves sem precisar desmontar.",
+        "Dentro da mata fechada perto das ruínas, o arco curto é o único que não prende nos galhos.",
+        "Um contrabandista guarda um arco curto sob o banco da carroça, fácil de esconder."
+      ],
+      "dica_mesa": "Prefira o arco curto se o personagem luta montado ou costuma entrar em espaços apertados.",
+      "relacionados": ["arco-longo", "arco-comum", "arco-composto"]
+    },
+    "arco-composto": {
+      "descricao": "O arco composto é feito de camadas de materiais diferentes coladas entre si, uma técnica que aumenta a força de disparo sem exigir um arco tão comprido quanto o arco longo. Usa a mesma perícia Arco dos demais e entrega desempenho equivalente ou melhor que um arco bem maior num pacote mais fácil de manejar.\n\nO resultado é uma arma cara e mais frágil em climas muito úmidos ou muito quentes, já que a cola e as camadas podem se soltar com o tempo — é a escolha de quem pode pagar por qualidade e não se importa com a manutenção extra que ela exige.",
+      "exemplos": [
+        "Um mercador armado exibe seu arco composto como sinal de que pode pagar o melhor equipamento.",
+        "Depois de atravessar o pântano, o dono do arco composto verifica se a cola resistiu à umidade.",
+        "Um capitão de guarda reserva os arcos compostos só para seus melhores atiradores."
+      ],
+      "dica_mesa": "Lembre o jogador de cuidar do arco composto em viagens por lugares muito úmidos ou muito quentes.",
+      "relacionados": ["arco-longo", "arco-comum", "arco-curto"]
+    },
+    "capa-pesada": {
+      "descricao": "A capa pesada é usada como arma ao ser arremessada sobre o oponente, cobrindo sua visão e atrapalhando seus movimentos por um instante — tempo suficiente para golpear em seguida ou fugir. Usa a perícia própria Capa e é mais um recurso de abertura do que uma arma de dano: sozinha, ela não fere ninguém, só cega e atrapalha.\n\nPor ser grossa e pesada, cobre melhor o alvo e é mais difícil dele se livrar dela depressa, mas essa mesma robustez a torna mais lenta e cansativa de arremessar bem do que a versão leve.",
+      "exemplos": [
+        "Um espadachim de rua joga a capa pesada sobre o guarda antes de sacar a lâmina.",
+        "Um assaltante de estrada usa a capa pesada para cegar o cocheiro e saltar na carruagem.",
+        "Sem outra arma, um viajante arranca a própria capa e a lança sobre o atacante para ganhar tempo."
+      ],
+      "dica_mesa": "Combine com outra arma: a capa sozinha não resolve o combate, só abre a brecha.",
+      "relacionados": ["capa-leve"]
+    },
+    "capa-leve": {
+      "descricao": "A capa leve cumpre o mesmo papel da capa pesada — arremessada sobre o oponente para atrapalhar sua visão e seus movimentos, usando a mesma perícia Capa — mas, por ser mais fina, é bem mais rápida de lançar e de recolher depois do golpe.\n\nEm compensação, cobre pior o alvo e é mais fácil dele se libertar depressa, então funciona melhor como uma distração de um instante do que como uma amarra confiável.",
+      "exemplos": [
+        "Uma ladra usa a capa leve para atrapalhar o guarda por um segundo e escapar pelo beco.",
+        "Um duelista experiente prefere a capa leve porque recupera a arma mais rápido para o próximo golpe.",
+        "Numa emboscada rápida, a capa leve é jogada e largada, sem tempo de recuperá-la depois."
+      ],
+      "dica_mesa": "Boa opção para quem prioriza velocidade e não pretende ficar preso lutando com a capa nas mãos.",
+      "relacionados": ["capa-pesada"]
+    },
+    "besta": {
+      "descricao": "A besta dispara virotes usando um mecanismo — manivela, trava ou gancho — que faz o trabalho pesado de armar a arma, ao contrário do arco, em que o próprio braço do atirador sustenta toda a tensão. Isso significa que qualquer pessoa, mesmo sem muita força física, consegue usá-la bem depois de um treinamento básico com a perícia Besta, e que o atirador pode manter o alvo na mira sem se cansar enquanto espera o momento certo.\n\nA desvantagem é a recarga: rearmar a besta depois de cada tiro leva bem mais tempo do que preparar outra flecha num arco, então ela rende poucos disparos rápidos seguidos.",
+      "exemplos": [
+        "Uma miliciana com pouco treino em armas ainda acerta bem com a besta depois de poucas semanas de prática.",
+        "Um caçador de recompensas mantém a besta armada e apontada, esperando o momento exato para atirar.",
+        "No meio de uma emboscada, o atirador de besta lamenta não ter tempo de recarregar para um segundo tiro."
+      ],
+      "dica_mesa": "Boa escolha para quem quer eficácia sem depender de muita força ou de anos de treino.",
+      "relacionados": ["besta-de-garrucha", "besta-de-pelouro", "besta-de-alavanca", "arco-comum"]
+    },
+    "besta-de-garrucha": {
+      "descricao": "A besta de garrucha é uma versão pequena da besta, feita para ser usada com uma mão só e escondida sob uma capa ou dentro de uma bolsa. Usa a mesma perícia Besta, mas sacrifica força de disparo e alcance em troca de discrição — é a arma de quem precisa de uma ameaça rápida e oculta, não de quem quer deter um inimigo bem protegido a distância.\n\nPor ser pequena, também é mais rápida de recarregar que uma besta grande, embora ainda não tão rápida quanto sacar uma segunda faca.",
+      "exemplos": [
+        "Uma espiã guarda a besta de garrucha na manga da veste, pronta para um tiro súbito.",
+        "Um nobre desconfiado mantém a besta de garrucha escondida sob a mesa durante negociações tensas.",
+        "Um assassino prefere a besta de garrucha justamente por não precisar erguer nada volumoso para mirar."
+      ],
+      "dica_mesa": "Ótima para personagens que preferem discrição a poder de fogo.",
+      "relacionados": ["besta"]
+    },
+    "besta-de-pelouro": {
+      "descricao": "A besta de pelouro é uma besta adaptada para lançar pedras ou bolinhas de chumbo em vez de virotes, usando a mesma perícia Besta. Esse projétil arredondado bate por concussão em vez de cortar ou perfurar, o que a torna a escolha natural de quem quer caçar aves e pequenos animais sem estragar a pele ou a carne, ou de quem precisa incapacitar alguém sem necessariamente matar.\n\nNão é uma boa opção quando o objetivo é deter uma ameaça grande e perigosa depressa.",
+      "exemplos": [
+        "Um caçador usa a besta de pelouro para abater pássaros sem furar a carne que vai vender.",
+        "Um guarda usa a besta de pelouro contra um bêbado alterado, só para derrubá-lo sem feri-lo de verdade.",
+        "Um batedor guarda a besta de pelouro para caça pequena e a besta comum para ameaças reais."
+      ],
+      "dica_mesa": "Lembre que ela é feita para incapacitar ou caçar, não para resolver um combate sério.",
+      "relacionados": ["besta", "funda"]
+    },
+    "besta-de-alavanca": {
+      "descricao": "A besta de alavanca não é uma arma em si, mas um acessório — uma alavanca em forma de pé de cabra que se encaixa na besta para ajudar a armá-la. Bestas mais fortes exigem mais força do atirador para rearmar manualmente do que os braços conseguem sozinhos, e essa alavanca multiplica a força aplicada, tornando possível usar bestas mais potentes sem depender de uma manivela embutida.\n\nEla acelera a recarga em comparação a tentar armar a besta só na força bruta, mas ainda é mais lenta que uma manivela integrada.",
+      "exemplos": [
+        "Um atirador de besta carrega a alavanca no cinto, pronta para rearmar entre um tiro e outro.",
+        "Sem a alavanca, o soldado mais franzino da guarnição não consegue armar sozinho a besta mais pesada do arsenal.",
+        "Perder a alavanca no meio de uma perseguição deixa o atirador com uma besta que ele não consegue recarregar."
+      ],
+      "dica_mesa": "Não esqueça de anotar esse acessório separado da besta em si — sem ele, algumas bestas não são rearmadas na força bruta.",
+      "relacionados": ["besta"]
+    },
+    "laco": {
+      "descricao": "O laço é uma corda com um nó corrediço na ponta, arremessado para capturar um alvo pelo pescoço, pelo tronco ou pelos membros sem feri-lo. Usa a perícia própria Laço e existe puramente para prender, não para causar dano — depois de laçado, o alvo ainda precisa ser dominado ou controlado, já que o laço sozinho só impede que ele se afaste.\n\nÉ uma ferramenta clássica de quem lida com animais ou de quem precisa capturar alguém vivo para interrogar, prender ou entregar a uma autoridade.",
+      "exemplos": [
+        "Um vaqueiro usa o laço para conter um cavalo assustado antes que ele fuja para o bosque.",
+        "Um caçador de recompensas laça o fugitivo pelas pernas para impedir que ele continue correndo.",
+        "Um guarda tenta laçar o ladrão que pula o muro, mas erra por pouco e o vê desaparecer no beco."
+      ],
+      "dica_mesa": "Lembre que laçar não imobiliza sozinho — alguém ainda precisa dominar o alvo depois.",
+      "relacionados": ["boleadeira", "rede-grande", "rede-de-combate"]
+    },
+    "rede-grande": {
+      "descricao": "A rede grande é lançada sobre uma área ampla para enredar um oponente inteiro, prendendo braços, pernas e armas ao mesmo tempo. Usa a perícia própria Rede e é mais eficaz quanto mais larga e pesada for a rede, já que isso aumenta a chance de cobrir bem o alvo — mas o mesmo peso a torna mais lenta e cansativa de arremessar, e mais difícil de recolher depois.\n\nÉ uma arma pensada para capturar ou neutralizar sem matar, clássica de arenas, caçadores de monstros e guardas que precisam prender alguém vivo.",
+      "exemplos": [
+        "Um caçador de monstros lança a rede grande sobre a fera antes que ela ataque de novo.",
+        "Guardas usam a rede grande para capturar um suspeito sem espadas ou sangue envolvidos.",
+        "Numa arena de duelos, o combatente com a rede grande tenta prender o oponente logo de início."
+      ],
+      "dica_mesa": "Boa escolha em grupo: alguém prende com a rede enquanto outro finaliza ou imobiliza de vez.",
+      "relacionados": ["rede-de-combate", "laco", "boleadeira"]
+    },
+    "rede-de-combate": {
+      "descricao": "A rede de combate é uma versão menor e mais leve da rede grande, pensada para ser usada em combate corpo a corpo a curta distância, muitas vezes junto com uma arma na outra mão. Usa a mesma perícia Rede, mas cobre uma área menor e prende com menos força que a rede grande.\n\nFunciona melhor como uma abertura rápida — travar um braço ou as pernas por um instante — do que como uma captura completa e confiável.",
+      "exemplos": [
+        "Um duelista de arena usa a rede de combate numa mão e uma arma improvisada na outra.",
+        "Um batedor prende os pés do perseguidor com a rede de combate para ganhar distância.",
+        "Num corredor estreito da masmorra, a rede de combate é bem mais fácil de manejar que a rede grande."
+      ],
+      "dica_mesa": "Pense nela como complemento de outra arma, não como solução sozinha.",
+      "relacionados": ["rede-grande", "laco"]
+    },
+    "funda": {
+      "descricao": "A funda é uma tira simples de couro ou tecido usada para arremessar pedras com força bem maior do que um braço sozinho conseguiria. Usa a perícia própria Funda, é barata, silenciosa, e a munição — pedras — pode ser encontrada em praticamente qualquer lugar, o que a torna a arma de distância mais acessível que existe.\n\nEm troca, exige bastante prática para mirar bem, e mesmo na mão de um atirador competente bate mais fraco que um arco ou uma besta.",
+      "exemplos": [
+        "Um pastor afugenta lobos do rebanho com pedras lançadas da funda.",
+        "Sem flechas nem virotes, um sobrevivente recorre à funda e às pedras do caminho.",
+        "Crianças de vila aprendem a usar a funda antes mesmo de segurar uma espada de verdade."
+      ],
+      "dica_mesa": "Ótima arma de reserva: nunca falta munição, mas não conte com ela contra alguém bem protegido.",
+      "relacionados": ["fustibalo"]
+    },
+    "fustibalo": {
+      "descricao": "O fustíbalo é uma funda montada na ponta de um bastão comprido, o que aumenta a alavanca do arremesso e permite lançar pedras ou projéteis mais longe do que uma funda de mão. Usa a mesma perícia Funda, mas exige espaço de sobra para o giro do bastão antes do lançamento, o que o torna pouco prático em corredores apertados ou em meio a uma multidão.\n\nÉ a escolha de quem quer o alcance extra e tem espaço para usá-lo, como no alto de uma muralha ou num campo aberto.",
+      "exemplos": [
+        "Defensores no alto da muralha usam o fustíbalo para atingir os atacantes ainda longe do fosso.",
+        "Num campo aberto, o fustíbalo alcança onde a funda comum não chega.",
+        "Preso num corredor estreito da masmorra, o dono do fustíbalo não tem espaço para girar o bastão."
+      ],
+      "dica_mesa": "Pergunte ao jogador se há espaço de sobra antes de deixá-lo usar o fustíbalo em combate fechado.",
+      "relacionados": ["funda"]
+    },
+    "arremessador-de-lanca": {
+      "descricao": "O arremessador de lança é um bastão com um encaixe na ponta que estende o alcance do braço do atirador, funcionando como uma alavanca para lançar dardos ou lanças pequenas com muito mais força e distância do que um arremesso a mão livre conseguiria. Usa a perícia própria Arremessador de Lança e é uma ferramenta de caça antiga, útil especialmente contra presas grandes ou perigosas que você prefere não enfrentar de perto.\n\nSozinho, ele não é uma arma: só serve combinado com os dardos ou lanças pequenas feitos para ele.",
+      "exemplos": [
+        "Um caçador das terras selvagens usa o arremessador de lança contra uma fera grande demais para enfrentar de perto.",
+        "Um batedor carrega dardos leves e o arremessador de lança para caçar sem gastar flechas.",
+        "Sem os dardos certos, o arremessador de lança na mão do aventureiro não serve de nada."
+      ],
+      "dica_mesa": "Confira se o jogador também tem os dardos ou lanças pequenas certas — o bastão sozinho não lança nada.",
+      "relacionados": ["lanca-de-arremesso", "azagaia-distancia"]
+    },
+    "machadinha-distancia": {
+      "descricao": "A machadinha de arremesso é um machado pequeno, balanceado especificamente para ser lançado, usando a perícia Arma de Arremesso (Maça/Machado). Por ser leve, você consegue carregar várias ao mesmo tempo e lançá-las em sequência rápida, mas cada uma bate consideravelmente mais fraco do que um machado grande usado em combate corpo a corpo.\n\nÉ a arma clássica de quem quer abrir a distância com um golpe rápido antes de partir para cima ou de recuar.",
+      "exemplos": [
+        "Um guerreiro carrega várias machadinhas no cinto para lançar antes do combate corpo a corpo.",
+        "Um batedor de fronteira lança a machadinha contra um lobo isolado do bando.",
+        "Sem flechas, o guerreiro recorre às machadinhas guardadas na bolsa de couro."
+      ],
+      "dica_mesa": "Lembre o jogador de anotar quantas machadinhas ele carrega — elas ficam para trás depois do arremesso.",
+      "relacionados": ["machado-de-arremesso-distancia", "maca-de-arremesso", "maca-pequena-de-arremesso"]
+    },
+    "machado-de-arremesso-distancia": {
+      "descricao": "O machado de arremesso é maior e mais pesado que a machadinha, mas ainda balanceado para ser lançado com a perícia Arma de Arremesso (Maça/Machado). Ele bate mais forte que a machadinha por ser maior, porém você consegue carregar bem menos unidades ao mesmo tempo, então costuma ser reservado para um ou dois lançamentos certeiros antes de partir para outra arma.\n\nTambém funciona como machado de combate corpo a corpo comum, se for preciso.",
+      "exemplos": [
+        "Um caçador de monstros guarda dois machados de arremesso só para o primeiro golpe contra a fera.",
+        "Depois de lançar o machado de arremesso, o guerreiro segue o combate com a espada.",
+        "Um mercenário recolhe o machado de arremesso do corpo do inimigo caído para reaproveitar depois."
+      ],
+      "dica_mesa": "Ele também serve como machado comum se o jogador preferir guardá-lo em vez de lançar.",
+      "relacionados": ["machadinha-distancia", "maca-de-arremesso"]
+    },
+    "maca-de-arremesso": {
+      "descricao": "A maça de arremesso é uma maça pesada adaptada para ser lançada a curta distância, usando a perícia Arma de Arremesso (Maça/Machado). Por bater com o peso todo em vez de fio cortante, ela é mais útil contra alvos protegidos por armaduras rígidas ou contra criaturas que resistem mais a corte do que a impacto.\n\nÉ pesada e rara de se carregar em quantidade, então costuma ser um recurso único e não uma arma de arremesso repetido.",
+      "exemplos": [
+        "Contra um oponente todo encouraçado, a maça de arremesso passa melhor que uma faca ou uma machadinha.",
+        "Um guerreiro reserva a única maça de arremesso que carrega para o momento certo.",
+        "Depois de lançar a maça, o combatente parte para o corpo a corpo sem mais opções de longe."
+      ],
+      "dica_mesa": "Boa opção contra armaduras pesadas ou criaturas resistentes a corte.",
+      "relacionados": ["maca-pequena-de-arremesso", "machado-de-arremesso-distancia"]
+    },
+    "maca-pequena-de-arremesso": {
+      "descricao": "A maça pequena de arremesso é uma versão mais leve e compacta da maça de arremesso, pensada para a mesma perícia Arma de Arremesso (Maça/Machado). Sendo menor, é mais fácil de carregar mais de uma e de lançar rápido, mas em troca bate mais fraco que a versão grande.\n\nFica no meio do caminho entre a machadinha, mais leve e rápida, e a maça grande, mais forte e rara.",
+      "exemplos": [
+        "Um combatente carrega duas maças pequenas para ter uma segunda chance de arremesso.",
+        "Contra um esqueleto ou algo parecido, a maça pequena de arremesso é escolhida por bater com impacto.",
+        "Faltando flechas, o guerreiro recorre à maça pequena guardada na mochila."
+      ],
+      "dica_mesa": "Pense nela como meio-termo entre a machadinha e a maça grande de arremesso.",
+      "relacionados": ["maca-de-arremesso", "machadinha-distancia"]
+    },
+    "arpao": {
+      "descricao": "O arpão é uma ponta de metal grande e farpada, presa a uma corda, lançada para fisgar e ferir o alvo à distância — e depois puxá-lo, prendê-lo ou simplesmente recuperar a arma. Usa a perícia própria Arma de Arremesso (Arpão), e as farpas fazem dele uma arma dolorosa de remover, o que o torna útil tanto para caçar criaturas grandes quanto para capturar ou arrastar um alvo que tenta fugir.\n\nÉ pesado e incômodo de carregar em quantidade, então normalmente você conta apenas com um ou dois.",
+      "exemplos": [
+        "Um caçador de criaturas grandes usa o arpão para fisgar a fera antes que ela escape para a água.",
+        "Presa numa corda, a arma permite ao grupo puxar de volta um inimigo ferido que tentava fugir.",
+        "Um pescador da costa reaproveita o arpão de caça como arma de defesa contra assaltantes."
+      ],
+      "dica_mesa": "Lembre que a corda pode ser usada para puxar ou prender o alvo depois do acerto, não só para ferir.",
+      "relacionados": ["laco", "lanca-de-arremesso"]
+    },
+    "faca-grande-de-arremesso": {
+      "descricao": "A faca grande de arremesso é balanceada especificamente para ser lançada com precisão, usando a perícia Arma de Arremesso (Faca). É mais pesada que a faca pequena, o que ajuda a acertar mais forte, mas você consegue carregar menos unidades e ela é um pouco mais lenta de sacar e lançar em sequência.\n\nTambém funciona normalmente como faca de combate corpo a corpo, se precisar.",
+      "exemplos": [
+        "Um mercenário guarda três facas grandes de arremesso na bandoleira do peito.",
+        "Depois de lançar a faca grande contra o batedor inimigo, o combatente parte para o corpo a corpo.",
+        "Um caçador de recompensas prefere a faca grande porque também serve bem de perto."
+      ],
+      "dica_mesa": "Boa opção dupla: serve tanto de arremesso quanto de faca comum em combate corpo a corpo.",
+      "relacionados": ["faca-pequena-de-arremesso", "adaga-de-arremesso"]
+    },
+    "faca-pequena-de-arremesso": {
+      "descricao": "A faca pequena de arremesso é leve e fácil de esconder, pensada para lançamentos rápidos em sequência usando a perícia Arma de Arremesso (Faca). Bate mais fraco que a faca grande, mas você consegue carregar bem mais unidades ao mesmo tempo e escondê-las em botas, mangas ou cintos sem chamar atenção.\n\nÉ a arma preferida de quem depende de discrição e de múltiplos arremessos rápidos.",
+      "exemplos": [
+        "Uma ladra esconde facas pequenas de arremesso nas botas e nas mangas da roupa.",
+        "Um assassino lança três facas pequenas em sequência antes que o alvo perceba a ameaça.",
+        "Revistado na entrada da cidade, o contrabandista só tem as facas pequenas confiscadas."
+      ],
+      "dica_mesa": "Ideal para personagens que preferem esconder armas em vez de exibi-las abertamente.",
+      "relacionados": ["faca-grande-de-arremesso", "adaga-de-arremesso"]
+    },
+    "estaca-de-madeira-distancia": {
+      "descricao": "A estaca de madeira de arremesso é simples e barata, lançada com a perícia Arma de Arremesso (Faca), e existe basicamente por um motivo: acertar criaturas que sofrem mais com madeira do que com metal. Contra um alvo comum, ela é uma arma fraca e improvisada; contra a criatura certa, pode ser a diferença entre sobreviver e não sobreviver.\n\nVale a pena carregar algumas de reserva mesmo sem saber quando vai precisar delas.",
+      "exemplos": [
+        "Um caçador de mortos-vivos carrega um punhado de estacas de madeira só para essa emergência.",
+        "Sem nada mais à mão, o viajante improvisa estacas de madeira quebrando um galho seco.",
+        "A estaca lançada não faz muito efeito contra um bandido comum, só contra o que se teme na escuridão."
+      ],
+      "em_adamar": "Continua livre por ser madeira comum; se e quando existirem criaturas vulneráveis a ela na sua mesa, isso fica a critério do narrador.",
+      "dica_mesa": "Combine com o narrador se e quando existirem criaturas vulneráveis a madeira na sua campanha.",
+      "relacionados": ["faca-grande-de-arremesso"]
+    },
+    "adaga-de-arremesso": {
+      "descricao": "A adaga de arremesso é uma lâmina curta e fina, equilibrada para ser lançada com a perícia Arma de Arremesso (Faca). Fica entre a faca pequena e a faca grande em peso e alcance, e assim como as facas, também funciona bem como arma de combate corpo a corpo além de arremesso.\n\nÉ uma escolha versátil para quem não quer carregar duas armas separadas para as duas situações.",
+      "exemplos": [
+        "Um duelista guarda a adaga tanto para lançar quanto para lutar de perto se o inimigo se aproximar.",
+        "Numa fuga pela masmorra, a adaga de arremesso resolve tanto o combate à distância quanto o corpo a corpo.",
+        "Sem espaço na bolsa para mais armas, o aventureiro escolhe levar só a adaga versátil."
+      ],
+      "dica_mesa": "Boa arma secundária versátil para quem quer uma única lâmina que sirva para tudo.",
+      "relacionados": ["faca-grande-de-arremesso", "faca-pequena-de-arremesso"]
+    },
+    "shuriken": {
+      "descricao": "O shuriken é uma pequena estrela ou lâmina de metal lançada com um giro rápido do pulso, usando a perícia própria Arma de Arremesso (Shuriken). Bate fraco individualmente, mas é extremamente leve e fácil de esconder em quantidade, permitindo lançamentos rápidos em sequência — o valor dele está mais em incomodar, distrair ou acertar vários golpes pequenos do que em resolver um combate com um único arremesso.\n\nÉ uma arma de tradição estrangeira, distante do equipamento comum das terras de Adamar.",
+      "exemplos": [
+        "Um viajante de terras distantes carrega shurikens escondidos na manga, um item exótico por aqui.",
+        "Um combatente lança uma sequência de shurikens para distrair o guarda enquanto o parceiro avança.",
+        "Curioso, um ferreiro local nunca tinha visto um shuriken antes de examinar o de um forasteiro."
+      ],
+      "em_adamar": "É uma arma de tradição estrangeira, exótica demais para aparecer sozinha em Adamar; combine com o narrador se o personagem tiver origem ou contato que justifique possuir uma.",
+      "dica_mesa": "Converse com o narrador sobre a origem do personagem antes de escolher o shuriken.",
+      "relacionados": ["faca-pequena-de-arremesso"]
+    },
+    "lanca-de-arremesso": {
+      "descricao": "A lança de arremesso é a mesma lança comum usada também em combate corpo a corpo, lançada com a perícia Arma de Arremesso (Lança) quando o alvo ainda está longe. Por ser mais pesada que uma azagaia feita só para arremesso, ela bate mais forte, mas você carrega poucas unidades e perde a arma de combate corpo a corpo se a lançar.\n\nÉ uma escolha de compromisso: uma única arma, boa nas duas situações, mas não especialista em nenhuma delas.",
+      "exemplos": [
+        "Um guerreiro lança a própria lança contra o inimigo que se aproxima antes de sacar a espada.",
+        "Sem outra arma de combate corpo a corpo, o lanceiro pensa duas vezes antes de arremessar a única lança que tem.",
+        "Um caçador recupera a lança do corpo da fera abatida para reutilizá-la depois."
+      ],
+      "dica_mesa": "Lembre o jogador de que lançar a única lança o deixa sem arma de combate corpo a corpo até recuperá-la.",
+      "relacionados": ["azagaia-distancia", "arremessador-de-lanca"]
+    },
+    "azagaia-distancia": {
+      "descricao": "A azagaia é uma lança leve, feita especificamente para ser arremessada a distâncias maiores do que uma lança comum alcançaria, usando a mesma perícia Arma de Arremesso (Lança). Por ser mais leve, você consegue carregar mais de uma, mas ela bate mais fraco que uma lança de combate e não é tão boa em combate corpo a corpo se sobrar só ela na mão.\n\nÉ a arma de quem planeja o combate à distância desde o início, não de quem está improvisando.",
+      "exemplos": [
+        "Um batedor carrega um feixe de azagaias, prontas para serem lançadas antes do inimigo se aproximar.",
+        "Um caçador prefere a azagaia à lança comum justamente por poder carregar várias.",
+        "Sem mais azagaias no feixe, o batedor recorre à faca para o combate de perto."
+      ],
+      "dica_mesa": "Boa opção para quem quer lançar várias vezes em vez de confiar num único arremesso.",
+      "relacionados": ["lanca-de-arremesso", "arremessador-de-lanca"]
+    },
+    "granada-polvora-negra": {
+      "descricao": "A granada de pólvora negra é uma bomba primitiva feita com pólvora comprimida e um estopim aceso manualmente, que explode alguns instantes depois de lançada, ferindo numa área ao redor do ponto de impacto. É a versão mais rudimentar das armas explosivas de arremesso, sujeita a estopins que queimam rápido ou devagar demais.\n\nLançá-la bem exige calcular o tempo certo antes que ela exploda perto demais de quem a jogou ou tarde demais para ajudar em algo.",
+      "exemplos": [
+        "Um sapador acende o estopim e conta os instantes antes de lançar a granada por cima do muro.",
+        "A pólvora úmida faz o estopim falhar, e a granada não explode como deveria.",
+        "Um grupo de assaltantes de trem usa a granada de pólvora negra para abrir um vagão reforçado."
+      ],
+      "em_adamar": "A pólvora não é difundida em Adamar, um cenário que não passa da tecnologia do fim da Idade Média, então nenhuma granada desta família existe por aqui.",
+      "relacionados": ["coquetel-molotov"]
+    },
+    "granada-concussao-nt6": {
+      "descricao": "A granada de concussão é uma bomba explosiva feita para ferir por meio da onda de choque da explosão em vez de estilhaços, o que a torna relativamente mais segura para quem está um pouco mais afastado do centro da detonação. É a escolha de forças que querem neutralizar um grupo inteiro numa área fechada sem espalhar fragmentos cortantes por toda parte.\n\nUsada dentro de um prédio ou de um veículo, o estrondo e a pressão bastam para incapacitar quem está perto sem precisar de estilhaços.",
+      "exemplos": [
+        "Uma equipe tática lança a granada de concussão antes de entrar numa sala fechada.",
+        "Dentro do compartimento apertado do veículo, a granada de concussão é preferida à de fragmentação.",
+        "O estrondo da granada de concussão deixa os ouvidos dos sobreviventes zunindo por um bom tempo."
+      ],
+      "em_adamar": "Explosivos deste tipo estão muito acima da tecnologia de Adamar, que não passa do fim da Idade Média.",
+      "relacionados": ["granada-concussao-nt7"]
+    },
+    "granada-fragmentacao-nt6": {
+      "descricao": "A granada de fragmentação é uma bomba explosiva cuja carcaça se estilhaça na explosão, espalhando fragmentos cortantes numa área ao redor além do próprio estrondo da detonação. Isso a torna mais letal numa área maior do que a granada de concussão, mas também mais indiscriminada.\n\nOs estilhaços continuam perigosos mesmo além do alcance direto da explosão, e ferem qualquer um na área, aliado ou inimigo.",
+      "exemplos": [
+        "Um soldado lança a granada de fragmentação sobre a trincheira inimiga antes do assalto final.",
+        "Os estilhaços da granada de fragmentação atingem até quem estava parcialmente protegido atrás de uma parede baixa.",
+        "O comandante hesita em usar a granada de fragmentação com aliados tão perto do alvo."
+      ],
+      "em_adamar": "Explosivos deste tipo estão muito acima da tecnologia de Adamar, que não passa do fim da Idade Média.",
+      "relacionados": ["granada-fragmentacao-nt7"]
+    },
+    "coquetel-molotov": {
+      "descricao": "O coquetel molotov é uma arma incendiária improvisada: uma garrafa de vidro cheia de combustível, fechada e incendiada por um pano em chamas preso ao gargalo antes de ser lançada contra o alvo. Ao se espatifar, espalha fogo pela área do impacto, o que o torna eficaz contra grupos, estruturas de madeira ou veículos.\n\nÉ também imprevisível: o fogo se espalha conforme o vento, o terreno e o que houver por perto para queimar, então pode fugir do controle de quem o lançou.",
+      "exemplos": [
+        "Manifestantes de uma revolta usam coquetéis molotov contra os veículos da guarda.",
+        "Cercado numa casa de madeira, o grupo teme que um coquetel molotov incendeie tudo ao redor.",
+        "Sem outras armas incendiárias à mão, alguém improvisa um coquetel com uma garrafa e um pedaço de pano."
+      ],
+      "em_adamar": "Depende de combustíveis e frascos de vidro de produção industrial que não fazem parte da tecnologia medieval de Adamar.",
+      "relacionados": ["granada-polvora-negra"]
+    },
+    "bomba-quimica": {
+      "descricao": "A bomba química libera uma nuvem de fumaça, gás lacrimogêneo ou outra substância química ao explodir, em vez de causar dano direto por impacto ou fragmentos. Serve mais para negar uma área, forçar uma retirada ou cobrir um avanço do que para ferir diretamente.\n\nQuem está dentro da nuvem sofre os efeitos da substância liberada, que variam conforme o tipo específico de bomba usada.",
+      "exemplos": [
+        "Uma força de contenção usa bombas químicas de gás lacrimogêneo para dispersar a multidão.",
+        "Uma equipe usa a bomba de fumaça para cobrir a própria retirada do prédio.",
+        "Sem máscara, o alvo atingido pela bomba química mal consegue enxergar o caminho de saída."
+      ],
+      "em_adamar": "Depende de química industrial muito além da tecnologia de Adamar, que não tem esse tipo de arma."
+    },
+    "granada-concussao-nt7": {
+      "descricao": "Esta é uma versão mais avançada e mais potente da granada de concussão, feita com materiais e explosivos melhores que a versão anterior, capazes de causar mais dano na mesma área sem depender de estilhaços cortantes. Segue o mesmo princípio de ferir pela onda de choque, apenas com uma detonação mais forte e confiável.\n\nÉ mais cara e mais difícil de produzir que a versão básica, reservada em geral a forças mais bem equipadas.",
+      "exemplos": [
+        "A unidade de elite prefere a versão avançada da granada de concussão por sua confiabilidade.",
+        "A detonação mais forte da granada avançada derruba até quem está parcialmente protegido.",
+        "O fabricante local vende a granada de concussão avançada a um preço bem mais alto que a versão antiga."
+      ],
+      "em_adamar": "Explosivos deste tipo estão muito acima da tecnologia de Adamar, que não passa do fim da Idade Média.",
+      "relacionados": ["granada-concussao-nt6"]
+    },
+    "granada-fragmentacao-nt7": {
+      "descricao": "Esta é uma versão mais avançada da granada de fragmentação, com uma carcaça projetada para se estilhaçar de forma mais eficiente e espalhar fragmentos por uma área ainda maior que a versão anterior. O princípio continua o mesmo — dano por estilhaços somado ao da própria explosão — apenas mais letal e mais confiável.\n\nÉ o tipo de arma reservada a forças regulares bem equipadas, não a grupos improvisados.",
+      "exemplos": [
+        "A tropa troca as granadas antigas pela versão avançada de fragmentação assim que possível.",
+        "Os estilhaços da granada avançada alcançam muito além do que a tropa esperava.",
+        "Um veterano avisa os recrutas: a granada de fragmentação avançada não perdoa quem fica perto demais."
+      ],
+      "em_adamar": "Explosivos deste tipo estão muito acima da tecnologia de Adamar, que não passa do fim da Idade Média.",
+      "relacionados": ["granada-fragmentacao-nt6"]
+    },
+    "granada-atordoamento": {
+      "descricao": "A granada de atordoamento libera um clarão de luz intensa e um estrondo muito forte ao explodir, sem estilhaços nem onda de choque significativa, projetada para ofuscar a visão e ensurdecer temporariamente quem estiver perto sem ferir de verdade. É a arma preferida de equipes que precisam entrar num ambiente fechado e neutralizar quem está lá dentro sem matar ninguém.\n\nÉ especialmente útil quando reféns e agressores estão misturados no mesmo espaço.",
+      "exemplos": [
+        "A equipe tática lança a granada de atordoamento antes de invadir a sala onde os reféns estão.",
+        "Ofuscados e ensurdecidos, os sequestradores não conseguem reagir a tempo depois do clarão.",
+        "Sem proteção auditiva, até os próprios agentes sentem o efeito da granada se ficarem perto demais."
+      ],
+      "em_adamar": "É uma arma não letal de tecnologia industrial avançada, muito além do que existe em Adamar."
+    },
+    "granada-plasma": {
+      "descricao": "A granada de plasma é uma arma de ultra-tecnologia futurista, que libera energia extremamente quente numa explosão capaz de causar queimaduras graves em toda a área atingida. Está muitas eras à frente de qualquer explosivo convencional, dependendo de fontes de energia e materiais que só existem em cenários de ficção científica avançada.\n\nO calor liberado costuma derreter ou incendiar até proteções que resistiriam bem a uma explosão comum.",
+      "exemplos": [
+        "Numa guerra entre facções de ultra-tecnologia, a granada de plasma incinera tudo num raio considerável.",
+        "O impacto da granada de plasma derrete até blindagens que resistiriam a explosivos convencionais.",
+        "Ninguém em sã consciência carrega uma granada de plasma sem treinamento e proteção adequados."
+      ],
+      "em_adamar": "É tecnologia de ultra-ficção científica, incompatível com qualquer coisa que exista em Adamar."
+    },
+    "mta-115mm": {
+      "descricao": "O MTA é um míssil antitanque guiado, disparado de um lançador portátil, feito para perfurar a blindagem pesada de veículos militares modernos. Depois do disparo, o operador ou o próprio míssil corrige a rota até o alvo, o que torna o acerto muito mais confiável do que um projétil balístico comum contra um alvo em movimento.\n\nÉ uma arma pesada, cara e claramente militar, sem uso prático fora de um conflito com veículos blindados envolvidos.",
+      "exemplos": [
+        "Uma equipe antitanque emboscada um comboio blindado com o MTA.",
+        "O míssil corrige a trajetória em pleno voo para acompanhar o veículo que tenta escapar.",
+        "Sem veículos blindados por perto, carregar um MTA não faz o menor sentido tático."
+      ],
+      "em_adamar": "É uma arma militar de tecnologia muito acima de Adamar, que não tem pólvora nem veículos blindados para justificar sua existência."
+    },
+    "mas-70mm": {
+      "descricao": "O MAS é um míssil de ombro que busca o próprio alvo sozinho depois de disparado, usando algum tipo de sensor avançado para seguir veículos ou alvos de calor a distância mesmo sem o operador continuar mirando. Isso o torna extremamente confiável contra alvos em movimento e a longo alcance.\n\nÉ uma arma cara, volumosa e de uso claramente militar, sem função fora de um confronto contra veículos ou instalações.",
+      "exemplos": [
+        "O atirador dispara o MAS e já corre para se abrigar, confiando que o míssil vai encontrar o alvo sozinho.",
+        "O míssil guiado acompanha o veículo blindado mesmo quando ele muda de direção.",
+        "Sem um veículo ou alvo relevante para mirar, ninguém carrega um MAS à toa."
+      ],
+      "em_adamar": "É uma arma militar de tecnologia muito acima de Adamar, que não tem infraestrutura nem veículos para justificar sua existência."
+    },
+    "scorpion": {
+      "descricao": "O Scorpion é uma balista leve de torção, montada sobre uma estrutura própria, que dispara virotes grandes com muito mais força do que qualquer besta de mão conseguiria. Por ser um equipamento montado e não uma arma portátil, exige ser instalado com tempo, geralmente por uma pequena equipe, e não pode ser carregado ou disparado com facilidade em pleno combate corpo a corpo.\n\nÉ uma arma de posição, pensada para defender muralhas, pontes ou acampamentos fortificados contra alvos grandes ou grupos inteiros, não algo que um aventureiro carrega no dia a dia.",
+      "exemplos": [
+        "A guarnição monta o Scorpion no alto da torre para cobrir a estrada de acesso.",
+        "Levar tempo demais para recarregar o Scorpion custa caro se o inimigo já estiver perto o bastante.",
+        "Um grupo de mercenários aluga o uso de um Scorpion para o cerco a uma fortificação."
+      ],
+      "em_adamar": "É um equipamento de cerco medieval, plenamente dentro da tecnologia de Adamar, mas raro fora de exércitos, guarnições ou fortificações que possam montá-lo e mantê-lo.",
+      "dica_mesa": "Trate-o como equipamento de posição fixa, não como algo que o personagem carrega no dia a dia.",
+      "relacionados": ["besta"]
+    },
+    "mp-50": {
+      "descricao": "A metralhadora pesada é uma arma automática de grande calibre, montada em veículos, tripés ou posições fixas por ser grande e pesada demais para disparar bem sem apoio. Seu poder de fogo é suficiente para perfurar coberturas e blindagens leves que parariam armas menores.\n\nÉ uma arma de suporte de posição ou de veículo, não algo que um único atirador carrega e usa livremente em movimento.",
+      "exemplos": [
+        "A guarnição monta a metralhadora pesada na entrada do complexo para cobrir a única via de acesso.",
+        "Instalada no veículo, a metralhadora pesada perfura coberturas que protegeriam de armas menores.",
+        "Sem o tripé ou o suporte do veículo, a metralhadora pesada é praticamente impossível de mirar bem."
+      ],
+      "em_adamar": "É uma arma industrial pesada, muito além da tecnologia medieval de Adamar."
+    },
+    "sob-tambor-40mm": {
+      "descricao": "O lançador sob-tambor é um acessório que se prende embaixo do cano de um rifle, permitindo que o mesmo soldado dispare granadas explosivas além dos tiros normais da arma principal, sem precisar carregar um lançador de granadas separado. É uma solução prática de versatilidade tática.\n\nÉ limitado: carrega poucas granadas por vez e precisa ser recarregado manualmente depois de cada disparo.",
+      "exemplos": [
+        "O soldado alterna entre tiros do rifle e granadas do lançador sob-tambor conforme a situação pede.",
+        "Sem munição de granada, o lançador sob-tambor vira peso morto embaixo do rifle.",
+        "A granada do lançador sob-tambor resolve o grupo inimigo atrás de uma cobertura que o rifle sozinho não alcançaria."
+      ],
+      "em_adamar": "É um acessório de arma de fogo moderna, incompatível com a tecnologia medieval de Adamar."
+    },
+    "integrado-lancador-granadas-ici": {
+      "descricao": "Este é um lançador de granadas embutido de fábrica numa arma de combate individual avançada, integrado ao mesmo corpo da arma principal em vez de ser um acessório colocado depois. O resultado é uma arma mais compacta e equilibrada do que um rifle com lançador sob-tambor separado.\n\nÉ mais cara, mais complexa de manter, e claramente um equipamento de tecnologia militar de ponta.",
+      "exemplos": [
+        "O soldado de elite alterna entre o modo rifle e o lançador de granadas integrado sem trocar de arma.",
+        "A manutenção da arma de combate individual exige treinamento técnico especializado.",
+        "Poucas forças militares têm acesso a uma arma de combate individual tão avançada quanto esta."
+      ],
+      "em_adamar": "É equipamento militar de ultra-tecnologia, muitas eras à frente da tecnologia medieval de Adamar."
+    },
+    "bazuca-60mm": {
+      "descricao": "A bazuca é o clássico lançador de foguetes de ombro, um tubo que dispara um projétil autopropelido capaz de perfurar blindagens que armas convencionais não conseguiriam. É uma arma de dois tempos: alguém precisa recarregar manualmente o tubo depois de cada disparo, o que a torna lenta entre um tiro e outro.\n\nAinda assim, é relativamente simples e barata para o poder de fogo que oferece.",
+      "exemplos": [
+        "A equipe antitanque dispara a bazuca contra o veículo blindado que se aproxima da posição.",
+        "Recarregar a bazuca no meio do combate deixa o atirador exposto por um bom tempo.",
+        "Sem blindagem para mirar, a bazuca é um desperdício de munição contra um alvo comum."
+      ],
+      "em_adamar": "É uma arma industrial moderna, muito além da tecnologia medieval de Adamar."
+    },
+    "gif-85mm": {
+      "descricao": "O GIF é um lançador de granadas foguete de ombro, parecido com a bazuca, mas projetado para disparar um projétil de calibre maior a partir de um tubo geralmente descartado ou recarregado de forma mais simples. Assim como a bazuca, é pensado para perfurar blindagens ou destruir posições fortificadas.\n\nNão serve para combate contra alvos desprotegidos comuns — seu papel é claramente antiblindagem.",
+      "exemplos": [
+        "Uma força de resistência usa o GIF contra o veículo blindado que bloqueia a estrada.",
+        "O estrondo do disparo do GIF avisa toda a região de onde veio o ataque.",
+        "Sem um alvo blindado ou fortificado, ninguém desperdiça um disparo de GIF."
+      ],
+      "em_adamar": "É uma arma industrial moderna, muito além da tecnologia medieval de Adamar."
+    },
+    "ala-84mm": {
+      "descricao": "A ALA é uma arma antitanque leve, feita para ser usada e depois descartada — o próprio tubo de disparo é a munição, sem recarga possível depois do único tiro. Isso a torna simples de usar e distribuir em quantidade entre soldados comuns.\n\nO custo dessa simplicidade é ter só uma chance de acerto por unidade carregada.",
+      "exemplos": [
+        "Cada soldado carrega sua própria ALA descartável, pronta para um único disparo contra blindados.",
+        "Depois do disparo, o tubo vazio da ALA é jogado fora — não há como recarregá-lo.",
+        "A unidade distribui várias ALA entre os soldados para garantir múltiplas chances contra o comboio blindado."
+      ],
+      "em_adamar": "É uma arma industrial moderna, muito além da tecnologia medieval de Adamar."
+    },
+    "rifle-automatico-762mm": {
+      "descricao": "O rifle automático é uma arma de apoio de esquadrão, capaz de disparar em rajadas contínuas graças a um mecanismo mais robusto e um cano preparado para aguentar o calor do disparo sustentado, ao contrário de um rifle comum. Costuma ser usado por um soldado específico do grupo, encarregado de manter fogo de cobertura.\n\nO cano esquenta bastante depois de rajadas longas, então o disparo sustentado tem limites práticos.",
+      "exemplos": [
+        "O atirador de apoio do esquadrão mantém fogo automático de cobertura enquanto os outros avançam.",
+        "O cano do rifle automático esquenta perigosamente depois de uma rajada longa demais.",
+        "Sem o soldado de apoio armado com o rifle automático, o esquadrão perde boa parte do poder de fogo sustentado."
+      ],
+      "em_adamar": "É uma arma de fogo militar moderna, muito além da tecnologia medieval de Adamar."
+    },
+    "ml-762mm": {
+      "descricao": "A metralhadora ligeira é alimentada por uma correia ou tambor de munição em vez de carregadores destacáveis, o que permite sustentar fogo automático por muito mais tempo do que um rifle automático comum antes de precisar recarregar. É a arma de apoio típica de um esquadrão de infantaria.\n\nGeralmente é operada por um soldado dedicado só a essa função, com outro ajudando a carregar munição extra.",
+      "exemplos": [
+        "O atirador de metralhadora ligeira mantém a posição enquanto o resto do esquadrão flanqueia o inimigo.",
+        "A correia de munição da metralhadora ligeira precisa de alguém dedicado a carregá-la e organizá-la.",
+        "Sem o suporte da metralhadora ligeira, o esquadrão perde a cobertura de fogo que sustentava o avanço."
+      ],
+      "em_adamar": "É uma arma de fogo militar moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["aae-556mm"]
+    },
+    "aae-556mm": {
+      "descricao": "A AAE é uma metralhadora ligeira de calibre menor que a versão em 7,62 mm, o que a torna mais leve e permite carregar bem mais munição com o mesmo peso, ao custo de cada disparo individual bater um pouco mais fraco. Ainda assim, cumpre o mesmo papel de sustentar fogo automático de apoio para o esquadrão.\n\nContra alvos bem protegidos, ela perde um pouco para a versão de calibre maior em poder de parada.",
+      "exemplos": [
+        "O esquadrão prefere a AAE por permitir carregar mais munição na mesma mochila.",
+        "Mesmo mais leve, a AAE ainda exige um soldado dedicado só para sustentar o fogo de apoio.",
+        "Contra alvos bem protegidos, a AAE perde para a versão de calibre maior em poder de parada."
+      ],
+      "em_adamar": "É uma arma de fogo militar moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["ml-762mm"]
+    },
+    "lanca-chama": {
+      "descricao": "O lança-chamas dispara um jato de líquido inflamável em chamas a curta distância, incendiando o que quer que atinja — pessoas, estruturas de madeira, vegetação ou posições fortificadas. É uma arma de área e de curto alcance, tão perigosa para quem a carrega quanto para o alvo.\n\nO reservatório de combustível pode explodir se atingido, o que torna o atirador um alvo prioritário no campo de batalha.",
+      "exemplos": [
+        "A tropa usa o lança-chamas para limpar uma trincheira ou um bunker fechado.",
+        "O reservatório do lança-chamas explode se atingido, então o atirador tenta ficar longe da linha de tiro inimiga.",
+        "O fogo do lança-chamas se espalha pela vegetação seca muito além do ponto onde foi mirado."
+      ],
+      "em_adamar": "É uma arma de combustível e mecanismo muito além da tecnologia de Adamar, que não tem esse tipo de equipamento incendiário militar."
+    }
+  }
+}

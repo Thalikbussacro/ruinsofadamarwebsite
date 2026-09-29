@@ -1,0 +1,258 @@
+{
+ "lista": "pericias",
+ "itens": {
+  "sabre": {
+   "descricao": "Sabre cobre a espada leve de cavalaria: uma lâmina curva ou reta, mais leve que as espadas de duas mãos, feita para golpes rápidos de corte a cavalo ou a pé, com boa capacidade também de estocada. É arma versátil e ágil, associada a oficiais, cavaleiros e duelistas que valorizam velocidade sobre força bruta.\n\nComparado a armas mais pesadas, o sabre perde força de impacto contra armaduras robustas, mas ganha em rapidez de recuperação entre golpes e em defesa — o tipo de troca que agrada quem prefere lutar de forma ágil e reagir rápido a um contra-ataque.",
+   "exemplos": [
+    "O oficial de cavalaria desembainha o sabre para liderar a carga contra os saqueadores na estrada.",
+    "Num duelo de honra na cidade, o sabre troca golpes rápidos com a rapieira do adversário.",
+    "Contra um guarda de armadura pesada, o sabrista percebe que precisa mirar as juntas em vez de golpear em cheio."
+   ],
+   "em_adamar": "Livre: arma de metal de cavalaria, coerente com a metalurgia e a tradição militar de NT3 em Adamar.",
+   "relacionados": [
+    "rapieira",
+    "tercado"
+   ]
+  },
+  "sacar-rapido": {
+   "descricao": "Sacar Rápido é a perícia de tirar uma arma da bainha, preparar uma flecha no arco ou apanhar um item de uso rápido num único movimento fluido, sem perder tempo precioso quando o perigo aparece de repente. Cada tipo de arma ou item tem sua própria especialização — sacar uma espada é diferente de encaixar uma flecha ou puxar uma faca escondida —, e o narrador pode criar novas especializações para qualquer ferramenta que faça sentido sacar depressa.\n\nSem essa perícia, sacar uma arma em pleno perigo consome um tempo precioso que pode custar caro; com ela, o personagem consegue reagir e já entrar em ação quase ao mesmo tempo.",
+   "exemplos": [
+    "Emboscado no escuro, o guarda-costas testa Sacar Rápido (Espada) para já responder com a lâmina na mão.",
+    "O arqueiro treinado encaixa a flecha e dispara quase no mesmo instante em que avista o alvo, graças a Sacar Rápido (Flecha).",
+    "Um assassino esconde a faca na manga só para poder testar Sacar Rápido (Faca) no momento exato da traição."
+   ],
+   "em_adamar": "Livre nas especializações de armas comuns do cenário (espada, espada de duas mãos, faca, flecha); armas de fogo e tecnologia futura não existem em Adamar.",
+   "relacionados": []
+  },
+  "salto": {
+   "descricao": "Salto é a perícia de saltar mais longe e mais alto do que o corpo faria sozinho, aproveitando técnica de impulso, corrida de aproximação e aterrissagem controlada. Ela ajuda tanto em saltos de distância (atravessar um fosso, alcançar uma sacada) quanto em saltos de altura (escalar um parapeito, pular sobre um obstáculo baixo), sempre reduzindo o risco de cair mal ou se machucar na aterrissagem.\n\nÉ perícia física simples, útil em perseguições, fugas e travessias de terreno acidentado — o tipo de coisa que aparece o tempo todo em ruínas e masmorras cheias de buracos e desníveis.",
+   "exemplos": [
+    "Fugindo pelos telhados, o batedor testa Salto para não cair no vão entre dois prédios.",
+    "Diante do fosso na masmorra em ruínas, alguém do grupo precisa de um bom Salto para atravessar sem cair na escuridão.",
+    "Um salto malfeito sobre a cerca baixa termina em torção de tornozelo bem na hora errada."
+   ],
+   "em_adamar": "Livre: saltar bem não depende de nenhuma tecnologia, só de técnica e preparo físico.",
+   "relacionados": []
+  },
+  "sex-appeal": {
+   "descricao": "Sex Appeal é a perícia de atrair e seduzir usando presença física e charme corporal: um olhar, um gesto, a forma de se vestir e se portar que desperta interesse romântico ou pelo menos atenção indesejada de quem se quer manipular. Ela funciona tanto para conquistar quanto para distrair — um alvo enfeitiçado presta menos atenção ao que mais importa.\n\nDiferente de Lábia ou Diplomacia, que convencem pela palavra e pelo argumento, Sex Appeal convence (ou distrai) pela presença; nem todo mundo reage da mesma forma, e um teste malsucedido pode soar constrangedor em vez de sedutor.",
+   "exemplos": [
+    "A espiã usa Sex Appeal para distrair o guarda do portão enquanto o resto do grupo passa despercebido.",
+    "Na taverna, alguém tenta conquistar informação de um mercenário desconfiado com charme em vez de moedas.",
+    "Um teste malsucedido de Sex Appeal deixa a situação mais estranha do que sedutora, e o alvo fica ainda mais desconfiado."
+   ],
+   "em_adamar": "Livre: charme e sedução não dependem de nenhuma tecnologia, são parte de qualquer sociedade humana.",
+   "relacionados": [
+    "diplomacia",
+    "labia"
+   ]
+  },
+  "sobrevivencia": {
+   "descricao": "Sobrevivência é a perícia de viver da terra num tipo específico de ambiente: achar água potável, comida, abrigo e reconhecer os perigos próprios daquele terreno, seja um deserto escaldante, uma floresta densa ou um pântano traiçoeiro. Cada especialização cobre um bioma, e terrenos parecidos se pré-definem entre si com penalidade — quem sobrevive bem na montanha tem uma base para tentar a tundra, mas seria arriscado presumir domínio total sem nunca ter pisado lá.\n\nEm Adamar, onde não há suprimentos garantidos nem resgate fácil fora das cidades, Sobrevivência é essencial para qualquer viagem longa: sem ela, uma travessia de dias pode se tornar uma sentença de fome, frio ou desidratação.",
+   "exemplos": [
+    "Perdidos nas montanhas depois da nevasca, o grupo depende de Sobrevivência (Montanha) só para não morrer de frio.",
+    "Atravessando o deserto ao sul, o guia usa Sobrevivência (Deserto) para racionar a água certa entre um poço e outro.",
+    "Sem ninguém com Sobrevivência (Pântano), o grupo perde dias tentando achar terreno firme e comida na lama."
+   ],
+   "em_adamar": "Livre nas especializações terrestres, essenciais para viagens em Roestia. As especializações aquáticas do livro (recife, mar aberto e afins) ficam com o narrador, pois dependem de haver povos ou seres capazes de viver na água; ambientes radioativos não existem no cenário.",
+   "dica_mesa": "Escolha a especialização pensando na região onde a campanha se passa — ela é a que mais vai aparecer na mesa.",
+   "relacionados": [
+    "naturalista",
+    "sobrevivencia-urbana",
+    "rastreamento"
+   ]
+  },
+  "sobrevivencia-urbana": {
+   "descricao": "Sobrevivência Urbana é a versão citadina de Sobrevivência: achar comida, abrigo e caminho dentro de uma cidade, mesmo sem dinheiro, contatos ou conhecimento prévio do lugar. Cobre saber onde dormir sem ser incomodado, onde conseguir uma refeição de graça ou barata, e como se orientar por uma cidade estranha sem se perder ou cair em armadilhas óbvias para forasteiros.\n\nÉ perícia valiosa para quem chega numa cidade grande sem recursos — refugiados, fugitivos, viajantes que perderam tudo — e também para quem simplesmente vive das margens da sociedade urbana.",
+   "exemplos": [
+    "Chegando à cidade grande sem uma moeda, o refugiado usa Sobrevivência Urbana para achar onde dormir sem ser expulso.",
+    "Um teste de Sobrevivência Urbana revela qual beco tem sobras de comida do mercado ainda aproveitáveis.",
+    "Perdido nos becos da cidade velha à noite, o forasteiro se orienta melhor do que esperava graças à perícia."
+   ],
+   "em_adamar": "Livre: viver das margens de uma cidade não depende de nenhuma tecnologia, só de malícia urbana.",
+   "relacionados": [
+    "sobrevivencia",
+    "mendicancia"
+   ]
+  },
+  "sociologia": {
+   "descricao": "Sociologia é o estudo de como sociedades inteiras se organizam: estrutura de classes, costumes coletivos, instituições, e por que um povo funciona do jeito que funciona. Diferente de Política, que é sobre o jogo de poder dentro de uma corte específica, Sociologia é mais ampla e teórica — o tipo de conhecimento que ajuda a entender um povo estrangeiro antes mesmo de pisar nele.\n\nÉ perícia de estudioso, útil para quem viaja entre culturas diferentes ou precisa entender rapidamente a estrutura social de um lugar novo antes de cometer um erro grave.",
+   "exemplos": [
+    "Antes de negociar com os nômades da estepe, o diplomata estuda com Sociologia como sua estrutura de clãs funciona.",
+    "Um teste de Sociologia explica por que a cidade portuária trata mercadores estrangeiros de um jeito tão diferente da capital.",
+    "Sem entender a hierarquia social do vilarejo isolado, o forasteiro comete uma gafe que quase custa caro."
+   ],
+   "em_adamar": "Livre: estudo comparativo de costumes e estruturas sociais não depende de nenhuma tecnologia além de observação e método.",
+   "relacionados": [
+    "politica",
+    "psicologia"
+   ]
+  },
+  "soldado": {
+   "descricao": "Soldado é a perícia da vida militar cotidiana: marchar em formação por dias, montar e desmontar acampamento, cuidar do próprio equipamento e das rações, e conhecer a rotina e a hierarquia de um exército em campanha. Não é uma perícia de combate em si — isso vem das perícias de armas —, mas sim o conhecimento prático de sobreviver e funcionar como parte de uma tropa organizada.\n\nQuem tem Soldado sabe se comportar como militar de verdade: não se perde numa marcha longa, não estraga o próprio equipamento por descuido e entende ordens e formações sem precisar que expliquem tudo de novo.",
+   "exemplos": [
+    "O recruta novato aprende rápido com Soldado como armar a tenda e cuidar da própria armadura em campanha.",
+    "Numa marcha de dias sob chuva, quem tem Soldado aguenta o ritmo sem atrasar a coluna.",
+    "Disfarçado de mercenário, o espião quase se entrega por não saber as rotinas básicas que todo Soldado conhece."
+   ],
+   "em_adamar": "Livre: vida militar organizada é plenamente coerente com os exércitos de NT3 de Roestia.",
+   "relacionados": [
+    "tatica"
+   ]
+  },
+  "soltar": {
+   "descricao": "Soltar é a perícia de deixar cair objetos com precisão de cima para baixo: derrubar uma pedra exatamente sobre um alvo, largar um saco no lugar certo de uma carroça em movimento, ou soltar algo de uma muralha ou sacada com pontaria. É perícia estreita e situacional, mas surpreendentemente útil quando o cenário envolve altura e um alvo abaixo.\n\nDiferente de Arremesso, que envolve força e trajetória para lançar algo à distância, Soltar é sobre soltar no momento e no ângulo exatos — a física de queda faz o resto do trabalho.",
+   "exemplos": [
+    "Do topo da muralha, o defensor testa Soltar para acertar a pedra bem em cima do aríete que avança.",
+    "Um cozinheiro apressado usa Soltar para acertar o saco de farinha exatamente no carrinho que passa embaixo da janela.",
+    "Tentando distrair os guardas lá embaixo, alguém solta um objeto barulhento no ponto certo da praça."
+   ],
+   "em_adamar": "Livre: soltar objetos com pontaria não depende de nenhuma tecnologia além de boa mira e cálculo de altura.",
+   "relacionados": [
+    "arremesso"
+   ]
+  },
+  "sumo": {
+   "descricao": "Sumo é a perícia de combate desarmado focada em empurrar, derrubar e agarrar usando o peso e o equilíbrio do próprio corpo, em vez de golpes que causam ferimento. É excelente para tirar um oponente do chão ou da posição, imobilizá-lo ou simplesmente vencer um confronto físico sem matar ninguém — útil em disputas de honra, competições ou situações em que se quer resolver sem sangue.\n\nContra um adversário armado com intenção de ferir de verdade, Sumo tem limites claros: ele resolve empurrões e agarrões, não corta nem perfura, então não substitui uma arma quando a intenção do outro lado é matar.",
+   "exemplos": [
+    "Na disputa de honra da feira, os dois competidores tentam se derrubar usando só Sumo, sem armas.",
+    "Precisando prender o ladrão vivo, o guarda usa Sumo para agarrá-lo e imobilizá-lo sem feri-lo gravemente.",
+    "Contra o bandido armado de faca, o lutador de Sumo percebe que precisa de mais do que força para sair bem daquela."
+   ],
+   "em_adamar": "Livre: luta corporal de empurrão e agarrão é universal, sem depender de nenhuma tecnologia.",
+   "relacionados": []
+  },
+  "surrupiar": {
+   "descricao": "Surrupiar é a perícia de pegar um objeto que está à vista — numa mesa, num balcão, na mão de alguém — sem que ninguém perceba o momento exato do furto. Diferente de Punga, que é especificamente sobre tirar algo do corpo ou das roupas de uma pessoa, Surrupiar cobre qualquer furto rápido de um objeto visível, seja de um lugar ou de alguém distraído.\n\nMultidão, distração e a atenção da vítima afetam bastante a dificuldade: um objeto guardado com cuidado ou uma vítima desconfiada tornam o furto muito mais arriscado.",
+   "exemplos": [
+    "Na loja do ferreiro, o ladrão testa Surrupiar para tirar uma adaga da bancada sem que o dono note.",
+    "Distraindo o guarda com conversa fiada, o cúmplice testa Surrupiar para pegar as chaves penduradas no cinto.",
+    "Um teste malsucedido de Surrupiar faz o objeto cair no chão, chamando toda a atenção da taverna."
+   ],
+   "em_adamar": "Livre: furto rápido de objetos à vista não depende de nenhuma tecnologia, só de destreza e oportunidade.",
+   "relacionados": [
+    "punga",
+    "prestidigitacao"
+   ]
+  },
+  "teologia": {
+   "descricao": "Teologia é o conhecimento formal das doutrinas de uma fé: seus mitos de criação, os domínios e histórias de cada divindade, os textos sagrados e os debates entre diferentes interpretações da mesma crença. É saber sobre os deuses, não conduzir os ritos em si — isso é Ritual Religioso, que costuma andar de mãos dadas com Teologia mas é perícia separada.\n\nUm teólogo consegue debater doutrina, identificar heresia segundo os padrões de sua fé, e explicar por que um panteão específico entende o mundo do jeito que entende — o que nem sempre coincide com o que os fiéis comuns realmente acreditam ou praticam.",
+   "exemplos": [
+    "O erudito do templo usa Teologia para identificar uma citação distorcida de um texto sagrado durante o debate.",
+    "Um teste de Teologia explica por que dois sacerdotes do mesmo panteão discordam sobre o significado de um milagre relatado.",
+    "Diante de um culto desconhecido, o estudioso tenta encaixar suas crenças dentro do que já sabe sobre os panteões conhecidos."
+   ],
+   "em_adamar": "Livre nas especializações pelos panteões do cânone (ver Divindades): Roestia, Ilhas do Oeste, Mar das Nações e Indacor. Crenças de povos distantes ainda não detalhados no cânone podem virar outra especialização, com o narrador.",
+   "relacionados": [
+    "ritual-religioso",
+    "ocultismo"
+   ]
+  },
+  "tercado": {
+   "descricao": "Terçado cobre o uso do espadim leve de estocada: uma lâmina curta e fina, mais leve e rápida que uma espada longa, feita para furar depressa em espaços apertados ou como arma secundária de apoio. É escolha comum de quem já carrega uma arma principal maior e quer algo leve e rápido para emergências ou combate a curta distância.\n\nComo as demais armas de estocada leves, é fraca contra armaduras pesadas e prioriza velocidade e precisão sobre força de impacto.",
+   "exemplos": [
+    "Desarmado de sua espada principal, o duelista saca o terçado escondido na bota para continuar a luta.",
+    "Num corredor apertado da masmorra, o terçado se prova mais prático que uma arma maior e mais lenta de manejar.",
+    "Contra o adversário de couro reforçado, a estocada rápida do terçado passa onde um golpe de força talvez não passasse."
+   ],
+   "em_adamar": "Livre: espadim leve de metal, plenamente coerente com NT3.",
+   "relacionados": [
+    "rapieira",
+    "sabre"
+   ]
+  },
+  "tonfa": {
+   "descricao": "Tonfa é a perícia de usar um bastão curto com um cabo lateral perpendicular, empunhado de forma a proteger o antebraço e permitir tanto golpes diretos quanto giros rápidos que aumentam o alcance do impacto. É arma discreta e versátil, boa tanto para golpear quanto para bloquear, muito usada por quem patrulha e prefere não matar — guardas, seguranças e alguns estilos de combate desarmado com arma de apoio.\n\nO cabo lateral também serve para prender e torcer o braço ou a arma do adversário, tornando a tonfa útil em situações de contenção, não só de dano puro.",
+   "exemplos": [
+    "O guarda da milícia prefere a tonfa para conter brigas de taverna sem precisar tirar sangue.",
+    "Ao bloquear o golpe de um bastão inimigo, o defensor usa o cabo lateral da tonfa para torcer a arma da mão do adversário.",
+    "Treinado num estilo de contenção, o carcereiro usa a tonfa para imobilizar prisioneiros violentos sem feri-los gravemente."
+   ],
+   "em_adamar": "Livre: bastão de madeira com cabo lateral é ferramenta simples, plenamente coerente com NT3.",
+   "relacionados": []
+  },
+  "trabalhos-em-couro": {
+   "descricao": "Trabalhos em Couro é a perícia de trabalhar peles curtidas para fazer e consertar selas, botas, cintos, bolsas e armaduras leves de couro. Cobre desde o corte e a costura básica até acabamentos mais refinados, e é ofício comum em qualquer vila com acesso a gado, caça ou comércio de peles.\n\nÉ perícia fácil e prática, útil tanto para produzir itens de uso diário quanto para consertos de emergência no meio de uma viagem, quando uma sela rasga ou uma bota se desfaz longe de qualquer curtume.",
+   "exemplos": [
+    "O seleiro da vila usa Trabalhos em Couro para consertar o arreio quebrado do cavalo do viajante.",
+    "No meio da estrada, alguém improvisa um remendo de couro para a bota rasgada antes que o ferimento no pé piore.",
+    "Um artesão experiente costura uma armadura leve de couro reforçado para o batedor do grupo."
+   ],
+   "em_adamar": "Livre: curtume e trabalho manual em couro são tecnologia simples, plenamente presentes em Adamar.",
+   "relacionados": []
+  },
+  "trato-social": {
+   "descricao": "Trato Social é a perícia de saber se comportar dentro de um meio social específico: os gestos, o vocabulário e as regras não-ditas da alta sociedade, do quartel, da rua ou de uma guilda de ladrões. Cada especialização cobre um meio, e errar o comportamento esperado pode denunciar um forasteiro na hora, mesmo que ele fale a língua certa e vista a roupa certa.\n\nAlta Sociedade e Servo se pré-definem razoavelmente entre si, já que ambos vivem dentro da mesma estrutura de corte vista de lados opostos; os demais meios têm regras próprias, sem transferência fácil de um para o outro.",
+   "exemplos": [
+    "Disfarçado de nobre no banquete, o espião usa Trato Social (Alta Sociedade) para não trair sua origem humilde num gesto errado.",
+    "Ao se infiltrar na guarda da cidade, o personagem precisa de Trato Social (Exército) para parecer um soldado de verdade.",
+    "Um teste malsucedido de Trato Social entrega que o forasteiro nunca pisou numa corte de verdade."
+   ],
+   "em_adamar": "Livre: nas especializações do cenário, \"Polícia\" corresponde à guarda de uma cidade, \"Máfia\" a uma guilda de ladrões e \"Dojo\" a uma escola de armas — meios sociais que existem sem problema em Adamar.",
+   "relacionados": [
+    "politica",
+    "manha"
+   ]
+  },
+  "tatica": {
+   "descricao": "Tática é a perícia de comandar e posicionar tropas durante um combate maior que um duelo: escolher terreno, decidir formações, prever a manobra do inimigo e reagir a ela antes que vire desastre. É perícia de oficial e comandante, diferente de Estratégia (que pensa a campanha inteira, muitas vezes fora do campo de batalha) e das perícias de arma individuais (que resolvem o combate pessoal de cada soldado).\n\nUm bom teste de Tática pode virar uma batalha perdida em vantagem, ou pelo menos evitar que um erro de posicionamento custe a vida de muita gente.",
+   "exemplos": [
+    "Vendo o inimigo se posicionar no alto da colina, o comandante testa Tática para reorganizar a formação antes do ataque.",
+    "Um teste de Tática percebe a cilada escondida atrás da linha de árvores antes que a tropa caia nela.",
+    "Sem ninguém com Tática no comando, a milícia se desorganiza assim que a primeira linha recua."
+   ],
+   "em_adamar": "Livre: comando de tropas em batalha é plenamente coerente com os exércitos de NT3 de Roestia.",
+   "relacionados": [
+    "soldado"
+   ]
+  },
+  "veneficio": {
+   "descricao": "Venefício é a perícia de preparar e identificar venenos: extrair ou compor uma substância tóxica a partir de plantas, animais ou minerais, dosá-la corretamente e reconhecer os sinais de envenenamento em outra pessoa. Cobre tanto o lado sombrio (envenenar comida, bebida ou lâmina) quanto o defensivo (perceber que algo foi envenenado antes que seja tarde demais).\n\nÉ perícia associada a assassinos, boticários obscuros e curandeiros que também conhecem o lado perigoso de seu ofício — em muitos lugares de Adamar, ser bom conhecedor de venenos é motivo de desconfiança, não de orgulho público.",
+   "exemplos": [
+    "O boticário suspeito prepara um veneno de ação lenta encomendado por um cliente sem nome.",
+    "Desconfiado do vinho servido, o conselheiro usa Venefício para checar sinais de adulteração antes de beber.",
+    "Um teste de Venefício identifica rapidamente que os sintomas do enfermo batem com envenenamento, não doença comum."
+   ],
+   "em_adamar": "Livre: preparo de venenos a partir de plantas e minérios é coerente com o conhecimento natural de NT3.",
+   "relacionados": [
+    "medicina",
+    "naturalista"
+   ]
+  },
+  "ventriloquismo": {
+   "descricao": "Ventriloquismo é a perícia de projetar a voz de forma que pareça vir de outro lugar — de um boneco, de trás de uma parede, de um canto escuro da sala — sem mover os lábios de forma perceptível. É usado tanto para entretenimento (o clássico boneco falante de feira) quanto para enganar ou distrair, fazendo alguém acreditar que uma voz vem de onde não vem.\n\nÉ perícia rara e específica, difícil de dominar bem, mas muito eficaz quando bem executada — poucas coisas desnorteiam tanto quanto uma voz que parece vir do lugar errado.",
+   "exemplos": [
+    "O artista de feira encanta a plateia fazendo seu boneco de madeira \"falar\" sozinho.",
+    "Escondido atrás da cortina, o trapaceiro usa Ventriloquismo para fazer a voz parecer vir da estátua sagrada.",
+    "Um teste bem-sucedido de Ventriloquismo distrai os guardas, que juram ter ouvido alguém do lado errado do corredor."
+   ],
+   "em_adamar": "Livre: projeção vocal é habilidade humana, sem depender de nenhuma tecnologia.",
+   "relacionados": []
+  },
+  "veterinaria": {
+   "descricao": "Veterinária é a perícia de tratar animais doentes e feridos: diagnosticar o problema, aplicar o tratamento certo e cuidar da recuperação de um cavalo, boi, cão de caça ou qualquer outro animal de valor. É versão paralela de Medicina voltada a animais, e as duas se pré-definem uma na outra até certo ponto — um físico entende um pouco de anatomia animal, e um veterinário entende um pouco de anatomia humana.\n\nNum mundo onde cavalos, bois e animais de carga são investimento caro e essencial, um bom veterinário é figura valiosa para qualquer vila, exército em marcha ou caravana de mercadores.",
+   "exemplos": [
+    "O cavalo do mensageiro manca a poucas léguas da cidade, e só um teste de Veterinária evita que a viagem pare ali.",
+    "A vila reúne recursos para trazer o veterinário itinerante quando o gado começa a adoecer sem explicação.",
+    "Um cão de caça ferido numa armadilha é salvo pelas mãos habilidosas de quem tem Veterinária."
+   ],
+   "em_adamar": "Livre: cuidado com animais de trabalho e de caça é essencial e plenamente coerente com a vida rural de Adamar.",
+   "relacionados": [
+    "medicina",
+    "primeiros-socorros"
+   ]
+  },
+  "zarabatana": {
+   "descricao": "Zarabatana é a perícia de soprar dardos com precisão através de um tubo, geralmente usando ar dos próprios pulmões para impulsionar o projétil. É arma silenciosa e discreta, mais associada à caça de pequenos animais ou a ataques furtivos de curto alcance do que a combates abertos — sua força de impacto é limitada, mas o silêncio do disparo compensa em situações que pedem discrição.\n\nMuitas vezes os dardos são untados com alguma substância (veneno, sedativo) para compensar a força limitada do próprio impacto, unindo bem com conhecimento de Venefício.",
+   "exemplos": [
+    "O caçador da tribo da selva usa a zarabatana para abater pequenas presas sem espantar o resto do bando.",
+    "Escondido entre as sombras, o batedor sopra um dardo untado para neutralizar o guarda sem alarde.",
+    "Um teste malsucedido de Zarabatana faz o dardo cair curto, alertando o alvo do ataque silencioso."
+   ],
+   "em_adamar": "Livre: tubo simples e dardos são tecnologia primitiva, plenamente coerente com NT3.",
+   "relacionados": [
+    "veneficio"
+   ]
+  }
+ }
+}

@@ -1,0 +1,586 @@
+{
+  "lista": "vantagens",
+  "itens": {
+    "acessorios": {
+      "descricao": "No GURPS, Acessórios é uma vantagem que representa uma ferramenta pequena embutida diretamente no corpo do personagem, substituindo algo que normalmente precisaria ser carregado à parte — uma lâmina escondida num braço, um gancho retrátil, uma ferramenta encaixada numa mão. É pensada para autômatos, criaturas artificiais ou seres com corpos moldados de forma não humana, e cada acessório é comprado separadamente conforme a ferramenta que representa.",
+      "exemplos": [
+        "Um autômato de guarda esconde uma lâmina retrátil no antebraço para não precisar sacar uma arma.",
+        "Uma criatura artificial trava uma ferramenta de reparo diretamente nos dedos, sem precisar segurá-la à parte."
+      ],
+      "em_adamar": "Fica fora do cenário porque os personagens jogáveis são humanos comuns, sem modificação corporal, e a tecnologia de Adamar não passa do nível medieval — não há como embutir ferramentas no próprio corpo."
+    },
+    "adaptabilidade-cultural": {
+      "descricao": "Normalmente, quem interage com uma cultura diferente da sua sofre penalidade em perícias sociais e em como as pessoas reagem, por não conhecer costumes, gestos e expectativas locais. Adaptabilidade Cultural remove essa penalidade em relação às culturas do próprio povo do personagem (versão básica) ou, na versão mais cara, Xeno-Adaptabilidade, em relação a qualquer cultura do mundo. Não concede idiomas nem conhecimento factual sobre um lugar — só evita o constrangimento social de não saber se portar direito.\n\nÉ útil sobretudo para personagens que viajam muito, negociam com estranhos ou cresceram entre mais de um povo.",
+      "exemplos": [
+        "Um viajante criado entre nômades visita uma cidade murada sem cometer nenhuma gafe social.",
+        "Uma mercadora negocia tão bem com camponeses quanto com nobres de terras distantes.",
+        "Um exilado se comporta com naturalidade num funeral de uma tradição que nunca tinha visto antes."
+      ],
+      "em_adamar": "Livre porque Adamar tem muitos povos e culturas diferentes espalhados pelo continente, e faz sentido para viajantes, batedores e mercadores que cruzam essas fronteiras.",
+      "dica_mesa": "Combine com Idiomas se o personagem também precisa se fazer entender, não só se comportar bem.",
+      "relacionados": ["idiomas", "camaleao-social"]
+    },
+    "adaptacao-ao-terreno": {
+      "descricao": "Personagem não sofre a penalidade de movimento e equilíbrio que um terreno difícil normalmente impõe — neve funda, areia solta, gelo, lama — enquanto outra pessoa afunda, escorrega ou anda bem mais devagar. A vantagem é comprada para um tipo de terreno específico; cobrir mais de um tipo custa mais. É puramente sobre locomoção: não ajuda a resistir ao frio nem a se orientar no meio do nada.",
+      "exemplos": [
+        "Um caçador atravessa um pântano gelado sem atolar enquanto os companheiros se debatem na lama.",
+        "Uma batedora das dunas corre sobre areia solta como se pisasse em chão firme.",
+        "Um guia de montanha segue por gelo escorregadio no mesmo ritmo de uma trilha comum."
+      ],
+      "relacionados": ["tolerancia-a-temperatura", "senso-de-direcao"]
+    },
+    "aliados": {
+      "descricao": "Personagem tem um ou mais companheiros de confiança controlados pelo narrador, que aparecem para ajudar dentro de uma frequência definida na compra (raramente, às vezes, quase sempre) e num nível de poder relativo ao personagem. Não é um contratado qualquer: é alguém com vontade própria, que pode discordar, ter problemas seus ou até morrer em cena. O custo cresce conforme o aliado é mais forte e aparece com mais frequência.\n\nDiferente de Contatos ou Patronos, um Aliado luta ao lado do personagem, não só oferece informação ou proteção à distância.",
+      "exemplos": [
+        "Um antigo companheiro de armas aparece justo quando o grupo mais precisa de reforço.",
+        "Um velho mestre de armas dá abrigo e ajuda prática numa cidade que ele conhece bem.",
+        "Um batedor aliado avisa da emboscada antes que ela aconteça."
+      ],
+      "dica_mesa": "Combine com o narrador o que acontece se o aliado for ferido, capturado ou morrer — isso costuma virar boa cena.",
+      "relacionados": ["patronos", "contatos", "grupo-de-contato"]
+    },
+    "ambidestria": {
+      "descricao": "Personagem usa as duas mãos com igual destreza, sem a penalidade normal de agir com a mão não dominante. Isso ajuda em situações como lutar com uma arma em cada mão, escrever ou realizar tarefas finas com a mão que não seria a preferida depois de um ferimento, ou simplesmente agir quando a mão dominante está ocupada ou imobilizada.",
+      "exemplos": [
+        "Um duelista troca a espada de mão sem perder precisão quando o braço direito é atingido.",
+        "Um ladrão destranca uma fechadura com a mão esquerda enquanto segura a lanterna com a direita."
+      ]
+    },
+    "aparencia": {
+      "descricao": "Mede o quanto a aparência física do personagem pesa a favor dele nas interações sociais. Aqui tratamos só dos níveis positivos — de atraente a deslumbrante — que dão bônus em como as pessoas reagem a ele e em certas perícias sociais, sobretudo diante de quem se importa com aparência. Não afeta perícias de combate nem testes que nada têm a ver com estética.\n\nOs níveis abaixo do comum, do feio ao repugnante, são tratados como a desvantagem equivalente, não por esta vantagem.",
+      "exemplos": [
+        "Uma nobre usa a própria beleza para conseguir audiência com um lorde relutante.",
+        "Um viajante bonito o bastante amolece a desconfiança de guardas numa fronteira fechada.",
+        "Um mercador atraente fecha um negócio melhor só pela primeira impressão que causa."
+      ],
+      "dica_mesa": "Lembre que o bônus de reação vale mais em cenas sociais do que em barganhas puramente racionais.",
+      "relacionados": ["por-dentro-da-moda", "voz-melodiosa"]
+    },
+    "autotranse": {
+      "descricao": "Personagem consegue entrar em transe profundo à vontade, sem precisar de rituais elaborados, substâncias ou horas de preparação guiada. O transe costuma servir a práticas espirituais — contatar espíritos, buscar visões, alcançar um estado alterado ligado a alguma tradição mística. Sozinha, a qualidade não concede nenhum poder: apenas destrava a porta de entrada para outras capacidades que dependam de estar em transe.",
+      "exemplos": [
+        "Um curandeiro tribal entra em transe junto à fogueira para pedir orientação aos ancestrais.",
+        "Um eremita busca visões sentado por horas num santuário abandonado."
+      ],
+      "em_adamar": "Fica com o narrador porque pressupõe uma prática espiritual específica de contato com o outro lado, e magia é rara e vigiada de perto em Adamar — o narrador precisa decidir a que tradição isso se liga antes de liberar."
+    },
+    "boa-forma": {
+      "descricao": "Corpo mais resistente e que se recupera mais depressa do desgaste físico. No nível básico, dá um pequeno bônus em testes de resistência do corpo (contra doença, veneno, cansaço) e faz a fadiga voltar mais rápido após descanso. No nível avançado, Ótima Forma, o bônus é maior e a recuperação de fadiga é ainda mais rápida, além de o personagem perder o fôlego mais devagar em esforço prolongado.\n\nNão afeta pontos de vida nem cura ferimentos — é sobre fôlego e resistência, não sobre dano sofrido.",
+      "exemplos": [
+        "Um batedor aguenta um dia inteiro de marcha forçada sem desabar.",
+        "Uma sobrevivente de invernos duros se recupera de uma noite maldormida bem mais rápido que os companheiros."
+      ],
+      "dica_mesa": "É uma boa escolha para personagens que passam muito tempo em viagem ou trabalho físico pesado.",
+      "relacionados": ["resistente", "duro-de-matar"]
+    },
+    "camaleao-social": {
+      "descricao": "Personagem sabe se comportar em qualquer ambiente social sem parecer deslocado — fala, se veste e se porta de um jeito que não chama atenção indesejada, seja entre camponeses, mercadores ou nobres. Ajuda sobretudo a evitar penalidades por vir de uma classe social diferente da que está frequentando no momento. Não dá conhecimento de etiqueta de outra cultura estrangeira (isso é Adaptabilidade Cultural) nem ajuda a esconder quem o personagem realmente é.",
+      "exemplos": [
+        "Um espião de origem plebeia janta com a nobreza sem cometer uma gafe que o denuncie.",
+        "Um mercenário se mistura bem tanto numa taverna imunda quanto num salão refinado."
+      ],
+      "relacionados": ["adaptabilidade-cultural", "por-dentro-da-moda"]
+    },
+    "carisma": {
+      "descricao": "Presença pessoal que naturalmente atrai, convence e inspira confiança, mesmo sem esforço consciente do personagem. Dá bônus direto em qualquer teste de perícia social — liderança, oratória, sedução, negociação e afins — e em como estranhos reagem a ele de primeira. Não é magia nem controle mental: é o mesmo tipo de magnetismo pessoal que existe no mundo real, só que em grau bem mais forte.",
+      "exemplos": [
+        "Um capitão ergue o moral de soldados exaustos com poucas palavras bem escolhidas.",
+        "Um recém-chegado numa vila conquista a simpatia dos moradores antes mesmo de se apresentar direito."
+      ],
+      "dica_mesa": "Vale a pena descrever como esse carisma se manifesta — um sorriso, um jeito de olhar, um tom de voz — para dar cor à cena.",
+      "relacionados": ["lingua-ferina", "indomavel"]
+    },
+    "clericato": {
+      "descricao": "Personagem é um sacerdote ou clérigo reconhecido oficialmente por uma fé ou instituição religiosa, com autoridade para celebrar rituais, casamentos, funerais e outras cerimônias, além de acesso a templos e alguma influência sobre os fiéis. A vantagem em si não concede magia divina, milagres nem perícias de cura — é puramente o reconhecimento institucional; poderes sobrenaturais de um clérigo, quando existem, vêm de outra fonte.",
+      "exemplos": [
+        "Um clérigo de aldeia celebra o funeral de um lavrador morto no inverno.",
+        "Um capelão que acompanha uma expedição negocia hospitalidade num templo estranho por ser reconhecido como colega de fé."
+      ],
+      "em_adamar": "Livre porque templos e fé organizada existem no cenário; a vantagem cobre só o cargo reconhecido, sem supor milagres automáticos.",
+      "relacionados": ["reconhecimento-social", "hierarquia"]
+    },
+    "contatos": {
+      "descricao": "Personagem conhece alguém, fora do grupo de aventureiros, com acesso a um tipo específico de informação — um estalajadeiro que sabe o que se fala nas estradas, um escrivão com acesso a registros, um contrabandista que conhece rotas. De tempos em tempos, pode tentar consultar esse contato para obter algo relevante; o sucesso depende de um teste, e o contato normalmente não arrisca a própria pele por quem pergunta.",
+      "exemplos": [
+        "Um contato na guarda avisa sobre uma batida iminente na cidade baixa.",
+        "Um contato entre mercadores informa qual caravana viaja para onde na próxima lua."
+      ],
+      "dica_mesa": "Combine com o narrador quando o contato pode ser usado — uma vez por sessão costuma funcionar bem na mesa.",
+      "relacionados": ["grupo-de-contato", "favor", "patronos"]
+    },
+    "calculos-instantaneos": {
+      "descricao": "Personagem resolve contas de cabeça na hora, sem precisar de papel, ábaco ou tempo para pensar. No nível básico cobre contas cotidianas — trocos, medidas, proporções; no nível avançado, Matemático Intuitivo, resolve até cálculos complexos instantaneamente. Útil para negociar, administrar recursos ou calcular algo sob pressão, mas não substitui conhecimento técnico de uma perícia como Navegação — só a parte da conta em si.",
+      "exemplos": [
+        "Um mercador calcula na hora o câmbio justo entre moedas de três reinos diferentes.",
+        "Um batedor estima em segundos quantos dias de comida restam para o grupo."
+      ]
+    },
+    "destemor": {
+      "descricao": "Personagem é incomumente difícil de assustar, recebendo bônus em testes ligados a medo, terror e situações de pânico — encarar uma criatura monstruosa, resistir a algo assustador, manter a calma sob ameaça. Não é imunidade a medo, nem torna o personagem imprudente: ele ainda reconhece perigo e pode agir com cautela, só não trava de pavor com a mesma facilidade que os outros.",
+      "exemplos": [
+        "Um guarda mantém a posição ao ouvir um uivo desconhecido vindo da masmorra.",
+        "Uma batedora examina de perto um cadáver mutilado sem hesitar."
+      ],
+      "dica_mesa": "Não confunda com imunidade total: uma boa cena de tensão ainda funciona, só não deve travar o personagem.",
+      "relacionados": ["fleuma", "indomavel"]
+    },
+    "destreza-manual-elevada": {
+      "descricao": "Mãos e dedos excepcionalmente habilidosos, dando bônus em qualquer tarefa manual fina — arrombar fechaduras, bater carteiras, costurar, tocar instrumentos, fazer trabalhos de joalheria ou escrita caprichada. Não ajuda em força bruta nem em perícias de combate por si só, mas soma em qualquer perícia onde a delicadeza dos dedos é o que importa de verdade.",
+      "exemplos": [
+        "Um artesão entalha detalhes minúsculos numa peça de marfim sem tremer.",
+        "Um batedor de bolsos rouba uma bolsa sem que a vítima perceba o roçar dos dedos."
+      ]
+    },
+    "dificil-de-subjugar": {
+      "descricao": "Personagem é incomumente resistente a golpes, drogas ou efeitos que buscam nocautear ou incapacitar sem matar — um soco na cabeça, uma substância sonífera, uma pancada que deveria deixá-lo inconsciente. Cada nível soma no teste feito para resistir a esse tipo de golpe. Não reduz o dano de ferimentos comuns nem ajuda contra ataques que pretendem matar diretamente — só contra o que tenta apagá-lo sem violência letal.",
+      "exemplos": [
+        "Um capanga golpeia a nuca do prisioneiro e ele continua de pé, atordoado mas consciente.",
+        "Um guarda resiste ao vinho drogado que deveria fazê-lo dormir na mesa."
+      ],
+      "em_adamar": "O narrador pode limitar quantos níveis um personagem compra, para manter o realismo do mundo — Adamar não pretende ter corpos indestrutíveis.",
+      "relacionados": ["duro-de-matar", "resistente"]
+    },
+    "dorminhoco-qualidade": {
+      "descricao": "Personagem dorme profundamente em qualquer lugar e sob quase qualquer condição — chão duro, barulho de taverna, tempestade lá fora — sem perder a qualidade do descanso. É puramente sobre onde e como se dorme; não muda quanto sono é necessário e não afeta a facilidade de despertar diante de um perigo.",
+      "exemplos": [
+        "Um mercenário dorme a noite inteira sobre pedras num acampamento improvisado.",
+        "Um viajante cochila sentado numa carroça sacolejante em pleno temporal."
+      ],
+      "relacionados": ["pouco-sono"]
+    },
+    "duro-de-matar": {
+      "descricao": "Personagem resiste melhor a morrer quando está gravemente ferido, além de ter mais chance de se manter consciente e agindo mesmo perto da morte. Cada nível soma no teste feito quando os ferimentos passam de um limite crítico. Não reduz o dano recebido nem cura nada — só aumenta a chance de sobreviver ao pior momento depois de já estar muito ferido.",
+      "exemplos": [
+        "Um guerreiro caído em combate ainda se arrasta para longe do perigo antes de desmaiar de vez.",
+        "Um explorador sobrevive a uma queda que deveria tê-lo matado, gravemente ferido mas vivo."
+      ],
+      "dica_mesa": "É a vantagem certa para quem já jogou personagens que morrem cedo demais para o gosto do jogador.",
+      "relacionados": ["dificil-de-subjugar", "recuperacao-da-consciencia"]
+    },
+    "empatia": {
+      "descricao": "Sensibilidade natural para perceber o estado emocional alheio e notar quando alguém está mentindo, mesmo sem saber explicar como. No nível parcial, Sensível, essa percepção exige um teste com penalidade; no nível completo, o personagem simplesmente sente essas coisas sem precisar de teste, e ainda ganha bônus em perícias sociais que dependem de ler as pessoas. Só funciona com seres capazes de pensar e sentir como uma pessoa — não lê pensamentos nem intenções específicas, só emoções e mentiras.",
+      "exemplos": [
+        "Um negociador percebe que o mercador está escondendo o real valor da mercadoria.",
+        "Alguém sente o medo por trás do sorriso forçado de um refém sendo interrogado."
+      ],
+      "dica_mesa": "Deixe o jogador saber que percebeu algo, mas narre a impressão em termos vagos — cabe a ele decidir o que fazer com isso.",
+      "relacionados": ["empatia-com-animais", "indomavel"]
+    },
+    "empatia-com-animais": {
+      "descricao": "Personagem entende o comportamento e as necessidades dos animais com facilidade incomum, e os animais tendem a reagir bem a ele. Ajuda a acalmar um bicho assustado, perceber se ele está doente ou ameaçado, e ganhar a confiança de animais que normalmente fugiriam ou atacariam. Não é comunicação verbal nem controle mental — é intuição e boa vontade mútua.",
+      "exemplos": [
+        "Um viajante acalma um cavalo apavorado por um trovão distante.",
+        "Um caçador percebe que a matilha de lobos está mais faminta do que hostil e recua a tempo."
+      ],
+      "relacionados": ["empatia-com-plantas"]
+    },
+    "empatia-com-plantas": {
+      "descricao": "Personagem sente intuitivamente o que uma planta precisa para prosperar — água, luz, solo, poda — mesmo sem formação em botânica. Ajuda no cultivo, na identificação de plantas doentes e no manejo de jardins, hortas e plantações, mas não confere conhecimento específico de ervas venenosas ou medicinais, que continua dependendo de perícia.",
+      "exemplos": [
+        "Um eremita mantém uma horta vicejante mesmo em terra pobre e pedregosa.",
+        "Um andarilho percebe que uma videira à beira da estrada está doente antes de qualquer sinal visível."
+      ],
+      "relacionados": ["empatia-com-animais"]
+    },
+    "equilibrio-perfeito": {
+      "descricao": "Personagem quase nunca perde o equilíbrio, seja andando sobre uma superfície estreita e instável, sendo empurrado, ou lutando em terreno traiçoeiro. Cobre situações onde a maioria precisaria de um teste para não cair ou tropeçar — para esse personagem, isso deixa de ser um problema na prática do dia a dia.",
+      "exemplos": [
+        "Um ladrão atravessa uma viga estreita sobre um precipício sem hesitar.",
+        "Um guerreiro mantém os pés firmes no convés de um barco açoitado pela tempestade."
+      ]
+    },
+    "equipamento-caracteristico": {
+      "descricao": "Um item pessoal do personagem — uma arma, um instrumento, uma montaria, uma joia — que carrega peso simbólico ou sentimental reconhecível por quem o vê, dando um pequeno bônus de reação em certas situações sociais por reconhecerem o item ou o gesto de tê-lo consigo. O item em si não precisa ter qualidades superiores a um equivalente comum; o valor está na história e no reconhecimento, não nas estatísticas.",
+      "exemplos": [
+        "A espada enferrujada do avô é reconhecida de longe por um veterano da mesma guerra.",
+        "Um cavalo com uma marca única já é conhecido de vista pelos batedores da região."
+      ],
+      "relacionados": ["reputacao"]
+    },
+    "estabilidade-no-emprego": {
+      "descricao": "Personagem tem um emprego, ofício ou posto incomumente difícil de perder — um patrão leal, um cargo protegido por tradição, uma posição que ninguém mais quer disputar. Não impede que o personagem seja despedido por uma falta grave o bastante, mas dá margem bem maior para erros, ausências ou desavenças antes que isso aconteça.",
+      "exemplos": [
+        "Um ferreiro de guarnição continua no posto mesmo após meses ausente numa expedição.",
+        "Uma cozinheira de estalagem é mantida no cargo apesar de reclamações frequentes dos hóspedes."
+      ],
+      "relacionados": ["hierarquia", "reconhecimento-social"]
+    },
+    "estilo": {
+      "descricao": "Personagem tem um jeito de se vestir, falar ou se portar que é marcante e reconhecível, e que não muda: um chapéu específico, um sotaque, um gesto característico. É puramente estético e narrativo — não concede bônus mecânico, mas ajuda outros personagens e o narrador a lembrarem dele e o reconhecerem à distância.",
+      "exemplos": [
+        "Um mercenário sempre usa um lenço vermelho amarrado no braço, reconhecível em qualquer taverna da região.",
+        "Uma andarilha fala com um sotaque de terras distantes que ninguém mais na vila tem."
+      ],
+      "relacionados": ["rosto-sincero"]
+    },
+    "facilidade-para-idiomas": {
+      "descricao": "Personagem aprende novas línguas com facilidade muito acima do normal, reduzindo o tempo e o esforço necessários para dominar um idioma novo, e falando com sotaque mais leve do que a maioria conseguiria. Não concede conhecimento automático de idiomas que o personagem nunca estudou — apenas torna o processo de aprender muito mais rápido e natural.",
+      "exemplos": [
+        "Um mercador pega o suficiente de um dialeto estranho em poucas semanas de viagem para negociar sozinho.",
+        "Um exilado adota a língua local tão bem que passa por nativo em menos de um ano."
+      ],
+      "relacionados": ["idiomas"]
+    },
+    "favor": {
+      "descricao": "Alguém deve ao personagem um favor concreto, geralmente por causa de algo que ele fez no passado — salvou uma vida, guardou um segredo, resolveu um problema. O favor pode ser usado uma única vez para pedir ajuda proporcional ao que foi feito; depois de usado, desaparece. É diferente de um Aliado ou Contato: não é uma relação contínua, é uma dívida pontual que se encerra ao ser cobrada.",
+      "exemplos": [
+        "Um antigo companheiro de guerra que deve a vida ao personagem esconde o grupo por uma noite.",
+        "Um mercador que teve a filha resgatada oferece transporte gratuito quando a dívida é cobrada."
+      ],
+      "dica_mesa": "Depois de usado, o favor acaba — decida com o narrador se ele pode ser renovado ou se some para sempre.",
+      "relacionados": ["contatos", "aliados"]
+    },
+    "fleuma": {
+      "descricao": "Personagem é praticamente impossível de desestabilizar emocionalmente — nada o surpreende a ponto de travar, hesitar ou entrar em pânico, mesmo diante do inexplicável ou do horrível. É uma versão extrema de sangue-frio: ele ainda sente medo, mas nunca perde o controle sobre as próprias reações por causa disso.",
+      "exemplos": [
+        "Um explorador encara uma criatura das ruínas sem hesitar um segundo sequer.",
+        "Um guarda mantém a voz firme ao anunciar más notícias durante um motim iminente."
+      ],
+      "em_adamar": "Em campanhas com muitas cenas de terror e verificações de nervos, o narrador pode cobrar um custo maior por essa vantagem, dado o quanto ela neutraliza esse tipo de tensão.",
+      "relacionados": ["destemor", "indomavel"]
+    },
+    "flexibilidade": {
+      "descricao": "Corpo incomumente flexível, capaz de se contorcer, se espremer por espaços apertados e escapar de amarras ou agarrões com facilidade. No nível básico já dá um bônus notável nessas situações; no nível avançado, Ultraflexibilidade das Juntas, o corpo se dobra de um jeito quase anormal, ampliando ainda mais esses benefícios. Não aumenta força nem velocidade — é puramente sobre amplitude de movimento.",
+      "exemplos": [
+        "Um ladrão se espreme por uma grade estreita numa masmorra abandonada.",
+        "Um prisioneiro escapa de cordas mal amarradas contorcendo os pulsos."
+      ]
+    },
+    "grupo-de-contato": {
+      "descricao": "Em vez de um único contato, o personagem tem acesso a uma rede inteira de pessoas ligadas por um interesse comum — uma guilda, uma irmandade de mercadores, uma rede de informantes — que compartilham informação entre si. Funciona de forma parecida a Contatos, mas cobre uma área ou assunto mais amplo, e o personagem pode recorrer a qualquer membro da rede, não só a uma pessoa específica.",
+      "exemplos": [
+        "Uma rede de cocheiros e estalajadeiros espalha a notícia de que uma estrada foi fechada por bandidos.",
+        "Uma irmandade de curandeiros troca informações sobre uma doença estranha que se espalha entre vilas."
+      ],
+      "relacionados": ["contatos", "aliados"]
+    },
+    "hierarquia": {
+      "descricao": "Personagem ocupa um posto reconhecido dentro de uma estrutura organizada — um exército, uma ordem religiosa, uma guilda de ofício — com direitos, deveres e autoridade proporcionais ao nível alcançado. Diferente de Status, que é posição social geral, Hierarquia é sobre a posição dentro de uma organização específica: um capitão de guarda tem hierarquia militar mesmo que seu status social geral seja modesto.",
+      "exemplos": [
+        "Um sargento dá ordens que soldados rasos obedecem sem questionar.",
+        "Uma irmã de um templo tem acesso a salas que noviços não podem entrar."
+      ],
+      "dica_mesa": "Combine com um posto ou título concreto na ficha do personagem, para que o jogador saiba exatamente o que pode e não pode mandar.",
+      "relacionados": ["status", "clericato", "reconhecimento-social"]
+    },
+    "hipoalgia-alto-limiar-de-dor": {
+      "descricao": "Personagem sente dor física de forma muito atenuada, o que ajuda a continuar agindo, concentrado e coerente mesmo ferido, sem a distração e o choque que a dor normalmente causa. Não reduz o dano recebido nem esconde os ferimentos de quem olha — só o efeito da dor sobre o julgamento e o desempenho do personagem.",
+      "exemplos": [
+        "Um guerreiro continua lutando com firmeza mesmo com um corte profundo no braço.",
+        "Alguém suporta o tratamento de um ferimento sem gritar nem desmaiar."
+      ],
+      "relacionados": ["duro-de-matar"]
+    },
+    "idiomas": {
+      "descricao": "Representa quais línguas o personagem fala e escreve, e em que nível de fluência — do sotaque carregado que mal se faz entender até a fluência nativa. Cada idioma extra além do nativo é comprado separadamente, e falar não é o mesmo que escrever, já que algumas línguas do mundo podem nem ter forma escrita difundida. Não confunda com Facilidade para Idiomas, que é sobre a rapidez de aprender, não sobre quantos idiomas o personagem já sabe.",
+      "exemplos": [
+        "Um mercador de fronteira fala três línguas dos povos vizinhos, mas só escreve na própria.",
+        "Um clérigo lê textos antigos numa língua que ninguém mais na vila entende."
+      ],
+      "dica_mesa": "Anote na ficha o nível de cada idioma separadamente — falado e escrito podem ter fluências diferentes.",
+      "relacionados": ["facilidade-para-idiomas", "adaptabilidade-cultural"]
+    },
+    "imunidade-legal": {
+      "descricao": "Personagem está isento, total ou parcialmente, de certas leis locais por causa de seu cargo, título ou função — um embaixador, um sacerdote reconhecido, um nobre com foro privilegiado. Isso não o torna acima de qualquer punição, já que ofensas graves o bastante ainda podem ter consequências políticas se não legais, mas protege contra prisão e julgamento comum por transgressões menores.",
+      "exemplos": [
+        "Um enviado de outra corte não pode ser preso por portar armas dentro dos muros da cidade.",
+        "Um sacerdote escapa de ser julgado por um tribunal secular por uma briga de taverna."
+      ],
+      "dica_mesa": "Bom gancho de aventura: e se a imunidade for retirada bem no meio de uma investigação delicada?",
+      "relacionados": ["status", "poderes-legais"]
+    },
+    "indomavel": {
+      "descricao": "A vontade do personagem é praticamente impossível de dobrar por sedução, manipulação emocional ou pressão social — ele pode até ser convencido por um bom argumento, mas não por artimanhas que exploram desejo, vaidade ou fraqueza emocional. Não o torna imune a mentiras factuais, que ainda podem convencê-lo, nem a qualquer efeito que force a vontade de forma direta e sobrenatural.",
+      "exemplos": [
+        "Um guarda não cede aos encantos de quem tenta seduzi-lo para abandonar o posto.",
+        "Um juiz não se deixa comover por um apelo emocional que esconde uma manipulação clara."
+      ],
+      "relacionados": ["fleuma", "empatia"]
+    },
+    "lamentavel": {
+      "descricao": "Há algo na aparência ou na postura do personagem que desperta pena instintiva em estranhos, o que ajuda a conseguir ajuda, abrigo ou tolerância que outra pessoa não receberia. É útil socialmente, mas tem um preço: raramente é levado a sério como ameaça ou autoridade, e pode ser subestimado justamente por parecer indefeso demais.",
+      "exemplos": [
+        "Um órfão maltrapilho recebe pão de uma padeira que não daria a mais ninguém.",
+        "Um viajante ferido é deixado entrar numa pousada já fechada só por pena."
+      ]
+    },
+    "lingua-ferina": {
+      "descricao": "Personagem tem talento natural para respostas afiadas e sarcásticas que desconcertam quem as recebe, atrapalhando a concentração do adversário numa discussão ou confronto verbal. É mais uma vantagem de tom leve e cômico do que séria — o narrador pode preferir restringi-la ou não liberá-la fora de campanhas com esse estilo de humor.",
+      "exemplos": [
+        "Um mercenário desestabiliza um oficial arrogante com uma piada certeira em plena negociação.",
+        "Um vagabundo tira o fôlego de um valentão com uma resposta afiada antes da briga começar."
+      ],
+      "dica_mesa": "Converse com o narrador sobre o tom da mesa antes de escolher esta vantagem — ela pesa mais para o cômico do que para o sombrio."
+    },
+    "memoria-eidetica": {
+      "descricao": "Memória muito acima do normal. No nível básico, Memória Eidética, o personagem lembra detalhes com grande precisão ao se concentrar, mas para recordar algo bem específico ainda pode precisar de um teste de mente. No nível avançado, Memória Fotográfica, a lembrança é automática e completa, sem necessidade de teste, como se tivesse visto a cena outra vez.",
+      "exemplos": [
+        "Um espião recorda o layout completo de uma sala visitada apenas uma vez.",
+        "Um estudioso cita de cor um trecho de um livro lido anos atrás."
+      ],
+      "relacionados": ["calculos-instantaneos"]
+    },
+    "metabolismo-impoluto": {
+      "descricao": "O corpo do personagem quase não produz sujeira, suor com odor forte ou cheiro corporal perceptível, o que dificulta ser rastreado pelo faro de animais ou criaturas sensíveis a cheiro. É uma peculiaridade fisiológica incomum, mais adequada a personagens com alguma origem fora do comum humano.",
+      "exemplos": [
+        "Um fugitivo escapa de cães de rastreamento que perdem completamente o cheiro dele.",
+        "Um caçador percebe, intrigado, que a presa humana que persegue não deixa cheiro algum para o faro seguir."
+      ],
+      "em_adamar": "Fica com o narrador porque é uma característica corporal fora do normal humano, e cabe a ele decidir se e por que um personagem específico teria isso."
+    },
+    "nocao-exata-do-tempo": {
+      "descricao": "Personagem sempre sabe que horas são e mede a passagem do tempo com precisão, mesmo sem relógio, sol visível ou outra referência externa. No nível avançado, Cronolocalização, essa noção se estende a não se perder mesmo em situações raras de deslocamento no tempo, algo pouco relevante fora de cenários muito específicos.",
+      "exemplos": [
+        "Um vigia sabe exatamente quando o turno termina, mesmo trancado numa masmorra sem luz.",
+        "Um viajante calcula quantas horas de caminho ainda restam só pela sensação da passagem do tempo."
+      ],
+      "relacionados": ["senso-de-direcao"]
+    },
+    "obstinado": {
+      "descricao": "Personagem sabe lidar bem com pessoas difíceis, teimosas ou hostis, mantendo a paciência e encontrando uma abordagem que funcione mesmo quando outros desistiriam da negociação. Ajuda em situações de impasse social prolongado, mais do que em um único encontro rápido e decisivo.",
+      "exemplos": [
+        "Um negociador convence um chefe de aldeia desconfiado depois de horas de conversa que exauriria qualquer outro.",
+        "Um emissário mantém a calma diante de um nobre irritadiço até conseguir o que veio buscar."
+      ]
+    },
+    "patronos": {
+      "descricao": "Alguém poderoso — um senhor feudal, uma ordem religiosa, um templo, uma guilda influente — protege e apoia o personagem, podendo intervir em seu favor quando as coisas dão muito errado. Em troca, normalmente espera lealdade, serviço ocasional ou obediência; não é uma rede de amigos incondicionais, é uma relação de poder desigual que também pode custar caro se o personagem decepcionar o patrono.",
+      "exemplos": [
+        "Uma ordem de cavalaria paga o resgate de um de seus membros capturado.",
+        "Um templo intercede junto às autoridades locais para livrar um fiel de uma acusação injusta."
+      ],
+      "dica_mesa": "Um bom patrono cobra o favor de volta em algum momento — guarde isso como gancho de história.",
+      "relacionados": ["aliados", "contatos", "hierarquia"]
+    },
+    "pelagem": {
+      "descricao": "No GURPS, Pelagem representa um corpo coberto por pelos densos, como o de um animal, cobrindo grande parte ou toda a pele do personagem. É uma característica associada a raças bestiais, seres metade-animal ou espécies naturalmente peludas, geralmente vindo acompanhada de alguma resistência ao frio.",
+      "exemplos": [
+        "Um guardião de aparência ferina usa a pelagem grossa para aguentar noites geladas sem precisar de capa.",
+        "Uma criatura metade-animal impressiona ou assusta aldeões só de mostrar o pelo hirto ao se irritar."
+      ],
+      "em_adamar": "Fica fora do cenário porque Adamar só tem humanos comuns entre os povos jogáveis; não existem raças bestiais ou meio-animais entre os personagens."
+    },
+    "poderes-legais": {
+      "descricao": "Personagem tem autoridade legal reconhecida para agir em nome da lei — prender suspeitos, revistar, exercer força dentro de limites legais — variando de uma jurisdição local até uma autoridade ampla ou quase imunidade a restrições legais, podendo somar vários desses privilégios ao mesmo tempo. Costuma vir acompanhada de um dever correspondente e, às vezes, de reputação, mas isso não é obrigatório.",
+      "exemplos": [
+        "Um guarda municipal prende um ladrão em flagrante sem precisar de mandado.",
+        "Um inquisidor de uma ordem religiosa revista a casa de um suspeito com respaldo institucional."
+      ],
+      "relacionados": ["hierarquia", "imunidade-legal", "status"]
+    },
+    "por-dentro-da-moda": {
+      "descricao": "Personagem sabe instintivamente o que está na moda em sua própria sociedade e sempre se veste e se porta de acordo, causando boa impressão em ambientes que valorizam aparência e etiqueta. Não muda a aparência física em si, apenas garante que o personagem esteja sempre com o traje e o comportamento certos para o contexto, evitando parecer deslocado ou antiquado.",
+      "exemplos": [
+        "Uma cortesã nunca é flagrada com um traje fora de moda mesmo viajando entre cortes diferentes.",
+        "Um comerciante impressiona clientes exigentes só pelo modo como se apresenta."
+      ],
+      "relacionados": ["aparencia", "camaleao-social"]
+    },
+    "pouco-sono": {
+      "descricao": "Personagem precisa de bem menos horas de sono por noite do que a média das pessoas para acordar descansado, ganhando tempo extra que outros gastariam dormindo. Não muda a qualidade do sono nem onde se pode dormir, apenas a quantidade necessária.",
+      "exemplos": [
+        "Um vigia noturno cumpre o turno inteiro e ainda acorda alerta na manhã seguinte.",
+        "Um estudioso lê até tarde da noite sem sentir o cansaço que sentiria um dia depois."
+      ],
+      "relacionados": ["dorminhoco-qualidade"]
+    },
+    "prender-a-respiracao": {
+      "descricao": "Personagem prende o fôlego por muito mais tempo que o normal antes de precisar respirar, útil para mergulhos, travessias debaixo d'água ou situações onde respirar seria perigoso, como fumaça ou afogamento parcial. Não permite respirar debaixo d'água nem substitui o ar; só estica bastante o tempo antes que a falta de ar comece a fazer efeito.",
+      "exemplos": [
+        "Um mergulhador recupera um objeto afundado num poço sem precisar subir para respirar.",
+        "Alguém atravessa uma sala tomada por fumaça sem respirar até sair do outro lado."
+      ]
+    },
+    "reconhecimento-social": {
+      "descricao": "Personagem é bem visto e respeitado dentro de um grupo específico — uma guilda, uma ordem, um clã — recebendo bônus em como membros desse grupo reagem a ele, mesmo que nunca tenham se encontrado antes. É mais restrito que Reputação geral: só vale dentro daquele círculo específico, mas dentro dele o efeito é consistente e confiável.",
+      "exemplos": [
+        "Um mercador desconhecido é recebido de bom grado só por trazer o selo da guilda no manto.",
+        "Um cavaleiro errante é hospedado sem perguntas por outros membros da mesma ordem."
+      ],
+      "relacionados": ["reputacao", "hierarquia", "status"]
+    },
+    "recuperacao-da-consciencia": {
+      "descricao": "Personagem recobra a consciência muito mais rápido do que o normal depois de desmaiar, ser nocauteado ou cair inconsciente por qualquer motivo, voltando a agir enquanto a maioria ainda estaria apagada.",
+      "exemplos": [
+        "Um guerreiro derrubado num combate volta a si a tempo de evitar o golpe final.",
+        "Alguém nocauteado por uma pancada na cabeça já está de pé e orientado quando os captores ainda discutem o que fazer com ele."
+      ],
+      "relacionados": ["duro-de-matar", "dificil-de-subjugar"]
+    },
+    "reflexos-em-combate": {
+      "descricao": "Personagem reage com rapidez excepcional a ameaças repentinas, quase nunca ficando paralisado de surpresa quando um combate começa sem aviso, e recuperando a compostura tática mais rápido que o normal depois de ser pego desprevenido.",
+      "exemplos": [
+        "Um guarda já está de espada em punho no instante em que os assaltantes saltam da escuridão.",
+        "Um viajante emboscado reage e se põe a cobrir antes que o segundo golpe venha."
+      ],
+      "relacionados": ["destemor", "sentidos-agucados"]
+    },
+    "reivindicar-hospitalidade": {
+      "descricao": "Personagem pertence a um grupo, tradição ou ofício cujos membros reconhecem uma obrigação mútua de hospitalidade — abrigo, comida, alguma ajuda — quando um dos seus pede. O nível de compra determina o quão amplo é esse direito, de um clã local até uma ordem inteira espalhada pelo mundo. Não obriga ajuda em perigo real, só o mínimo de acolhida esperado pela tradição.",
+      "exemplos": [
+        "Um mercador viajante pede pouso numa casa de comércio da mesma rota sem pagar.",
+        "Um membro de um clã pastoril é recebido e alimentado por outro acampamento do mesmo povo em pleno inverno."
+      ],
+      "relacionados": ["patronos", "grupo-de-contato"]
+    },
+    "renda-propria": {
+      "descricao": "Personagem tem uma fonte de renda que não depende de trabalhar ativamente — terras arrendadas, um investimento, uma pensão, um negócio administrado por outra pessoa. Isso soma à riqueza normal do personagem como uma entrada extra periódica, sem exigir tempo de jogo dedicado a trabalhar para mantê-la, embora o narrador possa complicar essa renda se a fonte for ameaçada.",
+      "exemplos": [
+        "Um segundo filho de família nobre vive de um pequeno arrendamento de terras enquanto viaja.",
+        "Um ex-mercador aposentado recebe uma parte dos lucros de um negócio que já não administra."
+      ],
+      "dica_mesa": "Combine com o narrador o que acontece se a fonte da renda for destruída ou tomada durante a campanha.",
+      "relacionados": ["riqueza", "status"]
+    },
+    "reputacao": {
+      "descricao": "Fama, boa ou má, que precede o personagem num grupo, região ou profissão específica, afetando como estranhos reagem a ele antes mesmo de o conhecerem pessoalmente. A reputação é definida por quem a reconhece — todo mundo numa região, só um grupo profissional — e por quão frequentemente isso é percebido, desde sempre relevante até só ocasionalmente, quando alguém reconhece o nome ou o feito por trás dela.",
+      "exemplos": [
+        "Um caçador de recompensas é recebido com desconfiança em toda vila que já ouviu falar de seus métodos brutais.",
+        "Uma curandeira é procurada de longe por sua fama de nunca falhar num parto difícil."
+      ],
+      "dica_mesa": "Reputação ruim ainda é reputação — decida com o jogador o que ela representa antes de aplicar as penalidades.",
+      "relacionados": ["status", "reconhecimento-social", "equipamento-caracteristico"]
+    },
+    "resistente": {
+      "descricao": "Personagem tem resistência incomum a um tipo específico de ameaça física comum — doenças, venenos, frio extremo, ou outra categoria definida na compra — recebendo um bônus considerável nos testes relacionados, ou até se tornando praticamente imune dependendo do nível escolhido. É comprado separadamente para cada categoria; resistência a doença não ajuda contra veneno, por exemplo.",
+      "exemplos": [
+        "Um sobrevivente de invernos rigorosos mal sente o frio que deixaria outro trêmulo.",
+        "Alguém que cresceu bebendo água de poços ruins raramente adoece por comida estragada."
+      ],
+      "dica_mesa": "Deixe claro na ficha a qual ameaça específica a resistência se aplica, para não confundir depois na mesa.",
+      "relacionados": ["boa-forma", "tolerancia-a-temperatura"]
+    },
+    "riqueza": {
+      "descricao": "Define o patamar de recursos financeiros iniciais e a renda contínua do personagem, de confortável até muito rico. Aqui tratamos só dos níveis a partir do padrão médio para cima; personagens mais pobres que a média usam a desvantagem correspondente. O nível de riqueza também costuma influenciar o quanto de equipamento inicial o personagem pode bancar sem se endividar.",
+      "exemplos": [
+        "Um segundo filho de mercador começa a aventura com cavalo próprio e uma bolsa cheia.",
+        "Um nobre menor pode contratar ajuda paga sem pensar duas vezes."
+      ],
+      "dica_mesa": "Combine com o narrador quanto disso é dinheiro líquido em mãos e quanto é propriedade difícil de converter em ouro na hora.",
+      "relacionados": ["renda-propria", "status"]
+    },
+    "rosto-sincero": {
+      "descricao": "O rosto do personagem transmite honestidade e inofensividade a quem não o conhece bem, o que ajuda a ser acreditado mesmo quando talvez não devesse — soa mais confiável à primeira vista, mesmo estando prestes a mentir. Uma vez que alguém já conhece o personagem de verdade, esse efeito perde força.",
+      "exemplos": [
+        "Um trapaceiro convence um guarda desconfiado só pela cara de quem não faria mal a ninguém.",
+        "Um forasteiro suspeito consegue pousada porque a estalajadeira sente que ele é confiável."
+      ],
+      "relacionados": ["estilo"]
+    },
+    "sem-ressaca": {
+      "descricao": "Personagem nunca sofre os efeitos de ressaca depois de beber, por mais que tenha bebido na noite anterior — sem dor de cabeça, náusea ou lentidão no dia seguinte. Não muda o quanto o personagem fica bêbado durante a bebedeira em si, só elimina a consequência do dia seguinte.",
+      "exemplos": [
+        "Um mercenário acorda alerta depois de uma noite inteira bebendo com a guarnição.",
+        "Um andarilho negocia com clareza de manhã depois de uma celebração regada a vinho forte."
+      ],
+      "relacionados": ["tolerancia-ao-alcool"]
+    },
+    "senso-de-direcao": {
+      "descricao": "Personagem quase nunca se perde, sabendo sempre por instinto para onde fica cada direção e conseguindo refazer de memória um caminho já percorrido recentemente. No nível avançado, Noção Tridimensional do Espaço, essa noção se estende também à orientação em três dimensões, útil sobretudo debaixo da terra, em masmorras labirínticas ou ambientes verticais complexos.",
+      "exemplos": [
+        "Um batedor guia o grupo de volta ao acampamento numa noite sem estrelas visíveis.",
+        "Um explorador não se perde nos corredores repetitivos e escuros de uma masmorra antiga."
+      ],
+      "dica_mesa": "Ótima vantagem para quem gosta de explorar masmorras e não quer depender só de mapas do narrador.",
+      "relacionados": ["nocao-exata-do-tempo", "adaptacao-ao-terreno"]
+    },
+    "sentidos-agucados": {
+      "descricao": "Um ou mais dos cinco sentidos do personagem é mais afiado que o normal, dando bônus em testes de percepção relacionados a esse sentido específico — enxergar detalhes distantes, ouvir passos abafados, sentir um cheiro fraco no ar. Cada sentido aguçado é comprado separadamente, e não muda a natureza do sentido em si, como enxergar no escuro, que é outra vantagem.",
+      "exemplos": [
+        "Um batedor percebe o brilho de um metal escondido na relva antes de qualquer outro do grupo.",
+        "Um guarda ouve passos abafados no corredor ao lado bem antes de aparecerem."
+      ],
+      "relacionados": ["visao-noturna", "visao-periferica"]
+    },
+    "sorte": {
+      "descricao": "De tempos em tempos, o personagem pode repetir uma rolagem malsucedida e ficar com o resultado novo, representando uma sorte incomum que o acompanha. Quanto mais caro o nível, com mais frequência isso pode ser usado durante uma sessão. Não garante sucesso automático — só a chance de tentar de novo quando o resultado original foi ruim.",
+      "exemplos": [
+        "Um ladrão refaz um teste de furtividade que quase o denunciaria.",
+        "Um viajante refaz uma rolagem de sobrevivência que teria deixado o grupo sem rumo numa nevasca."
+      ],
+      "dica_mesa": "Guarde o uso da Sorte para o momento realmente decisivo — usar cedo demais desperdiça o efeito dramático.",
+      "relacionados": ["fleuma"]
+    },
+    "status": {
+      "descricao": "Posição do personagem na hierarquia social de sua sociedade, de servo a nobre ou realeza, afetando como as pessoas reagem a ele e o que se espera de seu comportamento. O efeito prático em como as pessoas reagem normalmente depende da diferença entre o status do personagem e o de quem ele interage, não do valor absoluto — um nobre menor ainda impressiona um camponês, mesmo sem ser páreo para um rei. Status alto também costuma vir acompanhado de obrigações e expectativas sociais específicas.",
+      "exemplos": [
+        "Um cavaleiro é recebido com deferência automática numa taverna de estrada.",
+        "Um camponês baixa os olhos diante de um senhor de terras sem que ninguém precise explicar por quê."
+      ],
+      "dica_mesa": "Status alto sem riqueza correspondente é um bom gerador de história — a aparência de poder sem os meios para sustentá-la.",
+      "relacionados": ["hierarquia", "riqueza", "reputacao"]
+    },
+    "talento": {
+      "descricao": "Aptidão natural para um grupo inteiro de perícias relacionadas — curar, criar, explorar, lidar com animais, entre outros — dando um bônus que se aplica a todas as perícias daquele grupo de uma vez, além de reduzir o custo para melhorá-las com o tempo. É mais eficiente do que melhorar cada perícia separadamente quando o personagem realmente investe naquela área de atuação.",
+      "exemplos": [
+        "Um curandeiro de vila é bom tanto em tratar feridas quanto em reconhecer doenças e preparar remédios, com a mesma facilidade natural.",
+        "Um batedor de fronteira rastreia, sobrevive e se orienta na mata com a mesma desenvoltura."
+      ],
+      "dica_mesa": "Bom para personagens com um tema central claro de campanha — decida com o narrador quais perícias entram no grupo.",
+      "relacionados": ["memoria-eidetica"]
+    },
+    "tolerancia-ao-alcool": {
+      "descricao": "Personagem aguenta beber muito mais álcool do que uma pessoa comum antes de sentir os efeitos da embriaguez, o que ajuda em situações sociais regadas a bebida ou quando é importante manter a cabeça mais fria que os outros na mesa.",
+      "exemplos": [
+        "Um espião mantém a lucidez numa rodada de bebida que embriaga todos os outros na mesa.",
+        "Um mercenário vence uma disputa de bebida contra os locais numa taverna de fronteira."
+      ],
+      "relacionados": ["sem-ressaca"]
+    },
+    "tolerancia-a-temperatura": {
+      "descricao": "Personagem aguenta temperaturas extremas — muito frio ou muito calor, dependendo de como foi comprada — bem melhor que o normal, sofrendo menos ou nada dos efeitos que afetariam outra pessoa nas mesmas condições, como cansaço, dormência ou exaustão pelo calor.",
+      "exemplos": [
+        "Um guia de montanha atravessa uma nevasca com roupas mais leves que o resto do grupo sem sofrer o frio da mesma forma.",
+        "Um mercador do deserto segue caminhando ao meio-dia enquanto os outros buscam sombra."
+      ],
+      "relacionados": ["resistente", "adaptacao-ao-terreno"]
+    },
+    "versatil": {
+      "descricao": "Personagem é criativo e encontra soluções pouco óbvias para problemas, tendo mais facilidade para justificar uma abordagem alternativa ou um uso não convencional de uma perícia ou ferramenta diante do narrador. É mais uma vantagem de estilo de jogo e narrativa do que um bônus mecânico fixo — na prática, costuma se traduzir em o narrador conceder mais chances de tentar algo criativo.",
+      "exemplos": [
+        "Um batedor improvisa uma armadilha usando só o que encontra na mata.",
+        "Um prisioneiro usa um prego solto de um jeito que ninguém previu para escapar das algemas."
+      ]
+    },
+    "visualizacao": {
+      "descricao": "Personagem consegue imaginar mentalmente uma tarefa complexa antes de executá-la, e esse ensaio mental melhora o resultado real, como se tivesse praticado antes mesmo sem ter feito. Funciona melhor para tarefas que têm etapas claras e podem ser visualizadas na mente antes de agir, e menos para reações instantâneas.",
+      "exemplos": [
+        "Um artesão visualiza cada corte antes de lavrar uma peça difícil de madeira.",
+        "Um escalador imagina o trajeto inteiro pela face rochosa antes do primeiro passo."
+      ]
+    },
+    "visao-noturna": {
+      "descricao": "Personagem enxerga melhor no escuro do que o normal, reduzindo progressivamente as penalidades de visão causadas por pouca luz conforme o nível comprado. Não é visão no escuro absoluto nem enxerga através de obstáculos — só compensa a falta de luz ambiente, e mesmo no nível máximo ainda tem limites em escuridão total.",
+      "exemplos": [
+        "Um batedor noturno segue uma trilha à luz fraca da lua sem tropeçar.",
+        "Um guarda percebe um vulto se movendo no fundo escuro de um corredor de masmorra."
+      ],
+      "dica_mesa": "Combine com Sentidos Aguçados para personagens que trabalham quase só à noite ou em subterrâneos.",
+      "relacionados": ["sentidos-agucados", "visao-periferica"]
+    },
+    "visao-periferica": {
+      "descricao": "Campo de visão bem mais largo que o normal, dificultando que alguém se aproxime ou ataque pelas costas ou pela lateral sem ser notado. Não substitui atenção ativa — uma pessoa distraída ainda pode ser pega de surpresa por outros motivos — nem funciona através de obstáculos que bloqueiam a visão de fato.",
+      "exemplos": [
+        "Um guarda percebe o movimento de um assaltante se aproximando pelo flanco antes que ele chegue perto.",
+        "Um duelista nota o segundo oponente surgindo ao lado sem tirar os olhos do primeiro."
+      ],
+      "relacionados": ["sentidos-agucados", "visao-noturna"]
+    },
+    "voz-melodiosa": {
+      "descricao": "Personagem tem uma voz naturalmente agradável e convincente, dando um bônus em perícias que dependem de falar bem ou cantar — persuasão, oratória, canto, contar histórias. Não muda o conteúdo do que é dito, só o quanto a voz em si ajuda a vender a mensagem.",
+      "exemplos": [
+        "Um bardo de vila prende a atenção de uma taverna inteira contando a mesma história que outros contariam sem graça.",
+        "Um pregador convence uma multidão cética só pelo tom de voz."
+      ],
+      "dica_mesa": "Bom complemento para personagens focados em perícias sociais ou performáticas.",
+      "relacionados": ["aparencia", "carisma"]
+    },
+    "voz-penetrante": {
+      "descricao": "A voz do personagem se faz ouvir com clareza mesmo em meio a muito barulho — uma tempestade, uma multidão gritando, o estrondo de uma batalha — sem precisar gritar até ficar rouco. É útil para dar ordens, avisos ou pedidos de socorro em condições em que ninguém mais conseguiria ser ouvido.",
+      "exemplos": [
+        "Um capitão dá ordens que atravessam o barulho de uma batalha campal.",
+        "Alguém grita um aviso de perigo que é ouvido apesar do vento uivante de uma tempestade."
+      ]
+    }
+  }
+}

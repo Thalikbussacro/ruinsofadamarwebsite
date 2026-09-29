@@ -1,16 +1,26 @@
 // tools/enriquecimento.mjs — mostra o andamento do enriquecimento dos itens (ver docs/enriquecimento-itens.md).
 // Uso: node tools/enriquecimento.mjs            (resumo por fatia)
 //      node tools/enriquecimento.mjs E3          (lista os itens pendentes da fatia E3)
-import { readFileSync } from 'node:fs';
+//      node tools/enriquecimento.mjs E3 --json   (os mesmos itens em JSON, com os campos úteis para escrever)
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
 
 const ler = (f) => {
   const j = JSON.parse(readFileSync(new URL('../data/gurps/' + f + '.json', import.meta.url), 'utf8'));
   return Array.isArray(j) ? j : Object.values(j).find(Array.isArray);
 };
-const pericias = ler('pericias');
-const vantagens = ler('vantagens');
-const desvantagens = ler('desvantagens');
-const equipamento = ler('equipamento');
+const pasta = new URL('../data/gurps/enriquecimento/', import.meta.url);
+const extras = {};
+if (existsSync(pasta)) {
+  for (const f of readdirSync(pasta).filter((x) => x.endsWith('.json'))) {
+    const j = JSON.parse(readFileSync(new URL(f, pasta), 'utf8'));
+    for (const [id, e] of Object.entries(j.itens || {})) extras[j.lista + '/' + id] = e;
+  }
+}
+const lerComExtras = (f) => ler(f).map((i) => Object.assign({}, i, extras[f + '/' + i.id] || {}));
+const pericias = lerComExtras('pericias');
+const vantagens = lerComExtras('vantagens');
+const desvantagens = lerComExtras('desvantagens');
+const equipamento = lerComExtras('equipamento');
 
 const inicial = (i) => i.nome.normalize('NFD').toUpperCase().replace(/[^A-Z]/g, '')[0]; // sem acentos nem aspas
 const entre = (a, b) => (i) => inicial(i) >= a && inicial(i) <= b;
@@ -56,7 +66,11 @@ const pedida = process.argv[2];
 if (pedida) {
   const f = FATIAS.find((x) => x[0] === pedida.toUpperCase());
   if (!f) { console.error('fatia desconhecida: ' + pedida); process.exit(1); }
-  f[2].filter((i) => !feito(i)).forEach((i) => console.log(i.id + '  ' + i.nome + '  (' + i.adamar + ')'));
+  const pendentes = f[2].filter((i) => !feito(i));
+  if (process.argv.includes('--json')) {
+    const TIRAR = ['icone', 'grade', 'predefinidos', 'custo_estruturado', 'efeitos', 'prerequisitos', 'peso', 'combate', 'protecao', 'escudo'];
+    console.log(JSON.stringify(pendentes.map((i) => Object.fromEntries(Object.entries(i).filter(([k]) => !TIRAR.includes(k)))), null, 1));
+  } else pendentes.forEach((i) => console.log(i.id + '  ' + i.nome + '  (' + i.adamar + ')'));
 } else {
   let total = 0, prontos = 0;
   for (const [cod, titulo, itens] of FATIAS) {

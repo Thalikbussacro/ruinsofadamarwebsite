@@ -1,0 +1,494 @@
+{
+  "lista": "equipamento",
+  "itens": {
+    "pistola-pederneira-51": {
+      "descricao": "A pistola de pederneira é uma arma de pólvora de um tiro só, carregada pela boca do cano com pólvora e bala e disparada quando uma pedra de sílex bate contra uma peça de aço, gerando a faísca que acende a carga. É lenta de recarregar — o processo todo leva bastante tempo — e vulnerável a chuva ou umidade, que podem molhar a pólvora e fazer a arma falhar na hora do disparo.\n\nEra comum como arma de duelo, de cavalaria ou como reforço de um único tiro antes de partir para a espada, nunca como arma de fogo sustentado.",
+      "exemplos": [
+        "Um oficial de cavalaria dispara a pistola de pederneira e depois saca a espada para o resto do duelo.",
+        "Na chuva, a pólvora da pistola de pederneira umedece e a arma falha bem na hora crítica.",
+        "Um nobre mantém a pistola de pederneira carregada sobre a mesa durante uma negociação tensa."
+      ],
+      "em_adamar": "A pólvora não é difundida em Adamar, cenário que não passa da tecnologia do fim da Idade Média, então nenhuma arma de fogo desta lista existe por aqui.",
+      "relacionados": ["pistola-fecho-de-roda-60"]
+    },
+    "pistola-fecho-de-roda-60": {
+      "descricao": "A pistola com fecho de roda usa um mecanismo de roda giratória que risca uma pedra de pirita para gerar a faísca, em vez de depender de um pavio aceso como as primeiras armas de pólvora. Isso tornou o disparo mais confiável e rápido de preparar do que os mecanismos anteriores, ao custo de um mecanismo caro e delicado, o que a tornava uma arma cara e de status.\n\nAinda assim, é uma arma de um tiro só, lenta de recarregar, tipicamente usada por cavaleiros e nobres que podiam pagar por ela.",
+      "exemplos": [
+        "Um cavaleiro exibe a pistola com fecho de roda como símbolo de status tanto quanto arma.",
+        "O mecanismo de roda emperra por falta de manutenção, e a arma não dispara quando é preciso.",
+        "Um assassino prefere o fecho de roda porque não precisa manter um pavio aceso escondido sob a capa."
+      ],
+      "em_adamar": "A pólvora não é difundida em Adamar, cenário que não passa da tecnologia do fim da Idade Média, então esta arma não existe por aqui.",
+      "relacionados": ["pistola-pederneira-51"]
+    },
+    "derringer-41": {
+      "descricao": "O derringer é uma pistola pequena de dois tiros, feita para ser escondida numa bota, numa manga ou na palma da mão, não para combate a distância. Sua utilidade está inteiramente na discrição e na surpresa: como arma de última hora, funciona bem a queima-roupa, mas perde muito da força e da precisão de uma pistola de tamanho normal.\n\nÉ a arma clássica de quem quer uma garantia oculta e não pretende travar um tiroteio de verdade com ela.",
+      "exemplos": [
+        "Um jogador de cartas mantém um derringer escondido na manga como garantia contra trapaceiros.",
+        "Desarmado na revista, o viajante ainda tem o pequeno derringer escondido na bota.",
+        "Com apenas dois tiros, o dono do derringer sabe que precisa acertar de primeira."
+      ],
+      "em_adamar": "É uma arma de fogo de pólvora industrial, muito além da tecnologia medieval de Adamar."
+    },
+    "revolver-36": {
+      "descricao": "O revólver é uma arma de fogo com um tambor giratório que guarda vários tiros prontos, girando um novo cartucho para a posição de disparo a cada acionamento, sem precisar recarregar entre um tiro e outro como as pistolas de um tiro só. Esta versão mais antiga, calibre .36, ainda é relativamente fraca perto dos revólveres que vieram depois, mas já representa um salto enorme em cadência de tiro sobre as armas de um disparo só.\n\nÉ a arma clássica de fronteira, tanto de defesa pessoal quanto de duelo.",
+      "exemplos": [
+        "Um pistoleiro de fronteira confia no revólver para vários tiros seguidos sem parar para recarregar.",
+        "Depois de seis disparos, o dono do revólver ainda precisa parar para recarregar o tambor inteiro.",
+        "Um xerife de vila carrega o revólver visível no cinto como sinal de autoridade."
+      ],
+      "em_adamar": "É uma arma de fogo de pólvora industrial, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["revolver-38", "revolver-cano-curto-38"]
+    },
+    "pistola-auto-45": {
+      "descricao": "A pistola automática é uma arma semiautomática: a energia do próprio disparo expulsa o cartucho vazio e recarrega a câmara com o próximo, então basta puxar o gatilho de novo para atirar outra vez, sem precisar acionar nada manualmente entre um tiro e outro. O calibre .45 bate com bastante força de parada, ao custo de um recuo mais forte e de carregadores que guardam menos munição que calibres mais leves.\n\nÉ uma arma clássica de defesa pessoal e uso militar, valorizada mais pela força do impacto do que pela quantidade de tiros disponíveis.",
+      "exemplos": [
+        "Um investigador confia na força de parada da pistola automática .45 contra um único alvo perigoso.",
+        "O recuo forte da .45 exige prática para manter tiros seguidos precisos.",
+        "Um veterano prefere o calibre .45 justamente pela reputação de parar um alvo com poucos tiros."
+      ],
+      "em_adamar": "É uma arma de fogo de pólvora industrial, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["revolver-38"]
+    },
+    "pistola-auto-9mm-nt6": {
+      "descricao": "Esta pistola semiautomática compacta usa um calibre 9 mm mais leve que o .45, o que permite carregadores com mais munição no mesmo tamanho de arma, ao custo de bater um pouco mais fraco por disparo. É uma arma prática de porte civil ou policial, equilibrando discrição, capacidade de tiros e força de parada razoável.\n\nSeu tamanho reduzido a torna mais fácil de esconder do que uma pistola de calibre maior.",
+      "exemplos": [
+        "Um detetive prefere a 9 mm compacta por ser mais fácil de esconder sob o paletó.",
+        "Com mais balas no carregador, o atirador se preocupa menos em recarregar no meio de um confronto.",
+        "Comparada à .45, a 9 mm bate mais fraco, mas o atirador compensa com mais disparos disponíveis."
+      ],
+      "em_adamar": "É uma arma de fogo industrial moderna, muito além da tecnologia medieval de Adamar."
+    },
+    "revolver-38": {
+      "descricao": "O revólver .38 é uma versão mais moderna e refinada do mecanismo de tambor giratório, com um calibre equilibrado entre força de parada e controle do coice — nem tão fraco quanto os revólveres antigos, nem tão pesado quanto os magnuns mais potentes. É extremamente simples e confiável: praticamente não emperra, o que o tornou a arma clássica de policiais e civis por gerações.\n\nAssim como qualquer revólver, recarregar todo o tambor depois de esvaziá-lo leva bem mais tempo do que trocar o carregador de uma pistola automática.",
+      "exemplos": [
+        "Um detetive confia no revólver .38 justamente pela simplicidade e pela confiabilidade do mecanismo.",
+        "Sem balas sobressalentes, recarregar o tambor do revólver .38 no meio da perseguição consome um tempo precioso.",
+        "Um guarda de banco mantém o revólver .38 discretamente sob o balcão."
+      ],
+      "em_adamar": "É uma arma de fogo industrial moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["revolver-36", "revolver-cano-curto-38"]
+    },
+    "revolver-cano-curto-38": {
+      "descricao": "Esta é uma versão de cano encurtado do revólver .38, pensada especificamente para ser carregada escondida — num coldre de tornozelo, num bolso ou numa bolsa — em vez de à mostra no cinto. O cano mais curto sacrifica um pouco de precisão a distâncias maiores em troca de um tamanho muito mais discreto e fácil de sacar rapidamente.\n\nÉ a arma clássica de reserva, carregada como segurança extra além da arma principal.",
+      "exemplos": [
+        "Um detetive carrega o revólver de cano curto no tornozelo, como segunda arma escondida.",
+        "A distâncias maiores, o cano curto perde precisão comparado ao revólver .38 comum.",
+        "Revistado por cima, o suspeito ainda esconde o revólver de cano curto na bota."
+      ],
+      "em_adamar": "É uma arma de fogo industrial moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["revolver-38"]
+    },
+    "pistola-auto-9mm-nt7": {
+      "descricao": "Esta é uma versão mais moderna e refinada da pistola semiautomática em 9 mm, com carregadores de alta capacidade que guardam bem mais munição que os modelos anteriores do mesmo calibre. É a arma padrão típica de forças policiais e militares de sua era, equilibrando facilidade de uso, confiabilidade e quantidade de tiros disponíveis antes de recarregar.\n\nContinua batendo mais fraco por disparo do que calibres maiores, mas compensa com a capacidade do carregador.",
+      "exemplos": [
+        "Uma unidade policial adota a pistola 9 mm moderna como arma padrão de todo o efetivo.",
+        "Com o carregador de alta capacidade, o atirador raramente se preocupa em ficar sem munição num confronto curto.",
+        "Comparada aos modelos antigos, esta pistola 9 mm é bem mais confiável em condições adversas."
+      ],
+      "em_adamar": "É uma arma de fogo industrial moderna, muito além da tecnologia medieval de Adamar."
+    },
+    "pistola-de-ocultacao-380": {
+      "descricao": "A pistola de ocultação é uma arma pequena de calibre reduzido, projetada de ponta a ponta para caber num bolso ou numa bolsa sem ser percebida. Abre mão de força de disparo e de precisão a distância em troca de ser praticamente invisível até o momento em que é sacada.\n\nÉ a arma de reserva ou de defesa pessoal discreta por excelência, não uma arma para um confronto prolongado.",
+      "exemplos": [
+        "Um comerciante guarda a pistola de ocultação no bolso do casaco, sem chamar atenção alguma.",
+        "Revistado de forma superficial, o suspeito passa despercebido com a pequena pistola de ocultação.",
+        "A distâncias maiores, a pistola de ocultação perde muita precisão comparada a uma arma de porte normal."
+      ],
+      "em_adamar": "É uma arma de fogo industrial moderna, muito além da tecnologia medieval de Adamar."
+    },
+    "revolver-357m": {
+      "descricao": "O revólver .357 Magnum dispara um cartucho bem mais potente que o dos revólveres comuns, com força de parada notavelmente maior ao custo de um coice forte que exige prática para controlar em disparos seguidos. É uma arma valorizada por quem prioriza parar uma ameaça com o menor número possível de tiros, mais do que por cadência ou capacidade do tambor.\n\nAssim como qualquer revólver, a recarga do tambor inteiro é mais lenta que trocar o carregador de uma pistola automática.",
+      "exemplos": [
+        "Um caçador de recompensas confia no .357 Magnum pela força de parada contra alvos perigosos.",
+        "O coice forte do .357 Magnum surpreende quem está acostumado com revólveres mais leves.",
+        "Um guarda florestal carrega o .357 Magnum como defesa contra animais grandes, não só contra pessoas."
+      ],
+      "em_adamar": "É uma arma de fogo industrial moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["revolver-44m"]
+    },
+    "revolver-44m": {
+      "descricao": "O revólver .44 Magnum dispara um dos cartuchos de revólver mais potentes que existem, famoso pela força de parada avassaladora e por um coice pesado que castiga a mão e o pulso do atirador a cada disparo. É uma arma para quem precisa deter algo muito perigoso com poucos tiros — caça grossa, animais de grande porte ou ameaças blindadas leves — não uma arma prática de uso corriqueiro.\n\nO coice forte torna disparos seguidos rápidos e precisos bem mais difíceis do que num revólver comum.",
+      "exemplos": [
+        "Um guia de caça carrega o .44 Magnum como última linha de defesa contra animais enormes.",
+        "Depois de um único disparo do .44 Magnum, o atirador inexperiente sente o pulso doer.",
+        "Um colecionador exibe o .44 Magnum mais pela reputação da arma do que pelo uso prático diário."
+      ],
+      "em_adamar": "É uma arma de fogo industrial moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["revolver-357m", "pistola-auto-44m"]
+    },
+    "pistola-auto-44m": {
+      "descricao": "Esta é uma versão semiautomática do cartucho pesado do .44 Magnum, combinando a força de parada de um dos calibres mais potentes de revólver com a cadência mais rápida de uma pistola automática. O resultado é uma arma grande, pesada e de coice muito forte, exigindo mãos firmes e bastante prática para controlar disparos seguidos.\n\nÉ uma escolha de quem quer o melhor dos dois mundos — força e cadência — e está disposto a pagar o preço em peso e recuo.",
+      "exemplos": [
+        "Um caçador de recompensas experiente prefere a semiautomática .44 Magnum pela combinação de força e cadência.",
+        "O peso e o coice da arma afastam a maioria dos atiradores casuais.",
+        "Depois de uma rajada de disparos, o braço do atirador sente o esforço acumulado do recuo forte."
+      ],
+      "em_adamar": "É uma arma de fogo industrial moderna, muito além da tecnologia medieval de Adamar."
+    },
+    "pistola-auto-40": {
+      "descricao": "A pistola automática calibre .40 fica no meio do caminho entre a 9 mm, mais leve e de maior capacidade, e a .45, mais forte e de menor capacidade, buscando equilibrar força de parada e quantidade de munição no carregador. É uma escolha comum entre forças policiais modernas justamente por esse meio-termo.\n\nNão se destaca em nenhum aspecto específico, mas não decepciona em nenhum deles.",
+      "exemplos": [
+        "Uma corporação policial adota a .40 como meio-termo entre força e capacidade de tiros.",
+        "Comparado à 9 mm, o calibre .40 bate mais forte, mas o carregador guarda um pouco menos munição.",
+        "Um instrutor de tiro recomenda a .40 para quem quer uma única arma versátil."
+      ],
+      "em_adamar": "É uma arma de fogo industrial moderna, muito além da tecnologia medieval de Adamar."
+    },
+    "pistola-auto-9mm-nt9": {
+      "descricao": "Esta é uma pistola semiautomática de última geração, incorporando sistemas eletrônicos de segurança e assistência de mira que tornam o disparo mais rápido, mais seguro contra uso indevido e mais preciso do que os modelos puramente mecânicos anteriores. É o topo de linha das armas de fogo convencionais, geralmente restrita a forças de elite ou compradores dispostos a pagar caro pela tecnologia embutida.\n\nDepende de baterias ou circuitos que podem falhar de formas que uma pistola puramente mecânica nunca falharia.",
+      "exemplos": [
+        "Uma unidade de elite adota a pistola inteligente pelos sistemas de segurança embutidos.",
+        "Sem carga na bateria dos sistemas eletrônicos, alguns recursos extras da pistola param de funcionar.",
+        "O preço elevado da pistola inteligente afasta a maioria dos compradores civis comuns."
+      ],
+      "em_adamar": "É uma arma de fogo eletrônica de última geração, muitas eras à frente da tecnologia medieval de Adamar."
+    },
+    "pistola-girofoguete-15mm": {
+      "descricao": "A pistola girofoguete dispara pequenos minifoguetes autopropelidos em vez de balas comuns: cada projétil acelera sozinho depois de sair do cano, ganhando força ao longo do voo em vez de perdê-la como uma bala convencional. Isso a torna incomum entre armas de fogo — relativamente fraca à queima-roupa, mas mantendo mais poder a distâncias maiores do que se esperaria.\n\nÉ uma arma de nicho, valorizada mais pelo alcance sustentado do que pelo impacto imediato de perto.",
+      "exemplos": [
+        "Um atirador percebe que o minifoguete bate mais fraco do que esperava a queima-roupa.",
+        "A distâncias maiores, a pistola girofoguete surpreende por manter força que uma pistola comum já teria perdido.",
+        "Curioso com a arma exótica, um recruta pergunta por que os minifoguetes assobiam ao voar."
+      ],
+      "em_adamar": "É uma arma de fogo de ultra-tecnologia, muitas eras à frente da tecnologia medieval de Adamar."
+    },
+    "mm-45": {
+      "descricao": "A metralhadora de mão calibre .45 é uma arma automática portátil que dispara munição de pistola em rajadas contínuas, entregando bastante poder de parada por disparo às custas de um coice considerável quando disparada em modo automático. É a arma clássica de combate a curta distância em espaços fechados, onde a cadência de tiro importa mais do que o alcance.\n\nControlar rajadas longas exige prática, já que a arma tende a subir e desviar da mira original.",
+      "exemplos": [
+        "Um agente entra numa sala fechada com a metralhadora de mão .45 em rajadas curtas e controladas.",
+        "Em modo automático, a arma sobe e desvia da mira se o atirador não segurar firme.",
+        "A curta distância, a metralhadora de mão .45 supera facilmente uma pistola comum em poder de fogo."
+      ],
+      "em_adamar": "É uma arma de fogo automática industrial, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["mm-9mm-nt6"]
+    },
+    "mm-9mm-nt6": {
+      "descricao": "Esta metralhadora de mão em 9 mm é mais leve que a versão em .45, o que a torna mais fácil de controlar em disparos automáticos e permite carregar mais munição no mesmo peso. Em troca, cada disparo individual bate um pouco mais fraco que o calibre maior.\n\nÉ uma das armas automáticas portáteis mais icônicas de sua época, adotada tanto por forças militares quanto por grupos armados civis.",
+      "exemplos": [
+        "Um grupo armado adota a metralhadora de mão 9 mm por ser mais leve e fácil de controlar.",
+        "Comparada à versão em .45, a 9 mm sobe menos durante uma rajada automática.",
+        "Um guarda de comboio mantém a metralhadora de mão pronta para rajadas curtas em caso de emboscada."
+      ],
+      "em_adamar": "É uma arma de fogo automática industrial, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["mm-45", "mm-9mm-nt7"]
+    },
+    "pistola-metralha-9mm": {
+      "descricao": "A pistola-metralha é uma versão compacta de submetralhadora, pequena o bastante para ser quase confundida com uma pistola grande, mas capaz de disparo totalmente automático. Seu tamanho reduzido a torna fácil de esconder ou carregar em espaços apertados, mas também mais difícil de controlar em rajadas por ser leve demais para absorver bem o recuo repetido.\n\nÉ a escolha de quem quer poder de fogo automático sem carregar uma arma de tamanho normal.",
+      "exemplos": [
+        "Um guarda-costas prefere a pistola-metralha por ser discreta o bastante para carregar sob o paletó.",
+        "Em rajada longa, a pistola-metralha compacta sobe e perde a mira com mais facilidade que uma submetralhadora maior.",
+        "Escondida dentro de uma bolsa, a pistola-metralha passa despercebida até o momento do saque."
+      ],
+      "em_adamar": "É uma arma de fogo automática industrial, muito além da tecnologia medieval de Adamar."
+    },
+    "mm-9mm-nt7": {
+      "descricao": "Esta é uma versão mais moderna e refinada da metralhadora de mão em 9 mm, com um design mais compacto e mecanismos mais confiáveis que os modelos anteriores do mesmo calibre. É a arma preferida de equipes táticas para combate a curta distância, equilibrando cadência automática, controle do coice e facilidade de manejo em espaços fechados.\n\nContinua sendo uma arma essencialmente de curta distância, perdendo eficácia contra alvos mais afastados.",
+      "exemplos": [
+        "Uma equipe tática moderna prefere esta versão da metralhadora de mão para operações em ambientes fechados.",
+        "O design mais compacto facilita o manejo em corredores e portas estreitas.",
+        "A distâncias maiores, a equipe troca a metralhadora de mão por um rifle mais adequado."
+      ],
+      "em_adamar": "É uma arma de fogo automática industrial, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["mm-9mm-nt6"]
+    },
+    "adp-4-6mm": {
+      "descricao": "A ADP, ou arma de defesa pessoal, é uma arma automática compacta do tamanho de uma submetralhadora, mas disparando um cartucho pequeno e de alta velocidade desenvolvido especificamente para perfurar coletes e proteções leves melhor do que uma munição comum de pistola conseguiria. É pensada para tripulações de veículos, equipes de apoio e outros que precisam de uma arma leve, mas ainda capaz de furar proteção básica.\n\nContinua sendo uma arma de curto a médio alcance, não um substituto para um rifle de verdade.",
+      "exemplos": [
+        "A tripulação do veículo carrega a ADP por ser leve e ainda assim eficaz contra proteções leves.",
+        "A munição pequena e rápida da ADP surpreende quem espera que ela seja fraca pelo tamanho reduzido.",
+        "Uma equipe de segurança prefere a ADP à submetralhadora comum pela capacidade de perfuração."
+      ],
+      "em_adamar": "É uma arma de fogo militar avançada, muitas eras à frente da tecnologia medieval de Adamar.",
+      "relacionados": ["adp-gauss-4mm"]
+    },
+    "adp-gauss-4mm": {
+      "descricao": "Esta arma de defesa pessoal usa aceleração eletromagnética — um sistema Gauss — para lançar seus projéteis, em vez de depender de uma carga de pólvora explodindo dentro do cano. Isso permite velocidades de disparo extremamente altas e um som e recuo bem diferentes de uma arma de fogo convencional, além de dispensar completamente pólvora ou combustão.\n\nÉ uma arma de tecnologia de ponta, cara e rara mesmo entre forças militares avançadas.",
+      "exemplos": [
+        "A arma Gauss dispara com um estalo elétrico bem diferente do estrondo de uma arma convencional.",
+        "Sem pólvora envolvida, a manutenção da arma Gauss segue regras totalmente diferentes das armas comuns.",
+        "Só unidades de elite têm acesso a uma arma de defesa pessoal Gauss como esta."
+      ],
+      "em_adamar": "É uma arma de aceleração eletromagnética de ultra-tecnologia, muitas eras à frente de qualquer coisa que exista em Adamar.",
+      "relacionados": ["adp-4-6mm", "rifle-de-gauss-4mm"]
+    },
+    "canhao-de-mao-90": {
+      "descricao": "O canhão de mão é a arma de fogo mais primitiva da lista: um tubo de ferro simples, carregado pela boca com pólvora e projétil e disparado ao encostar um pavio ou brasa num orifício na parte de trás. Não tem mira de verdade, é extremamente impreciso, produz uma nuvem enorme de fumaça a cada disparo e leva bastante tempo para recarregar.\n\nSeu valor histórico está mais no estrondo e no susto que causa do que em qualquer precisão ou confiabilidade — é o ancestral direto de todas as armas de fogo que vieram depois.",
+      "exemplos": [
+        "Um artilheiro acende o pavio do canhão de mão e se afasta antes do estrondo e da fumaça.",
+        "Sem mira de verdade, o canhão de mão só é confiável a distâncias muito curtas.",
+        "O estrondo e a fumaça do canhão de mão assustam os cavalos muito antes de qualquer bala acertar alguém."
+      ],
+      "em_adamar": "A pólvora não é difundida em Adamar, cenário que não passa da tecnologia do fim da Idade Média, então esta arma não existe por aqui."
+    },
+    "mosquete-de-mecha-80": {
+      "descricao": "O mosquete de mecha dispara ao baixar um pavio aceso e lento — a mecha — sobre a pólvora na câmara de disparo, um mecanismo simples, mas que exige manter a mecha acesa o tempo todo enquanto a arma está pronta para uso. Isso é um problema óbvio na chuva, no vento forte ou em qualquer situação em que se precise ficar escondido, já que a brasa acesa brilha e cheira a fumaça.\n\nÉ pesado, lento de recarregar e tipicamente usado em formações fechadas de soldados disparando juntos, não individualmente.",
+      "exemplos": [
+        "Uma fileira de soldados dispara o mosquete de mecha ao comando, todos ao mesmo tempo.",
+        "Escondido na escuridão, o portador do mosquete de mecha teme que a brasa acesa o denuncie.",
+        "O vento forte apaga a mecha do mosquete, deixando o soldado com uma arma inútil no momento errado."
+      ],
+      "em_adamar": "A pólvora não é difundida em Adamar, cenário que não passa da tecnologia do fim da Idade Média, então esta arma não existe por aqui.",
+      "relacionados": ["mosquete-de-pederneira-75"]
+    },
+    "mosquete-de-pederneira-75": {
+      "descricao": "O mosquete de pederneira troca a mecha acesa por um mecanismo de pedra de sílex batendo contra aço, o que dispensa manter qualquer coisa queimando o tempo todo e torna a arma mais prática de manter pronta para uso, inclusive escondida. Continua sendo carregado pela boca do cano, o que o mantém lento para recarregar e vulnerável a chuva forte.\n\nFoi a arma de infantaria padrão de exércitos inteiros por um longo período, geralmente disparada em formações organizadas.",
+      "exemplos": [
+        "Um regimento inteiro dispara os mosquetes de pederneira numa única salva coordenada.",
+        "Sem precisar manter nada aceso, o soldado com mosquete de pederneira consegue ficar em posição por mais tempo sem se denunciar.",
+        "A chuva forte ainda ameaça molhar a pólvora e emperrar o disparo do mosquete de pederneira."
+      ],
+      "em_adamar": "A pólvora não é difundida em Adamar, cenário que não passa da tecnologia do fim da Idade Média, então esta arma não existe por aqui.",
+      "relacionados": ["mosquete-de-mecha-80", "rifle-mosquete-577"]
+    },
+    "rifle-mosquete-577": {
+      "descricao": "O rifle-mosquete tem sulcos em espiral esculpidos dentro do cano, que fazem o projétil girar durante o disparo e voar de forma muito mais estável e precisa a distâncias maiores do que um mosquete de cano liso conseguiria. Continua sendo carregado pela boca do cano, então a recarga é tão lenta quanto a de um mosquete comum.\n\nRepresenta um salto grande em precisão sobre os mosquetes anteriores, sem abrir mão da lentidão característica das armas carregadas pela boca.",
+      "exemplos": [
+        "Um atirador treinado usa o rifle-mosquete para acertar alvos a distâncias que um mosquete comum jamais alcançaria com precisão.",
+        "A recarga pela boca do cano deixa o atirador vulnerável por um bom tempo depois de cada disparo.",
+        "O cano estriado do rifle-mosquete faz toda a diferença na precisão comparado às armas lisas anteriores."
+      ],
+      "em_adamar": "A pólvora não é difundida em Adamar, cenário que não passa da tecnologia do fim da Idade Média, então esta arma não existe por aqui.",
+      "relacionados": ["mosquete-de-pederneira-75", "rifle-com-cartucho-45"]
+    },
+    "rifle-com-cartucho-45": {
+      "descricao": "Este rifle carrega cartuchos metálicos completos — pólvora, projétil e escorva numa única peça — inseridos pela parte de trás da arma, em vez de exigir que o atirador despeje pólvora e empurre a bala pela boca do cano. Isso torna a recarga muito mais rápida e prática do que qualquer arma carregada pela boca, além de proteger a pólvora da umidade.\n\nMarca a transição das armas de fogo para o formato que se tornaria padrão dali em diante.",
+      "exemplos": [
+        "Um caçador aprecia a rapidez de recarregar o rifle com cartuchos comparado ao mosquete antigo do pai.",
+        "Mesmo na chuva, o cartucho metálico protege a pólvora da umidade que atormentava as armas antigas.",
+        "Um atirador recarrega o rifle com um novo cartucho em bem menos tempo do que levaria com um mosquete."
+      ],
+      "em_adamar": "É uma arma de fogo de cartucho metálico, tecnologia industrial muito além do que existe em Adamar.",
+      "relacionados": ["rifle-mosquete-577", "carabina-a-manivela-30"]
+    },
+    "carabina-a-manivela-30": {
+      "descricao": "A carabina de ação por manivela usa uma alavanca sob o gatilho, acionada com a mão, para ejetar o cartucho gasto e posicionar o próximo, permitindo disparos repetidos bem mais rápidos do que recarregar manualmente cada tiro. É mais curta e leve que um rifle de cano longo, o que facilita o manejo a cavalo ou em espaços apertados.\n\nFoi uma arma extremamente popular entre caçadores e viajantes por combinar cadência razoável com portabilidade.",
+      "exemplos": [
+        "Um caçador acostumado à carabina de manivela dispara vários tiros seguidos sem tirar a arma do ombro.",
+        "A cavalo, a carabina de manivela é bem mais fácil de manejar do que um rifle longo.",
+        "Depois de esvaziar o tubo de munição, o atirador ainda precisa recarregar cartucho por cartucho."
+      ],
+      "em_adamar": "É uma arma de fogo de cartucho metálico, tecnologia industrial muito além do que existe em Adamar.",
+      "relacionados": ["rifle-com-cartucho-45"]
+    },
+    "rifle-de-cavilha-762mm": {
+      "descricao": "O rifle de cavilha, ou de ferrolho, é recarregado manualmente erguendo, puxando e empurrando uma alavanca presa à câmara, o que ejeta o cartucho gasto e posiciona o próximo antes de travar a arma para disparo. É um mecanismo simples e extremamente confiável, raramente emperra, e por isso continua sendo a base preferida de muitos rifles de precisão até hoje.\n\nÉ mais lento entre disparos do que um rifle semiautomático, já que cada tiro exige o movimento manual da cavilha.",
+      "exemplos": [
+        "Um atirador de precisão confia no rifle de cavilha justamente pela confiabilidade quase absoluta do mecanismo.",
+        "Entre um disparo e outro, o atirador precisa acionar a cavilha manualmente antes de mirar de novo.",
+        "Mesmo em condições adversas, o rifle de cavilha raramente emperra ou falha."
+      ],
+      "em_adamar": "É uma arma de fogo militar moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["rifle-autorrecarregavel-762mm"]
+    },
+    "rifle-autorrecarregavel-762mm": {
+      "descricao": "O rifle autorrecarregável é semiautomático: a energia do próprio disparo ejeta o cartucho gasto e recarrega a câmara automaticamente, então o atirador só precisa puxar o gatilho de novo para o próximo tiro, sem acionar nenhuma alavanca manual. Isso o torna mais rápido entre disparos do que um rifle de cavilha equivalente, mantendo a força de um cartucho de calibre completo.\n\nÉ mais complexo mecanicamente que um rifle de ferrolho, com um pouco mais de chance de emperrar em condições muito adversas.",
+      "exemplos": [
+        "Um atirador prefere o rifle autorrecarregável por poder disparar de novo sem acionar nada manualmente.",
+        "Em condições muito adversas, o mecanismo semiautomático tem mais chance de emperrar que um simples ferrolho.",
+        "A cadência mais rápida do rifle autorrecarregável ajuda contra vários alvos em sequência."
+      ],
+      "em_adamar": "É uma arma de fogo militar moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["rifle-de-cavilha-762mm"]
+    },
+    "rifle-de-assalto-556mm": {
+      "descricao": "O rifle de assalto é uma arma militar capaz de disparar tanto em modo semiautomático quanto em rajadas totalmente automáticas, usando um cartucho mais leve que o de um rifle de combate tradicional, o que permite ao soldado carregar muito mais munição com o mesmo peso. É a arma de infantaria padrão da maioria dos exércitos modernos, equilibrando alcance, controle e cadência de fogo.\n\nExistem também versões civis puramente semiautomáticas do mesmo desenho, sem a opção de disparo totalmente automático.",
+      "exemplos": [
+        "Um pelotão inteiro é equipado com o rifle de assalto como arma padrão de infantaria.",
+        "Em modo automático, o rifle de assalto exige controle firme para não desperdiçar munição rápido demais.",
+        "A versão civil semiautomática do mesmo rifle é vendida sem a opção de disparo totalmente automático."
+      ],
+      "em_adamar": "É uma arma de fogo militar moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["carabina-de-assalto-556mm", "rifle-de-assalto-762mmc"]
+    },
+    "rifle-de-assalto-762mmc": {
+      "descricao": "Esta é uma variante do rifle de assalto em um cartucho 7,62 mm mais curto que o de um rifle de combate tradicional, entregando mais força por disparo do que a versão em 5,56 mm, mas pesando mais e permitindo carregar menos munição no mesmo peso. É uma escolha de quem prioriza poder de parada sobre volume de fogo sustentado.\n\nContinua sendo capaz de disparo automático, com um coice um pouco mais forte que a versão de calibre menor.",
+      "exemplos": [
+        "Uma força que enfrenta cobertura mais robusta prefere este rifle de assalto pela força extra por disparo.",
+        "Carregando menos munição no mesmo peso, o soldado precisa gerenciar melhor os disparos em rajada.",
+        "O coice mais forte deste rifle de assalto exige um pouco mais de prática que a versão em 5,56 mm."
+      ],
+      "em_adamar": "É uma arma de fogo militar moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["rifle-de-assalto-556mm", "rifle-de-combate-762mm"]
+    },
+    "rifle-de-combate-762mm": {
+      "descricao": "O rifle de combate dispara um cartucho de calibre completo, o mesmo tipo usado antes da adoção dos rifles de assalto mais leves, entregando mais força e alcance por disparo do que um rifle de assalto comum. É automático, mas o cartucho pesado e o coice forte tornam rajadas longas difíceis de controlar, e o soldado carrega bem menos munição do que carregaria com um calibre menor.\n\nÉ a escolha de quem valoriza poder de parada e alcance acima de tudo, mesmo abrindo mão de volume de fogo sustentado.",
+      "exemplos": [
+        "Uma unidade que opera em terreno aberto prefere o rifle de combate pelo alcance e pela força maior.",
+        "Em modo automático, o coice forte do rifle de combate torna rajadas longas quase incontroláveis.",
+        "Carregando menos munição que os colegas com rifle de assalto leve, o atirador precisa escolher bem cada disparo."
+      ],
+      "em_adamar": "É uma arma de fogo militar moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["rifle-de-assalto-762mmc"]
+    },
+    "carabina-de-assalto-556mm": {
+      "descricao": "Esta é uma versão mais curta do rifle de assalto, ainda no mesmo calibre leve, pensada para ser mais fácil de manejar em veículos, corredores e ambientes fechados. O cano mais curto sacrifica um pouco de alcance e precisão a longa distância em troca de agilidade em espaços apertados.\n\nMantém a capacidade de disparo automático e a mesma munição leve do rifle de assalto original, permitindo carregar bastante munição.",
+      "exemplos": [
+        "Uma equipe que opera dentro de veículos prefere a carabina de assalto pelo tamanho reduzido.",
+        "Em corredores estreitos, a carabina de assalto gira e aponta com muito mais facilidade que um rifle longo.",
+        "A distâncias maiores, a carabina de assalto perde um pouco de precisão comparada ao rifle original."
+      ],
+      "em_adamar": "É uma arma de fogo militar moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["rifle-de-assalto-556mm"]
+    },
+    "rifle-de-dardos-11mm": {
+      "descricao": "O rifle de dardos dispara projéteis grandes e ocos capazes de injetar uma droga, um sedativo ou um veneno no alvo, em vez de depender apenas do impacto do próprio dardo para causar dano. É uma arma pensada para capturar ou incapacitar em vez de matar diretamente, e sua eficácia real depende quase tanto da substância injetada quanto do próprio disparo.\n\nÉ mais lento e pesado que um rifle comum, e a distâncias muito curtas o dardo pode não ter tempo de injetar a dose toda.",
+      "exemplos": [
+        "Uma equipe de captura usa o rifle de dardos para sedar o alvo sem matá-lo.",
+        "Sem a substância certa carregada no dardo, o rifle serve de pouco além de um ferimento leve.",
+        "A curta distância, o dardo pode não injetar a dose completa antes do alvo reagir."
+      ],
+      "em_adamar": "É uma arma de fogo especializada de tecnologia moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["rifle-de-atirador-338"]
+    },
+    "rifle-de-atirador-338": {
+      "descricao": "O rifle de atirador é uma arma de precisão de longo alcance, com um cartucho pesado e de alta velocidade escolhido especificamente para manter energia e trajetória estáveis muito além do alcance útil de um rifle de combate comum. É pesado, caro e quase sempre usado com uma luneta de precisão, disparado por um especialista que investe tempo posicionando o tiro perfeito em vez de disparar rápido.\n\nNão é uma arma de combate próximo: sua força está inteiramente na precisão a longa distância.",
+      "exemplos": [
+        "Um atirador de elite se posiciona a grande distância com o rifle de precisão e espera pelo tiro certo.",
+        "Sem a luneta calibrada, mesmo um bom atirador perde boa parte da vantagem do rifle de precisão.",
+        "A curta distância, o rifle de atirador é lento e pouco prático comparado a um rifle de combate comum."
+      ],
+      "em_adamar": "É uma arma de fogo de precisão moderna, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["rifle-de-dardos-11mm"]
+    },
+    "aci-68mm": {
+      "descricao": "A ACI, ou arma de combate individual, é um rifle avançado que já vem de fábrica com um lançador de granadas embutido e frequentemente sistemas eletrônicos de mira, reunindo numa só arma o que antes exigiria um rifle e um lançador separados. É equipamento de infantaria de ponta, complexo e caro, reservado a forças bem equipadas e treinadas para tirar proveito de todos os seus recursos.\n\nSua manutenção e seu custo a tornam impraticável fora de um contexto militar avançado.",
+      "exemplos": [
+        "Uma unidade de elite usa a ACI para alternar entre tiros normais e granadas sem trocar de arma.",
+        "O sistema de mira eletrônico da ACI exige treinamento específico para ser bem aproveitado.",
+        "Poucas forças no mundo têm acesso e suporte técnico para manter uma ACI como esta em campo."
+      ],
+      "em_adamar": "É uma arma de fogo militar avançada, muitas eras à frente da tecnologia medieval de Adamar."
+    },
+    "rifle-de-gauss-4mm": {
+      "descricao": "O rifle de Gauss acelera projéteis usando campos eletromagnéticos ao longo do cano, dispensando completamente pólvora ou qualquer combustão para o disparo. Isso resulta em velocidades de projétil extremamente altas, um som de disparo bem diferente de uma arma convencional e a ausência total de fumaça ou resíduo de pólvora.\n\nÉ uma arma de tecnologia de ponta, cara e rara mesmo entre as forças mais avançadas.",
+      "exemplos": [
+        "O disparo do rifle de Gauss soa como um estalo elétrico, nada parecido com o estrondo de pólvora.",
+        "Sem resíduo de pólvora, a arma de Gauss deixa vestígios bem diferentes numa cena de tiroteio.",
+        "Só as forças mais avançadas têm acesso a um rifle de Gauss em quantidade."
+      ],
+      "em_adamar": "É uma arma de aceleração eletromagnética de ultra-tecnologia, muitas eras à frente de qualquer coisa que exista em Adamar.",
+      "relacionados": ["adp-gauss-4mm"]
+    },
+    "bacamarte-c8": {
+      "descricao": "O bacamarte tem a boca do cano alargada em forma de sino, feita para disparar uma carga de vários projéteis pequenos que se espalham numa área ao sair da arma, em vez de uma única bala. Isso torna quase dispensável mirar com precisão a curta distância, mas também faz o dano cair rápido conforme o alvo se afasta, já que os projéteis se espalham cada vez mais.\n\nÉ uma arma de um tiro só, lenta de recarregar, tradicionalmente usada para defesa em espaços fechados, como a entrada de uma casa ou a boleia de uma carruagem.",
+      "exemplos": [
+        "Um cocheiro mantém o bacamarte sob o banco, pronto contra assaltantes de estrada.",
+        "A curta distância, o bacamarte praticamente não erra, mas a distâncias maiores os projéteis se espalham demais.",
+        "Depois do único disparo, o dono do bacamarte precisa de bastante tempo para recarregar."
+      ],
+      "em_adamar": "A pólvora não é difundida em Adamar, cenário que não passa da tecnologia do fim da Idade Média, então esta arma não existe por aqui.",
+      "relacionados": ["espingarda-dupla-c10"]
+    },
+    "espingarda-dupla-c10": {
+      "descricao": "A espingarda dupla tem dois canos lado a lado, cada um com seu próprio gatilho ou mecanismo de disparo, permitindo dois tiros antes de precisar recarregar — uma vantagem clara sobre uma arma de um tiro só como o bacamarte. Assim como qualquer espingarda, cada disparo espalha vários projéteis pequenos numa área, o que perdoa uma mira imprecisa a curta distância, mas perde força conforme o alvo se afasta.\n\nÉ uma arma clássica de caça e de defesa doméstica, valorizada pela simplicidade e pela confiabilidade do mecanismo.",
+      "exemplos": [
+        "Um fazendeiro mantém a espingarda dupla atrás da porta, pronta contra intrusos.",
+        "Depois dos dois disparos, o caçador precisa quebrar a arma e recarregar manualmente os dois canos.",
+        "A curta distância, a espingarda dupla dificilmente erra um alvo do tamanho de uma pessoa."
+      ],
+      "em_adamar": "É uma arma de fogo de pólvora industrial, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["bacamarte-c8", "espingarda-pump-c12"]
+    },
+    "espingarda-pump-c12": {
+      "descricao": "A espingarda de ação por bombeamento é recarregada deslizando o cabo dianteiro para trás e para frente entre um disparo e outro, ejetando o cartucho vazio e posicionando o próximo a partir de um tubo interno que guarda vários cartuchos de reserva. Isso a torna bem mais rápida de disparar em sequência do que uma espingarda dupla de dois canos, sem depender de eletrônica ou de peças frágeis.\n\nÉ extremamente confiável e simples de manter, o que a tornou uma arma clássica tanto de defesa policial quanto civil.",
+      "exemplos": [
+        "Um guarda de segurança prefere a espingarda pump pela confiabilidade e pela cadência maior que a de dois canos.",
+        "O som característico de recarregar a espingarda pump costuma bastar para intimidar um intruso.",
+        "Depois de esvaziar o tubo de cartuchos, o atirador ainda precisa recarregá-lo um a um."
+      ],
+      "em_adamar": "É uma arma de fogo de pólvora industrial, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["espingarda-dupla-c10", "espingarda-semiautomatica-c12"]
+    },
+    "espingarda-semiautomatica-c12": {
+      "descricao": "A espingarda semiautomática usa a energia do próprio disparo para ejetar o cartucho gasto e posicionar o próximo automaticamente, dispensando o movimento manual de bombear entre um tiro e outro. Isso permite disparos seguidos mais rápidos do que uma espingarda de bombeamento, ao custo de um mecanismo um pouco mais complexo e mais sensível a sujeira ou má manutenção.\n\nContinua espalhando vários projéteis por disparo como qualquer espingarda, perdendo força a distâncias maiores.",
+      "exemplos": [
+        "Uma equipe de segurança prefere a espingarda semiautomática pela cadência mais rápida que a versão pump.",
+        "Sem limpeza regular, o mecanismo semiautomático da espingarda tende a falhar mais que o de bombeamento.",
+        "A curta distância, a espingarda semiautomática dispara tiro após tiro sem precisar de nenhum movimento manual entre eles."
+      ],
+      "em_adamar": "É uma arma de fogo de pólvora industrial, muito além da tecnologia medieval de Adamar.",
+      "relacionados": ["espingarda-pump-c12"]
+    },
+    "pistola-eletrolaser": {
+      "descricao": "A pistola eletrolaser dispara um feixe de laser que ioniza o ar num canal condutor, através do qual uma descarga elétrica é enviada até o alvo, causando uma queimadura leve somada a um choque capaz de atordoar. É pensada como uma arma menos letal do que uma arma de fogo convencional, favorecida em situações de segurança e captura em que matar não é a intenção.\n\nDepende de uma carga de energia em vez de munição tradicional, e seu efeito de choque é mais valioso do que a própria queimadura causada.",
+      "exemplos": [
+        "Uma equipe de segurança prefere o eletrolaser para conter suspeitos sem matá-los.",
+        "O choque do eletrolaser derruba o alvo antes mesmo da queimadura incomodar de verdade.",
+        "Sem carga suficiente na bateria, a pistola eletrolaser perde força e não atordoa direito."
+      ],
+      "em_adamar": "É uma arma de energia de ultra-tecnologia, muitas eras à frente de qualquer coisa que exista em Adamar.",
+      "relacionados": ["carabina-eletrolaser"]
+    },
+    "pistola-laser": {
+      "descricao": "A pistola laser dispara um feixe de luz concentrada capaz de queimar e perfurar o alvo diretamente, sem depender de nenhum projétil físico ou pólvora — a energia vem de uma carga recarregável em vez de munição convencional. O disparo é quase silencioso comparado a uma arma de fogo, marcado apenas por um leve estalo do ar aquecido pelo feixe.\n\nÉ uma arma de ultra-tecnologia, cara e sofisticada, associada a civilizações muito além do nível industrial comum.",
+      "exemplos": [
+        "Um soldado de ultra-tecnologia recarrega a célula de energia da pistola laser entre os combates.",
+        "O estalo quase silencioso do disparo a laser contrasta com o estrondo de uma arma de pólvora comum.",
+        "Sem carga na célula de energia, a pistola laser vira um pedaço de metal inútil nas mãos do atirador."
+      ],
+      "em_adamar": "É uma arma de energia de ultra-tecnologia, muitas eras à frente de qualquer coisa que exista em Adamar.",
+      "relacionados": ["rifle-laser"]
+    },
+    "pistola-de-feixe-ionico": {
+      "descricao": "A pistola de feixe iônico dispara partículas carregadas eletricamente contra o alvo, um passo além das armas a laser em poder de destruição bruta, capaz de causar danos que uma simples queimadura de laser não causaria. É uma arma rara e exótica mesmo entre civilizações de ultra-tecnologia, geralmente reservada a quem tem acesso aos recursos mais avançados disponíveis.\n\nAssim como as armas a laser, depende de uma carga de energia recarregável em vez de munição física.",
+      "exemplos": [
+        "Apenas as forças mais avançadas de um cenário de ultra-tecnologia têm acesso à pistola de feixe iônico.",
+        "O feixe de partículas causa danos muito além do que uma pistola laser comum conseguiria.",
+        "Sem energia suficiente carregada, a pistola de feixe iônico não consegue disparar um feixe completo."
+      ],
+      "em_adamar": "É uma arma de energia de ultra-tecnologia, muitas eras à frente de qualquer coisa que exista em Adamar.",
+      "relacionados": ["rifle-de-feixe-ionico"]
+    },
+    "carabina-eletrolaser": {
+      "descricao": "A carabina eletrolaser é a versão de ombro da pistola eletrolaser, com mais carga de energia e mais alcance efetivo do que a versão de mão, mas seguindo o mesmo princípio: um feixe de laser ioniza o ar para conduzir uma descarga elétrica que queima levemente e atordoa o alvo. É uma arma menos letal preferida por equipes de segurança que operam a distâncias maiores do que a pistola equivalente permitiria.\n\nContinua dependendo de carga de energia recarregável em vez de munição convencional.",
+      "exemplos": [
+        "Uma equipe de contenção usa a carabina eletrolaser para neutralizar um grupo a distância maior que a pistola alcançaria.",
+        "O choque elétrico da carabina eletrolaser derruba o alvo sem o ferimento grave de uma arma convencional.",
+        "Sem energia suficiente, a carabina eletrolaser perde alcance e força de atordoamento."
+      ],
+      "em_adamar": "É uma arma de energia de ultra-tecnologia, muitas eras à frente de qualquer coisa que exista em Adamar.",
+      "relacionados": ["pistola-eletrolaser"]
+    },
+    "rifle-de-atirador-a-laser": {
+      "descricao": "Este é um rifle de precisão a laser, feito para atiradores especializados que precisam acertar alvos a longa distância com um feixe de energia em vez de um projétil físico. Combina o alcance e a precisão de um rifle de atirador convencional com as vantagens de uma arma de energia, como a ausência de queda balística que afeta projéteis comuns.\n\nÉ caro e complexo, quase sempre reservado a especialistas bem treinados e a forças de ultra-tecnologia bem equipadas.",
+      "exemplos": [
+        "Um atirador de elite de ultra-tecnologia confia no rifle laser de precisão para alvos a grande distância.",
+        "Sem a queda balística de um projétil comum, o feixe de laser simplifica alguns cálculos de mira do atirador.",
+        "O alto custo do rifle de atirador a laser o mantém fora do alcance da maioria das forças comuns."
+      ],
+      "em_adamar": "É uma arma de energia de ultra-tecnologia, muitas eras à frente de qualquer coisa que exista em Adamar.",
+      "relacionados": ["rifle-laser"]
+    },
+    "rifle-laser": {
+      "descricao": "O rifle laser é a versão padrão de infantaria das armas de energia, mais leve e mais barata que o rifle de atirador a laser especializado, pensada para uso geral em vez de tiro de precisão a longa distância. Dispara um feixe capaz de queimar e perfurar o alvo, alimentado por uma carga de energia recarregável em vez de munição física.\n\nÉ o equivalente de ultra-tecnologia a um rifle de assalto comum, adotado como arma padrão por forças que têm acesso a esse nível de tecnologia.",
+      "exemplos": [
+        "Uma força de ultra-tecnologia equipa toda a infantaria com o rifle laser padrão.",
+        "Sem o estrondo de uma arma de pólvora, o combate com rifles laser soa estranhamente silencioso.",
+        "A célula de energia do rifle laser precisa ser trocada ou recarregada depois de um certo número de disparos."
+      ],
+      "em_adamar": "É uma arma de energia de ultra-tecnologia, muitas eras à frente de qualquer coisa que exista em Adamar.",
+      "relacionados": ["pistola-laser", "rifle-de-atirador-a-laser"]
+    },
+    "rifle-de-feixe-ionico": {
+      "descricao": "O rifle de feixe iônico dispara partículas carregadas eletricamente, entregando mais poder de destruição do que um rifle laser comum, num pacote de infantaria portátil. É uma arma de ultra-tecnologia avançada, mais complexa e cara de manter do que as armas a laser equivalentes, reservada a forças com acesso aos recursos mais sofisticados.\n\nAssim como as demais armas de energia, depende de uma carga recarregável em vez de munição convencional.",
+      "exemplos": [
+        "Uma força de elite de ultra-tecnologia troca os rifles laser pelos de feixe iônico assim que possível.",
+        "O feixe de partículas do rifle iônico causa danos muito além do que um rifle laser comum conseguiria.",
+        "A manutenção do rifle de feixe iônico exige suporte técnico especializado, fora do alcance de forças comuns."
+      ],
+      "em_adamar": "É uma arma de energia de ultra-tecnologia, muitas eras à frente de qualquer coisa que exista em Adamar.",
+      "relacionados": ["pistola-de-feixe-ionico", "feixe-ionico-pesado"]
+    },
+    "feixe-ionico-pesado": {
+      "descricao": "Esta é uma versão pesada e mais poderosa do rifle de feixe iônico, provavelmente exigindo apoio extra para disparar com estabilidade dado o peso e a energia envolvidos, de forma parecida com uma arma de apoio de esquadrão entre as armas convencionais. Entrega ainda mais poder de destruição do que a versão padrão, ao custo de ser mais pesada e menos prática de carregar sozinha por longas distâncias.\n\nÉ uma arma de ultra-tecnologia reservada às forças mais avançadas e bem equipadas que existem.",
+      "exemplos": [
+        "Uma equipe de apoio de ultra-tecnologia carrega o feixe iônico pesado como arma de esquadrão.",
+        "O peso da arma torna necessário revezar quem a carrega em marchas longas.",
+        "Contra alvos bem protegidos, o feixe iônico pesado supera facilmente a versão padrão em poder de fogo."
+      ],
+      "em_adamar": "É uma arma de energia de ultra-tecnologia, muitas eras à frente de qualquer coisa que exista em Adamar.",
+      "relacionados": ["rifle-de-feixe-ionico"]
+    }
+  }
+}

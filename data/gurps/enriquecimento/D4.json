@@ -1,0 +1,451 @@
+{
+  "lista": "desvantagens",
+  "itens": {
+    "nanismo": {
+      "descricao": "Nanismo faz seu personagem ser muito mais baixo que a média humana, mas sem perder peso ou força na mesma proporção: ele fica mais denso e compacto do que sua altura sugere. Isso altera o modificador de tamanho em combate, o alcance de braço e armas, e a facilidade de passar por espaços apertados ou de se esconder atrás de obstáculos baixos.\n\nNa prática, roupas, armaduras, selas e ferramentas feitas para gente de tamanho comum quase nunca servem direito, então equipamentos precisam ser ajustados ou feitos sob medida. Muita gente também subestima alguém baixo à primeira vista, o que ora ajuda a passar despercebido, ora rende deboche e desconfiança.",
+      "exemplos": [
+        "Você se encolhe atrás de um barril onde um guarda adulto não caberia.",
+        "Precisa pedir ajuda ou usar um banco para alcançar a prateleira alta da taverna.",
+        "A armadura emprestada do arsenal da guarnição sobra em quase todo lugar até ser ajustada."
+      ],
+      "em_adamar": "É uma característica física que qualquer humano pode ter de nascença, sem depender de aprovação do narrador.",
+      "dica_mesa": "Combine com o narrador detalhes de equipamento sob medida antes da criação de personagem, para não travar a sessão depois."
+    },
+    "no-limite": {
+      "descricao": "No Limite descreve alguém movido pelo risco: você busca ativamente situações perigosas, apostas arriscadas e desafios com chance real de dar errado, não por necessidade, mas porque a adrenalina vicia. Recusar um risco desnecessário exige resistir a um impulso forte, e o narrador pode empurrar a história para colocar tentações na sua frente.\n\nIsso não é a mesma coisa que coragem: um personagem corajoso enfrenta o perigo quando é preciso; alguém No Limite procura o perigo mesmo quando não é preciso, e tende a rejeitar rotas seguras só porque são seguras.",
+      "exemplos": [
+        "Você escolhe a ponte de corda bamba sobre o abismo em vez do caminho mais longo e seguro.",
+        "Aceita a aposta de atravessar a floresta assombrada sozinho à noite, só para sentir o gostinho do perigo.",
+        "Desafia o campeão da guarnição para um duelo amistoso mesmo sem motivo para a briga."
+      ],
+      "em_adamar": "É um traço de personalidade comum a qualquer aventureiro, sem exigir nada do cenário.",
+      "dica_mesa": "Use como gancho: o narrador sempre tem um risco tentador à mão para empurrar a cena adiante."
+    },
+    "nt-baixo": {
+      "descricao": "NT Baixo (Nível Tecnológico Baixo) significa que você cresceu numa cultura tecnologicamente mais atrasada que a média do mundo ao seu redor: uma tribo isolada, um povo nômade, uma comunidade em geleiras ou florestas fechadas. Você não teve contato de infância com boa parte das ferramentas, costumes e conhecimentos do NT padrão do cenário.\n\nIsso se traduz em dificuldade para usar de forma natural equipamentos e procedimentos mais avançados que os do seu próprio povo, e em familiaridade maior com o que sua cultura de origem usa no dia a dia. Não afeta inteligência nem capacidade de aprender: é só o ponto de partida cultural.",
+      "exemplos": [
+        "Você nunca viu uma fechadura de qualidade urbana antes de chegar à cidade grande.",
+        "Estranha o funcionamento de um moinho movido a água que sua aldeia nunca teve.",
+        "Precisa que alguém explique devagar como funciona o sistema de guildas e taxas da cidade."
+      ],
+      "em_adamar": "Como Adamar tem regiões isoladas e comunidades mais atrasadas que os grandes centros, essa origem cultural é livre para qualquer humano."
+    },
+    "oblivio": {
+      "descricao": "Oblívio faz você perceber com clareza o que as pessoas sentem — alguém com raiva, medo ou alegria é óbvio para você — mas te deixa cego para o motivo por trás disso e para pistas sutis, ironia, segundas intenções ou insinuações. Você tende a levar tudo ao pé da letra e a não notar quando algo estranho está acontecendo bem debaixo do seu nariz.\n\nIsso te torna um alvo fácil para manipulação e emboscadas sociais: complôs, chantagens veladas e armadilhas escondidas em conversas passam batido, mesmo que você seja emocionalmente sensível às pessoas ao redor.",
+      "exemplos": [
+        "Você não percebe que o mercador está mentindo na cara dura, mesmo vendo que ele está nervoso.",
+        "Ignora o aviso sutil do informante disfarçado de piada e cai direto na emboscada.",
+        "Demora para entender por que todos na taverna ficaram tensos quando o forasteiro entrou."
+      ],
+      "em_adamar": "É uma limitação de percepção social sem relação com magia ou com o narrador, então qualquer jogador pode escolher.",
+      "dica_mesa": "Bom para narradores: personagens com essa desvantagem são ótimos para entregar pistas que o jogador, mas não o personagem, capta."
+    },
+    "obsessao": {
+      "descricao": "Obsessão fixa você num objetivo específico acima de quase tudo o mais: vingança, riqueza, redenção, encontrar alguém, provar um ponto. Você gasta tempo, recursos e risco pessoal perseguindo essa meta, e o narrador pode fazer você resistir à tentação de abandonar tudo por causa dela.\n\nA versão de meta simples e rápida custa menos pontos; a versão de meta grande e demorada custa mais, porque consome mais da sua atenção e da campanha ao longo do tempo. Diferente de um mero objetivo de personagem, aqui a obsessão compete com sua sobrevivência e com os interesses do grupo.",
+      "exemplos": [
+        "Você adia a fuga da masmorra para vasculhar mais uma sala atrás da pista que procura.",
+        "Recusa um contrato lucrativo porque não leva a nada relacionado à sua obsessão.",
+        "Gasta suas últimas moedas para subornar alguém que talvez saiba do paradeiro do seu alvo."
+      ],
+      "em_adamar": "É uma motivação pessoal do personagem, sem exigir nada do cenário; qualquer jogador pode definir o objetivo.",
+      "relacionados": [
+        "senso-do-dever"
+      ]
+    },
+    "pacifismo": {
+      "descricao": "Pacifismo cobre personagens que se opõem à violência em algum grau, das versões mais leves até a recusa total de qualquer ataque. As variantes mudam o que exatamente você consegue fazer em combate: desde só ter dificuldade em executar alguém à queima-roupa, até ser incapaz de ferir quem não representa ameaça direta, ou nunca atacar ninguém, nem em defesa própria.\n\nEsse traço muda como o grupo aborda combates: você pode continuar lutando, nas versões mais leves, ou precisar recorrer a fuga, negociação e táticas não letais, nas versões mais fortes. Quebrar o próprio código, quando fisicamente possível, costuma vir com um preço emocional.",
+      "exemplos": [
+        "Você prefere desarmar o bandido a executá-lo, mesmo perdendo tempo precioso.",
+        "Recusa-se a desferir o golpe final contra o inimigo já caído e indefeso.",
+        "Tenta convencer o grupo a negociar com os saqueadores em vez de emboscá-los."
+      ],
+      "em_adamar": "É uma escolha de caráter sem relação com magia ou lore, então está liberada para qualquer jogador.",
+      "dica_mesa": "Combine com o narrador qual variante escolher antes da mesa, para não travar cenas de combate na hora.",
+      "relacionados": [
+        "sanguinolencia"
+      ]
+    },
+    "paralisia-frente-ao-combate": {
+      "descricao": "Paralisia Frente ao Combate faz você travar diante do perigo repentino: numa emboscada, no primeiro confronto sério ou diante de uma ameaça inesperada, seu corpo simplesmente não responde por um instante, mesmo que sua mente grite para agir. Depois de travar, você volta ao normal e pode agir como qualquer outro personagem pelo resto da cena.\n\nIsso não é covardia nem falta de treino: mesmo guerreiros experientes com essa desvantagem podem congelar na primeira reação a um perigo súbito, embora se saiam bem depois que o corpo volta a obedecer.",
+      "exemplos": [
+        "Ao ver o lobo saltar da escuridão, você fica um instante paralisado antes de sacar a arma.",
+        "A emboscada na estrada te pega travado enquanto os companheiros já reagem.",
+        "No primeiro raio de uma tempestade sobrenatural, você congela por um instante antes de correr para o abrigo."
+      ],
+      "em_adamar": "É uma reação instintiva ao perigo que qualquer humano pode ter, sem depender do narrador."
+    },
+    "paranoia": {
+      "descricao": "Paranoia faz você desconfiar de todo mundo, ver conspiração em coincidências e assumir que aliados podem estar escondendo algo ou tramando contra você. Isso complica relações de confiança, alianças e negociações: você hesita em aceitar ajuda, questiona motivos alheios e evita expor informações sensíveis mesmo para quem parece confiável.\n\nEm compensação, você raramente é pego totalmente de surpresa por traições óbvias, já que sempre desconfia de alguém. O lado ruim é o desgaste social: gente comum acha esse comportamento estranho ou ofensivo.",
+      "exemplos": [
+        "Você recusa dormir na estalagem sem trancar a porta e verificar as janelas três vezes.",
+        "Desconfia que o novo contratante do grupo esconde um motivo oculto, mesmo sem provas.",
+        "Insiste em revistar o companheiro recém-chegado antes de dividir informações importantes."
+      ],
+      "em_adamar": "É um traço de personalidade sem relação com o cenário, então qualquer jogador pode escolher."
+    },
+    "pesadelos": {
+      "descricao": "Pesadelos faz você sonhar mal quase toda noite: sonhos perturbadores, lembranças ruins distorcidas ou visões angustiantes que atrapalham o descanso. Às vezes você acorda cansado ou abalado, o que pode pesar em testes que dependem de estar descansado e com a cabeça no lugar.\n\nDiferente de um trauma pontual, aqui o problema é crônico: mesmo sem nenhum evento recente, as noites ruins voltam sempre, e companheiros de viagem que dividem abrigo com você percebem os sonos agitados.",
+      "exemplos": [
+        "Você acorda suado e alterado no meio da noite acampado na floresta, sem conseguir voltar a dormir direito.",
+        "Os pesadelos recorrentes com a masmorra que quase te matou tornam difícil descansar antes da próxima incursão.",
+        "Um companheiro comenta que você grita dormindo, o que quase denuncia o acampamento escondido."
+      ],
+      "em_adamar": "É uma condição pessoal comum, sem depender de magia ou do narrador.",
+      "relacionados": [
+        "sono-leve"
+      ]
+    },
+    "piromania": {
+      "descricao": "Piromania é o fascínio incontrolável por fogo: você adora acender, observar e às vezes provocar incêndios, e sente um impulso forte para colocar fogo em algo quando a oportunidade aparece, mesmo sabendo que é arriscado ou inconveniente. Resistir a esse impulso exige esforço deliberado.\n\nIsso não significa que você ateia fogo em qualquer coisa a qualquer momento, mas tochas, fogueiras e chamas descontroladas chamam sua atenção de um jeito que outras pessoas não sentem, e o narrador pode usar isso para complicar sua vida.",
+      "exemplos": [
+        "Você se demora fascinado observando a fogueira do acampamento em vez de ficar de vigia.",
+        "Sente vontade de atear fogo no celeiro abandonado só para ver as chamas subirem.",
+        "Oferece-se ansiosamente para queimar os corpos ou destroços depois de uma batalha."
+      ],
+      "em_adamar": "É uma compulsão pessoal, sem relação com o cenário; qualquer jogador pode escolher."
+    },
+    "pobreza-riqueza-baixa": {
+      "descricao": "Pobreza cobre níveis de riqueza abaixo da média: de alguém que vive apertado e sem reservas até quem não tem nada e vive na miséria completa. Isso define seu dinheiro inicial, sua renda entre aventuras e o tipo de equipamento e hospedagem que você consegue bancar sem ajuda do grupo.\n\nQuanto mais fundo o nível de pobreza, menor sua reserva para emergências e maior a dependência da caridade, de bicos ocasionais ou dos companheiros de grupo para sobreviver entre uma missão e outra.",
+      "exemplos": [
+        "Você não tem como pagar a taxa de entrada na cidade murada sem pedir emprestado a um companheiro.",
+        "Divide uma refeição simples porque não sobra moeda para comprar a própria.",
+        "Aceita um trabalho braçal mal pago só para conseguir dormir sob um teto naquela noite."
+      ],
+      "em_adamar": "É uma condição econômica comum em qualquer sociedade, então está liberada para qualquer jogador.",
+      "relacionados": [
+        "status-baixo"
+      ]
+    },
+    "pouca-empatia": {
+      "descricao": "Pouca Empatia deixa você com dificuldade real para entender o que os outros sentem e por quê: expressões, tom de voz e linguagem corporal alheios não te dizem muita coisa, então você tende a interpretar mal reações emocionais e a errar a mão em momentos que pedem tato.\n\nIsso prejudica interações que dependem de ler pessoas — negociar, consolar, perceber que alguém está mentindo ou sofrendo — e costuma passar a impressão de frieza ou desinteresse, mesmo quando não é intencional.",
+      "exemplos": [
+        "Você não percebe que o informante está aterrorizado até ele desmoronar em lágrimas na sua frente.",
+        "Erra o tom ao tentar consolar um companheiro de grupo depois de uma perda pesada.",
+        "Não nota os sinais óbvios de que o mercador está blefando durante a negociação."
+      ],
+      "em_adamar": "É uma limitação de leitura social, sem depender de magia ou do narrador.",
+      "relacionados": [
+        "oblivio"
+      ]
+    },
+    "preguica": {
+      "descricao": "Preguiça faz você evitar esforço sempre que possível: tarefas cansativas, treino extra, trabalho braçal ou qualquer coisa que exija disciplina prolongada tendem a ficar para depois, e resistir ao impulso de procrastinar ou empurrar o trabalho para outro exige vontade.\n\nIsso não te torna incompetente, só menos disposto a se esforçar sem um motivo forte: você prefere o caminho mais fácil, mesmo quando o caminho difícil traria resultado melhor.",
+      "exemplos": [
+        "Você adia treinar a nova técnica de combate porque simplesmente não tem vontade hoje.",
+        "Deixa para o companheiro cavar a trincheira de acampamento enquanto arruma desculpa para descansar.",
+        "Escolhe o atalho arriscado só para evitar a caminhada mais longa e segura."
+      ],
+      "em_adamar": "É um traço de personalidade sem relação com o cenário."
+    },
+    "problemas-na-coluna": {
+      "descricao": "Problemas na Coluna cobre uma coluna fraca ou lesionada que pode travar em momentos de esforço físico intenso ou após um golpe particularmente feio em combate corpo a corpo, causando dor incapacitante temporária. A versão moderada já é desconfortável; a versão grave trava com mais facilidade e o efeito é mais severo enquanto dura.\n\nEntre os episódios de travamento, você funciona normalmente, mas sabe que carregar peso demais, dormir mal ou levar um tombo ruim pode ser o gatilho para a coluna falhar na pior hora possível.",
+      "exemplos": [
+        "Ao tentar erguer a grade de pedra da masmorra, sua coluna trava e você precisa parar tudo.",
+        "Um golpe certeiro nas costas na última batalha quase te derrubou de dor, mesmo sem ferimento grave.",
+        "Evita carregar a armadura pesada por longas marchas com medo de forçar demais as costas."
+      ],
+      "em_adamar": "É uma condição física comum, sem depender de magia."
+    },
+    "recuperacao-lenta": {
+      "descricao": "Recuperação Lenta significa que seu corpo se cura mais devagar do que o normal depois de ferimentos, doenças ou desgaste físico: descanso e cuidados médicos ainda funcionam, mas o processo natural de cicatrização e recuperação leva bem mais tempo do que levaria para outra pessoa.\n\nIsso pesa mais em campanhas com pouca magia de cura disponível, já que você não pode simplesmente contar com o tempo normal de convalescença entre uma aventura e outra.",
+      "exemplos": [
+        "O corte que deveria fechar em poucos dias ainda incomoda semanas depois.",
+        "Você continua mancando bem depois que os companheiros já se recuperaram de ferimentos parecidos.",
+        "Precisa de descanso extra prolongado depois de uma doença que os outros já superaram."
+      ],
+      "em_adamar": "É uma característica física pessoal, sem relação com o narrador.",
+      "dica_mesa": "Como a magia de cura é rara em Adamar, essa desvantagem pesa mais do que em cenários com curandeiros abundantes."
+    },
+    "reputacao-ruim": {
+      "descricao": "Reputação Ruim significa que você é conhecido por má fama junto a um grupo específico ou numa região: um crime real ou inventado, uma traição, um boato malicioso. Sempre que alguém que conhece essa fama te reconhece, espere reações piores do que receberia um estranho qualquer, incluindo hostilidade aberta, recusa de serviços ou até tentativas de prendê-lo ou expulsá-lo.\n\nFora do alcance dessa fama — outra cidade, outro povo — ninguém liga para o que dizem de você, o que diferencia essa desvantagem de um Status ou Voto: aqui o problema é específico a quem já ouviu falar de você.",
+      "exemplos": [
+        "O taverneiro se recusa a servi-lo assim que reconhece seu rosto do cartaz de procurado.",
+        "Guardas da vila ficam de olho em você assim que descobrem quem você é.",
+        "Um mercador dobra o preço só de ouvir seu nome, lembrando do último negócio malfeito."
+      ],
+      "em_adamar": "É uma consequência social de atos ou boatos, sem depender de magia; qualquer jogador pode escolher e definir a origem da fama com o narrador.",
+      "relacionados": [
+        "segredo"
+      ]
+    },
+    "sadismo": {
+      "descricao": "Sadismo é o prazer genuíno em causar sofrimento alheio: dor, humilhação ou medo em outra pessoa te dão satisfação, e resistir ao impulso de prolongar o sofrimento de um inimigo já rendido, ou de ser desnecessariamente cruel, exige esforço deliberado.\n\nAlém do peso moral óbvio, isso tem consequência social: quem percebe esse traço tende a temer e evitar você, e aliados podem começar a questionar até onde vai a sua lealdade quando a situação aperta.",
+      "exemplos": [
+        "Você prolonga o interrogatório do prisioneiro rendido bem além do necessário para conseguir a informação.",
+        "Sente uma satisfação incômoda ao ver o bandido implorar antes do golpe final.",
+        "Um companheiro te encara com desconfiança depois de perceber o quanto você gostou daquela cena de combate."
+      ],
+      "em_adamar": "É um traço de personalidade sombrio, coerente com o tom do cenário, sem depender de magia.",
+      "relacionados": [
+        "sanguinolencia"
+      ]
+    },
+    "sanguinolencia": {
+      "descricao": "Sanguinolência é a compulsão por matar o inimigo, não só derrotá-lo: render, prender ou deixar um adversário fugir vivo é frustrante e vai contra seu instinto, que pede o golpe final sempre que possível. Isso não te torna cruel por prazer, isso seria Sadismo, é mais um gatilho de combate do que uma questão de personalidade fora da batalha.\n\nEm grupos que preferem capturar inimigos vivos para interrogatório ou julgamento, essa desvantagem gera atrito constante, já que resistir ao impulso de finalizar quem já está rendido exige esforço.",
+      "exemplos": [
+        "Você quase golpeia o bandido já desarmado e de joelhos antes de o líder do grupo gritar para parar.",
+        "Insiste em perseguir o inimigo fugindo ferido em vez de deixá-lo escapar como o plano pedia.",
+        "Sente-se incomodado quando o grupo decide prender o assaltante em vez de acabar com ele ali mesmo."
+      ],
+      "em_adamar": "É um traço de temperamento em combate, sem relação com o narrador.",
+      "relacionados": [
+        "sadismo",
+        "pacifismo"
+      ]
+    },
+    "segredo": {
+      "descricao": "Segredo é algo que, se descoberto, arruinaria sua vida, sua reputação ou colocaria você em perigo sério: um crime do passado, uma origem escondida, uma traição, um pacto proibido. Quanto pior a consequência de a verdade vir à tona, mais pesado o segredo.\n\nO narrador pode usar esse segredo como gancho de história, ameaça de chantagem ou reviravolta, e faz sentido combinar com ele antecipadamente o que exatamente é o segredo e quem sabe dele.",
+      "exemplos": [
+        "Um estranho na estalagem insinua saber sobre seu passado e sugere um preço pelo silêncio.",
+        "Você evita certas cidades onde alguém poderia reconhecê-lo e expor a verdade.",
+        "Mente sobre sua origem sempre que o assunto família ou passado surge entre companheiros."
+      ],
+      "em_adamar": "É um recurso narrativo que qualquer jogador pode definir junto com o narrador, sem depender de elementos exclusivos do cenário.",
+      "dica_mesa": "Combine o conteúdo exato do segredo com o narrador antes da campanha, para que ele saiba quando puxar esse fio.",
+      "relacionados": [
+        "reputacao-ruim"
+      ]
+    },
+    "sem-imaginacao": {
+      "descricao": "Sem Imaginação significa que você tem dificuldade genuína em pensar fora do óbvio, apreciar arte, ficção ou ideias abstratas, e em imaginar cenários hipotéticos que não estejam bem na sua frente. Soluções criativas, blefes elaborados ou leituras de situações ambíguas não são o seu forte.\n\nPor outro lado, você tende a não se abalar com coisas que dependem de imaginar o pior: histórias de assombração, ameaças veladas e insinuações simplesmente não pegam em você do jeito que pegariam em alguém mais imaginativo.",
+      "exemplos": [
+        "Você não entende a peça de teatro que os outros comentam ter sido brilhante.",
+        "Fica indiferente às histórias de fantasmas que deixam o resto do grupo com os pelos em pé.",
+        "Precisa que alguém explique devagar o plano indireto que o grupo bolou para enganar os guardas."
+      ],
+      "em_adamar": "É um traço de personalidade sem relação com magia ou lore."
+    },
+    "sem-nocao-de-profundidade": {
+      "descricao": "Sem Noção de Profundidade significa que você tem dificuldade real para calcular distâncias e profundidade: julgar o quão longe está algo, acertar um alvo à distância ou saltar um vão exige mais cuidado e atenção do que exigiria para outra pessoa.\n\nIsso afeta principalmente tarefas que dependem de julgar espaço com precisão — mirar um ataque à distância, calcular um salto, servir bebida sem derramar — mais do que atividades corpo a corpo ou cotidianas simples.",
+      "exemplos": [
+        "Você erra a distância ao tentar saltar o fosso estreito da ruína e quase cai.",
+        "Tem dificuldade em calcular a distância exata para lançar a corda até a janela alta.",
+        "Erra feio ao tentar acertar um alvo distante com o arco, mesmo mirando com cuidado."
+      ],
+      "em_adamar": "É uma limitação sensorial física comum, sem depender do narrador."
+    },
+    "sem-um-dedo": {
+      "descricao": "Sem Um Dedo cobre a perda de um dedo da mão: a versão comum é perder qualquer dedo exceto o polegar, com uma penalidade de destreza pequena e só naquela mão; perder o polegar é bem mais grave, porque o polegar é essencial para seguras e movimentos finos, então a penalidade nessa mão fica bem maior.\n\nEm ambos os casos, a outra mão continua normal, então muita gente aprende a compensar usando a mão saudável para tarefas delicadas.",
+      "exemplos": [
+        "Você tem dificuldade para amarrar um nó fino com a mão que perdeu o dedo.",
+        "Troca a espada de mão na luta depois que a mão ferida falha em segurar bem o cabo.",
+        "Evita tarefas de precisão, como arrombar uma fechadura, com a mão machucada."
+      ],
+      "em_adamar": "É uma lesão física comum, sem relação com magia."
+    },
+    "senso-do-dever": {
+      "descricao": "Senso do Dever é a obrigação sincera de ajudar e proteger um grupo específico — a família, os companheiros de armas, o povoado natal, uma ordem ou irmandade — mesmo quando isso custa caro ou é perigoso. Abandonar esse grupo na hora do aperto vai contra tudo o que você é, e o narrador pode usar essa obrigação para complicar suas escolhas.\n\nQuanto maior e mais amplo o grupo protegido, mais pontos vale essa desvantagem, já que mais situações vão colocar o dever à prova.",
+      "exemplos": [
+        "Você arrisca a missão principal para voltar e socorrer a aldeia atacada por saqueadores.",
+        "Recusa uma fortuna oferecida para trair os companheiros de armas.",
+        "Interrompe a perseguição ao vilão para tirar civis de uma construção em chamas."
+      ],
+      "em_adamar": "É um laço pessoal que qualquer jogador pode definir, sem depender de elementos exclusivos do cenário.",
+      "relacionados": [
+        "obsessao",
+        "voto"
+      ]
+    },
+    "solitario": {
+      "descricao": "Solitário faz você se sentir desconfortável cercado de gente por muito tempo: multidões, grupos grandes e convívio social prolongado cansam e incomodam, mesmo quando não há hostilidade nenhuma envolvida. Você prefere resolver problemas sozinho e busca formas de se afastar quando o grupo fica grande ou barulhento demais.\n\nIsso não significa hostilidade ou timidez — você pode ser sociável em doses pequenas — só que precisa de tempo a sós com regularidade para recarregar.",
+      "exemplos": [
+        "Você se afasta do acampamento para ficar sozinho de vigia, mesmo sem necessidade tática.",
+        "Evita a festa lotada da vila e prefere observar de longe, na entrada.",
+        "Fica visivelmente incomodado quando o grupo cresce com novos contratados na jornada."
+      ],
+      "em_adamar": "É um traço de personalidade, sem relação com o cenário."
+    },
+    "sonambulismo": {
+      "descricao": "Sonambulismo faz você andar, falar ou até agir dormindo, sem controle consciente e sem lembrar depois. Isso pode levar você para longe do acampamento, expor sua posição escondida ou colocá-lo em perigo físico enquanto o resto do grupo descansa tranquilo.\n\nDiferente de Pesadelos, aqui o problema não é a qualidade do sono em si, mas o que seu corpo faz enquanto você dorme — um risco real em terreno hostil ou instável.",
+      "exemplos": [
+        "Um companheiro te encontra andando à beira do penhasco no meio da noite, ainda dormindo.",
+        "Você acorda longe do acampamento sem lembrar como chegou até ali.",
+        "Precisa ser amarrado com cuidado ou vigiado durante a noite em terreno perigoso."
+      ],
+      "em_adamar": "É uma condição do sono comum, sem relação com magia.",
+      "relacionados": [
+        "pesadelos",
+        "sono-leve"
+      ]
+    },
+    "sono-complementar": {
+      "descricao": "Sono Complementar significa que você precisa dormir bem mais do que o normal para descansar de verdade: onde outra pessoa recupera as forças com uma noite comum, você precisa de bem mais tempo de descanso, o que reduz as horas disponíveis para vigiar, viajar ou trabalhar.\n\nEm viagens longas ou situações de vigília forçada, isso pesa mais: dormir menos do que seu corpo pede cobra o preço em cansaço e desempenho ruim no dia seguinte.",
+      "exemplos": [
+        "Você precisa se recolher bem mais cedo que o resto do grupo durante a marcha pela estrada.",
+        "Fica exausto depois de uma noite de vigília forçada que os outros suportariam sem problema.",
+        "Perde a primeira parte da manhã ainda dormindo enquanto o acampamento já está de pé."
+      ],
+      "em_adamar": "É uma necessidade física pessoal, sem depender do narrador.",
+      "relacionados": [
+        "sono-leve"
+      ]
+    },
+    "sono-leve": {
+      "descricao": "Sono Leve faz você acordar com qualquer barulho ou movimento fora do comum: passos próximos, um galho quebrando, uma porta rangendo. Isso ajuda a não ser pego totalmente de surpresa durante o sono, mas também significa que você raramente tem uma noite de descanso completa e tranquila em ambientes barulhentos.\n\nÉ o oposto de dormir pesado: você desperta fácil, para o bem, perceber perigo, e para o mal, não conseguir descansar direito perto de ruído constante.",
+      "exemplos": [
+        "Você acorda no meio da noite ao ouvir um galho quebrar perto do acampamento.",
+        "Não consegue dormir direito na estalagem barulhenta perto do mercado.",
+        "É o primeiro a perceber o intruso se aproximando durante a vigília noturna."
+      ],
+      "em_adamar": "É uma característica do sono, sem relação com magia.",
+      "relacionados": [
+        "sonambulismo",
+        "pesadelos"
+      ]
+    },
+    "status-baixo": {
+      "descricao": "Status Baixo coloca você numa posição inferior na hierarquia social, independente de quanto dinheiro você tenha: servo, pária, desprezado por nascença ou ofício. Isso afeta como as pessoas reagem a você por padrão, quem aceita negociar ou conversar de igual para igual, e que portas simplesmente não se abrem, não importa o quanto você mereça.\n\nDiferente de Pobreza, aqui o problema é de posição social, não de recursos: você pode até ter alguma riqueza e ainda assim ser tratado como inferior por causa de quem é ou de onde vem.",
+      "exemplos": [
+        "O guarda do portão da cidade trata você com desprezo antes mesmo de ouvir o que precisa.",
+        "Precisa de um intermediário de status mais alto para ser recebido pelo administrador local.",
+        "É ignorado numa negociação até que alguém de fora fale por você."
+      ],
+      "em_adamar": "É uma posição social presente em qualquer sociedade, então está liberada para qualquer jogador.",
+      "relacionados": [
+        "pobreza-riqueza-baixa"
+      ]
+    },
+    "surdez": {
+      "descricao": "Surdez significa que você não ouve nada: sem sons, sem avisos falados, sem sussurros, sem o barulho de passos se aproximando. Você depende inteiramente de visão, leitura labial, linguagem de sinais ou de companheiros para saber o que está acontecendo fora do seu campo de visão.\n\nIsso afeta profundamente comunicação, alerta de perigo e qualquer situação social ou de combate que dependa de ouvir — de uma conversa numa taverna barulhenta a perceber um inimigo se aproximando pelas costas.",
+      "exemplos": [
+        "Você não percebe o grito de aviso do companheiro sobre a armadilha e quase cai nela.",
+        "Precisa que alguém traduza por sinais o que o mercador está dizendo apressado.",
+        "É pego de surpresa por um inimigo que se aproximou por trás sem que você notasse o barulho."
+      ],
+      "em_adamar": "É uma condição física comum, sem depender de magia."
+    },
+    "suscetivel": {
+      "descricao": "Suscetível significa que seu corpo reage pior do que o normal a algo específico e comum — doenças, venenos ou frio, por exemplo — sofrendo mais facilmente os efeitos que outra pessoa resistiria bem. Não é uma fraqueza mágica nem uma vulnerabilidade extrema a um único gatilho raro: é uma sensibilidade geral a um tipo de ameaça do cotidiano.\n\nIsso pesa mais em ambientes hostis do cenário — invernos rigorosos, pragas, comida ou água contaminada — onde outros aventureiros passariam ilesos e você precisa de mais cuidado.",
+      "exemplos": [
+        "Você pega uma febre feia depois de uma exposição ao frio que os companheiros suportaram bem.",
+        "Sente os efeitos do veneno da lâmina do assassino com muito mais força que o esperado.",
+        "Evita comer ou beber qualquer coisa de origem duvidosa, sabendo que seu corpo reage pior que o normal."
+      ],
+      "em_adamar": "É uma fragilidade física comum, sem depender de magia."
+    },
+    "teimosia": {
+      "descricao": "Teimosia faz você se apegar à própria opinião, plano ou método mesmo diante de argumentos melhores ou evidência contrária. Mudar de ideia, aceitar ordens que discorda ou seguir um plano alheio exige um esforço real de vontade, e você tende a insistir no próprio jeito mesmo quando isso claramente não está funcionando.\n\nIsso gera atrito em grupo, especialmente quando outro personagem tem um plano melhor mas você resiste a abandonar o seu por puro orgulho ou hábito.",
+      "exemplos": [
+        "Você insiste em atacar de frente mesmo depois do grupo sugerir um flanco mais seguro.",
+        "Recusa mudar de rota mesmo com evidências de que o caminho escolhido é perigoso.",
+        "Discute com o líder do grupo antes de aceitar, a contragosto, seguir o plano dele."
+      ],
+      "em_adamar": "É um traço de personalidade, sem relação com o narrador."
+    },
+    "temor": {
+      "descricao": "Temor é a desvantagem de quem se assusta fácil. Cada nível deixa você pior nos testes de pânico (as verificações de medo que o narrador pede diante de horrores, cadáveres, criaturas e situações apavorantes) e também mais vulnerável a quem tenta intimidar você. É o oposto da vantagem Destemor.\n\nO número de níveis é limitado pela sua Vontade: não dá para comprar tanto Temor que a coragem vire nada. No dia a dia, o personagem é cauteloso, desconfia de lugares escuros e de barulhos estranhos, e prefere não ser o primeiro a entrar.",
+      "exemplos": [
+        "Diante do corpo mutilado na estrada, você faz o teste de pânico com uma penalidade a mais que os companheiros.",
+        "O bandido grita ameaças e você sente as pernas fraquejarem antes de qualquer golpe.",
+        "Você se recusa a descer primeiro na cripta e só vai quando alguém segura a tocha à frente."
+      ],
+      "em_adamar": "Livre: é um traço humano comum, e um mundo de ruínas e feras dá muitas ocasiões para ele pesar."
+    },
+    "timidez": {
+      "descricao": "Timidez faz você se sentir desconfortável perto de estranhos ou em situações sociais que exigem se impor, falar em público ou chamar atenção. Negociar, liderar uma conversa importante ou se destacar num grupo grande custa mais esforço emocional para você do que para outra pessoa, e você tende a preferir ficar em segundo plano.\n\nQuanto mais forte a timidez, maior a dificuldade em situações sociais de qualquer tipo, mesmo entre pessoas que não representam ameaça nenhuma.",
+      "exemplos": [
+        "Você deixa que outro companheiro faça a negociação com o mercador desconhecido.",
+        "Gagueja e desvia o olhar ao ser questionado diretamente pelo guarda da cidade.",
+        "Evita se pronunciar na reunião do conselho da vila, mesmo tendo uma boa ideia."
+      ],
+      "em_adamar": "É um traço de personalidade, sem relação com o cenário."
+    },
+    "trapaceiro": {
+      "descricao": "Trapaceiro é a necessidade de enganar: blefar, roubar, trapacear em jogos ou manipular alguém não é só um recurso ocasional para você, é uma fonte de emoção que você busca ativamente, mesmo quando a honestidade seria mais simples ou mais segura. Resistir à tentação de enganar alguém, quando a oportunidade aparece, exige esforço.\n\nIsso rende problemas quando a trapaça é descoberta: perder a confiança de aliados, ser expulso de um jogo de azar ou ganhar inimigos por picuinha, mesmo em situações que não valiam o risco.",
+      "exemplos": [
+        "Você não resiste a marcar as cartas no jogo da taverna, mesmo sem precisar do dinheiro.",
+        "Engana o guarda ingênuo só pelo prazer de ver o blefe funcionar.",
+        "Arrisca a confiança do grupo ao trapacear na divisão do saque, por pura compulsão."
+      ],
+      "em_adamar": "É um traço de personalidade, sem relação com magia."
+    },
+    "veracidade": {
+      "descricao": "Veracidade faz você fisicamente incapaz de mentir de forma convincente: mesmo tentando, sua voz, seu rosto ou sua hesitação entregam a mentira, e blefes ou meias-verdades elaboradas simplesmente não saem bem. Você ainda pode omitir informação ou ficar calado, mas dizer uma inverdade direta e sustentá-la é praticamente impossível.\n\nIsso torna negociações, interrogatórios e disfarces bem mais difíceis para você do que para o resto do grupo, embora também te dê uma reputação de confiabilidade quando as pessoas percebem o padrão.",
+      "exemplos": [
+        "Você gagueja e desvia o olhar ao tentar enganar o guarda no portão.",
+        "Prefere ficar em silêncio a mentir diretamente para o interrogador.",
+        "Ganha a confiança do velho ermitão só por nunca ter mentido para ele antes."
+      ],
+      "em_adamar": "É um traço de personalidade, sem relação com o narrador.",
+      "relacionados": [
+        "trapaceiro"
+      ]
+    },
+    "viciado-em-trabalho": {
+      "descricao": "Viciado em Trabalho faz você incapaz de simplesmente parar e descansar: sempre há mais uma tarefa, mais um treino, mais um trabalho para terminar antes de relaxar de verdade, e ficar ocioso por muito tempo o incomoda genuinamente. Tirar férias ou aceitar um tempo de folga exige mais disposição do que parece.\n\nIsso rende produtividade extra em tarefas de longo prazo, mas também desgaste: companheiros podem se irritar com sua insistência em trabalhar mesmo quando todos precisam descansar.",
+      "exemplos": [
+        "Você insiste em consertar o equipamento do grupo mesmo depois de um dia exaustivo de viagem.",
+        "Sente-se inquieto durante a noite de descanso forçado na estalagem, sem conseguir simplesmente relaxar.",
+        "Oferece-se para montar guarda extra só para não ficar parado."
+      ],
+      "em_adamar": "É um traço de personalidade, sem relação com o cenário."
+    },
+    "visao-restrita": {
+      "descricao": "Visão Restrita reduz seu campo de visão periférica: a versão mais leve deixa os lados praticamente fora do seu alcance de visão direta, contando como ataques vindos das costas se vierem de lado; a versão mais grave estreita ainda mais o campo de visão, piorando a defesa contra ataques laterais e limitando sua percepção do que acontece fora de um cone estreito à frente.\n\nIsso te deixa mais vulnerável a emboscadas e ataques de flanco, e obriga você a virar a cabeça ativamente para checar os lados, algo que outras pessoas fazem sem esforço.",
+      "exemplos": [
+        "Um inimigo se posiciona ao seu lado e você só percebe quando o golpe já está vindo.",
+        "Precisa virar a cabeça deliberadamente para checar se alguém se aproxima pela lateral.",
+        "É pego de surpresa numa emboscada em corredor estreito, vinda de um nicho lateral que não viu."
+      ],
+      "em_adamar": "É uma limitação sensorial física, sem depender de magia.",
+      "relacionados": [
+        "sem-nocao-de-profundidade"
+      ]
+    },
+    "voto": {
+      "descricao": "Voto é uma promessa solene que você se impõe e mantém por convicção pessoal: pobreza, silêncio, castidade, não usar certas armas, nunca recuar. Diferente de uma regra imposta de fora, o Voto é algo que você escolheu e se cobra a cumprir, mesmo quando quebrar seria mais fácil ou vantajoso.\n\nQuanto mais restritivo o voto, mais pontos ele vale, porque mais situações do dia a dia vão te colocar diante da escolha entre manter a palavra ou ceder à conveniência.",
+      "exemplos": [
+        "Você recusa a bolsa de moedas oferecida como pagamento extra, fiel ao voto de pobreza.",
+        "Enfrenta o inimigo desarmado porque seu voto proíbe empunhar lâminas.",
+        "Mantém silêncio durante o interrogatório, mesmo sob pressão, por respeito ao próprio voto."
+      ],
+      "em_adamar": "É um compromisso pessoal que qualquer jogador pode definir com o narrador, sem depender de elementos exclusivos do cenário.",
+      "relacionados": [
+        "senso-do-dever"
+      ]
+    },
+    "voz-irritante": {
+      "descricao": "Voz Irritante significa que sua voz é desagradável de ouvir: estridente, rouca, nasalada ou de algum jeito incômodo o bastante para irritar quem escuta por muito tempo. Isso atrapalha situações sociais prolongadas, como discursos, negociações demoradas ou tentar acalmar alguém, mesmo quando o conteúdo do que você diz é bom.\n\nNão afeta sua capacidade de se comunicar, só a reação das pessoas ao som da sua voz, o que pode render implicância, apelidos ou simples cansaço alheio depois de ouvir você falar por tempo demais.",
+      "exemplos": [
+        "O mercador faz careta e tenta encerrar a negociação mais rápido só para parar de ouvir sua voz.",
+        "Um companheiro pede, brincando, que você cante mais baixo perto da fogueira.",
+        "Precisa se esforçar mais para acalmar a criança assustada, já que sua voz não ajuda em nada."
+      ],
+      "em_adamar": "É uma característica física, sem relação com magia."
+    },
+    "vicio": {
+      "descricao": "Vício é a dependência de uma droga, erva ou substância que altera o corpo ou a mente: você sente necessidade real de consumi-la com regularidade, e ficar sem ela por muito tempo traz desconforto crescente, além do risco óbvio de gastar recursos e se colocar em situações arriscadas só para conseguir mais.\n\nDiferente de um simples gosto pessoal, aqui existe compulsão real: conseguir a substância pode virar prioridade mesmo em momentos inconvenientes, e a abstinência prolongada tem consequências que pioram com o tempo.",
+      "exemplos": [
+        "Você desvia parte do saque para comprar mais da erva que consome, mesmo sabendo que o grupo precisa do dinheiro.",
+        "Fica visivelmente irritado e trêmulo depois de dias sem acesso à sua substância de vício.",
+        "Arrisca revelar sua localização à noite só para negociar com um fornecedor de confiança."
+      ],
+      "em_adamar": "É uma dependência que qualquer humano pode desenvolver; combine com o narrador qual é a substância exata.",
+      "relacionados": [
+        "dependencia"
+      ]
+    },
+    "xenofilia": {
+      "descricao": "Xenofilia é a atração e o fascínio por estrangeiros, forasteiros e tudo o que é estranho ou vindo de fora: você se sente puxado para conhecer, confiar e se aproximar de quem parece diferente do comum ao seu redor, às vezes contra o próprio bom senso. Resistir a essa atração diante de um forasteiro chamativo exige esforço.\n\nIsso pode render bons contatos e histórias interessantes, mas também te deixa mais vulnerável a golpistas, espiões ou perigos disfarçados de gente exótica e cativante.",
+      "exemplos": [
+        "Você se aproxima do viajante estranho e enigmático da caravana, ignorando os avisos do grupo.",
+        "Confia rápido demais no forasteiro de sotaque diferente que acabou de chegar à vila.",
+        "Insiste em conversar e ajudar a comitiva estrangeira, mesmo quando o grupo prefere seguir viagem."
+      ],
+      "em_adamar": "É um traço de personalidade, sem relação com o cenário."
+    },
+    "zarolho": {
+      "descricao": "Zarolho significa que você perdeu um dos olhos: sua visão em profundidade e seu campo de visão periférico daquele lado ficam prejudicados, o que afeta tarefas que dependem de calcular distância com precisão e de perceber o que se aproxima do lado cego.\n\nAlém do efeito prático, é uma marca visível e permanente, o tipo de coisa que as pessoas notam e comentam, e que às vezes vem com uma história por trás que o narrador pode explorar.",
+      "exemplos": [
+        "Você erra o alcance ao tentar jogar a corda até a outra margem do rio.",
+        "Um inimigo se aproxima pelo seu lado cego sem que você perceba a tempo.",
+        "Cobre o olho perdido com um tapa-olho de couro que virou parte da sua identidade visual."
+      ],
+      "em_adamar": "É uma lesão física comum, sem depender de magia.",
+      "relacionados": [
+        "sem-nocao-de-profundidade",
+        "visao-restrita"
+      ]
+    }
+  }
+}

@@ -851,6 +851,8 @@
         Efeitos.desenharEfeitos(ul, criador.efeitosDoTraco(x.sel));
         if (ul.hidden) d.appendChild(el('p', 'pericia-resumo', t.resumo));
         else d.appendChild(ul);
+        var mais = window.detalhesItem && window.detalhesItem(t);
+        if (mais) d.appendChild(mais);
         b.appendChild(d);
       });
       extras.forEach(function (x) {

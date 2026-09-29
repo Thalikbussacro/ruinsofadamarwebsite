@@ -1,0 +1,258 @@
+{
+  "lista": "equipamento",
+  "itens": {
+    "maleta-resistente": {
+      "descricao": "Uma maleta reforçada com fechadura própria, feita para guardar objetos valiosos e dificultar que sejam roubados ou danificados no transporte. É mais resistente e mais segura que uma bolsa ou mochila comum, mas também mais pesada e menos flexível para carregar em terreno difícil.",
+      "exemplos": ["O mercador guarda os documentos de crédito numa maleta trancada durante toda a viagem.", "Forçar a fechadura da maleta reforçada exigiria mais tempo e cuidado do que abrir uma bolsa comum."],
+      "em_adamar": "Não existe em Adamar no formato descrito: fechaduras e reforços desse padrão específico são um refinamento posterior à tecnologia do cenário. Use um baú de viagem trancado ou uma bolsa reforçada com fivela e cadeado simples.",
+      "relacionados": ["gazuas"]
+    },
+    "minilanterna": {
+      "descricao": "Uma lanterna elétrica pequena e leve, de alcance curto, fácil de guardar no bolso ou na mochila. Precisa de pilhas para funcionar e ilumina bem menos longe que uma lanterna pesada, sendo mais útil para iluminar de perto do que para enxergar longe no escuro.",
+      "exemplos": ["Uma minilanterna caberia facilmente no bolso para iluminar uma fechadura no escuro.", "Sem pilhas de reserva, a luz fraca da minilanterna dura pouco tempo."],
+      "em_adamar": "Não existe em Adamar: depende de eletricidade e pilhas, tecnologia muito além do cenário. Uma vela ou uma tocha pequena cumprem papel parecido no cenário.",
+      "relacionados": ["baterias", "vela-de-sebo"]
+    },
+    "mochila-pequena": {
+      "descricao": "Uma mochila de tamanho reduzido, feita para carregar o essencial sem pesar demais nas costas. Comparada à mochila grande, cabe bem menos coisa, mas é mais discreta e mais confortável para longas caminhadas ou para quem precisa se mover rápido e sem ruído.",
+      "exemplos": ["Você leva só a mochila pequena na incursão rápida à ruína, deixando o resto do equipamento no acampamento.", "A mochila pequena não tem espaço para todo o saque que vocês encontraram na cripta."],
+      "relacionados": ["mochila", "algibeira-bolsa-pequena"]
+    },
+    "mochila": {
+      "descricao": "Uma mochila grande de carga, pensada para levar provisões, cobertores, ferramentas e o grosso do equipamento de uma expedição mais longa. Carrega bastante, mas também pesa e atrapalha movimentos mais ágeis, como escalar ou correr em silêncio.",
+      "exemplos": ["A mochila cheia de provisões pesa nas costas durante toda a subida da montanha.", "Vocês trocam a mochila grande por uma pequena antes de entrar de fininho na masmorra.", "Um golpe nas costas é parcialmente amortecido pela mochila cheia."],
+      "relacionados": ["mochila-pequena", "alforjes"]
+    },
+    "odre-de-vinho": {
+      "descricao": "Um recipiente de couro costurado e untado, usado para carregar vinho, água ou outro líquido, dobrável e leve quando vazio. É mais resistente a quedas que uma garrafa de cerâmica, mas pode vazar ou ganhar gosto do couro depois de muito uso.",
+      "exemplos": ["Você passa o odre de vinho entre os companheiros ao redor da fogueira depois de um dia difícil de estrada.", "O odre vazio dobra fácil e cabe amassado no fundo da mochila.", "Uma facada de raspão no odre faz o vinho escorrer por toda a bagagem."],
+      "relacionados": ["garrafa-ceramica", "cantil"]
+    },
+    "oleo": {
+      "descricao": "Óleo combustível vendido em pequenas porções, usado principalmente para abastecer lampiões e manter a chama acesa por mais tempo. Também serve, em menor escala, para lubrificar dobradiças, cadeados emperrados ou couro ressecado.",
+      "exemplos": ["Vocês reabastecem o lampião com óleo antes de descer mais fundo na masmorra.", "Um pouco de óleo nas dobradiças da porta velha evita o rangido que denunciaria a entrada silenciosa.", "Sem óleo de reserva, o lampião se apaga bem antes do fim da noite."],
+      "relacionados": ["lampiao"]
+    },
+    "paraquedas": {
+      "descricao": "Um equipamento que se abre no ar e desacelera uma queda, permitindo saltar de uma grande altura e pousar de forma controlada em vez de despencar. Precisa de altura suficiente para abrir e de espaço livre para pousar.",
+      "exemplos": ["Um paraquedas permitiria escapar saltando da torre em chamas sem se espatifar no chão.", "Sem altura suficiente para abrir, o paraquedas de nada adiantaria numa queda curta."],
+      "em_adamar": "Não existe em Adamar: os tecidos leves e o entendimento aerodinâmico por trás do paraquedas são tecnologia muito além do cenário. Saltos de altura no cenário dependem de sorte, água funda ou feno empilhado."
+    },
+    "pastilhas-purificar-agua": {
+      "descricao": "Pequenas pastilhas químicas que tornam segura para beber uma água suja ou contaminada, sem precisar ferver nada. Rápidas e leves de carregar, mas dependem de um processo químico específico para funcionar.",
+      "exemplos": ["Com pastilhas de purificar água, beber daquele poço suspeito deixaria de ser um risco.", "Sem essas pastilhas, a água turva do pântano precisaria ser fervida antes de beber."],
+      "em_adamar": "Não existe em Adamar: a química por trás dessas pastilhas está além da tecnologia do cenário. No cenário, água suspeita se purifica fervendo, ou simplesmente evitando fontes duvidosas."
+    },
+    "pelagem-de-animal": {
+      "descricao": "Um leito feito de peles de animal curtidas, usado para dormir ao relento com mais conforto e calor do que direto no chão frio. É quente enquanto seca, mas perde boa parte da proteção contra o frio se ficar encharcada, e então demora bastante a secar de novo.",
+      "exemplos": ["Vocês estendem as peles perto do fogo para dormir aquecidos na noite gelada da montanha.", "Depois da travessia do rio, a pelagem encharcada perde toda a proteção contra o frio da noite.", "O caçador troca sua pelagem velha por uma nova depois de anos de uso na estrada."],
+      "relacionados": ["cobertor", "saco-de-dormir"]
+    },
+    "querosene": {
+      "descricao": "Um combustível líquido refinado, vendido por litro, usado sobretudo em fogões e lampiões que dependem dele para queimar de forma limpa e constante. É mais refinado que óleo comum e queima de forma mais previsível.",
+      "exemplos": ["Um fogão a querosene cozinharia sem a fumaça e o cheiro forte de uma fogueira comum.", "Sem esse combustível refinado, o fogareiro moderno não teria como funcionar."],
+      "em_adamar": "Não existe em Adamar: refinar petróleo em querosene é tecnologia muito além do cenário. Lampiões do cenário usam óleo comum no lugar.",
+      "relacionados": ["oleo", "fogao-pequeno"]
+    },
+    "racao-de-viagem": {
+      "descricao": "Uma refeição simples e durável, pensada para aguentar dias ou semanas de viagem sem estragar, geralmente pão duro, carne seca e frutas desidratadas. Não é saborosa nem farta, mas evita que o grupo passe fome numa jornada longa sem acesso a vilas ou caça.",
+      "exemplos": ["Vocês reabastecem as rações de viagem antes de partir para o deserto, sabendo que não haverá vilas no caminho.", "Depois de duas semanas, até a ração de viagem mais bem preparada começa a enjoar.", "Sem rações suficientes, o grupo precisa parar para caçar ou pescar antes de seguir viagem."],
+      "relacionados": ["anzol-e-linha"]
+    },
+    "receptor-gps": {
+      "descricao": "Um dispositivo de navegação que recebe sinais de satélites e informa a localização exata de quem o carrega, mesmo sem qualquer ponto de referência visível. Depende inteiramente de uma rede de satélites orbitando o mundo, algo muito além do que qualquer instrumento de Adamar poderia oferecer.",
+      "exemplos": ["Um receptor GPS diria exatamente onde vocês estão, mesmo perdidos no meio da floresta cerrada.", "Sem satélite algum para captar, o aparelho não passaria de uma caixa muda."],
+      "em_adamar": "Não existe em Adamar: depende de satélites e de uma rede orbital, tecnologia impensável para o cenário. Navegação em Adamar depende de mapas, estrelas e perícia de Navegação ou Sobrevivência.",
+      "relacionados": ["bussola"]
+    },
+    "relogio-de-pulso": {
+      "descricao": "Um relógio mecânico simples, preso ao pulso, que mostra a hora exata sem precisar consultar o sol ou contar o tempo por hábito. Prático para marcar encontros e turnos de vigília com precisão, algo que a maioria dos habitantes de Adamar resolve de outro jeito.",
+      "exemplos": ["Com um relógio de pulso, marcar o horário exato da troca de vigília seria trivial.", "Sem relógio nenhum, o grupo combina os turnos de vigília pela posição da lua no céu."],
+      "em_adamar": "Não existe em Adamar nesse formato: relojoaria de pulso tão precisa e miniaturizada é tecnologia além do cenário. O tempo no cenário se mede pelo sol, por velas marcadas ou por ampulhetas em torres e templos."
+    },
+    "saco-de-dormir-reforcado": {
+      "descricao": "Um saco de dormir especial, isolado para aguentar climas extremamente frios sem que quem dorme dentro passe frio. Muito mais volumoso e caro que um saco de dormir comum, mas essencial em expedições a lugares gelados de verdade.",
+      "exemplos": ["Sem o saco de dormir reforçado, a noite no topo da montanha nevada seria arriscada demais para dormir.", "Mesmo debaixo de neve, quem dorme nesse saco reforçado acorda aquecido pela manhã."],
+      "em_adamar": "Não existe em Adamar: os materiais isolantes usados nesse tipo de saco são refinamento têxtil além do cenário. Peles empilhadas, cobertores e uma boa fogueira cumprem esse papel no cenário.",
+      "relacionados": ["pelagem-de-animal", "cobertor"]
+    },
+    "saco-de-dormir": {
+      "descricao": "Um saco acolchoado que envolve o corpo inteiro durante o sono, mais quente e mais prático de carregar enrolado do que um simples cobertor. Depende de um tecido acolchoado costurado que não é produzido no cenário.",
+      "exemplos": ["Um saco de dormir manteria você aquecido a noite toda sem precisar ficar perto do fogo.", "Sem esse tecido acolchoado, dormir ao relento depende de cobertores e peles empilhadas."],
+      "em_adamar": "Não existe em Adamar nesse formato específico: o tecido acolchoado e costurado do saco de dormir moderno é além do cenário. Cobertores e peles cumprem esse papel no cenário.",
+      "relacionados": ["cobertor", "pelagem-de-animal"]
+    },
+    "tocha": {
+      "descricao": "Um cabo de madeira com a ponta embebida em resina ou breu, que arde por um bom tempo e ilumina bem o suficiente para andar por lugares escuros. É barata e fácil de acender, mas produz fumaça, pinga resina acesa e deixa as mãos ocupadas segurando-a.",
+      "exemplos": ["Vocês acendem tochas antes de descer os degraus escuros da cripta.", "A tocha se apaga de repente com uma rajada de vento na entrada da caverna, deixando todos no escuro por um instante.", "Segurando a tocha numa mão, você perde parte da destreza para lutar com a outra."],
+      "relacionados": ["lampiao", "vela-de-sebo"]
+    },
+    "vara-2m": {
+      "descricao": "Uma vara de madeira comprida, simples e versátil, usada para armar barracas pequenas, testar o chão à frente numa masmorra suspeita de armadilhas ou improvisar uma alavanca curta. Não é uma arma de verdade, mas serve em apuros como cajado improvisado.",
+      "exemplos": ["Você bate a vara no chão à frente para testar se há um alçapão escondido sob a poeira.", "A vara serve para armar a barraca pequena do acampamento.", "Numa emergência, a vara vira arma improvisada contra um oponente desarmado."],
+      "relacionados": ["barraca-2-pessoas", "vara-3m"]
+    },
+    "vara-3m": {
+      "descricao": "Uma vara de madeira mais longa que a comum, usada para armar barracas maiores ou alcançar algo fora do alcance normal do braço, como testar a profundidade de uma poça escura ou empurrar algo de longe com segurança. Por ser mais comprida, é mais incômoda de carregar e não cabe fácil em espaços apertados.",
+      "exemplos": ["Vocês usam a vara longa para medir a profundidade da água turva antes de atravessar.", "A vara longa não passa pelo corredor estreito da masmorra sem esbarrar nas paredes.", "Duas dessas varas sustentam a barraca grande do acampamento da caravana."],
+      "relacionados": ["vara-2m", "barraca-4-pessoas"]
+    },
+    "vela-de-sebo": {
+      "descricao": "Uma vela feita de gordura animal, meio fumacenta e de cheiro forte, mas barata e comum, capaz de durar bastante tempo acesa. Ilumina pouco mais que um punhado de passos ao redor e se apaga fácil com uma corrente de ar.",
+      "exemplos": ["Você acende uma vela de sebo para ler o pergaminho antigo na penumbra do estúdio.", "A vela de sebo se apaga com a corrente de ar que entra pela fresta da porta.", "O cheiro de gordura queimada da vela de sebo enche o pequeno quarto alugado."],
+      "relacionados": ["tocha", "lampiao"]
+    },
+    "maquina-de-escrever": {
+      "descricao": "Uma máquina mecânica que imprime letras no papel através de teclas, produzindo texto muito mais legível e uniforme do que a caligrafia manual, embora sem a mesma flexibilidade de um escriba habilidoso. É pesada e ruidosa, feita para uma escrivaninha fixa, não para viagem.",
+      "exemplos": ["Uma máquina de escrever produziria cartas oficiais impecáveis, sem depender da caligrafia de ninguém.", "O barulho repetitivo das teclas entregaria de longe que alguém trabalha ali dentro."],
+      "em_adamar": "Não existe em Adamar: mecanismos de impressão por teclado são tecnologia além do cenário. Documentos no cenário são escritos à mão, com o kit de escriba.",
+      "relacionados": ["kit-de-escriba"]
+    },
+    "minigravador": {
+      "descricao": "Um gravador portátil que registra som em fitas, permitindo captar uma conversa ou uma nota falada para ouvir depois com exatidão. Precisa de energia e de fitas para funcionar, e as fitas em si têm duração limitada, então gravações longas exigem trocá-las.",
+      "exemplos": ["Um minigravador guardaria a confissão do traidor, palavra por palavra, para provar depois diante do conselho.", "Sem fitas de reposição, a gravação para bem no meio da conversa mais importante."],
+      "em_adamar": "Não existe em Adamar: gravação de som em fita é tecnologia muito além do cenário. Testemunhas e anotações escritas cumprem esse papel no cenário."
+    },
+    "minigravador-digital": {
+      "descricao": "Uma versão digital do gravador portátil, que guarda o som sem usar fitas, permitindo registrar por muito mais tempo num espaço bem menor. Depende de energia e de um circuito bem mais avançado que o do gravador de fitas comum.",
+      "exemplos": ["Um minigravador digital guardaria horas de conversas escutadas às escondidas num espaço minúsculo.", "Sem bateria, o pequeno aparelho digital não registra som nenhum."],
+      "em_adamar": "Não existe em Adamar, pelo mesmo motivo do minigravador comum: gravação eletrônica de som está muitíssimo além do cenário.",
+      "relacionados": ["minigravador"]
+    },
+    "minitelevisor": {
+      "descricao": "Um televisor portátil pequeno, capaz de captar transmissões à distância e mostrar imagens em movimento numa tela reduzida. Depende de uma rede de transmissão e de energia para funcionar, e fora do alcance dessa rede não mostra nada além de estática.",
+      "exemplos": ["Um minitelevisor não captaria transmissão alguma numa terra sem nenhuma torre de rádio ou televisão.", "Sem energia elétrica, o pequeno aparelho fica só uma tela escura e inútil."],
+      "em_adamar": "Não existe em Adamar: transmissão de imagem à distância é tecnologia muitíssimo além do cenário."
+    },
+    "mochila-com-radio": {
+      "descricao": "Uma mochila equipada com um rádio de longo alcance, do tipo VHF, permitindo se comunicar a distâncias bem maiores que um rádio de mão comum, às custas de mais peso e volume nas costas de quem carrega.",
+      "exemplos": ["A mochila com rádio manteria contato entre o grupo na floresta e o comando a quilômetros de distância.", "Sem energia para o rádio, a mochila vira só um peso extra nas costas."],
+      "em_adamar": "Não existe em Adamar: rádio de qualquer alcance é tecnologia muito além do cenário. Comunicação a distância no cenário depende de mensageiro, pombo-correio ou sinais visuais combinados de antemão.",
+      "relacionados": ["radio-de-mao"]
+    },
+    "radio-de-mao": {
+      "descricao": "Um rádio portátil de curto alcance, o clássico walkie-talkie, que permite falar e ouvir em tempo real com outra pessoa carregando um rádio equivalente, dentro de uma certa distância. Fora do alcance da outra ponta, vira apenas ruído estático.",
+      "exemplos": ["Com rádios de mão, o grupo se dividiria em dois e ainda assim manteria contato entre as equipes.", "Fora do alcance combinado, o rádio só devolve chiado sem sentido nenhum."],
+      "em_adamar": "Não existe em Adamar: rádio de qualquer tipo é tecnologia muito além do cenário. Sinais combinados, mensageiros e gritos cumprem esse papel no cenário.",
+      "relacionados": ["mochila-com-radio", "fone-de-ouvido-com-radio"]
+    },
+    "radio-transistor": {
+      "descricao": "Um rádio receptor simples, que só recebe transmissões de estações distantes, sem poder responder ou transmitir nada de volta. Serve para ouvir notícias e avisos transmitidos por outra pessoa, não para conversar com ninguém.",
+      "exemplos": ["Um rádio transistor deixaria vocês ouvirem avisos transmitidos de uma torre distante, sem poder responder.", "Sem nenhuma estação transmitindo por perto, o rádio fica em silêncio absoluto."],
+      "em_adamar": "Não existe em Adamar: depende de uma rede de transmissão de rádio que não existe no cenário. Notícias em Adamar circulam por arautos, cartazes e boca a boca."
+    },
+    "tablete-de-cera": {
+      "descricao": "Uma pequena tábua coberta de cera macia, onde se escreve raspando com um estilete e depois se apaga alisando a cera de novo, permitindo reaproveitar o mesmo tablete várias vezes. É prático para anotações rápidas ou rascunhos, mas não guarda nada de forma permanente: qualquer descuido apaga o que estava escrito.",
+      "exemplos": ["Você anota os nomes dos suspeitos no tablete de cera antes de reportar tudo ao capitão da guarda.", "Um tropeço faz o tablete cair e alisar a cera sem querer, apagando as anotações da investigação.", "O mestre de obras usa um tablete de cera para rascunhar medidas antes de passá-las a limpo em pergaminho."],
+      "relacionados": ["kit-de-escriba"]
+    },
+    "tambor": {
+      "descricao": "Um tambor grande, usado para transmitir sinais sonoros simples a uma boa distância, seguindo padrões combinados de antemão entre quem toca e quem escuta. Não carrega mensagens complexas, só avisos curtos e diretos, como alerta de ataque ou chamado de reunião, e qualquer um por perto também escuta o sinal.",
+      "exemplos": ["O vigia bate o tambor três vezes, sinal combinado de que forasteiros se aproximam da vila.", "De longe, o som grave do tambor avisa toda a região de que algo está errado.", "Sem conhecer o código do tambor local, vocês não entendem o que aquele ritmo estranho está anunciando."]
+    },
+    "telefone-por-satelite": {
+      "descricao": "Um telefone que se conecta através de satélites, permitindo falar com qualquer lugar do mundo, mesmo longe de qualquer torre de comunicação terrestre. Depende de uma rede orbital inteira para funcionar, algo que nenhuma engenharia de Adamar seria capaz de sustentar.",
+      "exemplos": ["Um telefone por satélite manteria contato com a capital mesmo do meio do deserto mais isolado.", "Sem sinal de satélite algum sobre Adamar, o aparelho não passaria de um peso morto na bagagem."],
+      "em_adamar": "Não existe em Adamar: depende de satélites orbitando o mundo, tecnologia impensável para o cenário.",
+      "relacionados": ["receptor-gps"]
+    },
+    "sela-de-combate": {
+      "descricao": "Uma sela reforçada, feita para aguentar o esforço e os movimentos bruscos do combate montado, prendendo melhor o cavaleiro no lugar durante uma carga, um golpe de lança ou uma guinada repentina. Comparada a uma sela comum, é mais cara e mais pesada, mas reduz bastante o risco de cair durante a luta.",
+      "exemplos": ["Montado numa sela de combate, o cavaleiro resiste ao impacto da lançada sem ser derrubado.", "Numa sela comum, aquele golpe certamente teria arremessado o cavaleiro para fora da montaria.", "O torneio exige sela de combate de todos os competidores, por segurança e por tradição."],
+      "relacionados": ["estribos", "sela-e-arreios"]
+    },
+    "sela-e-arreios": {
+      "descricao": "Uma sela comum e o conjunto básico de arreios que prendem tudo no lugar sobre o cavalo, o equipamento padrão para montar com conforto e controle em viagens do dia a dia. Sem sela, ainda dá para montar, mas cansa muito mais rápido e dificulta lutar ou manobrar montado.",
+      "exemplos": ["Vocês selam os cavalos ao amanhecer antes de retomar a viagem pela estrada.", "Sem sela, aquela cavalgada longa deixaria o cavaleiro dolorido e o cavalo mais cansado.", "Um arreio mal ajustado escorrega no meio da travessia, quase derrubando o cavaleiro."],
+      "relacionados": ["bridao-e-redea", "estribos", "sela-de-combate"]
+    },
+    "microfone-a-laser": {
+      "descricao": "Um dispositivo que capta conversas do outro lado de uma janela de vidro, lendo as vibrações do próprio vidro causadas pelo som, sem precisar de nenhum microfone escondido dentro do ambiente vigiado. Só funciona se houver uma linha de visão limpa até o vidro.",
+      "exemplos": ["Um microfone a laser escutaria a reunião secreta através da janela fechada da torre, sem entrar no prédio.", "Sem linha de visão limpa até o vidro, o dispositivo não capta absolutamente nada."],
+      "em_adamar": "Não existe em Adamar: depende de óptica e eletrônica muito além do cenário. Espionagem no cenário exige estar fisicamente perto o bastante para escutar.",
+      "relacionados": ["escuta", "microfone-direcional"]
+    },
+    "microfone-direcional": {
+      "descricao": "Um microfone que amplia sons vindos de uma direção específica, permitindo escutar uma conversa distante sem precisar chegar perto de quem fala. Não funciona bem se houver muito ruído ao redor competindo com o som que se quer captar.",
+      "exemplos": ["Um microfone direcional captaria a conversa dos guardas do outro lado do pátio, mesmo a distância.", "Numa noite de vento forte, o microfone capta mais o barulho do vento do que a conversa em si."],
+      "em_adamar": "Não existe em Adamar: amplificação eletrônica de som direcional está muito além do cenário. Escutar à distância no cenário depende de boa audição, vento a favor e sorte.",
+      "relacionados": ["escuta"]
+    },
+    "sinal-teleguiado": {
+      "descricao": "Um pequeno transmissor de rastreamento, plantado discretamente em alguém ou em algo, que emite um sinal captável a distância para seguir sua localização sem perder o rastro visualmente. Precisa de um receptor equivalente do outro lado para servir de algo.",
+      "exemplos": ["Um sinal teleguiado plantado na carroça do contrabandista revelaria todo o caminho até o esconderijo.", "Sem o receptor certo, o pequeno transmissor plantado não adianta nada."],
+      "em_adamar": "Não existe em Adamar: rastreamento por sinal eletrônico está muito além do cenário. Seguir alguém no cenário depende de perícia de rastrear pegadas ou de vigilância direta."
+    },
+    "minicamera-digital": {
+      "descricao": "Uma câmera digital pequena, que guarda fotografias num meio de armazenamento em vez de filme, permitindo tirar muito mais fotos sem trocar nada. Depende de energia e de circuitos eletrônicos que não existem no cenário.",
+      "exemplos": ["Uma minicâmera digital registraria dezenas de provas do crime sem gastar filme algum.", "Sem carga na bateria, a pequena câmera não registra imagem alguma."],
+      "em_adamar": "Não existe em Adamar: fotografia digital está muitíssimo além do cenário."
+    },
+    "oculos-de-visao-noturna": {
+      "descricao": "Óculos especiais que amplificam a pouca luz disponível, permitindo enxergar razoavelmente bem no escuro quase completo sem precisar de tocha ou lampião, que denunciariam a posição de quem os carrega. Em escuridão absoluta, sem qualquer luz para amplificar, ainda assim não servem de muito.",
+      "exemplos": ["Com óculos de visão noturna, vocês cruzariam o pátio escuro sem precisar acender luz alguma e chamar atenção.", "Numa masmorra sem nenhuma fresta de luz, mesmo esses óculos não ajudariam muito."],
+      "em_adamar": "Não existe em Adamar: amplificação óptica de luz é tecnologia muitíssimo além do cenário. Enxergar no escuro no cenário depende de tochas, lampiões ou da rara vantagem de Visão na Escuridão de alguns poucos indivíduos.",
+      "relacionados": ["lanterna-pesada"]
+    },
+    "telescopio": {
+      "descricao": "Um instrumento óptico montado sobre um tripé ou suporte fixo, feito para observar coisas muito distantes com grande aumento — estrelas, o horizonte do mar, uma torre no topo de uma montanha longínqua. Diferente de uma luneta de mão, é volumoso, caro e não se carrega facilmente numa mochila de aventureiro.",
+      "exemplos": ["O astrônomo da torre observa as estrelas todas as noites através do telescópio, catalogando o que vê.", "Do alto do farol, o guarda usa o telescópio para vigiar navios ainda distantes no horizonte.", "Carregar o telescópio pela estrada seria um transtorno enorme, então ele fica fixo na torre de observação."],
+      "em_adamar": "É item raro e caro demais para qualquer aventureiro comum ter à mão: fica com o narrador, reservado a estudiosos, torres de vigia ou observatórios específicos da campanha.",
+      "relacionados": ["binoculos"]
+    },
+    "macarico": {
+      "descricao": "Uma ferramenta de corte que usa uma chama alimentada a gás para cortar ou fundir metal com precisão, muito mais eficiente que ferramentas manuais para esse tipo de trabalho. É perigosa de manusear sem cuidado, causando queimaduras sérias em quem erra o manejo.",
+      "exemplos": ["Um maçarico cortaria as grades de ferro da cela num instante, algo impensável com serra comum.", "Sem gás para alimentar a chama, o maçarico não passa de um cano inútil."],
+      "em_adamar": "Não existe em Adamar: depende de gás combustível refinado e de um bico de queima que está além da tecnologia do cenário. Cortar metal no cenário exige ferramentas de ferreiro e bastante tempo."
+    },
+    "pa": {
+      "descricao": "Uma pá comum, de cabo de madeira e lâmina de metal, usada para escavar terra solta — abrir uma vala, enterrar um corpo, cavar uma cova rasa em busca de algo enterrado. Não serve bem contra rocha ou solo muito compactado, que exigem picareta.",
+      "exemplos": ["Vocês cavam a cova às pressas com a pá, antes que o nascer do sol revele o que fizeram durante a noite.", "A pá emperra ao bater numa camada de rocha logo abaixo da terra solta.", "Um golpe de pá na cabeça de um assaltante desprevenido serve bem como arma improvisada."],
+      "relacionados": ["picareta-equipamento"]
+    },
+    "pe-de-cabra-1m": {
+      "descricao": "Uma barra de metal comprida, com uma ponta curva, feita para forçar frestas, arrancar tábuas pregadas ou arrombar portas e baús trancados na força bruta. Faz barulho e deixa marcas evidentes, então não é uma ferramenta discreta, mas resolve rápido o que uma gazua não consegue.",
+      "exemplos": ["Sem tempo para gazuas, vocês forçam a porta trancada com o pé-de-cabra, no braço.", "O barulho do pé-de-cabra arrombando o baú ecoa pelo corredor e chama atenção da guarda próxima.", "Numa emergência, o pé-de-cabra também serve como arma improvisada de porrada."],
+      "relacionados": ["gazuas", "picareta-equipamento"]
+    },
+    "pedra-de-amolar": {
+      "descricao": "Uma pedra áspera usada para afiar o fio de lâminas, mantendo espadas, facas e machados cortando bem depois do desgaste natural do uso. Sem manutenção periódica, qualquer lâmina vai perdendo o fio aos poucos, cortando cada vez pior contra roupa e armadura.",
+      "exemplos": ["Antes da batalha, os soldados passam a pedra de amolar em suas espadas ao redor do fogo.", "Uma lâmina há muito sem amolar corta bem pior do que deveria contra a armadura do inimigo.", "Sem pedra de amolar por perto, vocês só conseguem improvisar o afiamento com uma rocha comum qualquer."]
+    },
+    "picareta-equipamento": {
+      "descricao": "Uma ferramenta pesada com uma ponta afiada e outra em forma de lâmina, feita para escavar terra dura e rocha, algo que uma pá comum não consegue sozinha. É comum entre mineiros, pedreiros e quem precisa abrir caminho por rocha ou entulho.",
+      "exemplos": ["Os mineiros abrem caminho na rocha com picaretas, seguindo a veia de minério na parede da galeria.", "Vocês usam a picareta para arrombar a parede fina que separa as duas câmaras da masmorra.", "Sem picareta, cavar através daquele entulho de pedra levaria o dobro do tempo."],
+      "relacionados": ["pa"]
+    },
+    "roca-de-tear": {
+      "descricao": "Uma roda de fiar que transforma lã ou linho em fio de forma bem mais rápida do que fiar à mão com um simples fuso. É ferramenta de casa e de oficina, ligada à vida cotidiana de vilarejos e cidades, não a aventuras em masmorras, embora um viajante disfarçado de tecelão possa carregar uma sem levantar suspeita.",
+      "exemplos": ["A tecelã trabalha a roca de tear junto à janela, produzindo fio suficiente para o inverno inteiro.", "Sem uma roca de tear, produzir tecido para vender vira um trabalho bem mais lento e artesanal."]
+    },
+    "serra": {
+      "descricao": "Uma serra grande de lenhador, usada para cortar troncos e madeira grossa, essencial para quem constrói, corta lenha ou precisa abrir caminho por uma barreira de madeira. É lenta e cansativa de usar, exigindo bastante esforço físico contínuo até terminar o corte.",
+      "exemplos": ["O lenhador derruba a árvore com a serra grande, preparando lenha para o inverno da vila.", "Cortar aquela porta de madeira grossa com a serra levaria tempo demais para uma fuga apressada.", "Sem uma serra à mão, construir o reforço na paliçada da vila fica bem mais difícil."]
+    },
+    "mira-laser": {
+      "descricao": "Uma mira que projeta um ponto de luz sobre o alvo, mostrando exatamente para onde a arma está apontada antes mesmo de disparar. Facilita muito acertar rápido, mas o ponto de luz também denuncia a posição de quem mira, caso alguém preste atenção ao redor.",
+      "exemplos": ["Uma mira a laser deixaria claro exatamente onde o tiro cairia, mesmo no escuro quase total.", "O ponto de luz da mira entrega a posição do atirador para quem estiver observando com atenção."],
+      "em_adamar": "Não existe em Adamar: depende de eletrônica e de uma fonte de luz concentrada muito além do cenário, além de supor armas de fogo, que também não existem em Adamar."
+    },
+    "mira-4x": {
+      "descricao": "Uma mira telescópica com bom aumento óptico, montada sobre uma arma de longo alcance para facilitar mirar alvos distantes com mais precisão. Depende de vidro lapidado com qualidade e de um encaixe firme na arma para não desregular a cada disparo.",
+      "exemplos": ["Com a mira de aumento, o atirador enxergaria com clareza um alvo que a olho nu seria só um borrão distante.", "Um encaixe mal ajustado faz a mira desregular depois de poucos disparos seguidos."],
+      "em_adamar": "Não existe em Adamar: mira telescópica montada em arma supõe armas de fogo de precisão, que não existem no cenário. Arcos e bestas do cenário não usam esse tipo de acessório.",
+      "relacionados": ["telescopio", "binoculos"]
+    },
+    "mira-de-imagem-termica-4x": {
+      "descricao": "Uma mira que, além do aumento óptico, detecta o calor emitido por corpos vivos, permitindo mirar alguém escondido na escuridão total ou atrás de um obstáculo fino. É um instrumento delicado, caro e dependente de energia constante para funcionar.",
+      "exemplos": ["Uma mira térmica revelaria a silhueta de alguém escondido atrás de uma cortina fina, só pelo calor do corpo.", "Sem energia nenhuma, essa mira sofisticada vira só um peso morto preso à arma."],
+      "em_adamar": "Não existe em Adamar: detecção de calor e óptica avançada estão muitíssimo além do cenário, e supõem armas de fogo modernas que também não existem.",
+      "relacionados": ["mira-4x"]
+    },
+    "silenciador-de-pistola-ou-mm": {
+      "descricao": "Um acessório rosqueado na boca de uma pistola, que reduz bastante o barulho do disparo, tornando o tiro bem mais discreto do que seria sem ele. Só funciona encaixado numa arma de fogo compatível com sua rosca.",
+      "exemplos": ["Com um silenciador, o disparo fatal passaria quase despercebido pelos guardas na sala ao lado.", "Sem a pistola certa para encaixar, o silenciador sozinho não serve de absolutamente nada."],
+      "em_adamar": "Não existe em Adamar: supõe pistolas e pólvora, que não existem no cenário. Um assassinato silencioso em Adamar depende de lâmina, veneno ou de uma boa arma de longo alcance disparada de emboscada."
+    }
+  }
+}

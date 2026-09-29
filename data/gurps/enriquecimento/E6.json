@@ -1,0 +1,396 @@
+{
+  "lista": "equipamento",
+  "itens": {
+    "algibeira-bolsa-pequena": {
+      "descricao": "Uma bolsa simples de couro ou pano, presa ao cinto por um cordão ou fivela, pequena o bastante para não atrapalhar ao correr ou escalar. É onde você guarda o que usa a toda hora: moedas soltas, pederneira, um bocado de ervas, um bilhete dobrado.\n\nNão tem fechadura nem reforço, então não impede um batedor de carteiras competente nem protege o conteúdo de um tombo feio ou de um mergulho no rio. Pense nela como o bolso extra que sua roupa não tem, não como um cofre.",
+      "exemplos": ["Você guarda ali as moedas do dia, sem precisar abrir a mochila inteira a cada compra na feira.", "Um batedor de carteiras corta a algibeira com uma faquinha e some na multidão antes que você perceba.", "Depois de cair no riacho, você descobre que o bilhete que estava na bolsa virou papel molhado."],
+      "em_adamar": "Item comum e baratíssimo: qualquer um em Adamar tem uma ou já teve.",
+      "dica_mesa": "Bom lugar para guardar só o troco do dia, deixando a bolsa de moedas maior escondida na mochila.",
+      "relacionados": ["mochila-pequena", "mochila"]
+    },
+    "anzol-e-linha": {
+      "descricao": "Um anzol de metal e um rolo de linha resistente, o essencial para pescar quando não há tempo ou dinheiro para uma vara pronta. Sozinho não serve para muita coisa: você precisa amarrar a linha numa vara de madeira e ainda arranjar isca, seja minhoca, pedaço de carne ou pão.\n\nÉ um teste de perícia (Pesca, ou Sobrevivência conforme o narrador decidir) para render alguma coisa, e mesmo assim leva tempo — não é pesca instantânea de uma cena só.",
+      "exemplos": ["Acampados à beira do rio, vocês passam a tarde tentando pescar o jantar em vez de gastar as rações de viagem.", "O anzol se prende numa raiz debaixo d'água e vocês perdem a linha inteira tentando soltá-lo.", "Sem isca nenhuma, a linha e o anzol não adiantam de nada além de decoração no bolso."],
+      "dica_mesa": "Combine bem com uma vara de madeira e uma reserva de rações, para os dias em que a pescaria não render nada.",
+      "relacionados": ["vara-2m", "racao-de-viagem"]
+    },
+    "arpeu": {
+      "descricao": "Gancho de metal com várias pontas curvas, preso a uma corda, feito para ser arremessado e se prender em beiradas, grades ou galhos grossos. Bem lançado, aguenta o peso de uma pessoa subindo pela corda, o que o torna a ferramenta clássica para escalar muralhas, torres ou poços sem escada.\n\nO arremesso em si costuma pedir um teste de perícia (Escalar, Atirar Arremesso ou o que o narrador definir), e um lançamento ruim faz barulho ou não prende em nada, avisando quem estiver por perto.",
+      "exemplos": ["Vocês lançam o arpéu para o parapeito da muralha e sobem em silêncio enquanto a guarda troca de turno.", "O primeiro lançamento erra o beiral e o gancho cai com estrondo no pátio de pedra lá embaixo.", "Presos numa masmorra sem escada, vocês usam o arpéu para alcançar uma passagem alta na parede."],
+      "em_adamar": "O livro lista um nível tecnológico mais alto, mas a mesa trata o arpéu como equipamento livre em Adamar: é só um gancho e uma corda, nada que dependa de tecnologia avançada.",
+      "dica_mesa": "Combine com uma corda comprida o bastante — sem corda, o arpéu sozinho não serve para nada.",
+      "relacionados": ["corda-3-4", "corda-3-8"]
+    },
+    "barraca-20-pessoas": {
+      "descricao": "Uma lona grande o bastante para abrigar um pelotão inteiro, sustentada por várias varas e cordas de fixação. Montá-la é trabalho de mais de uma pessoa e leva um tempo considerável, então não é algo que se arma às pressas no meio de uma perseguição.\n\nEm compensação, protege bem contra chuva e vento e ainda sobra espaço para guardar bagagem, o que a torna a escolha natural para acampamentos de caravana, mercenários ou peregrinos viajando em grupo grande.",
+      "exemplos": ["A caravana monta a grande barraca no meio do acampamento para reunir todos ao redor do fogo durante a nevasca.", "Um vento forte quase derruba a barraca antes que alguém corra para reforçar as estacas.", "Não dá para montar essa barraca sozinho antes do anoitecer — vocês precisam da ajuda de outros viajantes."],
+      "dica_mesa": "Ótima para bases fixas de vários dias; péssima escolha se o grupo precisa viajar leve e rápido.",
+      "relacionados": ["barraca-4-pessoas", "vara-3m"]
+    },
+    "barraca-1-pessoa": {
+      "descricao": "Uma lona pequena que se enrola sozinha, sem precisar de vara alguma para se sustentar — basta esticar e prender as pontas no chão. É a opção mais leve e rápida de montar entre as barracas, mas também a que menos protege: mal cabe uma pessoa deitada e o vento mais forte já é o suficiente para fazer a lona bater e roncar a noite toda.\n\nServe bem para quem viaja sozinho ou quer um abrigo rápido sem depender de ninguém.",
+      "exemplos": ["Viajando sozinho pela estrada, você monta a barraca em poucos minutos antes de escurecer de vez.", "Uma ventania na planície faz a lona bater a noite inteira, tirando seu sono mesmo abrigado.", "Você troca a barraca grande por essa, mais leve, para poder correr se precisar fugir durante a noite."],
+      "relacionados": ["barraca-2-pessoas", "saco-de-dormir", "pelagem-de-animal"]
+    },
+    "barraca-2-pessoas": {
+      "descricao": "Barraca pequena, armada com uma única vara curta, pensada para abrigar duas pessoas deitadas lado a lado. É o equilíbrio entre a barraca individual, rápida mas apertada, e as maiores, que pedem mais gente para montar.\n\nAinda assim, é justa: não sobra espaço para guardar muita bagagem lá dentro, então mochilas e selas costumam ficar do lado de fora, cobertas por um canto da lona.",
+      "exemplos": ["Dois companheiros de viagem dividem a barraca enquanto o resto do grupo dorme ao relento.", "Vocês armam a barraca encostada numa rocha, usando-a para cortar o vento que vem do desfiladeiro.", "Não há espaço para as armaduras lá dentro, então elas ficam do lado de fora, cobertas contra o orvalho."],
+      "relacionados": ["barraca-1-pessoa", "barraca-4-pessoas"]
+    },
+    "barraca-4-pessoas": {
+      "descricao": "Barraca de tamanho médio, armada com duas varas, com espaço para quatro pessoas deitadas ou para duas mais parte da bagagem do grupo. É a escolha comum de um grupo de aventureiros pequeno que quer dividir o peso do acampamento sem carregar uma lona enorme feito uma caravana.\n\nLeva mais tempo para montar do que as barracas menores, mas ainda é algo que duas pessoas conseguem fazer sozinhas antes do anoitecer.",
+      "exemplos": ["O grupo todo se aperta dentro da barraca de quatro enquanto a chuva cai lá fora.", "Vocês armam a barraca perto do fogo, deixando a entrada virada para o calor.", "Sem uma das duas varas, quebrada na travessia do rio, a barraca não fica de pé direito."],
+      "relacionados": ["barraca-2-pessoas", "vara-2m"]
+    },
+    "bussola": {
+      "descricao": "Um instrumento com uma agulha magnetizada que sempre aponta para o mesmo ponto, permitindo saber a direção mesmo sem sol, estrelas ou pontos de referência visíveis. É uma ferramenta de navegação e não substitui um mapa: te diz para onde é o norte, não onde você está nele.\n\nEm nevoeiro cerrado, dentro de masmorras ou em meio a uma tempestade, é a diferença entre andar em círculos e manter um rumo.",
+      "exemplos": ["Perdidos na neblina da floresta, vocês precisariam de uma bússola para não andar em círculos.", "Nas profundezas da masmorra, sem qualquer luz do céu, a bússola seria o único jeito de saber que direção é o norte."],
+      "em_adamar": "Fica de fora do cenário: é um refinamento de metalurgia e navegação além do que Adamar produz. Batedores e guias de Adamar se orientam por sol, estrelas e sinais do terreno, sem esse instrumento.",
+      "dica_mesa": "Uma boa perícia de Navegação ou Sobrevivência cumpre o mesmo papel sem depender do item."
+    },
+    "cabo-de-aco-375cm": {
+      "descricao": "Um cabo trançado de fios de aço, muito mais resistente que qualquer corda de fibra vegetal do mesmo tamanho, vendido em rolos. Aguenta cargas pesadas e não se rompe com facilidade contra atrito ou uma lâmina.\n\nMas também é rígido e difícil de amarrar em nós comuns — geralmente precisa de grampos ou fivelas próprias para prender as pontas, o que o torna pouco prático para amarrações rápidas de acampamento.",
+      "exemplos": ["Um cabo de aço seguraria a ponte suspensa mesmo com o peso de um carroção carregado.", "Tentar cortar esse cabo com uma adaga seria perda de tempo; ele resistiria tranquilamente."],
+      "em_adamar": "Não existe em Adamar: a produção de aço em cabos trançados desse tipo está além da metalurgia do cenário. No lugar, use corda grossa ou corrente de ferro comum.",
+      "relacionados": ["corda-3-4"]
+    },
+    "cantil": {
+      "descricao": "Um recipiente metálico selado para carregar água ou outro líquido durante a viagem, leve e resistente a amassados. Comparado a um odre de couro ou a uma garrafa de cerâmica, é mais durável e não vaza mesmo se cair, mas também não é algo que qualquer ferreiro rural produz em série.",
+      "exemplos": ["Na travessia do deserto rochoso, um cantil bem cheio faria toda a diferença entre chegar ou não à próxima vila.", "Mesmo derrubado ladeira abaixo, o cantil metálico não vazaria uma gota.", "Um cantil bem selado guarda a água fresca por muito mais tempo do que uma garrafa comum."],
+      "em_adamar": "Fica de fora do cenário: a estamparia metálica fina que faz esse tipo de cantil está acima da tecnologia de Adamar. Use o odre de couro ou a garrafa de cerâmica no lugar.",
+      "relacionados": ["odre-de-vinho", "garrafa-ceramica"]
+    },
+    "cobertor": {
+      "descricao": "Um cobertor grosso de lã ou pele, usado para se aquecer durante o sono ou para se enrolar numa noite fria de vigília. Sozinho não protege tão bem do frio extremo quanto um leito de peles bem forrado, mas é barato, leve de carregar e serve também para outras coisas: embrulhar um ferido, abafar um fogo ou até amortecer uma queda de pouca altura.",
+      "exemplos": ["Vocês dividem os poucos cobertores entre os feridos antes de tentar dormir na neve.", "Sem fogo aceso, só o cobertor não é o bastante para afastar o frio da montanha à noite.", "Você usa o cobertor para embrulhar o corpo do companheiro caído antes de levá-lo de volta à vila."],
+      "relacionados": ["saco-de-dormir", "pelagem-de-animal"]
+    },
+    "colete-salva-vidas": {
+      "descricao": "Um colete flutuante, cheio de material leve, que mantém a pessoa boiando na água mesmo sem saber nadar ou já exausta. Não ajuda a nadar mais rápido nem protege de correntezas fortes, só evita que a pessoa afunde enquanto espera resgate ou tenta alcançar a margem.",
+      "exemplos": ["Caído do bote no meio do rio, o colete salva-vidas manteria você boiando até alcançar a margem.", "Mesmo exausto após nadar contra a correnteza, o colete não deixaria você afundar."],
+      "em_adamar": "Não existe em Adamar: os materiais leves e flutuantes usados nesse tipo de colete são de tecnologia além do cenário. Marinheiros e pescadores de Adamar contam só com a própria natação e com barris ou toras amarradas em emergências."
+    },
+    "corda-3-4": {
+      "descricao": "Corda grossa e resistente, vendida em rolos, capaz de aguentar bastante peso e o atrito de escaladas ou amarrações difíceis. É a corda que você quer para descer um poço, prender um arpéu ou amarrar alguém com segurança — a corda fina não aguentaria o mesmo esforço.\n\nEm compensação, um rolo dela pesa e ocupa espaço, então poucos aventureiros carregam mais do que precisam.",
+      "exemplos": ["Vocês descem pela corda grossa até o fundo do poço da masmorra, sabendo que ela aguenta o peso de todos.", "Amarrado com a corda grossa, o prisioneiro não teria força para arrebentar os nós.", "Sem corda o bastante, a travessia do desfiladeiro fica arriscada demais para tentar."],
+      "relacionados": ["arpeu", "corda-3-8"]
+    },
+    "corda-3-8": {
+      "descricao": "Corda comum, mais fina e leve que a de amarração pesada, usada no dia a dia para prender bagagem, armar barracas ou puxar objetos leves. Não é confiável para escaladas ou para conter alguém com força, mas é barata, dobra pouco espaço na mochila e serve para praticamente todo o resto.",
+      "exemplos": ["Você usa a corda fina para prender a barraca no lugar durante o vento.", "Tentar escalar a muralha usando só essa corda fina seria arriscado demais para confiar o peso do corpo nela.", "Um punhado de corda sobra na mochila para amarrar embrulhos e sacolas pelo caminho."],
+      "relacionados": ["corda-3-4", "cordel-3-16"]
+    },
+    "cordel-3-16": {
+      "descricao": "Um cordel bem fino, o mais fraco entre as opções de corda, útil para amarrar embrulhos, costurar um remendo grosseiro ou armar armadilhas simples de caça. Não aguenta o peso de uma pessoa nem de cargas pesadas, então não serve para escalar ou prender nada que precise de força.",
+      "exemplos": ["Você usa um pedaço de cordel para armar um laço simples e caçar coelhos no caminho.", "O cordel arrebenta assim que você tenta usá-lo para puxar o carroção emperrado.", "Sobra bastante cordel na mochila para remendos e embrulhos, sem pesar quase nada."],
+      "relacionados": ["corda-3-8"]
+    },
+    "equipamento-basico-para-grupo": {
+      "descricao": "Um conjunto de utensílios coletivos de acampamento — panelas, utensílios de cozinha, ferramentas simples de armar e desmontar o acampamento — pensado para um grupo de campistas dividir entre si em vez de cada um carregar o próprio kit. Representa o que uma expedição de vários viajantes leva para comer e dormir decentemente na estrada, sem entrar em detalhe item por item.",
+      "exemplos": ["A caravana reparte o equipamento básico de grupo entre as carroças, já que ninguém precisa carregar tudo sozinho.", "Sem o kit de grupo, cozinhar para todos vira improviso com o que cada um trouxe por conta própria."],
+      "dica_mesa": "Pense nele como o equivalente de acampamento das provisões de grupo: cobre a logística sem precisar listar cada panela.",
+      "relacionados": ["equipamento-basico-pessoal"]
+    },
+    "equipamento-basico-pessoal": {
+      "descricao": "O kit mínimo que qualquer viajante experiente carrega para sobreviver ao relento por conta própria: um cobertor fino, utensílios simples, um pedaço de corda, coisas do tipo. Não é confortável nem sofisticado, mas evita que você precise anotar cada item pequeno da bagagem de sobrevivência básica.",
+      "exemplos": ["Antes de partir, você compra o equipamento básico pessoal em vez de listar cada quinquilharia separadamente.", "Perdido na estrada sem nem esse kit básico, a noite ao relento fica bem mais dura."],
+      "relacionados": ["equipamento-basico-para-grupo"]
+    },
+    "equipamento-de-alpinismo": {
+      "descricao": "Um conjunto de cravos, martelo pequeno, cordas auxiliares e outros apetrechos usados para escalar encostas e paredões rochosos com mais segurança. Não transforma ninguém num escalador nato, mas ajuda bastante em testes de escalada, principalmente em superfícies difíceis onde mãos e pés puros não bastariam.",
+      "exemplos": ["Com o equipamento de alpinismo, a subida pelo penhasco até a entrada da caverna fica bem mais segura.", "Sem esse kit, tentar escalar a face gelada da montanha seria loucura.", "Vocês fincam os cravos na rocha para descansar no meio de uma escalada longa."],
+      "relacionados": ["arpeu", "espigoes-de-ferro-escalador"]
+    },
+    "equipamento-de-mergulho": {
+      "descricao": "Um conjunto completo para respirar debaixo d'água por longos períodos, incluindo um tanque de ar comprimido e os acessórios para usá-lo com segurança. Sem ele, qualquer mergulho fica limitado ao fôlego da própria pessoa.",
+      "exemplos": ["Explorar os destroços afundados no fundo do lago exigiria um equipamento de mergulho completo.", "Sem tanque de ar, vocês só conseguem prender a respiração por pouco tempo debaixo d'água."],
+      "em_adamar": "Não existe em Adamar: tanques de ar comprimido e a engenharia por trás deles estão muito além da tecnologia do cenário. Mergulhos em Adamar dependem só do fôlego e, quando muito, de um canudo oco para respirar escondido rente à superfície."
+    },
+    "espigoes-de-ferro-escalador": {
+      "descricao": "Cravos de ferro compridos, martelados em fendas de rocha ou madeira para servir de apoio ao escalar, ou usados para travar uma porta e impedir que seja aberta por fora. É um item versátil e barato: qualquer aventureiro que ande por masmorras costuma carregar alguns.",
+      "exemplos": ["Você trava a porta com um espigo de ferro martelado no batente antes que os perseguidores alcancem a sala.", "Cravando espigões na rocha, vocês criam apoios improvisados para a escalada.", "Um punhado de espigões espalhados no chão de um corredor atrasaria quem viesse correndo atrás de vocês."],
+      "relacionados": ["equipamento-de-alpinismo", "pe-de-cabra-1m"]
+    },
+    "fogao-pequeno": {
+      "descricao": "Um fogareiro portátil movido a combustível líquido, que acende rápido e cozinha sem precisar de lenha ou de um fogo aberto. Prático em acampamentos onde madeira seca escasseia, mas depende de um combustível refinado que a maior parte do mundo não sabe produzir.",
+      "exemplos": ["Um fogão pequeno cozinharia o jantar mesmo debaixo de uma chuva fina, sem depender de lenha seca.", "Sem o combustível certo, o fogareiro fica tão inútil quanto uma panela sem fogo."],
+      "em_adamar": "Não existe em Adamar: depende de combustível refinado e de um mecanismo de queima que a tecnologia do cenário não produz. Viajantes de Adamar cozinham em fogueira, com gravetos, isca e um bom fósforo.",
+      "relacionados": ["querosene", "gasolina"]
+    },
+    "fosforos": {
+      "descricao": "Uma caixa de palitos que acendem fogo com um simples atrito, à prova d'água, rápidos e confiáveis mesmo com vento leve. Comparado a pederneira e aço, poupam tempo e testes de perícia para acender uma fogueira.",
+      "exemplos": ["Com uma caixa de fósforos, acender a fogueira debaixo de chuva fraca seria trivial.", "Sem fósforos, vocês dependem da pederneira e de um pouco de sorte para acender o fogo no acampamento."],
+      "em_adamar": "Não existe em Adamar: a química por trás do fósforo que acende sozinho é tecnologia além do cenário. No cenário, o fogo se acende com pederneira, aço e isca."
+    },
+    "garrafa-ceramica": {
+      "descricao": "Uma garrafa simples de cerâmica cozida, usada para carregar água, vinho ou qualquer outro líquido do dia a dia. É barata e comum, mas frágil: uma queda numa pedra pode rachá-la ou espatifá-la, derramando tudo o que tinha dentro.",
+      "exemplos": ["Você compra uma garrafa de cerâmica na feira para carregar água na travessia do vale.", "A garrafa se espatifa ao cair da mochila numa queda, e você perde toda a água que sobrava.", "Um mercador vende vinho barato em garrafas de cerâmica seladas com cera."],
+      "relacionados": ["odre-de-vinho"]
+    },
+    "garrafa-termica": {
+      "descricao": "Uma garrafa de parede dupla que mantém líquidos quentes ou frios por várias horas, útil para carregar uma bebida quente numa viagem gelada sem precisar reacender fogo. Depende de uma técnica de isolamento que vai além da olaria e da metalurgia comuns.",
+      "exemplos": ["Uma garrafa térmica manteria a sopa quente durante toda a travessia pela nevasca.", "Sem essa garrafa especial, qualquer bebida esfria depressa no frio da montanha."],
+      "em_adamar": "Não existe em Adamar: o isolamento térmico que mantém o líquido quente por horas é refinamento além do cenário. Use odres, garrafas de cerâmica comuns ou simplesmente reaqueça no fogo.",
+      "relacionados": ["odre-de-vinho", "garrafa-ceramica"]
+    },
+    "gasolina": {
+      "descricao": "Um combustível líquido refinado, vendido por litro, usado para alimentar motores e alguns fogões e lampiões modernos. É inflamável e perigoso de carregar perto de fogo aberto, e um recipiente rachado pode encharcar tudo ao redor com um líquido pronto para incendiar com qualquer faísca.",
+      "exemplos": ["Um barril de gasolina explodiria se alguém jogasse uma tocha acesa perto dele.", "Sem esse combustível, nenhum motor do tipo funcionaria em Adamar."],
+      "em_adamar": "Não existe em Adamar: refinar petróleo em gasolina é tecnologia muito além do cenário. Lampiões e fogareiros do cenário usam óleo ou querosene, quando muito.",
+      "relacionados": ["oleo", "querosene"]
+    },
+    "isqueiro": {
+      "descricao": "Um pequeno dispositivo mecânico que produz fogo com um simples gesto, recarregável com combustível, muito mais rápido e discreto que pederneira e aço. Cabe fechado no bolso e não depende de isca seca para funcionar.",
+      "exemplos": ["Com um isqueiro, acender um cigarro ou uma vela no meio da chuva seria questão de segundos.", "Sem recarga, o isqueiro vazio vira só um pedaço de metal no bolso."],
+      "em_adamar": "Não existe em Adamar: o mecanismo de faísca e o combustível recarregável são tecnologia além do cenário. O fogo, no cenário, se acende com pederneira e aço.",
+      "relacionados": ["fosforos"]
+    },
+    "lampiao": {
+      "descricao": "Uma lâmpada a óleo com um vidro protegendo a chama do vento, presa a uma alça para pendurar ou carregar na mão. Ilumina bem mais tempo do que uma vela e não se apaga com uma brisa qualquer, mas precisa de óleo para reabastecer e um descuido pode derramar o combustível aceso.",
+      "exemplos": ["Vocês penduram o lampião na entrada da masmorra para iluminar o caminho de volta.", "Um lampião aceso ilumina o acampamento a noite toda, desde que o óleo não acabe antes do amanhecer.", "Derrubado numa briga, o lampião derrama óleo aceso e ateia fogo na palha do celeiro."],
+      "relacionados": ["oleo", "vela-de-sebo", "tocha"]
+    },
+    "lanterna-pesada": {
+      "descricao": "Uma lanterna elétrica robusta, de longo alcance, movida a pilhas, que ilumina bem mais longe e de forma mais estável que fogo aberto. Não se apaga com vento nem chuva forte, mas para de funcionar quando as pilhas acabam.",
+      "exemplos": ["Uma lanterna pesada iluminaria o corredor da masmorra bem mais longe que qualquer tocha.", "Sem pilhas de reserva, a lanterna apaga bem no meio do caminho de volta."],
+      "em_adamar": "Não existe em Adamar: depende de eletricidade e pilhas, tecnologia muito além do cenário. Tochas, lampiões e velas fazem esse papel no cenário.",
+      "relacionados": ["baterias", "lampiao", "tocha"]
+    },
+    "baterias": {
+      "descricao": "Pilhas comuns, usadas para alimentar qualquer aparelho elétrico portátil, de lanternas a rádios. Sozinhas não fazem nada: só têm valor quando encaixadas num equipamento que dependa delas, e se esgotam depois de um tempo de uso.",
+      "exemplos": ["Sem baterias novas, a lanterna pesada apaga no meio do corredor escuro.", "Um punhado de pilhas sobressalentes garante que o rádio funcione até o fim da missão."],
+      "em_adamar": "Não existe em Adamar: eletricidade armazenada em pilhas é tecnologia muito além do cenário, e nenhum aparelho do cenário depende dela.",
+      "relacionados": ["lanterna-pesada"]
+    },
+    "celular": {
+      "descricao": "Um telefone móvel que se comunica através de uma rede de antenas espalhada pela região, permitindo conversar a distância sem fio nenhum ligando as duas pontas. Fora da área coberta pela rede, vira um pedaço de metal inútil.",
+      "exemplos": ["Um celular não serviria de nada nas ruínas isoladas, longe de qualquer torre de comunicação.", "Mesmo carregado, o aparelho não capta sinal algum fora das áreas cobertas."],
+      "em_adamar": "Não existe em Adamar: depende de uma rede inteira de comunicação sem fio, tecnologia impensável para o cenário. Mensagens em Adamar viajam por mensageiro, pombo-correio ou sinal visual."
+    },
+    "computador-laptop": {
+      "descricao": "Um computador portátil com capacidade de se conectar a outros através de uma rede, usado para guardar, processar e transmitir grandes quantidades de informação. Sem uma fonte de energia e sem a rede que o acompanha, é só uma caixa cara e pesada.",
+      "exemplos": ["Um laptop não teria nenhuma rede à qual se conectar em Adamar, e logo ficaria sem energia.", "Guardar todo o conhecimento de uma biblioteca num aparelho assim seria impensável no cenário."],
+      "em_adamar": "Não existe em Adamar: computação eletrônica está muitíssimo além da tecnologia do cenário. Registros e cálculos no cenário são feitos à mão, em pergaminho ou tábuas de cera.",
+      "relacionados": ["tablete-de-cera"]
+    },
+    "computador-acessorio": {
+      "descricao": "Um par de óculos com uma tela embutida, conectado sem fio a um computador para mostrar informações direto na visão de quem usa. É um acessório e não funciona sozinho, precisando de um computador por perto para servir.",
+      "exemplos": ["Um óculos desses mostraria mapas e anotações direto na visão, algo impensável para qualquer artesão de Adamar.", "Sem o computador ao qual se conectar, o acessório vira só um óculos comum."],
+      "em_adamar": "Não existe em Adamar: depende de computação sem fio, tecnologia muitíssimo além do cenário."
+    },
+    "fone-de-ouvido-com-radio": {
+      "descricao": "Um pequeno rádio de comunicação embutido num fone de ouvido, permitindo falar e ouvir sem precisar segurar aparelho nenhum na mão. Útil para quem precisa das mãos livres durante uma operação, mas exige energia e alcance de rádio.",
+      "exemplos": ["Um fone com rádio deixaria as mãos livres para lutar enquanto ainda se comunica com o resto do grupo.", "Sem sinal de rádio algum em Adamar, o fone não teria com quem se comunicar."],
+      "em_adamar": "Não existe em Adamar: depende de rádio e eletricidade, tecnologia muito além do cenário. Sinais no cenário se combinam antes ou se dão por gesto, assobio ou grito.",
+      "relacionados": ["radio-de-mao"]
+    },
+    "kit-de-escriba": {
+      "descricao": "Um estojo com penas, tinteiro, um pequeno canivete para aparar as penas e folhas de pergaminho ou papel, tudo o que se precisa para escrever com cuidado fora de uma escrivaninha. É a ferramenta de qualquer escriba, estudioso ou mensageiro que precise redigir cartas, copiar um trecho de livro ou anotar o que viu.",
+      "exemplos": ["Você usa o kit de escriba para copiar as runas gravadas na parede da ruína antes que a luz se apague.", "Um mensageiro carrega o kit de escriba para redigir a resposta do senhor local ali mesmo, sem voltar à cidade.", "Sem tinta fresca no kit, as últimas letras da carta saem fracas e quase ilegíveis."],
+      "dica_mesa": "Bom item para quem investe em perícias de Escrever ou Falsificação: sem ele, testes desse tipo costumam ficar mais difíceis ou impossíveis.",
+      "relacionados": ["tablete-de-cera"]
+    },
+    "alforjes": {
+      "descricao": "Bolsas de couro presas aos dois lados da sela, feitas para o cavalo carregar parte da bagagem sem sobrecarregar quem monta. Dividem o peso da carga e liberam as mãos do cavaleiro, mas deixam esse peso mais exposto: alguém a pé alcança e revira um alforje bem mais fácil do que uma mochila nas costas de quem está acordado e atento.",
+      "exemplos": ["Vocês guardam as provisões da viagem nos alforjes, deixando as mãos livres para as rédeas e a arma.", "Um ladrão corta as correias dos alforjes e foge com metade da bagagem enquanto o cavalo segue andando.", "Depois de atravessar o rio a nado, o conteúdo dos alforjes sai encharcado."],
+      "relacionados": ["sela-e-arreios", "mochila"]
+    },
+    "bridao-e-redea": {
+      "descricao": "O freio que fica na boca do cavalo, ligado às rédeas que o cavaleiro segura para guiar, parar e controlar a montaria. É equipamento básico de qualquer cavalo montado: sem ele, dirigir o animal fica muito mais difícil e impreciso, dependendo só de peso do corpo e voz.",
+      "exemplos": ["Sem bridão, controlar o cavalo assustado pelo trovão fica quase impossível.", "Você puxa a rédea com força para desviar o cavalo do buraco na estrada.", "Um bridão gasto se parte no meio da perseguição, deixando você sem controle sobre a montaria."],
+      "relacionados": ["sela-e-arreios", "estribos"]
+    },
+    "esporas": {
+      "descricao": "Presas aos calcanhares das botas, ajudam o cavaleiro a comandar o cavalo com um toque nas laterais do animal, incentivando-o a acelerar ou virar. Usadas com jeito, refinam o controle sobre a montaria; usadas com brutalidade, machucam o animal e podem deixá-lo nervoso ou ferido.",
+      "exemplos": ["Você crava as esporas de leve para arrancar o cavalo numa disparada repentina.", "Usada com força demais, a espora fere o flanco do cavalo e o deixa mais difícil de controlar depois.", "Sem esporas, incentivar o cavalo a acelerar depende só da voz e das rédeas."],
+      "relacionados": ["bridao-e-redea", "sela-de-combate"]
+    },
+    "estribos": {
+      "descricao": "Apoios para os pés pendurados dos dois lados da sela, que dão firmeza ao cavaleiro tanto para montar quanto para se manter equilibrado durante a cavalgada ou um golpe de arma montado. Sem estribos, cavalgar em alta velocidade ou lutar montado fica bem mais instável.",
+      "exemplos": ["Firmado nos estribos, você consegue desferir um golpe com mais força sem cair da sela.", "Sem estribos, a queda do cavalo em disparada seria quase certa numa curva fechada.", "Um estribo quebrado obriga você a cavalgar com cuidado redobrado até consertar a sela."],
+      "relacionados": ["sela-e-arreios", "sela-de-combate"]
+    },
+    "ferraduras": {
+      "descricao": "Placas de metal fixadas nos cascos do cavalo, protegendo-os do desgaste em viagens longas por terreno pedregoso ou estrada dura. Um cavalo sem ferraduras cansa e machuca os cascos bem mais rápido em viagens compridas, embora ainda sirva perfeitamente para trabalho leve ou trechos curtos.",
+      "exemplos": ["Antes da longa jornada pelas montanhas, vocês param na ferraria para colocar ferraduras novas no cavalo.", "Sem ferraduras, o cavalo manca depois de dias seguidos em estrada de pedra.", "Uma ferradura solta faz barulho característico a cada passo, quase denunciando a posição do cavaleiro."],
+      "relacionados": ["sela-e-arreios"]
+    },
+    "algemas": {
+      "descricao": "Um par de braçadeiras metálicas ligadas por uma corrente curta, usadas para prender os pulsos de alguém e limitar bastante seus movimentos. Costumam depender de uma chave própria para abrir, e escapar delas sem a chave exige perícia e talento específicos.",
+      "exemplos": ["Os guardas prendem o suspeito com algemas antes de levá-lo ao calabouço.", "Sem a chave, escapar das algemas exigiria muita destreza ou uma ferramenta improvisada."],
+      "em_adamar": "Não existe em Adamar nesse formato articulado: a produção em série desse tipo de grilhão está além da tecnologia do cenário. No cenário, prisioneiros são contidos com correntes, cordas grossas ou grilhões de ferreiro simples.",
+      "relacionados": ["gazuas"]
+    },
+    "danificador-de-escutas": {
+      "descricao": "Um dispositivo que emite algo capaz de estragar microfones espiões escondidos nas proximidades, tornando qualquer escuta próxima inútil. Só funciona contra o tipo específico de espionagem eletrônica que combate.",
+      "exemplos": ["Antes da reunião secreta, alguém varreria a sala com um danificador de escutas para garantir sigilo.", "Sem esse aparelho, ninguém saberia se a sala já não estava comprometida por um microfone escondido."],
+      "em_adamar": "Não existe em Adamar: microfones e a eletrônica para estragá-los não existem no cenário. Espionagem em Adamar se previne trancando portas, checando esconderijos e desconfiando de quem escuta perto demais.",
+      "relacionados": ["escuta"]
+    },
+    "escuta": {
+      "descricao": "Um pequeno microfone escondido, plantado num local para escutar conversas à distância sem que ninguém perceba. Precisa ser instalado com cuidado para não ser encontrado, e alguém do outro lado precisa estar recebendo o que ele capta.",
+      "exemplos": ["Um espião plantaria uma escuta sob a mesa do conselho para saber os planos do senhor local com antecedência.", "Uma revista cuidadosa no quarto acabaria encontrando a escuta escondida atrás do quadro."],
+      "em_adamar": "Não existe em Adamar: microfones e transmissão eletrônica de som não fazem parte do cenário. Espiões de Adamar escutam atrás de portas, subornam serviçais ou usam furos na parede.",
+      "relacionados": ["escuta-microscopica", "danificador-de-escutas"]
+    },
+    "escuta-microscopica": {
+      "descricao": "Uma versão minúscula da escuta comum, quase impossível de notar a olho nu, escondida em qualquer objeto pequeno do ambiente. Precisa da mesma eletrônica de transmissão da escuta comum, só que reduzida a um tamanho ínfimo.",
+      "exemplos": ["Escondida dentro de um botão, uma escuta microscópica passaria despercebida mesmo numa revista cuidadosa.", "Só um exame minucioso e demorado revelaria a existência dessa escuta praticamente invisível."],
+      "em_adamar": "Não existe em Adamar, pelo mesmo motivo da escuta comum: miniaturização eletrônica está muito além da tecnologia do cenário.",
+      "relacionados": ["escuta"]
+    },
+    "gazuas": {
+      "descricao": "Um conjunto de ferramentas finas de metal, feitas para tatear e mover as peças internas de uma fechadura sem a chave certa. Usá-las bem depende de perícia e paciência: uma tentativa apressada pode entortar a gazua, quebrá-la dentro da fechadura ou fazer barulho suficiente para chamar atenção.",
+      "exemplos": ["Você se ajoelha diante da porta trancada e começa a trabalhar a fechadura com as gazuas, torcendo para ninguém passar pelo corredor.", "Uma gazua quebra dentro da fechadura, entupindo-a de vez e obrigando vocês a arrombar a porta.", "Com tempo e silêncio de sobra, as gazuas abrem a tranca do cofre do mercador sem deixar marca alguma."],
+      "dica_mesa": "Item essencial para quem investe na perícia de Fechaduras; sem ele, forçar uma fechadura exige outro método, geralmente mais barulhento.",
+      "relacionados": ["algemas", "kit-de-disfarces"]
+    },
+    "gazuas-eletronicas": {
+      "descricao": "Um dispositivo que abre fechaduras eletrônicas modernas testando combinações automaticamente, sem depender do tato e da paciência de umas gazuas comuns. Só funciona contra o tipo de fechadura que foi feito para enfrentar.",
+      "exemplos": ["Uma gazua eletrônica abriria em segundos uma fechadura de cofre com teclado numérico.", "Sem energia, o dispositivo não funcionaria de jeito nenhum contra a fechadura moderna."],
+      "em_adamar": "Não existe em Adamar: fechaduras eletrônicas e os dispositivos para violá-las não existem no cenário. As fechaduras de Adamar são mecânicas, abertas com chave ou com gazuas comuns.",
+      "relacionados": ["gazuas"]
+    },
+    "kit-de-disfarces": {
+      "descricao": "Um estojo de maquiagem, perucas, tinturas e pequenos acessórios para alterar a aparência de alguém de forma convincente, apoiando testes de perícias sociais de disfarce. Sem ele, disfarçar-se depende só de roupas trocadas e improviso.",
+      "exemplos": ["Com o kit de disfarces, você se passaria por um mercador de outra cidade sem levantar suspeita.", "Sem cosméticos à mão, seu disfarce depende só de roupas emprestadas e de muita lábia."],
+      "em_adamar": "Fica de fora do cenário nesse formato refinado: cosméticos e tinturas de disfarce nesse nível fazem parte de uma tecnologia posterior. Um disfarce em Adamar se monta com roupas trocadas, sujeira, barba postiça improvisada e um bom teste de perícia.",
+      "relacionados": ["gazuas"]
+    },
+    "antibiotico": {
+      "descricao": "Um remédio que combate infecções bacterianas de dentro para fora, tratando ferimentos que apodreceriam ou piorariam sem ele. Não faz nada contra venenos, feitiços ou ferimentos frescos que ainda sangram — só ajuda o corpo a vencer uma infecção já instalada.",
+      "exemplos": ["Depois de dias com o corte infeccionado, um antibiótico salvaria o ferido de perder o braço.", "Sem esse remédio, a infecção segue avançando apesar das bandagens limpas."],
+      "em_adamar": "Não existe em Adamar: a fabricação desse tipo de remédio depende de química muito além da tecnologia do cenário. Infecções no cenário são tratadas com ervas, cauterização e cuidados de Medicina comuns, ou não são tratadas de jeito nenhum.",
+      "relacionados": ["kit-de-primeiros-socorros"]
+    },
+    "bandagens": {
+      "descricao": "Faixas de pano limpo, usadas para estancar sangramento leve e proteger um corte ou uma queimadura enquanto cicatriza. É o item mais básico de primeiros socorros: não cura nada sozinho, mas ajuda o corpo a se recuperar e evita que um ferimento piore por sujeira ou atrito.",
+      "exemplos": ["Você enrola bandagens no braço cortado antes de seguir viagem, para não perder mais sangue no caminho.", "Sem bandagens limpas, o ferimento do companheiro corre risco de infeccionar.", "Um bom estoque de bandagens não custa quase nada e cabe fácil na mochila."],
+      "dica_mesa": "Todo aventureiro que sai da estrada deveria carregar um punhado, mesmo sem investir na perícia de Medicina.",
+      "relacionados": ["kit-de-primeiros-socorros"]
+    },
+    "instrumentos-cirurgicos": {
+      "descricao": "Um conjunto de facas, pinças, agulhas e outras ferramentas específicas para procedimentos cirúrgicos mais sérios, como remover uma flecha alojada fundo ou costurar um corte profundo. Sem eles, tentar esse tipo de procedimento é bem mais arriscado e impreciso, dependendo de improviso com o que estiver à mão.",
+      "exemplos": ["O curandeiro da vila usa os instrumentos cirúrgicos para retirar a ponta de flecha alojada perto da costela.", "Sem os instrumentos certos, costurar aquele corte profundo com uma agulha comum seria bem mais arriscado.", "O médico do exército carrega o estojo cirúrgico em toda campanha, junto com bandagens de sobra."],
+      "relacionados": ["kit-de-emergencia", "bandagens"]
+    },
+    "kit-antitoxinas": {
+      "descricao": "Um antídoto preparado contra um veneno específico, que precisa ser identificado corretamente antes de aplicar — o antídoto errado não ajuda contra um veneno diferente. Age rápido quando é o certo, mas exige conhecimento prévio de qual peçonha está em jogo.",
+      "exemplos": ["Reconhecendo a picada da aranha das ruínas, o curandeiro aplica o antitoxina certo bem a tempo.", "Sem saber qual veneno correu nas veias do ferido, o antitoxina errado de nada adianta."],
+      "em_adamar": "Não existe em Adamar nesse formato preparado e específico: antitoxinas de laboratório são química além da tecnologia do cenário. Venenos no cenário são tratados com ervas conhecidas, sucção do ferimento e boa sorte, ou ficam com o narrador conforme a ameaça.",
+      "relacionados": ["kit-de-emergencia"]
+    },
+    "kit-de-emergencia": {
+      "descricao": "Um kit médico completo, mais robusto que os primeiros socorros comuns, pensado para estabilizar ferimentos graves no calor da ação — hemorragias sérias, ossos quebrados, ferimentos que ameaçam a vida ali mesmo. Não substitui um médico de verdade depois, mas ganha tempo precioso até chegar a um.",
+      "exemplos": ["Com o kit de emergência, vocês estancam a hemorragia do companheiro a tempo de levá-lo até a vila.", "Sem um kit de emergência à mão, o ferimento grave do guerreiro fica por conta da sorte e de improviso.", "O curandeiro do grupo carrega o kit de emergência sempre que a expedição entra em território perigoso."],
+      "relacionados": ["instrumentos-cirurgicos", "kit-de-primeiros-socorros"]
+    },
+    "kit-de-primeiros-socorros": {
+      "descricao": "Um kit básico com bandagens, unguentos simples e o essencial para tratar cortes, queimaduras leves e machucados do dia a dia, sem pretensão de lidar com nada muito grave. É o equipamento médico mais comum entre viajantes, pensado para os pequenos acidentes da estrada.",
+      "exemplos": ["Você usa o kit de primeiros socorros para tratar o tornozelo torcido antes de seguir viagem.", "Um arranhão feio na masmorra é tratado rapidinho com o kit de primeiros socorros do grupo.", "Sem o kit à mão, até um corte pequeno vira motivo de preocupação na estrada."],
+      "relacionados": ["bandagens", "kit-de-emergencia"]
+    },
+    "binoculos": {
+      "descricao": "Um par de lentes de aumento, usado com as duas mãos, que aproxima a visão de algo distante sem precisar chegar perto. Muito usado para observar antes de agir: contar guardas numa torre, vigiar uma estrada ou avistar perigo antes que ele avista você.",
+      "exemplos": ["Com binóculos, vocês contariam os guardas na muralha do forte antes de decidir como entrar.", "Sem esse aparelho, avistar detalhes do acampamento inimigo à distância exige um teste de percepção bem mais difícil."],
+      "em_adamar": "Não existe em Adamar: lentes duplas de aumento nesse padrão são refinamento óptico além do cenário. Um bom teste de percepção e talvez uma luneta simples cumprem papel parecido no cenário.",
+      "relacionados": ["telescopio"]
+    },
+    "camera-de-espiao": {
+      "descricao": "Uma câmera pequena e discreta, escondida em roupas ou objetos comuns, feita para registrar imagens sem que ninguém perceba que está sendo fotografado. Depende de filme ou memória para guardar as imagens capturadas.",
+      "exemplos": ["Uma câmera de espião registraria os documentos do senhor local sem que ele notasse nada.", "Sem revelar o filme depois, as imagens capturadas de nada servem como prova imediata."],
+      "em_adamar": "Não existe em Adamar: fotografia e miniaturização de câmeras são tecnologia muito além do cenário. Registros no cenário dependem de desenho, memória e testemunhas."
+    },
+    "camera-de-video": {
+      "descricao": "Uma câmera de filmar com zoom e visão noturna, capaz de registrar cenas em movimento mesmo com pouca luz. Precisa de energia e de um meio de armazenamento para guardar o que grava, e sem nenhum dos dois vira só um estojo caro e inútil.",
+      "exemplos": ["Uma câmera de vídeo gravaria o ritual secreto na floresta, mesmo à noite, sem precisar de tocha alguma.", "Sem carga alguma, o aparelho não registraria nada além de tela escura."],
+      "em_adamar": "Não existe em Adamar: filmagem eletrônica está muito além da tecnologia do cenário."
+    },
+    "camera-fotografica-35mm": {
+      "descricao": "Uma câmera fotográfica comum, que registra imagens num filme para revelar depois. Não mostra o resultado na hora: é preciso revelar o filme em algum lugar apropriado antes de ver as fotos, o que impede qualquer uso imediato das imagens capturadas.",
+      "exemplos": ["Uma câmera fotográfica registraria as inscrições da ruína para estudar com calma depois.", "Sem um lugar para revelar o filme, as fotos tiradas na masmorra não servem de nada por enquanto."],
+      "em_adamar": "Não existe em Adamar: fotografia química está além da tecnologia do cenário. Um bom desenhista ou um teste de perícia de Artista cumpre esse papel no cenário."
+    },
+    "detector-de-metais-portatil": {
+      "descricao": "Um aparelho que emite um sinal ao passar perto de objetos metálicos escondidos, útil para achar armadilhas, moedas enterradas ou armas escondidas sob roupas. Não distingue um prego enferrujado de um tesouro, só avisa que há metal por perto.",
+      "exemplos": ["Um detector de metais apitaria ao passar perto da armadilha de lâminas escondida sob a terra solta.", "Sem esse aparelho, achar a moeda enterrada no campo dependeria só de sorte e escavação demorada."],
+      "em_adamar": "Não existe em Adamar: eletrônica de detecção está muito além da tecnologia do cenário. Achar armadilhas e objetos escondidos no cenário depende de perícia, atenção e sorte."
+    },
+    "agulhas-de-tricot": {
+      "descricao": "Um par de agulhas longas usadas para tricotar fios em tecido, trabalho comum entre quem produz roupas e cobertores em casa. Fora do tricô, também servem, em desespero, como uma ferramenta fina improvisada para destravar algo pequeno ou cutucar uma fechadura simples, embora mal comparada a uma gazua de verdade.",
+      "exemplos": ["A avó da vila tricota meias de lã junto ao fogo enquanto conta histórias antigas.", "Sem nada melhor à mão, você tenta usar uma agulha de tricô para forçar a fechadura simples do baú.", "Um par de agulhas de tricô quebra fácil se usado como ferramenta de verdade."]
+    },
+    "arado-de-ferro": {
+      "descricao": "Um arado com lâmina de ferro, puxado por bois ou cavalos de tração, capaz de lavrar terrenos mais duros e pedregosos do que o arado de madeira simples aguentaria. É ferramenta de fazenda, não de aventura, mas define a vida de qualquer vilarejo agrícola que Adamar retrata.",
+      "exemplos": ["O fazendeiro lavra o campo pedregoso com o arado de ferro, puxado por uma junta de bois cansados.", "Sem um arado de ferro, aquele solo cheio de pedras seria quase impossível de lavrar."],
+      "relacionados": ["arado-de-madeira"]
+    },
+    "arado-de-madeira": {
+      "descricao": "Um arado simples, feito quase todo de madeira, puxado por bois para lavrar a terra antes do plantio. É a ferramenta agrícola mais comum e barata, adequada para solos mais macios, mas que sofre e se quebra com facilidade em terreno pedregoso ou muito duro.",
+      "exemplos": ["Todo ano, o vilarejo lavra os campos com arados de madeira antes da primeira chuva de primavera.", "O arado de madeira racha ao encontrar uma pedra funda escondida no solo."],
+      "relacionados": ["arado-de-ferro"]
+    },
+    "balanca-e-pesos": {
+      "descricao": "Uma balança de pratos com um conjunto de pesos calibrados, usada para medir com precisão o peso de mercadorias, moedas ou ingredientes. É ferramenta comum de mercadores, boticários e cambistas, e também serve para desconfiar de moedas leves demais, sinal de falsificação ou desgaste excessivo.",
+      "exemplos": ["O mercador pesa o saco de especiarias na balança antes de fechar negócio.", "Você desconfia da moeda estranhamente leve depois de conferi-la na balança do cambista.", "Sem balança, medir a quantidade exata de um ingrediente raro fica por conta do olho e da experiência."]
+    },
+    "caixa-de-ferramentas-portatil": {
+      "descricao": "Um conjunto de ferramentas específicas de um ofício, reunidas numa caixa para levar de um lugar a outro. O que exatamente vem dentro muda conforme a perícia que ela apoia: uma caixa de carpinteiro tem serras e formões, uma de armeiro tem limas e ferramentas de precisão, e assim por diante.\n\nSem a caixa certa, muitos trabalhos de ofício ficam mais lentos ou simplesmente impossíveis de fazer bem.",
+      "exemplos": ["O carpinteiro da vila carrega sua caixa de ferramentas para consertar o telhado da estalagem.", "Sem a caixa de ferramentas de armeiro, reparar aquela espada quebrada em campo seria quase impossível.", "Uma caixa de ferramentas emprestada não tem tudo o que você precisaria, mas ajuda no improviso."],
+      "relacionados": ["laboratorio-portatil"]
+    },
+    "carrinho-de-mao": {
+      "descricao": "Um carrinho de uma roda só, empurrado por uma pessoa, usado para transportar cargas pelo vilarejo ou pelo canteiro de obras sem precisar de um animal de carga. Não anda rápido nem em terreno irregular, mas poupa bastante esforço em distâncias curtas.",
+      "exemplos": ["Você empurra o carrinho de mão cheio de pedras até a construção da nova muralha.", "O carrinho emperra na lama do caminho depois da chuva, atrasando o transporte da carga."]
+    },
+    "laboratorio-portatil": {
+      "descricao": "Um kit de laboratório voltado a uma ciência específica — alquimia, física natural, o que o narrador definir — reunindo os frascos, reagentes e instrumentos que um estudioso precisa para testar teorias e preparar substâncias fora de uma universidade fixa. É caro e pesado, o tipo de equipamento que só estudiosos, boticários sérios ou instituições bancam.",
+      "exemplos": ["O alquimista monta o laboratório portátil na torre alugada para continuar suas pesquisas longe da cidade.", "Sem o laboratório, testar aquela teoria sobre a poção exigiria voltar para a oficina do mestre.", "Transportar o laboratório portátil pela estrada acidentada é um risco: um tombo pode quebrar frascos caros."],
+      "relacionados": ["caixa-de-ferramentas-portatil"]
+    },
+    "abafadores-de-ouvido": {
+      "descricao": "Protetores que cobrem os ouvidos para reduzir o impacto de ruídos muito altos, como o disparo de armas de fogo. Sem eles, exposição repetida a esse tipo de barulho prejudica a audição com o tempo, deixando um zumbido que atrapalha ouvir sussurros ou passos por horas depois.",
+      "exemplos": ["Um atirador experiente usaria abafadores de ouvido antes de disparar repetidas vezes num campo de tiro.", "Sem proteção nenhuma, o estampido repetido deixaria os ouvidos zunindo por horas."],
+      "em_adamar": "Não existe em Adamar: o item existe para proteger contra o estampido de armas de fogo, que não fazem parte do cenário. Não há necessidade equivalente em Adamar."
+    },
+    "aljava-de-cintura": {
+      "descricao": "Um carcaz preso ao cinto, feito para carregar um punhado de flechas ao alcance da mão de quem usa arco. Fica mais perto do corpo do que uma aljava de ombro, o que facilita puxar a flecha rápido, mas também é mais fácil de sentir batendo na perna durante uma corrida.",
+      "exemplos": ["O arqueiro puxa a flecha da aljava de cintura num movimento só, sem desviar o olhar do alvo.", "Correndo pelo mato fechado, a aljava de cintura bate contra a perna a cada passo."],
+      "relacionados": ["aljava-de-ombro"]
+    },
+    "aljava-de-ombro": {
+      "descricao": "Um carcaz preso às costas ou ao ombro, menor que o de cintura, também feito para carregar flechas prontas para uso. Deixa as pernas livres de qualquer estorvo, mas exige um movimento maior do braço para puxar a flecha por cima do ombro.",
+      "exemplos": ["O caçador prefere a aljava de ombro para não atrapalhar a corrida por entre as árvores.", "Puxar uma flecha da aljava de ombro por cima do ombro leva um instante a mais do que da de cintura."],
+      "relacionados": ["aljava-de-cintura"]
+    },
+    "cinturao-de-ferramentas": {
+      "descricao": "Um cinto cheio de bolsos, presilhas e alças, organizado para carregar várias ferramentas pequenas ao alcance imediato da mão. Facilita muito guardar e pegar itens rápido durante um trabalho técnico, sem precisar revirar uma caixa ou uma bolsa fechada.",
+      "exemplos": ["Um cinturão de ferramentas manteria cada chave de fenda e cada peça pequena separada e à mão.", "Sem tantos bolsos organizados, procurar a ferramenta certa em meio à bagagem toma um tempo precioso."],
+      "em_adamar": "Fica de fora do cenário no formato moderno descrito: presilhas e bolsos modulares desse tipo são um refinamento posterior. Use uma bolsa de ferramentas comum ou a caixa de ferramentas portátil no lugar.",
+      "relacionados": ["caixa-de-ferramentas-portatil", "algibeira-bolsa-pequena"]
+    },
+    "coldre-de-cintura": {
+      "descricao": "Um coldre preso ao cinto, feito sob medida para guardar uma pistola pronta para sacar rápido. Sem a arma certa para encaixar, o coldre não serve de muito, e um coldre errado para o tipo de arma pode até atrapalhar o saque em vez de ajudar.",
+      "exemplos": ["Um pistoleiro carregaria a arma pronta num coldre de cintura, sacando-a num movimento rápido.", "Vazio, o coldre de cintura não passa de um acessório de couro sem função nenhuma."],
+      "em_adamar": "Não existe em Adamar: coldres de cintura foram feitos para pistolas, arma que não existe no cenário sem pólvora. Facas e espadas curtas usam bainha, não coldre.",
+      "relacionados": ["coldre-de-ombro"]
+    },
+    "coldre-de-ombro": {
+      "descricao": "Um coldre escondido debaixo do braço, preso por tiras que cruzam o peito e as costas, feito para esconder uma pistola sob um casaco. Como o de cintura, só faz sentido acompanhado da arma que ele guarda.",
+      "exemplos": ["Escondido sob o casaco, o coldre de ombro disfarçaria bem a pistola de quem quisesse passar despercebido.", "Sem uma arma para encaixar, o coldre de ombro vira só um arreio incômodo debaixo da roupa."],
+      "em_adamar": "Não existe em Adamar, pelo mesmo motivo do coldre de cintura: não há pistolas no cenário para guardar nele.",
+      "relacionados": ["coldre-de-cintura"]
+    },
+    "correia-de-couro": {
+      "descricao": "Uma correia simples de couro que prende uma arma ao pulso ou ao punho, evitando que ela escape da mão num golpe forte, numa queda ou num desarme malsucedido. É um detalhe barato que muitos guerreiros adotam depois de perder uma arma numa hora ruim.",
+      "exemplos": ["Mesmo desarmado por um golpe certeiro, você não perde a espada de vez graças à correia presa ao pulso.", "A correia de couro se rompe depois de anos de uso, e você percebe só quando a arma quase escapa da mão."],
+      "relacionados": ["correia-de-aco-trancado"]
+    },
+    "correia-de-aco-trancado": {
+      "descricao": "Uma versão mais forte da correia de pulso comum, feita de fios de aço trançados em vez de couro, muito mais difícil de cortar ou arrebentar num desarme. Depende da mesma metalurgia fina de outros itens de aço trançado do cenário.",
+      "exemplos": ["Uma correia de aço trançado resistiria a um corte de lâmina que arrebentaria uma de couro na hora.", "Mais rígida que a de couro, essa correia incomoda um pouco mais o movimento do pulso."],
+      "em_adamar": "Não existe em Adamar: o aço trançado fino desse tipo está além da metalurgia do cenário. Use a correia de couro comum no lugar.",
+      "relacionados": ["correia-de-couro"]
+    }
+  }
+}

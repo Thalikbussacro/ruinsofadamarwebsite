@@ -1,0 +1,314 @@
+{
+  "lista": "desvantagens",
+  "itens": {
+    "fanatismo": {
+      "descricao": "O personagem tem fé cega e absoluta numa causa, ideologia ou divindade, obedecendo ordens ou princípios ligados a ela mesmo quando isso é claramente contra seus próprios interesses ou até sua vida. Diferente de uma crença comum, aqui não há espaço real para dúvida: questionar a causa é praticamente impensável para ele.\n\nEssa devotação costuma inspirar respeito de quem compartilha a mesma fé e desconfiança de quem não a compartilha, principalmente quando o fanatismo leva a atitudes extremas.",
+      "exemplos": [
+        "Recebe uma ordem perigosa de um superior da sua fé e a cumpre sem hesitar, mesmo sabendo que pode não sobreviver.",
+        "Recusa qualquer argumento lógico contra sua causa, por mais evidente que seja o erro, e passa a considerar quem discorda um inimigo."
+      ],
+      "em_adamar": "Cultos, ordens e fés variam bastante entre os povos de Adamar, então o fanatismo pode se ligar a qualquer uma delas conforme a origem do personagem.",
+      "relacionados": ["doutrinas-religiosas", "briguento"]
+    },
+    "fantasias": {
+      "descricao": "O personagem acredita firmemente em algo que não é verdade — pode ser sobre si mesmo, sobre o mundo ou sobre outra pessoa — e essa crença distorce suas decisões de forma consistente, mesmo diante de provas contrárias. Quanto mais central a fantasia para a vida dele, maior o custo e mais difícil é convencê-lo do contrário.\n\nApresentar fatos que contradizem a fantasia raramente funciona: o personagem tende a reinterpretar qualquer evidência de um jeito que preserve sua crença.",
+      "exemplos": [
+        "Está convencido de que é descendente de uma linhagem nobre esquecida, e trata todos ao redor com uma arrogância que não condiz com sua vida real.",
+        "Acredita que uma pessoa querida ainda está viva em algum lugar, apesar de todas as evidências do contrário, e recusa qualquer prova."
+      ],
+      "relacionados": ["megalomania", "credulidade"]
+    },
+    "feicoes-estranhas": {
+      "descricao": "Algo no rosto do personagem chama atenção imediatamente e o torna fácil de lembrar — uma cicatriz marcante, olhos de cor incomum, uma marca de nascença expressiva —, sem necessariamente ser feio. O problema não é a beleza ou a falta dela, é a memorabilidade: qualquer um que o veja uma vez tende a reconhecê-lo depois.\n\nIsso torna disfarces e vidas discretas bem mais difíceis de manter por muito tempo.",
+      "exemplos": [
+        "Uma testemunha do crime consegue descrever seu rosto em detalhes ao guarda, mesmo tendo visto o personagem por poucos segundos.",
+        "Ao tentar se disfarçar entre a multidão do mercado, alguém o reconhece de longe pela marca no rosto."
+      ],
+      "dica_mesa": "Use para criar consequências narrativas: reconhecimento indesejado é mais interessante que só uma penalidade abstrata.",
+      "relacionados": ["aparencia-desvantagem"]
+    },
+    "ferido": {
+      "descricao": "O personagem carrega uma ferida aberta que nunca fecha direito, sangrando ou incomodando de tempos em tempos mesmo sem uma crise de dor aguda. Diferente de uma cicatriz já cicatrizada, essa ferida exige cuidado constante — trocar curativos, evitar esforço excessivo na região — e pode se agravar se negligenciada.\n\nEsconder o problema de estranhos costuma exigir cuidado extra com roupas e curativos discretos.",
+      "exemplos": [
+        "Antes de dormir, precisa trocar o curativo da ferida que nunca cicatriza, ou corre risco de complicações pela manhã.",
+        "Um esforço físico intenso na escalada reabre a ferida, manchando de sangue a roupa bem na hora de encontrar os guardas."
+      ],
+      "relacionados": ["dor-cronica", "hemofilia"]
+    },
+    "flashbacks": {
+      "descricao": "O personagem revive de forma involuntária momentos traumáticos do passado, disparados por gatilhos específicos — um som, um cheiro, uma situação parecida —, ficando incapaz de agir normalmente enquanto a lembrança o domina. Quanto mais grave o nível, mais longo e incapacitante é o episódio.\n\nO gatilho costuma ser algo bem específico ligado a uma experiência concreta do passado do personagem, definida junto com o Mestre.",
+      "exemplos": [
+        "O som de correntes arrastando no chão da masmorra dispara uma lembrança de cativeiro, paralisando o personagem por um instante.",
+        "Ao ver fogo se espalhando numa casa, revive o incêndio que destruiu sua vila natal e perde o controle da cena por um momento."
+      ],
+      "dica_mesa": "Combine o gatilho e o trauma de origem com o jogador com antecedência, para usar a desvantagem sem pegar ninguém desprevenido na mesa."
+    },
+    "fobias": {
+      "descricao": "O personagem tem um medo intenso e irracional de algo específico — altura, escuro, água profunda, magia, espaços fechados —, precisando testar Vontade para sequer se aproximar do gatilho, com penalidade tanto maior quanto mais forte for o medo escolhido. Falhar pode significar congelar, fugir ou entrar em pânico completo, dependendo da gravidade.\n\nÉ um dos traços mais versáteis para o Mestre explorar, já que o objeto do medo pode aparecer em quase qualquer cena da campanha.",
+      "exemplos": [
+        "Diante da entrada escura de uma cripta sem tocha acesa, o personagem com medo do escuro se recusa a entrar sem luz.",
+        "Precisa atravessar uma ponte estreita sobre um precipício, e o medo de altura quase o faz recuar no meio do caminho."
+      ],
+      "dica_mesa": "Escolha o gatilho pensando no tipo de aventura que a mesa costuma jogar — um medo bem escolhido cria cenas memoráveis."
+    },
+    "fora-de-forma": {
+      "descricao": "O personagem tem condição física abaixo do esperado, cansando-se mais rápido que o normal em esforços físicos prolongados e sofrendo penalidade em testes ligados a resistência do corpo. A versão mais grave piora tanto o cansaço quanto a recuperação, tornando qualquer jornada longa ou combate prolongado bem mais desgastante.\n\nTarefas rápidas e pontuais quase não sofrem impacto; o problema aparece de verdade quando o esforço se estende por muito tempo.",
+      "exemplos": [
+        "Numa marcha forçada por terreno acidentado, é o primeiro do grupo a precisar parar para recuperar o fôlego.",
+        "Depois de um combate rápido, ainda está ofegante e sem forças muito depois dos companheiros já terem se recuperado."
+      ]
+    },
+    "facil-de-decifrar": {
+      "descricao": "O personagem não sabe esconder o que sente: qualquer emoção forte — medo, raiva, mentira, nervosismo — transparece no rosto ou no comportamento dele com clareza, dificultando blefes, negociações e qualquer momento em que precisaria manter a compostura.\n\nQuem convive perto o tempo suficiente aprende a ler cada expressão dele quase como um livro aberto.",
+      "exemplos": [
+        "Ao tentar mentir para o guarda sobre o motivo da viagem, o rosto do personagem o entrega antes mesmo de terminar a frase.",
+        "Numa negociação, o mercador percebe de imediato o quanto ele está desesperado pelo item, e sobe o preço sem dó."
+      ],
+      "relacionados": ["ingenuo"]
+    },
+    "furia": {
+      "descricao": "Em combate, o personagem corre risco real de perder o controle e entrar num estado de fúria cega, atacando com mais força mas perdendo capacidade de avaliar riscos, recuar ou distinguir aliado de inimigo com clareza. Uma vez disparada, a fúria é difícil de conter até que a ameaça acabe ou a exaustão vença.\n\nO gatilho costuma ser algo específico, como ver um companheiro cair ferido ou sofrer um insulto grave, e vale a pena definir isso com clareza desde o início.",
+      "exemplos": [
+        "Depois de ver um companheiro cair ferido, o personagem entra em fúria e ataca sem pensar em se defender.",
+        "Tomado pela fúria no meio da masmorra, quase ataca o próprio aliado que se aproxima por trás sem avisar."
+      ],
+      "dica_mesa": "Deixe claro para o jogador o gatilho que dispara a fúria, para ele antecipar quando o controle pode escapar."
+    },
+    "gagueira": {
+      "descricao": "O personagem gagueja ao falar, especialmente sob pressão ou nervosismo, dificultando qualquer teste social que dependa de fala clara e confiante — negociar, mentir, discursar, dar ordens rápidas numa emergência. Em conversas calmas e sem pressa, o problema é bem mais discreto.\n\nMuita gente reage com impaciência ou zombaria diante da gagueira, o que só piora a tensão do personagem em momentos já difíceis.",
+      "exemplos": [
+        "No meio de uma negociação tensa com o mercador, a gagueira piora e ele perde a linha do argumento que preparara.",
+        "Ao tentar gritar um aviso urgente durante uma emboscada, as palavras travam bem na hora que mais precisava ser rápido."
+      ],
+      "relacionados": ["incapaz-de-falar"]
+    },
+    "gigantismo": {
+      "descricao": "O personagem tem estatura bem acima da média, chamando atenção só por existir e tendo dificuldade para passar por espaços apertados, dormir em camas comuns ou vestir roupas e armaduras feitas para tamanho normal, exigindo quase sempre encomendas sob medida.\n\nEm compensação, costuma impressionar ou intimidar à primeira vista, ainda que isso não venha automaticamente junto com mais força real.",
+      "exemplos": [
+        "Precisa se abaixar para passar por qualquer porta de estalagem comum, e ainda assim bate a cabeça de vez em quando.",
+        "Não encontra armadura pronta que sirva no mercado da vila, sempre dependendo de um ferreiro disposto a fazer sob encomenda."
+      ],
+      "relacionados": ["magro"]
+    },
+    "gula": {
+      "descricao": "O personagem come e bebe além do razoável sempre que tem oportunidade, precisando testar Vontade para resistir a uma boa refeição disponível, mesmo quando isso não é prudente — atrasa a viagem, gasta recursos escassos ou chama atenção indesejada.\n\nÉ um traço que costuma render cenas cômicas, mas que também pode custar caro quando comida é escassa e precisa ser racionada.",
+      "exemplos": [
+        "Ao encontrar um banquete abandonado numa sala da masmorra, não resiste e se empanturra, ficando mais lento por um tempo.",
+        "Gasta boa parte das economias do grupo numa refeição farta na estalagem, mesmo sabendo que precisariam poupar."
+      ],
+      "relacionados": ["acima-do-peso-gordo-muito-gordo"]
+    },
+    "hemofilia": {
+      "descricao": "O sangue do personagem não coagula direito, tornando qualquer corte ou ferimento muito mais perigoso do que seria para outra pessoa — um machucado pequeno pode se tornar sério se não for tratado rápido. Ele sabe disso e costuma evitar riscos físicos desnecessários, mesmo pequenos, com mais cuidado que os companheiros.\n\nCarregar sempre algo para estancar sangramento vira quase um hábito de sobrevivência para quem tem essa condição.",
+      "exemplos": [
+        "Um corte relativamente simples numa emboscada exige atenção imediata, sob risco de sangrar bem mais do que o esperado.",
+        "Evita ajudar a cortar lenha ou manusear ferramentas afiadas sem necessidade, sabendo o risco que corre com qualquer machucado."
+      ],
+      "relacionados": ["ferido", "dor-cronica"]
+    },
+    "hiperalgia": {
+      "descricao": "O personagem sente dor com intensidade muito maior que o normal, o que dificulta manter a concentração ou agir com eficiência assim que se machuca, mesmo em ferimentos leves. Não muda a gravidade real do ferimento, só o quanto ele atrapalha o desempenho enquanto dói.\n\nCompanheiros que não conhecem bem o personagem podem estranhar a reação exagerada a um machucado aparentemente pequeno.",
+      "exemplos": [
+        "Um corte superficial na mão o deixa momentaneamente incapaz de segurar a arma com firmeza, por causa da dor desproporcional.",
+        "Depois de torcer o tornozelo numa queda simples, mal consegue caminhar de tanta dor, para surpresa dos companheiros."
+      ],
+      "relacionados": ["dor-cronica"]
+    },
+    "honestidade": {
+      "descricao": "O personagem sente forte resistência a mentir, trapacear ou quebrar a lei, mesmo quando isso custaria caro se ele cedesse à tentação. Precisa testar Vontade para agir de forma desonesta, mesmo em situações em que uma mentirinha resolveria tudo com facilidade.\n\nEssa reputação de confiabilidade costuma render respeito, mas também torna o personagem previsível para quem sabe explorar essa rigidez moral.",
+      "exemplos": [
+        "Mesmo podendo mentir para escapar de uma acusação injusta, o personagem se vê incapaz de dizer algo que não seja verdade.",
+        "Recusa-se a participar de uma trapaça no jogo de dados da taverna, mesmo com a chance de ganhar uma boa quantia."
+      ],
+      "relacionados": ["codigo-de-honra"]
+    },
+    "habitos-detestaveis": {
+      "descricao": "São manias, tiques ou costumes pequenos que incomodam quem convive com o personagem, sem chegar a ser uma desvantagem grave por si só — mastigar de boca aberta, coçar-se em público, falar sozinho. Cada hábito conta como uma peculiaridade, e o jogador pode ter um pequeno conjunto deles, dentro de um limite total.\n\nSozinho, cada hábito é só um detalhe de caracterização; juntos, ajudam a compor um personagem mais vívido e reconhecível.",
+      "exemplos": [
+        "Fala sozinho enquanto pensa em voz alta, deixando os companheiros desconfortáveis durante um plano delicado.",
+        "Range os dentes de forma audível quando está tenso, o que denuncia seu nervosismo numa negociação importante."
+      ]
+    },
+    "identidade-secreta": {
+      "descricao": "O personagem esconde de quase todos quem realmente é ou o que realmente fez, e a descoberta disso teria consequências sérias — de um simples escândalo social até risco de vida, dependendo da gravidade escolhida. Manter o segredo exige cuidado constante com o que fala e com quem se aproxima.\n\nQuanto mais grave a consequência de ser descoberto, mais cuidadoso o personagem tende a ser em qualquer interação nova.",
+      "exemplos": [
+        "Um antigo conhecido reconhece o personagem numa cidade onde ele reconstruiu a vida sob outro nome, ameaçando expor seu passado.",
+        "Precisa inventar uma desculpa rápida quando um guarda pergunta detalhes específicos sobre quem ele realmente é."
+      ],
+      "relacionados": ["dever", "estigma-social"]
+    },
+    "impulsividade": {
+      "descricao": "O personagem age antes de pensar, tomando decisões rápidas demais em momentos que pediam mais cautela. Precisa testar Vontade para parar e avaliar uma situação com calma antes de agir, e falhar significa seguir o primeiro impulso, para o bem ou para o mal.\n\nÀs vezes essa rapidez salva a situação, mas com mais frequência cria complicações que um instante de reflexão evitaria.",
+      "exemplos": [
+        "Sem pensar duas vezes, salta para dentro do poço escuro atrás de um som suspeito, antes que o grupo consiga planejar algo.",
+        "Responde a uma provocação de um guarda com um insulto na hora, sem considerar que estão em menor número."
+      ]
+    },
+    "incapaz-de-falar": {
+      "descricao": "O personagem tem grande dificuldade ou incapacidade total de produzir fala inteligível, precisando recorrer a gestos, escrita ou outros meios para se comunicar. No grau mais leve ainda consegue emitir sons e talvez palavras isoladas com esforço; no grau mais severo, não emite som algum e depende inteiramente de comunicação não vocal.\n\nEm situações que exigem reação rápida por fala, esse traço costuma custar um tempo precioso que outros personagens não perdem.",
+      "exemplos": [
+        "Precisa escrever num pedaço de pergaminho para explicar ao guarda o motivo da viagem, atrasando a passagem pelo portão.",
+        "Numa emboscada, não consegue gritar um aviso e recorre a um gesto combinado para alertar os companheiros a tempo."
+      ],
+      "relacionados": ["gagueira"]
+    },
+    "incapaz-de-sentir-prazer": {
+      "descricao": "Nada realmente dá prazer ao personagem — nem uma boa refeição, nem uma vitória, nem descanso — deixando-o emocionalmente apagado mesmo em momentos que deveriam ser bons. Isso não o impede de agir normalmente, mas priva o personagem de boa parte da motivação simples que move outras pessoas.\n\nCom o tempo, companheiros podem estranhar a falta de reação dele diante de coisas que animariam qualquer um.",
+      "exemplos": [
+        "Depois de vencer um combate difícil, não sente o alívio ou a alegria que os companheiros celebram ao seu redor.",
+        "Recusa recompensas que normalmente animariam qualquer aventureiro, simplesmente porque nada disso lhe desperta interesse real."
+      ],
+      "relacionados": ["depressao-cronica"]
+    },
+    "indeciso": {
+      "descricao": "O personagem tem dificuldade real de tomar decisões, principalmente sob pressão, precisando testar Vontade para escolher um caminho de ação quando existem opções demais ou consequências incertas. Falhando, hesita, adia ou pede a opinião de outra pessoa antes de agir.\n\nEm decisões simples e sem pressão, o problema quase não aparece; é a urgência que faz a indecisão travar o personagem de verdade.",
+      "exemplos": [
+        "Diante de duas portas na masmorra, trava por minutos incapaz de escolher qual abrir primeiro, enquanto o grupo espera.",
+        "Numa negociação, não consegue decidir entre duas propostas do mercador e acaba perdendo a melhor das duas por demorar demais."
+      ],
+      "relacionados": ["baixa-autoestima"]
+    },
+    "indiferente": {
+      "descricao": "O personagem tem pouco interesse genuíno pelo que não afeta diretamente a vida dele, reagindo com frieza a apelos emocionais, causas alheias ou problemas de estranhos. Não é cruel de propósito, apenas custa um esforço real se importar com algo que não é da sua conta.\n\nCompanheiros mais engajados emocionalmente costumam estranhar essa frieza constante, mesmo sabendo que não é maldade.",
+      "exemplos": [
+        "Ignora o pedido de ajuda de um aldeão desconhecido, seguindo direto para seu próprio objetivo sem remorso aparente.",
+        "Reage com total frieza à notícia da desgraça de uma vila vizinha, sem nenhum sinal de compaixão para os companheiros."
+      ],
+      "relacionados": ["insensivel", "egoismo"]
+    },
+    "indulgente": {
+      "descricao": "O personagem é bondoso e confiante demais, tendendo a acreditar no melhor das pessoas mesmo quando os sinais apontam o contrário, o que o torna presa fácil de golpes, manipulação e armadilhas emocionais. Ajudar quem não merece ou perdoar quem devia ser desconfiado são erros recorrentes dele.\n\nÉ um traço que costuma render boas amizades genuínas, mas também alguns dos piores desgostos da campanha.",
+      "exemplos": [
+        "Aceita a desculpa esfarrapada de um conhecido pego roubando, dando-lhe uma segunda chance que provavelmente não merece.",
+        "Confia no estranho encontrado na estrada e o convida para acampar junto, ignorando os sinais óbvios de perigo."
+      ],
+      "relacionados": ["altruismo", "credulidade"]
+    },
+    "ingenuo": {
+      "descricao": "O personagem simplesmente não entende maldade, malícia ou segundas intenções, interpretando as ações dos outros sempre pelo lado mais inocente possível. Isso o deixa vulnerável a manipulação e enganação, já que ele nem cogita que alguém possa estar mentindo ou tramando algo ruim.\n\nDiferente da Credulidade, aqui o problema não é acreditar em histórias absurdas — é não perceber intenção ruim alguma por trás delas.",
+      "exemplos": [
+        "Não percebe as intenções óbvias de um vigarista que tenta vendê-lo um mapa falso do tesouro, e aceita de bom grado.",
+        "Interpreta o sorriso frio de um nobre ambicioso como simpatia genuína, sem notar o perigo que os outros veem na hora."
+      ],
+      "relacionados": ["credulidade", "facil-de-decifrar"]
+    },
+    "inimigos": {
+      "descricao": "Alguém ou algum grupo específico guarda rancor do personagem e busca prejudicá-lo ativamente sempre que pode — um antigo rival, uma guilda lesada, uma família vingativa. A força e a frequência com que esse inimigo aparece variam conforme o quanto foi investido nessa desvantagem, e o Mestre decide quando e como ele age.\n\nUm bom inimigo costuma virar um dos fios condutores mais marcantes de uma campanha longa.",
+      "exemplos": [
+        "Ao chegar numa nova cidade, descobre que capangas do seu antigo inimigo já foram avisados de sua chegada e o esperam.",
+        "Recebe uma carta de ameaça anônima logo depois de concluir um trabalho lucrativo, um sinal claro de que o inimigo não esqueceu dele."
+      ],
+      "dica_mesa": "Combine com o Mestre a identidade e os recursos do inimigo antes de jogar, para saber o tipo de ameaça que ele representa."
+    },
+    "insensivel": {
+      "descricao": "O personagem é impiedoso e frio diante da dor e do sofrimento alheio, sem se abalar com cenas que perturbariam a maioria das pessoas. Isso o torna difícil de comover ou chantagear emocionalmente, mas também gera desconfiança e distância de quem convive com ele, incomodado com a frieza constante.\n\nEm certas situações, essa frieza vira uma vantagem prática, permitindo agir sem hesitação onde outros travariam.",
+      "exemplos": [
+        "Interroga um prisioneiro sem o menor sinal de incômodo diante do sofrimento dele, deixando os companheiros visivelmente perturbados.",
+        "Passa por uma vila destruída sem se abalar com as cenas de perda, focado apenas em seguir com a missão."
+      ],
+      "relacionados": ["indiferente"]
+    },
+    "insone": {
+      "descricao": "O personagem tem dificuldade para dormir uma noite inteira sem interrupção, sofrendo episódios de insônia que o deixam cansado e com desempenho reduzido no dia seguinte. Quanto mais grave o grau, mais frequentes são esses episódios, tornando o descanso adequado um problema recorrente.\n\nCurioso que seja, alguns insones acabam sendo melhores vigias justamente por já estarem acordados na maior parte da noite.",
+      "exemplos": [
+        "Depois de uma noite maldormida na estalagem, o personagem começa o dia seguinte visivelmente exausto e lento.",
+        "Durante uma vigília na estrada, é o único que não consegue aproveitar o período de descanso combinado com o grupo."
+      ],
+      "relacionados": ["dorminhoco"]
+    },
+    "intolerancia": {
+      "descricao": "O personagem simplesmente não suporta um povo, grupo ou tipo específico de gente, reagindo com hostilidade, desprezo ou desconfiança automática sempre que encontra alguém desse grupo, mesmo sem motivo concreto naquele caso específico. Isso costuma gerar atrito social e complicar negociações com quem se enquadra no alvo da intolerância.\n\nÉ um traço que o próprio personagem raramente reconhece como problema, defendendo-o quase sempre como bom senso.",
+      "exemplos": [
+        "Recusa-se a negociar com um mercador só por pertencer ao povo que ele despreza, mesmo com uma oferta vantajosa na mesa.",
+        "Trata um companheiro de viagem com frieza constante assim que descobre sua origem, criando tensão desnecessária no grupo."
+      ],
+      "dica_mesa": "Escolha o alvo da intolerância junto com o Mestre, pensando em como isso vai aparecer nas aventuras da mesa."
+    },
+    "inveja": {
+      "descricao": "O personagem sente ressentimento verdadeiro por quem tem mais que ele — riqueza, talento, reconhecimento —, precisando testar Vontade para não deixar esse sentimento guiar suas atitudes, seja com comentários maldosos, sabotagem sutil ou decisões movidas puramente por rancor.\n\nÉ um traço corrosivo que costuma minar relações de confiança dentro do próprio grupo, mais do que causar problemas com estranhos.",
+      "exemplos": [
+        "Ao ver um companheiro receber todo o crédito por um feito que os dois fizeram juntos, sente um rancor difícil de disfarçar.",
+        "Comenta com desdém sobre a sorte de um mercador bem-sucedido, incapaz de reconhecer o mérito por trás do sucesso alheio."
+      ]
+    },
+    "irritabilidade": {
+      "descricao": "O personagem tem um pavio curto, perdendo a paciência com facilidade diante de qualquer contrariedade pequena. Precisa testar Vontade para manter a calma quando provocado, contrariado ou simplesmente incomodado, e falhar significa uma explosão de mau humor difícil de conter.\n\nDiferente da Fúria, que só aparece em combate, aqui o gatilho pode ser qualquer aborrecimento cotidiano, dentro ou fora de perigo.",
+      "exemplos": [
+        "Perde a paciência com um mercador que demora demais para atender, e quase parte para a briga por um detalhe bobo.",
+        "Explode contra um companheiro por um comentário inocente, surpreendendo todos com a intensidade da reação."
+      ],
+      "relacionados": ["furia", "briguento"]
+    },
+    "lunatico": {
+      "descricao": "O humor e a estabilidade mental do personagem oscilam junto com as fases da lua, deixando-o mais instável, agressivo ou estranho em certos períodos do ciclo lunar, de um jeito que ele mesmo não controla totalmente. É uma condição rara e intrigante, que pode gerar desconfiança de quem não entende o padrão.\n\nQuem convive de perto o suficiente acaba percebendo o ciclo e aprendendo a se antecipar aos piores momentos.",
+      "exemplos": [
+        "Em noite de lua cheia, o personagem fica visivelmente mais agitado e impulsivo, preocupando os companheiros mais atentos.",
+        "Moradores supersticiosos de uma vila isolada evitam o personagem, notando um padrão estranho ligado às fases da lua."
+      ],
+      "em_adamar": "Numa cultura com pouca ciência e muita superstição, um comportamento assim ligado à lua tende a ser lido como sinal sobrenatural pelos moradores comuns."
+    },
+    "luxuria": {
+      "descricao": "O personagem tem um desejo sexual que não controla bem, precisando testar Vontade para resistir a investir contra alguém atraente disponível, mesmo quando isso é imprudente, inconveniente ou coloca em risco outros planos. Não é sobre relacionamentos estáveis — é sobre o impulso vencer o bom senso na hora errada.\n\nEm certas situações sociais, esse impulso pode ser explorado por quem sabe da fraqueza, virando uma isca fácil de manipulação.",
+      "exemplos": [
+        "No meio de uma missão discreta, se distrai flertando com um estranho na taverna, atrasando o grupo por puro capricho.",
+        "Arrisca revelar informações sensíveis só para impressionar alguém por quem se sente atraído, ignorando o perigo disso."
+      ]
+    },
+    "magro": {
+      "descricao": "O personagem é muito magro e fisicamente franzino, o que reduz um pouco sua força bruta e vigor físico geral em comparação com alguém de compleição comum. Não afeta destreza nem agilidade — só a robustez do corpo.\n\nEm compensação, costuma se mover com leveza em situações que exigem passar por espaços apertados ou não sobrecarregar uma estrutura frágil.",
+      "exemplos": [
+        "Não consegue arrombar a porta trancada sozinho, precisando da ajuda de um companheiro mais robusto.",
+        "Perde no teste de força contra um guarda corpulento numa disputa de braço na taverna, para risada geral."
+      ],
+      "relacionados": ["acima-do-peso-gordo-muito-gordo", "gigantismo"]
+    },
+    "maneta-um-braco": {
+      "descricao": "O personagem perdeu um braço inteiro, o que limita permanentemente qualquer ação que dependeria das duas mãos — usar um escudo junto de uma arma, escalar sem ajuda, carregar cargas grandes. Costuma se adaptar com o tempo, mas certas tarefas seguem impossíveis ou exigem um jeito alternativo de fazer.\n\nA convivência com essa perda costuma moldar todo o estilo de combate e de trabalho manual do personagem daí em diante.",
+      "exemplos": [
+        "Precisa amarrar a corda com uma técnica adaptada de uma mão só, levando bem mais tempo que um companheiro com os dois braços.",
+        "Não consegue usar escudo e arma ao mesmo tempo, optando por uma arma de duas mãos ou abrindo mão da proteção extra."
+      ],
+      "relacionados": ["maneta-uma-mao", "deficiencia-fisica"]
+    },
+    "maneta-uma-mao": {
+      "descricao": "O personagem perdeu uma das mãos, mantendo o braço, o que ainda limita bastante tarefas que exigiriam as duas mãos firmes e independentes, embora menos do que a perda do braço inteiro. Frequentemente adapta ferramentas, armas ou uma prótese simples para compensar parte da limitação.\n\nCom prática, muitos aprendem a realizar boa parte das tarefas do cotidiano de forma quase normal, só um pouco mais devagar.",
+      "exemplos": [
+        "Usa uma prótese simples de gancho para conseguir segurar rédeas enquanto maneja outra ferramenta com a mão boa.",
+        "Precisa de mais tempo para amarrar os próprios equipamentos antes de uma escalada, comparado aos companheiros."
+      ],
+      "relacionados": ["maneta-um-braco"]
+    },
+    "maniaco-depressivo": {
+      "descricao": "O humor do personagem alterna entre períodos de euforia intensa — energia, confiança e impulsividade acima do normal — e períodos de profunda tristeza e apatia, sem que ele tenha controle real sobre quando a mudança acontece. Cada fase traz seus próprios riscos: exagero e imprudência na euforia, apatia e desânimo na depressão.\n\nCompanheiros que convivem por tempo suficiente aprendem a reconhecer os sinais de virada de humor antes que fiquem óbvios demais.",
+      "exemplos": [
+        "Num dia de euforia, o personagem propõe um plano ousado e imprudente que preocupa o resto do grupo.",
+        "Poucos dias depois, mergulha numa fase de desânimo profundo, mal conseguindo reunir vontade para seguir viagem."
+      ],
+      "relacionados": ["depressao-cronica"]
+    },
+    "marca-registrada": {
+      "descricao": "O personagem deixa sempre um sinal característico no que faz — uma marca gravada, um objeto específico deixado para trás, um método reconhecível — e não consegue evitar essa assinatura mesmo quando seria mais prudente agir de forma discreta e anônima. Com o tempo, isso pode ligar seu nome ou reputação a determinados feitos.\n\nTanto aliados quanto inimigos podem aprender a reconhecer o trabalho do personagem só pela marca que ele deixa.",
+      "exemplos": [
+        "Depois de resgatar reféns numa aldeia, deixa sua marca característica gravada na porta, mesmo sabendo que isso o denuncia.",
+        "Um investigador experiente reconhece o mesmo padrão de trabalho em roubos diferentes, todos ligados ao mesmo personagem."
+      ],
+      "dica_mesa": "Use a marca registrada como gancho narrativo: ela pode virar tanto reputação boa quanto uma pista que inimigos seguem."
+    },
+    "mau-cheiro": {
+      "descricao": "O corpo do personagem exala um odor forte e desagradável, difícil de disfarçar mesmo com banho e cuidado, prejudicando interações sociais próximas e chamando atenção indesejada em ambientes fechados. Também pode atrapalhar tentativas de se aproximar furtivamente de quem tem bom olfato.\n\nAlguns aprendem a usar perfumes fortes ou ervas para mascarar o problema, ainda que raramente com sucesso completo.",
+      "exemplos": [
+        "Numa negociação em ambiente fechado, o mercador visivelmente se afasta e encurta a conversa por causa do cheiro.",
+        "Ao tentar se esconder enquanto uma criatura fareja o ar por perto, seu cheiro forte quase o denuncia."
+      ],
+      "relacionados": ["disosmia"]
+    },
+    "megalomania": {
+      "descricao": "O personagem se acredita destinado a feitos grandiosos, muito além do que sua posição atual sugeriria, e enxerga qualquer obstáculo comum como pequeno demais para alguém do seu suposto calibre. Essa crença o leva a tomar decisões arriscadas em nome de um destino que talvez só exista na cabeça dele.\n\nAliados podem se sentir inspirados por essa ambição, mas frequentemente pagam o preço quando ela ultrapassa o razoável.",
+      "exemplos": [
+        "Recusa uma missão simples por considerá-la abaixo do seu suposto destino, mesmo precisando desesperadamente do dinheiro.",
+        "Convence o grupo a atacar um alvo muito acima de suas forças, certo de que está destinado a vencer contra todas as chances."
+      ],
+      "relacionados": ["excesso-de-confianca", "fantasias"]
+    }
+  }
+}

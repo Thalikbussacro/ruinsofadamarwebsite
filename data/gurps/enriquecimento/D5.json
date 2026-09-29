@@ -1,0 +1,528 @@
+{
+  "lista": "desvantagens",
+  "itens": {
+    "amnesia": {
+      "descricao": "Amnésia tira de você parte ou toda a memória do próprio passado. Na versão parcial, faltam pedaços específicos — quem você era, o que fez, pessoas importantes — que o narrador guarda em segredo e pode revelar aos poucos. Na versão total, você não lembra nada da sua vida anterior ao início da história: nem nome verdadeiro, nem o motivo de saber o que sabe, nem relações antigas.\n\nMecanicamente, o narrador controla informações da sua ficha que você mesmo desconhece até recuperar a memória, algo que normalmente acontece através da história, não por escolha do jogador.",
+      "exemplos": [
+        "Você acorda numa vala à beira da estrada sem lembrar como chegou ali nem quem é.",
+        "Um rosto familiar na multidão desperta uma sensação estranha que você não consegue explicar.",
+        "Descobre, através de uma carta antiga, um fragmento perturbador do seu próprio passado esquecido."
+      ],
+      "em_adamar": "Como o narrador precisa guardar e controlar o que foi esquecido, essa desvantagem só entra combinando com ele.",
+      "dica_mesa": "Decida com o narrador, antes de jogar, quanto do seu passado real ele vai revelar e quando."
+    },
+    "assustar-animais": {
+      "descricao": "Assustar Animais faz com que bichos comuns sintam medo instintivo perto de você: cães latem e recuam, cavalos ficam nervosos e difíceis de montar, animais selvagens fogem ou reagem com agressividade defensiva. Não é algo que você controla — é uma reação automática do animal à sua presença, geralmente ligada a algo sutilmente errado ou sobrenatural em você.\n\nIsso complica qualquer atividade que dependa de animais dóceis: cavalgar, usar cães de guarda, se aproximar de gado ou até caçar, já que a fauna ao redor percebe algo estranho antes mesmo de você chegar perto.",
+      "exemplos": [
+        "O cavalo da estalagem se recusa a deixar você montar, nervoso sem motivo aparente.",
+        "Cães de guarda latem freneticamente assim que você se aproxima do portão.",
+        "A caça foge muito antes do alcance do seu arco, como se sentisse sua chegada."
+      ],
+      "em_adamar": "Por ligar o personagem a algo sobrenatural sutil, essa desvantagem depende de combinar a causa com o narrador."
+    },
+    "ataque-infeccioso": {
+      "descricao": "Ataque Infeccioso é um traço exótico onde o próprio corpo do personagem transmite doença através de mordidas, arranhões ou outro contato de combate: golpes que causam ferimento também arriscam contagiar o alvo com uma enfermidade que o próprio atacante carrega, muitas vezes sem sofrer os efeitos dela.\n\nÉ um traço típico de criaturas específicas — mortos-vivos, monstros amaldiçoados, certas feras sobrenaturais — mais do que de humanos comuns, e normalmente vem empacotado com outras características exóticas do mesmo ser.",
+      "exemplos": [
+        "Uma criatura desse tipo apareceria como uma ameaça temida em relatos de vilarejos afetados por pragas misteriosas.",
+        "Um ferimento aparentemente simples causado por essa criatura evolui para uma doença grave dias depois.",
+        "Os poucos sobreviventes de um encontro assim insistem em queimar as próprias roupas por medo de contágio."
+      ],
+      "em_adamar": "Fica fora do cenário porque os personagens jogáveis de Adamar são humanos comuns, e esse traço pertence a criaturas exóticas e monstruosas, não a heróis jogáveis."
+    },
+    "atavismo-por-estresse": {
+      "descricao": "Atavismo por Estresse faz o personagem regredir, sob forte pressão ou choque, a um estado mental e comportamental mais primitivo e bestial, quase animalesco, perdendo o controle racional normal por um tempo. É um traço de linhagens ou raças com um passado evolutivo ou mágico mais selvagem, que ressurge nos momentos mais inconvenientes.\n\nEnquanto durar o episódio, o personagem age por instinto puro, com julgamento e comunicação bem piores do que o normal, voltando ao normal depois que o gatilho de estresse passa.",
+      "exemplos": [
+        "Sob ataque brutal, a criatura larga qualquer tática e passa a agir por puro instinto selvagem.",
+        "Testemunhas descrevem o comportamento repentinamente animalesco de alguém sob choque extremo.",
+        "Depois do episódio, a pessoa mal lembra o que fez enquanto estava naquele estado."
+      ],
+      "em_adamar": "Fica fora do cenário porque pressupõe uma herança racial exótica que os humanos de Adamar não têm."
+    },
+    "autodestruicao": {
+      "descricao": "Autodestruição descreve um corpo que se desfaz ou se deteriora com o tempo por natureza própria, exigindo manutenção, energia ou intervenção constante só para continuar existindo. É típico de seres artificiais, construtos ou criaturas mantidas por magia ou tecnologia que combatem ativamente sua própria decomposição.\n\nSem essa manutenção constante, a criatura literalmente se desmancha aos poucos, o que a torna dependente de recursos ou rituais específicos só para continuar de pé.",
+      "exemplos": [
+        "Um construto antigo precisa de reparos frequentes só para não desmoronar sozinho.",
+        "Aventureiros encontram os restos de uma criatura que, sem manutenção, se desfez até virar pó.",
+        "A criatura busca desesperadamente o material raro necessário para reparar o próprio corpo antes que se desintegre."
+      ],
+      "em_adamar": "Fica fora porque pressupõe corpos artificiais ou mágicos além do que existe para personagens humanos comuns em Adamar."
+    },
+    "aversao": {
+      "descricao": "Aversão obriga o personagem a se afastar fisicamente de algo específico — um material, um símbolo, um tipo de lugar —, incapaz de chegar perto ou de permanecer na presença daquilo sem grande desconforto ou dano. O exemplo clássico é a criatura que não suporta um determinado material comum: a aversão pode ser tão simples quanto repulsa incômoda ou tão grave quanto ferimento ao entrar em contato.\n\nO narrador define, junto com o jogador, exatamente o que é a fonte da aversão e o quão comum ela é no mundo, já que isso muda bastante o peso prático da desvantagem.",
+      "exemplos": [
+        "O personagem recua instintivamente ao se aproximar do símbolo sagrado pendurado na porta da capela.",
+        "Evita a todo custo o caminho que passa pelo campo de determinada planta que lhe causa repulsa.",
+        "Fica visivelmente aflito quando um aliado insiste em carregar o objeto que ele não suporta por perto."
+      ],
+      "em_adamar": "Como a fonte da aversão costuma vir de uma origem sobrenatural ou de uma maldição, essa desvantagem só entra combinando com o narrador.",
+      "relacionados": [
+        "repugnancia"
+      ]
+    },
+    "bestial": {
+      "descricao": "Bestial significa que o personagem pensa e raciocina como um animal, não como uma pessoa civilizada: instinto acima de planejamento, incapacidade de lidar bem com conceitos abstratos, ferramentas complexas ou convenções sociais humanas. Em termos de jogo, é um traço de criaturas com mentalidade animal, não de heróis jogáveis civilizados.\n\nUma criatura Bestial ainda pode ser perigosa e até esperta dentro dos limites do instinto, mas não negocia, não segue planos elaborados e não usa flexibilidade ou dedução da forma que um personagem humano faz.",
+      "exemplos": [
+        "A fera ataca por instinto de território, sem qualquer tentativa de negociação ou recuo tático.",
+        "Criaturas assim reagem previsivelmente a comida, cheiro de sangue ou ameaça direta, nada além disso.",
+        "Um caçador experiente prevê o comportamento da besta justamente por saber que ela não pensa como gente."
+      ],
+      "em_adamar": "Fica fora porque os personagens jogáveis são humanos com raciocínio pleno; esse traço é reservado a criaturas e monstros do mundo."
+    },
+    "bioquimica-incomum": {
+      "descricao": "Bioquímica Incomum faz remédios, venenos, drogas e efeitos similares agirem de forma diferente e imprevisível no personagem, às vezes sem efeito nenhum, às vezes de um jeito inesperado. É um traço associado a corpos não inteiramente humanos ou alterados por origem exótica, cuja composição interna simplesmente não responde como a de uma pessoa comum.\n\nMédicos, boticários e envenenadores que conhecem apenas fisiologia humana comum têm dificuldade extra para tratar ou afetar alguém assim.",
+      "exemplos": [
+        "O curandeiro da vila fica intrigado quando o remédio de sempre simplesmente não funciona.",
+        "Um veneno que derrubaria qualquer pessoa mal afeta essa criatura, para frustração do assassino.",
+        "Um médico precisa experimentar às cegas para achar algo que realmente faça efeito nesse paciente."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma fisiologia não humana que os personagens de Adamar, todos humanos, não têm."
+    },
+    "caracteristicas-sobrenaturais": {
+      "descricao": "Características Sobrenaturais reúne pequenos sinais visíveis de que o personagem não é inteiramente natural: não ter reflexo em espelhos ou água, não projetar sombra, não aparecer em retratos, entre outras marcas parecidas. Isoladamente cada sinal parece pequeno, mas denuncia a natureza sobrenatural de quem os tem para qualquer um que preste atenção.\n\nÉ um traço típico de mortos-vivos, espíritos ou seres amaldiçoados, não algo que aconteça a uma pessoa comum, por mais estranha que seja sua história.",
+      "exemplos": [
+        "Um espelho na estalagem trai a criatura diante de hóspedes desavisados.",
+        "Alguém observador nota que a figura misteriosa nunca projeta sombra ao luar.",
+        "Um pintor de retratos fica intrigado ao perceber que o rosto do cliente simplesmente não aparece na tela."
+      ],
+      "em_adamar": "Fica fora porque exige uma natureza sobrenatural que os personagens jogáveis, humanos comuns, não possuem."
+    },
+    "consumo-ampliado": {
+      "descricao": "Consumo Ampliado significa que o personagem precisa comer, ou beber, ou se alimentar de outra forma, muito mais do que uma pessoa comum para se manter funcionando, com o problema crescendo por nível. Isso torna caro e logisticamente difícil mantê-lo alimentado, especialmente em viagem ou em tempos de escassez.\n\nÉ comum em criaturas grandes, com metabolismo acelerado ou de origem exótica, mais do que em humanos comuns, cuja necessidade alimentar já é coberta pelas regras padrão de suprimentos.",
+      "exemplos": [
+        "A criatura devora, sozinha, o equivalente ao suprimento de vários dias do grupo.",
+        "Manter esse companheiro alimentado em terreno escasso vira um problema logístico sério.",
+        "Mercadores de comida ficam surpresos com o tamanho do pedido para uma única boca."
+      ],
+      "em_adamar": "Fica fora porque pressupõe metabolismo exótico; personagens humanos seguem as necessidades alimentares padrão."
+    },
+    "dependencia": {
+      "descricao": "Dependência é a necessidade vital de uma substância específica para continuar vivo, não um vício por prazer, mas uma exigência biológica real: sem ela, o corpo do personagem começa a falhar progressivamente até a morte, num prazo que depende de quão rara e de quão frequente é a necessidade.\n\nO narrador define, junto ao jogador, o que é essa substância e o quão fácil ou difícil é encontrá-la no mundo, já que isso muda enormemente o peso prático da desvantagem numa campanha.",
+      "exemplos": [
+        "O personagem organiza toda a rota de viagem em função de onde consegue repor a substância de que depende.",
+        "Entra em pânico ao perceber que o suprimento está acabando longe de qualquer cidade.",
+        "Aceita um trabalho arriscado só porque o pagamento inclui acesso garantido ao que precisa."
+      ],
+      "em_adamar": "Como a substância e sua raridade mudam o peso da desvantagem, ela só entra combinando com o narrador.",
+      "relacionados": [
+        "vicio"
+      ]
+    },
+    "destino-desvantagem": {
+      "descricao": "Destino, como desvantagem, marca o personagem com um mau fim definido, que o narrador guarda e pode fazer se cumprir em algum momento da história: da versão menor, um infortúnio relativamente contido, até a versão superior, uma morte certa em circunstâncias específicas estabelecidas de antemão.\n\nDiferente de azar aleatório, um Destino é fixo e conhecido pelo narrador desde o início: a única dúvida é quando e como ele se cumpre, e às vezes até se pode ser adiado ou mudado através da história.",
+      "exemplos": [
+        "Uma profecia obscura sussurrada por um oráculo aponta exatamente para o fim que aguarda o personagem.",
+        "Situações estranhamente convenientes parecem sempre empurrar o personagem na direção do destino marcado.",
+        "O jogador sente um arrepio sempre que a história se aproxima de elementos ligados ao próprio fim anunciado."
+      ],
+      "em_adamar": "Como o narrador precisa definir e controlar exatamente qual é o destino e quando ele se cumpre, essa desvantagem só entra combinando com ele."
+    },
+    "destruidor-da-vida": {
+      "descricao": "Destruidor da Vida faz plantas murcharem e animais adoecerem simplesmente por estarem perto do personagem, um efeito involuntário e constante que ele não controla nem consegue desligar. É um sinal de que algo profundamente errado ou antinatural cerca essa pessoa, mesmo que suas intenções sejam boas.\n\nIsso torna esconder a própria natureza difícil em ambientes rurais ou naturais, já que jardins murchos e bichos doentes ao redor chamam atenção rápido.",
+      "exemplos": [
+        "As flores do jardim onde ele passou a noite estão murchas pela manhã, sem explicação aparente.",
+        "O gado da fazenda vizinha adoece sempre que ele se aproxima por tempo demais.",
+        "Moradores desconfiados começam a associar sua chegada às plantações fracas da estação."
+      ],
+      "em_adamar": "Por marcar o personagem com uma natureza antinatural ligada a forças além do comum, essa desvantagem só entra combinando com o narrador."
+    },
+    "dieta-restrita": {
+      "descricao": "Dieta Restrita significa que o personagem só consegue se alimentar de verdade de um tipo específico e raro de comida ou substância: qualquer outra coisa não sustenta ou nem sequer é digerível para ele. Quanto mais raro e difícil de conseguir esse alimento, mais pesada a desvantagem.\n\nIsso transforma logística básica de viagem num desafio constante, já que abastecer-se não é tão simples quanto comprar provisões comuns no mercado mais próximo.",
+      "exemplos": [
+        "O grupo precisa desviar da rota planejada para encontrar a única fonte conhecida do alimento de que ele precisa.",
+        "Ele recusa educadamente o banquete oferecido, incapaz de comer quase nada do que está na mesa.",
+        "Uma escassez sazonal do alimento raro o deixa progressivamente mais fraco durante o inverno."
+      ],
+      "em_adamar": "Como a origem dessa dieta costuma vir de uma natureza incomum do personagem, essa desvantagem entra combinando com o narrador."
+    },
+    "doente-terminal": {
+      "descricao": "Doente Terminal significa que o personagem tem um prazo determinado de vida, definido por uma doença ou condição incurável pelos meios disponíveis. Quanto mais curto o prazo restante, mais pesada a desvantagem, e o narrador guarda a data exata e o desenrolar da condição.\n\nEssa desvantagem muda a forma como o personagem encara riscos e prioridades: gente com pouco tempo de vida tende a agir diferente de quem pode esperar décadas para realizar seus planos.",
+      "exemplos": [
+        "O personagem para de guardar dinheiro para o futuro, sabendo que talvez não vá vivê-lo.",
+        "Busca desesperadamente qualquer cura lendária, por mais improvável que pareça, antes que o tempo acabe.",
+        "Decide contar a verdade a um ente querido antes que seja tarde demais."
+      ],
+      "em_adamar": "Como o narrador precisa acompanhar de perto o prazo e o desenrolar da doença, essa desvantagem só entra combinando com ele."
+    },
+    "drenagem": {
+      "descricao": "Drenagem faz o personagem perder vitalidade constantemente, todo dia, a menos que consuma uma substância específica para repor o que se perde, geralmente um traço de criaturas que se sustentam de forma antinatural, como certos mortos-vivos ou seres amaldiçoados que precisam se alimentar de energia vital alheia.\n\nSem a reposição regular, o personagem enfraquece progressivamente até ficar incapacitado ou morrer, o que o torna extremamente dependente de uma fonte que normalmente é rara, perigosa ou moralmente comprometedora de se conseguir.",
+      "exemplos": [
+        "A criatura precisa se alimentar de vitalidade alheia regularmente só para continuar de pé.",
+        "Rumores de vítimas enfraquecidas sem explicação levam caçadores a investigar a criatura por trás disso.",
+        "Sem acesso à sua fonte de energia por dias, a criatura mal consegue se mover."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma natureza de morto-vivo ou similar que os personagens jogáveis, humanos comuns, não têm.",
+      "relacionados": [
+        "dependencia"
+      ]
+    },
+    "eletrico": {
+      "descricao": "Elétrico descreve um corpo cujos sistemas internos funcionam à base de eletricidade, típico de seres artificiais ou de origem tecnológica avançada. Isso muda completamente como esse corpo reage a choques elétricos, água e outros fatores que normalmente não afetariam um ser biológico comum da mesma forma.\n\nÉ um traço de construtos, autômatos ou seres semelhantes, incompatível com biologia humana comum, que funciona sob princípios bem diferentes dos de carne e osso.",
+      "exemplos": [
+        "O autômato reage de forma violenta e imprevisível ao entrar em contato com água parada.",
+        "Um raio próximo causa um efeito estranhamente intenso sobre a criatura mecânica.",
+        "Artesãos que estudam o mecanismo interno descrevem algo parecido com veias de metal e faísca."
+      ],
+      "em_adamar": "Fica fora por exigir um corpo artificial ou tecnológico muito acima do nível de tecnologia e da natureza puramente humana de Adamar."
+    },
+    "enjoo-espacial": {
+      "descricao": "Enjoo Espacial faz o personagem passar mal em ambientes de gravidade zero ou alterada, como o interior de uma nave no espaço: náusea, desorientação e queda de desempenho em quase tudo enquanto durar a exposição a essas condições.\n\nÉ um traço pensado para campanhas de ficção científica com viagem espacial, sem qualquer aplicação em ambientes puramente terrestres e medievais.",
+      "exemplos": [
+        "Um personagem assim mal conseguiria se sustentar em qualquer cenário fora de naves espaciais.",
+        "A náusea intensa em gravidade zero o deixaria incapaz de agir direito nesse contexto.",
+        "Fora de um cenário de viagem espacial, essa condição simplesmente nunca chega a ser testada."
+      ],
+      "em_adamar": "Fica fora porque pressupõe viagem espacial e ambientes de gravidade alterada, algo muito além da tecnologia e do mundo de Adamar."
+    },
+    "enjoo-temporal": {
+      "descricao": "Enjoo Temporal faz o personagem passar mal ao viajar no tempo, com náusea e desorientação que atrapalham qualquer ação logo depois do salto temporal. É um traço específico de campanhas com viagem no tempo, sem qualquer efeito ou aplicação fora desse contexto.\n\nComo Adamar não tem viagem temporal, esse traço simplesmente não tem onde se manifestar dentro do cenário.",
+      "exemplos": [
+        "Esse efeito só apareceria em campanhas com verdadeira viagem no tempo, o que não existe em Adamar.",
+        "Fora desse contexto específico, a condição nunca chega a ser relevante ou testada.",
+        "Não há mecanismo no cenário que provoque esse tipo de deslocamento temporal."
+      ],
+      "em_adamar": "Fica fora porque Adamar não tem viagem no tempo nem mecanismo que a produza."
+    },
+    "entorpecido": {
+      "descricao": "Entorpecido significa que o personagem não tem sentido de tato: não sente textura, temperatura, dor de contato ou qualquer estímulo tátil pela pele. Isso traz vantagens estranhas, como imunidade a certos tipos de tortura ou desconforto físico, e desvantagens sérias, como não perceber ferimentos leves, objetos quentes ou frios, ou texturas perigosas ao toque.\n\nÉ mais comum em seres artificiais, mortos-vivos ou criaturas com corpos muito alterados do que em humanos comuns, cuja pele funciona normalmente.",
+      "exemplos": [
+        "A criatura só percebe que está pegando fogo ao ver a própria pele, não pela dor.",
+        "Não sente o gelo cortante da água da geleira ao atravessá-la, o que traz riscos próprios.",
+        "Manuseia objetos afiados ou quentes sem perceber o perigo até ser tarde demais."
+      ],
+      "em_adamar": "Fica fora porque pressupõe um corpo sem sensibilidade tátil normal, incompatível com a fisiologia humana comum de Adamar."
+    },
+    "expectativa-de-vida-reduzida": {
+      "descricao": "Expectativa de Vida Reduzida significa que o personagem envelhece e morre de causas naturais bem mais rápido do que um humano comum, com o problema piorando por nível. Rolagens relacionadas a envelhecimento e efeitos da idade passam a acontecer bem mais cedo na vida desse personagem.\n\nÉ típico de espécies ou linhagens de vida curta por natureza, algo que muda a relação do personagem com o tempo e com planos de longo prazo.",
+      "exemplos": [
+        "Uma criatura assim planeja a vida sabendo que terá bem menos tempo que um humano comum.",
+        "Efeitos da idade avançada aparecem nela numa fração do tempo que levaria numa pessoa comum.",
+        "Ela encara com urgência projetos que outra pessoa trataria com calma ao longo de décadas."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma espécie não humana de vida curta; Adamar só tem personagens humanos, com expectativa de vida humana comum."
+    },
+    "forma-de-sombras-desvantagem": {
+      "descricao": "Forma de Sombras, como desvantagem, prende o personagem permanentemente num estado incorpóreo feito de sombra, incapaz de voltar a um corpo sólido normal quando quiser ou precisar. Ele interage com o mundo físico de forma limitada e estranha, sem a solidez de um corpo comum.\n\nÉ um traço associado a espíritos, fantasmas ou seres feitos de sombra, não a uma pessoa comum que apenas usa esse poder à vontade.",
+      "exemplos": [
+        "A entidade sombria atravessa paredes, mas não consegue segurar um objeto físico com firmeza.",
+        "Testemunhas descrevem uma figura escura que se dissolve na escuridão sempre que confrontada.",
+        "Presa nessa forma, a criatura busca desesperadamente um jeito de recuperar um corpo sólido."
+      ],
+      "em_adamar": "Fica fora porque exige uma natureza incorpórea permanente que os personagens humanos jogáveis de Adamar não têm."
+    },
+    "fragilidade": {
+      "descricao": "Fragilidade descreve um corpo que se machuca, quebra ou reage mal a impactos, calor ou outros danos comuns com muito mais facilidade do que um corpo humano normal. É um traço de seres feitos de material delicado, como vidro ou cristal, mais do que de humanos, cuja resistência física já segue as regras padrão.\n\nCriaturas assim precisam evitar combate direto e impactos que um humano suportaria sem problema, tornando-as fisicamente vulneráveis mesmo quando poderosas em outros aspectos.",
+      "exemplos": [
+        "Um golpe que um humano levaria numa boa poderia estilhaçar essa criatura de material frágil.",
+        "Ela evita ativamente qualquer confronto físico direto, ciente da própria fragilidade.",
+        "Manuseia a si mesma com um cuidado que pareceria exagerado para qualquer pessoa comum."
+      ],
+      "em_adamar": "Fica fora porque pressupõe um corpo de material não humano; a fisiologia dos personagens de Adamar segue as regras humanas padrão."
+    },
+    "fraqueza": {
+      "descricao": "Fraqueza faz o personagem sofrer dano constante só por estar perto de algo específico, sem precisar de contato direto — a mera proximidade já é prejudicial. É um traço de criaturas com uma vulnerabilidade ambiental muito específica e severa, geralmente ligada à sua origem sobrenatural ou exótica.\n\nIsso obriga a criatura a evitar ativamente certos lugares, materiais ou condições, e pode ser explorado taticamente por quem descobre exatamente do que ela foge.",
+      "exemplos": [
+        "A criatura evita a todo custo se aproximar do material específico que a enfraquece só de estar perto.",
+        "Caçadores que descobrem essa fraqueza passam a usá-la como principal arma contra ela.",
+        "Ela planeja rotas inteiras só para não passar perto do que a prejudica."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma vulnerabilidade sobrenatural específica de criaturas exóticas, não de personagens humanos comuns.",
+      "relacionados": [
+        "vulnerabilidade",
+        "suscetivel"
+      ]
+    },
+    "facil-de-matar": {
+      "descricao": "Fácil de Matar faz o personagem sucumbir e morrer com ferimentos que outra pessoa sobreviveria: seu corpo simplesmente não aguenta tanto quanto o normal antes de falhar de vez, piorando por nível. É um traço sério, normalmente ligado a uma fraqueza física ou mágica que o narrador ajuda a justificar dentro da história.\n\nDiferente de simplesmente ter pouca resistência a ferimentos leves, aqui o problema é especificamente a margem entre ferimento grave e morte, que fica bem mais estreita.",
+      "exemplos": [
+        "Um ferimento que os companheiros considerariam sério é, para esse personagem, uma ameaça real de morte.",
+        "O curandeiro do grupo insiste em cuidados extras com ele depois de qualquer combate.",
+        "O grupo evita colocá-lo na linha de frente, sabendo o quão pouco ele aguenta."
+      ],
+      "em_adamar": "Por normalmente vir acompanhada de uma justificativa mágica ou física incomum, essa desvantagem entra combinando com o narrador."
+    },
+    "horizontal": {
+      "descricao": "Horizontal descreve um corpo estruturado para se locomover sobre quatro apoios, como o de um animal quadrúpede, em vez de um corpo ereto sobre duas pernas. Isso muda completamente a forma como o personagem interage com espaços, ferramentas e mobília feitos para seres bípedes.\n\nÉ um traço racial de criaturas quadrúpedes, não algo que se aplica a humanos, cuja anatomia bípede já está prevista nas regras padrão.",
+      "exemplos": [
+        "A criatura tem dificuldade em usar portas, escadas e ferramentas feitas para mãos e postura ereta.",
+        "Ela se move com uma velocidade natural que surpreende quem espera um andar bípede comum.",
+        "Precisa de adaptações especiais para qualquer equipamento pensado para um corpo ereto."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma anatomia quadrúpede; Adamar só tem personagens humanos de anatomia bípede comum."
+    },
+    "incapaz-de-aprender": {
+      "descricao": "Incapaz de Aprender significa que o personagem não consegue adquirir novas habilidades ou conhecimento de forma alguma: o que ele já sabe no início é basicamente tudo o que ele sempre vai saber, não importa quanto tempo ou esforço dedique a treinar. É uma limitação drástica, normalmente reservada a criaturas simples ou construtos com comportamento fixo, não a heróis jogáveis que evoluem com a campanha.\n\nDiferente de simplesmente aprender devagar, aqui a porta para o crescimento está praticamente fechada.",
+      "exemplos": [
+        "Por mais que treine, a criatura repete sempre o mesmo padrão de comportamento, sem evoluir.",
+        "Tentativas de ensiná-la algo novo simplesmente não deixam marca nenhuma.",
+        "Especialistas debatem se há sequer alguma centelha de aprendizado real por trás daquele comportamento fixo."
+      ],
+      "em_adamar": "Fica fora porque personagens jogáveis crescem e aprendem ao longo da campanha; esse traço é reservado a criaturas e construtos do mundo."
+    },
+    "intolerancia-g": {
+      "descricao": "Intolerância-G faz o personagem sofrer com gravidades diferentes da que seu corpo está acostumado: gravidade mais forte ou mais fraca do que o padrão o deixa fraco, desajeitado ou incapacitado, dependendo do tamanho do desvio. É um traço pensado para cenários de ficção científica com viagem entre planetas de gravidades distintas.\n\nSem esse tipo de viagem interplanetária no cenário, a condição nunca chega a ser relevante.",
+      "exemplos": [
+        "Esse traço só faria sentido em campanhas com viagem entre planetas de gravidades diferentes.",
+        "Fora desse contexto, a condição nunca é testada nem se manifesta de forma alguma.",
+        "Não há no cenário nenhum ambiente de gravidade alterada que ative essa desvantagem."
+      ],
+      "em_adamar": "Fica fora porque Adamar não tem viagem espacial nem ambientes de gravidade diferente da comum."
+    },
+    "invertebrado": {
+      "descricao": "Invertebrado significa que o personagem não tem coluna nem esqueleto rígido interno: seu corpo é mole e flexível, o que muda completamente como ele se move, se contorce e reage a certos tipos de dano e restrição física.\n\nÉ um traço de criaturas como certos monstros ou seres exóticos com anatomia radicalmente diferente da humana, não algo compatível com a fisiologia de uma pessoa comum.",
+      "exemplos": [
+        "A criatura se espreme por frestas e vãos onde nenhum humano jamais caberia.",
+        "Ela se contorce de formas que pareceriam fisicamente impossíveis para um corpo com esqueleto.",
+        "Amarras e algemas comuns simplesmente não a prendem do jeito que prenderiam uma pessoa normal."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma anatomia sem esqueleto, incompatível com a fisiologia humana dos personagens de Adamar."
+    },
+    "magnetismo-sobrenatural": {
+      "descricao": "Magnetismo Sobrenatural faz coisas estranhas e sobrenaturais acontecerem com mais frequência perto do personagem, mesmo sem ele fazer nada para provocar isso: fenômenos incomuns, encontros bizarros, coincidências absurdamente improváveis parecem gravitar ao redor dele. Não é um poder que ele controla, é mais uma marca que atrai o estranho.\n\nO narrador decide quando e como esse magnetismo se manifesta, já que ele controla diretamente a frequência e a natureza dos eventos sobrenaturais da campanha.",
+      "exemplos": [
+        "Toda vila pacata que ele visita parece esconder um mistério sobrenatural inexplicável.",
+        "Fenômenos estranhos e sem explicação parecem seguir o grupo sempre que ele está por perto.",
+        "Um sábio local comenta, desconfiado, que o azar sobrenatural parece grudado nele."
+      ],
+      "em_adamar": "Como controla diretamente a frequência de eventos sobrenaturais na campanha, essa desvantagem só entra combinando com o narrador."
+    },
+    "maldicao": {
+      "descricao": "Maldição funciona como o oposto extremo de uma sorte sobrenatural: as coisas simplesmente dão errado para o personagem com uma frequência e intensidade muito acima do normal, e ele não tem como escolher quando isso vai acontecer. É uma desvantagem pesadíssima, reservada a personagens verdadeiramente amaldiçoados de forma profunda e permanente.\n\nDiferente de azar comum, aqui o infortúnio é constante e severo o bastante para comprometer praticamente qualquer empreitada importante.",
+      "exemplos": [
+        "Planos cuidadosamente preparados desmoronam repetidamente por coincidências absurdas de má sorte.",
+        "Aliados começam a evitar se associar de perto com alguém tão marcado pelo azar.",
+        "Mesmo tarefas simples parecem sempre encontrar o pior resultado possível."
+      ],
+      "em_adamar": "Fica fora do que um jogador escolhe livremente na criação de personagem: é uma condição extrema demais, tratada como enredo controlado pelo narrador quando aparecer."
+    },
+    "maldicao-divina": {
+      "descricao": "Maldição Divina é uma punição imposta por uma entidade poderosa sobre o personagem, com efeitos que variam conforme a gravidade da ofensa e a vontade de quem amaldiçoou. Diferente de uma maldição genérica, aqui existe uma origem e um motivo específicos, e possivelmente uma forma de reverter a maldição ligada a essa origem.\n\nO narrador define a natureza exata da maldição, sua causa e suas condições de remoção, o que faz dela uma desvantagem construída em conjunto, não escolhida livremente na criação de personagem.",
+      "exemplos": [
+        "O personagem carrega o peso visível de ter desagradado algo muito além do seu entendimento.",
+        "Sacerdotes e sábios reconhecem os sinais da maldição e recuam ao vê-los.",
+        "Ele busca desesperadamente descobrir o que precisa fazer para reverter a punição que carrega."
+      ],
+      "em_adamar": "Como magia é rara e qualquer coisa dessa magnitude precisa de uma origem e condições bem definidas, essa desvantagem só entra combinando com o narrador.",
+      "relacionados": [
+        "destino-desvantagem"
+      ]
+    },
+    "manuseadores-precarios": {
+      "descricao": "Manuseadores Precários significa que o personagem não tem mãos, ou algo funcionalmente equivalente, capazes de manipular objetos com destreza como um humano faz. Isso torna extremamente difícil ou impossível usar ferramentas, armas, portas, fechaduras e praticamente qualquer coisa pensada para mãos humanas.\n\nÉ um traço de criaturas com anatomia radicalmente diferente, como certos animais ou monstros, e afeta profundamente demais a jogabilidade de um personagem pensado para aventuras convencionais.",
+      "exemplos": [
+        "A criatura precisa de outro método completamente diferente para interagir com objetos comuns.",
+        "Ferramentas e armas feitas para mãos humanas são simplesmente inutilizáveis para ela.",
+        "Ela depende de outras partes do corpo, de forma estranha, para qualquer tarefa manual."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma anatomia sem mãos utilizáveis, incompatível com personagens humanos jogáveis em Adamar."
+    },
+    "manutencao": {
+      "descricao": "Manutenção significa que o personagem precisa de cuidados técnicos regulares, parecidos com os de uma máquina, para continuar funcionando: peças, ajustes, combustível ou processos específicos que vão muito além de comer, dormir ou receber cuidados médicos comuns.\n\nÉ um traço de seres artificiais como autômatos e construtos, que dependem de conhecimento técnico específico para serem mantidos, não de humanos, cujas necessidades já são cobertas pelas regras padrão.",
+      "exemplos": [
+        "O autômato precisa ser levado a um artesão especializado periodicamente ou para de funcionar.",
+        "Sem as peças certas de reposição, seu funcionamento começa a falhar visivelmente.",
+        "Encontrar alguém que entenda o mecanismo interno dele é um problema recorrente em viagem."
+      ],
+      "em_adamar": "Fica fora porque pressupõe um corpo artificial que exige manutenção técnica, incompatível com a fisiologia humana dos personagens de Adamar."
+    },
+    "mentalidade-de-escravo": {
+      "descricao": "Mentalidade de Escravo significa que o personagem não tem iniciativa própria: ele obedece ordens, segue instruções e espera comando de alguém, mas tem dificuldade real para agir por conta própria, tomar decisões independentes ou improvisar sem orientação. É um traço pesado demais para um herói jogável, que normalmente precisa tomar suas próprias decisões durante a aventura.\n\nÉ mais comum como traço de certas criaturas subservientes controladas por outra vontade do que de um personagem protagonista.",
+      "exemplos": [
+        "A criatura espera passivamente por ordens, mesmo diante de uma ameaça óbvia e imediata.",
+        "Sem um comando claro, ela simplesmente não age, por mais urgente que a situação pareça.",
+        "Quem a controla percebe rapidamente que ela nunca vai questionar ou desviar da ordem dada."
+      ],
+      "em_adamar": "Fica fora porque compromete demais a autonomia esperada de um personagem jogável; é reservado a criaturas subservientes controladas por terceiros."
+    },
+    "mordida-fraca": {
+      "descricao": "Mordida Fraca descreve uma mandíbula ou dentição fraca demais para ser usada como arma natural eficaz, algo relevante para criaturas que normalmente atacam mordendo, animais e monstros com esse tipo de ataque natural. Para humanos, que não costumam lutar com os dentes de forma relevante nas regras, esse traço simplesmente não tem efeito prático.\n\nÉ, na prática, uma desvantagem pensada para ajustar criaturas específicas com ataque de mordida, não para personagens humanos comuns.",
+      "exemplos": [
+        "Uma criatura que normalmente morderia para se defender tem esse ataque natural comprometido.",
+        "Naturalistas notam a mandíbula visivelmente mais fraca do espécime observado.",
+        "Sem a mordida como opção confiável, a criatura recorre a outras formas de ataque."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma arma natural de mordida que os personagens humanos jogáveis não usam como ataque relevante."
+    },
+    "mao-fraca": {
+      "descricao": "Mão Fraca representa uma pegada ruim: mãos, garras ou patas que não fecham com firmeza. Cada nível dá uma penalidade em tudo o que depende de segurar forte, como escalar, se agarrar a uma borda, manter a arma na mão contra uma tentativa de desarme ou carregar algo pendurado.\n\nÉ uma desvantagem pensada para criaturas e raças com mãos diferentes das humanas; num humano comum, só faria sentido como consequência de ferimento grave, e aí o narrador trata a lesão caso a caso.",
+      "exemplos": [
+        "A escalada da muralha fica bem mais difícil porque a criatura não consegue fechar os dedos na pedra.",
+        "Um golpe de desarme arranca a arma da mão com muito mais facilidade.",
+        "Pendurado na corda sobre o abismo, cada rodada exige um teste mais duro para não soltar."
+      ],
+      "em_adamar": "Fica fora porque Adamar só tem personagens humanos, com mãos humanas; perdas de força na mão por ferimento são tratadas pelo narrador."
+    },
+    "noturno": {
+      "descricao": "Noturno significa que o personagem só consegue ficar realmente ativo durante a noite: de dia, ele sofre penalidades sérias de desempenho, sonolência ou fraqueza, o oposto de alguém que simplesmente prefere a noite por hábito. É um traço racial ou biológico, não uma escolha de estilo de vida.\n\nIsso limita bastante a participação em qualquer atividade diurna, empurrando o personagem para uma rotina de aventura centrada exclusivamente no período noturno.",
+      "exemplos": [
+        "A criatura mal consegue se manter em pé sob o sol forte do meio-dia.",
+        "Ela planeja toda a jornada em torno de viajar apenas depois do anoitecer.",
+        "Durante o dia, prefere se esconder e descansar, só retomando força ao cair da noite."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma biologia racial não humana; personagens humanos de Adamar seguem o ciclo padrão de dia e noite."
+    },
+    "nao-iconografico": {
+      "descricao": "Não-Iconográfico significa que o personagem tem dificuldade real para entender símbolos, imagens, mapas, sinais e representações visuais abstratas: ele processa o mundo de um jeito mais literal, sem captar bem o que uma figura ou símbolo representa. É um traço de mentalidades bem diferentes da humana comum, mais do que de uma pessoa comum, por mais inculta que seja.\n\nIsso dificulta usar mapas, reconhecer brasões, símbolos religiosos ou qualquer comunicação baseada em imagens em vez de palavras.",
+      "exemplos": [
+        "A criatura olha para o mapa detalhado sem conseguir relacioná-lo ao terreno real ao redor.",
+        "Símbolos de perigo pintados numa porta não significam nada para ela.",
+        "Alguém precisa descrever em palavras o que uma figura ou símbolo representa, já que a imagem sozinha não comunica nada."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma mentalidade não humana incapaz de processar símbolos; personagens humanos de Adamar entendem imagens normalmente."
+    },
+    "padrao-de-tempo-reduzido": {
+      "descricao": "Padrão de Tempo Reduzido faz o personagem agir, pensar e reagir muito mais devagar do que o normal, numa escala tão drástica que ele fica em desvantagem severa em praticamente qualquer situação que exija rapidez, incluindo conversas e combate. É um traço extremo, típico de seres com um metabolismo ou natureza radicalmente diferente da humana, como certas criaturas colossais ou de origem exótica.\n\nDado o quão incapacitante isso é, dificilmente é compatível com um personagem jogável pensado para participar ativamente de aventuras dinâmicas.",
+      "exemplos": [
+        "A criatura leva um tempo absurdamente longo para reagir a qualquer estímulo ao redor.",
+        "Uma conversa inteira se passa antes que ela consiga formular uma resposta simples.",
+        "Ela representa uma ameaça quase estática, mas ainda assim perigosa se alguém tiver paciência de esperar sua reação."
+      ],
+      "em_adamar": "Fica fora por ser incapacitante demais para um personagem jogável ativo, e por pressupor uma natureza muito distante da humana comum de Adamar."
+    },
+    "refeicao-demorada": {
+      "descricao": "Refeição Demorada significa que o personagem precisa de horas para se alimentar de verdade, bem mais tempo do que uma pessoa comum levaria numa refeição normal. Isso consome tempo de descanso e de viagem que o resto do grupo não perde, e torna comer em segurança um desafio logístico à parte.\n\nÉ um traço racial de certas criaturas com hábitos alimentares muito diferentes dos humanos, cujas refeições seguem o ritmo comum já previsto nas regras padrão.",
+      "exemplos": [
+        "Enquanto o grupo já terminou de comer, a criatura ainda está no meio da própria refeição.",
+        "Ela precisa de um momento seguro e prolongado só para se alimentar, o que limita quando e onde pode comer.",
+        "Viajantes se impacientam esperando o tempo que ela leva só para terminar uma refeição simples."
+      ],
+      "em_adamar": "Fica fora porque pressupõe hábitos alimentares raciais não humanos; os personagens de Adamar seguem o ritmo comum de refeição."
+    },
+    "reprogramavel": {
+      "descricao": "Reprogramável significa que o personagem pode ter seu comportamento, suas ordens ou até sua personalidade alterados por um processo específico controlado por outra pessoa, geralmente um traço de construtos, autômatos ou seres artificiais criados para obedecer. Isso o torna vulnerável a ter suas prioridades reescritas por quem tem acesso ao método de reprogramação.\n\nDiferente de simples persuasão ou manipulação social, aqui a mudança é direta e mecânica, feita através de um processo técnico específico.",
+      "exemplos": [
+        "Quem construiu o autômato pode, em teoria, reescrever suas ordens com o processo correto.",
+        "Ele age exatamente conforme foi configurado, sem qualquer resistência interna ao comando.",
+        "Um artesão rival tenta obter acesso ao mecanismo para reprogramá-lo para seus próprios fins."
+      ],
+      "em_adamar": "Fica fora porque pressupõe um corpo artificial reprogramável, incompatível com a natureza humana dos personagens jogáveis de Adamar."
+    },
+    "repugnancia": {
+      "descricao": "Repugnância é uma reação física forte e involuntária diante de uma substância ou coisa específica: náusea, tremores, mal-estar real, não apenas desconforto psicológico. Quanto mais grave a reação e mais comum a substância, mais pesada a desvantagem.\n\nDiferente de Aversão, que empurra o personagem para longe fisicamente, aqui o problema é a reação do próprio corpo ao contato ou à proximidade, o que pode até incapacitá-lo temporariamente se a exposição for forte o bastante.",
+      "exemplos": [
+        "O cheiro específico faz a pessoa passar mal na hora, mesmo sem qualquer contato direto.",
+        "Ela evita qualquer prato que possa conter o ingrediente que lhe causa essa reação.",
+        "Fica visivelmente mal só de estar num cômodo onde a substância está presente."
+      ],
+      "em_adamar": "Fica fora porque, no material do site, essa reação está reservada a origens exóticas específicas fora do padrão humano dos personagens jogáveis de Adamar.",
+      "relacionados": [
+        "aversao",
+        "suscetivel"
+      ]
+    },
+    "sangue-frio": {
+      "descricao": "Sangue Frio faz o personagem ficar visivelmente lento e prejudicado em temperaturas baixas, de um jeito parecido com um réptil que perde energia no frio: reflexos, velocidade e desempenho geral caem bastante enquanto ele estiver com frio, melhorando de volta assim que se aquece.\n\nÉ um traço racial de criaturas de sangue frio, não de humanos, cuja fisiologia já regula a própria temperatura corporal de forma independente do ambiente dentro das regras padrão.",
+      "exemplos": [
+        "A criatura fica visivelmente mais lenta e apática durante o inverno rigoroso.",
+        "Ela busca ativamente fontes de calor para recuperar a energia perdida no frio.",
+        "Um oponente esperto escolhe lutar contra ela justamente num dia gelado, sabendo da desvantagem."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma fisiologia racial de sangue frio; personagens humanos de Adamar regulam a própria temperatura normalmente."
+    },
+    "sem-pernas": {
+      "descricao": "Sem Pernas significa que a espécie do personagem simplesmente não tem pernas: ele se move de outra forma completamente diferente de andar ou correr, como rastejar, flutuar, nadar ou deslizar, dependendo da natureza da criatura. Isso muda como ele interage com terreno, obstáculos e qualquer situação que dependa de se locomover como um bípede.\n\nÉ um traço racial, não uma lesão: a criatura nunca teve pernas para começo de conversa, ao contrário de alguém que perdeu o uso delas por ferimento.",
+      "exemplos": [
+        "A criatura desliza pelo chão de um jeito completamente diferente de qualquer bípede.",
+        "Ela tem dificuldade com terrenos ou obstáculos pensados para quem anda sobre pernas.",
+        "Sua forma de se locomover surpreende quem nunca viu uma criatura assim antes."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma anatomia racial sem pernas; Adamar só tem personagens humanos de anatomia humana comum."
+    },
+    "sem-recuperacao": {
+      "descricao": "Sem Recuperação significa que o personagem não se cura naturalmente com o tempo: ferimentos não fecham sozinhos como fechariam para uma pessoa comum, e ele depende inteiramente de cura externa, mágica, tecnológica ou de outra natureza, para se recuperar de qualquer dano. A versão mais severa impede até esse tipo de reparo por certos meios.\n\nÉ um traço de seres artificiais, mortos-vivos ou construtos, cuja cura natural simplesmente não existe do jeito que existe para um corpo vivo comum.",
+      "exemplos": [
+        "Um ferimento antigo continua exatamente do mesmo jeito, meses depois, sem cicatrizar nada.",
+        "A criatura depende inteiramente de reparo externo para voltar a funcionar bem.",
+        "Sem acesso a quem possa repará-la, ela carrega os danos acumulados indefinidamente."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma natureza sem cura natural própria de construtos ou mortos-vivos, incompatível com personagens humanos jogáveis."
+    },
+    "semiereto": {
+      "descricao": "Semiereto descreve uma postura curvada, não totalmente ereta, parecida com a de certos primatas: o personagem não fica completamente em pé como um humano comum, o que muda sutilmente sua forma de se mover e sua presença física.\n\nÉ um traço racial de espécies com postura intermediária entre bípede e quadrúpede, algo fora da anatomia humana padrão.",
+      "exemplos": [
+        "A criatura se move com uma postura curvada característica, nunca totalmente ereta.",
+        "Observadores notam de imediato que ela não anda do jeito ereto que uma pessoa comum andaria.",
+        "Certas passagens estreitas são, na verdade, mais fáceis para ela por causa dessa postura."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma anatomia racial não totalmente ereta; os personagens humanos de Adamar têm postura humana padrão."
+    },
+    "sonolento": {
+      "descricao": "Sonolento, como traço racial, significa que a espécie do personagem precisa de muito mais sono que um humano, por natureza e não por condição individual: grandes períodos de inatividade são parte normal do ciclo de vida dessa espécie, mais extremo do que a desvantagem individual equivalente.\n\nÉ diferente de Sono Complementar, que é uma condição pessoal: aqui é uma característica da própria raça, algo que Adamar, com elenco só humano, não contempla como opção de personagem.",
+      "exemplos": [
+        "Essa espécie inteira entra em longos períodos de inatividade como parte do próprio ciclo natural.",
+        "Encontrar um representante ativo dela fora desses períodos seria incomum.",
+        "Comunidades dessa espécie organizam a vida inteira em torno desses ciclos longos de repouso."
+      ],
+      "em_adamar": "Fica fora porque é um traço racial de espécie não humana; Adamar só tem personagens humanos.",
+      "relacionados": [
+        "sono-complementar"
+      ]
+    },
+    "supersensitivo": {
+      "descricao": "Supersensitivo faz o personagem captar pensamentos e emoções alheias ao redor sem querer e sem conseguir desligar essa percepção, um efeito involuntário que pode sobrecarregar e confundir, especialmente em lugares cheios de gente. Diferente de uma habilidade controlada de ler mentes, aqui é um vazamento constante e incontrolável.\n\nO narrador decide o alcance e a intensidade exata desse efeito, já que ele mexe diretamente com informação privilegiada sobre outros personagens e NPCs.",
+      "exemplos": [
+        "No mercado lotado, a mistura de emoções e pensamentos alheios o deixa momentaneamente atordoado.",
+        "Ele capta, sem querer, um pensamento hostil de alguém que sorria educadamente na sua frente.",
+        "Precisa se afastar de multidões só para conseguir organizar os próprios pensamentos."
+      ],
+      "em_adamar": "Como envolve captar diretamente pensamentos alheios, algo que mexe com informação controlada pelo narrador, essa desvantagem só entra combinando com ele."
+    },
+    "suporte-de-vida-ampliado": {
+      "descricao": "Suporte de Vida Ampliado significa que o personagem precisa de condições ambientais especiais para sobreviver, além do que um humano comum precisa: uma atmosfera específica, uma faixa de temperatura incomum ou algum outro requisito ambiental raro. Fora dessas condições, ele sofre ou corre risco de vida.\n\nÉ um traço típico de seres de origem exótica adaptados a ambientes bem diferentes do mundo comum, não de humanos, cujas necessidades ambientais já são as padrão do cenário.",
+      "exemplos": [
+        "A criatura carrega consigo algum meio de recriar as condições de que precisa para sobreviver longe do próprio habitat.",
+        "Ela evita certas regiões do mundo simplesmente porque o ambiente ali a prejudica.",
+        "Precisa de preparativos especiais antes de se aventurar para fora do ambiente ao qual está adaptada."
+      ],
+      "em_adamar": "Fica fora porque pressupõe necessidades ambientais exóticas; os personagens humanos de Adamar têm as necessidades ambientais humanas padrão."
+    },
+    "susceptibilidade-a-magia": {
+      "descricao": "Susceptibilidade à Magia faz o personagem ser afetado com mais força do que o normal por efeitos mágicos, sejam eles benéficos ou prejudiciais: feitiços pegam nele com mais intensidade do que pegariam numa pessoa comum, piorando por nível. Isso pode ser resultado de uma origem, uma maldição ou uma sensibilidade natural ao sobrenatural.\n\nComo a magia em Adamar é rara e controlada de perto pelo narrador, faz sentido definir com ele a origem exata dessa sensibilidade e como ela aparece na história.",
+      "exemplos": [
+        "Um feitiço que mal incomodaria outra pessoa o derruba com força total.",
+        "Magos experientes reconhecem nele um alvo incomumente fácil para seus efeitos.",
+        "Ele evita se expor a rituais ou artefatos mágicos desconhecidos, sabendo o quanto é mais vulnerável a eles."
+      ],
+      "em_adamar": "Como a magia é rara e fica sob controle direto do narrador em Adamar, essa sensibilidade extra só entra combinando com ele."
+    },
+    "tetraplegico": {
+      "descricao": "Tetraplégico significa que o personagem não consegue se mover: sem controle sobre braços e pernas, ele depende inteiramente de outras pessoas ou de dispositivos externos para qualquer deslocamento ou ação física. É uma condição extrema, praticamente incompatível com participar ativamente de aventuras que exigem movimento e ação física constante.\n\nDiferente de uma deficiência parcial, aqui a limitação é total, o que torna esse traço mais adequado a um personagem coadjuvante muito específico do que a um protagonista comum de mesa.",
+      "exemplos": [
+        "Alguém nessa condição dependeria inteiramente do grupo para qualquer deslocamento.",
+        "Ele precisaria de um dispositivo ou de outra pessoa só para participar fisicamente de uma cena de ação.",
+        "A limitação tornaria praticamente qualquer combate corpo a corpo impossível de enfrentar sozinho."
+      ],
+      "em_adamar": "Fica fora por ser incapacitante demais para o tipo de personagem jogável ativo que as aventuras de Adamar pressupõem."
+    },
+    "vozes-fantasmagoricas": {
+      "descricao": "Vozes Fantasmagóricas faz o personagem ouvir vozes que mais ninguém ouve: sussurros, conversas, gritos distantes sem fonte física visível. Pode ser um sinal de sensibilidade ao sobrenatural, uma maldição ou algo pior, e o narrador decide o que essas vozes realmente são e o que elas dizem.\n\nAlém do desconforto óbvio, isso complica a vida social do personagem: quem o ouve falar sozinho ou reagir a algo que ninguém mais percebe tende a desconfiar da sua sanidade.",
+      "exemplos": [
+        "Ele reage abruptamente a um sussurro que ninguém mais no grupo ouviu.",
+        "Uma voz distante o adverte sobre algo momentos antes de a ameaça real aparecer.",
+        "Companheiros trocam olhares preocupados quando ele conversa com o vazio."
+      ],
+      "em_adamar": "Como o narrador precisa definir o que as vozes realmente são e controlar o que elas revelam, essa desvantagem só entra combinando com ele."
+    },
+    "vulnerabilidade": {
+      "descricao": "Vulnerabilidade faz o personagem sofrer dano extra de um tipo específico de ataque ou origem, além do normal que qualquer pessoa sofreria. Quanto mais comum o tipo de ataque ao qual ele é vulnerável e maior o dano extra, mais pesada a desvantagem.\n\nÉ um traço normalmente associado a origens exóticas ou sobrenaturais, certas criaturas que temem um material ou tipo de dano específico, mais do que a fraquezas comuns de um humano regular.",
+      "exemplos": [
+        "Um tipo específico de arma ou material causa nela um estrago desproporcionalmente maior que o normal.",
+        "Caçadores que descobrem essa fraqueza vão atrás do material certo antes de enfrentá-la.",
+        "Ela evita qualquer situação que a exponha ao tipo de dano ao qual é vulnerável."
+      ],
+      "em_adamar": "Fica fora porque pressupõe uma origem exótica ou sobrenatural específica, fora do padrão humano dos personagens jogáveis de Adamar.",
+      "relacionados": [
+        "fraqueza",
+        "suscetivel"
+      ]
+    },
+    "unico": {
+      "descricao": "Único significa que o personagem só pode existir numa única linha temporal ou realidade: não há duplicatas, variantes ou versões alternativas dele em nenhum lugar, algo relevante em cenários com viagem no tempo, dimensões paralelas ou multiverso, onde esse tipo de coisa normalmente poderia acontecer.\n\nSem elementos de viagem temporal ou realidades paralelas na campanha, essa desvantagem nunca chega a ter efeito prático algum.",
+      "exemplos": [
+        "Esse traço só teria peso relevante num cenário com viagem no tempo ou universos paralelos.",
+        "Fora desse contexto, a condição nunca chega a ser testada ou relevante na história.",
+        "Não há no mundo qualquer mecanismo que produza cópias ou versões alternativas de alguém."
+      ],
+      "em_adamar": "Fica fora porque Adamar não tem viagem no tempo, multiverso nem qualquer mecanismo que crie versões alternativas de um personagem."
+    }
+  }
+}

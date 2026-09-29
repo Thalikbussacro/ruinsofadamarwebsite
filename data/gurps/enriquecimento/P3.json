@@ -1,0 +1,534 @@
+{
+ "lista": "pericias",
+ "itens": {
+  "manejo-de-barcos": {
+   "descricao": "Manejo de Barcos é a perícia de comandar uma embarcação como capitão ou timoneiro responsável: decidir manobras, dar ordens à tripulação, escolher rota diante de vento e corrente, e reagir depressa quando a tempestade vira ou um baixio aparece à frente. Ela é sobre comando e julgamento náutico, não sobre o trabalho braçal de puxar corda e içar vela — isso é Marinhagem — nem sobre traçar e manter o rumo por astros e mapas, que é Navegação. Um capitão completo costuma ter as três.\n\nCada especialização cobre um tipo de embarcação; comandar um tipo diferente do treinado normalmente exige testar com penalidade, e o livro não garante troca livre entre elas. Falhar num teste de Manejo de Barcos em más condições pode significar avarias, carga perdida ou a embarcação encalhada — raramente um erro pequeno e sem consequência.",
+   "exemplos": [
+    "O capitão testa Manejo de Barcos para tirar a coca do porto antes que a maré baixe demais.",
+    "Uma nevasca súbita empurra o navio contra os recifes; só um bom teste evita que ele encalhe.",
+    "Ao avistar velas desconhecidas se aproximando rápido, o timoneiro decide se vira para o vento ou tenta escapar rio acima."
+   ],
+   "em_adamar": "Livre na especialização Navio: comandar veleiros e embarcações a remo cabe perfeitamente numa Roestia de NT3, com portos, cabotagem e travessias de longo curso. As demais especializações do livro (dirigível, submarino, espaçonave, nave estelar) pedem tecnologia muito além do que existe em Adamar e não existem no cenário.",
+   "dica_mesa": "Anote a especialização junto ao nome da perícia — aqui, quase sempre \"Manejo de Barcos (Navio)\".",
+   "relacionados": [
+    "marinhagem",
+    "navegacao",
+    "remo-vela"
+   ]
+  },
+  "mangual": {
+   "descricao": "Mangual cobre o uso de manguais e morning stars de uma mão: armas com uma cabeça pesada presa por corrente ou correia curta a um cabo, giradas para golpear por cima de escudos e guardas. O movimento oscilante da cabeça torna o golpe difícil de antecipar e de aparar por quem está do outro lado, mas o preço é que o próprio usuário tem menos controle fino sobre onde a arma vai bater e como reagir depressa a um contra-ataque.\n\nÉ perícia separada de Maça/Machado porque manejar a corrente muda o jeito de golpear, de aparar e de recuperar a arma entre um golpe e outro — quem só treinou armas rígidas sente a diferença na primeira vez que segura um mangual.",
+   "exemplos": [
+    "O miliciano improvisado troca a foice pelo mangual do avô para a ronda noturna contra saqueadores.",
+    "Num duelo de taverna, o mangual passa por cima do escudo do adversário e pega de surpresa.",
+    "Um guarda tenta aparar o golpe oscilante e erra feio, sem entender por onde a cabeça da arma vinha."
+   ],
+   "em_adamar": "Livre: arma simples de metal e corrente, coerente com qualquer forja de NT3, comum entre milicianos e camponeses armados às pressas.",
+   "dica_mesa": "Lembre ao jogador que o mangual atrapalha as próprias defesas rápidas — ele não substitui bem um escudo.",
+   "relacionados": [
+    "mangual-de-duas-maos",
+    "maca-machado"
+   ]
+  },
+  "mangual-de-duas-maos": {
+   "descricao": "Mangual de Duas Mãos é a versão maior e mais pesada da arma articulada, empunhada com as duas mãos para golpes mais fortes e alcance maior. O funcionamento é o mesmo do mangual de uma mão — uma cabeça pesada solta na ponta de uma corrente ou corrente dupla —, só que em escala capaz de derrubar um oponente com armadura pesada ou espantar mais de um adversário ao redor.\n\nO tamanho cobra seu preço: a arma é lenta para recuperar entre um golpe e o próximo, ruim para defesas rápidas e quase impossível de usar em espaços apertados, como um corredor de masmorra ou dentro de uma tenda. Vale menos que uma arma rígida de duas mãos quando o combate é raso e cheio de obstáculos.",
+   "exemplos": [
+    "O campeão da vila gira o mangual de duas mãos para abrir espaço numa emboscada na estrada.",
+    "Preso entre paredes de um corredor estreito, o guerreiro percebe tarde demais que não há espaço para o giro da arma.",
+    "Um golpe largo do mangual varre dois saqueadores que se aproximavam por flancos diferentes."
+   ],
+   "em_adamar": "Livre: mesma lógica de metal e corrente do mangual comum, plenamente coerente com a metalurgia de NT3 de Adamar.",
+   "relacionados": [
+    "mangual",
+    "maca-machado-de-duas-maos"
+   ]
+  },
+  "manha": {
+   "descricao": "Manha (Streetwise, no original) é a perícia de circular pelo submundo de um lugar: saber quem manda em que rua, quem compra e vende o que é proibido, que gíria e que sinais usar para não parecer um forasteiro perdido, e onde encontrar alguém disposto a negociar informação ou mercadoria ilícita. Um teste bem-sucedido diz que aquilo que você procura existe por perto e como chegar até ele — não garante que a pessoa do outro lado vá cooperar de graça ou sem desconfiança.\n\nFalhar pode ser inofensivo (ninguém sabe de nada) ou pior: chamar a atenção de quem não devia notar você. Não confunda com Política, que é o jogo de poder entre os de cima, nem com Ocultismo, que é sobre boatos de magia e coisas estranhas — Manha é sobre gente e crime comum.",
+   "exemplos": [
+    "Na cidade portuária, o grupo usa Manha para achar um receptador que compre a prataria roubada sem perguntas.",
+    "Um teste de Manha revela quem é o \"olho\" da guilda de ladrões local antes que o grupo pise em falso.",
+    "Precisando de veneno sem passar pela guarda, o personagem pergunta às pessoas certas nos becos certos."
+   ],
+   "em_adamar": "Livre: qualquer cidade ou vila grande o bastante para ter contrabando e crime organizado serve de cenário, sem depender de tecnologia alguma.",
+   "relacionados": []
+  },
+  "maquiagem": {
+   "descricao": "Maquiagem é a perícia de alterar a aparência do rosto e da pele com tintas, pós e pigmentos: realçar beleza para uma festa, compor a máscara exagerada de um ator de teatro ou, aplicada com mais cuidado, ajudar um disfarce a passar por perto. Ela não substitui Disfarce — que cobre roupas, postura e a farsa como um todo —, mas as duas se somam bem: uma boa maquiagem facilita convencer quem olha de perto.\n\nO resultado depende do que se tem à mão: pigmentos naturais, cera, carvão e óleo já bastam para a maior parte dos usos em Adamar; nada aqui exige nada além disso.",
+   "exemplos": [
+    "A atriz da trupe usa Maquiagem para parecer trinta anos mais velha no papel da rainha viúva.",
+    "Antes de entrar disfarçado na guarnição, o personagem cobre uma cicatriz reconhecível com pigmento e cera.",
+    "Para a festa da colheita, alguém pinta o rosto das crianças com desenhos tradicionais da vila."
+   ],
+   "em_adamar": "Livre: pigmentos, cera e carvão já existem em qualquer NT3, sem exigir nada além do que uma vila ou cidade produz.",
+   "relacionados": [
+    "disfarce"
+   ]
+  },
+  "marinhagem": {
+   "descricao": "Marinhagem é a perícia do trabalho comum a bordo: içar e enrolar velas, remar em conjunto, amarrar nós, carregar e estivar carga, e simplesmente não atrapalhar o resto da tripulação numa embarcação em movimento. É perícia de tripulante, não de comando — quem tira o navio do porto e decide o rumo usa Manejo de Barcos e Navegação; Marinhagem é para quem obedece ordens e faz o barco funcionar.\n\nPor ser fácil e útil, é comum entre pescadores, moradores de porto e qualquer um que já tenha passado temporadas embarcado, mesmo sem nunca ter comandado nada.",
+   "exemplos": [
+    "Durante a tempestade, o grupo todo testa Marinhagem para ajudar a tripulação a arriar as velas a tempo.",
+    "Um passageiro que já foi marinheiro se oferece para ajudar a estivar a carga e ganha respeito da tripulação.",
+    "Sem saber nada de Marinhagem, o nobre atrapalha mais do que ajuda quando pega numa corda errada."
+   ],
+   "em_adamar": "Livre: trabalho braçal de bordo, presente em qualquer costa ou rio navegável de Adamar, sem exigir nada de tecnologia avançada.",
+   "relacionados": [
+    "manejo-de-barcos",
+    "remo-vela"
+   ]
+  },
+  "matematica": {
+   "descricao": "Matemática cobre o raciocínio formal com números, medidas e formas — não a conta de mercado do dia a dia, mas o conhecimento estruturado usado por agrimensores, arquitetos, astrônomos e estudiosos. Ela se especializa por área: Matemática Aplicada, para cálculos usados em engenharia e construção; Matemática Pura, mais abstrata e teórica; Topografia, para medir terrenos e traçar mapas com precisão; Criptologia, para cifrar e decifrar mensagens; e Estatística, para tratar dados e probabilidades.\n\nAs especializações se pré-definem bem entre si — quem domina uma tem uma base sólida para tentar as outras com penalidade —, mas cada uma tem seu uso próprio na mesa: não é a mesma coisa calcular a curva de uma ponte e decifrar a correspondência cifrada de um espião.",
+   "exemplos": [
+    "O engenheiro da guarnição usa Matemática (Aplicada) para calcular se a ponte aguenta o peso do cerco.",
+    "Um estudioso solitário passa anos com Matemática (Pura) tentando provar um teorema que ninguém mais entende.",
+    "A interceptação de uma carta cifrada exige um teste de Matemática (Criptologia) para quebrar o código."
+   ],
+   "em_adamar": "Livre: geometria, contas e medições avançadas não dependem de tecnologia acima de NT3 — são conhecimento, não maquinário. Estatística como área formal é um pouco além do que se esperaria de uma sociedade medieval, mas fica livre por não depender de nenhuma tecnologia específica.",
+   "relacionados": []
+  },
+  "maca-machado": {
+   "descricao": "Maça/Machado cobre machados, maças e martelos de guerra usados com uma mão: armas versáteis, boas tanto para golpear com a lâmina ou a cabeça pesada quanto para engatar o cabo do adversário e puxar seu escudo ou arma para fora de posição. É uma das perícias de arma mais comuns em Adamar, porque cobre ferramentas do dia a dia reaproveitadas como armas — o machado de lenhador serve tanto para cortar madeira quanto, na emergência, para se defender.\n\nComparada às espadas de uma mão, essa família de armas costuma ser melhor contra armaduras pesadas e pior para aparar rapidamente uma sequência de golpes.",
+   "exemplos": [
+    "O lenhador da vila pega o machado de trabalho para enfrentar os saqueadores que cercam a propriedade.",
+    "Contra um guarda de armadura pesada, o golpe de maça passa onde uma lâmina fina escorregaria.",
+    "Num beco estreito, o combatente usa o cabo do machado para prender o braço do adversário."
+   ],
+   "em_adamar": "Livre: ferramentas e armas de metal comuns em qualquer forja de vila, plenamente coerentes com NT3.",
+   "relacionados": [
+    "maca-machado-de-duas-maos",
+    "mangual"
+   ]
+  },
+  "maca-machado-de-duas-maos": {
+   "descricao": "Maça/Machado de Duas Mãos cobre as versões grandes dessas armas — machados de guerra, malhos e martelos empunhados com as duas mãos — capazes de golpes muito mais fortes, mas que exigem espaço para o giro e deixam quem os empunha mais exposto entre um ataque e o próximo. É a perícia clássica do guerreiro de linha de frente disposto a trocar defesa por poder de fogo bruto contra armaduras pesadas ou criaturas resistentes.\n\nComo toda arma grande de duas mãos, ela rende pouco em corredores estreitos, dentro de tendas ou cercado de mais de um adversário ao mesmo tempo.",
+   "exemplos": [
+    "O campeão da aldeia enfrenta o urso enlouquecido com um malho de duas mãos herdado do pai.",
+    "Cercado por vários saqueadores, o guerreiro de machado grande percebe que não tem espaço nem tempo para se defender de todos.",
+    "Contra a armadura do cavaleiro capturado, o martelo de guerra faz o que uma espada não faria."
+   ],
+   "em_adamar": "Livre: mesma metalurgia simples das versões de uma mão, sem exigir nada além de NT3.",
+   "relacionados": [
+    "maca-machado",
+    "mangual-de-duas-maos"
+   ]
+  },
+  "mecanica": {
+   "descricao": "Mecânica é a perícia de entender, consertar e ajustar mecanismos: rodas d'água, moinhos de vento, engrenagens de relógio, guindastes, bestas de cerco e outras construções que convertem força em movimento. Ela diz se uma engenhoca vai funcionar, por que parou de funcionar e o que fazer para consertá-la com as ferramentas e materiais disponíveis — sem isso, um mecanismo quebrado em Adamar costuma ficar quebrado, porque poucos sabem mexer nele.\n\nÉ perícia de ofício, testada tanto para reparo de emergência quanto para manutenção de rotina, e costuma andar junto com Ferreiro ou Engenharia quando o problema é maior que um simples ajuste.",
+   "exemplos": [
+    "O moinho da vila para de girar na pior hora da colheita, e só um teste de Mecânica descobre o eixo emperrado.",
+    "Durante o cerco, o engenheiro testa Mecânica para religar a besta de torção danificada por uma pedra.",
+    "Um guindaste de porto range e trava com a carga no ar; alguém precisa decidir rápido o que destravar primeiro."
+   ],
+   "em_adamar": "Livre: mecanismos simples movidos a água, vento ou tração animal são tecnologia de NT3, plenamente presentes em Adamar.",
+   "relacionados": []
+  },
+  "medicina": {
+   "descricao": "Medicina é o conhecimento formal de diagnosticar e tratar doenças e ferimentos: reconhecer sintomas, decidir o tratamento certo, cuidar de recuperação prolongada e evitar que um ferimento tratado errado piore ou infeccione. Ela vai além de estancar sangue na hora — isso é Primeiros Socorros — e cobre o acompanhamento de um paciente ao longo de dias ou semanas, com os recursos limitados de um mundo sem hospitais modernos.\n\nEm Adamar a cura costuma ser lenta e cara, então quem realmente tem Medicina (um físico, um cirurgião de guarnição, uma curandeira formada) é figura valiosa e rara — o tipo de pessoa que uma vila inteira tenta manter por perto.",
+   "exemplos": [
+    "O físico da cidade testa Medicina para decidir se a febre do mercador é só exaustão ou algo mais grave.",
+    "Depois da emboscada, alguém precisa de cuidados prolongados que Primeiros Socorros não resolve sozinho.",
+    "Um cirurgião de guarnição avalia se vale a pena arriscar remover a ponta de flecha alojada fundo."
+   ],
+   "em_adamar": "Livre: conhecimento médico pré-moderno é coerente com NT3; a raridade de médicos de verdade é intencional no tom do cenário, não uma restrição de regra.",
+   "dica_mesa": "Deixe claro para a mesa que cura mágica não existe por perto — Medicina de verdade importa em Adamar.",
+   "relacionados": [
+    "primeiros-socorros",
+    "medicina-alternativa",
+    "veterinaria"
+   ]
+  },
+  "medicina-alternativa": {
+   "descricao": "Medicina Alternativa cobre as tradições populares de cura de um povo específico: chás, cataplasmas, rezas e rituais passados de geração em geração, muitas vezes eficazes mesmo sem explicação formal do porquê. Ela se especializa por cultura ou tradição, e cada uma tem seu próprio repertório de remédios e crenças sobre o corpo — o que funciona para a curandeira de uma tribo da montanha pode ser desconhecido, ou visto com desconfiança, na cidade grande.\n\nNão é charlatanice por definição: em muitos lugares de Adamar é a única medicina disponível, e um bom praticante salva vidas tão bem quanto um físico formado, ainda que por caminhos diferentes.",
+   "exemplos": [
+    "A avó da aldeia trata a febre da criança com um chá de ervas que a cidade grande nunca ouviu falar.",
+    "Um viajante ferido longe de qualquer físico é salvo pela curandeira local e sua Medicina Alternativa.",
+    "Um médico formado desdenha o tratamento popular até ver com os próprios olhos que ele funciona."
+   ],
+   "em_adamar": "Livre: tradição popular de cura por ervas e costume não depende de nenhuma tecnologia além do que qualquer povo de Adamar já teria.",
+   "relacionados": [
+    "medicina",
+    "primeiros-socorros"
+   ]
+  },
+  "mendicancia": {
+   "descricao": "Mendicância é a perícia de pedir esmolas com sucesso: escolher o ponto certo, o tom de voz certo, a história certa para comover ou constranger quem passa a dar alguma coisa. Um bom mendigo sabe ler quem provavelmente vai ceder e quem só vai chamar a guarda, e consegue se sustentar (ou sustentar informação, já que mendigos veem e ouvem muito) mesmo sem posses.\n\nÉ perícia social barata e útil tanto para personagens realmente pobres quanto para quem finge pobreza como disfarce — um nobre disfarçado de mendigo que não sabe realmente mendigar se entrega rápido.",
+   "exemplos": [
+    "Sem moedas na cidade estranha, o grupo recorre à Mendicância para conseguir o jantar daquela noite.",
+    "Disfarçado de mendigo para vigiar a praça do mercado, o espião precisa parecer convincente o bastante para não ser expulso.",
+    "Um mendigo de verdade, testado com sucesso, consegue informação valiosa só de ficar sentado ouvindo os passantes."
+   ],
+   "em_adamar": "Livre: mendigos e esmolas existem em qualquer cidade medieval de Adamar, sem depender de tecnologia alguma.",
+   "relacionados": []
+  },
+  "metalurgia": {
+   "descricao": "Metalurgia é o conhecimento teórico das ligas e propriedades dos metais: por que o bronze é diferente do ferro, como uma liga se comporta ao ser forjada, dobrada ou temperada, e o que torna um metal melhor ou pior para uma finalidade. É saber, não a perícia de martelar o metal na bigorna — isso é Ferreiro. Um bom ferreiro pode não ter Metalurgia, e um estudioso de Metalurgia pode nunca ter forjado nada com as próprias mãos.\n\nAs duas se complementam bem: Metalurgia ajuda a identificar um metal estranho, avaliar se uma peça é de boa liga ou avaliar se algo pode ser feito com o material disponível, enquanto Ferreiro é quem executa o trabalho.",
+   "exemplos": [
+    "Encontrado um lingote de metal desconhecido nas ruínas, o estudioso testa Metalurgia para identificar do que se trata.",
+    "O ferreiro da vila consulta um conhecedor de Metalurgia antes de arriscar uma liga nova numa espada importante.",
+    "Um mercador de metais usa Metalurgia para avaliar se o minério oferecido vale o preço pedido."
+   ],
+   "em_adamar": "Livre: conhecimento sobre ligas e propriedades de metais é coerente com a metalurgia de NT3 praticada em Adamar.",
+   "relacionados": [
+    "prospeccao"
+   ]
+  },
+  "meteorologia": {
+   "descricao": "Meteorologia (chamada de Noção do Clima em sociedades de baixa tecnologia, como Adamar) é a perícia de prever o tempo a partir de sinais do céu, do vento e do comportamento dos animais: se vai chover, se a nevasca vai chegar antes do anoitecer, se é seguro zarpar amanhã. Num mundo sem previsão instantânea, isso pode ser a diferença entre uma viagem tranquila e uma caravana pega no meio do nada por uma tempestade.\n\nEm NT3, a perícia não exige especialização e dá bônus extra para prever o clima da região onde o personagem vive havia tempo — quem cresceu entre geleiras lê a neve melhor do que qualquer forasteiro.",
+   "exemplos": [
+    "O pastor da montanha avisa que uma tempestade de neve vem antes do anoitecer, e ninguém questiona.",
+    "Antes de zarpar, o capitão pede a alguém com Noção do Clima que avalie se o céu promete uma travessia segura.",
+    "Longe de casa, o personagem erra a previsão porque os sinais do clima ali são diferentes dos que conhece."
+   ],
+   "em_adamar": "Livre como Noção do Clima, sem especialização: é o formato correto da perícia em NT3. A versão científica por tipo de planeta só existe em sociedades de tecnologia muito mais avançada e não existe em Adamar.",
+   "relacionados": []
+  },
+  "mimica-pantomima": {
+   "descricao": "Mímica/Pantomima é a perícia de se comunicar por gestos, expressões e movimento do corpo, sem palavras: contar uma cena inteira só de corpo, passar uma mensagem simples para alguém que não fala sua língua, ou simplesmente fazer rir numa apresentação de rua. É útil tanto como arte quanto como comunicação prática quando falar alto não é uma opção.\n\nNão deve ser confundida com Atuação, que é sobre representar um papel com fala e presença de palco; Mímica/Pantomima é especificamente sobre o corpo silencioso.",
+   "exemplos": [
+    "O artista de rua junta uma multidão só com Mímica/Pantomima, sem dizer uma palavra.",
+    "Cercados por guardas que não falam sua língua, os viajantes tentam explicar a situação por gestos.",
+    "Escondidos numa emboscada, dois batedores se comunicam por sinais silenciosos para não alertar o inimigo."
+   ],
+   "em_adamar": "Livre: comunicação por gestos não depende de nenhuma tecnologia e é natural em qualquer cultura de Adamar.",
+   "relacionados": []
+  },
+  "natacao": {
+   "descricao": "Natação é simplesmente saber nadar: manter-se à tona, avançar na água, atravessar um rio ou não se afogar quando cai de um barco. É perícia fácil e fundamental — muita gente em Adamar cresce perto de rios, lagos ou mar e aprende cedo, mas quem vem de terras secas ou de vida urbana pode nunca ter tido a chance.\n\nEla é testada sob pressão: água corrente, frio extremo, armadura pesada ou exaustão tornam o teste mais difícil, e falhar de verdade pode significar afundar.",
+   "exemplos": [
+    "A ponte desaba e todo o grupo precisa testar Natação para não ser levado pela correnteza.",
+    "Fugindo com armadura pesada, o cavaleiro se arrepende de nunca ter aprendido a nadar direito.",
+    "Uma criança da vila de pescadores atravessa a baía tranquilamente enquanto o forasteiro luta para acompanhar."
+   ],
+   "em_adamar": "Livre: nadar não depende de nenhuma tecnologia, é habilidade humana comum em qualquer época.",
+   "relacionados": []
+  },
+  "naturalista": {
+   "descricao": "Naturalista é o conhecimento amplo do mundo natural: reconhecer plantas, animais, ecossistemas e como eles se relacionam entre si, útil para identificar uma erva rara, prever o comportamento de uma fera ou entender por que uma região está morrendo aos poucos. É mais teórica e ampla que Sobrevivência, que é sobre viver da terra num terreno específico dia a dia; Naturalista explica o porquê por trás do que Sobrevivência ensina a fazer na prática.\n\nComo Adamar é um único mundo conhecido, a perícia na prática não exige especialização — só se torna necessário especializar por planeta caso o narrador introduza viagem entre mundos diferentes.",
+   "exemplos": [
+    "O boticário usa Naturalista para reconhecer uma planta venenosa antes que alguém a use como tempero.",
+    "Um estudioso de Naturalista percebe que o comportamento estranho dos pássaros anuncia algo fora do normal.",
+    "Diante de uma criatura desconhecida na floresta, o personagem tenta um teste de Naturalista para entender do que se trata."
+   ],
+   "em_adamar": "Livre, sem exigir especialização: Adamar é o único mundo natural conhecido pelos personagens, então a especialização por planeta do livro simplesmente não se aplica.",
+   "relacionados": [
+    "sobrevivencia",
+    "rastreamento"
+   ]
+  },
+  "navegacao": {
+   "descricao": "Navegação é a perícia de achar e manter o caminho certo, em terra ou no mar, usando astros, marcos conhecidos, mapas e instrumentos simples de orientação. Ela diz onde você está e para onde precisa ir; não é sobre comandar a embarcação (Manejo de Barcos) nem sobre o trabalho de bordo (Marinhagem), embora as três costumem andar juntas em qualquer travessia séria.\n\nAs especializações Terra e Mar se pré-definem entre si com penalidade moderada — os princípios são parecidos —, mas errar a Navegação marítima longe da costa pode significar ficar perdido por dias, sem terra à vista para corrigir o rumo.",
+   "exemplos": [
+    "Sem estradas claras na floresta, o batedor usa Navegação (Terra) para não perder o rumo do acampamento.",
+    "No meio do oceano sem terra à vista, o navegador lê as estrelas para confirmar que o navio ainda segue o rumo certo.",
+    "Uma névoa espessa esconde todos os marcos costeiros, e só um bom teste de Navegação evita que o barco se perca."
+   ],
+   "em_adamar": "Livre nas especializações Terra e Mar, plenamente coerentes com viagens medievais em Adamar. Ar, Espaço e Hiperespaço exigem tecnologia que não existe no cenário.",
+   "relacionados": [
+    "manejo-de-barcos",
+    "marinhagem"
+   ]
+  },
+  "observacao": {
+   "descricao": "Observação é a perícia de vigiar um lugar ou uma pessoa sem ser percebido: manter os olhos num alvo por tempo prolongado, notar padrões de movimento, perceber quando algo muda na rotina vigiada. É diferente de Percepção pura porque envolve método — saber onde se posicionar, como não ser visto de volta, o que vale a pena anotar.\n\nAnda de mãos dadas com Perseguição (seguir um alvo em movimento) e Furtividade (não ser notado), mas Observação é especificamente sobre ficar parado e atento por tempo suficiente para aprender algo.",
+   "exemplos": [
+    "Escondido no telhado em frente, o espião passa a noite testando Observação para mapear a rotina da guarda.",
+    "Um caçador usa Observação para descobrir o horário em que a fera sai da toca para beber água.",
+    "Vigiando a taverna suspeita por dias, o grupo finalmente nota o padrão de visitas que procurava."
+   ],
+   "em_adamar": "Livre: vigilância paciente não depende de nenhuma tecnologia além dos próprios olhos e um bom esconderijo.",
+   "relacionados": [
+    "perseguicao",
+    "furtividade"
+   ]
+  },
+  "ocultamento": {
+   "descricao": "Ocultamento é a perícia de esconder objetos — em si mesmo, num cômodo, num veículo, num corpo — de um jeito que resista a uma busca casual ou até a uma revista mais cuidadosa. Ela é o outro lado da moeda de Revistar: quem esconde bem testa Ocultamento, quem procura testa Revistar, e o resultado dos dois lados decide se o objeto é encontrado.\n\nCobre desde esconder uma adaga na manga até criar um compartimento falso num baú, e boa parte do sucesso depende do tempo disponível e do quanto o escondedor conhece o local ou o objeto.",
+   "exemplos": [
+    "Antes de entrar na cidade murada, o contrabandista testa Ocultamento para esconder o contrabando no fundo falso da carroça.",
+    "Um prisioneiro esconde a lima de metal na sola da bota, torcendo para que ninguém reviste com cuidado.",
+    "A carta comprometedora é costurada dentro da bainha da capa, longe de olhos apressados."
+   ],
+   "em_adamar": "Livre: esconder objetos não depende de nenhuma tecnologia além de tempo, jeito e um bom lugar.",
+   "relacionados": [
+    "revistar",
+    "prestidigitacao"
+   ]
+  },
+  "ocultismo": {
+   "descricao": "Ocultismo é o conhecimento — real e, principalmente, folclórico — sobre magia, fantasmas, forasteiros e tudo que o povo comum chama de \"coisas estranhas\". Cobre superstições, lendas locais, sinais de mau agouro, rituais de proteção caseiros e histórias transmitidas de geração em geração. Boa parte disso é exagero, boato ou pura invenção; um teste bem-sucedido não garante que a informação lembrada seja verdadeira, só que é o que se conta por aí.\n\nEm Adamar, onde a magia é rara e frequentemente confundida com superstição, Ocultismo costuma ser a única lente que a maioria das pessoas tem para entender algo estranho que viram — o que o torna útil e traiçoeiro ao mesmo tempo.",
+   "exemplos": [
+    "Diante de luzes estranhas na ruína, o ancião da vila recorre a Ocultismo para explicar o que \"todo mundo sabe\" sobre o lugar.",
+    "Um teste de Ocultismo lembra a lenda certa sobre como afastar um espírito — ou pelo menos o que se acredita que funcione.",
+    "O grupo descobre, tarde demais, que o costume popular testado por Ocultismo era só superstição vazia."
+   ],
+   "em_adamar": "Livre: folclore e boato sobre magia e forasteiros são parte central do tom do cenário, onde a magia arcana é rara e confundida com superstição.",
+   "relacionados": [
+    "ritual-religioso"
+   ]
+  },
+  "oratoria": {
+   "descricao": "Oratória é a perícia de falar em público de um jeito que prende, convence e move multidões: discursar para tropas antes da batalha, acalmar uma praça em pânico, ou vender uma ideia impopular para uma plateia desconfiada. Diferente de Lábia, que funciona bem numa conversa próxima e individual, Oratória é sobre projetar presença e argumento para muita gente ao mesmo tempo.\n\nUm bom orador sabe ler o humor da multidão e ajustar o discurso na hora; um teste ruim pode significar vaias, silêncio constrangedor ou, em situações tensas, o oposto do que se pretendia.",
+   "exemplos": [
+    "Antes do cerco, o comandante usa Oratória para erguer o ânimo da guarnição cansada.",
+    "Na praça tomada pelo pânico após o incêndio, alguém precisa de um bom discurso para evitar um tumulto.",
+    "O agitador de mercado tenta virar a multidão contra o novo imposto com um discurso bem colocado."
+   ],
+   "em_adamar": "Livre: discurso público não depende de nenhuma tecnologia, só de presença e argumento.",
+   "relacionados": [
+    "politica",
+    "propaganda"
+   ]
+  },
+  "patinacao": {
+   "descricao": "Patinação é a perícia de se equilibrar e se locomover sobre o gelo com patins, mantendo velocidade e controle mesmo em curvas ou superfícies irregulares. É perícia física relativamente rara fora de regiões de inverno rigoroso, onde rios e lagos congelam por boa parte do ano e patinar vira meio de transporte, esporte e até vantagem tática.\n\nFalhar num teste em situação de perseguição ou combate sobre o gelo pode significar escorregar, cair ou perder o equilíbrio bem na hora errada.",
+   "exemplos": [
+    "Os moradores da vila glacial atravessam o lago congelado de patins para chegar mais rápido ao mercado.",
+    "Numa perseguição sobre o gelo, quem tem Patinação ganha vantagem clara sobre quem tropeça a cada passo.",
+    "Durante o festival de inverno, crianças e adultos competem em corridas de patinação sobre o rio congelado."
+   ],
+   "em_adamar": "Livre: patins simples de osso ou metal são tecnologia antiga, coerente com qualquer região fria de Adamar.",
+   "relacionados": []
+  },
+  "pedagogia": {
+   "descricao": "Pedagogia é a perícia de ensinar outras pessoas de forma eficiente: estruturar uma lição, adaptar a explicação a quem está aprendendo, e fazer o conhecimento realmente grudar em vez de só ser recitado. Ela não substitui saber o assunto em si — um mestre-ferreiro sem Pedagogia ainda sabe forjar, só ensina pior —, mas melhora bastante a velocidade e a qualidade do aprendizado de um aprendiz.\n\nNa mesa, ela costuma aparecer quando um personagem tenta treinar outro personagem ou um grupo de recrutas, e o mestre decide o quanto (e quão rápido) esse ensino realmente rende.",
+   "exemplos": [
+    "O velho mercenário usa Pedagogia para transformar um bando de camponeses assustados numa milícia minimamente útil.",
+    "Sem Pedagogia, o sábio da corte sabe tudo de história mas explica tudo de um jeito que ninguém entende.",
+    "Uma professora de vila ensina as crianças a ler usando métodos que ela mesma desenvolveu com a perícia."
+   ],
+   "em_adamar": "Livre: ensinar não depende de nenhuma tecnologia, só de método e paciência.",
+   "relacionados": []
+  },
+  "performance-em-grupo": {
+   "descricao": "Performance em Grupo é a perícia de coordenar uma apresentação coletiva: reger um coro ou orquestra, coreografar uma dança de grupo, montar uma coreografia de combate para uma encenação, ou dirigir uma peça inteira com vários atores em cena ao mesmo tempo. Ela exige tanto talento social (para manter todos entrosados e motivados) quanto domínio da perícia de base envolvida — instrumento, dança, encenação de combate ou atuação, dependendo do tipo de apresentação.\n\nSem alguém com essa perícia, uma apresentação em grupo tende a sair desalinhada, mesmo que cada participante individualmente seja competente.",
+   "exemplos": [
+    "A trupe itinerante monta uma peça sobre a fundação da cidade, e o diretor testa Performance em Grupo para alinhar todo mundo.",
+    "Antes do festival, o regente ensaia o coro da vila até que as vozes finalmente soem como uma só.",
+    "Um mestre de armas coreografa um duelo de exibição para a feira, cuidando para que pareça perigoso sem machucar ninguém."
+   ],
+   "em_adamar": "Livre: música, dança e teatro coletivos não dependem de nenhuma tecnologia além do que qualquer cidade de Adamar já teria.",
+   "relacionados": []
+  },
+  "perseguicao": {
+   "descricao": "Perseguição é a perícia de seguir alguém pelas ruas de uma cidade sem ser notado: manter distância certa, usar esquinas e movimento da multidão como cobertura, e não perder o alvo de vista mesmo quando ele muda de rota de propósito. É a versão urbana e social de Rastreamento — em vez de pegadas na terra, você lê o comportamento de uma pessoa viva que talvez esteja tentando despistar.\n\nUm alvo desconfiado pode testar Observação ou similar para perceber que está sendo seguido, transformando a perseguição num jogo de gato e rato silencioso pelas ruas.",
+   "exemplos": [
+    "Suspeitando do mercador estranho, o grupo o segue pelo mercado tentando não se misturar demais nem ficar longe demais.",
+    "O alvo entra numa taverna cheia de propósito, e só um bom teste de Perseguição mantém o rastro dele lá dentro.",
+    "Um batedor experiente percebe, tarde demais, que está sendo seguido pelas vielas da cidade velha."
+   ],
+   "em_adamar": "Livre: seguir alguém discretamente numa cidade não depende de tecnologia alguma.",
+   "relacionados": [
+    "observacao",
+    "rastreamento",
+    "furtividade"
+   ]
+  },
+  "pericia-profissional": {
+   "descricao": "Perícia Profissional é a categoria usada para qualquer ofício comum que não tenha perícia própria no livro: tanoeiro, barqueiro de balsa, taverneiro, estalajadeiro e tantos outros trabalhos honestos do dia a dia. Cada aplicação é comprada separadamente, como uma perícia distinta (\"Perícia Profissional (Taverneiro)\", por exemplo), e cobre o conhecimento prático necessário para exercer aquele ofício específico direito.\n\nÉ a perícia perfeita para dar textura a um personagem sem exigir uma regra nova para cada trabalho possível que exista num mundo cheio de gente comum trabalhando.",
+   "exemplos": [
+    "O tanoeiro da vila usa Perícia Profissional (Tanoeiro) para consertar os barris estourados pela geada.",
+    "Um antigo taverneiro reconhece na hora quando um cliente está prestes a causar confusão, graças à sua Perícia Profissional (Taverneiro).",
+    "Precisando atravessar o rio sem ponte, o grupo paga o barqueiro, cuja Perícia Profissional (Barqueiro) garante a travessia segura."
+   ],
+   "em_adamar": "Livre: cobre ofícios comuns de qualquer sociedade de NT3, sem exigir nada além do que já existe em Adamar.",
+   "relacionados": []
+  },
+  "pescaria": {
+   "descricao": "Pescaria é a perícia de pegar peixe (ou outra vida aquática) com anzol, rede ou arpão, sabendo onde procurar, que isca ou técnica usar, e como não voltar de mãos vazias mesmo em dias difíceis. É perícia fácil e essencial em qualquer comunidade que viva perto de rio, lago ou mar, e costuma ser a diferença entre uma vila bem alimentada e uma vila passando fome no inverno.\n\nFatores como clima, estação e o tipo de água pescada podem tornar o teste mais fácil ou mais difícil, e o narrador decide quanto tempo e sorte um teste bem-sucedido representa.",
+   "exemplos": [
+    "Perdido na floresta perto de um rio, o grupo usa Pescaria para garantir o jantar sem gastar as provisões.",
+    "O velho pescador da vila sabe exatamente onde lançar a rede quando o cardume sobe o rio na primavera.",
+    "Um teste ruim de Pescaria numa tarde de tempestade não rende nada além de roupas molhadas."
+   ],
+   "em_adamar": "Livre: pescar com ferramentas simples é atividade comum em qualquer costa, rio ou lago de Adamar.",
+   "relacionados": []
+  },
+  "pesquisa": {
+   "descricao": "Pesquisa é a perícia de achar informação específica dentro de arquivos, bibliotecas, cartórios e coleções de documentos: saber onde procurar, como cruzar referências e reconhecer o dado relevante escondido entre páginas irrelevantes. Ela pressupõe que a informação exista fisicamente registrada em algum lugar acessível — sem isso, nem a melhor Pesquisa encontra nada.\n\nBibliotecas e arquivos de verdade são raros em Adamar, o que torna a perícia menos útil no dia a dia comum e mais valiosa quando o grupo finalmente encontra um acervo digno desse nome — um mosteiro antigo, o arquivo de uma cidade grande, a biblioteca privada de um nobre.",
+   "exemplos": [
+    "No arquivo empoeirado do mosteiro, o estudioso testa Pesquisa para achar o registro de uma doação feita séculos atrás.",
+    "Precisando confirmar um título de terra, o grupo vasculha o cartório da cidade em busca do documento certo.",
+    "Sem nenhuma biblioteca por perto, nem o melhor pesquisador tem como consultar nada."
+   ],
+   "em_adamar": "Livre, mas raramente útil: arquivos e bibliotecas organizadas são escassos em Adamar, então a perícia brilha mais quando o cenário justifica um acervo relevante.",
+   "relacionados": []
+  },
+  "poesia": {
+   "descricao": "Poesia é a perícia de compor versos: escolher palavras, ritmo e imagens que emocionem, divirtam ou marquem quem ouve ou lê. Cobre desde uma cantiga popular improvisada numa taverna até um poema épico encomendado para celebrar um herói ou lamentar uma tragédia. Não é a mesma coisa que Escrita, que é sobre a técnica de redigir prosa e documentos em geral — Poesia é uma arte à parte, com suas próprias regras de forma.\n\nUm bardo ou trovador costuma ter Poesia ao lado de Música e Cantar, formando o repertório completo de quem vive de contar histórias em verso e melodia.",
+   "exemplos": [
+    "O trovador improvisa versos zombeteiros sobre o cavaleiro derrotado, para o deleite da plateia da taverna.",
+    "Encomendado pela família enlutada, o poeta da corte compõe versos para o funeral do senhor local.",
+    "Um teste de Poesia ruim rende uma rima tosca que só arranca risadas erradas da plateia."
+   ],
+   "em_adamar": "Livre: composição poética não depende de nenhuma tecnologia, só de talento e tradição oral ou escrita.",
+   "relacionados": []
+  },
+  "politica": {
+   "descricao": "Política é a perícia de entender e jogar o jogo de poder de uma corte, conselho ou cidade: saber quem realmente decide por trás do trono, que alianças estão em jogo, e como mover uma peça sem parecer estar movendo nada. Diferente de Diplomacia, que é sobre negociar um acordo específico entre partes, Política é sobre o quadro geral — ler a teia de interesses e posicionar-se dentro dela.\n\nUm teste bem-sucedido pode revelar quem apoia quem, prever uma jogada de um rival ou simplesmente evitar que o personagem pise numa mina política sem perceber.",
+   "exemplos": [
+    "Antes do banquete, o conselheiro usa Política para prever quais nobres vão tentar se aproximar do novo governante.",
+    "Um teste de Política revela que o apoio público de um lorde esconde uma aliança secreta com o inimigo.",
+    "Sem entender o jogo de poder da cidade, o forasteiro ofende sem querer a família errada logo na primeira semana."
+   ],
+   "em_adamar": "Livre: intriga de corte e disputas de poder são universais em qualquer sociedade organizada, sem depender de tecnologia alguma.",
+   "relacionados": [
+    "oratoria",
+    "propaganda"
+   ]
+  },
+  "prestidigitacao": {
+   "descricao": "Prestidigitação é a perícia dos truques de mão: fazer uma moeda sumir, trocar uma carta sem que ninguém perceba, plantar ou remover um objeto pequeno diante dos olhos de alguém. Ela cobre tanto o entretenimento puro (mágica de rua, jogos de cartas trapaceados) quanto usos mais sérios, como esconder rapidamente um item comprometedor ou ajudar num roubo discreto.\n\nÉ diferente de Surrupiar, que é sobre tirar algo de alguém sem ser notado — Prestidigitação é sobre manipular objetos de um jeito que engana os olhos, com ou sem outra pessoa por perto para enganar.",
+   "exemplos": [
+    "O charlatão de feira encanta a plateia fazendo moedas sumirem e reaparecerem no bolso errado.",
+    "Durante o interrogatório, o prisioneiro usa Prestidigitação para esconder a lâmina escondida na manga.",
+    "Um jogador de cartas troca a mão discretamente, torcendo para que ninguém na mesa tenha reparado."
+   ],
+   "em_adamar": "Livre: truques de mão não dependem de nenhuma tecnologia, só de destreza e prática.",
+   "relacionados": [
+    "surrupiar",
+    "punga",
+    "ocultamento"
+   ]
+  },
+  "primeiros-socorros": {
+   "descricao": "Primeiros Socorros é a perícia de estancar sangue, imobilizar um osso quebrado e cuidar de um ferimento na hora, no calor do momento, com o que se tem à mão. Ela evita que uma situação piore imediatamente, mas não trata doenças nem cuida da recuperação de longo prazo — isso é trabalho de Medicina, Medicina Alternativa ou Veterinária, dependendo do paciente e da tradição.\n\nÉ perícia fácil e barata, e por isso comum mesmo entre quem não é curandeiro de profissão — qualquer aventureiro sensato investe pelo menos um pouco nela, porque o ferimento raramente espera por um físico de verdade.",
+   "exemplos": [
+    "Logo após a emboscada, alguém testa Primeiros Socorros para estancar o sangramento antes que piore.",
+    "Sem nenhum físico por perto, o grupo improvisa uma tala para o braço quebrado do batedor.",
+    "Um teste malsucedido de Primeiros Socorros deixa o ferimento mal cuidado, pronto para complicar mais tarde."
+   ],
+   "em_adamar": "Livre: cuidado emergencial com ferimentos não depende de nenhuma tecnologia além de panos, talas e conhecimento básico.",
+   "relacionados": [
+    "medicina",
+    "medicina-alternativa",
+    "veterinaria"
+   ]
+  },
+  "propaganda": {
+   "descricao": "Propaganda é a perícia de espalhar ideias, boatos e narrativas de forma organizada para mudar a opinião de muita gente ao longo do tempo — diferente de Oratória, que convence uma plateia num único discurso, Propaganda trabalha por meio de rumores plantados, panfletos, canções espalhadas de taverna em taverna e histórias repetidas até virarem \"verdade\" popular.\n\nÉ perícia lenta mas poderosa: um governante ou uma guilda que a usa bem pode moldar como um povo inteiro enxerga um evento, um inimigo ou a si mesmo, muito antes de qualquer discurso público precisar ser feito.",
+   "exemplos": [
+    "A guilda mercante espalha boatos cuidadosamente plantados para arruinar a reputação de um concorrente.",
+    "Depois da batalha perdida, o conselho da cidade usa Propaganda para transformar a derrota numa história de resistência heroica.",
+    "Canções espalhadas de taverna em taverna, testadas com Propaganda, plantam a semente da desconfiança contra o novo imposto."
+   ],
+   "em_adamar": "Livre: espalhar boatos e narrativas não depende de imprensa nem de nenhuma tecnologia além da palavra falada e de canções.",
+   "relacionados": [
+    "oratoria",
+    "politica"
+   ]
+  },
+  "prospeccao": {
+   "descricao": "Prospecção é a perícia de achar minérios e veios de metal na natureza: ler o terreno, reconhecer sinais na rocha e na vegetação, e decidir onde vale a pena cavar. Ela não ensina a extrair ou processar o minério — isso é trabalho de mineração e depois de Metalurgia ou Ferreiro —, mas sem um bom prospector, uma expedição de mineração pode passar anos cavando no lugar errado.\n\nCostuma ser perícia de gente das montanhas, mineradores itinerantes e qualquer um que já tenha vivido da busca por riqueza escondida sob a terra.",
+   "exemplos": [
+    "O velho prospector convence a expedição a mudar de vale depois de ler sinais na rocha que ninguém mais notou.",
+    "Um teste de Prospecção revela um veio de metal promissor sob as ruínas de uma antiga mina abandonada.",
+    "Sem experiência em Prospecção, os colonos cavam semanas num lugar que nunca teria dado em nada."
+   ],
+   "em_adamar": "Livre: leitura de terreno e busca por minério não dependem de nenhuma tecnologia além de olho treinado e ferramentas simples.",
+   "relacionados": [
+    "metalurgia"
+   ]
+  },
+  "psicologia": {
+   "descricao": "Psicologia é a perícia de entender como uma pessoa pensa e sente: prever reações, identificar motivações escondidas, perceber quando alguém está mentindo por medo em vez de má-fé, ou entender o que realmente move um comportamento estranho. É conhecimento mais formal e estruturado que a simples leitura de expressões momentâneas de Detectar Mentiras — Psicologia enxerga o padrão por trás da pessoa, não só o instante.\n\nÚtil tanto para interrogatórios e negociações quanto para entender um personagem perturbado, ou para prever a reação de uma multidão antes que ela aconteça.",
+   "exemplos": [
+    "Antes de negociar o resgate, o mediador usa Psicologia para entender o que realmente motiva o sequestrador.",
+    "Um teste de Psicologia sugere que o comportamento estranho do nobre esconde um medo antigo e não malícia.",
+    "Observando a multidão tensa no julgamento público, o conselheiro prevê que ela vai explodir se o veredito for injusto."
+   ],
+   "em_adamar": "Livre: entender comportamento humano não depende de nenhuma tecnologia, só de estudo e observação.",
+   "relacionados": [
+    "sociologia"
+   ]
+  },
+  "punga": {
+   "descricao": "Punga é a perícia especializada de bater carteiras: tirar uma bolsa, um objeto pequeno ou uma joia de alguém que está vestindo ou carregando, sem que a vítima perceba nada até tarde demais. Ela combina destreza manual com leitura de multidão — saber o momento certo, a distração certa e a rota de fuga certa depois do golpe.\n\nÉ perícia mais estreita que Surrupiar (que cobre pegar objetos de qualquer lugar à vista, não só do corpo de alguém), mas quem já tem prática em uma ajuda bastante na outra.",
+   "exemplos": [
+    "No mercado lotado, o batedor de carteiras escolhe o mercador distraído como alvo perfeito.",
+    "Um guarda desconfiado quase percebe a mão do ladrão perto de sua bolsa, mas um bom teste de Punga evita o flagra.",
+    "A criança de rua treinada em Punga sustenta a si mesma tirando moedas de bolsos descuidados."
+   ],
+   "em_adamar": "Livre: furto de bolsos é crime comum em qualquer cidade com mercado e multidão, sem depender de tecnologia alguma.",
+   "relacionados": [
+    "surrupiar",
+    "prestidigitacao"
+   ]
+  },
+  "rapieira": {
+   "descricao": "Rapieira cobre o uso da espada longa e fina de estocada, feita para furar rápido em vez de cortar fundo. É arma de duelo e esgrima elegante, privilegiando a velocidade, o alcance e a precisão sobre a força bruta — excelente para acertar primeiro e recuar antes que o oponente responda, mas fraca contra armaduras pesadas e ruim para quem prefere trocar golpes de força.\n\nCostuma ser arma de nobres, oficiais e duelistas profissionais mais do que de soldados de linha de frente, que preferem armas capazes de lidar melhor com proteção pesada.",
+   "exemplos": [
+    "O duelista da corte resolve a disputa de honra com a rapieira, confiando na velocidade da estocada.",
+    "Contra um oponente de armadura pesada, o esgrimista percebe que a rapieira não vai adiantar muito.",
+    "Um mestre de esgrima ensina o jovem nobre a usar a rapieira para desarmar sem matar, quando a honra basta."
+   ],
+   "em_adamar": "Livre: arma de metal de NT3, associada a duelos e nobreza, plenamente coerente com o cenário.",
+   "relacionados": [
+    "tercado",
+    "sabre"
+   ]
+  },
+  "rastreamento": {
+   "descricao": "Rastreamento é a perícia de seguir pegadas, trilhas quebradas, pelos presos em galhos e outros sinais deixados por quem (ou o que) passou por ali. Um bom rastreador consegue estimar quantos passaram, há quanto tempo, e para onde seguiram — e às vezes até deduzir se estão feridos, com pressa ou tentando esconder o próprio rastro.\n\nTerreno, clima e tempo decorrido afetam bastante a dificuldade: um rastro fresco na neve é muito mais fácil de seguir do que pegadas de dias atrás numa estrada de pedra depois da chuva.",
+   "exemplos": [
+    "Depois do ataque à caravana, o batedor segue o rastro dos saqueadores pela mata fechada.",
+    "Na neve fresca, até um rastreador iniciante consegue ver quantos passaram e para onde foram.",
+    "A chuva forte da noite anterior apaga quase todo sinal, deixando o rastreador mais experiente sem muito o que seguir."
+   ],
+   "em_adamar": "Livre: ler pegadas e sinais de passagem não depende de nenhuma tecnologia, só de olho treinado.",
+   "relacionados": [
+    "naturalista",
+    "observacao"
+   ]
+  },
+  "rede": {
+   "descricao": "Rede é a perícia de lutar usando uma rede como arma: lançá-la para enredar um oponente, imobilizar seus movimentos e criar abertura para um golpe seguinte, geralmente combinado com uma arma numa segunda mão. É estilo incomum e desconcertante para quem enfrenta pela primeira vez — a rede não corta nem perfura, mas tirar a mobilidade do adversário costuma valer tanto quanto um golpe direto.\n\nFunciona mal em espaços muito apertados, onde não há distância para lançar, e perde muito da utilidade se o oponente tiver como cortar ou queimar a rede rapidamente.",
+   "exemplos": [
+    "O caçador de recompensas prefere capturar vivo, lançando a rede antes de fechar com a adaga.",
+    "Um lutador de arena surpreende o adversário mais forte enredando seus braços com a rede.",
+    "No corredor estreito da masmorra, não há espaço nem distância para lançar a rede direito."
+   ],
+   "em_adamar": "Livre: rede de pesca ou de caça reaproveitada como arma é plenamente coerente com NT3.",
+   "relacionados": []
+  },
+  "remo-vela": {
+   "descricao": "Remo/Vela é a perícia de remar ou velejar embarcações pequenas com as próprias mãos: um bote, uma canoa, um pequeno veleiro costeiro — o tipo de barco que uma ou poucas pessoas operam sozinhas, sem tripulação de comando separada. É diferente de Manejo de Barcos, que é sobre comandar embarcações maiores com tripulação própria; aqui, quem testa a perícia é quem está literalmente remando ou segurando a vela.\n\nAs especializações Sem Motor e Veleiro se pré-definem razoavelmente bem entre si, já que os princípios de equilíbrio e leitura da água são parecidos.",
+   "exemplos": [
+    "Fugindo a remo pelo rio à noite, o grupo testa Remo/Vela para não bater nas pedras no escuro.",
+    "O pescador solitário ajusta a vela do seu pequeno barco sozinho, sem precisar de tripulação nenhuma.",
+    "Numa travessia curta entre ilhas próximas, alguém com Remo/Vela guia o bote com segurança até a outra margem."
+   ],
+   "em_adamar": "Livre nas especializações Sem Motor e Veleiro, plenamente coerentes com embarcações pequenas de NT3. Lancha e Barco Grande a Motor exigem tecnologia que não existe em Adamar.",
+   "relacionados": [
+    "manejo-de-barcos",
+    "marinhagem"
+   ]
+  },
+  "revistar": {
+   "descricao": "Revistar é a perícia de vasculhar pessoas e lugares atrás de algo escondido: bater bolsos, checar forros de roupa, examinar um cômodo em busca de compartimentos falsos. É o outro lado da moeda de Ocultamento — quem esconde bem testa Ocultamento, quem procura testa Revistar, e o confronto entre os dois decide se o item é achado.\n\nUma revista completa leva tempo; feita às pressas, tende a ser menos eficaz, então o narrador costuma equilibrar rapidez contra minúcia na hora de decidir a dificuldade.",
+   "exemplos": [
+    "Na entrada da cidade, o guarda revista a carroça do mercador em busca de contrabando escondido.",
+    "Suspeitando de um traidor no grupo, alguém revista discretamente os pertences do companheiro à noite.",
+    "A cela do prisioneiro é vasculhada de cima a baixo, mas a lima escondida na sola da bota escapa da revista apressada."
+   ],
+   "em_adamar": "Livre: revistar pessoas e lugares não depende de nenhuma tecnologia além de tempo e atenção.",
+   "relacionados": [
+    "ocultamento"
+   ]
+  },
+  "ritual-religioso": {
+   "descricao": "Ritual Religioso é a perícia de conduzir corretamente os ritos de uma fé: liturgias, cerimônias de passagem, bênçãos, funerais e festivais sagrados, na ordem e na forma que os fiéis esperam. Ela não é magia divina — não invoca milagre nenhum por si só —, mas é o que torna um clérigo crível diante de sua congregação, e sua ausência ou execução errada pode ofender fiéis ou até invalidar uma cerimônia aos olhos deles.\n\nA perícia se especializa por religião ou panteão específico, já que os ritos de uma fé raramente servem para outra sem adaptação.",
+   "exemplos": [
+    "O sacerdote conduz o funeral seguindo cada passo do rito, para que a alma do falecido seja bem recebida segundo a crença local.",
+    "Um impostor tenta se passar por clérigo, mas erra a ordem do ritual e levanta suspeitas na congregação.",
+    "Antes da colheita, a aldeia realiza a cerimônia tradicional conduzida por quem conhece o Ritual Religioso local."
+   ],
+   "em_adamar": "Livre nas especializações pelos panteões do cânone (ver Divindades): Roestia, Ilhas do Oeste, Mar das Nações e Indacor. Ritos de povos distantes ainda não detalhados no cânone ficam a critério do narrador.",
+   "relacionados": [
+    "teologia",
+    "ocultismo"
+   ]
+  }
+ }
+}

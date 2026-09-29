@@ -1,0 +1,5256 @@
+{
+ "fonte": "GCS Master Library, Basic Set (ids estáveis do GCS; nome e página da edição em inglês)",
+ "pericias": {
+  "acrobacia": {
+   "id": "sX8y2AmeL5DLlQl17",
+   "nome": "Acrobatics",
+   "ref": "B174,MA54"
+  },
+  "adaga-de-esgrima": {
+   "id": "s10DaCiFKFSDx8aPC",
+   "nome": "Main-Gauche",
+   "ref": "B208,MA58"
+  },
+  "adestramento-de-animais": {
+   "id": "sQ9Hv-SvAISrf1vW8",
+   "nome": "Animal Handling (@Specialty@)",
+   "ref": "B175"
+  },
+  "adivinhacao": {
+   "id": "syJI_IgGzZiXfb1qO",
+   "nome": "Fortune-Telling (Tarot)",
+   "ref": "B196"
+  },
+  "administracao": {
+   "id": "sn-AqOk3ggCs7fqIQ",
+   "nome": "Administration",
+   "ref": "B174"
+  },
+  "alquimia": {
+   "id": "sa_ZE2rnayiRCI376",
+   "nome": "Alchemy",
+   "ref": "B174"
+  },
+  "alvenaria": {
+   "id": "sqizWj_DepfDPfbC3",
+   "nome": "Masonry",
+   "ref": "B207"
+  },
+  "analise-da-informacao": {
+   "id": "sPyZ0zxFI-Kygrzie",
+   "nome": "Intelligence Analysis",
+   "ref": "B201"
+  },
+  "analise-de-mercado": {
+   "id": "s1DSyczxGV_euy5Vu",
+   "nome": "Market Analysis",
+   "ref": "B207"
+  },
+  "antropologia": {
+   "id": "sPWO_H185qkzZtRb0",
+   "nome": "Anthropology (@Species@)",
+   "ref": "B175"
+  },
+  "aparar-armas-de-projetil": {
+   "id": "snO8a_369cUR1W1i-",
+   "nome": "Parry Missile-Weapons",
+   "ref": "B212"
+  },
+  "arco": {
+   "id": "sqoFTojrz-FYO-VNK",
+   "nome": "Bow",
+   "ref": "B182"
+  },
+  "arma-de-arremesso": {
+   "id": "shz-_Gg3cmjxmRxx2",
+   "nome": "Thrown Weapon (@Specialty@)",
+   "ref": "B226"
+  },
+  "armadilhas": {
+   "id": "s1uAaFqMQpnkmvzSu",
+   "nome": "Traps",
+   "ref": "B226"
+  },
+  "armas-de-feixe": {
+   "id": "sBJgeWUs81Ifhob4Z",
+   "nome": "Beam Weapons (@Weapon class@)",
+   "ref": "B179"
+  },
+  "armas-de-fogo": {
+   "id": "sT5htbz4-Mr0PFCk7",
+   "nome": "Guns (@Gun class@)",
+   "ref": "B198"
+  },
+  "armas-de-haste": {
+   "id": "sMbYJPn9E7PHx-Aob",
+   "nome": "Polearm",
+   "ref": "B208"
+  },
+  "armeiro": {
+   "id": "sNzqPNXe6m0OPGuJ5",
+   "nome": "Armoury (@Armor type@)",
+   "ref": "B178"
+  },
+  "arqueiro-zen": {
+   "id": "stl-5klG0QJVibdRs",
+   "nome": "Zen Archery",
+   "ref": "B228,MA61"
+  },
+  "arqueologia": {
+   "id": "sarvhf6ZiRjeof8Tf",
+   "nome": "Archaeology",
+   "ref": "B176"
+  },
+  "arquitetura": {
+   "id": "spYiGvqKQbtrtyQ-5",
+   "nome": "Architecture",
+   "ref": "B176"
+  },
+  "arremedo": {
+   "id": "sZUqmNvoPDU4lcBFr",
+   "nome": "Mimicry (Speech)",
+   "ref": "B210"
+  },
+  "arremessador-de-lanca": {
+   "id": "scjjlTC-AfuV0whOe",
+   "nome": "Spear Thrower",
+   "ref": "B222"
+  },
+  "arremesso": {
+   "id": "s64oJ-8i-8xecRu4a",
+   "nome": "Throwing",
+   "ref": "B226"
+  },
+  "arrombamento": {
+   "id": "sbzAJAcPWGr5sFAdP",
+   "nome": "Lockpicking",
+   "ref": "B206"
+  },
+  "arte-da-invisibilidade": {
+   "id": "s95OvIZ9p5QRj0cz6",
+   "nome": "Invisibility Art",
+   "ref": "B202"
+  },
+  "arte-do-arremesso": {
+   "id": "sweDr4Qd2Fku2YCfg",
+   "nome": "Throwing Art",
+   "ref": "B226,MA60"
+  },
+  "arte-erotica": {
+   "id": "srxSMYwpMihXMmD5a",
+   "nome": "Erotic Art",
+   "ref": "B192"
+  },
+  "artilharia": {
+   "id": "sD7RKUYuJOeh5vrTJ",
+   "nome": "Artillery (Catapult)",
+   "ref": "B178"
+  },
+  "artista": {
+   "id": "sxaqO49XK7d4W5JEK",
+   "nome": "Artist (@Art@)",
+   "ref": "B179"
+  },
+  "assuntos-atuais": {
+   "id": "sWFtA7Gvclq4aL-Yb",
+   "nome": "Current Affairs (@Subject@)",
+   "ref": "B186"
+  },
+  "astronomia": {
+   "id": "sbcabbj7Zf2iurxxA",
+   "nome": "Astronomy",
+   "ref": "B179"
+  },
+  "ataque-inato": {
+   "id": "s6rCvCSMxy5vSy3gd",
+   "nome": "Innate Attack (Breath)",
+   "ref": "B201"
+  },
+  "atuacao": {
+   "id": "smuiHfT5hh4IOqtPW",
+   "nome": "Performance",
+   "ref": "B212"
+  },
+  "auto-hipnose": {
+   "id": "sZqSL-LyzHEp8oSCU",
+   "nome": "Autohypnosis",
+   "ref": "B179,MA54"
+  },
+  "bastao": {
+   "id": "sZnijHP17_9lk1OPG",
+   "nome": "Staff",
+   "ref": "B208"
+  },
+  "besta": {
+   "id": "siMUzAucXaiMoAz9z",
+   "nome": "Crossbow",
+   "ref": "B186"
+  },
+  "bioengenharia": {
+   "id": "sSnvf-r4ViMOrA_5y",
+   "nome": "Bioengineering (@Specialty@)",
+   "ref": "B180"
+  },
+  "biologia": {
+   "id": "sb6LoqgrQgzKvzHH2",
+   "nome": "Biology (@Specialty@)",
+   "ref": "B180"
+  },
+  "bloqueio-mental": {
+   "id": "s_6AWhlyx4j6tK_OF",
+   "nome": "Mind Block",
+   "ref": "B210"
+  },
+  "boemia": {
+   "id": "si-upI7A5RgdO0cjC",
+   "nome": "Carousing",
+   "ref": "B183"
+  },
+  "boleadeira": {
+   "id": "slQ5ixUw01c01ysbC",
+   "nome": "Bolas",
+   "ref": "B181"
+  },
+  "boxe": {
+   "id": "sEw2VcGPL_pN66Fah",
+   "nome": "Boxing",
+   "ref": "B182,MA55"
+  },
+  "briga": {
+   "id": "shtDdl5thrvKSnJHf",
+   "nome": "Brawling",
+   "ref": "B182,MA55"
+  },
+  "caminhada": {
+   "id": "s9b5e-6c-ljOeUtt5",
+   "nome": "Hiking",
+   "ref": "B200"
+  },
+  "camuflagem": {
+   "id": "sKtd60c-jdtMDfOIt",
+   "nome": "Camouflage",
+   "ref": "B183"
+  },
+  "canhoneiro": {
+   "id": "s5c7q2yMkvwWpUEzZ",
+   "nome": "Gunner (Cannon)",
+   "ref": "B198"
+  },
+  "canto": {
+   "id": "snPJCUJooMh6l1Da2",
+   "nome": "Singing",
+   "ref": "B220"
+  },
+  "capa": {
+   "id": "swTrkA4PO0rSq8mHe",
+   "nome": "Cloak",
+   "ref": "B184"
+  },
+  "carate": {
+   "id": "sU4bjpp9TsvnRavPN",
+   "nome": "Karate",
+   "ref": "B203,MA57"
+  },
+  "carpintaria": {
+   "id": "sD3EsxbzE53gj93Ow",
+   "nome": "Carpentry",
+   "ref": "B183"
+  },
+  "carregamento": {
+   "id": "sM7zEW0oDYHNZZuWo",
+   "nome": "Packing",
+   "ref": "B212"
+  },
+  "carroceiro": {
+   "id": "ssWT3XuSJs8HE9sXX",
+   "nome": "Teamster (@Specialty@)",
+   "ref": "B225"
+  },
+  "cartografia": {
+   "id": "sB28HTR_MZyXLP90w",
+   "nome": "Cartography",
+   "ref": "B183"
+  },
+  "cavalgar": {
+   "id": "sovqo6SR6ThLQTR3K",
+   "nome": "Riding (@Specialty@)",
+   "ref": "B217"
+  },
+  "chicote": {
+   "id": "sowY4gdlDyw8AZLDq",
+   "nome": "Whip",
+   "ref": "B209"
+  },
+  "ciclismo": {
+   "id": "sgDVif7IKSPE3JdMR",
+   "nome": "Bicycling",
+   "ref": "B180"
+  },
+  "ciencia-estranha": {
+   "id": "si6mX4OGmTtcWb1ud",
+   "nome": "Weird Science",
+   "ref": "B228"
+  },
+  "cirurgia": {
+   "id": "sgrDrFiOdLC9njqnC",
+   "nome": "Surgery",
+   "ref": "B223"
+  },
+  "comercio": {
+   "id": "shHyf3H441PtZMBlJ",
+   "nome": "Merchant",
+   "ref": "B209"
+  },
+  "composicao-musical": {
+   "id": "s_0Z_13grqB7gIcuV",
+   "nome": "Musical Composition",
+   "ref": "B210"
+  },
+  "conducao": {
+   "id": "sGqQ0und_g8u3ez2b",
+   "nome": "Driving (@Vehicle class@)",
+   "ref": "B188"
+  },
+  "conhecimento-das-ervas": {
+   "id": "suh8p7dvxGAH0tzsX",
+   "nome": "Herb Lore",
+   "ref": "B199"
+  },
+  "conhecimento-do-terreno": {
+   "id": "shOKPvx75BP3bzLhl",
+   "nome": "Area Knowledge (@City@)",
+   "ref": "B176"
+  },
+  "conhecimento-oculto": {
+   "id": "sIGnp4W_M8XBodpEH",
+   "nome": "Hidden Lore (@Subject@)",
+   "ref": "B199,MA57"
+  },
+  "connoisseur": {
+   "id": "s2SdStcV1J3cLdM7e",
+   "nome": "Connoisseur (@Subject@)",
+   "ref": "B185,MA56"
+  },
+  "conserto-de-equipamento-eletronico": {
+   "id": "sYwZvSMZ9tfHES4z7",
+   "nome": "Electronics Repair (@Electronics type@)",
+   "ref": "B190"
+  },
+  "contabilidade": {
+   "id": "s67Roch7cMOY4VSj-",
+   "nome": "Accounting",
+   "ref": "B174"
+  },
+  "contrabando": {
+   "id": "swYZeCAKyU5w-2tzd",
+   "nome": "Smuggling",
+   "ref": "B221"
+  },
+  "controle-da-respiracao": {
+   "id": "spMUh1AbXRoFm1hqU",
+   "nome": "Breath Control",
+   "ref": "B182"
+  },
+  "controle-das-funcoes-involuntarias": {
+   "id": "sW70jxMkHsRAPsc94",
+   "nome": "Body Control",
+   "ref": "B181,MA54"
+  },
+  "controle-de-carregamento": {
+   "id": "sVspKJvpEaYNHFmRo",
+   "nome": "Freight Handling",
+   "ref": "B197"
+  },
+  "corrida": {
+   "id": "s4I5dPhJgOFfh57YM",
+   "nome": "Running",
+   "ref": "B218"
+  },
+  "costura": {
+   "id": "smwvG7uvdgf3cJC56",
+   "nome": "Sewing",
+   "ref": "B219"
+  },
+  "criminologia": {
+   "id": "sLoMDn7X8itpfsDPv",
+   "nome": "Criminology",
+   "ref": "B186"
+  },
+  "criptografia": {
+   "id": "sKEmDeUJja8G_ZlSV",
+   "nome": "Cryptography",
+   "ref": "B186"
+  },
+  "cuidados-com-a-casa": {
+   "id": "sfZrwMVUibhbtdssl",
+   "nome": "Housekeeping",
+   "ref": "B200"
+  },
+  "culinaria": {
+   "id": "sxglmNWmcsR5YcSDw",
+   "nome": "Cooking",
+   "ref": "B185"
+  },
+  "cultivo": {
+   "id": "sxvdYLe6aBGDF208V",
+   "nome": "Farming",
+   "ref": "B194"
+  },
+  "danca": {
+   "id": "sksrUWDcZ36TbMPjP",
+   "nome": "Dancing",
+   "ref": "B187"
+  },
+  "desenho-de-simbolos": {
+   "id": "sgngatQDC6icBlUJt",
+   "nome": "Symbol Drawing (@Specialty@)",
+   "ref": "B224"
+  },
+  "deslumbrar": {
+   "id": "sdmOQoMqn3K1c3_ov",
+   "nome": "Enthrallment",
+   "ref": "B191"
+  },
+  "desviar": {
+   "id": "sqd0c1fRmbY6oISKb",
+   "nome": "Push",
+   "ref": "B216,MA59"
+  },
+  "deteccao-de-mentiras": {
+   "id": "sIegIM7jx4oMnRMm2",
+   "nome": "Detect Lies",
+   "ref": "B187"
+  },
+  "diagnose": {
+   "id": "sdjyVxpBGLKKkBeCm",
+   "nome": "Diagnosis",
+   "ref": "B187"
+  },
+  "digitacao": {
+   "id": "syDYl_qmW2q_TFWjQ",
+   "nome": "Typing",
+   "ref": "B228"
+  },
+  "diplomacia": {
+   "id": "s8j6tcaNxXkF89Xbt",
+   "nome": "Diplomacy",
+   "ref": "B187"
+  },
+  "disfarce": {
+   "id": "sahD-JZ6YhK8Y91Ug",
+   "nome": "Disguise (@Specialty@)",
+   "ref": "B187"
+  },
+  "dissimulacao": {
+   "id": "sQ7hn7pW3tIPfsU8Z",
+   "nome": "Acting",
+   "ref": "B174"
+  },
+  "economia": {
+   "id": "s5odcUEok8qKTgBoF",
+   "nome": "Economics",
+   "ref": "B189"
+  },
+  "eletricista": {
+   "id": "scAysIf1hcMnIL0Ca",
+   "nome": "Electrician",
+   "ref": "B189"
+  },
+  "encenacao-de-combate": {
+   "id": "s668RCeNYZxo_-Xaj",
+   "nome": "Stage Combat",
+   "ref": "B222,MA59"
+  },
+  "engenharia": {
+   "id": "s_QPsaG-MtZBFWSgN",
+   "nome": "Engineer (@Field of expertise@)",
+   "ref": "B190"
+  },
+  "engolidor-de-fogo": {
+   "id": "sQHalgIcHaJaMxuWp",
+   "nome": "Fire Eating",
+   "ref": "B195"
+  },
+  "entrada-forcada": {
+   "id": "sxSlxLiSgB95HINP_",
+   "nome": "Forced Entry",
+   "ref": "B196"
+  },
+  "escalada": {
+   "id": "sENfGTCKokQN0N4PF",
+   "nome": "Climbing",
+   "ref": "B183"
+  },
+  "escrita": {
+   "id": "sHuT7RWMID47mVbzP",
+   "nome": "Writing",
+   "ref": "B228"
+  },
+  "escudo": {
+   "id": "sHxw81LQLjwvQNyP9",
+   "nome": "Shield (Shield)",
+   "ref": "B220"
+  },
+  "espada-de-duas-maos": {
+   "id": "sFGzlIfgyVs82Qec9",
+   "nome": "Two-Handed Sword",
+   "ref": "B209"
+  },
+  "espada-de-lamina-larga": {
+   "id": "sW0On3Z4nRf_QVqy1",
+   "nome": "Broadsword",
+   "ref": "B208"
+  },
+  "espadas-curtas": {
+   "id": "s-DdOtFsU7dX4Ttfz",
+   "nome": "Shortsword",
+   "ref": "B209"
+  },
+  "esportes": {
+   "id": "smxkcngH5Kz54yeN3",
+   "nome": "Sports (@Speciality@)",
+   "ref": "B222,MA59"
+  },
+  "esqui": {
+   "id": "sZSMcJF_6tsVoHnXE",
+   "nome": "Skiing",
+   "ref": "B221"
+  },
+  "estrategia": {
+   "id": "sTzZdkEt9palkx6X8",
+   "nome": "Strategy (Land)",
+   "ref": "B222"
+  },
+  "exorcismo": {
+   "id": "sDWD-D17CLWj-4iaZ",
+   "nome": "Exorcism",
+   "ref": "B193"
+  },
+  "explosivos": {
+   "id": "sBo_rPo1Tssf4Qjf3",
+   "nome": "Explosives (@Specialty@)",
+   "ref": "B194"
+  },
+  "faca": {
+   "id": "slOONrK6jDHvcRoGx",
+   "nome": "Knife",
+   "ref": "B208"
+  },
+  "falcoaria": {
+   "id": "sy8miYImrH3fYmTAL",
+   "nome": "Falconry",
+   "ref": "B194"
+  },
+  "falsificacao": {
+   "id": "sB651vLUsyZcvdcaR",
+   "nome": "Forgery",
+   "ref": "B196"
+  },
+  "falsificacao-de-dinheiro": {
+   "id": "sGGKY6NW6IibJJLFF",
+   "nome": "Counterfeiting",
+   "ref": "B185"
+  },
+  "farmacia": {
+   "id": "s_q9U1zjeA1nsla4-",
+   "nome": "Pharmacy (Herbal)",
+   "ref": "B213"
+  },
+  "ferreiro": {
+   "id": "sPzbISx1YLymsXhzT",
+   "nome": "Smith (Iron)",
+   "ref": "B221"
+  },
+  "filosofia": {
+   "id": "sW3Kxrpz-XOleoZOl",
+   "nome": "Philosophy (@Specialty@)",
+   "ref": "B213"
+  },
+  "financas": {
+   "id": "sv_ljCvM4grkpYmGA",
+   "nome": "Finance",
+   "ref": "B195"
+  },
+  "fisica": {
+   "id": "snf1C1wltuy8_tanr",
+   "nome": "Physics",
+   "ref": "B213"
+  },
+  "fisiologia": {
+   "id": "sPfyz7_V73fxlVXOS",
+   "nome": "Physiology (@Specialty@)",
+   "ref": "B213"
+  },
+  "forca-mental": {
+   "id": "sxDgiqntG5jIWBGld",
+   "nome": "Mental Strength",
+   "ref": "B209"
+  },
+  "fotografia": {
+   "id": "sWZxYKexOd29DFrRI",
+   "nome": "Photography",
+   "ref": "B213"
+  },
+  "fuga": {
+   "id": "sfTwejhxAraXCVCCY",
+   "nome": "Escape",
+   "ref": "B192"
+  },
+  "funda": {
+   "id": "sIMglB97JYprAtRah",
+   "nome": "Sling",
+   "ref": "B221"
+  },
+  "furtividade": {
+   "id": "svEm7OyeCu_9wJ8Kk",
+   "nome": "Stealth",
+   "ref": "B222"
+  },
+  "garrote": {
+   "id": "sJi3zy2jTbdgSwZfK",
+   "nome": "Garrote",
+   "ref": "B197"
+  },
+  "geografia": {
+   "id": "spB65Bj2vTHoTpCYE",
+   "nome": "Geography (Regional)",
+   "ref": "B198"
+  },
+  "geologia": {
+   "id": "s2YhViBIYuLf4xevN",
+   "nome": "Geology (@Planet class@)",
+   "ref": "B198"
+  },
+  "golpe-poderoso": {
+   "id": "sBCZF1apRHAng7GFF",
+   "nome": "Power Blow",
+   "ref": "B215,MA58"
+  },
+  "habilidade-com-nos": {
+   "id": "sM7ZMtDfhhFCJkt1X",
+   "nome": "Knot-Tying",
+   "ref": "B203,MA58"
+  },
+  "hacking-de-computador": {
+   "id": "sQg03fYUt1kjNWrnM",
+   "nome": "Computer Hacking",
+   "ref": "B184"
+  },
+  "heraldica": {
+   "id": "sYlFWI7xkIaK8OMWP",
+   "nome": "Heraldry",
+   "ref": "B199"
+  },
+  "hipnotismo": {
+   "id": "sm-zCRgqY_1QXowLd",
+   "nome": "Hypnotism",
+   "ref": "B201"
+  },
+  "historia": {
+   "id": "sRzoU2_LS2s4r51LA",
+   "nome": "History (@Specialty@)",
+   "ref": "B200"
+  },
+  "influencia-musical": {
+   "id": "s9BP8qACIfSLdJ5Pk",
+   "nome": "Musical Influence",
+   "ref": "B210"
+  },
+  "instrumentos-musicais": {
+   "id": "sZhLALSTNRZIxx-GS",
+   "nome": "Musical Instrument (@Specialty@)",
+   "ref": "B211"
+  },
+  "interrogatorio": {
+   "id": "sfB-d4kTee0C-BZv0",
+   "nome": "Interrogation",
+   "ref": "B202"
+  },
+  "intimidacao": {
+   "id": "shun-iitiwyWbrGcF",
+   "nome": "Intimidation",
+   "ref": "B202"
+  },
+  "jardinagem": {
+   "id": "sjjIH1hLuX-mkv5ZH",
+   "nome": "Gardening",
+   "ref": "B197"
+  },
+  "jitte-sai": {
+   "id": "sTZGCst3O84rAPalE",
+   "nome": "Jitte/Sai",
+   "ref": "B208"
+  },
+  "joalheiro": {
+   "id": "sGOeKSxjocmNLt7XJ",
+   "nome": "Jeweler",
+   "ref": "B203"
+  },
+  "jogos-de-azar": {
+   "id": "sWB9ypJAq43MF3O0n",
+   "nome": "Gambling",
+   "ref": "B197"
+  },
+  "jogos-de-entretenimento": {
+   "id": "syfSQ9N8yETqQbhFK",
+   "nome": "Games (@Specialty@)",
+   "ref": "B197,MA57"
+  },
+  "judo": {
+   "id": "sWVqswxT3hi7db0kD",
+   "nome": "Judo",
+   "ref": "B203,MA57"
+  },
+  "jurisprudencia": {
+   "id": "szeHiRtktcHWqsul8",
+   "nome": "Law (@Specialty@)",
+   "ref": "B204"
+  },
+  "kiai": {
+   "id": "sXDpgSX-oeFkMeAmo",
+   "nome": "Kiai",
+   "ref": "B203,MA58"
+  },
+  "kusari": {
+   "id": "sYPHN5czQyyV8OVll",
+   "nome": "Kusari",
+   "ref": "B209"
+  },
+  "labia": {
+   "id": "s7zUqAO5PEC5JKk_W",
+   "nome": "Fast-Talk",
+   "ref": "B195"
+  },
+  "laco": {
+   "id": "sNHxFDMT_Y46rdkWv",
+   "nome": "Lasso",
+   "ref": "B204"
+  },
+  "lanca": {
+   "id": "sGZIS74r72pQZ7Ayv",
+   "nome": "Spear",
+   "ref": "B208"
+  },
+  "lanca-de-justa": {
+   "id": "s-cgh9Ou6XjX7wgtG",
+   "nome": "Lance",
+   "ref": "B204"
+  },
+  "lavagem-cerebral": {
+   "id": "s7K5VfH6fgYzs2cty",
+   "nome": "Brainwashing",
+   "ref": "B182"
+  },
+  "leitura-dinamica": {
+   "id": "sTZDWJpkF7w7CYYRT",
+   "nome": "Speed-Reading",
+   "ref": "B222"
+  },
+  "leitura-labial": {
+   "id": "sdl9m7gHE7hlMX0AX",
+   "nome": "Lip Reading",
+   "ref": "B205"
+  },
+  "levantamento": {
+   "id": "suO1r-jJlrd15U-GJ",
+   "nome": "Lifting",
+   "ref": "B205"
+  },
+  "lideranca": {
+   "id": "sSxGnNPMXyZpZKoFZ",
+   "nome": "Leadership",
+   "ref": "B204"
+  },
+  "linguagem-corporal": {
+   "id": "sOp4wssAMtUc1ukJI",
+   "nome": "Body Language",
+   "ref": "B181"
+  },
+  "linguistica": {
+   "id": "sgF2Eqa7ywSdRHR47",
+   "nome": "Linguistics",
+   "ref": "B205"
+  },
+  "literatura": {
+   "id": "s7TXAnMYKalDo9ZEs",
+   "nome": "Literature",
+   "ref": "B205"
+  },
+  "luta-greco-romana": {
+   "id": "s8parl7zgbXys0OF2",
+   "nome": "Wrestling",
+   "ref": "B228,MA61"
+  },
+  "lutar-as-cegas": {
+   "id": "sY6nsMQaWVxXTcdRJ",
+   "nome": "Blind Fighting",
+   "ref": "B180,MA54"
+  },
+  "maca-machado": {
+   "id": "sCrVXzblht0cVVzWN",
+   "nome": "Axe/Mace",
+   "ref": "B208"
+  },
+  "maca-machado-de-duas-maos": {
+   "id": "soc41LpDsc6ewYxuO",
+   "nome": "Two-Handed Axe/Mace",
+   "ref": "B208"
+  },
+  "magia-ritualistica": {
+   "id": "sr6q1bSaTBMaLHwCR",
+   "nome": "Ritual Magic (@Specialty@)",
+   "ref": "B218"
+  },
+  "manejo-de-barcos": {
+   "id": "srGD2BBTEQxUY4yhg",
+   "nome": "Shiphandling (@Ship class@)",
+   "ref": "B220"
+  },
+  "mangual": {
+   "id": "sy28RZa8MDBQXru82",
+   "nome": "Flail",
+   "ref": "B208"
+  },
+  "mangual-de-duas-maos": {
+   "id": "sn1Fy1fi0cXPnwhst",
+   "nome": "Two-Handed Flail",
+   "ref": "B208"
+  },
+  "manha": {
+   "id": "smTUpMWJGqPeT1KER",
+   "nome": "Streetwise",
+   "ref": "B223"
+  },
+  "maquiagem": {
+   "id": "sKEtlI01C6NwlefQR",
+   "nome": "Makeup",
+   "ref": "B206"
+  },
+  "maquinista": {
+   "id": "s_KN_9-Qka4xk40ns",
+   "nome": "Machinist",
+   "ref": "B206"
+  },
+  "marinhagem": {
+   "id": "sv_ITrhGSsEpjdcqa",
+   "nome": "Seamanship",
+   "ref": "B185"
+  },
+  "matematica": {
+   "id": "sDKy9mOhQeiZ6fjvq",
+   "nome": "Mathematics (@Specialization@)",
+   "ref": "B207"
+  },
+  "materiais-perigosos": {
+   "id": "sn9Y6a4YbUfsQ8GxY",
+   "nome": "Hazardous Materials (@Specialization@)",
+   "ref": "B199"
+  },
+  "mecanica": {
+   "id": "sjiPOdZOS0Ve3xMhr",
+   "nome": "Mechanic (@Machine class@)",
+   "ref": "B207"
+  },
+  "medicina": {
+   "id": "sVSxt6kQGDV8RpNKB",
+   "nome": "Physician",
+   "ref": "B213"
+  },
+  "medicina-alternativa": {
+   "id": "sC3Hao70ucDyPFMyx",
+   "nome": "Esoteric Medicine",
+   "ref": "B192,MA56"
+  },
+  "meditacao": {
+   "id": "s9Ea1OCpoHkrNdjwf",
+   "nome": "Meditation",
+   "ref": "B207"
+  },
+  "mendicancia": {
+   "id": "sIxFgcOH8EDvaxZAy",
+   "nome": "Panhandling",
+   "ref": "B212"
+  },
+  "mergulho": {
+   "id": "slt_JUd-roKZ6TmQY",
+   "nome": "Scuba",
+   "ref": "B219"
+  },
+  "metalurgia": {
+   "id": "spTsoXZjc2oRCK8Cz",
+   "nome": "Metallurgy",
+   "ref": "B209"
+  },
+  "meteorologia": {
+   "id": "sZ7oOvV6nD6kNxovk",
+   "nome": "Weather Sense",
+   "ref": "B209"
+  },
+  "mimica-pantomima": {
+   "id": "sGz21GskAlJXL1hYP",
+   "nome": "Gesture",
+   "ref": "B198"
+  },
+  "montaria": {
+   "id": "s72AJypdaNPoqKcDy",
+   "nome": "Mount",
+   "ref": "B210"
+  },
+  "natacao": {
+   "id": "sYEI9Qk3NtuKsXkTQ",
+   "nome": "Swimming",
+   "ref": "B224"
+  },
+  "naturalista": {
+   "id": "sxVUUyE3lmz8LXpHG",
+   "nome": "Naturalist (@Planet type@)",
+   "ref": "B211"
+  },
+  "navegacao": {
+   "id": "shChZ7cQ-SIe7JKo6",
+   "nome": "Navigation (@Environment@)",
+   "ref": "B211"
+  },
+  "observacao": {
+   "id": "s6Yn2IClGb4i4LgOQ",
+   "nome": "Observation",
+   "ref": "B211"
+  },
+  "observador-avancado": {
+   "id": "slL5EpCi-j8R3dv5U",
+   "nome": "Forward Observer",
+   "ref": "B196"
+  },
+  "ocultamento": {
+   "id": "s3hoLmN-a9_mOr2Kh",
+   "nome": "Holdout",
+   "ref": "B200"
+  },
+  "ocultismo": {
+   "id": "sa4xUKRmFe81nvpnd",
+   "nome": "Occultism",
+   "ref": "B212"
+  },
+  "operacao-de-aparelhos-eletronicos": {
+   "id": "sUOQKAH8IaMhpxk1o",
+   "nome": "Electronics Operation (@Electronics type@)",
+   "ref": "B189"
+  },
+  "operacao-de-computadores": {
+   "id": "ssHhRG7LH-Ma3YDnH",
+   "nome": "Computer Operation",
+   "ref": "B184"
+  },
+  "oratoria": {
+   "id": "spGG-fpOy0g88rFDO",
+   "nome": "Public Speaking",
+   "ref": "B216"
+  },
+  "paleontologia": {
+   "id": "s65U7Q64hLe7e_7UR",
+   "nome": "Paleontology (@Specialization@)",
+   "ref": "B212"
+  },
+  "paraquedismo": {
+   "id": "sP3wOrpLtDglxeORz",
+   "nome": "Parachuting",
+   "ref": "B212"
+  },
+  "passos-leves": {
+   "id": "sY5rlO-w-HXWZBVjO",
+   "nome": "Light Walk",
+   "ref": "B205,MA58"
+  },
+  "patinacao": {
+   "id": "sKsmA1SUKqVibJWUT",
+   "nome": "Skating",
+   "ref": "B220"
+  },
+  "pedagogia": {
+   "id": "sHJ4snJkuJRXIT85e",
+   "nome": "Teaching",
+   "ref": "B224"
+  },
+  "percepcao-do-corpo": {
+   "id": "sziMa9_9xTvR2iiqx",
+   "nome": "Body Sense",
+   "ref": "B181"
+  },
+  "performance-em-grupo": {
+   "id": "sMUFAf6g_JoMYW3r7",
+   "nome": "Group Performance (@Art@)",
+   "ref": "B198,MA57"
+  },
+  "pericia-forense": {
+   "id": "sKWsnqVrAhUQFZUr5",
+   "nome": "Forensics",
+   "ref": "B196"
+  },
+  "pericia-profissional": {
+   "id": "sx1CDkGBR830IZrmz",
+   "nome": "Professional Skill (@Mental Skill@)",
+   "ref": "B215"
+  },
+  "perseguicao": {
+   "id": "sqFw3NucoHE6Ki4XP",
+   "nome": "Shadowing",
+   "ref": "B219"
+  },
+  "pescaria": {
+   "id": "sOzdhG3D1equT9MNn",
+   "nome": "Fishing",
+   "ref": "B195"
+  },
+  "pesquisa": {
+   "id": "stFawUEv8gxldDoiC",
+   "nome": "Research",
+   "ref": "B217"
+  },
+  "pilotagem": {
+   "id": "sQE2t0-gMM5-4KgPb",
+   "nome": "Piloting (@Flying vehicle class@)",
+   "ref": "B214"
+  },
+  "poesia": {
+   "id": "sLieqGSSKI8lwEkv5",
+   "nome": "Poetry",
+   "ref": "B214"
+  },
+  "politica": {
+   "id": "s6tcQ-jAVh2MoJ_uf",
+   "nome": "Politics",
+   "ref": "B215"
+  },
+  "pontos-de-pressao": {
+   "id": "sqyFrR5b7x_IRMZsk",
+   "nome": "Pressure Points",
+   "ref": "B215,MA58"
+  },
+  "pontos-secretos": {
+   "id": "syEBi2sam2KQnb18q",
+   "nome": "Pressure Secrets",
+   "ref": "B215,MA59"
+  },
+  "postura-imovel": {
+   "id": "sf7mpZ2FYaf1nj407",
+   "nome": "Immovable Stance",
+   "ref": "B201"
+  },
+  "prestidigitacao": {
+   "id": "sx30jF75AT-salBcj",
+   "nome": "Sleight of Hand",
+   "ref": "B221"
+  },
+  "primeiros-socorros": {
+   "id": "s9mV--3lpIfXO7N6Z",
+   "nome": "First Aid",
+   "ref": "B195"
+  },
+  "programacao-de-computadores": {
+   "id": "sBY-R7Xmf64T7WzZ4",
+   "nome": "Computer Programming",
+   "ref": "B184"
+  },
+  "projetor-de-liquidos": {
+   "id": "sD52ZWybVs6biZy2K",
+   "nome": "Liquid Projector (@Weapon class@)",
+   "ref": "B205"
+  },
+  "propaganda": {
+   "id": "sH-gwMqLTWQ337rzx",
+   "nome": "Propaganda",
+   "ref": "B216"
+  },
+  "prospeccao": {
+   "id": "ssj5Oq-3-vH-bQ1AL",
+   "nome": "Prospecting",
+   "ref": "B216"
+  },
+  "psicologia": {
+   "id": "sjU9kn3jTX-_5Q5p5",
+   "nome": "Psychology",
+   "ref": "B216"
+  },
+  "punga": {
+   "id": "ss81pfyKeFBFEpPw2",
+   "nome": "Pickpocket",
+   "ref": "B213"
+  },
+  "queda-livre": {
+   "id": "s7kVwKFERTuMYO3O8",
+   "nome": "Free Fall",
+   "ref": "B197"
+  },
+  "quimica": {
+   "id": "sNo8fl03x7a76gaOU",
+   "nome": "Chemistry",
+   "ref": "B183"
+  },
+  "rapieira": {
+   "id": "s-y06a7Fcnd6VGLQ-",
+   "nome": "Rapier",
+   "ref": "B208"
+  },
+  "rastreamento": {
+   "id": "s3rs5bVG0nxQSZEGS",
+   "nome": "Tracking",
+   "ref": "B226"
+  },
+  "rede": {
+   "id": "s0P_2AU_5q-BK-nhU",
+   "nome": "Net",
+   "ref": "B211"
+  },
+  "remo-vela": {
+   "id": "s_hzIiLr9SpjrJyxG",
+   "nome": "Boating (@Boat class@)",
+   "ref": "B180"
+  },
+  "revistar": {
+   "id": "sW_dr_6QZxz1zrODT",
+   "nome": "Search",
+   "ref": "B219"
+  },
+  "ritual-religioso": {
+   "id": "s0OrRdzDLyXnfmwj9",
+   "nome": "Religious Ritual (@Specialty@)",
+   "ref": "B217"
+  },
+  "sabre": {
+   "id": "sm4SB8y1Te_UbDPpu",
+   "nome": "Saber",
+   "ref": "B208"
+  },
+  "sacar-rapido": {
+   "id": "s5xh6bANmCGbYersa",
+   "nome": "Fast-Draw (@Specialization@)",
+   "ref": "B194,MA56"
+  },
+  "salto": {
+   "id": "so6xAKJVgFYRWYyQA",
+   "nome": "Jumping",
+   "ref": "B203,MA57"
+  },
+  "salto-voador": {
+   "id": "s85wQHwMo5pSvfiZv",
+   "nome": "Flying Leap",
+   "ref": "B196,MA57"
+  },
+  "sex-appeal": {
+   "id": "sLAU6vDBL4XaQNS0z",
+   "nome": "Sex Appeal",
+   "ref": "B219"
+  },
+  "sobrevivencia": {
+   "id": "sx3TN2kRYgqo5AGcp",
+   "nome": "Survival (@Any Environment@)",
+   "ref": "B223"
+  },
+  "sobrevivencia-urbana": {
+   "id": "sNx2U5ErYC6YZ-zbF",
+   "nome": "Urban Survival",
+   "ref": "B228"
+  },
+  "sociologia": {
+   "id": "szf-0DrUH5ef3Cw0E",
+   "nome": "Sociology",
+   "ref": "B221"
+  },
+  "soldado": {
+   "id": "s-Sz8XmnGE56GDrez",
+   "nome": "Soldier",
+   "ref": "B221"
+  },
+  "soltar": {
+   "id": "sq8xLgEq7YeXjyiv4",
+   "nome": "Dropping",
+   "ref": "B189"
+  },
+  "sonhos": {
+   "id": "sPb6TBT6YjoYH8jNG",
+   "nome": "Dreaming",
+   "ref": "B188"
+  },
+  "submarino": {
+   "id": "sFBbOT02js0oHhXii",
+   "nome": "Submarine (Large Sub)",
+   "ref": "B222"
+  },
+  "sumo": {
+   "id": "s_Km3fk8ZCotlg-Yr",
+   "nome": "Sumo Wrestling",
+   "ref": "B223,MA59"
+  },
+  "surrupiar": {
+   "id": "s8xJ9sNlYaXiyd-va",
+   "nome": "Filch",
+   "ref": "B195"
+  },
+  "tatica": {
+   "id": "sgWf_qVqI7HrPQUo7",
+   "nome": "Tactics",
+   "ref": "B224,MA60"
+  },
+  "taumatologia": {
+   "id": "sGkpZOHz0g5ARAcej",
+   "nome": "Thaumatology",
+   "ref": "B225"
+  },
+  "teologia": {
+   "id": "sMIRD7ORV8Bmze6Af",
+   "nome": "Theology (@Specialty@)",
+   "ref": "B226"
+  },
+  "tercado": {
+   "id": "sS4hZ6hj6EE25ergR",
+   "nome": "Smallsword",
+   "ref": "B208"
+  },
+  "tonfa": {
+   "id": "sNwfaxu-3aL0vVB5a",
+   "nome": "Tonfa",
+   "ref": "B209,MA61"
+  },
+  "trabalhos-em-couro": {
+   "id": "so0fP9KSXX4yHNCqS",
+   "nome": "Leatherworking",
+   "ref": "B205"
+  },
+  "trato-social": {
+   "id": "sPNoFjMzWUsnwn7Pv",
+   "nome": "Savoir-Faire (@Social group@)",
+   "ref": "B218,MA59"
+  },
+  "utilizacao-de-traje-especial": {
+   "id": "st53T_P4vw5xhO7Rp",
+   "nome": "Environment Suit",
+   "ref": "B192"
+  },
+  "veneficio": {
+   "id": "sVa9gXF-NnYK9vQkh",
+   "nome": "Poisons",
+   "ref": "B214"
+  },
+  "ventriloquismo": {
+   "id": "sqGxu15iEnZV1UQbt",
+   "nome": "Ventriloquism",
+   "ref": "B228"
+  },
+  "veterinaria": {
+   "id": "souQEXbTa7sf2sUGU",
+   "nome": "Veterinary",
+   "ref": "B228"
+  },
+  "voo": {
+   "id": "sLXgDrEXAvVPPoqJ4",
+   "nome": "Flight",
+   "ref": "B195"
+  },
+  "zarabatana": {
+   "id": "sIpGnMd46G9T1zXIr",
+   "nome": "Blowpipe",
+   "ref": "B180"
+  }
+ },
+ "vantagens": {
+  "abafador-de-mana": {
+   "id": "taukq0RLvFcJicdCP",
+   "nome": "Mana Damper",
+   "ref": "B67,P59"
+  },
+  "abascanto-resistencia-a-magia": {
+   "id": "tvH8CndwPkEmF4Z6t",
+   "nome": "Magic Resistance",
+   "ref": "B67"
+  },
+  "abencoado": {
+   "id": "tMpjw_N1k8SppqRpv",
+   "nome": "Blessed",
+   "ref": "B40,P43"
+  },
+  "acessorios": {
+   "id": "tNeakSSbeLd8qrQiQ",
+   "nome": "Accessory (@Tool@)",
+   "ref": "B100"
+  },
+  "adaptabilidade-cultural": {
+   "id": "t5D4nXKgejnaua22T",
+   "nome": "Cultural Adaptability",
+   "ref": "B46"
+  },
+  "adaptacao-ao-terreno": {
+   "id": "tZw_ze3n_bPxiK86s",
+   "nome": "Terrain Adaptation (@Terrain Type@)",
+   "ref": "B93,P83"
+  },
+  "aderencia": {
+   "id": "tkBNrHPI9rVmA2KbW",
+   "nome": "Clinging",
+   "ref": "B43,P45"
+  },
+  "aliados": {
+   "id": "t1Ob8iazARmhXvVrZ",
+   "nome": "Ally (@Who@)",
+   "ref": "B36,P41"
+  },
+  "ambidestria": {
+   "id": "tE_Ykx9nKvsgBGb6L",
+   "nome": "Ambidexterity",
+   "ref": "B39"
+  },
+  "ampliador-de-mana": {
+   "id": "t3tB-FuaaYA8n7N88",
+   "nome": "Mana Enhancer",
+   "ref": "B68,P59"
+  },
+  "anfibio": {
+   "id": "tS-7-nKXlxWatBXhg",
+   "nome": "Amphibious",
+   "ref": "B40,P42"
+  },
+  "antecedentes-incomuns": {
+   "id": "tUXA93F-9g685ivxz",
+   "nome": "Unusual Background",
+   "ref": "B96"
+  },
+  "apagado": {
+   "id": "tVS-zD5rFs5yhsJnJ",
+   "nome": "Zeroed",
+   "ref": "B100"
+  },
+  "aparencia": {
+   "id": "tdlCZw4YB4T7QkOnj",
+   "nome": "Appearance",
+   "ref": "B21"
+  },
+  "apetrechos": {
+   "id": "t7blIRUzFpiHS_mnO",
+   "nome": "Gizmo",
+   "ref": "B57,MA45"
+  },
+  "aptidao-magica": {
+   "id": "tpnv8EEpAS6Er2pwK",
+   "nome": "Magery",
+   "ref": "B66"
+  },
+  "ataque-adicional": {
+   "id": "tnoTxbCUvvok5k1Ep",
+   "nome": "Extra Attack",
+   "ref": "B53,P49,MA44"
+  },
+  "ataque-constritivo": {
+   "id": "tIixiOHEen0Uqu4Xo",
+   "nome": "Constriction Attack",
+   "ref": "B43,P45"
+  },
+  "ataque-inato": {
+   "id": "tPn0MAB9RgKaGCCBe",
+   "nome": "Innate Attack (Crush)",
+   "ref": "B61,P53,MA45"
+  },
+  "atirador": {
+   "id": "t-TwxuBLxBKZX3AeN",
+   "nome": "Gunslinger",
+   "ref": "B58,MA45,GF15"
+  },
+  "atribulacao": {
+   "id": "t9fwzDbdQy1S9CHUx",
+   "nome": "Affliction",
+   "ref": "B35,P39,PSI13"
+  },
+  "audicao-discriminatoria": {
+   "id": "tTr0n87UXk6YrVoKR",
+   "nome": "Discriminatory Hearing",
+   "ref": "B49,P47"
+  },
+  "audicao-parabolica": {
+   "id": "t7wwouLr2lKkU9N_5",
+   "nome": "Parabolic Hearing",
+   "ref": "B72,P51"
+  },
+  "audicao-subsonica": {
+   "id": "tY14StY52x9ZAhC-O",
+   "nome": "Subsonic Hearing",
+   "ref": "B89,P51"
+  },
+  "autotranse": {
+   "id": "trA1ecHk_82dDKazI",
+   "nome": "Autotrance",
+   "ref": "B101"
+  },
+  "boa-forma": {
+   "id": "toTe273Ky82B6YdW5",
+   "nome": "Fit",
+   "ref": "B55"
+  },
+  "boca-adicional": {
+   "id": "twoVg22OgiaM9p9WC",
+   "nome": "Extra Mouth",
+   "ref": "B55"
+  },
+  "bom-senso": {
+   "id": "tqSO2a00yPEs8sCn3",
+   "nome": "Common Sense",
+   "ref": "B43,P45"
+  },
+  "bracos-adicionais": {
+   "id": "tkCi-pV0exqSyPhyv",
+   "nome": "Extra Arm",
+   "ref": "B53"
+  },
+  "cabeca-adicional": {
+   "id": "twstY5yrAJd3IWpjl",
+   "nome": "Extra Head",
+   "ref": "B54"
+  },
+  "calculos-instantaneos": {
+   "id": "tq6b1t_pc4X18GAWi",
+   "nome": "Lightning Calculator",
+   "ref": "B66"
+  },
+  "camaleao": {
+   "id": "tsavbTOaIQeNnkIK9",
+   "nome": "Chameleon",
+   "ref": "B41,P43"
+  },
+  "camaleao-social": {
+   "id": "tI6dwoBoTEQ-gfy0a",
+   "nome": "Social Chameleon",
+   "ref": "B86"
+  },
+  "caminhar-no-ar": {
+   "id": "t_i9ReqmW46aSmnZu",
+   "nome": "Walk On Air",
+   "ref": "B97,P87"
+  },
+  "caminhar-sobre-liquidos": {
+   "id": "tY2Pkqh3aJvCOWlDv",
+   "nome": "Walk On Liquid",
+   "ref": "B97,P88"
+  },
+  "canalizacao": {
+   "id": "tndY5Ckq0qsVhEMuU",
+   "nome": "Channeling",
+   "ref": "B41,P43"
+  },
+  "carga-util": {
+   "id": "t7a13kFVl53ZfbkrK",
+   "nome": "Payload",
+   "ref": "B74"
+  },
+  "carisma": {
+   "id": "tMMQWflrKUPOkyIF9",
+   "nome": "Charisma",
+   "ref": "B41"
+  },
+  "cibernetica": {
+   "id": "tNBE3sLoyrUvAgoZ3",
+   "nome": "Cybernetics",
+   "ref": "B46"
+  },
+  "clarisenciencia": {
+   "id": "tTyoCiOimAdIrte5U",
+   "nome": "Clairsentience",
+   "ref": "B42,P44,PSI13"
+  },
+  "clericato": {
+   "id": "t_iKOx_M0gzCIh-Ws",
+   "nome": "Clerical Investment",
+   "ref": "B43"
+  },
+  "consumo-reduzido": {
+   "id": "tynHtgvWZmmNOL97D",
+   "nome": "Reduced Consumption",
+   "ref": "B80"
+  },
+  "contatos": {
+   "id": "t7U76B4j7M7hCGD_H",
+   "nome": "Contact (@Who@)",
+   "ref": "B44"
+  },
+  "controle-da-mente": {
+   "id": "tRaD38dfYa7Iuyh97",
+   "nome": "Mind Control",
+   "ref": "B68,P61,PSI15"
+  },
+  "controle-do-metabolismo": {
+   "id": "t6p_KdmzfBCpkYoyn",
+   "nome": "Metabolism Control",
+   "ref": "B68,P60"
+  },
+  "controle-termico": {
+   "id": "t3G6WRrWQl6IIo5At",
+   "nome": "Temperature Control",
+   "ref": "B92,P83"
+  },
+  "crescimento": {
+   "id": "t5Ch5eH7Z7r6CnY_E",
+   "nome": "Growth",
+   "ref": "B58,P50"
+  },
+  "cura": {
+   "id": "to1xtqqmTMVRyo0q3",
+   "nome": "Healing",
+   "ref": "B59,P51,PSI14"
+  },
+  "dentes": {
+   "id": "tK9Ov0WtlrhnJFy5n",
+   "nome": "Sharp Teeth",
+   "ref": "B91"
+  },
+  "desenvolvedor": {
+   "id": "t5mke7RFjA2ZT0KRA",
+   "nome": "Gadgeteer",
+   "ref": "B57"
+  },
+  "deslocamento-ampliado": {
+   "id": "tG2tK0QWXPQqFk-rd",
+   "nome": "Enhanced Move (@type@)",
+   "ref": "B52,P49"
+  },
+  "destemor": {
+   "id": "tQa3EUrs4Hjt9gxK6",
+   "nome": "Fearlessness",
+   "ref": "B55,MA44"
+  },
+  "destino": {
+   "id": "tL8SmaiHeI7AHymFs",
+   "nome": "Destiny (@Advantage@)",
+   "ref": "B132"
+  },
+  "destreza-manual-elevada": {
+   "id": "tY_8UkOBvzKIAgGGQ",
+   "nome": "High Manual Dexterity",
+   "ref": "B59"
+  },
+  "detectar": {
+   "id": "tap6QZdAg9aCR_Tvf",
+   "nome": "Detect",
+   "ref": "B48,P47,PSI14"
+  },
+  "dificil-de-subjugar": {
+   "id": "t5K9V7-_MYD_0BOQ8",
+   "nome": "Hard to Subdue",
+   "ref": "B59"
+  },
+  "digestao-universal": {
+   "id": "tzd5CbgeNR-p3gtUS",
+   "nome": "Universal Digestion",
+   "ref": "B95,P86"
+  },
+  "dobra": {
+   "id": "tJQCmPgR0kwIxfELq",
+   "nome": "Warp",
+   "ref": "B97,P88,PSI18"
+  },
+  "dominacao": {
+   "id": "tyr6b1DZBcG1mLqdR",
+   "nome": "Dominance",
+   "ref": "B50"
+  },
+  "dorminhoco-qualidade": {
+   "id": "t5j2Ox4jaIV9j0rpz",
+   "nome": "Deep Sleeper",
+   "ref": "B101"
+  },
+  "duplicacao": {
+   "id": "t-t--4XDw5-r25ldY",
+   "nome": "Duplication",
+   "ref": "B50,P48"
+  },
+  "durabilidade-sobrenatural": {
+   "id": "tEJCTc_AxUtehxG1e",
+   "nome": "Supernatural Durability",
+   "ref": "B89"
+  },
+  "duro-de-matar": {
+   "id": "txSLRSX9nxLwQkE2n",
+   "nome": "Hard to Kill",
+   "ref": "B58"
+  },
+  "dx-bracal": {
+   "id": "tN2MYa9FLlfw5pvda",
+   "nome": "Arm DX",
+   "ref": "B40"
+  },
+  "elasticidade": {
+   "id": "trAMmLYpE2LsOXtR2",
+   "nome": "Stretching",
+   "ref": "B88,P78"
+  },
+  "elo-mental": {
+   "id": "trUV-dtFgMs1vSSlr",
+   "nome": "Mindlink",
+   "ref": "B70"
+  },
+  "empatia": {
+   "id": "txfWfYkxkkcwmLAS4",
+   "nome": "Empathy",
+   "ref": "B51,P48"
+  },
+  "empatia-com-animais": {
+   "id": "tZTGYpVyvbfhURaxn",
+   "nome": "Animal Empathy",
+   "ref": "B40,P48"
+  },
+  "empatia-com-espiritos": {
+   "id": "tLhvHsIW2tjWozsBy",
+   "nome": "Spirit Empathy",
+   "ref": "B88,P48"
+  },
+  "empatia-com-plantas": {
+   "id": "txsH3nErsYg29kxhp",
+   "nome": "Plant Empathy",
+   "ref": "B75,P48"
+  },
+  "encolhimento": {
+   "id": "tpmZMIuXg_H_xod7f",
+   "nome": "Shrinking",
+   "ref": "B85,P75"
+  },
+  "equilibrio-perfeito": {
+   "id": "t2uxXuNNQjGUAFAd0",
+   "nome": "Perfect Balance",
+   "ref": "B74"
+  },
+  "equipamento-caracteristico": {
+   "id": "thKwCUUe961nSwzVi",
+   "nome": "Signature Gear",
+   "ref": "B85"
+  },
+  "escavacao": {
+   "id": "tC-1l9JaBF4XIlTdC",
+   "nome": "Tunneling (@Tunnel Move@)",
+   "ref": "B94,P85"
+  },
+  "escorregadio": {
+   "id": "tMqEixhnLpc_4A1IO",
+   "nome": "Slippery",
+   "ref": "B85"
+  },
+  "escudo-mental": {
+   "id": "txk77sCQ7F8hVfo78",
+   "nome": "Mind Shield",
+   "ref": "B70,P62,PSI15"
+  },
+  "espinhos": {
+   "id": "tPa2RCbNO28twKcsw",
+   "nome": "Short Spines",
+   "ref": "B88"
+  },
+  "estabilidade-no-emprego": {
+   "id": "tWPaKOwkeraKxyTjs",
+   "nome": "Tenure",
+   "ref": "B93"
+  },
+  "estatica-psiquica": {
+   "id": "t4OoasZ2Vfb1ajrcb",
+   "nome": "Static (Psi)",
+   "ref": "B78"
+  },
+  "estilo": {
+   "id": "t9rzc542R9abkdvGx",
+   "nome": "Shtick",
+   "ref": "B101,HT250,MA51"
+  },
+  "expectativa-de-vida-ampliada": {
+   "id": "tUJz4wvVveMiGDX0R",
+   "nome": "Extended Lifespan",
+   "ref": "B53"
+  },
+  "experiencia-g": {
+   "id": "tu3GuYC47Sx6bnm4k",
+   "nome": "G-Experience",
+   "ref": "B57"
+  },
+  "facilidade-para-idiomas": {
+   "id": "tqseLS-LNinGOwJ2z",
+   "nome": "Language Talent",
+   "ref": "B65"
+  },
+  "fala-subaquatica": {
+   "id": "tEHmRLhULzI2uyVvh",
+   "nome": "Speak Underwater",
+   "ref": "B87,P78"
+  },
+  "fala-subsonica": {
+   "id": "tOfcYZVTdsyq7yOkP",
+   "nome": "Subsonic Speech",
+   "ref": "B89,P78"
+  },
+  "fala-ultrassonica": {
+   "id": "tG_kuDri0cBZLx8C6",
+   "nome": "Ultrasonic Speech",
+   "ref": "B94,P78"
+  },
+  "falar-com-animais": {
+   "id": "thR91RlonCb2vGKR4",
+   "nome": "Speak With Animals",
+   "ref": "B87,P77"
+  },
+  "falar-com-plantas": {
+   "id": "tRN88FOkObK_Vd2nq",
+   "nome": "Speak With Plants",
+   "ref": "B87,P77"
+  },
+  "familiaridade-cultural": {
+   "id": "toXBQ8q4Nek5lsLPF",
+   "nome": "Cultural Familiarity (@Culture@)",
+   "ref": "B23"
+  },
+  "fe-verdadeira": {
+   "id": "t3oaIoT1_vzb2IF3a",
+   "nome": "True Faith",
+   "ref": "B94,P84"
+  },
+  "fleuma": {
+   "id": "trClz3uZE-XIfFJKI",
+   "nome": "Unfazeable",
+   "ref": "B95"
+  },
+  "flexibilidade": {
+   "id": "ta7LDTJnsrxUu_hpV",
+   "nome": "Flexibility",
+   "ref": "B56,MA44"
+  },
+  "forma-de-sombras": {
+   "id": "t-JV0Ff2_14mIhYjR",
+   "nome": "Shadow Form",
+   "ref": "B83,P73"
+  },
+  "garras": {
+   "id": "tj66NHKyO_GObgGsj",
+   "nome": "Sharp Claws",
+   "ref": "B42"
+  },
+  "golpeadores": {
+   "id": "ty02wIs3SOt8DoIC7",
+   "nome": "Crushing Striker (@Body Part@)",
+   "ref": "B88,MA47"
+  },
+  "habilidades-modulares": {
+   "id": "t5jPPcX40hzIZNQlq",
+   "nome": "Modular Abilities (Cosmic Power)",
+   "ref": "B71,P62"
+  },
+  "hermafromorfo": {
+   "id": "tud6WHncq1hwuXoxS",
+   "nome": "Hermaphromorph",
+   "ref": "B59"
+  },
+  "hierarquia": {
+   "id": "tmp8yecgaZq9TOk59",
+   "nome": "@Type@ Rank",
+   "ref": "B29"
+  },
+  "hipoalgia-alto-limiar-de-dor": {
+   "id": "teRggYn926_I1YeWO",
+   "nome": "High Pain Threshold",
+   "ref": "B59"
+  },
+  "idade-imutavel": {
+   "id": "tYnrwhhEwv7uvdomv",
+   "nome": "Unaging",
+   "ref": "B95,PSI18"
+  },
+  "identidade-alternativa": {
+   "id": "tVn3lzGhC2AEnH6EO",
+   "nome": "Alternate Identity",
+   "ref": "B39"
+  },
+  "idiomas": {
+   "id": "tw1Ad0oSMw2ATM4X1",
+   "nome": "Language: @Language@",
+   "ref": "B24"
+  },
+  "iluminado": {
+   "id": "tDdBGGYLkL73C598D",
+   "nome": "Illuminated",
+   "ref": "B60"
+  },
+  "impossivel-de-matar": {
+   "id": "tOg0QlZ2HB4-28mwP",
+   "nome": "Unkillable",
+   "ref": "B95"
+  },
+  "imunidade-legal": {
+   "id": "tiE8dIan1PMH6pAni",
+   "nome": "Legal Immunity",
+   "ref": "B65"
+  },
+  "indomavel": {
+   "id": "t4ANWaWCephx_yJpO",
+   "nome": "Indomitable",
+   "ref": "B60"
+  },
+  "inercia-temporal": {
+   "id": "trukZqFDEwlff1Epy",
+   "nome": "Temporal Inertia",
+   "ref": "B93"
+  },
+  "infravisao": {
+   "id": "toj1k8SehpW9YMKN7",
+   "nome": "Infravision",
+   "ref": "B60,P87"
+  },
+  "insubstancialidade": {
+   "id": "t9FaLAwdEEbc9zy9J",
+   "nome": "Insubstantiality",
+   "ref": "B62,P55,PSI14"
+  },
+  "intuicao": {
+   "id": "tS3_80lkCglkZ8nAl",
+   "nome": "Intuition",
+   "ref": "B63,P56"
+  },
+  "investidura-de-poder": {
+   "id": "teVkdoeyqvv4QStNk",
+   "nome": "Power Investiture",
+   "ref": "B77"
+  },
+  "invisibilidade": {
+   "id": "tjGcz8EnMEzkKbBkl",
+   "nome": "Invisibility",
+   "ref": "B63,P56"
+  },
+  "lacrado": {
+   "id": "tXhp5q6e5CEtI0AOJ",
+   "nome": "Sealed",
+   "ref": "B82"
+  },
+  "lamentavel": {
+   "id": "t9xaV_eOxA05zZ854",
+   "nome": "Pitiable",
+   "ref": "B22"
+  },
+  "leitura-da-mente": {
+   "id": "tb1cIXijh7je3wHbx",
+   "nome": "Mind Reading",
+   "ref": "B69,P61"
+  },
+  "lingua-ferina": {
+   "id": "tHd6RZWGO9p5R91Vo",
+   "nome": "Rapier Wit",
+   "ref": "B79,P70"
+  },
+  "longevidade": {
+   "id": "thdJ55ghf__io9AQa",
+   "nome": "Longevity",
+   "ref": "B66"
+  },
+  "medium": {
+   "id": "tTttcosQMowqshZMw",
+   "nome": "Medium",
+   "ref": "B68,P59"
+  },
+  "membrana-nictitante": {
+   "id": "tWNGzCluuu3S1L8jv",
+   "nome": "Nictitating Membrane",
+   "ref": "B71"
+  },
+  "memoria-eidetica": {
+   "id": "tW-eAzIKBWa5Yc9cI",
+   "nome": "Eidetic Memory",
+   "ref": "B51"
+  },
+  "memoria-racial": {
+   "id": "tPT1TvF2mncxtM_6W",
+   "nome": "Racial Memory",
+   "ref": "B78,P70"
+  },
+  "mente-digital": {
+   "id": "t1bq3ymXf8j46txqd",
+   "nome": "Digital Mind",
+   "ref": "B49"
+  },
+  "mente-segmentada": {
+   "id": "tDHschYOgUSlMTOYN",
+   "nome": "Compartmentalized Mind",
+   "ref": "B43,PSI13"
+  },
+  "mestre-de-armas": {
+   "id": "tRBGNZTHk6KJgxsCi",
+   "nome": "Weapon Master (@Specialty@)",
+   "ref": "B99,MA48"
+  },
+  "metabolismo-impoluto": {
+   "id": "tf5DfdQFaNUVbkPV2",
+   "nome": "Sanitized Metabolism",
+   "ref": "B101"
+  },
+  "metamorfose": {
+   "id": "tbxMoLvSnC5tKCiCd",
+   "nome": "Shapeshifting",
+   "ref": "B83,P74"
+  },
+  "mordida-de-vampiro": {
+   "id": "tFHSoGWBDirlMO6Dd",
+   "nome": "Vampiric Bite",
+   "ref": "B96"
+  },
+  "nao-come-nem-bebe": {
+   "id": "tn9VjEGfaGTl2Mwyz",
+   "nome": "Doesn't Eat or Drink",
+   "ref": "B50"
+  },
+  "nao-dorme": {
+   "id": "tyrJL144Jz5QN6Z9r",
+   "nome": "Doesn't Sleep",
+   "ref": "B50"
+  },
+  "nao-respira": {
+   "id": "tUX_zxoB4sWyeNpHi",
+   "nome": "Doesn't Breathe",
+   "ref": "B49"
+  },
+  "neutralizar": {
+   "id": "tgM5VeEZCZBnHb2BC",
+   "nome": "Neutralize (Psi)",
+   "ref": "B71"
+  },
+  "nocao-do-perigo": {
+   "id": "tgjE-yMzESTjq695x",
+   "nome": "Danger Sense",
+   "ref": "B47,P46"
+  },
+  "nocao-do-tempo-ampliada": {
+   "id": "tAdgvQpc5XxYoM2Zu",
+   "nome": "Enhanced Time Sense",
+   "ref": "B52,MA44"
+  },
+  "nocao-exata-do-tempo": {
+   "id": "tj0jQVJjSQgY7izGf",
+   "nome": "Absolute Timing",
+   "ref": "B35"
+  },
+  "nt-alto": {
+   "id": "tor-Nvi96sevrjRIT",
+   "nome": "High TL",
+   "ref": "B23"
+  },
+  "obscurecer": {
+   "id": "tldTdgiYUOpNc0Hmq",
+   "nome": "Obscure (@Sense@)",
+   "ref": "B72,P64,PSI16"
+  },
+  "olfato-discriminatorio": {
+   "id": "tjKuFiuy3Fs6rm69e",
+   "nome": "Discriminatory Smell",
+   "ref": "B49,P47"
+  },
+  "oraculo": {
+   "id": "t8WDmlXrJFZtt971A",
+   "nome": "Oracle",
+   "ref": "B72,P65"
+  },
+  "padrao-de-tempo-alterado": {
+   "id": "tQcU6Xo1BzIIerEX3",
+   "nome": "Altered Time Rate",
+   "ref": "B38,P41,MA42"
+  },
+  "paladar-discriminatorio": {
+   "id": "tkVnKZcuYZ4Hth4v7",
+   "nome": "Discriminatory Taste",
+   "ref": "B49,P47"
+  },
+  "patronos": {
+   "id": "t6Nq6oInwkU1qbAP1",
+   "nome": "Patron",
+   "ref": "B72,P65"
+  },
+  "pelagem": {
+   "id": "tsPqY8NyZ8sJbkdS-",
+   "nome": "Fur",
+   "ref": "B101"
+  },
+  "pele-elastica": {
+   "id": "t85L5o1YSjwxi6KD5",
+   "nome": "Elastic Skin",
+   "ref": "B51,P48"
+  },
+  "pendulear": {
+   "id": "tmgQQ3mPPfMq-vEsV",
+   "nome": "Brachiator",
+   "ref": "B41"
+  },
+  "permissao-de-seguranca": {
+   "id": "tcC_zioiE8t5DFNZE",
+   "nome": "Security Clearance",
+   "ref": "B82"
+  },
+  "pernas-adicionais": {
+   "id": "tLFklg798TKhdKuDn",
+   "nome": "Extra Legs",
+   "ref": "B54"
+  },
+  "poderes-legais": {
+   "id": "t4McL1AEbuPtYbiha",
+   "nome": "Legal Enforcement Powers",
+   "ref": "B65"
+  },
+  "por-dentro-da-moda": {
+   "id": "t7Qbxl8TTnvlyYeUJ",
+   "nome": "Fashion Sense",
+   "ref": "B21"
+  },
+  "possessao": {
+   "id": "tS-PH4bMX4GY96960",
+   "nome": "Possession",
+   "ref": "B75,P67,PSI16"
+  },
+  "pouco-sono": {
+   "id": "tMxgHfzVEy_QQtlfB",
+   "nome": "Less Sleep",
+   "ref": "B65"
+  },
+  "precognicao": {
+   "id": "tmpWRV6eHZjNeEvlU",
+   "nome": "Precognition",
+   "ref": "B77,P68,PSI16"
+  },
+  "prender-a-respiracao": {
+   "id": "tPh0lR2im4mtyLaQl",
+   "nome": "Breath-Holding",
+   "ref": "B41"
+  },
+  "proposito-maior": {
+   "id": "tv7bDjPB_5Noifly6",
+   "nome": "Higher Purpose (@Purpose@)",
+   "ref": "B59"
+  },
+  "psicometria": {
+   "id": "tfi07xxZWXLM3t0PI",
+   "nome": "Psychometry",
+   "ref": "B78,P69,PSI17"
+  },
+  "pulmoes-com-filtro": {
+   "id": "tFY7tz3BT0k253ky_",
+   "nome": "Filter Lungs",
+   "ref": "B55"
+  },
+  "queda-de-gato": {
+   "id": "tzQQVBRuixCbnRR0w",
+   "nome": "Catfall",
+   "ref": "B41,P43"
+  },
+  "rastreamento-ampliado": {
+   "id": "tOl20TXr9KKkV5FRy",
+   "nome": "Enhanced Tracking",
+   "ref": "B53,P49"
+  },
+  "reconhecimento-social": {
+   "id": "ti8Mwn5KC8w-uyGTH",
+   "nome": "Social Regard",
+   "ref": "B87"
+  },
+  "recuperacao-acelerada": {
+   "id": "trMfToThYl9fEmPdt",
+   "nome": "Rapid Healing",
+   "ref": "B79"
+  },
+  "recuperacao-da-consciencia": {
+   "id": "tfn3e0qr_rzjWJ1XH",
+   "nome": "Recovery",
+   "ref": "B80"
+  },
+  "redespertar": {
+   "id": "tnyT6i4xpc-zi5-m8",
+   "nome": "Reawakened",
+   "ref": "B80"
+  },
+  "reflexos-em-combate": {
+   "id": "tGjjVtxav9KsrG7Wx",
+   "nome": "Combat Reflexes",
+   "ref": "B43"
+  },
+  "regeneracao": {
+   "id": "tQrNIZ1kbn0I6UAZf",
+   "nome": "Regeneration",
+   "ref": "B80,P70,MA47"
+  },
+  "reivindicar-hospitalidade": {
+   "id": "tABjxMAPO3RzcQAhj",
+   "nome": "Claim to Hospitality",
+   "ref": "B41"
+  },
+  "renda-propria": {
+   "id": "t6VL5FJC9tWm68DU4",
+   "nome": "Independent Income",
+   "ref": "B26"
+  },
+  "reputacao": {
+   "id": "ta04iFiZ_Kw0s0juj",
+   "nome": "Good Reputation",
+   "ref": "B26,MA54"
+  },
+  "resistencia-a-dano": {
+   "id": "tBmSJ3pNE53c4IRUU",
+   "nome": "Damage Resistance",
+   "ref": "B46,B47,P45,MA43,PSI14"
+  },
+  "resistencia-a-pressao": {
+   "id": "tAZ2CavSLHdVMI5HJ",
+   "nome": "Pressure Support",
+   "ref": "B77"
+  },
+  "resistencia-ao-vacuo": {
+   "id": "txHSphIWk4vt8Fe1M",
+   "nome": "Vacuum Support",
+   "ref": "B96"
+  },
+  "resistente": {
+   "id": "tJTfFdHM7YI5IZR7I",
+   "nome": "Resistant",
+   "ref": "B81,P71,MA47"
+  },
+  "restaurar-membros": {
+   "id": "tHlUgrsld3J-_p4hW",
+   "nome": "Regrowth",
+   "ref": "B80,P71"
+  },
+  "retencao": {
+   "id": "tGge_qg7LR_teowyg",
+   "nome": "Binding",
+   "ref": "B40,P42"
+  },
+  "riqueza": {
+   "id": "tdEOEbc8ltxyQNFJj",
+   "nome": "Comfortable Wealth",
+   "ref": "B25"
+  },
+  "rosto-sincero": {
+   "id": "tzSU0oJe0L8zY5VA5",
+   "nome": "Honest Face",
+   "ref": "B101"
+  },
+  "saltador": {
+   "id": "thzHBFCK6BNeYvZxO",
+   "nome": "Jumper (@World/Time/Spirit@)",
+   "ref": "B64,P57,PSI15,DF9:5"
+  },
+  "sem-ressaca": {
+   "id": "tQZWdHP1qlzOpcZpI",
+   "nome": "No Hangover",
+   "ref": "B101"
+  },
+  "senso-de-direcao": {
+   "id": "tM6z7Mx6e2V4VvUR4",
+   "nome": "Absolute Direction",
+   "ref": "B34"
+  },
+  "sentido-de-monitoramento": {
+   "id": "t0RpC5DR3ijYx7aYU",
+   "nome": "Scanning Sense",
+   "ref": "B81,P72,PSI17"
+  },
+  "sentido-de-vibracao": {
+   "id": "tpVAPTgSu9gjTf1IB",
+   "nome": "Vibration Sense",
+   "ref": "B96,P86"
+  },
+  "sentido-protegido": {
+   "id": "tW6G2uQN2_SbNutDC",
+   "nome": "Protected Sense (@Sense@)",
+   "ref": "B78,P69"
+  },
+  "sentidos-agucados": {
+   "id": "tmlb6LFRFAUiYGyPa",
+   "nome": "Acute Sense (@Special Sense@)",
+   "ref": "B35"
+  },
+  "serendipidade": {
+   "id": "tkiJQ7nfyi9aAdGHK",
+   "nome": "Serendipity",
+   "ref": "B83,P73"
+  },
+  "silencio": {
+   "id": "txsoBf4CKtgpHPkPK",
+   "nome": "Silence",
+   "ref": "B85,P76"
+  },
+  "sonda-mental": {
+   "id": "tjp66Ocn2kW2Z8uN1",
+   "nome": "Mind Probe",
+   "ref": "B69,P61"
+  },
+  "sorte": {
+   "id": "tz-USDL9B_KrrVqDi",
+   "nome": "Luck",
+   "ref": "B66,P59"
+  },
+  "st-bracal": {
+   "id": "thlDrY5R5B5nJepiw",
+   "nome": "Arm ST",
+   "ref": "B40"
+  },
+  "st-de-golpe": {
+   "id": "t8HajX_K4BDKPuUop",
+   "nome": "Striking ST",
+   "ref": "B88,P78"
+  },
+  "st-de-levantamento": {
+   "id": "t6krAE1uo6M0oDJFL",
+   "nome": "Lifting ST",
+   "ref": "B65,P58"
+  },
+  "status": {
+   "id": "tA7Kmr7kSEEXGBSQO",
+   "nome": "High Status",
+   "ref": "B28"
+  },
+  "super-escalada": {
+   "id": "td2e5PsRhW-f4s9X2",
+   "nome": "Super Climbing",
+   "ref": "B89,P79"
+  },
+  "super-salto": {
+   "id": "tejp-a5e9aT3X-4i0",
+   "nome": "Super Jump",
+   "ref": "B89,P79"
+  },
+  "super-sorte": {
+   "id": "t3qytj5PflAhy0bD7",
+   "nome": "Super Luck",
+   "ref": "B89,P80"
+  },
+  "superaudicao": {
+   "id": "t9SRIvj3a6sg382bW",
+   "nome": "Ultrahearing",
+   "ref": "B94,P51"
+  },
+  "talento": {
+   "id": "toHMEtXUwB6kUvwsU",
+   "nome": "Talent (@Small@)",
+   "ref": "B89"
+  },
+  "talento-instintivo": {
+   "id": "tg6F-Wf29f6BFE1oD",
+   "nome": "Wild Talent",
+   "ref": "B99,P89,MA49"
+  },
+  "telecinese": {
+   "id": "tLVBokgcrQIUNKxpD",
+   "nome": "Telekinesis",
+   "ref": "B92,P82,PSI17"
+  },
+  "telecomunicacao": {
+   "id": "tnhMF2YViX6AhTHKD",
+   "nome": "Telecommunication",
+   "ref": "B91,P81,PSI17"
+  },
+  "terror": {
+   "id": "tQ0o-fWDmw5VQUulz",
+   "nome": "Terror",
+   "ref": "B93,P84"
+  },
+  "titere": {
+   "id": "tvSAoaGDU6KEHCD_C",
+   "nome": "Puppet (@Ally or Dependent@)",
+   "ref": "B78"
+  },
+  "tolerancia-a-ferimentos": {
+   "id": "t4TqvzUkGTe4ipCZE",
+   "nome": "Injury Tolerance",
+   "ref": "B60,P52,MA45"
+  },
+  "tolerancia-a-radiacao": {
+   "id": "tEyfe8xc70W3xpJ0z",
+   "nome": "Radiation Tolerance",
+   "ref": "B79,P70"
+  },
+  "tolerancia-a-temperatura": {
+   "id": "touwUIFalnae02BUl",
+   "nome": "Temperature Tolerance",
+   "ref": "B93"
+  },
+  "tolerancia-ao-alcool": {
+   "id": "t59wSfU9kpC1rus5P",
+   "nome": "Alcohol Tolerance",
+   "ref": "B100"
+  },
+  "tolerancia-g-ampliada": {
+   "id": "txREhxV6L1SKixwe_",
+   "nome": "Improved G-tolerance",
+   "ref": "B60"
+  },
+  "toque-sensivel": {
+   "id": "tGYjqpSfWaYwCeClP",
+   "nome": "Sensitive Touch",
+   "ref": "B83,P73"
+  },
+  "treinado-por-um-mestre": {
+   "id": "t-v5hp5IUsrcGNXrr",
+   "nome": "Trained by a Master",
+   "ref": "B93,MA48"
+  },
+  "ultravisao": {
+   "id": "t8-ZaRHCwXdGfVWxT",
+   "nome": "Ultravision",
+   "ref": "B94,P87"
+  },
+  "ver-o-invisivel": {
+   "id": "tNzQ9sQCgDezHZtnk",
+   "nome": "See Invisible",
+   "ref": "B83,P72,PSI17"
+  },
+  "versatil": {
+   "id": "tDPqnU1ciDF13F4kZ",
+   "nome": "Versatile",
+   "ref": "B96"
+  },
+  "vida-extra": {
+   "id": "tSljIjKux_vj-l8Vt",
+   "nome": "Extra Life",
+   "ref": "B55"
+  },
+  "vinculo-especial": {
+   "id": "tbkbfGkYvssLOWlNI",
+   "nome": "Special Rapport (@Person@)",
+   "ref": "B88,P77"
+  },
+  "visao-360-graus": {
+   "id": "tlqM2aXX8XYtB9GQX",
+   "nome": "360° Vision",
+   "ref": "B34,P39"
+  },
+  "visao-hiperespectral": {
+   "id": "tOzNzbrbSew6q7kjX",
+   "nome": "Hyperspectral Vision",
+   "ref": "B60,P51"
+  },
+  "visao-microscopica": {
+   "id": "tR0tKT37phKTFWc-z",
+   "nome": "Microscopic Vision",
+   "ref": "B68,P60"
+  },
+  "visao-no-escuro": {
+   "id": "tEFtRoCNBxTe9vjsG",
+   "nome": "Dark Vision",
+   "ref": "B47,P46"
+  },
+  "visao-noturna": {
+   "id": "tk0ZKpvgqpE35AZcM",
+   "nome": "Night Vision",
+   "ref": "B71,P87"
+  },
+  "visao-penetrante": {
+   "id": "tvid_7hqmQo6YwerD",
+   "nome": "Penetrating Vision",
+   "ref": "B74,P66"
+  },
+  "visao-periferica": {
+   "id": "tc74I5tb8McOGp5nr",
+   "nome": "Peripheral Vision",
+   "ref": "B74,P87"
+  },
+  "visao-telescopica": {
+   "id": "tTBge18Cvign1H3tX",
+   "nome": "Telescopic Vision",
+   "ref": "B92,P87"
+  },
+  "visualizacao": {
+   "id": "tAekR8gaF0cyRVtni",
+   "nome": "Visualization",
+   "ref": "B96,P87"
+  },
+  "voo": {
+   "id": "tBp8Q-gJeFHzopeuI",
+   "nome": "Flight",
+   "ref": "B56,P50,PSI14"
+  },
+  "voz-melodiosa": {
+   "id": "t2vba3l0J2mCZM50M",
+   "nome": "Voice",
+   "ref": "B97"
+  },
+  "voz-penetrante": {
+   "id": "tHRgrj_fBsqwVk5Gh",
+   "nome": "Penetrating Voice",
+   "ref": "B101"
+  }
+ },
+ "desvantagens": {
+  "acima-do-peso-gordo-muito-gordo": {
+   "id": "t9AQLL8Dg1-8M1swK",
+   "nome": "Fat",
+   "ref": "B19"
+  },
+  "alcoolismo": {
+   "id": "tCkS7354KTh2G6WfI",
+   "nome": "Alcoholism",
+   "ref": "B122"
+  },
+  "altruismo": {
+   "id": "tw81RysAzky-yjNYN",
+   "nome": "Selfless",
+   "ref": "B153"
+  },
+  "amigavel": {
+   "id": "tzBDG0xUlT_dh7FuY",
+   "nome": "Chummy",
+   "ref": "B126"
+  },
+  "amnesia": {
+   "id": "tQgVET2udCDwVMLRW",
+   "nome": "Amnesia (Partial)",
+   "ref": "B123"
+  },
+  "antecedentes-mundanos": {
+   "id": "t4DuSp5z4yYeW_9Ts",
+   "nome": "Mundane Background",
+   "ref": "B144"
+  },
+  "antipatico": {
+   "id": "tVKcKQGhh9NHMQOvi",
+   "nome": "Uncongenial",
+   "ref": "B164"
+  },
+  "aparencia-desvantagem": {
+   "id": "tdlCZw4YB4T7QkOnj",
+   "nome": "Appearance",
+   "ref": "B21"
+  },
+  "assustar-animais": {
+   "id": "tIwv4VeJHsrnAQG0T",
+   "nome": "Frightens Animals",
+   "ref": "B137"
+  },
+  "ataque-infeccioso": {
+   "id": "t-ZNx5ZaorWdo5A4p",
+   "nome": "Infectious Attack",
+   "ref": "B140"
+  },
+  "atavismo-por-estresse": {
+   "id": "tOB3S5Zp06meqhgzm",
+   "nome": "Stress Atavism",
+   "ref": "B156"
+  },
+  "atento": {
+   "id": "t5Qs23yaRu3D4T_hM",
+   "nome": "Attentive",
+   "ref": "B163"
+  },
+  "atrapalhado": {
+   "id": "tx3gYRgamuFWB9JPN",
+   "nome": "Ham-Fisted",
+   "ref": "B138"
+  },
+  "autodestruicao": {
+   "id": "t9Ayzq0-Ain8oiIM8",
+   "nome": "Self-Destruct",
+   "ref": "B153"
+  },
+  "avareza": {
+   "id": "tj2zJQBTiP1QtLdMy",
+   "nome": "Miserliness",
+   "ref": "B144"
+  },
+  "aversao": {
+   "id": "tyG1vfBDY9_MtB77N",
+   "nome": "Revulsion (@Occasional substance@)",
+   "ref": "B151"
+  },
+  "aversoes": {
+   "id": "tid4e6X7ckyvY_UJQ",
+   "nome": "Dislikes @Item@",
+   "ref": "B164"
+  },
+  "azar": {
+   "id": "t9lxfCn84bo3idpX9",
+   "nome": "Unluckiness",
+   "ref": "B160"
+  },
+  "baixa-autoestima": {
+   "id": "trjGgnVvNTo20Ri9N",
+   "nome": "Low Self-Image",
+   "ref": "B143"
+  },
+  "barulhento": {
+   "id": "tRFC6SuQFL9lAGM7y",
+   "nome": "Noisy",
+   "ref": "B146"
+  },
+  "bestial": {
+   "id": "t7okBtFJSVdaHr_oZ",
+   "nome": "Bestial",
+   "ref": "B124"
+  },
+  "bioquimica-incomum": {
+   "id": "tEYEuzMtxSsWCG7uW",
+   "nome": "Unusual Biochemistry",
+   "ref": "B160"
+  },
+  "briguento": {
+   "id": "tMrRhiOyGg6WNz09k",
+   "nome": "Bully",
+   "ref": "B125"
+  },
+  "caracteristicas-distintas": {
+   "id": "tErK4cLrSt07-XLYQ",
+   "nome": "Distinctive Features",
+   "ref": "B165"
+  },
+  "caracteristicas-sobrenaturais": {
+   "id": "t1iVqO3Y2rUkguVzt",
+   "nome": "Supernatural Features",
+   "ref": "B157"
+  },
+  "castrado-ou-assexuado": {
+   "id": "tSKajHun2ScWfmrCr",
+   "nome": "Sexless",
+   "ref": "B165"
+  },
+  "cegueira": {
+   "id": "tPcvlsavyazeq1Qg4",
+   "nome": "Blindness",
+   "ref": "B124"
+  },
+  "cegueira-noturna": {
+   "id": "t2KMOQYYPIHD_5HTz",
+   "nome": "Night Blindness",
+   "ref": "B144"
+  },
+  "chauvinista": {
+   "id": "t0eVKnl-kbhJzS6cL",
+   "nome": "Chauvinistic",
+   "ref": "B163"
+  },
+  "cleptomania": {
+   "id": "tG1q2hcai2DaeRlhm",
+   "nome": "Kleptomania",
+   "ref": "B141"
+  },
+  "cobica": {
+   "id": "tvF5dIQf3Jrwb_KXv",
+   "nome": "Greed",
+   "ref": "B137"
+  },
+  "codigo-de-honra": {
+   "id": "tW3e4OJTtFNNveAgo",
+   "nome": "Code of Honor (Professional)",
+   "ref": "B127"
+  },
+  "codigo-de-honra-peculiaridade": {
+   "id": "tYKd1V2ZzpN6-3H8E",
+   "nome": "Code of Honor",
+   "ref": "B163,MA53"
+  },
+  "complexo-de-culpa": {
+   "id": "tUHvsAnxBrL6XEzEn",
+   "nome": "Guilt Complex",
+   "ref": "B137"
+  },
+  "compulsao": {
+   "id": "tXJ60phAKJZOz3Pv5",
+   "nome": "Compulsive Behaviour (@Activity@)",
+   "ref": "B128"
+  },
+  "confuso": {
+   "id": "tBo2ze1N-AhjfZpqW",
+   "nome": "Confused",
+   "ref": "B129"
+  },
+  "consumo-ampliado": {
+   "id": "te2vFre2KU0dZrDgd",
+   "nome": "Increased Consumption",
+   "ref": "B139"
+  },
+  "convulsoes-pos-combate": {
+   "id": "tcLpFfSmbHHdHy5Yd",
+   "nome": "Post-Combat Shakes",
+   "ref": "B150"
+  },
+  "corcunda": {
+   "id": "tI03ZPjKS2-0VuizZ",
+   "nome": "Hunchback",
+   "ref": "B139"
+  },
+  "covardia": {
+   "id": "tsHSzoJhgVSPSXqNY",
+   "nome": "Cowardice",
+   "ref": "B129"
+  },
+  "credulidade": {
+   "id": "tY_y_Y29sMnSLYjwS",
+   "nome": "Gullibility",
+   "ref": "B137"
+  },
+  "criativo": {
+   "id": "t4slIFEFLKoDYazcy",
+   "nome": "Imaginative",
+   "ref": "B164"
+  },
+  "cuidadoso": {
+   "id": "t-ZuUbg_LrqZ1hi6c",
+   "nome": "Careful",
+   "ref": "B163"
+  },
+  "curiosidade": {
+   "id": "t2O8gMxbRPpAWLej9",
+   "nome": "Curious",
+   "ref": "B129"
+  },
+  "daltonismo": {
+   "id": "tyVBpBR5-Ca0VD1Kd",
+   "nome": "Colorblindness",
+   "ref": "B127"
+  },
+  "deficiencia-fisica": {
+   "id": "tWxf5xaLhR2u0HTIG",
+   "nome": "Lame (Crippled Legs)",
+   "ref": "B141"
+  },
+  "deficiencias-menores": {
+   "id": "tel6cl0F0UBDR4oHY",
+   "nome": "Minor Handicap (@Body Part@)",
+   "ref": "B165"
+  },
+  "dependencia": {
+   "id": "td5zyb9sBhZkHhkmv",
+   "nome": "Dependency (@Substance@)",
+   "ref": "B130"
+  },
+  "dependentes": {
+   "id": "tIDqwizWRQYDHHGUX",
+   "nome": "Dependent (@Who@)",
+   "ref": "B131"
+  },
+  "depressao-cronica": {
+   "id": "tOyGCEEXkwH_ipfxg",
+   "nome": "Chronic Depression",
+   "ref": "B126"
+  },
+  "desastrado": {
+   "id": "tuYiQV8SE62EPDnuX",
+   "nome": "Klutz",
+   "ref": "B141"
+  },
+  "desatento": {
+   "id": "tKw6h1n96MbPXiclO",
+   "nome": "Short Attention Span",
+   "ref": "B153"
+  },
+  "desdobramento-de-personalidade": {
+   "id": "tf-edeV7wy9dhgkjk",
+   "nome": "Split Personality",
+   "ref": "B156"
+  },
+  "despretensioso": {
+   "id": "tmvQodT3s0JuvbtIx",
+   "nome": "Humble",
+   "ref": "B164"
+  },
+  "destino-desvantagem": {
+   "id": "t_gTxjGXAEkv9wZ45",
+   "nome": "Destiny (@Disadvantage@)",
+   "ref": "B132"
+  },
+  "destruidor-da-vida": {
+   "id": "tIpdVeRhYOR8XO6Uj",
+   "nome": "Lifebane",
+   "ref": "B142"
+  },
+  "dever": {
+   "id": "t1HUGl4o498iCyvrw",
+   "nome": "Duty (@Duty@)",
+   "ref": "B133"
+  },
+  "dieta-restrita": {
+   "id": "t8duh7FJvBdSs4NOb",
+   "nome": "Restricted Diet (@Food@)",
+   "ref": "B151"
+  },
+  "dificuldade-com-numeros": {
+   "id": "tyGoIW1uefQS5nUC_",
+   "nome": "Innumerate",
+   "ref": "B140"
+  },
+  "dislexia": {
+   "id": "tDK9FvKn-O3nj-U0j",
+   "nome": "Dyslexia",
+   "ref": "B134"
+  },
+  "disopia": {
+   "id": "txnM_WQ3Sz7eeA344",
+   "nome": "Bad Sight (Nearsighted)",
+   "ref": "B123"
+  },
+  "disosmia": {
+   "id": "tM_NtrhGdt7J7oETM",
+   "nome": "No Sense of Smell/Taste",
+   "ref": "B146"
+  },
+  "distracao": {
+   "id": "tbB8FlaUVuRanGu-T",
+   "nome": "Absent-Mindedness",
+   "ref": "B122"
+  },
+  "distraido": {
+   "id": "tjUsPkJ0yQvhNsqyS",
+   "nome": "Distractible",
+   "ref": "B164"
+  },
+  "disturbio-neurologico": {
+   "id": "tc1XFVKC5J2qshUbj",
+   "nome": "Neurological Disorder (Mild)",
+   "ref": "B144"
+  },
+  "dividas": {
+   "id": "tNHz23N7hxglFkVlr",
+   "nome": "Debt",
+   "ref": "B26"
+  },
+  "doente-terminal": {
+   "id": "t4idKrZuFXq9pkIp5",
+   "nome": "Terminally Ill",
+   "ref": "B158"
+  },
+  "dor-cronica": {
+   "id": "toR2WVDUE1bxCVOps",
+   "nome": "Chronic Pain",
+   "ref": "B126"
+  },
+  "dorminhoco": {
+   "id": "twYBwZGOG4EPwmpOx",
+   "nome": "Slow Riser",
+   "ref": "B155"
+  },
+  "doutrinas-religiosas": {
+   "id": "t9CbY1uCmgSV0FolN",
+   "nome": "Disciplines of Faith (Ritualism)",
+   "ref": "B132"
+  },
+  "drenagem": {
+   "id": "tejcILTE2a599hIGr",
+   "nome": "Draining",
+   "ref": "B132"
+  },
+  "duro-de-ouvido": {
+   "id": "t7pDegQEavl5neK-Z",
+   "nome": "Hard of Hearing",
+   "ref": "B138"
+  },
+  "egoismo": {
+   "id": "tYdqy1uPSGI8VqvLV",
+   "nome": "Selfish",
+   "ref": "B153"
+  },
+  "eletrico": {
+   "id": "toRWQC_wqLurdUtig",
+   "nome": "Electrical",
+   "ref": "B134"
+  },
+  "embotado": {
+   "id": "txSQyk2LjrgBcnj16",
+   "nome": "Staid",
+   "ref": "B164"
+  },
+  "enjoo": {
+   "id": "tOMQxw182b4b2dicl",
+   "nome": "Motion Sickness",
+   "ref": "B144"
+  },
+  "enjoo-espacial": {
+   "id": "ty1WUMFa7ACBHXdjz",
+   "nome": "Space Sickness",
+   "ref": "B156"
+  },
+  "enjoo-temporal": {
+   "id": "tqa93bDrD9kgk0ywo",
+   "nome": "Timesickness",
+   "ref": "B158"
+  },
+  "entorpecido": {
+   "id": "tLjJdINd7_EUwXEvg",
+   "nome": "Numb",
+   "ref": "B146"
+  },
+  "enxerido": {
+   "id": "t4HbDi_0sc5oD1xcV",
+   "nome": "Nosy",
+   "ref": "B164"
+  },
+  "epilepsia": {
+   "id": "tI76H2W3gXER916--",
+   "nome": "Epilepsy",
+   "ref": "B136"
+  },
+  "estigma-social": {
+   "id": "tSSmnBdJ1f7mFMRL5",
+   "nome": "Social Stigma (@Stigma@)",
+   "ref": "B155"
+  },
+  "excesso-de-confianca": {
+   "id": "tPbL1_rekOzkM86wz",
+   "nome": "Overconfidence",
+   "ref": "B148"
+  },
+  "expectativa-de-vida-reduzida": {
+   "id": "t9nyvI3uvjJi5aqF5",
+   "nome": "Short Lifespan",
+   "ref": "B154"
+  },
+  "facil-de-decifrar": {
+   "id": "tzVv8jJIuoUiVT_80",
+   "nome": "Easy to Read",
+   "ref": "B134"
+  },
+  "facil-de-matar": {
+   "id": "tBNxb_jV9gBRsUVIA",
+   "nome": "Easy to Kill",
+   "ref": "B134"
+  },
+  "fanatismo": {
+   "id": "tLDRbhXFP-3CeGka-",
+   "nome": "Fanaticism (@Group or ideal@)",
+   "ref": "B136"
+  },
+  "fantasias": {
+   "id": "tLx7cgxRuxXHqkcb5",
+   "nome": "Delusion (@Belief@)",
+   "ref": "B130"
+  },
+  "fantasias-peculiaridade": {
+   "id": "tsAvkCp1MYuEK9qSn",
+   "nome": "Delusions",
+   "ref": "B164,MA53"
+  },
+  "ferido": {
+   "id": "tAKQUtRTjZeOEbA5y",
+   "nome": "Wounded",
+   "ref": "B162"
+  },
+  "flashbacks": {
+   "id": "tzk8xRWG-00Yzdsjm",
+   "nome": "Flashbacks",
+   "ref": "B136"
+  },
+  "fora-de-forma": {
+   "id": "tItKCGaV9UN_W1pVs",
+   "nome": "Unfit",
+   "ref": "B160"
+  },
+  "forma-de-sombras-desvantagem": {
+   "id": "tjMHjiV1IgCAp_Z3Z",
+   "nome": "Shadow Form (Can't Turn Off)",
+   "ref": "B153"
+  },
+  "fragilidade": {
+   "id": "t6RcstWi0JhHcAtg2",
+   "nome": "Fragile (Brittle)",
+   "ref": "B136"
+  },
+  "fragilidade-em-aceleracao": {
+   "id": "ttC-ZTQ_67H2W4JnE",
+   "nome": "Acceleration Weakness",
+   "ref": "B165"
+  },
+  "fraqueza": {
+   "id": "tkruLIseh5plYfwvK",
+   "nome": "Weakness",
+   "ref": "B161"
+  },
+  "furia": {
+   "id": "tELmv9bNG_8o75sYZ",
+   "nome": "Berserk",
+   "ref": "B124"
+  },
+  "gagueira": {
+   "id": "t-2sTLqD5b68AuEhY",
+   "nome": "Stuttering",
+   "ref": "B157"
+  },
+  "gigantismo": {
+   "id": "tnkeKfDUu_qsNMGA4",
+   "nome": "Gigantism",
+   "ref": "B20"
+  },
+  "gula": {
+   "id": "tYHaB3nA17KP6h1DZ",
+   "nome": "Gluttony",
+   "ref": "B137"
+  },
+  "habitos-detestaveis": {
+   "id": "t49qcxpm53kg-OdPj",
+   "nome": "Odious Personal Habit",
+   "ref": "B22"
+  },
+  "habitos-ou-expressoes": {
+   "id": "tf1sTjmj7fO_KiDam",
+   "nome": "Habit",
+   "ref": "B164"
+  },
+  "hemofilia": {
+   "id": "thCOpfb0WhIRApB_x",
+   "nome": "Hemophilia",
+   "ref": "B138"
+  },
+  "hiperalgia": {
+   "id": "tQsgCJSqiGP4g4fkG",
+   "nome": "Low Pain Threshold",
+   "ref": "B142"
+  },
+  "honestidade": {
+   "id": "t7pCgXTVkswkTjOZO",
+   "nome": "Honesty",
+   "ref": "B138"
+  },
+  "horizontal": {
+   "id": "tRew_hxLFtYOx0922",
+   "nome": "Horizontal",
+   "ref": "B139"
+  },
+  "identidade-secreta": {
+   "id": "tr50dTLVYH7iPjw-8",
+   "nome": "Secret Identity (@Secret ID@)",
+   "ref": "B152"
+  },
+  "impulsividade": {
+   "id": "tV06LED8bg9xJGF3c",
+   "nome": "Impulsiveness",
+   "ref": "B139"
+  },
+  "incapaz-de-aprender": {
+   "id": "tpBjoDeCzKWt1bInn",
+   "nome": "Cannot Learn",
+   "ref": "B125"
+  },
+  "incapaz-de-falar": {
+   "id": "toWvopVePvFQ41-bg",
+   "nome": "Cannot Speak",
+   "ref": "B125"
+  },
+  "incapaz-de-flutuar": {
+   "id": "t7yv4h1kT0itJulCu",
+   "nome": "Cannot Float",
+   "ref": "B165"
+  },
+  "incompetente": {
+   "id": "t5NruiJFzLvsyzwd1",
+   "nome": "Incompetence (@Skill@)",
+   "ref": "B164"
+  },
+  "indeciso": {
+   "id": "tGc0aok6RyP6uSDca",
+   "nome": "Indecisive",
+   "ref": "B140"
+  },
+  "indiferente": {
+   "id": "tM8LVZ-8-HpvEFsPi",
+   "nome": "Incurious",
+   "ref": "B140"
+  },
+  "indulgente": {
+   "id": "tNG1o64IqmaaNJPg1",
+   "nome": "Charitable",
+   "ref": "B125"
+  },
+  "inimigos": {
+   "id": "t5bwP6TnS4cX-zM8L",
+   "nome": "Enemy (@Who@)",
+   "ref": "B135"
+  },
+  "insensivel": {
+   "id": "tNe543pbMl1IkZxSo",
+   "nome": "Callous",
+   "ref": "B125"
+  },
+  "insone": {
+   "id": "tUhfUSdR8XS1qd7Bn",
+   "nome": "Insomniac",
+   "ref": "B140"
+  },
+  "intolerancia": {
+   "id": "ttHkLI9zwzfeOIEZc",
+   "nome": "Intolerance (@Class, Ethnicity, Nationality, Religion, Sex, or Species@)",
+   "ref": "B140"
+  },
+  "intolerancia-ao-alcool": {
+   "id": "tEt35oNyt6mqHi_k9",
+   "nome": "Alcohol Intolerance",
+   "ref": "B165"
+  },
+  "intolerancia-g": {
+   "id": "tIir5i3ZjJJyWwpxI",
+   "nome": "G-Intolerance (0.1G increment)",
+   "ref": "B137"
+  },
+  "inveja": {
+   "id": "tNNZgqAtiUMQ_dZs6",
+   "nome": "Jealousy",
+   "ref": "B140"
+  },
+  "invertebrado": {
+   "id": "t3mzsRya_NYzLwfQX",
+   "nome": "Invertebrate",
+   "ref": "B140"
+  },
+  "irritabilidade": {
+   "id": "tnrtPQ0mWF4k75plo",
+   "nome": "Bad Temper",
+   "ref": "B124"
+  },
+  "lunatico": {
+   "id": "tDaEF7zyuUsXy-UQ2",
+   "nome": "Lunacy",
+   "ref": "B143"
+  },
+  "luxuria": {
+   "id": "tSiOKuvTJkqJhuRrI",
+   "nome": "Lecherousness",
+   "ref": "B142"
+  },
+  "magnetismo-sobrenatural": {
+   "id": "tt5ULbbh-fi4t-UMm",
+   "nome": "Weirdness Magnet",
+   "ref": "B161"
+  },
+  "magro": {
+   "id": "taEdO2Q-RgdH-CiHq",
+   "nome": "Skinny",
+   "ref": "B18"
+  },
+  "maldicao": {
+   "id": "tH0rKIrF8ta2wqG3o",
+   "nome": "Cursed",
+   "ref": "B129"
+  },
+  "maldicao-divina": {
+   "id": "t2rkwZ3PxOysFYTQs",
+   "nome": "Divine Curse",
+   "ref": "B132"
+  },
+  "maneta-um-braco": {
+   "id": "todj00Fu5MUtTPuJt",
+   "nome": "One Arm",
+   "ref": "B147"
+  },
+  "maneta-uma-mao": {
+   "id": "tbRf_88KHN922paNz",
+   "nome": "One Hand",
+   "ref": "B147"
+  },
+  "maniaco-depressivo": {
+   "id": "t8YOwR79EMqe7fPGC",
+   "nome": "Manic-Depressive",
+   "ref": "B143"
+  },
+  "manuseadores-precarios": {
+   "id": "tvkUum_V1i7jyVLOV",
+   "nome": "No Fine Manipulators",
+   "ref": "B145"
+  },
+  "manutencao": {
+   "id": "t6VlhoSldlKRmJr7i",
+   "nome": "Maintenance",
+   "ref": "B143"
+  },
+  "mao-fraca": {
+   "id": "tRJveiSBWJIO33TKw",
+   "nome": "Bad Grip",
+   "ref": "B123"
+  },
+  "marca-registrada": {
+   "id": "tBWKFUwcRQBpqauQt",
+   "nome": "Trademark (@Simple@)",
+   "ref": "B159"
+  },
+  "marca-registrada-peculiaridade": {
+   "id": "tbPuktSdsVf4vtG3I",
+   "nome": "Trademark",
+   "ref": "B164"
+  },
+  "mau-cheiro": {
+   "id": "ttwfuD5y7jvTNPd7f",
+   "nome": "Bad Smell",
+   "ref": "B124"
+  },
+  "megalomania": {
+   "id": "tU0Q0IQExDW94Gd_4",
+   "nome": "Megalomania",
+   "ref": "B144"
+  },
+  "mentalidade-de-escravo": {
+   "id": "tJi-TQmfqXXVH24kt",
+   "nome": "Slave Mentality",
+   "ref": "B154"
+  },
+  "mente-aberta": {
+   "id": "ttkZb4D-srbLBDQT3",
+   "nome": "Broad-Minded",
+   "ref": "B163"
+  },
+  "mordida-fraca": {
+   "id": "t43CiO3JT0jXpJP_o",
+   "nome": "Weak Bite",
+   "ref": "B161"
+  },
+  "mudanca-de-personalidade": {
+   "id": "tCtFPKOcm08pUJlO_",
+   "nome": "Personality Change",
+   "ref": "B164"
+  },
+  "nanismo": {
+   "id": "tV1kCA0glJDtGmPqo",
+   "nome": "Dwarfism",
+   "ref": "B19"
+  },
+  "nao-iconografico": {
+   "id": "tea-pIloyMPMHOLx-",
+   "nome": "Non-Iconographic",
+   "ref": "B146"
+  },
+  "no-limite": {
+   "id": "td7zQlyInlQxbhJsD",
+   "nome": "On the Edge",
+   "ref": "B146"
+  },
+  "noturno": {
+   "id": "t8cCgDdfgoyiXJSYc",
+   "nome": "Nocturnal",
+   "ref": "B146"
+  },
+  "nt-baixo": {
+   "id": "tzRswLWwJBriIQW0Q",
+   "nome": "Low TL",
+   "ref": "B22"
+  },
+  "oblivio": {
+   "id": "tYNyLy2IqVVc5zHut",
+   "nome": "Oblivious",
+   "ref": "B146"
+  },
+  "obsessao": {
+   "id": "tuBvIPa1ygEAxIiQ2",
+   "nome": "Obsession",
+   "ref": "B146"
+  },
+  "obsessoes-peculiaridade": {
+   "id": "tfAsq381OPUDZf5yE",
+   "nome": "Obsession",
+   "ref": "B164"
+  },
+  "orgulhoso": {
+   "id": "tkvBzkhf0YNP2cF5j",
+   "nome": "Proud",
+   "ref": "B164"
+  },
+  "pacifismo": {
+   "id": "tV_f_75HmwzWOPhuu",
+   "nome": "Pacifism: Reluctant Killer",
+   "ref": "B148"
+  },
+  "padrao-de-tempo-reduzido": {
+   "id": "tjv4a7cS6NrQ4rttz",
+   "nome": "Decreased Time Rate",
+   "ref": "B129"
+  },
+  "paralisia-frente-ao-combate": {
+   "id": "trdRnHewvO9QjUZDJ",
+   "nome": "Combat Paralysis",
+   "ref": "B127"
+  },
+  "paranoia": {
+   "id": "tYWjKdrALVt_raSxk",
+   "nome": "Paranoia",
+   "ref": "B148"
+  },
+  "pernas-tortas": {
+   "id": "twv_tMAxk6ZcC3sDw",
+   "nome": "Bowlegged",
+   "ref": "B165"
+  },
+  "pesadelos": {
+   "id": "tzWQ90ARlX5DcAAu7",
+   "nome": "Nightmares",
+   "ref": "B144"
+  },
+  "piromania": {
+   "id": "tFfzQ6ETSImJHHvkX",
+   "nome": "Pyromania",
+   "ref": "B150"
+  },
+  "pobreza-riqueza-baixa": {
+   "id": "t-X2ObErkLG1c_UzW",
+   "nome": "Poor",
+   "ref": "B25"
+  },
+  "pouca-empatia": {
+   "id": "t0DUjQv4R20iknQwp",
+   "nome": "Low Empathy",
+   "ref": "B142"
+  },
+  "preferencias": {
+   "id": "tPwuEVY8o8AtpEzJQ",
+   "nome": "Likes @Item@",
+   "ref": "B164"
+  },
+  "preguica": {
+   "id": "t8qGWt5QTFIvrpyKT",
+   "nome": "Laziness",
+   "ref": "B142"
+  },
+  "problemas-na-coluna": {
+   "id": "tOIbA7bxjknhRjYSU",
+   "nome": "Bad Back",
+   "ref": "B123"
+  },
+  "recuperacao-lenta": {
+   "id": "tUOjboNmcDxrvtvu3",
+   "nome": "Slow Healing",
+   "ref": "B155"
+  },
+  "refeicao-demorada": {
+   "id": "teXHpDmoSZB1Wbkzp",
+   "nome": "Slow Eater",
+   "ref": "B155"
+  },
+  "reprogramavel": {
+   "id": "ttomMvKi4810ACGWk",
+   "nome": "Reprogrammable",
+   "ref": "B150"
+  },
+  "repugnancia": {
+   "id": "tgWXsWk0OXNHSxVtQ",
+   "nome": "Revulsion (@Common substance@)",
+   "ref": "B151"
+  },
+  "reputacao-ruim": {
+   "id": "tj478Y8UdHYlqGNf2",
+   "nome": "Bad Reputation",
+   "ref": "B26,MA54"
+  },
+  "ressacas-terriveis": {
+   "id": "tiXxqmVkaGV5-ZSre",
+   "nome": "Horrible Hangovers",
+   "ref": "B165"
+  },
+  "sadismo": {
+   "id": "tknKLIc0OqWueFpSw",
+   "nome": "Sadism",
+   "ref": "B152"
+  },
+  "sangue-frio": {
+   "id": "tXnB__Om4YM2hwTL7",
+   "nome": "Cold-Blooded",
+   "ref": "B127"
+  },
+  "sanguinolencia": {
+   "id": "tmRX0o0iO20zWIVyo",
+   "nome": "Bloodlust",
+   "ref": "B125"
+  },
+  "segredo": {
+   "id": "thFGMVGT0QnExHCMW",
+   "nome": "Secret (@Secret@)",
+   "ref": "B152"
+  },
+  "sem-nocao-de-profundidade": {
+   "id": "tYh-5Gh0yqaf5hQXh",
+   "nome": "No Depth Perception",
+   "ref": "B145"
+  },
+  "sem-pernas": {
+   "id": "tMmenR4uGwxyOIH6t",
+   "nome": "No Legs (Slithers)",
+   "ref": "B145"
+  },
+  "sem-recuperacao": {
+   "id": "tQfC-R2MzDkPIumNn",
+   "nome": "Unhealing (Partial)",
+   "ref": "B160"
+  },
+  "sem-um-dedo": {
+   "id": "tnMlqrLVW5IyncOKR",
+   "nome": "Missing Digit",
+   "ref": "B144"
+  },
+  "semiereto": {
+   "id": "t5QyTSiaUXedVNOuB",
+   "nome": "Semi-Upright",
+   "ref": "B153"
+  },
+  "senso-do-dever": {
+   "id": "t04cLZ44QvEYdsP3F",
+   "nome": "Sense of Duty",
+   "ref": "B153"
+  },
+  "simpatico": {
+   "id": "tDJEofRVQdR97QyYX",
+   "nome": "Congenial",
+   "ref": "B164"
+  },
+  "solitario": {
+   "id": "tnD52D6dhwXRMkPs5",
+   "nome": "Loner",
+   "ref": "B142"
+  },
+  "sonambulismo": {
+   "id": "t8-YSePGPs_neBmGy",
+   "nome": "Sleepwalker",
+   "ref": "B154"
+  },
+  "sonhador": {
+   "id": "ta2gcuebm2uhQ5XyB",
+   "nome": "Dreamer",
+   "ref": "B164"
+  },
+  "sono-complementar": {
+   "id": "tijmxMEy4B1uAVMr9",
+   "nome": "Extra Sleep",
+   "ref": "B136"
+  },
+  "sono-leve": {
+   "id": "tOW5XqmChX0NBm1AP",
+   "nome": "Light Sleeper",
+   "ref": "B142"
+  },
+  "sonolento": {
+   "id": "tUDjEi-C-T_MPu_5E",
+   "nome": "Sleepy",
+   "ref": "B154"
+  },
+  "status-baixo": {
+   "id": "tn-kBo-qGnIc4wYlI",
+   "nome": "Low Status ",
+   "ref": "B28"
+  },
+  "supersensitivo": {
+   "id": "ty-NfT6o9-IRRtEA2",
+   "nome": "Supersensitive",
+   "ref": "B158"
+  },
+  "suporte-de-vida-ampliado": {
+   "id": "trFSUyuFmYEmJ7RnS",
+   "nome": "Increased Life Support (Massive)",
+   "ref": "B139"
+  },
+  "surdez": {
+   "id": "txG7BeWM5kivLaWkW",
+   "nome": "Deafness",
+   "ref": "B129"
+  },
+  "susceptibilidade-a-magia": {
+   "id": "t0LnC2YMegJagIZHu",
+   "nome": "Magic Susceptibility",
+   "ref": "B143"
+  },
+  "suscetivel": {
+   "id": "tLYJ7NUl3CYeLk0Yc",
+   "nome": "Susceptible (@Substance@)",
+   "ref": "B158"
+  },
+  "teimosia": {
+   "id": "t4gqkFmqABx7dLjkS",
+   "nome": "Stubbornness",
+   "ref": "B157"
+  },
+  "temor": {
+   "id": "te7lgTR0NeLuQCsre",
+   "nome": "Fearfulness",
+   "ref": "B136"
+  },
+  "tetraplegico": {
+   "id": "tzwWqmPfTlsc30PLS",
+   "nome": "Quadriplegic",
+   "ref": "B150"
+  },
+  "timidez": {
+   "id": "tfujsOp4WL4ZholTv",
+   "nome": "Mild Shyness",
+   "ref": "B154"
+  },
+  "trapaceiro": {
+   "id": "tu0KYjUBLw84B4gKc",
+   "nome": "Trickster",
+   "ref": "B159"
+  },
+  "unico": {
+   "id": "tEBOrSyEu9NKNQskA",
+   "nome": "Unique",
+   "ref": "B160"
+  },
+  "veracidade": {
+   "id": "tqyAIJKZUTPhxkhbU",
+   "nome": "Truthfulness",
+   "ref": "B159"
+  },
+  "viciado-em-trabalho": {
+   "id": "t8I0xw1Lj1_222aEN",
+   "nome": "Workaholic",
+   "ref": "B162"
+  },
+  "vicio": {
+   "id": "tC7vHppsCtZue1RiC",
+   "nome": "Addiction (@Substance@)",
+   "ref": "B122"
+  },
+  "vicio-menor": {
+   "id": "tBfCffXDV68yHqJ5h",
+   "nome": "Minor Addiction",
+   "ref": "B164"
+  },
+  "visao-restrita": {
+   "id": "t5IOcaWGg4has8rt_",
+   "nome": "No Peripheral Vision",
+   "ref": "B151"
+  },
+  "voto": {
+   "id": "t5R0c_iujWXeXusIu",
+   "nome": "Vow",
+   "ref": "B161"
+  },
+  "voto-peculiaridade": {
+   "id": "tbRcx49SumN2nrk62",
+   "nome": "Vow",
+   "ref": "B165"
+  },
+  "voz-irritante": {
+   "id": "tHa_LwEUawGsB_vO2",
+   "nome": "Disturbing Voice",
+   "ref": "B132"
+  },
+  "vozes-fantasmagoricas": {
+   "id": "tkH3Z500lfDbdUbtv",
+   "nome": "Phantom Voices",
+   "ref": "B148"
+  },
+  "vulnerabilidade": {
+   "id": "tgZ_USe8H3_wWhOHm",
+   "nome": "Vulnerability",
+   "ref": "B161"
+  },
+  "xenofilia": {
+   "id": "tX9XXLPFBvyQSpA4k",
+   "nome": "Xenophilia",
+   "ref": "B162"
+  },
+  "zarolho": {
+   "id": "t9SDu9sVuWup8J29T",
+   "nome": "One Eye",
+   "ref": "B147"
+  }
+ },
+ "equipamento": {
+  "aae-556mm": {
+   "id": "eAK3wRH05CsSAvUz9",
+   "nome": "SAW, 5.56mm",
+   "ref": "B281"
+  },
+  "abafadores-de-ouvido": {
+   "id": "e9twf7mhTaBNGu3rQ",
+   "nome": "Ear Muffs",
+   "ref": "B289"
+  },
+  "aci-68mm": {
+   "id": "eFI2nsr9Bidj-inDp",
+   "nome": "ICW, 6.8mm",
+   "ref": "B279"
+  },
+  "adaga": {
+   "id": "eSkpxAVUFdjWZpCaA",
+   "nome": "Dagger",
+   "ref": "B272"
+  },
+  "adaga-de-arremesso": {
+   "id": "eSkpxAVUFdjWZpCaA",
+   "nome": "Dagger",
+   "ref": "B272"
+  },
+  "adp-4-6mm": {
+   "id": "emepg-IrxXvYo63vE",
+   "nome": "PDW, 4.6mm",
+   "ref": "B278"
+  },
+  "adp-gauss-4mm": {
+   "id": "eoyiinZCpfzXW-tZy",
+   "nome": "Gauss PDW, 4mm",
+   "ref": "B278"
+  },
+  "agulhas-de-tricot": {
+   "id": "e_LhvElQRRGP7f-De",
+   "nome": "Knitting Needles, Pair",
+   "ref": "B289"
+  },
+  "ala-84mm": {
+   "id": "eCU6Rv1doxFU-Nf1Q",
+   "nome": "LAW, 84mm",
+   "ref": "B281"
+  },
+  "alabarda": {
+   "id": "e8f-mLHVfaqv5olcu",
+   "nome": "Halberd",
+   "ref": "B272"
+  },
+  "alforjes": {
+   "id": "EE9-a5nhNVZJd81kj",
+   "nome": "Saddlebags",
+   "ref": "B289"
+  },
+  "algemas": {
+   "id": "eR92vNL1Su3Uofy99",
+   "nome": "Handcuffs",
+   "ref": "B289"
+  },
+  "algibeira-bolsa-pequena": {
+   "id": "EYcpX5Ib_0vAti4WE",
+   "nome": "Pouch, Small",
+   "ref": "B288"
+  },
+  "aljava-de-cintura": {
+   "id": "EAkfUiW1QiOMrslcL",
+   "nome": "Hip Quiver",
+   "ref": "B289"
+  },
+  "aljava-de-ombro": {
+   "id": "EWdo_3qnvFlJpicOV",
+   "nome": "Shoulder Quiver",
+   "ref": "B289"
+  },
+  "antibiotico": {
+   "id": "e4h9Lm5aCqBNjRJ45",
+   "nome": "Antibiotic",
+   "ref": "B289"
+  },
+  "anzol-e-linha": {
+   "id": "eXfaauPkmNBx-M87f",
+   "nome": "Fishhooks & Line",
+   "ref": "B288"
+  },
+  "arado-de-ferro": {
+   "id": "eNwVFAUaCAmjka6NX",
+   "nome": "Plow, Iron",
+   "ref": "B289"
+  },
+  "arado-de-madeira": {
+   "id": "eO8Gb0rn9Eug7JwyZ",
+   "nome": "Plow, Wooden",
+   "ref": "B289"
+  },
+  "arco-composto": {
+   "id": "e7r2EsHLVkRo7ObUE",
+   "nome": "Composite Bow",
+   "ref": "B275"
+  },
+  "arco-comum": {
+   "id": "eXUobxqqnRpnmw9Bc",
+   "nome": "Regular Bow",
+   "ref": "B275"
+  },
+  "arco-curto": {
+   "id": "eEkU3I9Vr5NFZ7o2m",
+   "nome": "Short Bow",
+   "ref": "B275"
+  },
+  "arco-longo": {
+   "id": "ezUsY06LxChQRA_qQ",
+   "nome": "Longbow",
+   "ref": "B275"
+  },
+  "armadura-de-combate": {
+   "id": "eB0dd7OPrqIF4u0wu",
+   "nome": "Combat Hardsuit",
+   "ref": "B285"
+  },
+  "armadura-de-couro": {
+   "id": "eLUoq82xnnC1U0cXM",
+   "nome": "Leather Armor",
+   "ref": "B283"
+  },
+  "armadura-de-escamas": {
+   "id": "eSq-NbfiKq3nD_OIC",
+   "nome": "Scale Armor",
+   "ref": "B283"
+  },
+  "armadura-de-escamas-leve": {
+   "id": "e-eUsumiS7Y50BCWh",
+   "nome": "Light Scale Armor",
+   "ref": "B283"
+  },
+  "armadura-de-placas-laminadas-de-aco": {
+   "id": "eAFYCAjGr-lL8pW7-",
+   "nome": "Steel Laminate Plate",
+   "ref": "B283"
+  },
+  "armadura-espacial": {
+   "id": "ec9A47Bxh_Ileqvlq",
+   "nome": "Space Armor",
+   "ref": "B285"
+  },
+  "arpao": {
+   "id": "eyPp13UHYopipUoYZ",
+   "nome": "Harpoon",
+   "ref": "B276"
+  },
+  "arpeu": {
+   "id": "eZo2RO2pAPj1o7vdc",
+   "nome": "Grapnel",
+   "ref": "B288"
+  },
+  "arreador": {
+   "id": "eNFZu-0Rc-S6OM3xz",
+   "nome": "Cattle Prod",
+   "ref": "B273"
+  },
+  "arremessador-de-lanca": {
+   "id": "exHH9qg4mOEVmtPWI",
+   "nome": "Atlatl w/Javelin",
+   "ref": "B276"
+  },
+  "azagaia": {
+   "id": "eAJ0S-KHaVIJNmU_J",
+   "nome": "Javelin",
+   "ref": "B273"
+  },
+  "azagaia-distancia": {
+   "id": "eAJ0S-KHaVIJNmU_J",
+   "nome": "Javelin",
+   "ref": "B273"
+  },
+  "bacamarte-c8": {
+   "id": "e1I7UWFxlRNgLv7K_",
+   "nome": "Blunderbuss, 8G",
+   "ref": "B279"
+  },
+  "balanca-e-pesos": {
+   "id": "eD87BgF-f3idNRQyt",
+   "nome": "Balance and Weights",
+   "ref": "B289"
+  },
+  "bandagens": {
+   "id": "eLt7ZoaK-NfuPNE_R",
+   "nome": "Bandages",
+   "ref": "B289"
+  },
+  "barraca-1-pessoa": {
+   "id": "ew2TvVbfCRin7PtHl",
+   "nome": "Tent, 1-Man",
+   "ref": "B288"
+  },
+  "barraca-2-pessoas": {
+   "id": "exJIaZGS3dPdLpGS3",
+   "nome": "Tent, 2-Man",
+   "ref": "B288"
+  },
+  "barraca-20-pessoas": {
+   "id": "eqIX__8RRV6006ByD",
+   "nome": "Tent, 20-Man",
+   "ref": "B288"
+  },
+  "barraca-4-pessoas": {
+   "id": "ewUnPM9OHxLF4IttK",
+   "nome": "Tent, 4-Man",
+   "ref": "B288"
+  },
+  "barrete-de-couro": {
+   "id": "epjuxYIP6F7fIg2N1",
+   "nome": "Leather Cap",
+   "ref": "B284"
+  },
+  "barrete-de-tecido": {
+   "id": "egzGQdbexQ0la75Y7",
+   "nome": "Cloth Cap",
+   "ref": "B284"
+  },
+  "bastao-curto": {
+   "id": "ee46tSuR0cVzBl0fp",
+   "nome": "Baton",
+   "ref": "B273"
+  },
+  "bastao-curto-tercado": {
+   "id": "ee46tSuR0cVzBl0fp",
+   "nome": "Baton",
+   "ref": "B273"
+  },
+  "baterias": {
+   "id": "e1Cfh4NqKYP-0-idr",
+   "nome": "Batteries",
+   "ref": "B288"
+  },
+  "bazuca-60mm": {
+   "id": "e7y3JJVCKTUmB7Djm",
+   "nome": "Bazooka, 60mm",
+   "ref": "B281"
+  },
+  "besta": {
+   "id": "e78XG7h6Kz0unuvb1",
+   "nome": "Crossbow",
+   "ref": "B276"
+  },
+  "besta-de-garrucha": {
+   "id": "e6n4wNn5zqVPHydtF",
+   "nome": "Pistol Crossbow",
+   "ref": "B276"
+  },
+  "besta-de-pelouro": {
+   "id": "eEp5bP-XZyZ0t98bL",
+   "nome": "Prodd (ST7)",
+   "ref": "B276"
+  },
+  "binoculos": {
+   "id": "e3rFjTSDK30-6O2Zi",
+   "nome": "Binoculars",
+   "ref": "B289"
+  },
+  "boleadeira": {
+   "id": "eDvvL2vHAu58RLS-W",
+   "nome": "Bolas",
+   "ref": "B275"
+  },
+  "bomba-quimica": {
+   "id": "eTgNEw4gId9rXc3k1",
+   "nome": "Hand Grenade, Chemical",
+   "ref": "B277"
+  },
+  "bordao-bastao": {
+   "id": "eMz1aFy0Oh6s1urhz",
+   "nome": "Quarterstaff",
+   "ref": "B273"
+  },
+  "bordao-espada-duas-maos": {
+   "id": "eMz1aFy0Oh6s1urhz",
+   "nome": "Quarterstaff",
+   "ref": "B273"
+  },
+  "botas": {
+   "id": "e2aCum4Em-phMWpWS",
+   "nome": "Boots",
+   "ref": "B284"
+  },
+  "botas-de-assalto": {
+   "id": "eWAQ5wuXhh_xoXdZf",
+   "nome": "Assault Boots",
+   "ref": "B284"
+  },
+  "botas-reforcadas": {
+   "id": "eJIa_qfSzGcQ3wkPP",
+   "nome": "Reinforced Boots",
+   "ref": "B284"
+  },
+  "bracadeira-de-placas": {
+   "id": "eQVAhjzTJgw7dayF8",
+   "nome": "Plate Arms",
+   "ref": "B283"
+  },
+  "bracadeiras-de-bronze": {
+   "id": "ehVpvL6rOweV1-nOU",
+   "nome": "Bronze Armbands",
+   "ref": "B283"
+  },
+  "bracadeiras-de-placas-reforcadas": {
+   "id": "exZXX91ZY5VxtnIaG",
+   "nome": "Heavy Plate Arms",
+   "ref": "B283"
+  },
+  "bridao-e-redea": {
+   "id": "eFwhPt_W_ALUzf1Dg",
+   "nome": "Bit and Bridle",
+   "ref": "B289"
+  },
+  "bussola": {
+   "id": "eM1vHDqStKF8XT9Zk",
+   "nome": "Compass",
+   "ref": "B288"
+  },
+  "cabo-de-aco-375cm": {
+   "id": "evj3npwswckC2rI31",
+   "nome": "Cable, Steel, 1.5\", 10 yards",
+   "ref": "B288"
+  },
+  "caixa-de-ferramentas-portatil": {
+   "id": "eEkVbYt13jCyEVkha",
+   "nome": "Portable Tool Kit, Armoury",
+   "ref": "B289"
+  },
+  "calcas-de-couro": {
+   "id": "exJLUDX2V-FWl_JzY",
+   "nome": "Leather Pants",
+   "ref": "B283"
+  },
+  "camera-de-espiao": {
+   "id": "e_IoK6Ph6dY_5xAG8",
+   "nome": "Spy Camera",
+   "ref": "B289"
+  },
+  "camera-de-video": {
+   "id": "e1gGmfryNgwUT7xTb",
+   "nome": "Camcorder",
+   "ref": "B289"
+  },
+  "camera-fotografica-35mm": {
+   "id": "eQQTnMUoLtKKZcSby",
+   "nome": "Camera, 35mm",
+   "ref": "B289"
+  },
+  "camisa-de-cota-de-malha": {
+   "id": "eQEEKEW3nBUdR1Wqf",
+   "nome": "Mail Shirt",
+   "ref": "B283"
+  },
+  "canhao-de-mao-90": {
+   "id": "ehrIt3ftcGycFPl48",
+   "nome": "Handgonne, .90",
+   "ref": "B279"
+  },
+  "cantil": {
+   "id": "EQtsd2lBetSnfQoUv",
+   "nome": "Canteen",
+   "ref": "B288"
+  },
+  "capa-leve": {
+   "id": "eKdXqQy_umMQo5WKN",
+   "nome": "Light Cloak",
+   "ref": "B287"
+  },
+  "capa-leve-escudo": {
+   "id": "eKdXqQy_umMQo5WKN",
+   "nome": "Light Cloak",
+   "ref": "B287"
+  },
+  "capa-pesada": {
+   "id": "e8JIjplQW0EVJZT7l",
+   "nome": "Heavy Cloak",
+   "ref": "B287"
+  },
+  "capa-pesada-escudo": {
+   "id": "e8JIjplQW0EVJZT7l",
+   "nome": "Heavy Cloak",
+   "ref": "B287"
+  },
+  "capacete-antifragmentos": {
+   "id": "emLpKDf7E3sN-_gDA",
+   "nome": "Frag Helmet",
+   "ref": "B285"
+  },
+  "capacete-armadura-combate": {
+   "id": "eSPrF93Jx1HasUhHv",
+   "nome": "Combat Hardsuit Helmet",
+   "ref": "B285"
+  },
+  "capacete-armadura-espacial": {
+   "id": "e624nzlMhll8d3tsV",
+   "nome": "Space Armor Helmet",
+   "ref": "B285"
+  },
+  "capacete-balistico": {
+   "id": "eZjQAOgtcNsVhVqsk",
+   "nome": "Ballistic Helmet",
+   "ref": "B285"
+  },
+  "capacete-espacial": {
+   "id": "eqb_-CIZ7Lolg3TdW",
+   "nome": "Space Helmet",
+   "ref": "B285"
+  },
+  "capacete-pressurizado": {
+   "id": "eV-N699_iDnK0t-ON",
+   "nome": "Vacc Suit Helmet",
+   "ref": "B285"
+  },
+  "capacete-traje-combate": {
+   "id": "e6NUIS6af12_MopLT",
+   "nome": "Battle Suit Helmet",
+   "ref": "B285"
+  },
+  "carabina-a-manivela-30": {
+   "id": "eUJvdJ6U76a5kOsjz",
+   "nome": "Lever-Action Carbine, .30",
+   "ref": "B279"
+  },
+  "carabina-de-assalto-556mm": {
+   "id": "ebwoy7-fQXXCqO0AA",
+   "nome": "Assault Carbine, 5.56mm",
+   "ref": "B279"
+  },
+  "carabina-eletrolaser": {
+   "id": "ebkoC844wi2K-0HTf",
+   "nome": "Electrolaser Carbine",
+   "ref": "B280"
+  },
+  "carrinho-de-mao": {
+   "id": "EEzLZy1nHBgpt6NLZ",
+   "nome": "Wheelbarrow",
+   "ref": "B289"
+  },
+  "casaco-de-couro-de-bufalo": {
+   "id": "eRA26uszm1kmjCNFD",
+   "nome": "Buff Coat (Leather)",
+   "ref": "B283"
+  },
+  "cassetete": {
+   "id": "eXR1e5CjnzUKH06l1",
+   "nome": "Blackjack",
+   "ref": "B271"
+  },
+  "celada": {
+   "id": "emThKEpSt8zM-JOuX",
+   "nome": "Pot-Helm",
+   "ref": "B284"
+  },
+  "celada-de-aco": {
+   "id": "ecKAEc-H-YwH4ZThd",
+   "nome": "Steel Pot",
+   "ref": "B285"
+  },
+  "celada-de-bronze": {
+   "id": "eT9O2ZMcw83JK0YUw",
+   "nome": "Bronze Pot-Helm",
+   "ref": "B284"
+  },
+  "celular": {
+   "id": "eCQX_NEhHao-HXw1l",
+   "nome": "Cell Phone",
+   "ref": "B288"
+  },
+  "chicote": {
+   "id": "epNvWRcwzwSG2-ZZy",
+   "nome": "Whip, 1 yard long",
+   "ref": "B274"
+  },
+  "chicote-monofio": {
+   "id": "eOFQsc-mAPZfCK8xm",
+   "nome": "Monowire Whip",
+   "ref": "B272"
+  },
+  "cinturao-de-ferramentas": {
+   "id": "Emfgs9dOamGA224RK",
+   "nome": "Web Gear",
+   "ref": "B289"
+  },
+  "cobertor": {
+   "id": "edkDXWj1H2wdRQfys",
+   "nome": "Blanket",
+   "ref": "B288"
+  },
+  "coifa-de-cota-de-malha": {
+   "id": "ejvh4DUJXxX7aV-8B",
+   "nome": "Mail Coif",
+   "ref": "B284"
+  },
+  "coldre-de-cintura": {
+   "id": "EIJwAsTB3ogNV0BXI",
+   "nome": "Holster, Belt",
+   "ref": "B289"
+  },
+  "coldre-de-ombro": {
+   "id": "E4oQluqzxd4la6m57",
+   "nome": "Holster, Shoulder",
+   "ref": "B289"
+  },
+  "colete-balistico": {
+   "id": "eihDyYJCQfC3KFMMf",
+   "nome": "Ballistic Vest",
+   "ref": "B284"
+  },
+  "colete-de-campanha": {
+   "id": "eh5c7mKvrUAKqZIqM",
+   "nome": "Flak Jacket",
+   "ref": "B284"
+  },
+  "colete-fragmentado": {
+   "id": "esibVNd_XTzSQA8lw",
+   "nome": "Frag Vest",
+   "ref": "B284"
+  },
+  "colete-salva-vidas": {
+   "id": "eo4DGoZ27cYXgTOdw",
+   "nome": "Life Jacket",
+   "ref": "B288"
+  },
+  "colete-tatico": {
+   "id": "eLmBppzUL1rhTOrFf",
+   "nome": "Tactical Vest",
+   "ref": "B284"
+  },
+  "computador-acessorio": {
+   "id": "eC1LM4b2_K5qhgOfs",
+   "nome": "Computer, Wearable",
+   "ref": "B288"
+  },
+  "computador-laptop": {
+   "id": "eQwYw3YMYdWxfoOrH",
+   "nome": "Computer, Laptop",
+   "ref": "B288"
+  },
+  "coquetel-molotov": {
+   "id": "eQU1crPWui_l0uBWn",
+   "nome": "Molotov Cocktail",
+   "ref": "B277"
+  },
+  "corda-3-4": {
+   "id": "eTyrSZG79lN5WAVi3",
+   "nome": "Rope, 3/4\", 10 yards",
+   "ref": "B288"
+  },
+  "corda-3-8": {
+   "id": "eZ_XacMxyQscAnrjm",
+   "nome": "Rope, 3/8\", 10 yards",
+   "ref": "B288"
+  },
+  "cordel-3-16": {
+   "id": "etEasz_PbTeSpHWO2",
+   "nome": "Cord, 3/16\", 10 yards",
+   "ref": "B288"
+  },
+  "correia-de-aco-trancado": {
+   "id": "EGQ2uP3rlucXSVNOh",
+   "nome": "Lanyard, Woven Steel",
+   "ref": "B289"
+  },
+  "correia-de-couro": {
+   "id": "EkVrENk3w1A-FZF-L",
+   "nome": "Lanyard, Leather",
+   "ref": "B289"
+  },
+  "corselete-de-aco": {
+   "id": "e1v4T8rApJqGGp9Dy",
+   "nome": "Steel Corselet",
+   "ref": "B283"
+  },
+  "corselete-de-aco-reforcado": {
+   "id": "eY1ZKH8Qg1ZqUsMyy",
+   "nome": "Heavy Steel Corselet",
+   "ref": "B283"
+  },
+  "corselete-de-bronze": {
+   "id": "eCCjnqX9SEHnWHGqJ",
+   "nome": "Bronze Corselet",
+   "ref": "B283"
+  },
+  "cota-de-malha-longa": {
+   "id": "eMEcWG86s8Y7cClEW",
+   "nome": "Mail Hauberk",
+   "ref": "B283"
+  },
+  "cota-de-malha-longa-dupla": {
+   "id": "eLTzM6RIUt6jSfvL0",
+   "nome": "Double Mail Hauberk",
+   "ref": "B283"
+  },
+  "cutelo": {
+   "id": "eixA8HVCkamV5wgNA",
+   "nome": "Cutlass",
+   "ref": "B273"
+  },
+  "danificador-de-escutas": {
+   "id": "eYGYxQyfo2SL3awJc",
+   "nome": "Bug Stomper",
+   "ref": "B289"
+  },
+  "derringer-41": {
+   "id": "enYweeQwtSBvAmkXg",
+   "nome": "Derringer, .41",
+   "ref": "B278"
+  },
+  "detector-de-metais-portatil": {
+   "id": "e_bHydb3KTOnC2Gn2",
+   "nome": "Metal Detector Wand",
+   "ref": "B289"
+  },
+  "elmo-circular": {
+   "id": "eJopHJFAdWLBm9Isx",
+   "nome": "Barrel Helm",
+   "ref": "B284"
+  },
+  "elmo-de-bronze": {
+   "id": "eJ2r4US4z3J-1gZWP",
+   "nome": "Bronze Helmet",
+   "ref": "B284"
+  },
+  "elmo-de-couro": {
+   "id": "eyancWXjMHFvlYnQN",
+   "nome": "Leather Helm",
+   "ref": "B284"
+  },
+  "elmo-de-legionario": {
+   "id": "e44NzH-3AZPLyLJpU",
+   "nome": "Legionary Helmet",
+   "ref": "B284"
+  },
+  "elmo-grande": {
+   "id": "e739EHy6a1paoCA6o",
+   "nome": "Greathelm",
+   "ref": "B284"
+  },
+  "encartes-de-placas": {
+   "id": "eTa0_Mjz5F5zYZZXo",
+   "nome": "Frag Vest Plate Inserts",
+   "ref": "B284"
+  },
+  "equipamento-basico-para-grupo": {
+   "id": "eOEPKQwEjVba1F5uY",
+   "nome": "Group Basics",
+   "ref": "B288"
+  },
+  "equipamento-basico-pessoal": {
+   "id": "e0z9DCZj3jzgLmFSf",
+   "nome": "Personal Basics",
+   "ref": "B288"
+  },
+  "equipamento-de-alpinismo": {
+   "id": "eoFGGaoCNTxbd33bZ",
+   "nome": "Climbing Gear",
+   "ref": "B288"
+  },
+  "equipamento-de-mergulho": {
+   "id": "e1-Ri63fyyB9QChW2",
+   "nome": "Scuba Gear",
+   "ref": "B288"
+  },
+  "escudo-de-energia": {
+   "id": "ekJ0dl6J62JNNFKSw",
+   "nome": "Force Shield",
+   "ref": "B287"
+  },
+  "escudo-grande": {
+   "id": "eW24BBZYcmFDI26CU",
+   "nome": "Large Shield",
+   "ref": "B287"
+  },
+  "escudo-leve": {
+   "id": "enOlH3Yh80FnKbD6t",
+   "nome": "Light Shield",
+   "ref": "B287"
+  },
+  "escudo-medio": {
+   "id": "eztv9mKxDmU8CHUmm",
+   "nome": "Medium Shield",
+   "ref": "B287"
+  },
+  "escudo-pequeno": {
+   "id": "enuElHkbotKsmNZFf",
+   "nome": "Small Shield",
+   "ref": "B287"
+  },
+  "escuta": {
+   "id": "eiFZSDgHIOenxdNEO",
+   "nome": "Bug, Audio",
+   "ref": "B289"
+  },
+  "escuta-microscopica": {
+   "id": "e-d_gc2FlbmWGnpjy",
+   "nome": "Nanobug",
+   "ref": "B289"
+  },
+  "espada-bastarda": {
+   "id": "eA0Al6H5LCgdRrVDL",
+   "nome": "Bastard Sword",
+   "ref": "B271,B274"
+  },
+  "espada-bastarda-duas-maos": {
+   "id": "eA0Al6H5LCgdRrVDL",
+   "nome": "Bastard Sword",
+   "ref": "B271,B274"
+  },
+  "espada-bastarda-em-gdp": {
+   "id": "efmyZgvy9PAAnYksx",
+   "nome": "Thrusting Bastard Sword",
+   "ref": "B271"
+  },
+  "espada-bastarda-em-gdp-duas-maos": {
+   "id": "efmyZgvy9PAAnYksx",
+   "nome": "Thrusting Bastard Sword",
+   "ref": "B271"
+  },
+  "espada-curta": {
+   "id": "e9G9wK59iIiHleYFE",
+   "nome": "Shortsword",
+   "ref": "B273"
+  },
+  "espada-de-energia": {
+   "id": "eiCTpkk03cbvnYe-i",
+   "nome": "Force Sword",
+   "ref": "B272"
+  },
+  "espada-grande": {
+   "id": "eevc5gLMpBa31c3OE",
+   "nome": "Greatsword",
+   "ref": "B274"
+  },
+  "espada-grande-em-gdp": {
+   "id": "eGaFQRUGwwvKMAC7r",
+   "nome": "Thrusting Greatsword",
+   "ref": "B274"
+  },
+  "espada-larga": {
+   "id": "eT91Kw-sURBn7M7Li",
+   "nome": "Broadsword",
+   "ref": "B271"
+  },
+  "espada-larga-em-gdp": {
+   "id": "eK1y_K-KcOfjA2InY",
+   "nome": "Thrusting Broadsword",
+   "ref": "B271"
+  },
+  "espigoes-de-ferro-escalador": {
+   "id": "eRyz8psTxPf1Gb5Ut",
+   "nome": "Iron Spike/Piton",
+   "ref": "B288"
+  },
+  "espingarda-dupla-c10": {
+   "id": "eEoLZzrIoxDclxNpG",
+   "nome": "Double Shotgun, 10G",
+   "ref": "B279"
+  },
+  "espingarda-pump-c12": {
+   "id": "eYZW7qkvflXuL60CW",
+   "nome": "Pump Shotgun, 12G",
+   "ref": "B279"
+  },
+  "espingarda-semiautomatica-c12": {
+   "id": "ecZWaA9uLa_Z1a_wd",
+   "nome": "Auto Shotgun, 12G",
+   "ref": "B279"
+  },
+  "esporas": {
+   "id": "e8PGxOlOuLnLsH2ln",
+   "nome": "Spurs",
+   "ref": "B289"
+  },
+  "estaca-de-madeira": {
+   "id": "e8e1kezxLGQShhdMZ",
+   "nome": "Wooden Stake",
+   "ref": "B272"
+  },
+  "estaca-de-madeira-distancia": {
+   "id": "e8e1kezxLGQShhdMZ",
+   "nome": "Wooden Stake",
+   "ref": "B272"
+  },
+  "estribos": {
+   "id": "egvfK92lVB1VIn9nR",
+   "nome": "Stirrups",
+   "ref": "B289"
+  },
+  "faca": {
+   "id": "eeQgU7KaAJKcO9rBW",
+   "nome": "Small Knife",
+   "ref": "B272"
+  },
+  "faca-grande-de-arremesso": {
+   "id": "eyr4BCskITxqJR9-P",
+   "nome": "Large Knife",
+   "ref": "B272"
+  },
+  "faca-pequena-de-arremesso": {
+   "id": "eeQgU7KaAJKcO9rBW",
+   "nome": "Small Knife",
+   "ref": "B272"
+  },
+  "facao": {
+   "id": "eyr4BCskITxqJR9-P",
+   "nome": "Large Knife",
+   "ref": "B272"
+  },
+  "feixe-ionico-pesado": {
+   "id": "eTHjkx-dhIlMO8BbV",
+   "nome": "Heavy Blaster",
+   "ref": "B280"
+  },
+  "ferraduras": {
+   "id": "eDr0KkWpI_k-uXOjt",
+   "nome": "Horseshoes, Set",
+   "ref": "B289"
+  },
+  "fogao-pequeno": {
+   "id": "e7cTFmc3ahIolV8FK",
+   "nome": "Camp Stove, Small",
+   "ref": "B288"
+  },
+  "fone-de-ouvido-com-radio": {
+   "id": "eurkyCZI0mDoyhBc8",
+   "nome": "Radio, Headset",
+   "ref": "B288"
+  },
+  "fosforos": {
+   "id": "ePzy2xQpq8lmOn7Hs",
+   "nome": "Matches, Waterproof",
+   "ref": "B288"
+  },
+  "funda": {
+   "id": "eDxKGqV7AfAfhKnwR",
+   "nome": "Sling",
+   "ref": "B276"
+  },
+  "fustibalo": {
+   "id": "eHnAhVFnQ4XgTJUB9",
+   "nome": "Staff Sling",
+   "ref": "B276"
+  },
+  "garrafa-ceramica": {
+   "id": "EVNlnrkD5kQt_OZbk",
+   "nome": "Bottle, Ceramic",
+   "ref": "B288"
+  },
+  "garrafa-termica": {
+   "id": "EAxwf31J1xN011yYR",
+   "nome": "Thermos Bottle",
+   "ref": "B288"
+  },
+  "garrote": {
+   "id": "eTJSJc9VrDVNSo27e",
+   "nome": "Garrote",
+   "ref": "B272"
+  },
+  "gasolina": {
+   "id": "eSQJ6_sNcDCZA0amO",
+   "nome": "Gasoline, 1 Gallon",
+   "ref": "B288"
+  },
+  "gazuas": {
+   "id": "ez-4XMjmMn3z_-AFi",
+   "nome": "Lockpicks",
+   "ref": "B289"
+  },
+  "gazuas-eletronicas": {
+   "id": "eETOcgd6amc__74vJ",
+   "nome": "Electronic \"Lockpicks\"",
+   "ref": "B289"
+  },
+  "gif-85mm": {
+   "id": "e-0qaxUeJgsJClVC5",
+   "nome": "RPG, 85mm",
+   "ref": "B281"
+  },
+  "glaive": {
+   "id": "eycuK4I2pXtxrRIiD",
+   "nome": "Glaive",
+   "ref": "B272"
+  },
+  "granada-atordoamento": {
+   "id": "ez0zsgZQAQsQO7qHN",
+   "nome": "Hand Grenade, Stun",
+   "ref": "B277"
+  },
+  "granada-concussao-nt6": {
+   "id": "eQYurp0VJW-T4An65",
+   "nome": "Hand Grenade, Concussion",
+   "ref": "B277"
+  },
+  "granada-concussao-nt7": {
+   "id": "etegwcah6QQjNGFqK",
+   "nome": "Hand Grenade, Concussion",
+   "ref": "B277"
+  },
+  "granada-fragmentacao-nt6": {
+   "id": "eCP5WKNTpnzm8AlnW",
+   "nome": "Hand Grenade, Fragmentation",
+   "ref": "B277"
+  },
+  "granada-fragmentacao-nt7": {
+   "id": "efeQiYMy8tJbTJJ24",
+   "nome": "Hand Grenade, Fragmentation",
+   "ref": "B277"
+  },
+  "granada-plasma": {
+   "id": "eEvlaxat1BjPjsEu4",
+   "nome": "Hand Grenade, Plasma",
+   "ref": "B277"
+  },
+  "granada-polvora-negra": {
+   "id": "ef7nSu81PTWKhbD-x",
+   "nome": "Hand Grenade, Black Powder",
+   "ref": "B277"
+  },
+  "grevas-de-bronze": {
+   "id": "eEBUnwPfzlxYi0G7R",
+   "nome": "Bronze Greaves",
+   "ref": "B283"
+  },
+  "instrumentos-cirurgicos": {
+   "id": "eXwmhzGUCny3k4r8I",
+   "nome": "Surgical Instruments",
+   "ref": "B289"
+  },
+  "integrado-lancador-granadas-ici": {
+   "id": "eylPQ5N5k1RQp_-eC",
+   "nome": "ICW Integral, 25mm",
+   "ref": "B281"
+  },
+  "isqueiro": {
+   "id": "e7CaEPMjB3Ma63F8m",
+   "nome": "Cigarette Lighter",
+   "ref": "B288"
+  },
+  "jaqueta-de-couro": {
+   "id": "eORWsWyeixo42dn9p",
+   "nome": "Leather Jacket",
+   "ref": "B283"
+  },
+  "katana": {
+   "id": "efRs8e1U_kSxmljS_",
+   "nome": "Katana",
+   "ref": "B271"
+  },
+  "katana-duas-maos": {
+   "id": "efRs8e1U_kSxmljS_",
+   "nome": "Katana",
+   "ref": "B271"
+  },
+  "kit-antitoxinas": {
+   "id": "eES-b-ipuZmJ3CkyP",
+   "nome": "Antitoxin Kit",
+   "ref": "B289"
+  },
+  "kit-de-disfarces": {
+   "id": "e0jyGbrILnBBEpr-j",
+   "nome": "Disguise Kit",
+   "ref": "B289"
+  },
+  "kit-de-emergencia": {
+   "id": "eERS8D9N8X32mdc3g",
+   "nome": "Crash Kit/TL0-5",
+   "ref": "B289"
+  },
+  "kit-de-primeiros-socorros": {
+   "id": "eHoOTNeBiFqTk598H",
+   "nome": "First Aid Kit",
+   "ref": "B289"
+  },
+  "kusari": {
+   "id": "eRZSQqpjIBXI3xgnn",
+   "nome": "Kusari",
+   "ref": "B272"
+  },
+  "laboratorio-portatil": {
+   "id": "ecPviqr-tQgLou_E4",
+   "nome": "Suitcase Lab",
+   "ref": "B289"
+  },
+  "laco": {
+   "id": "eCmue6B6tqEQZvGPg",
+   "nome": "Lariat",
+   "ref": "B276"
+  },
+  "lampiao": {
+   "id": "eLPn_Iv8ULaf6jQvn",
+   "nome": "Lantern",
+   "ref": "B288"
+  },
+  "lanca": {
+   "id": "e6qjxZtOg7lCt_TE5",
+   "nome": "Spear",
+   "ref": "B273"
+  },
+  "lanca-chama": {
+   "id": "eyiEZeKvneYFCaPT3",
+   "nome": "Flamethrower",
+   "ref": "B281"
+  },
+  "lanca-de-arremesso": {
+   "id": "e6qjxZtOg7lCt_TE5",
+   "nome": "Spear",
+   "ref": "B273"
+  },
+  "lanca-de-justa": {
+   "id": "es6-GsBa25ko5cKIl",
+   "nome": "Lance",
+   "ref": "B272"
+  },
+  "lanca-longa": {
+   "id": "emcKkiJSf12xalBS0",
+   "nome": "Long Spear",
+   "ref": "B273"
+  },
+  "lanterna-pesada": {
+   "id": "eXRmIV_DsOO1bevEv",
+   "nome": "Flashlight, Heavy",
+   "ref": "B288"
+  },
+  "loriga-segmentada": {
+   "id": "erpad1Lja7fZD5rsd",
+   "nome": "Lorica Segmentata",
+   "ref": "B283"
+  },
+  "luvas-balisticas": {
+   "id": "eC2a8dAOKWwfLWL8_",
+   "nome": "Ballistic Gloves",
+   "ref": "B284"
+  },
+  "luvas-de-couro": {
+   "id": "e3wbU7mGpoDa1MkZW",
+   "nome": "Leather Gloves",
+   "ref": "B284"
+  },
+  "luvas-de-tecido": {
+   "id": "egsm0r7IMxxPjDOYq",
+   "nome": "Cloth Gloves",
+   "ref": "B284"
+  },
+  "maca": {
+   "id": "eMQqtPcAomU3kojpJ",
+   "nome": "Mace",
+   "ref": "B271"
+  },
+  "maca-de-arremesso": {
+   "id": "eMQqtPcAomU3kojpJ",
+   "nome": "Mace",
+   "ref": "B271"
+  },
+  "maca-estrela": {
+   "id": "eaRM_BLekJpaYLCFf",
+   "nome": "Morningstar",
+   "ref": "B272"
+  },
+  "maca-pequena": {
+   "id": "eIZKsTGXeXjsAVMmo",
+   "nome": "Small Mace",
+   "ref": "B271"
+  },
+  "maca-pequena-de-arremesso": {
+   "id": "eIZKsTGXeXjsAVMmo",
+   "nome": "Small Mace",
+   "ref": "B271"
+  },
+  "macarico": {
+   "id": "edkk4PnMJGzIY4dH6",
+   "nome": "Cutting Torch",
+   "ref": "B289"
+  },
+  "machadinha": {
+   "id": "emm2iFU1Mf77bxKKR",
+   "nome": "Hatchet",
+   "ref": "B271"
+  },
+  "machadinha-distancia": {
+   "id": "emm2iFU1Mf77bxKKR",
+   "nome": "Hatchet",
+   "ref": "B271"
+  },
+  "machado": {
+   "id": "eHfWel_ZPyxcLggMx",
+   "nome": "Axe",
+   "ref": "B271"
+  },
+  "machado-de-arremesso": {
+   "id": "elxxlZjgCDqN3NzeU",
+   "nome": "Throwing Axe",
+   "ref": "B271"
+  },
+  "machado-de-arremesso-distancia": {
+   "id": "elxxlZjgCDqN3NzeU",
+   "nome": "Throwing Axe",
+   "ref": "B271"
+  },
+  "machado-de-haste": {
+   "id": "eKpsVzUGeZmVg5XAA",
+   "nome": "Poleaxe",
+   "ref": "B272"
+  },
+  "machado-duas-maos": {
+   "id": "ebrSfrMcJyO0OROH1",
+   "nome": "Great Axe",
+   "ref": "B274"
+  },
+  "maleta-resistente": {
+   "id": "EmwTcZpNM3WUZspcx",
+   "nome": "Suitcase, Hard",
+   "ref": "B288"
+  },
+  "malho": {
+   "id": "eBSrOJ5fHfcHZa-wv",
+   "nome": "Maul",
+   "ref": "B274"
+  },
+  "mangas-de-cota-de-malha": {
+   "id": "eYkcXIwXTUVBNiy6c",
+   "nome": "Mail Sleeves",
+   "ref": "B283"
+  },
+  "mangas-de-couro-reforcado": {
+   "id": "eAjpgtNN95rC5wz5Z",
+   "nome": "Heavy Leather Sleeves",
+   "ref": "B283"
+  },
+  "mangas-de-escamas": {
+   "id": "e-rEiDz89qrhKLKV9",
+   "nome": "Scale Sleeves",
+   "ref": "B283"
+  },
+  "mangas-de-tecido": {
+   "id": "eNA57iwdgeWLJll25",
+   "nome": "Cloth Sleeves",
+   "ref": "B283"
+  },
+  "mangual-duas-maos": {
+   "id": "eYWZbdMmRXQtvl60Q",
+   "nome": "Flail",
+   "ref": "B274"
+  },
+  "manoplas": {
+   "id": "eFqdI-UNxfahg1aKi",
+   "nome": "Gauntlets",
+   "ref": "B284"
+  },
+  "manoplas-reforcadas": {
+   "id": "epV-xaYhDN1YZyFlz",
+   "nome": "Heavy Gauntlets",
+   "ref": "B284"
+  },
+  "maquina-de-escrever": {
+   "id": "eHY1MD7lYqTzVKoY4",
+   "nome": "Typewriter, Manual",
+   "ref": "B289"
+  },
+  "martelo-de-guerra": {
+   "id": "ePcAM1aUIxC3CUsD8",
+   "nome": "Warhammer",
+   "ref": "B274"
+  },
+  "mas-70mm": {
+   "id": "eNAtB2Iv4MSihAMGW",
+   "nome": "SAM, 70mm",
+   "ref": "B281"
+  },
+  "mascara-de-oxigenio": {
+   "id": "eBSrjkzutk3ssiwkn",
+   "nome": "Gas Mask",
+   "ref": "B285"
+  },
+  "mascara-facial-nt3": {
+   "id": "e9Fm7uCmJf4sIInt2",
+   "nome": "Face Mask",
+   "ref": "B284"
+  },
+  "microfone-a-laser": {
+   "id": "eaVppQQrIDnLaaN6V",
+   "nome": "Laser Microphone",
+   "ref": "B289"
+  },
+  "microfone-direcional": {
+   "id": "eKAhQztkLFd8ZM4f8",
+   "nome": "Shotgun Mike",
+   "ref": "B289"
+  },
+  "minicamera-digital": {
+   "id": "e3rFVpM3-zQrtitAo",
+   "nome": "Mini-Camera, Digital",
+   "ref": "B289"
+  },
+  "minigravador": {
+   "id": "eRf4lnUTTknGU1HAK",
+   "nome": "Mini-Recorder",
+   "ref": "B288"
+  },
+  "minigravador-digital": {
+   "id": "e-r_HZHgOxqkIcNPr",
+   "nome": "Mini-Recorder, Digital",
+   "ref": "B288"
+  },
+  "minilanterna": {
+   "id": "eiLUahRaD3Evkg-Wr",
+   "nome": "Flashlight, Mini",
+   "ref": "B288"
+  },
+  "minitelevisor": {
+   "id": "enklaVM9wxc9bFkX_",
+   "nome": "TV Set, Mini",
+   "ref": "B288"
+  },
+  "mira-4x": {
+   "id": "ebK9nHuujB-2BwkuQ",
+   "nome": "Scope, 4x",
+   "ref": "B289"
+  },
+  "mira-de-imagem-termica-4x": {
+   "id": "eURyhL2Caa0sU4PSS",
+   "nome": "Scope, 4x, Thermal Imaging",
+   "ref": "B289"
+  },
+  "mira-laser": {
+   "id": "e7N0Dku_fOi6Du43-",
+   "nome": "Laser Sight",
+   "ref": "B289"
+  },
+  "ml-762mm": {
+   "id": "edNQJgpJJz1GYkdmy",
+   "nome": "LMG, 7.62mm",
+   "ref": "B281"
+  },
+  "mm-45": {
+   "id": "eqdZg32_b5Bs7EAza",
+   "nome": "SMG, .45",
+   "ref": "B278"
+  },
+  "mm-9mm-nt6": {
+   "id": "ehL5FdCvxBCOOef3F",
+   "nome": "SMG, 9mm",
+   "ref": "B278"
+  },
+  "mm-9mm-nt7": {
+   "id": "eltP9ZfDqwCwTcQNm",
+   "nome": "SMG, 9mm",
+   "ref": "B278"
+  },
+  "mochila": {
+   "id": "EwSOT_Sl-CS9v-TgB",
+   "nome": "Backpack, Frame",
+   "ref": "B288"
+  },
+  "mochila-com-radio": {
+   "id": "eyROrm-JhRKeA6DOW",
+   "nome": "Radio, Backpack",
+   "ref": "B288"
+  },
+  "mochila-pequena": {
+   "id": "ESjtIfyzScVP49ity",
+   "nome": "Backpack, Small",
+   "ref": "B288"
+  },
+  "mosquete-de-mecha-80": {
+   "id": "eIpPOwHIKcXDyufTH",
+   "nome": "Matchlock Musket, .80",
+   "ref": "B279"
+  },
+  "mosquete-de-pederneira-75": {
+   "id": "eXg4wRvQYBtymW7j2",
+   "nome": "Flintlock Musket, .75",
+   "ref": "B279"
+  },
+  "moto-serra": {
+   "id": "e16UVbX3Aif--_HWf",
+   "nome": "Chainsaw",
+   "ref": "B274"
+  },
+  "mp-50": {
+   "id": "eHaUyPfrLiTJ4nM0n",
+   "nome": "HMG, .50",
+   "ref": "B281"
+  },
+  "mta-115mm": {
+   "id": "eyqRg_wFxTqm6kj_4",
+   "nome": "ATGM, 115mm",
+   "ref": "B281"
+  },
+  "naginata-armas-de-haste": {
+   "id": "emHhvrJhhl8gEmmf_",
+   "nome": "Naginata",
+   "ref": "B272"
+  },
+  "naginata-bastao": {
+   "id": "emHhvrJhhl8gEmmf_",
+   "nome": "Naginata",
+   "ref": "B272"
+  },
+  "naginata-espada-duas-maos": {
+   "id": "emHhvrJhhl8gEmmf_",
+   "nome": "Naginata",
+   "ref": "B272"
+  },
+  "nunchaku": {
+   "id": "ewygRB3WFaPDkdSvS",
+   "nome": "Nunchaku",
+   "ref": "B272"
+  },
+  "oculos-de-visao-noturna": {
+   "id": "ek2CTXpTDjJDErAjt",
+   "nome": "Night Vision Goggles",
+   "ref": "B289"
+  },
+  "odre-de-vinho": {
+   "id": "EIdDwHtUiZl0XPKHb",
+   "nome": "Wineskin",
+   "ref": "B288"
+  },
+  "oleo": {
+   "id": "er07ThePsHFxyAfWh",
+   "nome": "Oil, Lantern, 1 Pint",
+   "ref": "B288"
+  },
+  "pa": {
+   "id": "eRpb2T1C-sVXZ6mYa",
+   "nome": "Shovel",
+   "ref": "B289"
+  },
+  "paraquedas": {
+   "id": "eHOR_eMHmsfHD9CYA",
+   "nome": "Parachute",
+   "ref": "B288"
+  },
+  "pastilhas-purificar-agua": {
+   "id": "enMKV-HHAOwqM-2ce",
+   "nome": "Water Purification Tablets",
+   "ref": "B288"
+  },
+  "pe-de-cabra-1m": {
+   "id": "eUAPucG7wdMC3QgUL",
+   "nome": "Crowbar, 3'",
+   "ref": "B289"
+  },
+  "pedra-de-amolar": {
+   "id": "eRubJOKM0rZYSDrvJ",
+   "nome": "Whetstone",
+   "ref": "B289"
+  },
+  "peitoral-de-aco": {
+   "id": "eF50lm9r6Cav9Z8Vy",
+   "nome": "Steel Breastplate",
+   "ref": "B283"
+  },
+  "peitoral-de-bronze": {
+   "id": "e0mjgFOYtmvU586Be",
+   "nome": "Bronze Breastplate",
+   "ref": "B283"
+  },
+  "pelagem-de-animal": {
+   "id": "eWI5GBxAiQHBev-yE",
+   "nome": "Sleeping Fur",
+   "ref": "B288"
+  },
+  "perneiras-de-cota-de-malha": {
+   "id": "eP-ru1Xohx4lVzP6h",
+   "nome": "Mail Leggings",
+   "ref": "B283"
+  },
+  "perneiras-de-couro": {
+   "id": "e9Jv_y8-d9IYpcjy1",
+   "nome": "Leather Leggings",
+   "ref": "B283"
+  },
+  "perneiras-de-couro-reforcado": {
+   "id": "e5elGPa0mpvNveBYM",
+   "nome": "Heavy Leather Leggings",
+   "ref": "B283"
+  },
+  "perneiras-de-escamas": {
+   "id": "eggdaF8ozmM3XCSbR",
+   "nome": "Scale Leggings",
+   "ref": "B283"
+  },
+  "perneiras-de-placas": {
+   "id": "e28oGDRpIm959_0j7",
+   "nome": "Plate Legs",
+   "ref": "B283"
+  },
+  "perneiras-de-placas-reforcadas": {
+   "id": "eGVL7-Hticxr8lROj",
+   "nome": "Heavy Plate Legs",
+   "ref": "B283"
+  },
+  "picareta": {
+   "id": "erR8mxNXRU6iJyFkJ",
+   "nome": "Pick",
+   "ref": "B271"
+  },
+  "picareta-equipamento": {
+   "id": "e5MyCEYi3vHBLju7I",
+   "nome": "Pickaxe",
+   "ref": "B289"
+  },
+  "pistola-auto-40": {
+   "id": "eTLX_z0GxDWM4VQpC",
+   "nome": "Auto Pistol, .40",
+   "ref": "B278"
+  },
+  "pistola-auto-44m": {
+   "id": "eTqdXZWeT736JVQqc",
+   "nome": "Auto Pistol, .44M",
+   "ref": "B278"
+  },
+  "pistola-auto-45": {
+   "id": "e9wm9rm5S5FNRxWy-",
+   "nome": "Auto Pistol, .45",
+   "ref": "B278"
+  },
+  "pistola-auto-9mm-nt6": {
+   "id": "ePXFnsYiFB2rr3oZ0",
+   "nome": "Auto Pistol, 9mm",
+   "ref": "B278"
+  },
+  "pistola-auto-9mm-nt7": {
+   "id": "evd-68C4_78T6l-bN",
+   "nome": "Auto Pistol, 9mm",
+   "ref": "B278"
+  },
+  "pistola-auto-9mm-nt9": {
+   "id": "e-1qmpb5zfpRBCz_F",
+   "nome": "Auto Pistol, 9mm",
+   "ref": "B278"
+  },
+  "pistola-de-feixe-ionico": {
+   "id": "e-JAZolg20qXdPAlV",
+   "nome": "Blaster Pistol",
+   "ref": "B280"
+  },
+  "pistola-de-ocultacao-380": {
+   "id": "edhADwRiIxJxZFXcP",
+   "nome": "Holdout Pistol, .380",
+   "ref": "B278"
+  },
+  "pistola-eletrolaser": {
+   "id": "eenA5iohFyGrr-Dnv",
+   "nome": "Electrolaser Pistol",
+   "ref": "B280"
+  },
+  "pistola-fecho-de-roda-60": {
+   "id": "eb8dAgYDG1qVeEaCk",
+   "nome": "Wheel-Lock Pistol, .60",
+   "ref": "B278"
+  },
+  "pistola-girofoguete-15mm": {
+   "id": "eQ2uCrPZHq1DxbEnn",
+   "nome": "Gyroc Pistol, 15mm",
+   "ref": "B278"
+  },
+  "pistola-laser": {
+   "id": "e-bGGUBh5RIt0Wle1",
+   "nome": "Laser Pistol",
+   "ref": "B280"
+  },
+  "pistola-metralha-9mm": {
+   "id": "ew0W4YbRxNwYfrEFh",
+   "nome": "Machine Pistol, 9mm",
+   "ref": "B278"
+  },
+  "pistola-paralisante": {
+   "id": "eWvkEbFhD0dpiPTSG",
+   "nome": "Stun Gun",
+   "ref": "B271"
+  },
+  "pistola-pederneira-51": {
+   "id": "eu01GL8tDlEAn8P7A",
+   "nome": "Flintlock Pistol, .51",
+   "ref": "B278"
+  },
+  "placas-antitrauma": {
+   "id": "eHZq4WBWqjKj2czeV",
+   "nome": "Tactical Vest Trauma Plates",
+   "ref": "B284"
+  },
+  "querosene": {
+   "id": "eD4JnJ8xhmU23kuIh",
+   "nome": "Kerosene, 1 Gallon",
+   "ref": "B288"
+  },
+  "racao-de-viagem": {
+   "id": "eLEGjF9a2hWzDLYsr",
+   "nome": "Traveler's Rations",
+   "ref": "B288"
+  },
+  "radio-de-mao": {
+   "id": "eRf6NaAVVn_tr2GlF",
+   "nome": "Radio, Hand",
+   "ref": "B288"
+  },
+  "radio-transistor": {
+   "id": "eOGQijdBBpaYkTeds",
+   "nome": "Transistor Radio",
+   "ref": "B288"
+  },
+  "rapieira": {
+   "id": "ewTaOhPlZ-pkHKGqg",
+   "nome": "Rapier",
+   "ref": "B273"
+  },
+  "receptor-gps": {
+   "id": "eKZrky-FLd84tzH7U",
+   "nome": "GPS Receiver",
+   "ref": "B288"
+  },
+  "rede-de-combate": {
+   "id": "epHI_QObD_8CEc5Fv",
+   "nome": "Melee Net",
+   "ref": "B276"
+  },
+  "rede-grande": {
+   "id": "e10oRibtcADKUDbVi",
+   "nome": "Large Net",
+   "ref": "B276"
+  },
+  "relogio-de-pulso": {
+   "id": "eFmN-M8-PYD47gn9M",
+   "nome": "Wristwatch",
+   "ref": "B288"
+  },
+  "revolver-357m": {
+   "id": "ejg-Dl12M4SUbzD3Q",
+   "nome": "Revolver, .357M",
+   "ref": "B278"
+  },
+  "revolver-36": {
+   "id": "eRhmNRmORNFibLiGx",
+   "nome": "Revolver, .36",
+   "ref": "B278"
+  },
+  "revolver-38": {
+   "id": "ehtNkAz3A7KoatBdQ",
+   "nome": "Revolver, .38",
+   "ref": "B278"
+  },
+  "revolver-44m": {
+   "id": "egtwKYilPOPRRMw7a",
+   "nome": "Revolver, .44M",
+   "ref": "B278"
+  },
+  "revolver-cano-curto-38": {
+   "id": "eobiHQaq2VoduY9NY",
+   "nome": "Snub Revolver, .38",
+   "ref": "B278"
+  },
+  "rifle-automatico-762mm": {
+   "id": "eruTCf6-pTdrEnoGh",
+   "nome": "Auto Rifle, 7.62mm",
+   "ref": "B281"
+  },
+  "rifle-autorrecarregavel-762mm": {
+   "id": "eiRW5rgionufn5Z3j",
+   "nome": "Self-Loading Rifle, 7.62mm",
+   "ref": "B279"
+  },
+  "rifle-com-cartucho-45": {
+   "id": "e1m4i-3XWWV3PWLwD",
+   "nome": "Cartridge Rifle, .45",
+   "ref": "B279"
+  },
+  "rifle-de-assalto-556mm": {
+   "id": "ez3A4rmpoQF1oPUSS",
+   "nome": "Assault Rifle, 5.56mm",
+   "ref": "B279"
+  },
+  "rifle-de-assalto-762mmc": {
+   "id": "eoAnj0xcMGZ9mAGFN",
+   "nome": "Assault Rifle, 7.62mmS",
+   "ref": "B279"
+  },
+  "rifle-de-atirador-338": {
+   "id": "eWWeN7vcf-7qYt208",
+   "nome": "Sniper Rifle, .338",
+   "ref": "B279"
+  },
+  "rifle-de-atirador-a-laser": {
+   "id": "eSVYbtS58zMC_JkbP",
+   "nome": "Laser Sniper Rifle",
+   "ref": "B280"
+  },
+  "rifle-de-cavilha-762mm": {
+   "id": "eFGSWwheCr3DRsNw7",
+   "nome": "Bolt-Action Rifle, 7.62mm",
+   "ref": "B279"
+  },
+  "rifle-de-combate-762mm": {
+   "id": "evvCSQs3YoijE8F2J",
+   "nome": "Battle Rifle, 7.62mm",
+   "ref": "B279"
+  },
+  "rifle-de-dardos-11mm": {
+   "id": "enpVtUrI39mP-ecO6",
+   "nome": "Dart Rifle, 11mm",
+   "ref": "B279"
+  },
+  "rifle-de-feixe-ionico": {
+   "id": "eHkYA3IkS5FfJeKpG",
+   "nome": "Blaster Rifle",
+   "ref": "B280"
+  },
+  "rifle-de-gauss-4mm": {
+   "id": "eQKKlQeoNcT8BMWdq",
+   "nome": "Gauss Rifle, 4mm",
+   "ref": "B279"
+  },
+  "rifle-laser": {
+   "id": "eDQbJwEXmwibKobdQ",
+   "nome": "Laser Rifle",
+   "ref": "B280"
+  },
+  "rifle-mosquete-577": {
+   "id": "e4WEoKckUbEStauTn",
+   "nome": "Rifle-Musket, .577",
+   "ref": "B279"
+  },
+  "roca-de-tear": {
+   "id": "e90M5ekokW7dJYaTK",
+   "nome": "Spinning Wheel",
+   "ref": "B289"
+  },
+  "sabre": {
+   "id": "euxMoWgpe1odTnfgp",
+   "nome": "Saber",
+   "ref": "B273"
+  },
+  "saco-de-dormir": {
+   "id": "eaRGjCvKg2weKYejv",
+   "nome": "Sleeping Bag",
+   "ref": "B288"
+  },
+  "saco-de-dormir-reforcado": {
+   "id": "ex8apvYN2COCkN2NS",
+   "nome": "Sleeping Bag, Insulated",
+   "ref": "B288"
+  },
+  "saiote-de-couro-batido": {
+   "id": "eyBcHUcXZElng8A_8",
+   "nome": "Studded Leather Skirt",
+   "ref": "B283"
+  },
+  "sandalias": {
+   "id": "eCTWgE9-NyG_jpylR",
+   "nome": "Sandals",
+   "ref": "B284"
+  },
+  "sapatos": {
+   "id": "eVW6oMjhnZJN7WlQ_",
+   "nome": "Shoes",
+   "ref": "B284"
+  },
+  "scorpion": {
+   "id": "ebObEoAX8Cg79nG6v",
+   "nome": "Scorpion",
+   "ref": "B281"
+  },
+  "segadeira": {
+   "id": "eLze3KebOuGUyVB8r",
+   "nome": "Scythe",
+   "ref": "B274"
+  },
+  "sela-de-combate": {
+   "id": "evsk20tOKUPlB4BCL",
+   "nome": "War Saddle",
+   "ref": "B289"
+  },
+  "sela-e-arreios": {
+   "id": "epowimMUdqekqZF_V",
+   "nome": "Saddle and Tack",
+   "ref": "B289"
+  },
+  "serra": {
+   "id": "eHhyJ9H0XUeq_CRju",
+   "nome": "Saw",
+   "ref": "B289"
+  },
+  "shuriken": {
+   "id": "eFia0RLHmMf1eLH_v",
+   "nome": "Shuriken",
+   "ref": "B276"
+  },
+  "silenciador-de-pistola-ou-mm": {
+   "id": "eGTrEgJRxWimo0CEd",
+   "nome": "Silencer, Pistol or SMG",
+   "ref": "B289"
+  },
+  "sinal-teleguiado": {
+   "id": "e1XW9GG-IvYkhXu_-",
+   "nome": "Homing Beacon",
+   "ref": "B289"
+  },
+  "sob-tambor-40mm": {
+   "id": "e615RWKIqSJ4FQmxG",
+   "nome": "Under-Barrel, 40mm",
+   "ref": "B281"
+  },
+  "soco-ingles": {
+   "id": "eDPR0RASqvFMb_ebC",
+   "nome": "Brass Knuckles",
+   "ref": "B271"
+  },
+  "sollerets": {
+   "id": "eUeEF4vBURV9fiLbu",
+   "nome": "Sollerets",
+   "ref": "B284"
+  },
+  "tablete-de-cera": {
+   "id": "eT7KQ-jPDKyLxi58b",
+   "nome": "Wax Tablet",
+   "ref": "B289"
+  },
+  "tambor": {
+   "id": "e77OBUlSPXCMyuXCZ",
+   "nome": "Drum",
+   "ref": "B288"
+  },
+  "tanga-de-pele": {
+   "id": "eViRaPM_yneZYM1ka",
+   "nome": "Fur Loincloth",
+   "ref": "B283"
+  },
+  "telefone-por-satelite": {
+   "id": "eReOCZMujr5hTRhK8",
+   "nome": "Satellite Phone",
+   "ref": "B288"
+  },
+  "telescopio": {
+   "id": "eicqHj7npCwkJ4xk5",
+   "nome": "Telescope",
+   "ref": "B289"
+  },
+  "tercado": {
+   "id": "evkwkZ3NDZYW8UN9p",
+   "nome": "Smallsword",
+   "ref": "B273"
+  },
+  "tocha": {
+   "id": "ezs_tGacOl7kuHwQk",
+   "nome": "Torch",
+   "ref": "B288"
+  },
+  "traje-balistico": {
+   "id": "eV7I0UtpSRRcR_i5b",
+   "nome": "Ballistic Suit",
+   "ref": "B284"
+  },
+  "traje-de-combate": {
+   "id": "etDAIqmoV3Q2hyPVZ",
+   "nome": "Battle Suit",
+   "ref": "B285"
+  },
+  "traje-espacial": {
+   "id": "eIhB0z_7l4uWsO8CS",
+   "nome": "Space Suit",
+   "ref": "B285"
+  },
+  "traje-nbq": {
+   "id": "eY9E_nxAkdxOGs37l",
+   "nome": "NBC Suit",
+   "ref": "B285"
+  },
+  "traje-pressurizado": {
+   "id": "e2N--t7_gpL7BMQyg",
+   "nome": "Vacc Suit",
+   "ref": "B285"
+  },
+  "traje-tatico": {
+   "id": "eQ074b2p-BfWZgdLR",
+   "nome": "Tactical Suit",
+   "ref": "B284"
+  },
+  "tunica-armadura": {
+   "id": "ehIxhuv_8_PA8EnPd",
+   "nome": "Cloth Armor",
+   "ref": "B283"
+  },
+  "tunica-de-pele": {
+   "id": "eE9YDq0au3FVMOGn_",
+   "nome": "Fur Tunic",
+   "ref": "B283"
+  },
+  "vara-2m": {
+   "id": "eAwl5sDIREcG_-JRd",
+   "nome": "Pole, 6'",
+   "ref": "B288"
+  },
+  "vara-3m": {
+   "id": "eSYejNt-K3UVhOHR5",
+   "nome": "Pole, 10'",
+   "ref": "B288"
+  },
+  "vela-de-sebo": {
+   "id": "evBjgg3zv1QlqT2O6",
+   "nome": "Candle, Tallow",
+   "ref": "B288"
+  },
+  "visor-antifragmentos": {
+   "id": "eUEHZeex58-t7vqKa",
+   "nome": "Frag Helmet Visor",
+   "ref": "B285"
+  },
+  "visor-balistico": {
+   "id": "eON7W6HNz-BnZ1xUu",
+   "nome": "Ballistic Helmet Visor",
+   "ref": "B285"
+  },
+  "zarabatana": {
+   "id": "ehaJQEz4vKFr9XyDC",
+   "nome": "Blowpipe",
+   "ref": "B275"
+  }
+ }
+}

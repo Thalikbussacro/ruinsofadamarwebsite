@@ -2,7 +2,23 @@
 
 Hoje cada item das listas tem só um `resumo` de uma linha (35 a 60 caracteres em média). O objetivo é que todo item — livre, com o narrador ou fora de Adamar — ganhe uma explicação de verdade: como funciona, quando se usa, exemplos na mesa e o que significa no cenário.
 
-Andamento: `node tools/enriquecimento.mjs` (resumo por fatia) e `node tools/enriquecimento.mjs P1` (itens pendentes de uma fatia).
+**Situação em 29/09/2026: concluído.** Os 1097 itens têm `descricao` e `exemplos` (a maioria também `em_adamar`, `dica_mesa` e `relacionados`), e 1049 estão vinculados ao GCS (ver abaixo).
+
+Andamento: `node tools/enriquecimento.mjs` (resumo por fatia), `node tools/enriquecimento.mjs P1` (itens pendentes de uma fatia) e `node tools/enriquecimento.mjs P1 --json` (os mesmos itens em JSON, para escrever).
+
+## Onde ficam os textos
+
+Cada fatia tem um arquivo em `data/gurps/enriquecimento/<FATIA>.json`, no formato `{ "lista": "pericias", "itens": { "<id>": { descricao, exemplos, em_adamar, dica_mesa, relacionados } } }`. As listas (`pericias.json` etc.) continuam enxutas; `tools/gerar-dados.mjs` junta os textos aos itens, valida (campo desconhecido, id inexistente, relacionado inexistente, descrição curta) e grava tudo em `js/dados-gurps.js`. Para mudar um texto, edite o arquivo da fatia e rode o gerador.
+
+No site, `js/detalhes.js` desenha o "Mais sobre" de cada item: nas listas de À Mesa (a busca também procura na descrição), na janela de escolha e nos itens abertos do criador, e nos traços da ficha completa.
+
+## Vínculo com o GCS
+
+`data/gurps/gcs.json` liga cada item nosso ao item correspondente do GCS (GURPS Character Sheet), Basic Set: `id` estável do GCS, `nome` em inglês e `ref` (página do Basic Set em inglês, que não bate com a da edição brasileira). Nas listas aparece como "GCS: Area Knowledge (B176)", e a busca também acha pelo nome em inglês.
+
+- `node tools/gcs.mjs conferir` confere o vínculo contra a biblioteca local do GCS (Master Library; ou `GCS_BIBLIOTECA=<pasta>`).
+- `node tools/gcs.mjs candidatos <pasta>` gera as listas lado a lado, nossas e do GCS, para vincular itens novos.
+- Sem vínculo (48): ataques naturais e desarmados (soco, chute, presas…), armaduras de cavalo, alguns traços sem equivalente direto no Basic Set (Arrebatador, Interposição, Defesas Ampliadas, Favor, Grupo de Contato…) e três perícias (Captação, Golpe Debilitante, Perícia Abrangente).
 
 ## Campos novos
 
@@ -32,36 +48,36 @@ Um item conta como feito quando tem `descricao` (≥ 200 caracteres) e pelo meno
 Cada fatia é um commit (`feat: enriquece <fatia>`). Ordem de prioridade: o que a mesa mais usa primeiro.
 
 ### Pré-requisito
-- [ ] **S0 — Estrutura:** aceitar os campos novos em `tools/gerar-dados.mjs` (tipos e tamanhos), mostrar `descricao`, `exemplos`, `em_adamar` e `dica_mesa` ao abrir o item nas listas (`js/pericias.js`), na janela de escolha do criador e na ficha completa; testes.
+- [x] **S0 — Estrutura:** aceitar os campos novos em `tools/gerar-dados.mjs` (tipos e tamanhos), mostrar `descricao`, `exemplos`, `em_adamar` e `dica_mesa` ao abrir o item nas listas (`js/pericias.js`), na janela de escolha do criador e na ficha completa; testes.
 
 ### Perícias (253)
-- [ ] **P1** — livres A–C (55)
-- [ ] **P2** — livres D–L (60)
-- [ ] **P3** — livres M–R (44)
-- [ ] **P4** — livres S–Z (21)
-- [ ] **P5** — com o narrador e fora de Adamar (73)
+- [x] **P1** — livres A–C (55)
+- [x] **P2** — livres D–L (60)
+- [x] **P3** — livres M–R (44)
+- [x] **P4** — livres S–Z (21)
+- [x] **P5** — com o narrador e fora de Adamar (73)
 
 ### Vantagens e qualidades (230)
-- [ ] **V1** — livres e qualidades (70)
-- [ ] **V2** — com o narrador (39)
-- [ ] **V3** — fora de Adamar A–L (63)
-- [ ] **V4** — fora de Adamar M–Z (58)
+- [x] **V1** — livres e qualidades (70)
+- [x] **V2** — com o narrador (39)
+- [x] **V3** — fora de Adamar A–L (63)
+- [x] **V4** — fora de Adamar M–Z (58)
 
 ### Desvantagens e peculiaridades (222)
-- [ ] **D1** — peculiaridades (35)
-- [ ] **D2** — livres A–E (51)
-- [ ] **D3** — livres F–M (39)
-- [ ] **D4** — livres N–Z (42)
-- [ ] **D5** — com o narrador e fora de Adamar (55)
+- [x] **D1** — peculiaridades (35)
+- [x] **D2** — livres A–E (51)
+- [x] **D3** — livres F–M (39)
+- [x] **D4** — livres N–Z (42)
+- [x] **D5** — com o narrador e fora de Adamar (55)
 
 ### Equipamento (392)
-- [ ] **E1** — armas corpo a corpo (67)
-- [ ] **E2** — armas de distância e pesadas (52)
-- [ ] **E3** — armas de fogo (50)
-- [ ] **E4** — armaduras (81)
-- [ ] **E5** — escudos e armaduras de cavalo (22)
-- [ ] **E6** — equipamento variado A–L (72)
-- [ ] **E7** — equipamento variado M–Z (48)
+- [x] **E1** — armas corpo a corpo (67)
+- [x] **E2** — armas de distância e pesadas (52)
+- [x] **E3** — armas de fogo (50)
+- [x] **E4** — armaduras (81)
+- [x] **E5** — escudos e armaduras de cavalo (22)
+- [x] **E6** — equipamento variado A–L (72)
+- [x] **E7** — equipamento variado M–Z (48)
 
 Total: 1097 itens em 21 fatias, mais a S0.
 

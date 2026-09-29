@@ -1,0 +1,425 @@
+{
+  "lista": "vantagens",
+  "itens": {
+    "abascanto-resistencia-a-magia": {
+      "descricao": "Resistência à Magia é uma vantagem comprada em níveis que dificulta que feitiços lançados à distância afetem você: cada nível soma como penalidade à jogada de quem tenta enfeitiçá-lo diretamente. Ela não impede que você seja atingido por uma arma comum, por uma armadilha ou por qualquer efeito que não seja magia — só interfere quando alguém precisa fazer um teste para acertar um feitiço em você.\n\nO detalhe que costuma surpreender é que essa mesma resistência atrapalha feitiços bons: um curandeiro amigo sente a mesma dificuldade para curá-lo que um inimigo sentiria para amaldiçoá-lo, a menos que você relaxe a guarda de propósito. Em compensação, quem tem esse dom em geral não desenvolve o dom de lançar magia: a mesma resistência que barra a magia alheia tende a impedir o controle da própria.",
+      "exemplos": [
+        "Um caçador de ruínas que sobreviveu a um ritual amaldiçoado carrega esse dom sem saber a causa, e feitiços de proteção de aliados escorregam por ele tanto quanto as maldições dos inimigos.",
+        "Diante de um mago hostil numa masmorra, o grupo empurra à frente o companheiro resistente à magia, sabendo que os feitiços do inimigo terão mais dificuldade em grudar nele.",
+        "Ao tentar receber a bênção de um sacerdote antes da batalha, o personagem precisa avisar que vai baixar a guarda, ou a bênção simplesmente não pega."
+      ],
+      "em_adamar": "Como qualquer vantagem ligada a sentir ou resistir à magia, fica com o narrador: ele decide se esse dom existe na sua origem e como ele se manifesta num mundo onde a própria magia já é rara.",
+      "dica_mesa": "Se você tem essa vantagem, avise sempre que quiser receber um feitiço amigável, ou o narrador vai aplicar a resistência contra ele também.",
+      "relacionados": ["aptidao-magica", "escudo-mental"]
+    },
+    "abencoado": {
+      "descricao": "Abençoado representa um vínculo direto e incomum com uma divindade: o personagem recebe visões, sonhos ou impressões que vêm do próprio deus, não de um sacerdote ou de um ritual. É diferente de ter fé — é ser, de alguma forma, notado. As mensagens costumam ser fragmentadas, simbólicas ou tardias, e cabe ao narrador decidir o que a divindade realmente quer dizer e quando ela fala.\n\nExistem versões diferentes dessa vantagem, e cada uma custa pontos diferentes conforme a frequência e a clareza das visões. Em nenhuma delas o personagem controla quando a visão chega, e em nenhuma delas a divindade garante proteção material: ela fala, mas raramente age.",
+      "exemplos": [
+        "Uma sacerdotisa itinerante sonha com um caminho de pedras brancas na noite antes de uma emboscada, e decide mudar a rota da caravana sem saber explicar por quê.",
+        "Durante um cerco desesperador, um devoto ouve uma única palavra em sonho — 'espere' — e convence o grupo a não atacar antes do amanhecer.",
+        "Um órfão criado num templo recebe visões cada vez mais raras conforme cresce, e passa a duvidar se ainda é ouvido pela divindade que o escolheu."
+      ],
+      "em_adamar": "Toda comunicação direta de uma divindade é magia divina, e magia divina em Adamar só existe com o narrador, que decide se o deus existe, o que ele quer e como fala.",
+      "dica_mesa": "Trate as visões como pistas de narrador, não como respostas diretas: a graça está em interpretar, não em receber ordens claras.",
+      "relacionados": ["fe-verdadeira", "investidura-de-poder"]
+    },
+    "antecedentes-incomuns": {
+      "descricao": "Antecedentes Incomuns é uma vantagem 'guarda-chuva': ela não faz nada sozinha, mas serve para pagar em pontos um histórico de personagem que, por si, já concede acesso a algo que a maioria das pessoas não tem — nascer numa linhagem antiga, ter sido criado por um povo isolado, carregar um segredo de família. O custo exato depende do quanto esse antecedente abre de portas na campanha, e é definido caso a caso pelo narrador.\n\nEla não substitui outras vantagens: se o antecedente também dá, por exemplo, contatos ou conhecimento raro, essas partes podem exigir vantagens próprias além do Antecedente Incomum. Pense nela como o 'ingresso' que justifica por que aquilo é possível para o seu personagem e não para qualquer um.",
+      "exemplos": [
+        "O último herdeiro de uma casa apagada de um antigo reino paga por Antecedentes Incomuns para justificar por que ainda é reconhecido por velhos servos leais em terras distantes.",
+        "Uma criança criada por eremitas numa cordilheira isolada usa o antecedente para explicar por que conhece trilhas que nenhum mapa registra.",
+        "Um sobrevivente do único naufrágio numa costa amaldiçoada carrega esse antecedente porque, sozinho entre os mortos, viu algo que ninguém mais viu."
+      ],
+      "em_adamar": "Como o efeito exato depende inteiramente da história que o narrador aprova, essa vantagem sempre se define numa conversa antes da mesa começar.",
+      "dica_mesa": "Chegue à conversa com o narrador com uma ideia clara do antecedente, não só do custo: o que ele abre é mais importante que o preço."
+    },
+    "apetrechos": {
+      "descricao": "Apetrechos garante que, sempre que o personagem precisar de um item pequeno e razoável, ele 'aconteceu' de tê-lo guardado no bolso, na bolsa ou na mochila — mesmo que a cena não tivesse dado tempo ou chance de comprá-lo antes. É uma vantagem cinematográfica: assume que personagens preparados carregam de tudo um pouco, e usa isso para poupar a mesa de longas listas de compras.\n\nCada nível comprado dá direito a um apetrecho por sessão (ou por cena, a critério do narrador), sempre dentro do razoável para o que o personagem faria questão de carregar. Não serve para conjurar itens caros, mágicos ou absurdamente fora de contexto — só para o pequeno detalhe prático que qualquer aventureiro cuidadoso teria pensado em trazer.",
+      "exemplos": [
+        "Cercado por armadilhas de corda numa masmorra, o ladino puxa da mochila uma faca perfeita para cortar os fios, dizendo que sempre carrega uma.",
+        "Ao precisar acender uma tocha na chuva, a viajante descobre que guardou um pedaço de estopo seco embrulhado em couro.",
+        "Diante de uma fechadura simples, o batedor de carteiras 'lembra' de ter um gancho de arame na bota."
+      ],
+      "em_adamar": "É uma vantagem puramente cinematográfica, então fica com o narrador decidir se o tom da mesa comporta esse tipo de sorte narrativa.",
+      "dica_mesa": "Combine com o narrador se o apetrecho precisa ser anunciado antes da revelação ('eu tenho algo pra isso') ou só depois, para não virar familiar demais."
+    },
+    "aptidao-magica": {
+      "descricao": "Aptidão Mágica é o dom bruto de sentir e, em níveis mais altos, manipular a energia mágica do mundo. Sem ela, ninguém consegue lançar feitiços de verdade, não importa o quanto estude; com ela, cada nível adicional facilita testes de magia e amplia o quanto o personagem consegue perceber e mexer nessa energia. É a vantagem que separa quem tem o dom de quem só ouviu falar dele.\n\nEm campanhas onde a magia é rara, o narrador costuma limitar o nível máximo que os personagens podem comprar, já que magos poderosos contradiriam o tom do mundo. Ter Aptidão Mágica não obriga ninguém a virar mago: ela só é o alicerce sobre o qual perícias e feitiços de magia se apoiam.",
+      "exemplos": [
+        "Um pastor de cabras percebe, ainda criança, que consegue sentir quando algo 'errado' passa perto — anos depois descobre que aquilo era magia se afinando ao seu redor.",
+        "Um estudioso urbano nunca sentiu magia na vida até entrar numa ruína isolada, onde a energia acumulada finalmente desperta o dom que ele sempre teve, latente.",
+        "Uma tribo isolada em terras congeladas trata quem tem esse dom como guardião do fogo e da caça, mesmo sem entender exatamente o que ele sente."
+      ],
+      "em_adamar": "Em Adamar a magia é rara e mantida com o narrador: o nível máximo dessa vantagem é 0, ou seja, dá para sentir a presença da magia, mas não para conjurar feitiços sem combinar isso antes com ele.",
+      "dica_mesa": "Se o seu personagem tem nível 0, pense nele como alguém que percebe quando a magia está por perto, não como alguém que a controla.",
+      "relacionados": ["abascanto-resistencia-a-magia", "detectar"]
+    },
+    "atirador": {
+      "descricao": "Atirador é uma vantagem cinematográfica que torna o personagem excepcional com armas de longo alcance: seus tiros contornam más condições de forma que ninguém comum conseguiria, como se a pontaria dele ignorasse parte do azar que atrapalha qualquer outro atirador. É o tipo de talento que vira lenda — o arqueiro que nunca erra o alvo certo na hora certa.\n\nA vantagem não muda o que a arma faz fisicamente, só a consistência absurda de quem a usa. Por isso mesmo, ela é vista como fora do comum até para os padrões de um herói competente, e costuma aparecer só em campanhas dispostas a aceitar esse tipo de proeza quase impossível.",
+      "exemplos": [
+        "Um caçador lendário acerta, à distância, o único ponto fraco de uma fera enorme, num tiro que qualquer outro arqueiro chamaria de sorte impossível.",
+        "Sitiado numa torre em ruínas, o atirador derruba um mensageiro inimigo a uma distância que a guarnição jura ser exagero de história contada depois.",
+        "Mesmo sob chuva forte e vento cortante, o atirador acerta o alvo que decidiria o destino do cerco."
+      ],
+      "em_adamar": "É uma proeza cinematográfica de precisão quase sobre-humana, então só existe combinando com o narrador o quão excepcional o seu personagem pode ser.",
+      "dica_mesa": "Converse sobre até onde vai o 'quase impossível': o narrador pode preferir reservar essa proeza para um momento marcante em vez de todo tiro da sessão."
+    },
+    "bom-senso": {
+      "descricao": "Bom Senso é uma vantagem que funciona mais como um acordo de mesa do que como um teste de personagem: ela dá ao narrador liberdade para avisar o jogador quando um plano é obviamente ruim, antes que o personagem cometa o erro. A ideia é evitar que personagens espertos pareçam burros só porque o jogador não pensou em todos os ângulos.\n\nNão garante acerto nem sucesso — só a chance de reconsiderar. O narrador pode descrever uma hesitação, um mau pressentimento ou simplesmente perguntar 'tem certeza?' antes de aceitar a ação, deixando a decisão final sempre com o jogador.",
+      "exemplos": [
+        "Antes de o grupo arrombar a porta errada de uma masmorra, o narrador comenta que algo no silêncio do corredor parece errado demais para ser sorte.",
+        "Ao propor negociar com o bandido sozinho e desarmado, o jogador recebe um lembrete de que os companheiros do bandido ainda não foram vistos.",
+        "Prestes a atravessar um rio gelado à noite, o personagem sente que talvez valha esperar o amanhecer."
+      ],
+      "em_adamar": "É uma ferramenta de mesa entre jogador e narrador mais do que uma regra do mundo, então seu uso e limites ficam combinados com ele.",
+      "dica_mesa": "Use o aviso como uma pausa para pensar, não como garantia de que o plano alternativo vai dar certo."
+    },
+    "canalizacao": {
+      "descricao": "Canalização permite que um espírito, entidade ou consciência externa fale ou aja através do corpo do personagem, geralmente enquanto ele mesmo fica inconsciente ou parcialmente ausente da própria mente. É diferente de ouvir vozes ou sentir presenças: aqui, algo de fato assume o controle por um tempo, e o personagem só sabe o que aconteceu por relatos de quem estava por perto.\n\nA identidade e as intenções de quem canaliza através dele dependem inteiramente do que o narrador decidir que existe no mundo — pode ser um ancestral, um espírito da natureza ou algo bem menos amigável. É uma vantagem que carrega risco embutido: o personagem abre mão de controle sobre si mesmo em troca do que quer que a entidade traga.",
+      "exemplos": [
+        "Durante um velório, a médium do vilarejo cai em transe e fala com a voz de um ancião morto havia gerações, para o espanto dos presentes.",
+        "Perto de um círculo de pedras antigas, o personagem começa a repetir frases numa língua que nunca aprendeu, sem lembrar depois do que disse.",
+        "Em momentos de perigo extremo, algo mais calmo e mais frio assume brevemente o corpo do personagem, agindo por ele até a ameaça passar."
+      ],
+      "em_adamar": "Envolver espíritos ou entidades falando através de um personagem é efeito sobrenatural direto, então só existe combinando antes com o narrador o que pode canalizar e por quê.",
+      "dica_mesa": "Combine com o narrador sinais claros de quando a canalização começa e termina, para não virar confusão de quem está de fato no controle da cena.",
+      "relacionados": ["empatia-com-espiritos", "medium"]
+    },
+    "controle-do-metabolismo": {
+      "descricao": "Controle do Metabolismo é uma vantagem cinematográfica comprada em níveis que dá ao personagem domínio consciente sobre funções do próprio corpo que a maioria das pessoas nem percebe ter, como o ritmo do coração, o fôlego ou a temperatura interna. Cada nível destrava um truque diferente: prender a respiração por muito mais tempo que o normal, simular a própria morte para enganar um exame superficial, resistir melhor a climas hostis.\n\nÉ o tipo de talento associado a monges, ascetas ou eremitas que passaram anos treinando o próprio corpo como quem treina uma perícia marcial. Não cura ferimentos nem substitui descanso — só estica os limites de resistência do personagem em situações específicas.",
+      "exemplos": [
+        "Um monge treinado prende a respiração e finge estar morto para escapar da atenção de saqueadores que vasculham os corpos após uma emboscada.",
+        "Numa travessia por um passo nevado, o eremita reduz o próprio ritmo cardíaco para gastar menos calor e sobreviver à noite mais fria.",
+        "Escondido debaixo d'água num rio gelado, o personagem aguenta muito mais tempo submerso do que qualquer companheiro."
+      ],
+      "em_adamar": "É um domínio do corpo além do que um humano comum treina, então fica reservado para combinar com o narrador caso a caso.",
+      "dica_mesa": "Escolha os níveis pensando no tipo de treino do seu personagem: um eremita de montanha e um espião urbano usariam truques bem diferentes.",
+      "relacionados": ["silencio", "queda-de-gato"]
+    },
+    "cura": {
+      "descricao": "Cura é uma vantagem que permite tratar ferimentos e doenças apenas pelo toque, sem ervas, sem ferramentas e sem o tempo normal de recuperação. É uma das formas mais diretas de magia benéfica do jogo, e por isso mesmo uma das mais restritas: representa um dom raro, quase sempre ligado a uma fonte divina ou a um talento mágico extraordinário, nunca a treinamento comum de curandeiro.\n\nExistem variações que definem se o dom cura só o próprio personagem ou também outras pessoas, e com que limitação. Mesmo tendo esse dom, o personagem normalmente não consegue usá-lo sem parar, e ferimentos muito graves podem estar além do que ele é capaz de reverter.",
+      "exemplos": [
+        "Um peregrino ferido numa estrada esquecida é salvo por um curandeiro que só precisa segurar sua mão e murmurar uma prece baixa.",
+        "Após uma emboscada que deixaria qualquer um acamado por semanas, o companheiro tocado pelo dom já está de pé antes do anoitecer.",
+        "Numa vila assolada por uma febre estranha, rumores começam a circular sobre um forasteiro que cura com as próprias mãos."
+      ],
+      "em_adamar": "Curar só pelo toque, sem ervas nem tempo, é magia divina ou arcana das mais fortes que existem, e por isso fica só com o narrador, que decide sua origem e seus limites.",
+      "dica_mesa": "Trate esse dom como evento raro e marcante na campanha, não como um curandeiro de bolso disponível toda sessão.",
+      "relacionados": ["fe-verdadeira", "abencoado", "investidura-de-poder"]
+    },
+    "defesas-ampliadas": {
+      "descricao": "Defesas Ampliadas melhora, de forma cinematográfica, uma das defesas ativas do personagem — esquivar, bloquear ou aparar — além do que o treinamento comum permitiria. Existem versões diferentes: uma cobre só uma técnica específica de aparar, outra cobre todas, outra é ligada a bloquear com um equipamento específico, e a mais cara melhora a esquiva sem exigir nenhuma perícia em particular.\n\nÉ o tipo de talento que faz um guerreiro parecer sobrenaturalmente difícil de acertar, sempre um passo à frente do golpe. Normalmente reservada para heróis de destaque, já que reflexos tão bons quebram um pouco a expectativa de que combate seja sempre perigoso e imprevisível.",
+      "exemplos": [
+        "Cercado por três saqueadores ao mesmo tempo, o veterano bloqueia e desvia golpe após golpe como se antecipasse cada movimento antes que ele começasse.",
+        "Numa emboscada em becos estreitos, a esgrimista para uma lâmina que qualquer outro guerreiro teria sentido cravar no ombro.",
+        "Diante de uma fera que ataca em bote repentino, o caçador se esquiva por puro instinto treinado, sem tempo sequer de pensar."
+      ],
+      "em_adamar": "Reflexos tão acima do normal contrariam o peso que o combate tem em Adamar, então só entram combinando o quanto disso a mesa aceita com o narrador.",
+      "dica_mesa": "Escolha a variante pensando no estilo de luta do personagem: aparar com uma arma específica conta uma história diferente de uma esquiva geral.",
+      "relacionados": ["mestre-de-armas", "treinado-por-um-mestre"]
+    },
+    "desenvolvedor": {
+      "descricao": "Desenvolvedor representa um talento excepcional para projetar, montar e consertar engenhocas, indo além do que a perícia comum de artesão permite. A versão básica ainda respeita prazos realistas de dias ou meses e custos de material; já a versão rápida deixa o personagem criar ou modificar aparelhos em questão de horas, aproveitando sucata e peças à mão, quase como um passe de mágica da engenharia.\n\nÉ uma vantagem pensada para gênios inventores de contos de aventura, não para um simples ferreiro ou carpinteiro talentoso — esses são bem representados só por perícias altas. Ela também assume um nível de engenharia disponível para o personagem inventar, o que limita bastante seu uso fora de cenários com tecnologia mais avançada.",
+      "exemplos": [
+        "Um ferreiro excêntrico modifica uma armadilha de caça em poucas horas para prender algo bem maior do que ela foi feita para pegar.",
+        "Preso numa masmorra sem ferramentas próprias, o inventor monta um gatilho improvisado com sucata e corda para travar uma porta pesada.",
+        "Um relojoeiro de vila pequena ganha fama por consertar mecanismos que ninguém mais na região sabe nem abrir."
+      ],
+      "em_adamar": "Em Adamar a tecnologia não passa da Idade Média, então essa vantagem só existe combinando com o narrador o limite do que pode ser inventado sem virar algo fora de época.",
+      "dica_mesa": "Combine com o narrador que tipo de engenhoca é razoável para um mundo sem pólvora nem máquinas complexas."
+    },
+    "destino": {
+      "descricao": "Destino marca o personagem para um fim específico que o mundo, de alguma forma, conspira para cumprir — bom ou ruim, a depender do que o narrador definir. Existem graus diferentes: um destino menor é um papel pequeno dentro de uma história maior, um destino maior liga o personagem a um evento importante e específico, e um destino superior praticamente garante que alguma grandeza vai alcançá-lo antes do fim.\n\nÉ importante notar que Destino não protege o personagem de todo perigo — ele só garante que a história vai chegar até aquele ponto específico, não que o caminho até lá vai ser fácil ou seguro. O narrador decide como o destino se manifesta e o que exatamente ele garante.",
+      "exemplos": [
+        "Um órfão criado nas ruínas de uma vila destruída carrega a certeza estranha de que sobreviverá até reconstruir aquele lugar, nem que leve a vida toda.",
+        "Uma guerreira jura, ainda jovem, que vai enfrentar o líder do bando que destruiu sua aldeia — e o destino parece sempre reabrir esse caminho, não importa o quanto ela se desvie dele.",
+        "Um andarilho comum descobre, tarde demais para negar, que estava destinado a estar presente no momento em que uma antiga masmorra despertasse."
+      ],
+      "em_adamar": "Um destino garantido pelo próprio mundo é um efeito sobrenatural sutil, então cabe ao narrador decidir se existe e qual é.",
+      "dica_mesa": "Converse com o narrador sobre o que o destino cobre e o que não cobre, para não tratá-lo como proteção contra qualquer perigo da mesa.",
+      "relacionados": ["vinculo-especial", "proposito-maior"]
+    },
+    "detectar": {
+      "descricao": "Detectar dá ao personagem um sexto sentido para perceber a presença de algo específico — magia, metal, uma espécie de criatura, forasteiros — mesmo sem vê-lo diretamente. O custo varia conforme o quão raro é aquilo que se detecta: sentir algo raríssimo custa pouco, porque raramente vai ser útil; sentir algo muito comum custa mais, porque vai disparar o tempo todo.\n\nA vantagem normalmente só avisa que 'tem alguma coisa por perto', sem dizer exatamente onde, o quê ou quantas — o narrador decide o nível de detalhe conforme a versão escolhida. Não serve para identificar objetos com precisão nem substitui perícias de investigação; é sobre perceber presença, não sobre entender o que está sendo percebido.",
+      "exemplos": [
+        "Ao entrar numa ruína silenciosa, o personagem sente um arrepio inconfundível: há magia ali, mesmo que nada pareça fora do lugar.",
+        "Um batedor com esse dom percebe, antes de qualquer sinal visível, que forasteiros passaram recentemente por aquele trecho de floresta.",
+        "Um caçador de tesouros sente metal escondido sob o piso de uma cripta, mas precisa cavar para descobrir se é uma moeda ou uma espada."
+      ],
+      "em_adamar": "Sentir presenças específicas — sobretudo magia ou forasteiros — é um sentido sobrenatural, então fica com o narrador definir o que existe para detectar e em que grau.",
+      "dica_mesa": "Combine com o narrador se o aviso vem como sensação vaga ou como direção aproximada, para não virar um radar preciso demais.",
+      "relacionados": ["escudo-mental", "ver-o-invisivel", "aptidao-magica"]
+    },
+    "empatia-com-espiritos": {
+      "descricao": "Empatia com Espíritos dá ao personagem a capacidade de perceber espíritos que a maioria das pessoas não veria nem sentiria, e de se comunicar com eles de forma razoável, ainda que nem sempre em palavras claras. Não dá controle sobre esses espíritos nem garante que eles sejam amigáveis — só abre a porta para a conversa, que pode ser esclarecedora ou perturbadora dependendo de quem está do outro lado.\n\nÉ uma vantagem voltada a personagens ligados a tradições xamânicas, funerárias ou de contato com o além, e costuma vir acompanhada de responsabilidades: espíritos que percebem esse dom tendem a procurar quem o tem, para bem ou para mal.",
+      "exemplos": [
+        "Numa casa abandonada, o personagem sente a presença insatisfeita de quem morreu ali e tenta entender, por gestos e impressões, o que prende aquele espírito ao lugar.",
+        "Um pajé de vila percebe espíritos de ancestrais rondando um funeral, e media entre os vivos enlutados e os mortos inquietos.",
+        "Perto de um campo de batalha antigo, o personagem sente dezenas de presenças confusas, todas tentando falar ao mesmo tempo."
+      ],
+      "em_adamar": "Perceber e conversar com espíritos é contato direto com o sobrenatural, então existe apenas combinando com o narrador quais espíritos existem e como se comportam.",
+      "dica_mesa": "Peça ao narrador para tratar as respostas dos espíritos como pistas fragmentadas, não como informação garantida e completa.",
+      "relacionados": ["medium", "canalizacao", "ver-o-invisivel"]
+    },
+    "escudo-mental": {
+      "descricao": "Escudo Mental protege a mente do personagem contra tentativas de leitura, influência ou controle mental, funcionando como uma resistência comprada em níveis: quanto mais alto o nível, mais difícil fica para alguém invadir ou manipular seus pensamentos. Não impede dano físico nem ataques comuns — sua função é puramente defender a mente contra efeitos que tentem lê-la, mexer nela ou dominá-la.\n\nÉ especialmente relevante contra forasteiros e outras entidades que agem por sussurros, compulsões ou possessão, já que esse tipo de influência costuma mirar diretamente a mente da vítima em vez do corpo.",
+      "exemplos": [
+        "Numa vila onde sussurros estranhos perturbam o sono de todos, o personagem percebe as vozes tentando alcançá-lo, mas sente algo em si que resiste ao convite.",
+        "Diante de um culto que tenta doutrinar prisioneiros com promessas sussurradas, o personagem escuta tudo sem que as palavras realmente 'grudem'.",
+        "Ao tocar um objeto amaldiçoado que tenta implantar uma compulsão na mente de quem o segura, o personagem sente a tentativa falhar."
+      ],
+      "em_adamar": "Proteção contra invasão mental é uma resposta direta a ameaças sobrenaturais como forasteiros, então fica reservada para combinar com o narrador.",
+      "dica_mesa": "Se a mesa enfrenta forasteiros com frequência, converse com o narrador sobre o nível certo dessa vantagem para não anular o desafio por completo.",
+      "relacionados": ["detectar", "abascanto-resistencia-a-magia"]
+    },
+    "falar-com-animais": {
+      "descricao": "Falar com Animais permite ao personagem se comunicar de forma clara com bichos, entendendo o que eles 'diriam' se pudessem falar e sendo entendido por eles em troca. Não torna os animais mais inteligentes nem os obriga a obedecer — cada um continua a agir conforme seu próprio temperamento, medo ou instinto, só que agora capaz de negociar, avisar ou simplesmente conversar com o personagem.\n\nÉ uma vantagem associada a personagens com forte ligação com a natureza, como caçadores, pastores ou eremitas, e costuma abrir portas narrativas mais do que vantagens mecânicas: um animal assustado pode contar o que viu, um cão pode ser convencido a não latir.",
+      "exemplos": [
+        "Um pastor percebe que as ovelhas estão inquietas havia dias por causa de um predador que ainda não apareceu, e assim antecipa o ataque.",
+        "Um caçador pergunta a um corvo pousado numa árvore se ele viu para onde os fugitivos correram, e recebe uma resposta confusa, mas útil.",
+        "Um cão de guarda hostil se acalma quando o personagem explica, à sua maneira, que não veio para roubar nada."
+      ],
+      "em_adamar": "Conversar de fato com animais é um dom sobrenatural, então precisa combinar com o narrador se e como esse dom existe no cenário.",
+      "dica_mesa": "Lembre que animais continuam pensando como animais: eles respondem ao que sentem e temem, não como testemunhas racionais e confiáveis."
+    },
+    "fe-verdadeira": {
+      "descricao": "Fé Verdadeira representa uma convicção religiosa tão forte que ela mesma se torna uma arma contra o mal: o personagem pode usar sua fé para afastar ou intimidar criaturas malignas e sobrenaturais, mesmo sem magia formal. É diferente de apenas acreditar em algo — aqui a crença tem peso mecânico real sobre o mundo, algo raro mesmo entre os devotos mais fervorosos.\n\nA vantagem normalmente funciona melhor contra o que é claramente maligno ou corrompido, e menos (ou nada) contra ameaças puramente mundanas. Ela não garante que a divindade em questão realmente existe ou aprova o personagem — só que a fé dele, por si, tem esse efeito.",
+      "exemplos": [
+        "Diante de algo que se ergue de uma tumba profanada, o clérigo ergue seu símbolo sagrado e sente a criatura hesitar, como se a própria fé a repelisse.",
+        "Um peregrino comum, sem treino de sacerdote, afasta uma presença corrompida numa capela abandonada só pela força da própria devoção.",
+        "Cercada por servos de um culto sombrio, a devota sente que sua fé, mais do que qualquer arma, é o que os mantém a distância."
+      ],
+      "em_adamar": "Fé com efeito real sobre o sobrenatural é magia divina manifestada de forma direta, então só existe combinando com o narrador.",
+      "dica_mesa": "Combine com o narrador contra que tipos de ameaça essa fé realmente funciona, para não virar solução universal contra qualquer inimigo.",
+      "relacionados": ["abencoado", "investidura-de-poder", "cura"]
+    },
+    "identidade-alternativa": {
+      "descricao": "Identidade Alternativa dá ao personagem uma segunda identidade reconhecida por outros, com histórico, documentos ou testemunhas que sustentam essa história quando alguém investiga. A versão legal representa uma identidade sancionada por alguma autoridade, geralmente ligada a um cargo ou função; a versão ilegal é totalmente clandestina, sem apoio oficial, e carrega risco sério caso seja descoberta.\n\nEm mundos sem registros centralizados, identidades formais já são raras por natureza — a maioria das pessoas é conhecida apenas pelo nome e pela palavra de quem vive perto. Por isso, ter uma identidade alternativa 'oficial' costuma exigir explicação sobre quem exatamente reconhece e sustenta essa segunda vida.",
+      "exemplos": [
+        "Um nobre foragido vive sob outro nome numa cidade portuária, sustentado por documentos falsificados e por um punhado de conhecidos que juram por ele.",
+        "Um espião infiltrado numa guarda local mantém uma identidade construída ao longo de anos, com uma história de vida inteira preparada para resistir a perguntas.",
+        "Um herege foragido de um culto oficial vive como artesão comum numa vila distante, rezando para que ninguém reconheça seu rosto antigo."
+      ],
+      "em_adamar": "Identidades formais reconhecidas por instituições são raras num mundo sem registros centralizados, então cabe ao narrador decidir se e como isso existe na sua região.",
+      "dica_mesa": "Combine com o narrador quem exatamente sustenta essa segunda identidade — sem esse apoio, ela vira só uma mentira frágil.",
+      "relacionados": ["permissao-de-seguranca"]
+    },
+    "intuicao": {
+      "descricao": "Intuição dá ao personagem palpites certeiros com uma frequência que vai além da sorte comum: ele sente quando algo está errado, adivinha um detalhe importante ou chega perto demais da verdade sem conseguir explicar como. É uma vantagem cinematográfica que representa aquele tipo de personagem cujos instintos raramente falham, mesmo sem provas concretas.\n\nEla não substitui investigação nem perícia — só dá ao narrador uma ferramenta para, de vez em quando, entregar ao jogador um palpite correto quando isso encaixa bem na cena. Não é controlável pelo jogador: o personagem não escolhe quando o palpite vem.",
+      "exemplos": [
+        "Ao entrar numa taverna cheia, o personagem sente na hora quem ali está escondendo algo, sem saber dizer exatamente o quê.",
+        "Parado diante de duas estradas, ele sente um puxão inexplicável para a menos óbvia — e é essa que evita a emboscada.",
+        "Interrogando um prisioneiro, o personagem percebe, por instinto, que a mentira está numa frase específica."
+      ],
+      "em_adamar": "Palpites certeiros sem base racional são um recurso cinematográfico, então ficam a critério do narrador quando e como aparecem.",
+      "dica_mesa": "Não force o palpite: deixe o narrador decidir o momento certo de usá-lo, para que continue surpreendente.",
+      "relacionados": ["nocao-do-perigo", "venturoso"]
+    },
+    "investidura-de-poder": {
+      "descricao": "Investidura de Poder é o que dá a um personagem acesso formal à magia divina: uma divindade concede, através da fé, a capacidade de operar efeitos sobrenaturais em seu nome, dentro do domínio daquele deus. Cada nível amplia o alcance e a força do que o personagem consegue fazer, mas o poder nunca é do personagem por direito próprio — é emprestado, e pode em teoria ser retirado se a divindade assim decidir.\n\nDiferente da magia arcana, que qualquer um com o dom pode aprender a manipular, a magia divina depende inteiramente da relação entre o fiel e seu deus. Isso significa que ela também vem com expectativas: agir contra os princípios da divindade pode custar caro ao personagem.",
+      "exemplos": [
+        "Um sacerdote de uma senhora da cura sente o poder dela fluir através de suas mãos sempre que atende aos feridos de uma vila assolada por doença.",
+        "Um paladino jurado a um deus da justiça descobre que seus poderes falham justamente no momento em que considera cometer uma injustiça por conveniência.",
+        "Um exilado de seu templo perde acesso gradual à magia divina que antes o definia, e precisa reconquistar a graça perdida."
+      ],
+      "em_adamar": "Magia divina concedida por um deus é, por definição, cânone reservado ao narrador, que decide qual divindade concede o quê e sob que condições.",
+      "dica_mesa": "Combine com o narrador o domínio exato da divindade escolhida: o poder deve fazer sentido dentro daquilo que ela representa.",
+      "relacionados": ["fe-verdadeira", "abencoado", "cura"]
+    },
+    "longevidade": {
+      "descricao": "Longevidade estende a expectativa de vida do personagem muito além do normal, atrasando os efeitos da velhice e permitindo que ele viva ativo por décadas a mais do que uma pessoa comum. Não impede doenças, ferimentos ou a morte por outras causas — só a deterioração natural que vem simplesmente de envelhecer.\n\nÉ uma vantagem barata e sutil, mais notada ao longo de uma campanha longa do que numa única sessão: personagens com ela permanecem capazes muito depois de seus contemporâneos já terem envelhecido ou morrido, o que carrega um peso emocional próprio.",
+      "exemplos": [
+        "Um velho guerreiro ainda luta com o vigor de um homem décadas mais jovem, para espanto de quem cresceu ouvindo histórias sobre ele quando criança.",
+        "Uma anciã de uma vila isolada é reconhecida como conselheira havia gerações, tendo visto nascer e morrer três gerações da mesma família.",
+        "Um mercador viajante percebe, tarde, que todos os amigos de infância já se foram, enquanto ele segue firme e são."
+      ],
+      "em_adamar": "Viver muito além do normal é uma exceção clara à Materialidade do mundo, então fica reservada para combinar com o narrador.",
+      "dica_mesa": "Pense no peso narrativo de sobreviver a quem você ama: essa vantagem rende mais drama do que vantagem mecânica."
+    },
+    "mestre-de-armas": {
+      "descricao": "Mestre de Armas é uma vantagem cinematográfica que representa um treinamento tão profundo com determinadas armas que o personagem passa a usá-las com uma facilidade acima de qualquer treino comum, aproveitando melhor perícias relacionadas a esse grupo específico de armas. As versões variam desde uma única arma até grandes classes, como todas as armas com lâmina ou todo o arsenal de combate corpo a corpo.\n\nÉ o tipo de vantagem que define o guerreiro lendário cujo domínio de uma arma parece quase sobrenatural, mesmo sem magia envolvida. Costuma ser vista como exagerada demais para campanhas que tratam o combate como perigoso e realista.",
+      "exemplos": [
+        "Um mestre de espadas resolve um duelo contra três oponentes com uma fluidez que a guarnição inteira comenta por semanas.",
+        "Um veterano que só usa lança e escudo desde jovem move as duas armas como se fossem extensões naturais do próprio corpo.",
+        "Um mercenário famoso por sua destreza com toda arma de lâmina corta caminho por uma emboscada como se soubesse o próximo golpe antes de ele vir."
+      ],
+      "em_adamar": "Domínio tão além do treino comum contraria o peso que o combate tem em Adamar, então só existe combinando com o narrador o quanto a mesa aceita esse exagero.",
+      "dica_mesa": "Se a mesa preza por combate perigoso e realista, pergunte ao narrador antes de investir nessa vantagem.",
+      "relacionados": ["defesas-ampliadas", "treinado-por-um-mestre"]
+    },
+    "medium": {
+      "descricao": "Médium dá ao personagem a capacidade de perceber e se comunicar com espíritos que a maioria das pessoas não notaria, geralmente através de rituais, transes ou objetos ligados aos mortos. Diferente de Empatia com Espíritos, que é mais sobre sentir e entender presenças, ser médium foca especificamente em servir de ponte de comunicação — uma espécie de tradutor entre vivos e mortos.\n\nA vantagem não garante que os espíritos contatados digam a verdade, sejam bem-intencionados ou queiram falar; só garante que, quando dispostos a se comunicar, o personagem consegue ouvi-los e ser ouvido.",
+      "exemplos": [
+        "Numa casa mal-assombrada, a médium da vila conduz um ritual simples para perguntar ao espírito o que o prende ali.",
+        "Convocada para um funeral importante, ela permite que os presentes ouçam, por sua voz, as últimas palavras de quem morreu.",
+        "Um espírito vingativo aproveita a ponte aberta pela médium para tentar manipular os vivos a seu favor."
+      ],
+      "em_adamar": "Contato deliberado com espíritos é efeito sobrenatural direto, então fica reservado para combinar com o narrador.",
+      "dica_mesa": "Combine com o narrador um custo ou risco para cada sessão de contato, para que não vire recurso de informação sem consequência.",
+      "relacionados": ["empatia-com-espiritos", "canalizacao"]
+    },
+    "nocao-do-perigo": {
+      "descricao": "Noção do Perigo dá ao personagem um aviso instintivo, momentos antes de algo ruim acontecer, mesmo sem pistas racionais para isso — um arrepio, um silêncio errado, uma sensação de urgência. Não diz o que vem, nem de onde, apenas que perigo está próximo, dando ao personagem a chance de reagir antes que a ameaça se revele.\n\nÉ uma vantagem cinematográfica que representa reflexos quase sobrenaturais de sobrevivência, mais associada a heróis experientes do que a pessoas comuns. Não impede o perigo de acontecer — só reduz a chance de ser pego totalmente de surpresa.",
+      "exemplos": [
+        "Momentos antes de a flecha sair da sombra, o personagem já está se jogando para o lado, sem saber exatamente por quê.",
+        "Ao entrar numa sala silenciosa demais numa masmorra, ele sente o corpo todo travar em alerta antes de qualquer sinal visível de perigo.",
+        "Numa negociação que parecia cordial, uma sensação súbita avisa que a conversa está prestes a dar muito errado."
+      ],
+      "em_adamar": "Prever perigo por instinto quase infalível é um recurso cinematográfico, então cabe ao narrador decidir se e quando ele se manifesta.",
+      "dica_mesa": "Trate o aviso como sensação, não como informação: cabe a você decidir como reagir a ele.",
+      "relacionados": ["intuicao", "venturoso"]
+    },
+    "oraculo": {
+      "descricao": "Oráculo dá ao personagem a capacidade de ler presságios em sinais da natureza — o voo de aves, o padrão das nuvens, o comportamento estranho dos animais — e tirar deles impressões sobre o que está por vir. É uma forma de adivinhação indireta: o personagem não vê o futuro diretamente, mas interpreta sinais que, de alguma forma, carregam verdade.\n\nAs respostas costumam vir de forma simbólica ou ambígua, cabendo ao narrador decidir o quanto de clareza cada presságio traz. É uma vantagem associada a xamãs, eremitas e sacerdotes de cultos ligados à natureza.",
+      "exemplos": [
+        "Antes de uma travessia perigosa, o velho pastor lê no voo dos corvos que o caminho mais curto esconde algo que não deveria ser encontrado.",
+        "Um xamã de aldeia observa as nuvens antes da colheita e avisa que a fartura deste ano vem acompanhada de um preço.",
+        "Diante de animais fugindo de uma floresta sem motivo aparente, o oráculo local interpreta isso como aviso de algo grande se aproximando."
+      ],
+      "em_adamar": "Ler o futuro em sinais da natureza é magia ou dom sobrenatural, então existe apenas combinando com o narrador o que pode ser percebido e com que clareza.",
+      "dica_mesa": "Peça ao narrador presságios ambíguos, não respostas diretas: a graça está em interpretar o sinal, não em recebê-lo pronto.",
+      "relacionados": ["detectar"]
+    },
+    "permissao-de-seguranca": {
+      "descricao": "Permissão de Segurança dá ao personagem acesso oficial a segredos e informações restritas de uma organização à qual ele pertence, proporcional ao nível comprado: desde um acesso pequeno, ligado só ao necessário para o próprio trabalho, até o acesso quase total aos segredos internos daquela organização. É uma vantagem sobre confiança institucional, não sobre talento pessoal.\n\nEla pressupõe a existência de uma organização estruturada o bastante para ter segredos, hierarquia e controle de quem sabe o quê — algo mais comum em cenários com burocracias complexas do que em sociedades menores e mais informais.",
+      "exemplos": [
+        "Um oficial de uma guarda de cidade grande tem acesso aos relatórios internos sobre contrabandistas conhecidos, algo negado a guardas comuns.",
+        "Uma noviça de alto escalão num templo importante conhece rituais e segredos guardados só para os iniciados de confiança.",
+        "Um agente de uma guilda mercantil sabe de rotas secretas de comércio que a guilda nega publicamente que existam."
+      ],
+      "em_adamar": "Organizações com hierarquias formais e segredos institucionais existem em graus variados em Adamar, então cabe ao narrador definir se a sua organização sustenta esse nível de acesso.",
+      "dica_mesa": "Combine com o narrador que organização concede esse acesso e o que exatamente ela esconde.",
+      "relacionados": ["identidade-alternativa"]
+    },
+    "proposito-maior": {
+      "descricao": "Propósito Maior dá ao personagem um desempenho melhorado quando ele age diretamente por uma causa que definiu como o sentido central de sua vida — proteger um povo, vingar uma perda, cumprir um juramento. Fora dos momentos ligados a esse propósito, a vantagem não tem efeito algum: ela recompensa especificamente agir pelo que importa, não o personagem em geral.\n\nÉ uma vantagem cinematográfica, pensada para heróis cuja determinação parece render mais do que puro treino explicaria. Definir bem o propósito é a parte mais importante dela — um propósito vago demais tira a força do conceito.",
+      "exemplos": [
+        "Um sobrevivente do incêndio de sua vila luta com uma determinação visivelmente maior sempre que enfrenta quem ele suspeita ser responsável.",
+        "Uma guarda-costas jurada a proteger uma única pessoa reage a ameaças contra ela com um desempenho que surpreende até seus companheiros.",
+        "Um caçador de forasteiros dedicado a impedir outra tragédia como a que destruiu sua família encontra forças extras justamente nesses confrontos."
+      ],
+      "em_adamar": "É um recurso cinematográfico que reforça determinação além do normal, então fica com o narrador decidir se cabe no tom da mesa.",
+      "dica_mesa": "Escreva o propósito de forma específica e concreta: quanto mais claro, mais fácil para o narrador saber quando ele se aplica.",
+      "relacionados": ["destino"]
+    },
+    "queda-de-gato": {
+      "descricao": "Queda de Gato dá ao personagem reflexos felinos ao cair: ele se ajeita no ar, aterrissa melhor e sofre bem menos com quedas do que uma pessoa comum sofreria. Não elimina o risco de cair de grandes alturas, mas reduz drasticamente o perigo de quedas moderadas que normalmente machucariam qualquer um.\n\nÉ uma vantagem cinematográfica associada a acrobatas, ladrões e aventureiros ágeis, o tipo de personagem que sempre parece cair de pé mesmo nas situações mais desajeitadas.",
+      "exemplos": [
+        "Empurrado de uma sacada durante uma briga de taverna, o personagem gira no ar e aterrissa de pé, para surpresa de todos ao redor.",
+        "Ao escapar por uma janela alta numa perseguição, a ladra cai três andares e já está correndo antes que os guardas cheguem à porta.",
+        "Escorregando de uma ponte de corda sobre um desfiladeiro raso, o acrobata se torce no ar e cai quase ileso sobre as pedras."
+      ],
+      "em_adamar": "Amortecer quedas dessa forma é reflexo cinematográfico acima do humano comum, então fica reservado para combinar com o narrador.",
+      "dica_mesa": "Use essa vantagem para cenas de fuga e perseguição — é aí que ela mais brilha.",
+      "relacionados": ["silencio"]
+    },
+    "recuperacao-acelerada": {
+      "descricao": "Recuperação Acelerada faz o personagem se curar de ferimentos e doenças muito mais depressa do que o corpo humano normalmente permitiria, encurtando semanas de convalescença para dias, ou dias para horas, dependendo do quanto foi investido na vantagem. Ela não cura instantaneamente nem evita a dor do ferimento — só acelera o processo natural de recuperação do corpo.\n\nÉ uma vantagem que contraria diretamente a ideia de que o corpo guarda memória do que passou: cicatrizes ainda podem ficar, mas o tempo de recuperação em si encolhe bastante.",
+      "exemplos": [
+        "Um mercenário que deveria passar semanas de cama já está de pé, mancando mas funcional, poucos dias depois de um ferimento grave.",
+        "Uma exploradora se recupera de uma febre que abateria qualquer outro por uma semana inteira em questão de horas.",
+        "Um guerreiro veterano volta ao combate incomodamente cedo depois de um ferimento, contando com uma recuperação que ninguém mais na tropa tem."
+      ],
+      "em_adamar": "Recuperação tão acelerada vai contra o peso que a Materialidade dá aos ferimentos em Adamar, então fica reservada para combinar com o narrador.",
+      "dica_mesa": "Combine com o narrador se cicatrizes e sequelas ainda ficam, mesmo com a cura mais rápida — costuma valer a pena manter esse peso."
+    },
+    "redespertar": {
+      "descricao": "Redespertar representa memórias ou perícias de uma vida passada que ressurgem no personagem atual, geralmente de forma repentina e inesperada — um golpe que ele nunca aprendeu, uma língua que nunca estudou, um lugar que reconhece sem nunca ter visitado. É uma vantagem ligada à ideia de reencarnação ou continuidade entre vidas, algo raro e cercado de mistério mesmo dentro do próprio mundo.\n\nO personagem normalmente não controla quando essas memórias emergem, e boa parte da graça dessa vantagem está em descobrir, aos poucos, quem ele pode ter sido antes.",
+      "exemplos": [
+        "Diante de uma espada antiga guardada havia gerações, o personagem sente as mãos se moverem sozinhas num golpe que nunca praticou.",
+        "Ao entrar numa cripta esquecida, ele reconhece corredores que jura nunca ter visto, como se lembrasse de tê-los caminhado antes.",
+        "Uma palavra estranha escapa de seus lábios durante um sonho febril, numa língua morta que nenhum estudioso da vila reconhece."
+      ],
+      "em_adamar": "Memórias de vidas passadas implicam algum tipo de ciclo sobrenatural de existência, então ficam reservadas para combinar com o narrador.",
+      "dica_mesa": "Deixe as memórias surgirem aos poucos e sem controle total: o mistério de quem você foi é parte do que torna essa vantagem interessante."
+    },
+    "serendipidade": {
+      "descricao": "Serendipidade dá ao personagem coincidências felizes vindas do nada: a pessoa certa passando na hora certa, o item procurado encontrado por acaso, a informação que só faltava chegando sozinha. Cada nível comprado garante um desses golpes de sorte por sessão, sempre moderados o bastante para não resolver a aventura inteira de uma vez.\n\nÉ uma vantagem puramente cinematográfica que existe para dar ao jogador uma ferramenta narrativa de virada, mais do que uma capacidade do próprio personagem — ele não 'faz' a sorte acontecer, ela simplesmente acontece perto dele.",
+      "exemplos": [
+        "Perdido numa floresta sem trilha, o grupo topa por acaso com um caçador que conhece exatamente o caminho de volta.",
+        "No exato momento em que faltava uma peça para reparar a carroça quebrada, alguém aparece vendendo justo aquilo na estrada.",
+        "A pergunta certa feita à pessoa certa, num mercado lotado, revela por acaso a pista que o grupo procurava havia dias."
+      ],
+      "em_adamar": "Coincidências garantidas pelo próprio destino do mundo são um recurso cinematográfico, então ficam com o narrador decidir se cabem na mesa.",
+      "dica_mesa": "Use essa vantagem com moderação: uma coincidência por sessão continua sendo mais interessante que uma solução mágica constante.",
+      "relacionados": ["venturoso"]
+    },
+    "silencio": {
+      "descricao": "Silêncio dá ao personagem uma capacidade quase sobrenatural de se mover sem fazer ruído, tornando muito mais difícil para qualquer um ouvi-lo se aproximar, mesmo em terrenos que normalmente denunciariam passos, como folhas secas ou pedregulhos soltos. Não torna o personagem invisível nem impede que seja visto — só que seja ouvido.\n\nÉ uma vantagem cinematográfica associada a batedores, assassinos e criaturas de caça silenciosa, o tipo de presença que parece se materializar do nada porque ninguém a escutou chegar.",
+      "exemplos": [
+        "Um batedor atravessa um chão coberto de galhos secos numa masmorra sem que a guarda do outro lado da sala perceba nada.",
+        "Uma assassina se aproxima de um alvo distraído numa taverna cheia, sem que ninguém ao redor note seus passos.",
+        "Numa caçada noturna, o predador humano se move por entre árvores caídas com um silêncio que desconcerta até batedores experientes."
+      ],
+      "em_adamar": "Silêncio tão absoluto vai além do que o treino comum explicaria, então fica reservado para combinar com o narrador.",
+      "dica_mesa": "Combine essa vantagem com boa Furtividade para tirar o máximo proveito dela; sozinha ela só resolve metade do problema de não ser notado.",
+      "relacionados": ["controle-do-metabolismo", "queda-de-gato"]
+    },
+    "st-de-golpe": {
+      "descricao": "ST de Golpe aumenta especificamente a força que o personagem consegue colocar em ataques corpo a corpo, sem tornar o resto do corpo proporcionalmente mais forte — ele não fica melhor em levantar peso ou empurrar objetos, só em golpear com mais força do que sua compleição física sugeriria. É como se toda a força extra estivesse concentrada no momento do impacto.\n\nÉ comum representar golpes vindos de técnica, fúria ou um dom físico específico para o combate, mais do que força bruta geral. Costuma acompanhar personagens cuja aparência não entrega o quanto eles realmente batem forte.",
+      "exemplos": [
+        "Um homem magro e de aparência comum surpreende a todos ao derrubar um oponente muito mais robusto com um único golpe bem colocado.",
+        "Uma guerreira conhecida por golpes que parecem impossíveis para seu porte físico intimida adversários que já ouviram falar dela antes.",
+        "Um monge que treina o corpo mais para golpear do que para carregar peso concentra toda sua força nos punhos e pés."
+      ],
+      "em_adamar": "Força de golpe muito acima do que o corpo sugere é uma proeza fora do comum, então fica reservada para combinar com o narrador.",
+      "dica_mesa": "Pense numa razão narrativa para essa força concentrada: técnica, treino brutal ou algo mais estranho, conforme o tom que a mesa aceitar.",
+      "relacionados": ["st-de-levantamento"]
+    },
+    "st-de-levantamento": {
+      "descricao": "ST de Levantamento aumenta especificamente a capacidade do personagem de erguer, carregar e sustentar peso, sem tornar seus golpes proporcionalmente mais fortes — ele consegue levantar mais do que o corpo sugere, mas não bate necessariamente mais forte por causa disso. É a força de quem carrega, empurra e sustenta, não a força de quem golpeia.\n\nÉ comum em personagens de trabalho físico pesado, como carregadores, ferreiros ou camponeses acostumados a erguer cargas todos os dias, cuja força aparece mais no cotidiano do que no combate.",
+      "exemplos": [
+        "Um carregador de porto ergue sozinho um barril que normalmente exigiria duas pessoas, sem esforço aparente.",
+        "Uma ferreira levanta e sustenta uma bigorna pesada por horas seguidas de trabalho sem cansar como qualquer outro artesão cansaria.",
+        "Um camponês acostumado à lida do campo carrega um companheiro ferido nas costas por uma distância que deixaria qualquer outro exausto."
+      ],
+      "em_adamar": "Força de carga muito acima do normal é uma capacidade fora do comum para um humano, então fica reservada para combinar com o narrador.",
+      "dica_mesa": "Pense numa origem para essa força — trabalho de vida inteira, herança física incomum — para que ela se encaixe na história do personagem.",
+      "relacionados": ["st-de-golpe"]
+    },
+    "treinado-por-um-mestre": {
+      "descricao": "Treinado por um Mestre representa um treinamento tão intenso e completo, geralmente sob um único mestre lendário, que o personagem se torna capaz de proezas marciais cinematográficas: reflexos, precisão e controle do próprio corpo muito além do que qualquer treino comum alcançaria. É a vantagem clássica por trás do herói de artes marciais que parece desafiar as leis do combate normal.\n\nCostuma vir acompanhada de uma história de origem específica — anos de treino isolado, um mestre incomum, provações difíceis — e normalmente abre acesso a técnicas e proezas que personagens sem ela não conseguem sequer tentar.",
+      "exemplos": [
+        "Um monge que passou a juventude isolado num mosteiro nas montanhas enfrenta um bando inteiro sozinho, como se cada golpe deles fosse previsível para ele.",
+        "Uma guerreira treinada por um velho mestre eremita executa movimentos que parecem desafiar o próprio peso do corpo humano.",
+        "Um discípulo tardio de um mestre marcial lendário ainda carrega hábitos estranhos do treinamento, mas ninguém questiona sua habilidade em combate."
+      ],
+      "em_adamar": "Proezas marciais tão além do humano comum contrariam o peso que o combate tem em Adamar, então só existem combinando com o narrador.",
+      "dica_mesa": "Combine com o narrador uma origem de treino que explique bem o exagero: essa vantagem pede uma boa história por trás.",
+      "relacionados": ["mestre-de-armas", "defesas-ampliadas"]
+    },
+    "venturoso": {
+      "descricao": "Venturoso dá ao personagem um instinto quase perfeito para agir no momento certo — o golpe decisivo, a palavra certa, a decisão que muda tudo, sempre chegando bem na hora exata em que fazem mais diferença. Diferente de sorte geral, essa vantagem é especificamente sobre timing: não é que as coisas dão certo para o personagem, é que ele parece sempre saber quando agir.\n\nÉ uma vantagem cinematográfica, mais associada a heróis de história do que a pessoas reais, cujo senso de oportunidade parece sobrenaturalmente afiado.",
+      "exemplos": [
+        "No exato instante em que o portão da masmorra começa a fechar, o personagem já está do outro lado, sem nem parecer ter corrido.",
+        "Durante uma negociação tensa, ele sente o momento exato de fazer sua proposta, antes que a conversa desandasse.",
+        "Numa emboscada, o personagem ataca precisamente quando o inimigo baixa a guarda, como se soubesse que aquele seria o instante certo."
+      ],
+      "em_adamar": "Um senso de oportunidade tão preciso é um recurso cinematográfico, então fica com o narrador decidir se cabe no tom da mesa.",
+      "dica_mesa": "Use essa vantagem para momentos de virada dramática, não para vencer qualquer disputa de reflexo do dia a dia.",
+      "relacionados": ["intuicao", "serendipidade"]
+    },
+    "ver-o-invisivel": {
+      "descricao": "Ver o Invisível permite ao personagem enxergar coisas normalmente imperceptíveis aos olhos comuns — espíritos, forasteiros parcialmente manifestos, efeitos mágicos sutis — dependendo do que o narrador definir como alvo dessa percepção. É puramente sobre visão: o personagem enxerga o que a maioria não consegue, mas isso não garante que ele entenda o que está vendo, nem que consiga interagir com aquilo normalmente.\n\nÉ uma vantagem que costuma vir com um peso próprio: enxergar o que deveria permanecer oculto raramente é confortável, e alguns personagens com esse dom descrevem-no mais como fardo do que como bênção.",
+      "exemplos": [
+        "Numa vila aparentemente comum, o personagem percebe vultos translúcidos vagando pelas ruas à noite, invisíveis para qualquer outro morador.",
+        "Durante um ritual, ele enxerga a presença real por trás da voz suave que sussurra promessas ao sacerdote, algo que ninguém mais na sala percebe.",
+        "Ao atravessar um cemitério antigo, o personagem vê dezenas de formas que os companheiros juram não existir."
+      ],
+      "em_adamar": "Enxergar espíritos e forasteiros diretamente é percepção sobrenatural, então fica reservada para combinar com o narrador.",
+      "dica_mesa": "Converse com o narrador sobre o custo emocional de ver o que os outros não veem — costuma valorizar bem mais essa vantagem do que só a informação extra.",
+      "relacionados": ["detectar", "empatia-com-espiritos"]
+    },
+    "vinculo-especial": {
+      "descricao": "Vínculo Especial representa uma ligação única e significativa entre o personagem e uma pessoa, um lugar ou um objeto específico — algo que o narrador reconhece mecanicamente como mais do que apego comum. Pode se manifestar como uma sensação de proximidade mesmo à distância, uma resistência incomum a se separar daquilo, ou pequenas vantagens narrativas sempre que esse vínculo entra em jogo.\n\nÉ uma vantagem definida caso a caso: o vínculo em si é único, então cabe ao jogador e ao narrador decidirem juntos o que ele realmente representa e como ele aparece na mesa.",
+      "exemplos": [
+        "Um exilado carrega um vínculo estranho com as ruínas da vila onde nasceu, sentindo quando algo ali muda, mesmo estando a léguas de distância.",
+        "Uma guerreira sente uma calma inexplicável sempre que está perto da espada que pertenceu ao pai, como se parte dele ainda estivesse ali.",
+        "Um órfão criado por uma anciã sente, sem saber explicar, quando ela está em perigo, não importa a distância entre os dois."
+      ],
+      "em_adamar": "Por envolver um elo que ultrapassa o afeto comum, esse vínculo é sutilmente sobrenatural e fica reservado para combinar com o narrador.",
+      "dica_mesa": "Defina bem com o narrador o que o vínculo sente e o que não sente, para que ele não vire uma fonte de informação garantida demais.",
+      "relacionados": ["destino"]
+    }
+  }
+}

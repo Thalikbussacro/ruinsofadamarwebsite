@@ -132,6 +132,8 @@
     topo.appendChild(el('span', 'pericia-dif', tipo.selo(p)));
     art.appendChild(topo);
     art.appendChild(el('p', 'pericia-resumo', p.resumo));
+    var mais = window.detalhesItem && window.detalhesItem(p);
+    if (mais) art.appendChild(mais);
     if (p.variantes) {
       var versoes = el('ul', 'pericia-variantes');
       p.variantes.forEach(function (v) {
@@ -153,6 +155,11 @@
     var meta = el('p', 'pericia-meta');
     meta.appendChild(el('span', 'pericia-status', ADAMAR[p.adamar].rotulo));
     tipo.meta(p).forEach(function (m) { meta.appendChild(el('span', null, m)); });
+    if (p.gcs) {
+      var g = el('span', 'pericia-gcs', 'GCS: ' + p.gcs.nome + (p.gcs.ref ? ' (' + p.gcs.ref + ')' : ''));
+      g.title = 'Nome no GCS (GURPS Character Sheet) e página do Basic Set em inglês';
+      meta.appendChild(g);
+    }
     art.appendChild(meta);
     return art;
   }
@@ -163,7 +170,7 @@
     var filtrados = tipo.dados.filter(function (p) {
       if (statusAtual !== 'todas' && p.adamar !== statusAtual) return false;
       if (v && !tipo.filtra(p, v)) return false;
-      if (q && semAcento(p.nome + ' ' + p.resumo + ' ' + (p.subcategoria || '')).indexOf(q) === -1) return false;
+      if (q && semAcento(p.nome + ' ' + p.resumo + ' ' + (p.subcategoria || '') + ' ' + (p.descricao || '') + ' ' + (p.gcs ? p.gcs.nome : '')).indexOf(q) === -1) return false;
       return true;
     });
     lista.textContent = '';

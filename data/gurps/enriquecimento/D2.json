@@ -1,0 +1,422 @@
+{
+  "lista": "desvantagens",
+  "itens": {
+    "acima-do-peso-gordo-muito-gordo": {
+      "descricao": "Trata do físico do personagem quando ele carrega bem mais peso do que a média: da silhueta \"cheia\" até a gordura extrema que dificulta movimentos. Nos graus mais altos, soma dificuldade para passar por vãos apertados e para escapar de agarrões ou se espremer por passagens estreitas, além de ficar mais fácil de identificar e lembrar numa multidão pequena.\n\nEm compensação, o corpo mais robusto costuma ajudar a aguentar fome, frio e certos venenos melhor do que um físico magro. É uma condição puramente física, sem qualquer ligação com força de vontade ou disciplina — apenas o formato do corpo.",
+      "exemplos": [
+        "Ao tentar se esgueirar por uma fresta na muralha do castelo em ruínas, o personagem muito gordo simplesmente não passa e precisa achar outro caminho.",
+        "Numa taverna lotada, é o primeiro que o taberneiro reconhece de longe, difícil de disfarçar numa vila pequena.",
+        "Durante um inverno rigoroso na estrada, seu corpo mais robusto ajuda a aguentar o frio e a fome melhor que os companheiros magros."
+      ],
+      "em_adamar": "É só um traço físico comum entre humanos, sem nenhuma ligação com magia ou tecnologia — cabe em qualquer aldeia ou corte de Adamar.",
+      "dica_mesa": "Combine com o Mestre se vale para todos os graus (Acima do Peso, Gordo, Muito Gordo) ou apenas um deles antes de escolher.",
+      "relacionados": ["magro"]
+    },
+    "alcoolismo": {
+      "descricao": "Representa uma dependência real de bebida alcoólica: o personagem bebe compulsivamente sempre que tem chance e sofre para resistir a beber demais quando o álcool está à mão. Cada vez que bebe, corre risco de ficar embriagado, dificultando testes físicos e sociais, e o vício tende a piorar outros traços com o tempo em campanhas longas, a critério do Mestre.\n\nTambém sofre penalidade em testes para resistir a ofertas de bebida em situações sociais. Existe uma variante mais branda, onde beber é aceito socialmente, e uma mais dura, onde consumir álcool é crime — nesse caso as consequências de ser flagrado bêbado são muito piores.",
+      "exemplos": [
+        "Depois de fechar um contrato de escolta, o mercenário some na taverna da vila e só reaparece dois dias depois, sem metade da paga.",
+        "Um guarda alcoólatra aceita subornos em bebida e falha em perceber os contrabandistas passando pelo portão.",
+        "Preso numa masmorra sem bebida, o personagem começa a tremer e perder o controle conforme os dias passam."
+      ],
+      "em_adamar": "Bebida existe em qualquer taverna ou vilarejo de Adamar; a variante \"ilegal\" só se aplica se o Mestre definir um lugar específico onde beber é proibido.",
+      "relacionados": ["compulsao"]
+    },
+    "altruismo": {
+      "descricao": "O personagem sente necessidade forte de ajudar quem está em apuros, mesmo sob risco pessoal. Precisa testar Vontade para não parar e socorrer alguém ferido, perdido ou ameaçado, mesmo quando isso atrasa a missão, expõe o grupo ou beneficia um estranho que pode não merecer confiança.\n\nNão impede agir com cautela — o personagem pode planejar o resgate — mas raramente ignora um pedido de ajuda genuíno, e os companheiros costumam aprender a contar com isso.",
+      "exemplos": [
+        "No meio da perseguição a um ladrão, o grupo passa por um camponês ferido na estrada e o altruísta insiste em parar para socorrê-lo.",
+        "Mesmo desconfiando da história, ele divide sua última ração com um estranho faminto encontrado nas ruínas."
+      ],
+      "dica_mesa": "Funciona bem para o Mestre criar ganchos de aventura: um pedido de ajuda quase sempre vira um desvio na trama.",
+      "relacionados": ["indulgente", "egoismo"]
+    },
+    "amigavel": {
+      "descricao": "O personagem precisa de companhia e se sente mal quando fica isolado por muito tempo, sofrendo penalidade em testes mentais e de perícia quando não tem ninguém por perto. Em compensação, cai bem com facilidade: estranhos tendem a reagir melhor a ele em primeiras impressões, já que é caloroso e sociável quase sempre.\n\nA versão mais extrema, chamada Gregário, exagera os dois lados — a queda de desempenho é maior quando sozinho, mas o carisma ao conhecer gente nova também é bem mais forte.",
+      "exemplos": [
+        "Isolado numa torre de vigia por uma noite inteira sem ninguém para conversar, o personagem começa a cometer erros bobos por puro nervosismo.",
+        "Ao chegar numa vila desconhecida, é o primeiro a puxar assunto na feira e já sai com meio povoado alegre por perto."
+      ],
+      "em_adamar": "É um traço de personalidade comum a qualquer humano, sem relação com magia ou tecnologia."
+    },
+    "antecedentes-mundanos": {
+      "descricao": "O personagem nunca teve contato real com magia, criaturas sobrenaturais ou fenômenos estranhos antes da aventura começar — para ele, tudo isso é lenda de vovó ou coisa de louco. Na prática, isso costuma significar perícias de conhecimento arcano ou sobrenatural mais fracas ou ausentes, e reações de descrença ou pânico diante do primeiro contato real com o incomum.\n\nNão afeta perícias comuns do dia a dia, só o que toca o sobrenatural, e não impede o personagem de ser competente em seu próprio ofício.",
+      "exemplos": [
+        "Ao ver o primeiro efeito de magia arcana da sua vida, o lenhador some correndo, incapaz de acreditar no que os olhos viram.",
+        "Perguntado sobre lendas de forasteiros vindos de outros mundos, ele só sabe repetir histórias de ninar, sem noção do que é real."
+      ],
+      "em_adamar": "É a condição de quase todo mundo em Adamar, onde magia é rara e temida, e boa parte da população nunca viu nada sobrenatural de perto.",
+      "dica_mesa": "Ótimo ponto de partida para personagens humanos comuns arrastados para o estranho contra a vontade."
+    },
+    "aparencia-desvantagem": {
+      "descricao": "Cobre o personagem que é feio ou desagradável de se olhar, em graus que vão de \"sem atrativos\" até \"repugnante\". Quanto pior o grau, maior a penalidade de reação de estranhos e maior a chance de ser lembrado, insultado ou evitado por causa da aparência.\n\nPerícias sociais que dependem de causar boa impressão ficam mais difíceis, embora não impossíveis — carisma e boas maneiras ainda ajudam. Diferente de uma cicatriz específica ou marca de nascença, aqui o problema é o conjunto: traços, postura, pele, tudo pesa contra.",
+      "exemplos": [
+        "O taberneiro cobra mais caro e demora a atender o cliente de aparência repugnante, mesmo sem motivo além do nojo.",
+        "Numa negociação com o mercador da vila, a feiura do personagem soma contra ele antes mesmo de abrir a boca."
+      ],
+      "relacionados": ["feicoes-estranhas", "corcunda"]
+    },
+    "atrapalhado": {
+      "descricao": "O personagem tem as mãos incoordenadas: tarefas que exigem destreza fina — desarmar uma trava, costurar um ferimento, sacar uma arma depressa — ficam mais sujeitas a erro. Não afeta força bruta nem perícias puramente físicas de corpo inteiro, só o trabalho manual delicado.\n\nA versão mais grave dobra essa penalidade, tornando o personagem praticamente perigoso para si mesmo em qualquer trabalho de precisão.",
+      "exemplos": [
+        "Tentando destravar um alçapão emperrado na masmorra, o atrapalhado deixa a ferramenta escapar da mão bem na hora errada.",
+        "Ao tentar sacar a adaga escondida na manga durante uma emboscada, ele deixa a lâmina cair no chão."
+      ],
+      "dica_mesa": "Bom gancho cômico: deixe as falhas dele soarem engraçadas em vez de simplesmente punitivas."
+    },
+    "avareza": {
+      "descricao": "O personagem é obcecado por acumular riqueza e odeia se desfazer dela. Precisa testar Vontade para gastar dinheiro em algo que não seja essencial, negociar um preço justo sem tentar levar vantagem, ou dividir espólio igualmente com o grupo.\n\nIsso não significa que ele é pobre — pode até ser rico — só que soltar a bolsa lhe custa um esforço mental real, mesmo diante de amigos e aliados de confiança.",
+      "exemplos": [
+        "Na hora de repartir o tesouro encontrado nas ruínas, o avarento insiste em ficar com a maior parte, criando atrito com o grupo.",
+        "Precisa comprar suprimentos essenciais para a expedição, mas discute cada moeda com o mercador até o limite da paciência dele."
+      ],
+      "relacionados": ["cobica", "dividas"]
+    },
+    "azar": {
+      "descricao": "Um infortúnio persegue o personagem: em momentos de tensão, o Mestre pode forçar uma nova rolagem de um resultado bom, trocando-o pelo pior entre os dois. Não significa falhar sempre, mas sim que o destino conspira contra ele bem na hora mais inconveniente — a corda que arrebenta, o guarda que vira a cabeça no pior momento, a ponte que racha sob o peso errado.\n\nÉ frustrante justamente por atingir sempre a pior hora possível, nunca um momento sem importância.",
+      "exemplos": [
+        "Bem quando o grupo consegue escapar pela janela em silêncio, é o azarado que pisa na tábua que range.",
+        "Na negociação mais importante da campanha, é justamente ele quem tropeça e derruba a bebida do nobre."
+      ],
+      "dica_mesa": "Use com moderação: azar demais em toda cena vira cansativo em vez de dramático."
+    },
+    "baixa-autoestima": {
+      "descricao": "O personagem não confia nas próprias capacidades e sofre penalidade constante em testes de personalidade e sociais que dependem de confiança — negociar, liderar, seduzir, impor respeito. Mesmo sendo competente de fato, ele hesita, se desculpa ou recua diante de qualquer resistência, o que os outros costumam notar.\n\nCom o tempo, essa insegurança pode virar um padrão que companheiros aprendem a contornar, empurrando-o para frente nas horas certas.",
+      "exemplos": [
+        "Mesmo sendo o melhor rastreador do grupo, ele duvida da própria leitura das pegadas e sugere ignorá-las.",
+        "Ao tentar convencer o guarda a abrir o portão, gagueja e perde a viagem por falta de firmeza na voz."
+      ],
+      "relacionados": ["indeciso"]
+    },
+    "barulhento": {
+      "descricao": "O personagem faz barulho demais ao se mover, respirar ou simplesmente existir — botas pesadas, respiração ofegante, armadura que range. Isso penaliza qualquer tentativa de se mover ou agir em silêncio, tornando furtividade quase impossível nos graus mais altos.\n\nÉ cumulativo por nível, e passar de um certo ponto exige combinar com o Mestre, já que fica difícil justificar um personagem tão barulhento assim em qualquer situação delicada.",
+      "exemplos": [
+        "Tentando se aproximar do acampamento de bandidos à noite, o barulhento denuncia a posição do grupo inteiro à distância.",
+        "Mesmo parado, sua respiração pesada é perceptível na sala silenciosa da cripta."
+      ],
+      "relacionados": ["dorminhoco"]
+    },
+    "briguento": {
+      "descricao": "O personagem adora intimidar, provocar e partir para a briga, precisando testar Vontade para resistir ao impulso quando alguém o desafia, insulta ou simplesmente está por perto e vulnerável. Isso não o torna covarde nem cruel por natureza — só incapaz de deixar uma provocação, ou uma vítima fácil, passar sem reação.\n\nÉ um traço que rende problemas sociais recorrentes, já que ele tende a fazer inimigos com facilidade em qualquer vila ou taverna.",
+      "exemplos": [
+        "Um bêbado esbarra nele na taverna e o briguento já está de punhos cerrados antes que alguém consiga apaziguar.",
+        "Ao ver um mercador maltratando um aprendiz, não resiste e parte para cima, mesmo sem ser da sua conta."
+      ]
+    },
+    "cegueira": {
+      "descricao": "O personagem não enxerga nada, permanentemente. Perde por completo qualquer perícia ou ação que dependa de visão — ler, mirar à distância, reconhecer rostos, notar detalhes visuais — embora frequentemente compense com audição, olfato e tato mais aguçados e memória de percurso.\n\nCombates corpo a corpo ficam bastante prejudicados sem ajuda ou adaptação, e qualquer deslocamento em terreno desconhecido exige cautela redobrada e apoio de companheiros.",
+      "exemplos": [
+        "Guiado só pelo som de passos e pelo bastão, o cego percorre a masmorra enquanto os companheiros descrevem o que veem.",
+        "Reconhece o comerciante da vila só pela voz e pelo cheiro característico de couro curtido, muito antes de ele falar."
+      ],
+      "em_adamar": "É uma condição física comum a qualquer humano em qualquer época, sem relação com o sobrenatural.",
+      "relacionados": ["cegueira-noturna", "disopia"]
+    },
+    "cegueira-noturna": {
+      "descricao": "O personagem enxerga muito mal em ambientes escuros ou com pouca luz, tendo grande dificuldade para qualquer tarefa visual nessas condições — bem pior do que a penalidade normal de escuridão que qualquer um sofreria. Sob luz plena, não há problema nenhum: a limitação só aparece quando a luz falta.\n\nIsso costuma tornar viagens noturnas e incursões em cavernas ou criptas particularmente arriscadas para quem tem esse traço.",
+      "exemplos": [
+        "Descendo a uma cripta iluminada só por uma única tocha, ele tropeça em cada saliência que os outros evitam sem esforço.",
+        "Ao anoitecer na estrada, é o primeiro a pedir para acender outra lanterna, incapaz de distinguir formas no crepúsculo."
+      ],
+      "relacionados": ["cegueira", "disopia"]
+    },
+    "circunspeccao": {
+      "descricao": "O personagem não entende piadas, sarcasmo, ironia ou linguagem figurada — leva tudo ao pé da letra. Isso prejudica testes sociais que dependem de captar nuances de humor ou intenção velada, e frequentemente gera mal-entendidos cômicos ou embaraçosos quando alguém tenta ser espirituoso perto dele.\n\nEm negociações e conversas mais sutis, ele pode perder avisos importantes escondidos em meias palavras ou ironias disfarçadas de elogio.",
+      "exemplos": [
+        "Quando o companheiro faz uma piada sarcástica sobre \"com certeza vamos sobreviver a isso\", ele responde sério, contrariando ponto por ponto.",
+        "Não percebe que o nobre está debochando dele numa audiência, e responde com total seriedade, para vergonha do grupo."
+      ]
+    },
+    "cleptomania": {
+      "descricao": "O personagem sente um impulso incontrolável de roubar objetos alheios, mesmo sem necessidade, precisando testar Vontade para resistir quando um item ao alcance chama sua atenção. Não é sobre planejar um roubo com calma — é o dedo que se move sozinho na hora errada, colocando em risco a confiança do grupo e a reputação dele.\n\nCom o tempo, isso costuma gerar reputação de ladrão mesmo em lugares onde ele nunca pretendeu roubar nada de fato importante.",
+      "exemplos": [
+        "Durante uma audiência formal com um nobre, não consegue se conter e afana um anel da mesa bem debaixo do nariz dos guardas.",
+        "No meio de uma negociação delicada com mercadores, é flagrado com a mão no bolso de outro cliente."
+      ],
+      "relacionados": ["compulsao", "cobica"]
+    },
+    "cobica": {
+      "descricao": "O personagem tem uma paixão descontrolada por riqueza e tesouro, precisando testar Vontade para resistir a pegar, roubar ou barganhar por qualquer coisa de valor que veja, mesmo quando isso é imprudente, perigoso ou eticamente questionável. Diferente da Avareza, que é sobre não gastar, a Cobiça é sobre querer sempre mais, ativamente.\n\nEsse impulso costuma superar o bom senso, levando o personagem a correr riscos que o restante do grupo consideraria óbvios demais para valer a pena.",
+      "exemplos": [
+        "Ao avistar um baú de moedas guardado por uma criatura na masmorra, insiste em tentar pegá-lo mesmo contra o conselho do grupo.",
+        "Numa negociação com o mercador, não consegue deixar passar uma joia exposta no balcão, mesmo sabendo que vai levantar suspeita."
+      ],
+      "relacionados": ["avareza", "cleptomania"]
+    },
+    "complexo-de-culpa": {
+      "descricao": "O personagem se sente responsável por qualquer coisa ruim que aconteça perto dele, mesmo quando não teve culpa alguma. Isso o leva a assumir riscos desnecessários para \"consertar\" situações, aceitar punições que não merece ou recusar ajuda por achar que não faz jus a ela.\n\nO peso emocional disso costuma se acumular ao longo de uma campanha, principalmente em cenas mais sombrias envolvendo perdas que o grupo não conseguiu evitar.",
+      "exemplos": [
+        "Quando um aldeão morre num ataque que o grupo não pôde evitar, ele insiste que a culpa é sua e busca se penitenciar de algum jeito.",
+        "Recusa a cura oferecida por um sacerdote, alegando que não merece o alívio depois do que houve na última vila."
+      ]
+    },
+    "compulsao": {
+      "descricao": "Termo genérico para um hábito que o personagem não consegue largar, mesmo sabendo que é ruim para ele: jogar, mentir sem necessidade, gastar tudo que ganha, entre outros exemplos possíveis. Sempre que a oportunidade surge, precisa testar Vontade para resistir; falhando, se entrega ao hábito escolhido na hora de criar a desvantagem.\n\nÉ importante definir com clareza qual é o hábito, já que a gravidade e as consequências mudam bastante conforme a escolha.",
+      "exemplos": [
+        "Depois de receber a paga do trabalho, o jogador compulsivo aposta tudo numa mesa de dados na taverna antes de comprar suprimentos.",
+        "Mesmo sem necessidade, mente sobre detalhes triviais da própria história, complicando o que seria uma conversa simples."
+      ],
+      "dica_mesa": "Defina com o Mestre qual é exatamente o hábito escolhido — o efeito muda bastante conforme a compulsão.",
+      "relacionados": ["alcoolismo", "cleptomania"]
+    },
+    "confuso": {
+      "descricao": "O personagem se perde com facilidade quando há estímulos demais ao mesmo tempo — muita gente falando, muitos inimigos, muitas pistas —, precisando testar Vontade para agir com clareza nessas horas, arriscando perder a vez ou tomar uma atitude sem sentido em momentos de caos.\n\nSituações calmas e bem definidas não representam problema algum; a dificuldade só aparece quando o ambiente fica confuso ou caótico de verdade.",
+      "exemplos": [
+        "No meio de uma emboscada com vários inimigos gritando ordens contraditórias, ele trava e não consegue decidir o que fazer.",
+        "Numa feira lotada com dezenas de vendedores gritando ofertas, se perde e esquece completamente o que veio comprar."
+      ]
+    },
+    "convulsoes-pos-combate": {
+      "descricao": "Depois de qualquer combate sério, o corpo do personagem reage com tremores, náusea ou desmaio, deixando-o fragilizado logo após a adrenalina passar — justamente quando talvez precisasse continuar alerta ou fugir. Não afeta o desempenho durante a luta, só o momento logo depois dela.\n\nCompanheiros que não conhecem o problema podem estranhar ou até desconfiar da reação, achando que ele está fingindo ou fraquejando.",
+      "exemplos": [
+        "Assim que o último bandido cai morto, o personagem desaba tremendo, incapaz de ajudar a revistar os corpos ou vigiar a estrada.",
+        "Depois de sobreviver a um ataque de lobos, passa minutos vomitando e sem forças, para frustração do grupo que precisa seguir viagem."
+      ],
+      "relacionados": ["distracao"]
+    },
+    "corcunda": {
+      "descricao": "A coluna do personagem é deformada, curvando as costas de forma visível e permanente. Isso penaliza testes físicos que dependem de postura e agilidade do tronco, além de tornar o personagem mais fácil de reconhecer e, em muitos lugares, alvo de olhares e comentários maldosos por causa da aparência.\n\nApesar disso, muitos que carregam essa condição aprendem a compensar com anos de prática em outras áreas do corpo e da mente.",
+      "exemplos": [
+        "Mesmo tentando se equilibrar numa viga estreita sobre um fosso na masmorra, a postura curvada atrapalha seu equilíbrio.",
+        "Na cidade pequena onde cresceu, é conhecido por todos simplesmente como \"o corcunda\", para seu desgosto."
+      ],
+      "relacionados": ["deficiencia-fisica", "aparencia-desvantagem"]
+    },
+    "covardia": {
+      "descricao": "O personagem evita qualquer risco físico real sempre que pode, precisando testar Vontade para entrar ou permanecer numa situação de perigo evidente — combate, altura, animais ferozes. Falhando, foge, se esconde ou recua, mesmo que isso signifique abandonar companheiros.\n\nNão é falta de lealdade: é puro instinto de sobrevivência falando mais alto que a razão, e o personagem costuma se sentir mal com isso depois que o perigo passa.",
+      "exemplos": [
+        "Ao ver a criatura emergir das sombras da cripta, o covarde já está correndo para a saída antes que os outros reajam.",
+        "Se oferece para vigiar a entrada \"com segurança\" sempre que surge a chance de entrar em combate direto."
+      ],
+      "dica_mesa": "Combine com o jogador se a covardia vale só para perigo físico ou também para confrontos sociais tensos.",
+      "relacionados": ["excesso-de-confianca"]
+    },
+    "credulidade": {
+      "descricao": "O personagem acredita em praticamente qualquer história que lhe contam, por mais absurda que seja, sofrendo penalidade em testes para perceber mentiras ou embustes óbvios. Vendedores espertos, charlatões e mentirosos experientes adoram encontrar alguém assim no caminho.\n\nDiferente da Ingenuidade, aqui o problema não é entender más intenções — é simplesmente aceitar qualquer explicação sem questionar os fatos.",
+      "exemplos": [
+        "Um charlatão na feira vende a ele um amuleto \"infalível contra o sobrenatural\" por uma fortuna, e ele acredita cegamente.",
+        "Aceita sem questionar a desculpa mais furada do guia sobre por que o caminho mais curto de repente ficou interditado."
+      ],
+      "relacionados": ["ingenuo", "indulgente"]
+    },
+    "curiosidade": {
+      "descricao": "O personagem precisa investigar qualquer coisa nova, estranha ou misteriosa que cruza seu caminho, testando Vontade para resistir ao impulso de mexer, abrir, ler ou explorar antes de pensar nas consequências. Isso rende descobertas valiosas, mas também mete o grupo em encrenca com frequência.\n\nNão é falta de cautela em geral — é a curiosidade específica que vence a prudência bem na hora errada.",
+      "exemplos": [
+        "Encontra um baú lacrado com símbolos estranhos numa cripta e não resiste a abri-lo, ignorando o aviso do companheiro.",
+        "Ao ouvir um som vindo de um corredor lateral na masmorra, se desvia da rota planejada só para investigar."
+      ],
+      "dica_mesa": "Ótimo motor de aventura: use a curiosidade do personagem para puxar o grupo para ganchos que você preparou."
+    },
+    "codigo-de-honra": {
+      "descricao": "O personagem segue um conjunto de regras pessoais de conduta — de um guerreiro, de um ladrão, de uma ordem — mesmo quando isso o coloca em desvantagem prática. Recusar-se a atacar pelas costas, sempre pagar dívidas, nunca abandonar um companheiro caído: o código muda conforme o tipo escolhido.\n\nRomper suas próprias regras custa caro à autoestima e à reputação do personagem entre os que compartilham os mesmos valores, mesmo quando ninguém mais percebeu a quebra.",
+      "exemplos": [
+        "Mesmo podendo vencer com um golpe traiçoeiro, o guerreiro de código de honra se recusa a atacar um oponente desarmado.",
+        "Insiste em voltar sob perigo para resgatar um companheiro caído, mesmo quando a fuga seria mais segura para todos."
+      ],
+      "dica_mesa": "Escreva as regras específicas do código junto com o jogador antes da primeira sessão, para evitar dúvidas na hora H.",
+      "relacionados": ["doutrinas-religiosas", "honestidade"]
+    },
+    "daltonismo": {
+      "descricao": "O personagem não distingue certas cores corretamente, o que raramente afeta a aventura no dia a dia, mas pode complicar tarefas específicas que dependem de identificar cores com precisão — reconhecer um brasão pela cor, distinguir fios ou tinturas, notar uma mancha pela tonalidade.\n\nÉ um traço discreto, que a maioria das pessoas ao redor sequer percebe, a menos que o personagem cometa um erro visível ligado a cores.",
+      "exemplos": [
+        "Não percebe que a poção que lhe entregaram tem uma cor levemente diferente da usual, por não distinguir bem os tons.",
+        "Confunde o estandarte de duas casas nobres rivais numa negociação, por não perceber a diferença sutil entre as cores."
+      ]
+    },
+    "deficiencia-fisica": {
+      "descricao": "O personagem perdeu parte de um membro ou tem uma perna severamente comprometida, afetando deslocamento e certas ações físicas de forma permanente — mancar, usar prótese ou muleta, ter alcance de movimento reduzido. O grau exato, de uma leve manqueira até a perda quase completa da perna, muda a gravidade do problema.\n\nCom tempo e adaptação, muitos personagens assim desenvolvem formas próprias de compensar em terreno difícil ou combate.",
+      "exemplos": [
+        "Numa fuga pela floresta, o personagem manco não consegue acompanhar o ritmo do grupo e atrasa a travessia.",
+        "Precisa de ajuda para escalar uma parede baixa de uma ruína que os outros passam sem pensar duas vezes."
+      ],
+      "em_adamar": "Ferimentos de guerra, doenças e acidentes deixam marcas permanentes com frequência num mundo sem cura mágica fácil, então esse traço é bem comum em Adamar.",
+      "relacionados": ["corcunda", "maneta-um-braco", "maneta-uma-mao"]
+    },
+    "dependentes": {
+      "descricao": "Alguém depende do personagem — um filho pequeno, um pai idoso, um aprendiz sem recursos próprios — e essa pessoa não pode simplesmente ser levada para toda aventura perigosa. O personagem precisa se preocupar em sustentar, proteger e às vezes resgatar esse dependente.\n\nO Mestre pode usá-lo como gancho de aventura ou fonte de pressão emocional, especialmente quando o grupo precisa viajar para longe ou enfrentar perigos sérios.",
+      "exemplos": [
+        "Antes de aceitar a escolta de uma caravana perigosa, o personagem precisa arranjar alguém de confiança para cuidar do filho pequeno na vila.",
+        "Recebe a notícia de que o pai idoso está doente justo quando o grupo mais precisa dele numa missão longe de casa."
+      ],
+      "dica_mesa": "Combine com o jogador a frequência com que o dependente aparece na história para não virar peso demais nem sumir de vez."
+    },
+    "depressao-cronica": {
+      "descricao": "O personagem carrega um peso emocional constante, perdendo o ânimo e a vontade de agir com frequência, mesmo sem motivo aparente para os outros. Precisa testar Vontade regularmente para não cair num estado de apatia que prejudica qualquer ação que exija iniciativa ou esforço extra.\n\nAmigos próximos podem notar os sinais e tentar ajudar, mas a melhora costuma ser lenta e irregular, sem soluções fáceis.",
+      "exemplos": [
+        "Mesmo com a aventura em andamento, alguns dias o personagem simplesmente não consegue reunir vontade de sair da cama da estalagem.",
+        "Diante de uma vitória que deveria alegrar o grupo, ele só sente vazio, incapaz de comemorar junto dos outros."
+      ],
+      "relacionados": ["incapaz-de-sentir-prazer", "maniaco-depressivo"]
+    },
+    "desastrado": {
+      "descricao": "O personagem provoca pequenos acidentes com frequência — derruba coisas, tromba em móveis, escorrega em superfícies simples — mesmo em situações que não deveriam exigir esforço nenhum. A versão mais extrema torna qualquer erro de destreza automaticamente mais grave, fazendo qualquer deslize pequeno virar um problema maior.\n\nÉ mais frequente em momentos de rotina do que em combate, onde a atenção redobrada às vezes salva o personagem do próprio azar.",
+      "exemplos": [
+        "Ao tentar pegar uma tocha na parede da masmorra, derruba um vaso antigo que faz um estardalhaço enorme.",
+        "Na taverna, tromba na mesa errada e derrama a bebida de um mercenário mal-humorado, criando confusão."
+      ],
+      "relacionados": ["atrapalhado"]
+    },
+    "desatento": {
+      "descricao": "O personagem tem dificuldade real de manter o foco em qualquer coisa por muito tempo, sofrendo penalidade em testes que exigem atenção sustentada — vigiar, ler um texto longo, seguir uma trilha com cuidado. A mente dele foge para outro lugar bem na hora em que a concentração importa mais.\n\nEm conversas rápidas ou tarefas curtas o problema quase não aparece; é a atenção prolongada que sofre de verdade.",
+      "exemplos": [
+        "De vigia na entrada do acampamento, se distrai olhando as estrelas e quase deixa passar os invasores.",
+        "No meio da leitura de um pergaminho importante, a mente vagueia e ele perde o fio da informação crucial."
+      ],
+      "relacionados": ["distracao"]
+    },
+    "desdobramento-de-personalidade": {
+      "descricao": "O personagem tem mais de uma personalidade distinta dividindo o mesmo corpo, cada uma com seus próprios traços, memórias e às vezes até objetivos, alternando o controle de forma imprevisível. É uma condição rara e perturbadora, difícil de esconder por muito tempo e capaz de gerar sérios problemas de confiança com o grupo.\n\nO próprio personagem pode não se lembrar do que a outra personalidade fez enquanto estava no controle, o que complica ainda mais a convivência.",
+      "exemplos": [
+        "No meio de uma negociação tensa, a outra personalidade assume o controle e insulta o nobre que o grupo tentava agradar.",
+        "Acorda numa cela sem lembrar como chegou lá, sabendo apenas que a outra parte de si mesmo decidiu fazer algo à noite."
+      ],
+      "dica_mesa": "Combine com o jogador quantas personalidades existem e o que cada uma quer, para jogar as trocas de forma consistente."
+    },
+    "dever": {
+      "descricao": "O personagem responde a alguém ou a alguma instituição — um senhor feudal, uma ordem, um exército — que pode convocá-lo a qualquer momento para cumprir uma obrigação, mesmo em meio a outros planos. Quanto mais alto o nível, mais frequentemente esse chamado interrompe a vida do personagem.\n\nIgnorar a convocação costuma ter consequências sociais ou piores, dependendo de quem exatamente cobra esse dever.",
+      "exemplos": [
+        "Bem no meio da investigação nas ruínas, chega um mensageiro convocando o personagem de volta ao serviço do seu senhor.",
+        "Precisa abandonar a caçada ao tesouro para responder a uma ordem de patrulha vinda do comandante da guarda."
+      ],
+      "relacionados": ["identidade-secreta"]
+    },
+    "dificuldade-com-numeros": {
+      "descricao": "O personagem tem dificuldade genuína para fazer contas, mesmo simples — somar preços, calcular quantas rações restam, dividir um espólio entre o grupo. Precisa de mais tempo ou ajuda para qualquer tarefa que envolva números, e frequentemente erra ou desiste de calcular de cabeça.\n\nIsso não afeta perícias que não dependam diretamente de matemática, só o raciocínio numérico em si.",
+      "exemplos": [
+        "Na hora de dividir a paga do trabalho entre os companheiros, o personagem se perde nas contas e pede ajuda.",
+        "Não percebe que o mercador está cobrando errado no troco, simplesmente porque não consegue conferir as contas."
+      ],
+      "em_adamar": "Em boa parte de Adamar a educação formal é rara, então esse traço passa despercebido na maioria das comunidades comuns.",
+      "relacionados": ["dislexia"]
+    },
+    "dislexia": {
+      "descricao": "O personagem tem enorme dificuldade para aprender a ler e escrever, mesmo com instrução dedicada — as letras se embaralham e o processo nunca flui com naturalidade. Isso não indica falta de inteligência: apenas essa habilidade específica é bloqueada ou exige um esforço desproporcional.\n\nEm compensação, muitos disléxicos desenvolvem memória oral e observação mais aguçadas para compensar a dificuldade com textos.",
+      "exemplos": [
+        "Recebe um mapa com anotações escritas e precisa pedir para um companheiro ler em voz alta, incapaz de decifrar sozinho.",
+        "Um contrato importante precisa ser assinado, e o personagem finge estar sem tempo só para não revelar que não consegue lê-lo."
+      ],
+      "relacionados": ["dificuldade-com-numeros"]
+    },
+    "disopia": {
+      "descricao": "O personagem enxerga muito mal a distância ou de perto, dependendo de lentes corretivas para funcionar como qualquer pessoa de visão normal. Sem óculos ou algo equivalente à mão, sofre penalidade severa em qualquer tarefa visual, de mirar a distância até simplesmente reconhecer rostos do outro lado da sala.\n\nQuebrar ou perder as lentes em campo é um risco real, já que reposições não costumam ser rápidas nem baratas.",
+      "exemplos": [
+        "Sem seus óculos quebrados na última luta, o personagem mal consegue distinguir o inimigo do companheiro à meia distância.",
+        "Precisa se aproximar bem mais que os outros para conseguir ler uma inscrição na parede de uma ruína."
+      ],
+      "em_adamar": "Lentes de qualidade são raras e caras num mundo de NT3, então essa desvantagem costuma pesar bastante para quem a tem em Adamar.",
+      "relacionados": ["cegueira", "cegueira-noturna"]
+    },
+    "disosmia": {
+      "descricao": "O personagem não sente cheiro nem gosto, ou sente muito pouco. Além de perder o prazer simples de uma boa refeição, também fica incapaz de perceber perigos que dependem de olfato — fumaça antes do fogo se espalhar, comida estragada, o cheiro característico de uma criatura ou veneno.\n\nÉ um traço discreto no dia a dia, mas que pode custar caro justamente na hora em que o olfato faria diferença.",
+      "exemplos": [
+        "Come sem perceber que a carne já estava passando do ponto, e só descobre o problema horas depois, mal disposto.",
+        "Não sente o cheiro de fumaça vindo do porão até que ela já esteja visível saindo pelas frestas da porta."
+      ],
+      "relacionados": ["mau-cheiro"]
+    },
+    "distracao": {
+      "descricao": "O personagem é um gênio distraído: brilhante em suas áreas de interesse, mas capaz de esquecer completamente tarefas básicas do cotidiano — apagar a vela, fechar a porta, levar o equipamento certo. Precisa testar Vontade para se lembrar de detalhes práticos, e falhar costuma gerar problemas evitáveis.\n\nQuanto mais absorto ele está num problema interessante, maior a chance de ignorar por completo o que acontece ao redor.",
+      "exemplos": [
+        "Sai da estalagem pela manhã e só percebe no meio da estrada que esqueceu a bolsa de moedas em cima da mesa.",
+        "Absorto em resolver um enigma antigo, esquece completamente de vigiar a entrada da câmara enquanto os outros descansam."
+      ],
+      "relacionados": ["desatento", "convulsoes-pos-combate"]
+    },
+    "disturbio-neurologico": {
+      "descricao": "O personagem sofre de tremores ou problemas de coordenação motora de origem nervosa, que atrapalham qualquer tarefa que exija mãos firmes e, nos graus mais graves, chegam a limitar a velocidade e a agilidade do corpo como um todo. Também pode chamar atenção indesejada em situações sociais, já que o tremor costuma ser visível.\n\nA gravidade varia bastante de caso para caso, indo de um leve incômodo até uma condição bem mais limitante no dia a dia.",
+      "exemplos": [
+        "Ao tentar costurar um ferimento com urgência, as mãos trêmulas do personagem tornam a tarefa arriscada.",
+        "Durante uma negociação tensa, o tremor visível faz o mercador desconfiar de sua firmeza e barganhar mais duro."
+      ]
+    },
+    "doenca-contagiosa": {
+      "descricao": "O personagem carrega uma doença que pode ser transmitida a quem chega perto, tornando-o um risco involuntário para companheiros e estranhos. Costuma vir acompanhada de sintomas próprios, como fraqueza, febre ou tosse, e frequentemente gera medo ou rejeição de quem sabe do problema, mesmo sem contato direto.\n\nEsconder a condição é uma tentação constante, mas negá-la a quem convive de perto costuma sair caro quando a verdade aparece.",
+      "exemplos": [
+        "Ao chegar numa vila pequena, os moradores evitam se aproximar assim que percebem a tosse constante do personagem.",
+        "Precisa esconder os sintomas de uma recaída para não ser expulso da estalagem pelo dono, preocupado com os outros hóspedes."
+      ],
+      "em_adamar": "Sem cura mágica fácil e com medicina de NT3, doenças contagiosas são um medo real e comum em qualquer vila de Adamar."
+    },
+    "dor-cronica": {
+      "descricao": "Uma ferida antiga nunca cicatrizou direito e volta a doer em crises imprevisíveis, atrapalhando a concentração e o desempenho do personagem bem quando ele menos espera. Diferente de um ferimento fresco, essa dor não piora com o tempo nem ameaça a vida diretamente — só aparece, incomoda, e passa.\n\nCertos gatilhos, como esforço físico intenso ou frio extremo, tendem a tornar as crises mais prováveis.",
+      "exemplos": [
+        "No meio de uma escalada delicada numa ruína, uma pontada na cicatriz antiga quase faz o personagem perder o apoio.",
+        "Durante uma negociação importante, uma crise de dor no ombro machucado o distrai bem na hora de fechar o acordo."
+      ],
+      "relacionados": ["ferido", "hiperalgia"]
+    },
+    "dorminhoco": {
+      "descricao": "O personagem tem sono pesado e demora para acordar mesmo diante de barulhos ou ameaças óbvias, além de ficar lento e desorientado logo depois de despertar. Isso o torna um vigia ruim e um alvo fácil para quem tenta pegá-lo desprevenido durante o sono.\n\nO grupo costuma aprender a não confiar nele para os turnos de vigília mais importantes da noite.",
+      "exemplos": [
+        "Durante um ataque noturno ao acampamento, o dorminhoco só desperta quando o companheiro já está gritando por socorro ao seu lado.",
+        "Mesmo acordado à força, leva um bom tempo até conseguir reagir com clareza, ainda meio grogue."
+      ],
+      "relacionados": ["barulhento", "insone"]
+    },
+    "doutrinas-religiosas": {
+      "descricao": "O personagem segue as regras específicas de uma fé — dias de jejum, orações obrigatórias, restrições alimentares, gestos rituais — mesmo quando isso atrapalha a aventura. Ignorar essas regras pesa na consciência dele e pode ofender companheiros ou estranhos que seguem a mesma crença.\n\nQuanto mais rígidas as regras escolhidas, maior o incômodo prático que elas causam no dia a dia de viagem e aventura.",
+      "exemplos": [
+        "Recusa-se a comer a carne oferecida pelo anfitrião por ser proibida em sua fé, arriscando insultar quem o recebeu.",
+        "Interrompe a viagem para cumprir uma oração ritual no horário certo, mesmo com o grupo com pressa para seguir adiante."
+      ],
+      "em_adamar": "Adamar tem povos com crenças diferentes sobre seus deuses, então doutrinas religiosas variam bastante de região para região.",
+      "relacionados": ["fanatismo", "codigo-de-honra"]
+    },
+    "duro-de-ouvido": {
+      "descricao": "O personagem ouve mal, perdendo detalhes de conversas baixas, sons distantes ou ruídos sutis que denunciam perigo. Em ambientes barulhentos a dificuldade piora ainda mais, e frequentemente ele precisa pedir para repetirem o que foi dito, o que pode ser embaraçoso ou revelador em momentos delicados.\n\nÉ um traço que pesa especialmente em situações de tensão silenciosa, como vigiar uma masmorra ou negociar em segredo.",
+      "exemplos": [
+        "Não escuta os passos furtivos se aproximando pela retaguarda numa masmorra silenciosa, pegando o grupo de surpresa.",
+        "Numa taverna barulhenta, perde metade da conversa importante entre dois nobres na mesa ao lado."
+      ],
+      "relacionados": ["cegueira", "disopia"]
+    },
+    "dividas": {
+      "descricao": "O personagem deve dinheiro a alguém e precisa pagar parcelas regularmente, sob risco de juros, cobrança violenta ou perda de reputação se atrasar. Quanto maior o nível da dívida, maior a parcela periódica e mais pesado o compromisso, obrigando o personagem a guardar parte de qualquer ganho só para quitar o débito.\n\nCredores nem sempre são pacientes, e alguns preferem cobrar com ameaças em vez de esperar o pagamento.",
+      "exemplos": [
+        "Antes de gastar o espólio da aventura em equipamento novo, precisa separar uma parte para pagar o agiota da capital.",
+        "Um cobrador aparece na estalagem exigindo o pagamento atrasado, ameaçando expor a dívida publicamente."
+      ],
+      "relacionados": ["avareza"]
+    },
+    "egoismo": {
+      "descricao": "O personagem se acha mais importante que os outros e prioriza os próprios interesses quase sempre, precisando testar Vontade para agir de forma verdadeiramente altruísta ou cooperativa quando isso não lhe traz vantagem direta. Não significa que nunca ajuda ninguém — apenas que fazer isso sem ganho pessoal exige esforço real.\n\nCom o tempo, esse padrão costuma azedar a confiança de companheiros que esperavam mais reciprocidade.",
+      "exemplos": [
+        "Na hora de dividir o espólio, defende abertamente que deveria ficar com a parte maior por ter sido \"o mais útil\".",
+        "Recusa-se a arriscar a própria pele por um estranho, a menos que veja alguma vantagem clara na ajuda."
+      ],
+      "relacionados": ["altruismo", "indiferente"]
+    },
+    "enjoo": {
+      "descricao": "O personagem enjoa com facilidade em qualquer meio de transporte que balance — barco, carroça, às vezes até uma carruagem mal amortecida —, sofrendo náusea, tontura e queda de desempenho enquanto o enjoo dura. Em terra firme e parado, não há problema nenhum.\n\nViagens longas por rio ou mar costumam ser um verdadeiro suplício para quem carrega esse traço.",
+      "exemplos": [
+        "Na travessia de rio numa balsa simples, passa a viagem inteira vomitando pela amurada, incapaz de ajudar em qualquer tarefa.",
+        "Chega à cidade portuária mal disposto depois de dias de viagem marítima, precisando de tempo para se recuperar antes de agir."
+      ]
+    },
+    "epilepsia": {
+      "descricao": "O personagem sofre crises convulsivas imprevisíveis, que podem ser desencadeadas por estresse, luzes fortes ou simplesmente azar, deixando-o incapacitado por um período enquanto a crise passa. É uma condição séria, que preocupa companheiros e pode ser mal compreendida ou temida por quem não entende do que se trata.\n\nEntre uma crise e outra, o personagem funciona normalmente, sem nenhum sinal externo do problema.",
+      "exemplos": [
+        "No meio de uma perseguição tensa, uma crise repentina derruba o personagem no chão, obrigando o grupo a protegê-lo enquanto passa.",
+        "Moradores supersticiosos de uma vila isolada reagem com medo ao ver a crise, murmurando sobre possessão."
+      ],
+      "em_adamar": "Numa cultura sem entendimento médico avançado, uma crise assim é fácil de ser confundida com possessão ou maldição por gente comum."
+    },
+    "estigma-social": {
+      "descricao": "O personagem carrega o peso de pertencer a um grupo desprezado ou malvisto pela sociedade ao redor — um recém-chegado sem raízes, um ex-criminoso marcado, um servo — sofrendo penalidade de reação constante de quem julga por esse rótulo, mesmo sem conhecê-lo pessoalmente.\n\nO peso exato varia conforme o tipo de estigma escolhido e o quanto a região específica se importa com ele.",
+      "exemplos": [
+        "Ao entrar numa cidade murada, os guardas o revistam com mais rigor só por reconhecer a marca de criminoso em seu braço.",
+        "Mesmo depois de anos, alguns moradores da vila ainda recusam negociar com ele por causa da origem estrangeira."
+      ],
+      "em_adamar": "Comunidades pequenas e fechadas de Adamar costumam desconfiar de quem vem de fora ou carrega um passado marcado, o que torna esse tipo de rejeição social comum.",
+      "relacionados": ["identidade-secreta"]
+    },
+    "excesso-de-confianca": {
+      "descricao": "O personagem acredita estar sempre em vantagem, mesmo diante de perigos claros, e precisa testar Vontade para recusar um desafio ou reconhecer que a situação está contra ele. Isso o leva a assumir riscos que um observador de fora consideraria óbvios demais para ignorar.\n\nÀs vezes essa confiança se paga com uma vitória impressionante, mas na maioria das vezes só arranja problema desnecessário.",
+      "exemplos": [
+        "Mesmo avisado sobre a fama do bandido duelista da região, insiste em desafiá-lo sozinho, certo de que vai vencer fácil.",
+        "Recusa reforços antes de entrar na cripta, convencido de que consegue lidar com qualquer coisa lá dentro sozinho."
+      ],
+      "relacionados": ["covardia", "megalomania"]
+    }
+  }
+}

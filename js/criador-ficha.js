@@ -410,6 +410,18 @@
       return L.join('\n');
     }
 
+    // Aplica um modelo (ponto de partida) mantendo quem o personagem é: nome, jogador, era, origem, textos e orçamento.
+    function aplicarModelo(atual, modelo) {
+      var m = modelo.ficha || {};
+      var f = carregar(JSON.parse(JSON.stringify(m)));
+      ['id_salvo', 'nome', 'jogador', 'era', 'origem', 'aparencia_fisica', 'historia', 'notas', 'orcamento', 'idioma_materno'].forEach(function (k) {
+        if (atual[k] != null && atual[k] !== '') f[k] = atual[k];
+      });
+      if (atual.conceito) f.conceito = atual.conceito;
+      f.social = Object.assign({}, fichaNova(R).social, m.social || {});
+      return f;
+    }
+
     // Normaliza uma ficha importada (JSON de outra versão ou incompleto).
     function carregar(obj) {
       var f = fichaNova(R);
@@ -427,6 +439,7 @@
     return {
       fichaNova: function () { return fichaNova(R); },
       carregar: carregar,
+      aplicarModelo: aplicarModelo,
       resumir: resumir,
       textoFicha: textoFicha,
       custoDoTraco: custoDoTraco,

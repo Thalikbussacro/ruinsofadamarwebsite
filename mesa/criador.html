@@ -8,16 +8,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=53d774d1">
+  <link rel="stylesheet" href="../css/style.css?v=4a9ab29b">
   <script src="../js/whatsapp.js?v=07e0615b" defer></script>
-  <script src="../js/site.js?v=5dfd6185" defer></script>
-  <script src="../js/dados-gurps.js?v=8f667ebc" defer></script>
+  <script src="../js/site.js?v=d5627230" defer></script>
+  <script src="../js/dados-gurps.js?v=da19171b" defer></script>
   <script src="../js/icones.js?v=bd7344e7" defer></script>
   <script src="../js/gurps-efeitos.js?v=0c7368a3" defer></script>
   <script src="../js/gurps-calculo.js?v=1a5bd31b" defer></script>
-  <script src="../js/criador-ficha.js?v=b72994f4" defer></script>
+  <script src="../js/criador-ficha.js?v=7fae59ef" defer></script>
   <script src="../js/personagens-salvos.js?v=4989026d" defer></script>
-  <script src="../js/criador.js?v=fc830fda" defer></script>
+  <script src="../js/criador.js?v=f5a0fd4b" defer></script>
 </head>
 <body data-root="../" data-page="mesa/criador.html" class="modo-app">
   <main id="conteudo" class="app">
@@ -51,9 +51,13 @@
         <section class="app-etapa" data-id="conceito" data-etapa="Conceito">
           <header class="app-cab">
             <h1>Quem é o personagem?</h1>
-            <p>Comece pela pessoa, não pelos números. Sem ideia ainda? O <a href="../jogar.html">Quero jogar</a> ajuda.</p>
+            <p>Escolha um ponto de partida pronto ou comece do zero. Depois ajuste tudo como quiser.</p>
           </header>
           <div class="app-corpo app-form">
+            <h2 class="app-sub">Ponto de partida</h2>
+            <div class="modelos" id="c-modelos"></div>
+            <p class="field-hint" id="c-modelo-aviso" role="status"></p>
+            <h2 class="app-sub">A pessoa</h2>
             <div class="app-colunas">
               <div class="field"><label for="c-nome">Nome do personagem</label><input id="c-nome" data-campo="nome" maxlength="80" required></div>
               <div class="field"><label for="c-jogador">Seu nome <span class="opcional">(opcional)</span></label><input id="c-jogador" data-campo="jogador" maxlength="80"></div>

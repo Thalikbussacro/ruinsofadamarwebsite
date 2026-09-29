@@ -3,13 +3,15 @@
 // (data/icones-proprios.json). Cada item das listas guarda só o nome em "icone".
 // Uso: node tools/icones.mjs                       (baixa o que faltar e grava icones.json)
 //      node tools/icones.mjs --aplicar <pasta>     (antes: grava em cada lista os ícones de <pasta>/icones-saida-<lista>.json)
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
 export const TABLER = { nome: 'Tabler Icons', versao: '3.48.0', licenca: 'MIT', site: 'https://tabler.io/icons' };
 export const LISTAS = ['pericias', 'vantagens', 'desvantagens', 'equipamento'];
+// ícones usados direto pelas telas (fora das listas): "Do zero" no criador, Talentos e peculiaridades no cofre
+export const EXTRAS = ['pencil', 'star', 'spiral'];
 export const urlTabler = (nome) => `https://cdn.jsdelivr.net/npm/@tabler/icons@${TABLER.versao}/icons/outline/${nome}.svg`;
 
 // Tira o <svg> de fora e o retângulo invisível que o Tabler põe em todo ícone; fica só o desenho.
@@ -41,8 +43,14 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     }
   }
 
-  const usados = new Set();
+  const usados = new Set(EXTRAS);
   for (const l of LISTAS) for (const it of ler(l).itens) if (it.icone) usados.add(it.icone);
+  // modelos e outras listas de data/adamar também podem ter ícone
+  const pastaAdamar = join(RAIZ, 'data', 'adamar');
+  for (const f of readdirSync(pastaAdamar).filter((x) => x.endsWith('.json'))) {
+    const d = JSON.parse(readFileSync(join(pastaAdamar, f), 'utf8'));
+    for (const it of d.itens || []) if (it.icone) usados.add(it.icone);
+  }
   const proprios = JSON.parse(readFileSync(join(RAIZ, 'data', 'icones-proprios.json'), 'utf8')).icones;
   const arqSaida = join(RAIZ, 'data', 'gurps', 'icones.json');
   const antes = existsSync(arqSaida) ? JSON.parse(readFileSync(arqSaida, 'utf8')).icones : {};

@@ -223,6 +223,54 @@
     m.className = r.dinheiro_restante < 0 ? 'tem-erro' : '';
   });
 
+  // ---------- 1. conceito: ponto de partida (modelos em data/adamar/modelos.json) ----------
+  var MODELOS = ((G.adamar || {}).modelos || {}).itens || [];
+  var boxModelos = document.getElementById('c-modelos');
+  var avisoModelo = document.getElementById('c-modelo-aviso');
+  var modeloPendente = null;
+  function fichaTemMecanica(f) {
+    return f.tracos.length || f.pericias.length || f.equipamento.length || f.talentos.length ||
+      Object.keys(f.atributos).some(function (k) { return f.atributos[k] !== 10; });
+  }
+  function desenharModelos() {
+    boxModelos.textContent = '';
+    MODELOS.concat([{ id: 'zero', nome: 'Do zero', resumo: 'Ficha em branco: você monta tudo.', icone: 'pencil' }]).forEach(function (m) {
+      var b = el('button', 'modelo' + (modeloPendente === m.id ? ' confirmar' : ''));
+      b.type = 'button';
+      var ic = window.iconeSvg && window.iconeSvg(m.icone, 'modelo-icone');
+      if (ic) b.appendChild(ic);
+      b.appendChild(el('strong', null, modeloPendente === m.id ? 'Clique de novo para trocar' : m.nome));
+      b.appendChild(el('span', null, modeloPendente === m.id ? 'A ficha atual será substituída (nome, era e história ficam).' : m.resumo));
+      b.addEventListener('click', function () { escolherModelo(m); });
+      boxModelos.appendChild(b);
+    });
+  }
+  function escolherModelo(m) {
+    // se já há uma ficha montada, pede um segundo clique para não apagar sem querer
+    if (fichaTemMecanica(ficha) && modeloPendente !== m.id) {
+      modeloPendente = m.id;
+      desenharModelos();
+      setTimeout(function () { if (modeloPendente === m.id) { modeloPendente = null; desenharModelos(); } }, 5000);
+      return;
+    }
+    modeloPendente = null;
+    if (m.id === 'zero') {
+      var limpa = criador.fichaNova();
+      ['id_salvo', 'nome', 'jogador', 'conceito', 'era', 'origem', 'aparencia_fisica', 'historia', 'notas', 'orcamento'].forEach(function (k) { limpa[k] = ficha[k]; });
+      ficha = limpa;
+      avisoModelo.textContent = 'Ficha limpa. Monte do seu jeito nas próximas etapas.';
+    } else {
+      // conceito que veio de outro modelo é trocado; o que a pessoa escreveu fica
+      var deModelo = MODELOS.some(function (x) { return x.ficha && x.ficha.conceito === ficha.conceito; });
+      if (deModelo) ficha.conceito = '';
+      ficha = criador.aplicarModelo(ficha, m);
+      avisoModelo.textContent = 'Modelo ' + m.nome + ' aplicado: atributos, vantagens, perícias e equipamento já estão prontos. Dê um nome e ajuste o que quiser.';
+    }
+    desenharTudo();
+    mudou();
+  }
+  if (!MODELOS.length) { boxModelos.hidden = true; }
+
   // ---------- 1. conceito ----------
   var PONTOS = (R.campanha && R.campanha.pontos_iniciais) || { padrao: 80, sugestoes: [80] };
   var selOrc = document.getElementById('c-orcamento');
@@ -1234,6 +1282,7 @@
   });
 
   function desenharTudo() {
+    desenharModelos();
     camposTexto.forEach(function (c) { c.value = ficha[c.getAttribute('data-campo')] || ''; });
     mostrarOrcamento();
     mostrarAtributos();

@@ -30,9 +30,12 @@
       { label: 'Criando seu personagem', href: 'personagens/criando.html' },
       { label: 'Fé e panteões', href: 'personagens/fe.html' }
     ]},
+    { label: 'Cofre', children: [
+      { label: 'Meus personagens', href: 'mesa/personagens.html' },
+      { label: 'Criar personagem', href: 'mesa/criador.html', tambem: ['mesa/criador.html'] }
+    ]},
     { label: 'À Mesa', children: [
       { label: 'Regras', href: 'mesa/regras.html' },
-      { label: 'Cofre de personagens', href: 'mesa/personagens.html', tambem: ['mesa/criador.html'] },
       { label: 'Atributos (GURPS)', href: 'mesa/ficha-gurps.html' },
       { label: 'Perícias (GURPS)', href: 'mesa/pericias-gurps.html' },
       { label: 'Vantagens (GURPS)', href: 'mesa/vantagens-gurps.html' },
@@ -248,13 +251,46 @@
   }
 
   // ---------- botões "Jogar" ----------
-  // Todos levam ao formulário de personagem (jogar.html), que envia a ficha pelo WhatsApp.
+  // Abrem uma escolha: criar o personagem, chamar o narrador (jogar.html → WhatsApp) ou abrir o cofre.
+  // Sem JavaScript (ou sem <dialog>), o link segue para jogar.html.
+  var dialogoJogar = null;
+  function montarDialogoJogar() {
+    var opcao = function (href, titulo, texto, glifo) {
+      return el('a', { className: 'jogar-opcao', href: ROOT + href }, [
+        el('span', { className: 'jogar-glifo', 'aria-hidden': 'true', text: glifo }),
+        el('strong', { text: titulo }),
+        el('span', { text: texto })
+      ]);
+    };
+    var fechar = el('button', { className: 'jogar-fechar', type: 'button', 'aria-label': 'Fechar', text: '×' });
+    var d = el('dialog', { className: 'jogar-dialogo', 'aria-labelledby': 'jogar-titulo' }, [
+      fechar,
+      el('h2', { id: 'jogar-titulo', text: 'Como quer começar?' }),
+      el('div', { className: 'jogar-opcoes' }, [
+        opcao('mesa/criador.html', 'Criar meu personagem', 'Monte a ficha agora. Há modelos prontos para começar em um minuto.', '⚔︎'),
+        opcao('jogar.html', 'Chamar o narrador', 'Conte sua ideia em poucas perguntas e o narrador ajuda a montar com você.', '✉︎'),
+        opcao('mesa/personagens.html', 'Já tenho personagem', 'Abra o cofre para ver, editar ou enviar uma ficha salva.', '⛨')
+      ])
+    ]);
+    fechar.addEventListener('click', function () { d.close(); });
+    // clicar fora da caixa fecha
+    d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+    body.appendChild(d);
+    return d;
+  }
   function wireJogar() {
     Array.prototype.forEach.call(document.querySelectorAll('[data-jogar]'), function (a) {
       a.setAttribute('href', ROOT + 'jogar.html');
       a.removeAttribute('target');
       a.removeAttribute('rel');
-      if (PAGE === 'jogar.html') a.setAttribute('aria-current', 'page');
+      if (PAGE === 'jogar.html') { a.setAttribute('aria-current', 'page'); return; }
+      a.setAttribute('aria-haspopup', 'dialog');
+      a.addEventListener('click', function (e) {
+        if (typeof HTMLDialogElement === 'undefined') return;
+        e.preventDefault();
+        dialogoJogar = dialogoJogar || montarDialogoJogar();
+        dialogoJogar.showModal();
+      });
     });
   }
 

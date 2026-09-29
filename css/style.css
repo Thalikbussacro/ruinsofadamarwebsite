@@ -1600,7 +1600,7 @@ body.modo-app .site-footer { display: none; }
 .app-cab { padding: 0.9rem 1.25rem 0.6rem; border-bottom: 1px solid var(--ouro-fio); }
 .app-cab h1 { margin: 0; font-size: clamp(1.3rem, 2.2vw, 1.7rem); color: var(--ouro-claro); }
 .app-cab p { margin: 0.25rem 0 0; font-size: 1rem; color: var(--osso-fosco); }
-.app-corpo { flex: 1; min-height: 0; overflow: auto; padding: 0.9rem 1.25rem 1.25rem; }
+.app-corpo { flex: 1; min-height: 0; overflow: auto; padding: 0.9rem 1.25rem 1.25rem; scrollbar-color: var(--ouro-escuro) rgba(14, 13, 12, 0.6); }
 .app-form { max-width: 60rem; }
 .app-colunas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 0 1.25rem; }
 .app-colunas .field[hidden] { display: none; }
@@ -2103,6 +2103,60 @@ body.modo-app .deco { display: none; }
   .cofre-painel { position: static; }
   .cofre-atributos { gap: 0.35rem; }
 }
+
+/* criador: pontos de partida (modelos) */
+.modelos { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: 0.5rem; margin: 0.4rem 0 0; }
+.modelo {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 0.6rem;
+  align-items: center;
+  padding: 0.55rem 0.7rem;
+  font: inherit;
+  text-align: left;
+  color: var(--osso);
+  background: rgba(255, 244, 220, 0.035);
+  border: 1px solid var(--ouro-fio);
+  cursor: pointer;
+}
+.modelo:hover { border-color: var(--ouro-linha); background: rgba(255, 244, 220, 0.06); }
+.modelo.confirmar { border-color: #e08a5e; background: rgba(224, 138, 94, 0.1); }
+.modelo-icone { grid-row: 1 / 3; width: 1.8rem; height: 1.8rem; color: var(--ouro-claro); }
+.modelo strong { font-family: var(--f-titulo); font-size: 0.98rem; color: var(--osso-claro); }
+.modelo span { font-size: 0.88rem; line-height: 1.35; color: #c4b89f; }
+.modelo:focus-visible { outline: 2px solid var(--ouro-claro); outline-offset: 2px; }
+
+/* ---------- 22. Janela "Como quer começar?" (botão Jogar) ---------- */
+.jogar-dialogo {
+  width: min(44rem, calc(100vw - 2rem));
+  padding: 1.5rem 1.4rem 1.4rem;
+  color: var(--osso);
+  background: linear-gradient(180deg, #221f1b, #141210);
+  border: 1px solid var(--ouro-linha);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8), 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+.jogar-dialogo::backdrop { background: rgba(5, 4, 3, 0.75); backdrop-filter: blur(2px); }
+.jogar-dialogo h2 { margin: 0 0 1rem; text-align: center; color: var(--ouro-claro); }
+.jogar-fechar { position: absolute; top: 0.5rem; right: 0.6rem; width: 2rem; height: 2rem; font-size: 1.4rem; color: var(--osso-fosco); background: none; border: 0; cursor: pointer; }
+.jogar-fechar:hover { color: var(--osso-claro); }
+.jogar-opcoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 0.75rem; }
+.jogar-opcao {
+  display: grid;
+  gap: 0.35rem;
+  justify-items: center;
+  padding: 1rem 0.9rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--osso);
+  background: rgba(255, 244, 220, 0.035);
+  border: 1px solid var(--ouro-fio);
+  transition: border-color 0.15s, background 0.15s;
+}
+.jogar-opcao:hover, .jogar-opcao:focus-visible { color: var(--osso); border-color: var(--ouro); background: rgba(110, 31, 26, 0.3); text-decoration: none; }
+.jogar-opcao strong { font-family: var(--f-titulo); font-size: 1.05rem; color: var(--osso-claro); }
+.jogar-opcao span { font-size: 0.95rem; line-height: 1.4; color: #c4b89f; }
+.jogar-opcao .jogar-glifo { font-size: 1.8rem; line-height: 1; color: var(--ouro-claro); }
 
 /* Celular: a tela também fica parada. Em cima, o saldo numa linha e as etapas; embaixo, Voltar · Salvar · Continuar;
    no meio, só o conteúdo rola. */

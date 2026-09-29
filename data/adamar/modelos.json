@@ -1,0 +1,224 @@
+{
+  "descricao": "Pontos de partida do criador de personagem: fichas GURPS completas de gente comum de Adamar, dentro dos 80 pontos e do dinheiro inicial. O jogador escolhe um e ajusta. Não são classes: são exemplos.",
+  "itens": [
+    {
+      "id": "cacador",
+      "nome": "Caçador",
+      "resumo": "Vive do que a floresta dá: rastreia, espera, acerta de longe e volta com carne e peles.",
+      "icone": "bow",
+      "ficha": {
+        "conceito": "Caçador que conhece a mata melhor que as pessoas",
+        "atributos": { "st": 11, "dx": 12, "iq": 10, "ht": 11 },
+        "ajustes": { "per": 1 },
+        "tracos": [
+          { "id": "sentidos-agucados", "escolha": { "nivel": 2 }, "nota": "visão" },
+          { "id": "boa-forma", "escolha": { "opcao": 0 } },
+          { "id": "solitario", "escolha": {} },
+          { "id": "teimosia", "escolha": {} }
+        ],
+        "pericias": [
+          { "id": "arco", "pontos": 4 },
+          { "id": "sobrevivencia", "pontos": 4, "especializacao": "Florestas" },
+          { "id": "rastreamento", "pontos": 2 },
+          { "id": "furtividade", "pontos": 2 },
+          { "id": "camuflagem", "pontos": 1 },
+          { "id": "faca", "pontos": 1 },
+          { "id": "primeiros-socorros", "pontos": 1 }
+        ],
+        "equipamento": [
+          { "id": "arco-longo", "quantidade": 1 },
+          { "id": "aljava-de-ombro", "quantidade": 1 },
+          { "id": "faca", "quantidade": 1 },
+          { "id": "jaqueta-de-couro", "quantidade": 1 },
+          { "id": "botas", "quantidade": 1 },
+          { "id": "mochila-pequena", "quantidade": 1 },
+          { "id": "barraca-1-pessoa", "quantidade": 1 },
+          { "id": "cobertor", "quantidade": 1 },
+          { "id": "racao-de-viagem", "quantidade": 5 },
+          { "id": "corda-3-8", "quantidade": 1 }
+        ]
+      }
+    },
+    {
+      "id": "soldado",
+      "nome": "Soldado",
+      "resumo": "Serviu na milícia de um senhor: sabe manter a fila, aguentar a marcha e segurar o escudo.",
+      "icone": "shield",
+      "ficha": {
+        "conceito": "Soldado da milícia, cansado de guerras que não eram suas",
+        "atributos": { "st": 12, "dx": 12, "iq": 10, "ht": 12 },
+        "ajustes": {},
+        "tracos": [
+          { "id": "duro-de-matar", "escolha": { "nivel": 1 } },
+          { "id": "dificil-de-subjugar", "escolha": { "nivel": 1 } },
+          { "id": "dever", "escolha": { "opcao": 2 }, "nota": "ao senhor da terra" },
+          { "id": "briguento", "escolha": {} }
+        ],
+        "pericias": [
+          { "id": "espada-de-lamina-larga", "pontos": 4 },
+          { "id": "escudo", "pontos": 2, "especializacao": "Escudo" },
+          { "id": "soldado", "pontos": 2 },
+          { "id": "lanca", "pontos": 2 },
+          { "id": "briga", "pontos": 1 },
+          { "id": "primeiros-socorros", "pontos": 1 },
+          { "id": "caminhada", "pontos": 1 }
+        ],
+        "equipamento": [
+          { "id": "espada-larga", "quantidade": 1 },
+          { "id": "escudo-medio", "quantidade": 1 },
+          { "id": "camisa-de-cota-de-malha", "quantidade": 1 },
+          { "id": "elmo-de-couro", "quantidade": 1 },
+          { "id": "botas", "quantidade": 1 },
+          { "id": "mochila-pequena", "quantidade": 1 },
+          { "id": "racao-de-viagem", "quantidade": 5 }
+        ]
+      }
+    },
+    {
+      "id": "curandeira",
+      "nome": "Curandeira",
+      "resumo": "Cuida dos doentes com ervas, faixas e paciência. Sabe mais de febre do que de espada.",
+      "icone": "first-aid-kit",
+      "ficha": {
+        "conceito": "Curandeira de aldeia que não consegue virar as costas a um ferido",
+        "atributos": { "st": 10, "dx": 10, "iq": 12, "ht": 11 },
+        "ajustes": { "vontade": 1 },
+        "tracos": [
+          { "id": "empatia", "escolha": { "opcao": 0 } },
+          { "id": "memoria-eidetica", "escolha": { "opcao": 0 } },
+          { "id": "altruismo", "escolha": {} },
+          { "id": "senso-do-dever", "escolha": { "valor": -5 }, "nota": "com quem está doente" }
+        ],
+        "pericias": [
+          { "id": "primeiros-socorros", "pontos": 2 },
+          { "id": "medicina", "pontos": 4 },
+          { "id": "diagnose", "pontos": 2 },
+          { "id": "farmacia", "pontos": 2 },
+          { "id": "psicologia", "pontos": 2 },
+          { "id": "teologia", "pontos": 1 },
+          { "id": "caminhada", "pontos": 1 },
+          { "id": "culinaria", "pontos": 1 }
+        ],
+        "equipamento": [
+          { "id": "kit-de-primeiros-socorros", "quantidade": 1 },
+          { "id": "bandagens", "quantidade": 3 },
+          { "id": "faca", "quantidade": 1 },
+          { "id": "tunica-de-pele", "quantidade": 1 },
+          { "id": "sandalias", "quantidade": 1 },
+          { "id": "mochila-pequena", "quantidade": 1 },
+          { "id": "cobertor", "quantidade": 1 },
+          { "id": "racao-de-viagem", "quantidade": 5 }
+        ]
+      }
+    },
+    {
+      "id": "ladrao",
+      "nome": "Ladrão",
+      "resumo": "Mãos leves, pés silenciosos e uma sorte que ainda não acabou. Nem tudo que pega é para si.",
+      "icone": "lock-open",
+      "ficha": {
+        "conceito": "Ladrão de cidade portuária que sempre acha uma saída",
+        "atributos": { "st": 10, "dx": 12, "iq": 11, "ht": 10 },
+        "ajustes": {},
+        "tracos": [
+          { "id": "destreza-manual-elevada", "escolha": { "nivel": 1 } },
+          { "id": "sorte", "escolha": { "opcao": 0 } },
+          { "id": "cobica", "escolha": {} },
+          { "id": "curiosidade", "escolha": {} }
+        ],
+        "pericias": [
+          { "id": "furtividade", "pontos": 4 },
+          { "id": "arrombamento", "pontos": 4 },
+          { "id": "punga", "pontos": 4 },
+          { "id": "manha", "pontos": 2 },
+          { "id": "faca", "pontos": 2 },
+          { "id": "escalada", "pontos": 2 },
+          { "id": "labia", "pontos": 2 }
+        ],
+        "equipamento": [
+          { "id": "gazuas", "quantidade": 1 },
+          { "id": "faca", "quantidade": 1 },
+          { "id": "adaga", "quantidade": 1 },
+          { "id": "capa-leve", "quantidade": 1 },
+          { "id": "jaqueta-de-couro", "quantidade": 1 },
+          { "id": "algibeira-bolsa-pequena", "quantidade": 1 },
+          { "id": "arpeu", "quantidade": 1 },
+          { "id": "corda-3-8", "quantidade": 1 }
+        ]
+      }
+    },
+    {
+      "id": "erudito",
+      "nome": "Erudito",
+      "resumo": "Lê, lembra e pergunta demais. Carrega mais papel do que comida e não aguenta subir morro.",
+      "icone": "book",
+      "ficha": {
+        "conceito": "Erudito atrás de respostas sobre quem ergueu as ruínas",
+        "atributos": { "st": 10, "dx": 10, "iq": 13, "ht": 9 },
+        "ajustes": { "vontade": 1 },
+        "tracos": [
+          { "id": "memoria-eidetica", "escolha": { "opcao": 0 } },
+          { "id": "curiosidade", "escolha": {} },
+          { "id": "teimosia", "escolha": {} }
+        ],
+        "idiomas": [{ "nome": "Língua antiga", "fala": "sotaque", "escrita": "sotaque" }],
+        "pericias": [
+          { "id": "pesquisa", "pontos": 2 },
+          { "id": "escrita", "pontos": 1 },
+          { "id": "astronomia", "pontos": 2 },
+          { "id": "teologia", "pontos": 2 },
+          { "id": "ocultismo", "pontos": 1 },
+          { "id": "geografia", "pontos": 2 },
+          { "id": "literatura", "pontos": 2 },
+          { "id": "heraldica", "pontos": 1 },
+          { "id": "diplomacia", "pontos": 1 }
+        ],
+        "equipamento": [
+          { "id": "kit-de-escriba", "quantidade": 1 },
+          { "id": "tablete-de-cera", "quantidade": 1 },
+          { "id": "mochila-pequena", "quantidade": 1 },
+          { "id": "lampiao", "quantidade": 1 },
+          { "id": "oleo", "quantidade": 2 },
+          { "id": "vela-de-sebo", "quantidade": 2 },
+          { "id": "cobertor", "quantidade": 1 }
+        ]
+      }
+    },
+    {
+      "id": "mercador",
+      "nome": "Mercador",
+      "resumo": "Compra barato, vende caro e conhece gente em cada porto. Tem dinheiro, e gente de olho nele.",
+      "icone": "scale",
+      "ficha": {
+        "conceito": "Mercador que viaja entre os reinos com uma carroça e muitas dívidas a cobrar",
+        "atributos": { "st": 10, "dx": 10, "iq": 12, "ht": 10 },
+        "ajustes": {},
+        "social": { "status": 1, "riqueza": "confortavel" },
+        "tracos": [
+          { "id": "carisma", "escolha": { "nivel": 1 } },
+          { "id": "calculos-instantaneos", "escolha": { "opcao": 0 } },
+          { "id": "avareza", "escolha": {} }
+        ],
+        "pericias": [
+          { "id": "comercio", "pontos": 4 },
+          { "id": "labia", "pontos": 2 },
+          { "id": "analise-de-mercado", "pontos": 2 },
+          { "id": "contabilidade", "pontos": 2 },
+          { "id": "deteccao-de-mentiras", "pontos": 2 },
+          { "id": "diplomacia", "pontos": 1 },
+          { "id": "cavalgar", "pontos": 1, "especializacao": "Cavalo" },
+          { "id": "boemia", "pontos": 1 }
+        ],
+        "equipamento": [
+          { "id": "balanca-e-pesos", "quantidade": 1 },
+          { "id": "mochila", "quantidade": 1 },
+          { "id": "algibeira-bolsa-pequena", "quantidade": 1 },
+          { "id": "faca", "quantidade": 1 },
+          { "id": "sapatos", "quantidade": 1 },
+          { "id": "kit-de-escriba", "quantidade": 1 },
+          { "id": "odre-de-vinho", "quantidade": 1 }
+        ]
+      }
+    }
+  ]
+}

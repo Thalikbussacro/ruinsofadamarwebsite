@@ -167,4 +167,19 @@ f.tracos.push({ id: narr.id, escolha: {} });
 r = c.resumir(f);
 assert.match(avisos(r), /só com o narrador/);
 assert.doesNotMatch(erros(r), /só com o narrador/);
+// modelos (data/adamar/modelos.json): todos fecham sem erro nos 80 pontos e mantêm quem o personagem é
+const modelos = JSON.parse(readFileSync(new URL('../data/adamar/modelos.json', import.meta.url), 'utf8')).itens;
+assert.ok(modelos.length >= 4);
+for (const m of modelos) {
+  const base = c.fichaNova();
+  base.nome = 'Teste';
+  base.era = 'Era do Novo Mundo';
+  const fm = c.aplicarModelo(base, m);
+  const rm = c.resumir(fm);
+  assert.deepEqual(rm.erros.map((e) => e.texto), [], 'modelo ' + m.id);
+  assert.ok(rm.restante >= 0 && rm.restante <= 15, 'modelo ' + m.id + ' deixa ' + rm.restante + ' pontos');
+  assert.equal(fm.nome, 'Teste');
+  assert.equal(fm.era, 'Era do Novo Mundo');
+  assert.ok(G.equipamento.length && rm.gasto_equipamento <= rm.recursos);
+}
 console.log('criador-ficha ok');

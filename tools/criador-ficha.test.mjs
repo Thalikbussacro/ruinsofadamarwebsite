@@ -245,6 +245,14 @@ assert.equal(est.st, 5);
 ej.em_jogo = { pv: 3, pf: 3 }; // os dois efeitos se acumulam
 est = c.estadoEmJogo(ej, c.resumir(ej));
 assert.equal(est.esquiva, Math.ceil(Math.ceil(base.combate.defesas.esquiva / 2) / 2));
+// pontos ganhos em jogo aumentam o saldo, mas não o limite de desvantagens
+const pg = c.fichaNova();
+const semGanho = c.resumir(pg);
+pg.em_jogo = { pontos: 5 };
+const comGanho = c.resumir(pg);
+assert.equal(comGanho.restante, semGanho.restante + 5);
+assert.equal(comGanho.pontos_ganhos, 5);
+assert.equal(comGanho.limite, semGanho.limite);
 // carregar mantém o estado em jogo
 assert.equal(c.carregar({ em_jogo: { pv: 4 } }).em_jogo.pv, 4);
 console.log('criador-ficha ok' + (comNumeros ? '' : ' (sem números de combate)'));

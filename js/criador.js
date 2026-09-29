@@ -116,6 +116,8 @@
   }
   // compara fichas sem o estado "em jogo" (PV/PF atuais mudam no cofre durante a sessão, não são edição da ficha)
   function assinatura(f) { var c = Object.assign({}, f); delete c.em_jogo; return JSON.stringify(c); }
+  // o painel "Em jogo" do cofre pode ter mudado pontos ganhos, PV e PF depois que a ficha foi aberta aqui
+  if (ficha.id_salvo && arquivo && arquivo.obter(ficha.id_salvo)) ficha.em_jogo = arquivo.obter(ficha.id_salvo).em_jogo || ficha.em_jogo;
   function versaoSalvaDe(f) { return f.id_salvo && arquivo && arquivo.obter(f.id_salvo) ? assinatura(arquivo.obter(f.id_salvo)) : null; }
   var versaoSalva = versaoSalvaDe(ficha);
   var atualizadores = [];
@@ -212,7 +214,7 @@
     total.className = r.restante < 0 ? 'tem-erro' : '';
     document.getElementById('lado-orcamento').textContent = 'de saldo';
     var rest = document.getElementById('lado-restante');
-    rest.textContent = r.restante < 0 ? 'Saldo negativo' : 'de ' + ficha.orcamento + ' · gastou ' + r.pontos_gastos + (r.pontos_devolvidos ? ' · voltou ' + r.pontos_devolvidos : '');
+    rest.textContent = r.restante < 0 ? 'Saldo negativo' : 'de ' + ficha.orcamento + (r.pontos_ganhos ? ' + ' + r.pontos_ganhos + ' ganhos' : '') + ' · gastou ' + r.pontos_gastos + (r.pontos_devolvidos ? ' · voltou ' + r.pontos_devolvidos : '');
     rest.className = r.restante < 0 ? 'tem-erro' : '';
     var d = document.getElementById('lado-desv');
     d.textContent = (-r.desvantagens) + ' / ' + (-r.limite);

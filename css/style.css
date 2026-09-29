@@ -2241,6 +2241,42 @@ body.modo-app .deco { display: none; }
 .em-jogo-notas { width: 100%; margin-top: 0.6rem; padding: 0.45rem 0.6rem; font-family: var(--f-corpo); font-size: 1rem; color: var(--osso-claro); background: rgba(0, 0, 0, 0.35); border: 1px solid var(--ouro-linha); resize: vertical; }
 @media print { .em-jogo { display: none !important; } }
 
+/* rolador: números clicáveis e quadro de rolagens */
+.rolavel { cursor: pointer; border-radius: 2px; transition: background 0.12s, box-shadow 0.12s; }
+.rolavel:hover, .rolavel:focus-visible { background: rgba(168, 136, 74, 0.18); box-shadow: 0 0 0 1px var(--ouro-linha); outline: none; }
+.rolagens {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 40;
+  width: min(21rem, calc(100vw - 2rem));
+  max-height: 60vh;
+  overflow: auto;
+  color: var(--osso);
+  background: linear-gradient(180deg, #221f1b, #141210);
+  border: 1px solid var(--ouro-linha);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+.rolagens[hidden] { display: none; }
+.rolagens-cab { display: flex; align-items: center; gap: 0.7rem; padding: 0.4rem 0.7rem; border-bottom: 1px solid var(--ouro-fio); }
+.rolagens-titulo { flex: 1; padding: 0; font-family: var(--f-titulo); font-size: 0.85rem; letter-spacing: 0.08em; text-align: left; color: var(--ouro-claro); background: none; border: 0; cursor: pointer; }
+.rolagens .btn-link { font-size: 0.9rem; }
+.rolagens.fechado .rolagens-lista { display: none; }
+.rolagens-lista { margin: 0; padding: 0.3rem 0.5rem 0.5rem; list-style: none; }
+.rolagem { display: grid; gap: 0.05rem; margin: 0; padding: 0.35rem 0.4rem; border-bottom: 1px solid rgba(168, 136, 74, 0.1); font-size: 0.92rem; }
+.rolagem.nova { background: rgba(168, 136, 74, 0.1); animation: rolagem-entra 0.35s ease-out; }
+.rolagem strong { color: var(--osso-claro); }
+.rolagem-conta { font-family: var(--f-titulo); color: #c4b89f; }
+.rolagem-resultado { font-weight: 700; }
+.rolagem.sucesso .rolagem-resultado { color: #a9c47f; }
+.rolagem.falha .rolagem-resultado { color: #e08a5e; }
+.rolagem.critico .rolagem-resultado { color: #e6c25a; }
+.rolagem.falha-critica .rolagem-resultado { color: #ff6a4c; }
+.rolagem.dano .rolagem-resultado { color: var(--ouro-claro); font-weight: 400; }
+@keyframes rolagem-entra { from { transform: translateY(-4px); opacity: 0.4; } to { transform: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .rolagem.nova { animation: none; } }
+@media print { .rolagens { display: none !important; } }
+
 /* Celular: a tela também fica parada. Em cima, o saldo numa linha e as etapas; embaixo, Voltar · Salvar · Continuar;
    no meio, só o conteúdo rola. */
 @media (max-width: 899px) {

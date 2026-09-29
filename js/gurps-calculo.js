@@ -113,6 +113,29 @@
       return m[1] + 'd' + (t ? (t > 0 ? '+' : '') + t : '');
     }
 
+    // Rola dados no formato do GURPS ("3d", "1d+2", "2d-1"). rng() devolve [0,1) — nos testes, um sorteio fixo.
+    function rolarDados(expr, rng) {
+      var m = /^(\d+)d([+-]\d+)?$/.exec(String(expr || '').trim());
+      if (!m) return null;
+      var sorte = rng || Math.random;
+      var dados = [];
+      for (var i = 0; i < parseInt(m[1], 10); i++) dados.push(1 + Math.floor(sorte() * 6));
+      var mod = m[2] ? parseInt(m[2], 10) : 0;
+      var soma = dados.reduce(function (s, d) { return s + d; }, 0) + mod;
+      return { dados: dados, mod: mod, total: soma };
+    }
+
+    // Teste de habilidade (3d contra o NH): sucesso decisivo com 3–4, com 5 se NH ≥ 15 e com 6 se NH ≥ 16;
+    // falha crítica com 18, com 17 se NH ≤ 15, ou falhando por 10 ou mais.
+    function avaliarTeste(nh, total) {
+      var margem = nh - total;
+      var sucesso = total <= Math.min(nh, 16) || total <= 4; // 17 e 18 sempre falham; 3 e 4 sempre acertam
+      if (total >= 17) sucesso = false;
+      var critico = sucesso && (total <= 4 || (total === 5 && nh >= 15) || (total === 6 && nh >= 16));
+      var falhaCritica = !sucesso && (total === 18 || (total === 17 && nh <= 15) || margem <= -10);
+      return { sucesso: sucesso, margem: margem, critico: critico, falha_critica: falhaCritica };
+    }
+
     // Custo de Aliados, Patronos, Inimigos e Dependentes pelas fórmulas de regras.formulas.
     // escolhas: { <id da entrada>: índice da opção, modificadores: [nomes] }. null se faltar escolher algo obrigatório.
     function custoFormula(id, escolhas) {
@@ -271,6 +294,8 @@
       danoBasico: danoBasico,
       somarDano: somarDano,
       custoFormula: custoFormula,
+      rolarDados: rolarDados,
+      avaliarTeste: avaliarTeste,
       custoTraco: custoTraco,
       custoAparencia: custoAparencia,
       custoStatus: custoStatus,

@@ -40,6 +40,134 @@
   }
 
 
+  // ---------- rolador: clicar num número rola 3d contra ele (ou o dano); quadro com as últimas rolagens ----------
+  var ARMAZENAMENTO_ROLAGENS = 'adamar-rolagens';
+  var rolagens = [];
+  try { rolagens = JSON.parse(sessionStorage.getItem(ARMAZENAMENTO_ROLAGENS) || '[]'); } catch (e) { rolagens = []; }
+  // sorteio com a aleatoriedade forte do navegador
+  function sorteio() {
+    if (window.crypto && window.crypto.getRandomValues) {
+      var a = new Uint32Array(1);
+      window.crypto.getRandomValues(a);
+      return a[0] / 4294967296;
+    }
+    return Math.random();
+  }
+  var quadro = null;
+  function quadroRolagens() {
+    if (quadro) return quadro;
+    quadro = el('aside', 'rolagens');
+    quadro.setAttribute('aria-label', 'Rolagens');
+    var cab = el('div', 'rolagens-cab');
+    var titulo = el('button', 'rolagens-titulo', 'Rolagens');
+    titulo.type = 'button';
+    titulo.setAttribute('aria-expanded', 'true');
+    titulo.addEventListener('click', function () {
+      var fechado = quadro.classList.toggle('fechado');
+      titulo.setAttribute('aria-expanded', String(!fechado));
+    });
+    cab.appendChild(titulo);
+    ['3d', '1d', '2d'].forEach(function (d) {
+      var b = el('button', 'btn-link', d);
+      b.type = 'button';
+      b.title = 'Rolar ' + d;
+      b.addEventListener('click', function () { rolarDano(d, d); });
+      cab.appendChild(b);
+    });
+    var limpar = el('button', 'btn-link', 'limpar');
+    limpar.type = 'button';
+    limpar.addEventListener('click', function () { rolagens = []; guardarRolagens(); desenharRolagens(); });
+    cab.appendChild(limpar);
+    quadro.appendChild(cab);
+    quadro.appendChild(el('ol', 'rolagens-lista'));
+    quadro.setAttribute('aria-live', 'polite');
+    document.body.appendChild(quadro);
+    return quadro;
+  }
+  function guardarRolagens() {
+    try { sessionStorage.setItem(ARMAZENAMENTO_ROLAGENS, JSON.stringify(rolagens.slice(0, 20))); } catch (e) { /* sem armazenamento */ }
+  }
+  function desenharRolagens() {
+    var q = quadroRolagens();
+    q.hidden = !rolagens.length;
+    var ul = q.querySelector('.rolagens-lista');
+    ul.textContent = '';
+    rolagens.slice(0, 8).forEach(function (x, i) {
+      var li = el('li', 'rolagem ' + (x.classe || '') + (i === 0 ? ' nova' : ''));
+      li.appendChild(el('strong', null, x.rotulo));
+      li.appendChild(el('span', 'rolagem-conta', x.conta));
+      if (x.resultado) li.appendChild(el('span', 'rolagem-resultado', x.resultado));
+      ul.appendChild(li);
+    });
+  }
+  function registrar(x) {
+    rolagens.unshift(x);
+    rolagens = rolagens.slice(0, 20);
+    guardarRolagens();
+    desenharRolagens();
+  }
+  function rolarTeste(rotulo, nh) {
+    var r = calc.rolarDados('3d', sorteio);
+    var a = calc.avaliarTeste(nh, r.total);
+    var resultado = a.critico ? 'Sucesso decisivo!' : a.falha_critica ? 'Falha crítica!' :
+      a.sucesso ? 'Sucesso' + (a.margem ? ' por ' + a.margem : ' (no limite)') : 'Falha por ' + (-a.margem);
+    registrar({
+      rotulo: rotulo,
+      conta: r.total + ' (' + r.dados.join('+') + ') contra ' + nh,
+      resultado: resultado,
+      classe: a.critico ? 'critico' : a.falha_critica ? 'falha-critica' : a.sucesso ? 'sucesso' : 'falha'
+    });
+  }
+  function rolarDano(rotulo, expr) {
+    var r = calc.rolarDados(expr, sorteio);
+    if (!r) return;
+    registrar({ rotulo: rotulo, conta: r.total + ' (' + r.dados.join('+') + (r.mod ? (r.mod > 0 ? '+' : '') + r.mod : '') + ')', resultado: expr, classe: 'dano' });
+  }
+  // marca um elemento como rolável: tipo "teste" (valor = NH) ou "dano" (valor = "1d+2")
+  function rolavel(no, tipo, rotulo, valor) {
+    if (!no || valor == null || valor === '' || valor === '—') return no;
+    if (tipo === 'teste' && isNaN(parseInt(valor, 10))) return no;
+    if (tipo === 'dano') {
+      var m = /^(\d+d(?:[+-]\d+)?)/.exec(String(valor));
+      if (!m) return no;
+      valor = m[1];
+    }
+    no.classList.add('rolavel');
+    no.setAttribute('role', 'button');
+    no.setAttribute('tabindex', '0');
+    no.setAttribute('data-rolar', tipo);
+    no.setAttribute('data-rotulo', rotulo);
+    no.setAttribute('data-valor', String(valor));
+    no.title = tipo === 'teste' ? 'Rolar 3d contra ' + parseInt(valor, 10) : 'Rolar ' + valor;
+    return no;
+  }
+  function aoRolar(ev) {
+    var alvo = ev.target.closest && ev.target.closest('[data-rolar]');
+    if (!alvo) return;
+    if (ev.type === 'keydown' && ev.key !== 'Enter' && ev.key !== ' ') return;
+    ev.preventDefault();
+    var v = alvo.getAttribute('data-valor');
+    if (alvo.getAttribute('data-rolar') === 'teste') rolarTeste(alvo.getAttribute('data-rotulo'), parseInt(v, 10));
+    else rolarDano(alvo.getAttribute('data-rotulo'), v);
+  }
+  document.addEventListener('click', aoRolar);
+  document.addEventListener('keydown', aoRolar);
+  if (rolagens.length) desenharRolagens();
+
+  // marca os números da ficha completa que dá para rolar
+  function marcarRolaveis(raiz) {
+    Array.prototype.forEach.call(raiz.querySelectorAll('.ficha-valores > div'), function (d) {
+      var nome = (d.querySelector('dt') || {}).textContent;
+      var alvo = { ST: 'ST', DX: 'DX', IQ: 'IQ', HT: 'HT', Vont: 'Vontade', Per: 'Percepção' }[nome];
+      var dd = d.querySelector('dd');
+      if (alvo && dd) rolavel(dd, 'teste', alvo, dd.textContent);
+    });
+    Array.prototype.forEach.call(raiz.querySelectorAll('.ficha-bloco:not(.ficha-combate) .table-wrap tbody tr'), function (tr) {
+      var tds = tr.querySelectorAll('td');
+      if (tds.length >= 3 && /^\d+$/.test(tds[2].textContent.trim())) rolavel(tds[2], 'teste', (tds[0].querySelector('strong') || tds[0]).textContent, tds[2].textContent);
+    });
+  }
+
   // ---------- combate: caixas de dano/defesas, tabela de armas e proteção ----------
   function blocoCombate(r, compacto) {
     var cb = r.combate;
@@ -51,6 +179,8 @@
       var c = el('div', 'combate-caixa');
       c.appendChild(el('span', null, x[0]));
       c.appendChild(el('strong', null, String(x[1])));
+      if (x[0] === 'GdP' || x[0] === 'GeB') rolavel(c, 'dano', 'Dano ' + x[0], x[1]);
+      else if (x[0] !== 'Carga') rolavel(c, 'teste', x[0], x[1]);
       linha.appendChild(c);
     });
     box.appendChild(linha);
@@ -69,7 +199,13 @@
         tr.appendChild(n);
         var vals = [a.dano, a.nh == null ? '—' : a.nh, a.aparar == null ? '—' : a.aparar];
         if (!compacto) vals.push(a.alcance, a.st || '—', a.pericia);
-        vals.forEach(function (x) { tr.appendChild(el('td', null, String(x))); });
+        vals.forEach(function (x, k) {
+          var td = el('td', null, String(x));
+          if (k === 0) rolavel(td, 'dano', a.nome, x);
+          if (k === 1) rolavel(td, 'teste', a.nome, x);
+          if (k === 2) rolavel(td, 'teste', 'Aparar (' + a.nome + ')', parseInt(x, 10));
+          tr.appendChild(td);
+        });
         t.appendChild(tr);
       });
       box.appendChild(t);
@@ -141,6 +277,15 @@
         grade.appendChild(contador('Coroas', e.dinheiro, null, 'dinheiro'));
       }
       box.appendChild(grade);
+      if (!compacto && e.pontos > 0) {
+        var dica = el('p', 'em-jogo-agora');
+        dica.appendChild(document.createTextNode('Os ' + e.pontos + ' pontos ganhos já somam no saldo: '));
+        var ed = el('a', null, 'abra no criador para gastar');
+        ed.href = 'criador.html?editar=' + encodeURIComponent(idFicha);
+        dica.appendChild(ed);
+        dica.appendChild(document.createTextNode(' (perícias, atributos, vantagens).'));
+        box.appendChild(dica);
+      }
       var agora = el('p', 'em-jogo-agora', 'Agora: deslocamento ' + e.deslocamento + ' · esquiva ' + e.esquiva + (e.st !== r.valores.st ? ' · ST ' + e.st : ''));
       box.appendChild(agora);
       if (e.efeitos.length) {
@@ -276,6 +421,7 @@
         var c = el('div', 'cofre-atr');
         c.appendChild(el('span', 'cofre-atr-sigla', a.sigla));
         c.appendChild(el('strong', null, String(v[a.id])));
+        rolavel(c, 'teste', a.sigla, v[a.id]);
         atr.appendChild(c);
       });
       painel.appendChild(atr);
@@ -284,7 +430,7 @@
       sec.textContent = ['PV ' + v.pv, 'Vont ' + v.vontade, 'Per ' + v.per, 'PF ' + v.pf, 'Vel ' + num(v.velocidade), 'Desl ' + v.deslocamento].join('  ·  ');
       painel.appendChild(sec);
       var saldo = el('p', 'cofre-saldo');
-      saldo.textContent = f.orcamento + ' pontos · ' + (r.restante >= 0 ? (r.restante ? r.restante + ' guardados' : 'todos usados') : 'saldo negativo ' + r.restante) +
+      saldo.textContent = f.orcamento + ' pontos' + (r.pontos_ganhos ? ' + ' + r.pontos_ganhos + ' ganhos' : '') + ' · ' + (r.restante >= 0 ? (r.restante ? r.restante + ' guardados' : 'todos usados') : 'saldo negativo ' + r.restante) +
         ' · ' + moeda(r.dinheiro_restante) + ' na bolsa';
       painel.appendChild(saldo);
       painel.appendChild(blocoCombate(r, true));
@@ -299,7 +445,7 @@
           var ic = window.iconeSvg && window.iconeSvg(x.icone, 'icone-item');
           if (ic) li.appendChild(ic);
           li.appendChild(el('span', 'cofre-item-nome', x.nome));
-          if (x.valor != null) li.appendChild(el('span', 'cofre-item-valor', x.valor));
+          if (x.valor != null) li.appendChild(rolavel(el('span', 'cofre-item-valor', x.valor), 'teste', x.nome, x.valor));
           ul.appendChild(li);
         });
         b.appendChild(ul);
@@ -460,8 +606,8 @@
 
     // pontos
     var pts = el('div', 'ficha-pontos');
-    pts.appendChild(el('strong', null, String(f.orcamento)));
-    pts.appendChild(el('span', null, 'pontos iniciais · gastou ' + r.pontos_gastos + ' · desvantagens devolveram ' + r.pontos_devolvidos + (f.jogador ? ' · jogador: ' + f.jogador : '')));
+    pts.appendChild(el('strong', null, String(f.orcamento + (r.pontos_ganhos || 0))));
+    pts.appendChild(el('span', null, 'pontos' + (r.pontos_ganhos ? ' (' + f.orcamento + ' iniciais + ' + r.pontos_ganhos + ' ganhos em jogo)' : ' iniciais') + ' · gastou ' + r.pontos_gastos + ' · desvantagens devolveram ' + r.pontos_devolvidos + (f.jogador ? ' · jogador: ' + f.jogador : '')));
     pts.appendChild(el('span', r.restante < 0 ? 'calc-estourou' : null, r.restante >= 0 ? (r.restante ? r.restante + ' guardados para depois' : 'todos usados') : 'saldo negativo: ' + r.restante));
     pts.appendChild(el('span', 'personagem-selo ' + (r.valida ? 'pronta' : 'rascunho'), r.valida ? 'Pronta' : 'Rascunho'));
     if (!r.valida) document.getElementById('f-whats').classList.add('is-disabled');
@@ -590,7 +736,7 @@
         var ic = window.iconeSvg && window.iconeSvg(x.p.icone, 'icone-item');
         if (ic) li.appendChild(ic);
         li.appendChild(el('span', 'cofre-item-nome', x.p.nome));
-        li.appendChild(el('span', 'cofre-item-valor', String(x.nh)));
+        li.appendChild(rolavel(el('span', 'cofre-item-valor', String(x.nh)), 'teste', x.p.nome + ' (sem treino)', x.nh));
         ul.appendChild(li);
       });
       st.appendChild(ul);
@@ -629,6 +775,8 @@
       pe.appendChild(ule);
       box.insertBefore(pe, box.children[1]);
     }
+    marcarRolaveis(box);
+
     if (r.avisos.length) {
       var av = bloco('Para conversar com o narrador', 'ficha-largo');
       var ul = el('ul', 'app-pendencias');

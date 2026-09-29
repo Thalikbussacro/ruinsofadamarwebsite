@@ -399,7 +399,9 @@
       // o que voltou ao saldo: tudo que tem custo negativo (desvantagens, atributos baixos, peculiaridades, analfabetismo)
       var alf = calc.custoAlfabetizacao(ficha.social.alfabetizacao);
       var devolvidos = -desvantagens - peculiaridades + (alf < 0 && ficha.social.analfabetismoRegra ? -alf : 0);
-      var restante = ficha.orcamento - total;
+      // pontos ganhos em jogo somam ao orçamento (o limite de desvantagens continua pelos pontos iniciais)
+      var ganhos = Math.max(0, parseInt((ficha.em_jogo || {}).pontos, 10) || 0);
+      var restante = ficha.orcamento + ganhos - total;
       // saldo: começa no orçamento; o que custa tira, desvantagem devolve. Sobrar é permitido (fica guardado).
       if (restante < 0) erro('geral', 'Saldo negativo: faltam ' + (-restante) + ' pontos. Tire algo ou pegue desvantagens.');
 
@@ -431,6 +433,7 @@
         custos: custos,
         total: total,
         restante: restante,
+        pontos_ganhos: ganhos,
         pontos_devolvidos: devolvidos,
         pontos_gastos: total + devolvidos,
         desvantagens: desvantagens,
@@ -502,7 +505,7 @@
       var fis = [ficha.idade ? ficha.idade + ' anos' : '', ficha.altura, ficha.peso_corporal].filter(Boolean);
       if (fis.length) L.push(fis.join(' · '));
       L.push('');
-      L.push('Pontos: começou com ' + ficha.orcamento + ', gastou ' + r.pontos_gastos + ', recebeu ' + r.pontos_devolvidos + ' de desvantagens · ' +
+      L.push('Pontos: começou com ' + ficha.orcamento + (r.pontos_ganhos ? ' (+' + r.pontos_ganhos + ' ganhos em jogo)' : '') + ', gastou ' + r.pontos_gastos + ', recebeu ' + r.pontos_devolvidos + ' de desvantagens · ' +
         (r.restante >= 0 ? 'guardados ' + r.restante : 'saldo negativo ' + r.restante));
       L.push('ST ' + v.st + ' · DX ' + v.dx + ' · IQ ' + v.iq + ' · HT ' + v.ht);
       L.push('PV ' + v.pv + ' · Vontade ' + v.vontade + ' · Per ' + v.per + ' · PF ' + v.pf + ' · Velocidade ' + num(v.velocidade) + ' · Deslocamento ' + v.deslocamento);

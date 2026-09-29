@@ -167,4 +167,23 @@ assert.equal(c.custoFormula('favor', { vantagem_subjacente: 0, custo_subjacente:
 assert.equal(c.custoFormula('favor', { vantagem_subjacente: 0 }), null);
 // falta escolher algo obrigatório
 assert.equal(c.custoFormula('patronos', { poder: 0 }), null);
+// rolagens: sorteio fixo (0 → 1, 0,99 → 6)
+const seq = (xs) => { let i = 0; return () => xs[i++]; };
+assert.deepEqual(c.rolarDados('3d', seq([0, 0.5, 0.99])), { dados: [1, 4, 6], mod: 0, total: 11 });
+assert.equal(c.rolarDados('1d+2', seq([0.2])).total, 4);
+assert.equal(c.rolarDados('2d-1', seq([0, 0])).total, 1);
+assert.equal(c.rolarDados('xx'), null);
+// teste de habilidade
+assert.deepEqual(c.avaliarTeste(12, 9), { sucesso: true, margem: 3, critico: false, falha_critica: false });
+assert.equal(c.avaliarTeste(12, 13).sucesso, false);
+assert.equal(c.avaliarTeste(12, 4).critico, true);
+assert.equal(c.avaliarTeste(14, 5).critico, false);
+assert.equal(c.avaliarTeste(15, 5).critico, true);
+assert.equal(c.avaliarTeste(16, 6).critico, true);
+assert.equal(c.avaliarTeste(20, 17).sucesso, false); // 17 sempre falha
+assert.equal(c.avaliarTeste(15, 17).falha_critica, true);
+assert.equal(c.avaliarTeste(16, 17).falha_critica, false);
+assert.equal(c.avaliarTeste(20, 18).falha_critica, true);
+assert.equal(c.avaliarTeste(5, 15).falha_critica, true); // falhou por 10
+assert.equal(c.avaliarTeste(2, 4).sucesso, true); // 3 e 4 sempre acertam
 console.log('gurps-calculo ok');

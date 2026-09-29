@@ -189,7 +189,19 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Adaptabilidade Cultural",
+          "custo": 10,
+          "resumo": "Conhece bem todas as culturas do próprio povo, sem penalidade por desconhecimento cultural entre elas."
+        },
+        {
+          "nome": "Xeno-Adaptabilidade",
+          "custo": 20,
+          "resumo": "Estende esse conhecimento cultural para qualquer cultura do cenário, não só da própria raça."
+        }
+      ]
     },
     {
       "id": "adaptacao-ao-terreno",
@@ -813,13 +825,15 @@
           "alvo": "teste",
           "ref": "testes_ht",
           "valor": 1,
-          "condicao": "Boa Forma (5): todos os testes de HT (consciência, morte, doença, veneno), não a HT nem perícias"
+          "condicao": "todos os testes de HT (consciência, morte, doença, veneno), não a HT nem perícias",
+          "variante": 0
         },
         {
           "alvo": "teste",
           "ref": "testes_ht",
           "valor": 2,
-          "condicao": "Ótima Forma (15): substitui o +1"
+          "condicao": "todos os testes de HT (consciência, morte, doença, veneno), não a HT nem perícias",
+          "variante": 1
         },
         {
           "alvo": "teste",
@@ -829,12 +843,25 @@
         },
         {
           "alvo": "regra",
-          "descricao": "Ótima Forma: perde PF por esforço na metade da velocidade. Não afeta PF gastos em mágicas ou poderes."
+          "descricao": "Ótima Forma: perde PF por esforço na metade da velocidade. Não afeta PF gastos em mágicas ou poderes.",
+          "variante": 1
         }
       ],
       "prerequisitos": [],
       "nivel_max": 2,
-      "duvida_efeitos": "O valor de recuperacao_pf é um multiplicador (x2), não um bônus somado."
+      "duvida_efeitos": "O valor de recuperacao_pf é um multiplicador (x2), não um bônus somado.",
+      "variantes": [
+        {
+          "nome": "Boa Forma",
+          "custo": 5,
+          "resumo": "Corpo mais resistente: +1 em testes de HT e recuperação de fadiga no dobro da velocidade normal."
+        },
+        {
+          "nome": "Ótima Forma",
+          "custo": 15,
+          "resumo": "Versão mais forte: +2 em testes de HT, recupera fadiga rápido e a perde na metade da velocidade."
+        }
+      ]
     },
     {
       "id": "boca-adicional",
@@ -1433,7 +1460,19 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Cálculos Instantâneos",
+          "custo": 2,
+          "resumo": "Faz contas simples de cabeça instantaneamente, como se tivesse uma calculadora sempre à mão."
+        },
+        {
+          "nome": "Matemático Intuitivo",
+          "custo": 5,
+          "resumo": "Resolve mentalmente qualquer cálculo, mesmo complexo, sem precisar de calculadora."
+        }
+      ]
     },
     {
       "id": "defesas-ampliadas",
@@ -1536,7 +1575,19 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Desenvolvedor",
+          "custo": 25,
+          "resumo": "Inventor talentoso, mas construir ou modificar engenhocas ainda leva dias ou meses e custa caro."
+        },
+        {
+          "nome": "Desenvolvedor Rápido",
+          "custo": 50,
+          "resumo": "Cria engenhocas em minutos ou horas, aproveitando sucata e peças disponíveis no local."
+        }
+      ]
     },
     {
       "id": "deslocamento-ampliado",
@@ -2013,7 +2064,7 @@
             "psicologia"
           ],
           "valor": 3,
-          "condicao": "Empatia (15)"
+          "variante": 1
         },
         {
           "alvo": "grupo_pericias",
@@ -2023,12 +2074,25 @@
             "psicologia"
           ],
           "valor": 1,
-          "condicao": "Sensível (5); Psicologia só para analisar alguém com quem conversa"
+          "condicao": "Sensível (5); Psicologia só para analisar alguém com quem conversa",
+          "variante": 0
         }
       ],
       "prerequisitos": [],
       "nivel_max": 2,
-      "duvida_efeitos": "O texto em português é ambíguo sobre Detecção de Mentiras no nível Empatia; segui o Basic Set (+3 em Detecção de Mentiras, Adivinhação e Psicologia). Só funciona com seres naturais de IQ 6+."
+      "duvida_efeitos": "O texto em português é ambíguo sobre Detecção de Mentiras no nível Empatia; segui o Basic Set (+3 em Detecção de Mentiras, Adivinhação e Psicologia). Só funciona com seres naturais de IQ 6+.",
+      "variantes": [
+        {
+          "nome": "Sensível",
+          "custo": 5,
+          "resumo": "Versão mais fraca: teste de IQ com penalidade e bônus menor para perceber sentimentos e mentiras."
+        },
+        {
+          "nome": "Empatia",
+          "custo": 15,
+          "resumo": "Versão completa: percebe sentimentos sem penalidade no teste e dá bônus maior nas perícias sociais."
+        }
+      ]
     },
     {
       "id": "empatia-com-animais",
@@ -2594,7 +2658,7 @@
         "social"
       ],
       "custo": "1 ou 2/cultura",
-      "adamar": "livre",
+      "adamar": "nao",
       "resumo": "Conhecer os costumes de outra cultura. Em Adamar: reinos, povos distantes.",
       "ref": {
         "livro": "modulo-basico",
@@ -2616,7 +2680,8 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "nota_adamar": "Decisão da mesa: Adamar não usa a regra de culturas. O choque cultural fica na interpretação e nos idiomas."
     },
     {
       "id": "favor",
@@ -2714,13 +2779,15 @@
             "arte-erotica"
           ],
           "valor": 3,
-          "condicao": "Flexibilidade (5); Fuga só contra cordas, algemas e similares"
+          "condicao": "Fuga só contra cordas, algemas e similares",
+          "variante": 0
         },
         {
           "alvo": "teste",
           "ref": "escapar_agarrao",
           "valor": 3,
-          "condicao": "Flexibilidade (5): tentativas de se libertar em combate corpo a corpo"
+          "condicao": "tentativas de se libertar em combate corpo a corpo",
+          "variante": 0
         },
         {
           "alvo": "grupo_pericias",
@@ -2730,13 +2797,15 @@
             "arte-erotica"
           ],
           "valor": 5,
-          "condicao": "Ultraflexibilidade das Juntas (15), substitui o +3"
+          "condicao": "Fuga só contra cordas, algemas e similares",
+          "variante": 1
         },
         {
           "alvo": "teste",
           "ref": "escapar_agarrao",
           "valor": 5,
-          "condicao": "Ultraflexibilidade das Juntas (15), substitui o +3"
+          "condicao": "tentativas de se libertar em combate corpo a corpo",
+          "variante": 1
         },
         {
           "alvo": "regra",
@@ -2744,7 +2813,19 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": 2
+      "nivel_max": 2,
+      "variantes": [
+        {
+          "nome": "Flexibilidade",
+          "custo": 5,
+          "resumo": "Corpo flexível: bônus em Escalada, Fuga e Arte Erótica, e facilidade para escapar de agarrões."
+        },
+        {
+          "nome": "Ultraflexibilidade das Juntas",
+          "custo": 15,
+          "resumo": "Versão mais extrema da flexibilidade, com bônus maiores nas mesmas perícias e situações."
+        }
+      ]
     },
     {
       "id": "forma-de-sombras",
@@ -3055,7 +3136,19 @@
           "descricao": "Versão Legal exige pelo menos 10 pontos em Poderes Legais, Imunidade Legal, Hierarquia Policial, Permissão de Segurança etc."
         }
       ],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Legal",
+          "custo": 5,
+          "resumo": "Identidade extra sancionada oficialmente, geralmente ligada a um cargo policial ou de agente secreto."
+        },
+        {
+          "nome": "Ilegal",
+          "custo": 15,
+          "resumo": "Identidade extra totalmente clandestina, sem vínculo oficial, mas com pena grave se descoberta."
+        }
+      ]
     },
     {
       "id": "idiomas",
@@ -3556,18 +3649,32 @@
           "alvo": "teste",
           "ref": "aprender_assunto",
           "valor": 5,
-          "condicao": "teste de IQ pedido pelo Mestre para aprender um assunto; versão Memória Eidética (5 pts)"
+          "condicao": "teste de IQ pedido pelo Mestre para aprender um assunto",
+          "variante": 0
         },
         {
           "alvo": "teste",
           "ref": "aprender_assunto",
           "valor": 10,
-          "condicao": "teste de IQ pedido pelo Mestre para aprender um assunto; versão Memória Fotográfica (10 pts), substitui o +5"
+          "condicao": "teste de IQ pedido pelo Mestre para aprender um assunto",
+          "variante": 1
         }
       ],
       "prerequisitos": [],
       "nivel_max": null,
-      "duvida_efeitos": "Dois níveis com custos 5 e 10; modelado como variantes nas condições, não como nivel_max."
+      "duvida_efeitos": "Dois níveis com custos 5 e 10; modelado como variantes nas condições, não como nivel_max.",
+      "variantes": [
+        {
+          "nome": "Memória Eidética",
+          "custo": 5,
+          "resumo": "Lembra tudo com precisão ao se concentrar, mas detalhes específicos exigem teste de IQ bem-sucedido."
+        },
+        {
+          "nome": "Memória Fotográfica",
+          "custo": 10,
+          "resumo": "Como a anterior, mas lembra automaticamente de todos os detalhes, sem precisar de teste."
+        }
+      ]
     },
     {
       "id": "memoria-racial",
@@ -3893,7 +4000,19 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Noção Exata do Tempo",
+          "custo": 2,
+          "resumo": "Sempre sabe a hora exata e mede intervalos de tempo com precisão."
+        },
+        {
+          "nome": "Cronolocalização",
+          "custo": 5,
+          "resumo": "Igual à anterior, mas também não se confunde ao viajar no tempo."
+        }
+      ]
     },
     {
       "id": "nt-alto",
@@ -4310,7 +4429,24 @@
       ],
       "prerequisitos": [],
       "nivel_max": null,
-      "duvida_efeitos": "Normalmente acompanhado de Dever e às vezes Reputação; não é pré-requisito formal."
+      "duvida_efeitos": "Normalmente acompanhado de Dever e às vezes Reputação; não é pré-requisito formal.",
+      "variantes": [
+        {
+          "nome": "Jurisdição Local",
+          "custo": 5,
+          "resumo": "Autoridade policial básica: prender suspeitos e revistar com mandado dentro de uma jurisdição local."
+        },
+        {
+          "nome": "Jurisdição Ampla ou Imunidade",
+          "custo": 10,
+          "resumo": "Autoridade nacional ou internacional, menos restrições legais, ou liberdade para agir com relativa impunidade."
+        },
+        {
+          "nome": "Múltiplas Autoridades",
+          "custo": 15,
+          "resumo": "Combina três ou mais dos privilégios anteriores, como um agente de uma polícia secreta."
+        }
+      ]
     },
     {
       "id": "por-dentro-da-moda",
@@ -5217,30 +5353,42 @@
           "alvo": "pericia",
           "ref": "pilotagem",
           "valor": 1,
-          "condicao": "somente versão Noção Tridimensional do Espaço (10 pts)"
+          "variante": 1
         },
         {
           "alvo": "pericia",
           "ref": "acrobacia",
           "valor": 2,
-          "condicao": "somente versão Noção Tridimensional do Espaço (10 pts)"
+          "variante": 1
         },
         {
           "alvo": "pericia",
           "ref": "queda-livre",
           "valor": 2,
-          "condicao": "somente versão Noção Tridimensional do Espaço (10 pts)"
+          "variante": 1
         },
         {
           "alvo": "pericia",
           "ref": "navegacao",
           "valor": 2,
-          "condicao": "somente versão Noção Tridimensional do Espaço (10 pts)",
-          "especializacao": "Espaço ou Hiperespaço"
+          "especializacao": "Espaço ou Hiperespaço",
+          "variante": 1
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Senso de Direção",
+          "custo": 5,
+          "resumo": "Sempre sabe onde é o norte e refaz qualquer trajeto percorrido nos últimos 30 dias."
+        },
+        {
+          "nome": "Noção Tridimensional do Espaço",
+          "custo": 10,
+          "resumo": "Mesma habilidade, mas em três dimensões, útil no espaço, com bônus extras de pilotagem e navegação espacial."
+        }
+      ]
     },
     {
       "id": "sentido-de-monitoramento",

@@ -1495,6 +1495,8 @@ a.card:hover h3,
 .st-livre .pericia-status, .pericia-status.st-livre { color: var(--ouro-claro); }
 .st-narrador .pericia-status, .pericia-status.st-narrador { color: #e08a5e; }
 .st-nao .pericia-status, .pericia-status.st-nao { color: var(--osso-fosco); }
+.pericia-variantes { margin: 0 0 0.45rem; padding-left: 1.1rem; font-size: 0.98rem; line-height: 1.4; }
+.pericia-variantes strong { font-weight: normal; color: var(--osso-claro); }
 .pericia-vazio { font-style: italic; color: var(--osso-fosco); }
 
 @media (max-width: 520px) {
@@ -1528,3 +1530,99 @@ a.card:hover h3,
 .calc-estourou { color: #e08a5e; font-weight: 700; }
 .calc-check { margin-top: 1rem; }
 .table-wrap td small { color: var(--osso-fosco); font-size: 0.88em; }
+
+/* ---------- 17. Criador de personagem ---------- */
+.criador-barra {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 1.25rem;
+  margin: 1.5rem 0 0;
+  padding: 0.6rem 1rem;
+  font-family: var(--f-titulo);
+  font-size: 0.9rem;
+  color: var(--osso-fosco);
+  background: linear-gradient(90deg, #3a1714, var(--carvao) 70%);
+  border: 1px solid var(--ouro-linha);
+  border-left: 3px solid var(--sangue-vivo);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.55);
+}
+.criador-pontos strong { font-size: 1.5rem; color: var(--ouro-claro); }
+.criador-etapas li { flex-basis: 5.5rem; padding: 0; }
+.criador-etapa {
+  width: 100%;
+  padding: 0.55rem 0.5rem 0.5rem;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.criador-etapa:focus-visible { outline: 2px solid var(--ouro-claro); outline-offset: -2px; }
+.step-titulo { margin: 0 0 0.5rem; font-size: clamp(1.35rem, 3vw, 1.7rem); color: var(--ouro-claro); }
+.criador-lista { display: grid; gap: 0.6rem; margin: 1rem 0 0; }
+.criador-item {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.75rem 0.9rem;
+  background: rgba(14, 13, 12, 0.55);
+  border: 1px solid var(--ouro-fio);
+  border-left: 3px solid var(--ouro-escuro);
+  min-width: 0;
+}
+.criador-item.st-narrador { border-left-color: #e08a5e; }
+.criador-item-texto { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
+.criador-custo { font-family: var(--f-titulo); font-size: 0.95rem; color: var(--ouro-claro); white-space: nowrap; }
+.criador-campos { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; align-items: end; }
+.criador-campo { display: grid; gap: 0.25rem; flex: 1 1 9rem; min-width: 0; }
+.criador-campo > span { font-family: var(--f-titulo); font-size: 0.78rem; letter-spacing: 0.04em; color: var(--osso-fosco); }
+.criador-item input,
+.criador-item select,
+.criador-busca,
+.criador-inline select {
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  font-family: var(--f-corpo);
+  font-size: 1rem;
+  color: var(--osso-claro);
+  background: rgba(14, 13, 12, 0.7);
+  border: 1px solid var(--ouro-linha);
+  border-radius: 1px;
+}
+.criador-item select option,
+.criador-inline select option { color: var(--osso-claro); background: var(--pedra); }
+.criador-item input:focus,
+.criador-item select:focus,
+.criador-busca:focus,
+.criador-inline select:focus { outline: none; border-color: var(--ouro-claro); box-shadow: 0 0 0 2px rgba(201, 171, 107, 0.25); }
+.criador-variante { flex: 1 1 100%; margin: 0; font-size: 0.95rem; font-style: italic; color: var(--osso-fosco); }
+.criador-remover { justify-self: start; font-size: 0.92rem; }
+.criador-add { margin-top: 0.8rem; }
+.criador-add:disabled { opacity: 0.5; cursor: not-allowed; }
+.criador-inline { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.8rem; }
+.criador-inline select { flex: 1 1 14rem; width: auto; }
+.criador-seletor { margin: 1.25rem 0 0; padding: 0.9rem 1rem; background: rgba(14, 13, 12, 0.35); border: 1px dashed var(--ouro-linha); }
+.criador-seletor .contagem { margin: 0.5rem 0; }
+.criador-resultados { scrollbar-color: var(--ouro-escuro) rgba(14, 13, 12, 0.6); display: grid; gap: 0.5rem; max-height: 28rem; overflow: auto; margin: 0; padding: 0; list-style: none; }
+.criador-resultado { padding: 0.6rem 0.75rem; background: rgba(14, 13, 12, 0.5); border: 1px solid var(--ouro-fio); }
+.criador-resultado .pericia-resumo { margin: 0.25rem 0 0.35rem; font-size: 0.98rem; }
+.criador-resultado .pericia-meta { align-items: center; }
+.criador-adicionar { margin-left: auto; padding: 0.3rem 0.8rem; font-size: 0.8rem; }
+.criador-adicionar:disabled { opacity: 0.5; cursor: default; }
+.criador-arquivo { position: relative; cursor: pointer; }
+.criador-arquivo input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.criador-arquivo:focus-within { outline: 2px solid var(--ouro-claro); outline-offset: 2px; }
+
+@media (max-width: 520px) {
+  .criador-barra { gap: 0.1rem 0.8rem; font-size: 0.78rem; padding: 0.4rem 0.7rem; }
+  .criador-pontos strong { font-size: 1.2rem; }
+  .criador-etapas { gap: 0.25rem; }
+  .criador-etapas li { flex-basis: 28%; font-size: 0.68rem; }
+  .criador-etapa { padding: 0.4rem 0.2rem 0.35rem; }
+  .criador-adicionar { margin-left: 0; }
+}

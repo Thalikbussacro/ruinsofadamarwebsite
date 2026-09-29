@@ -330,8 +330,14 @@
         "tema": "arpeu",
         "decisao": "Arpéu é livre em Adamar.",
         "motivo": "O livro marca NT5, mas um gancho de ferro com corda cabe no NT3."
+      },
+      {
+        "tema": "familiaridade-cultural",
+        "decisao": "Adamar não usa Familiaridade Cultural: ninguém compra culturas nem sofre -3 por estar em terra estranha. O choque cultural fica na interpretação, nas reações e nos idiomas.",
+        "motivo": "Deixa a ficha mais simples; a diferença entre os povos já aparece pela língua e pela reação dos NPCs."
       }
-    ]
+    ],
+    "familiaridade_cultural": false
   },
   "limite_desvantagens": {
     "resumo": "Tudo que tem custo negativo conta: desvantagens, atributos abaixo de 10, status e riqueza baixos. Peculiaridades ficam à parte (até 5, de -1 cada).",
@@ -489,7 +495,8 @@
     "resumo": "O personagem conhece a própria cultura de graça. Em culturas estranhas sofre -3 nas perícias sociais; cada Familiaridade Cultural remove isso.",
     "custo_mesma_raca": 1,
     "custo_alienigena": 2,
-    "penalidade_sem": -3
+    "penalidade_sem": -3,
+    "nota_adamar": "Não usada em Adamar (ver campanha.decisoes)."
   },
   "nivel_tecnologico": {
     "ref": {

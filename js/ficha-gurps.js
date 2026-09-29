@@ -46,6 +46,7 @@
   if (typeof estado.orcamento !== 'number') estado.orcamento = PONTOS.padrao;
   var SOCIAL_PADRAO = { aparencia: 'comum', status: 0, riqueza: 'medio', multimilionario: 0, alfabetizacao: 'alfabetizado', analfabetismoRegra: true, culturas: 0 };
   estado.social = Object.assign({}, SOCIAL_PADRAO, estado.social || {});
+  estado.social.culturas = 0; // Adamar não usa Familiaridade Cultural
   var LIMITE = (R.campanha && R.campanha.limite_desvantagens) || { percentual_padrao: 0.5 };
 
   // ---------- orçamento de pontos ----------
@@ -137,7 +138,6 @@
     document.getElementById('soc-status').value = String(so.status);
     document.getElementById('soc-riqueza').value = so.multimilionario ? 'multi-' + so.multimilionario : so.riqueza;
     document.getElementById('soc-alfabetizacao').value = so.alfabetizacao;
-    document.getElementById('soc-culturas').value = so.culturas;
     document.getElementById('soc-analfabetismo').checked = !!so.analfabetismoRegra;
   }
 
@@ -211,7 +211,6 @@
       moeda(ficha.recursos) + ' iniciais';
     document.getElementById('soc-info-alfabetizacao').textContent = sinal(calc.custoAlfabetizacao(so.alfabetizacao)) + ' pts' +
       (so.alfabetizacao !== 'alfabetizado' && so.analfabetismoRegra ? ' · fora do limite' : '');
-    document.getElementById('soc-info-culturas').textContent = sinal(so.culturas * R.familiaridade_cultural.custo_mesma_raca) + ' pts';
     var limite = calc.limiteDesvantagens(estado.orcamento, LIMITE.percentual_padrao);
     var desv = document.getElementById('calc-desvantagens');
     desv.textContent = 'Desvantagens: ' + ficha.desvantagens + ' de um limite de ' + limite +
@@ -317,8 +316,9 @@
   tabela('tabela-idiomas', ['Nível de compreensão', 'Pontos (fala e escrita iguais)'], R.idiomas.niveis.map(function (n) {
     return [n.nome, sinal(n.custo)];
   }));
-  document.getElementById('culturas-intro').textContent = R.familiaridade_cultural.resumo + ' Custa ' +
-    R.familiaridade_cultural.custo_mesma_raca + ' ponto por cultura (pág. ' + R.familiaridade_cultural.ref.pagina + ').';
+  // Adamar não usa Familiaridade Cultural (decisão da mesa em regras.campanha).
+  document.getElementById('culturas-intro').textContent = R.familiaridade_cultural.nota_adamar ||
+    (R.familiaridade_cultural.resumo + ' (pág. ' + R.familiaridade_cultural.ref.pagina + ').');
 
   mostrarOrcamento();
   mostrarSocial();

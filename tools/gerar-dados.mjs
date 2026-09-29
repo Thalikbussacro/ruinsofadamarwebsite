@@ -71,6 +71,16 @@ export function validar(dados) {
         if (catalogo && e.alvo === 'teste' && !catalogo[e.ref]) erros.push(`${lista}/${t.id}: teste "${e.ref}" fora do catálogo`);
       }
       for (const r of t.prerequisitos || []) for (const p of conferirPrerequisito(r, ids)) erros.push(`${lista}/${t.id}: pré-requisito com ${p}`);
+      // variantes: uma por opção de custo, na mesma ordem; efeitos podem apontar para uma delas
+      if (t.variantes) {
+        const valores = (t.custo_estruturado && t.custo_estruturado.valores) || [];
+        if (t.variantes.length !== valores.length || t.variantes.some((v, k) => v.custo !== valores[k] || !v.nome)) {
+          erros.push(`${lista}/${t.id}: variantes não batem com as opções de custo`);
+        }
+      }
+      for (const e of t.efeitos || []) {
+        if (e.variante != null && !(t.variantes && t.variantes[e.variante])) erros.push(`${lista}/${t.id}: efeito aponta para variante inexistente ${e.variante}`);
+      }
     }
   }
 

@@ -126,6 +126,16 @@
     topo.appendChild(el('span', 'pericia-dif', tipo.selo(p)));
     art.appendChild(topo);
     art.appendChild(el('p', 'pericia-resumo', p.resumo));
+    if (p.variantes) {
+      var versoes = el('ul', 'pericia-variantes');
+      p.variantes.forEach(function (v) {
+        var li = el('li');
+        li.appendChild(el('strong', null, v.nome + ' (' + (v.custo > 0 ? '+' : '') + v.custo + ')'));
+        li.appendChild(document.createTextNode(' ' + v.resumo));
+        versoes.appendChild(li);
+      });
+      art.appendChild(versoes);
+    }
     var meta = el('p', 'pericia-meta');
     meta.appendChild(el('span', 'pericia-status', ADAMAR[p.adamar].rotulo));
     tipo.meta(p).forEach(function (m) { meta.appendChild(el('span', null, m)); });

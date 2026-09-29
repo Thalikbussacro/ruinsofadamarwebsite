@@ -125,7 +125,19 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Alcoolismo (bebida legal)",
+          "custo": -15,
+          "resumo": "Vício em álcool comum e legal na maioria dos lugares, mas ainda perigoso e traiçoeiro."
+        },
+        {
+          "nome": "Alcoolismo (bebida ilegal)",
+          "custo": -20,
+          "resumo": "Mesmo vício, mas em cenário onde beber álcool é crime, agravando as consequências sociais."
+        }
+      ]
     },
     {
       "id": "altruismo",
@@ -197,7 +209,19 @@
         }
       ],
       "nivel_max": null,
-      "duvida_efeitos": "Exclusão com Solitário é inferência lógica, não está explícita no texto."
+      "duvida_efeitos": "Exclusão com Solitário é inferência lógica, não está explícita no texto.",
+      "variantes": [
+        {
+          "nome": "Amigável",
+          "custo": -5,
+          "resumo": "Gosta de companhia e reage bem aos outros, mas fica desanimado e perde desempenho mental quando está só."
+        },
+        {
+          "nome": "Gregário",
+          "custo": -10,
+          "resumo": "Versão mais extrema: bônus de reação maior, mas penalidade maior de desempenho quando sozinho."
+        }
+      ]
     },
     {
       "id": "amnesia",
@@ -226,7 +250,8 @@
           "alvo": "teste",
           "ref": "pericias_iq",
           "valor": -2,
-          "condicao": "apenas Amnésia Total, salvo quando a memória não importa"
+          "condicao": "salvo quando a memória não importa",
+          "variante": 1
         },
         {
           "alvo": "regra",
@@ -235,7 +260,19 @@
       ],
       "prerequisitos": [],
       "nivel_max": null,
-      "duvida_efeitos": "O texto OCR diz -35 para Amnésia Total; o custo listado e o Basic Set indicam -25."
+      "duvida_efeitos": "O texto OCR diz -35 para Amnésia Total; o custo listado e o Basic Set indicam -25.",
+      "variantes": [
+        {
+          "nome": "Amnésia Parcial",
+          "custo": -10,
+          "resumo": "Esqueceu parte do passado, mas o Mestre pode escondê-la como desvantagens secretas na ficha."
+        },
+        {
+          "nome": "Amnésia Total",
+          "custo": -25,
+          "resumo": "Não lembra nada da própria vida; o Mestre controla a ficha até a memória retornar."
+        }
+      ]
     },
     {
       "id": "antecedentes-mundanos",
@@ -512,7 +549,19 @@
           "id": "destreza-manual-elevada"
         }
       ],
-      "nivel_max": 2
+      "nivel_max": 2,
+      "variantes": [
+        {
+          "nome": "Atrapalhado",
+          "custo": -5,
+          "resumo": "Mãos incoordenadas: penalidade em tarefas delicadas de destreza e em Sacar Rápido."
+        },
+        {
+          "nome": "Atrapalhado (penalidade dobrada)",
+          "custo": -10,
+          "resumo": "Mesma desvantagem, só que com penalidades duas vezes mais severas nas mesmas tarefas."
+        }
+      ]
     },
     {
       "id": "autodestruicao",
@@ -1773,7 +1822,19 @@
           "descricao": "DX máxima 13."
         }
       ],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Desastrado",
+          "custo": -5,
+          "resumo": "Provoca pequenos acidentes: precisa testar Destreza por dia para não causar estragos ou tombos."
+        },
+        {
+          "nome": "Completamente Desastrado",
+          "custo": -15,
+          "resumo": "Versão extrema: qualquer fracasso em teste de DX ou perícia de DX se torna falha crítica."
+        }
+      ]
     },
     {
       "id": "desatento",
@@ -3125,7 +3186,19 @@
           "descricao": "Muito Fora de Forma: não pode ter Resistente."
         }
       ],
-      "nivel_max": 2
+      "nivel_max": 2,
+      "variantes": [
+        {
+          "nome": "Fora de Forma",
+          "custo": -5,
+          "resumo": "Condição física ruim: penalidade leve em testes de HT e perde fadiga no dobro da velocidade."
+        },
+        {
+          "nome": "Muito Fora de Forma",
+          "custo": -15,
+          "resumo": "Condição física muito pior: penalidade maior nos mesmos testes e também recupera fadiga mais lentamente."
+        }
+      ]
     },
     {
       "id": "forma-de-sombras-desvantagem",
@@ -3720,7 +3793,19 @@
         }
       ],
       "nivel_max": null,
-      "duvida_efeitos": "O OCR dá -25 para os dois níveis; pelo custo listado e pelo Basic Set, Incapaz de Falar vale -15 e Mudez -25."
+      "duvida_efeitos": "O OCR dá -25 para os dois níveis; pelo custo listado e pelo Basic Set, Incapaz de Falar vale -15 e Mudez -25.",
+      "variantes": [
+        {
+          "nome": "Incapaz de Falar",
+          "custo": -15,
+          "resumo": "Emite sons, mas não consegue articular palavras ou formar linguagem falada."
+        },
+        {
+          "nome": "Mudez",
+          "custo": -25,
+          "resumo": "Não emite nenhum som; precisa se comunicar por escrita, sinais ou outros meios não vocais."
+        }
+      ]
     },
     {
       "id": "incapaz-de-flutuar",
@@ -4073,7 +4158,19 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Suave",
+          "custo": -10,
+          "resumo": "Episódios de insônia mais raros, ocorrendo em média a cada poucos dias."
+        },
+        {
+          "nome": "Grave",
+          "custo": -15,
+          "resumo": "Episódios de insônia bem mais frequentes, quase todas as noites."
+        }
+      ]
     },
     {
       "id": "intolerancia",
@@ -5052,7 +5149,19 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Meta de curto prazo",
+          "custo": -5,
+          "resumo": "Fixação obsessiva em um objetivo relativamente simples e rápido de alcançar."
+        },
+        {
+          "nome": "Meta grande ou de longo prazo",
+          "custo": -10,
+          "resumo": "Fixação obsessiva em um objetivo ambicioso, difícil e demorado de realizar."
+        }
+      ]
     },
     {
       "id": "obsessoes-peculiaridade",
@@ -5504,7 +5613,19 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Moderado",
+          "custo": -15,
+          "resumo": "Coluna fraca: dor incapacitante temporária após esforço físico ou ataque crítico corpo a corpo."
+        },
+        {
+          "nome": "Grave",
+          "custo": -25,
+          "resumo": "Versão mais severa: penalidades maiores nos testes e mais chance de dano físico quando a coluna trava."
+        }
+      ]
     },
     {
       "id": "recuperacao-lenta",
@@ -5935,17 +6056,31 @@
           "alvo": "atributo",
           "ref": "dx",
           "valor": -1,
-          "condicao": "só com a mão afetada; versão Sem Um Dedo (-2)"
+          "condicao": "só com a mão afetada",
+          "variante": 0
         },
         {
           "alvo": "atributo",
           "ref": "dx",
           "valor": -5,
-          "condicao": "só com a mão afetada; versão Sem o Polegar (-5)"
+          "condicao": "só com a mão afetada",
+          "variante": 1
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Sem Um Dedo",
+          "custo": -2,
+          "resumo": "Falta um dedo qualquer, exceto o polegar: pequena penalidade de destreza só na mão afetada."
+        },
+        {
+          "nome": "Sem o Polegar",
+          "custo": -5,
+          "resumo": "Falta o polegar: penalidade de destreza bem maior, só na mão afetada."
+        }
+      ]
     },
     {
       "id": "semiereto",
@@ -6687,7 +6822,19 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Sem Visão Periférica",
+          "custo": -15,
+          "resumo": "Campo de visão reduzido a 120° na frente; os lados contam como ataques pelas costas."
+        },
+        {
+          "nome": "Visão Estreita",
+          "custo": -30,
+          "resumo": "Campo de visão ainda mais estreito, de 60°; defesa pior nos lados e ataques laterais limitados."
+        }
+      ]
     },
     {
       "id": "voto",

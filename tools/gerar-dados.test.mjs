@@ -67,6 +67,14 @@ const errosEf = validar(d).join(String.fromCharCode(10));
 assert.match(errosEf, /vantagens\/carisma: efeito com perícia inexistente "inexistente"/);
 assert.match(errosEf, /vantagens\/carisma: pré-requisito com traço inexistente "nada"/);
 
+// variantes que não batem com as opções de custo
+d = base(); d.vantagens.itens[0].custo_estruturado = { tipo: 'opcoes', valores: [5, 15] };
+d.vantagens.itens[0].variantes = [{ nome: 'A', custo: 5 }];
+d.vantagens.itens[0].efeitos = [{ alvo: 'regra', descricao: 'x', variante: 3 }];
+const errosVar = validar(d).join(String.fromCharCode(10));
+assert.match(errosVar, /variantes não batem/);
+assert.match(errosVar, /variante inexistente 3/);
+
 // porte da grade fora do conjunto
 d = base(); d.equipamento = { itens: [{ id: 'faca', nome: 'Faca', categoria: 'arma-corpo-a-corpo', nt: '0', adamar: 'livre', resumo: 'x', ref: { livro: 'modulo-basico', pagina: 272 }, grade: { porte: 'bolso' } }] };
 assert.match(validar(d).join(String.fromCharCode(10)), /equipamento\/faca: porte inválido "bolso"/);

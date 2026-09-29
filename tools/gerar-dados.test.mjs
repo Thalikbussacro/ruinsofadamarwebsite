@@ -75,6 +75,14 @@ const errosVar = validar(d).join(String.fromCharCode(10));
 assert.match(errosVar, /variantes não batem/);
 assert.match(errosVar, /variante inexistente 3/);
 
+// ícone sem desenho em icones.json
+d = base(); d.vantagens.itens[0].icone = 'sword';
+d.icones = { icones: { shield: { svg: '<path d="M1 1"/>' } } };
+assert.match(validar(d).join(String.fromCharCode(10)), /ícone sem desenho "sword"/);
+d.icones.icones.sword = { svg: '<path d="M2 2"/>' };
+assert.deepEqual(validar(d), []);
+assert.equal(new Function('window', montarJs(d) + 'return window;')({}).GURPS.icones.sword, '<path d="M2 2"/>');
+
 // porte da grade fora do conjunto
 d = base(); d.equipamento = { itens: [{ id: 'faca', nome: 'Faca', categoria: 'arma-corpo-a-corpo', nt: '0', adamar: 'livre', resumo: 'x', ref: { livro: 'modulo-basico', pagina: 272 }, grade: { porte: 'bolso' } }] };
 assert.match(validar(d).join(String.fromCharCode(10)), /equipamento\/faca: porte inválido "bolso"/);

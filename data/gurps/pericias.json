@@ -30,7 +30,7 @@
           }
         ]
       },
-      "icone": "pegada"
+      "icone": "acrobatic"
     },
     {
       "id": "adaga-de-esgrima",
@@ -77,7 +77,7 @@
         ]
       },
       "nota_predefinido": "Basic Set B208; o cabeçalho da tabela em PT não trouxe esta perícia",
-      "icone": "espadas-cruzadas"
+      "icone": "custom:faca"
     },
     {
       "id": "adestramento-de-animais",
@@ -103,7 +103,7 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "paw"
     },
     {
       "id": "adivinhacao",
@@ -139,7 +139,7 @@
           }
         ]
       },
-      "icone": "olho"
+      "icone": "cards"
     },
     {
       "id": "administracao",
@@ -170,7 +170,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "briefcase"
     },
     {
       "id": "alquimia",
@@ -190,7 +190,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "flask"
     },
     {
       "id": "alvenaria",
@@ -216,7 +216,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "trowel"
     },
     {
       "id": "antropologia",
@@ -253,7 +253,7 @@
           }
         ]
       },
-      "icone": "livro",
+      "icone": "book",
       "especializacoes": [
         {
           "nome": "Própria espécie (Humano)",
@@ -298,7 +298,7 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "search"
     },
     {
       "id": "analise-de-mercado",
@@ -334,7 +334,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "chart-line"
     },
     {
       "id": "aparar-armas-de-projetil",
@@ -354,7 +354,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "sword"
     },
     {
       "id": "arco",
@@ -380,7 +380,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "bow"
     },
     {
       "id": "arma-de-arremesso",
@@ -407,7 +407,7 @@
         ],
         "parcial": true
       },
-      "icone": "espadas-cruzadas",
+      "icone": "target-arrow",
       "especializacoes": [
         {
           "nome": "Arpão",
@@ -469,7 +469,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "target-arrow"
     },
     {
       "id": "armas-de-feixe",
@@ -495,7 +495,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "bolt"
     },
     {
       "id": "armas-de-fogo",
@@ -521,7 +521,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "flame"
     },
     {
       "id": "armas-de-haste",
@@ -562,7 +562,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "custom:lanca"
     },
     {
       "id": "armeiro",
@@ -594,7 +594,7 @@
           }
         ]
       },
-      "icone": "martelo",
+      "icone": "custom:bigorna",
       "especializacoes": [
         {
           "nome": "Armas de Combate Corpo a Corpo",
@@ -650,7 +650,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "bow"
     },
     {
       "id": "arqueologia",
@@ -676,7 +676,7 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "building-monument"
     },
     {
       "id": "arquitetura",
@@ -708,7 +708,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "ruler"
     },
     {
       "id": "arremedo",
@@ -735,7 +735,7 @@
         ],
         "parcial": true
       },
-      "icone": "mascaras",
+      "icone": "masks-theater",
       "especializacoes": [
         {
           "nome": "Chamados dos Pássaros",
@@ -782,7 +782,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "custom:lanca"
     },
     {
       "id": "arremesso",
@@ -813,7 +813,7 @@
           }
         ]
       },
-      "icone": "pegada"
+      "icone": "target-arrow"
     },
     {
       "id": "arrombamento",
@@ -839,7 +839,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "lock-open"
     },
     {
       "id": "arte-da-invisibilidade",
@@ -859,7 +859,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "ghost"
     },
     {
       "id": "arte-do-arremesso",
@@ -879,7 +879,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "target-arrow"
     },
     {
       "id": "arte-erotica",
@@ -910,7 +910,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "heart"
     },
     {
       "id": "artilharia",
@@ -936,7 +936,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas",
+      "icone": "target",
       "especializacoes": [
         {
           "nome": "Catapulta",
@@ -990,7 +990,7 @@
           }
         ]
       },
-      "icone": "martelo",
+      "icone": "palette",
       "especializacoes": [
         {
           "nome": "Arte Corporal",
@@ -1069,7 +1069,7 @@
           }
         ]
       },
-      "icone": "mascaras",
+      "icone": "news",
       "especializacoes": [
         {
           "nome": "Alta Cultura",
@@ -1139,7 +1139,7 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "telescope"
     },
     {
       "id": "ataque-inato",
@@ -1165,7 +1165,7 @@
           }
         ]
       },
-      "icone": "olho"
+      "icone": "bolt"
     },
     {
       "id": "atuacao",
@@ -1201,7 +1201,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "masks-theater"
     },
     {
       "id": "auto-hipnose",
@@ -1227,7 +1227,7 @@
           }
         ]
       },
-      "icone": "olho"
+      "icone": "whirl"
     },
     {
       "id": "bastao",
@@ -1263,7 +1263,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "sword"
     },
     {
       "id": "besta",
@@ -1289,7 +1289,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "custom:besta"
     },
     {
       "id": "bioengenharia",
@@ -1315,7 +1315,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "dna"
     },
     {
       "id": "biologia",
@@ -1346,7 +1346,7 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "microscope"
     },
     {
       "id": "bloqueio-mental",
@@ -1377,7 +1377,7 @@
           }
         ]
       },
-      "icone": "olho"
+      "icone": "brain"
     },
     {
       "id": "boleadeira",
@@ -1397,7 +1397,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "espadas-cruzadas"
+      "icone": "lasso"
     },
     {
       "id": "boxe",
@@ -1417,7 +1417,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "espadas-cruzadas"
+      "icone": "hand-grab"
     },
     {
       "id": "boemia",
@@ -1443,7 +1443,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "beer"
     },
     {
       "id": "briga",
@@ -1463,7 +1463,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "espadas-cruzadas"
+      "icone": "hand-grab"
     },
     {
       "id": "caminhada",
@@ -1489,7 +1489,7 @@
           }
         ]
       },
-      "icone": "pegada"
+      "icone": "walk"
     },
     {
       "id": "camuflagem",
@@ -1520,7 +1520,7 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "leaf"
     },
     {
       "id": "canhoneiro",
@@ -1546,7 +1546,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "bolt"
     },
     {
       "id": "canto",
@@ -1572,7 +1572,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "custom:boca-falando"
     },
     {
       "id": "capa",
@@ -1609,7 +1609,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "wind"
     },
     {
       "id": "captacao",
@@ -1635,7 +1635,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "ear"
     },
     {
       "id": "carate",
@@ -1655,7 +1655,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "espadas-cruzadas"
+      "icone": "karate"
     },
     {
       "id": "carpintaria",
@@ -1681,7 +1681,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "chisel"
     },
     {
       "id": "carregamento",
@@ -1713,7 +1713,7 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "horse"
     },
     {
       "id": "carroceiro",
@@ -1751,7 +1751,7 @@
           }
         ]
       },
-      "icone": "folha",
+      "icone": "caravan",
       "especializacoes": [
         {
           "nome": "Equinos",
@@ -1806,7 +1806,7 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "map"
     },
     {
       "id": "cavalgar",
@@ -1838,7 +1838,7 @@
           }
         ]
       },
-      "icone": "folha",
+      "icone": "horse",
       "especializacoes": [
         {
           "nome": "Cavalo",
@@ -1894,7 +1894,7 @@
         ],
         "especial": "Chicote Monofio-3"
       },
-      "icone": "espadas-cruzadas"
+      "icone": "lasso"
     },
     {
       "id": "ciclismo",
@@ -1926,7 +1926,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "bike"
     },
     {
       "id": "cirurgia",
@@ -1967,7 +1967,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "scissors"
     },
     {
       "id": "ciencia-estranha",
@@ -1987,7 +1987,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "engrenagem"
+      "icone": "flask"
     },
     {
       "id": "composicao-musical",
@@ -2014,7 +2014,7 @@
         ],
         "especial": "Poesia-2 para canções"
       },
-      "icone": "martelo"
+      "icone": "music"
     },
     {
       "id": "comercio",
@@ -2050,7 +2050,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "coin"
     },
     {
       "id": "conducao",
@@ -2081,7 +2081,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "car"
     },
     {
       "id": "conhecimento-das-ervas",
@@ -2101,7 +2101,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "leaf"
     },
     {
       "id": "conhecimento-do-terreno",
@@ -2133,7 +2133,7 @@
           }
         ]
       },
-      "icone": "folha",
+      "icone": "map",
       "especializacoes": [
         {
           "nome": "Vizinhança",
@@ -2198,7 +2198,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho",
+      "icone": "skull",
       "especializacoes": [
         {
           "nome": "Conhecimento Demoníaco",
@@ -2246,7 +2246,7 @@
         ],
         "parcial": true
       },
-      "icone": "mascaras",
+      "icone": "glass-full",
       "especializacoes": [
         {
           "nome": "Artes Visuais",
@@ -2308,7 +2308,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "tool"
     },
     {
       "id": "contabilidade",
@@ -2350,7 +2350,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "calculator"
     },
     {
       "id": "contrabando",
@@ -2376,7 +2376,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "briefcase"
     },
     {
       "id": "controle-da-respiracao",
@@ -2396,7 +2396,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "pegada"
+      "icone": "wind"
     },
     {
       "id": "controle-das-funcoes-involuntarias",
@@ -2416,7 +2416,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "brain"
     },
     {
       "id": "controle-de-carregamento",
@@ -2442,7 +2442,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "truck"
     },
     {
       "id": "corrida",
@@ -2468,7 +2468,7 @@
           }
         ]
       },
-      "icone": "pegada"
+      "icone": "run"
     },
     {
       "id": "costura",
@@ -2494,7 +2494,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "needle"
     },
     {
       "id": "criminologia",
@@ -2525,7 +2525,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "fingerprint"
     },
     {
       "id": "criptografia",
@@ -2552,7 +2552,7 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "lock"
     },
     {
       "id": "cuidados-com-a-casa",
@@ -2578,7 +2578,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "home"
     },
     {
       "id": "culinaria",
@@ -2609,7 +2609,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "chef-hat"
     },
     {
       "id": "cultivo",
@@ -2645,7 +2645,7 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "seedling"
     },
     {
       "id": "danca",
@@ -2671,7 +2671,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "music"
     },
     {
       "id": "desenho-de-simbolos",
@@ -2692,7 +2692,7 @@
         "caminhos": [],
         "especial": "Especial"
       },
-      "icone": "olho",
+      "icone": "signature",
       "especializacoes": [
         {
           "nome": "Vudu",
@@ -2724,7 +2724,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "sparkles"
     },
     {
       "id": "desviar",
@@ -2744,7 +2744,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "wind"
     },
     {
       "id": "deteccao-de-mentiras",
@@ -2780,7 +2780,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "eye"
     },
     {
       "id": "diagnose",
@@ -2821,7 +2821,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "stethoscope"
     },
     {
       "id": "digitacao",
@@ -2848,7 +2848,7 @@
         ],
         "parcial": true
       },
-      "icone": "engrenagem"
+      "icone": "braces"
     },
     {
       "id": "diplomacia",
@@ -2879,7 +2879,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "users"
     },
     {
       "id": "disfarce",
@@ -2910,7 +2910,7 @@
           }
         ]
       },
-      "icone": "gazua",
+      "icone": "spy",
       "especializacoes": [
         {
           "nome": "Própria espécie (Humano)",
@@ -2962,7 +2962,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "masks-theater"
     },
     {
       "id": "economia",
@@ -3003,7 +3003,7 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "coin"
     },
     {
       "id": "eletricista",
@@ -3035,7 +3035,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "bolt"
     },
     {
       "id": "encenacao-de-combate",
@@ -3062,7 +3062,7 @@
         ],
         "especial": "Arte-2; Esporte de Combate-2; uma perícia de combate verdadeira-3"
       },
-      "icone": "mascaras"
+      "icone": "masks-theater"
     },
     {
       "id": "engenharia",
@@ -3083,7 +3083,7 @@
         "caminhos": [],
         "especial": "Especial"
       },
-      "icone": "martelo",
+      "icone": "ruler",
       "especializacoes": [
         {
           "nome": "Engenharia Civil",
@@ -3171,7 +3171,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "mascaras"
+      "icone": "flame"
     },
     {
       "id": "entrada-forcada",
@@ -3191,7 +3191,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "gazua"
+      "icone": "lock-open"
     },
     {
       "id": "escalada",
@@ -3217,7 +3217,7 @@
           }
         ]
       },
-      "icone": "pegada"
+      "icone": "mountain"
     },
     {
       "id": "escrita",
@@ -3243,7 +3243,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "pencil"
     },
     {
       "id": "escudo",
@@ -3269,7 +3269,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas",
+      "icone": "shield",
       "especializacoes": [
         {
           "nome": "Escudo",
@@ -3317,7 +3317,7 @@
         ],
         "especial": "Espada de Energia-4"
       },
-      "icone": "espadas-cruzadas"
+      "icone": "sword"
     },
     {
       "id": "espada-de-lamina-larga",
@@ -3364,7 +3364,7 @@
         ],
         "especial": "Espada de Energia-4"
       },
-      "icone": "espadas-cruzadas"
+      "icone": "sword"
     },
     {
       "id": "espadas-curtas",
@@ -3421,7 +3421,7 @@
         ],
         "especial": "Espada de Energia-3"
       },
-      "icone": "espadas-cruzadas"
+      "icone": "sword"
     },
     {
       "id": "esportes",
@@ -3448,7 +3448,7 @@
         ],
         "parcial": true
       },
-      "icone": "pegada"
+      "icone": "run-sprint"
     },
     {
       "id": "esqui",
@@ -3474,7 +3474,7 @@
           }
         ]
       },
-      "icone": "pegada"
+      "icone": "ice-skating"
     },
     {
       "id": "estrategia",
@@ -3510,7 +3510,7 @@
           }
         ]
       },
-      "icone": "livro",
+      "icone": "chess",
       "especializacoes": [
         {
           "nome": "Terrestre",
@@ -3556,7 +3556,7 @@
           }
         ]
       },
-      "icone": "olho"
+      "icone": "ghost"
     },
     {
       "id": "explosivos",
@@ -3583,7 +3583,7 @@
         ],
         "parcial": true
       },
-      "icone": "engrenagem"
+      "icone": "flame"
     },
     {
       "id": "faca",
@@ -3620,7 +3620,7 @@
         ],
         "especial": "Espada de Energia-3"
       },
-      "icone": "espadas-cruzadas"
+      "icone": "custom:faca"
     },
     {
       "id": "falcoaria",
@@ -3652,7 +3652,7 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "feather"
     },
     {
       "id": "falsificacao",
@@ -3683,7 +3683,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "signature"
     },
     {
       "id": "falsificacao-de-dinheiro",
@@ -3714,7 +3714,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "coin-off"
     },
     {
       "id": "farmacia",
@@ -3741,7 +3741,7 @@
         ],
         "parcial": true
       },
-      "icone": "martelo"
+      "icone": "pill"
     },
     {
       "id": "ferreiro",
@@ -3768,7 +3768,7 @@
         ],
         "parcial": true
       },
-      "icone": "martelo",
+      "icone": "custom:bigorna",
       "especializacoes": [
         {
           "nome": "Cobre",
@@ -3809,7 +3809,7 @@
           }
         ]
       },
-      "icone": "livro",
+      "icone": "book",
       "especializacoes": [
         {
           "nome": "Estoicismo",
@@ -3862,7 +3862,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "receipt"
     },
     {
       "id": "fisiologia",
@@ -3903,7 +3903,7 @@
           }
         ]
       },
-      "icone": "livro",
+      "icone": "heartbeat",
       "especializacoes": [
         {
           "nome": "Humano",
@@ -3935,7 +3935,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "brain"
     },
     {
       "id": "fotografia",
@@ -3967,7 +3967,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "camera"
     },
     {
       "id": "fuga",
@@ -3993,7 +3993,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "lock-open"
     },
     {
       "id": "funda",
@@ -4019,7 +4019,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "target-arrow"
     },
     {
       "id": "furtividade",
@@ -4050,7 +4050,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "eye-off"
     },
     {
       "id": "fisica",
@@ -4076,7 +4076,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "atom"
     },
     {
       "id": "garrote",
@@ -4102,7 +4102,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "lasso"
     },
     {
       "id": "geografia",
@@ -4129,7 +4129,7 @@
         ],
         "parcial": true
       },
-      "icone": "livro"
+      "icone": "map"
     },
     {
       "id": "geologia",
@@ -4166,7 +4166,7 @@
           }
         ]
       },
-      "icone": "livro",
+      "icone": "mountain",
       "especializacoes": [
         {
           "nome": "Tipo Terra",
@@ -4214,7 +4214,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "bolt"
     },
     {
       "id": "golpe-poderoso",
@@ -4234,7 +4234,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "bolt"
     },
     {
       "id": "habilidade-com-nos",
@@ -4265,7 +4265,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "lasso"
     },
     {
       "id": "hacking-de-computador",
@@ -4285,7 +4285,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "engrenagem"
+      "icone": "lock-open"
     },
     {
       "id": "heraldica",
@@ -4317,7 +4317,7 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "shield"
     },
     {
       "id": "hipnotismo",
@@ -4337,7 +4337,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "whirl"
     },
     {
       "id": "historia",
@@ -4363,7 +4363,7 @@
           }
         ]
       },
-      "icone": "livro",
+      "icone": "book",
       "especializacoes": [
         {
           "nome": "Região limitada, várias eras (ex.: Irlanda)",
@@ -4395,7 +4395,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "music"
     },
     {
       "id": "instrumentos-musicais",
@@ -4416,7 +4416,7 @@
         "caminhos": [],
         "especial": "Especial"
       },
-      "icone": "martelo",
+      "icone": "piano",
       "especializacoes": [
         {
           "nome": "Harpa",
@@ -4477,7 +4477,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "question-mark"
     },
     {
       "id": "intimidacao",
@@ -4508,7 +4508,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "mood-angry"
     },
     {
       "id": "jardinagem",
@@ -4539,7 +4539,7 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "seedling"
     },
     {
       "id": "jitte-sai",
@@ -4577,7 +4577,7 @@
         "especial": "Espada de Energia-4"
       },
       "nota_predefinido": "Basic Set B208; o cabeçalho da tabela em PT não trouxe esta perícia",
-      "icone": "espadas-cruzadas"
+      "icone": "shield"
     },
     {
       "id": "joalheiro",
@@ -4615,7 +4615,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "diamond"
     },
     {
       "id": "jogos-de-azar",
@@ -4647,7 +4647,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "dice"
     },
     {
       "id": "jogos-de-entretenimento",
@@ -4673,7 +4673,7 @@
           }
         ]
       },
-      "icone": "mascaras",
+      "icone": "cards",
       "especializacoes": [
         {
           "nome": "Xadrez",
@@ -4733,7 +4733,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "espadas-cruzadas"
+      "icone": "hand-grab"
     },
     {
       "id": "jurisprudencia",
@@ -4759,7 +4759,7 @@
           }
         ]
       },
-      "icone": "livro",
+      "icone": "scale",
       "especializacoes": [
         {
           "nome": "Região + área do direito (ex.: Criminal de um reino)",
@@ -4799,7 +4799,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "custom:boca-falando"
     },
     {
       "id": "kusari",
@@ -4836,7 +4836,7 @@
         ],
         "especial": "Chicote Monofio-3"
       },
-      "icone": "espadas-cruzadas"
+      "icone": "custom:mangual"
     },
     {
       "id": "lanca",
@@ -4872,7 +4872,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "custom:lanca"
     },
     {
       "id": "lanca-de-justa",
@@ -4903,7 +4903,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "custom:lanca"
     },
     {
       "id": "lavagem-cerebral",
@@ -4924,7 +4924,7 @@
         "caminhos": [],
         "especial": "Especial"
       },
-      "icone": "mascaras"
+      "icone": "brain"
     },
     {
       "id": "laco",
@@ -4944,7 +4944,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "espadas-cruzadas"
+      "icone": "lasso"
     },
     {
       "id": "leitura-dinamica",
@@ -4964,7 +4964,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "livro"
+      "icone": "book"
     },
     {
       "id": "leitura-labial",
@@ -4990,7 +4990,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "eye"
     },
     {
       "id": "levantamento",
@@ -5010,7 +5010,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "hand-grab"
     },
     {
       "id": "lideranca",
@@ -5036,7 +5036,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "flag"
     },
     {
       "id": "linguagem-corporal",
@@ -5067,7 +5067,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "eye"
     },
     {
       "id": "linguistica",
@@ -5087,7 +5087,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "livro"
+      "icone": "book"
     },
     {
       "id": "literatura",
@@ -5113,7 +5113,7 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "book"
     },
     {
       "id": "luta-greco-romana",
@@ -5133,7 +5133,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "espadas-cruzadas"
+      "icone": "hand-grab"
     },
     {
       "id": "lutar-as-cegas",
@@ -5153,7 +5153,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "eye-off"
     },
     {
       "id": "labia",
@@ -5184,7 +5184,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "custom:boca-falando"
     },
     {
       "id": "magia-ritualistica",
@@ -5211,7 +5211,7 @@
           }
         ]
       },
-      "icone": "olho",
+      "icone": "sparkles",
       "especializacoes": [
         {
           "nome": "Vudu",
@@ -5250,7 +5250,7 @@
         ],
         "parcial": true
       },
-      "icone": "folha",
+      "icone": "sailboat",
       "especializacoes": [
         {
           "nome": "Navio",
@@ -5310,7 +5310,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "custom:mangual"
     },
     {
       "id": "mangual-de-duas-maos",
@@ -5351,7 +5351,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "custom:mangual"
     },
     {
       "id": "manha",
@@ -5377,7 +5377,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "spy"
     },
     {
       "id": "maquiagem",
@@ -5408,7 +5408,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "brush"
     },
     {
       "id": "maquinista",
@@ -5440,7 +5440,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "settings"
     },
     {
       "id": "marinhagem",
@@ -5466,7 +5466,7 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "anchor"
     },
     {
       "id": "matematica",
@@ -5493,7 +5493,7 @@
         ],
         "parcial": true
       },
-      "icone": "livro",
+      "icone": "calculator",
       "especializacoes": [
         {
           "nome": "Matemática Aplicada",
@@ -5547,7 +5547,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "biohazard"
     },
     {
       "id": "maca-machado",
@@ -5583,7 +5583,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "custom:maca-arma"
     },
     {
       "id": "maca-machado-de-duas-maos",
@@ -5624,7 +5624,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "custom:maca-arma"
     },
     {
       "id": "mecanica",
@@ -5661,7 +5661,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "settings"
     },
     {
       "id": "medicina",
@@ -5697,7 +5697,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "stethoscope"
     },
     {
       "id": "medicina-alternativa",
@@ -5723,7 +5723,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "leaf"
     },
     {
       "id": "meditacao",
@@ -5754,7 +5754,7 @@
           }
         ]
       },
-      "icone": "olho"
+      "icone": "moon"
     },
     {
       "id": "mendicancia",
@@ -5790,7 +5790,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "coin"
     },
     {
       "id": "mergulho",
@@ -5817,7 +5817,7 @@
         ],
         "especial": "Traje de Mergulho-2"
       },
-      "icone": "engrenagem"
+      "icone": "swimming"
     },
     {
       "id": "metalurgia",
@@ -5854,7 +5854,7 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "custom:bigorna"
     },
     {
       "id": "meteorologia",
@@ -5880,7 +5880,7 @@
           }
         ]
       },
-      "icone": "folha",
+      "icone": "wind",
       "especializacoes": [
         {
           "nome": "Noção do Clima (NT≤4, sem especialização)",
@@ -5922,7 +5922,7 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "horse"
     },
     {
       "id": "mimica-pantomima",
@@ -5948,7 +5948,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "masks-theater"
     },
     {
       "id": "natacao",
@@ -5974,7 +5974,7 @@
           }
         ]
       },
-      "icone": "pegada"
+      "icone": "swimming"
     },
     {
       "id": "naturalista",
@@ -6005,7 +6005,7 @@
           }
         ]
       },
-      "icone": "folha",
+      "icone": "leaf",
       "especializacoes": [
         {
           "nome": "Planeta natal (Adamar)",
@@ -6038,7 +6038,7 @@
         "caminhos": [],
         "especial": "Especial"
       },
-      "icone": "folha",
+      "icone": "compass",
       "especializacoes": [
         {
           "nome": "Terra",
@@ -6094,7 +6094,7 @@
         ],
         "parcial": true
       },
-      "icone": "engrenagem"
+      "icone": "binoculars"
     },
     {
       "id": "observacao",
@@ -6125,7 +6125,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "eye"
     },
     {
       "id": "ocultamento",
@@ -6156,7 +6156,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "eye-off"
     },
     {
       "id": "ocultismo",
@@ -6182,7 +6182,7 @@
           }
         ]
       },
-      "icone": "olho"
+      "icone": "skull"
     },
     {
       "id": "operacao-de-aparelhos-eletronicos",
@@ -6209,7 +6209,7 @@
         ],
         "especial": "Conserto de"
       },
-      "icone": "engrenagem"
+      "icone": "bolt"
     },
     {
       "id": "operacao-de-computadores",
@@ -6235,7 +6235,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "binary"
     },
     {
       "id": "oratoria",
@@ -6276,7 +6276,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "custom:boca-falando"
     },
     {
       "id": "paleontologia",
@@ -6303,7 +6303,7 @@
         ],
         "parcial": true
       },
-      "icone": "engrenagem"
+      "icone": "bone"
     },
     {
       "id": "paraquedismo",
@@ -6329,7 +6329,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "parachute"
     },
     {
       "id": "passos-leves",
@@ -6349,7 +6349,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "feather"
     },
     {
       "id": "patinacao",
@@ -6375,7 +6375,7 @@
           }
         ]
       },
-      "icone": "pegada"
+      "icone": "ice-skating"
     },
     {
       "id": "pedagogia",
@@ -6401,7 +6401,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "book"
     },
     {
       "id": "percepcao-do-corpo",
@@ -6432,7 +6432,7 @@
           }
         ]
       },
-      "icone": "pegada"
+      "icone": "heartbeat"
     },
     {
       "id": "performance-em-grupo",
@@ -6459,7 +6459,7 @@
         ],
         "parcial": true
       },
-      "icone": "mascaras",
+      "icone": "users",
       "especializacoes": [
         {
           "nome": "Condução de Orquestra",
@@ -6516,7 +6516,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "walk"
     },
     {
       "id": "pericia-abrangente",
@@ -6536,7 +6536,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "livro",
+      "icone": "book",
       "especializacoes": [
         {
           "nome": "Ciência Militar",
@@ -6616,7 +6616,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "fingerprint"
     },
     {
       "id": "pericia-profissional",
@@ -6647,7 +6647,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "tool"
     },
     {
       "id": "pescaria",
@@ -6673,7 +6673,7 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "fish-hook"
     },
     {
       "id": "pesquisa",
@@ -6704,7 +6704,7 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "search"
     },
     {
       "id": "pilotagem",
@@ -6730,7 +6730,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "plane"
     },
     {
       "id": "poesia",
@@ -6761,7 +6761,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "pencil"
     },
     {
       "id": "politica",
@@ -6792,7 +6792,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "crown"
     },
     {
       "id": "pontos-de-pressao",
@@ -6812,7 +6812,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "target"
     },
     {
       "id": "pontos-secretos",
@@ -6832,7 +6832,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "target-arrow"
     },
     {
       "id": "postura-imovel",
@@ -6852,7 +6852,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "mountain"
     },
     {
       "id": "prestidigitacao",
@@ -6878,7 +6878,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "wand"
     },
     {
       "id": "primeiros-socorros",
@@ -6919,7 +6919,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "first-aid-kit"
     },
     {
       "id": "programacao-de-computadores",
@@ -6939,7 +6939,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "engrenagem"
+      "icone": "source-code"
     },
     {
       "id": "projetor-de-liquidos",
@@ -6965,7 +6965,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "droplet"
     },
     {
       "id": "propaganda",
@@ -7001,7 +7001,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "speakerphone"
     },
     {
       "id": "prospeccao",
@@ -7033,7 +7033,7 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "shovel"
     },
     {
       "id": "psicologia",
@@ -7064,7 +7064,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "brain"
     },
     {
       "id": "punga",
@@ -7100,7 +7100,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "hand-grab"
     },
     {
       "id": "queda-livre",
@@ -7131,7 +7131,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "parachute"
     },
     {
       "id": "quimica",
@@ -7162,7 +7162,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "flask"
     },
     {
       "id": "rapieira",
@@ -7208,7 +7208,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "sword"
     },
     {
       "id": "rastreamento",
@@ -7239,7 +7239,7 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "paw"
     },
     {
       "id": "rede",
@@ -7265,7 +7265,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "sword"
     },
     {
       "id": "remo-vela",
@@ -7296,7 +7296,7 @@
           }
         ]
       },
-      "icone": "folha",
+      "icone": "sailboat",
       "especializacoes": [
         {
           "nome": "Sem Motor",
@@ -7346,7 +7346,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "search"
     },
     {
       "id": "ritual-religioso",
@@ -7379,7 +7379,7 @@
           }
         ]
       },
-      "icone": "livro",
+      "icone": "book",
       "especializacoes": [
         {
           "nome": "Panteão de Roestia",
@@ -7452,7 +7452,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "sword"
     },
     {
       "id": "sacar-rapido",
@@ -7472,7 +7472,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "espadas-cruzadas",
+      "icone": "sword",
       "especializacoes": [
         {
           "nome": "Espada",
@@ -7528,7 +7528,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "pegada"
+      "icone": "wind"
     },
     {
       "id": "salto-voador",
@@ -7548,7 +7548,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "olho"
+      "icone": "wind"
     },
     {
       "id": "sex-appeal",
@@ -7574,7 +7574,7 @@
           }
         ]
       },
-      "icone": "mascaras"
+      "icone": "heart"
     },
     {
       "id": "sobrevivencia",
@@ -7606,7 +7606,7 @@
           }
         ]
       },
-      "icone": "folha",
+      "icone": "tent",
       "especializacoes": [
         {
           "nome": "Ártico",
@@ -7704,7 +7704,7 @@
           }
         ]
       },
-      "icone": "folha"
+      "icone": "building"
     },
     {
       "id": "sociologia",
@@ -7740,7 +7740,7 @@
           }
         ]
       },
-      "icone": "livro"
+      "icone": "users"
     },
     {
       "id": "soldado",
@@ -7766,7 +7766,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "shield"
     },
     {
       "id": "soltar",
@@ -7797,7 +7797,7 @@
           }
         ]
       },
-      "icone": "pegada"
+      "icone": "droplet"
     },
     {
       "id": "sonhos",
@@ -7823,7 +7823,7 @@
           }
         ]
       },
-      "icone": "olho"
+      "icone": "moon"
     },
     {
       "id": "submarino",
@@ -7849,7 +7849,7 @@
           }
         ]
       },
-      "icone": "engrenagem"
+      "icone": "submarine"
     },
     {
       "id": "sumo",
@@ -7869,7 +7869,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "espadas-cruzadas"
+      "icone": "hand-grab"
     },
     {
       "id": "surrupiar",
@@ -7905,7 +7905,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "hand-grab"
     },
     {
       "id": "taumatologia",
@@ -7931,7 +7931,7 @@
           }
         ]
       },
-      "icone": "olho"
+      "icone": "book"
     },
     {
       "id": "teologia",
@@ -7963,7 +7963,7 @@
           }
         ]
       },
-      "icone": "livro",
+      "icone": "book",
       "especializacoes": [
         {
           "nome": "Panteão de Roestia",
@@ -8029,7 +8029,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "sword"
     },
     {
       "id": "tonfa",
@@ -8061,7 +8061,7 @@
         ]
       },
       "nota_predefinido": "Basic Set B208; o cabeçalho da tabela em PT não trouxe esta perícia",
-      "icone": "espadas-cruzadas"
+      "icone": "sword"
     },
     {
       "id": "trabalhos-em-couro",
@@ -8087,7 +8087,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "scissors"
     },
     {
       "id": "trato-social",
@@ -8114,7 +8114,7 @@
         ],
         "parcial": true
       },
-      "icone": "mascaras",
+      "icone": "users",
       "especializacoes": [
         {
           "nome": "Alta Sociedade",
@@ -8175,7 +8175,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "chess"
     },
     {
       "id": "utilizacao-de-traje-especial",
@@ -8202,7 +8202,7 @@
         ],
         "parcial": true
       },
-      "icone": "engrenagem"
+      "icone": "biohazard"
     },
     {
       "id": "veneficio",
@@ -8244,7 +8244,7 @@
           }
         ]
       },
-      "icone": "gazua"
+      "icone": "flask"
     },
     {
       "id": "ventriloquismo",
@@ -8264,7 +8264,7 @@
       "predefinidos": {
         "caminhos": []
       },
-      "icone": "mascaras"
+      "icone": "custom:boca-falando"
     },
     {
       "id": "veterinaria",
@@ -8301,7 +8301,7 @@
           }
         ]
       },
-      "icone": "martelo"
+      "icone": "paw"
     },
     {
       "id": "voo",
@@ -8327,7 +8327,7 @@
           }
         ]
       },
-      "icone": "olho"
+      "icone": "feather"
     },
     {
       "id": "zarabatana",
@@ -8353,7 +8353,7 @@
           }
         ]
       },
-      "icone": "espadas-cruzadas"
+      "icone": "wind"
     }
   ]
 }

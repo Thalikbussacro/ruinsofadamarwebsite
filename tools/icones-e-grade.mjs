@@ -2,7 +2,8 @@
 // e um tamanho de grade (inventário de Adamar) aos itens que existem em Adamar.
 // Uso: node tools/icones-e-grade.mjs            (só preenche o que falta)
 //      node tools/icones-e-grade.mjs --refazer  (recalcula tudo, perdendo ajustes manuais)
-// Os ícones são chaves ("espada", "escudo"…); o app decide o desenho de cada uma.
+// Os ícones são nomes do Tabler Icons ou "custom:…" (desenho em data/gurps/icones.json, gerado por tools/icones.mjs).
+// Aqui fica só a reserva por família; a escolha item a item foi feita à mão e é preservada.
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -11,16 +12,17 @@ const semAcento = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(
 
 // ---------- ícones ----------
 const ICONE_PERICIA = {
-  combate: 'espadas-cruzadas', corpo: 'pegada', natureza: 'folha', oficio: 'martelo', social: 'mascaras',
-  saber: 'livro', ladinagem: 'gazua', misterio: 'olho', tecnologia: 'engrenagem'
+  combate: 'swords', corpo: 'run', natureza: 'leaf', oficio: 'hammer', social: 'masks-theater',
+  saber: 'book', ladinagem: 'lock-open', misterio: 'eye', tecnologia: 'settings'
 };
 export function iconeTraco(t) {
-  if (t.categoria === 'qualidade') return 'estrela-pequena';
-  if (t.categoria === 'peculiaridade') return 'espiral';
-  if (t.tipo.includes('sobrenatural')) return t.categoria === 'vantagem' ? 'sol' : 'lua-negra';
-  if (t.tipo.includes('exotica')) return 'garra';
-  const base = t.tipo.includes('social') ? 'coroa' : t.tipo.includes('fisica') ? 'punho' : 'mente';
-  return t.categoria === 'desvantagem' ? base + '-rachado' : base;
+  if (t.categoria === 'qualidade') return 'star';
+  if (t.categoria === 'peculiaridade') return 'spiral';
+  if (t.tipo.includes('sobrenatural')) return t.categoria === 'vantagem' ? 'sun' : 'moon';
+  if (t.tipo.includes('exotica')) return 'paw';
+  if (t.tipo.includes('social')) return t.categoria === 'desvantagem' ? 'crown-off' : 'crown';
+  if (t.tipo.includes('fisica')) return t.categoria === 'desvantagem' ? 'hand-off' : 'hand-grab';
+  return t.categoria === 'desvantagem' ? 'mood-sad' : 'brain';
 }
 
 // ---------- tamanho na grade (itens) ----------
@@ -89,19 +91,19 @@ export function gradeItem(item, pesoTexto) {
 }
 
 const ICONE_ITEM = [
-  [/\bsoco\b|\bchute\b|dentes|presas|\bbico\b|golpeador/, 'punho'],
-  [/escudo|golpe com/, 'escudo'], [/capa/, 'capa'],
-  [/espada|sabre|rapieira|tercado|cutelo|katana/, 'espada'], [/faca|facao|adaga|estaca/, 'faca'],
-  [/machad|picareta/, 'machado'], [/maca|malho|martelo|porrete|cassetete|bastao|bordao|nunchaku/, 'maca'],
-  [/mangual|kusari|maca-estrela/, 'mangual'], [/\blanca\b|azagaia|arpao|glaive|naginata|alabarda|haste/, 'lanca'],
-  [/arco/, 'arco'], [/besta/, 'besta'], [/\bfunda\b|fustibalo|zarabatana|boleadeira|\blaco\b|\brede\b|chicote|shuriken|garrote|arremessador/, 'arremesso'],
-  [/scorpion/, 'catapulta'], [/barda/, 'cavalo'], [/balanca/, 'balanca'], [/segadeira/, 'foice'],
-  [/\bpa\b|pe-de-cabra|serra|pedra de amolar|agulhas|ferramentas|laboratorio|arado|carrinho|roca/, 'ferramenta'],
-  [/elmo|celada|barrete|coifa|mascara|capacete/, 'elmo'], [/luva|manopla/, 'luva'], [/sandalia|sapato|bota|solleret/, 'bota'],
-  [/tocha|vela|lampiao|oleo/, 'chama'], [/corda|cordel|arpeu/, 'corda'], [/mochila|algibeira|alforje|aljava/, 'mochila'],
-  [/barraca|cobertor|pelagem/, 'barraca'], [/racao|odre|garrafa/, 'comida'], [/bandage|cirurg|socorros|emergencia/, 'cura'],
-  [/\bsela\b|bridao|estribo|espora|ferradura/, 'ferradura'], [/escriba|tablete|tambor/, 'pergaminho'], [/gazua/, 'gazua'],
-  [/telescopio/, 'luneta']
+  [/\bsoco\b|\bchute\b|dentes|presas|\bbico\b|golpeador/, 'hand-grab'],
+  [/escudo|golpe com/, 'shield'], [/capa/, 'shirt'],
+  [/espada|sabre|rapieira|tercado|cutelo|katana/, 'sword'], [/faca|facao|adaga|estaca/, 'custom:faca'],
+  [/machad|picareta/, 'axe'], [/maca|malho|martelo|porrete|cassetete|bastao|bordao|nunchaku/, 'custom:maca-arma'],
+  [/mangual|kusari|maca-estrela/, 'custom:mangual'], [/\blanca\b|azagaia|arpao|glaive|naginata|alabarda|haste/, 'custom:lanca'],
+  [/arco/, 'bow'], [/besta/, 'custom:besta'], [/\bfunda\b|fustibalo|zarabatana|boleadeira|\blaco\b|\brede\b|chicote|shuriken|garrote|arremessador/, 'target-arrow'],
+  [/scorpion/, 'custom:besta'], [/barda/, 'horse'], [/balanca/, 'scale'], [/segadeira/, 'leaf'],
+  [/\bpa\b|pe-de-cabra|serra|pedra de amolar|agulhas|ferramentas|laboratorio|arado|carrinho|roca/, 'tool'],
+  [/elmo|celada|barrete|coifa|mascara|capacete/, 'helmet'], [/luva|manopla/, 'hand-stop'], [/sandalia|sapato|bota|solleret/, 'shoe'],
+  [/tocha|vela|lampiao|oleo/, 'flame'], [/corda|cordel|arpeu/, 'ladder'], [/mochila|algibeira|alforje|aljava/, 'backpack'],
+  [/barraca|cobertor|pelagem/, 'tent'], [/racao|odre|garrafa/, 'bread'], [/bandage|cirurg|socorros|emergencia/, 'first-aid-kit'],
+  [/\bsela\b|bridao|estribo|espora|ferradura/, 'horseshoe'], [/escriba|tablete|tambor/, 'custom:pergaminho'], [/gazua/, 'lock-open'],
+  [/telescopio/, 'telescope']
 ];
 export function iconeItem(item) {
   const nome = semAcento(item.nome);

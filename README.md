@@ -37,6 +37,7 @@ js/criador-ficha.js  lógica do criador de personagem (custo, NH, limites, aviso
 js/gurps-efeitos.js  texto e etiqueta (aplicado, sempre, condicional, regra) dos efeitos dos traços
 js/personagens-salvos.js  personagens guardados no navegador (localStorage)
 js/personagens.js    Meus personagens: lista e ficha pronta (mesa/personagens.html)
+js/icones.js         desenha o ícone de um item (window.iconeSvg)
 js/criador.js        página do criador de personagem (mesa/criador.html)
 js/dados-gurps.js    GERADO a partir de data/gurps/ — não editar à mão
 data/gurps/          base de conhecimento GURPS em JSON (fonte oficial)
@@ -82,6 +83,7 @@ Para mudar algo (um resumo, uma marcação para Adamar, um item novo), edite o J
 node tools/gerar-dados.mjs
 ```
 
+- `icones.json`: o desenho (SVG 24×24, só contorno) de cada ícone usado no campo `icone` das listas. Vem do [Tabler Icons](https://tabler.io/icons) (MIT), com o link de origem de cada um; os `custom:…` são desenhos próprios em `data/icones-proprios.json`. Depois de trocar ícones, rode `node tools/icones.mjs` e `node tools/gerar-dados.mjs`.
 - `equipamento.json`: armas, armaduras, escudos e equipamento variado, com NT, página e marcação para Adamar. Traz o **preço** (em coroas, só dos itens de Adamar), mas **sem as demais estatísticas** (dano, peso, RD): elas ficam em `data-local/gurps/equipamento-completo.json`, fora do git, porque a política da Steve Jackson Games não permite publicar as tabelas. Para refazer as duas versões a partir das transcrições: `node tools/importar-equipamento.mjs <pasta-das-secoes>` (ou `--precos` para só atualizar os preços); depois `node tools/estruturar-armas.mjs` estrutura os modos de ataque das armas na base local.
 
 Os campos `custo_estruturado` (traços) e `predefinidos` (perícias) são gerados a partir do texto por `node tools/custo-estruturado.mjs` e `node tools/predefinidos.mjs`; rode de novo se mudar o texto de custo ou de pré-definido.
@@ -121,6 +123,7 @@ node tools/estruturar-armas.test.mjs
 node tools/criador-ficha.test.mjs
 node tools/gurps-efeitos.test.mjs
 node tools/personagens-salvos.test.mjs
+node tools/icones.test.mjs
 node tools/gerar-dados.mjs --check
 ```
 

@@ -121,6 +121,8 @@
     art.id = p.id;
     var topo = el('div', 'pericia-topo');
     var nome = el('h3', 'pericia-nome', tipo.titulo(p));
+    var ic = window.iconeSvg && window.iconeSvg(p.icone, 'icone-item');
+    if (ic) nome.insertBefore(ic, nome.firstChild);
     if (p.especializacao) {
       var adaga = el('span', 'pericia-esp', '†');
       adaga.title = 'Exige especialização';

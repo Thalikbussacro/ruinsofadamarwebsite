@@ -8,7 +8,7 @@ import { conferirEfeito, conferirPrerequisito } from './importar-efeitos.mjs';
 
 const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
 const ARQUIVOS = ['livros', 'pericias', 'vantagens', 'desvantagens', 'regras'];
-const OPCIONAIS = ['equipamento'];
+const OPCIONAIS = ['equipamento', 'icones'];
 const SAIDA = join(RAIZ, 'js', 'dados-gurps.js');
 
 const ADAMAR = ['livre', 'narrador', 'nao'];
@@ -84,6 +84,15 @@ export function validar(dados) {
     }
   }
 
+  // todo ícone usado precisa ter desenho em icones.json (gerado por tools/icones.mjs)
+  if (dados.icones) {
+    for (const lista of LISTAS) {
+      for (const it of (dados[lista] && dados[lista].itens) || []) {
+        if (it.icone && !(dados.icones.icones || {})[it.icone]) erros.push(`${lista}/${it.id}: ícone sem desenho "${it.icone}" (rode node tools/icones.mjs)`);
+      }
+    }
+  }
+
   // grade do inventário de Adamar (equipamento)
   for (const it of (dados.equipamento && dados.equipamento.itens) || []) {
     if (it.grade && !['grade', 'longo', 'montaria', 'vestido'].includes(it.grade.porte)) erros.push(`equipamento/${it.id}: porte inválido "${it.grade.porte}"`);
@@ -115,7 +124,9 @@ export function montarJs(dados) {
     livros, regras: dados.regras || null,
     pericias: dados.pericias.itens, vantagens: dados.vantagens.itens, desvantagens: dados.desvantagens.itens,
     equipamento: dados.equipamento ? dados.equipamento.itens : [],
-    adamar: dados.adamar || {}
+    adamar: dados.adamar || {},
+    // só o desenho: nome do ícone → miolo do SVG 24×24
+    icones: dados.icones ? Object.fromEntries(Object.entries(dados.icones.icones).map(([k, v]) => [k, v.svg])) : {}
   };
   return '// ARQUIVO GERADO por tools/gerar-dados.mjs a partir de data/gurps/*.json. Não edite à mão.\n' +
     'window.GURPS = ' + JSON.stringify(GURPS) + ';\n';

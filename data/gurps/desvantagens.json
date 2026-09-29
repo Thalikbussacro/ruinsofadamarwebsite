@@ -25,7 +25,7 @@
         "min": -5,
         "max": -1
       },
-      "icone": "punho-rachado",
+      "icone": "weight",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -86,7 +86,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "mood-neutral",
       "efeitos": [
         {
           "alvo": "regra",
@@ -117,7 +117,7 @@
           -20
         ]
       },
-      "icone": "punho-rachado",
+      "icone": "beer",
       "efeitos": [
         {
           "alvo": "regra",
@@ -158,7 +158,7 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "heart-handshake",
       "efeitos": [
         {
           "alvo": "regra",
@@ -189,7 +189,7 @@
           -10
         ]
       },
-      "icone": "mente-rachado",
+      "icone": "friends",
       "efeitos": [
         {
           "alvo": "teste",
@@ -252,7 +252,7 @@
           -25
         ]
       },
-      "icone": "mente-rachado",
+      "icone": "brain",
       "efeitos": [
         {
           "alvo": "teste",
@@ -300,7 +300,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "book-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -333,7 +333,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "user-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -360,7 +360,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "punho-rachado",
+      "icone": "mask",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -419,7 +419,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "lua-negra",
+      "icone": "paw-off",
       "efeitos": [
         {
           "alvo": "teste",
@@ -453,7 +453,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "lua-negra"
+      "icone": "virus"
     },
     {
       "id": "atavismo-por-estresse",
@@ -473,7 +473,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "paw"
     },
     {
       "id": "atento",
@@ -493,7 +493,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "target",
       "efeitos": [
         {
           "alvo": "teste",
@@ -532,7 +532,7 @@
           -10
         ]
       },
-      "icone": "punho-rachado",
+      "icone": "hand-off",
       "efeitos": [
         {
           "alvo": "teste",
@@ -604,7 +604,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "garra"
+      "icone": "hourglass-low"
     },
     {
       "id": "avareza",
@@ -625,7 +625,7 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "coin-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -669,7 +669,7 @@
         ],
         "maximo": -2
       },
-      "icone": "lua-negra",
+      "icone": "circle-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -697,7 +697,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "circle-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -725,7 +725,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "dice",
       "efeitos": [
         {
           "alvo": "regra",
@@ -758,7 +758,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "mood-sad",
       "efeitos": [
         {
           "alvo": "teste",
@@ -788,7 +788,7 @@
         "tipo": "niveis",
         "por_nivel": -2
       },
-      "icone": "punho-rachado",
+      "icone": "volume-2",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -827,7 +827,7 @@
           -15
         ]
       },
-      "icone": "garra"
+      "icone": "paw"
     },
     {
       "id": "bioquimica-incomum",
@@ -847,7 +847,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado"
+      "icone": "pill"
     },
     {
       "id": "briguento",
@@ -868,7 +868,7 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "swords",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -900,7 +900,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "fingerprint",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -939,7 +939,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "lua-negra"
+      "icone": "ghost"
     },
     {
       "id": "castrado-ou-assexuado",
@@ -959,7 +959,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "gender-genderless",
       "efeitos": [
         {
           "alvo": "regra",
@@ -987,7 +987,7 @@
         "tipo": "fixo",
         "valor": -50
       },
-      "icone": "punho-rachado",
+      "icone": "eye-off",
       "efeitos": [
         {
           "alvo": "teste",
@@ -1038,7 +1038,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado",
+      "icone": "moon-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1076,7 +1076,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "users",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -1105,7 +1105,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "mood-confused",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -1139,7 +1139,7 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "hand-grab",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1168,7 +1168,7 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "coin",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1196,7 +1196,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado",
+      "icone": "mood-sad-2",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1224,7 +1224,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "heart",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1254,7 +1254,7 @@
         "max": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "repeat",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1283,7 +1283,7 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "mood-confused",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1311,7 +1311,7 @@
         "tipo": "niveis",
         "por_nivel": -10
       },
-      "icone": "punho-rachado"
+      "icone": "burger"
     },
     {
       "id": "convulsoes-pos-combate",
@@ -1332,7 +1332,7 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "activity",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1360,7 +1360,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado",
+      "icone": "bone",
       "efeitos": [
         {
           "alvo": "atributo",
@@ -1414,7 +1414,7 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "run",
       "efeitos": [
         {
           "alvo": "teste",
@@ -1450,7 +1450,7 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "circle-check",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -1488,7 +1488,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "bulb",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1516,7 +1516,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "shield-check",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1545,7 +1545,7 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "search",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1579,7 +1579,7 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado",
+      "icone": "book",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1607,7 +1607,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "book",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1635,7 +1635,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado",
+      "icone": "palette-off",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -1689,7 +1689,7 @@
         "min": -30,
         "max": -10
       },
-      "icone": "punho-rachado",
+      "icone": "wheelchair",
       "efeitos": [
         {
           "alvo": "teste",
@@ -1728,7 +1728,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "bandage",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1771,7 +1771,7 @@
         ],
         "maximo": -1
       },
-      "icone": "coroa-rachado",
+      "icone": "baby-carriage",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1823,7 +1823,7 @@
         ],
         "maximo": -1
       },
-      "icone": "garra",
+      "icone": "pill",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1852,7 +1852,7 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "mood-sad",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1883,7 +1883,7 @@
           -15
         ]
       },
-      "icone": "punho-rachado",
+      "icone": "alert-triangle",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1929,7 +1929,7 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "mood-confused",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1958,7 +1958,7 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "masks-theater",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -1990,7 +1990,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "heart-handshake",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2023,7 +2023,7 @@
           -15
         ]
       },
-      "icone": "lua-negra",
+      "icone": "dice",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2069,7 +2069,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "lua-negra",
+      "icone": "leaf-off",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -2107,7 +2107,7 @@
           -15
         ]
       },
-      "icone": "coroa-rachado",
+      "icone": "briefcase",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2163,7 +2163,7 @@
         "min": -40,
         "max": -10
       },
-      "icone": "punho-rachado",
+      "icone": "meat-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2191,7 +2191,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado",
+      "icone": "calculator-off",
       "efeitos": [
         {
           "alvo": "teste",
@@ -2226,7 +2226,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "book-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2254,7 +2254,7 @@
         "tipo": "fixo",
         "valor": -25
       },
-      "icone": "punho-rachado",
+      "icone": "eyeglass",
       "efeitos": [
         {
           "alvo": "teste",
@@ -2288,7 +2288,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado",
+      "icone": "mood-tongue",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2316,7 +2316,7 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "mente-rachado",
+      "icone": "mood-confused",
       "efeitos": [
         {
           "alvo": "teste",
@@ -2350,7 +2350,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "mood-confused",
       "efeitos": [
         {
           "alvo": "teste",
@@ -2384,7 +2384,7 @@
           -55
         ]
       },
-      "icone": "punho-rachado",
+      "icone": "activity",
       "efeitos": [
         {
           "alvo": "teste",
@@ -2449,7 +2449,7 @@
         "min": -100,
         "max": -50
       },
-      "icone": "punho-rachado",
+      "icone": "skull",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2483,7 +2483,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado",
+      "icone": "virus",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -2531,7 +2531,7 @@
         ],
         "maximo": -2
       },
-      "icone": "punho-rachado",
+      "icone": "bandage",
       "efeitos": [
         {
           "alvo": "atributo",
@@ -2571,7 +2571,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado",
+      "icone": "zzz",
       "efeitos": [
         {
           "alvo": "atributo",
@@ -2612,7 +2612,7 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado",
+      "icone": "cross",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2640,7 +2640,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "lua-negra"
+      "icone": "droplet-off"
     },
     {
       "id": "duro-de-ouvido",
@@ -2660,7 +2660,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado",
+      "icone": "ear-off",
       "efeitos": [
         {
           "alvo": "teste",
@@ -2701,7 +2701,7 @@
         "por_nivel": -1,
         "rotulo_nivel": "cada nível = pagamento mensal de 1% extra dos recursos iniciais (até 20 níveis = 20%)"
       },
-      "icone": "coroa-rachado",
+      "icone": "cash-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2735,7 +2735,7 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "user-star",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2764,7 +2764,7 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "garra"
+      "icone": "bolt"
     },
     {
       "id": "embotado",
@@ -2784,7 +2784,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "repeat",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2812,7 +2812,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado",
+      "icone": "mood-sick",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2840,7 +2840,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado"
+      "icone": "mood-sick"
     },
     {
       "id": "enjoo-temporal",
@@ -2860,7 +2860,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado"
+      "icone": "mood-sick"
     },
     {
       "id": "entorpecido",
@@ -2880,7 +2880,7 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "punho-rachado"
+      "icone": "hand-off"
     },
     {
       "id": "enxerido",
@@ -2900,7 +2900,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "eye",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2928,7 +2928,7 @@
         "tipo": "fixo",
         "valor": -30
       },
-      "icone": "punho-rachado",
+      "icone": "activity",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2957,7 +2957,7 @@
         "min": -20,
         "max": -5
       },
-      "icone": "coroa-rachado",
+      "icone": "user-x",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -2992,7 +2992,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "mood-sick",
       "efeitos": [
         {
           "alvo": "teste",
@@ -3023,7 +3023,7 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "trophy",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -3062,7 +3062,7 @@
         "tipo": "niveis",
         "por_nivel": -10
       },
-      "icone": "garra"
+      "icone": "hourglass-low"
     },
     {
       "id": "fanatismo",
@@ -3082,7 +3082,7 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "mente-rachado",
+      "icone": "cross",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3111,7 +3111,7 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado",
+      "icone": "crystal-ball",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -3149,7 +3149,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "crystal-ball",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3177,7 +3177,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado",
+      "icone": "mask",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -3223,7 +3223,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado",
+      "icone": "bandage",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3255,7 +3255,7 @@
           -20
         ]
       },
-      "icone": "mente-rachado",
+      "icone": "history",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3316,7 +3316,7 @@
         "maximo": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "mood-nervous",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3348,7 +3348,7 @@
           -15
         ]
       },
-      "icone": "punho-rachado",
+      "icone": "run",
       "efeitos": [
         {
           "alvo": "teste",
@@ -3445,7 +3445,7 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "punho-rachado"
+      "icone": "ghost"
     },
     {
       "id": "fragilidade",
@@ -3465,7 +3465,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "bone-off"
     },
     {
       "id": "fragilidade-em-aceleracao",
@@ -3485,7 +3485,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "mood-sick"
     },
     {
       "id": "fraqueza",
@@ -3505,7 +3505,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "biohazard"
     },
     {
       "id": "facil-de-decifrar",
@@ -3525,7 +3525,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "eye",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3553,7 +3553,7 @@
         "tipo": "niveis",
         "por_nivel": -2
       },
-      "icone": "punho-rachado",
+      "icone": "skull",
       "efeitos": [
         {
           "alvo": "teste",
@@ -3589,7 +3589,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "flame",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3617,7 +3617,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado",
+      "icone": "custom:boca-falando",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -3663,7 +3663,7 @@
         "tipo": "fixo",
         "valor": 0
       },
-      "icone": "punho-rachado",
+      "icone": "ruler",
       "efeitos": [
         {
           "alvo": "secundaria",
@@ -3713,7 +3713,7 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "burger",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3741,7 +3741,7 @@
         "tipo": "fixo",
         "valor": -30
       },
-      "icone": "punho-rachado",
+      "icone": "droplet",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3774,7 +3774,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado",
+      "icone": "bandage",
       "efeitos": [
         {
           "alvo": "teste",
@@ -3814,7 +3814,7 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "scale",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -3848,7 +3848,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "garra"
+      "icone": "paw"
     },
     {
       "id": "habitos-detestaveis",
@@ -3869,7 +3869,7 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado",
+      "icone": "repeat",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -3899,7 +3899,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "repeat",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3932,7 +3932,7 @@
           -30
         ]
       },
-      "icone": "coroa-rachado",
+      "icone": "spy",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3983,7 +3983,7 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "bolt",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4011,7 +4011,7 @@
         "tipo": "fixo",
         "valor": -30
       },
-      "icone": "mente-rachado"
+      "icone": "brain"
     },
     {
       "id": "incapaz-de-falar",
@@ -4034,7 +4034,7 @@
           -25
         ]
       },
-      "icone": "punho-rachado",
+      "icone": "microphone-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4080,7 +4080,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral"
+      "icone": "anchor"
     },
     {
       "id": "incapaz-de-sentir-prazer",
@@ -4100,7 +4100,7 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "punho-rachado",
+      "icone": "mood-off",
       "efeitos": [
         {
           "alvo": "grupo_pericias",
@@ -4139,7 +4139,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "puzzle-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4173,7 +4173,7 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "switch-horizontal",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4202,7 +4202,7 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "mood-neutral",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4231,7 +4231,7 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "heart-handshake",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4259,7 +4259,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "mood-kid",
       "efeitos": [
         {
           "alvo": "teste",
@@ -4319,7 +4319,7 @@
         "minimo": -60,
         "maximo": -2
       },
-      "icone": "coroa-rachado",
+      "icone": "swords",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4356,7 +4356,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado",
+      "icone": "heart-off",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -4422,7 +4422,7 @@
           -15
         ]
       },
-      "icone": "punho-rachado",
+      "icone": "zzz-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4478,7 +4478,7 @@
         "minimo": -10,
         "maximo": -1
       },
-      "icone": "mente-rachado",
+      "icone": "user-x",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4506,7 +4506,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "beer",
       "efeitos": [
         {
           "alvo": "teste",
@@ -4539,7 +4539,7 @@
           -20
         ]
       },
-      "icone": "punho-rachado"
+      "icone": "gauge"
     },
     {
       "id": "inveja",
@@ -4559,7 +4559,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "eye",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4588,7 +4588,7 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "garra"
+      "icone": "bone-off"
     },
     {
       "id": "irritabilidade",
@@ -4609,7 +4609,7 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "flame",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4637,7 +4637,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "moon",
       "efeitos": [
         {
           "alvo": "teste",
@@ -4672,7 +4672,7 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "flame",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4701,7 +4701,7 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "lua-negra",
+      "icone": "sparkles",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -4734,7 +4734,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado",
+      "icone": "scale-outline",
       "efeitos": [
         {
           "alvo": "teste",
@@ -4785,7 +4785,7 @@
         "tipo": "fixo",
         "valor": -75
       },
-      "icone": "lua-negra"
+      "icone": "dice"
     },
     {
       "id": "maldicao-divina",
@@ -4821,7 +4821,7 @@
         ],
         "maximo": -5
       },
-      "icone": "lua-negra",
+      "icone": "cross",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4849,7 +4849,7 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "punho-rachado",
+      "icone": "hand-off",
       "efeitos": [
         {
           "alvo": "teste",
@@ -4883,7 +4883,7 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "punho-rachado",
+      "icone": "hand-off",
       "efeitos": [
         {
           "alvo": "teste",
@@ -4921,7 +4921,7 @@
           -50
         ]
       },
-      "icone": "garra"
+      "icone": "hand-off"
     },
     {
       "id": "manutencao",
@@ -4940,7 +4940,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "punho-rachado"
+      "icone": "settings"
     },
     {
       "id": "maniaco-depressivo",
@@ -4960,7 +4960,7 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "mente-rachado",
+      "icone": "switch-vertical",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4989,7 +4989,7 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado",
+      "icone": "fingerprint",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5017,7 +5017,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "fingerprint",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5045,7 +5045,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado",
+      "icone": "wind",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -5083,7 +5083,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "crown",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -5121,7 +5121,7 @@
         "tipo": "fixo",
         "valor": -40
       },
-      "icone": "mente-rachado"
+      "icone": "lock"
     },
     {
       "id": "mente-aberta",
@@ -5141,7 +5141,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "bulb",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5170,7 +5170,7 @@
         "tipo": "fixo",
         "valor": -2
       },
-      "icone": "garra"
+      "icone": "bone-off"
     },
     {
       "id": "mudanca-de-personalidade",
@@ -5190,7 +5190,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "masks-theater",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5218,7 +5218,7 @@
         "tipo": "niveis",
         "por_nivel": -5
       },
-      "icone": "punho-rachado"
+      "icone": "hand-off"
     },
     {
       "id": "nanismo",
@@ -5238,7 +5238,7 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "punho-rachado",
+      "icone": "ruler",
       "efeitos": [
         {
           "alvo": "secundaria",
@@ -5288,7 +5288,7 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "alert-triangle",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -5327,7 +5327,7 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "garra"
+      "icone": "moon"
     },
     {
       "id": "nt-baixo",
@@ -5347,7 +5347,7 @@
         "tipo": "niveis",
         "por_nivel": -5
       },
-      "icone": "mente-rachado",
+      "icone": "tools",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5375,7 +5375,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado"
+      "icone": "puzzle-off"
     },
     {
       "id": "oblivio",
@@ -5395,7 +5395,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado",
+      "icone": "mood-confused",
       "efeitos": [
         {
           "alvo": "grupo_pericias",
@@ -5446,7 +5446,7 @@
         ],
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "target",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5486,7 +5486,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "target",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5514,7 +5514,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "crown",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5548,7 +5548,7 @@
           -30
         ]
       },
-      "icone": "mente-rachado",
+      "icone": "sword-off",
       "efeitos": [
         {
           "alvo": "teste",
@@ -5611,7 +5611,7 @@
         "tipo": "fixo",
         "valor": -100
       },
-      "icone": "garra"
+      "icone": "hourglass-low"
     },
     {
       "id": "paralisia-frente-ao-combate",
@@ -5631,7 +5631,7 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "punho-rachado",
+      "icone": "alert-triangle",
       "efeitos": [
         {
           "alvo": "teste",
@@ -5669,7 +5669,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "eye",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -5702,7 +5702,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "walk",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -5737,7 +5737,7 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "ghost",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5766,7 +5766,7 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "flame",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5793,7 +5793,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa-rachado",
+      "icone": "coin-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5827,7 +5827,7 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "mente-rachado",
+      "icone": "heart-off",
       "efeitos": [
         {
           "alvo": "grupo_pericias",
@@ -5886,7 +5886,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "heart",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5914,7 +5914,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "mente-rachado",
+      "icone": "bed-flat",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5945,7 +5945,7 @@
           -25
         ]
       },
-      "icone": "punho-rachado",
+      "icone": "bone-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5985,7 +5985,7 @@
         "tipo": "niveis",
         "por_nivel": -5
       },
-      "icone": "punho-rachado",
+      "icone": "bandage",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6019,7 +6019,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "garra"
+      "icone": "burger"
     },
     {
       "id": "reprogramavel",
@@ -6040,7 +6040,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "garra"
+      "icone": "robot"
     },
     {
       "id": "repugnancia",
@@ -6062,7 +6062,7 @@
         "min": -15,
         "max": -5
       },
-      "icone": "lua-negra"
+      "icone": "biohazard"
     },
     {
       "id": "reputacao-ruim",
@@ -6098,7 +6098,7 @@
         "minimo": -20,
         "maximo": -1
       },
-      "icone": "coroa-rachado",
+      "icone": "user-x",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -6128,7 +6128,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "beer",
       "efeitos": [
         {
           "alvo": "teste",
@@ -6163,7 +6163,7 @@
         "valor": -15,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "skull",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -6199,7 +6199,7 @@
           -10
         ]
       },
-      "icone": "punho-rachado"
+      "icone": "snowflake"
     },
     {
       "id": "sanguinolencia",
@@ -6220,7 +6220,7 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "skull",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6249,7 +6249,7 @@
         "min": -30,
         "max": -5
       },
-      "icone": "coroa-rachado",
+      "icone": "spy",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6277,7 +6277,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado",
+      "icone": "bulb-off",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -6319,7 +6319,7 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "punho-rachado",
+      "icone": "ruler-off",
       "efeitos": [
         {
           "alvo": "atributo",
@@ -6360,7 +6360,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "wheelchair"
     },
     {
       "id": "sem-recuperacao",
@@ -6384,7 +6384,7 @@
           -30
         ]
       },
-      "icone": "garra"
+      "icone": "bandage-off"
     },
     {
       "id": "sem-um-dedo",
@@ -6407,7 +6407,7 @@
           -5
         ]
       },
-      "icone": "punho-rachado",
+      "icone": "hand-off",
       "efeitos": [
         {
           "alvo": "atributo",
@@ -6458,7 +6458,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "garra"
+      "icone": "bone"
     },
     {
       "id": "senso-do-dever",
@@ -6479,7 +6479,7 @@
         "min": -20,
         "max": -2
       },
-      "icone": "mente-rachado",
+      "icone": "heart-handshake",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -6517,7 +6517,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "friends",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6546,7 +6546,7 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "user-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6575,7 +6575,7 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "walk",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6603,7 +6603,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "bulb",
       "efeitos": [
         {
           "alvo": "teste",
@@ -6633,7 +6633,7 @@
         "tipo": "niveis",
         "por_nivel": -2
       },
-      "icone": "punho-rachado",
+      "icone": "zzz",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6661,7 +6661,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "punho-rachado",
+      "icone": "zzz-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6689,7 +6689,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "zzz"
     },
     {
       "id": "status-baixo",
@@ -6709,7 +6709,7 @@
         "tipo": "niveis",
         "por_nivel": -5
       },
-      "icone": "coroa-rachado",
+      "icone": "user-x",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6744,7 +6744,7 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "lua-negra",
+      "icone": "brain",
       "efeitos": [
         {
           "alvo": "atributo",
@@ -6784,7 +6784,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "leaf"
     },
     {
       "id": "surdez",
@@ -6804,7 +6804,7 @@
         "tipo": "fixo",
         "valor": -20
       },
-      "icone": "punho-rachado",
+      "icone": "ear-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6833,7 +6833,7 @@
         "tipo": "niveis",
         "por_nivel": -3
       },
-      "icone": "lua-negra",
+      "icone": "sparkles",
       "efeitos": [
         {
           "alvo": "teste",
@@ -6889,7 +6889,7 @@
         "minimo": -20,
         "maximo": -1
       },
-      "icone": "punho-rachado",
+      "icone": "virus",
       "efeitos": [
         {
           "alvo": "teste",
@@ -6929,7 +6929,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado",
+      "icone": "lock",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -6961,7 +6961,7 @@
         "tipo": "niveis",
         "por_nivel": -2
       },
-      "icone": "mente-rachado",
+      "icone": "mood-nervous",
       "efeitos": [
         {
           "alvo": "teste",
@@ -7008,7 +7008,7 @@
         "tipo": "fixo",
         "valor": -80
       },
-      "icone": "punho-rachado"
+      "icone": "wheelchair"
     },
     {
       "id": "timidez",
@@ -7029,7 +7029,7 @@
         "min": -20,
         "max": -5
       },
-      "icone": "mente-rachado",
+      "icone": "user-off",
       "efeitos": [
         {
           "alvo": "grupo_pericias",
@@ -7079,7 +7079,7 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "mente-rachado",
+      "icone": "mask",
       "efeitos": [
         {
           "alvo": "regra",
@@ -7108,7 +7108,7 @@
         "valor": -5,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "message-check",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -7147,7 +7147,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "mente-rachado",
+      "icone": "briefcase",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -7188,7 +7188,7 @@
           -30
         ]
       },
-      "icone": "punho-rachado",
+      "icone": "eyeglass",
       "efeitos": [
         {
           "alvo": "regra",
@@ -7229,7 +7229,7 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado",
+      "icone": "cross",
       "efeitos": [
         {
           "alvo": "regra",
@@ -7257,7 +7257,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "cross",
       "efeitos": [
         {
           "alvo": "regra",
@@ -7285,7 +7285,7 @@
         "tipo": "fixo",
         "valor": -10
       },
-      "icone": "punho-rachado",
+      "icone": "custom:boca-falando",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -7336,7 +7336,7 @@
         "min": -15,
         "max": -5
       },
-      "icone": "mente-rachado",
+      "icone": "ghost",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -7369,7 +7369,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "alert-triangle"
     },
     {
       "id": "vicio",
@@ -7405,7 +7405,7 @@
         "minimo": -45,
         "maximo": -5
       },
-      "icone": "punho-rachado",
+      "icone": "pill",
       "efeitos": [
         {
           "alvo": "regra",
@@ -7433,7 +7433,7 @@
         "tipo": "fixo",
         "valor": -1
       },
-      "icone": "espiral",
+      "icone": "smoking",
       "efeitos": [
         {
           "alvo": "regra",
@@ -7462,7 +7462,7 @@
         "valor": -10,
         "autocontrole": true
       },
-      "icone": "mente-rachado",
+      "icone": "heart",
       "efeitos": [
         {
           "alvo": "teste",
@@ -7497,7 +7497,7 @@
         "tipo": "fixo",
         "valor": -15
       },
-      "icone": "punho-rachado",
+      "icone": "eye-off",
       "efeitos": [
         {
           "alvo": "atributo",
@@ -7543,7 +7543,7 @@
         "tipo": "fixo",
         "valor": -5
       },
-      "icone": "lua-negra"
+      "icone": "fingerprint"
     }
   ]
 }

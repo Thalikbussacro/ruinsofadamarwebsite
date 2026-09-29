@@ -25,7 +25,7 @@
         "tipo": "niveis",
         "por_nivel": 10
       },
-      "icone": "sol"
+      "icone": "wand-off"
     },
     {
       "id": "abascanto-resistencia-a-magia",
@@ -46,7 +46,7 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "sol",
+      "icone": "shield-lock",
       "efeitos": [
         {
           "alvo": "teste",
@@ -103,7 +103,7 @@
         "tipo": "minimo",
         "valor": 10
       },
-      "icone": "sol",
+      "icone": "eye-star",
       "efeitos": [
         {
           "alvo": "regra",
@@ -158,7 +158,7 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena"
+      "icone": "puzzle-2"
     },
     {
       "id": "adaptabilidade-cultural",
@@ -181,7 +181,7 @@
           20
         ]
       },
-      "icone": "mente",
+      "icone": "world",
       "efeitos": [
         {
           "alvo": "regra",
@@ -223,7 +223,7 @@
         "min": 0,
         "max": 5
       },
-      "icone": "garra",
+      "icone": "mountain",
       "efeitos": [
         {
           "alvo": "regra",
@@ -252,7 +252,7 @@
         "tipo": "fixo",
         "valor": 20
       },
-      "icone": "garra"
+      "icone": "spider"
     },
     {
       "id": "aliados",
@@ -291,7 +291,7 @@
         ],
         "minimo": 1
       },
-      "icone": "coroa",
+      "icone": "users-group",
       "efeitos": [
         {
           "alvo": "regra",
@@ -328,7 +328,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "punho",
+      "icone": "hand-click",
       "efeitos": [
         {
           "alvo": "regra",
@@ -357,7 +357,7 @@
         "tipo": "niveis",
         "por_nivel": 50
       },
-      "icone": "sol"
+      "icone": "wand"
     },
     {
       "id": "anfibio",
@@ -377,7 +377,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "punho"
+      "icone": "fish"
     },
     {
       "id": "antecedentes-incomuns",
@@ -412,7 +412,7 @@
         ],
         "minimo": 0
       },
-      "icone": "mente",
+      "icone": "history",
       "efeitos": [
         {
           "alvo": "regra",
@@ -445,7 +445,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "coroa"
+      "icone": "eye-off"
     },
     {
       "id": "aparencia",
@@ -464,7 +464,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "punho",
+      "icone": "eye",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -522,7 +522,7 @@
         "por_nivel": 5,
         "unidade": "apetrecho"
       },
-      "icone": "mente",
+      "icone": "backpack",
       "efeitos": [
         {
           "alvo": "regra",
@@ -553,7 +553,7 @@
         "por_nivel": 10,
         "nivel_min": 0
       },
-      "icone": "sol",
+      "icone": "sparkles",
       "efeitos": [
         {
           "alvo": "regra",
@@ -618,7 +618,7 @@
         "tipo": "fixo",
         "valor": 80
       },
-      "icone": "sol"
+      "icone": "sparkles"
     },
     {
       "id": "ataque-adicional",
@@ -638,7 +638,7 @@
         "tipo": "niveis",
         "por_nivel": 25
       },
-      "icone": "punho"
+      "icone": "swords"
     },
     {
       "id": "ataque-constritivo",
@@ -659,7 +659,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "garra"
+      "icone": "bolt"
     },
     {
       "id": "ataque-inato",
@@ -679,7 +679,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "bolt"
     },
     {
       "id": "atirador",
@@ -699,7 +699,7 @@
         "tipo": "fixo",
         "valor": 25
       },
-      "icone": "mente",
+      "icone": "target-2",
       "efeitos": [
         {
           "alvo": "regra",
@@ -732,7 +732,7 @@
         "tipo": "niveis",
         "por_nivel": 10
       },
-      "icone": "garra"
+      "icone": "flask-2"
     },
     {
       "id": "audicao-discriminatoria",
@@ -753,7 +753,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "garra"
+      "icone": "ear"
     },
     {
       "id": "audicao-parabolica",
@@ -774,7 +774,7 @@
         "tipo": "niveis",
         "por_nivel": 4
       },
-      "icone": "garra"
+      "icone": "ear"
     },
     {
       "id": "audicao-subsonica",
@@ -798,7 +798,7 @@
           5
         ]
       },
-      "icone": "garra"
+      "icone": "ear"
     },
     {
       "id": "autotranse",
@@ -818,7 +818,7 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena",
+      "icone": "moon-stars",
       "efeitos": [
         {
           "alvo": "regra",
@@ -855,7 +855,7 @@
           15
         ]
       },
-      "icone": "punho",
+      "icone": "activity",
       "efeitos": [
         {
           "alvo": "teste",
@@ -919,7 +919,7 @@
         "por_nivel": 5,
         "unidade": "boca"
       },
-      "icone": "garra"
+      "icone": "custom:boca-falando"
     },
     {
       "id": "bom-senso",
@@ -939,7 +939,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "mente",
+      "icone": "brain",
       "efeitos": [
         {
           "alvo": "regra",
@@ -967,7 +967,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "grip-horizontal"
     },
     {
       "id": "cabeca-adicional",
@@ -989,7 +989,7 @@
         "por_nivel": 15,
         "unidade": "cabeça"
       },
-      "icone": "garra"
+      "icone": "users-group"
     },
     {
       "id": "camaleao",
@@ -1010,7 +1010,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "garra"
+      "icone": "palette"
     },
     {
       "id": "camaleao-social",
@@ -1030,7 +1030,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente",
+      "icone": "masks-theater-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1064,7 +1064,7 @@
         "tipo": "fixo",
         "valor": 20
       },
-      "icone": "garra"
+      "icone": "wind"
     },
     {
       "id": "caminhar-sobre-liquidos",
@@ -1085,7 +1085,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "garra"
+      "icone": "droplet-check"
     },
     {
       "id": "canalizacao",
@@ -1106,7 +1106,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "sol",
+      "icone": "ghost-2",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1141,7 +1141,7 @@
         "tipo": "niveis",
         "por_nivel": 1
       },
-      "icone": "garra"
+      "icone": "backpack"
     },
     {
       "id": "carisma",
@@ -1161,7 +1161,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "mente",
+      "icone": "custom:boca-falando",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -1208,7 +1208,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "punho"
+      "icone": "robot"
     },
     {
       "id": "clarisenciencia",
@@ -1229,7 +1229,7 @@
         "tipo": "fixo",
         "valor": 50
       },
-      "icone": "sol"
+      "icone": "radar"
     },
     {
       "id": "clericato",
@@ -1249,7 +1249,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "coroa",
+      "icone": "building-church",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -1282,7 +1282,7 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "punho"
+      "icone": "leaf-off"
     },
     {
       "id": "contatos",
@@ -1317,7 +1317,7 @@
         ],
         "minimo": 1
       },
-      "icone": "coroa",
+      "icone": "phone-call",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1360,7 +1360,7 @@
         "tipo": "fixo",
         "valor": 50
       },
-      "icone": "garra"
+      "icone": "chess-knight"
     },
     {
       "id": "controle-do-metabolismo",
@@ -1381,7 +1381,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "garra",
+      "icone": "heartbeat",
       "efeitos": [
         {
           "alvo": "teste",
@@ -1427,7 +1427,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "mente"
+      "icone": "thermometer"
     },
     {
       "id": "crescimento",
@@ -1448,7 +1448,7 @@
         "tipo": "niveis",
         "por_nivel": 10
       },
-      "icone": "garra"
+      "icone": "trending-up-2"
     },
     {
       "id": "cura",
@@ -1469,7 +1469,7 @@
         "tipo": "fixo",
         "valor": 30
       },
-      "icone": "garra",
+      "icone": "heart-plus",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1504,7 +1504,7 @@
           5
         ]
       },
-      "icone": "mente",
+      "icone": "calculator",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1549,7 +1549,7 @@
           15
         ]
       },
-      "icone": "mente",
+      "icone": "shield-check",
       "efeitos": [
         {
           "alvo": "defesa",
@@ -1626,7 +1626,7 @@
           2
         ]
       },
-      "icone": "garra"
+      "icone": "skull"
     },
     {
       "id": "desenvolvedor",
@@ -1649,7 +1649,7 @@
           50
         ]
       },
-      "icone": "mente",
+      "icone": "atom",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1689,7 +1689,7 @@
         "tipo": "niveis",
         "por_nivel": 20
       },
-      "icone": "punho"
+      "icone": "run-sprint"
     },
     {
       "id": "destemor",
@@ -1709,7 +1709,7 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "mente",
+      "icone": "yin-yang",
       "efeitos": [
         {
           "alvo": "teste",
@@ -1755,7 +1755,7 @@
           15
         ]
       },
-      "icone": "sol",
+      "icone": "star",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1800,7 +1800,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "punho",
+      "icone": "hand-click",
       "efeitos": [
         {
           "alvo": "grupo_pericias",
@@ -1860,7 +1860,7 @@
           30
         ]
       },
-      "icone": "mente",
+      "icone": "radar-2",
       "efeitos": [
         {
           "alvo": "regra",
@@ -1910,7 +1910,7 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "punho",
+      "icone": "shield-check",
       "efeitos": [
         {
           "alvo": "teste",
@@ -1943,7 +1943,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "garra"
+      "icone": "meat"
     },
     {
       "id": "dobra",
@@ -1964,7 +1964,7 @@
         "tipo": "fixo",
         "valor": 100
       },
-      "icone": "sol"
+      "icone": "orbit"
     },
     {
       "id": "dominacao",
@@ -1985,7 +1985,7 @@
         "tipo": "fixo",
         "valor": 20
       },
-      "icone": "sol"
+      "icone": "chess-king"
     },
     {
       "id": "dorminhoco-qualidade",
@@ -2005,7 +2005,7 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena",
+      "icone": "zzz",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2041,7 +2041,7 @@
         "por_nivel": 35,
         "unidade": "cópia"
       },
-      "icone": "garra"
+      "icone": "copy"
     },
     {
       "id": "durabilidade-sobrenatural",
@@ -2062,7 +2062,7 @@
         "tipo": "fixo",
         "valor": 150
       },
-      "icone": "sol"
+      "icone": "shield-star"
     },
     {
       "id": "duro-de-matar",
@@ -2082,7 +2082,7 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "punho",
+      "icone": "shield-check",
       "efeitos": [
         {
           "alvo": "teste",
@@ -2118,7 +2118,7 @@
         "tipo": "variavel",
         "texto": "12 ou 16 por +1"
       },
-      "icone": "punho"
+      "icone": "grip-horizontal"
     },
     {
       "id": "elasticidade",
@@ -2139,7 +2139,7 @@
         "tipo": "niveis",
         "por_nivel": 6
       },
-      "icone": "garra"
+      "icone": "resize"
     },
     {
       "id": "elo-mental",
@@ -2159,7 +2159,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "sol"
+      "icone": "link-plus"
     },
     {
       "id": "empatia",
@@ -2182,7 +2182,7 @@
           15
         ]
       },
-      "icone": "mente",
+      "icone": "heart-plus",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2244,7 +2244,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente",
+      "icone": "paw",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2277,7 +2277,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "sol",
+      "icone": "ghost-3",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2305,7 +2305,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente",
+      "icone": "leaf",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2334,7 +2334,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "garra"
+      "icone": "resize"
     },
     {
       "id": "equilibrio-perfeito",
@@ -2354,7 +2354,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "punho",
+      "icone": "scale-outline",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2404,7 +2404,7 @@
         "por_nivel": 1,
         "rotulo_nivel": "cada ponto compra equipamento (nunca dinheiro) valendo até 50% dos recursos iniciais médios da campanha"
       },
-      "icone": "coroa",
+      "icone": "gift",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2433,7 +2433,7 @@
         "tipo": "variavel",
         "texto": "30 + 5/ponto"
       },
-      "icone": "garra"
+      "icone": "route-2"
     },
     {
       "id": "escorregadio",
@@ -2453,7 +2453,7 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "punho"
+      "icone": "droplet-check"
     },
     {
       "id": "escudo-mental",
@@ -2474,7 +2474,7 @@
         "tipo": "niveis",
         "por_nivel": 4
       },
-      "icone": "sol",
+      "icone": "shield-lock",
       "efeitos": [
         {
           "alvo": "teste",
@@ -2513,7 +2513,7 @@
           3
         ]
       },
-      "icone": "garra"
+      "icone": "cactus"
     },
     {
       "id": "estabilidade-no-emprego",
@@ -2533,7 +2533,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "coroa",
+      "icone": "briefcase",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2561,7 +2561,7 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena",
+      "icone": "shirt",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2590,7 +2590,7 @@
         "tipo": "fixo",
         "valor": 30
       },
-      "icone": "sol"
+      "icone": "wand-off"
     },
     {
       "id": "expectativa-de-vida-ampliada",
@@ -2610,7 +2610,7 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "punho"
+      "icone": "hourglass-high"
     },
     {
       "id": "experiencia-g",
@@ -2631,7 +2631,7 @@
         "min": 1,
         "max": 10
       },
-      "icone": "mente"
+      "icone": "planet"
     },
     {
       "id": "facilidade-para-idiomas",
@@ -2651,7 +2651,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "mente",
+      "icone": "world",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2680,7 +2680,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "garra"
+      "icone": "droplet-check"
     },
     {
       "id": "fala-subsonica",
@@ -2702,7 +2702,7 @@
         "min": 0,
         "max": 10
       },
-      "icone": "garra"
+      "icone": "wave-sine"
     },
     {
       "id": "fala-ultrassonica",
@@ -2726,7 +2726,7 @@
           10
         ]
       },
-      "icone": "garra"
+      "icone": "wave-sine"
     },
     {
       "id": "falar-com-animais",
@@ -2747,7 +2747,7 @@
         "tipo": "fixo",
         "valor": 25
       },
-      "icone": "sol",
+      "icone": "paw",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2782,7 +2782,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "sol"
+      "icone": "leaf"
     },
     {
       "id": "familiaridade-cultural",
@@ -2806,7 +2806,7 @@
         ],
         "unidade": "cultura"
       },
-      "icone": "coroa",
+      "icone": "world",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2850,7 +2850,7 @@
         ],
         "minimo": 1
       },
-      "icone": "coroa",
+      "icone": "heart-handshake",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2882,7 +2882,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "mente",
+      "icone": "yin-yang",
       "efeitos": [
         {
           "alvo": "regra",
@@ -2919,7 +2919,7 @@
           15
         ]
       },
-      "icone": "punho",
+      "icone": "resize",
       "efeitos": [
         {
           "alvo": "grupo_pericias",
@@ -2996,7 +2996,7 @@
         "tipo": "fixo",
         "valor": 50
       },
-      "icone": "garra"
+      "icone": "shadow"
     },
     {
       "id": "fe-verdadeira",
@@ -3017,7 +3017,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "sol",
+      "icone": "building-church",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3050,7 +3050,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "paw"
     },
     {
       "id": "golpeadores",
@@ -3072,7 +3072,7 @@
         "min": 5,
         "max": 8
       },
-      "icone": "garra"
+      "icone": "swords"
     },
     {
       "id": "grupo-de-contato",
@@ -3103,7 +3103,7 @@
         ],
         "minimo": 5
       },
-      "icone": "coroa",
+      "icone": "network",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3136,7 +3136,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "puzzle-2"
     },
     {
       "id": "hermafromorfo",
@@ -3157,7 +3157,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "garra"
+      "icone": "gender-androgyne"
     },
     {
       "id": "hierarquia",
@@ -3177,7 +3177,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "coroa",
+      "icone": "medal",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3215,7 +3215,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "punho",
+      "icone": "shield-check",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3261,7 +3261,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "garra"
+      "icone": "infinity"
     },
     {
       "id": "identidade-alternativa",
@@ -3285,7 +3285,7 @@
         ],
         "unidade": "identidade"
       },
-      "icone": "coroa",
+      "icone": "id-badge",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3329,7 +3329,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa",
+      "icone": "world",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3364,7 +3364,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "sol"
+      "icone": "eye-star"
     },
     {
       "id": "impossivel-de-matar",
@@ -3386,7 +3386,7 @@
         "min": 50,
         "max": 150
       },
-      "icone": "garra"
+      "icone": "shield-star"
     },
     {
       "id": "imunidade-legal",
@@ -3407,7 +3407,7 @@
         "min": 5,
         "max": 20
       },
-      "icone": "coroa",
+      "icone": "gavel",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3444,7 +3444,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "mente",
+      "icone": "shield-lock",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3474,7 +3474,7 @@
         "min": 0,
         "max": 10
       },
-      "icone": "garra"
+      "icone": "thermometer"
     },
     {
       "id": "insubstancialidade",
@@ -3494,7 +3494,7 @@
         "tipo": "fixo",
         "valor": 80
       },
-      "icone": "mente"
+      "icone": "ghost-off"
     },
     {
       "id": "interposicao",
@@ -3514,7 +3514,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "orbit"
     },
     {
       "id": "intuicao",
@@ -3534,7 +3534,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "mente",
+      "icone": "clover",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3563,7 +3563,7 @@
         "tipo": "niveis",
         "por_nivel": 10
       },
-      "icone": "sol",
+      "icone": "eye-star",
       "efeitos": [
         {
           "alvo": "teste",
@@ -3604,7 +3604,7 @@
         "tipo": "fixo",
         "valor": 40
       },
-      "icone": "mente"
+      "icone": "eye-off"
     },
     {
       "id": "inercia-temporal",
@@ -3625,7 +3625,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "sol"
+      "icone": "hourglass-empty"
     },
     {
       "id": "lacrado",
@@ -3646,7 +3646,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "garra"
+      "icone": "shield-check"
     },
     {
       "id": "lamentavel",
@@ -3666,7 +3666,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "coroa",
+      "icone": "mood-sad",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -3696,7 +3696,7 @@
         "tipo": "fixo",
         "valor": 30
       },
-      "icone": "garra"
+      "icone": "brain"
     },
     {
       "id": "longevidade",
@@ -3716,7 +3716,7 @@
         "tipo": "fixo",
         "valor": 2
       },
-      "icone": "punho",
+      "icone": "hourglass-high",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3744,7 +3744,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente",
+      "icone": "custom:boca-falando",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3778,7 +3778,7 @@
         "tipo": "niveis",
         "por_nivel": 1
       },
-      "icone": "garra"
+      "icone": "eye"
     },
     {
       "id": "memoria-eidetica",
@@ -3801,7 +3801,7 @@
           10
         ]
       },
-      "icone": "mente",
+      "icone": "brain",
       "efeitos": [
         {
           "alvo": "regra",
@@ -3858,7 +3858,7 @@
         "min": 15,
         "max": 40
       },
-      "icone": "garra"
+      "icone": "history"
     },
     {
       "id": "mente-digital",
@@ -3879,7 +3879,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "garra"
+      "icone": "robot"
     },
     {
       "id": "mente-segmentada",
@@ -3900,7 +3900,7 @@
         "tipo": "niveis",
         "por_nivel": 50
       },
-      "icone": "garra"
+      "icone": "brain"
     },
     {
       "id": "mestre-de-armas",
@@ -3927,7 +3927,7 @@
           45
         ]
       },
-      "icone": "mente",
+      "icone": "swords",
       "efeitos": [
         {
           "alvo": "dano",
@@ -4013,7 +4013,7 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena",
+      "icone": "droplet-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4046,7 +4046,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "mask"
     },
     {
       "id": "mordida-de-vampiro",
@@ -4067,7 +4067,7 @@
         "tipo": "variavel",
         "texto": "30 + 5/PV"
       },
-      "icone": "garra"
+      "icone": "droplet-check"
     },
     {
       "id": "medium",
@@ -4088,7 +4088,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "sol",
+      "icone": "ghost-3",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4117,7 +4117,7 @@
         "tipo": "fixo",
         "valor": 50
       },
-      "icone": "garra"
+      "icone": "wand-off"
     },
     {
       "id": "nocao-do-perigo",
@@ -4137,7 +4137,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "mente",
+      "icone": "radar",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4171,7 +4171,7 @@
         "tipo": "fixo",
         "valor": 45
       },
-      "icone": "garra"
+      "icone": "hourglass-empty"
     },
     {
       "id": "nocao-exata-do-tempo",
@@ -4194,7 +4194,7 @@
           5
         ]
       },
-      "icone": "mente",
+      "icone": "clock-hour-1",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4234,7 +4234,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "mente"
+      "icone": "robot"
     },
     {
       "id": "nao-come-nem-bebe",
@@ -4255,7 +4255,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "garra"
+      "icone": "leaf-off"
     },
     {
       "id": "nao-dorme",
@@ -4276,7 +4276,7 @@
         "tipo": "fixo",
         "valor": 20
       },
-      "icone": "garra"
+      "icone": "zzz-off"
     },
     {
       "id": "nao-respira",
@@ -4297,7 +4297,7 @@
         "tipo": "fixo",
         "valor": 20
       },
-      "icone": "garra"
+      "icone": "wind-off"
     },
     {
       "id": "obscurecer",
@@ -4318,7 +4318,7 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "garra"
+      "icone": "shadow"
     },
     {
       "id": "obstinado",
@@ -4338,7 +4338,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente",
+      "icone": "contract",
       "efeitos": [
         {
           "alvo": "teste",
@@ -4375,7 +4375,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "garra"
+      "icone": "wind"
     },
     {
       "id": "oraculo",
@@ -4396,7 +4396,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "sol",
+      "icone": "eye-star",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4425,7 +4425,7 @@
         "tipo": "niveis",
         "por_nivel": 100
       },
-      "icone": "garra"
+      "icone": "run-sprint"
     },
     {
       "id": "paladar-discriminatorio",
@@ -4446,7 +4446,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "garra"
+      "icone": "glass-full"
     },
     {
       "id": "patronos",
@@ -4481,7 +4481,7 @@
         ],
         "minimo": 5
       },
-      "icone": "coroa",
+      "icone": "crown",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4520,7 +4520,7 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena"
+      "icone": "paw"
     },
     {
       "id": "pele-elastica",
@@ -4541,7 +4541,7 @@
         "tipo": "fixo",
         "valor": 20
       },
-      "icone": "garra"
+      "icone": "resize"
     },
     {
       "id": "pendulear",
@@ -4562,7 +4562,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "garra"
+      "icone": "grip-horizontal"
     },
     {
       "id": "permissao-de-seguranca",
@@ -4586,7 +4586,7 @@
           15
         ]
       },
-      "icone": "coroa",
+      "icone": "id-badge",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4636,7 +4636,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "run-sprint"
     },
     {
       "id": "poderes-legais",
@@ -4660,7 +4660,7 @@
           15
         ]
       },
-      "icone": "coroa",
+      "icone": "gavel",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4706,7 +4706,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente",
+      "icone": "shirt",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -4740,7 +4740,7 @@
         "tipo": "fixo",
         "valor": 100
       },
-      "icone": "sol"
+      "icone": "ghost-2"
     },
     {
       "id": "pouco-sono",
@@ -4760,7 +4760,7 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "punho",
+      "icone": "zzz",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4789,7 +4789,7 @@
         "tipo": "fixo",
         "valor": 25
       },
-      "icone": "sol"
+      "icone": "eye-star"
     },
     {
       "id": "prender-a-respiracao",
@@ -4810,7 +4810,7 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "garra",
+      "icone": "wind-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4844,7 +4844,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "sol",
+      "icone": "flag-2",
       "efeitos": [
         {
           "alvo": "teste",
@@ -4879,7 +4879,7 @@
         "tipo": "fixo",
         "valor": 20
       },
-      "icone": "sol"
+      "icone": "history"
     },
     {
       "id": "pulmoes-com-filtro",
@@ -4900,7 +4900,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "garra"
+      "icone": "biohazard"
     },
     {
       "id": "queda-de-gato",
@@ -4921,7 +4921,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "garra",
+      "icone": "parachute",
       "efeitos": [
         {
           "alvo": "regra",
@@ -4949,7 +4949,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "punho"
+      "icone": "radar"
     },
     {
       "id": "reconhecimento-social",
@@ -4970,7 +4970,7 @@
         "por_nivel": 5,
         "unidade": "reação"
       },
-      "icone": "coroa",
+      "icone": "medal",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -5010,7 +5010,7 @@
         "min": 5,
         "max": 15
       },
-      "icone": "punho",
+      "icone": "heart-plus",
       "efeitos": [
         {
           "alvo": "teste",
@@ -5061,7 +5061,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "garra",
+      "icone": "activity",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5090,7 +5090,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "sol",
+      "icone": "history",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5123,7 +5123,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "mente",
+      "icone": "bolt",
       "efeitos": [
         {
           "alvo": "defesa",
@@ -5183,7 +5183,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "heart-plus"
     },
     {
       "id": "reivindicar-hospitalidade",
@@ -5204,7 +5204,7 @@
         "min": 1,
         "max": 10
       },
-      "icone": "coroa",
+      "icone": "heart-handshake",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5237,7 +5237,7 @@
         "tipo": "niveis",
         "por_nivel": 1
       },
-      "icone": "coroa",
+      "icone": "coin-euro",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5281,7 +5281,7 @@
         "minimo": 1,
         "maximo": 20
       },
-      "icone": "coroa",
+      "icone": "medal",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -5336,7 +5336,7 @@
         "minimo": 1,
         "maximo": 30
       },
-      "icone": "punho",
+      "icone": "shield-check",
       "efeitos": [
         {
           "alvo": "teste",
@@ -5387,7 +5387,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "garra"
+      "icone": "shield-half"
     },
     {
       "id": "resistencia-ao-vacuo",
@@ -5408,7 +5408,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "garra"
+      "icone": "wind-off"
     },
     {
       "id": "resistencia-a-pressao",
@@ -5430,7 +5430,7 @@
         "min": 5,
         "max": 15
       },
-      "icone": "garra"
+      "icone": "shield-half"
     },
     {
       "id": "restaurar-membros",
@@ -5451,7 +5451,7 @@
         "tipo": "fixo",
         "valor": 40
       },
-      "icone": "garra"
+      "icone": "heart-plus"
     },
     {
       "id": "retencao",
@@ -5472,7 +5472,7 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "garra"
+      "icone": "link-plus"
     },
     {
       "id": "riqueza",
@@ -5491,7 +5491,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "coroa",
+      "icone": "diamond",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5524,7 +5524,7 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena",
+      "icone": "mood-smile",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -5559,7 +5559,7 @@
         "tipo": "fixo",
         "valor": 100
       },
-      "icone": "sol"
+      "icone": "orbit"
     },
     {
       "id": "sem-ressaca",
@@ -5579,7 +5579,7 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena",
+      "icone": "beer-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5610,7 +5610,7 @@
           10
         ]
       },
-      "icone": "punho",
+      "icone": "compass",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -5686,7 +5686,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "radar-2"
     },
     {
       "id": "sentido-de-vibracao",
@@ -5707,7 +5707,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "garra"
+      "icone": "wave-sine"
     },
     {
       "id": "sentido-protegido",
@@ -5729,7 +5729,7 @@
         "por_nivel": 5,
         "unidade": "sentido"
       },
-      "icone": "garra"
+      "icone": "eye-check"
     },
     {
       "id": "sentidos-agucados",
@@ -5749,7 +5749,7 @@
         "tipo": "niveis",
         "por_nivel": 2
       },
-      "icone": "punho",
+      "icone": "eye",
       "efeitos": [
         {
           "alvo": "teste",
@@ -5805,7 +5805,7 @@
         "tipo": "niveis",
         "por_nivel": 15
       },
-      "icone": "mente",
+      "icone": "clover",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5834,7 +5834,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "garra",
+      "icone": "ear-off",
       "efeitos": [
         {
           "alvo": "pericia",
@@ -5873,7 +5873,7 @@
         "tipo": "fixo",
         "valor": 20
       },
-      "icone": "sol"
+      "icone": "brain"
     },
     {
       "id": "sorte",
@@ -5897,7 +5897,7 @@
           60
         ]
       },
-      "icone": "mente",
+      "icone": "dice-6",
       "efeitos": [
         {
           "alvo": "regra",
@@ -5943,7 +5943,7 @@
         "tipo": "variavel",
         "texto": "3, 5 ou 8 por +1"
       },
-      "icone": "garra"
+      "icone": "barbell"
     },
     {
       "id": "st-de-golpe",
@@ -5964,7 +5964,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "garra",
+      "icone": "barbell",
       "efeitos": [
         {
           "alvo": "atributo",
@@ -5995,7 +5995,7 @@
         "tipo": "niveis",
         "por_nivel": 3
       },
-      "icone": "punho",
+      "icone": "barbell",
       "efeitos": [
         {
           "alvo": "atributo",
@@ -6026,7 +6026,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "coroa",
+      "icone": "crown",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -6062,7 +6062,7 @@
         "tipo": "niveis",
         "por_nivel": 3
       },
-      "icone": "garra"
+      "icone": "ladder"
     },
     {
       "id": "super-salto",
@@ -6083,7 +6083,7 @@
         "tipo": "niveis",
         "por_nivel": 10
       },
-      "icone": "garra"
+      "icone": "trending-up-2"
     },
     {
       "id": "super-sorte",
@@ -6104,7 +6104,7 @@
         "tipo": "fixo",
         "valor": 100
       },
-      "icone": "sol"
+      "icone": "dice-6"
     },
     {
       "id": "superaudicao",
@@ -6128,7 +6128,7 @@
           5
         ]
       },
-      "icone": "garra"
+      "icone": "ear"
     },
     {
       "id": "talento",
@@ -6147,7 +6147,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "mente",
+      "icone": "star",
       "efeitos": [
         {
           "alvo": "reacao",
@@ -6187,7 +6187,7 @@
         "tipo": "niveis",
         "por_nivel": 20
       },
-      "icone": "sol"
+      "icone": "sparkle-2"
     },
     {
       "id": "telecinese",
@@ -6207,7 +6207,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "mente"
+      "icone": "magnet"
     },
     {
       "id": "telecomunicacao",
@@ -6226,7 +6226,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "mente"
+      "icone": "radio"
     },
     {
       "id": "terror",
@@ -6247,7 +6247,7 @@
         "tipo": "variavel",
         "texto": "30 + 10/-1"
       },
-      "icone": "sol"
+      "icone": "skull"
     },
     {
       "id": "tolerancia-a-ferimentos",
@@ -6267,7 +6267,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "bandage"
     },
     {
       "id": "tolerancia-ao-alcool",
@@ -6287,7 +6287,7 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena",
+      "icone": "beer",
       "efeitos": [
         {
           "alvo": "teste",
@@ -6321,7 +6321,7 @@
       "custo_estruturado": {
         "tipo": "variavel"
       },
-      "icone": "garra"
+      "icone": "biohazard"
     },
     {
       "id": "tolerancia-a-temperatura",
@@ -6341,7 +6341,7 @@
         "tipo": "niveis",
         "por_nivel": 1
       },
-      "icone": "punho",
+      "icone": "thermometer",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6375,7 +6375,7 @@
         "min": 5,
         "max": 25
       },
-      "icone": "punho"
+      "icone": "planet"
     },
     {
       "id": "toque-sensivel",
@@ -6395,7 +6395,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "punho"
+      "icone": "hand-click"
     },
     {
       "id": "treinado-por-um-mestre",
@@ -6415,7 +6415,7 @@
         "tipo": "fixo",
         "valor": 30
       },
-      "icone": "mente",
+      "icone": "swords",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6455,7 +6455,7 @@
         "min": 5,
         "max": 10
       },
-      "icone": "garra"
+      "icone": "chess-knight"
     },
     {
       "id": "ultravisao",
@@ -6479,7 +6479,7 @@
           10
         ]
       },
-      "icone": "garra"
+      "icone": "eye"
     },
     {
       "id": "venturoso",
@@ -6499,7 +6499,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "mente",
+      "icone": "clover",
       "efeitos": [
         {
           "alvo": "teste",
@@ -6534,7 +6534,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "garra",
+      "icone": "ghost-off",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6562,7 +6562,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "mente",
+      "icone": "puzzle-2",
       "efeitos": [
         {
           "alvo": "teste",
@@ -6610,7 +6610,7 @@
         "por_nivel": 25,
         "unidade": "vida"
       },
-      "icone": "garra"
+      "icone": "infinity"
     },
     {
       "id": "visualizacao",
@@ -6630,7 +6630,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "mente",
+      "icone": "eye",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6659,7 +6659,7 @@
         "tipo": "fixo",
         "valor": 25
       },
-      "icone": "garra"
+      "icone": "eye"
     },
     {
       "id": "visao-hiperespectral",
@@ -6680,7 +6680,7 @@
         "tipo": "fixo",
         "valor": 25
       },
-      "icone": "garra"
+      "icone": "rainbow"
     },
     {
       "id": "visao-microscopica",
@@ -6701,7 +6701,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "garra"
+      "icone": "microscope"
     },
     {
       "id": "visao-no-escuro",
@@ -6722,7 +6722,7 @@
         "tipo": "fixo",
         "valor": 25
       },
-      "icone": "garra"
+      "icone": "moon-2"
     },
     {
       "id": "visao-noturna",
@@ -6742,7 +6742,7 @@
         "tipo": "niveis",
         "por_nivel": 1
       },
-      "icone": "punho",
+      "icone": "moon-stars",
       "efeitos": [
         {
           "alvo": "teste",
@@ -6774,7 +6774,7 @@
         "tipo": "niveis",
         "por_nivel": 10
       },
-      "icone": "garra"
+      "icone": "eye"
     },
     {
       "id": "visao-periferica",
@@ -6794,7 +6794,7 @@
         "tipo": "fixo",
         "valor": 15
       },
-      "icone": "punho",
+      "icone": "eye",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6829,7 +6829,7 @@
         "tipo": "niveis",
         "por_nivel": 5
       },
-      "icone": "garra"
+      "icone": "telescope"
     },
     {
       "id": "voo",
@@ -6850,7 +6850,7 @@
         "tipo": "fixo",
         "valor": 40
       },
-      "icone": "garra"
+      "icone": "feather"
     },
     {
       "id": "voz-melodiosa",
@@ -6870,7 +6870,7 @@
         "tipo": "fixo",
         "valor": 10
       },
-      "icone": "punho",
+      "icone": "vinyl",
       "efeitos": [
         {
           "alvo": "grupo_pericias",
@@ -6913,7 +6913,7 @@
         "tipo": "fixo",
         "valor": 1
       },
-      "icone": "estrela-pequena",
+      "icone": "speakerphone",
       "efeitos": [
         {
           "alvo": "regra",
@@ -6948,7 +6948,7 @@
         "tipo": "fixo",
         "valor": 5
       },
-      "icone": "sol",
+      "icone": "heart-plus",
       "efeitos": [
         {
           "alvo": "regra",

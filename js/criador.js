@@ -516,6 +516,8 @@
         texto.type = 'button';
         texto.setAttribute('aria-expanded', 'false');
         var topo = el('span', 'app-cat-topo');
+        var icCat = window.iconeSvg && window.iconeSvg(it.icone, 'icone-item');
+        if (icCat) topo.appendChild(icCat);
         topo.appendChild(el('strong', null, it.nome));
         if (it.adamar === 'narrador') {
           var m = el('span', 'marca-narrador', '◆');
@@ -752,6 +754,8 @@
         var ef = blocoEfeitos(sel);
         var card = cardRetratil(row, sel, [el('p', 'app-item-meta', t.resumo), controlesDoTraco(sel, t, negativo), ef.no]);
         topo.appendChild(card.botao);
+        var icT = window.iconeSvg && window.iconeSvg(t.icone, 'icone-item');
+        if (icT) topo.appendChild(icT);
         var nome = el('strong', 'app-item-nome', t.nome);
         nome.title = t.resumo;
         nome.addEventListener('click', function () { card.botao.click(); });
@@ -912,6 +916,8 @@
       if (!p) return;
       var row = el('div', 'app-item st-' + p.adamar);
       var topo = el('div', 'app-item-topo');
+      var icP = window.iconeSvg && window.iconeSvg(p.icone, 'icone-item');
+      if (icP) topo.appendChild(icP);
       var nome = el('strong', 'app-item-nome', p.nome);
       nome.title = p.resumo;
       topo.appendChild(nome);
@@ -1002,6 +1008,8 @@
       if (!it) return;
       var row = el('div', 'app-item st-' + it.adamar);
       var topo = el('div', 'app-item-topo');
+      var icE = window.iconeSvg && window.iconeSvg(it.icone, 'icone-item');
+      if (icE) topo.appendChild(icE);
       topo.appendChild(el('strong', 'app-item-nome', it.nome));
       topo.appendChild(el('span', 'app-item-cat', textoPreco(it)));
       var custoItem = el('span', 'criador-custo');

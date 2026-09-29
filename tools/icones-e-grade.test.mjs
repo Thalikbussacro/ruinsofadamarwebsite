@@ -2,16 +2,16 @@ import assert from 'node:assert/strict';
 import { iconeItem, gradeItem, iconeTraco } from './icones-e-grade.mjs';
 
 const it = (nome, categoria = 'equipamento', extra = {}) => ({ nome, categoria, adamar: 'livre', ...extra });
-assert.equal(iconeItem(it('Kit de Primeiros Socorros')), 'cura');   // não é "soco"
-assert.equal(iconeItem(it('Bridão e Rédea')), 'ferradura');          // não é "rede"
-assert.equal(iconeItem(it('Balança e Pesos')), 'balanca');           // não é "lança"
-assert.equal(iconeItem(it('Espada Larga', 'arma-corpo-a-corpo')), 'espada');
-assert.equal(iconeItem(it('Escudo Médio', 'escudo')), 'escudo');
-assert.equal(iconeItem(it('Soco', 'arma-corpo-a-corpo')), 'punho');
-assert.equal(iconeItem(it('Pá')), 'ferramenta');
-assert.equal(iconeItem(it('Sela e Arreios')), 'ferradura');
-assert.equal(iconeItem(it('Lança', 'arma-corpo-a-corpo')), 'lanca');
-assert.equal(iconeItem(it('Rede de Combate', 'arma-distancia')), 'arremesso');
+assert.equal(iconeItem(it('Kit de Primeiros Socorros')), 'first-aid-kit');   // não é "soco"
+assert.equal(iconeItem(it('Bridão e Rédea')), 'horseshoe');          // não é "rede"
+assert.equal(iconeItem(it('Balança e Pesos')), 'scale');           // não é "lança"
+assert.equal(iconeItem(it('Espada Larga', 'arma-corpo-a-corpo')), 'sword');
+assert.equal(iconeItem(it('Escudo Médio', 'escudo')), 'shield');
+assert.equal(iconeItem(it('Soco', 'arma-corpo-a-corpo')), 'hand-grab');
+assert.equal(iconeItem(it('Pá')), 'tool');
+assert.equal(iconeItem(it('Sela e Arreios')), 'horseshoe');
+assert.equal(iconeItem(it('Lança', 'arma-corpo-a-corpo')), 'custom:lanca');
+assert.equal(iconeItem(it('Rede de Combate', 'arma-distancia')), 'target-arrow');
 
 assert.deepEqual(gradeItem(it('Faca', 'arma-corpo-a-corpo')), { porte: 'grade', largura: 1, altura: 2 });
 assert.deepEqual(gradeItem(it('Lança', 'arma-corpo-a-corpo')), { porte: 'longo' });
@@ -22,8 +22,8 @@ assert.deepEqual(gradeItem(it('Cota de Malha Longa', 'armadura', { subcategoria:
 assert.equal(gradeItem(it('Soco', 'arma-corpo-a-corpo')), null);   // ataque natural
 assert.equal(gradeItem(it('Pistola', 'arma-de-fogo', { adamar: 'nao' })), null);
 
-assert.equal(iconeTraco({ categoria: 'vantagem', tipo: ['mental'] }), 'mente');
-assert.equal(iconeTraco({ categoria: 'desvantagem', tipo: ['fisica'] }), 'punho-rachado');
-assert.equal(iconeTraco({ categoria: 'vantagem', tipo: ['mental', 'sobrenatural'] }), 'sol');
-assert.equal(iconeTraco({ categoria: 'peculiaridade', tipo: ['mental'] }), 'espiral');
+assert.equal(iconeTraco({ categoria: 'vantagem', tipo: ['mental'] }), 'brain');
+assert.equal(iconeTraco({ categoria: 'desvantagem', tipo: ['fisica'] }), 'hand-off');
+assert.equal(iconeTraco({ categoria: 'vantagem', tipo: ['mental', 'sobrenatural'] }), 'sun');
+assert.equal(iconeTraco({ categoria: 'peculiaridade', tipo: ['mental'] }), 'spiral');
 console.log('icones-e-grade ok');

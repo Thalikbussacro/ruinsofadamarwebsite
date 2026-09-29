@@ -1928,22 +1928,31 @@ body[data-secao="inicio"] .hero p:not(.lede):not(.kicker) { text-shadow: 0 1px 8
 /* Cantos: ilustrações esmaecidas nas margens laterais, só quando sobra espaço ao redor da moldura. */
 .deco { display: none; }
 @media (min-width: 1360px) {
+  /* ocupam a margem inteira, de cima a baixo, e ficam paradas enquanto a página rola */
   .deco {
     display: block;
     position: fixed;
+    top: 0;
     bottom: 0;
     z-index: -1;
-    width: clamp(13rem, calc((100vw - 62rem) / 2), 24rem);
-    aspect-ratio: 4 / 5;
+    width: calc((100vw - 54rem) / 2);
     background: var(--deco-img) center / cover no-repeat;
-    opacity: 0.4;
+    opacity: 0.38;
     filter: sepia(0.35) saturate(0.75) brightness(0.8);
-    -webkit-mask-image: radial-gradient(ellipse 72% 70% at 50% 58%, #000 30%, transparent 74%);
-    mask-image: radial-gradient(ellipse 72% 70% at 50% 58%, #000 30%, transparent 74%);
     pointer-events: none;
   }
-  .deco-esq { left: 0; --deco-img: var(--deco-esq); }
-  .deco-dir { right: 0; --deco-img: var(--deco-dir); }
+  .deco-esq {
+    left: 0;
+    --deco-img: var(--deco-esq);
+    -webkit-mask-image: linear-gradient(90deg, #000 45%, transparent 100%);
+    mask-image: linear-gradient(90deg, #000 45%, transparent 100%);
+  }
+  .deco-dir {
+    right: 0;
+    --deco-img: var(--deco-dir);
+    -webkit-mask-image: linear-gradient(270deg, #000 45%, transparent 100%);
+    mask-image: linear-gradient(270deg, #000 45%, transparent 100%);
+  }
 }
 body.modo-app .deco { display: none; }
 @media print { .deco { display: none !important; } }
@@ -1955,3 +1964,10 @@ body.modo-app .deco { display: none; }
 .creditos-lista img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; filter: sepia(0.2); }
 .creditos-lista p { margin: 0; padding: 0.55rem 0.7rem 0.7rem; font-size: 0.98rem; line-height: 1.45; }
 .creditos-lista strong { color: var(--osso-claro); }
+
+/* ícones dos itens (Tabler Icons e desenhos próprios, só contorno) */
+.icone { display: inline-block; flex: none; width: 1.15em; height: 1.15em; vertical-align: -0.2em; }
+.icone-item { margin-right: 0.4em; color: var(--ouro-claro); opacity: 0.9; }
+.pericia-nome .icone-item { width: 1.25em; height: 1.25em; }
+.app-cat-topo .icone-item, .app-item-topo .icone-item { margin-right: 0; width: 1.2rem; height: 1.2rem; }
+.st-narrador .icone-item { color: var(--osso); }

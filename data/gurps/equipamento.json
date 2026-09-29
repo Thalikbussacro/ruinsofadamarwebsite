@@ -19,7 +19,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "machado",
+      "icone": "axe",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -42,7 +42,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "machado",
+      "icone": "axe",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -65,7 +65,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "machado",
+      "icone": "axe",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -88,7 +88,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "maca",
+      "icone": "custom:maca-arma",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -111,7 +111,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "maca",
+      "icone": "custom:maca-arma",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -134,7 +134,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "machado",
+      "icone": "custom:maca-arma",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -157,7 +157,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "punho",
+      "icone": "hand-grab",
       "grade": null
     },
     {
@@ -173,7 +173,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "punho",
+      "icone": "hand-grab",
       "grade": null,
       "preco": {
         "valor": 10
@@ -192,7 +192,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "punho",
+      "icone": "footsteps",
       "grade": null
     },
     {
@@ -208,7 +208,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "punho",
+      "icone": "footsteps",
       "grade": null
     },
     {
@@ -224,7 +224,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "punho",
+      "icone": "dental",
       "grade": null
     },
     {
@@ -240,7 +240,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "punho",
+      "icone": "dental",
       "grade": null
     },
     {
@@ -256,7 +256,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "punho",
+      "icone": "dental",
       "grade": null
     },
     {
@@ -272,7 +272,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "punho",
+      "icone": "dental",
       "grade": null
     },
     {
@@ -288,7 +288,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "punho",
+      "icone": "paw",
       "grade": null
     },
     {
@@ -304,7 +304,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "maca",
+      "icone": "hammer",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -327,7 +327,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "arma",
+      "icone": "bolt",
       "grade": null
     },
     {
@@ -343,7 +343,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "maca",
+      "icone": "hammer",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -366,7 +366,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -389,7 +389,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -412,7 +412,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -435,7 +435,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -458,7 +458,7 @@
         "livro": "modulo-basico",
         "pagina": 271
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -481,7 +481,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "maca",
+      "icone": "custom:mangual",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -504,7 +504,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "maca",
+      "icone": "custom:mangual",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -527,7 +527,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": null
     },
     {
@@ -543,7 +543,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "arremesso",
+      "icone": "lasso",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -566,7 +566,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "faca",
+      "icone": "custom:faca",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -589,7 +589,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "faca",
+      "icone": "custom:faca",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -612,7 +612,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "faca",
+      "icone": "custom:faca",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -635,7 +635,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "faca",
+      "icone": "custom:faca",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -658,7 +658,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "mangual",
+      "icone": "custom:mangual",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -681,7 +681,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "lanca",
+      "icone": "custom:lanca",
       "grade": {
         "porte": "longo"
       },
@@ -702,7 +702,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "arremesso",
+      "icone": "lasso",
       "grade": null
     },
     {
@@ -718,7 +718,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "lanca",
+      "icone": "custom:lanca",
       "grade": {
         "porte": "longo"
       },
@@ -739,7 +739,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "lanca",
+      "icone": "custom:lanca",
       "grade": {
         "porte": "longo"
       },
@@ -760,7 +760,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "lanca",
+      "icone": "custom:lanca",
       "grade": {
         "porte": "longo"
       },
@@ -781,7 +781,7 @@
         "livro": "modulo-basico",
         "pagina": 272
       },
-      "icone": "machado",
+      "icone": "axe",
       "grade": {
         "porte": "longo"
       },
@@ -802,7 +802,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -825,7 +825,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -848,7 +848,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "escudo",
+      "icone": "shield",
       "grade": null
     },
     {
@@ -864,7 +864,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "escudo",
+      "icone": "shield",
       "grade": null,
       "preco": {
         "valor": 20,
@@ -884,7 +884,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "maca",
+      "icone": "hammer",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -907,7 +907,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -930,7 +930,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -953,7 +953,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "arma",
+      "icone": "bolt",
       "grade": null
     },
     {
@@ -969,7 +969,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "maca",
+      "icone": "hammer",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -992,7 +992,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1015,7 +1015,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "lanca",
+      "icone": "custom:lanca",
       "grade": {
         "porte": "longo"
       },
@@ -1036,7 +1036,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "lanca",
+      "icone": "custom:lanca",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1059,7 +1059,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "lanca",
+      "icone": "custom:lanca",
       "grade": {
         "porte": "longo"
       },
@@ -1080,7 +1080,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "maca",
+      "icone": "hammer",
       "grade": {
         "porte": "longo"
       },
@@ -1101,7 +1101,7 @@
         "livro": "modulo-basico",
         "pagina": 273
       },
-      "icone": "lanca",
+      "icone": "custom:lanca",
       "grade": {
         "porte": "longo"
       },
@@ -1122,7 +1122,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "maca",
+      "icone": "custom:maca-arma",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -1145,7 +1145,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "machado",
+      "icone": "axe",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -1168,7 +1168,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "foice",
+      "icone": "axe",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -1191,7 +1191,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "maca",
+      "icone": "custom:maca-arma",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -1214,7 +1214,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "ferramenta",
+      "icone": "bolt",
       "grade": null
     },
     {
@@ -1230,7 +1230,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "mangual",
+      "icone": "custom:mangual",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -1253,7 +1253,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "maca",
+      "icone": "hammer",
       "grade": {
         "porte": "longo"
       },
@@ -1274,7 +1274,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "lanca",
+      "icone": "custom:lanca",
       "grade": {
         "porte": "longo"
       },
@@ -1295,7 +1295,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1318,7 +1318,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1341,7 +1341,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1364,7 +1364,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1387,7 +1387,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "espada",
+      "icone": "sword",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1410,7 +1410,7 @@
         "livro": "modulo-basico",
         "pagina": 274
       },
-      "icone": "arremesso",
+      "icone": "lasso",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -1433,7 +1433,7 @@
         "livro": "modulo-basico",
         "pagina": 275
       },
-      "icone": "arremesso",
+      "icone": "bow",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1456,7 +1456,7 @@
         "livro": "modulo-basico",
         "pagina": 275
       },
-      "icone": "arremesso",
+      "icone": "orbit",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -1479,7 +1479,7 @@
         "livro": "modulo-basico",
         "pagina": 275
       },
-      "icone": "arco",
+      "icone": "bow",
       "grade": {
         "porte": "longo"
       },
@@ -1500,7 +1500,7 @@
         "livro": "modulo-basico",
         "pagina": 275
       },
-      "icone": "arco",
+      "icone": "bow",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1523,7 +1523,7 @@
         "livro": "modulo-basico",
         "pagina": 275
       },
-      "icone": "arco",
+      "icone": "bow",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1546,7 +1546,7 @@
         "livro": "modulo-basico",
         "pagina": 275
       },
-      "icone": "arco",
+      "icone": "bow",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1569,7 +1569,7 @@
         "livro": "modulo-basico",
         "pagina": 275
       },
-      "icone": "capa",
+      "icone": "jacket",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -1592,7 +1592,7 @@
         "livro": "modulo-basico",
         "pagina": 275
       },
-      "icone": "capa",
+      "icone": "jacket",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -1615,7 +1615,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "besta",
+      "icone": "custom:besta",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -1638,7 +1638,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "besta",
+      "icone": "custom:besta",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -1661,7 +1661,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "besta",
+      "icone": "custom:besta",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -1684,7 +1684,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "besta",
+      "icone": "custom:besta",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1707,7 +1707,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "arremesso",
+      "icone": "lasso",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -1730,7 +1730,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "arremesso",
+      "icone": "lasso",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -1753,7 +1753,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "arremesso",
+      "icone": "lasso",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -1776,7 +1776,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "arremesso",
+      "icone": "lasso",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1799,7 +1799,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "arremesso",
+      "icone": "lasso",
       "grade": {
         "porte": "longo"
       },
@@ -1820,7 +1820,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "lanca",
+      "icone": "custom:lanca",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1843,7 +1843,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "machado",
+      "icone": "axe",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1866,7 +1866,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "machado",
+      "icone": "axe",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -1889,7 +1889,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "maca",
+      "icone": "custom:maca-arma",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -1912,7 +1912,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "maca",
+      "icone": "custom:maca-arma",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1935,7 +1935,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "lanca",
+      "icone": "fish-hook",
       "grade": {
         "porte": "longo"
       },
@@ -1956,7 +1956,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "faca",
+      "icone": "custom:faca",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -1979,7 +1979,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "faca",
+      "icone": "custom:faca",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -2002,7 +2002,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "faca",
+      "icone": "custom:faca",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -2025,7 +2025,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "faca",
+      "icone": "custom:faca",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -2048,7 +2048,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "arremesso",
+      "icone": "asterisk-simple",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -2071,7 +2071,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "lanca",
+      "icone": "custom:lanca",
       "grade": {
         "porte": "longo"
       },
@@ -2092,7 +2092,7 @@
         "livro": "modulo-basico",
         "pagina": 276
       },
-      "icone": "lanca",
+      "icone": "custom:lanca",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -2115,7 +2115,7 @@
         "livro": "modulo-basico",
         "pagina": 277
       },
-      "icone": "arma",
+      "icone": "bomb",
       "grade": null
     },
     {
@@ -2131,7 +2131,7 @@
         "livro": "modulo-basico",
         "pagina": 277
       },
-      "icone": "arma",
+      "icone": "bomb",
       "grade": null
     },
     {
@@ -2147,7 +2147,7 @@
         "livro": "modulo-basico",
         "pagina": 277
       },
-      "icone": "arma",
+      "icone": "bomb",
       "grade": null
     },
     {
@@ -2163,7 +2163,7 @@
         "livro": "modulo-basico",
         "pagina": 277
       },
-      "icone": "arma",
+      "icone": "flame",
       "grade": null
     },
     {
@@ -2179,7 +2179,7 @@
         "livro": "modulo-basico",
         "pagina": 277
       },
-      "icone": "arma",
+      "icone": "biohazard",
       "grade": null
     },
     {
@@ -2195,7 +2195,7 @@
         "livro": "modulo-basico",
         "pagina": 277
       },
-      "icone": "arma",
+      "icone": "bomb",
       "grade": null
     },
     {
@@ -2211,7 +2211,7 @@
         "livro": "modulo-basico",
         "pagina": 277
       },
-      "icone": "arma",
+      "icone": "bomb",
       "grade": null
     },
     {
@@ -2227,7 +2227,7 @@
         "livro": "modulo-basico",
         "pagina": 277
       },
-      "icone": "arma",
+      "icone": "bomb",
       "grade": null
     },
     {
@@ -2243,7 +2243,7 @@
         "livro": "modulo-basico",
         "pagina": 277
       },
-      "icone": "arma",
+      "icone": "bolt",
       "grade": null
     },
     {
@@ -2259,7 +2259,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2275,7 +2275,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2291,7 +2291,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2307,7 +2307,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2323,7 +2323,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2339,7 +2339,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2355,7 +2355,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2371,7 +2371,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2387,7 +2387,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2403,7 +2403,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2419,7 +2419,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2435,7 +2435,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2451,7 +2451,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2467,7 +2467,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2483,7 +2483,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -2499,7 +2499,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "rocket",
       "grade": null
     },
     {
@@ -2515,7 +2515,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "viewfinder",
       "grade": null
     },
     {
@@ -2531,7 +2531,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "viewfinder",
       "grade": null
     },
     {
@@ -2547,7 +2547,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "viewfinder",
       "grade": null
     },
     {
@@ -2563,7 +2563,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "viewfinder",
       "grade": null
     },
     {
@@ -2579,7 +2579,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "viewfinder",
       "grade": null
     },
     {
@@ -2595,7 +2595,7 @@
         "livro": "modulo-basico",
         "pagina": 278
       },
-      "icone": "arma",
+      "icone": "viewfinder",
       "grade": null
     },
     {
@@ -2611,7 +2611,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target-2",
       "grade": null
     },
     {
@@ -2627,7 +2627,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target-2",
       "grade": null
     },
     {
@@ -2643,7 +2643,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target-2",
       "grade": null
     },
     {
@@ -2659,7 +2659,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2675,7 +2675,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2691,7 +2691,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "chama",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2707,7 +2707,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2723,7 +2723,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2739,7 +2739,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2755,7 +2755,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2771,7 +2771,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2787,7 +2787,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2803,7 +2803,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2819,7 +2819,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2835,7 +2835,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2851,7 +2851,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "target",
       "grade": null
     },
     {
@@ -2867,7 +2867,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "focus",
       "grade": null
     },
     {
@@ -2883,7 +2883,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "focus",
       "grade": null
     },
     {
@@ -2899,7 +2899,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "focus",
       "grade": null
     },
     {
@@ -2915,7 +2915,7 @@
         "livro": "modulo-basico",
         "pagina": 279
       },
-      "icone": "arma",
+      "icone": "focus",
       "grade": null
     },
     {
@@ -2931,7 +2931,7 @@
         "livro": "modulo-basico",
         "pagina": 280
       },
-      "icone": "arma",
+      "icone": "bolt",
       "grade": null
     },
     {
@@ -2947,7 +2947,7 @@
         "livro": "modulo-basico",
         "pagina": 280
       },
-      "icone": "arma",
+      "icone": "bolt",
       "grade": null
     },
     {
@@ -2963,7 +2963,7 @@
         "livro": "modulo-basico",
         "pagina": 280
       },
-      "icone": "arma",
+      "icone": "bolt",
       "grade": null
     },
     {
@@ -2979,7 +2979,7 @@
         "livro": "modulo-basico",
         "pagina": 280
       },
-      "icone": "arma",
+      "icone": "bolt",
       "grade": null
     },
     {
@@ -2995,7 +2995,7 @@
         "livro": "modulo-basico",
         "pagina": 280
       },
-      "icone": "arma",
+      "icone": "bolt",
       "grade": null
     },
     {
@@ -3011,7 +3011,7 @@
         "livro": "modulo-basico",
         "pagina": 280
       },
-      "icone": "arma",
+      "icone": "bolt",
       "grade": null
     },
     {
@@ -3027,7 +3027,7 @@
         "livro": "modulo-basico",
         "pagina": 280
       },
-      "icone": "arma",
+      "icone": "bolt",
       "grade": null
     },
     {
@@ -3043,7 +3043,7 @@
         "livro": "modulo-basico",
         "pagina": 280
       },
-      "icone": "arma",
+      "icone": "bolt",
       "grade": null
     },
     {
@@ -3059,7 +3059,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "arma",
+      "icone": "rocket",
       "grade": null
     },
     {
@@ -3075,7 +3075,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "arma",
+      "icone": "rocket",
       "grade": null
     },
     {
@@ -3091,7 +3091,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "catapulta",
+      "icone": "custom:besta",
       "grade": {
         "porte": "montaria"
       },
@@ -3112,7 +3112,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "arma",
+      "icone": "viewfinder",
       "grade": null
     },
     {
@@ -3128,7 +3128,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "pergaminho",
+      "icone": "bomb",
       "grade": null
     },
     {
@@ -3144,7 +3144,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "arma",
+      "icone": "bomb",
       "grade": null
     },
     {
@@ -3160,7 +3160,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "arma",
+      "icone": "rocket",
       "grade": null
     },
     {
@@ -3176,7 +3176,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "arma",
+      "icone": "rocket",
       "grade": null
     },
     {
@@ -3192,7 +3192,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "arma",
+      "icone": "rocket",
       "grade": null
     },
     {
@@ -3208,7 +3208,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "arma",
+      "icone": "viewfinder",
       "grade": null
     },
     {
@@ -3224,7 +3224,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "arma",
+      "icone": "viewfinder",
       "grade": null
     },
     {
@@ -3240,7 +3240,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "arma",
+      "icone": "viewfinder",
       "grade": null
     },
     {
@@ -3256,7 +3256,7 @@
         "livro": "modulo-basico",
         "pagina": 281
       },
-      "icone": "lanca",
+      "icone": "flame",
       "grade": null
     },
     {
@@ -3272,7 +3272,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3297,7 +3297,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3322,7 +3322,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3347,7 +3347,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3372,7 +3372,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3397,7 +3397,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3422,7 +3422,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3447,7 +3447,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3472,7 +3472,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3497,7 +3497,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3522,7 +3522,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3547,7 +3547,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3572,7 +3572,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3597,7 +3597,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3622,7 +3622,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3647,7 +3647,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3672,7 +3672,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3697,7 +3697,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3722,7 +3722,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3747,7 +3747,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3772,7 +3772,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3797,7 +3797,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3822,7 +3822,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3847,7 +3847,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3872,7 +3872,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3897,7 +3897,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3922,7 +3922,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3947,7 +3947,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3972,7 +3972,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -3997,7 +3997,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4022,7 +4022,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4047,7 +4047,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4072,7 +4072,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4097,7 +4097,7 @@
         "livro": "modulo-basico",
         "pagina": 283
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4122,7 +4122,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "elmo",
+      "icone": "helmet",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4147,7 +4147,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "elmo",
+      "icone": "helmet",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4172,7 +4172,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "elmo",
+      "icone": "helmet",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4197,7 +4197,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "elmo",
+      "icone": "helmet",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4222,7 +4222,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "elmo",
+      "icone": "helmet",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4247,7 +4247,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "elmo",
+      "icone": "helmet",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4272,7 +4272,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "elmo",
+      "icone": "helmet",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4297,7 +4297,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "elmo",
+      "icone": "helmet",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4322,7 +4322,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "elmo",
+      "icone": "face-mask",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4347,7 +4347,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "elmo",
+      "icone": "helmet",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4372,7 +4372,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "elmo",
+      "icone": "helmet",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4397,7 +4397,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "luva",
+      "icone": "hand-stop",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4422,7 +4422,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "luva",
+      "icone": "hand-stop",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4447,7 +4447,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "luva",
+      "icone": "hand-stop",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4472,7 +4472,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "luva",
+      "icone": "hand-stop",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4497,7 +4497,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "bota",
+      "icone": "shoe",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4522,7 +4522,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "bota",
+      "icone": "shoe",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4547,7 +4547,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "bota",
+      "icone": "shoe",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4572,7 +4572,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "bota",
+      "icone": "shoe",
       "grade": {
         "porte": "vestido",
         "guardado": {
@@ -4597,7 +4597,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4613,7 +4613,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4629,7 +4629,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4645,7 +4645,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4661,7 +4661,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4677,7 +4677,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4693,7 +4693,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4709,7 +4709,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4725,7 +4725,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "bota",
+      "icone": "shoe",
       "grade": null
     },
     {
@@ -4741,7 +4741,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "bota",
+      "icone": "shoe",
       "grade": null
     },
     {
@@ -4757,7 +4757,7 @@
         "livro": "modulo-basico",
         "pagina": 284
       },
-      "icone": "luva",
+      "icone": "hand-stop",
       "grade": null
     },
     {
@@ -4773,7 +4773,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "elmo",
+      "icone": "face-mask",
       "grade": null
     },
     {
@@ -4789,7 +4789,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "elmo",
+      "icone": "helmet",
       "grade": null
     },
     {
@@ -4805,7 +4805,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "capa",
+      "icone": "helmet",
       "grade": null
     },
     {
@@ -4821,7 +4821,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "capa",
+      "icone": "eye",
       "grade": null
     },
     {
@@ -4837,7 +4837,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "capa",
+      "icone": "helmet",
       "grade": null
     },
     {
@@ -4853,7 +4853,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "capa",
+      "icone": "eye",
       "grade": null
     },
     {
@@ -4869,7 +4869,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4885,7 +4885,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4901,7 +4901,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "capa",
+      "icone": "helmet",
       "grade": null
     },
     {
@@ -4917,7 +4917,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4933,7 +4933,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "capa",
+      "icone": "helmet",
       "grade": null
     },
     {
@@ -4949,7 +4949,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4965,7 +4965,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "capa",
+      "icone": "helmet",
       "grade": null
     },
     {
@@ -4981,7 +4981,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -4997,7 +4997,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "capa",
+      "icone": "helmet",
       "grade": null
     },
     {
@@ -5013,7 +5013,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "armadura",
+      "icone": "custom:armadura",
       "grade": null
     },
     {
@@ -5029,7 +5029,7 @@
         "livro": "modulo-basico",
         "pagina": 285
       },
-      "icone": "capa",
+      "icone": "helmet",
       "grade": null
     },
     {
@@ -5045,7 +5045,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5066,7 +5066,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5087,7 +5087,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5108,7 +5108,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5129,7 +5129,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5150,7 +5150,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5171,7 +5171,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5192,7 +5192,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5213,7 +5213,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5234,7 +5234,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5255,7 +5255,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5276,7 +5276,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5297,7 +5297,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5318,7 +5318,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5339,7 +5339,7 @@
         "livro": "modulo-basico",
         "pagina": 286
       },
-      "icone": "cavalo",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -5360,7 +5360,7 @@
         "livro": "modulo-basico",
         "pagina": 287
       },
-      "icone": "capa",
+      "icone": "shield-half",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -5383,7 +5383,7 @@
         "livro": "modulo-basico",
         "pagina": 287
       },
-      "icone": "capa",
+      "icone": "shield-half",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -5406,7 +5406,7 @@
         "livro": "modulo-basico",
         "pagina": 287
       },
-      "icone": "escudo",
+      "icone": "shield",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -5429,7 +5429,7 @@
         "livro": "modulo-basico",
         "pagina": 287
       },
-      "icone": "escudo",
+      "icone": "shield",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -5452,7 +5452,7 @@
         "livro": "modulo-basico",
         "pagina": 287
       },
-      "icone": "escudo",
+      "icone": "shield",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -5475,7 +5475,7 @@
         "livro": "modulo-basico",
         "pagina": 287
       },
-      "icone": "escudo",
+      "icone": "shield",
       "grade": {
         "porte": "grade",
         "largura": 4,
@@ -5498,7 +5498,7 @@
         "livro": "modulo-basico",
         "pagina": 287
       },
-      "icone": "escudo",
+      "icone": "shield-bolt",
       "grade": null
     },
     {
@@ -5514,7 +5514,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "mochila",
+      "icone": "wallet",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -5537,7 +5537,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "fish-hook",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -5560,7 +5560,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "corda",
+      "icone": "fish-hook",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -5584,7 +5584,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "barraca",
+      "icone": "tent",
       "grade": {
         "porte": "montaria"
       },
@@ -5605,7 +5605,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "barraca",
+      "icone": "tent",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -5628,7 +5628,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "barraca",
+      "icone": "tent",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -5651,7 +5651,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "barraca",
+      "icone": "tent",
       "grade": {
         "porte": "montaria"
       },
@@ -5672,7 +5672,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "compass",
       "grade": null
     },
     {
@@ -5688,7 +5688,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "connection",
       "grade": null
     },
     {
@@ -5704,7 +5704,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "bottle",
       "grade": null
     },
     {
@@ -5720,7 +5720,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "barraca",
+      "icone": "bed",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -5743,7 +5743,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "swimming",
       "grade": null
     },
     {
@@ -5759,7 +5759,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "corda",
+      "icone": "connection",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -5783,7 +5783,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "corda",
+      "icone": "connection",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -5807,7 +5807,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "corda",
+      "icone": "connection",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -5831,7 +5831,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "backpack",
       "grade": {
         "porte": "grade",
         "largura": 4,
@@ -5854,7 +5854,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "backpack",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -5877,7 +5877,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "mountain",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -5900,7 +5900,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "scuba-diving-tank",
       "grade": null
     },
     {
@@ -5916,7 +5916,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "mountain",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -5939,7 +5939,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "flame",
       "grade": null
     },
     {
@@ -5955,7 +5955,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "matchstick",
       "grade": null
     },
     {
@@ -5971,7 +5971,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "comida",
+      "icone": "bottle",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -5994,7 +5994,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "comida",
+      "icone": "bottle",
       "grade": null
     },
     {
@@ -6010,7 +6010,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "gas-station",
       "grade": null
     },
     {
@@ -6026,7 +6026,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "lighter",
       "grade": null
     },
     {
@@ -6042,7 +6042,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "chama",
+      "icone": "lamp",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -6065,7 +6065,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "circuit-bulb",
       "grade": null
     },
     {
@@ -6081,7 +6081,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "briefcase",
       "grade": null
     },
     {
@@ -6097,7 +6097,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "circuit-bulb",
       "grade": null
     },
     {
@@ -6113,7 +6113,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "mochila",
+      "icone": "backpack",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -6136,7 +6136,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "mochila",
+      "icone": "backpack",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -6159,7 +6159,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "comida",
+      "icone": "bottle",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -6182,7 +6182,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "chama",
+      "icone": "gas-station",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -6206,7 +6206,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "parachute",
       "grade": null
     },
     {
@@ -6222,7 +6222,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "pill",
       "grade": null
     },
     {
@@ -6238,7 +6238,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "barraca",
+      "icone": "bed",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -6261,7 +6261,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "gas-station",
       "grade": null
     },
     {
@@ -6277,7 +6277,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "comida",
+      "icone": "sausage",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -6301,7 +6301,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "gps",
       "grade": null
     },
     {
@@ -6317,7 +6317,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "clock-12",
       "grade": null
     },
     {
@@ -6333,7 +6333,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "bed",
       "grade": null
     },
     {
@@ -6349,7 +6349,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "bed",
       "grade": null
     },
     {
@@ -6365,7 +6365,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "chama",
+      "icone": "flame",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -6388,7 +6388,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "ruler-2",
       "grade": {
         "porte": "longo"
       },
@@ -6409,7 +6409,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "ruler-2",
       "grade": {
         "porte": "longo"
       },
@@ -6430,7 +6430,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "chama",
+      "icone": "candle",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -6453,7 +6453,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "circuit-battery",
       "grade": null
     },
     {
@@ -6469,7 +6469,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "phone",
       "grade": null
     },
     {
@@ -6485,7 +6485,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "devices",
       "grade": null
     },
     {
@@ -6501,7 +6501,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "sunglasses",
       "grade": null
     },
     {
@@ -6517,7 +6517,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "headset",
       "grade": null
     },
     {
@@ -6533,7 +6533,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "pergaminho",
+      "icone": "custom:pergaminho",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -6556,7 +6556,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "custom:pergaminho",
       "grade": null
     },
     {
@@ -6572,7 +6572,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "radio",
       "grade": null
     },
     {
@@ -6588,7 +6588,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "radio",
       "grade": null
     },
     {
@@ -6604,7 +6604,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "broadcast",
       "grade": null
     },
     {
@@ -6620,7 +6620,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "mochila",
+      "icone": "backpack",
       "grade": null
     },
     {
@@ -6636,7 +6636,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "radio",
       "grade": null
     },
     {
@@ -6652,7 +6652,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "radio",
       "grade": null
     },
     {
@@ -6668,7 +6668,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "pergaminho",
+      "icone": "custom:pergaminho",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -6691,7 +6691,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "pergaminho",
+      "icone": "broadcast",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -6714,7 +6714,7 @@
         "livro": "modulo-basico",
         "pagina": 288
       },
-      "icone": "bau",
+      "icone": "satellite",
       "grade": null
     },
     {
@@ -6730,7 +6730,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "mochila",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -6751,7 +6751,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferradura",
+      "icone": "horse",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -6774,7 +6774,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferradura",
+      "icone": "horse",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -6797,7 +6797,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferradura",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -6819,7 +6819,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferradura",
+      "icone": "horseshoe",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -6843,7 +6843,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferradura",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -6865,7 +6865,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferradura",
+      "icone": "horse",
       "grade": {
         "porte": "montaria"
       },
@@ -6886,7 +6886,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "prison",
       "grade": null
     },
     {
@@ -6902,7 +6902,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "antenna-off",
       "grade": null
     },
     {
@@ -6918,7 +6918,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "ear",
       "grade": null
     },
     {
@@ -6934,7 +6934,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "ear",
       "grade": null
     },
     {
@@ -6950,7 +6950,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "gazua",
+      "icone": "lock-open",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -6973,7 +6973,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "gazua",
+      "icone": "lock-open",
       "grade": null
     },
     {
@@ -6989,7 +6989,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "masks-theater",
       "grade": null
     },
     {
@@ -7005,7 +7005,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "ear",
       "grade": null
     },
     {
@@ -7021,7 +7021,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "ear",
       "grade": null
     },
     {
@@ -7037,7 +7037,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "radar",
       "grade": null
     },
     {
@@ -7053,7 +7053,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "pill",
       "grade": null
     },
     {
@@ -7069,7 +7069,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "cura",
+      "icone": "bandage",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -7092,7 +7092,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "cura",
+      "icone": "scissors",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -7115,7 +7115,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "vaccine",
       "grade": null
     },
     {
@@ -7131,7 +7131,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "cura",
+      "icone": "first-aid-kit",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -7154,7 +7154,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "cura",
+      "icone": "first-aid-kit",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -7177,7 +7177,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "binoculars",
       "grade": null
     },
     {
@@ -7193,7 +7193,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "aperture",
       "grade": null
     },
     {
@@ -7209,7 +7209,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "aperture",
       "grade": null
     },
     {
@@ -7225,7 +7225,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "aperture",
       "grade": null
     },
     {
@@ -7241,7 +7241,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "magnet",
       "grade": null
     },
     {
@@ -7257,7 +7257,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "aperture",
       "grade": null
     },
     {
@@ -7273,7 +7273,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "sunglasses",
       "grade": null
     },
     {
@@ -7289,7 +7289,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "luneta",
+      "icone": "telescope",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -7312,7 +7312,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferramenta",
+      "icone": "needle-thread",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -7336,7 +7336,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferramenta",
+      "icone": "shovel-pitchforks",
       "grade": {
         "porte": "montaria"
       },
@@ -7357,7 +7357,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferramenta",
+      "icone": "shovel-pitchforks",
       "grade": {
         "porte": "montaria"
       },
@@ -7378,7 +7378,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "balanca",
+      "icone": "scale",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -7401,7 +7401,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferramenta",
+      "icone": "tool",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -7425,7 +7425,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferramenta",
+      "icone": "garden-cart",
       "grade": {
         "porte": "montaria"
       },
@@ -7446,7 +7446,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferramenta",
+      "icone": "flask-2",
       "grade": {
         "porte": "grade",
         "largura": 3,
@@ -7469,7 +7469,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "maca",
+      "icone": "flame",
       "grade": null
     },
     {
@@ -7485,7 +7485,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferramenta",
+      "icone": "shovel",
       "grade": {
         "porte": "longo"
       },
@@ -7506,7 +7506,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferramenta",
+      "icone": "tool",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -7529,7 +7529,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferramenta",
+      "icone": "diamond",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -7552,7 +7552,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "machado",
+      "icone": "shovel",
       "grade": {
         "porte": "grade",
         "largura": 2,
@@ -7575,7 +7575,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferramenta",
+      "icone": "yarn",
       "grade": {
         "porte": "montaria"
       },
@@ -7596,7 +7596,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferramenta",
+      "icone": "tool",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -7619,7 +7619,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "ear-off",
       "grade": null
     },
     {
@@ -7635,7 +7635,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "mochila",
+      "icone": "luggage",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -7658,7 +7658,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "mochila",
+      "icone": "luggage",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -7681,7 +7681,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "ferramenta",
+      "icone": "tool",
       "grade": null
     },
     {
@@ -7697,7 +7697,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "wallet",
       "grade": null
     },
     {
@@ -7713,7 +7713,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "wallet",
       "grade": null
     },
     {
@@ -7729,7 +7729,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "connection",
       "grade": {
         "porte": "grade",
         "largura": 1,
@@ -7752,7 +7752,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "connection",
       "grade": null
     },
     {
@@ -7768,7 +7768,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -7784,7 +7784,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -7800,7 +7800,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "crosshair",
       "grade": null
     },
     {
@@ -7816,7 +7816,7 @@
         "livro": "modulo-basico",
         "pagina": 289
       },
-      "icone": "bau",
+      "icone": "volume-off",
       "grade": null
     }
   ]

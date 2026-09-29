@@ -235,7 +235,10 @@
         var variante = criador.nomeVariante(t, e.opcao);
         if (c.tipo === 'opcoes' && variante && variante !== t.nome) nome += ' (' + variante + ')';
         if (x.sel.nota) nome += ' — ' + x.sel.nota;
-        topo.appendChild(el('strong', 'pericia-nome', nome));
+        var forte = el('strong', 'pericia-nome', nome);
+        var icT = window.iconeSvg && window.iconeSvg(t.icone, 'icone-item');
+        if (icT) forte.insertBefore(icT, forte.firstChild);
+        topo.appendChild(forte);
         topo.appendChild(el('span', 'criador-custo', sinal(x.custo) + ' pts'));
         d.appendChild(topo);
         var ul = el('ul', 'efeitos');
@@ -270,6 +273,8 @@
     else {
       per.appendChild(tabela(['Perícia', 'Tipo', 'NH', 'Pontos'], comPericia.map(function (x) {
         var nome = el('span');
+        var icP = window.iconeSvg && window.iconeSvg(x.pericia.icone, 'icone-item');
+        if (icP) nome.appendChild(icP);
         nome.appendChild(el('strong', null, x.pericia.nome + (x.sel.especializacao ? ' (' + x.sel.especializacao + ')' : '')));
         if (x.bonus.length || x.situacional.length) {
           var ul = el('ul', 'efeitos');
@@ -288,7 +293,11 @@
     if (!itens.length) eq.appendChild(el('p', 'pericia-vazio', 'Nada.'));
     else {
       eq.appendChild(tabela(['Item', 'Qtd.', 'Preço'], itens.map(function (x) {
-        return [x.item.nome, String(x.sel.quantidade || 1), x.preco == null ? '—' : moeda(x.preco)];
+        var nomeItem = el('span');
+        var icE = window.iconeSvg && window.iconeSvg(x.item.icone, 'icone-item');
+        if (icE) nomeItem.appendChild(icE);
+        nomeItem.appendChild(document.createTextNode(x.item.nome));
+        return [nomeItem, String(x.sel.quantidade || 1), x.preco == null ? '—' : moeda(x.preco)];
       })));
       eq.appendChild(el('p', 'calc-detalhe', 'Gasto ' + moeda(r.gasto_equipamento) + ' de ' + moeda(r.recursos) + ' · ' +
         (r.dinheiro_restante >= 0 ? 'sobram ' + moeda(r.dinheiro_restante) : 'faltam ' + moeda(-r.dinheiro_restante))));

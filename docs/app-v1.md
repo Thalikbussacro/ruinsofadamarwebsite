@@ -2,6 +2,8 @@
 
 Documento de referência para o projeto do app. Descreve o que a v1 faz, como se organiza e o que falta nos dados. Base: o site atual e a base de conhecimento em `data/gurps/`.
 
+> **Estado em 29/09/2026:** boa parte da v1 já existe no próprio site estático, sem login nem servidor: criador guiado, cofre de personagens (localStorage), ficha completa com combate, rolagem local, pontos ganhos, diário da sessão e consulta de combate (ver `README.md`). Continuam fora: login, sincronização entre aparelhos, inventário em grade e campanhas.
+
 ## Objetivo
 
 Um gerenciador de personagens **próprio de Ruínas de Adamar**, construído sobre as regras do GURPS 4e já estruturadas neste repositório. Não é um GCS genérico: cobre só o que existe em Adamar (humanos, NT3, magia rara) e permite acrescentar regras do cenário no mesmo formato das regras do GURPS.

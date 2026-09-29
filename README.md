@@ -1,6 +1,13 @@
 # Ruínas de Adamar — site
 
-Site estático de apresentação do cenário de RPG livre de sistema "Ruínas de Adamar": o mundo, o cânone, como criar personagens, como jogar à mesa e as crônicas do cenário. Não é uma ferramenta de mesa (sem fichas, NPCs de campanha ou dados de sessão) — é a vitrine pública do cenário.
+Site estático do cenário de RPG "Ruínas de Adamar", jogado com GURPS 4e: o mundo, o cânone, como criar personagens, como jogar à mesa e as crônicas do cenário. Além da vitrine, traz ferramentas de mesa que rodam só no navegador (sem servidor e sem conta):
+
+- **Cofre de personagens** (`mesa/personagens.html`): grade de personagens estilo seleção de MMO, com painel resumido e ficha completa. Cada personagem fica guardado no `localStorage` do navegador; dá para baixar e carregar o `.json`, enviar pelo WhatsApp e imprimir em A4.
+- **Criador de personagem** (`mesa/criador.html`): em modo aplicativo, por etapas, com pontos como saldo (vantagens custam, desvantagens devolvem, pode sobrar), modelos prontos, janela de escolha para traços com versões, níveis ou custo variável, validação contra as regras e ícone por item.
+- **Em jogo** (na ficha): PV, PF, coroas, pontos ganhos (com histórico e desfazer), notas e **diário da sessão** (entradas livres e rolagens registradas com um clique).
+- **Rolador de dados**: clique em atributo, perícia, defesa ou dano na ficha para rolar 3d com sorteio criptográfico; modificador de situação e resultado explicado (margem, crítico).
+- **Ficha de combate**: armas, NH, dano, defesas, carga e proteção, mais ordem de ação e manobras. Os números de dano, peso e proteção só aparecem quando publicados (veja "Números de combate" abaixo).
+- **Consulta rápida de combate** (`mesa/combate.html`): manobras, ataque, defesas, dano, ferimentos e fadiga, com a página do livro.
 
 Sem build e sem dependências de npm. É só HTML, CSS e JavaScript puro; o site abre direto de `file://` ou de qualquer host estático.
 
@@ -24,7 +31,7 @@ jogar.html          formulário "Quero jogar" (criação de personagem → Whats
 mundo/               O Mundo (visão geral, eras, linha do tempo, geografia)
 canone/               Cânone (materialidade, magia, entremundos, forasteiros, masmorras, divindades)
 personagens/          Personagens (criando personagem, fé e panteões)
-mesa/                À Mesa (regras, sugestões aos jogadores, sessão zero)
+mesa/                À Mesa (regras, combate, listas GURPS, criador, cofre, sessão zero)
 cronicas/            Crônicas (histórias do cenário)
 css/style.css        estilo único do site
 js/site.js           casca do site (cabeçalho, menu, rodapé, botões "Jogar") e SITE_CONFIG
@@ -39,8 +46,10 @@ js/personagens-salvos.js  personagens guardados no navegador (localStorage)
 js/personagens.js    Cofre de personagens: grade estilo seleção de MMO, painel da ficha e ficha completa (mesa/personagens.html)
 js/icones.js         desenha o ícone de um item (window.iconeSvg)
 js/criador.js        página do criador de personagem (mesa/criador.html)
+js/combate.js        consulta rápida de combate (manobras e iniciativa de regras.json)
 js/dados-gurps.js    GERADO a partir de data/gurps/ — não editar à mão
 data/gurps/          base de conhecimento GURPS em JSON (fonte oficial)
+data/adamar/         dados do cenário (modelos prontos de personagem)
 referencias/         PDFs de referência, só local (fora do git)
 data-local/          base completa com estatísticas do livro, só local (fora do git)
 img/                 imagens (mapa de Adamar; img/arte: pinturas em domínio público, créditos em creditos.html)
@@ -107,7 +116,7 @@ O gerador valida os dados (ids repetidos, livro inexistente, página inválida, 
 node tools/check-site.mjs
 ```
 
-Confirma, para todas as páginas: `data-root`/`data-page` corretos, `<main id="conteudo">`, `<title>`, links e imagens existentes em disco, tabelas dentro de `.table-wrap`, ausência de termos/marcadores proibidos, e que `js/whatsapp.js` carrega antes de `js/site.js`. Também confere que todo `href` usado em `NAV` (`js/site.js`) existe em disco. Saída esperada com o site completo: `26 páginas ok` (sem falhas).
+Confirma, para todas as páginas: `data-root`/`data-page` corretos, `<main id="conteudo">`, `<title>`, links e imagens existentes em disco, tabelas dentro de `.table-wrap`, ausência de termos/marcadores proibidos, e que `js/whatsapp.js` carrega antes de `js/site.js`. Também confere que todo `href` usado em `NAV` (`js/site.js`) existe em disco. Saída esperada com o site completo: `31 páginas ok` (sem falhas).
 
 ```
 node tools/check-site.test.mjs
@@ -131,6 +140,23 @@ node tools/gerar-dados.mjs --check
 ```
 
 São os testes automatizados do próprio checador e do utilitário de WhatsApp — devem terminar com `check-site self-test ok`, `whatsapp ok` e `jogar ok`.
+
+## Números de combate (publicação)
+
+Peso, dano, alcance, aparar, proteção e a tabela de dano por ST vêm do livro. O repositório é público e, por enquanto, publica só os preços; os números ficam na cópia local. Por isso a rotina de publicação do Claude Code é:
+
+```
+git checkout -- data/gurps/equipamento.json && rm -f data/gurps/tabela-dano.json
+node tools/gerar-dados.mjs && node tools/versionar.mjs
+# rodar os testes, check-site, gerar-dados --check e versionar --check; commit e push
+node tools/importar-equipamento.mjs --publicar && node tools/gerar-dados.mjs && node tools/versionar.mjs   # devolve os números à cópia local
+```
+
+Se o narrador decidir publicar os números, basta commitar a cópia local com eles (ver `pendencias-dono.md`). O site funciona nos dois casos: sem os números, mostra o dano como "GeB+1" e fica sem peso, carga e proteção.
+
+## Cache
+
+`node tools/versionar.mjs` põe `?v=<hash>` nos links de CSS e JS de todas as páginas, para o navegador (e o celular) pegar a versão nova depois de cada publicação. Rode antes de publicar; `--check` só confere.
 
 ## Hospedar
 

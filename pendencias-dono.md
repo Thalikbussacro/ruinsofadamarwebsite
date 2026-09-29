@@ -18,6 +18,16 @@ Coisas que dependem de você (decisão, acesso ou teste no seu aparelho). Vou ac
 - [ ] **Dever:** as opções cobrem só a frequência (−2 a −15). Os agravantes do livro (extremamente perigoso, involuntário) ainda não entram. Precisa?
 - [ ] **Modelos prontos:** hoje são Caçador, Soldado, Curandeira, Ladrão, Erudito e Mercador. Quer outros (Menestrel, Pescador, Guarda de caravana, Sacerdote de um panteão…) ou mexer nesses?
 
+## Para testar quando puder
+
+- [ ] **Diário da sessão:** na ficha completa (Cofre › personagem), painel Em jogo. Escreva uma entrada; role algo e clique "→ diário" no quadro de rolagens.
+- [ ] **Consulta rápida de combate** (À Mesa › Combate): ver se o resumo está do jeito que a mesa usa, se falta algo (ex.: agarrar, derrubar, tabela de distância).
+
+## Ideias para a próxima rodada
+
+- **Modo mestre:** uma tela com vários personagens ao mesmo tempo (PV, PF, defesas) e a ordem de ação da luta.
+- **Mais modelos prontos** e revisão dos atuais (ver decisão acima).
+
 ## Para revisar quando tiver tempo
 
 - [ ] **Ícones:** alguns são aproximações (armaduras usam uma camisa, a Maça do Tabler parece varinha). Se algum incomodar, me diga o item.

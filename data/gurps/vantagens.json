@@ -269,7 +269,27 @@
         "pagina": 35
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "O custo base vem da tabela de Poder do Aliado: quanto maior o total de pontos do Aliado em relação aos pontos iniciais do PdJ, maior o custo (de 1 a 10+ pontos, ou +5 pontos para cada +50% adicional no caso de Aliados não-sencientes). Multiplique esse valor pela frequência de participação (de x1/2, se esporádico, até x4, se constante) e depois aplique modificadores especiais, como Habilidades Especiais (+50%) ou Invocável (+100%). Grupos de Aliados usam uma tabela própria de multiplicadores conforme o tamanho do grupo.",
+        "exemplos": [
+          {
+            "descricao": "Aliado com 50% dos pontos do PdJ, presente com frequência (x1)",
+            "custo": 2
+          },
+          {
+            "descricao": "Aliado com 100% dos pontos do PdJ, presente com bastante frequência (x2)",
+            "custo": 10
+          },
+          {
+            "descricao": "Aliado com 25% dos pontos do PdJ, presente esporadicamente (x1/2)",
+            "custo": 1
+          },
+          {
+            "descricao": "Aliado Invocável (+100%) com 100% dos pontos do PdJ, quase sempre presente (x3)",
+            "custo": 30
+          }
+        ],
+        "minimo": 1
       },
       "icone": "coroa",
       "efeitos": [
@@ -374,7 +394,23 @@
         "pagina": 39
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "Não existe fórmula: o Mestre arbitra o custo caso a caso, avaliando o quão rara ou poderosa é a habilidade especial que o Antecedente Incomum justifica dentro daquele cenário específico.",
+        "exemplos": [
+          {
+            "descricao": "Justifica acesso à magia num mundo onde ela é comum",
+            "custo": 0
+          },
+          {
+            "descricao": "Justifica acesso à magia num mundo de conspiração onde ela é rara mas conhecida",
+            "custo": 10
+          },
+          {
+            "descricao": "Justifica poderes sobrenaturais num jogo de terror onde eles quase não existem",
+            "custo": 50
+          }
+        ],
+        "minimo": 0
       },
       "icone": "mente",
       "efeitos": [
@@ -1263,7 +1299,23 @@
         "pagina": 48
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "O custo básico depende do NH efetivo do contato na perícia relevante (quanto maior o NH, maior o custo básico), mais 1 ponto extra se a informação vier de poderes sobrenaturais. Multiplique esse valor pela frequência de participação (de x1/2 a x4) e pelo nível de confiabilidade do contato (quanto mais confiável, maior o multiplicador).",
+        "exemplos": [
+          {
+            "descricao": "Contato com NH efetivo baixo, frequência 'com frequência' (x1), pouco confiável",
+            "custo": 1
+          },
+          {
+            "descricao": "Contato com NH efetivo alto, frequência 'bastante frequência' (x2), razoavelmente confiável",
+            "custo": 12
+          },
+          {
+            "descricao": "Contato com NH efetivo médio, frequência 'esporadicamente' (x1/2), completamente confiável",
+            "custo": 3
+          }
+        ],
+        "minimo": 1
       },
       "icone": "coroa",
       "efeitos": [
@@ -1481,7 +1533,7 @@
       "tipo": [
         "mental"
       ],
-      "custo": "Variável",
+      "custo": "5, 10, 5 ou 15",
       "adamar": "narrador",
       "resumo": "Esquiva, bloqueio ou aparar melhores que o normal. Cinematográfico.",
       "ref": {
@@ -1489,7 +1541,13 @@
         "pagina": 52
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "opcoes",
+        "valores": [
+          5,
+          10,
+          5,
+          15
+        ]
       },
       "icone": "mente",
       "efeitos": [
@@ -1503,13 +1561,15 @@
           "alvo": "defesa",
           "ref": "bloqueio",
           "valor": 1,
-          "condicao": "Bloqueio Ampliado (5): especializado em Capa ou Escudo"
+          "condicao": "Bloqueio Ampliado (5): especializado em Capa ou Escudo",
+          "variante": 2
         },
         {
           "alvo": "defesa",
           "ref": "esquiva",
           "valor": 1,
-          "condicao": "Esquiva Ampliada (15)"
+          "condicao": "Esquiva Ampliada (15)",
+          "variante": 3
         }
       ],
       "prerequisitos": [
@@ -1519,7 +1579,29 @@
         }
       ],
       "nivel_max": 3,
-      "duvida_efeitos": "Normalmente é +1 único; o Mestre pode permitir níveis múltiplos, sendo acima de +3 quase sempre injustificável."
+      "duvida_efeitos": "Normalmente é +1 único; o Mestre pode permitir níveis múltiplos, sendo acima de +3 quase sempre injustificável.",
+      "variantes": [
+        {
+          "nome": "Aparar Ampliado (mãos nuas ou uma perícia)",
+          "custo": 5,
+          "resumo": "Dá +1 ao Aparar usando as mãos nuas ou com uma perícia específica de combate corpo a corpo."
+        },
+        {
+          "nome": "Aparar Ampliado (todas as perícias)",
+          "custo": 10,
+          "resumo": "Dá +1 ao Aparar valendo para todas as manobras de Aparar do personagem."
+        },
+        {
+          "nome": "Bloqueio Ampliado",
+          "custo": 5,
+          "resumo": "Dá +1 ao Bloqueio, mas só com uma defesa específica (Capa ou Escudo)."
+        },
+        {
+          "nome": "Esquiva Ampliada",
+          "custo": 15,
+          "resumo": "Dá +1 à Esquiva, sem exigir nenhuma perícia específica."
+        }
+      ]
     },
     {
       "id": "dentes",
@@ -1658,7 +1740,7 @@
         "mental",
         "sobrenatural"
       ],
-      "custo": "Variável",
+      "custo": "5, 10 ou 15",
       "adamar": "narrador",
       "resumo": "Um destino marcado, bom ou ruim. O narrador decide qual.",
       "ref": {
@@ -1666,7 +1748,12 @@
         "pagina": 53
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "opcoes",
+        "valores": [
+          5,
+          10,
+          15
+        ]
       },
       "icone": "sol",
       "efeitos": [
@@ -1676,7 +1763,24 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Destino Menor",
+          "custo": 5,
+          "resumo": "O personagem tem um pequeno papel a cumprir dentro de uma história maior."
+        },
+        {
+          "nome": "Destino Maior",
+          "custo": 10,
+          "resumo": "O personagem está destinado a um fim específico e importante, geralmente ligado a um evento marcante."
+        },
+        {
+          "nome": "Destino Superior",
+          "custo": 15,
+          "resumo": "O personagem está destinado à grandeza; algum sucesso significativo é garantido."
+        }
+      ]
     },
     {
       "id": "destreza-manual-elevada",
@@ -1740,7 +1844,7 @@
       "tipo": [
         "mental"
       ],
-      "custo": "Variável",
+      "custo": "5, 10, 20 ou 30",
       "adamar": "narrador",
       "resumo": "Sente algo específico: magia, metal, forasteiros. Com o narrador.",
       "ref": {
@@ -1748,7 +1852,13 @@
         "pagina": 53
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "opcoes",
+        "valores": [
+          5,
+          10,
+          20,
+          30
+        ]
       },
       "icone": "mente",
       "efeitos": [
@@ -1758,7 +1868,29 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Raro",
+          "custo": 5,
+          "resumo": "A substância ou fenômeno detectado é raro (ex.: magia de fogo, zumbis, ouro, rádio)."
+        },
+        {
+          "nome": "Ocasional",
+          "custo": 10,
+          "resumo": "A substância é ocasional (ex.: magos, magia, metal precioso, campos elétricos)."
+        },
+        {
+          "nome": "Comum",
+          "custo": 20,
+          "resumo": "A substância é comum (ex.: seres humanos, fenômenos sobrenaturais, metal)."
+        },
+        {
+          "nome": "Muito Comum",
+          "custo": 30,
+          "resumo": "A substância é muito comum (ex.: qualquer forma de vida, qualquer mineral, qualquer energia)."
+        }
+      ]
     },
     {
       "id": "dificil-de-subjugar",
@@ -2260,7 +2392,7 @@
       "tipo": [
         "social"
       ],
-      "custo": "Variável",
+      "custo": "+1/nível",
       "adamar": "livre",
       "resumo": "Um item próprio e marcante: a espada do avô, um cavalo.",
       "ref": {
@@ -2268,7 +2400,9 @@
         "pagina": 58
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "niveis",
+        "por_nivel": 1,
+        "rotulo_nivel": "cada ponto compra equipamento (nunca dinheiro) valendo até 50% dos recursos iniciais médios da campanha"
       },
       "icone": "coroa",
       "efeitos": [
@@ -2698,7 +2832,23 @@
         "pagina": 60
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "O custo é o custo em pontos do Aliado, Contato, Grupo de Contato ou Patrono que serviria de base para o Favor, dividido por 5 e arredondado para cima. O Favor só pode ser usado uma vez.",
+        "exemplos": [
+          {
+            "descricao": "Baseado num Contato de 2 pontos",
+            "custo": 1
+          },
+          {
+            "descricao": "Baseado num Aliado de 10 pontos",
+            "custo": 2
+          },
+          {
+            "descricao": "Baseado num Patrono de 20 pontos",
+            "custo": 4
+          }
+        ],
+        "minimo": 1
       },
       "icone": "coroa",
       "efeitos": [
@@ -2939,7 +3089,19 @@
         "pagina": 62
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "Calcule exatamente como um Contato simples (NH efetivo, frequência de participação e confiabilidade) e multiplique o resultado final por 5, pois o Grupo de Contato representa o conhecimento de uma categoria inteira de perícias de uma organização, não de uma única pessoa.",
+        "exemplos": [
+          {
+            "descricao": "Equivalente a um Contato de 2 pontos (NH médio, frequência comum, confiabilidade média)",
+            "custo": 10
+          },
+          {
+            "descricao": "Equivalente a um Contato de 4 pontos (NH alto, bastante frequência, boa confiabilidade)",
+            "custo": 20
+          }
+        ],
+        "minimo": 5
       },
       "icone": "coroa",
       "efeitos": [
@@ -3747,7 +3909,7 @@
       "tipo": [
         "mental"
       ],
-      "custo": "Variável",
+      "custo": "20, 25, 30, 35, 40 ou 45",
       "adamar": "narrador",
       "resumo": "Treino marcial cinematográfico.",
       "ref": {
@@ -3755,7 +3917,15 @@
         "pagina": 70
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "opcoes",
+        "valores": [
+          20,
+          25,
+          30,
+          35,
+          40,
+          45
+        ]
       },
       "icone": "mente",
       "efeitos": [
@@ -3791,7 +3961,39 @@
         }
       ],
       "nivel_max": null,
-      "duvida_efeitos": "Mestre pode proibir em campanha realista."
+      "duvida_efeitos": "Mestre pode proibir em campanha realista.",
+      "variantes": [
+        {
+          "nome": "Uma arma específica",
+          "custo": 20,
+          "resumo": "O treino cobre apenas uma arma exata."
+        },
+        {
+          "nome": "Duas armas usadas em conjunto",
+          "custo": 25,
+          "resumo": "Cobre um par clássico usado junto, como espada e escudo."
+        },
+        {
+          "nome": "Classe pequena de armas",
+          "custo": 30,
+          "resumo": "Cobre um grupo pequeno e específico, como as armas de esgrima."
+        },
+        {
+          "nome": "Classe intermediária de armas",
+          "custo": 35,
+          "resumo": "Cobre um grupo intermediário, como todas as espadas."
+        },
+        {
+          "nome": "Classe ampla de armas",
+          "custo": 40,
+          "resumo": "Cobre um grupo amplo, como todas as armas com lâmina."
+        },
+        {
+          "nome": "Todas as armas motoras",
+          "custo": 45,
+          "resumo": "Cobre qualquer arma corpo a corpo ou de arremesso motora, exceto armas de fogo."
+        }
+      ]
     },
     {
       "id": "metabolismo-impoluto",
@@ -4261,7 +4463,23 @@
         "pagina": 75
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "O custo básico (10 a 30 pontos) depende do poder do Patrono, de um indivíduo bem relacionado a uma organização gigantesca ou um deus verdadeiro. Multiplique pela frequência de participação (de x1/2 a x4) e depois aplique modificadores especiais, como Relutante (-50%) ou Equipamento (+50% a +100%).",
+        "exemplos": [
+          {
+            "descricao": "Patrono individual poderoso (10 pts base), presente com frequência (x1)",
+            "custo": 10
+          },
+          {
+            "descricao": "Organização muito poderosa (20 pts base), presente com bastante frequência (x2)",
+            "custo": 40
+          },
+          {
+            "descricao": "Patrono individual poderoso (10 pts base), esporádico (x1/2) e Relutante (-50%)",
+            "custo": 3
+          }
+        ],
+        "minimo": 5
       },
       "icone": "coroa",
       "efeitos": [
@@ -4353,7 +4571,7 @@
       "tipo": [
         "social"
       ],
-      "custo": "Variável",
+      "custo": "5, 10 ou 15",
       "adamar": "narrador",
       "resumo": "Acesso a segredos de uma organização. Pensado para cenários modernos.",
       "ref": {
@@ -4361,7 +4579,12 @@
         "pagina": 77
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "opcoes",
+        "valores": [
+          5,
+          10,
+          15
+        ]
       },
       "icone": "coroa",
       "efeitos": [
@@ -4376,7 +4599,24 @@
           "descricao": "Exige passar por verificação de antecedentes; Mestre pode negar a quem tiver passado suspeito (Dívidas, Segredo) ou personalidade instável (Paranoia, Sadismo)."
         }
       ],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Acesso pequeno",
+          "custo": 5,
+          "resumo": "Acesso a uma quantidade relativamente pequena de segredos necessários ao trabalho do personagem; metade do custo (arred. para cima) se a organização for pequena."
+        },
+        {
+          "nome": "Acesso amplo ou a muitos segredos",
+          "custo": 10,
+          "resumo": "Livre acesso a poucos segredos, ou acesso limitado a uma grande quantidade deles; metade do custo se a organização for pequena."
+        },
+        {
+          "nome": "Livre acesso a uma grande quantidade de segredos",
+          "custo": 15,
+          "resumo": "O personagem sabe quase tudo que é relevante na organização; metade do custo se a organização for pequena."
+        }
+      ]
     },
     {
       "id": "pernas-adicionais",
@@ -5022,7 +5262,24 @@
         "pagina": 26
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "Custo de 5 pontos para cada +1 no teste de reação de quem reconhece o personagem (até +4), multiplicado pela proporção de pessoas afetadas (x1 quase todo mundo, ou x2/3, x1/2, x1/3 conforme o grupo diminui) e pela frequência de reconhecimento (x1, x1/2 ou x1/3). O total de todas as reputações fica limitado a +4.",
+        "exemplos": [
+          {
+            "descricao": "Bônus de +2 na reação de quase todo mundo, reconhecido em metade dos encontros",
+            "custo": 5
+          },
+          {
+            "descricao": "Bônus de +3 na reação da maioria das pessoas, reconhecido sempre",
+            "custo": 10
+          },
+          {
+            "descricao": "Bônus de +1 na reação de um grupo pequeno, reconhecido raramente",
+            "custo": 2
+          }
+        ],
+        "minimo": 1,
+        "maximo": 20
       },
       "icone": "coroa",
       "efeitos": [
@@ -5056,7 +5313,28 @@
         "pagina": 85
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "Escolha o custo base pela raridade da ameaça (Raro 5, Ocasional 10, Comum 15, Muito Comum 30) e multiplique pelo nível de resistência escolhido: 1/3 do custo para um bônus de +3, 1/2 do custo para um bônus de +8, ou o custo cheio para Imunidade total. Frações finais são descartadas.",
+        "exemplos": [
+          {
+            "descricao": "Resistente (+3) contra algo Raro",
+            "custo": 2
+          },
+          {
+            "descricao": "Resistente (+8) contra algo Comum",
+            "custo": 7
+          },
+          {
+            "descricao": "Imunidade a algo Ocasional",
+            "custo": 10
+          },
+          {
+            "descricao": "Imunidade a algo Muito Comum",
+            "custo": 30
+          }
+        ],
+        "minimo": 1,
+        "maximo": 30
       },
       "icone": "punho",
       "efeitos": [
@@ -5604,7 +5882,7 @@
       "tipo": [
         "mental"
       ],
-      "custo": "Variável",
+      "custo": "15, 30 ou 60",
       "adamar": "livre",
       "resumo": "Repete rolagens de vez em quando.",
       "ref": {
@@ -5612,7 +5890,12 @@
         "pagina": 89
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "opcoes",
+        "valores": [
+          15,
+          30,
+          60
+        ]
       },
       "icone": "mente",
       "efeitos": [
@@ -5622,7 +5905,24 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Sorte",
+          "custo": 15,
+          "resumo": "Pode refazer um teste malsucedido uma vez por hora de jogo."
+        },
+        {
+          "nome": "Sorte Extraordinária",
+          "custo": 30,
+          "resumo": "Igual à Sorte, mas pode ser usada a cada 30 minutos."
+        },
+        {
+          "nome": "Sorte Impossível",
+          "custo": 60,
+          "resumo": "Igual à Sorte, mas pode ser usada a cada 10 minutos."
+        }
+      ]
     },
     {
       "id": "st-bracal",

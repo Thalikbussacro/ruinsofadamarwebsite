@@ -625,7 +625,9 @@
     } else if (c.tipo === 'variavel') {
       // custo que depende de vários fatores: fica "a combinar" até o jogador anotar o que acertou com o narrador
       if (c.como_calcular) campos.appendChild(el('p', 'criador-variante', c.como_calcular));
-      var campoPts = inteiro(e.valor == null ? null : Math.abs(e.valor), c.minimo != null ? Math.abs(c.minimo) : 1, c.maximo != null ? Math.abs(c.maximo) : 300, function (v) {
+      // limites em módulo: numa desvantagem o "máximo" (-5) é o mais perto de zero e o "mínimo" (-45) o mais longe
+      var perto = negativo ? c.maximo : c.minimo, longe = negativo ? c.minimo : c.maximo;
+      var campoPts = inteiro(e.valor == null ? null : Math.abs(e.valor), perto != null ? Math.abs(perto) : 1, longe != null ? Math.abs(longe) : 300, function (v) {
         e.valor = v == null ? null : (negativo ? -1 : 1) * Math.abs(v);
       });
       campoPts.placeholder = 'a combinar';

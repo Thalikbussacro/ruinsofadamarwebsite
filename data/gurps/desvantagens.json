@@ -651,7 +651,23 @@
         "pagina": 123
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "O custo base é -10 pontos para não poder ficar a menos de 1 metro da substância, mais -1 ponto para cada metro extra de raio até um máximo de -20 pontos (11 metros). Esse valor é multiplicado pela raridade da substância, como na desvantagem Fraqueza (quanto mais comum for a substância, maior o custo final).",
+        "exemplos": [
+          {
+            "descricao": "Aversão a 1 metro de uma substância comum",
+            "custo": -10
+          },
+          {
+            "descricao": "Aversão a 5 metros de uma substância rara (multiplicador baixo)",
+            "custo": -7
+          },
+          {
+            "descricao": "Aversão a 11 metros de uma substância muito comum (multiplicador alto)",
+            "custo": -40
+          }
+        ],
+        "maximo": -2
       },
       "icone": "lua-negra",
       "efeitos": [
@@ -1737,7 +1753,23 @@
         "pagina": 130
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "O custo básico vem da 'capacidade' do dependente, expressa como uma fração dos pontos do personagem (de -1 a -15 pontos), multiplicado pela importância dele para o personagem (x1/2 se é só um conhecido, x1 se é um amigo, x2 se é alguém amado) e pela frequência de participação (de x1/2 a x4). No máximo dois dependentes contam pontos.",
+        "exemplos": [
+          {
+            "descricao": "Filho pequeno (25% dos pontos do PdJ), muito amado (x2), presente com frequência (x1)",
+            "custo": -20
+          },
+          {
+            "descricao": "Conhecido antigo (100% dos pontos), tratado com distanciamento (x1/2), visto raramente (x1/2)",
+            "custo": -1
+          },
+          {
+            "descricao": "Grupo de alunos-dependentes tratados como amigos (x1), frequentes (x2), limitado a 2",
+            "custo": -40
+          }
+        ],
+        "maximo": -1
       },
       "icone": "coroa-rachado",
       "efeitos": [
@@ -1769,7 +1801,27 @@
         "pagina": 130
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "Custo base pela raridade do item de que o personagem depende (-5 Muito Comum, -10 Comum, -20 Ocasional, -30 Raro), mais -5 extra se o item for ilegal, multiplicado pela frequência com que ele precisa ser consumido para não perder PV (de x1/3 trimestral a x5 constante).",
+        "exemplos": [
+          {
+            "descricao": "Substância muito comum, necessária diariamente (x3)",
+            "custo": -15
+          },
+          {
+            "descricao": "Substância comum, necessária semanalmente (x2)",
+            "custo": -20
+          },
+          {
+            "descricao": "Substância rara, necessária mensalmente (x1)",
+            "custo": -30
+          },
+          {
+            "descricao": "Substância ocasional e ilegal, necessária a cada hora (x4)",
+            "custo": -100
+          }
+        ],
+        "maximo": -1
       },
       "icone": "garra",
       "efeitos": [
@@ -1956,7 +2008,7 @@
         "mental",
         "sobrenatural"
       ],
-      "custo": "Variável",
+      "custo": "-5, -10 ou -15",
       "adamar": "narrador",
       "resumo": "Um destino ruim marcado. O narrador decide.",
       "ref": {
@@ -1964,7 +2016,12 @@
         "pagina": 132
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "opcoes",
+        "valores": [
+          -5,
+          -10,
+          -15
+        ]
       },
       "icone": "lua-negra",
       "efeitos": [
@@ -1974,7 +2031,24 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Destino Menor",
+          "custo": -5,
+          "resumo": "Um mau destino de gravidade menor aguarda o personagem."
+        },
+        {
+          "nome": "Destino Maior",
+          "custo": -10,
+          "resumo": "Um destino ruim significativo, como ferimentos graves ou morte em circunstâncias específicas."
+        },
+        {
+          "nome": "Destino Superior",
+          "custo": -15,
+          "resumo": "Morte certa em algum momento futuro definido pelo Mestre."
+        }
+      ]
     },
     {
       "id": "destruidor-da-vida",
@@ -2017,7 +2091,7 @@
       "tipo": [
         "social"
       ],
-      "custo": "Variável",
+      "custo": "-2, -5, -10 ou -15",
       "adamar": "livre",
       "resumo": "Obrigações com um senhor, uma ordem, um exército.",
       "ref": {
@@ -2025,7 +2099,13 @@
         "pagina": 133
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "opcoes",
+        "valores": [
+          -2,
+          -5,
+          -10,
+          -15
+        ]
       },
       "icone": "coroa-rachado",
       "efeitos": [
@@ -2040,7 +2120,29 @@
           "descricao": "Não vale por obrigações com um Dependente; dever autoimposto é Senso do Dever (senso-do-dever), não Dever"
         }
       ],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Esporadicamente",
+          "custo": -2,
+          "resumo": "O Dever raramente é convocado (resultado de 6 ou menos)."
+        },
+        {
+          "nome": "Com pouca frequência",
+          "custo": -5,
+          "resumo": "O Dever aparece ocasionalmente (resultado de 9 ou menos)."
+        },
+        {
+          "nome": "Com bastante frequência",
+          "custo": -10,
+          "resumo": "O Dever aparece com frequência (resultado de 12 ou menos)."
+        },
+        {
+          "nome": "Quase o tempo todo",
+          "custo": -15,
+          "resumo": "O personagem está praticamente sempre de plantão (resultado de 15 ou menos)."
+        }
+      ]
     },
     {
       "id": "dieta-restrita",
@@ -2267,7 +2369,7 @@
       "tipo": [
         "fisica"
       ],
-      "custo": "Variável",
+      "custo": "-15, -35 ou -55",
       "adamar": "livre",
       "resumo": "Tremores ou problemas de coordenação.",
       "ref": {
@@ -2275,7 +2377,12 @@
         "pagina": 135
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "opcoes",
+        "valores": [
+          -15,
+          -35,
+          -55
+        ]
       },
       "icone": "punho-rachado",
       "efeitos": [
@@ -2304,7 +2411,24 @@
           "descricao": "Grave: DX e Deslocamento Básico no máximo 10 e 5. Incapacitante: no máximo 8 e 4."
         }
       ],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Suave",
+          "custo": -15,
+          "resumo": "Tremores leves: -2 em tarefas de manipulação precisa e em perícias sociais quando percebido."
+        },
+        {
+          "nome": "Grave",
+          "custo": -35,
+          "resumo": "Tremores fortes: -4 nas mesmas tarefas, além de limitar DX e Deslocamento à média racial."
+        },
+        {
+          "nome": "Incapacitante",
+          "custo": -55,
+          "resumo": "Tremores severos: -6 nas mesmas tarefas, com DX e Deslocamento limitados a 80% da média racial."
+        }
+      ]
     },
     {
       "id": "doente-terminal",
@@ -2389,7 +2513,23 @@
         "pagina": 135
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "Escolha uma gravidade (Moderada -5, Grave -10, Excruciante -15) e multiplique pelo intervalo entre crises (de x0,5 a x2) e pela frequência de participação (de x1/2 a x3), descartando as frações finais.",
+        "exemplos": [
+          {
+            "descricao": "Grave, crises a cada 2 horas, frequência x1",
+            "custo": -10
+          },
+          {
+            "descricao": "Moderada, crises a cada 8 horas, frequência x1",
+            "custo": -10
+          },
+          {
+            "descricao": "Excruciante, crises a cada 1 hora, frequência x1/2",
+            "custo": -7
+          }
+        ],
+        "maximo": -2
       },
       "icone": "punho-rachado",
       "efeitos": [
@@ -2549,7 +2689,7 @@
       "tipo": [
         "social"
       ],
-      "custo": "Variável",
+      "custo": "-1/nível",
       "adamar": "livre",
       "resumo": "Deve dinheiro e paga todo mês.",
       "ref": {
@@ -2557,7 +2697,9 @@
         "pagina": 26
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "niveis",
+        "por_nivel": -1,
+        "rotulo_nivel": "cada nível = pagamento mensal de 1% extra dos recursos iniciais (até 20 níveis = 20%)"
       },
       "icone": "coroa-rachado",
       "efeitos": [
@@ -3098,7 +3240,7 @@
       "tipo": [
         "mental"
       ],
-      "custo": "Variável",
+      "custo": "-5, -10 ou -20",
       "adamar": "livre",
       "resumo": "Revive traumas passados.",
       "ref": {
@@ -3106,7 +3248,12 @@
         "pagina": 140
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "opcoes",
+        "valores": [
+          -5,
+          -10,
+          -20
+        ]
       },
       "icone": "mente-rachado",
       "efeitos": [
@@ -3116,7 +3263,24 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Suave",
+          "custo": -5,
+          "resumo": "Flashback breve (2d segundos) com penalidade leve de -2 em testes de habilidade."
+        },
+        {
+          "nome": "Grave",
+          "custo": -10,
+          "resumo": "Flashback mais longo (1d minutos) com penalidade de -5 em testes de habilidade."
+        },
+        {
+          "nome": "Incapacitante",
+          "custo": -20,
+          "resumo": "Flashback prolongado (3d minutos) que impede o uso de perícias."
+        }
+      ]
     },
     {
       "id": "fobias",
@@ -3133,7 +3297,24 @@
         "pagina": 140
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "Cada fobia tem um custo-base pela raridade do que causa o medo (anote esse valor); o número de autocontrole escolhido abaixo multiplica o custo automaticamente.",
+        "exemplos": [
+          {
+            "descricao": "Cães (Cinofobia), medo pouco comum",
+            "custo": -5
+          },
+          {
+            "descricao": "Espaços Fechados (Claustrofobia), medo comum e incapacitante",
+            "custo": -15
+          },
+          {
+            "descricao": "Escuridão (Nictofobia), medo comum",
+            "custo": -15
+          }
+        ],
+        "maximo": -5,
+        "autocontrole": true
       },
       "icone": "mente-rachado",
       "efeitos": [
@@ -3735,7 +3916,7 @@
       "tipo": [
         "social"
       ],
-      "custo": "Variável",
+      "custo": "-5, -10, -20 ou -30",
       "adamar": "livre",
       "resumo": "Esconde quem realmente é.",
       "ref": {
@@ -3743,7 +3924,13 @@
         "pagina": 145
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "opcoes",
+        "valores": [
+          -5,
+          -10,
+          -20,
+          -30
+        ]
       },
       "icone": "coroa-rachado",
       "efeitos": [
@@ -3753,7 +3940,29 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Problema Grave",
+          "custo": -5,
+          "resumo": "Se descoberta, custa uma promoção, eleição ou bom casamento."
+        },
+        {
+          "nome": "Rejeição Grave",
+          "custo": -10,
+          "resumo": "Se descoberta, o personagem perde o emprego ou é rejeitado por amigos e família."
+        },
+        {
+          "nome": "Prisão ou Exílio",
+          "custo": -20,
+          "resumo": "Se descoberta, o personagem precisa fugir para não ser preso."
+        },
+        {
+          "nome": "Perigo de Morte",
+          "custo": -30,
+          "resumo": "Se descoberta, o personagem pode ser executado, linchado ou assassinado."
+        }
+      ]
     },
     {
       "id": "impulsividade",
@@ -4091,7 +4300,24 @@
         "pagina": 146
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "O custo base depende do poder do Inimigo em relação ao PdJ (de -5, um indivíduo mais fraco, a -40, um grupo formidável), multiplicado pela intenção dele (Observador x1/4, Rival x1/2, Perseguidor x1) e pela frequência de participação (de x1/2 a x4). Modificadores extras se aplicam, como Desconhecido (-5) ou Gêmeo Maligno (-10 de base). Um personagem não pode ter mais que dois Inimigos nem mais que -60 pontos no total.",
+        "exemplos": [
+          {
+            "descricao": "Indivíduo de poder igual ao do PdJ, do tipo Perseguidor, aparece com frequência",
+            "custo": -10
+          },
+          {
+            "descricao": "Grupo pequeno mais poderoso que o PdJ, do tipo Rival, aparece raramente",
+            "custo": -10
+          },
+          {
+            "descricao": "Organização como o FBI ou a Máfia, do tipo Perseguidor, aparece a cada aventura",
+            "custo": -30
+          }
+        ],
+        "minimo": -60,
+        "maximo": -2
       },
       "icone": "coroa-rachado",
       "efeitos": [
@@ -4233,7 +4459,24 @@
         "pagina": 147
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "Intolerância Total (contra qualquer um fora do próprio grupo do personagem) vale -10 pontos fixos. Intolerância dirigida a um grupo específico varia de -1 ponto (se as vítimas são raras) a -5 pontos (se as vítimas são comuns), conforme a frequência com que essas vítimas são encontradas.",
+        "exemplos": [
+          {
+            "descricao": "Intolerância Total contra todos de fora do próprio grupo",
+            "custo": -10
+          },
+          {
+            "descricao": "Intolerância a um grupo encontrado com frequência",
+            "custo": -5
+          },
+          {
+            "descricao": "Intolerância a um grupo raramente encontrado",
+            "custo": -1
+          }
+        ],
+        "minimo": -10,
+        "maximo": -1
       },
       "icone": "mente-rachado",
       "efeitos": [
@@ -4560,7 +4803,23 @@
         "pagina": 148
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "Não há tabela fixa: o Mestre escolhe o valor comparando a maldição a desvantagens já existentes de gravidade parecida (quanto mais restritiva e debilitante for a maldição, maior o valor negativo). Se ela puder ser removida com relativa facilidade durante o jogo, o custo cai à metade.",
+        "exemplos": [
+          {
+            "descricao": "Ordem contínua leve, como 'você nunca dormirá tranquilo à noite'",
+            "custo": -10
+          },
+          {
+            "descricao": "Acontecimento trágico específico e distante no tempo",
+            "custo": -5
+          },
+          {
+            "descricao": "Maldição equivalente a uma desvantagem grave, mas fácil de remover (metade do valor)",
+            "custo": -15
+          }
+        ],
+        "maximo": -5
       },
       "icone": "lua-negra",
       "efeitos": [
@@ -5272,7 +5531,7 @@
       "tipo": [
         "mental"
       ],
-      "custo": "Variável",
+      "custo": "-5, -10, -15, -15 ou -30",
       "adamar": "livre",
       "resumo": "Se opõe à violência em algum grau.",
       "ref": {
@@ -5280,7 +5539,14 @@
         "pagina": 151
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "opcoes",
+        "valores": [
+          -5,
+          -10,
+          -15,
+          -15,
+          -30
+        ]
       },
       "icone": "mente-rachado",
       "efeitos": [
@@ -5288,7 +5554,8 @@
           "alvo": "teste",
           "ref": "ataque_letal_pessoa",
           "valor": -4,
-          "condicao": "só Assassino Relutante: ataque letal contra pessoa que vê (-2 se não vê o rosto, fora do corpo a corpo); também não pode Apontar"
+          "condicao": "só Assassino Relutante: ataque letal contra pessoa que vê (-2 se não vê o rosto, fora do corpo a corpo); também não pode Apontar",
+          "variante": 0
         },
         {
           "alvo": "regra",
@@ -5296,7 +5563,34 @@
         }
       ],
       "prerequisitos": [],
-      "nivel_max": null
+      "nivel_max": null,
+      "variantes": [
+        {
+          "nome": "Assassino Relutante",
+          "custo": -5,
+          "resumo": "Só sofre penalidade para matar quem vê o rosto de perto; não consegue usar Apontar."
+        },
+        {
+          "nome": "Incapaz de Ferir Inocentes",
+          "custo": -10,
+          "resumo": "Não consegue atacar quem não representa uma ameaça direta."
+        },
+        {
+          "nome": "Incapaz de Matar",
+          "custo": -15,
+          "resumo": "Não consegue matar; se matar de qualquer forma, entra em colapso por alguns dias."
+        },
+        {
+          "nome": "Legítima Defesa",
+          "custo": -15,
+          "resumo": "Só consegue atacar em defesa própria ou de terceiros."
+        },
+        {
+          "nome": "Não-Violência Total",
+          "custo": -30,
+          "resumo": "Não consegue atacar ninguém, nem em defesa própria."
+        }
+      ]
     },
     {
       "id": "padrao-de-tempo-reduzido",
@@ -5785,7 +6079,24 @@
         "pagina": 26
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "Custo de -5 pontos para cada -1 no teste de reação de quem reconhece o personagem (até -4), multiplicado pela proporção de pessoas afetadas (x1 a x1/3, conforme o grupo diminui) e pela frequência com que essas pessoas o reconhecem (x1, x1/2 ou x1/3).",
+        "exemplos": [
+          {
+            "descricao": "Penalidade de -2 na reação de quase todo mundo, reconhecido sempre",
+            "custo": -10
+          },
+          {
+            "descricao": "Penalidade de -3 na reação de um grupo grande, reconhecido às vezes",
+            "custo": -8
+          },
+          {
+            "descricao": "Penalidade de -1 na reação de um grupo pequeno, reconhecido raramente",
+            "custo": -2
+          }
+        ],
+        "minimo": -20,
+        "maximo": -1
       },
       "icone": "coroa-rachado",
       "efeitos": [
@@ -6559,7 +6870,24 @@
         "pagina": 158
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "Escolha a raridade da ameaça (Muito Comum -4/nível, Comum -2/nível, Ocasional -1/nível) e multiplique pelo número de níveis de penalidade adquiridos (de 1 a no máximo 5).",
+        "exemplos": [
+          {
+            "descricao": "Suscetível a doenças (Muito Comum), 2 níveis",
+            "custo": -8
+          },
+          {
+            "descricao": "Suscetível a venenos ingeridos (Ocasional), 3 níveis",
+            "custo": -3
+          },
+          {
+            "descricao": "Suscetível a um agente Comum, 5 níveis (máximo)",
+            "custo": -10
+          }
+        ],
+        "minimo": -20,
+        "maximo": -1
       },
       "icone": "punho-rachado",
       "efeitos": [
@@ -7058,7 +7386,24 @@
         "pagina": 159
       },
       "custo_estruturado": {
-        "tipo": "variavel"
+        "tipo": "variavel",
+        "como_calcular": "Some o custo pelo preço diário da droga (-5 barata, -10 cara, -20 muito cara), mais os efeitos que ela causa (incapacitante ou alucinógena -10, altamente viciante -5, totalmente viciante -10), mais +5 pontos se a droga for legal (nada é somado se for ilegal).",
+        "exemplos": [
+          {
+            "descricao": "Tabaco: caro, altamente viciante e legal",
+            "custo": -5
+          },
+          {
+            "descricao": "Heroína: muito cara, ilegal, totalmente viciante e incapacitante",
+            "custo": -40
+          },
+          {
+            "descricao": "Droga barata, ilegal, sem efeitos extras de dependência",
+            "custo": -5
+          }
+        ],
+        "minimo": -45,
+        "maximo": -5
       },
       "icone": "punho-rachado",
       "efeitos": [

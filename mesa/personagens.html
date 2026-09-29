@@ -3,39 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meus personagens — Ruínas de Adamar</title>
+  <title>Cofre de personagens — Ruínas de Adamar</title>
   <meta name="description" content="Os personagens de Adamar salvos neste navegador: veja a ficha pronta, edite, baixe ou mande para o narrador.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=a5ae1bad">
+  <link rel="stylesheet" href="../css/style.css?v=53d774d1">
   <script src="../js/whatsapp.js?v=07e0615b" defer></script>
-  <script src="../js/site.js?v=b243fa82" defer></script>
+  <script src="../js/site.js?v=5dfd6185" defer></script>
   <script src="../js/dados-gurps.js?v=8f667ebc" defer></script>
   <script src="../js/icones.js?v=bd7344e7" defer></script>
   <script src="../js/gurps-efeitos.js?v=0c7368a3" defer></script>
   <script src="../js/gurps-calculo.js?v=1a5bd31b" defer></script>
   <script src="../js/criador-ficha.js?v=b72994f4" defer></script>
   <script src="../js/personagens-salvos.js?v=4989026d" defer></script>
-  <script src="../js/personagens.js?v=34f7eeef" defer></script>
+  <script src="../js/personagens.js?v=a85ce4ea" defer></script>
 </head>
 <body data-root="../" data-page="mesa/personagens.html">
-  <main id="conteudo" class="page page-wide">
+  <main id="conteudo" class="page page-wide page-cofre">
     <article class="scroll">
       <!-- lista -->
       <section id="modo-lista">
         <header class="page-head">
           <p class="kicker">À Mesa · GURPS</p>
-          <h1>Meus personagens</h1>
-          <p class="lede">Os personagens salvos neste navegador. Eles ficam só aqui: para levar a outro aparelho, baixe o arquivo.</p>
+          <h1>Cofre de personagens</h1>
+          <p class="lede">Escolha um personagem para ver a ficha, ou crie um novo.</p>
         </header>
-        <div class="resumo-acoes">
-          <a class="btn btn-primary" href="criador.html?novo=1">+ Novo personagem</a>
-          <a class="btn btn-ghost" href="criador.html">Continuar o rascunho</a>
-          <label class="btn btn-ghost criador-arquivo">Abrir ficha (.json)…<input type="file" id="p-abrir" accept=".json,application/json"></label>
+        <div class="cofre">
+          <div class="cofre-grade" id="p-lista" aria-label="Personagens"></div>
+          <div class="cofre-painel" id="p-painel" aria-live="polite"></div>
+        </div>
+        <div class="resumo-acoes cofre-rodape">
+          <label class="btn-link criador-arquivo">Trazer ficha de outro aparelho (.json)…<input type="file" id="p-abrir" accept=".json,application/json"></label>
           <span class="copiado" id="p-aviso" role="status"></span>
         </div>
-        <div id="p-lista" class="personagens-lista"></div>
+        <p class="field-hint">O cofre fica neste navegador. Para levar um personagem a outro aparelho, use Baixar e depois traga o arquivo lá.</p>
       </section>
 
       <!-- ficha -->
@@ -50,7 +52,7 @@
           <a class="btn btn-ghost" id="f-whats" href="#" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
           <button type="button" class="btn btn-ghost" id="f-baixar">Baixar (.json)</button>
           <button type="button" class="btn btn-ghost" id="f-imprimir">Imprimir</button>
-          <a class="btn-link" href="personagens.html">‹ Todos os personagens</a>
+          <a class="btn-link" href="personagens.html">‹ Cofre</a>
         </div>
         <div id="f-ficha" class="ficha"></div>
       </section>

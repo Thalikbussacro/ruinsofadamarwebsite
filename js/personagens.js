@@ -39,43 +39,195 @@
     n.textContent = msg;
   }
 
-  var id = (/[?&]id=([^&]+)/.exec(location.search) || [])[1];
-  if (id) mostrarFicha(decodeURIComponent(id)); else mostrarLista();
 
-  // ---------- lista ----------
+  // ---------- cofre: grade de personagens + painel da ficha (tela de seleção de MMO antigo) ----------
+  var ARMAZENAMENTO_SELECAO = 'adamar-cofre-selecionado';
+  var RASCUNHO = 'adamar-criador';
+  var ERAS = { 'Era do Novo Mundo': 'novo', 'Era da Alta Magia': 'magia', 'Era do Apocalipse': 'apocalipse' };
+
+  // rascunho aberto no criador que ainda não foi salvo no cofre (aparece como slot próprio)
+  function rascunhoSolto() {
+    try {
+      var f = JSON.parse(localStorage.getItem(RASCUNHO) || 'null');
+      if (!f) return null;
+      f = criador.carregar(f);
+      if (JSON.stringify(f) === JSON.stringify(criador.fichaNova())) return null;
+      if (f.id_salvo && arquivo.obter(f.id_salvo) && JSON.stringify(arquivo.obter(f.id_salvo)) === JSON.stringify(f)) return null;
+      return f;
+    } catch (e) { return null; }
+  }
+
+  // perícia de maior NH: dá o ícone do brasão
+  function melhorPericia(r) {
+    var ps = r.pericias.filter(function (x) { return x.pericia && x.nh != null; });
+    ps.sort(function (a, b) { return b.nh - a.nh; });
+    return ps[0] || null;
+  }
+
+  function brasao(f, r, classe) {
+    var b = el('div', 'brasao' + (classe ? ' ' + classe : '') + ' era-' + (ERAS[f.era] || 'sem'));
+    var inicial = el('span', 'brasao-inicial', (String(f.nome || '?').trim()[0] || '?').toUpperCase());
+    b.appendChild(inicial);
+    var mp = melhorPericia(r);
+    var ic = mp && window.iconeSvg && window.iconeSvg(mp.pericia.icone, 'brasao-icone');
+    if (ic) b.appendChild(ic);
+    return b;
+  }
+
   function mostrarLista() {
-    var box = document.getElementById('p-lista');
+    var grade = document.getElementById('p-lista');
+    var painel = document.getElementById('p-painel');
     var aviso = document.getElementById('p-aviso');
+    var selecionado = null;
+    try { selecionado = localStorage.getItem(ARMAZENAMENTO_SELECAO); } catch (e) { selecionado = null; }
+
     function desenhar() {
-      box.textContent = '';
+      grade.textContent = '';
       var lista = arquivo.listar();
-      if (!lista.length) {
-        box.appendChild(el('p', 'pericia-vazio', 'Nenhum personagem salvo ainda. Monte um no criador e use "Salvar no navegador".'));
+      if (selecionado && selecionado !== 'rascunho' && !lista.some(function (p) { return p.id === selecionado; })) selecionado = null;
+      var solto = rascunhoSolto();
+      if (selecionado === 'rascunho' && !solto) selecionado = null;
+      if (!selecionado) selecionado = lista.length ? lista[0].id : (solto ? 'rascunho' : null);
+
+      var slots = lista.map(function (p) { return { id: p.id, ficha: criador.carregar(arquivo.obter(p.id)), atualizado: p.atualizado }; });
+      if (solto) slots.push({ id: 'rascunho', ficha: solto, rascunho: true });
+      slots.forEach(function (s) {
+        var r = criador.resumir(s.ficha);
+        var b = el('button', 'cofre-slot' + (s.id === selecionado ? ' is-sel' : ''));
+        b.type = 'button';
+        b.setAttribute('aria-pressed', String(s.id === selecionado));
+        b.appendChild(brasao(s.ficha, r));
+        var txt = el('span', 'cofre-slot-texto');
+        txt.appendChild(el('strong', 'cofre-slot-nome', s.ficha.nome || 'Sem nome'));
+        if (s.ficha.conceito) txt.appendChild(el('span', 'cofre-slot-conceito', s.ficha.conceito));
+        txt.appendChild(el('span', 'cofre-slot-meta', [s.ficha.origem, s.ficha.era && s.ficha.era.replace('Era d', 'D')].filter(Boolean).join(' · ') || 'Origem e era a definir'));
+        b.appendChild(txt);
+        b.appendChild(el('span', 'personagem-selo ' + (s.rascunho ? 'rascunho' : r.valida ? 'pronta' : 'rascunho'),
+          s.rascunho ? 'Não salvo' : r.valida ? 'Pronta' : 'Rascunho'));
+        b.addEventListener('click', function () { selecionar(s.id); });
+        b.addEventListener('dblclick', function () {
+          location.href = s.rascunho ? 'criador.html' : 'personagens.html?id=' + encodeURIComponent(s.id);
+        });
+        grade.appendChild(b);
+      });
+      // slot vazio: criar
+      var novo = el('a', 'cofre-slot cofre-novo');
+      novo.href = 'criador.html?novo=1';
+      novo.appendChild(el('span', 'brasao brasao-vazio', '+'));
+      var tn = el('span', 'cofre-slot-texto');
+      tn.appendChild(el('strong', 'cofre-slot-nome', 'Novo personagem'));
+      tn.appendChild(el('span', 'cofre-slot-conceito', 'Abrir o criador com uma ficha em branco'));
+      novo.appendChild(tn);
+      grade.appendChild(novo);
+
+      desenharPainel(slots.filter(function (s) { return s.id === selecionado; })[0]);
+    }
+
+    function selecionar(id) {
+      selecionado = id;
+      try { localStorage.setItem(ARMAZENAMENTO_SELECAO, id); } catch (e) { /* sem armazenamento */ }
+      desenhar();
+      if (window.matchMedia('(max-width: 899px)').matches) painel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function desenharPainel(s) {
+      painel.textContent = '';
+      if (!s) {
+        painel.appendChild(el('p', 'cofre-vazio', 'O cofre está vazio. Crie seu primeiro personagem no slot "Novo personagem".'));
         return;
       }
-      lista.forEach(function (p) {
-        var ficha = arquivo.obter(p.id);
-        var r = criador.resumir(criador.carregar(ficha));
-        var card = el('article', 'card personagem-card');
-        var h = el('h2', 'personagem-nome');
-        var link = el('a', null, p.nome);
-        link.href = 'personagens.html?id=' + encodeURIComponent(p.id);
-        h.appendChild(link);
-        card.appendChild(h);
-        if (p.conceito) card.appendChild(el('p', 'personagem-conceito', p.conceito));
-        card.appendChild(el('p', 'card-more', [ficha.era, ficha.origem].filter(Boolean).concat([ficha.orcamento + ' pontos' + (r.restante > 0 ? ' · ' + r.restante + ' guardados' : r.restante < 0 ? ' · saldo negativo' : '')]).join(' · ')));
-        card.appendChild(el('p', 'card-more', 'Salvo em ' + quando(p.atualizado)));
-        card.appendChild(el('span', 'personagem-selo ' + (r.valida ? 'pronta' : 'rascunho'),
-          r.valida ? 'Pronta' : 'Rascunho · ' + r.erros.length + (r.erros.length === 1 ? ' pendência' : ' pendências')));
-        var acoes = el('div', 'personagem-acoes');
-        var ver = el('a', 'btn btn-ghost', 'Ver ficha');
-        ver.href = link.href;
-        var editar = el('a', 'btn btn-ghost', 'Editar');
-        editar.href = 'criador.html?editar=' + encodeURIComponent(p.id);
-        var b = el('button', 'btn-link', 'Baixar');
-        b.type = 'button';
-        b.addEventListener('click', function () { baixar(ficha); });
-        var apagar = el('button', 'btn-link', 'Apagar');
+      var f = s.ficha, r = criador.resumir(f), v = r.valores;
+      var cab = el('div', 'cofre-cab');
+      cab.appendChild(brasao(f, r, 'brasao-grande'));
+      var id = el('div', 'cofre-id');
+      id.appendChild(el('h2', 'cofre-nome', f.nome || 'Sem nome'));
+      if (f.conceito) id.appendChild(el('p', 'cofre-conceito', f.conceito));
+      id.appendChild(el('p', 'cofre-meta', [f.era, f.origem, f.jogador ? 'jogador: ' + f.jogador : ''].filter(Boolean).join(' · ')));
+      cab.appendChild(id);
+      painel.appendChild(cab);
+
+      // atributos em destaque, como numa janela de status
+      var atr = el('div', 'cofre-atributos');
+      R.atributos.forEach(function (a) {
+        var c = el('div', 'cofre-atr');
+        c.appendChild(el('span', 'cofre-atr-sigla', a.sigla));
+        c.appendChild(el('strong', null, String(v[a.id])));
+        atr.appendChild(c);
+      });
+      painel.appendChild(atr);
+      var sec = el('p', 'cofre-secundarias');
+      sec.textContent = ['PV ' + v.pv, 'Vont ' + v.vontade, 'Per ' + v.per, 'PF ' + v.pf, 'Vel ' + num(v.velocidade), 'Desl ' + v.deslocamento, 'Esquiva ' + r.esquiva].join('  ·  ');
+      painel.appendChild(sec);
+      var saldo = el('p', 'cofre-saldo');
+      saldo.textContent = f.orcamento + ' pontos · ' + (r.restante >= 0 ? (r.restante ? r.restante + ' guardados' : 'todos usados') : 'saldo negativo ' + r.restante) +
+        ' · ' + moeda(r.dinheiro_restante) + ' na bolsa';
+      painel.appendChild(saldo);
+
+      function secao(titulo, itens) {
+        var b = el('section', 'cofre-secao');
+        b.appendChild(el('h3', null, titulo));
+        if (!itens.length) { b.appendChild(el('p', 'cofre-nada', '—')); return b; }
+        var ul = el('ul', 'cofre-lista');
+        itens.forEach(function (x) {
+          var li = el('li');
+          var ic = window.iconeSvg && window.iconeSvg(x.icone, 'icone-item');
+          if (ic) li.appendChild(ic);
+          li.appendChild(el('span', 'cofre-item-nome', x.nome));
+          if (x.valor != null) li.appendChild(el('span', 'cofre-item-valor', x.valor));
+          ul.appendChild(li);
+        });
+        b.appendChild(ul);
+        return b;
+      }
+      var tracos = r.tracos.filter(function (x) { return x.traco; });
+      var nomeTraco = function (x) {
+        var e = x.sel.escolha || {}, c = x.traco.custo_estruturado || {};
+        var n = x.traco.nome + (c.tipo === 'niveis' ? ' ' + (e.nivel || 0) : '');
+        var vr = criador.nomeVariante(x.traco, e.opcao);
+        if (c.tipo === 'opcoes' && vr && vr !== x.traco.nome) n += ' (' + vr + ')';
+        return n;
+      };
+      var grid = el('div', 'cofre-colunas');
+      grid.appendChild(secao('Vantagens', tracos.filter(function (x) { return x.custo >= 0; }).map(function (x) { return { nome: nomeTraco(x), icone: x.traco.icone }; })
+        .concat(r.talentos.filter(function (x) { return x.talento; }).map(function (x) { return { nome: 'Talento ' + x.talento.nome + ' ' + x.sel.nivel, icone: 'star' }; }))));
+      grid.appendChild(secao('Desvantagens', tracos.filter(function (x) { return x.custo < 0; }).map(function (x) { return { nome: nomeTraco(x), icone: x.traco.icone }; })
+        .concat(f.peculiaridades.filter(Boolean).map(function (q) { return { nome: q, icone: 'spiral' }; }))));
+      var pers = r.pericias.filter(function (x) { return x.pericia; }).slice().sort(function (a, b) { return (b.nh || 0) - (a.nh || 0); });
+      grid.appendChild(secao('Perícias', pers.map(function (x) {
+        return { nome: x.pericia.nome + (x.sel.especializacao ? ' (' + x.sel.especializacao + ')' : ''), icone: x.pericia.icone, valor: x.nh == null ? '—' : String(x.nh) };
+      })));
+      grid.appendChild(secao('Equipamento', r.equipamento.filter(function (x) { return x.item; }).map(function (x) {
+        return { nome: x.item.nome + ((x.sel.quantidade || 1) > 1 ? ' ×' + x.sel.quantidade : ''), icone: x.item.icone };
+      })));
+      painel.appendChild(grid);
+
+      if (!r.valida) {
+        painel.appendChild(el('p', 'cofre-pendencias', r.erros.length + (r.erros.length === 1 ? ' pendência' : ' pendências') + ' para a ficha ficar pronta: ' +
+          r.erros.slice(0, 3).map(function (e) { return e.texto; }).join(' ') + (r.erros.length > 3 ? ' …' : '')));
+      }
+
+      // ações
+      var acoes = el('div', 'cofre-acoes');
+      var editar = el('a', 'btn btn-primary', s.rascunho ? 'Continuar' : 'Editar');
+      editar.href = s.rascunho ? 'criador.html' : 'criador.html?editar=' + encodeURIComponent(s.id);
+      acoes.appendChild(editar);
+      if (!s.rascunho) {
+        var ver = el('a', 'btn btn-ghost', 'Ficha completa');
+        ver.href = 'personagens.html?id=' + encodeURIComponent(s.id);
+        acoes.appendChild(ver);
+        var cfg = (window.SITE_CONFIG && window.SITE_CONFIG.whatsapp) || { numero: '' };
+        var whats = el('a', 'btn btn-ghost' + (r.valida ? '' : ' is-disabled'), 'Enviar');
+        whats.target = '_blank';
+        whats.rel = 'noopener';
+        whats.href = window.buildWhatsAppUrl ? window.buildWhatsAppUrl(cfg.numero, 'Olá! Montei meu personagem de Adamar:\n\n' + criador.textoFicha(f, r)) : '#';
+        whats.title = r.valida ? 'Mandar a ficha pelo WhatsApp' : 'Resolva as pendências antes de enviar';
+        whats.addEventListener('click', function (ev) { if (!r.valida) { ev.preventDefault(); aviso.textContent = 'Resolva as pendências antes de enviar.'; } });
+        acoes.appendChild(whats);
+        var baixa = el('button', 'btn-link', 'Baixar');
+        baixa.type = 'button';
+        baixa.addEventListener('click', function () { baixar(f); });
+        acoes.appendChild(baixa);
+        var apagar = el('button', 'btn-link cofre-apagar', 'Apagar');
         apagar.type = 'button';
         var confirmando = null;
         apagar.addEventListener('click', function () {
@@ -85,15 +237,16 @@
             return;
           }
           clearTimeout(confirmando);
-          arquivo.remover(p.id);
+          arquivo.remover(s.id);
+          aviso.textContent = (f.nome || 'Personagem') + ' foi apagado.';
+          selecionado = null;
           desenhar();
-          aviso.textContent = p.nome + ' foi apagado.';
         });
-        [ver, editar, b, apagar].forEach(function (x) { acoes.appendChild(x); });
-        card.appendChild(acoes);
-        box.appendChild(card);
-      });
+        acoes.appendChild(apagar);
+      }
+      painel.appendChild(acoes);
     }
+
     document.getElementById('p-abrir').addEventListener('change', function (ev) {
       var arq = ev.target.files && ev.target.files[0];
       if (!arq) return;
@@ -101,8 +254,9 @@
       leitor.onload = function () {
         try {
           var f = criador.carregar(JSON.parse(leitor.result));
-          var novo = arquivo.salvar(f);
-          aviso.textContent = novo ? (f.nome || 'Personagem') + ' foi adicionado.' : 'Não deu para salvar no navegador.';
+          var novoId = arquivo.salvar(f);
+          aviso.textContent = novoId ? (f.nome || 'Personagem') + ' entrou no cofre.' : 'Não deu para salvar no navegador.';
+          if (novoId) selecionado = novoId;
           desenhar();
         } catch (e) { aviso.textContent = 'Esse arquivo não é uma ficha válida.'; }
         ev.target.value = '';
@@ -327,4 +481,7 @@
       box.appendChild(av);
     }
   }
+  // ?id=<id> abre a ficha completa; sem isso, o cofre
+  var id = (/[?&]id=([^&]+)/.exec(location.search) || [])[1];
+  if (id) mostrarFicha(decodeURIComponent(id)); else mostrarLista();
 })();

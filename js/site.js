@@ -32,8 +32,7 @@
     ]},
     { label: 'À Mesa', children: [
       { label: 'Regras', href: 'mesa/regras.html' },
-      { label: 'Criar personagem', href: 'mesa/criador.html' },
-      { label: 'Meus personagens', href: 'mesa/personagens.html' },
+      { label: 'Cofre de personagens', href: 'mesa/personagens.html', tambem: ['mesa/criador.html'] },
       { label: 'Atributos (GURPS)', href: 'mesa/ficha-gurps.html' },
       { label: 'Perícias (GURPS)', href: 'mesa/pericias-gurps.html' },
       { label: 'Vantagens (GURPS)', href: 'mesa/vantagens-gurps.html' },
@@ -112,7 +111,7 @@
         item.children.forEach(function (child) {
           var a = el('a', { href: ROOT + child.href, text: child.label });
           var subLi = el('li', null, [a]);
-          if (child.href === PAGE) {
+          if (child.href === PAGE || (child.tambem && child.tambem.indexOf(PAGE) !== -1)) {
             parentActive = true;
             subLi.classList.add('is-active');
             a.classList.add('is-active');

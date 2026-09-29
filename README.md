@@ -36,7 +36,7 @@ js/ficha-gurps.js    página de atributos com calculadora
 js/criador-ficha.js  lógica do criador de personagem (custo, NH, limites, avisos, texto da ficha)
 js/gurps-efeitos.js  texto e etiqueta (aplicado, sempre, condicional, regra) dos efeitos dos traços
 js/personagens-salvos.js  personagens guardados no navegador (localStorage)
-js/personagens.js    Meus personagens: lista e ficha pronta (mesa/personagens.html)
+js/personagens.js    Cofre de personagens: grade estilo seleção de MMO, painel da ficha e ficha completa (mesa/personagens.html)
 js/icones.js         desenha o ícone de um item (window.iconeSvg)
 js/criador.js        página do criador de personagem (mesa/criador.html)
 js/dados-gurps.js    GERADO a partir de data/gurps/ — não editar à mão

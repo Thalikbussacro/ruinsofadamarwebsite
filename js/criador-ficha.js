@@ -169,7 +169,8 @@
       var n = sel.qualidade || 0;
       return tabela.filter(function (q) { return q.nivel === n; })[0] || { nivel: 0, nome: 'Normal', preco: 1 };
     }
-    function localPadrao(it) { return classeDoItem(it) === 'equipamento' ? 'levado' : 'equipado'; }
+    // arma, armadura, escudo e recipientes (mochila, bolsa, aljava) entram no corpo; o resto vai levado
+    function localPadrao(it) { return classeDoItem(it) === 'equipamento' && !(it && RECIPIENTE.test(it.nome)) ? 'levado' : 'equipado'; }
 
     // ---------- lugares do corpo: cada item equipado ocupa um ----------
     var LUGARES = {
@@ -199,6 +200,7 @@
       if (it.protecao) return 'corpo';
       if (it.escudo) return 'mao_e';
       if (classeDoItem(it) === 'armas') return modosDuasMaos(it).todos ? 'maos' : 'mao_d';
+      if (/algibeira|bolsa|bainha|cintura|bornal/i.test(it.nome)) return 'cinto';
       return RECIPIENTE.test(it.nome) ? 'costas' : 'corpo';
     }
     var RECIPIENTE = /mochila|bolsa|algibeira|aljava|saco|bainha|bornal|cesto|caixa|baú|alforje/i;

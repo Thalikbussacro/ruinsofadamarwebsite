@@ -32,8 +32,34 @@
     ['Pé esquerdo', ['pés'], 'path', { d: 'M103 340 L122 340 C126 344 130 348 130 356 L102 356 Z' }]
   ];
 
-  function corpo(protecao) {
-    var s = svg('svg', { viewBox: '30 8 140 356', class: 'boneco-corpo', role: 'img', 'aria-label': 'Proteção por parte do corpo' });
+  // onde desenhar o ícone de cada coisa sobre o corpo
+  var PONTO_MAO = { mao_d: [40, 200], mao_e: [160, 200] };
+  var PONTO_PARTE = {
+    'crânio': [100, 27], rosto: [100, 57], 'pescoço': [100, 77], tronco: [100, 116], corpo: [100, 116], virilha: [100, 173],
+    'braços': [53, 128], membros: [53, 128], 'mãos': [46, 184], pernas: [88, 262], pés: [87, 349]
+  };
+  function icone(grupo, x, tam, cx, cy, classe) {
+    var g = svg('g', { class: 'boneco-item' + (classe ? ' ' + classe : '') });
+    g.appendChild(svg('circle', { cx: cx, cy: cy, r: tam / 2 + 3 }));
+    var ic = window.iconeSvg && window.iconeSvg(x.item.icone);
+    if (ic) {
+      ic.setAttribute('x', cx - tam / 2);
+      ic.setAttribute('y', cy - tam / 2);
+      ic.setAttribute('width', tam);
+      ic.setAttribute('height', tam);
+      g.appendChild(ic);
+    }
+    var t = svg('title', {});
+    t.textContent = x.item.nome;
+    g.appendChild(t);
+    grupo.appendChild(g);
+  }
+
+  function corpo(protecao, equipados) {
+    var s = svg('svg', { viewBox: '24 4 152 364', class: 'boneco-corpo', role: 'img', 'aria-label': 'Proteção por parte do corpo e o que o personagem leva' });
+    function doLugar(l) { return equipados.filter(function (x) { return x.sel.lugar === l; }); }
+    // costas: atrás do corpo, aparecendo por cima dos ombros
+    doLugar('costas').forEach(function (x, k) { icone(s, x, 20, k === 0 ? 62 : 138, 70, 'atras'); });
     PARTES.forEach(function (p) {
       var rd = 0, pecas = [];
       p[1].forEach(function (k) {
@@ -47,6 +73,23 @@
       t.textContent = p[0] + (rd ? ': RD ' + rd + ' (' + pecas.join(', ') + ')' : ': sem proteção');
       forma.appendChild(t);
       s.appendChild(forma);
+    });
+    // vestido: o ícone de cada peça na primeira parte que ela cobre
+    var usados = {};
+    doLugar('corpo').forEach(function (x) {
+      var local = x.item.protecao ? String(x.item.protecao.local || '').split(/,\s*/)[0] : 'tronco';
+      var p = PONTO_PARTE[local] || PONTO_PARTE.tronco;
+      var n = usados[local] = (usados[local] || 0) + 1;
+      var desvio = [0, 16, -16, 32, -32][Math.min(n - 1, 4)];
+      icone(s, x, 14, p[0] + desvio, p[1], 'vestido');
+    });
+    // cinto: na cintura, lado a lado
+    doLugar('cinto').forEach(function (x, k) { icone(s, x, 13, 76 + k * 16, 160, 'cinto'); });
+    // mãos (duas mãos: o mesmo ícone nas duas)
+    ['mao_d', 'mao_e'].forEach(function (m) {
+      equipados.filter(function (x) { return x.sel.lugar === m || x.sel.lugar === 'maos'; }).slice(0, 1).forEach(function (x) {
+        icone(s, x, 24, PONTO_MAO[m][0], PONTO_MAO[m][1], 'na-mao');
+      });
     });
     return s;
   }
@@ -125,7 +168,7 @@
     dir.appendChild(cartao('costas', 'Costas', em('costas'), opcoes, podemIr('costas')));
     b.appendChild(esq);
     var meio = el('div', 'boneco-meio');
-    meio.appendChild(corpo(r.combate.protecao || {}));
+    meio.appendChild(corpo(r.combate.protecao || {}, equipados));
     var vestido = em('corpo');
     if (vestido.length) meio.appendChild(el('p', 'boneco-vestido', 'Vestido: ' + vestido.map(function (x) { return x.item.nome; }).join(', ')));
     b.appendChild(meio);

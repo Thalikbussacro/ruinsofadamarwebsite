@@ -2661,6 +2661,14 @@ body.arrastando .app-lado { outline: 2px dashed var(--ouro-linha); outline-offse
 @media (max-width: 599px) {
   .boneco { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .boneco-meio { grid-column: 1 / -1; grid-row: 1; }
-  .boneco-corpo { max-width: 8.5rem; }
+  .boneco-corpo { max-width: 13rem; }
 }
 @media print { .boneco-por, .boneco-tira { display: none !important; } .boneco-parte.protegida { fill: #999 !important; } }
+/* ícones do que o personagem leva, desenhados sobre o corpo */
+.boneco-item circle { fill: #1a1612; stroke: var(--ouro-linha); stroke-width: 1; }
+.boneco-item .icone { color: var(--ouro-claro); }
+.boneco-item.na-mao circle { stroke: var(--ouro); stroke-width: 1.4; }
+.boneco-item.na-mao .icone { color: var(--osso-claro); }
+.boneco-item.atras { opacity: 0.8; }
+.boneco-item.vestido circle { fill: rgba(26, 22, 18, 0.85); }
+@media print { .boneco-item circle { fill: #fff !important; stroke: #000 !important; } .boneco-item .icone { color: #000 !important; } }

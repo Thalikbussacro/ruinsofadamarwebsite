@@ -263,7 +263,8 @@ if (comNumeros) {
   const mochila = c2.novoItem('mochila');
   const corda = Object.assign(c2.novoItem(G.equipamento.find((i) => /corda/i.test(i.nome) && i.peso && i.peso.kg > 0).id), {});
   assert.equal(espada.local, 'equipado');   // arma entra pronta
-  assert.equal(mochila.local, 'levado');    // o resto vai carregado
+  assert.equal(mochila.local, 'equipado');  // mochila já vai nas costas
+  assert.equal(c2.novoItem('racao-de-viagem').local, 'levado'); // o resto vai carregado
   corda.dentro = mochila.uid;
   e.equipamento.push(espada, mochila, corda);
   const pesoTudo = c2.resumir(e).combate.peso_total;
@@ -318,7 +319,8 @@ if (comNumeros) {
   // fichas antigas ganham uid e local ao carregar
   const antiga = c2.carregar({ equipamento: [{ id: 'mochila', quantidade: 1 }] });
   assert.ok(antiga.equipamento[0].uid);
-  assert.equal(antiga.equipamento[0].local, 'levado');
+  assert.equal(antiga.equipamento[0].local, 'equipado');
+  assert.equal(antiga.equipamento[0].lugar, 'costas');
 }
 
 // situações: bônus condicionais viram interruptores com alvo

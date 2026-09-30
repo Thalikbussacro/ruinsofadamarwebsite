@@ -8,6 +8,7 @@
     var pontos = (regras.campanha && regras.campanha.pontos_iniciais) || { padrao: 80 };
     return {
       versao: 1,
+      sistema: 'gurps',  // 'gurps' (a mesa) ou 'adamar-rpg' (o sistema próprio, que vai para o jogo)
       id_salvo: '',
       nome: '', jogador: '', conceito: '', era: '', origem: '', aparencia_fisica: '', historia: '',
       idade: '', altura: '', peso_corporal: '',
@@ -798,7 +799,7 @@
     function aplicarModelo(atual, modelo) {
       var m = modelo.ficha || {};
       var f = carregar(JSON.parse(JSON.stringify(m)));
-      ['id_salvo', 'nome', 'jogador', 'era', 'origem', 'aparencia_fisica', 'historia', 'notas', 'orcamento', 'idioma_materno', 'idade', 'altura', 'peso_corporal', 'retrato'].forEach(function (k) {
+      ['id_salvo', 'nome', 'jogador', 'era', 'origem', 'aparencia_fisica', 'historia', 'notas', 'orcamento', 'idioma_materno', 'idade', 'altura', 'peso_corporal', 'retrato', 'sistema'].forEach(function (k) {
         if (atual[k] != null && atual[k] !== '') f[k] = atual[k];
       });
       if (atual.conceito) f.conceito = atual.conceito;

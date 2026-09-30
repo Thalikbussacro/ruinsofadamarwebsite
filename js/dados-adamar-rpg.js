@@ -1,0 +1,3 @@
+// ARQUIVO GERADO por tools/gerar-dados.mjs a partir de data/adamar-rpg/*.json: só o que o Adamar RPG muda em relação ao GURPS.
+// O conjunto completo é montado no navegador por js/sistemas.js. Não edite à mão.
+window.ADAMAR_RPG_DIF = {"desvantagens":{"itens":[],"remover":[]},"equipamento":{"itens":[],"remover":[]},"meta":{"nome":"Adamar RPG","descricao":"O sistema próprio de Ruínas de Adamar, que vai para o jogo. Começa como cópia viva do GURPS: estes arquivos guardam só o que muda. Tudo o que não está aqui continua igual ao GURPS (e é o que ainda falta trocar antes de distribuir o jogo). Relatório: node tools/adamar-rpg.mjs","termos":{}},"pericias":{"itens":[],"remover":[]},"regras":{},"vantagens":{"itens":[],"remover":[]}};

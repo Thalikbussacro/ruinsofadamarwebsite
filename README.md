@@ -6,6 +6,7 @@ Site estático do cenário de RPG "Ruínas de Adamar", jogado com GURPS 4e: o mu
 - **Criador de personagem** (`mesa/criador.html`): em dois painéis, estilo GCS (a ficha viva à esquerda, as etapas em abas com os catálogos à direita; arrastar um item para a ficha ou usar o +; no celular, alterna entre Ficha e Montar), com pontos como saldo (vantagens custam, desvantagens devolvem, pode sobrar), modelos prontos, janela de escolha para traços com versões, níveis ou custo variável, validação contra as regras e ícone por item.
 - **Na ficha, durante o jogo:** situações (bônus que só valem em certos momentos) se ligam e desligam e entram nas rolagens; cada item tem local (numa mão, nas duas, nas costas, no cinto, vestido, levado, dentro de outro, em casa) e contador de usos; um boneco mostra a proteção de cada parte do corpo e o que está nas mãos, costas e cinto (uma coisa por mão: pôr outra tira a primeira); tabela de carga e força, locais de acerto, pontos por parte, nível relativo das perícias, retrato e qualidade dos itens.
 - **Jogando** (botão no topo da ficha): tudo numa tela, estilo MMO — retrato, PV/PF, situações, o boneco (clicar na arma rola), barra de ação com cada arma (atacar, dano por modo, aparar) e as defesas, atributos e perícias para rolar, o histórico de rolagens e o inventário em quadradinhos (clicar gasta um consumível).
+- **Dois sistemas de regras:** GURPS 4ª ed. (a mesa) e **Adamar RPG** (o sistema próprio, que vai para o jogo). O Adamar RPG é uma cópia viva do GURPS: `data/adamar-rpg/` guarda só o que muda e `js/sistemas.js` monta o conjunto no navegador. Cada ficha guarda o seu sistema (seletor no criador). Quanto já é próprio: `node tools/adamar-rpg.mjs`.
 - **Protótipo do jogo** (dentro do modo Jogando; regras próprias em `data/jogo/`, motor em `js/simulacao.js`, design em `docs/jogo/design.md`): relógio e clima por bioma e estação, fome, sede, cansaço e temperatura do corpo (roupa, chuva, abrigo), saúde por parte do corpo (ferimentos que sangram, infeccionam e curam; enfaixar, costurar, tala), inventário em grade com encaixe automático, desgaste e conserto de armas, e receitas (lenha, água fervida, bandagem, tala, carne assada…).
 - **Em jogo** (na ficha): PV, PF, coroas, pontos ganhos (com histórico e desfazer), notas e **diário da sessão** (entradas livres e rolagens registradas com um clique).
 - **Rolador de dados**: clique em atributo, perícia, defesa ou dano na ficha para rolar 3d com sorteio criptográfico; modificador de situação e resultado explicado (margem, crítico).
@@ -50,7 +51,10 @@ js/personagens.js    Cofre de personagens: grade estilo seleção de MMO, painel
 js/icones.js         desenha o ícone de um item (window.iconeSvg)
 js/detalhes.js       itens em card compacto + janela de detalhes (window.ItemUI): listas, criador e ficha
 js/boneco.js         o boneco do personagem: proteção por parte do corpo e os lugares (mãos, costas, cinto)
+js/sistemas.js       monta o Adamar RPG (GURPS + diferenças de data/adamar-rpg/) e escolhe o sistema de cada ficha
+js/dados-adamar-rpg.js  GERADO: só as diferenças do Adamar RPG em relação ao GURPS
 js/simulacao.js      motor do protótipo do jogo: tempo, clima, necessidades, saúde, grade, desgaste, receitas
+data/adamar-rpg/     Adamar RPG: só o que muda em relação ao GURPS (meta, regras e listas)
 data/jogo/           regras próprias do jogo (proposta): saúde, necessidades, mundo, materiais, receitas
 js/criador.js        página do criador de personagem (mesa/criador.html)
 js/combate.js        consulta rápida de combate (manobras e iniciativa de regras.json)

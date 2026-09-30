@@ -1,7 +1,23 @@
 // js/criador.js — tela do criador de personagem (modo aplicativo): etapas, catálogos com filtros, validação e salvar.
 // A lógica de pontos, NH e validação fica em criador-ficha.js.
 (function () {
-  var G = window.GURPS;
+  // o sistema de regras vem da ficha que vai abrir: ?editar=, ?sistema=, ou o rascunho guardado
+  function sistemaDaVez() {
+    try {
+      var ed = /[?&]editar=([^&]+)/.exec(location.search);
+      if (ed && window.criarArquivo) {
+        var sv = window.criarArquivo(window.localStorage).obter(decodeURIComponent(ed[1]));
+        if (sv) return sv.sistema || 'gurps';
+      }
+      var pedido = /[?&]sistema=([a-z-]+)/.exec(location.search);
+      if (pedido) return pedido[1];
+      if (/[?&]novo=1/.test(location.search)) return 'gurps';
+      var rasc = JSON.parse(window.localStorage.getItem('adamar-criador') || 'null');
+      return (rasc && rasc.sistema) || 'gurps';
+    } catch (e) { return 'gurps'; }
+  }
+  var SISTEMA = sistemaDaVez();
+  var G = window.Sistemas ? window.Sistemas.obter(SISTEMA) : window.GURPS;
   var raiz = document.getElementById('criador');
   if (!G || !G.regras || !window.criarCalculo || !window.criarCriador || !raiz) return;
   var R = G.regras;
@@ -114,6 +130,7 @@
     ficha = criador.fichaNova();
     try { localStorage.setItem(ARMAZENAMENTO_ETAPA, '0'); history.replaceState(null, '', location.pathname); } catch (e) { /* sem armazenamento */ }
   }
+  ficha.sistema = SISTEMA;
   // compara fichas sem o estado "em jogo" (PV/PF atuais mudam no cofre durante a sessão, não são edição da ficha)
   function assinatura(f) { var c = Object.assign({}, f); delete c.em_jogo; return JSON.stringify(c); }
   // o painel "Em jogo" do cofre pode ter mudado pontos ganhos, PV e PF depois que a ficha foi aberta aqui
@@ -473,6 +490,21 @@
   atualizadores.push(function () { if ((caixaRetrato.style.backgroundImage !== '') !== !!ficha.retrato) mostrarRetrato(); });
   mostrarRetrato();
 
+  // sistema de regras: trocar recarrega o criador com o outro conjunto (a ficha e o que já foi escolhido vão junto)
+  var seletorSistema = document.getElementById('c-sistema');
+  if (seletorSistema && window.Sistemas) {
+    window.Sistemas.LISTA.forEach(function (x) { var o = el('option', null, x.nome); o.value = x.id; seletorSistema.appendChild(o); });
+    seletorSistema.value = SISTEMA;
+    seletorSistema.addEventListener('change', function () {
+      ficha.sistema = seletorSistema.value;
+      guardarRascunho();
+      location.href = 'criador.html';
+    });
+    var dicaSistema = document.getElementById('c-sistema-dica');
+    if (dicaSistema) dicaSistema.textContent = window.Sistemas.LISTA.filter(function (x) { return x.id === SISTEMA; })[0].resumo;
+  }
+  var seloSistema = document.getElementById('lado-sistema');
+  if (seloSistema) seloSistema.textContent = G.nome_sistema || 'GURPS';
   var camposTexto = Array.prototype.slice.call(document.querySelectorAll('[data-campo]'));
   camposTexto.forEach(function (c) {
     c.addEventListener('input', function () { ficha[c.getAttribute('data-campo')] = c.value; mudou(); });

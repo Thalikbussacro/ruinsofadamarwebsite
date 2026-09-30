@@ -2,9 +2,19 @@
 (function () {
   var G = window.GURPS;
   if (!G || !G.regras || !window.criarCalculo || !window.criarCriador || !window.criarArquivo) return;
-  var R = G.regras;
-  var calc = window.criarCalculo(R);
-  var criador = window.criarCriador(G, calc);
+  var R, calc, criador;
+  // cada personagem usa o motor do seu sistema de regras (GURPS ou Adamar RPG); os motores ficam guardados
+  var motores = {};
+  function usarSistema(id) {
+    id = id || 'gurps';
+    if (!motores[id]) {
+      var g = window.Sistemas ? window.Sistemas.obter(id) : window.GURPS;
+      var c = window.criarCalculo(g.regras);
+      motores[id] = { G: g, R: g.regras, calc: c, criador: window.criarCriador(g, c) };
+    }
+    G = motores[id].G; R = motores[id].R; calc = motores[id].calc; criador = motores[id].criador;
+  }
+  usarSistema('gurps');
   var arquivo = window.criarArquivo(window.localStorage);
   var Efeitos = window.GurpsEfeitos;
 
@@ -567,9 +577,10 @@
       if (selecionado === 'rascunho' && !solto) selecionado = null;
       if (!selecionado) selecionado = lista.length ? lista[0].id : (solto ? 'rascunho' : null);
 
-      var slots = lista.map(function (p) { return { id: p.id, ficha: criador.carregar(arquivo.obter(p.id)), atualizado: p.atualizado }; });
+      var slots = lista.map(function (p) { var bruta = arquivo.obter(p.id); usarSistema(bruta && bruta.sistema); return { id: p.id, ficha: criador.carregar(bruta), atualizado: p.atualizado }; });
       if (solto) slots.push({ id: 'rascunho', ficha: solto, rascunho: true });
       slots.forEach(function (s) {
+        usarSistema(s.ficha.sistema);
         var r = criador.resumir(s.ficha);
         var b = el('button', 'cofre-slot' + (s.id === selecionado ? ' is-sel' : ''));
         b.type = 'button';
@@ -614,6 +625,7 @@
         painel.appendChild(el('p', 'cofre-vazio', 'O cofre está vazio. Crie seu primeiro personagem no slot "Novo personagem".'));
         return;
       }
+      usarSistema(s.ficha.sistema);
       var f = s.ficha, r = criador.resumir(f), v = r.valores;
       var cab = el('div', 'cofre-cab');
       cab.appendChild(brasao(f, r, 'brasao-grande'));
@@ -919,6 +931,7 @@
       document.getElementById('fx-menu-btn').hidden = true;
       return;
     }
+    usarSistema(salvo.sistema);
     var semUid = (salvo.equipamento || []).some(function (x) { return !x.uid; });
     var SIM = window.criarSimulacao && G.jogo && G.jogo.saude ? window.criarSimulacao(G.jogo) : null;
     var f, r, v, comPericia, vantagens, desvantagens, talentos, qualidades, peculiaridades, itens;
@@ -960,7 +973,7 @@
     }
     document.title = (f.nome || 'Personagem') + ' — Ruínas de Adamar';
     document.getElementById('f-nome').textContent = f.nome || 'Sem nome';
-    document.getElementById('f-kicker').textContent = [f.era, f.origem, f.idade ? f.idade + ' anos' : '', f.altura, f.peso_corporal].filter(Boolean).join(' · ') || 'Personagem';
+    document.getElementById('f-kicker').textContent = [G.nome_sistema || 'GURPS', f.era, f.origem, f.idade ? f.idade + ' anos' : '', f.altura, f.peso_corporal].filter(Boolean).join(' · ') || 'Personagem';
     var conceito = document.getElementById('f-conceito');
     conceito.textContent = f.conceito || '';
     document.getElementById('f-editar').href = 'criador.html?editar=' + encodeURIComponent(idFicha);

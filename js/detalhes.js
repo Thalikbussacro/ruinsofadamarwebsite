@@ -37,9 +37,12 @@
     sc.src = (document.body.getAttribute('data-root') || '') + G.textos_url;
     sc.onload = function () {
       var T = window.GURPS_TEXTOS || {};
-      Object.keys(T).forEach(function (lista) {
-        (G[lista] || []).forEach(function (it) { if (T[lista][it.id]) Object.assign(it, T[lista][it.id]); });
-      });
+      function juntar(g) {
+        Object.keys(T).forEach(function (lista) {
+          (g[lista] || []).forEach(function (it) { if (T[lista][it.id] && !it.descricao) Object.assign(it, T[lista][it.id]); });
+        });
+      }
+      if (window.Sistemas) window.Sistemas.cada(juntar); else juntar(G);
       textosProntos = true;
       esperando.splice(0).forEach(function (f) { f(); });
     };

@@ -37,7 +37,7 @@ Os 1097 itens ganharam "Mais sobre" (descrição, exemplos na mesa, Adamar, dica
 
 - [ ] **Ler o documento de design** e corrigir o que não for o que você imagina.
 - [ ] **Decisões em aberto:** região de Roestia do primeiro mapa e seus biomas; quais forasteiros existem e como agem; se a magia entra no primeiro jogo; tempo real ou turnos no solo; nome do jogo.
-- [ ] **Sistema de regras próprio** antes de distribuir o jogo (licença do GURPS): nomes, números e tabelas próprios.
+- [ ] **Adamar RPG** (o sistema próprio, ao lado do GURPS): ir trocando em `data/adamar-rpg/` o que ainda é igual ao GURPS — custos e fórmulas de `regras.json`, a lista de perícias e vantagens com seus valores, a tabela de dano, os números das armas e armaduras, os termos (NH, GdP, GeB, RD). `node tools/adamar-rpg.mjs` mostra quanto já é próprio (hoje 0%).
 - [ ] **Números da simulação** (fome, sede, frio, sangramento, infecção, cura, desgaste, receitas) são proposta minha em `data/jogo/*.json`; ajuste jogando no modo Jogando.
 - [ ] **Calendário:** usei um ano de 360 dias em quatro estações de 90 como proposta; o cânone não fixa um.
 

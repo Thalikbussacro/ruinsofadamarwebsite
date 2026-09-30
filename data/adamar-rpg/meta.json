@@ -1,0 +1,5 @@
+{
+  "nome": "Adamar RPG",
+  "descricao": "O sistema próprio de Ruínas de Adamar, que vai para o jogo. Começa como cópia viva do GURPS: estes arquivos guardam só o que muda. Tudo o que não está aqui continua igual ao GURPS (e é o que ainda falta trocar antes de distribuir o jogo). Relatório: node tools/adamar-rpg.mjs",
+  "termos": {}
+}

@@ -2808,3 +2808,6 @@ body.modo-jogando .fx-conteudo > .lede { display: none; }
 .jg-nos-bracos { display: flex; flex-wrap: wrap; gap: 3px; }
 .jg-solto { width: 2.6rem; height: 2.6rem; border-color: #6e1f1a; }
 .jg-arma-cond { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: #c4b89f; }
+/* sistema de regras da ficha */
+.selo-sistema { justify-self: start; padding: 0.05rem 0.45rem; font-family: var(--f-titulo); font-size: 0.68rem; letter-spacing: 0.06em; color: var(--ouro-claro); border: 1px solid var(--ouro-linha); border-radius: 999px; }
+.selo-sistema:empty { display: none; }

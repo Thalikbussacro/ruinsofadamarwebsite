@@ -130,9 +130,18 @@ Os protótipos do site são a primeira versão da interface do jogo:
 | Tela de jogo (HUD) | Modo **Jogando**: retrato, PV/PF, situações, barra de ação, perícias, rolagens, inventário |
 | Enciclopédia | Listas de itens e perícias com "Mais sobre" |
 
-## 7. Sistema de regras próprio (obrigatório antes de distribuir)
+## 7. Sistema de regras próprio: Adamar RPG (obrigatório antes de distribuir)
 
-As regras, números e textos do GURPS pertencem à Steve Jackson Games. O jogo precisa de um sistema próprio. O caminho mais curto:
+As regras, números e textos do GURPS pertencem à Steve Jackson Games. O jogo precisa de um sistema próprio. **Nada do GURPS é jogado fora:** o site mantém os dois sistemas lado a lado.
+
+- **GURPS 4ª ed.** continua sendo o sistema da mesa (`data/gurps/`).
+- **Adamar RPG** é o sistema próprio, que vai para o jogo. Começou como **cópia viva** do GURPS: `data/adamar-rpg/` guarda **só o que muda** (valores de `regras.json`, itens alterados, novos ou removidos em cada lista, termos e, quando houver, a tabela de dano própria). O resto continua igual ao GURPS até ser trocado. O navegador monta o conjunto completo (`js/sistemas.js`).
+- Cada ficha guarda o seu sistema; o criador tem o seletor **Sistema de regras** na etapa Conceito, e a ficha mostra qual é.
+- **O quanto já é próprio:** `node tools/adamar-rpg.mjs` mostra, lista por lista, o que já mudou e o que ainda é igual ao GURPS (`node tools/adamar-rpg.mjs pericias` lista os iguais). Para distribuir o jogo, a meta é chegar perto de 100%.
+
+Como mudar: editar os arquivos de `data/adamar-rpg/` (por exemplo, `pericias.json` → `{ "itens": [{ "id": "arco", "dificuldade": "Fácil" }], "remover": ["hacking-de-computador"] }`) e rodar `node tools/gerar-dados.mjs`, que valida o Adamar RPG montado com as mesmas regras do GURPS.
+
+O que trocar, em ordem:
 
 1. Manter a **estrutura** (atributos, perícias com dificuldade, testes de 3d, vantagens/desvantagens com custo), que é ideia e não texto.
 2. Trocar **nomes, números e tabelas** por valores próprios (custos, tabela de dano por força, tabelas de armas e armaduras, lista de vantagens), testados em jogo.

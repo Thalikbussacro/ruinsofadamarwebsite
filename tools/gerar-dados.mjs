@@ -5,7 +5,9 @@ import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
+import { createRequire } from 'node:module';
 import { conferirEfeito, conferirPrerequisito } from './importar-efeitos.mjs';
+const Sistemas = createRequire(import.meta.url)('../js/sistemas.js');
 
 const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
 const ARQUIVOS = ['livros', 'pericias', 'vantagens', 'desvantagens', 'regras'];
@@ -13,6 +15,38 @@ const OPCIONAIS = ['equipamento', 'icones', 'tabela-dano'];
 const SAIDA = join(RAIZ, 'js', 'dados-gurps.js');
 // os textos longos (descrição, exemplos…) vão num arquivo à parte, carregado depois que a página abre
 const SAIDA_TEXTOS = join(RAIZ, 'js', 'dados-textos.js');
+// Adamar RPG: só as diferenças em relação ao GURPS (data/adamar-rpg/); o navegador monta o resto (js/sistemas.js)
+const SAIDA_ADAMAR = join(RAIZ, 'js', 'dados-adamar-rpg.js');
+const PASTA_ADAMAR_RPG = join(RAIZ, 'data', 'adamar-rpg');
+
+export function carregarAdamarRpg(pasta = PASTA_ADAMAR_RPG) {
+  const dif = {};
+  if (!existsSync(pasta)) return dif;
+  for (const f of readdirSync(pasta).filter((x) => x.endsWith('.json')).sort()) {
+    dif[f.replace(/\.json$/, '').replace(/-/g, '_')] = JSON.parse(readFileSync(join(pasta, f), 'utf8'));
+  }
+  return dif;
+}
+// o Adamar RPG montado passa pelas mesmas validações do GURPS (ids, livros, categorias, efeitos…)
+export function validarAdamarRpg(dados, dif) {
+  const erros = [];
+  for (const lista of LISTAS) {
+    const ids = new Set(((dados[lista] && dados[lista].itens) || []).map((i) => i.id));
+    for (const id of (dif[lista] && dif[lista].remover) || []) if (!ids.has(id)) erros.push(`adamar-rpg/${lista}: remover "${id}", que não existe no GURPS`);
+  }
+  const base = {};
+  for (const lista of LISTAS) base[lista] = dados[lista] ? dados[lista].itens : [];
+  base.regras = dados.regras;
+  const montado = Sistemas.montar(base, dif);
+  const comoDados = Object.assign({}, dados, { regras: montado.regras });
+  for (const lista of LISTAS) comoDados[lista] = { itens: montado[lista] };
+  return erros.concat(validar(comoDados).map((e) => 'adamar-rpg: ' + e));
+}
+export function montarJsAdamarRpg(dif) {
+  return '// ARQUIVO GERADO por tools/gerar-dados.mjs a partir de data/adamar-rpg/*.json: só o que o Adamar RPG muda em relação ao GURPS.\n' +
+    '// O conjunto completo é montado no navegador por js/sistemas.js. Não edite à mão.\n' +
+    'window.ADAMAR_RPG_DIF = ' + JSON.stringify(dif) + ';\n';
+}
 
 const ADAMAR = ['livre', 'narrador', 'nao'];
 const TIPOS = ['mental', 'fisica', 'social', 'exotica', 'sobrenatural'];
@@ -248,17 +282,20 @@ function carregar() {
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const dados = carregar();
-  const erros = validar(dados);
+  const difAdamar = carregarAdamarRpg();
+  const erros = validar(dados).concat(validarAdamarRpg(dados, difAdamar));
   if (erros.length) {
     for (const e of erros) console.error(e);
     process.exit(1);
   }
   const js = montarJs(dados);
   const textos = montarTextos(dados);
+  const jsAdamar = montarJsAdamarRpg(difAdamar);
   if (process.argv.includes('--check')) {
     const atual = existsSync(SAIDA) ? readFileSync(SAIDA, 'utf8') : '';
     const atualTextos = existsSync(SAIDA_TEXTOS) ? readFileSync(SAIDA_TEXTOS, 'utf8') : '';
-    if (atual !== js || atualTextos !== textos) {
+    const atualAdamar = existsSync(SAIDA_ADAMAR) ? readFileSync(SAIDA_ADAMAR, 'utf8') : '';
+    if (atual !== js || atualTextos !== textos || atualAdamar !== jsAdamar) {
       console.error('js/dados-gurps.js está desatualizado: rode node tools/gerar-dados.mjs');
       process.exit(1);
     }
@@ -266,6 +303,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   } else {
     writeFileSync(SAIDA, js);
     writeFileSync(SAIDA_TEXTOS, textos);
+    writeFileSync(SAIDA_ADAMAR, jsAdamar);
     const n = (k) => dados[k].itens.length;
     const eq = dados.equipamento ? dados.equipamento.itens.length : 0;
     console.log(`js/dados-gurps.js gerado: ${n('pericias')} perícias, ${n('vantagens')} vantagens, ${n('desvantagens')} desvantagens, ${eq} itens de equipamento`);

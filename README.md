@@ -98,7 +98,7 @@ As listas de perícias, vantagens e desvantagens vêm de `data/gurps/*.json`:
 
 - `livros.json`: os livros de referência (título, ISBN, SHA-256 do PDF). Ver também `docs/referencias.md`.
 - `regras.json`: atributos, características secundárias, carga, custo de perícias, aparência, idiomas, culturas, riqueza, status, hierarquia, reputação e o limite de desvantagens (os números da criação de personagem). `js/gurps-calculo.js` faz as contas a partir dele.
-- `pericias.json`, `vantagens.json`, `desvantagens.json`: um item por traço, com `id` estável, `nome`, custo ou atributo/dificuldade, `adamar` (`livre`, `narrador` ou `nao`), `resumo` e `ref` (`livro` + `pagina` do livro impresso).
+- `pericias.json`, `vantagens.json`, `desvantagens.json`: um item por traço, com `id` estável, `nome`, custo ou atributo/dificuldade, `adamar` (`livre`, `narrador`, `bloqueado` = existe mas só se ganha em jogo, ou `nao` = tecnologia que não existe), `resumo` e `ref` (`livro` + `pagina` do livro impresso).
 
 Para mudar algo (um resumo, uma marcação para Adamar, um item novo), edite o JSON e rode:
 

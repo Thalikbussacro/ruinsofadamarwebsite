@@ -76,9 +76,11 @@ Por quê: previsível e sem os saltos da tabela; gente forte bate mais, mas ning
 
 ## 5. Só o que existe em Adamar
 
-Saem do Adamar RPG tudo o que o site marca como "não existe em Adamar": **36 perícias, 123 vantagens, 43 desvantagens e 166 itens** (tecnologia acima da Idade Média, poderes sobrenaturais fora do cenário, raças não humanas). As referências a eles (pré-definidos, efeitos, pré-requisitos, talentos) são podadas sozinhas. O que está "com o narrador" fica.
+Saem do Adamar RPG só o que o site marca como "não existe em Adamar", que agora é **só tecnologia** acima da Idade Média: **32 perícias, 9 vantagens, 8 desvantagens e 166 itens**. As referências a eles (pré-definidos, efeitos, pré-requisitos, talentos) são podadas sozinhas.
 
-Por quê: a lista do jogo passa a ser a lista do cenário. É também a primeira grande diferença de conteúdo em relação ao livro.
+O sobrenatural, o mágico e o de criatura (asas, voo, garras, maldições…) **ficam**, marcados como **bloqueado na criação**: existem no mundo, mas um personagem novo não pode começar com eles. Ao longo do jogo podem ser ganhos (magia, transformação, pacto, maldição), combinado com o narrador. Isso vale nos dois sistemas: na criação é erro; numa ficha que já jogou vira só um aviso ("ganho em jogo"). O que está "com o narrador" fica como antes.
+
+Por quê: a lista do jogo passa a ser a lista do cenário, e o que é raro não some, só não é de partida. É também a primeira grande diferença de conteúdo em relação ao livro.
 Onde: `"remover_se": { "adamar": "nao" }` em cada lista de `data/adamar-rpg/`. Para salvar um item da regra, é só mudá-lo em `itens` (o que foi mudado de propósito fica).
 
 - [ ] Aprovo

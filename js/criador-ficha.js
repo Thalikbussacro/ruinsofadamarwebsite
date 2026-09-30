@@ -443,6 +443,12 @@
       return ficha.idiomas.reduce(function (s, i) { return s + calc.custoIdioma(i.fala, i.escrita); }, 0);
     }
 
+    // o personagem já jogou? (pontos ganhos, histórico, diário ou estado da simulação)
+    function jaJogou(ficha) {
+      var j = ficha.em_jogo || {};
+      return (parseInt(j.pontos, 10) || 0) > 0 || (j.historico || []).length > 0 || (j.diario || []).length > 0 || !!j.sim;
+    }
+
     function resumir(ficha) {
       normalizarEquipamento(ficha.equipamento);
       var base = calc.calcularFicha({ atributos: ficha.atributos, ajustes: ficha.ajustes, social: ficha.social });
@@ -459,6 +465,12 @@
       function erro(etapa, texto) { erros.push({ etapa: etapa, texto: texto, tipo: 'erro' }); }
       function incompleto(etapa, texto) { erros.push({ etapa: etapa, texto: texto, tipo: 'incompleto' }); }
       function aviso(etapa, texto) { avisos.push({ etapa: etapa, texto: texto }); }
+      // bloqueado na criação: um personagem novo não pode ter; quem já jogou pode ter ganhado ao longo do jogo
+      var jogou = jaJogou(ficha);
+      function bloqueado(etapa, nome) {
+        if (jogou) aviso(etapa, nome + ': ganho em jogo (bloqueado na criação), combinado com o narrador.');
+        else erro(etapa, nome + ': bloqueado na criação. Existe em Adamar, mas só se ganha ao longo do jogo.');
+      }
       function virgula(v) { return String(v).replace('.', ','); }
 
       if (!String(ficha.nome || '').trim()) incompleto('conceito', 'Falta o nome do personagem.');
@@ -496,6 +508,7 @@
         var etapa = t.categoria === 'desvantagem' || t.categoria === 'peculiaridade' ? 'desvantagens' : 'vantagens';
         if (t.adamar === 'nao') erro(etapa, t.nome + ' não existe em Adamar.');
         if (t.adamar === 'narrador') aviso(etapa, t.nome + ': só com o narrador.');
+        if (t.adamar === 'bloqueado') bloqueado(etapa, t.nome);
         var c = t.custo_estruturado || {};
         var e = sel.escolha || {};
         if (c.tipo === 'niveis' && t.nivel_max != null && e.nivel > t.nivel_max) erro(etapa, t.nome + ': nível máximo ' + t.nivel_max + ' em Adamar.');
@@ -540,6 +553,7 @@
         custoPericias += sel.pontos || 0;
         var rotulo = p.nome + (sel.especializacao ? ' (' + sel.especializacao + ')' : '');
         if (p.adamar === 'nao') erro('pericias', p.nome + ' não existe em Adamar.');
+        if (p.adamar === 'bloqueado') bloqueado('pericias', p.nome);
         if (p.adamar === 'narrador') aviso('pericias', p.nome + ': só com o narrador.');
         if (p.especializacao && !preenchido(sel.especializacao)) incompleto('pericias', p.nome + ': escolha a especialização.');
         var chave = p.id + '|' + String(sel.especializacao || '').trim().toLowerCase();

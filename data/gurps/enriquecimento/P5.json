@@ -10,7 +10,10 @@
       ],
       "em_adamar": "Fica com o narrador porque, se funcionar de verdade, é magia — e magia em Adamar é rara, controlada pelo Mestre e não algo que qualquer personagem manipula por conta própria.",
       "dica_mesa": "Combine com o narrador se as respostas serão sempre verdadeiras, sempre simbólicas, ou às vezes erradas de propósito.",
-      "relacionados": ["conhecimento-oculto", "taumatologia"]
+      "relacionados": [
+        "conhecimento-oculto",
+        "taumatologia"
+      ]
     },
     "alquimia": {
       "descricao": "Alquimia é a perícia de preparar elixires e poções com efeito mágico: coisas que curam além do natural, dão força temporária, envenenam de modo sobrenatural ou produzem outros efeitos que a farmácia comum não alcança. O processo exige um laboratório, ingredientes raros e tempo — normalmente dias, não minutos — e o resultado é um item consumível, não um efeito instantâneo lançado na hora.\n\nNão confunda com Farmácia, que prepara remédios e venenos mundanos sem nada de sobrenatural, nem com Química, que é a ciência moderna da matéria. Em Adamar, alquimia verdadeira é rara: a maior parte dos boticários de vila mexe com Farmácia (Herbalismo), e um alquimista de verdade é uma figura incomum, quase sempre ligada a algum segredo.",
@@ -21,7 +24,10 @@
       ],
       "em_adamar": "Fica com o narrador porque produz efeitos mágicos de verdade, e magia arcana em Adamar é rara e escassa.",
       "dica_mesa": "Trate cada poção como algo que levou dias para ser feita, nunca como item comprado na loja da esquina.",
-      "relacionados": ["quimica", "taumatologia"]
+      "relacionados": [
+        "quimica",
+        "taumatologia"
+      ]
     },
     "aparar-armas-de-projetil": {
       "descricao": "Esta perícia permite ver uma flecha, virote ou outro projétil chegando e desviá-lo no ar usando a própria arma, no meio de um combate corpo a corpo. É uma das chamadas perícias cinematográficas do GURPS: representa um nível de reflexo e percepção muito acima do que um guerreiro habilidoso comum consegue, mais próximo do herói de lenda do que do soldado profissional.\n\nEla não serve para aparar golpes de arma branca (isso é a defesa normal de Aparar de cada arma) nem para pegar o projétil do ar com a mão — é estritamente sobre desviar o disparo com a lâmina ou o cabo da arma antes que ele acerte.",
@@ -32,7 +38,10 @@
       ],
       "em_adamar": "É uma perícia cinematográfica, do tipo que só existe combinando com o narrador para heróis fora do comum.",
       "dica_mesa": "Reserve para personagens de nível heroico já estabelecido na campanha, não para iniciantes.",
-      "relacionados": ["arte-do-arremesso", "arqueiro-zen"]
+      "relacionados": [
+        "arte-do-arremesso",
+        "arqueiro-zen"
+      ]
     },
     "armas-de-feixe": {
       "descricao": "Armas de Feixe cobre o uso de armas de energia — disparos de calor, luz ou radiação concentrada, típicos de cenários de ficção científica avançada. A perícia trata de mirar, disparar e lidar com as peculiaridades desse tipo de arma, como ausência de recuo e a necessidade de baterias de energia em vez de munição convencional.\n\nÉ, na prática, o equivalente de Armas de Fogo para tecnologia muito além da pólvora, e pressupõe um mundo com naves, robôs ou arsenais futuristas.",
@@ -43,7 +52,10 @@
       ],
       "em_adamar": "Não existe: pressupõe tecnologia de energia muito além do nível medieval do cenário.",
       "dica_mesa": "Se aparecer um artefato entremundos com efeito parecido, resolva como magia ou façanha narrada, não como esta perícia.",
-      "relacionados": ["armas-de-fogo", "ataque-inato"]
+      "relacionados": [
+        "armas-de-fogo",
+        "ataque-inato"
+      ]
     },
     "armas-de-fogo": {
       "descricao": "Armas de Fogo é o grupo de perícias para disparar pistolas, rifles, espingardas e outras armas movidas a pólvora, cada uma com sua própria especialização (pistola, rifle, espingarda etc.). Cobre mirar, recarregar sob pressão, lidar com o coice do disparo e as diferenças entre um tiro rápido e um tiro cuidadoso.\n\nEla pressupõe pólvora produzida industrialmente e uma cultura de armas de fogo — nada disso existe num mundo de tecnologia medieval.",
@@ -54,7 +66,10 @@
       ],
       "em_adamar": "Não existe: pólvora e armas de fogo estão muito acima do nível de tecnologia do cenário.",
       "dica_mesa": "Se um artefato entremundos trouxer uma arma de fogo para a mesa, trate a raridade dela como parte da cena, não como algo comprável.",
-      "relacionados": ["armas-de-feixe", "explosivos"]
+      "relacionados": [
+        "armas-de-feixe",
+        "explosivos"
+      ]
     },
     "arqueiro-zen": {
       "descricao": "Arqueiro Zen é a perícia cinematográfica de acertar alvos praticamente impossíveis com arco (ou outra arma de longo alcance) através de uma concentração quase mística, ignorando limitações que um atirador comum enfrentaria — acertar no escuro, sem mirar conscientemente, em condições que deveriam impedir o disparo. É tratada como uma habilidade quase sobrenatural do corpo e da mente, não como perícia de combate comum.\n\nNão se confunde com a perícia de tiro com arco normal, que rege o uso cotidiano da arma: Arqueiro Zen é uma camada acima, reservada para feitos que a mesa concorda tratar como lendários.",
@@ -65,7 +80,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica, do tipo reservado a personagens lendários e sempre combinada com o narrador.",
       "dica_mesa": "Use com moderação, para não banalizar o tiro impossível que deveria ser memorável.",
-      "relacionados": ["aparar-armas-de-projetil", "postura-imovel"]
+      "relacionados": [
+        "aparar-armas-de-projetil",
+        "postura-imovel"
+      ]
     },
     "arte-da-invisibilidade": {
       "descricao": "Arte da Invisibilidade é a perícia cinematográfica de passar despercebido mesmo diante de olhos atentos, sem realmente ficar invisível — é mais um domínio extremo de furtividade, sombra e distração do que um efeito mágico de invisibilidade verdadeira. Um personagem com essa perícia pode atravessar um salão cheio de guardas alertas sem ser notado, algo muito além do que Furtividade comum permite.\n\nÉ diferente de perícias ou vantagens que tornam alguém literalmente invisível: aqui a pessoa continua visível, apenas ninguém a percebe, o que é uma proeza de percepção e talento, não de magia de ocultação.",
@@ -76,7 +94,10 @@
       ],
       "em_adamar": "É uma perícia cinematográfica, reservada a personagens excepcionais e sempre combinada com o narrador.",
       "dica_mesa": "Deixe claro na mesa que isso é façanha de talento, não magia de invisibilidade de verdade.",
-      "relacionados": ["passos-leves", "desviar"]
+      "relacionados": [
+        "passos-leves",
+        "desviar"
+      ]
     },
     "arte-do-arremesso": {
       "descricao": "Arte do Arremesso é a perícia cinematográfica de lançar qualquer objeto com precisão e força muito além do normal — uma faca de mesa, uma pedra, uma ferramenta qualquer se torna uma arma mortal nas mãos de quem domina essa perícia. Ela substitui o arremesso comum de objetos avulsos, que normalmente depende só de DX, por um talento dedicado e extraordinário.\n\nNão cobre armas feitas para arremesso convencional, como facas de lançar ou lanças, que já têm suas próprias perícias de combate; a marca dessa perícia é justamente transformar o improvável — talheres, moedas, pedras da estrada — em algo letal.",
@@ -87,7 +108,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica, sempre combinada com o narrador para personagens fora do comum.",
       "dica_mesa": "Funciona bem como marca registrada de um personagem específico, não como talento genérico do grupo.",
-      "relacionados": ["aparar-armas-de-projetil", "golpe-poderoso"]
+      "relacionados": [
+        "aparar-armas-de-projetil",
+        "golpe-poderoso"
+      ]
     },
     "ataque-inato": {
       "descricao": "Ataque Inato é a perícia usada para mirar e disparar um ataque que vem do próprio corpo de uma criatura — sopro, veneno cuspido, descarga, ou qualquer poder ofensivo natural que não seja uma arma empunhada. Cada tipo de ataque inato (fogo, ácido, elétrico etc.) é uma especialização própria, e a perícia rege apenas a precisão do ataque, não a existência do poder em si, que vem de uma vantagem separada.\n\nEm outras palavras, ela nunca aparece sozinha: só faz sentido para quem já tem, por natureza, algum poder de ataque embutido — algo que humanos comuns simplesmente não possuem.",
@@ -96,9 +120,12 @@
         "Uma fera das profundezas dispara um jato gélido do próprio corpo para afastar invasores.",
         "Nenhum personagem humano comum de Adamar teria acesso a isso sem uma origem muito fora do padrão."
       ],
-      "em_adamar": "Não existe para personagens humanos comuns: pressupõe um poder de ataque natural que humanos não têm.",
+      "em_adamar": "Bloqueada na criação: só faz sentido para quem, ao longo do jogo, ganhou asas, poderes ou outra forma. Aí o personagem pode aprendê-la, combinado com o narrador.",
       "dica_mesa": "Reserve para criaturas e ameaças do bestiário, não para fichas de jogadores.",
-      "relacionados": ["armas-de-feixe", "golpe-debilitante"]
+      "relacionados": [
+        "armas-de-feixe",
+        "golpe-debilitante"
+      ]
     },
     "auto-hipnose": {
       "descricao": "Auto-Hipnose é a perícia de entrar em transe na própria mente para alcançar estados que o corpo desperto normalmente não permite: ignorar dor, resistir à fadiga, acalmar o pânico ou se preparar mentalmente para uma provação. É uma disciplina interior, praticada sozinha, distinta de Hipnotismo, que é induzir transe em outra pessoa.\n\nO efeito é sempre sobre quem faz o teste, nunca sobre terceiros, e costuma exigir um momento de quietude antes de entrar em ação — não é algo que se faz no meio da correria de um combate sem preparo.",
@@ -109,7 +136,10 @@
       ],
       "em_adamar": "É uma disciplina cinematográfica de controle mental, tratada como façanha rara e combinada com o narrador.",
       "dica_mesa": "Funciona bem como ritual de preparação antes de um desafio grande, não como truque instantâneo em combate.",
-      "relacionados": ["meditacao", "controle-da-respiracao"]
+      "relacionados": [
+        "meditacao",
+        "controle-da-respiracao"
+      ]
     },
     "bioengenharia": {
       "descricao": "Bioengenharia é a ciência de manipular organismos vivos com ferramentas de laboratório avançadas: alterar genes, criar organismos novos, tratar doenças no nível celular. É uma perícia de mundos com tecnologia muito além da medieval, dependente de equipamentos, teoria científica moderna e infraestrutura que simplesmente não existem num cenário como Adamar.\n\nNão confunda com Naturalista, que é o conhecimento prático de plantas e animais de um mundo pré-industrial, nem com Conhecimento das Ervas, que lida com efeitos mágicos de plantas — Bioengenharia é ciência de laboratório de alta tecnologia.",
@@ -120,7 +150,10 @@
       ],
       "em_adamar": "Não existe: pressupõe tecnologia científica muito além do nível medieval do cenário.",
       "dica_mesa": "Prefira Naturalista para qualquer curiosidade de um personagem sobre plantas e animais do mundo.",
-      "relacionados": ["biologia", "conhecimento-das-ervas"]
+      "relacionados": [
+        "biologia",
+        "conhecimento-das-ervas"
+      ]
     },
     "biologia": {
       "descricao": "Biologia é a ciência moderna da vida: taxonomia, genética, fisiologia comparada, tudo estudado com o método científico e instrumentos de laboratório. Ela pressupõe séculos de acumulação de conhecimento acadêmico que um mundo de tecnologia medieval simplesmente não teve tempo nem meios de desenvolver.\n\nO equivalente de Adamar é Naturalista: o saber prático e observacional de plantas, animais e o funcionamento da natureza, sem o aparato científico moderno por trás.",
@@ -131,7 +164,10 @@
       ],
       "em_adamar": "Não existe como ciência formal; em Adamar, o saber equivalente é representado por Naturalista.",
       "dica_mesa": "Se um jogador quiser um personagem \"cientista da natureza\", oriente para Naturalista.",
-      "relacionados": ["bioengenharia", "paleontologia"]
+      "relacionados": [
+        "bioengenharia",
+        "paleontologia"
+      ]
     },
     "bloqueio-mental": {
       "descricao": "Bloqueio Mental é a perícia de fechar a própria mente contra tentativas de leitura, controle ou influência sobrenatural — um escudo mental ativo, e não apenas a resistência passiva de Vontade. Ela é testada quando alguém tenta invadir ou dobrar os pensamentos de um personagem por meios sobrenaturais, dando uma chance extra de resistir além do teste padrão.\n\nSó faz sentido num mundo onde esse tipo de intrusão mental existe de fato; por isso pressupõe contato prévio com magia ou entidades capazes de tal coisa, o que em Adamar é sempre algo raro e combinado com o narrador.",
@@ -142,7 +178,10 @@
       ],
       "em_adamar": "Fica com o narrador porque pressupõe contato com magia ou entidades capazes de intrusão mental, algo raro no cenário.",
       "dica_mesa": "Reserve para personagens que já tiveram uma experiência anterior marcante com o sobrenatural.",
-      "relacionados": ["forca-mental", "meditacao"]
+      "relacionados": [
+        "forca-mental",
+        "meditacao"
+      ]
     },
     "canhoneiro": {
       "descricao": "Canhoneiro é a perícia de operar armas pesadas montadas — canhões, morteiros ou armamento de energia de grande porte — cuidando de mira, ângulo de disparo e o funcionamento específico da peça. É uma perícia de guerra industrial ou de ficção científica, pensada para artilharia que exige tripulação e logística próprias.\n\nEm um mundo de tecnologia medieval, o equivalente mais próximo de armamento pesado são engenhos de cerco como catapultas e trabucos, que usam a perícia de Artilharia (categoria de engenhos mecânicos), não Canhoneiro.",
@@ -153,7 +192,10 @@
       ],
       "em_adamar": "Não existe: pressupõe artilharia de pólvora ou energia, muito além do nível de tecnologia do cenário.",
       "dica_mesa": "Para cercos e engenhos de guerra medievais, use Artilharia (mecânica) em vez desta perícia.",
-      "relacionados": ["armas-de-fogo", "explosivos"]
+      "relacionados": [
+        "armas-de-fogo",
+        "explosivos"
+      ]
     },
     "ciclismo": {
       "descricao": "Ciclismo é simplesmente a perícia de andar de bicicleta: equilíbrio, pedalada, manobras em terreno irregular e recuperação de um desequilíbrio antes de cair. É uma perícia de tecnologia leve, mas ainda assim pressupõe a existência da bicicleta como veículo — uma invenção de mecânica de precisão que não existe num mundo medieval.\n\nNão há equivalente direto em Adamar: locomoção pessoal sem montaria é resolvida com testes comuns de deslocamento, e não há necessidade de uma perícia dedicada a um veículo que o cenário não possui.",
@@ -164,7 +206,10 @@
       ],
       "em_adamar": "Não existe: a bicicleta é um veículo de tecnologia industrial que não existe no cenário.",
       "dica_mesa": "Sem uso prático em Adamar; não precisa de substituto.",
-      "relacionados": ["conducao", "montaria"]
+      "relacionados": [
+        "conducao",
+        "montaria"
+      ]
     },
     "ciencia-estranha": {
       "descricao": "Ciência Estranha é a perícia satírica e cinematográfica do GURPS para o \"cientista louco\": inventar aparelhos impossíveis que funcionam por pura força de vontade narrativa, ignorando as leis normais da física e da engenharia. É pensada para gêneros de ficção científica pulp ou de humor, onde raios da morte e máquinas absurdas saem funcionando da garagem de um gênio excêntrico.\n\nEla não tem equivalente sério em nenhum cenário de tecnologia medieval, porque depende inteiramente de um tom de jogo específico que Adamar, sombrio e de baixa tecnologia, não pretende ter.",
@@ -175,7 +220,10 @@
       ],
       "em_adamar": "Não existe: é uma perícia de gênero (ficção científica pulp) incompatível com o tom e a tecnologia do cenário.",
       "dica_mesa": "Se um jogador quiser um inventor excêntrico, construa algo plausível dentro da tecnologia medieval, não esta perícia.",
-      "relacionados": ["fisica", "hacking-de-computador"]
+      "relacionados": [
+        "fisica",
+        "hacking-de-computador"
+      ]
     },
     "conducao": {
       "descricao": "Condução é a perícia de dirigir veículos motorizados: carros, caminhões, motocicletas, cada tipo com sua própria especialização. Ela cobre manobras normais de tráfego e situações de emergência, como derrapagens ou desvios bruscos, mas pressupõe a existência de motores de combustão ou elétricos e estradas pavimentadas para tráfego motorizado.\n\nEm Adamar, o transporte terrestre é por tração animal, e a perícia equivalente é Carroceiro, que rege o manejo de carroças e carruagens puxadas por animais — bem diferente de operar um veículo motorizado.",
@@ -186,7 +234,10 @@
       ],
       "em_adamar": "Não existe: pressupõe veículos motorizados, muito além da tecnologia do cenário. Use Carroceiro para veículos de tração animal.",
       "dica_mesa": "Redirecione qualquer pedido de \"perícia de dirigir\" para Carroceiro.",
-      "relacionados": ["ciclismo", "montaria"]
+      "relacionados": [
+        "ciclismo",
+        "montaria"
+      ]
     },
     "conhecimento-das-ervas": {
       "descricao": "Conhecimento das Ervas é a perícia de preparar poções mágicas a partir de plantas: identificar as ervas certas, colhê-las no momento certo e combiná-las num processo que produz um efeito sobrenatural, não apenas medicinal. É prima de Alquimia, mas focada especificamente em ingredientes vegetais em vez de reagentes de laboratório.\n\nNão confunda com Farmácia (Herbalismo), que prepara remédios comuns sem nenhum efeito mágico, nem com Naturalista, que é apenas o conhecimento sobre a natureza sem produzir nada. Aqui o resultado final é sempre uma poção com um efeito que vai além do que ervas naturais deveriam fazer.",
@@ -197,7 +248,10 @@
       ],
       "em_adamar": "Fica com o narrador porque produz efeitos mágicos verdadeiros, e magia é rara e controlada no cenário.",
       "dica_mesa": "Para remédios e venenos comuns sem magia, use Farmácia (Herbalismo) em vez desta perícia.",
-      "relacionados": ["alquimia", "quimica"]
+      "relacionados": [
+        "alquimia",
+        "quimica"
+      ]
     },
     "conhecimento-oculto": {
       "descricao": "Conhecimento Oculto é o saber teórico e erudito sobre um assunto sobrenatural específico — cultos, espíritos, fadas, conspirações escondidas — sempre com uma especialização obrigatória que define exatamente sobre o que o personagem sabe. Diferente de Ocultismo (que é mais genérico sobre o sobrenatural do dia a dia), esta perícia cobre um tema profundo e restrito, do tipo que poucas pessoas no mundo dominam.\n\nO teste serve para lembrar fatos, reconhecer sinais e entender o funcionamento daquilo que o tema cobre; não serve para agir diretamente contra o fenômeno, apenas para compreendê-lo. Um personagem raramente começa com essa perícia sem uma razão forte no histórico — normalmente um contato incomum com o assunto.",
@@ -208,7 +262,10 @@
       ],
       "em_adamar": "Fica com o narrador: o assunto coberto é sempre algo sobrenatural raro, e o acesso a esse saber exige justificativa e combinação prévia.",
       "dica_mesa": "Exija do jogador uma origem no histórico que explique como o personagem aprendeu algo tão específico.",
-      "relacionados": ["pericia-abrangente", "taumatologia"]
+      "relacionados": [
+        "pericia-abrangente",
+        "taumatologia"
+      ]
     },
     "conserto-de-equipamento-eletronico": {
       "descricao": "Esta perícia cobre o conserto de aparelhos eletrônicos — rádios, computadores, sensores — diagnosticando falhas em circuitos e substituindo componentes. Ela pressupõe não só a existência de eletrônica, mas também ferramentas de teste e peças de reposição compatíveis com tecnologia industrial avançada.\n\nNum mundo de tecnologia medieval não há eletrônica para consertar; o conserto de mecanismos do cenário é coberto por perícias de Mecânica ou Artesanato específicas para cada tipo de engenho, como relógios ou fechaduras.",
@@ -219,7 +276,10 @@
       ],
       "em_adamar": "Não existe: pressupõe eletrônica industrial, muito além da tecnologia do cenário.",
       "dica_mesa": "Para consertos de engenhos mecânicos do mundo, use a perícia de Mecânica correspondente.",
-      "relacionados": ["eletricista", "operacao-de-aparelhos-eletronicos"]
+      "relacionados": [
+        "eletricista",
+        "operacao-de-aparelhos-eletronicos"
+      ]
     },
     "controle-da-respiracao": {
       "descricao": "Controle da Respiração é a perícia de administrar o próprio fôlego de forma extraordinária: prender a respiração por muito mais tempo que o normal, recuperar o fôlego rapidamente depois de esforço extremo, ou manter a calma respiratória sob situações de estresse físico intenso. É uma técnica de disciplina corporal, praticada e treinada ao longo de anos.\n\nEla difere de perícias de natação ou mergulho comuns por representar um controle voluntário e treinado sobre uma função do corpo que a maioria das pessoas não consegue dominar conscientemente além de um certo ponto.",
@@ -230,7 +290,10 @@
       ],
       "em_adamar": "Fica com o narrador por representar um controle corporal muito acima do humano comum, tratado como façanha rara.",
       "dica_mesa": "Funciona bem como traço de uma tradição ou ordem específica de treinamento físico extremo.",
-      "relacionados": ["controle-das-funcoes-involuntarias", "meditacao"]
+      "relacionados": [
+        "controle-das-funcoes-involuntarias",
+        "meditacao"
+      ]
     },
     "controle-das-funcoes-involuntarias": {
       "descricao": "Esta perícia cinematográfica permite controlar conscientemente funções do corpo que normalmente são automáticas: reduzir os batimentos cardíacos quase a zero, estancar um sangramento pela força da mente, ou suspender outras respostas involuntárias do organismo. É um domínio extremo sobre o próprio corpo, típico de mestres de artes marciais lendários em histórias.\n\nDiferente de perícias médicas, que tratam o corpo de fora, esta perícia é sempre autodirigida: o personagem age sobre si mesmo, nunca sobre outra pessoa.",
@@ -241,7 +304,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica sobre o próprio corpo, reservada a personagens excepcionais e combinada com o narrador.",
       "dica_mesa": "Reserve para cenas raras e marcantes, não como recurso repetido em todo combate.",
-      "relacionados": ["controle-da-respiracao", "postura-imovel"]
+      "relacionados": [
+        "controle-da-respiracao",
+        "postura-imovel"
+      ]
     },
     "controle-de-carregamento": {
       "descricao": "Controle de Carregamento é a perícia logística de calcular e distribuir cargas em veículos modernos — caminhões, navios, aeronaves — para que o peso fique equilibrado e dentro dos limites de segurança do veículo. Pressupõe frotas de transporte industrial e cálculos de engenharia de carga que não fazem sentido para carroças e navios de vela simples.\n\nNo cenário, carregar uma carroça ou um navio de forma sensata é resolvido com bom senso ou, no máximo, um teste de IQ ou de Carroceiro/Navegação, sem necessidade de uma perícia técnica dedicada.",
@@ -252,7 +318,10 @@
       ],
       "em_adamar": "Não existe: pressupõe veículos e logística de transporte industrial, muito além da tecnologia do cenário.",
       "dica_mesa": "Resolva qualquer questão de carga de carroça ou navio com bom senso do narrador.",
-      "relacionados": ["conducao", "maquinista"]
+      "relacionados": [
+        "conducao",
+        "maquinista"
+      ]
     },
     "criminologia": {
       "descricao": "Criminologia é o estudo científico moderno do crime: perfis de criminosos, métodos de investigação sistemáticos, estatísticas e teorias sobre comportamento criminoso, apoiados em métodos policiais desenvolvidos ao longo de séculos de urbanização e Estado organizado. Pressupõe uma estrutura de polícia e justiça bem além do que existe num mundo medieval fragmentado.\n\nEm Adamar, a investigação de um crime é resolvida com perícias como Investigação, Detectar Mentiras ou simples raciocínio de IQ, sem o aparato teórico e institucional que Criminologia representa.",
@@ -263,7 +332,10 @@
       ],
       "em_adamar": "Não existe: pressupõe métodos e instituições de investigação criminal modernas, ausentes no cenário.",
       "dica_mesa": "Para investigar um crime em Adamar, use Investigação, Detectar Mentiras ou testes de IQ comuns.",
-      "relacionados": ["pericia-forense", "criptografia"]
+      "relacionados": [
+        "pericia-forense",
+        "criptografia"
+      ]
     },
     "criptografia": {
       "descricao": "Criptografia é a perícia de criar e quebrar códigos e cifras, indo de sistemas simples de substituição de letras a esquemas matemáticos complexos. Em teoria, um código pode existir em qualquer nível de tecnologia — cifras simples são conhecidas desde a Antiguidade —, mas o estudo sistemático e matemático da criptografia como perícia dedicada é raro fora de sociedades com forte tradição de escrita, matemática e segredo de Estado.\n\nEm Adamar, um código de cifra simples pode aparecer como parte de uma trama, mas decifrá-lo tende a ser tratado como um teste de IQ ou de uma perícia de saber apropriada, e não como uma perícia dedicada e amplamente disponível.",
@@ -274,7 +346,10 @@
       ],
       "em_adamar": "Fica com o narrador: é um saber raro em NT3, reservado a poucas tradições de escrita e segredo.",
       "dica_mesa": "Trate como algo que exige uma origem específica no histórico do personagem, como formação numa ordem de escribas.",
-      "relacionados": ["pericia-forense", "conhecimento-oculto"]
+      "relacionados": [
+        "pericia-forense",
+        "conhecimento-oculto"
+      ]
     },
     "desenho-de-simbolos": {
       "descricao": "Desenho de Símbolos é a perícia de traçar corretamente símbolos mágicos de uma tradição específica — círculos, glifos, runas — de forma que eles funcionem como foco ou componente de um efeito sobrenatural. Não é a perícia que produz a magia em si na maioria dos casos, mas sim a habilidade manual e ritual de desenhar o símbolo certo, do jeito certo, para que ele tenha efeito.\n\nCada tradição mágica tem sua forma de símbolo (a exemplo de vudu ou runas), e a perícia se especializa por tradição; errar o traço pode significar que o símbolo simplesmente não funciona, ou pior, funciona errado.",
@@ -285,7 +360,10 @@
       ],
       "em_adamar": "Fica com o narrador: é uma técnica de magia ritual, e magia em Adamar é rara e controlada pelo Mestre.",
       "dica_mesa": "Vincule sempre a uma tradição mágica específica já estabelecida na campanha, nunca genérica.",
-      "relacionados": ["magia-ritualistica", "taumatologia"]
+      "relacionados": [
+        "magia-ritualistica",
+        "taumatologia"
+      ]
     },
     "deslumbrar": {
       "descricao": "Deslumbrar é, na verdade, uma perícia \"guarda-chuva\" que representa um conjunto de talentos de performance sobrenaturais de bardo — cativar uma plateia, despertar emoções à força, persuadir ou sugerir algo contra a vontade de alguém, tudo através de uma presença de palco quase mágica. Não é apenas talento artístico comum: é a versão cinematográfica, onde a performance realmente mexe com a mente de quem assiste, além do que carisma normal permitiria.\n\nDiferente de Atuação ou Música comuns, que dependem só do talento do intérprete, aqui há um componente que beira o sobrenatural, e por isso costuma vir acompanhado de vantagens especiais que expliquem de onde vem esse poder.",
@@ -296,7 +374,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica de performance quase mágica, sempre combinada com o narrador.",
       "dica_mesa": "Exija uma origem sobrenatural coerente para o personagem antes de liberar essa perícia.",
-      "relacionados": ["influencia-musical", "lavagem-cerebral"]
+      "relacionados": [
+        "influencia-musical",
+        "lavagem-cerebral"
+      ]
     },
     "desviar": {
       "descricao": "Desviar é a perícia cinematográfica de usar a energia interna do próprio corpo (o chi) para desequilibrar quem ataca, fazendo com que o golpe do oponente saia do rumo ou ele perca a postura, sem que o personagem precise bloquear ou aparar fisicamente o ataque. É uma técnica de artes marciais lendárias, ligada a um domínio quase místico sobre o próprio corpo e o do oponente.\n\nDiferente das defesas comuns de combate corpo a corpo, ela representa um nível de maestria que a maioria dos combatentes, por mais treinados que sejam, nunca alcança.",
@@ -307,7 +388,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica de artes marciais lendárias, sempre combinada com o narrador.",
       "dica_mesa": "Combine sempre com uma tradição marcial já estabelecida na campanha para o personagem.",
-      "relacionados": ["postura-imovel", "kiai"]
+      "relacionados": [
+        "postura-imovel",
+        "kiai"
+      ]
     },
     "digitacao": {
       "descricao": "Digitação é simplesmente a perícia de escrever rapidamente num teclado, seja de máquina de escrever ou computador, com precisão e velocidade. Ela pressupõe a existência desses equipamentos, que são invenções de tecnologia industrial e eletrônica muito além do que existe num mundo medieval.\n\nNo cenário, a escrita à mão é a norma, e sua velocidade ou qualidade é resolvida por bom senso do narrador ou, quando muito, por um teste de Escrever ou de IQ.",
@@ -318,7 +402,10 @@
       ],
       "em_adamar": "Não existe: pressupõe teclados e máquinas de escrever, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Para a velocidade de um escriba, use Escrever ou um teste simples de IQ.",
-      "relacionados": ["operacao-de-computadores", "programacao-de-computadores"]
+      "relacionados": [
+        "operacao-de-computadores",
+        "programacao-de-computadores"
+      ]
     },
     "eletricista": {
       "descricao": "Eletricista é a perícia de instalar, ler e reparar sistemas elétricos: fiação, quadros de força, circuitos residenciais ou industriais. Ela pressupõe a existência de eletricidade domesticada e distribuída, algo que depende de séculos de desenvolvimento científico e industrial ausentes num mundo de tecnologia medieval.\n\nEm Adamar não há iluminação elétrica nem fiação a instalar; qualquer necessidade equivalente (como iluminação ou aquecimento) é resolvida com meios mundanos, como tochas, lareiras e lamparinas, sem perícia técnica dedicada.",
@@ -329,7 +416,10 @@
       ],
       "em_adamar": "Não existe: pressupõe eletricidade domesticada, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Sem uso prático em Adamar; não precisa de substituto direto.",
-      "relacionados": ["conserto-de-equipamento-eletronico", "maquinista"]
+      "relacionados": [
+        "conserto-de-equipamento-eletronico",
+        "maquinista"
+      ]
     },
     "exorcismo": {
       "descricao": "Exorcismo é a perícia de expulsar uma presença indesejada — um espírito, um forasteiro do outro lado da barreira, ou outra entidade sobrenatural — de um corpo, objeto ou lugar que ela tenha tomado. O processo costuma envolver um ritual, símbolos, palavras de poder ou fé, dependendo da tradição, e o teste representa o embate de vontades entre quem exorciza e a entidade presa.\n\nNão é uma perícia de combate: ela não fere a entidade diretamente, apenas a força a se retirar (ou tenta), e o fracasso pode deixar a entidade mais forte ou mais hostil, dependendo de como o narrador conduzir a cena.",
@@ -340,7 +430,10 @@
       ],
       "em_adamar": "Fica com o narrador: lida diretamente com forasteiros e presenças sobrenaturais, sempre um assunto raro e delicado no cenário.",
       "dica_mesa": "Trate o fracasso como uma complicação narrativa, não apenas como \"nada acontece\".",
-      "relacionados": ["conhecimento-oculto", "lavagem-cerebral"]
+      "relacionados": [
+        "conhecimento-oculto",
+        "lavagem-cerebral"
+      ]
     },
     "explosivos": {
       "descricao": "Explosivos é a perícia de manusear, preparar e detonar materiais explosivos modernos — dinamite, cargas plásticas, bombas —, incluindo calcular a quantidade certa, posicionar cargas e desarmar armadilhas explosivas. Pressupõe química industrial e materiais que não existem num mundo de tecnologia medieval.\n\nNo cenário, o mais próximo que existe de \"explosão controlada\" seria algo como óleo inflamável ou fogo alquímico, tratado como equipamento incomum e não como uma perícia técnica dedicada a explosivos modernos.",
@@ -351,7 +444,10 @@
       ],
       "em_adamar": "Não existe: pressupõe explosivos químicos modernos, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Para efeitos parecidos com fogo alquímico raro, trate como item mágico controlado pelo narrador, não como esta perícia.",
-      "relacionados": ["materiais-perigosos", "quimica"]
+      "relacionados": [
+        "materiais-perigosos",
+        "quimica"
+      ]
     },
     "forca-mental": {
       "descricao": "Força Mental é a perícia de resistir ativamente a ataques dirigidos contra a mente — tentativas de controle, medo sobrenatural, sugestão — complementando ou substituindo o teste padrão de Vontade em situações específicas de ameaça mental. Ela representa um treinamento ou talento específico em blindar a própria vontade contra influências externas de natureza sobrenatural.\n\nAssim como Bloqueio Mental, só faz sentido pressupondo que esse tipo de ataque mental exista no jogo, o que em Adamar é sempre algo ligado a magia ou entidades raras, não uma ameaça cotidiana.",
@@ -362,7 +458,10 @@
       ],
       "em_adamar": "Fica com o narrador: pressupõe ameaças mentais sobrenaturais, sempre raras e ligadas a magia ou entidades específicas.",
       "dica_mesa": "Combine com uma origem no histórico que explique o treinamento contra esse tipo de ameaça.",
-      "relacionados": ["bloqueio-mental", "meditacao"]
+      "relacionados": [
+        "bloqueio-mental",
+        "meditacao"
+      ]
     },
     "fotografia": {
       "descricao": "Fotografia é a perícia de operar câmeras e produzir imagens fotográficas com qualidade e composição adequadas, incluindo revelação e edição básica. Pressupõe câmeras, filmes ou sensores eletrônicos — tecnologia industrial e óptica avançada que não existe num mundo medieval.\n\nNo cenário, o registro visual de algo é feito por desenho ou pintura, habilidades cobertas por perícias artísticas comuns, e não por esta perícia.",
@@ -373,7 +472,10 @@
       ],
       "em_adamar": "Não existe: pressupõe câmeras fotográficas, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Para registro visual de uma cena, use perícias artísticas como Artista (Desenho ou Pintura).",
-      "relacionados": ["operacao-de-aparelhos-eletronicos", "pericia-forense"]
+      "relacionados": [
+        "operacao-de-aparelhos-eletronicos",
+        "pericia-forense"
+      ]
     },
     "fisica": {
       "descricao": "Física é a ciência moderna que estuda matéria, energia e as leis fundamentais do universo através do método científico e de experimentação controlada, com séculos de matemática avançada por trás. É uma disciplina acadêmica que pressupõe universidades, laboratórios e uma tradição de pesquisa que um mundo medieval simplesmente não teve tempo de desenvolver.\n\nEm Adamar, o entendimento sobre o funcionamento do mundo natural é mais prático e observacional, sem o aparato teórico e matemático da física moderna.",
@@ -384,7 +486,10 @@
       ],
       "em_adamar": "Não existe: é ciência acadêmica moderna, muito além do desenvolvimento intelectual do cenário.",
       "dica_mesa": "Para engenharia prática do mundo (pontes, cercos, mecanismos), prefira perícias de Engenharia ou Artesanato específicas.",
-      "relacionados": ["quimica", "ciencia-estranha"]
+      "relacionados": [
+        "quimica",
+        "ciencia-estranha"
+      ]
     },
     "golpe-debilitante": {
       "descricao": "Golpe Debilitante é a perícia cinematográfica de acertar pontos específicos do corpo que causam paralisia temporária ou incapacidade súbita, sem necessariamente ferir gravemente o alvo. Representa um conhecimento quase místico de anatomia e reflexo, muito além do que um combatente treinado de forma convencional possui.\n\nÉ diferente de simplesmente mirar num ponto vulnerável em combate normal: aqui o efeito é desproporcional ao dano causado, refletindo mais uma técnica lendária do que física realista.",
@@ -395,7 +500,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica de combate, sempre combinada com o narrador para personagens excepcionais.",
       "dica_mesa": "Combine sempre com uma tradição marcial estabelecida na campanha.",
-      "relacionados": ["pontos-de-pressao", "pontos-secretos"]
+      "relacionados": [
+        "pontos-de-pressao",
+        "pontos-secretos"
+      ]
     },
     "golpe-poderoso": {
       "descricao": "Golpe Poderoso é a perícia cinematográfica de concentrar toda a força e vontade num único golpe descomunal, capaz de causar um efeito muito acima do que a força física normal do personagem permitiria. Representa aquele momento de determinação absoluta em que um combatente lendário supera os próprios limites.\n\nDiferente de uma manobra de combate comum, aqui o resultado é desproporcional ao esforço físico aparente, refletindo antes uma força de vontade sobre-humana do que técnica ou músculo.",
@@ -406,7 +514,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica de força sobre-humana, sempre combinada com o narrador.",
       "dica_mesa": "Reserve para o clímax de uma cena, não para uso repetido em todo combate.",
-      "relacionados": ["levantamento", "arte-do-arremesso"]
+      "relacionados": [
+        "levantamento",
+        "arte-do-arremesso"
+      ]
     },
     "hacking-de-computador": {
       "descricao": "Hacking de Computador é a perícia de invadir sistemas informáticos alheios, contornando senhas, firewalls e outras defesas digitais para acessar ou alterar dados. Pressupõe redes de computadores, sistemas operacionais e infraestrutura digital que simplesmente não existem num mundo de tecnologia medieval.\n\nQualquer equivalente narrativo em Adamar — como driblar um sistema de segurança de um cofre ou decifrar um segredo guardado — seria resolvido por perícias como Fechaduras, Furtividade ou Criptografia, nunca por esta.",
@@ -417,7 +528,10 @@
       ],
       "em_adamar": "Não existe: pressupõe computadores e redes digitais, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Para \"driblar um sistema de segurança\" medieval, use Fechaduras, Furtividade ou Criptografia.",
-      "relacionados": ["operacao-de-computadores", "programacao-de-computadores"]
+      "relacionados": [
+        "operacao-de-computadores",
+        "programacao-de-computadores"
+      ]
     },
     "hipnotismo": {
       "descricao": "Hipnotismo é a perícia de induzir outra pessoa a um estado de transe, deixando-a mais sugestionável e capaz de responder a comandos ou perguntas de forma diferente do estado desperto normal. É uma técnica que exige a cooperação, ainda que parcial, do alvo, e normalmente um ambiente calmo e tempo, não sendo algo aplicável no meio de uma perseguição ou combate.\n\nEla difere de Auto-Hipnose (que é sobre si mesmo) e de perícias de controle mental sobrenatural mais diretas, ficando num meio-termo entre a psicologia e o místico, a depender de como a mesa decidir tratá-la.",
@@ -428,7 +542,10 @@
       ],
       "em_adamar": "Fica com o narrador por lidar com controle da mente, sempre um assunto raro e delicado no cenário.",
       "dica_mesa": "Deixe claro que o alvo precisa estar disposto a cooperar, nem que seja parcialmente, para o transe funcionar.",
-      "relacionados": ["auto-hipnose", "lavagem-cerebral"]
+      "relacionados": [
+        "auto-hipnose",
+        "lavagem-cerebral"
+      ]
     },
     "influencia-musical": {
       "descricao": "Influência Musical é a perícia cinematográfica de manipular emoções alheias através da música de forma sobrenatural — não apenas emocionar uma plateia como um bom músico faria, mas realmente controlar sentimentos à força através de uma melodia. É a versão musical de Deslumbrar, sempre ligada a algum dom ou origem fora do comum do personagem.\n\nDiferente de tocar bem um instrumento (perícia de Música comum), aqui o efeito ultrapassa o que talento artístico normal alcançaria, chegando perto de um efeito mágico.",
@@ -439,7 +556,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica quase mágica, sempre combinada com o narrador.",
       "dica_mesa": "Exija uma origem sobrenatural coerente antes de liberar essa perícia para um personagem.",
-      "relacionados": ["deslumbrar", "hipnotismo"]
+      "relacionados": [
+        "deslumbrar",
+        "hipnotismo"
+      ]
     },
     "kiai": {
       "descricao": "Kiai é a perícia cinematográfica de soltar um grito de guerra com efeito sobrenatural: pode atordoar quem ouve, infundir coragem em aliados ou dar um impulso extra de força ao próprio corpo no momento do grito. É uma técnica ligada a tradições marciais lendárias, onde a voz se torna uma arma ou uma fonte de poder.\n\nDiferente de simplesmente gritar para intimidar (o que pode ser resolvido com Intimidação comum), aqui o efeito é mecânico e sobrenatural, não apenas psicológico.",
@@ -450,7 +570,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica de artes marciais lendárias, sempre combinada com o narrador.",
       "dica_mesa": "Combine sempre com uma tradição marcial já estabelecida na campanha.",
-      "relacionados": ["desviar", "levantamento"]
+      "relacionados": [
+        "desviar",
+        "levantamento"
+      ]
     },
     "lavagem-cerebral": {
       "descricao": "Lavagem Cerebral é a perícia de reprogramar gradualmente a mente de alguém ao longo de dias ou semanas, através de repetição, isolamento e pressão psicológica sistemática, até alterar de forma duradoura suas crenças ou lealdades. É um processo demorado e deliberado, muito diferente de um simples teste de persuasão ou de um efeito instantâneo de controle mental.\n\nO alvo precisa estar sob controle de quem executa a técnica — preso, isolado ou de alguma forma cativo — durante todo o processo, e o resultado costuma ser sutil o bastante para a vítima não perceber que foi manipulada.",
@@ -461,7 +584,10 @@
       ],
       "em_adamar": "Fica com o narrador por ser uma manipulação mental profunda e prolongada, sempre um assunto delicado e raro no cenário.",
       "dica_mesa": "Trate sempre como um processo que se desenrola ao longo de várias sessões, nunca instantâneo.",
-      "relacionados": ["hipnotismo", "exorcismo"]
+      "relacionados": [
+        "hipnotismo",
+        "exorcismo"
+      ]
     },
     "levantamento": {
       "descricao": "Levantamento é a perícia cinematográfica de erguer pesos muito acima da capacidade física normal através de concentração e técnica, e não apenas força bruta. Representa aquele feito lendário de levantar algo que deveria ser impossível para o tamanho do personagem, geralmente por um breve momento de esforço extremo.\n\nDiferente de testes comuns de Força, aqui o resultado ultrapassa os limites físicos plausíveis, sendo tratado como uma façanha rara e memorável, não como algo repetível a qualquer momento.",
@@ -472,7 +598,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica de força extrema, sempre combinada com o narrador.",
       "dica_mesa": "Reserve para um único momento decisivo por cena, nunca como recurso repetido.",
-      "relacionados": ["golpe-poderoso", "controle-da-respiracao"]
+      "relacionados": [
+        "golpe-poderoso",
+        "controle-da-respiracao"
+      ]
     },
     "lutar-as-cegas": {
       "descricao": "Lutar às Cegas é a perícia cinematográfica de combater plenamente sem depender da visão, usando outros sentidos de forma tão aguçada que o personagem luta como se enxergasse normalmente, mesmo no escuro total ou com os olhos vendados. Vai muito além de apenas \"lutar no escuro com penalidade\": aqui a penalidade desaparece por completo.\n\nÉ diferente de vantagens ou talentos que dão sentidos extras: aqui é puramente uma perícia treinada, refletindo anos de prática específica para operar sem a visão.",
@@ -483,7 +612,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica de combate, sempre combinada com o narrador para personagens excepcionais.",
       "dica_mesa": "Funciona bem como traço de origem de um personagem cego ou de uma tradição marcial específica.",
-      "relacionados": ["percepcao-do-corpo", "postura-imovel"]
+      "relacionados": [
+        "percepcao-do-corpo",
+        "postura-imovel"
+      ]
     },
     "magia-ritualistica": {
       "descricao": "Magia Ritualística é a perícia de lançar magia através de rituais elaborados e específicos de uma tradição — não a magia espontânea e rápida de um mago comum, mas feitiços que exigem preparação, componentes, tempo e conhecimento profundo da tradição em questão. Cada tradição (vudu, bruxaria, e outras) é uma especialização própria da perícia, e magos de tradições diferentes têm dificuldade em entender o método um do outro.\n\nO resultado costuma ser mais poderoso ou específico do que a magia comum permitiria, em troca do tempo e da preparação exigidos; não é algo que se faz no meio de um combate corrido, mas sim numa cena dedicada ao ritual.",
@@ -494,7 +626,10 @@
       ],
       "em_adamar": "Fica com o narrador: é magia de verdade, e magia arcana no cenário é rara e sempre controlada pelo Mestre.",
       "dica_mesa": "Trate cada ritual como uma cena própria, com tempo, componentes e risco de interrupção.",
-      "relacionados": ["desenho-de-simbolos", "taumatologia"]
+      "relacionados": [
+        "desenho-de-simbolos",
+        "taumatologia"
+      ]
     },
     "maquinista": {
       "descricao": "Maquinista é a perícia de operar máquinas industriais complexas — desde equipamentos fabris até locomotivas a vapor —, entendendo seus controles, mantendo o funcionamento seguro e reagindo a falhas mecânicas durante a operação. Pressupõe um nível de industrialização com máquinas de grande porte que não existe num mundo de tecnologia medieval.\n\nNo cenário, o equivalente mais próximo são engenhos mecânicos simples (moinhos, roldanas, mecanismos de cerco), operados com perícias de Mecânica ou bom senso, sem a complexidade de uma máquina industrial.",
@@ -505,7 +640,10 @@
       ],
       "em_adamar": "Não existe: pressupõe máquinas industriais complexas, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Para mecanismos simples do mundo, resolva com bom senso ou uma perícia de Mecânica apropriada.",
-      "relacionados": ["conducao", "eletricista"]
+      "relacionados": [
+        "conducao",
+        "eletricista"
+      ]
     },
     "materiais-perigosos": {
       "descricao": "Materiais Perigosos é a perícia de identificar, manusear e neutralizar com segurança substâncias tóxicas, radioativas ou biologicamente perigosas de origem industrial moderna, usando equipamento de proteção especializado. Pressupõe uma indústria química e uma consciência de riscos que não existem num mundo de tecnologia medieval.\n\nQualquer perigo equivalente em Adamar — um veneno raro, um vapor tóxico numa masmorra antiga — seria tratado com perícias como Farmácia, Naturalista ou simples testes de HT para resistir, e não com esta perícia técnica industrial.",
@@ -516,7 +654,10 @@
       ],
       "em_adamar": "Não existe: pressupõe materiais tóxicos e radioativos de origem industrial moderna, ausentes no cenário.",
       "dica_mesa": "Para venenos e perigos naturais do mundo, use Farmácia ou Naturalista.",
-      "relacionados": ["explosivos", "quimica"]
+      "relacionados": [
+        "explosivos",
+        "quimica"
+      ]
     },
     "meditacao": {
       "descricao": "Meditação é a perícia de acalmar a própria mente através de disciplina contemplativa, ganhando resistência mental contra medo, dor e pressão psicológica ao longo do tempo, e também podendo restaurar a serenidade após um choque emocional grave. Diferente de Auto-Hipnose, que busca um efeito específico e pontual, Meditação é mais uma prática contínua de fortalecimento da vontade.\n\nCostuma ser praticada em momentos de descanso, e seu efeito se acumula com a prática regular, não sendo um truque instantâneo usado no meio da ação.",
@@ -527,7 +668,10 @@
       ],
       "em_adamar": "Fica com o narrador por representar uma disciplina espiritual fora do comum, tratada como prática rara e combinada previamente.",
       "dica_mesa": "Funciona bem como ritual de descanso entre aventuras, reforçando o papel do personagem.",
-      "relacionados": ["auto-hipnose", "forca-mental"]
+      "relacionados": [
+        "auto-hipnose",
+        "forca-mental"
+      ]
     },
     "mergulho": {
       "descricao": "Mergulho é a perícia de operar equipamento moderno de mergulho — tanques de ar comprimido, trajes especiais — para explorar debaixo d'água com segurança por períodos prolongados. Pressupõe tecnologia industrial de suporte de vida subaquático que não existe num mundo medieval.\n\nEm Adamar, qualquer atividade subaquática é limitada ao fôlego natural do personagem, eventualmente ajudado por Controle da Respiração, sem o suporte de equipamento moderno de mergulho.",
@@ -538,7 +682,10 @@
       ],
       "em_adamar": "Não existe: pressupõe equipamento de mergulho moderno, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Para mergulho no cenário, use Natação apoiada por Controle da Respiração, sem equipamento moderno.",
-      "relacionados": ["controle-da-respiracao", "submarino"]
+      "relacionados": [
+        "controle-da-respiracao",
+        "submarino"
+      ]
     },
     "montaria": {
       "descricao": "Montaria não é a perícia do cavaleiro, mas sim do próprio animal montado: representa o treinamento do cavalo, camelo ou outra montaria para obedecer comandos, manter a calma em combate e executar manobras específicas sob um cavaleiro. É a perícia usada pelo Mestre para o animal, não uma perícia que um personagem jogador normalmente compra para si.\n\nO personagem que cavalga usa a perícia de Equitação para controlar a montaria; Montaria é sobre o quão bem treinado o animal em si está.",
@@ -547,9 +694,12 @@
         "Uma montaria mal treinada empaca justo na hora em que o grupo precisa fugir de um perigo na estrada.",
         "Um narrador usa a perícia da montaria para decidir se o animal obedece a um comando incomum em meio ao caos."
       ],
-      "em_adamar": "Não existe como perícia de personagem jogador: é atribuída ao animal montado, não a quem monta.",
+      "em_adamar": "Bloqueada na criação: só faz sentido para quem, ao longo do jogo, ganhou asas, poderes ou outra forma. Aí o personagem pode aprendê-la, combinado com o narrador.",
       "dica_mesa": "Para o personagem que cavalga, use a perícia de Equitação, não Montaria.",
-      "relacionados": ["ciclismo", "conducao"]
+      "relacionados": [
+        "ciclismo",
+        "conducao"
+      ]
     },
     "observador-avancado": {
       "descricao": "Observador Avançado é a perícia de guiar remotamente o fogo de artilharia moderna, calculando distâncias, ajustando a mira de uma bateria distante e comunicando correções em tempo real. Pressupõe armamento de longo alcance, comunicação rápida à distância e uma doutrina militar moderna que não existem num mundo de tecnologia medieval.\n\nEm cercos e batalhas de Adamar, o ajuste de tiro de engenhos como catapultas é resolvido de forma mais simples, com perícias de Artilharia mecânica e observação direta, sem a sofisticação desta perícia.",
@@ -560,7 +710,10 @@
       ],
       "em_adamar": "Não existe: pressupõe artilharia moderna e comunicação à distância, tecnologia muito além do cenário.",
       "dica_mesa": "Para ajustar o tiro de engenhos de cerco medievais, use Artilharia mecânica com observação direta.",
-      "relacionados": ["canhoneiro", "explosivos"]
+      "relacionados": [
+        "canhoneiro",
+        "explosivos"
+      ]
     },
     "operacao-de-aparelhos-eletronicos": {
       "descricao": "Esta perícia cobre o uso funcional de aparelhos eletrônicos — rádios, equipamentos de vigilância, instrumentos de mídia — sem necessariamente saber consertá-los (isso é a perícia de Conserto correspondente). Pressupõe a existência de eletrônica em geral, ausente num mundo de tecnologia medieval.\n\nNo cenário, não há aparelhos eletrônicos para operar; qualquer equivalente de comunicação ou observação à distância seria resolvido por meios totalmente diferentes, como sinais de fumaça, mensageiros ou observação direta.",
@@ -571,7 +724,10 @@
       ],
       "em_adamar": "Não existe: pressupõe aparelhos eletrônicos, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Para comunicação à distância no cenário, use mensageiros, sinais visuais ou meios mundanos equivalentes.",
-      "relacionados": ["conserto-de-equipamento-eletronico", "fotografia"]
+      "relacionados": [
+        "conserto-de-equipamento-eletronico",
+        "fotografia"
+      ]
     },
     "operacao-de-computadores": {
       "descricao": "Operação de Computadores é a perícia básica de usar computadores no dia a dia: navegar por sistemas, usar programas comuns, buscar informação num banco de dados. É a perícia de usuário comum, não a de programar ou invadir sistemas, mas ainda assim pressupõe a existência de computadores, algo muito além da tecnologia medieval.\n\nNo cenário, não há nenhuma tarefa equivalente: registros e informações são guardados em papel, pergaminho ou na memória de escribas e arquivistas.",
@@ -582,7 +738,10 @@
       ],
       "em_adamar": "Não existe: pressupõe computadores, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Para pesquisa de informações no cenário, use perícias de saber ou Pesquisa em bibliotecas e arquivos.",
-      "relacionados": ["digitacao", "programacao-de-computadores"]
+      "relacionados": [
+        "digitacao",
+        "programacao-de-computadores"
+      ]
     },
     "paleontologia": {
       "descricao": "Paleontologia é o estudo científico de fósseis e formas de vida extintas, usando métodos de datação, escavação cuidadosa e classificação biológica moderna. Pressupõe um arcabouço científico — geologia, biologia comparada, técnicas de escavação sistemática — que um mundo de tecnologia medieval não desenvolveu.\n\nQualquer curiosidade sobre ossos antigos ou criaturas extintas encontrados em Adamar tenderia a ser tratada com Naturalista ou como um mistério para a trama, e não com uma ciência acadêmica formal de fósseis.",
@@ -593,7 +752,10 @@
       ],
       "em_adamar": "Não existe: é ciência acadêmica moderna, muito além do desenvolvimento intelectual do cenário.",
       "dica_mesa": "Trate ossos ou criaturas antigas encontradas como mistério de trama, resolvido com Naturalista ou Investigação.",
-      "relacionados": ["biologia", "pericia-abrangente"]
+      "relacionados": [
+        "biologia",
+        "pericia-abrangente"
+      ]
     },
     "paraquedismo": {
       "descricao": "Paraquedismo é a perícia de saltar de paraquedas com segurança: abrir o equipamento no momento certo, controlar a queda e aterrissar sem se machucar. Pressupõe a existência de paraquedas e, normalmente, de aeronaves das quais saltar — tecnologia muito além do que existe num mundo medieval.\n\nEm Adamar não há como saltar de grandes alturas com segurança planejada; uma queda de altura é sempre um risco físico direto, sem perícia dedicada a amenizá-lo dessa forma.",
@@ -604,7 +766,10 @@
       ],
       "em_adamar": "Não existe: pressupõe paraquedas e aeronaves, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Sem uso prático em Adamar; trate quedas de altura como perigo direto, sem perícia associada.",
-      "relacionados": ["queda-livre", "salto-voador"]
+      "relacionados": [
+        "queda-livre",
+        "salto-voador"
+      ]
     },
     "passos-leves": {
       "descricao": "Passos Leves é a perícia cinematográfica de se mover sem deixar rastro algum e sem romper superfícies frágeis demais para sustentar o peso de uma pessoa comum — andar sobre neve fresca sem afundar, sobre um piso de gelo fino, ou sobre folhas secas sem fazer barulho algum. É um domínio extremo do próprio peso e equilíbrio, muito além de Furtividade comum.\n\nDiferente de simplesmente ser silencioso, aqui o efeito físico é real: o personagem literalmente não deixa marca nem quebra o que pisa, algo que nenhuma técnica convencional permite.",
@@ -615,7 +780,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica de controle corporal extremo, sempre combinada com o narrador.",
       "dica_mesa": "Reserve para personagens de perfil quase lendário, não como recurso comum de furtividade.",
-      "relacionados": ["arte-da-invisibilidade", "percepcao-do-corpo"]
+      "relacionados": [
+        "arte-da-invisibilidade",
+        "percepcao-do-corpo"
+      ]
     },
     "percepcao-do-corpo": {
       "descricao": "Percepção do Corpo é a perícia de se reorientar instantaneamente depois de uma queda, um giro descontrolado ou qualquer situação que deveria deixar alguém desorientado, permitindo agir normalmente mesmo em condições que confundiriam qualquer pessoa. É mais uma disciplina de equilíbrio e consciência corporal do que uma técnica de combate propriamente dita.\n\nDiferente de Acrobacia, que rege manobras físicas ativas, aqui o foco é a recuperação instantânea da orientação espacial depois de algo que deveria desorientar o personagem.",
@@ -626,7 +794,10 @@
       ],
       "em_adamar": "Fica com o narrador por representar uma disciplina corporal fora do comum, tratada como talento raro e combinado previamente.",
       "dica_mesa": "Combine bem com personagens de origem acrobática ou marcial estabelecida.",
-      "relacionados": ["passos-leves", "controle-da-respiracao"]
+      "relacionados": [
+        "passos-leves",
+        "controle-da-respiracao"
+      ]
     },
     "pericia-abrangente": {
       "descricao": "Perícia Abrangente representa um conhecimento amplo e relativamente raso sobre um tema muito grande, funcionando como um curinga: em vez de testar várias perícias de saber diferentes sobre o assunto, o personagem usa esta perícia única para responder perguntas gerais dentro do tema escolhido. Ela sempre exige uma especialização (o tema específico), e o Mestre tem a palavra final sobre se um tema é amplo demais ou específico demais para valer como Perícia Abrangente.\n\nEla não substitui perícias de ação — não serve para curar, lutar ou fabricar nada —, apenas para saber e reconhecer coisas dentro do tema escolhido; para agir na prática sobre o assunto, o personagem ainda precisa da perícia específica correspondente.",
@@ -637,7 +808,10 @@
       ],
       "em_adamar": "Depende do tema: temas de saber comum e amplo ficam livres com combinação sobre a especialização; temas ligados a conspirações, psiquismo ou coisas fora do mundo natural ficam com o narrador; temas de ciência moderna, como epidemiologia, não existem no cenário.",
       "dica_mesa": "Combine sempre o tema específico da especialização antes de aceitar a perícia; vete temas grandes demais.",
-      "relacionados": ["conhecimento-oculto", "pericia-forense"]
+      "relacionados": [
+        "conhecimento-oculto",
+        "pericia-forense"
+      ]
     },
     "pericia-forense": {
       "descricao": "Perícia Forense é a análise científica de laboratório aplicada a uma cena de crime: exame de sangue, impressões digitais, resíduos e outras evidências físicas com métodos e equipamentos modernos de investigação criminal. Pressupõe laboratórios, reagentes e uma tradição de ciência forense que não existe num mundo de tecnologia medieval.\n\nEm Adamar, examinar uma cena de crime é feito de forma mais direta e observacional, com perícias como Investigação e Naturalista, sem o aparato técnico-científico desta perícia.",
@@ -648,7 +822,10 @@
       ],
       "em_adamar": "Não existe: pressupõe ciência forense e equipamento de laboratório modernos, ausentes no cenário.",
       "dica_mesa": "Para investigar uma cena de crime no cenário, use Investigação apoiada por observação direta.",
-      "relacionados": ["criminologia", "criptografia"]
+      "relacionados": [
+        "criminologia",
+        "criptografia"
+      ]
     },
     "pilotagem": {
       "descricao": "Pilotagem é a perícia de controlar aeronaves — aviões, helicópteros, planadores — cuidando de decolagem, manobras em voo e pouso. Pressupõe aeronaves motorizadas ou de estrutura complexa, tecnologia de engenharia aeronáutica muito além do que existe num mundo medieval.\n\nEm Adamar, voar por meios artificiais simplesmente não é uma possibilidade; qualquer deslocamento aéreo, se existir, seria tratado como algo sobrenatural e raro, jamais como pilotar uma máquina voadora comum.",
@@ -659,7 +836,10 @@
       ],
       "em_adamar": "Não existe: pressupõe aeronaves, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Sem uso prático em Adamar; qualquer voo no cenário deve passar pelo narrador como algo mágico e raro.",
-      "relacionados": ["voo", "submarino"]
+      "relacionados": [
+        "voo",
+        "submarino"
+      ]
     },
     "pontos-de-pressao": {
       "descricao": "Pontos de Pressão é a perícia cinematográfica de golpear com precisão pontos vitais do corpo para incapacitar rapidamente um oponente, causando um efeito muito mais debilitante do que o ferimento em si sugeriria. É uma técnica de combate quase mística, associada a mestres de artes marciais lendários que conhecem o corpo humano a um nível extraordinário.\n\nDiferente de simplesmente mirar num ponto fraco em combate comum, aqui o conhecimento é tão preciso que o efeito ultrapassa o que dano físico normal causaria.",
@@ -670,7 +850,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica de combate, sempre combinada com o narrador para personagens excepcionais.",
       "dica_mesa": "Combine sempre com uma tradição marcial já estabelecida na campanha.",
-      "relacionados": ["golpe-debilitante", "pontos-secretos"]
+      "relacionados": [
+        "golpe-debilitante",
+        "pontos-secretos"
+      ]
     },
     "pontos-secretos": {
       "descricao": "Pontos Secretos é a perícia cinematográfica de golpear pontos ainda mais raros e específicos do corpo para causar efeitos extraordinários — muito além da simples incapacitação de Pontos de Pressão, chegando a efeitos quase sobrenaturais através de pura técnica marcial. É reservada às lendas mais extremas de mestres de combate.\n\nÉ tratada como um segredo quase mítico, guardado por poucas tradições, e normalmente não está disponível sem uma origem muito específica e justificada no histórico do personagem.",
@@ -681,7 +864,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica extrema, reservada a personagens muito específicos e sempre combinada com o narrador.",
       "dica_mesa": "Trate como segredo raríssimo de uma única tradição marcial, não como perícia disponível ao grupo.",
-      "relacionados": ["pontos-de-pressao", "golpe-debilitante"]
+      "relacionados": [
+        "pontos-de-pressao",
+        "golpe-debilitante"
+      ]
     },
     "postura-imovel": {
       "descricao": "Postura Imóvel é a perícia cinematográfica de se plantar no chão de um jeito que se torna praticamente impossível de derrubar, empurrar ou desequilibrar, mesmo diante de golpes ou forças que deveriam jogar qualquer um ao chão. Representa um domínio extremo de equilíbrio e ancoragem física.\n\nDiferente de uma boa postura de combate comum, aqui o efeito é absoluto dentro da cena: tentativas de derrubar o personagem simplesmente falham, não apenas ficam mais difíceis.",
@@ -692,7 +878,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica de controle corporal extremo, sempre combinada com o narrador.",
       "dica_mesa": "Reserve para um momento marcante de defesa numa cena, não como estado permanente.",
-      "relacionados": ["arqueiro-zen", "lutar-as-cegas"]
+      "relacionados": [
+        "arqueiro-zen",
+        "lutar-as-cegas"
+      ]
     },
     "programacao-de-computadores": {
       "descricao": "Programação de Computadores é a perícia de escrever, depurar e manter software, exigindo conhecimento de linguagens de programação e lógica computacional. Pressupõe computadores e uma tradição de ciência da computação inteiramente ausente num mundo de tecnologia medieval.\n\nNão há nenhum equivalente direto em Adamar: nenhuma tarefa do cenário se assemelha a programar um sistema, já que a própria máquina que seria programada não existe.",
@@ -703,7 +892,10 @@
       ],
       "em_adamar": "Não existe: pressupõe computadores e ciência da computação, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Sem uso prático em Adamar; não precisa de substituto direto.",
-      "relacionados": ["hacking-de-computador", "operacao-de-computadores"]
+      "relacionados": [
+        "hacking-de-computador",
+        "operacao-de-computadores"
+      ]
     },
     "projetor-de-liquidos": {
       "descricao": "Projetor de Líquidos é a perícia de operar armas como lança-chamas ou lança-substâncias químicas, controlando o jato, o alcance e evitando acidentes com o próprio equipamento. Pressupõe tanques pressurizados e combustíveis ou químicos industriais, tecnologia muito além do nível medieval.\n\nEm Adamar não há esse tipo de arma; qualquer fogo usado como arma vem de tochas, óleo comum ou, raramente, algum preparo alquímico controlado pelo narrador, sem a sofisticação de um equipamento projetor pressurizado.",
@@ -714,7 +906,10 @@
       ],
       "em_adamar": "Não existe: pressupõe equipamento industrial pressurizado, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Para fogo como arma no cenário, use tochas, óleo ou um preparo alquímico raro combinado com o narrador.",
-      "relacionados": ["armas-de-fogo", "explosivos"]
+      "relacionados": [
+        "armas-de-fogo",
+        "explosivos"
+      ]
     },
     "queda-livre": {
       "descricao": "Queda Livre é a perícia de se controlar durante uma queda de grande altura antes da abertura de um paraquedas (ou em situações parecidas), estabilizando o corpo e se preparando para o pouso. Pressupõe contexto de saltos de aeronaves e equipamento moderno de queda controlada, ausente num mundo medieval.\n\nEm Adamar, uma queda de grande altura é sempre um perigo direto, sem meio técnico de controle como este; o resultado de uma queda é resolvido diretamente pelas regras de dano de queda, não por esta perícia.",
@@ -723,9 +918,12 @@
         "Uma queda de uma muralha alta é sempre tratada como perigo cru, sem perícia para amenizá-la dessa forma.",
         "Fica de fora por pressupor contexto de salto aéreo moderno."
       ],
-      "em_adamar": "Não existe: pressupõe saltos de aeronaves e equipamento moderno, tecnologia muito além do cenário.",
+      "em_adamar": "Bloqueada na criação: só faz sentido para quem, ao longo do jogo, ganhou asas, poderes ou outra forma. Aí o personagem pode aprendê-la, combinado com o narrador.",
       "dica_mesa": "Trate quedas de altura no cenário como risco direto, sem perícia de controle associada.",
-      "relacionados": ["paraquedismo", "acrobacia"]
+      "relacionados": [
+        "paraquedismo",
+        "acrobacia"
+      ]
     },
     "quimica": {
       "descricao": "Química é a ciência moderna da composição e transformação da matéria, com tabela periódica, reações controladas em laboratório e teoria molecular. Pressupõe séculos de desenvolvimento científico que um mundo de tecnologia medieval não alcançou.\n\nO equivalente prático em Adamar é a Alquimia, que também mexe com substâncias e transformações, mas de forma mágica e artesanal, sem o embasamento científico moderno — e, assim como a Alquimia, é rara e fica com o narrador.",
@@ -736,7 +934,10 @@
       ],
       "em_adamar": "Não existe como ciência moderna; em Adamar, o equivalente é Alquimia, também rara e combinada com o narrador.",
       "dica_mesa": "Redirecione qualquer pedido de \"químico\" para um alquimista, com todas as restrições de magia rara.",
-      "relacionados": ["alquimia", "fisica"]
+      "relacionados": [
+        "alquimia",
+        "fisica"
+      ]
     },
     "salto-voador": {
       "descricao": "Salto Voador é a perícia cinematográfica de dar saltos sobre-humanos, cobrindo distâncias e alturas muito além do que pernas humanas comuns permitiriam, como se o personagem quase voasse por um instante. É uma façanha de força e técnica corporal extrema, típica de heróis de lenda ou artistas marciais lendários.\n\nDiferente de Saltar comum, que tem seus próprios limites físicos plausíveis, aqui o resultado ultrapassa claramente o que um corpo humano deveria conseguir.",
@@ -747,7 +948,10 @@
       ],
       "em_adamar": "É uma façanha cinematográfica de força extrema, sempre combinada com o narrador.",
       "dica_mesa": "Reserve para um momento memorável, não como forma comum de deslocamento.",
-      "relacionados": ["levantamento", "arqueiro-zen"]
+      "relacionados": [
+        "levantamento",
+        "arqueiro-zen"
+      ]
     },
     "sonhos": {
       "descricao": "Sonhos é a perícia de controlar e lembrar conscientemente os próprios sonhos, incluindo entrar em sonho lúcido, direcionar o que acontece dentro dele, ou recordar detalhes que normalmente se perderiam ao acordar. Em cenários com elementos sobrenaturais, ela também pode servir para perceber quando um sonho comum foi invadido ou influenciado por algo externo.\n\nÉ uma disciplina interior, testada durante o sono, e seu resultado só se manifesta quando o personagem acorda e relata (ou age sobre) o que viveu no sonho.",
@@ -758,7 +962,10 @@
       ],
       "em_adamar": "Fica com o narrador por lidar com uma camada sobrenatural da mente, sempre rara e delicada no cenário.",
       "dica_mesa": "Funciona bem como gancho de trama entregue aos poucos, sessão após sessão.",
-      "relacionados": ["meditacao", "auto-hipnose"]
+      "relacionados": [
+        "meditacao",
+        "auto-hipnose"
+      ]
     },
     "submarino": {
       "descricao": "Submarino é a perícia de operar embarcações submarinas: controlar profundidade, sonar e os sistemas de um veículo capaz de navegar debaixo d'água por longos períodos. Pressupõe engenharia naval avançada e tecnologia de propulsão que não existem num mundo de tecnologia medieval.\n\nNo cenário, não há navegação submarina alguma; a navegação se limita a embarcações de superfície, tratadas por perícias como Navegação (Marítima) ou Marinheiro.",
@@ -769,7 +976,10 @@
       ],
       "em_adamar": "Não existe: pressupõe embarcações submarinas, tecnologia muito além do nível do cenário.",
       "dica_mesa": "Sem uso prático em Adamar; para navegação, use as perícias marítimas comuns do cenário.",
-      "relacionados": ["mergulho", "pilotagem"]
+      "relacionados": [
+        "mergulho",
+        "pilotagem"
+      ]
     },
     "taumatologia": {
       "descricao": "Taumatologia é a teoria acadêmica da magia: o estudo erudito de como a energia mágica funciona, suas regras e limites, permitindo compreender e às vezes prever efeitos mágicos sem necessariamente lançá-los. É uma perícia de saber sobre magia, e não de praticá-la diretamente, ainda que muitas vezes ande de mãos dadas com quem também é capaz de lançar feitiços.\n\nSó existe fazer sentido para quem já teve algum contato real com magia — ninguém desenvolve uma teoria sofisticada sobre algo que nunca presenciou —, e por isso pressupõe uma origem de personagem que já viu magia de verdade em ação.",
@@ -780,7 +990,10 @@
       ],
       "em_adamar": "Fica com o narrador: só existe para quem já teve contato real com magia, algo raro e controlado no cenário.",
       "dica_mesa": "Exija do jogador uma origem no histórico que explique como o personagem já viu magia de verdade.",
-      "relacionados": ["magia-ritualistica", "conhecimento-oculto"]
+      "relacionados": [
+        "magia-ritualistica",
+        "conhecimento-oculto"
+      ]
     },
     "utilizacao-de-traje-especial": {
       "descricao": "Utilização de Traje Especial é a perícia de se mover e agir corretamente vestindo um equipamento de proteção moderno e volumoso — traje de pressão, traje anticontaminação, exoesqueleto — compensando a perda de mobilidade e sensibilidade que esse tipo de traje impõe. Pressupõe justamente a existência desses trajes de alta tecnologia.\n\nEm Adamar, o equipamento de proteção mais sofisticado disponível é a armadura medieval, cujo uso já é resolvido pelas regras normais de armadura e pela penalidade de carga, sem necessidade de uma perícia dedicada como esta.",
@@ -791,7 +1004,10 @@
       ],
       "em_adamar": "Não existe: pressupõe trajes de proteção de alta tecnologia, muito além do nível do cenário.",
       "dica_mesa": "Para o uso de armaduras medievais, use as regras normais de peso e penalidade de armadura, sem perícia dedicada.",
-      "relacionados": ["controle-da-respiracao", "materiais-perigosos"]
+      "relacionados": [
+        "controle-da-respiracao",
+        "materiais-perigosos"
+      ]
     },
     "voo": {
       "descricao": "Voo é a perícia de voar com as próprias asas, controlando decolagem, manobras no ar e pouso — algo reservado a criaturas ou personagens que de fato possuem asas funcionais e a capacidade natural de voar. Humanos comuns não têm asas nem qualquer meio natural de voar, então esta perícia simplesmente não se aplica a um personagem humano padrão.\n\nDiferente de perícias que envolvem equipamento (como paraquedismo) ou magia de voo, aqui o voo é sempre orgânico e próprio do corpo de quem voa.",
@@ -800,9 +1016,12 @@
         "Nenhum personagem humano comum de Adamar teria acesso a esta perícia sem uma origem muito fora do padrão.",
         "Um narrador reserva a perícia para criaturas do bestiário capazes de voar de verdade."
       ],
-      "em_adamar": "Não existe para personagens humanos: pressupõe asas funcionais, que humanos não têm. O cenário só tem humanos.",
+      "em_adamar": "Bloqueada na criação: só faz sentido para quem, ao longo do jogo, ganhou asas, poderes ou outra forma. Aí o personagem pode aprendê-la, combinado com o narrador.",
       "dica_mesa": "Reserve para criaturas do bestiário, não para fichas de jogadores.",
-      "relacionados": ["salto-voador", "pilotagem"]
+      "relacionados": [
+        "salto-voador",
+        "pilotagem"
+      ]
     }
   }
 }

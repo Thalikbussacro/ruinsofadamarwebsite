@@ -1150,7 +1150,7 @@
       "especializacao": true,
       "predefinido": "DX-4",
       "grupo": "misterio",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Usar ataques de habilidades sobre-humanas. Humanos comuns não têm.",
       "ref": {
         "livro": "modulo-basico",
@@ -5907,7 +5907,7 @@
       "especializacao": false,
       "predefinido": "DX-5",
       "grupo": "natureza",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Perícia do animal montado, não do cavaleiro.",
       "ref": {
         "livro": "modulo-basico",
@@ -7111,7 +7111,7 @@
       "especializacao": false,
       "predefinido": "DX-5 ou HT-5",
       "grupo": "tecnologia",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Controlar-se em queda livre de grandes alturas.",
       "ref": {
         "livro": "modulo-basico",
@@ -8312,7 +8312,7 @@
       "especializacao": false,
       "predefinido": "HT-5",
       "grupo": "misterio",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Voar com asas próprias. Humanos não voam.",
       "ref": {
         "livro": "modulo-basico",

@@ -21,6 +21,7 @@
   var ADAMAR = {
     livre: { rotulo: 'Livre', classe: 'st-livre' },
     narrador: { rotulo: 'Com o narrador', classe: 'st-narrador' },
+    bloqueado: { rotulo: 'Bloqueado na criação', classe: 'st-bloqueado' },
     nao: { rotulo: 'Não existe em Adamar', classe: 'st-nao' }
   };
   var NOMES_LISTA = { pericias: 'Perícia', vantagens: 'Vantagem', desvantagens: 'Desvantagem', equipamento: 'Equipamento' };

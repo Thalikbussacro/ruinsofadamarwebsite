@@ -15,7 +15,7 @@
         "sobrenatural"
       ],
       "custo": "10/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Anula a magia ao redor.",
       "ref": {
         "livro": "modulo-basico",
@@ -148,7 +148,7 @@
         "exotica"
       ],
       "custo": "1",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Uma ferramenta embutida no corpo.",
       "ref": {
         "livro": "modulo-basico",
@@ -242,7 +242,7 @@
         "exotica"
       ],
       "custo": "20",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Anda por paredes e tetos.",
       "ref": {
         "livro": "modulo-basico",
@@ -347,7 +347,7 @@
         "sobrenatural"
       ],
       "custo": "50/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Aumenta a magia ao redor.",
       "ref": {
         "livro": "modulo-basico",
@@ -367,7 +367,7 @@
         "fisica"
       ],
       "custo": "10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Adaptado a nadar como a um animal aquático.",
       "ref": {
         "livro": "modulo-basico",
@@ -608,7 +608,7 @@
         "sobrenatural"
       ],
       "custo": "80",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Encanta quem o vê de forma sobrenatural.",
       "ref": {
         "livro": "modulo-basico",
@@ -628,7 +628,7 @@
         "fisica"
       ],
       "custo": "25/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Ataca mais de uma vez por turno. Sobre-humano.",
       "ref": {
         "livro": "modulo-basico",
@@ -649,7 +649,7 @@
         "exotica"
       ],
       "custo": "15",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Esmaga como uma serpente.",
       "ref": {
         "livro": "modulo-basico",
@@ -670,7 +670,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Ataque natural ou poder: rajadas, ferrões, sopros.",
       "ref": {
         "livro": "modulo-basico",
@@ -722,7 +722,7 @@
         "exotica"
       ],
       "custo": "10/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Ataque que causa efeitos em vez de dano.",
       "ref": {
         "livro": "modulo-basico",
@@ -743,7 +743,7 @@
         "exotica"
       ],
       "custo": "15",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Distingue sons com precisão sobre-humana.",
       "ref": {
         "livro": "modulo-basico",
@@ -764,7 +764,7 @@
         "exotica"
       ],
       "custo": "4/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Ouve sons muito distantes.",
       "ref": {
         "livro": "modulo-basico",
@@ -785,7 +785,7 @@
         "exotica"
       ],
       "custo": "0 ou 5",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Ouve sons graves demais para humanos.",
       "ref": {
         "livro": "modulo-basico",
@@ -908,7 +908,7 @@
         "exotica"
       ],
       "custo": "5/boca",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Tem mais de uma boca.",
       "ref": {
         "livro": "modulo-basico",
@@ -958,7 +958,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Tem mais braços.",
       "ref": {
         "livro": "modulo-basico",
@@ -978,7 +978,7 @@
         "exotica"
       ],
       "custo": "15/cabeça",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Tem mais de uma cabeça.",
       "ref": {
         "livro": "modulo-basico",
@@ -1000,7 +1000,7 @@
         "exotica"
       ],
       "custo": "5/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Muda de cor para se esconder.",
       "ref": {
         "livro": "modulo-basico",
@@ -1054,7 +1054,7 @@
         "exotica"
       ],
       "custo": "20",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Anda sobre o ar.",
       "ref": {
         "livro": "modulo-basico",
@@ -1075,7 +1075,7 @@
         "exotica"
       ],
       "custo": "15",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Anda sobre a água.",
       "ref": {
         "livro": "modulo-basico",
@@ -1131,7 +1131,7 @@
         "exotica"
       ],
       "custo": "1/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Carrega coisas dentro do corpo.",
       "ref": {
         "livro": "modulo-basico",
@@ -1219,7 +1219,7 @@
         "sobrenatural"
       ],
       "custo": "50",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vê e ouve à distância pela mente.",
       "ref": {
         "livro": "modulo-basico",
@@ -1272,7 +1272,7 @@
         "fisica"
       ],
       "custo": "2/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Precisa de menos comida e água que um humano.",
       "ref": {
         "livro": "modulo-basico",
@@ -1350,7 +1350,7 @@
         "exotica"
       ],
       "custo": "50",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Domina a vontade de outros.",
       "ref": {
         "livro": "modulo-basico",
@@ -1417,7 +1417,7 @@
         "mental"
       ],
       "custo": "5/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Muda a temperatura ao redor.",
       "ref": {
         "livro": "modulo-basico",
@@ -1438,7 +1438,7 @@
         "exotica"
       ],
       "custo": "10/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Aumenta de tamanho.",
       "ref": {
         "livro": "modulo-basico",
@@ -1612,7 +1612,7 @@
         "exotica"
       ],
       "custo": "0, 1 ou 2",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Presas afiadas.",
       "ref": {
         "livro": "modulo-basico",
@@ -1679,7 +1679,7 @@
         "fisica"
       ],
       "custo": "20/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Velocidade sobre-humana.",
       "ref": {
         "livro": "modulo-basico",
@@ -1933,7 +1933,7 @@
         "exotica"
       ],
       "custo": "5",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Come qualquer coisa orgânica.",
       "ref": {
         "livro": "modulo-basico",
@@ -1954,7 +1954,7 @@
         "sobrenatural"
       ],
       "custo": "100",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Teleporte.",
       "ref": {
         "livro": "modulo-basico",
@@ -1975,7 +1975,7 @@
         "sobrenatural"
       ],
       "custo": "20",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Transforma vítimas em servos.",
       "ref": {
         "livro": "modulo-basico",
@@ -2030,7 +2030,7 @@
         "exotica"
       ],
       "custo": "35/cópia",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Cria cópias de si.",
       "ref": {
         "livro": "modulo-basico",
@@ -2052,7 +2052,7 @@
         "sobrenatural"
       ],
       "custo": "150",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Só morre de um jeito específico.",
       "ref": {
         "livro": "modulo-basico",
@@ -2108,7 +2108,7 @@
         "fisica"
       ],
       "custo": "12 ou 16 por +1",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Braços mais ágeis que o corpo.",
       "ref": {
         "livro": "modulo-basico",
@@ -2129,7 +2129,7 @@
         "exotica"
       ],
       "custo": "6/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Estica o corpo.",
       "ref": {
         "livro": "modulo-basico",
@@ -2150,7 +2150,7 @@
         "sobrenatural"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Ligação telepática com alguém.",
       "ref": {
         "livro": "modulo-basico",
@@ -2324,7 +2324,7 @@
         "exotica"
       ],
       "custo": "5/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Diminui de tamanho.",
       "ref": {
         "livro": "modulo-basico",
@@ -2423,7 +2423,7 @@
         "exotica"
       ],
       "custo": "30 + 5/ponto",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Cava túneis como um animal.",
       "ref": {
         "livro": "modulo-basico",
@@ -2443,7 +2443,7 @@
         "fisica"
       ],
       "custo": "2/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Difícil de agarrar.",
       "ref": {
         "livro": "modulo-basico",
@@ -2500,7 +2500,7 @@
         "exotica"
       ],
       "custo": "1 ou 3",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Espinhos pelo corpo.",
       "ref": {
         "livro": "modulo-basico",
@@ -2580,7 +2580,7 @@
         "sobrenatural"
       ],
       "custo": "30",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Anula poderes psíquicos.",
       "ref": {
         "livro": "modulo-basico",
@@ -2600,7 +2600,7 @@
         "fisica"
       ],
       "custo": "2/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vive mais que um humano.",
       "ref": {
         "livro": "modulo-basico",
@@ -2670,7 +2670,7 @@
         "exotica"
       ],
       "custo": "5",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Fala debaixo d'água.",
       "ref": {
         "livro": "modulo-basico",
@@ -2691,7 +2691,7 @@
         "exotica"
       ],
       "custo": "0 a 10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Fala em sons graves demais para humanos.",
       "ref": {
         "livro": "modulo-basico",
@@ -2713,7 +2713,7 @@
         "exotica"
       ],
       "custo": "0 ou 10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Fala em sons agudos demais para humanos.",
       "ref": {
         "livro": "modulo-basico",
@@ -2772,7 +2772,7 @@
         "sobrenatural"
       ],
       "custo": "15",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Conversa com plantas.",
       "ref": {
         "livro": "modulo-basico",
@@ -2986,7 +2986,7 @@
         "exotica"
       ],
       "custo": "50",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vira sombra.",
       "ref": {
         "livro": "modulo-basico",
@@ -3041,7 +3041,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Garras naturais.",
       "ref": {
         "livro": "modulo-basico",
@@ -3061,7 +3061,7 @@
         "exotica"
       ],
       "custo": "5 a 8",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Parte do corpo que serve de arma.",
       "ref": {
         "livro": "modulo-basico",
@@ -3127,7 +3127,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Reserva de pontos para habilidades que mudam.",
       "ref": {
         "livro": "modulo-basico",
@@ -3147,7 +3147,7 @@
         "exotica"
       ],
       "custo": "5",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Muda de sexo à vontade.",
       "ref": {
         "livro": "modulo-basico",
@@ -3251,7 +3251,7 @@
         "exotica"
       ],
       "custo": "15",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Nunca envelhece.",
       "ref": {
         "livro": "modulo-basico",
@@ -3354,7 +3354,7 @@
         "sobrenatural"
       ],
       "custo": "15",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Percebe conspirações cósmicas.",
       "ref": {
         "livro": "modulo-basico",
@@ -3375,7 +3375,7 @@
         "exotica"
       ],
       "custo": "50 a 150",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não pode ser morto.",
       "ref": {
         "livro": "modulo-basico",
@@ -3463,7 +3463,7 @@
         "exotica"
       ],
       "custo": "0 a 10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vê calor.",
       "ref": {
         "livro": "modulo-basico",
@@ -3484,7 +3484,7 @@
         "mental"
       ],
       "custo": "80",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Atravessa paredes.",
       "ref": {
         "livro": "modulo-basico",
@@ -3505,7 +3505,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Atravessa entre dimensões.",
       "ref": {
         "livro": "modulo-basico",
@@ -3594,7 +3594,7 @@
         "mental"
       ],
       "custo": "40",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "É invisível.",
       "ref": {
         "livro": "modulo-basico",
@@ -3615,7 +3615,7 @@
         "sobrenatural"
       ],
       "custo": "15",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não é afetado por mudanças no tempo.",
       "ref": {
         "livro": "modulo-basico",
@@ -3636,7 +3636,7 @@
         "exotica"
       ],
       "custo": "15",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Imune a gases e líquidos.",
       "ref": {
         "livro": "modulo-basico",
@@ -3686,7 +3686,7 @@
         "exotica"
       ],
       "custo": "30",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Lê pensamentos.",
       "ref": {
         "livro": "modulo-basico",
@@ -3768,7 +3768,7 @@
         "exotica"
       ],
       "custo": "1/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Pálpebra extra de proteção.",
       "ref": {
         "livro": "modulo-basico",
@@ -3847,7 +3847,7 @@
         "exotica"
       ],
       "custo": "15 a 40",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Lembra o que os ancestrais viveram.",
       "ref": {
         "livro": "modulo-basico",
@@ -3890,7 +3890,7 @@
         "exotica"
       ],
       "custo": "50/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Pensa várias coisas ao mesmo tempo.",
       "ref": {
         "livro": "modulo-basico",
@@ -4037,7 +4037,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Assume outras formas. Inclui Forma Alternativa e Morfose.",
       "ref": {
         "livro": "modulo-basico",
@@ -4057,7 +4057,7 @@
         "exotica"
       ],
       "custo": "30 + 5/PV",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Drena sangue.",
       "ref": {
         "livro": "modulo-basico",
@@ -4107,7 +4107,7 @@
         "exotica"
       ],
       "custo": "50",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Anula poderes de outros.",
       "ref": {
         "livro": "modulo-basico",
@@ -4161,7 +4161,7 @@
         "exotica"
       ],
       "custo": "45",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Percebe o tempo mais devagar que os outros.",
       "ref": {
         "livro": "modulo-basico",
@@ -4245,7 +4245,7 @@
         "exotica"
       ],
       "custo": "10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não precisa de comida nem água.",
       "ref": {
         "livro": "modulo-basico",
@@ -4266,7 +4266,7 @@
         "exotica"
       ],
       "custo": "20",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não precisa dormir.",
       "ref": {
         "livro": "modulo-basico",
@@ -4287,7 +4287,7 @@
         "exotica"
       ],
       "custo": "20",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não precisa de ar.",
       "ref": {
         "livro": "modulo-basico",
@@ -4308,7 +4308,7 @@
         "exotica"
       ],
       "custo": "2/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Cria névoa ou escuridão ao redor.",
       "ref": {
         "livro": "modulo-basico",
@@ -4365,7 +4365,7 @@
         "exotica"
       ],
       "custo": "15",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Faro de cão de caça.",
       "ref": {
         "livro": "modulo-basico",
@@ -4415,7 +4415,7 @@
         "exotica"
       ],
       "custo": "100/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Age muito mais rápido.",
       "ref": {
         "livro": "modulo-basico",
@@ -4436,7 +4436,7 @@
         "exotica"
       ],
       "custo": "10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Paladar sobre-humano.",
       "ref": {
         "livro": "modulo-basico",
@@ -4510,7 +4510,7 @@
         "exotica"
       ],
       "custo": "1",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Corpo coberto de pelos, como um animal.",
       "ref": {
         "livro": "modulo-basico",
@@ -4531,7 +4531,7 @@
         "exotica"
       ],
       "custo": "20",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Muda o rosto e o corpo.",
       "ref": {
         "livro": "modulo-basico",
@@ -4552,7 +4552,7 @@
         "exotica"
       ],
       "custo": "5",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Se desloca pendurado pelos braços.",
       "ref": {
         "livro": "modulo-basico",
@@ -4627,7 +4627,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Tem mais pernas.",
       "ref": {
         "livro": "modulo-basico",
@@ -4730,7 +4730,7 @@
         "sobrenatural"
       ],
       "custo": "100",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Toma o corpo de outros. Coisa de forasteiro.",
       "ref": {
         "livro": "modulo-basico",
@@ -4779,7 +4779,7 @@
         "sobrenatural"
       ],
       "custo": "25",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vê o futuro.",
       "ref": {
         "livro": "modulo-basico",
@@ -4869,7 +4869,7 @@
         "sobrenatural"
       ],
       "custo": "20",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Sente o passado de objetos e lugares.",
       "ref": {
         "livro": "modulo-basico",
@@ -4890,7 +4890,7 @@
         "exotica"
       ],
       "custo": "5",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Respira ar sujo sem problema.",
       "ref": {
         "livro": "modulo-basico",
@@ -4939,7 +4939,7 @@
         "fisica"
       ],
       "custo": "5/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Acompanha muitos alvos ao mesmo tempo.",
       "ref": {
         "livro": "modulo-basico",
@@ -5174,7 +5174,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Ferimentos se fecham sozinhos.",
       "ref": {
         "livro": "modulo-basico",
@@ -5377,7 +5377,7 @@
         "exotica"
       ],
       "custo": "5/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Pele que funciona como armadura.",
       "ref": {
         "livro": "modulo-basico",
@@ -5419,7 +5419,7 @@
         "exotica"
       ],
       "custo": "5 a 15",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Aguenta pressões extremas.",
       "ref": {
         "livro": "modulo-basico",
@@ -5441,7 +5441,7 @@
         "exotica"
       ],
       "custo": "40",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Membros perdidos crescem de novo.",
       "ref": {
         "livro": "modulo-basico",
@@ -5462,7 +5462,7 @@
         "exotica"
       ],
       "custo": "2/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Ataque que prende o alvo.",
       "ref": {
         "livro": "modulo-basico",
@@ -5549,7 +5549,7 @@
         "sobrenatural"
       ],
       "custo": "100",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Viaja entre mundos. No cânone, só forasteiros atravessam a barreira.",
       "ref": {
         "livro": "modulo-basico",
@@ -5677,7 +5677,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Radar ou sonar natural.",
       "ref": {
         "livro": "modulo-basico",
@@ -5697,7 +5697,7 @@
         "exotica"
       ],
       "custo": "10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Sente vibrações do chão ou do ar.",
       "ref": {
         "livro": "modulo-basico",
@@ -5718,7 +5718,7 @@
         "exotica"
       ],
       "custo": "5/sentido",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Um sentido que não se ofusca.",
       "ref": {
         "livro": "modulo-basico",
@@ -5863,7 +5863,7 @@
         "sobrenatural"
       ],
       "custo": "20",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vasculha a memória de alguém.",
       "ref": {
         "livro": "modulo-basico",
@@ -5933,7 +5933,7 @@
         "exotica"
       ],
       "custo": "3, 5 ou 8 por +1",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Braços mais fortes que o corpo.",
       "ref": {
         "livro": "modulo-basico",
@@ -6052,7 +6052,7 @@
         "exotica"
       ],
       "custo": "3/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Escala muito rápido.",
       "ref": {
         "livro": "modulo-basico",
@@ -6073,7 +6073,7 @@
         "exotica"
       ],
       "custo": "10/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Saltos sobre-humanos.",
       "ref": {
         "livro": "modulo-basico",
@@ -6094,7 +6094,7 @@
         "sobrenatural"
       ],
       "custo": "100",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Sorte absurda.",
       "ref": {
         "livro": "modulo-basico",
@@ -6115,7 +6115,7 @@
         "exotica"
       ],
       "custo": "0 ou 5",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Ouve frequências que humanos não ouvem.",
       "ref": {
         "livro": "modulo-basico",
@@ -6177,7 +6177,7 @@
         "sobrenatural"
       ],
       "custo": "20/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Faz coisas que nunca aprendeu.",
       "ref": {
         "livro": "modulo-basico",
@@ -6197,7 +6197,7 @@
         "mental"
       ],
       "custo": "5/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Move objetos com a mente.",
       "ref": {
         "livro": "modulo-basico",
@@ -6217,7 +6217,7 @@
         "mental"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Comunica-se à distância: telepatia, rádio.",
       "ref": {
         "livro": "modulo-basico",
@@ -6237,7 +6237,7 @@
         "sobrenatural"
       ],
       "custo": "30 + 10/-1",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Sua presença apavora.",
       "ref": {
         "livro": "modulo-basico",
@@ -6258,7 +6258,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Corpo sem pontos vitais.",
       "ref": {
         "livro": "modulo-basico",
@@ -6385,7 +6385,7 @@
         "fisica"
       ],
       "custo": "10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Tato sobre-humano.",
       "ref": {
         "livro": "modulo-basico",
@@ -6444,7 +6444,7 @@
         "exotica"
       ],
       "custo": "5 a 10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Aliado que pode ser possuído.",
       "ref": {
         "livro": "modulo-basico",
@@ -6466,7 +6466,7 @@
         "exotica"
       ],
       "custo": "0 ou 10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vê luz ultravioleta.",
       "ref": {
         "livro": "modulo-basico",
@@ -6599,7 +6599,7 @@
         "exotica"
       ],
       "custo": "25/vida",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Volta da morte.",
       "ref": {
         "livro": "modulo-basico",
@@ -6649,7 +6649,7 @@
         "exotica"
       ],
       "custo": "25",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vê em todas as direções.",
       "ref": {
         "livro": "modulo-basico",
@@ -6670,7 +6670,7 @@
         "exotica"
       ],
       "custo": "25",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vê além do espectro visível.",
       "ref": {
         "livro": "modulo-basico",
@@ -6691,7 +6691,7 @@
         "exotica"
       ],
       "custo": "5/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vê coisas microscópicas.",
       "ref": {
         "livro": "modulo-basico",
@@ -6712,7 +6712,7 @@
         "exotica"
       ],
       "custo": "25",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vê sem luz nenhuma.",
       "ref": {
         "livro": "modulo-basico",
@@ -6764,7 +6764,7 @@
         "exotica"
       ],
       "custo": "10/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vê através de paredes.",
       "ref": {
         "livro": "modulo-basico",
@@ -6819,7 +6819,7 @@
         "exotica"
       ],
       "custo": "5/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vê de muito longe.",
       "ref": {
         "livro": "modulo-basico",
@@ -6840,7 +6840,7 @@
         "exotica"
       ],
       "custo": "40",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Voa.",
       "ref": {
         "livro": "modulo-basico",

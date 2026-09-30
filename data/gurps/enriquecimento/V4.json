@@ -8,7 +8,7 @@
         "Uma criatura de masmorra atravessa uma nuvem de fungo esporífero sem se cegar, enquanto os aventureiros tossem e choram.",
         "Durante uma explosão de luz num ritual, só a fera com essa vantagem continua vendo o que acontece ao redor."
       ],
-      "em_adamar": "É um traço de corpo animal ou de criatura, não de humano; personagens jogáveis em Adamar não nascem com essa pálpebra extra.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Boa vantagem para bestiário de masmorra: justifica por que a fera não se cega com tochas, fogo ou pó nos olhos."
     },
     "memoria-racial": {
@@ -18,7 +18,7 @@
         "Um golem antigo se lembra do ritual que o criou, mesmo tendo despertado ontem.",
         "Uma criatura das ruínas estremece ao ver um símbolo que seus ancestrais aprenderam a temer séculos atrás."
       ],
-      "em_adamar": "Adamar só tem humanos entre os personagens jogáveis, e humanos não guardam lembranças herdadas de ancestrais; esse tipo de continuidade fica reservado a criaturas não humanas do cenário."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "mente-digital": {
       "descricao": "Mente Digital diz que o personagem não é feito de carne, mas de informação: um programa rodando num sistema, uma inteligência artificial ou uma consciência copiada para um meio digital. Isso muda como venenos, doenças e certos ataques mentais afetam o personagem (frequentemente não afetam, porque não há corpo biológico para atingir), mas abre outras vulnerabilidades, como falhas de sistema, cópias e adulteração de dados.\n\nÉ uma vantagem de ficção científica quase pura, pensada para cenários com computadores, redes e realidade virtual. Não tem relação com magia ou espíritos: uma mente digital não é uma alma alojada em outro lugar, é processamento.",
@@ -28,7 +28,9 @@
         "Um artefato encontrado numa ruína guarda o que resta de uma inteligência digital de outro mundo, ainda tentando se comunicar."
       ],
       "em_adamar": "Adamar não tem computadores, redes nem qualquer tecnologia capaz de sustentar uma mente digital; isso é tecnologia muito acima do que existe no cenário.",
-      "relacionados": ["nt-alto"]
+      "relacionados": [
+        "nt-alto"
+      ]
     },
     "mente-segmentada": {
       "descricao": "Mente Segmentada permite manter várias linhas de pensamento simultâneas e totalmente independentes, cada uma capaz de tomar decisões, manter uma conversa ou operar uma perícia sem que as outras percam o fio. Cada nível representa um compartimento mental a mais, então quem tem vários níveis pode, por exemplo, negociar com um mercador, vigiar a porta e planejar uma rota de fuga ao mesmo tempo, sem o custo de atenção que isso normalmente exigiria.\n\nNão é o mesmo que ter reflexos rápidos ou ser bom em várias coisas: a vantagem é sobre paralelismo mental puro, e normalmente vem de mentes não humanas, constructos ou seres com múltiplas consciências fundidas em um só corpo. Um humano comum, por mais treinado, processa pensamentos em sequência, não em paralelo verdadeiro.",
@@ -37,7 +39,7 @@
         "Um guardião de pedra antigo mantém vigilância em várias direções da câmara sem nunca se distrair de nenhuma delas.",
         "Um oráculo consegue seguir três profecias conflitantes ao mesmo tempo sem se perder em nenhuma delas."
       ],
-      "em_adamar": "Isso pede uma mente estruturada de forma não humana; personagens jogáveis em Adamar são humanos comuns, que pensam uma coisa de cada vez."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "metamorfose": {
       "descricao": "Metamorfose cobre a capacidade de mudar de forma física de maneira significativa: assumir um corpo alternativo pronto ou copiar a aparência de outra pessoa ou criatura específica. Enquanto durar a mudança, o personagem ganha as características físicas da nova forma — pode ser mais forte, menor, ter outros sentidos ou outras vantagens e desvantagens físicas — e perde as da forma original.\n\nÉ diferente de simplesmente se disfarçar ou usar maquiagem: aqui o corpo muda de verdade, muitas vezes exigindo tempo, concentração ou um gatilho específico para ativar. Também não é ilusão: quem toca, corta ou examina a nova forma encontra um corpo real, não uma miragem. É um recurso típico de metamorfos e certas criaturas de origem sobrenatural.",
@@ -46,7 +48,7 @@
         "Um forasteiro disfarçado copia perfeitamente o rosto e a voz de um guarda morto para atravessar o portão sem ser barrado.",
         "Uma criatura de pântano assume forma humana só o tempo suficiente para atrair viajantes para a água."
       ],
-      "em_adamar": "Adamar só tem humanos entre os jogadores, sem raças metamorfas; trocar de corpo desse jeito fica restrito a criaturas e forasteiros muito específicos do cenário, fora do alcance de um personagem comum."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "mordida-de-vampiro": {
       "descricao": "Mordida de Vampiro é um ataque natural (presas, língua ou outro apêndice) que rouba força vital de quem é mordido e transfere parte dela para quem morde, curando ferimentos ou repondo energia às custas da vítima. Cada nível melhora o quanto pode ser drenado numa única mordida. É um ataque corpo a corpo que exige alcançar e prender a vítima, não algo que funciona à distância.\n\nNão é o mesmo que uma mordida comum, que apenas fere: aqui a mordida também beneficia quem morde. Também não cura doenças nem venenos, só repõe vitalidade roubada. É a assinatura clássica de mortos-vivos e criaturas que se alimentam de sangue ou de força vital para sobreviver ou se fortalecer.",
@@ -55,7 +57,7 @@
         "Uma criatura de masmorra prende a vítima e drena sua força antes que os companheiros consigam intervir.",
         "Rumores de aldeias com o gado encontrado seco e sem sangue apontam para algo que caça à noite."
       ],
-      "em_adamar": "É um traço de morto-vivo ou criatura sobrenatural que se alimenta de sangue ou vitalidade; humanos comuns não têm esse tipo de ataque natural."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "neutralizar": {
       "descricao": "Neutralizar é a capacidade de anular, de forma ativa, os efeitos de outra vantagem, poder ou magia que esteja em ação — apagar uma maldição, desligar uma habilidade sobrenatural alheia, cancelar um efeito mágico antes que ele complete seu trabalho. Não é resistir passivamente: é uma ação deliberada, geralmente exigindo teste e concentração, contra um efeito específico que já existe.\n\nÉ diferente de resistência a magia (que dificulta ser afetado) e de dissipar feitiços dentro de um sistema mágico comum (que costuma ser uma habilidade dentro da própria magia). Neutralizar, como vantagem à parte, normalmente fica reservado a seres cuja natureza é justamente contrariar o sobrenatural alheio.",
@@ -64,8 +66,11 @@
         "Uma relíquia sagrada, ativada por alguém com o dom, desfaz o feitiço que mantinha os mortos de pé.",
         "Um forasteiro rival cancela o ritual de invocação antes que o portal termine de se abrir."
       ],
-      "em_adamar": "Isso é um poder ativo de anular o sobrenatural, algo raro demais para existir como traço de um humano comum; se aparecer em Adamar, é obra de uma entidade ou relíquia muito específica, não um traço de personagem.",
-      "relacionados": ["aptidao-magica", "abascanto-resistencia-a-magia"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "aptidao-magica",
+        "abascanto-resistencia-a-magia"
+      ]
     },
     "nocao-do-tempo-ampliada": {
       "descricao": "Noção do Tempo Ampliada faz o personagem perceber o tempo numa escala muito mais longa que a comum: processos lentos, como uma planta crescendo, uma pedra sendo erodida pela chuva ou uma estação mudando, tornam-se perceptíveis quase como movimento, enquanto eventos rápidos — uma conversa, uma luta, um dia inteiro — passam quase despercebidos, como um piscar de olhos.\n\nÉ o oposto de perceber o tempo em câmera lenta durante o perigo: aqui o problema é o contrário, viver rápido demais para acompanhar o cotidiano dos outros. É um traço de seres extremamente longevos — espíritos antigos, entidades ligadas à natureza ou coisas mais velhas que civilizações inteiras — não de alguém que vive na escala de uma vida humana.",
@@ -74,7 +79,7 @@
         "Um espírito de floresta percebe o crescimento de uma árvore centenária como quem vê um punhal sendo erguido.",
         "Um ser antigo confunde datas e reinados porque, para ele, tudo aconteceu quase ao mesmo tempo."
       ],
-      "em_adamar": "Esse ritmo de percepção pede uma vida muitíssimo mais longa que a humana; personagens jogáveis em Adamar vivem e envelhecem como humanos comuns."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "nt-alto": {
       "descricao": "NT Alto representa vir de uma cultura tecnologicamente mais avançada do que a do lugar onde o personagem está agora: alguém de uma civilização futurista perdido numa terra medieval, por exemplo. Cada nível aumenta o quanto essa cultura de origem está à frente do nível tecnológico do ambiente atual, dando ao personagem familiaridade instintiva com ferramentas, conceitos e hábitos que ali seriam vistos como avançados, estranhos ou mesmo mágicos.\n\nNão significa que o personagem carrega equipamento avançado consigo (isso é equipamento propriamente dito): é sobre a bagagem cultural e o modo de pensar de quem cresceu num mundo mais desenvolvido. Um personagem com NT Alto entende, por exemplo, princípios de mecânica ou de organização que ninguém ao redor sequer imagina que existam.",
@@ -84,7 +89,9 @@
         "Um artefato de origem avançada intriga um sábio local, que não tem vocabulário nem contexto para entendê-lo."
       ],
       "em_adamar": "Adamar inteiro não passa da tecnologia da Idade Média; não existe, dentro do mundo, nenhuma cultura humana mais avançada de onde alguém possa vir com esse traço.",
-      "relacionados": ["mente-digital"]
+      "relacionados": [
+        "mente-digital"
+      ]
     },
     "nao-come-nem-bebe": {
       "descricao": "Não Come nem Bebe significa que o personagem não precisa de comida nem de água para se manter vivo e funcional: nenhuma fome, nenhuma sede, nenhum risco de fraquejar por falta de suprimentos numa travessia longa. Ele ainda pode comer ou beber por prazer, ritual ou disfarce, mas isso é opcional, não uma necessidade biológica.\n\nÉ diferente de simplesmente ser bem resistente à fome (o que ainda tem limite): aqui o corpo genuinamente não depende de nutrição externa para continuar de pé. É um traço típico de mortos-vivos, constructos, espíritos encarnados e outras criaturas cujo corpo não funciona como o de um ser vivo comum.",
@@ -93,8 +100,11 @@
         "Um golem de pedra permanece de guarda por semanas sem nunca precisar comer.",
         "Um espírito preso num corpo emprestado dispensa a refeição só para não levantar suspeita entre os vivos."
       ],
-      "em_adamar": "Corpos humanos precisam de comida e água; esse traço pertence a mortos-vivos, constructos e outras criaturas que não têm metabolismo como o nosso.",
-      "relacionados": ["nao-dorme", "nao-respira"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "nao-dorme",
+        "nao-respira"
+      ]
     },
     "nao-dorme": {
       "descricao": "Não Dorme tira do personagem a necessidade de dormir: ele pode ficar acordado indefinidamente sem acumular cansaço, sem perder atenção e sem sofrer as penalidades de privação de sono que atingiriam qualquer outra pessoa depois de uma ou duas noites em claro. Ele ainda pode escolher descansar ou ficar parado, mas nunca é obrigado a isso pelo corpo.\n\nNão deve ser confundido com dormir pouco ou ter sono leve: aqui o sono simplesmente não faz falta nenhuma, física ou mentalmente. É comum em constructos, mortos-vivos e certas criaturas cuja mente não segue os mesmos ciclos biológicos de um ser vivo comum.",
@@ -103,8 +113,11 @@
         "Um morto-vivo aproveita as longas noites de vigília para vasculhar a masmorra enquanto os vivos descansam.",
         "Um espírito preso a um objeto observa tudo o que acontece ao redor, noite e dia, sem nunca precisar fechar os olhos."
       ],
-      "em_adamar": "Humanos precisam dormir; esse traço pertence a criaturas cujo corpo ou mente não segue o ciclo biológico comum, como mortos-vivos e constructos.",
-      "relacionados": ["nao-come-nem-bebe", "nao-respira"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "nao-come-nem-bebe",
+        "nao-respira"
+      ]
     },
     "nao-respira": {
       "descricao": "Não Respira elimina a necessidade de ar: o personagem não se afoga, não sufoca em fumaça ou gases tóxicos, não sente falta de ar debaixo d'água ou em espaços fechados sem ventilação. Ele simplesmente não depende de respiração para funcionar, seja porque não tem pulmões, seja porque o corpo obtém energia de outra forma.\n\nÉ diferente de aguentar a respiração por muito tempo (o que ainda tem limite): aqui não há limite algum, porque não há necessidade de respirar desde o início. É um traço de mortos-vivos, constructos, certos espíritos e criaturas adaptadas a ambientes sem ar respirável.",
@@ -113,8 +126,11 @@
         "Uma criatura de masmorra permanece imóvel dentro de uma câmara selada há gerações, alheia à falta de ar.",
         "Um constructo de metal atravessa uma sala tomada por fumaça tóxica como se ela nem estivesse ali."
       ],
-      "em_adamar": "Humanos precisam respirar; esse traço só faz sentido para corpos que não dependem de ar, como mortos-vivos e constructos, reservado a esse tipo de criatura, não a personagens jogáveis.",
-      "relacionados": ["nao-come-nem-bebe", "nao-dorme"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "nao-come-nem-bebe",
+        "nao-dorme"
+      ]
     },
     "obscurecer": {
       "descricao": "Obscurecer é a capacidade de gerar, ao redor de si ou numa área próxima, alguma condição que atrapalha um sentido específico de quem estiver ali dentro — névoa que prejudica a visão, um silêncio que abafa sons, um cheiro que embota o olfato, e assim por diante, dependendo de como a vantagem foi comprada. Cada nível aumenta o alcance ou a intensidade do efeito.\n\nNão é uma ilusão nem um ataque direto: é a criação de uma condição ambiental real, que afeta igualmente quem tem a vantagem, a menos que ele também tenha um sentido protegido ou uma forma de contornar o próprio efeito. Costuma ser natural em criaturas que precisam encobrir a fuga, a caça ou a própria presença.",
@@ -123,8 +139,10 @@
         "Algo nas ruínas engole todo o som da câmara, deixando os aventureiros cegos ao próprio barulho de passos.",
         "Uma fera de caverna solta um pó negro no ar para sumir da vista de quem a persegue."
       ],
-      "em_adamar": "É um efeito de corpo de criatura, natural o bastante para produzir névoa, escuridão ou silêncio sob demanda; humanos comuns não têm esse recurso embutido no corpo.",
-      "relacionados": ["sentido-protegido"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "sentido-protegido"
+      ]
     },
     "olfato-discriminatorio": {
       "descricao": "Olfato Discriminatório dá um faro comparável ao de um cão de caça: o personagem identifica pessoas, animais e objetos pelo cheiro, segue rastros por horas ou dias depois de deixados, e percebe a composição de misturas só de sentir o odor. É um sentido ativo o bastante para funcionar como forma de rastreamento e de reconhecimento, mesmo sem ver quem passou por ali.\n\nNão se confunde com um bom faro comum: aqui o personagem realmente separa dezenas de cheiros sobrepostos numa mesma sala e reconhece indivíduos específicos só pelo odor, meses depois de tê-los sentido uma vez. É biologia sobre-humana, típica de certos animais e criaturas, raramente de humanos.",
@@ -133,8 +151,11 @@
         "Uma criatura farejadora encontra o esconderijo do fugitivo só pelo cheiro deixado na estrada de terra.",
         "Um guardião animal identifica um impostor disfarçado assim que ele entra na sala, pelo cheiro errado."
       ],
-      "em_adamar": "É o faro de um animal treinado ou de uma criatura, não de um humano comum; rastreadores em Adamar dependem de perícia e pistas visíveis, não de olfato sobre-humano.",
-      "relacionados": ["rastreamento", "sentidos-agucados"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "rastreamento",
+        "sentidos-agucados"
+      ]
     },
     "padrao-de-tempo-alterado": {
       "descricao": "Padrão de Tempo Alterado dá ao personagem turnos ou ações extras para cada turno normal do jogo: o mundo, do ponto de vista dele, se move mais devagar, e ele consegue agir, reagir e se mover mais vezes que qualquer outra pessoa no mesmo intervalo de tempo. Cada nível concede mais uma dessas ações extras.\n\nÉ diferente de simplesmente ser rápido ou ter reflexos bons: aqui o personagem literalmente processa e age numa taxa sobre-humana, quase sobrenatural, comparável a divindades, forasteiros poderosos ou certas máquinas de outro mundo. É uma das vantagens mais caras do jogo justamente por isso.",
@@ -143,7 +164,7 @@
         "Uma entidade divina reorganiza um campo de batalha inteiro enquanto os mortais ainda terminam de erguer as armas.",
         "Um guardião mecânico de outra era reage a uma cilada com o dobro da velocidade de qualquer humano presente."
       ],
-      "em_adamar": "Agir numa velocidade sobre-humana desse tipo é reservado a seres muito acima do humano comum; não é algo que um personagem jogável de Adamar possa ter."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "paladar-discriminatorio": {
       "descricao": "Paladar Discriminatório dá um sentido do paladar tão apurado que o personagem consegue identificar ingredientes, venenos, adulterações e composições exatas só de provar (ou às vezes de cheirar de perto) algo, distinguindo misturas complexas que uma pessoa comum jamais notaria. Também torna praticamente impossível disfarçar um sabor estranho ou nocivo dentro de uma comida ou bebida.\n\nNão é apenas 'ter bom paladar' de cozinheiro treinado — perícias já cobrem isso. É um sentido fisicamente sobre-humano, capaz de separar dezenas de componentes numa única colherada, algo que normalmente vem de biologia não humana ou de mutação, não de prática.",
@@ -152,8 +173,10 @@
         "Uma criatura da floresta reconhece, só pelo gosto da água, de qual nascente ela veio.",
         "Um cozinheiro desconfia de um prato reaproveitado no instante em que o sabor esconde algo errado."
       ],
-      "em_adamar": "É um sentido sobre-humano; um cozinheiro ou provador habilidoso em Adamar usa perícia e experiência, não um paladar biologicamente superior ao humano comum.",
-      "relacionados": ["sentidos-agucados"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "sentidos-agucados"
+      ]
     },
     "pele-elastica": {
       "descricao": "Pele Elástica permite esticar, remodelar e distorcer a própria pele e os traços do rosto e do corpo de forma controlada: alongar dedos, achatar o rosto para passar por uma fresta, mudar sutilmente a aparência para dificultar o reconhecimento. Não é troca de forma completa como Metamorfose, é elasticidade extrema aplicada ao próprio corpo.\n\nÉ útil tanto para disfarce quanto para contorcionismo — passar por espaços que pareceriam pequenos demais, escapar de amarras, alterar a silhueta. Não concede as vantagens físicas de outra criatura, só flexibilidade e mudança de forma da própria carne, algo que só existe em biologias muito distintas da humana.",
@@ -162,8 +185,10 @@
         "Uma criatura contorcionista se espreme por uma grade que pareceria impossível de atravessar.",
         "Um espião de outro mundo distorce as feições o suficiente para confundir quem jurou reconhecê-lo."
       ],
-      "em_adamar": "Esse tipo de carne moldável não existe em corpos humanos; disfarces em Adamar dependem de roupas, tintas e atuação, não de pele que se remodela sozinha.",
-      "relacionados": ["metamorfose"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "metamorfose"
+      ]
     },
     "pendulear": {
       "descricao": "Pendulear é a capacidade de se deslocar balançando de apoio em apoio usando os braços — galhos, cordas, vigas, qualquer coisa que sirva de ponto de apoio suspenso — com velocidade e destreza muito maiores do que alguém tentando fazer o mesmo sem treino ou biologia adequada. Também reduz bastante o risco de errar o próximo apoio e cair.\n\nNão é apenas escalar bem: é um modo de locomoção próprio, mais parecido com o de primatas arborícolas do que com qualquer coisa que um humano treinado consiga replicar. Fora de um ambiente com apoios suspensos suficientes (uma floresta densa, uma masmorra cheia de vigas e correntes), a vantagem simplesmente não entra em jogo.",
@@ -172,8 +197,10 @@
         "Um habitante das ruínas se desloca de corrente em corrente pelo poço de uma torre em colapso.",
         "Algo se move de viga em viga no teto da masmorra, sempre um passo à frente da tocha dos aventureiros."
       ],
-      "em_adamar": "É um modo de locomoção de corpo não humano, adaptado para se pendurar e balançar; personagens jogáveis em Adamar se deslocam como qualquer humano comum.",
-      "relacionados": ["escalada"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "escalada"
+      ]
     },
     "pernas-adicionais": {
       "descricao": "Pernas Adicionais dá ao personagem mais pernas do que o par humano padrão, o que normalmente melhora a estabilidade (dificulta ser derrubado), pode aumentar o deslocamento e ajuda a manter o equilíbrio em terrenos difíceis. O número extra de pernas define o nível da vantagem e o quanto esses benefícios se acumulam.\n\nÉ um traço puramente anatômico: não dá ataques extras nem uma vantagem de combate direta, só o que vem de ter mais pontos de apoio no chão. É comum em criaturas insetoides, aracnídeas ou de outras biologias que nunca teriam apenas duas pernas para começo de conversa.",
@@ -182,7 +209,7 @@
         "Uma criatura de seis patas atravessa um piso instável sem escorregar, enquanto os aventureiros se seguram nas paredes.",
         "Algo com pernas demais para contar corre por um corredor estreito sem perder o equilíbrio nas curvas."
       ],
-      "em_adamar": "Humanos têm duas pernas; esse traço pede uma anatomia de criatura, fora do alcance de qualquer personagem jogável em Adamar."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "possessao": {
       "descricao": "Possessão permite tomar o controle do corpo de outra pessoa (viva, e geralmente incapaz de resistir ou já enfraquecida), empurrando a consciência original para um segundo plano e agindo através daquele corpo como se fosse próprio, com as vantagens, desvantagens e perícias físicas dele. Enquanto durar a possessão, a mente original costuma ficar presa, consciente ou não do que acontece.\n\nNão se confunde com controle mental, que apenas comanda a vontade de alguém que continua no próprio corpo: aqui é a consciência do possuidor que se muda de lugar, deixando o corpo de origem vazio ou vulnerável enquanto isso dura. É a marca registrada de espíritos, entidades e, sobretudo, forasteiros tentando agir dentro de Adamar sem um corpo próprio.",
@@ -191,8 +218,10 @@
         "Um culto local sussurra que o velho sacerdote 'não é mais ele mesmo' desde a lua cheia passada.",
         "Um item amaldiçoado tenta possuir quem o segura por tempo demais na escuridão da masmorra."
       ],
-      "em_adamar": "É um poder de entidade sem corpo, típico de forasteiros tentando agir em Adamar; humanos comuns não nascem com a capacidade de tomar o corpo de outra pessoa.",
-      "relacionados": ["titere"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "titere"
+      ]
     },
     "precognicao": {
       "descricao": "Precognição permite enxergar fragmentos do futuro: pressentimentos fortes o bastante para funcionar como aviso real, visões de um evento antes que ele aconteça, ou a sensação inegável de que algo está prestes a dar errado. Dependendo de como é usada, pode se manifestar como sonhos proféticos, vislumbres súbitos ou uma intuição impossível de ignorar.\n\nNão é a mesma coisa que ter bom instinto ou perceber detalhes (isso é perícia e atenção): aqui a informação vem de fora da experiência normal, de um contato real com o que ainda vai acontecer. É um dom raríssimo, quase sempre ligado a profecias, oráculos e figuras que o mundo já trata como abençoadas ou amaldiçoadas por saber demais.",
@@ -201,8 +230,10 @@
         "Um oráculo recluso descreve, em transe, o rosto de um forasteiro que ainda vai chegar dali a meses.",
         "Um velho eremita acorda gritando o nome de alguém que só vai morrer na semana seguinte."
       ],
-      "em_adamar": "Ver o futuro de verdade é um dom raríssimo demais para ser um traço comum de personagem; se existir em Adamar, é algo do narrador, ligado a profecias específicas da campanha, não uma vantagem à disposição de qualquer jogador.",
-      "relacionados": ["ocultismo"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "ocultismo"
+      ]
     },
     "psicometria": {
       "descricao": "Psicometria permite sentir o passado de um objeto ou lugar só de tocá-lo: impressões emocionais fortes, eventos marcantes, às vezes até imagens ou sons do que aconteceu ali, quanto mais intenso o evento e mais recente, mais clara a impressão. É uma forma de investigação sobrenatural, útil para reconstruir o que ninguém testemunhou diretamente.\n\nNão é ler mentes nem prever o futuro: a psicometria olha para trás, para o que já aconteceu, e depende de contato físico direto com o objeto ou o local em questão. Impressões antigas demais, ou de eventos emocionalmente fracos, tendem a ser vagas ou já terem se apagado.",
@@ -211,8 +242,10 @@
         "Uma vidente encosta na pedra da masmorra e revive o pavor de quem morreu ali séculos atrás.",
         "Um detetive de aldeia usa uma luva para não 'contaminar' as impressões antes de examinar a cena com as próprias mãos."
       ],
-      "em_adamar": "Esse tipo de leitura sobrenatural do passado é rara e especial demais para ser um traço comum; em Adamar, reconstruir o que aconteceu depende de pistas, perícia e testemunhas, não de um toque psíquico.",
-      "relacionados": ["ocultismo"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "ocultismo"
+      ]
     },
     "pulmoes-com-filtro": {
       "descricao": "Pulmões com Filtro permitem respirar em ambientes cheios de partículas que sufocariam ou intoxicariam alguém comum — fumaça densa, poeira, areia em suspensão, esporos, até água com sedimentos — sem tossir, sufocar ou sofrer os efeitos normais de respirar aquilo. O sistema respiratório simplesmente filtra o que não deveria estar ali antes que chegue a fazer mal.\n\nNão é o mesmo que não precisar respirar, nem que aguentar ambientes sem ar nenhum: a vantagem pressupõe que há ar (ou algo parecido) para respirar, só que sujo ou perigoso demais para pulmões comuns. É um traço de biologia adaptada a ambientes hostis, não de treino ou resistência física comum.",
@@ -221,7 +254,7 @@
         "Algo que vive nos pântanos respira tranquilo em meio aos vapores que fariam qualquer um desmaiar.",
         "Um bicho de caverna some numa nuvem de esporos e reaparece do outro lado sem sinal de problema."
       ],
-      "em_adamar": "Pulmões humanos reagem normalmente a fumaça, poeira e ar ruim; esse tipo de filtro biológico pertence a criaturas adaptadas a ambientes que nenhum humano suportaria respirar."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "rastreamento-ampliado": {
       "descricao": "Rastreamento Ampliado dá a capacidade de acompanhar vários alvos em movimento ao mesmo tempo sem perder nenhum de vista ou de atenção — seguir com precisão para onde cada inimigo, presa ou aliado se move numa mesma cena, mesmo quando eles se espalham, se escondem momentaneamente ou tentam confundir quem observa. Cada nível aumenta quantos alvos podem ser acompanhados assim ao mesmo tempo sem perda de foco.\n\nNão é sobre enxergar melhor no escuro ou a maiores distâncias, é sobre dividir a atenção entre vários pontos móveis sem que nenhum escape da percepção de quem observa. É um traço mais comum em predadores que caçam em bando, guardiões que vigiam várias ameaças de uma vez, ou criaturas adaptadas a lidar com múltiplos alvos — vai além do que a atenção humana treinada consegue sustentar.",
@@ -230,8 +263,10 @@
         "Um guardião de torre percebe invasores escalando lados opostos da muralha ao mesmo tempo.",
         "Uma criatura caçadora nunca perde de vista nenhuma das presas que tentam fugir em direções diferentes."
       ],
-      "em_adamar": "Dividir a atenção entre tantos alvos ao mesmo tempo, sem custo nenhum, é sobre-humano demais para um personagem comum; em Adamar isso se resolve com perícia, teste e a atenção normal de quem presta atenção.",
-      "relacionados": ["rastreamento"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "rastreamento"
+      ]
     },
     "regeneracao": {
       "descricao": "Regeneração faz o corpo se curar sozinho, de forma constante e muito mais rápida que o normal, sem precisar de descanso, remédio ou cuidado de terceiros: cortes se fecham, ossos se ajustam e, nos níveis mais altos, até ferimentos gravíssimos se recuperam enquanto a cena ainda está acontecendo. Cada nível aumenta a velocidade dessa cura automática.\n\nNão é o mesmo que ser difícil de ferir (isso é outra vantagem) nem que ter sorte em testes de recuperação: aqui o corpo ativamente se repara, sem parar, dependendo do nível. É um traço célebre de criaturas amaldiçoadas e certos monstros de lenda que se recusam a ficar mortos.",
@@ -240,8 +275,11 @@
         "Uma criatura de masmorra fecha o próprio corte na frente dos aventureiros, sem sequer parecer notar a dor.",
         "Um caçador experiente aprende a mirar o suficiente para que a fera não tenha tempo de se recompor entre um golpe e outro."
       ],
-      "em_adamar": "Cura desse tipo, automática e sem esforço, contraria a regra do cenário de que ferimentos deixam marca e o tempo é o principal remédio; é reservada a criaturas muito específicas, não a personagens jogáveis.",
-      "relacionados": ["restaurar-membros", "tolerancia-a-ferimentos"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "restaurar-membros",
+        "tolerancia-a-ferimentos"
+      ]
     },
     "resistencia-a-dano": {
       "descricao": "Resistência a Dano dá ao corpo uma proteção natural contra ferimentos, como se a própria pele, escamas, casca ou couro funcionassem como uma armadura permanente, sem precisar vestir nada por cima. Cada nível aumenta o quanto essa proteção natural reduz o efeito de golpes, mordidas e outros ataques físicos.\n\nNão se soma automaticamente a armaduras comuns do mesmo jeito que se somaria a outra fonte de proteção — em vários casos os dois efeitos não se acumulam bem, e vale checar isso à parte. É um traço de biologia resistente, típico de criaturas com pele grossa demais, escamas ou cascos, não de treino ou disciplina.",
@@ -250,8 +288,10 @@
         "Um lagarto gigante recebe uma flechada de cheio e mal reage, como se a pele tivesse absorvido o impacto.",
         "Um guardião de pedra suporta um ataque que rachou a lâmina do atacante sem sofrer nenhum arranhão visível."
       ],
-      "em_adamar": "Pele humana não funciona como armadura; esse tipo de proteção natural pertence a criaturas de biologia diferente, e quem quer se proteger em Adamar usa armadura de verdade.",
-      "relacionados": ["tolerancia-a-ferimentos"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "tolerancia-a-ferimentos"
+      ]
     },
     "resistencia-ao-vacuo": {
       "descricao": "Resistência ao Vácuo permite sobreviver e continuar funcionando normalmente no vácuo do espaço: sem ar, sem pressão nenhuma e sem o frio extremo que isso implicaria para um corpo comum. É uma vantagem pensada para cenários de ficção científica, viagem espacial ou ambientes totalmente fora de qualquer atmosfera.\n\nNão cobre apenas 'aguentar sem respirar' (isso é outra vantagem): aqui o corpo também resiste à ausência total de pressão e às temperaturas extremas do espaço aberto, algo que vai muito além de qualquer ambiente encontrado em terra firme, por mais hostil que seja.",
@@ -269,8 +309,10 @@
         "Algo vive no fundo de um poço tão profundo que ninguém jamais teve coragem de descer para verificar.",
         "Um monstro marinho ataca embarcações vindo de profundidades que nenhum mergulhador comum alcançaria vivo."
       ],
-      "em_adamar": "É uma adaptação de criatura de profundezas extremas; personagens humanos em Adamar mergulham e exploram poços como qualquer pessoa comum, sujeitos à pressão normal.",
-      "relacionados": ["natacao"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "natacao"
+      ]
     },
     "restaurar-membros": {
       "descricao": "Restaurar Membros permite que partes do corpo perdidas — um braço, uma perna, um olho — cresçam de volta com o tempo, ao invés de ficarem perdidas para sempre. Dependendo de como a cura funciona no restante da ficha, isso pode levar de semanas a meses, mas o resultado final é um corpo completo de novo, sem cicatriz nem mutilação permanente.\n\nÉ diferente de Regeneração, que cuida da velocidade de cicatrização geral: aqui o que está em jogo é especificamente a reposição de partes do corpo que normalmente seriam perdidas para sempre. É um traço de criaturas capazes de se reconstruir, não de convalescença comum.",
@@ -279,8 +321,10 @@
         "Uma criatura amaldiçoada regenera o braço decepado numa batalha anterior, para o horror de quem achou tê-la vencido.",
         "Um curandeiro da vila jura nunca ter visto nada crescer de volta assim, e prefere não perguntar como."
       ],
-      "em_adamar": "A Materialidade do cenário trata a perda de um membro como definitiva: quem perde um braço aprende a viver sem ele, ou morre tentando; membros que crescem de volta contrariam essa regra básica do mundo.",
-      "relacionados": ["regeneracao"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "regeneracao"
+      ]
     },
     "retencao": {
       "descricao": "Retenção é um ataque natural que, em vez de ferir, prende o alvo: tentáculos, línguas compridas, teias, lodo grudento ou qualquer outro apêndice que se enrole ou grude na vítima e a impeça de se soltar com facilidade. Cada nível aumenta a força dessa prisão, tornando mais difícil escapar dela.\n\nNão causa ferimento por si só (embora costume vir acompanhada de outro ataque, como uma mordida, enquanto a vítima está presa) e não é o mesmo que simplesmente agarrar com as mãos: é um apêndice ou substância especializada nessa função. É comum em criaturas de emboscada, que prendem a presa antes de terminar o trabalho com outra parte do corpo.",
@@ -289,7 +333,7 @@
         "Uma criatura de pântano prende a vítima com uma língua pegajosa enquanto se aproxima para o golpe final.",
         "Uma teia gigante nos corredores subterrâneos deixa qualquer um preso até que os companheiros cortem os fios."
       ],
-      "em_adamar": "É um apêndice ou substância de criatura especializada em emboscada; humanos comuns não têm um ataque natural desse tipo — quem quer prender alguém em Adamar usa cordas, redes ou as próprias mãos."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "saltador": {
       "descricao": "Saltador é a capacidade de viajar entre mundos diferentes: abrir passagem e atravessar de uma realidade para outra por vontade própria, sem depender de um portal já existente ou de uma fresta natural na barreira que separa os mundos. Dependendo do nível, isso pode incluir levar outras pessoas junto ou escolher o destino com precisão.\n\nNão é o mesmo que teleporte dentro do mesmo mundo (isso é outra vantagem): aqui o destino é literalmente outra realidade, com suas próprias leis e paisagens. É, por natureza, um poder de quem já pertence ao espaço entre os mundos ou tem ligação direta com ele — não de quem vive inteiramente de um lado da barreira.",
@@ -298,7 +342,7 @@
         "Um culto local jura ter visto um viajante 'simplesmente sumir' no meio de um ritual malsucedido.",
         "Uma entidade ameaça voltar para buscar o que deixou para trás em Adamar, atravessando a barreira de novo quando quiser."
       ],
-      "em_adamar": "No cânone do site, só forasteiros atravessam a barreira entre os mundos; humanos comuns de Adamar não têm esse trânsito à disposição."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "sentido-de-monitoramento": {
       "descricao": "Sentido de Monitoramento é uma forma de percepção ativa que varre uma área ao redor do personagem em busca de algo específico — movimento, calor, metal, uma frequência, dependendo de como a vantagem foi comprada — como um radar ou um sonar biológico, sem depender da visão ou da audição comuns. Permite notar presença e posição de alvos mesmo no escuro total, através de obstáculos ou debaixo d'água.\n\nÉ diferente de um sentido comum apurado (isso é Sentidos Agudos): aqui existe todo um órgão ou capacidade dedicada a emitir e interpretar esse tipo de sinal, algo que só faz sentido em corpos adaptados especificamente para isso, como morcegos, golfinhos ou criaturas de caverna.",
@@ -307,8 +351,10 @@
         "Uma criatura aquática localiza o barco através da água turva sem nunca precisar vê-lo.",
         "Algo nas profundezas da caverna 'sente' o calor dos viajantes muito antes de qualquer tocha aparecer."
       ],
-      "em_adamar": "É um órgão sensorial dedicado que humanos não têm; esse tipo de radar biológico pertence a criaturas de caverna, morcegos e afins, não a personagens jogáveis.",
-      "relacionados": ["sentido-de-vibracao"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "sentido-de-vibracao"
+      ]
     },
     "sentido-de-vibracao": {
       "descricao": "Sentido de Vibração permite perceber movimento através de tremores transmitidos pelo chão, pela água ou pelo ar, detectando a posição de quem se aproxima mesmo sem ver ou ouvir nada diretamente. Funciona bem em superfícies contínuas — uma teia, o chão de uma caverna, a superfície de um lago — e perde força quando não há um meio sólido ou líquido conectando a fonte do tremor ao personagem.\n\nNão substitui visão ou audição normais, é um sentido a mais, útil sobretudo para notar quem se move com cuidado tentando não fazer barulho audível. É típico de criaturas que vivem em tocas, teias ou ambientes onde ver é difícil, mas sentir tremores é confiável.",
@@ -317,8 +363,10 @@
         "Uma criatura de toca escura percebe os passos cautelosos no túnel pelo tremor no chão de terra batida.",
         "Algo no fundo do lago detecta o barco se aproximando pelas ondas na água, sem nunca emergir para conferir."
       ],
-      "em_adamar": "É um sentido de corpo animal, adaptado a viver em tocas, teias ou fundo d'água; humanos percebem vibrações fortes o bastante para sentir, mas não como um sentido dedicado e confiável.",
-      "relacionados": ["sentido-de-monitoramento"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "sentido-de-monitoramento"
+      ]
     },
     "sentido-protegido": {
       "descricao": "Sentido Protegido garante que um sentido específico — normalmente a visão — não pode ser ofuscado, cegado ou de outra forma incapacitado por luz forte demais, fumaça, pó nos olhos ou efeitos parecidos que atrapalhariam qualquer outra pessoa. O sentido protegido continua funcionando normalmente mesmo quando as condições ao redor deveriam atrapalhá-lo.\n\nCada compra da vantagem cobre um sentido por vez. Não deixa o sentido mais forte nem mais preciso, só imune a ser bloqueado por interferência externa. É um traço de biologia adaptada, algo como olhos, ouvidos ou outros órgãos sensoriais reforçados contra o tipo específico de agressão que normalmente os afetaria.",
@@ -327,8 +375,10 @@
         "Um bicho de mina continua ouvindo perfeitamente em meio à explosão que deixou todo mundo zonzo.",
         "Algo atravessa uma nuvem de pó sem que os olhos sequer lacrimejem."
       ],
-      "em_adamar": "É uma adaptação de corpo de criatura contra um tipo específico de interferência sensorial; olhos e ouvidos humanos continuam vulneráveis a luz forte, fumaça e barulho, como em qualquer pessoa comum.",
-      "relacionados": ["membrana-nictitante"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "membrana-nictitante"
+      ]
     },
     "sonda-mental": {
       "descricao": "Sonda Mental permite vasculhar ativamente a memória de alguém, buscando uma informação específica dentro da mente da vítima, mesmo contra a vontade dela — um nome, um rosto, o caminho para um esconderijo, o que ela viu num determinado dia. Diferente de simplesmente ler pensamentos correntes, aqui o alvo dessa vantagem é o que já está guardado, mesmo que a pessoa tenha esquecido ou queira esconder.\n\nNão precisa de cooperação nem, em geral, de contato físico contínuo — o desconforto ou a violência do processo costuma ser sentido pela vítima, e é considerado uma violação e tanto por quem sofre. É um poder mental típico de entidades sobrenaturais poderosas, não algo que qualquer pessoa aprenda a fazer.",
@@ -337,8 +387,10 @@
         "Um cultista fanático 'confessa' segredos que nem sabia que lembrava, depois de encarar os olhos da entidade.",
         "Um interrogador experiente desconfia de qualquer confissão rápida demais, sabendo que existem formas nada naturais de arrancar informação."
       ],
-      "em_adamar": "Vasculhar memórias à força é um poder mental sobrenatural reservado a entidades muito específicas do cânone; humanos comuns de Adamar não interrogam mentes, só bocas.",
-      "relacionados": ["ocultismo"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "ocultismo"
+      ]
     },
     "st-bracal": {
       "descricao": "ST Braçal aumenta a força só dos braços, sem mudar a força do resto do corpo: golpes desferidos com os braços, agarrões, e tudo que dependa especificamente da força bruta das mãos e braços ficam mais fortes, enquanto pernas, tronco e capacidade geral de carregar peso continuam na força normal do personagem.\n\nÉ diferente de ter força de corpo inteiro mais alta: aqui o reforço é isolado, o que costuma indicar uma anatomia incomum — braços desproporcionalmente poderosos comparados ao resto do corpo, como em certos primatas, crustáceos gigantes ou criaturas com um par de membros claramente feito para esmagar.",
@@ -347,7 +399,7 @@
         "Uma criatura desengonçada surpreende ao arrancar a porta de metal com as próprias mãos.",
         "Um bicho de masmorra afunda as garras na pedra com uma força que o corpo magro dela não sugeria."
       ],
-      "em_adamar": "Essa força desproporcional entre braços e corpo é traço de anatomia de criatura; a força de um humano em Adamar é uniforme e vem de treino, não de braços fora do padrão."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "super-escalada": {
       "descricao": "Super Escalada permite subir superfícies verticais e até de cabeça para baixo com uma facilidade muito além de qualquer treino humano, agarrando-se em paredes lisas, tetos e rochas que não ofereceriam apoio nenhum para mãos e pés comuns. Cada nível melhora o quão difícil pode ser a superfície sem que isso atrapalhe.\n\nNão é apenas ser bom em escalar (isso é perícia): aqui existe alguma adaptação física real — ventosas, garras, aderência natural nas patas — que permite grudar onde não deveria ser possível. É comum em répteis, insetos gigantes e criaturas adaptadas a paredes de masmorra, cavernas e penhascos.",
@@ -356,8 +408,10 @@
         "Uma aranha gigante caminha de cabeça para baixo no teto da masmorra, esperando a hora certa de atacar.",
         "Uma criatura de penhasco escala a rocha molhada onde nenhum guia local ousaria pôr o pé."
       ],
-      "em_adamar": "É uma adaptação física de criatura (garras, ventosas, aderência natural); escaladores humanos em Adamar dependem de perícia, corda e equipamento, não de mãos que grudam em qualquer superfície.",
-      "relacionados": ["escalada"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "escalada"
+      ]
     },
     "super-salto": {
       "descricao": "Super Salto multiplica o alcance e a altura dos saltos do personagem muito além do que pernas humanas conseguiriam, permitindo cobrir distâncias e obstáculos que normalmente exigiriam corrida, escalada ou um longo desvio. Cada nível aumenta ainda mais essa capacidade de saltar.\n\nNão substitui Voo: o personagem ainda está sujeito à queda depois do salto, só alcança muito mais longe ou mais alto antes disso. É um traço de pernas adaptadas para impulso explosivo, como as de certos insetos e anfíbios gigantes, não de treino atlético comum.",
@@ -366,7 +420,7 @@
         "Uma criatura insetoide atravessa o fosso da fortaleza num único salto, para o desespero dos guardas.",
         "Algo pula do chão direto para o alto da muralha, surpreendendo quem vigiava só o portão."
       ],
-      "em_adamar": "Pernas humanas não alcançam esse tipo de impulso; é um traço de anatomia de criatura adaptada ao salto, fora do alcance de qualquer personagem jogável."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "super-sorte": {
       "descricao": "Super Sorte é uma versão ainda mais forte da sorte comum: o personagem pode forçar um resultado ruim a ser refeito com frequência muito maior, e em algum grau até evitar catástrofes que pareciam inevitáveis, como se o destino simplesmente se recusasse a deixá-lo perder. É a vantagem no topo da escala de sorte, acima da sorte comum.\n\nNão é controle sobre o acaso alheio nem garante sucesso sempre: continua sendo sorte, só que numa intensidade quase sobrenatural, do tipo que faz lendas nascerem em torno de alguém que 'nunca morre'. É reservada a figuras muito específicas do mundo, quase nunca um traço comum.",
@@ -375,8 +429,10 @@
         "Um fugitivo escapa de três emboscadas seguidas por coincidências absurdas demais para serem coincidência.",
         "As tabernas contam histórias de um aventureiro que a morte simplesmente esquece de levar."
       ],
-      "em_adamar": "É sorte além do que qualquer humano comum deveria ter; quem quer um personagem sortudo em Adamar usa a versão comum dessa vantagem, não este grau quase sobrenatural.",
-      "relacionados": ["sorte"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "sorte"
+      ]
     },
     "superaudicao": {
       "descricao": "Superaudição permite captar frequências sonoras fora do alcance da audição humana comum, como sons agudos demais ou graves demais para o ouvido normal perceber — o equivalente auditivo a enxergar cores que ninguém mais vê. Isso pode revelar sinais, comunicações ou mesmo criaturas que dependem desses sons para se localizar ou se comunicar.\n\nNão é apenas 'ouvir melhor' (Sentidos Agudos cobre isso): aqui o espectro de frequências captado é literalmente mais amplo que o humano, incluindo sons que a maioria das criaturas nem sabe que existem. É comum em morcegos, certos insetos e criaturas adaptadas a se comunicar fora da faixa audível comum.",
@@ -385,8 +441,10 @@
         "Uma criatura de caverna se comunica com a própria ninhada num registro agudo demais para ouvidos humanos.",
         "Algo parece 'ouvir' o silêncio entre os grilos de um jeito que nenhum caçador local sabe explicar."
       ],
-      "em_adamar": "Ouvidos humanos captam a mesma faixa de frequências de sempre; esse espectro ampliado pertence a criaturas com audição adaptada, como morcegos e insetos, não a personagens jogáveis.",
-      "relacionados": ["sentidos-agucados"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "sentidos-agucados"
+      ]
     },
     "talento-instintivo": {
       "descricao": "Talento Instintivo permite tentar qualquer perícia como se o personagem já soubesse fazer aquilo, mesmo sem nunca ter aprendido ou praticado, como se um talento bruto e inexplicável cobrisse lacunas de treino no momento exato em que fazem falta. Cada nível melhora o quão bem essas tentativas 'de talento puro' saem.\n\nNão substitui perícias já treinadas, que continuam sendo mais confiáveis: é um recurso de emergência, para quando ninguém treinado está por perto e alguém precisa arriscar mesmo sem saber. É um dom raro demais para ter explicação simples, geralmente tratado como sorte sobrenatural ou favor de algo maior.",
@@ -395,7 +453,7 @@
         "Um viajante improvisa uma cura que deveria exigir anos de estudo, sem saber explicar de onde veio o conhecimento.",
         "Os anciãos da vila murmuram que aquele forasteiro 'tem a sorte dos que são tocados por algo', vendo-o acertar o que não deveria saber fazer."
       ],
-      "em_adamar": "Esse tipo de aptidão instantânea e inexplicável é sobrenatural demais para um humano comum; em Adamar, o que se sabe fazer vem de treino, prática e perícia, não de talento nascido do nada."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "telecinese": {
       "descricao": "Telecinese permite mover, erguer, empurrar ou segurar objetos à distância usando só a mente, sem tocar neles. Dependendo do nível, isso vai de mexer pequenos objetos com esforço até manipular coisas pesadas com facilidade, e pode incluir usar essa força para atacar, defender ou até operar mecanismos à distância.\n\nNão é ilusão nem sugestão: o objeto realmente se move, e qualquer testemunha vê isso acontecer. É um dos poderes psíquicos clássicos, reservado a mentes com uma ligação direta e rara com forças que a maioria das pessoas nem sabe que existem.",
@@ -404,7 +462,7 @@
         "Um forasteiro arranca a espada da mão do guerreiro antes que ele chegue perto o bastante para golpear.",
         "Um objeto sagrado flutua sozinho até as mãos de quem o ritual escolheu, sem ninguém tocá-lo."
       ],
-      "em_adamar": "Mover objetos só com a mente é um poder psíquico raro demais para ser traço de personagem comum; em Adamar, efeitos assim ficam com entidades e artefatos muito específicos, decididos pelo narrador, não à disposição geral dos jogadores."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "telecomunicacao": {
       "descricao": "Telecomunicação cobre qualquer forma de se comunicar a distâncias que a voz normal não alcançaria, sem precisar de mensageiro, sinal de fumaça ou qualquer meio físico intermediário — de telepatia entre mentes a transmissões por algum tipo de sinal invisível. A forma exata (falar mente a mente, captar sinais, transmitir imagens) depende de como a vantagem foi comprada.\n\nNão é a mesma coisa que gritar mais alto ou usar sinais combinados: aqui a informação atravessa a distância por um meio que ninguém mais percebe, e normalmente só quem tem a vantagem (ou uma vantagem compatível) consegue captar a mensagem.",
@@ -413,7 +471,7 @@
         "Um forasteiro guia seus seguidores à distância, sussurrando ordens direto na mente deles.",
         "Um culto se comunica de aldeia em aldeia sem que nenhum mensageiro jamais tenha feito o trajeto."
       ],
-      "em_adamar": "Comunicação instantânea à distância, seja por telepatia ou por sinal, não existe para humanos comuns em Adamar: mensagens viajam do jeito de sempre, com tempo, distância e um mensageiro de carne e osso."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "terror": {
       "descricao": "Terror faz com que a simples presença do personagem provoque medo intenso em quem olha para ele: tremores, fuga, paralisia, dependendo de quão bem a vítima resiste. Não depende de dizer nada ameaçador ou de fazer qualquer gesto — o efeito vem de o que o personagem é, não do que ele faz.\n\nÉ diferente de uma boa reputação assustadora ou de uma perícia de intimidação, que dependem de ação, fala e contexto: aqui o pavor é quase automático, um reflexo de sobrevivência de quem encara algo que o corpo reconhece como fundamentalmente errado ou perigoso demais. É um traço de monstros, mortos-vivos e entidades cuja mera aparência já é uma arma.",
@@ -422,8 +480,10 @@
         "Crianças da aldeia choram sem motivo aparente sempre que a coisa que vive na floresta se aproxima demais.",
         "Um caçador experiente admite que nunca sentiu tanto medo de algo que ainda nem tinha atacado."
       ],
-      "em_adamar": "Provocar pavor automático só de existir é traço de monstro ou entidade, não de humano; quem quer amedrontar em Adamar depende de reputação, perícia e do que realmente faz.",
-      "relacionados": ["intimidacao"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "intimidacao"
+      ]
     },
     "tolerancia-a-ferimentos": {
       "descricao": "Tolerância a Ferimentos muda como o corpo reage a ser ferido: dependendo da variante escolhida, o personagem pode não ter órgãos vitais para mirar, não sangrar, ser feito de uma substância homogênea sem partes mais fracas, ou simplesmente não funcionar como um corpo vivo comum para fins de ferimento. Ataques que normalmente explorariam um ponto fraco específico perdem parte ou todo esse bônus contra ele.\n\nNão significa ser difícil de ferir de forma geral (isso é Resistência a Dano): aqui o que muda é onde e como o corpo pode ser atingido de forma decisiva. É um traço de constructos, mortos-vivos, plantas animadas e outras coisas cujo corpo simplesmente não é organizado como o de um ser vivo comum.",
@@ -432,8 +492,11 @@
         "Um morto-vivo continua avançando depois de um golpe que atravessaria qualquer torso vivo.",
         "Uma criatura vegetal de masmorra não tem 'dentro' nenhum que uma lâmina precise encontrar para ser letal."
       ],
-      "em_adamar": "Corpos humanos têm órgãos vitais e sangram como deveriam; esse traço pertence a constructos, mortos-vivos e criaturas cujo corpo não é organizado como o de um ser vivo comum.",
-      "relacionados": ["resistencia-a-dano", "regeneracao"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "resistencia-a-dano",
+        "regeneracao"
+      ]
     },
     "tolerancia-a-radiacao": {
       "descricao": "Tolerância à Radiação protege o corpo dos efeitos nocivos da radiação, permitindo permanecer em ambientes contaminados, perto de fontes radioativas ou expostos a esse tipo de energia sem sofrer queimaduras internas, doenças ou mutações indesejadas que afetariam qualquer outra pessoa exposta pelo mesmo tempo.\n\nÉ uma vantagem quase exclusiva de cenários de ficção científica ou pós-apocalípticos com tecnologia nuclear, já que pressupõe a existência de radiação em quantidade relevante no ambiente de jogo. Sem isso no cenário, a vantagem simplesmente não tem contra o que proteger.",
@@ -460,8 +523,10 @@
         "Uma criatura cega percebe, pelo tato, a diferença entre a pedra comum e o mecanismo escondido da armadilha.",
         "Algo reconhece um objeto só de tocá-lo de leve, sem precisar vê-lo nem cheirá-lo."
       ],
-      "em_adamar": "É um sentido sobre-humano de tato; batedores em Adamar percebem armadilhas por perícia e atenção, não por um tato fisicamente superior ao humano comum.",
-      "relacionados": ["sentidos-agucados"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "sentidos-agucados"
+      ]
     },
     "titere": {
       "descricao": "Títere é um corpo ou criatura preparado especificamente para poder ser possuído: um vaso vazio, treinado ou construído para receber outra consciência sem oferecer resistência quando chega a hora. Normalmente anda ao lado do personagem como um aliado comum até o momento em que a possessão realmente acontece, revelando sua função verdadeira.\n\nNão é um aliado independente de verdade: sua utilidade principal é servir como corpo reserva, disponível quando o dono do poder de possessão precisar de um veículo a mais. É um recurso que anda de mãos dadas com a vantagem de possessão, quase nunca aparecendo sozinho.",
@@ -470,8 +535,10 @@
         "Um forasteiro guarda um corpo reserva escondido, para o caso de precisar de um veículo depois de uma batalha perdida.",
         "Um boneco de palha abençoado por um ritual espera, imóvel, o momento de ganhar vida por dentro."
       ],
-      "em_adamar": "Esse recurso só faz sentido junto da vantagem de Possessão, reservada a entidades sem corpo próprio; humanos comuns de Adamar não mantêm nem precisam de um corpo reserva desse tipo.",
-      "relacionados": ["possessao"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "possessao"
+      ]
     },
     "ultravisao": {
       "descricao": "Ultravisão permite enxergar luz ultravioleta, um espectro invisível para olhos humanos comuns. Isso pode revelar marcas, fluidos ou padrões que só aparecem sob esse tipo de luz, e em ambientes com alguma fonte de ultravioleta natural, pode funcionar quase como enxergar em condições de pouca luz visível.\n\nNão deve ser confundida com Visão no Escuro, que dispensa luz por completo: aqui ainda é necessário algum tipo de luz presente, só que fora do espectro que olhos comuns conseguem captar. É um sentido de biologia animal, presente em certos insetos, aves e répteis, não em olhos humanos.",
@@ -480,8 +547,11 @@
         "Uma criatura noturna segue marcas num tipo de luz que ninguém mais percebe existir.",
         "Um estudioso se intriga com padrões que só aparecem sob luz muito específica, sem saber explicar por quê."
       ],
-      "em_adamar": "Olhos humanos não captam luz ultravioleta; esse espectro extra pertence a certos animais e criaturas, fora do alcance de qualquer personagem jogável.",
-      "relacionados": ["visao-no-escuro", "sentidos-agucados"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "visao-no-escuro",
+        "sentidos-agucados"
+      ]
     },
     "vida-extra": {
       "descricao": "Vida Extra permite voltar da morte: quando o personagem morreria de verdade, ele reaparece de alguma forma — revive, se recompõe, retorna de outro jeito — gastando uma 'vida extra' das que possui. Cada nível da vantagem representa mais uma dessas chances antes que a morte finalmente se torne definitiva.\n\nNão evita ferimentos nem sofrimento no caminho: a experiência ainda pode doer, pode custar caro, pode deixar o personagem fraco depois de voltar. O que muda é que a morte, para esse personagem específico, não é o fim automático que é para todo mundo. É um traço de seres com ligação profunda com forças além da vida comum, como certas divindades, forasteiros ou maldições.",
@@ -490,7 +560,7 @@
         "Um forasteiro zomba de golpes que deveriam ser fatais, prometendo voltar sempre que for necessário.",
         "Uma profecia local afirma que aquele guerreiro já morreu duas vezes e sempre retornou diferente."
       ],
-      "em_adamar": "A Materialidade do cenário trata a morte como real e definitiva; voltar dela por vontade própria contraria essa regra básica, e fica restrito a casos muito específicos do narrador, não a um traço comum de personagem."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "visao-360-graus": {
       "descricao": "Visão 360 Graus permite enxergar em todas as direções ao mesmo tempo, sem pontos cegos atrás, do lado ou embaixo: geralmente vem de olhos posicionados de forma incomum, múltiplos olhos, ou um arranjo de cabeça que permite ver ao redor todo sem precisar virar o pescoço. Isso elimina praticamente qualquer chance de ser surpreendido por um ataque vindo de um ângulo inesperado.\n\nÉ diferente de ter boa atenção ou reflexos rápidos: aqui o corpo literalmente enxerga tudo ao redor ao mesmo tempo, sem precisar escolher para onde olhar. É comum em criaturas com múltiplos olhos ou cabeças que giram muito mais que a humana.",
@@ -499,8 +569,10 @@
         "Uma criatura de muitos olhos nunca é pega de surpresa, não importa de que lado venha o ataque.",
         "Um guardião com a cabeça cheia de olhos observa a câmara inteira sem nunca precisar se virar."
       ],
-      "em_adamar": "Olhos humanos enxergam só à frente; esse tipo de visão total pertence a criaturas com anatomia de múltiplos olhos ou cabeça giratória, fora do alcance humano.",
-      "relacionados": ["sentido-protegido"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "sentido-protegido"
+      ]
     },
     "visao-hiperespectral": {
       "descricao": "Visão Hiperespectral permite enxergar faixas de luz muito além do espectro visível comum, combinando várias formas de percepção especial numa única visão só, revelando calor, radiação e padrões invisíveis para qualquer olho humano ao mesmo tempo. É a versão mais completa das vantagens de visão especial, reunindo várias delas num único pacote.\n\nNão é apenas 'enxergar bem': é enxergar informação que simplesmente não existe para olhos comuns, útil para rastrear seres vivos pelo calor do corpo, encontrar marcas invisíveis ou notar campos de energia que ninguém mais percebe. É um sentido de biologia muito além da humana, ou de tecnologia equivalente.",
@@ -509,8 +581,12 @@
         "Um forasteiro percebe um campo de energia ao redor da masmorra que nenhum estudioso local sabe nem nomear.",
         "Algo nas ruínas vê padrões nas paredes que revelam uma passagem secreta, invisíveis a olho nu."
       ],
-      "em_adamar": "Esse tipo de visão combinada e ampliada pertence a criaturas ou tecnologia muito além do humano comum; olhos humanos em Adamar enxergam só o espectro de sempre.",
-      "relacionados": ["ultravisao", "visao-no-escuro", "visao-penetrante"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "ultravisao",
+        "visao-no-escuro",
+        "visao-penetrante"
+      ]
     },
     "visao-microscopica": {
       "descricao": "Visão Microscópica permite enxergar detalhes minúsculos demais para olhos comuns, dos poros da pele a pequenos organismos ou defeitos microscópicos numa superfície, dependendo do nível. Cada grau amplia ainda mais o quão pequeno algo pode ser e ainda assim ser visto com clareza.\n\nÉ diferente de boa vista de perto: aqui a ampliação é real e extrema, equivalente a carregar uma lente de aumento embutida nos próprios olhos. É um sentido de biologia muito incomum, quase nunca presente em olhos humanos, mesmo entre os mais aguçados.",
@@ -519,8 +595,10 @@
         "Algo nas ruínas nota uma rachadura minúscula na pedra que prenuncia o desabamento da câmara.",
         "Um estudioso se maravilha com a descrição de detalhes que nenhuma lente conhecida conseguiria mostrar."
       ],
-      "em_adamar": "Olhos humanos não ampliam a esse ponto; esse sentido pertence a criaturas de biologia muito diferente, ou dependeria de instrumentos que Adamar não possui.",
-      "relacionados": ["visao-telescopica"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "visao-telescopica"
+      ]
     },
     "visao-no-escuro": {
       "descricao": "Visão no Escuro permite enxergar perfeitamente mesmo sem luz nenhuma, num breu completo onde qualquer outra pessoa estaria totalmente cega. Diferente de enxergar melhor no escuro parcial (isso é outra vantagem, mais comum), aqui a ausência total de luz simplesmente não importa: o personagem vê como se fosse dia.\n\nÉ um sentido de biologia adaptada à escuridão absoluta — cavernas profundas, o fundo do oceano, túneis sem qualquer fresta de luz — e costuma vir acompanhado de olhos fisicamente diferentes dos humanos, adaptados para captar o que não existe para captar.",
@@ -529,8 +607,11 @@
         "Algo nas profundezas da masmorra observa o grupo tropeçar no escuro completo, sem nenhuma dificuldade própria.",
         "Um bicho de mina nunca precisou de luz nenhuma para encontrar o caminho de volta ao ninho."
       ],
-      "em_adamar": "Enxergar sem luz nenhuma é sentido de criatura adaptada à escuridão absoluta; olhos humanos em Adamar precisam de alguma luz, por menor que seja, para enxergar.",
-      "relacionados": ["ultravisao", "sentido-protegido"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "ultravisao",
+        "sentido-protegido"
+      ]
     },
     "visao-penetrante": {
       "descricao": "Visão Penetrante permite enxergar através de superfícies sólidas — madeira, pedra, terra, dependendo do quanto a vantagem foi comprada — como se elas simplesmente não estivessem lá para os olhos do personagem. Cada nível aumenta a espessura ou a densidade do material que ainda pode ser atravessado pela visão.\n\nNão revela o que está atrás de qualquer coisa indiscriminadamente: costuma ter limites de alcance e de tipo de material, e em geral não atravessa certos metais ou proteções especiais. É um sentido raríssimo, quase sempre ligado a criaturas ou entidades muito além do humano comum.",
@@ -539,8 +620,10 @@
         "Um forasteiro observa o esconderijo dentro do baú fechado como se a madeira fosse vidro.",
         "Algo nas ruínas percebe os aventureiros escondidos atrás de uma pilha de escombros, sem nenhum sinal visível de que os viu."
       ],
-      "em_adamar": "Ver através de paredes e objetos sólidos é sentido de entidade rara e poderosa; olhos humanos em Adamar precisam de linha de visão de verdade, sem atalhos através de superfícies sólidas.",
-      "relacionados": ["visao-hiperespectral"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "visao-hiperespectral"
+      ]
     },
     "visao-telescopica": {
       "descricao": "Visão Telescópica permite enxergar detalhes com clareza a distâncias muito maiores do que olhos comuns conseguiriam distinguir, como se cada olho tivesse uma luneta embutida. Cada nível aumenta o quão longe essa clareza extra alcança, útil para reconhecer rostos, ler símbolos ou notar movimento muito além do alcance normal de visão.\n\nNão melhora a visão em condições ruins de luz (isso é outra vantagem): o problema resolvido aqui é especificamente a distância. É um sentido de biologia adaptada, como o de aves de rapina, muito além da acuidade visual humana mais treinada.",
@@ -549,8 +632,10 @@
         "Uma criatura de penhasco nota o movimento de uma presa muito antes de qualquer caçador humano sequer suspeitar de algo ali.",
         "Um guardião de torre distingue rostos individuais numa caravana que ainda está longe demais para qualquer sentinela comum."
       ],
-      "em_adamar": "É uma acuidade visual muito além da humana, mesmo treinada; sentinelas em Adamar dependem de boa vista natural e talvez um bom ponto de observação, não de olhos com luneta embutida.",
-      "relacionados": ["visao-microscopica"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "visao-microscopica"
+      ]
     },
     "voo": {
       "descricao": "Voo permite se sustentar e se deslocar pelo ar livremente, sem depender de correntes de vento, superfícies para empurrar ou qualquer auxílio externo: o personagem simplesmente voa, subindo, descendo e manobrando no ar como outros fariam correndo pelo chão. Não se confunde com planar ou saltar longe, é sustentação real e contínua.\n\nCostuma vir de asas, mas nem sempre — algumas formas de voo são puramente sobrenaturais, sem qualquer estrutura física óbvia sustentando o corpo no ar. De um jeito ou de outro, é um dos traços físicos mais marcantes que uma criatura pode ter, mudando completamente como ela caça, foge e explora o mundo.",
@@ -559,8 +644,10 @@
         "Uma criatura alada ataca de cima, longe do alcance de qualquer lança levantada às pressas.",
         "Um forasteiro emplumado observa a vila inteira de um ponto que nenhuma torre local alcançaria."
       ],
-      "em_adamar": "Humanos não voam por conta própria; esse traço pertence a criaturas aladas ou a seres de natureza sobrenatural, fora do alcance de qualquer personagem jogável comum.",
-      "relacionados": ["super-salto"]
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
+      "relacionados": [
+        "super-salto"
+      ]
     }
   }
 }

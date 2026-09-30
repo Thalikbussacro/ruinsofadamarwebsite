@@ -747,6 +747,15 @@
     toggle.appendChild(caixaNarr);
     toggle.appendChild(el('span', null, 'Mostrar também os raros (com o narrador)'));
     rodape.appendChild(toggle);
+    // bloqueados na criação: existem, mas só se ganham em jogo (asas, poderes, maldições…)
+    var comBloqueados = false;
+    var toggleB = el('label', 'check filtro-narrador');
+    var caixaB = el('input');
+    caixaB.type = 'checkbox';
+    caixaB.addEventListener('change', function () { comBloqueados = caixaB.checked; desenhar(); });
+    toggleB.appendChild(caixaB);
+    toggleB.appendChild(el('span', null, 'Mostrar também os bloqueados (ganhos em jogo)'));
+    rodape.appendChild(toggleB);
     var contagem = el('span', 'painel-conta-catalogo');
     rodape.appendChild(contagem);
     var limpar = el('button', 'btn-link', 'Limpar filtros');
@@ -773,6 +782,7 @@
           if (escolhidos[i] && !opcoes.filtros[i].testa(it, escolhidos[i])) return false;
         }
         if (it.adamar === 'narrador' && !comNarrador && !opcoes.jaTem(it)) { ocultos++; return false; }
+        if (it.adamar === 'bloqueado' && !comBloqueados && !opcoes.jaTem(it)) { ocultos++; return false; }
         return true;
       });
       var cmp = opcoes.ordens.filter(function (o) { return o[0] === ordem.value; })[0][2];
@@ -801,6 +811,11 @@
           var m = el('span', 'marca-narrador', '◆');
           m.title = 'Com o narrador: raro, combine antes';
           topo.appendChild(m);
+        }
+        if (it.adamar === 'bloqueado') {
+          var mb = el('span', 'marca-bloqueado', '🔒︎');
+          mb.title = 'Bloqueado na criação: só se ganha em jogo';
+          topo.appendChild(mb);
         }
         texto.appendChild(topo);
         texto.appendChild(el('span', 'app-cat-resumo', it.resumo || ''));
@@ -886,7 +901,7 @@
 
   // ---------- 4 e 5. vantagens e desvantagens ----------
   function tracoEscolhivel(t) {
-    return t.adamar !== 'nao' && !criador.tracoSocial(t.id) && t.id !== TALENTO_TRACO;
+    return t.adamar !== 'nao' && !criador.tracoSocial(t.id) && t.id !== TALENTO_TRACO; // bloqueados aparecem com o filtro próprio
   }
   function ehNegativo(t) { return t.categoria === 'desvantagem' || t.categoria === 'peculiaridade'; }
 

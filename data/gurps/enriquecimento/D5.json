@@ -27,7 +27,7 @@
         "Um ferimento aparentemente simples causado por essa criatura evolui para uma doença grave dias depois.",
         "Os poucos sobreviventes de um encontro assim insistem em queimar as próprias roupas por medo de contágio."
       ],
-      "em_adamar": "Fica fora do cenário porque os personagens jogáveis de Adamar são humanos comuns, e esse traço pertence a criaturas exóticas e monstruosas, não a heróis jogáveis."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "atavismo-por-estresse": {
       "descricao": "Atavismo por Estresse faz o personagem regredir, sob forte pressão ou choque, a um estado mental e comportamental mais primitivo e bestial, quase animalesco, perdendo o controle racional normal por um tempo. É um traço de linhagens ou raças com um passado evolutivo ou mágico mais selvagem, que ressurge nos momentos mais inconvenientes.\n\nEnquanto durar o episódio, o personagem age por instinto puro, com julgamento e comunicação bem piores do que o normal, voltando ao normal depois que o gatilho de estresse passa.",
@@ -36,7 +36,7 @@
         "Testemunhas descrevem o comportamento repentinamente animalesco de alguém sob choque extremo.",
         "Depois do episódio, a pessoa mal lembra o que fez enquanto estava naquele estado."
       ],
-      "em_adamar": "Fica fora do cenário porque pressupõe uma herança racial exótica que os humanos de Adamar não têm."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "autodestruicao": {
       "descricao": "Autodestruição descreve um corpo que se desfaz ou se deteriora com o tempo por natureza própria, exigindo manutenção, energia ou intervenção constante só para continuar existindo. É típico de seres artificiais, construtos ou criaturas mantidas por magia ou tecnologia que combatem ativamente sua própria decomposição.\n\nSem essa manutenção constante, a criatura literalmente se desmancha aos poucos, o que a torna dependente de recursos ou rituais específicos só para continuar de pé.",
@@ -45,7 +45,7 @@
         "Aventureiros encontram os restos de uma criatura que, sem manutenção, se desfez até virar pó.",
         "A criatura busca desesperadamente o material raro necessário para reparar o próprio corpo antes que se desintegre."
       ],
-      "em_adamar": "Fica fora porque pressupõe corpos artificiais ou mágicos além do que existe para personagens humanos comuns em Adamar."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "aversao": {
       "descricao": "Aversão obriga o personagem a se afastar fisicamente de algo específico — um material, um símbolo, um tipo de lugar —, incapaz de chegar perto ou de permanecer na presença daquilo sem grande desconforto ou dano. O exemplo clássico é a criatura que não suporta um determinado material comum: a aversão pode ser tão simples quanto repulsa incômoda ou tão grave quanto ferimento ao entrar em contato.\n\nO narrador define, junto com o jogador, exatamente o que é a fonte da aversão e o quão comum ela é no mundo, já que isso muda bastante o peso prático da desvantagem.",
@@ -66,7 +66,7 @@
         "Criaturas assim reagem previsivelmente a comida, cheiro de sangue ou ameaça direta, nada além disso.",
         "Um caçador experiente prevê o comportamento da besta justamente por saber que ela não pensa como gente."
       ],
-      "em_adamar": "Fica fora porque os personagens jogáveis são humanos com raciocínio pleno; esse traço é reservado a criaturas e monstros do mundo."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "bioquimica-incomum": {
       "descricao": "Bioquímica Incomum faz remédios, venenos, drogas e efeitos similares agirem de forma diferente e imprevisível no personagem, às vezes sem efeito nenhum, às vezes de um jeito inesperado. É um traço associado a corpos não inteiramente humanos ou alterados por origem exótica, cuja composição interna simplesmente não responde como a de uma pessoa comum.\n\nMédicos, boticários e envenenadores que conhecem apenas fisiologia humana comum têm dificuldade extra para tratar ou afetar alguém assim.",
@@ -75,7 +75,7 @@
         "Um veneno que derrubaria qualquer pessoa mal afeta essa criatura, para frustração do assassino.",
         "Um médico precisa experimentar às cegas para achar algo que realmente faça efeito nesse paciente."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma fisiologia não humana que os personagens de Adamar, todos humanos, não têm."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "caracteristicas-sobrenaturais": {
       "descricao": "Características Sobrenaturais reúne pequenos sinais visíveis de que o personagem não é inteiramente natural: não ter reflexo em espelhos ou água, não projetar sombra, não aparecer em retratos, entre outras marcas parecidas. Isoladamente cada sinal parece pequeno, mas denuncia a natureza sobrenatural de quem os tem para qualquer um que preste atenção.\n\nÉ um traço típico de mortos-vivos, espíritos ou seres amaldiçoados, não algo que aconteça a uma pessoa comum, por mais estranha que seja sua história.",
@@ -84,7 +84,7 @@
         "Alguém observador nota que a figura misteriosa nunca projeta sombra ao luar.",
         "Um pintor de retratos fica intrigado ao perceber que o rosto do cliente simplesmente não aparece na tela."
       ],
-      "em_adamar": "Fica fora porque exige uma natureza sobrenatural que os personagens jogáveis, humanos comuns, não possuem."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "consumo-ampliado": {
       "descricao": "Consumo Ampliado significa que o personagem precisa comer, ou beber, ou se alimentar de outra forma, muito mais do que uma pessoa comum para se manter funcionando, com o problema crescendo por nível. Isso torna caro e logisticamente difícil mantê-lo alimentado, especialmente em viagem ou em tempos de escassez.\n\nÉ comum em criaturas grandes, com metabolismo acelerado ou de origem exótica, mais do que em humanos comuns, cuja necessidade alimentar já é coberta pelas regras padrão de suprimentos.",
@@ -93,7 +93,7 @@
         "Manter esse companheiro alimentado em terreno escasso vira um problema logístico sério.",
         "Mercadores de comida ficam surpresos com o tamanho do pedido para uma única boca."
       ],
-      "em_adamar": "Fica fora porque pressupõe metabolismo exótico; personagens humanos seguem as necessidades alimentares padrão."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "dependencia": {
       "descricao": "Dependência é a necessidade vital de uma substância específica para continuar vivo, não um vício por prazer, mas uma exigência biológica real: sem ela, o corpo do personagem começa a falhar progressivamente até a morte, num prazo que depende de quão rara e de quão frequente é a necessidade.\n\nO narrador define, junto ao jogador, o que é essa substância e o quão fácil ou difícil é encontrá-la no mundo, já que isso muda enormemente o peso prático da desvantagem numa campanha.",
@@ -150,7 +150,7 @@
         "Rumores de vítimas enfraquecidas sem explicação levam caçadores a investigar a criatura por trás disso.",
         "Sem acesso à sua fonte de energia por dias, a criatura mal consegue se mover."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma natureza de morto-vivo ou similar que os personagens jogáveis, humanos comuns, não têm.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "relacionados": [
         "dependencia"
       ]
@@ -189,7 +189,7 @@
         "Não sente o gelo cortante da água da geleira ao atravessá-la, o que traz riscos próprios.",
         "Manuseia objetos afiados ou quentes sem perceber o perigo até ser tarde demais."
       ],
-      "em_adamar": "Fica fora porque pressupõe um corpo sem sensibilidade tátil normal, incompatível com a fisiologia humana comum de Adamar."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "expectativa-de-vida-reduzida": {
       "descricao": "Expectativa de Vida Reduzida significa que o personagem envelhece e morre de causas naturais bem mais rápido do que um humano comum, com o problema piorando por nível. Rolagens relacionadas a envelhecimento e efeitos da idade passam a acontecer bem mais cedo na vida desse personagem.\n\nÉ típico de espécies ou linhagens de vida curta por natureza, algo que muda a relação do personagem com o tempo e com planos de longo prazo.",
@@ -198,7 +198,7 @@
         "Efeitos da idade avançada aparecem nela numa fração do tempo que levaria numa pessoa comum.",
         "Ela encara com urgência projetos que outra pessoa trataria com calma ao longo de décadas."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma espécie não humana de vida curta; Adamar só tem personagens humanos, com expectativa de vida humana comum."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "forma-de-sombras-desvantagem": {
       "descricao": "Forma de Sombras, como desvantagem, prende o personagem permanentemente num estado incorpóreo feito de sombra, incapaz de voltar a um corpo sólido normal quando quiser ou precisar. Ele interage com o mundo físico de forma limitada e estranha, sem a solidez de um corpo comum.\n\nÉ um traço associado a espíritos, fantasmas ou seres feitos de sombra, não a uma pessoa comum que apenas usa esse poder à vontade.",
@@ -207,7 +207,7 @@
         "Testemunhas descrevem uma figura escura que se dissolve na escuridão sempre que confrontada.",
         "Presa nessa forma, a criatura busca desesperadamente um jeito de recuperar um corpo sólido."
       ],
-      "em_adamar": "Fica fora porque exige uma natureza incorpórea permanente que os personagens humanos jogáveis de Adamar não têm."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "fragilidade": {
       "descricao": "Fragilidade descreve um corpo que se machuca, quebra ou reage mal a impactos, calor ou outros danos comuns com muito mais facilidade do que um corpo humano normal. É um traço de seres feitos de material delicado, como vidro ou cristal, mais do que de humanos, cuja resistência física já segue as regras padrão.\n\nCriaturas assim precisam evitar combate direto e impactos que um humano suportaria sem problema, tornando-as fisicamente vulneráveis mesmo quando poderosas em outros aspectos.",
@@ -216,7 +216,7 @@
         "Ela evita ativamente qualquer confronto físico direto, ciente da própria fragilidade.",
         "Manuseia a si mesma com um cuidado que pareceria exagerado para qualquer pessoa comum."
       ],
-      "em_adamar": "Fica fora porque pressupõe um corpo de material não humano; a fisiologia dos personagens de Adamar segue as regras humanas padrão."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "fraqueza": {
       "descricao": "Fraqueza faz o personagem sofrer dano constante só por estar perto de algo específico, sem precisar de contato direto — a mera proximidade já é prejudicial. É um traço de criaturas com uma vulnerabilidade ambiental muito específica e severa, geralmente ligada à sua origem sobrenatural ou exótica.\n\nIsso obriga a criatura a evitar ativamente certos lugares, materiais ou condições, e pode ser explorado taticamente por quem descobre exatamente do que ela foge.",
@@ -225,7 +225,7 @@
         "Caçadores que descobrem essa fraqueza passam a usá-la como principal arma contra ela.",
         "Ela planeja rotas inteiras só para não passar perto do que a prejudica."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma vulnerabilidade sobrenatural específica de criaturas exóticas, não de personagens humanos comuns.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "relacionados": [
         "vulnerabilidade",
         "suscetivel"
@@ -247,7 +247,7 @@
         "Ela se move com uma velocidade natural que surpreende quem espera um andar bípede comum.",
         "Precisa de adaptações especiais para qualquer equipamento pensado para um corpo ereto."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma anatomia quadrúpede; Adamar só tem personagens humanos de anatomia bípede comum."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "incapaz-de-aprender": {
       "descricao": "Incapaz de Aprender significa que o personagem não consegue adquirir novas habilidades ou conhecimento de forma alguma: o que ele já sabe no início é basicamente tudo o que ele sempre vai saber, não importa quanto tempo ou esforço dedique a treinar. É uma limitação drástica, normalmente reservada a criaturas simples ou construtos com comportamento fixo, não a heróis jogáveis que evoluem com a campanha.\n\nDiferente de simplesmente aprender devagar, aqui a porta para o crescimento está praticamente fechada.",
@@ -256,7 +256,7 @@
         "Tentativas de ensiná-la algo novo simplesmente não deixam marca nenhuma.",
         "Especialistas debatem se há sequer alguma centelha de aprendizado real por trás daquele comportamento fixo."
       ],
-      "em_adamar": "Fica fora porque personagens jogáveis crescem e aprendem ao longo da campanha; esse traço é reservado a criaturas e construtos do mundo."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "intolerancia-g": {
       "descricao": "Intolerância-G faz o personagem sofrer com gravidades diferentes da que seu corpo está acostumado: gravidade mais forte ou mais fraca do que o padrão o deixa fraco, desajeitado ou incapacitado, dependendo do tamanho do desvio. É um traço pensado para cenários de ficção científica com viagem entre planetas de gravidades distintas.\n\nSem esse tipo de viagem interplanetária no cenário, a condição nunca chega a ser relevante.",
@@ -274,7 +274,7 @@
         "Ela se contorce de formas que pareceriam fisicamente impossíveis para um corpo com esqueleto.",
         "Amarras e algemas comuns simplesmente não a prendem do jeito que prenderiam uma pessoa normal."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma anatomia sem esqueleto, incompatível com a fisiologia humana dos personagens de Adamar."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "magnetismo-sobrenatural": {
       "descricao": "Magnetismo Sobrenatural faz coisas estranhas e sobrenaturais acontecerem com mais frequência perto do personagem, mesmo sem ele fazer nada para provocar isso: fenômenos incomuns, encontros bizarros, coincidências absurdamente improváveis parecem gravitar ao redor dele. Não é um poder que ele controla, é mais uma marca que atrai o estranho.\n\nO narrador decide quando e como esse magnetismo se manifesta, já que ele controla diretamente a frequência e a natureza dos eventos sobrenaturais da campanha.",
@@ -292,7 +292,7 @@
         "Aliados começam a evitar se associar de perto com alguém tão marcado pelo azar.",
         "Mesmo tarefas simples parecem sempre encontrar o pior resultado possível."
       ],
-      "em_adamar": "Fica fora do que um jogador escolhe livremente na criação de personagem: é uma condição extrema demais, tratada como enredo controlado pelo narrador quando aparecer."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "maldicao-divina": {
       "descricao": "Maldição Divina é uma punição imposta por uma entidade poderosa sobre o personagem, com efeitos que variam conforme a gravidade da ofensa e a vontade de quem amaldiçoou. Diferente de uma maldição genérica, aqui existe uma origem e um motivo específicos, e possivelmente uma forma de reverter a maldição ligada a essa origem.\n\nO narrador define a natureza exata da maldição, sua causa e suas condições de remoção, o que faz dela uma desvantagem construída em conjunto, não escolhida livremente na criação de personagem.",
@@ -313,7 +313,7 @@
         "Ferramentas e armas feitas para mãos humanas são simplesmente inutilizáveis para ela.",
         "Ela depende de outras partes do corpo, de forma estranha, para qualquer tarefa manual."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma anatomia sem mãos utilizáveis, incompatível com personagens humanos jogáveis em Adamar."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "manutencao": {
       "descricao": "Manutenção significa que o personagem precisa de cuidados técnicos regulares, parecidos com os de uma máquina, para continuar funcionando: peças, ajustes, combustível ou processos específicos que vão muito além de comer, dormir ou receber cuidados médicos comuns.\n\nÉ um traço de seres artificiais como autômatos e construtos, que dependem de conhecimento técnico específico para serem mantidos, não de humanos, cujas necessidades já são cobertas pelas regras padrão.",
@@ -331,7 +331,7 @@
         "Sem um comando claro, ela simplesmente não age, por mais urgente que a situação pareça.",
         "Quem a controla percebe rapidamente que ela nunca vai questionar ou desviar da ordem dada."
       ],
-      "em_adamar": "Fica fora porque compromete demais a autonomia esperada de um personagem jogável; é reservado a criaturas subservientes controladas por terceiros."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "mordida-fraca": {
       "descricao": "Mordida Fraca descreve uma mandíbula ou dentição fraca demais para ser usada como arma natural eficaz, algo relevante para criaturas que normalmente atacam mordendo, animais e monstros com esse tipo de ataque natural. Para humanos, que não costumam lutar com os dentes de forma relevante nas regras, esse traço simplesmente não tem efeito prático.\n\nÉ, na prática, uma desvantagem pensada para ajustar criaturas específicas com ataque de mordida, não para personagens humanos comuns.",
@@ -340,7 +340,7 @@
         "Naturalistas notam a mandíbula visivelmente mais fraca do espécime observado.",
         "Sem a mordida como opção confiável, a criatura recorre a outras formas de ataque."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma arma natural de mordida que os personagens humanos jogáveis não usam como ataque relevante."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "mao-fraca": {
       "descricao": "Mão Fraca representa uma pegada ruim: mãos, garras ou patas que não fecham com firmeza. Cada nível dá uma penalidade em tudo o que depende de segurar forte, como escalar, se agarrar a uma borda, manter a arma na mão contra uma tentativa de desarme ou carregar algo pendurado.\n\nÉ uma desvantagem pensada para criaturas e raças com mãos diferentes das humanas; num humano comum, só faria sentido como consequência de ferimento grave, e aí o narrador trata a lesão caso a caso.",
@@ -349,7 +349,7 @@
         "Um golpe de desarme arranca a arma da mão com muito mais facilidade.",
         "Pendurado na corda sobre o abismo, cada rodada exige um teste mais duro para não soltar."
       ],
-      "em_adamar": "Fica fora porque Adamar só tem personagens humanos, com mãos humanas; perdas de força na mão por ferimento são tratadas pelo narrador."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "noturno": {
       "descricao": "Noturno significa que o personagem só consegue ficar realmente ativo durante a noite: de dia, ele sofre penalidades sérias de desempenho, sonolência ou fraqueza, o oposto de alguém que simplesmente prefere a noite por hábito. É um traço racial ou biológico, não uma escolha de estilo de vida.\n\nIsso limita bastante a participação em qualquer atividade diurna, empurrando o personagem para uma rotina de aventura centrada exclusivamente no período noturno.",
@@ -358,7 +358,7 @@
         "Ela planeja toda a jornada em torno de viajar apenas depois do anoitecer.",
         "Durante o dia, prefere se esconder e descansar, só retomando força ao cair da noite."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma biologia racial não humana; personagens humanos de Adamar seguem o ciclo padrão de dia e noite."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "nao-iconografico": {
       "descricao": "Não-Iconográfico significa que o personagem tem dificuldade real para entender símbolos, imagens, mapas, sinais e representações visuais abstratas: ele processa o mundo de um jeito mais literal, sem captar bem o que uma figura ou símbolo representa. É um traço de mentalidades bem diferentes da humana comum, mais do que de uma pessoa comum, por mais inculta que seja.\n\nIsso dificulta usar mapas, reconhecer brasões, símbolos religiosos ou qualquer comunicação baseada em imagens em vez de palavras.",
@@ -367,7 +367,7 @@
         "Símbolos de perigo pintados numa porta não significam nada para ela.",
         "Alguém precisa descrever em palavras o que uma figura ou símbolo representa, já que a imagem sozinha não comunica nada."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma mentalidade não humana incapaz de processar símbolos; personagens humanos de Adamar entendem imagens normalmente."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "padrao-de-tempo-reduzido": {
       "descricao": "Padrão de Tempo Reduzido faz o personagem agir, pensar e reagir muito mais devagar do que o normal, numa escala tão drástica que ele fica em desvantagem severa em praticamente qualquer situação que exija rapidez, incluindo conversas e combate. É um traço extremo, típico de seres com um metabolismo ou natureza radicalmente diferente da humana, como certas criaturas colossais ou de origem exótica.\n\nDado o quão incapacitante isso é, dificilmente é compatível com um personagem jogável pensado para participar ativamente de aventuras dinâmicas.",
@@ -376,7 +376,7 @@
         "Uma conversa inteira se passa antes que ela consiga formular uma resposta simples.",
         "Ela representa uma ameaça quase estática, mas ainda assim perigosa se alguém tiver paciência de esperar sua reação."
       ],
-      "em_adamar": "Fica fora por ser incapacitante demais para um personagem jogável ativo, e por pressupor uma natureza muito distante da humana comum de Adamar."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "refeicao-demorada": {
       "descricao": "Refeição Demorada significa que o personagem precisa de horas para se alimentar de verdade, bem mais tempo do que uma pessoa comum levaria numa refeição normal. Isso consome tempo de descanso e de viagem que o resto do grupo não perde, e torna comer em segurança um desafio logístico à parte.\n\nÉ um traço racial de certas criaturas com hábitos alimentares muito diferentes dos humanos, cujas refeições seguem o ritmo comum já previsto nas regras padrão.",
@@ -385,7 +385,7 @@
         "Ela precisa de um momento seguro e prolongado só para se alimentar, o que limita quando e onde pode comer.",
         "Viajantes se impacientam esperando o tempo que ela leva só para terminar uma refeição simples."
       ],
-      "em_adamar": "Fica fora porque pressupõe hábitos alimentares raciais não humanos; os personagens de Adamar seguem o ritmo comum de refeição."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "reprogramavel": {
       "descricao": "Reprogramável significa que o personagem pode ter seu comportamento, suas ordens ou até sua personalidade alterados por um processo específico controlado por outra pessoa, geralmente um traço de construtos, autômatos ou seres artificiais criados para obedecer. Isso o torna vulnerável a ter suas prioridades reescritas por quem tem acesso ao método de reprogramação.\n\nDiferente de simples persuasão ou manipulação social, aqui a mudança é direta e mecânica, feita através de um processo técnico específico.",
@@ -403,7 +403,7 @@
         "Ela evita qualquer prato que possa conter o ingrediente que lhe causa essa reação.",
         "Fica visivelmente mal só de estar num cômodo onde a substância está presente."
       ],
-      "em_adamar": "Fica fora porque, no material do site, essa reação está reservada a origens exóticas específicas fora do padrão humano dos personagens jogáveis de Adamar.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "relacionados": [
         "aversao",
         "suscetivel"
@@ -416,7 +416,7 @@
         "Ela busca ativamente fontes de calor para recuperar a energia perdida no frio.",
         "Um oponente esperto escolhe lutar contra ela justamente num dia gelado, sabendo da desvantagem."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma fisiologia racial de sangue frio; personagens humanos de Adamar regulam a própria temperatura normalmente."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "sem-pernas": {
       "descricao": "Sem Pernas significa que a espécie do personagem simplesmente não tem pernas: ele se move de outra forma completamente diferente de andar ou correr, como rastejar, flutuar, nadar ou deslizar, dependendo da natureza da criatura. Isso muda como ele interage com terreno, obstáculos e qualquer situação que dependa de se locomover como um bípede.\n\nÉ um traço racial, não uma lesão: a criatura nunca teve pernas para começo de conversa, ao contrário de alguém que perdeu o uso delas por ferimento.",
@@ -425,7 +425,7 @@
         "Ela tem dificuldade com terrenos ou obstáculos pensados para quem anda sobre pernas.",
         "Sua forma de se locomover surpreende quem nunca viu uma criatura assim antes."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma anatomia racial sem pernas; Adamar só tem personagens humanos de anatomia humana comum."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "sem-recuperacao": {
       "descricao": "Sem Recuperação significa que o personagem não se cura naturalmente com o tempo: ferimentos não fecham sozinhos como fechariam para uma pessoa comum, e ele depende inteiramente de cura externa, mágica, tecnológica ou de outra natureza, para se recuperar de qualquer dano. A versão mais severa impede até esse tipo de reparo por certos meios.\n\nÉ um traço de seres artificiais, mortos-vivos ou construtos, cuja cura natural simplesmente não existe do jeito que existe para um corpo vivo comum.",
@@ -434,7 +434,7 @@
         "A criatura depende inteiramente de reparo externo para voltar a funcionar bem.",
         "Sem acesso a quem possa repará-la, ela carrega os danos acumulados indefinidamente."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma natureza sem cura natural própria de construtos ou mortos-vivos, incompatível com personagens humanos jogáveis."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "semiereto": {
       "descricao": "Semiereto descreve uma postura curvada, não totalmente ereta, parecida com a de certos primatas: o personagem não fica completamente em pé como um humano comum, o que muda sutilmente sua forma de se mover e sua presença física.\n\nÉ um traço racial de espécies com postura intermediária entre bípede e quadrúpede, algo fora da anatomia humana padrão.",
@@ -443,7 +443,7 @@
         "Observadores notam de imediato que ela não anda do jeito ereto que uma pessoa comum andaria.",
         "Certas passagens estreitas são, na verdade, mais fáceis para ela por causa dessa postura."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma anatomia racial não totalmente ereta; os personagens humanos de Adamar têm postura humana padrão."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "sonolento": {
       "descricao": "Sonolento, como traço racial, significa que a espécie do personagem precisa de muito mais sono que um humano, por natureza e não por condição individual: grandes períodos de inatividade são parte normal do ciclo de vida dessa espécie, mais extremo do que a desvantagem individual equivalente.\n\nÉ diferente de Sono Complementar, que é uma condição pessoal: aqui é uma característica da própria raça, algo que Adamar, com elenco só humano, não contempla como opção de personagem.",
@@ -452,7 +452,7 @@
         "Encontrar um representante ativo dela fora desses períodos seria incomum.",
         "Comunidades dessa espécie organizam a vida inteira em torno desses ciclos longos de repouso."
       ],
-      "em_adamar": "Fica fora porque é um traço racial de espécie não humana; Adamar só tem personagens humanos.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "relacionados": [
         "sono-complementar"
       ]
@@ -473,7 +473,7 @@
         "Ela evita certas regiões do mundo simplesmente porque o ambiente ali a prejudica.",
         "Precisa de preparativos especiais antes de se aventurar para fora do ambiente ao qual está adaptada."
       ],
-      "em_adamar": "Fica fora porque pressupõe necessidades ambientais exóticas; os personagens humanos de Adamar têm as necessidades ambientais humanas padrão."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "susceptibilidade-a-magia": {
       "descricao": "Susceptibilidade à Magia faz o personagem ser afetado com mais força do que o normal por efeitos mágicos, sejam eles benéficos ou prejudiciais: feitiços pegam nele com mais intensidade do que pegariam numa pessoa comum, piorando por nível. Isso pode ser resultado de uma origem, uma maldição ou uma sensibilidade natural ao sobrenatural.\n\nComo a magia em Adamar é rara e controlada de perto pelo narrador, faz sentido definir com ele a origem exata dessa sensibilidade e como ela aparece na história.",
@@ -491,7 +491,7 @@
         "Ele precisaria de um dispositivo ou de outra pessoa só para participar fisicamente de uma cena de ação.",
         "A limitação tornaria praticamente qualquer combate corpo a corpo impossível de enfrentar sozinho."
       ],
-      "em_adamar": "Fica fora por ser incapacitante demais para o tipo de personagem jogável ativo que as aventuras de Adamar pressupõem."
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador."
     },
     "vozes-fantasmagoricas": {
       "descricao": "Vozes Fantasmagóricas faz o personagem ouvir vozes que mais ninguém ouve: sussurros, conversas, gritos distantes sem fonte física visível. Pode ser um sinal de sensibilidade ao sobrenatural, uma maldição ou algo pior, e o narrador decide o que essas vozes realmente são e o que elas dizem.\n\nAlém do desconforto óbvio, isso complica a vida social do personagem: quem o ouve falar sozinho ou reagir a algo que ninguém mais percebe tende a desconfiar da sua sanidade.",
@@ -509,7 +509,7 @@
         "Caçadores que descobrem essa fraqueza vão atrás do material certo antes de enfrentá-la.",
         "Ela evita qualquer situação que a exponha ao tipo de dano ao qual é vulnerável."
       ],
-      "em_adamar": "Fica fora porque pressupõe uma origem exótica ou sobrenatural específica, fora do padrão humano dos personagens jogáveis de Adamar.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "relacionados": [
         "fraqueza",
         "suscetivel"

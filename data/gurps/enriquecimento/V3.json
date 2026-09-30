@@ -8,7 +8,7 @@
         "Um exilado usa a presença constante do dom para escapar de perseguidores que dependiam de magia para rastreá-lo.",
         "Um item sagrado antigo carrega esse efeito e apaga rituais menores lançados perto demais dele."
       ],
-      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Se o narrador introduzir isso como poder de uma criatura ou lugar, decida o alcance antes da cena para não travar a mesa no meio de um combate mágico.",
       "relacionados": [
         "ampliador-de-mana",
@@ -22,7 +22,7 @@
         "Uma criatura foge de um combate correndo pelo teto de uma cripta, fora do alcance das armas comuns.",
         "Um caçador usa a vantagem para espiar acampamentos inimigos pendurado sob um teto de pedra."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Ótima para descrever perseguições verticais em ruínas e masmorras; combine com boa iluminação de cena para o jogador visualizar o cenário em três dimensões.",
       "relacionados": [
         "super-escalada"
@@ -35,7 +35,7 @@
         "Um lugar antigo e estranho na floresta deixa os feitiços de um viajante distraidamente mais fortes, para o bem e para o mal.",
         "Um vilão usa esse poder para sustentar um ritual longo que sozinho ele não conseguiria terminar."
       ],
-      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Pense nele como cenário, não como vantagem de personagem: um narrador pode usar a ideia para justificar por que um lugar específico \"puxa\" mais magia.",
       "relacionados": [
         "abafador-de-mana"
@@ -48,7 +48,7 @@
         "Uma criatura de pântano ataca viajantes tanto na margem quanto na água funda, sem perder ritmo na transição.",
         "Um mercador teria dificuldade para cruzar um rio cheio; para essa criatura, é só mais um caminho."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Não confunda com respirar debaixo d'água: são vantagens diferentes, e um narrador pode dar uma sem a outra."
     },
     "apagado": {
@@ -68,7 +68,7 @@
         "Uma criatura de conto de fadas usa esse encanto para atrair viajantes incautos para longe da estrada.",
         "Numa taverna cheia, todos os olhos se voltam para a mesma pessoa sem que ela precise dizer uma palavra."
       ],
-      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Como toda vantagem de fascínio automático, use com moderação para não tirar a autonomia dos outros jogadores por rodadas inteiras."
     },
     "ataque-adicional": {
@@ -78,7 +78,7 @@
         "Um horror de masmorra golpeia com cada um dos seus braços extras na mesma rodada de combate.",
         "Um campeão lendário de história antiga é descrito golpeando \"com a fúria de três guerreiros\" no mesmo instante."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Reserve para monstros e ameaças especiais; um humano comum de Adamar não golpeia mais de uma vez por puro talento marcial — isso é outro tipo de vantagem.",
       "relacionados": [
         "bracos-adicionais",
@@ -92,7 +92,7 @@
         "Algo com tentáculos saído da água prende um pescador pela cintura e o arrasta para o fundo.",
         "Um monstro de masmorra usa o próprio corpo como corda viva para imobilizar quem entra primeiro na sala."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Boa vantagem para desenhar uma criatura de masmorra que ameaça prender e não apenas ferir.",
       "relacionados": [
         "ataque-inato"
@@ -105,7 +105,7 @@
         "Um guardião de pedra dispara estilhaços afiados de dentro do próprio corpo contra quem se aproxima demais.",
         "Uma criatura das profundezas ataca com um ferrão na cauda sem nunca precisar chegar perto o bastante para ser agarrada."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Quando o narrador criar um monstro, é aqui que a maior parte dos \"poderes especiais\" de ataque dele vai morar.",
       "relacionados": [
         "ataque-constritivo",
@@ -120,7 +120,7 @@
         "Um veneno de aranha gigante não mata na hora, mas paralisa a presa para ser arrastada depois.",
         "Um guardião mágico sopra uma névoa que faz os invasores caírem no sono no meio do corredor."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Boa ferramenta para criar ameaças que capturam em vez de matar, útil para ganchos de resgate.",
       "relacionados": [
         "ataque-inato"
@@ -133,7 +133,7 @@
         "Algo percebe que há um coração batendo rápido demais atrás de uma porta trancada.",
         "Uma fera identifica, entre dezenas de vozes de um mercado, a única que está mentindo pelo tremor sutil na fala."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Ótima vantagem para uma criatura-sentinela que \"sabe\" coisas que deveriam ser secretas, sem recorrer a magia."
     },
     "audicao-parabolica": {
@@ -143,7 +143,7 @@
         "Algo no topo de uma torre escuta um plano sendo sussurrado no pátio, bem lá embaixo.",
         "Uma fera percebe passos se aproximando na estrada muito antes de qualquer aviso natural."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Use para criaturas-sentinela que avisam o resto do bando com muita antecedência."
     },
     "audicao-subsonica": {
@@ -153,7 +153,7 @@
         "Algo enorme se aproxima e é \"ouvido\" pelas vibrações do chão muito antes de ser visto.",
         "Uma fera percebe o zumbido baixo de um ritual sendo conduzido longe dali."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Combine com descrições físicas — tremores, vibração no chão — para deixar esse sentido diferente da audição comum na narração."
     },
     "boca-adicional": {
@@ -163,7 +163,7 @@
         "Uma criatura de conto sombrio fala com uma boca e range dentes ameaçadoramente com outra ao mesmo tempo.",
         "Algo descrito por sobreviventes como \"com uma boca a mais do que deveria\" vira lenda de aldeia."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Serve mais para o horror visual da criatura do que para mecânica; combine com uma vantagem de ataque para ter efeito real na mesa."
     },
     "bracos-adicionais": {
@@ -173,7 +173,7 @@
         "Algo consegue escalar uma parede e ainda segurar a presa com os braços que sobram.",
         "Um ídolo animado descrito em lendas antigas carrega quatro braços erguidos em posição de ataque."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Pense em quantos ataques por rodada isso realmente permite antes de dar a vantagem a um monstro — sem Ataque Adicional, os braços extras só ajudam fora de combate.",
       "relacionados": [
         "ataque-adicional"
@@ -186,7 +186,7 @@
         "Uma fera das lendas locais é descrita com duas cabeças que rosnam coisas diferentes para a mesma presa.",
         "Um guardião de pedra esculpido com várias faces sempre parece estar olhando para quem se aproxima."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Ótimo gancho de lenda e horror; use as cabeças extras para dar personalidade e não só números ao monstro."
     },
     "camaleao": {
@@ -196,7 +196,7 @@
         "Algo emboscado numa masmorra passa despercebido encostado numa parede de pedra até o último momento.",
         "Um caçador lendário some de vista assim que para de se mover no meio da vegetação."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Lembre que o efeito cai muito se a criatura se move rápido ou ataca — é uma vantagem de emboscada, não de fuga."
     },
     "caminhar-no-ar": {
@@ -206,7 +206,7 @@
         "Algo atravessa um precipício em linha reta, como se pisasse em pedras que ninguém mais vê.",
         "Um ser lendário desce lentamente do céu, andando, como se uma escada invisível o guiasse ao chão."
       ],
-      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Ótimo efeito visual para uma entidade sobrenatural; descreva o movimento como \"andar\", não como \"flutuar\", para reforçar a diferença de Voo.",
       "relacionados": [
         "caminhar-sobre-liquidos",
@@ -220,7 +220,7 @@
         "Algo cruza um pântano traiçoeiro em linha reta enquanto o resto do grupo tenta achar terreno firme.",
         "Uma aparição noturna é vista \"andando\" sobre um rio, gerando lendas em toda a região."
       ],
-      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Combine com uma boa descrição de cenário — névoa, reflexo, silêncio — para o momento render a cena sobrenatural que merece.",
       "relacionados": [
         "caminhar-no-ar"
@@ -233,7 +233,7 @@
         "Algo consegue \"engolir\" pequenos itens e devolvê-los intactos depois, para confusão de quem revista.",
         "Um monstro de masmorra é encontrado com objetos de vítimas anteriores guardados de um jeito perturbador dentro do próprio corpo."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Boa vantagem para dar um detalhe grotesco e memorável a um monstro sem afetar muito o equilíbrio de combate."
     },
     "cibernetica": {
@@ -253,7 +253,7 @@
         "Algo observa uma emboscada se armar a quilômetros de distância, tempo o bastante para avisar os viajantes por outro meio.",
         "Uma aparição usa esse dom para espionar salões que jamais poderia visitar em pessoa."
       ],
-      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Um bom gancho de narrador quando ele quer que um NPC \"saiba de tudo\" sem explicar como uma rede de espiões chegaria tão longe."
     },
     "consumo-reduzido": {
@@ -263,7 +263,7 @@
         "Uma criatura sobrevive a um cerco prolongado enquanto todos ao redor já sentem fome severa.",
         "Um viajante lendário atravessa um deserto com muito menos água do que qualquer guia recomendaria."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Se usada por um NPC importante, ajuda a explicar como ele sobrevive sozinho em lugares hostis por muito tempo."
     },
     "controle-da-mente": {
@@ -273,7 +273,7 @@
         "Uma aparição sombria faz uma vítima caminhar direto para um perigo mortal sem perceber o que está fazendo.",
         "Um vilão de história antiga é lembrado por virar aliados contra os próprios companheiros com um simples olhar."
       ],
-      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Use com cautela mesmo como poder de vilão: tirar o controle de um personagem jogador por muito tempo tende a frustrar a mesa.",
       "relacionados": [
         "dominacao",
@@ -287,7 +287,7 @@
         "Algo aquece uma caverna gelada o bastante para forçar invasores a tirar os casacos pesados, perdendo proteção contra o frio.",
         "Um espírito do fogo deixa metais próximos incomodamente quentes só de passar perto."
       ],
-      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Lembre que o efeito é de área: pense em quem mais está na cena antes de aplicá-lo."
     },
     "crescimento": {
@@ -297,7 +297,7 @@
         "Uma criatura de floresta cresce até a altura de uma árvore jovem quando encolerizada.",
         "Um gigante de lenda é descrito crescendo ainda mais ao pisar em terreno sagrado para ele."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Pense no espaço da cena: uma criatura muito maior pode simplesmente não caber em certos corredores ou portas.",
       "relacionados": [
         "encolhimento"
@@ -310,7 +310,7 @@
         "Uma criatura das cavernas é reconhecida pelas marcas de mordida profundas deixadas nas vítimas.",
         "Um guarda ferido descreve, apavorado, os dentes da fera que quase o pegou pela garganta."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Simples e barata: útil para dar uma opção de ataque extra a um animal ou monstro sem complicar a ficha."
     },
     "deslocamento-ampliado": {
@@ -320,7 +320,7 @@
         "Uma criatura das planícies atravessa distâncias que levariam dias a pé em questão de horas.",
         "Algo passa correndo tão rápido por uma vila que ninguém consegue descrever direito o que viu."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Boa vantagem para criaturas de perseguição ou fuga; pense em como isso muda a geografia de uma cena de caça."
     },
     "digestao-universal": {
@@ -330,7 +330,7 @@
         "Um sobrevivente de terras arrasadas come raízes e restos que deixariam qualquer outro doente.",
         "Algo devora até mesmo partes normalmente descartadas de uma carcaça sem hesitar."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Boa vantagem de cor para criaturas ou eremitas de sobrevivência extrema; raramente muda o resultado de um combate."
     },
     "dobra": {
@@ -340,7 +340,7 @@
         "Algo se desloca instantaneamente para escapar de um golpe certeiro, reaparecendo alguns passos atrás do atacante.",
         "Um ser lendário atravessa uma muralha inteira sem deixar marca de ter passado por ela."
       ],
-      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Vantagem de alto impacto narrativo: se um NPC tiver isso, pense em como isso muda perseguições e prisões antes da sessão.",
       "relacionados": [
         "interposicao"
@@ -353,7 +353,7 @@
         "Um culto secreto usa esse domínio para garantir que ninguém traído jamais volte a se voltar contra o líder.",
         "Uma vítima resgatada continua, para tristeza dos companheiros, defendendo quem a dominou."
       ],
-      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Bom gerador de ganchos de resgate e redenção — um servo dominado pode ser libertado como parte de uma aventura.",
       "relacionados": [
         "controle-da-mente"
@@ -366,7 +366,7 @@
         "Uma aparição é vista em dois lugares distantes na mesma noite, alimentando rumores contraditórios.",
         "Algo se multiplica para vigiar várias entradas de uma ruína ao mesmo tempo."
       ],
-      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Reserve para uma entidade muito especial; usar em excesso banaliza o impacto de \"existir mais de uma vez\"."
     },
     "durabilidade-sobrenatural": {
@@ -376,7 +376,7 @@
         "Uma criatura das lendas se ergue de novo depois de ferimentos que deveriam ter sido fatais.",
         "Um culto guarda em segredo qual é o único jeito de destruir seu guardião imortal."
       ],
-      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Excelente para um vilão de campanha longa; a fraqueza secreta pode ser o objetivo de toda uma crônica.",
       "relacionados": [
         "impossivel-de-matar"
@@ -389,7 +389,7 @@
         "Algo com membros estranhos ainda assim desarma uma armadilha complexa sem hesitar.",
         "Um artesão de origem incerta produz trabalho fino demais para as mãos rudes que aparenta ter."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Vantagem de nicho: só compensa quando o resto do corpo da criatura é claramente menos ágil que os braços."
     },
     "elasticidade": {
@@ -399,7 +399,7 @@
         "Algo alcança um objeto do outro lado da sala esticando um braço muito além do normal.",
         "Uma aparição escorrega de um agarrão retorcendo o corpo de um jeito que não deveria ser possível."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Boa vantagem visual para criaturas de horror sutil: o corpo errado se movendo do jeito errado incomoda mais do que um monstro óbvio."
     },
     "elo-mental": {
@@ -409,7 +409,7 @@
         "Um caçador e seu companheiro animal trocam impressões simples de perigo sem precisar de palavras.",
         "Um par de guardiões antigos coordena um ataque surpresa sem trocar um único sinal visível."
       ],
-      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Ótimo para um vínculo narrativo entre dois NPCs importantes; deixe claro os limites (distância, o que pode ser sentido) antes de usar em jogo."
     },
     "encolhimento": {
@@ -419,7 +419,7 @@
         "Algo se torna pequeno o bastante para se esgueirar por baixo de uma porta trancada.",
         "Um espírito travesso encolhe para escapar de mãos que tentam agarrá-lo, escorregando por entre os dedos."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Combine com boas descrições de escala — o mundo parece enorme quando você encolhe, e isso vale a pena narrar.",
       "relacionados": [
         "crescimento"
@@ -432,7 +432,7 @@
         "Algo escava um túnel de fuga sob os fundamentos de uma prisão improvisada em uma noite só.",
         "Uma fera desaparece sob o solo assim que percebe que está em desvantagem numa luta."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Pense no tipo de solo da cena antes de usar: pedra maciça e masmorras construídas costumam limitar bastante essa vantagem."
     },
     "escorregadio": {
@@ -442,7 +442,7 @@
         "Algo se solta de uma corda que deveria estar bem amarrada, para frustração de quem a amarrou.",
         "Uma criatura de pântano escapa de um agarrão decisivo bem no momento em que parecia derrotada."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Ótima para uma criatura que o grupo tenta capturar viva: ela sempre parece prestes a escapar."
     },
     "espinhos": {
@@ -452,7 +452,7 @@
         "Uma fera coberta de espinhos afasta predadores maiores só de ser tocada de leve.",
         "Algo se enrosca propositalmente em quem tenta prendê-lo, deixando a lição bem clara."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Boa vantagem defensiva para uma criatura que não quer ser agarrada nem por aliados descuidados."
     },
     "estatica-psiquica": {
@@ -462,7 +462,7 @@
         "Um vidente sente a própria visão embaçar sem explicação sempre que essa pessoa está por perto.",
         "Um culto que depende de telepatia para se coordenar falha justamente quando essa presença aparece na sala."
       ],
-      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Bom contraponto de enredo para poderes mentais de vilão: dá ao grupo uma ferramenta narrativa contra controle da mente.",
       "relacionados": [
         "abafador-de-mana",
@@ -476,7 +476,7 @@
         "Uma linhagem antiga é conhecida por seus membros viverem muito além do esperado para qualquer família comum.",
         "Um guardião de biblioteca esquecida cuidou do lugar por gerações, envelhecendo devagar demais para o resto do mundo perceber."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Boa vantagem para um NPC \"que já viu de tudo\"; use para justificar conhecimento histórico raro.",
       "relacionados": [
         "idade-imutavel"
@@ -499,7 +499,7 @@
         "Uma criatura aquática negocia com um mergulhador sem que nenhuma palavra se perca em bolhas.",
         "Algo canta debaixo d'água uma melodia perfeitamente clara para quem está por perto na superfície."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Combine com Anfíbio ou outra vantagem aquática para uma criatura de água fazer sentido completo."
     },
     "fala-subsonica": {
@@ -509,7 +509,7 @@
         "Um bando de feras se coordena silenciosamente antes de emboscar viajantes.",
         "Algo parece estar em silêncio total, mas na verdade está avisando um companheiro do perigo."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Boa ferramenta narrativa para criaturas que se coordenam \"sem motivo aparente\" aos olhos do grupo.",
       "relacionados": [
         "audicao-subsonica"
@@ -522,7 +522,7 @@
         "Uma criatura avisa companheiros distantes sem que ninguém na sala perceba um único som.",
         "Algo parece mudo para os viajantes, mas está, na verdade, gritando ordens o tempo todo."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Funciona bem em pares com uma criatura que também tenha um sentido de audição igualmente exótico."
     },
     "falar-com-plantas": {
@@ -532,7 +532,7 @@
         "Uma árvore antiga entende, à sua maneira, que algo foi enterrado sob suas raízes há muito tempo.",
         "Um jardim inteiro parece \"incomodado\" com a presença de algo que passou por ali antes do grupo chegar."
       ],
-      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Ótimo recurso de mistério ambiental sem precisar de magia de detecção mais forte; use para pistas atmosféricas, não provas concretas."
     },
     "familiaridade-cultural": {
@@ -551,7 +551,7 @@
         "Algo escapa de uma cela apertando-se pelas frestas da grade como se fosse feito de fumaça negra.",
         "Uma criatura sombria se esconde encostada numa parede, indistinguível da própria sombra do lugar."
       ],
-      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Ótima vantagem para um NPC \"impossível de prender\"; decida com antecedência o que ainda pode feri-lo nessa forma.",
       "relacionados": [
         "insubstancialidade"
@@ -564,7 +564,7 @@
         "Uma criatura das cavernas escala paredes de pedra usando as próprias garras como apoio.",
         "Um horror de masmorra deixa marcas profundas na pedra só de arranhar a parede de raiva."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Vantagem básica e barata para qualquer besta ou monstro que precise de um ataque natural simples.",
       "relacionados": [
         "ataque-adicional",
@@ -578,7 +578,7 @@
         "Uma criatura de couraça pesada usa a própria cabeça como aríete contra portas fracas.",
         "Um cavalo de guerra assustado acerta um coice certeiro em quem tenta se aproximar por trás."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Boa vantagem para dar identidade de combate a animais e monstros sem depender de garras ou presas."
     },
     "habilidades-modulares": {
@@ -588,7 +588,7 @@
         "Uma entidade estranha parece \"trocar\" de talento dependendo de quanto tempo teve para se preparar.",
         "Um artefato vivo se adapta lentamente às necessidades de quem o desperta."
       ],
-      "em_adamar": "O cenário é de Idade Média baixa (NT3); qualquer coisa que dependa de tecnologia avançada ou de registros modernos simplesmente não existe em Adamar.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Vantagem rara e complexa; só vale a pena trazer para a mesa se o narrador tiver um propósito narrativo bem claro para ela."
     },
     "hermafromorfo": {
@@ -598,7 +598,7 @@
         "Uma criatura muda de forma para se passar por outra pessoa em uma investigação.",
         "Um espírito da natureza não vê diferença alguma entre suas duas formas."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Vantagem de identidade e interpretação, quase sem efeito mecânico; use para dar profundidade a um NPC, não a combates."
     },
     "idade-imutavel": {
@@ -608,7 +608,7 @@
         "Alguém que deveria ser um ancião ainda se move como um jovem, para espanto de quem o conheceu há décadas.",
         "Uma pintura antiga retrata alguém que parece não ter mudado nem um pouco desde então."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Ótima para um NPC misterioso e antigo; deixe que os outros personagens percebam isso aos poucos, não de uma vez.",
       "relacionados": [
         "expectativa-de-vida-ampliada"
@@ -621,7 +621,7 @@
         "Alguém sente, sem saber explicar, que uma sequência de mortes recentes não é acaso.",
         "Um sábio esquecido insiste que um pequeno detalhe é sinal de algo muito maior por vir."
       ],
-      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Boa vantagem para um NPC oráculo-like; use com moderação para não entregar respostas fáceis demais ao mistério da campanha."
     },
     "impossivel-de-matar": {
@@ -631,7 +631,7 @@
         "Uma fera lendária sobrevive a ferimentos que despedaçariam qualquer animal comum.",
         "Um vilão recorrente sempre parece escapar da morte por um triz, para frustração do grupo."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Use com moderação — sobreviver demais tira o peso das vitórias do grupo.",
       "relacionados": [
         "durabilidade-sobrenatural"
@@ -644,7 +644,7 @@
         "Algo enxerga claramente o contorno de um viajante escondido atrás de uma rocha fria.",
         "Uma fera nota o calor residual de pegadas recentes na neve, seguindo o rastro sem precisar de luz."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Lembre-se que essa visão falha contra criaturas de temperatura corporal igual ao ambiente, como mortos-vivos frios ou constructos de pedra."
     },
     "insubstancialidade": {
@@ -654,7 +654,7 @@
         "Algo escapa de uma cela de pedra maciça sem deixar vestígio de como saiu.",
         "Um espírito perturbado passa direto por uma parede na frente de testemunhas apavoradas."
       ],
-      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Excelente para um fantasma ou espírito; combine com uma fraqueza clara para que a criatura ainda seja derrotável.",
       "relacionados": [
         "forma-de-sombras"
@@ -667,7 +667,7 @@
         "Algo surge de um ponto que não deveria existir no meio de uma sala fechada.",
         "Uma criatura escapa de uma emboscada desaparecendo por uma fenda que se fecha logo depois."
       ],
-      "em_adamar": "Magia em Adamar é rara, perigosa e fica sob controle do narrador; um poder sobrenatural desse tamanho não pode ser escolhido livremente na criação de personagem.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Se aparecer em jogo, deixe claro os limites de quando e onde a criatura pode fazer essa travessia, para não virar uma fuga garantida sempre.",
       "relacionados": [
         "dobra"
@@ -680,7 +680,7 @@
         "Algo se move por um corredor guardado sem ser visto, ainda que os passos ecoem levemente.",
         "Uma criatura ataca de surpresa vindo de um ponto onde ninguém via absolutamente nada."
       ],
-      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Lembre a todos que invisível não é indetectável: sons, cheiro e pegadas ainda contam a história."
     },
     "inercia-temporal": {
@@ -690,7 +690,7 @@
         "Uma entidade nota que os outros esqueceram um evento que ela recorda com perfeita clareza.",
         "Alguém insiste, para a confusão geral, que uma pessoa desaparecida da história ainda existiu de verdade."
       ],
-      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Vantagem de nicho muito específico; só faz sentido se a campanha lidar com viagem no tempo ou realidades alteradas."
     },
     "lacrado": {
@@ -700,7 +700,7 @@
         "Algo mergulha em água contaminada sem se preocupar em ser envenenado pelo contato.",
         "Um guardião de masmorra ignora completamente as armadilhas de gás espalhadas pelos corredores."
       ],
-      "em_adamar": "Adamar só tem humanos comuns; corpos e sentidos fora do padrão humano são coisa de monstro ou fenômeno raro, não de vantagem de personagem jogador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Vantagem específica de defesa; útil principalmente contra armadilhas de gás e ambientes tóxicos."
     },
     "leitura-da-mente": {
@@ -710,7 +710,7 @@
         "Uma entidade sombria extrai de um prisioneiro a localização exata de um esconderijo secreto.",
         "Algo percebe, sem que ninguém diga uma palavra, que um dos viajantes está escondendo algo grave."
       ],
-      "em_adamar": "Poderes mentais desse alcance são sobrenaturais demais para um humano comum de Adamar; se aparecerem, são de uma criatura ou artefato definido pelo narrador.",
+      "em_adamar": "Existe em Adamar, mas não está liberado na criação de personagem: é coisa de forasteiros, criaturas, magia, bênçãos ou maldições. Um personagem pode ganhar ao longo do jogo (por magia, transformação, pacto ou encontro com o sobrenatural), sempre combinado com o narrador.",
       "dica_mesa": "Use com cuidado quando envolver personagens jogadores: avise antes se pretende ler pensamentos deles em jogo.",
       "relacionados": [
         "controle-da-mente",

@@ -2811,3 +2811,9 @@ body.modo-jogando .fx-conteudo > .lede { display: none; }
 /* sistema de regras da ficha */
 .selo-sistema { justify-self: start; padding: 0.05rem 0.45rem; font-family: var(--f-titulo); font-size: 0.68rem; letter-spacing: 0.06em; color: var(--ouro-claro); border: 1px solid var(--ouro-linha); border-radius: 999px; }
 .selo-sistema:empty { display: none; }
+/* bloqueado na criação: existe no mundo, só se ganha em jogo */
+.pericia.st-bloqueado, .item-card.st-bloqueado { border-left-color: #7a5fa0; }
+.st-bloqueado .pericia-status, .pericia-status.st-bloqueado, .st-bloqueado .item-card-status { color: #b49bd6; }
+.item-dialogo.st-bloqueado { border-top-color: #7a5fa0; }
+.marca-bloqueado { margin-left: 0.3rem; font-size: 0.8rem; color: #b49bd6; }
+.app-item.st-bloqueado { border-left-color: #7a5fa0; }

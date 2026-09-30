@@ -48,7 +48,7 @@ export function montarJsAdamarRpg(dif) {
     'window.ADAMAR_RPG_DIF = ' + JSON.stringify(dif) + ';\n';
 }
 
-const ADAMAR = ['livre', 'narrador', 'nao'];
+const ADAMAR = ['livre', 'narrador', 'bloqueado', 'nao'];
 const TIPOS = ['mental', 'fisica', 'social', 'exotica', 'sobrenatural'];
 const CATEGORIAS = {
   vantagens: ['vantagem', 'qualidade'],

@@ -335,6 +335,21 @@ if (comNumeros) {
     assert.ok(sit.some((x) => x.alvos.some((a) => a.startsWith('pericia:'))));
   }
 }
+// bloqueado na criação: personagem novo não pode; quem já jogou pode ter ganhado (vira aviso)
+{
+  const novo = c.fichaNova();
+  novo.nome = 'Alado';
+  novo.tracos.push({ id: 'voo' });
+  assert.match(erros(c.resumir(novo)), /Voo: bloqueado na criação/);
+  novo.em_jogo = { pontos: 30, historico: [{ data: '2026-09-30', pontos: 30, motivo: 'bênção' }] };
+  const r2 = c.resumir(novo);
+  assert.doesNotMatch(erros(r2), /Voo/);
+  assert.match(avisos(r2), /Voo: ganho em jogo/);
+  // tecnologia continua não existindo
+  const tec = c.fichaNova();
+  tec.pericias.push({ id: 'armas-de-fogo', pontos: 1 });
+  assert.match(erros(c.resumir(tec)), /não existe em Adamar/);
+}
 // carregar mantém o estado em jogo
 assert.equal(c.carregar({ em_jogo: { pv: 4 } }).em_jogo.pv, 4);
 console.log('criador-ficha ok' + (comNumeros ? '' : ' (sem números de combate)'));

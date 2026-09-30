@@ -443,7 +443,7 @@
         "sobrenatural"
       ],
       "custo": "-5",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Seu ataque transmite doença.",
       "ref": {
         "livro": "modulo-basico",
@@ -464,7 +464,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Sob estresse, volta a um estado bestial ancestral.",
       "ref": {
         "livro": "modulo-basico",
@@ -594,7 +594,7 @@
         "exotica"
       ],
       "custo": "-10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Seu corpo se desfaz com o tempo.",
       "ref": {
         "livro": "modulo-basico",
@@ -814,7 +814,7 @@
         "exotica"
       ],
       "custo": "-10 ou -15",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Pensa como um animal.",
       "ref": {
         "livro": "modulo-basico",
@@ -837,7 +837,7 @@
         "fisica"
       ],
       "custo": "-5",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Remédios e venenos agem diferente.",
       "ref": {
         "livro": "modulo-basico",
@@ -930,7 +930,7 @@
         "sobrenatural"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Sinais sobrenaturais: sem reflexo, sem sombra.",
       "ref": {
         "livro": "modulo-basico",
@@ -1301,7 +1301,7 @@
         "fisica"
       ],
       "custo": "-10/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Come muito mais que um humano.",
       "ref": {
         "livro": "modulo-basico",
@@ -2631,7 +2631,7 @@
         "sobrenatural"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Perde vida todo dia sem uma substância.",
       "ref": {
         "livro": "modulo-basico",
@@ -2870,7 +2870,7 @@
         "fisica"
       ],
       "custo": "-20",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não tem tato.",
       "ref": {
         "livro": "modulo-basico",
@@ -3052,7 +3052,7 @@
         "exotica"
       ],
       "custo": "-10/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Vive menos que um humano.",
       "ref": {
         "livro": "modulo-basico",
@@ -3435,7 +3435,7 @@
         "fisica"
       ],
       "custo": "-20",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Preso na forma de sombra.",
       "ref": {
         "livro": "modulo-basico",
@@ -3456,7 +3456,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Corpo que se quebra ou queima facilmente.",
       "ref": {
         "livro": "modulo-basico",
@@ -3496,7 +3496,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Sofre dano só de estar perto de algo.",
       "ref": {
         "livro": "modulo-basico",
@@ -3838,7 +3838,7 @@
         "exotica"
       ],
       "custo": "-10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Anda sobre quatro patas.",
       "ref": {
         "livro": "modulo-basico",
@@ -4001,7 +4001,7 @@
         "mental"
       ],
       "custo": "-30",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não aprende nada novo.",
       "ref": {
         "livro": "modulo-basico",
@@ -4070,7 +4070,7 @@
         "fisica"
       ],
       "custo": "-1",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Afunda na água, sempre.",
       "ref": {
         "livro": "modulo-basico",
@@ -4578,7 +4578,7 @@
         "exotica"
       ],
       "custo": "-20",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não tem coluna.",
       "ref": {
         "livro": "modulo-basico",
@@ -4775,7 +4775,7 @@
         "sobrenatural"
       ],
       "custo": "-75",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Anti-Super Sorte: tudo dá errado sempre.",
       "ref": {
         "livro": "modulo-basico",
@@ -4908,7 +4908,7 @@
         "exotica"
       ],
       "custo": "-30 ou -50",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não tem mãos.",
       "ref": {
         "livro": "modulo-basico",
@@ -5111,7 +5111,7 @@
         "mental"
       ],
       "custo": "-40",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não tem iniciativa própria.",
       "ref": {
         "livro": "modulo-basico",
@@ -5160,7 +5160,7 @@
         "exotica"
       ],
       "custo": "-2",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Mandíbula fraca.",
       "ref": {
         "livro": "modulo-basico",
@@ -5208,7 +5208,7 @@
         "fisica"
       ],
       "custo": "-5/nível",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Pegada fraca: dificuldade para segurar com firmeza.",
       "ref": {
         "livro": "modulo-basico",
@@ -5317,7 +5317,7 @@
         "exotica"
       ],
       "custo": "-20",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Só consegue ficar ativo à noite.",
       "ref": {
         "livro": "modulo-basico",
@@ -5365,7 +5365,7 @@
         "mental"
       ],
       "custo": "-10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não entende símbolos e imagens.",
       "ref": {
         "livro": "modulo-basico",
@@ -5601,7 +5601,7 @@
         "exotica"
       ],
       "custo": "-100",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Age muito mais devagar.",
       "ref": {
         "livro": "modulo-basico",
@@ -6009,7 +6009,7 @@
         "exotica"
       ],
       "custo": "-10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Passa horas comendo.",
       "ref": {
         "livro": "modulo-basico",
@@ -6051,7 +6051,7 @@
         "sobrenatural"
       ],
       "custo": "-5 a -15",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Reação física a uma substância.",
       "ref": {
         "livro": "modulo-basico",
@@ -6186,7 +6186,7 @@
         "fisica"
       ],
       "custo": "-5 ou -10",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Fica lento no frio como um réptil.",
       "ref": {
         "livro": "modulo-basico",
@@ -6351,7 +6351,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "A raça não tem pernas.",
       "ref": {
         "livro": "modulo-basico",
@@ -6371,7 +6371,7 @@
         "exotica"
       ],
       "custo": "-20 ou -30",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não se cura naturalmente.",
       "ref": {
         "livro": "modulo-basico",
@@ -6448,7 +6448,7 @@
         "exotica"
       ],
       "custo": "-5",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Postura meio curvada, como um macaco.",
       "ref": {
         "livro": "modulo-basico",
@@ -6680,7 +6680,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Dorme muito mais que um humano: característica racial.",
       "ref": {
         "livro": "modulo-basico",
@@ -6775,7 +6775,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Precisa de condições especiais para viver.",
       "ref": {
         "livro": "modulo-basico",
@@ -6998,7 +6998,7 @@
         "fisica"
       ],
       "custo": "-80",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Não se move.",
       "ref": {
         "livro": "modulo-basico",
@@ -7360,7 +7360,7 @@
         "exotica"
       ],
       "custo": "Variável",
-      "adamar": "nao",
+      "adamar": "bloqueado",
       "resumo": "Sofre dano extra de algo.",
       "ref": {
         "livro": "modulo-basico",

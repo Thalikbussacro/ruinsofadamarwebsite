@@ -1,0 +1,21 @@
+{
+  "descricao": "Biomas genéricos de Roestia para o protótipo (o cânone lista geleiras, desertos, florestas tropicais, estepes, arquipélagos e montanhas; as regiões do mapa do jogo ainda são decisão do dono). Temperaturas em °C por estação: [primavera, verão, outono, inverno].",
+  "proposta": true,
+  "biomas": [
+    { "id": "floresta-temperada", "nome": "Floresta temperada", "temperatura": [12, 22, 11, -2], "variacao_dia": 8, "chuva": [0.35, 0.2, 0.4, 0.3], "vento": 0.3, "recursos": ["lenha", "gravetos", "agua-suja", "carne-crua", "pedra"] },
+    { "id": "estepe", "nome": "Estepe", "temperatura": [10, 26, 9, -8], "variacao_dia": 14, "chuva": [0.2, 0.1, 0.2, 0.15], "vento": 0.7, "recursos": ["gravetos", "carne-crua", "pedra"] },
+    { "id": "montanha", "nome": "Montanha", "temperatura": [2, 12, 1, -14], "variacao_dia": 10, "chuva": [0.35, 0.3, 0.35, 0.4], "vento": 0.8, "recursos": ["pedra", "gravetos", "agua-suja"] },
+    { "id": "geleira", "nome": "Geleira", "temperatura": [-12, -2, -14, -30], "variacao_dia": 6, "chuva": [0.3, 0.25, 0.35, 0.4], "vento": 0.9, "recursos": ["agua-suja"] },
+    { "id": "deserto", "nome": "Deserto", "temperatura": [24, 38, 22, 10], "variacao_dia": 22, "chuva": [0.03, 0.01, 0.03, 0.05], "vento": 0.5, "recursos": ["pedra"] },
+    { "id": "floresta-tropical", "nome": "Floresta tropical", "temperatura": [26, 28, 26, 24], "variacao_dia": 6, "chuva": [0.6, 0.45, 0.6, 0.5], "vento": 0.2, "recursos": ["lenha", "gravetos", "agua-suja", "carne-crua"] },
+    { "id": "costa", "nome": "Costa e arquipélago", "temperatura": [14, 21, 15, 6], "variacao_dia": 5, "chuva": [0.4, 0.25, 0.45, 0.5], "vento": 0.6, "recursos": ["agua-suja", "carne-crua", "gravetos"] },
+    { "id": "ruina", "nome": "Ruína antiga", "temperatura": [10, 18, 9, 0], "variacao_dia": 4, "chuva": [0.3, 0.2, 0.35, 0.3], "vento": 0.2, "recursos": ["pedra"], "barreira": 0.4, "nota": "barreira mais fina que o normal (Entremundos, Masmorras)" }
+  ],
+  "abrigo": {
+    "ao-ar-livre": { "nome": "Ao ar livre", "temperatura": 0, "chuva": 1, "vento": 1 },
+    "barraca": { "nome": "Barraca ou lona", "temperatura": 3, "chuva": 0.2, "vento": 0.3 },
+    "casa": { "nome": "Dentro de casa", "temperatura": 8, "chuva": 0, "vento": 0 },
+    "fogueira": { "nome": "Junto à fogueira", "temperatura": 14, "chuva": 1, "vento": 0.8 },
+    "casa-com-fogo": { "nome": "Casa com lareira acesa", "temperatura": 18, "chuva": 0, "vento": 0 }
+  }
+}

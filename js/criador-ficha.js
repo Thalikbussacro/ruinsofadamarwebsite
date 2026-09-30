@@ -38,6 +38,11 @@
     G.vantagens.concat(G.desvantagens).forEach(function (t) { TRACO[t.id] = t; });
     (R.talentos || []).forEach(function (t) { TALENTO[t.id] = t; });
     (G.equipamento || []).forEach(function (i) { ITEM[i.id] = i; });
+    // materiais e comida do jogo (data/jogo/materiais.json) entram como itens comuns, sem preço
+    ((G.jogo && G.jogo.materiais && G.jogo.materiais.itens) || []).forEach(function (m) {
+      if (ITEM[m.id]) return;
+      ITEM[m.id] = Object.assign({ adamar: 'livre', categoria: 'equipamento', nt: 0 }, m, { peso: { kg: m.peso_kg || 0 }, grade: Object.assign({ porte: 'grade' }, m.grade), material_jogo: true });
+    });
     var LIMITE_PECULIARIDADES = 5;
 
     function nomeVariante(t, opcao) {
@@ -588,7 +593,7 @@
         else if (it.adamar === 'narrador') aviso('equipamento', it.nome + ': só com o narrador.');
         if (!(sel.quantidade >= 1)) erro('equipamento', (it ? it.nome : sel.id) + ': quantidade inválida.');
         var qualidade = it ? qualidadeDe(sel, it) : null;
-        var preco = it && it.preco ? Math.round(it.preco.valor * (sel.quantidade || 1) * (qualidade ? qualidade.preco : 1) * 100) / 100 : null;
+        var preco = it && it.preco && !sel.criado ? Math.round(it.preco.valor * (sel.quantidade || 1) * (qualidade ? qualidade.preco : 1) * 100) / 100 : null;
         if (preco != null) gasto += preco;
         return { sel: sel, item: it, preco: preco, qualidade: qualidade, local: localEfetivo(sel, ficha.equipamento), atual: quantidadeAtual(sel, ficha) };
       });
@@ -835,6 +840,8 @@
       lugaresPossiveis: function (id) { return lugaresPossiveis(ITEM[id]); },
       LUGARES: LUGARES,
       qualidadeDe: qualidadeDe,
+      item: function (id) { return ITEM[id] || null; },
+      classeDoItem: function (id) { return classeDoItem(ITEM[id]); },
       textoFicha: textoFicha,
       custoDoTraco: custoDoTraco,
       efeitosDoTraco: efeitosDoTraco,

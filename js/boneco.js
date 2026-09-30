@@ -196,7 +196,10 @@
   }
 
   // ---------- o desenho inteiro ----------
-  function figura(equipados) {
+  // feridas: { parte: gravidade } — a parte ferida fica avermelhada (clicável pela ficha, via data-parte)
+  var PARTE_DO_DESENHO = { perna: 'perna', pe: 'pe', braco: 'braco', mao: 'mao' };
+  function figura(equipados, feridas) {
+    feridas = feridas || {};
     var svg = s('svg', { viewBox: '0 -20 240 440', class: 'boneco-corpo', role: 'img', 'aria-label': 'O personagem com o que veste e leva' });
     padroes(svg);
     function doLugar(l) { return equipados.filter(function (x) { return x.sel.lugar === l; }); }
@@ -220,11 +223,15 @@
 
     // 2. o corpo
     var corpo = s('g', { class: 'boneco-pele' }, svg);
+    function parte(d, id) {
+      var n = s('path', { d: d, 'data-parte': id }, corpo);
+      if (feridas[id]) n.setAttribute('class', 'ferido-' + feridas[id]);
+    }
     ['perna', 'pe', 'braco', 'mao'].forEach(function (p) {
-      s('path', { d: CORPO[p] }, corpo);
-      s('path', { d: espelhar(CORPO[p]) }, corpo);
+      parte(CORPO[p], PARTE_DO_DESENHO[p] + '_d');
+      parte(espelhar(CORPO[p]), PARTE_DO_DESENHO[p] + '_e');
     });
-    ['quadril', 'tronco', 'pescoco', 'cabeca'].forEach(function (p) { s('path', { d: CORPO[p] }, corpo); });
+    [['quadril', 'tronco'], ['tronco', 'tronco'], ['pescoco', 'pescoco'], ['cabeca', 'cabeca']].forEach(function (p) { parte(CORPO[p[0]], p[1]); });
 
     // 3. roupas e armaduras (da mais leve para a mais pesada, que fica por cima)
     var roupas = s('g', {}, svg);
@@ -361,7 +368,7 @@
     dir.appendChild(cartao('costas', 'Costas', em('costas'), opcoes, podemIr('costas')));
     b.appendChild(esq);
     var meio = el('div', 'boneco-meio');
-    meio.appendChild(figura(equipados));
+    meio.appendChild(figura(equipados, opcoes.feridas));
     var vestido = em('corpo');
     if (vestido.length) meio.appendChild(el('p', 'boneco-vestido', 'Vestido: ' + vestido.map(function (x) { return x.item.nome; }).join(', ')));
     b.appendChild(meio);
@@ -369,5 +376,5 @@
     return b;
   }
 
-  window.Boneco = { desenhar: desenhar, formaDoItem: formaDoItem };
+  window.Boneco = { desenhar: desenhar, formaDoItem: formaDoItem, figura: figura };
 })();

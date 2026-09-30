@@ -2756,3 +2756,55 @@ body.modo-jogando .fx-conteudo > .lede { display: none; }
   .jg-slot { width: 4rem; height: 4rem; }
 }
 @media print { .fx-jogar, .fx-jogando { display: none !important; } }
+/* simulação no Jogando: tempo e corpo, saúde, inventário em grade, receitas */
+.jg-sim select, .jg-ferir select { padding: 0.2rem 0.3rem; font-family: var(--f-corpo); font-size: 0.88rem; color: var(--osso-claro); background: rgba(0, 0, 0, 0.45); border: 1px solid var(--ouro-linha); }
+.jg-sim select option, .jg-ferir select option { background: var(--pedra); }
+.jg-relogio { margin: 0; font-family: var(--f-titulo); font-size: 0.95rem; color: var(--osso-claro); }
+.jg-clima { margin: 0.1rem 0 0.4rem; font-size: 0.88rem; color: #c4b89f; }
+.jg-lugar { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.5rem; }
+.jg-lugar select { flex: 1 1 8rem; min-width: 0; }
+.jg-barra-sim { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr) 3.6rem; align-items: center; gap: 0.4rem; margin: 0.2rem 0; font-size: 0.85rem; }
+.jg-barra-rotulo { font-family: var(--f-titulo); font-size: 0.72rem; letter-spacing: 0.06em; color: #a39780; }
+.jg-barra-trilho { position: relative; height: 0.55rem; overflow: hidden; background: rgba(0, 0, 0, 0.5); border: 1px solid var(--ouro-fio); }
+.jg-barra-cheio { position: absolute; inset: 0 auto 0 0; background: linear-gradient(90deg, var(--ouro-escuro), var(--ouro)); }
+.jg-barra-sim.ruim .jg-barra-cheio { background: linear-gradient(90deg, #6e1f1a, #e08a5e); }
+.jg-barra-valor { font-size: 0.8rem; text-align: right; color: var(--osso-claro); }
+.jg-condicoes { display: flex; flex-wrap: wrap; gap: 0.25rem; margin: 0.4rem 0; padding: 0; list-style: none; font-size: 0.8rem; }
+.jg-condicoes li { padding: 0.1rem 0.45rem; color: #f0c7a8; background: rgba(194, 86, 43, 0.2); border: 1px solid rgba(194, 86, 43, 0.5); border-radius: 999px; }
+.jg-aviso { margin: 0.4rem 0; padding: 0.35rem 0.5rem; font-size: 0.88rem; color: var(--osso-claro); background: rgba(110, 31, 26, 0.35); border-left: 3px solid var(--brasa); }
+.jg-passa { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.5rem; }
+.jg-passa select { flex: 1 1 100%; }
+.jg-ferimento { display: grid; gap: 0.2rem; margin: 0 0 0.45rem; padding: 0.4rem 0.5rem; background: rgba(0, 0, 0, 0.3); border-left: 3px solid #b88a4a; }
+.jg-ferimento.grav-2 { border-left-color: #d0703a; } .jg-ferimento.grav-3 { border-left-color: #c0392b; }
+.jg-ferimento strong { font-size: 0.93rem; color: var(--osso-claro); }
+.jg-ferimento span { font-size: 0.83rem; color: #c4b89f; }
+.jg-acao:disabled { opacity: 0.45; cursor: default; }
+.jg-ferir { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.4rem; }
+.jg-ferir select { flex: 1 1 6rem; min-width: 0; }
+.boneco-pele path[data-parte] { cursor: pointer; }
+.boneco-pele path[data-parte]:hover { stroke: var(--ouro-claro); stroke-width: 2; }
+.boneco-pele path.ferido-1 { fill: #6a3a2c; } .boneco-pele path.ferido-2 { fill: #8a3526; } .boneco-pele path.ferido-3 { fill: #a8261c; }
+.boneco-pele path.escolhida { stroke: var(--ouro-claro); stroke-width: 2.5; }
+.jg-inv-cab { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.jg-inv-cab h3 { margin: 0; }
+.jg-grades { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 0.5rem; }
+.jg-grade-caixa { display: grid; gap: 0.3rem; align-content: start; }
+.jg-grade-titulo { font-family: var(--f-titulo); font-size: 0.72rem; letter-spacing: 0.06em; color: #a39780; }
+.jg-grade { display: grid; justify-self: start; width: max-content; gap: 2px; padding: 3px; background-color: rgba(0, 0, 0, 0.45); background-image: linear-gradient(rgba(168, 136, 74, 0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(168, 136, 74, 0.12) 1px, transparent 1px); background-size: calc(2.6rem + 2px) calc(2.6rem + 2px); background-position: 3px 3px; border: 1px solid var(--ouro-linha); }
+.jg-peca { position: relative; display: grid; place-items: center; padding: 0; font: inherit; background: radial-gradient(circle at 50% 40%, rgba(70, 60, 50, 0.95), rgba(26, 22, 18, 0.95)); border: 1px solid var(--ouro-linha); cursor: pointer; }
+.jg-peca:hover { border-color: var(--ouro); }
+.jg-condicao { position: absolute; left: 2px; bottom: 2px; height: 3px; max-width: calc(100% - 4px); background: #a9c47f; }
+.jg-condicao.ruim { background: #e08a5e; }
+.jg-nao-cabe { margin: 0; font-size: 0.8rem; color: #e08a5e; }
+.jg-arma.quebrada { opacity: 0.6; border-top-color: #6e1f1a; }
+.fx-ligada.auto { padding-right: 0.55rem; background: rgba(110, 31, 26, 0.35); border-style: dashed; }
+#jg-receitas h2 { margin: 0 0 0.4rem; color: var(--ouro-claro); }
+.jg-receita { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.15rem 0.6rem; align-items: center; margin: 0 0 0.5rem; padding: 0.5rem 0.6rem; background: rgba(0, 0, 0, 0.3); border: 1px solid var(--ouro-fio); }
+.jg-receita strong { color: var(--osso-claro); }
+.jg-receita span { grid-column: 1; font-size: 0.85rem; color: #c4b89f; }
+.jg-receita .btn { grid-column: 2; grid-row: 1 / span 3; }
+.jg-receita.falta { opacity: 0.75; }
+.jg-falta { color: #e08a5e !important; }
+.jg-nos-bracos { display: flex; flex-wrap: wrap; gap: 3px; }
+.jg-solto { width: 2.6rem; height: 2.6rem; border-color: #6e1f1a; }
+.jg-arma-cond { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: #c4b89f; }

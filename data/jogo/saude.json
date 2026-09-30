@@ -1,0 +1,48 @@
+{
+  "descricao": "Saúde por parte do corpo (sistema próprio do jogo, números em proposta). Cada ferimento sangra, infecciona e cura com o tempo; tratar exige o item certo.",
+  "proposta": true,
+  "partes": [
+    { "id": "cabeca", "nome": "Cabeça", "vital": true },
+    { "id": "pescoco", "nome": "Pescoço", "vital": true },
+    { "id": "tronco", "nome": "Tronco", "vital": true },
+    { "id": "braco_d", "nome": "Braço direito", "efeito": "destreza" },
+    { "id": "braco_e", "nome": "Braço esquerdo", "efeito": "destreza" },
+    { "id": "mao_d", "nome": "Mão direita", "efeito": "destreza" },
+    { "id": "mao_e", "nome": "Mão esquerda", "efeito": "destreza" },
+    { "id": "perna_d", "nome": "Perna direita", "efeito": "movimento" },
+    { "id": "perna_e", "nome": "Perna esquerda", "efeito": "movimento" },
+    { "id": "pe_d", "nome": "Pé direito", "efeito": "movimento" },
+    { "id": "pe_e", "nome": "Pé esquerdo", "efeito": "movimento" }
+  ],
+  "gravidades": [
+    { "nivel": 1, "nome": "leve", "dor": 5, "cura_horas": 48 },
+    { "nivel": 2, "nome": "sério", "dor": 15, "cura_horas": 168 },
+    { "nivel": 3, "nome": "grave", "dor": 30, "cura_horas": 504 }
+  ],
+  "tipos": {
+    "corte": { "nome": "Corte", "sangra": [2, 5, 10], "infeccao_por_hora": 1.5, "trata": ["bandagem", "sutura"] },
+    "perfuracao": { "nome": "Perfuração", "sangra": [1, 4, 8], "infeccao_por_hora": 2.5, "trata": ["bandagem", "sutura"] },
+    "contusao": { "nome": "Contusão", "sangra": [0, 0, 1], "infeccao_por_hora": 0, "trata": ["repouso"] },
+    "queimadura": { "nome": "Queimadura", "sangra": [0, 0, 0], "infeccao_por_hora": 2, "trata": ["bandagem"] },
+    "fratura": { "nome": "Fratura", "sangra": [0, 1, 3], "infeccao_por_hora": 0, "trata": ["tala"] },
+    "mordida": { "nome": "Mordida", "sangra": [2, 4, 8], "infeccao_por_hora": 4, "trata": ["bandagem", "sutura"] }
+  },
+  "tratamentos": {
+    "limpar": { "nome": "Limpar a ferida", "itens": ["agua-fervida", "alcool"], "efeito": "a infecção para de crescer e cai 20" },
+    "bandagem": { "nome": "Enfaixar", "itens": ["bandagens", "bandagem-improvisada", "kit-de-primeiros-socorros"], "pericia": "primeiros-socorros", "para_sangue_ate": 2, "efeito": "para o sangramento de ferimentos leves e sérios" },
+    "sutura": { "nome": "Costurar (sutura)", "itens": ["kit-de-primeiros-socorros", "linha-e-agulha"], "pericia": "primeiros-socorros", "modificador": -2, "para_sangue_ate": 3, "efeito": "para qualquer sangramento e acelera a cura" },
+    "tala": { "nome": "Imobilizar (tala)", "itens": ["tala"], "pericia": "primeiros-socorros", "efeito": "fratura imobilizada: para de piorar e começa a colar" }
+  },
+  "sangue": {
+    "maximo": 100,
+    "recupera_por_hora": 0.5,
+    "faixas": [
+      { "abaixo": 80, "nome": "pálido", "modificador": -1 },
+      { "abaixo": 60, "nome": "fraco pela perda de sangue", "modificador": -3 },
+      { "abaixo": 40, "nome": "desmaiando", "modificador": -6 },
+      { "abaixo": 20, "nome": "morrendo", "modificador": -10 }
+    ]
+  },
+  "infeccao": { "febre_a_partir": 50, "grave_a_partir": 80, "cai_por_hora_tratada": 1, "sem_tratar_multiplica": 1 },
+  "dor": { "faixas": [ { "a_partir": 15, "modificador": -1 }, { "a_partir": 30, "modificador": -2 }, { "a_partir": 60, "modificador": -4 } ] }
+}

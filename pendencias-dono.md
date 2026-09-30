@@ -33,6 +33,14 @@ Os 1097 itens ganharam "Mais sobre" (descrição, exemplos na mesa, Adamar, dica
 - [ ] **Texto do livro para consulta pessoal:** a proteção do Claude Code não me deixa extrair texto do PDF, nem para uso local. Se quiser, dá para você mesmo extrair para `data-local/` (fora do git) e eu faço o site mostrar esse texto só quando ele existir na sua máquina, do mesmo jeito que os números de combate.
 - [ ] **Itens sem vínculo com o GCS** (48): ataques naturais, armaduras de cavalo e alguns traços sem equivalente direto. Se souber o nome em inglês de algum, é só me dizer.
 
+## Jogo (ver `docs/jogo/design.md`)
+
+- [ ] **Ler o documento de design** e corrigir o que não for o que você imagina.
+- [ ] **Decisões em aberto:** região de Roestia do primeiro mapa e seus biomas; quais forasteiros existem e como agem; se a magia entra no primeiro jogo; tempo real ou turnos no solo; nome do jogo.
+- [ ] **Sistema de regras próprio** antes de distribuir o jogo (licença do GURPS): nomes, números e tabelas próprios.
+- [ ] **Números da simulação** (fome, sede, frio, sangramento, infecção, cura, desgaste, receitas) são proposta minha em `data/jogo/*.json`; ajuste jogando no modo Jogando.
+- [ ] **Calendário:** usei um ano de 360 dias em quatro estações de 90 como proposta; o cânone não fixa um.
+
 ## Ideias para a próxima rodada
 
 - **Modo mestre:** uma tela com vários personagens ao mesmo tempo (PV, PF, defesas) e a ordem de ação da luta.

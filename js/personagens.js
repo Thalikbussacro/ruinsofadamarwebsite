@@ -185,6 +185,7 @@
       resultado: resultado,
       classe: a.critico ? 'critico' : a.falha_critica ? 'falha-critica' : a.sucesso ? 'sucesso' : 'falha'
     });
+    return a;
   }
   function rolarDano(rotulo, expr, alvos) {
     var r = calc.rolarDados(expr, sorteio);
@@ -225,6 +226,8 @@
     var alvos = (alvo.getAttribute('data-alvos') || '').split(' ').filter(Boolean);
     if (alvo.getAttribute('data-rolar') === 'teste') rolarTeste(alvo.getAttribute('data-rotulo'), parseInt(v, 10), alvos);
     else rolarDano(alvo.getAttribute('data-rotulo'), v, alvos);
+    // arma usada (atacar, aparar, bloquear): pode perder condição
+    if (alvo.getAttribute('data-uid')) document.dispatchEvent(new CustomEvent('adamar:usou', { detail: { uid: alvo.getAttribute('data-uid') } }));
   }
   document.addEventListener('click', aoRolar);
   document.addEventListener('keydown', aoRolar);
@@ -917,6 +920,7 @@
       return;
     }
     var semUid = (salvo.equipamento || []).some(function (x) { return !x.uid; });
+    var SIM = window.criarSimulacao && G.jogo && G.jogo.saude ? window.criarSimulacao(G.jogo) : null;
     var f, r, v, comPericia, vantagens, desvantagens, talentos, qualidades, peculiaridades, itens;
     function recalcular() {
       salvo = arquivo.obter(idFicha) || salvo;
@@ -934,6 +938,12 @@
       itens = r.equipamento.filter(function (x) { return x.item; });
       var ligadas = (f.em_jogo && f.em_jogo.situacoes) || [];
       situacoesLigadas = r.situacoes.filter(function (x) { return ligadas.indexOf(x.chave) !== -1; });
+      // fome, sede, frio, dor, ferimentos…: valem sozinhas enquanto durarem
+      if (SIM && f.em_jogo && f.em_jogo.sim) {
+        SIM.condicoes(f.em_jogo.sim).forEach(function (c) {
+          situacoesLigadas.push({ chave: 'sim:' + c.origem, origem: c.origem + ' (' + c.nome + ')', condicao: c.nome, valor: c.valor, alvos: c.alvos, auto: true });
+        });
+      }
     }
     recalcular();
     if (semUid) arquivo.salvar(salvo); // fichas antigas: os itens ganham uid (para contar usos e recipientes)
@@ -1001,11 +1011,14 @@
       situacoesLigadas.forEach(function (x) {
         var c = el('span', 'fx-ligada');
         c.appendChild(document.createTextNode((x.valor > 0 ? '+' : '−') + Math.abs(x.valor) + ' ' + x.origem));
-        var tira = el('button', null, '×');
-        tira.type = 'button';
-        tira.setAttribute('aria-label', 'Desligar ' + x.origem);
-        tira.addEventListener('click', function () { ligarSituacao(x.chave, false); });
-        c.appendChild(tira);
+        if (x.auto) c.classList.add('auto');
+        else {
+          var tira = el('button', null, '×');
+          tira.type = 'button';
+          tira.setAttribute('aria-label', 'Desligar ' + x.origem);
+          tira.addEventListener('click', function () { ligarSituacao(x.chave, false); });
+          c.appendChild(tira);
+        }
         faixa.appendChild(c);
       });
     }
@@ -1240,6 +1253,400 @@
       box0.appendChild(mais);
       return box0;
     }
+    // ---------- simulação: tempo, corpo, saúde, inventário, desgaste e receitas ----------
+    var parteEscolhida = null;
+    var avisoSim = '';
+    function estadoSim() { return (f.em_jogo && f.em_jogo.sim) || SIM.estadoInicial(); }
+    function vestidos() {
+      return r.equipamento.filter(function (x) { return x.item && x.local === 'equipado' && !x.sel.dentro && x.sel.lugar === 'corpo'; }).map(function (x) { return x.item; });
+    }
+    function tem() {
+      var t = {};
+      itens.forEach(function (x) { if (x.local !== 'guardado') t[x.item.id] = (t[x.item.id] || 0) + x.atual; });
+      return t;
+    }
+    function nhDe(idPericia) {
+      var x = comPericia.filter(function (y) { return y.pericia.id === idPericia && y.nh != null; })[0];
+      if (x) return x.nh;
+      var p = porId(G.pericias, idPericia);
+      var st = p && r.combate.sem_treino(p);
+      return st != null ? st : 6;
+    }
+    function nomeItem(id) { var it = criador.item(id); return it ? it.nome : id; }
+    function gastarNoSv(sv, id, n) {
+      sv.em_jogo = sv.em_jogo || {};
+      var usados = Object.assign({}, sv.em_jogo.usados || {});
+      var falta = n;
+      (sv.equipamento || []).forEach(function (sel) {
+        if (falta <= 0 || sel.id !== id || sel.local === 'guardado') return;
+        var disp = (sel.quantidade || 1) - (usados[sel.uid] || 0);
+        var tira = Math.min(disp, falta);
+        if (tira <= 0) return;
+        if (sel.criado) sel.quantidade -= tira; else usados[sel.uid] = (usados[sel.uid] || 0) + tira;
+        falta -= tira;
+      });
+      sv.equipamento = sv.equipamento.filter(function (sel) { return !(sel.criado && sel.quantidade <= 0); });
+      sv.em_jogo.usados = usados;
+    }
+    function darNoSv(sv, id, n) {
+      var ex = (sv.equipamento || []).filter(function (sel) { return sel.criado && sel.id === id && sel.local !== 'guardado'; })[0];
+      if (ex) ex.quantidade += n;
+      else sv.equipamento.push({ id: id, quantidade: n, uid: 'i' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), local: 'levado', qualidade: 0, criado: true });
+    }
+    // passa o tempo: necessidades, clima e ferimentos andam; o dano (fome extrema, frio, infecção) sai dos PV
+    function passarTempo(sv, minutos, atividade) {
+      sv.em_jogo = sv.em_jogo || {};
+      var e0 = sv.em_jogo.sim || SIM.estadoInicial();
+      var res = SIM.avancar(e0, minutos, { atividade: atividade, isolamento: SIM.isolamento(vestidos()), rng: sorteio });
+      var acumulado = (e0.dano_acumulado || 0) + res.dano_pv;
+      var inteiro = Math.floor(acumulado);
+      if (inteiro > 0) sv.em_jogo.pv = (typeof sv.em_jogo.pv === 'number' ? sv.em_jogo.pv : v.pv) - inteiro;
+      res.estado.dano_acumulado = acumulado - inteiro;
+      sv.em_jogo.sim = res.estado;
+      var textos = res.eventos.map(function (x) { return x.texto; });
+      if (inteiro > 0) textos.push('Perdeu ' + inteiro + ' PV.');
+      return textos;
+    }
+    function agir(minutos, atividade) {
+      mudarFicha(function (sv) { avisoSim = passarTempo(sv, minutos, atividade).join(' '); });
+    }
+    function mudarSim(mexer) {
+      mudarFicha(function (sv) { sv.em_jogo = sv.em_jogo || {}; sv.em_jogo.sim = mexer(sv.em_jogo.sim || SIM.estadoInicial(), sv); });
+    }
+    function barra(rotulo, valor, max, texto, ruim) {
+      var d = el('div', 'jg-barra-sim' + (ruim ? ' ruim' : ''));
+      d.appendChild(el('span', 'jg-barra-rotulo', rotulo));
+      var b = el('span', 'jg-barra-trilho');
+      var cheio = el('span', 'jg-barra-cheio');
+      cheio.style.width = Math.max(0, Math.min(100, valor / max * 100)) + '%';
+      b.appendChild(cheio);
+      d.appendChild(b);
+      d.appendChild(el('span', 'jg-barra-valor', texto));
+      return d;
+    }
+    // painel da esquerda: relógio, clima, necessidades, condições e o botão de passar o tempo
+    function blocoSim() {
+      var e = estadoSim();
+      var rel = SIM.relogio(e);
+      var b = el('div', 'jg-painel jg-sim');
+      b.appendChild(el('h3', null, 'Tempo e corpo'));
+      b.appendChild(el('p', 'jg-relogio', rel.texto + (rel.noite ? ' · noite' : '')));
+      var cl = e.clima;
+      b.appendChild(el('p', 'jg-clima', cl ? String(cl.temperatura).replace('.', ',') + ' °C · ' + (cl.chovendo ? 'chovendo' : 'sem chuva') + ' · vento ' + (cl.vento > 0.66 ? 'forte' : cl.vento > 0.33 ? 'moderado' : 'fraco') + (e.molhado > 0.3 ? ' · molhado' : '') : 'Passe o tempo para ver o clima.'));
+      var lugar = el('div', 'jg-lugar');
+      var selB = el('select');
+      selB.setAttribute('aria-label', 'Onde (bioma)');
+      SIM.BIOMAS.forEach(function (bi) { var o = el('option', null, bi.nome); o.value = bi.id; selB.appendChild(o); });
+      selB.value = e.bioma;
+      selB.addEventListener('change', function () { mudarSim(function (x) { x.bioma = selB.value; x.clima = null; return x; }); });
+      var selA = el('select');
+      selA.setAttribute('aria-label', 'Abrigo');
+      Object.keys(SIM.ABRIGOS).forEach(function (k) { var o = el('option', null, SIM.ABRIGOS[k].nome); o.value = k; selA.appendChild(o); });
+      selA.value = e.abrigo;
+      selA.addEventListener('change', function () { mudarSim(function (x) { x.abrigo = selA.value; return x; }); });
+      lugar.appendChild(selB);
+      lugar.appendChild(selA);
+      b.appendChild(lugar);
+      b.appendChild(barra('Fome', e.fome, 100, Math.round(e.fome) + '', e.fome >= 70));
+      b.appendChild(barra('Sede', e.sede, 100, Math.round(e.sede) + '', e.sede >= 70));
+      b.appendChild(barra('Cansaço', e.cansaco, 100, Math.round(e.cansaco) + '', e.cansaco >= 75));
+      b.appendChild(barra('Corpo', e.temp_corpo - 30, 12, String(e.temp_corpo).replace('.', ',') + ' °C', e.temp_corpo < 35 || e.temp_corpo > 39.5));
+      b.appendChild(barra('Sangue', e.sangue, 100, Math.round(e.sangue) + '%', e.sangue < 60));
+      var conds = SIM.condicoes(e);
+      if (conds.length) {
+        var ul = el('ul', 'jg-condicoes');
+        conds.forEach(function (c) { ul.appendChild(el('li', null, c.origem + ': ' + c.nome + ' (' + (c.valor > 0 ? '+' : '−') + Math.abs(c.valor) + ')')); });
+        b.appendChild(ul);
+      }
+      if (avisoSim) { b.appendChild(el('p', 'jg-aviso', avisoSim)); avisoSim = ''; }
+      var passa = el('div', 'jg-passa');
+      var atv = el('select');
+      atv.setAttribute('aria-label', 'Atividade');
+      Object.keys(SIM.ATIVIDADES).forEach(function (k) { if (k === 'dormindo') return; var o = el('option', null, SIM.ATIVIDADES[k].nome); o.value = k; atv.appendChild(o); });
+      atv.value = 'caminhando';
+      passa.appendChild(atv);
+      [['+10 min', 10], ['+1 h', 60], ['+4 h', 240]].forEach(function (x) {
+        var bt = el('button', 'jg-acao', x[0]);
+        bt.type = 'button';
+        bt.addEventListener('click', function () { agir(x[1], atv.value); });
+        passa.appendChild(bt);
+      });
+      var dormir = el('button', 'jg-acao', 'Dormir 8 h');
+      dormir.type = 'button';
+      dormir.addEventListener('click', function () { agir(480, 'dormindo'); });
+      passa.appendChild(dormir);
+      b.appendChild(passa);
+      return b;
+    }
+    // painel de saúde: ferimentos por parte (clicar numa parte do boneco filtra), tratar, e ferir (para o narrador)
+    function blocoSaude() {
+      var e = estadoSim();
+      var b = el('div', 'jg-painel jg-saude');
+      var partes = {};
+      SIM.PARTES.forEach(function (p) { partes[p.id] = p.nome; });
+      b.appendChild(el('h3', null, 'Saúde' + (parteEscolhida ? ' · ' + partes[parteEscolhida] : '')));
+      var lista = e.ferimentos.filter(function (x) { return !parteEscolhida || x.parte === parteEscolhida; });
+      if (!lista.length) b.appendChild(el('p', 'pericia-vazio', parteEscolhida ? 'Sem ferimentos aqui.' : 'Sem ferimentos. Clique numa parte do corpo para ver ou ferir.'));
+      var disp = tem();
+      lista.forEach(function (x) {
+        var d = el('div', 'jg-ferimento grav-' + x.gravidade);
+        var tipo = SIM.TIPOS[x.tipo];
+        d.appendChild(el('strong', null, partes[x.parte] + ': ' + tipo.nome.toLowerCase() + ', ferimento ' + SIM.GRAVIDADES[x.gravidade - 1].nome));
+        var info = [];
+        if (x.sangrando) info.push('sangrando');
+        if (x.infeccao >= 1) info.push('infecção ' + Math.round(x.infeccao) + '%');
+        if (x.limpo) info.push('limpo');
+        if (x.tratamento) info.push(({ bandagem: 'enfaixado', sutura: 'suturado', tala: 'com tala' })[x.tratamento]);
+        info.push('cura ' + Math.round(x.cura / SIM.GRAVIDADES[x.gravidade - 1].cura_horas * 100) + '%');
+        d.appendChild(el('span', null, info.join(' · ')));
+        var acoes = el('div', 'jg-arma-acoes');
+        SIM.tratamentosPossiveis(x).forEach(function (t) {
+          var itemTem = t.itens.filter(function (id) { return disp[id] > 0; })[0];
+          var bt = el('button', 'jg-acao', t.nome + (itemTem ? '' : ' (falta ' + nomeItem(t.itens[0]).toLowerCase() + ')'));
+          bt.type = 'button';
+          bt.title = t.efeito;
+          bt.disabled = !itemTem;
+          bt.addEventListener('click', function () {
+            var sucesso = true;
+            if (t.pericia) sucesso = rolarTeste(t.nome + ' (' + (porId(G.pericias, t.pericia) || {}).nome + ')', nhDe(t.pericia) + (t.modificador || 0), ['pericia:' + t.pericia]).sucesso;
+            mudarFicha(function (sv) {
+              gastarNoSv(sv, itemTem, 1);
+              sv.em_jogo.sim = SIM.tratar(sv.em_jogo.sim || SIM.estadoInicial(), x.id, t.id, sucesso);
+              var ev = passarTempo(sv, 10, 'repouso');
+              avisoSim = (sucesso ? t.nome + ': feito.' : t.nome + ': não deu certo (o material foi gasto).') + (ev.length ? ' ' + ev.join(' ') : '');
+            });
+          });
+          acoes.appendChild(bt);
+        });
+        d.appendChild(acoes);
+        b.appendChild(d);
+      });
+      // ferir: o narrador aplica o ferimento que o golpe, a queda ou a mordida causou
+      var ferir = el('div', 'jg-ferir');
+      var selP = el('select');
+      selP.setAttribute('aria-label', 'Parte do corpo');
+      SIM.PARTES.forEach(function (p) { var o = el('option', null, p.nome); o.value = p.id; selP.appendChild(o); });
+      selP.value = parteEscolhida || 'tronco';
+      var selT = el('select');
+      selT.setAttribute('aria-label', 'Tipo de ferimento');
+      Object.keys(SIM.TIPOS).forEach(function (k) { var o = el('option', null, SIM.TIPOS[k].nome); o.value = k; selT.appendChild(o); });
+      var selG = el('select');
+      selG.setAttribute('aria-label', 'Gravidade');
+      SIM.GRAVIDADES.forEach(function (g) { var o = el('option', null, g.nome); o.value = g.nivel; selG.appendChild(o); });
+      var bt = el('button', 'jg-acao', 'Ferir');
+      bt.type = 'button';
+      bt.addEventListener('click', function () {
+        mudarSim(function (x) { return SIM.ferir(x, selP.value, selT.value, parseInt(selG.value, 10)); });
+      });
+      [selP, selT, selG, bt].forEach(function (n) { ferir.appendChild(n); });
+      b.appendChild(ferir);
+      if (parteEscolhida) {
+        var todas = el('button', 'btn-link', 'ver todas as partes');
+        todas.type = 'button';
+        todas.addEventListener('click', function () { parteEscolhida = null; montar('jogando'); });
+        b.appendChild(todas);
+      }
+      return b;
+    }
+    // inventário em grade: bolsos e cada recipiente carregado; o que não cabe aparece à parte
+    var RECIPIENTES = (G.adamar && G.adamar.inventario && G.adamar.inventario.recipientes) || {};
+    function slug(t) { return semAcento(t).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
+    function gradeDe(x) {
+      var g = x.item.grade;
+      if (!g) return { largura: 1, altura: 1 };
+      if (g.porte === 'grade') return g;
+      if (g.porte === 'vestido') return g.guardado || { largura: 2, altura: 2 };
+      return null; // longo ou de montaria: não entra em mochila
+    }
+    function condicaoDe(uid) { return ((f.em_jogo || {}).condicao || {})[uid] || { atual: 100, maximo: 100 }; }
+    function blocoInventario() {
+      var cb = r.combate;
+      var inv = el('div', 'jg-inventario');
+      var cab = el('div', 'jg-inv-cab');
+      cab.appendChild(el('h3', null, 'Inventário · ' + num(cb.peso_total) + ' kg · carga ' + cb.carga.nome));
+      var btR = el('button', 'jg-acao', 'Fazer (receitas)');
+      btR.type = 'button';
+      btR.addEventListener('click', abrirReceitas);
+      cab.appendChild(btR);
+      inv.appendChild(cab);
+      var comigo = itens.filter(function (x) { return x.local !== 'guardado'; });
+      var recipientes = comigo.filter(function (x) { var rc = RECIPIENTES[slug(x.item.nome)]; return rc && rc.largura; });
+      var grades = recipientes.map(function (c) {
+        var rc = RECIPIENTES[slug(c.item.nome)];
+        return { titulo: c.item.nome, largura: rc.largura, altura: rc.altura, dentro: comigo.filter(function (x) { return x.sel.dentro === c.sel.uid; }) };
+      }).sort(function (a, b) { return b.largura * b.altura - a.largura * a.altura; });
+      grades.push({ titulo: 'Bolsos', largura: 2, altura: 2, dentro: [] });
+      // soltos: levados sem recipiente escolhido (e que não são eles mesmos recipientes carregados)
+      var soltos = comigo.filter(function (x) { return x.local === 'levado' && !x.sel.dentro && recipientes.indexOf(x) === -1; });
+      var longos = soltos.filter(function (x) { return !gradeDe(x); });
+      soltos = soltos.filter(function (x) { return gradeDe(x); });
+      function peca(x) { var g = gradeDe(x); return { uid: x.sel.uid, largura: g.largura, altura: g.altura, quantidade: x.atual || 1, empilha: g.empilha }; }
+      grades.forEach(function (gr) {
+        var fixos = gr.dentro.filter(function (x) { return gradeDe(x); });
+        gr.longos = gr.dentro.filter(function (x) { return !gradeDe(x); });
+        // primeiro o que foi posto ali; depois tenta encaixar os soltos no espaço que sobrou
+        var tentativa = SIM.encaixar(gr.largura, gr.altura, fixos.concat(soltos).map(peca));
+        var ficaram = soltos.filter(function (x) { return tentativa.posicoes[x.sel.uid] && tentativa.sobra.indexOf(x.sel.uid) === -1; });
+        soltos = soltos.filter(function (x) { return ficaram.indexOf(x) === -1; });
+        gr.itens = fixos.concat(ficaram);
+        gr.enc = SIM.encaixar(gr.largura, gr.altura, gr.itens.map(peca));
+      });
+      var linha = el('div', 'jg-grades');
+      grades.forEach(function (gr) {
+        var caixa = el('div', 'jg-grade-caixa');
+        caixa.appendChild(el('span', 'jg-grade-titulo', gr.titulo + ' (' + gr.largura + '×' + gr.altura + ')'));
+        var grade = el('div', 'jg-grade');
+        grade.style.gridTemplateColumns = 'repeat(' + gr.largura + ', 2.6rem)';
+        grade.style.gridTemplateRows = 'repeat(' + gr.altura + ', 2.6rem)';
+        gr.itens.forEach(function (x) {
+          (gr.enc.posicoes[x.sel.uid] || []).forEach(function (pos, k) { grade.appendChild(bloquinho(x, pos, k)); });
+        });
+        caixa.appendChild(grade);
+        var fora = gr.enc.sobra.map(function (uid) { return gr.itens.filter(function (x) { return x.sel.uid === uid; })[0]; }).concat(gr.longos);
+        if (fora.length) caixa.appendChild(el('p', 'jg-nao-cabe', 'Não cabe aqui: ' + fora.map(function (x) { return x.item.nome; }).join(', ')));
+        linha.appendChild(caixa);
+      });
+      // o que não coube em lugar nenhum vai nos braços (atrapalha: mãos ocupadas)
+      var nosBracos = soltos.concat(longos);
+      if (nosBracos.length) {
+        var fora2 = el('div', 'jg-grade-caixa');
+        fora2.appendChild(el('span', 'jg-grade-titulo', 'Sem lugar (nos braços)'));
+        var ul = el('div', 'jg-nos-bracos');
+        nosBracos.forEach(function (x) {
+          var b = el('button', 'jg-peca jg-solto');
+          b.type = 'button';
+          b.title = x.item.nome;
+          var ic = window.iconeSvg && window.iconeSvg(x.item.icone, 'jg-slot-icone');
+          if (ic) b.appendChild(ic);
+          b.addEventListener('click', function () { abrirItemDoInventario(x); });
+          ul.appendChild(b);
+        });
+        fora2.appendChild(ul);
+        fora2.appendChild(el('p', 'jg-nao-cabe', nosBracos.map(function (x) { return x.item.nome; }).join(', ')));
+        linha.appendChild(fora2);
+      }
+      inv.appendChild(linha);
+      return inv;
+    }
+    function bloquinho(x, pos, k) {
+      var b = el('button', 'jg-peca');
+      b.type = 'button';
+      b.style.gridColumn = (pos.x + 1) + ' / span ' + pos.largura;
+      b.style.gridRow = (pos.y + 1) + ' / span ' + pos.altura;
+      b.title = x.item.nome;
+      var ic = window.iconeSvg && window.iconeSvg(x.item.icone, 'jg-slot-icone');
+      if (ic) b.appendChild(ic);
+      if (k === 0 && (x.sel.quantidade || 1) > 1) b.appendChild(el('span', 'jg-slot-qtd' + (x.atual === 0 ? ' acabou' : ''), String(x.atual)));
+      var classe = criador.classeDoItem(x.item.id);
+      if (classe !== 'equipamento') {
+        var c = condicaoDe(x.sel.uid);
+        var bar = el('span', 'jg-condicao' + (c.atual < 25 ? ' ruim' : ''));
+        bar.style.width = (c.atual) + '%';
+        b.appendChild(bar);
+      }
+      b.addEventListener('click', function () { abrirItemDoInventario(x); });
+      return b;
+    }
+    function abrirItemDoInventario(x) {
+      if (!window.ItemUI) return;
+      var comida = G.jogo.materiais.comida_da_lista[x.item.id] || (x.item.calorias || x.item.agua ? x.item : null);
+      var acao = null;
+      if (comida && x.atual > 0) acao = { rotulo: comida.calorias ? 'Comer' : 'Beber', fazer: function () { consumirItem(x, comida); } };
+      else if ((x.sel.quantidade || 1) > 1 && x.atual > 0) acao = { rotulo: 'Gastar um (' + x.atual + ' → ' + (x.atual - 1) + ')', fazer: function () { gastarUm(x.sel.uid, x.sel.quantidade || 1); } };
+      else if (criador.classeDoItem(x.item.id) !== 'equipamento' && condicaoDe(x.sel.uid).atual < condicaoDe(x.sel.uid).maximo) acao = { rotulo: 'Consertar', fazer: function () { consertarItem(x); } };
+      window.ItemUI.abrir(x.item, { link: false, acao: acao });
+    }
+    function consumirItem(x, comida) {
+      mudarFicha(function (sv) {
+        gastarNoSv(sv, x.item.id, 1);
+        var e = SIM.consumir(sv.em_jogo.sim || SIM.estadoInicial(), comida);
+        // água de rio ou carne crua podem fazer mal
+        if (comida.risco && sorteio() < comida.risco) { e = SIM.ferir(e, 'tronco', 'contusao', 1); avisoSim = x.item.nome + ' fez mal: dor de barriga.'; }
+        sv.em_jogo.sim = e;
+        var ev = passarTempo(sv, 5, 'repouso');
+        avisoSim = (avisoSim || (comida.calorias ? 'Comeu ' : 'Bebeu ') + x.item.nome.toLowerCase() + '.') + (ev.length ? ' ' + ev.join(' ') : '');
+      });
+    }
+    function consertarItem(x) {
+      var RC = G.jogo.receitas.conserto;
+      var disp = tem();
+      var ferr = RC.ferramentas[0].filter(function (id) { return disp[id] > 0; })[0];
+      if (!ferr) { avisoSim = 'Para consertar falta ' + RC.ferramentas[0].map(nomeItem).join(' ou ').toLowerCase() + '.'; montar('jogando'); return; }
+      var pericia = RC.pericia_por_classe[criador.classeDoItem(x.item.id)];
+      var a = rolarTeste('Consertar ' + x.item.nome, nhDe(pericia), ['pericia:' + pericia]);
+      mudarFicha(function (sv) {
+        sv.em_jogo = sv.em_jogo || {};
+        var cond = Object.assign({}, sv.em_jogo.condicao || {});
+        cond[x.sel.uid] = SIM.consertar(cond[x.sel.uid], a.sucesso);
+        sv.em_jogo.condicao = cond;
+        var ev = passarTempo(sv, RC.tempo_min, 'trabalho');
+        avisoSim = (a.sucesso ? x.item.nome + ' consertado.' : 'O conserto não deu certo.') + (ev.length ? ' ' + ev.join(' ') : '');
+      });
+    }
+    // receitas: o que dá para fazer agora, o que falta, e fazer (teste de perícia, gasto, tempo)
+    function abrirReceitas() {
+      var d = document.getElementById('jg-receitas') || document.body.appendChild(el('dialog', 'item-dialogo'));
+      d.id = 'jg-receitas';
+      d.textContent = '';
+      var fechar = el('button', 'jogar-fechar', '×');
+      fechar.type = 'button';
+      fechar.addEventListener('click', function () { d.close(); });
+      d.appendChild(fechar);
+      d.appendChild(el('h2', null, 'Fazer'));
+      var e = estadoSim();
+      var disp = tem();
+      var bioma = SIM.BIOMAS.filter(function (bi) { return bi.id === e.bioma; })[0];
+      d.appendChild(el('p', 'combate-nota', 'Onde você está: ' + (bioma ? bioma.nome.toLowerCase() : '—') + '. O que tem por perto: ' + (bioma ? bioma.recursos.map(nomeItem).join(', ').toLowerCase() : '—') + '.'));
+      SIM.RECEITAS.forEach(function (rec) {
+        var av = SIM.avaliarReceita(rec, disp, e.bioma);
+        var c = el('div', 'jg-receita' + (av.pode ? '' : ' falta'));
+        c.appendChild(el('strong', null, rec.nome + ' → ' + rec.resultado.quantidade + '× ' + nomeItem(rec.resultado.id)));
+        var partes = [];
+        if (rec.ingredientes.length) partes.push('gasta ' + rec.ingredientes.map(function (i) { return i.quantidade + '× ' + nomeItem(i.id); }).join(', '));
+        if (rec.ferramentas.length) partes.push('com ' + rec.ferramentas.map(function (g0) { return g0.map(nomeItem).join(' ou '); }).join(' e '));
+        if (rec.pericia) partes.push('teste de ' + (porId(G.pericias, rec.pericia) || {}).nome + (rec.modificador ? (rec.modificador > 0 ? ' +' : ' −') + Math.abs(rec.modificador) : ''));
+        partes.push(rec.tempo_min + ' min');
+        c.appendChild(el('span', null, partes.join(' · ')));
+        if (!av.pode) c.appendChild(el('span', 'jg-falta', 'Falta: ' + av.faltam.map(function (x) {
+          return x.tipo === 'ingrediente' ? x.quantidade + '× ' + nomeItem(x.id) : x.tipo === 'ferramenta' ? x.ids.map(nomeItem).join(' ou ') : nomeItem(x.id) + ' por perto (mude de lugar)';
+        }).join('; ')));
+        var bt = el('button', 'btn btn-primary', 'Fazer');
+        bt.type = 'button';
+        bt.disabled = !av.pode;
+        bt.addEventListener('click', function () {
+          var teste = rec.pericia ? rolarTeste(rec.nome, nhDe(rec.pericia) + (rec.modificador || 0), ['pericia:' + rec.pericia]) : null;
+          var res = SIM.resultadoReceita(rec, teste);
+          d.close();
+          mudarFicha(function (sv) {
+            res.gasta.forEach(function (i) { gastarNoSv(sv, i.id, i.quantidade); });
+            res.produz.forEach(function (i) { darNoSv(sv, i.id, i.quantidade); });
+            var ev = passarTempo(sv, rec.tempo_min, rec.atividade || 'trabalho');
+            avisoSim = (res.produz.length ? rec.nome + ': pronto (' + res.produz.map(function (i) { return i.quantidade + '× ' + nomeItem(i.id); }).join(', ') + ').' : rec.nome + ': não deu certo, parte do material foi perdida.') + (ev.length ? ' ' + ev.join(' ') : '');
+          });
+        });
+        c.appendChild(bt);
+        d.appendChild(c);
+      });
+      if (!d.open) d.showModal();
+    }
+    // arma usada perde condição às vezes (mais se for barata); quebrada, não serve
+    document.addEventListener('adamar:usou', function (ev) {
+      if (!SIM) return;
+      var uid = ev.detail.uid;
+      var x = itens.filter(function (y) { return y.sel.uid === uid; })[0];
+      if (!x) return;
+      var antes = condicaoDe(uid);
+      var depois = SIM.desgastar(antes, x.sel.qualidade || 0, sorteio);
+      if (depois.atual === antes.atual) return;
+      mudarFicha(function (sv) {
+        sv.em_jogo = sv.em_jogo || {};
+        var cond = Object.assign({}, sv.em_jogo.condicao || {});
+        cond[uid] = depois;
+        sv.em_jogo.condicao = cond;
+        avisoSim = x.item.nome + (depois.atual === 0 ? ' quebrou!' : ' perdeu condição (' + depois.atual + '%).');
+      });
+    });
+
     function gastarUm(uid, total) {
       mudarFicha(function (sv) {
         sv.em_jogo = sv.em_jogo || {};
@@ -1433,6 +1840,7 @@
         quem.appendChild(nomeJ);
         esq.appendChild(quem);
         esq.appendChild(painelEmJogo(idFicha, true, aoMudarEmJogo));
+        if (SIM) esq.appendChild(blocoSim());
         if (r.situacoes.length) {
           var sit = el('div', 'jg-painel');
           sit.appendChild(el('h3', null, 'Situações'));
@@ -1454,9 +1862,16 @@
         // --- centro: o boneco e a barra de ação (armas e defesas) ---
         var meio = el('div', 'jg-col jg-meio');
         if (window.Boneco) {
-          var bn = window.Boneco.desenhar({ resumo: r });
+          var feridas = {};
+          if (SIM) estadoSim().ferimentos.forEach(function (x) { feridas[x.parte] = Math.max(feridas[x.parte] || 0, x.gravidade); });
+          var bn = window.Boneco.desenhar({ resumo: r, feridas: feridas });
           var fig = bn.querySelector('.boneco-corpo');
           fig.classList.add('jg-figura');
+          // clicar numa parte do corpo mostra (e prepara para ferir) aquela parte
+          Array.prototype.forEach.call(fig.querySelectorAll('[data-parte]'), function (p) {
+            p.addEventListener('click', function () { parteEscolhida = p.getAttribute('data-parte'); montar('jogando'); });
+            if (p.getAttribute('data-parte') === parteEscolhida) p.classList.add('escolhida');
+          });
           // clicar numa arma desenhada nas mãos rola o ataque
           Array.prototype.forEach.call(fig.querySelectorAll('.boneco-item'), function (g) {
             var nome = (g.querySelector('title') || {}).textContent;
@@ -1488,7 +1903,34 @@
           if (a.sacar) c0.appendChild(el('span', 'fx-sacar', ({ Cinto: 'no cinto', Costas: 'nas costas' }[a.sacar] || a.sacar) + ': saque antes'));
           var acoes = el('div', 'jg-arma-acoes');
           var melhorNh = grupo.modos.reduce(function (m, x) { return x.nh != null && (m == null || x.nh > m.nh) ? x : m; }, null);
-          if (melhorNh) acoes.appendChild(rolavel(el('button', 'jg-acao', 'Atacar ' + melhorNh.nh), 'teste', a.nome.split(' — ')[0], melhorNh.nh, alvosDaArma(melhorNh)));
+          var selArma = itens.filter(function (y) { return y.item.id === a.item.id && y.local === 'equipado'; })[0];
+          var quebrada = selArma && SIM && condicaoDe(selArma.sel.uid).atual === 0;
+          if (quebrada) { c0.classList.add('quebrada'); c0.appendChild(el('span', 'fx-sacar', 'quebrada: conserte antes de usar')); }
+          // condição da arma equipada (desgasta no uso) e o conserto
+          if (selArma && SIM) {
+            var cd = condicaoDe(selArma.sel.uid);
+            if (cd.atual < 100) {
+              var linhaC = el('div', 'jg-arma-cond');
+              var trilho = el('span', 'jg-barra-trilho');
+              var cheio = el('span', 'jg-barra-cheio');
+              cheio.style.width = cd.atual + '%';
+              trilho.appendChild(cheio);
+              linhaC.appendChild(trilho);
+              linhaC.appendChild(el('span', null, cd.atual + '%'));
+              if (cd.atual < cd.maximo) {
+                var cons = el('button', 'btn-link', 'consertar');
+                cons.type = 'button';
+                cons.addEventListener('click', function () { consertarItem(selArma); });
+                linhaC.appendChild(cons);
+              }
+              c0.appendChild(linhaC);
+            }
+          }
+          if (melhorNh && !quebrada) {
+            var atk = rolavel(el('button', 'jg-acao', 'Atacar ' + melhorNh.nh), 'teste', a.nome.split(' — ')[0], melhorNh.nh, alvosDaArma(melhorNh));
+            if (selArma) atk.setAttribute('data-uid', selArma.sel.uid);
+            acoes.appendChild(atk);
+          }
           grupo.modos.forEach(function (m) { acoes.appendChild(rolavel(el('button', 'jg-acao jg-dano', m.dano), 'dano', m.nome, m.dano, ['dano'])); });
           var ap = grupo.modos.reduce(function (mx, x) { var n = parseInt(x.aparar, 10); return !isNaN(n) && (mx == null || n > mx) ? n : mx; }, null);
           if (ap != null && !a.sacar) acoes.appendChild(rolavel(el('button', 'jg-acao', 'Aparar ' + ap), 'teste', 'Aparar (' + a.nome.split(' — ')[0] + ')', ap, ['defesa:aparar']));
@@ -1507,6 +1949,7 @@
           defs.appendChild(rolavel(b, 'teste', x[0], x[1], ['defesa:' + x[2]]));
         });
         meio.appendChild(defs);
+        if (SIM) meio.appendChild(blocoSaude());
         tela.appendChild(meio);
 
         // --- direita: atributos, perícias e o quadro de rolagens ---
@@ -1542,31 +1985,8 @@
         dir.appendChild(log);
         tela.appendChild(dir);
 
-        // --- embaixo: o inventário em quadradinhos (o que vai na mochila, no cinto ou dentro de algo) ---
-        var inv = el('div', 'jg-inventario');
-        inv.appendChild(el('h3', null, 'Inventário · ' + num(cb.peso_total) + ' kg · carga ' + cb.carga.nome));
-        var grade = el('div', 'jg-slots');
-        itens.filter(function (x) { return x.local !== 'guardado' && !(x.local === 'equipado' && !x.sel.dentro && x.sel.lugar !== 'costas' && x.sel.lugar !== 'cinto'); }).forEach(function (x) {
-          var b = el('button', 'jg-slot');
-          b.type = 'button';
-          b.title = x.item.nome;
-          var ic = window.iconeSvg && window.iconeSvg(x.item.icone, 'jg-slot-icone');
-          if (ic) b.appendChild(ic);
-          b.appendChild(el('span', 'jg-slot-nome', x.item.nome));
-          var total = x.sel.quantidade || 1;
-          if (total > 1) b.appendChild(el('span', 'jg-slot-qtd' + (x.atual === 0 ? ' acabou' : ''), String(x.atual)));
-          b.addEventListener('click', function () {
-            if (!window.ItemUI) return;
-            window.ItemUI.abrir(x.item, {
-              link: false,
-              acao: total > 1 && x.atual > 0 ? { rotulo: 'Gastar um (' + x.atual + ' → ' + (x.atual - 1) + ')', fazer: function () { gastarUm(x.sel.uid, total); } } : null
-            });
-          });
-          grade.appendChild(b);
-        });
-        for (var vazio = grade.children.length; vazio < 12; vazio++) grade.appendChild(el('span', 'jg-slot jg-slot-vazio'));
-        inv.appendChild(grade);
-        tela.appendChild(inv);
+        // --- embaixo: o inventário em grade (bolsos e recipientes) ---
+        tela.appendChild(SIM ? blocoInventario() : el('div'));
         s.appendChild(tela);
         // o quadro de rolagens entra na coluna da direita (no computador)
         if (window.matchMedia('(min-width: 1100px)').matches) {

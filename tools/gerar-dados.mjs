@@ -172,6 +172,7 @@ export function montarJs(dados) {
     // endereço do arquivo de textos, com a versão pelo conteúdo (o navegador não usa um velho do cache)
     textos_url: 'js/dados-textos.js?v=' + createHash('sha256').update(montarTextos(dados)).digest('hex').slice(0, 8),
     adamar: dados.adamar || {},
+    jogo: dados.jogo || {},
     tabela_dano: dados['tabela-dano'] || null,
     // só o desenho: nome do ícone → miolo do SVG 24×24
     icones: dados.icones ? Object.fromEntries(Object.entries(dados.icones.icones).map(([k, v]) => [k, v.svg])) : {}
@@ -226,6 +227,14 @@ function carregar() {
   }
   juntarEnriquecimento(dados);
   juntarGcs(dados);
+  // regras próprias do jogo (simulação): data/jogo/<nome>.json → GURPS.jogo.<nome>
+  const pastaJogo = join(RAIZ, 'data', 'jogo');
+  dados.jogo = {};
+  if (existsSync(pastaJogo)) {
+    for (const f of readdirSync(pastaJogo).filter((x) => x.endsWith('.json')).sort()) {
+      dados.jogo[f.replace(/\.json$/, '')] = JSON.parse(readFileSync(join(pastaJogo, f), 'utf8'));
+    }
+  }
   // regras do cenário: data/adamar/<nome>.json → GURPS.adamar.<nome>
   const pastaAdamar = join(RAIZ, 'data', 'adamar');
   dados.adamar = {};

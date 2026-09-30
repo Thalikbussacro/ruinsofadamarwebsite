@@ -1,0 +1,40 @@
+{
+  "descricao": "Necessidades e tempo (sistema próprio do jogo, números em proposta). Cada hora a fome, a sede e o cansaço sobem conforme a atividade; a temperatura do corpo segue o ambiente, as roupas e a chuva.",
+  "proposta": true,
+  "atividades": {
+    "dormindo": { "nome": "Dormindo", "fome": 1.5, "sede": 1.5, "cansaco": -12, "calor_gerado": 0 },
+    "repouso": { "nome": "Descansando", "fome": 2.5, "sede": 3, "cansaco": -4, "calor_gerado": 1 },
+    "caminhando": { "nome": "Caminhando", "fome": 4, "sede": 5, "cansaco": 5, "calor_gerado": 4 },
+    "trabalho": { "nome": "Trabalho pesado", "fome": 6, "sede": 8, "cansaco": 9, "calor_gerado": 7 },
+    "combate": { "nome": "Combate / corrida", "fome": 8, "sede": 12, "cansaco": 15, "calor_gerado": 10 }
+  },
+  "faixas": {
+    "fome": [ { "a_partir": 40, "nome": "com fome", "modificador": -1 }, { "a_partir": 70, "nome": "faminto", "modificador": -2 }, { "a_partir": 90, "nome": "desnutrido", "modificador": -4, "dano_pv_por_hora": 0.2 } ],
+    "sede": [ { "a_partir": 40, "nome": "com sede", "modificador": -1 }, { "a_partir": 70, "nome": "sedento", "modificador": -3 }, { "a_partir": 90, "nome": "desidratado", "modificador": -5, "dano_pv_por_hora": 0.5 } ],
+    "cansaco": [ { "a_partir": 50, "nome": "cansado", "modificador": -1 }, { "a_partir": 75, "nome": "exausto", "modificador": -3 }, { "a_partir": 95, "nome": "à beira do colapso", "modificador": -5 } ]
+  },
+  "temperatura": {
+    "normal": 37,
+    "conforto_ambiente": 20,
+    "isolamento_por_ponto": 3,
+    "molhado_tira_isolamento": 0.7,
+    "ajuste_por_hora": 0.25,
+    "faixas": [
+      { "abaixo": 32, "nome": "hipotermia grave", "modificador": -6, "dano_pv_por_hora": 1 },
+      { "abaixo": 35, "nome": "hipotermia", "modificador": -3, "dano_pv_por_hora": 0.2 },
+      { "abaixo": 36.3, "nome": "com frio", "modificador": -1 },
+      { "acima": 38.3, "nome": "com calor", "modificador": -1 },
+      { "acima": 39.5, "nome": "insolação", "modificador": -3, "dano_pv_por_hora": 0.3 }
+    ]
+  },
+  "isolamento": {
+    "descricao": "Pontos de isolamento de cada peça vestida (roupa e armadura). Soma tudo o que está vestido.",
+    "por_item": { "tunica-armadura": 1, "tunica-de-pele": 3, "casaco-de-couro-de-bufalo": 4, "capa-leve": 1, "capa-pesada": 3, "cobertor": 3, "luvas-de-tecido": 0.5, "luvas-de-couro": 1, "botas": 1 },
+    "por_material": { "tecido": 1, "couro": 1.5, "malha": 0.5, "placas": 0.5 }
+  },
+  "calendario": {
+    "descricao": "Proposta de calendário do jogo (o cânone não fixa um): ano de 360 dias em quatro estações de 90.",
+    "dias_no_ano": 360,
+    "estacoes": [ { "nome": "Primavera", "inicio": 0 }, { "nome": "Verão", "inicio": 90 }, { "nome": "Outono", "inicio": 180 }, { "nome": "Inverno", "inicio": 270 } ]
+  }
+}

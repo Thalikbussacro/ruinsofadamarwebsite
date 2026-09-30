@@ -170,14 +170,83 @@
       return tabela.filter(function (q) { return q.nivel === n; })[0] || { nivel: 0, nome: 'Normal', preco: 1 };
     }
     function localPadrao(it) { return classeDoItem(it) === 'equipamento' ? 'levado' : 'equipado'; }
+
+    // ---------- lugares do corpo: cada item equipado ocupa um ----------
+    var LUGARES = {
+      mao_d: { nome: 'Mão direita', cabe: 1 }, mao_e: { nome: 'Mão esquerda', cabe: 1 }, maos: { nome: 'Duas mãos', cabe: 1 },
+      costas: { nome: 'Costas', cabe: 2 }, cinto: { nome: 'Cinto', cabe: 4 }, corpo: { nome: 'Vestido', cabe: 99 }
+    };
+    function modosDuasMaos(it) {
+      var modos = (it.combate && it.combate.modos) || [];
+      var algum = modos.some(function (m) { return m.st && m.st.duas_maos; });
+      var todos = modos.length && modos.every(function (m) { return m.st && m.st.duas_maos; });
+      return { algum: algum, todos: todos };
+    }
+    // onde este item pode ficar quando está equipado
+    function lugaresPossiveis(it) {
+      if (!it) return [];
+      if (it.protecao) return ['corpo'];
+      if (it.escudo) return ['mao_e', 'mao_d', 'costas'];
+      if (classeDoItem(it) === 'armas') {
+        var dm = modosDuasMaos(it);
+        // arma só de duas mãos (arco, montante) não vai no cinto
+        return dm.todos ? ['maos', 'costas'] : ['mao_d', 'mao_e'].concat(dm.algum ? ['maos'] : []).concat(['cinto', 'costas']);
+      }
+      return ['mao_d', 'mao_e', 'costas', 'cinto', 'corpo'];
+    }
+    function lugarPadrao(it) {
+      if (!it) return 'corpo';
+      if (it.protecao) return 'corpo';
+      if (it.escudo) return 'mao_e';
+      if (classeDoItem(it) === 'armas') return modosDuasMaos(it).todos ? 'maos' : 'mao_d';
+      return RECIPIENTE.test(it.nome) ? 'costas' : 'corpo';
+    }
+    var RECIPIENTE = /mochila|bolsa|algibeira|aljava|saco|bainha|bornal|cesto|caixa|baú|alforje/i;
+    // mãos que o lugar ocupa (duas mãos ocupa as duas)
+    function maosDe(lugar) { return lugar === 'maos' ? ['mao_d', 'mao_e'] : lugar === 'mao_d' || lugar === 'mao_e' ? [lugar] : []; }
+    // Põe um item num lugar do corpo; quem estava na mão (ou sobrando nas costas/cinto) vai para "levado".
+    // Devolve os itens que saíram, para avisar. lugar: mao_d | mao_e | maos | costas | cinto | corpo.
+    function equipar(ficha, uid, lugar) {
+      normalizarEquipamento(ficha.equipamento);
+      var sel = ficha.equipamento.filter(function (x) { return x.uid === uid; })[0];
+      if (!sel || !LUGARES[lugar]) return [];
+      var saiu = [];
+      var maos = maosDe(lugar);
+      var mesmos = ficha.equipamento.filter(function (x) {
+        return x !== sel && x.local === 'equipado' && !x.dentro && x.lugar && (x.lugar === lugar || maosDe(x.lugar).some(function (m) { return maos.indexOf(m) !== -1; }));
+      });
+      var sobra = maos.length ? mesmos.length : Math.max(0, mesmos.length - (LUGARES[lugar].cabe - 1));
+      mesmos.slice(0, sobra).forEach(function (x) { x.local = 'levado'; delete x.lugar; saiu.push(x); });
+      delete sel.dentro;
+      sel.local = 'equipado';
+      sel.lugar = lugar;
+      return saiu.map(function (x) { return (ITEM[x.id] || {}).nome || x.id; });
+    }
     function novoUid() { return 'i' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
-    function novoItem(id) { return { id: id, quantidade: 1, uid: novoUid(), local: localPadrao(ITEM[id]), qualidade: 0 }; }
+    function novoItem(id) {
+      var it = ITEM[id];
+      // o lugar do corpo é escolhido ao resumir a ficha: o primeiro livre (ver normalizarEquipamento)
+      return { id: id, quantidade: 1, uid: novoUid(), local: localPadrao(it), qualidade: 0 };
+    }
     // fichas antigas: cada item ganha um uid, um local e qualidade 0
     function normalizarEquipamento(lista) {
       (lista || []).forEach(function (sel) {
         if (!sel.uid) sel.uid = novoUid();
         if (!sel.local) sel.local = localPadrao(ITEM[sel.id]);
         if (sel.qualidade == null) sel.qualidade = 0;
+      });
+      // quem está equipado sem lugar ganha o primeiro lugar livre (arma na mão; se a mão estiver ocupada, cinto ou costas)
+      var ocupado = {};
+      function marcar(l) { (maosDe(l).length ? maosDe(l) : [l]).forEach(function (k) { ocupado[k] = (ocupado[k] || 0) + 1; }); }
+      function livre(l) { return (maosDe(l).length ? maosDe(l) : [l]).every(function (k) { return (ocupado[k] || 0) < LUGARES[k].cabe; }); }
+      (lista || []).forEach(function (sel) { if (sel.local === 'equipado' && !sel.dentro && sel.lugar) marcar(sel.lugar); });
+      (lista || []).forEach(function (sel) {
+        if (sel.local !== 'equipado' || sel.dentro || sel.lugar) return;
+        var it = ITEM[sel.id];
+        // preferência: o lugar padrão; depois cinto, costas e vestido; a outra mão por último (fica para escudo ou tocha)
+        var opcoes = [lugarPadrao(it)].concat(lugaresPossiveis(it).filter(function (l) { return !maosDe(l).length; }), lugaresPossiveis(it));
+        sel.lugar = opcoes.filter(livre)[0] || lugarPadrao(it);
+        marcar(sel.lugar);
       });
     }
     // dentro de algo guardado, está guardado; dentro de algo carregado, está só levado (não pronto para usar)
@@ -289,7 +358,8 @@
         var q = quantidadeAtual(sel, ficha);
         if (it.peso) pesoTotal += it.peso.kg * q;
         if (onde !== 'equipado') return; // levado na mochila: pesa, mas não está pronto
-        if (it.escudo) {
+        var naMao = maosDe(sel.lugar).length > 0;
+        if (it.escudo && naMao) {
           db = Math.max(db, it.escudo.bd || 0);
           var usoEsc = nhParaUso({ tipo: 'pericia', id: 'escudo' }, valores, nhTreinado);
           if (usoEsc) bloqueio = Math.max(bloqueio || 0, Math.floor(usoEsc.nh / 2) + 3);
@@ -304,14 +374,14 @@
             protecao[l] = atual;
           });
         }
-        if (it.combate) adicionarArma(it, false, qualidadeDe(sel, it));
+        if (it.combate) adicionarArma(it, false, qualidadeDe(sel, it), naMao ? null : (LUGARES[sel.lugar] || {}).nome);
       });
       // ataques desarmados: todo mundo tem soco e chute (com botas, o chute é mais forte)
       var calcado = ficha.equipamento.some(function (sel) { return /^(botas|sollerets)$/.test(sel.id) && localEfetivo(sel, ficha.equipamento) === 'equipado'; });
       [ITEM.soco, calcado ? ITEM['chute-com-botas'] : ITEM.chute].forEach(function (it) {
         if (it && it.combate) adicionarArma(it, true);
       });
-      function adicionarArma(it, natural, qualidade) {
+      function adicionarArma(it, natural, qualidade, guardadaEm) {
         {
           it.combate.modos.forEach(function (m) {
             // qualidade boa ou excelente soma no dano dos ataques corpo a corpo
@@ -331,6 +401,7 @@
             armas.push({
               item: it, nome: it.nome + (qualidade && qualidade.nivel ? ' (' + qualidade.nome.toLowerCase() + ')' : '') + (m.nome ? ' — ' + m.nome : ''), dano: textoDano(dano, basico),
               distancia: !!(m.alcance && (m.alcance.meio_st != null || m.alcance.max_st != null)),
+              sacar: guardadaEm || null, // nas costas ou no cinto: precisa de Preparar (ou Sacar Rápido) antes
               alcance: textoAlcance(m.alcance, valores.st), nh: nh, pericia: melhor ? melhor.como : 'sem perícia',
               aparar: m.aparar && m.aparar.mod != null && nh != null ? Math.floor(nh / 2) + 3 + m.aparar.mod + (m.aparar.desbalanceada ? 'D' : '') : null,
               st: stMin || null, precisao: m.precisao != null ? m.precisao : null, natural: !!natural
@@ -343,7 +414,7 @@
       var niveis = R.carga.niveis;
       var nomeNivel = nivel < niveis.length ? niveis[nivel].nome : 'Não consegue se mover';
       if (nivel >= niveis.length) avisos.push({ etapa: 'equipamento', texto: 'Peso demais: ' + String(pesoTotal).replace('.', ',') + ' kg passa de 10× a Base de Carga.' });
-      var aparar = armas.reduce(function (m, a) { var v = parseInt(a.aparar, 10); return !isNaN(v) && (m == null || v > m) ? v : m; }, null);
+      var aparar = armas.filter(function (a) { return !a.sacar; }).reduce(function (m, a) { var v = parseInt(a.aparar, 10); return !isNaN(v) && (m == null || v > m) ? v : m; }, null);
       return {
         dano_basico: basico,
         armas: armas,
@@ -520,6 +591,18 @@
         return { sel: sel, item: it, preco: preco, qualidade: qualidade, local: localEfetivo(sel, ficha.equipamento), atual: quantidadeAtual(sel, ficha) };
       });
       gasto = Math.round(gasto * 100) / 100;
+      // lugares do corpo: uma coisa por mão; costas e cinto têm limite
+      var ocupa = {};
+      ficha.equipamento.forEach(function (sel) {
+        if (sel.local !== 'equipado' || sel.dentro || !ITEM[sel.id]) return;
+        var lugar = sel.lugar || lugarPadrao(ITEM[sel.id]);
+        if (lugaresPossiveis(ITEM[sel.id]).indexOf(lugar) === -1) erro('equipamento', ITEM[sel.id].nome + ' não pode ficar em: ' + ((LUGARES[lugar] || {}).nome || lugar) + '.');
+        (maosDe(lugar).length ? maosDe(lugar) : [lugar]).forEach(function (l) { (ocupa[l] = ocupa[l] || []).push(ITEM[sel.id].nome); });
+      });
+      Object.keys(ocupa).forEach(function (l) {
+        var cabe = LUGARES[l].cabe;
+        if (ocupa[l].length > cabe) erro('equipamento', LUGARES[l].nome + ': ' + ocupa[l].join(', ') + (cabe === 1 ? ' ao mesmo tempo. Deixe só um.' : ' — cabem ' + cabe + '.'));
+      });
       if (gasto > base.recursos) {
         erro('equipamento', 'O equipamento custa ' + gasto.toLocaleString('pt-BR') + ' coroas, mais que o dinheiro inicial (' + base.recursos.toLocaleString('pt-BR') + ').');
       }
@@ -738,6 +821,17 @@
       estadoEmJogo: estadoEmJogo,
       resumir: resumir,
       novoItem: novoItem,
+      equipar: equipar,
+      arrumarEquipamento: function (ficha) { normalizarEquipamento(ficha.equipamento); },
+      // "Faca e Escudo saíram das mãos e foram para a mochila."
+      avisoDeTroca: function (saiu, lugar) {
+        if (!saiu.length) return '';
+        var DE = { mao_d: 'da mão direita', mao_e: 'da mão esquerda', maos: 'das mãos', costas: 'das costas', cinto: 'do cinto', corpo: 'do corpo' };
+        var nomes = saiu.length > 1 ? saiu.slice(0, -1).join(', ') + ' e ' + saiu[saiu.length - 1] : saiu[0];
+        return nomes + (saiu.length > 1 ? ' saíram ' : ' saiu ') + (DE[lugar] || '') + (saiu.length > 1 ? ' e foram' : ' e foi') + ' para a mochila.';
+      },
+      lugaresPossiveis: function (id) { return lugaresPossiveis(ITEM[id]); },
+      LUGARES: LUGARES,
       qualidadeDe: qualidadeDe,
       textoFicha: textoFicha,
       custoDoTraco: custoDoTraco,

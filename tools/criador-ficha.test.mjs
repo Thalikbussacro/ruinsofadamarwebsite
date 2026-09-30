@@ -293,6 +293,28 @@ if (comNumeros) {
   rr = c2.resumir(e);
   assert.ok(rr.combate.peso_total < pesoTres);
   assert.equal(rr.equipamento.find((x) => x.sel === corda).atual, 1);
+  // lugares do corpo: a segunda arma vai para o cinto; pôr na mão ocupada tira quem estava
+  const faca = c2.novoItem('faca');
+  const escudo = c2.novoItem(G.equipamento.find((i) => i.escudo && i.escudo.bd >= 1 && i.adamar === 'livre').id);
+  e.equipamento.push(faca, escudo);
+  rr = c2.resumir(e);
+  assert.equal(espada.lugar, 'mao_d');
+  assert.equal(faca.lugar, 'cinto');
+  assert.equal(escudo.lugar, 'mao_e');
+  assert.ok(rr.combate.db >= 1);
+  assert.ok(rr.combate.armas.find((a) => a.item.id === 'faca').sacar); // no cinto: precisa sacar
+  const saiu = c2.equipar(e, faca.uid, 'mao_d');
+  assert.deepEqual(saiu, ['Espada Larga']);
+  assert.equal(espada.local, 'levado');
+  assert.equal(faca.lugar, 'mao_d');
+  // escudo nas costas não defende
+  c2.equipar(e, escudo.uid, 'costas');
+  assert.equal(c2.resumir(e).combate.db, 0);
+  // duas coisas na mesma mão (editando à mão) é inconsistência
+  escudo.lugar = 'mao_d';
+  assert.match(erros(c2.resumir(e)), /Mão direita: .* ao mesmo tempo/);
+  escudo.lugar = 'mao_e';
+  assert.doesNotMatch(erros(c2.resumir(e)), /ao mesmo tempo/);
   // fichas antigas ganham uid e local ao carregar
   const antiga = c2.carregar({ equipamento: [{ id: 'mochila', quantidade: 1 }] });
   assert.ok(antiga.equipamento[0].uid);

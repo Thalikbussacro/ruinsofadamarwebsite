@@ -250,6 +250,40 @@
   Array.prototype.forEach.call(document.querySelectorAll('.fv-ir'), function (b) {
     b.addEventListener('click', function () { irParaEtapa(b.getAttribute('data-ir')); mostrarLado('montar'); });
   });
+  // o boneco: o corpo com a proteção e o que está nas mãos, nas costas e no cinto (pôr numa mão ocupada tira quem estava)
+  var avisoCorpo = '';
+  function porNoCorpo(uid, lugar) {
+    var saiu = criador.equipar(ficha, uid, lugar);
+    avisoCorpo = criador.avisoDeTroca(saiu, lugar);
+    desenharEquipamento();
+    mudou();
+  }
+  atualizadores.push(function (r) {
+    var caixa = document.getElementById('c-ficha-boneco');
+    if (!caixa || !window.Boneco) return;
+    caixa.textContent = '';
+    if (!ficha.equipamento.length) return;
+    var cab = el('div', 'painel-cab');
+    var h = el('h2');
+    var ir = el('button', 'fv-ir', 'Corpo');
+    ir.type = 'button';
+    ir.addEventListener('click', function () { irParaEtapa('equipamento'); mostrarLado('montar'); });
+    h.appendChild(ir);
+    cab.appendChild(h);
+    caixa.appendChild(cab);
+    if (avisoCorpo) { caixa.appendChild(el('p', 'fv-vazio tem-aviso', avisoCorpo)); avisoCorpo = ''; }
+    caixa.appendChild(window.Boneco.desenhar({
+      resumo: r,
+      lugaresPossiveis: criador.lugaresPossiveis,
+      aoPor: porNoCorpo,
+      aoTirar: function (uid) {
+        ficha.equipamento.forEach(function (x) { if (x.uid === uid) { x.local = 'levado'; delete x.lugar; } });
+        desenharEquipamento();
+        mudou();
+      }
+    }));
+  });
+
   // topo da ficha: atributos e armas (com o NH de agora e, se faltar, a perícia para comprar)
   atualizadores.push(function (r) {
     var box = document.getElementById('c-ficha-resumo');
@@ -1515,6 +1549,7 @@
   // ---------- 7. equipamento ----------
   var infosEquip = [];
   function desenharEquipamento() {
+    criador.arrumarEquipamento(ficha); // uid, local e lugar do corpo antes de montar os seletores
     var box = document.getElementById('c-equipamento-escolhido');
     box.textContent = '';
     infosEquip = [];
@@ -1551,12 +1586,15 @@
         var ix = porId(G.equipamento, x.id);
         return x !== sel && ix && RECIPIENTE.test(ix.nome) && x.dentro !== sel.uid;
       });
-      var onde = selectCom([['equipado', 'Equipado']].concat(recipientes.map(function (x) {
-        return ['dentro:' + x.uid, 'Dentro de: ' + porId(G.equipamento, x.id).nome];
-      })).concat([['levado', 'Levado'], ['guardado', 'Guardado em casa']]), sel.dentro ? 'dentro:' + sel.dentro : (sel.local || 'levado'), 'Onde está ' + it.nome);
+      var onde = selectCom(criador.lugaresPossiveis(it.id).map(function (l) { return ['lugar:' + l, criador.LUGARES[l].nome]; })
+        .concat([['levado', 'Levado']]).concat(recipientes.map(function (x) {
+          return ['dentro:' + x.uid, 'Dentro de: ' + porId(G.equipamento, x.id).nome];
+        })).concat([['guardado', 'Guardado em casa']]),
+      sel.dentro ? 'dentro:' + sel.dentro : sel.local === 'equipado' ? 'lugar:' + sel.lugar : (sel.local || 'levado'), 'Onde está ' + it.nome);
       onde.addEventListener('change', function () {
-        if (onde.value.indexOf('dentro:') === 0) { sel.dentro = onde.value.slice(7); sel.local = 'levado'; }
-        else { delete sel.dentro; sel.local = onde.value; }
+        if (onde.value.indexOf('lugar:') === 0) { porNoCorpo(sel.uid, onde.value.slice(6)); return; }
+        if (onde.value.indexOf('dentro:') === 0) { sel.dentro = onde.value.slice(7); sel.local = 'levado'; delete sel.lugar; }
+        else { delete sel.dentro; delete sel.lugar; sel.local = onde.value; }
         mudou();
       });
       campos.appendChild(campoRotulado('Onde', onde));

@@ -2634,3 +2634,33 @@ body.arrastando .app-lado { outline: 2px dashed var(--ouro-linha); outline-offse
 .fx-dentro { margin-right: 0.2rem; color: var(--osso-fosco); }
 .app-item.item-guardado { opacity: 0.6; }
 @media print { .fx-ligadas, .fx-local, .fx-usos .btn-link { display: none !important; } }
+/* boneco: o corpo com a proteção e os lugares (mãos, cinto, costas) em volta */
+.boneco { display: grid; grid-template-columns: minmax(0, 1fr) minmax(7rem, 11rem) minmax(0, 1fr); gap: 0.6rem; align-items: start; }
+.boneco-lado { display: grid; gap: 0.6rem; }
+.boneco-meio { display: grid; justify-items: center; gap: 0.3rem; }
+.boneco-corpo { width: 100%; max-width: 11rem; height: auto; }
+.boneco-parte { fill: rgba(217, 204, 176, 0.06); stroke: var(--osso-fosco); stroke-width: 1.2; }
+.boneco-parte.protegida { fill: var(--ouro); stroke: var(--ouro-claro); }
+.boneco-parte:hover { stroke: var(--osso-claro); stroke-width: 2; }
+.boneco-vestido { margin: 0; font-size: 0.82rem; text-align: center; color: #c4b89f; }
+.boneco-lugar { display: grid; gap: 0.3rem; padding: 0.45rem 0.55rem; background: rgba(14, 13, 12, 0.5); border: 1px solid var(--ouro-fio); }
+.boneco-lugar-nome { font-family: var(--f-titulo); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: #a39780; }
+.boneco-lugar ul { display: grid; gap: 0.2rem; margin: 0; padding: 0; list-style: none; }
+.boneco-lugar li { display: flex; align-items: center; gap: 0.3rem; min-width: 0; font-size: 0.92rem; }
+.boneco-lugar li .app-item-nome-btn { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 400; }
+.boneco-vazio { font-style: italic; color: var(--osso-fosco); }
+.boneco-tira { flex: none; width: 1.4rem; height: 1.4rem; padding: 0; font-size: 1rem; line-height: 1; color: var(--osso-fosco); background: none; border: 1px solid var(--ouro-fio); cursor: pointer; }
+.boneco-tira:hover { color: var(--osso-claro); border-color: var(--ouro); }
+.boneco-por { width: 100%; padding: 0.15rem 0.3rem; font-family: var(--f-corpo); font-size: 0.85rem; color: var(--osso-claro); background: rgba(0, 0, 0, 0.4); border: 1px solid var(--ouro-linha); }
+.boneco-por option { background: var(--pedra); }
+.fx-sacar { display: block; font-size: 0.8rem; font-style: italic; color: #e0a15e; }
+/* na ficha viva do criador (coluna estreita): o corpo menor e os lugares em duas colunas embaixo */
+.fv-boneco .boneco { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.fv-boneco .boneco-meio { grid-column: 1 / -1; grid-row: 1; }
+.fv-boneco .boneco-corpo { max-width: 7.5rem; }
+@media (max-width: 599px) {
+  .boneco { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .boneco-meio { grid-column: 1 / -1; grid-row: 1; }
+  .boneco-corpo { max-width: 8.5rem; }
+}
+@media print { .boneco-por, .boneco-tira { display: none !important; } .boneco-parte.protegida { fill: #999 !important; } }

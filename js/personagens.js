@@ -1170,23 +1170,47 @@
       var recipientes = itens.filter(function (y) { return y !== x && RECIPIENTE.test(y.item.nome) && !descende(y); });
       var s0 = el('select', 'fx-local');
       s0.setAttribute('aria-label', 'Onde está ' + x.item.nome);
-      [['equipado', 'Equipado'], ['levado', 'Levado']].concat(recipientes.map(function (y) { return ['dentro:' + y.sel.uid, 'Dentro: ' + y.item.nome]; }))
+      criador.lugaresPossiveis(x.item.id).map(function (l) { return ['lugar:' + l, criador.LUGARES[l].nome]; })
+        .concat([['levado', 'Levado']]).concat(recipientes.map(function (y) { return ['dentro:' + y.sel.uid, 'Dentro: ' + y.item.nome]; }))
         .concat([['guardado', 'Em casa']]).forEach(function (o) {
           var op = el('option', null, o[1]);
           op.value = o[0];
           s0.appendChild(op);
         });
-      s0.value = x.sel.dentro ? 'dentro:' + x.sel.dentro : (x.sel.local || 'levado');
+      s0.value = x.sel.dentro ? 'dentro:' + x.sel.dentro : x.sel.local === 'equipado' ? 'lugar:' + x.sel.lugar : (x.sel.local || 'levado');
       s0.addEventListener('change', function () {
         var val = s0.value;
+        if (val.indexOf('lugar:') === 0) { porNoCorpo(uid, val.slice(6)); return; }
         mudarFicha(function (sv) {
           var alvo = (sv.equipamento || []).filter(function (z) { return z.uid === uid; })[0];
           if (!alvo) return;
           if (val.indexOf('dentro:') === 0) { alvo.dentro = val.slice(7); alvo.local = 'levado'; }
-          else { delete alvo.dentro; alvo.local = val; }
+          else { delete alvo.dentro; delete alvo.lugar; alvo.local = val; }
         });
       });
       return s0;
+    }
+    var avisoEquip = '';
+    function blocoBoneco() {
+      if (!window.Boneco) return null;
+      var b = bloco('Corpo', 'ficha-largo fx-boneco');
+      if (avisoEquip) { b.appendChild(el('p', 'combate-nota tem-aviso', avisoEquip)); avisoEquip = ''; }
+      b.appendChild(window.Boneco.desenhar({
+        resumo: r,
+        lugaresPossiveis: criador.lugaresPossiveis,
+        aoPor: function (uid, lugar) { porNoCorpo(uid, lugar); },
+        aoTirar: function (uid) {
+          mudarFicha(function (sv) {
+            var alvo = (sv.equipamento || []).filter(function (z) { return z.uid === uid; })[0];
+            if (alvo) { alvo.local = 'levado'; delete alvo.lugar; }
+          });
+        }
+      }));
+      return b;
+    }
+    function porNoCorpo(uid, lugar) {
+      var saiu = [];
+      mudarFicha(function (sv) { saiu = criador.equipar(sv, uid, lugar); avisoEquip = criador.avisoDeTroca(saiu, lugar); });
     }
     function contadorUsos(x) {
       var total = x.sel.quantidade || 1;
@@ -1247,6 +1271,8 @@
         if (sits) s.appendChild(sits);
         s.appendChild(blocoAtributos());
         s.lastChild.appendChild(blocoPontos());
+        var bnG = blocoBoneco();
+        if (bnG) s.appendChild(bnG);
         var comb = bloco('Combate', 'ficha-largo ficha-combate fx-so-tela');
         comb.appendChild(blocoCombate(r, true));
         s.appendChild(comb);
@@ -1320,9 +1346,11 @@
         s.appendChild(el('p', 'calc-detalhe fx-eq-resumo', num(cb.peso_total) + ' kg carregados · carga ' + cb.carga.nome + ' (deslocamento ' + cb.carga.deslocamento + ') · gasto ' + moeda(r.gasto_equipamento) + ' de ' + moeda(r.recursos) + ' · ' +
           (r.dinheiro_restante >= 0 ? 'sobram ' + moeda(r.dinheiro_restante) : 'faltam ' + moeda(-r.dinheiro_restante))));
         if (!itens.length) { s.appendChild(el('p', 'pericia-vazio', 'Nada.')); s.appendChild(blocoCarga()); return; }
+        var bn = blocoBoneco();
+        if (bn) s.appendChild(bn);
         // armas equipadas: prontas para rolar acerto e dano
         var equipadas = itens.filter(function (x) { return x.local === 'equipado'; });
-        var ba = bloco('Armas prontas', 'ficha-largo');
+        var ba = bloco('Armas', 'ficha-largo');
         var linhasArma = [];
         equipadas.filter(function (x) { return tipoDeItem(x.item) === 'arma'; }).forEach(function (x) {
           cb.armas.filter(function (a) { return a.item && a.item.id === x.item.id; }).forEach(function (a, k) {
@@ -1330,7 +1358,9 @@
             rolavel(nh, 'teste', a.nome, a.nh, alvosDaArma(a));
             var dano = el('span', null, a.dano);
             rolavel(dano, 'dano', a.nome, a.dano, ['dano']);
-            linhasArma.push([nomeComIcone(x.item, a.nome), nh, dano, a.alcance || '—', k === 0 ? seletorLocal(x) : '']);
+            var nomeArma = nomeComIcone(x.item, a.nome);
+            if (a.sacar) nomeArma.appendChild(el('span', 'fx-sacar', ({ Cinto: 'no cinto', Costas: 'nas costas' }[a.sacar] || a.sacar) + ': saque antes (Preparar)'));
+            linhasArma.push([nomeArma, nh, dano, a.alcance || '—', k === 0 ? seletorLocal(x) : '']);
           });
         });
         if (!linhasArma.length) ba.appendChild(el('p', 'pericia-vazio', 'Nenhuma arma equipada. Os ataques desarmados estão em Combate.'));

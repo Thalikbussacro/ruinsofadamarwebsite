@@ -2639,9 +2639,6 @@ body.arrastando .app-lado { outline: 2px dashed var(--ouro-linha); outline-offse
 .boneco-lado { display: grid; gap: 0.6rem; }
 .boneco-meio { display: grid; justify-items: center; gap: 0.3rem; }
 .boneco-corpo { width: 100%; max-width: 11rem; height: auto; }
-.boneco-parte { fill: rgba(217, 204, 176, 0.06); stroke: var(--osso-fosco); stroke-width: 1.2; }
-.boneco-parte.protegida { fill: var(--ouro); stroke: var(--ouro-claro); }
-.boneco-parte:hover { stroke: var(--osso-claro); stroke-width: 2; }
 .boneco-vestido { margin: 0; font-size: 0.82rem; text-align: center; color: #c4b89f; }
 .boneco-lugar { display: grid; gap: 0.3rem; padding: 0.45rem 0.55rem; background: rgba(14, 13, 12, 0.5); border: 1px solid var(--ouro-fio); }
 .boneco-lugar-nome { font-family: var(--f-titulo); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: #a39780; }
@@ -2663,12 +2660,36 @@ body.arrastando .app-lado { outline: 2px dashed var(--ouro-linha); outline-offse
   .boneco-meio { grid-column: 1 / -1; grid-row: 1; }
   .boneco-corpo { max-width: 13rem; }
 }
-@media print { .boneco-por, .boneco-tira { display: none !important; } .boneco-parte.protegida { fill: #999 !important; } }
-/* ícones do que o personagem leva, desenhados sobre o corpo */
-.boneco-item circle { fill: #1a1612; stroke: var(--ouro-linha); stroke-width: 1; }
+@media print { .boneco-por, .boneco-tira { display: none !important; } }
+/* boneco desenhado: corpo, roupas por material e o que ele leva */
+.boneco-corpo { overflow: visible; }
+.boneco-pele path { fill: #3a302a; stroke: #b3a58a; stroke-width: 1.2; stroke-linejoin: round; }
+.boneco-camada { stroke: rgba(0, 0, 0, 0.55); stroke-width: 1; stroke-linejoin: round; }
+.boneco-elmo, .boneco-viseira { stroke: #c9ccd0; }
+.boneco-fenda { stroke: #0e0d0c; stroke-width: 2.5; stroke-linecap: round; }
+.bn-malha-fundo { fill: #4d5156; } .bn-malha-anel { fill: none; stroke: #a9aeb4; stroke-width: 0.7; }
+.bn-placas-fundo { fill: #8b9096; } .bn-placas-junta { stroke: #3f4246; stroke-width: 1; } .bn-placas-rebite { fill: #d3d6d9; }
+.bn-couro-fundo { fill: #6a4a30; } .bn-couro-ponto { stroke: #c79a62; stroke-width: 0.6; }
+.bn-tecido-fundo { fill: #5a4636; } .bn-tecido-fio { stroke: #735c48; stroke-width: 0.6; }
+.boneco-metal { fill: #b7bcc2; stroke: #3f4246; stroke-width: 0.8; }
+.boneco-fio { stroke: #eef0f2; stroke-width: 0.7; opacity: 0.7; }
+.boneco-madeira { fill: #7a5634; stroke: #2e1f12; stroke-width: 0.8; }
+.boneco-couro { fill: #5e3f28; stroke: #22160c; stroke-width: 0.8; }
+.boneco-arco { fill: none; stroke: #8a6238; stroke-width: 3.2; stroke-linecap: round; }
+.boneco-corda { stroke: #e8dcc0; stroke-width: 0.7; }
+.boneco-escudo { stroke: #2e1f12; stroke-width: 1.2; }
+.boneco-escudo-face { fill: #6e1f1a; stroke: #c9ab6b; stroke-width: 1.2; }
+.boneco-fogo { fill: #e0822e; stroke: #f4c46a; stroke-width: 0.8; }
+.boneco-costura { fill: none; stroke: #c79a62; stroke-width: 0.8; stroke-dasharray: 2 2; }
+.boneco-haste-flecha { stroke: #9b7a52; stroke-width: 1; }
+.boneco-pena { fill: #d9ccb0; stroke: #6e1f1a; stroke-width: 0.5; }
+.boneco-mochila { fill: #4e3522; }
+.boneco-rolo { fill: #6b5a45; stroke: #22160c; stroke-width: 0.8; }
+.boneco-alcas path { fill: none; stroke: #4a3120; stroke-width: 5; stroke-linecap: round; }
+.boneco-cinto { stroke-width: 0.8; }
+.boneco-dedos { fill: #3a302a; stroke: #b3a58a; stroke-width: 1; }
+.boneco-dedos.com-luva { fill: #6a4a30; stroke: #22160c; }
+.boneco-fundo-icone { fill: #1a1612; stroke: var(--ouro-linha); stroke-width: 1; }
 .boneco-item .icone { color: var(--ouro-claro); }
-.boneco-item.na-mao circle { stroke: var(--ouro); stroke-width: 1.4; }
-.boneco-item.na-mao .icone { color: var(--osso-claro); }
-.boneco-item.atras { opacity: 0.8; }
-.boneco-item.vestido circle { fill: rgba(26, 22, 18, 0.85); }
-@media print { .boneco-item circle { fill: #fff !important; stroke: #000 !important; } .boneco-item .icone { color: #000 !important; } }
+.boneco-item:hover > *, .boneco-roupa:hover > * { filter: brightness(1.2); }
+@media print { .boneco-pele path { fill: #fff !important; stroke: #000 !important; } }

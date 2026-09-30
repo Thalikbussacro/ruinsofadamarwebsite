@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=6c65235a">
   <script src="js/whatsapp.js?v=07e0615b" defer></script>
-  <script src="js/site.js?v=49e4758b" defer></script>
+  <script src="js/site.js?v=8e7ff6b1" defer></script>
 </head>
 <body data-root="./" data-page="index.html">
   <main id="conteudo">
@@ -23,6 +23,7 @@
       <div class="hero-actions">
         <a class="btn btn-primary" data-jogar href="jogar.html"><span class="glyph" aria-hidden="true">⚔&#xFE0E;</span> Jogar</a>
         <a class="btn btn-ghost" href="mundo/visao-geral.html">Conhecer o mundo</a>
+        <a class="btn btn-ghost" href="mesa/criador.html">Criar personagem</a>
       </div>
     </section>
 
@@ -104,7 +105,8 @@
         <p class="lede">Por isso, qualquer arquétipo cultural humano cabe em Adamar.</p>
         <p>Um samurai de uma ilha distante, um cavaleiro de armadura pesada dos reinos de Roestia, um guerreiro do deserto, um caçador das geleiras, um viking de costa fria: todos têm lugar. O cenário só pede coerência. A tecnologia para no nível medieval, a magia segue suas regras, e o personagem precisa fazer sentido no mundo. Dentro disso, há liberdade quase total.</p>
         <div class="band-actions">
-          <a class="btn btn-primary" href="personagens/criando.html">Criar seu personagem</a>
+          <a class="btn btn-primary" href="mesa/criador.html">Criar seu personagem</a>
+          <a class="btn btn-ghost" href="personagens/criando.html">Ler o guia</a>
         </div>
       </div>
       <figure class="map-figure band-split-map">
@@ -113,20 +115,48 @@
       </figure>
     </section>
 
+    <section class="band" aria-labelledby="a-mesa">
+      <p class="kicker">Para jogar</p>
+      <h2 id="a-mesa">À mesa</h2>
+      <p class="band-intro">Adamar se joga com o sistema que a mesa preferir; as mesas do narrador usam GURPS, e para elas ficam aqui as ferramentas: montar e guardar o personagem, consultar as regras e acompanhar a sessão.</p>
+      <ul class="card-grid grid-3">
+        <li><article class="card">
+          <h3><a href="mesa/personagens.html">Cofre de personagens</a></h3>
+          <p>Seus personagens guardados no navegador, com a ficha completa, os pontos de vida e fadiga, o rolador de dados e o diário da sessão.</p>
+          <span class="card-more" aria-hidden="true">Abrir o cofre ›</span>
+        </article></li>
+        <li><article class="card">
+          <h3><a href="mesa/criador.html">Criar personagem</a></h3>
+          <p>O criador passo a passo: conceito, atributos, vantagens, desvantagens, perícias e equipamento, com os pontos conferidos na hora e modelos prontos.</p>
+          <span class="card-more" aria-hidden="true">Começar ›</span>
+        </article></li>
+        <li><article class="card">
+          <h3><a href="mesa/pericias-gurps.html">Compêndio GURPS</a></h3>
+          <p>Perícias, vantagens, desvantagens e equipamento que cabem em Adamar, cada um com explicação e exemplos de uso na mesa.</p>
+          <span class="card-more" aria-hidden="true">Consultar ›</span>
+        </article></li>
+        <li><article class="card">
+          <h3><a href="mesa/combate.html">Combate</a></h3>
+          <p>Consulta rápida para a luta: ordem de ação, manobras, ataque, defesas, dano, ferimentos e fadiga.</p>
+          <span class="card-more" aria-hidden="true">Ver o resumo ›</span>
+        </article></li>
+        <li><article class="card">
+          <h3><a href="mesa/regras.html">Regras da mesa</a></h3>
+          <p>Como jogar Adamar em qualquer sistema, e as decisões para GURPS: nível tecnológico, magia, moeda e o que muda em relação ao livro.</p>
+          <span class="card-more" aria-hidden="true">Ler as regras ›</span>
+        </article></li>
+        <li><article class="card">
+          <h3><a href="mesa/sessao-zero.html">Sessão zero</a></h3>
+          <p>O que combinar antes da primeira sessão, e sugestões para quem vai jogar em Adamar.</p>
+          <span class="card-more" aria-hidden="true">Preparar a mesa ›</span>
+        </article></li>
+      </ul>
+    </section>
+
     <section class="band" aria-labelledby="recursos">
       <p class="kicker">Para ir mais fundo</p>
       <h2 id="recursos">Recursos</h2>
       <ul class="card-grid grid-3">
-        <li><article class="card">
-          <h3><a href="mundo/geografia.html">Mapa</a></h3>
-          <p>O mapa de Adamar e o continente de Roestia.</p>
-          <span class="card-more" aria-hidden="true">Ver o mapa ›</span>
-        </article></li>
-        <li><article class="card">
-          <h3><a href="canone/materialidade.html">Cânone</a></h3>
-          <p>As definições que dizem como o mundo funciona: o que pode e o que não pode acontecer.</p>
-          <span class="card-more" aria-hidden="true">Ler o cânone ›</span>
-        </article></li>
         <li><article class="card">
           <h3><a href="cronicas/mito-da-criacao.html">Crônicas</a></h3>
           <p>Textos de dentro do mundo: o Mito da criação, a Praga Vermelha, a Vinda para Roestia.</p>
@@ -136,6 +166,11 @@
           <h3><a href="mundo/linha-do-tempo.html">Linha do Tempo</a></h3>
           <p>A cronologia do cenário, do mito da criação ao presente.</p>
           <span class="card-more" aria-hidden="true">Ver a cronologia ›</span>
+        </article></li>
+        <li><article class="card">
+          <h3><a href="mundo/inspiracao.html">Inspiração visual</a></h3>
+          <p>Imagens que dão o tom do cenário: paisagens, ruínas, gente comum e o que espreita no escuro.</p>
+          <span class="card-more" aria-hidden="true">Ver as imagens ›</span>
         </article></li>
         <li><article class="card">
           <h3><a href="https://open.spotify.com/playlist/6LauoSCcWG3fzsGqlEChv6" target="_blank" rel="noopener">Playlist</a></h3>
@@ -158,6 +193,6 @@
     </section>
 
   </main>
-  <noscript><p class="noscript">Menu: <a href="index.html">Início</a> · <a href="mundo/visao-geral.html">O Mundo</a> · <a href="canone/materialidade.html">Cânone</a> · <a href="personagens/criando.html">Personagens</a> · <a href="mesa/regras.html">À Mesa</a> · <a href="cronicas/mito-da-criacao.html">Crônicas</a></p></noscript>
+  <noscript><p class="noscript">Menu: <a href="index.html">Início</a> · <a href="mundo/visao-geral.html">O Mundo</a> · <a href="canone/materialidade.html">Cânone</a> · <a href="cronicas/mito-da-criacao.html">Crônicas</a> · <a href="mesa/regras.html">À Mesa</a> · <a href="mesa/pericias-gurps.html">GURPS</a> · <a href="mesa/personagens.html">Cofre</a></p></noscript>
 </body>
 </html>

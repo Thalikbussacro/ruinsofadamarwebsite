@@ -6,7 +6,7 @@ Site estático do cenário de RPG "Ruínas de Adamar", jogado com GURPS 4e: o mu
 - **Criador de personagem** (`mesa/criador.html`): em modo aplicativo, por etapas, com pontos como saldo (vantagens custam, desvantagens devolvem, pode sobrar), modelos prontos, janela de escolha para traços com versões, níveis ou custo variável, validação contra as regras e ícone por item.
 - **Em jogo** (na ficha): PV, PF, coroas, pontos ganhos (com histórico e desfazer), notas e **diário da sessão** (entradas livres e rolagens registradas com um clique).
 - **Rolador de dados**: clique em atributo, perícia, defesa ou dano na ficha para rolar 3d com sorteio criptográfico; modificador de situação e resultado explicado (margem, crítico).
-- **Ficha de combate**: armas, NH, dano, defesas, carga e proteção, mais ordem de ação e manobras. Os números de dano, peso e proteção só aparecem quando publicados (veja "Números de combate" abaixo).
+- **Ficha de combate**: armas, NH, dano, defesas, carga e proteção, mais ordem de ação e manobras. Usa os números de dano, peso e proteção de `data/gurps/equipamento.json` e `tabela-dano.json`.
 - **Consulta rápida de combate** (`mesa/combate.html`): manobras, ataque, defesas, dano, ferimentos e fadiga, com a página do livro.
 
 Sem build e sem dependências de npm. É só HTML, CSS e JavaScript puro; o site abre direto de `file://` ou de qualquer host estático.
@@ -147,18 +147,9 @@ node tools/gerar-dados.mjs --check
 
 São os testes automatizados do próprio checador e do utilitário de WhatsApp — devem terminar com `check-site self-test ok`, `whatsapp ok` e `jogar ok`.
 
-## Números de combate (publicação)
+## Números de combate
 
-Peso, dano, alcance, aparar, proteção e a tabela de dano por ST vêm do livro. O repositório é público e, por enquanto, publica só os preços; os números ficam na cópia local. Por isso a rotina de publicação do Claude Code é:
-
-```
-git checkout -- data/gurps/equipamento.json && rm -f data/gurps/tabela-dano.json
-node tools/gerar-dados.mjs && node tools/versionar.mjs
-# rodar os testes, check-site, gerar-dados --check e versionar --check; commit e push
-node tools/importar-equipamento.mjs --publicar && node tools/gerar-dados.mjs && node tools/versionar.mjs   # devolve os números à cópia local
-```
-
-Se o narrador decidir publicar os números, basta commitar a cópia local com eles (ver `pendencias-dono.md`). O site funciona nos dois casos: sem os números, mostra o dano como "GeB+1" e fica sem peso, carga e proteção.
+Peso, dano, alcance, aparar, proteção e a tabela de dano por ST estão em `data/gurps/equipamento.json` e `data/gurps/tabela-dano.json`, publicados pelo narrador em 29/09/2026. Para refazê-los a partir da base local: `node tools/importar-equipamento.mjs --publicar`, depois `node tools/gerar-dados.mjs` e `node tools/versionar.mjs`. O site também funciona sem eles (mostra o dano como "GeB+1" e fica sem peso, carga e proteção).
 
 ## Cache
 

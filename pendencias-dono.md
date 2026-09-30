@@ -4,10 +4,7 @@ Coisas que dependem de você (decisão, acesso ou teste no seu aparelho). Vou ac
 
 ## Para fazer no PC
 
-- [ ] **Publicar os números de combate** (peso, dano, alcance, aparar, proteção e tabela de dano por ST). Eles já estão prontos no seu computador, fora de commit; a proteção do Claude Code não me deixa publicar tabelas do livro num repositório público. Se quiser publicar, rode na pasta do projeto:
-  `git add -A && git commit -m "feat: publica números de combate" && git push`
-  (ou, no Claude Code, o mesmo comando com `!` na frente). Sem isso, o site funciona, mas mostra "GeB+1" em vez de "1d+3" e fica sem peso, carga e proteção.
-- [ ] **Opcional: liberar esse tipo de push para o Claude** adicionando uma regra de permissão nas configurações do Claude Code, se preferir que eu publique das próximas vezes.
+- [x] **Publicar os números de combate** — feito por você em 29/09/2026.
 - [ ] **Conferir no Galaxy S24** se o rodapé do criador (Voltar · Salvar · Continuar) aparece inteiro acima da barra de navegação.
 
 ## Decisões de regra (a mesa decide)

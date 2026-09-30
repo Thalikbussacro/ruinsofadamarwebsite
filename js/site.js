@@ -24,32 +24,33 @@
       { label: 'Entremundos', href: 'canone/entremundos.html' },
       { label: 'Forasteiros', href: 'canone/forasteiros.html' },
       { label: 'Masmorras', href: 'canone/masmorras.html' },
-      { label: 'Divindades', href: 'canone/divindades.html' }
-    ]},
-    { label: 'Personagens', children: [
-      { label: 'Criando seu personagem', href: 'personagens/criando.html' },
+      { label: 'Divindades', href: 'canone/divindades.html' },
       { label: 'Fé e panteões', href: 'personagens/fe.html' }
-    ]},
-    { label: 'Cofre', children: [
-      { label: 'Meus personagens', href: 'mesa/personagens.html' },
-      { label: 'Criar personagem', href: 'mesa/criador.html', tambem: ['mesa/criador.html'] }
-    ]},
-    { label: 'À Mesa', children: [
-      { label: 'Regras', href: 'mesa/regras.html' },
-      { label: 'Combate (consulta rápida)', href: 'mesa/combate.html' },
-      { label: 'Atributos (GURPS)', href: 'mesa/ficha-gurps.html' },
-      { label: 'Perícias (GURPS)', href: 'mesa/pericias-gurps.html' },
-      { label: 'Vantagens (GURPS)', href: 'mesa/vantagens-gurps.html' },
-      { label: 'Desvantagens (GURPS)', href: 'mesa/desvantagens-gurps.html' },
-      { label: 'Equipamento (GURPS)', href: 'mesa/equipamento-gurps.html' },
-      { label: 'Sugestões aos jogadores', href: 'mesa/sugestoes.html' },
-      { label: 'Sessão zero', href: 'mesa/sessao-zero.html' }
     ]},
     { label: 'Crônicas', children: [
       { label: 'Mito da criação', href: 'cronicas/mito-da-criacao.html' },
       { label: 'A Praga Vermelha', href: 'cronicas/praga-vermelha.html' },
       { label: 'Vinda para Roestia', href: 'cronicas/vinda-para-roestia.html' },
       { label: 'Contos de Invasões', href: 'cronicas/contos-de-invasoes.html' }
+    ]},
+    // daqui para baixo, o que se usa para jogar
+    { label: 'À Mesa', children: [
+      { label: 'Regras da mesa', href: 'mesa/regras.html' },
+      { label: 'Sessão zero', href: 'mesa/sessao-zero.html' },
+      { label: 'Sugestões aos jogadores', href: 'mesa/sugestoes.html' },
+      { label: 'Combate (consulta rápida)', href: 'mesa/combate.html' }
+    ]},
+    { label: 'GURPS', children: [
+      { label: 'Atributos', href: 'mesa/ficha-gurps.html' },
+      { label: 'Perícias', href: 'mesa/pericias-gurps.html' },
+      { label: 'Vantagens', href: 'mesa/vantagens-gurps.html' },
+      { label: 'Desvantagens', href: 'mesa/desvantagens-gurps.html' },
+      { label: 'Equipamento', href: 'mesa/equipamento-gurps.html' }
+    ]},
+    { label: 'Cofre', children: [
+      { label: 'Meus personagens', href: 'mesa/personagens.html' },
+      { label: 'Criar personagem', href: 'mesa/criador.html', tambem: ['mesa/criador.html'] },
+      { label: 'Guia: criando seu personagem', href: 'personagens/criando.html' }
     ]}
   ];
 

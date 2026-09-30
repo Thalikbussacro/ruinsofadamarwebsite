@@ -253,6 +253,64 @@ const comGanho = c.resumir(pg);
 assert.equal(comGanho.restante, semGanho.restante + 5);
 assert.equal(comGanho.pontos_ganhos, 5);
 assert.equal(comGanho.limite, semGanho.limite);
+// equipamento: local, recipientes, usos gastos, qualidade
+if (comNumeros) {
+  const G2 = Object.assign({}, G, { tabela_dano: JSON.parse(readFileSync(arqTabela, 'utf8')) });
+  const c2 = criarCriador(G2, calc);
+  let e = c2.fichaNova();
+  e.nome = 'Carga';
+  const espada = c2.novoItem('espada-larga');
+  const mochila = c2.novoItem('mochila');
+  const corda = Object.assign(c2.novoItem(G.equipamento.find((i) => /corda/i.test(i.nome) && i.peso && i.peso.kg > 0).id), {});
+  assert.equal(espada.local, 'equipado');   // arma entra pronta
+  assert.equal(mochila.local, 'levado');    // o resto vai carregado
+  corda.dentro = mochila.uid;
+  e.equipamento.push(espada, mochila, corda);
+  const pesoTudo = c2.resumir(e).combate.peso_total;
+  assert.equal(c2.resumir(e).combate.armas.filter((a) => !a.natural).length, 2); // golpe e estocada
+  // mochila guardada em casa: ela e o que está dentro deixam de pesar
+  mochila.local = 'guardado';
+  let rr = c2.resumir(e);
+  assert.ok(rr.combate.peso_total < pesoTudo);
+  assert.equal(rr.equipamento.find((x) => x.sel === corda).local, 'guardado');
+  mochila.local = 'levado';
+  // espada levada (na bainha, não na mão) não aparece para rolar
+  espada.local = 'levado';
+  assert.equal(c2.resumir(e).combate.armas.filter((a) => !a.natural).length, 0);
+  espada.local = 'equipado';
+  // qualidade: boa custa 4x e dá +1 no dano corpo a corpo
+  const precoNormal = c2.resumir(e).equipamento.find((x) => x.sel === espada).preco;
+  const danoNormal = c2.resumir(e).combate.armas.find((a) => a.item.id === 'espada-larga').dano;
+  espada.qualidade = 1;
+  rr = c2.resumir(e);
+  assert.equal(rr.equipamento.find((x) => x.sel === espada).preco, precoNormal * 4);
+  assert.notEqual(rr.combate.armas.find((a) => a.item.id === 'espada-larga').dano, danoNormal);
+  assert.match(rr.combate.armas.find((a) => a.item.id === 'espada-larga').nome, /\(boa\)/);
+  // usos gastos em jogo reduzem o peso carregado
+  corda.quantidade = 3;
+  const pesoTres = c2.resumir(e).combate.peso_total;
+  e.em_jogo = { usados: { [corda.uid]: 2 } };
+  rr = c2.resumir(e);
+  assert.ok(rr.combate.peso_total < pesoTres);
+  assert.equal(rr.equipamento.find((x) => x.sel === corda).atual, 1);
+  // fichas antigas ganham uid e local ao carregar
+  const antiga = c2.carregar({ equipamento: [{ id: 'mochila', quantidade: 1 }] });
+  assert.ok(antiga.equipamento[0].uid);
+  assert.equal(antiga.equipamento[0].local, 'levado');
+}
+
+// situações: bônus condicionais viram interruptores com alvo
+{
+  const t = G.vantagens.find((v) => (v.efeitos || []).some((ef) => ef.condicao && ef.alvo === 'grupo_pericias' && !ef.variante && ef.variante !== 0));
+  if (t) {
+    const s1 = c.fichaNova();
+    s1.tracos.push({ id: t.id, escolha: { nivel: 1 } });
+    const sit = c.resumir(s1).situacoes;
+    assert.ok(sit.length >= 1);
+    assert.ok(sit.every((x) => x.chave && x.origem && typeof x.valor === 'number' && x.alvos.length));
+    assert.ok(sit.some((x) => x.alvos.some((a) => a.startsWith('pericia:'))));
+  }
+}
 // carregar mantém o estado em jogo
 assert.equal(c.carregar({ em_jogo: { pv: 4 } }).em_jogo.pv, 4);
 console.log('criador-ficha ok' + (comNumeros ? '' : ' (sem números de combate)'));

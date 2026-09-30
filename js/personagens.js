@@ -46,6 +46,21 @@
   var ARMAZENAMENTO_MOD = 'adamar-rolagens-mod';
   var modificador = { valor: 0, motivo: '' };
   try { modificador = JSON.parse(sessionStorage.getItem(ARMAZENAMENTO_MOD) || 'null') || modificador; } catch (e) { /* sem armazenamento */ }
+  var situacoesLigadas = []; // [{ origem, condicao, valor, alvos, por_dado }] da ficha aberta
+  function situacoesPara(alvos) {
+    if (!alvos || !alvos.length) return [];
+    return situacoesLigadas.filter(function (x) {
+      if (x.alvos.indexOf('reacao') !== -1) return false; // reação quem rola é o narrador
+      if (x.alvos.indexOf('qualquer') !== -1) return alvos.indexOf('dano') === -1;
+      return x.alvos.some(function (a) { return alvos.indexOf(a) !== -1; });
+    });
+  }
+  function textoSituacoes(lista, dados) {
+    return lista.map(function (x) {
+      var v = x.por_dado && dados ? x.valor * dados : x.valor;
+      return (v >= 0 ? ' +' : ' −') + Math.abs(v) + ' ' + x.origem;
+    }).join('');
+  }
   var rolagens = [];
   try { rolagens = JSON.parse(sessionStorage.getItem(ARMAZENAMENTO_ROLAGENS) || '[]'); } catch (e) { rolagens = []; }
   // sorteio com a aleatoriedade forte do navegador
@@ -151,28 +166,36 @@
     guardarRolagens();
     desenharRolagens();
   }
-  function rolarTeste(rotulo, nhBase) {
+  function rolarTeste(rotulo, nhBase, alvos) {
     quadroRolagens();
     var mod = modificador.valor || 0;
-    var nh = nhBase + mod;
+    var sits = situacoesPara(alvos);
+    var somaSit = sits.reduce(function (t, x) { return t + x.valor; }, 0);
+    var nh = nhBase + mod + somaSit;
     var r = calc.rolarDados('3d', sorteio);
     var a = calc.avaliarTeste(nh, r.total);
     var resultado = a.critico ? 'Sucesso decisivo!' : a.falha_critica ? 'Falha crítica!' :
       a.sucesso ? 'Sucesso' + (a.margem ? ' por ' + a.margem : ' (no limite)') : 'Falha por ' + (-a.margem);
     registrar({
       rotulo: rotulo,
-      conta: r.total + ' (' + r.dados.join('+') + ') contra ' + (mod ? nhBase + (mod > 0 ? '+' : '−') + Math.abs(mod) + (modificador.motivo ? ' ' + modificador.motivo : '') + ' = ' + nh : nh),
+      conta: r.total + ' (' + r.dados.join('+') + ') contra ' + (mod || sits.length ? nhBase + textoSituacoes(sits) + (mod ? (mod > 0 ? ' +' : ' −') + Math.abs(mod) + (modificador.motivo ? ' ' + modificador.motivo : '') : '') + ' = ' + nh : nh),
       resultado: resultado,
       classe: a.critico ? 'critico' : a.falha_critica ? 'falha-critica' : a.sucesso ? 'sucesso' : 'falha'
     });
   }
-  function rolarDano(rotulo, expr) {
+  function rolarDano(rotulo, expr, alvos) {
     var r = calc.rolarDados(expr, sorteio);
     if (!r) return;
-    registrar({ rotulo: rotulo, conta: r.total + ' (' + r.dados.join('+') + (r.mod ? (r.mod > 0 ? '+' : '') + r.mod : '') + ')', resultado: expr, classe: 'dano' });
+    var sits = situacoesPara(alvos);
+    var extra = sits.reduce(function (t, x) { return t + (x.por_dado ? x.valor * r.dados.length : x.valor); }, 0);
+    registrar({
+      rotulo: rotulo,
+      conta: (r.total + extra) + ' (' + r.dados.join('+') + (r.mod ? (r.mod > 0 ? '+' : '') + r.mod : '') + textoSituacoes(sits, r.dados.length) + ')',
+      resultado: expr, classe: 'dano'
+    });
   }
   // marca um elemento como rolável: tipo "teste" (valor = NH) ou "dano" (valor = "1d+2")
-  function rolavel(no, tipo, rotulo, valor) {
+  function rolavel(no, tipo, rotulo, valor, alvos) {
     if (!no || valor == null || valor === '' || valor === '—') return no;
     if (tipo === 'teste' && isNaN(parseInt(valor, 10))) return no;
     if (tipo === 'dano') {
@@ -186,6 +209,7 @@
     no.setAttribute('data-rolar', tipo);
     no.setAttribute('data-rotulo', rotulo);
     no.setAttribute('data-valor', String(valor));
+    if (alvos && alvos.length) no.setAttribute('data-alvos', alvos.join(' '));
     no.title = tipo === 'teste' ? 'Rolar 3d contra ' + parseInt(valor, 10) : 'Rolar ' + valor;
     return no;
   }
@@ -195,8 +219,9 @@
     if (ev.type === 'keydown' && ev.key !== 'Enter' && ev.key !== ' ') return;
     ev.preventDefault();
     var v = alvo.getAttribute('data-valor');
-    if (alvo.getAttribute('data-rolar') === 'teste') rolarTeste(alvo.getAttribute('data-rotulo'), parseInt(v, 10));
-    else rolarDano(alvo.getAttribute('data-rotulo'), v);
+    var alvos = (alvo.getAttribute('data-alvos') || '').split(' ').filter(Boolean);
+    if (alvo.getAttribute('data-rolar') === 'teste') rolarTeste(alvo.getAttribute('data-rotulo'), parseInt(v, 10), alvos);
+    else rolarDano(alvo.getAttribute('data-rotulo'), v, alvos);
   }
   document.addEventListener('click', aoRolar);
   document.addEventListener('keydown', aoRolar);
@@ -208,14 +233,21 @@
     Array.prototype.forEach.call(raiz.querySelectorAll('.ficha-valores > div'), function (d) {
       var nome = (d.querySelector('dt') || {}).textContent;
       var alvo = { ST: 'ST', DX: 'DX', IQ: 'IQ', HT: 'HT', Vont: 'Vontade', Per: 'Percepção' }[nome];
+      var chave = { ST: 'st', DX: 'dx', IQ: 'iq', HT: 'ht', Vont: 'vontade', Per: 'per' }[nome];
       var dd = d.querySelector('dd');
-      if (alvo && dd) rolavel(dd, 'teste', alvo, dd.textContent);
+      if (alvo && dd) rolavel(dd, 'teste', alvo, dd.textContent, ['atributo:' + chave]);
     });
     Array.prototype.forEach.call(raiz.querySelectorAll('.ficha-bloco:not(.ficha-combate) .table-wrap tbody tr'), function (tr) {
       if (tr.querySelector('[data-rolar]')) return; // a linha já traz o número rolável
       var tds = tr.querySelectorAll('td');
       if (tds.length >= 3 && /^\d+$/.test(tds[2].textContent.trim())) rolavel(tds[2], 'teste', (tds[0].querySelector('strong') || tds[0]).textContent, tds[2].textContent);
     });
+  }
+
+  // o que uma arma pode receber de situação: a perícia dela, "ataque" e "ataque à distância"
+  function alvosDaArma(a) {
+    var ids = ((a.item && a.item.combate && a.item.combate.pericias) || []).filter(function (x) { return x.tipo === 'pericia'; }).map(function (x) { return 'pericia:' + x.id; });
+    return ['ataque'].concat(a.distancia ? ['ataque:distancia'] : []).concat(ids);
   }
 
   // ---------- combate: caixas de dano/defesas, tabela de armas e proteção ----------
@@ -229,8 +261,8 @@
       var c = el('div', 'combate-caixa');
       c.appendChild(el('span', null, x[0]));
       c.appendChild(el('strong', null, String(x[1])));
-      if (x[0] === 'GdP' || x[0] === 'GeB') rolavel(c, 'dano', 'Dano ' + x[0], x[1]);
-      else if (x[0] !== 'Carga') rolavel(c, 'teste', x[0], x[1]);
+      if (x[0] === 'GdP' || x[0] === 'GeB') rolavel(c, 'dano', 'Dano ' + x[0], x[1], ['dano']);
+      else if (x[0] !== 'Carga') rolavel(c, 'teste', x[0], x[1], ['defesa:' + { Esquiva: 'esquiva', Aparar: 'aparar', Bloqueio: 'bloqueio' }[x[0]]]);
       linha.appendChild(c);
     });
     box.appendChild(linha);
@@ -249,11 +281,12 @@
         tr.appendChild(n);
         var vals = [a.dano, a.nh == null ? '—' : a.nh, a.aparar == null ? '—' : a.aparar];
         if (!compacto) vals.push(a.alcance, a.st || '—', a.pericia);
+        var alvosArma = alvosDaArma(a);
         vals.forEach(function (x, k) {
           var td = el('td', null, String(x));
-          if (k === 0) rolavel(td, 'dano', a.nome, x);
-          if (k === 1) rolavel(td, 'teste', a.nome, x);
-          if (k === 2) rolavel(td, 'teste', 'Aparar (' + a.nome + ')', parseInt(x, 10));
+          if (k === 0) rolavel(td, 'dano', a.nome, x, ['dano']);
+          if (k === 1) rolavel(td, 'teste', a.nome, x, alvosArma);
+          if (k === 2) rolavel(td, 'teste', 'Aparar (' + a.nome + ')', parseInt(x, 10), ['defesa:aparar']);
           tr.appendChild(td);
         });
         t.appendChild(tr);
@@ -503,7 +536,8 @@
   }
 
   function brasao(f, r, classe) {
-    var b = el('div', 'brasao' + (classe ? ' ' + classe : '') + ' era-' + (ERAS[f.era] || 'sem'));
+    var b = el('div', 'brasao' + (classe ? ' ' + classe : '') + ' era-' + (ERAS[f.era] || 'sem') + (f.retrato ? ' com-retrato' : ''));
+    if (f.retrato) b.style.backgroundImage = 'url("' + f.retrato + '")';
     var inicial = el('span', 'brasao-inicial', (String(f.nome || '?').trim()[0] || '?').toUpperCase());
     b.appendChild(inicial);
     var mp = melhorPericia(r);
@@ -846,9 +880,38 @@
       document.getElementById('fx-menu-btn').hidden = true;
       return;
     }
-    var f = criador.carregar(salvo);
-    var r = criador.resumir(f);
-    var v = r.valores;
+    var semUid = (salvo.equipamento || []).some(function (x) { return !x.uid; });
+    var f, r, v, comPericia, vantagens, desvantagens, talentos, qualidades, peculiaridades, itens;
+    function recalcular() {
+      salvo = arquivo.obter(idFicha) || salvo;
+      f = criador.carregar(salvo);
+      r = criador.resumir(f);
+      v = r.valores;
+      comPericia = r.pericias.filter(function (x) { return x.pericia; });
+      vantagens = r.tracos.filter(function (x) { return x.traco && x.custo >= 0; });
+      desvantagens = r.tracos.filter(function (x) { return x.traco && x.custo < 0; });
+      talentos = r.talentos.filter(function (x) { return x.talento; }).map(function (x) {
+        return ['Talento ' + x.talento.nome + ' ' + x.sel.nivel, sinal(x.custo) + ' pts', '+' + x.sel.nivel + ' em ' + x.talento.pericias.map(function (p) { var q = porId(G.pericias, p); return q ? q.nome : p; }).join(', ') + '.'];
+      });
+      qualidades = f.qualidades.filter(Boolean).map(function (q) { return [q, '+1 pt', 'Qualidade']; });
+      peculiaridades = f.peculiaridades.filter(Boolean).map(function (q) { return [q, '-1 pt', 'Peculiaridade']; });
+      itens = r.equipamento.filter(function (x) { return x.item; });
+      var ligadas = (f.em_jogo && f.em_jogo.situacoes) || [];
+      situacoesLigadas = r.situacoes.filter(function (x) { return ligadas.indexOf(x.chave) !== -1; });
+    }
+    recalcular();
+    if (semUid) arquivo.salvar(salvo); // fichas antigas: os itens ganham uid (para contar usos e recipientes)
+    // grava uma mudança na ficha salva e refaz a seção aberta
+    function mudarFicha(mexer) {
+      var sv = arquivo.obter(idFicha);
+      if (!sv) return;
+      mexer(sv);
+      arquivo.salvar(sv);
+      recalcular();
+      desenharPontos();
+      desenharLigadas();
+      if (atual) { var topo = box.scrollTop; montar(atual); box.scrollTop = topo; }
+    }
     document.title = (f.nome || 'Personagem') + ' — Ruínas de Adamar';
     document.getElementById('f-nome').textContent = f.nome || 'Sem nome';
     document.getElementById('f-kicker').textContent = [f.era, f.origem, f.idade ? f.idade + ' anos' : '', f.altura, f.peso_corporal].filter(Boolean).join(' · ') || 'Personagem';
@@ -881,15 +944,44 @@
     }
     desenharPontos();
 
-    var comPericia = r.pericias.filter(function (x) { return x.pericia; });
-    var vantagens = r.tracos.filter(function (x) { return x.traco && x.custo >= 0; });
-    var desvantagens = r.tracos.filter(function (x) { return x.traco && x.custo < 0; });
-    var talentos = r.talentos.filter(function (x) { return x.talento; }).map(function (x) {
-      return ['Talento ' + x.talento.nome + ' ' + x.sel.nivel, sinal(x.custo) + ' pts', '+' + x.sel.nivel + ' em ' + x.talento.pericias.map(function (p) { var q = porId(G.pericias, p); return q ? q.nome : p; }).join(', ') + '.'];
-    });
-    var qualidades = f.qualidades.filter(Boolean).map(function (q) { return [q, '+1 pt', 'Qualidade']; });
-    var peculiaridades = f.peculiaridades.filter(Boolean).map(function (q) { return [q, '-1 pt', 'Peculiaridade']; });
-    var itens = r.equipamento.filter(function (x) { return x.item; });
+    // retrato no topo
+    if (f.retrato) {
+      var foto = el('div', 'fx-retrato');
+      foto.style.backgroundImage = 'url("' + f.retrato + '")';
+      foto.setAttribute('role', 'img');
+      foto.setAttribute('aria-label', 'Retrato de ' + (f.nome || 'personagem'));
+      var quem = document.querySelector('.fx-quem');
+      quem.parentNode.insertBefore(foto, quem);
+    }
+    // faixa das situações ligadas: aparece em qualquer seção, com o × para desligar
+    var faixa = el('div', 'fx-ligadas');
+    faixa.setAttribute('aria-live', 'polite');
+    box.insertBefore(faixa, conceito.nextSibling);
+    function desenharLigadas() {
+      faixa.textContent = '';
+      faixa.hidden = !situacoesLigadas.length;
+      if (!situacoesLigadas.length) return;
+      faixa.appendChild(el('span', 'fx-ligadas-rotulo', 'Valendo agora:'));
+      situacoesLigadas.forEach(function (x) {
+        var c = el('span', 'fx-ligada');
+        c.appendChild(document.createTextNode((x.valor > 0 ? '+' : '−') + Math.abs(x.valor) + ' ' + x.origem));
+        var tira = el('button', null, '×');
+        tira.type = 'button';
+        tira.setAttribute('aria-label', 'Desligar ' + x.origem);
+        tira.addEventListener('click', function () { ligarSituacao(x.chave, false); });
+        c.appendChild(tira);
+        faixa.appendChild(c);
+      });
+    }
+    function ligarSituacao(chave, ligada) {
+      mudarFicha(function (sv) {
+        sv.em_jogo = sv.em_jogo || {};
+        var lista = (sv.em_jogo.situacoes || []).filter(function (k) { return k !== chave; });
+        if (ligada) lista.push(chave);
+        sv.em_jogo.situacoes = lista;
+      });
+    }
+    desenharLigadas();
 
     // ---------- conteúdo de cada seção ----------
     function blocoAtributos() {
@@ -936,7 +1028,7 @@
       return pe;
     }
     function tabelaPericias(lista) {
-      return tabela(['Perícia', 'Tipo', 'NH', 'Pontos'], lista.map(function (x) {
+      return tabela(['Perícia', 'Tipo', 'NH', 'Nível', 'Pontos'], lista.map(function (x) {
         var nome = nomeComIcone(x.pericia, x.pericia.nome + (x.sel.especializacao ? ' (' + x.sel.especializacao + ')' : ''));
         if (x.bonus.length || x.situacional.length) {
           var ul = el('ul', 'efeitos');
@@ -945,9 +1037,170 @@
           nome.appendChild(ul);
         }
         var nh = el('strong', 'fx-nh', x.nh == null ? '—' : String(x.nh));
-        rolavel(nh, 'teste', x.pericia.nome + (x.sel.especializacao ? ' (' + x.sel.especializacao + ')' : ''), x.nh);
-        return [nome, x.atributo + '/' + x.pericia.dificuldade, nh, String(x.sel.pontos || 0)];
+        rolavel(nh, 'teste', x.pericia.nome + (x.sel.especializacao ? ' (' + x.sel.especializacao + ')' : ''), x.nh, ['pericia:' + x.pericia.id]);
+        return [nome, x.atributo + '/' + x.pericia.dificuldade, nh, x.nivel_relativo || '—', String(x.sel.pontos || 0)];
       }));
+    }
+
+    function blocoSituacoes(filtro) {
+      var lista = r.situacoes.filter(filtro || function () { return true; });
+      if (!lista.length) return null;
+      var b = bloco('Situações', 'ficha-largo fx-situacoes fx-so-tela');
+      b.appendChild(el('p', 'combate-nota', 'Bônus e penalidades que só valem em certos momentos. Ligue quando a situação acontecer: as rolagens passam a somar, e o quadro de rolagens mostra de onde veio. Desligue depois.'));
+      var ligadas = (f.em_jogo && f.em_jogo.situacoes) || [];
+      var ul = el('ul', 'fx-sit-lista');
+      lista.forEach(function (x) {
+        var li = el('li');
+        var lab = el('label', 'fx-sit');
+        var cx = el('input');
+        cx.type = 'checkbox';
+        cx.checked = ligadas.indexOf(x.chave) !== -1;
+        cx.addEventListener('change', function () { ligarSituacao(x.chave, cx.checked); });
+        lab.appendChild(cx);
+        var txt = el('span');
+        txt.appendChild(el('strong', null, (x.valor > 0 ? '+' : '−') + Math.abs(x.valor) + (x.por_dado ? ' por dado' : '') + ' · ' + x.origem));
+        txt.appendChild(el('span', 'fx-sit-cond', x.condicao + (x.alvos.indexOf('reacao') !== -1 ? ' (é reação: quem aplica é o narrador)' : '')));
+        lab.appendChild(txt);
+        li.appendChild(lab);
+        ul.appendChild(li);
+      });
+      b.appendChild(ul);
+      return b;
+    }
+    function blocoPontos() {
+      var c = r.custos;
+      var b = bloco('Pontos por parte', 'fx-pontos-partes');
+      b.appendChild(linhas([
+        ['Atributos', sinal(c.atributos)], ['Secundárias', sinal(c.secundarias)], ['Social e idiomas', sinal(c.social)],
+        ['Vantagens e talentos', sinal(c.vantagens)], ['Qualidades', sinal(c.qualidades)],
+        ['Desvantagens', sinal(c.desvantagens)], ['Peculiaridades', sinal(c.peculiaridades)], ['Perícias', sinal(c.pericias)],
+        ['Total gasto', String(r.total)], ['Saldo', String(r.restante)]
+      ]));
+      return b;
+    }
+    // carga: os cinco níveis com limite, deslocamento e esquiva; e o que dá para levantar ou empurrar
+    function blocoCarga() {
+      var cb = r.combate, bc = r.base_carga;
+      var b = bloco('Carga e força', 'ficha-largo');
+      var linhasCarga = R.carga.niveis.map(function (n) {
+        var esq = Math.max(1, r.esquiva + n.esquiva + cb.db);
+        return [n.nome, 'até ' + num(Math.round(bc * n.peso_max_bc * 10) / 10) + ' kg', String(calc.deslocamentoComCarga(v.deslocamento, n.nivel)), String(esq)];
+      });
+      var t = tabela(['Carga', 'Peso', 'Deslocamento', 'Esquiva'], linhasCarga);
+      var trs = t.querySelectorAll('tbody tr');
+      if (trs[cb.carga.nivel]) trs[cb.carga.nivel].classList.add('fx-atual');
+      b.appendChild(el('p', 'combate-nota', 'Carregando ' + num(cb.peso_total) + ' kg agora (o que está em casa não conta). Base de Carga ' + num(bc) + ' kg.'));
+      b.appendChild(t);
+      var forca = el('ul', 'fx-forca');
+      [['Levantar com uma mão', 2], ['Levantar com as duas mãos', 8], ['Empurrar ou derrubar', 12], ['Carregar nas costas', 15], ['Arrastar um pouco', 50]].forEach(function (x) {
+        var li = el('li');
+        li.appendChild(el('span', null, x[0]));
+        li.appendChild(el('strong', null, num(Math.round(bc * x[1] * 10) / 10) + ' kg'));
+        forca.appendChild(li);
+      });
+      b.appendChild(forca);
+      b.appendChild(el('p', 'combate-nota', 'Empurrar com impulso de corrida dobra o valor. Esforço demorado cansa (PF), a critério do narrador.'));
+      return b;
+    }
+    // locais de acerto: quanto custa mirar e a proteção de cada lugar
+    var LOCAIS = [
+      ['Olhos', -9, []], ['Crânio', -7, ['crânio']], ['Rosto', -5, ['rosto']], ['Pescoço', -5, ['pescoço']],
+      ['Tronco', 0, ['tronco', 'corpo']], ['Órgãos vitais', -3, ['tronco', 'corpo']], ['Virilha', -3, ['virilha', 'corpo']],
+      ['Braços', -2, ['braços', 'membros']], ['Mãos', -4, ['mãos']], ['Pernas', -2, ['pernas', 'membros']], ['Pés', -4, ['pés']]
+    ];
+    function blocoLocais() {
+      var pr = r.combate.protecao;
+      var b = bloco('Locais de acerto', 'ficha-largo');
+      b.appendChild(el('p', 'combate-nota', 'Sem escolher, o golpe vai no tronco. Mirar num lugar tira o valor da coluna do NH do ataque; a proteção é a soma das peças equipadas que cobrem aquele lugar.'));
+      b.appendChild(tabela(['Local', 'Para acertar', 'Proteção (RD)'], LOCAIS.map(function (l) {
+        var rd = l[2].reduce(function (t, k) { return t + ((pr[k] && pr[k].rd) || 0); }, 0);
+        return [l[0], l[1] ? String(l[1]).replace('-', '−') : '0', rd ? String(rd) : '—'];
+      })));
+      return b;
+    }
+    // equipamento: onde está (equipado, levado, dentro de algo ou em casa) e quanto sobrou
+    var RECIPIENTE = /mochila|bolsa|algibeira|aljava|saco|bainha|bornal|cesto|caixa|baú|alforje/i;
+    function seletorLocal(x) {
+      var uid = x.sel.uid;
+      function descende(y) { // y está dentro de x (em qualquer nível)?
+        var visto = {};
+        while (y && y.sel.dentro && !visto[y.sel.dentro]) {
+          if (y.sel.dentro === uid) return true;
+          visto[y.sel.dentro] = true;
+          var pai = y.sel.dentro;
+          y = itens.filter(function (z) { return z.sel.uid === pai; })[0];
+        }
+        return false;
+      }
+      var recipientes = itens.filter(function (y) { return y !== x && RECIPIENTE.test(y.item.nome) && !descende(y); });
+      var s0 = el('select', 'fx-local');
+      s0.setAttribute('aria-label', 'Onde está ' + x.item.nome);
+      [['equipado', 'Equipado'], ['levado', 'Levado']].concat(recipientes.map(function (y) { return ['dentro:' + y.sel.uid, 'Dentro: ' + y.item.nome]; }))
+        .concat([['guardado', 'Em casa']]).forEach(function (o) {
+          var op = el('option', null, o[1]);
+          op.value = o[0];
+          s0.appendChild(op);
+        });
+      s0.value = x.sel.dentro ? 'dentro:' + x.sel.dentro : (x.sel.local || 'levado');
+      s0.addEventListener('change', function () {
+        var val = s0.value;
+        mudarFicha(function (sv) {
+          var alvo = (sv.equipamento || []).filter(function (z) { return z.uid === uid; })[0];
+          if (!alvo) return;
+          if (val.indexOf('dentro:') === 0) { alvo.dentro = val.slice(7); alvo.local = 'levado'; }
+          else { delete alvo.dentro; alvo.local = val; }
+        });
+      });
+      return s0;
+    }
+    function contadorUsos(x) {
+      var total = x.sel.quantidade || 1;
+      var box0 = el('span', 'fx-usos');
+      if (total <= 1) { box0.textContent = '1'; return box0; }
+      function mexer(delta) {
+        mudarFicha(function (sv) {
+          sv.em_jogo = sv.em_jogo || {};
+          var u = Object.assign({}, sv.em_jogo.usados || {});
+          u[x.sel.uid] = Math.max(0, Math.min(total, (u[x.sel.uid] || 0) + delta));
+          sv.em_jogo.usados = u;
+        });
+      }
+      var menos = el('button', 'btn-link', '−');
+      menos.type = 'button';
+      menos.setAttribute('aria-label', 'Gastar um: ' + x.item.nome);
+      menos.disabled = x.atual <= 0;
+      menos.addEventListener('click', function () { mexer(1); });
+      var mais = el('button', 'btn-link', '+');
+      mais.type = 'button';
+      mais.setAttribute('aria-label', 'Repor um: ' + x.item.nome);
+      mais.disabled = x.atual >= total;
+      mais.addEventListener('click', function () { mexer(-1); });
+      box0.appendChild(menos);
+      box0.appendChild(el('strong', x.atual === 0 ? 'calc-estourou' : null, x.atual + '/' + total));
+      box0.appendChild(mais);
+      return box0;
+    }
+    function nomeDoItem(x, nivel) {
+      var n = nomeComIcone(x.item, x.item.nome + (x.qualidade && x.qualidade.nivel ? ' (' + x.qualidade.nome.toLowerCase() + ')' : ''));
+      if (nivel) n.style.paddingLeft = (nivel * 1.2) + 'rem';
+      if (nivel) n.insertBefore(el('span', 'fx-dentro', '↳'), n.firstChild);
+      return n;
+    }
+    function pesoDe(x) {
+      var kg = x.item.peso && x.item.peso.kg;
+      return kg ? num(Math.round(kg * x.atual * 100) / 100) + ' kg' : '—';
+    }
+    // lista em árvore: cada item e, logo abaixo, o que está dentro dele
+    function arvore(lista) {
+      var uids = {};
+      lista.forEach(function (x) { uids[x.sel.uid] = true; });
+      var saida = [];
+      function por(x, nivel) {
+        saida.push([x, nivel]);
+        lista.filter(function (y) { return y.sel.dentro === x.sel.uid; }).forEach(function (y) { por(y, nivel + 1); });
+      }
+      lista.filter(function (x) { return !x.sel.dentro || !uids[x.sel.dentro]; }).forEach(function (x) { por(x, 0); });
+      return saida;
     }
 
     var construtores = {
@@ -955,7 +1208,10 @@
         var pend = blocoPendencias();
         if (pend) s.appendChild(pend);
         s.appendChild(painelEmJogo(idFicha, true, aoMudarEmJogo));
+        var sits = blocoSituacoes();
+        if (sits) s.appendChild(sits);
         s.appendChild(blocoAtributos());
+        s.lastChild.appendChild(blocoPontos());
         var comb = bloco('Combate', 'ficha-largo ficha-combate fx-so-tela');
         comb.appendChild(blocoCombate(r, true));
         s.appendChild(comb);
@@ -971,6 +1227,11 @@
         var comb = bloco('Combate', 'ficha-largo ficha-combate');
         comb.appendChild(blocoCombate(r, false));
         s.appendChild(comb);
+        var sitsC = blocoSituacoes(function (x) {
+          return x.alvos.some(function (a) { return /^(ataque|defesa|dano|qualquer)/.test(a) || /^atributo:(dx|ht)$/.test(a); });
+        });
+        if (sitsC) s.appendChild(sitsC);
+        s.appendChild(blocoLocais());
       },
       pericias: function (s) {
         var per = bloco('Perícias', 'ficha-largo');
@@ -1000,7 +1261,7 @@
           semTreino.forEach(function (x) {
             var li = el('li');
             li.appendChild(nomeComIcone(x.p));
-            li.appendChild(rolavel(el('span', 'cofre-item-valor', String(x.nh)), 'teste', x.p.nome + ' (sem treino)', x.nh));
+            li.appendChild(rolavel(el('span', 'cofre-item-valor', String(x.nh)), 'teste', x.p.nome + ' (sem treino)', x.nh, ['pericia:' + x.p.id]));
             ul.appendChild(li);
           });
           st.appendChild(ul);
@@ -1021,57 +1282,62 @@
       },
       equipamento: function (s) {
         var cb = r.combate;
-        var resumo = el('p', 'calc-detalhe fx-eq-resumo', num(cb.peso_total) + ' kg · carga ' + cb.carga.nome + ' (deslocamento ' + cb.carga.deslocamento + ') · gasto ' + moeda(r.gasto_equipamento) + ' de ' + moeda(r.recursos) + ' · ' +
-          (r.dinheiro_restante >= 0 ? 'sobram ' + moeda(r.dinheiro_restante) : 'faltam ' + moeda(-r.dinheiro_restante)));
-        s.appendChild(resumo);
-        if (!itens.length) { s.appendChild(el('p', 'pericia-vazio', 'Nada.')); return; }
-        var grupos = { arma: [], protecao: [], mochila: [] };
-        itens.forEach(function (x) { grupos[tipoDeItem(x.item)].push(x); });
-        function peso(x) {
-          var kg = x.item.peso && x.item.peso.kg;
-          return kg ? num(Math.round(kg * (x.sel.quantidade || 1) * 100) / 100) + ' kg' : '—';
-        }
-        // armas: prontas para rolar acerto e dano
-        var ba = bloco('Armas', 'ficha-largo');
-        if (!grupos.arma.length) ba.appendChild(el('p', 'pericia-vazio', 'Nenhuma arma. Os ataques desarmados estão em Combate.'));
-        else {
-          var linhasArma = [];
-          grupos.arma.forEach(function (x) {
-            cb.armas.filter(function (a) { return a.item && a.item.id === x.item.id; }).forEach(function (a) {
-              var nh = el('strong', 'fx-nh', a.nh == null ? '—' : String(a.nh));
-              rolavel(nh, 'teste', a.nome, a.nh);
-              var dano = el('span', null, a.dano);
-              rolavel(dano, 'dano', a.nome, a.dano);
-              linhasArma.push([nomeComIcone(x.item, a.nome), nh, dano, a.alcance || '—', a.pericia || '—']);
-            });
+        s.appendChild(el('p', 'calc-detalhe fx-eq-resumo', num(cb.peso_total) + ' kg carregados · carga ' + cb.carga.nome + ' (deslocamento ' + cb.carga.deslocamento + ') · gasto ' + moeda(r.gasto_equipamento) + ' de ' + moeda(r.recursos) + ' · ' +
+          (r.dinheiro_restante >= 0 ? 'sobram ' + moeda(r.dinheiro_restante) : 'faltam ' + moeda(-r.dinheiro_restante))));
+        if (!itens.length) { s.appendChild(el('p', 'pericia-vazio', 'Nada.')); s.appendChild(blocoCarga()); return; }
+        // armas equipadas: prontas para rolar acerto e dano
+        var equipadas = itens.filter(function (x) { return x.local === 'equipado'; });
+        var ba = bloco('Armas prontas', 'ficha-largo');
+        var linhasArma = [];
+        equipadas.filter(function (x) { return tipoDeItem(x.item) === 'arma'; }).forEach(function (x) {
+          cb.armas.filter(function (a) { return a.item && a.item.id === x.item.id; }).forEach(function (a, k) {
+            var nh = el('strong', 'fx-nh', a.nh == null ? '—' : String(a.nh));
+            rolavel(nh, 'teste', a.nome, a.nh, alvosDaArma(a));
+            var dano = el('span', null, a.dano);
+            rolavel(dano, 'dano', a.nome, a.dano, ['dano']);
+            linhasArma.push([nomeComIcone(x.item, a.nome), nh, dano, a.alcance || '—', k === 0 ? seletorLocal(x) : '']);
           });
-          ba.appendChild(tabela(['Arma', 'NH', 'Dano', 'Alcance', 'Perícia'], linhasArma));
-        }
+        });
+        if (!linhasArma.length) ba.appendChild(el('p', 'pericia-vazio', 'Nenhuma arma equipada. Os ataques desarmados estão em Combate.'));
+        else ba.appendChild(tabela(['Arma', 'NH', 'Dano', 'Alcance', 'Onde'], linhasArma));
         s.appendChild(ba);
-        // armadura e escudo: proteção fixa, não rola
-        if (grupos.protecao.length) {
+        // armadura e escudo vestidos: proteção fixa, não rola
+        var vestidas = equipadas.filter(function (x) { return tipoDeItem(x.item) === 'protecao'; });
+        if (vestidas.length) {
           var bp = bloco('Armadura e escudo', 'ficha-largo');
-          bp.appendChild(tabela(['Peça', 'Proteção', 'Peso'], grupos.protecao.map(function (x) {
-            var p = x.item.protecao, e = x.item.escudo;
-            var prot = p ? 'RD ' + (p.texto || p.rd) + (p.local ? ' · ' + p.local : '') : e ? 'Defesa +' + e.bd + ' (escudo)' : '—';
-            return [nomeComIcone(x.item), prot, peso(x)];
+          bp.appendChild(tabela(['Peça', 'Proteção', 'Peso', 'Onde'], vestidas.map(function (x) {
+            var p0 = x.item.protecao, e0 = x.item.escudo;
+            var prot = p0 ? 'RD ' + (p0.texto || p0.rd) + (p0.local ? ' · ' + p0.local : '') : e0 ? 'Defesa +' + e0.bd + ' (escudo)' : '—';
+            return [nomeDoItem(x), prot, pesoDe(x), seletorLocal(x)];
           })));
           var locais = Object.keys(cb.protecao);
           if (locais.length) bp.appendChild(el('p', 'combate-nota', 'Somando tudo: ' + locais.map(function (l) { return l + ' RD ' + cb.protecao[l].rd; }).join(' · ')));
           s.appendChild(bp);
         }
-        // mochila: o resto
-        var bm = bloco('Mochila', 'ficha-largo');
-        if (!grupos.mochila.length) bm.appendChild(el('p', 'pericia-vazio', 'Vazia.'));
+        // com você: o resto do que está equipado, o que vai levado e o que está dentro de cada coisa
+        var comVoce = itens.filter(function (x) { return x.local !== 'guardado' && !(x.local === 'equipado' && tipoDeItem(x.item) !== 'mochila'); });
+        var bm = bloco('Com você', 'ficha-largo');
+        if (!comVoce.length) bm.appendChild(el('p', 'pericia-vazio', 'Nada além do que está equipado.'));
         else {
-          if (grupos.mochila.length > 8) bm.appendChild(buscaNaSecao(bm, 'Buscar na mochila…'));
-          var tm = tabela(['Item', 'Qtd.', 'Peso', 'Preço'], grupos.mochila.map(function (x) {
-            return [nomeComIcone(x.item), String(x.sel.quantidade || 1), peso(x), x.preco == null ? '—' : moeda(x.preco)];
+          if (comVoce.length > 8) bm.appendChild(buscaNaSecao(bm, 'Buscar no que você leva…'));
+          var arvComVoce = arvore(comVoce);
+          var tm = tabela(['Item', 'Qtd.', 'Peso', 'Onde'], arvComVoce.map(function (par) {
+            return [nomeDoItem(par[0], par[1]), contadorUsos(par[0]), pesoDe(par[0]), seletorLocal(par[0])];
           }));
-          Array.prototype.forEach.call(tm.querySelectorAll('tbody tr'), function (tr, k) { tr.setAttribute('data-busca', semAcento(grupos.mochila[k].item.nome)); });
+          Array.prototype.forEach.call(tm.querySelectorAll('tbody tr'), function (tr, k) { tr.setAttribute('data-busca', semAcento(arvComVoce[k][0].item.nome)); });
           bm.appendChild(tm);
         }
         s.appendChild(bm);
+        // em casa: não pesa nem protege
+        var emCasa = itens.filter(function (x) { return x.local === 'guardado'; });
+        if (emCasa.length) {
+          var bg = bloco('Em casa', 'ficha-largo');
+          bg.appendChild(tabela(['Item', 'Qtd.', 'Onde'], arvore(emCasa).map(function (par) {
+            return [nomeDoItem(par[0], par[1]), contadorUsos(par[0]), seletorLocal(par[0])];
+          })));
+          s.appendChild(bg);
+        }
+        s.appendChild(blocoCarga());
       },
       jogo: function (s) {
         s.appendChild(painelEmJogo(idFicha, false, aoMudarEmJogo));
@@ -1118,6 +1384,7 @@
       marcarRolaveis(s);
     }
     function aoMudarEmJogo() {
+      recalcular();
       desenharPontos();
     }
 

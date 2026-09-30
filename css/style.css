@@ -2603,3 +2603,34 @@ body.arrastando .app-lado { outline: 2px dashed var(--ouro-linha); outline-offse
 }
 @keyframes pulsa-ficha { 0% { box-shadow: 0 0 0 0 rgba(201, 171, 107, 0.7); } 100% { box-shadow: 0 0 0 10px rgba(201, 171, 107, 0); } }
 @media (prefers-reduced-motion: reduce) { .app-alterna button.pulsa { animation: none; } }
+/* retrato do personagem */
+.retrato { flex: none; width: 5.5rem; height: 5.5rem; background: rgba(14, 13, 12, 0.6) center / cover no-repeat; border: 1px solid var(--ouro-linha); border-radius: 50%; }
+.retrato.vazio { background-image: none; }
+.retrato-campo { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.8rem; }
+.retrato-campo .field-hint { margin: 0.3rem 0 0; }
+.fx-retrato { flex: none; width: 2.6rem; height: 2.6rem; background: center / cover no-repeat; border: 1px solid var(--ouro-linha); border-radius: 50%; }
+.brasao.com-retrato { background: center / cover no-repeat; }
+.brasao.com-retrato > * { display: none; }
+/* ficha: situações ligáveis, faixa do que está valendo, carga, força, local e usos dos itens */
+.fx-ligadas { position: sticky; top: -1rem; z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.5rem; margin: -0.2rem 0 0.8rem; padding: 0.45rem 0.6rem; background: #2a1814; border: 1px solid var(--brasa); }
+.fx-ligadas[hidden] { display: none; }
+.fx-ligadas-rotulo { font-family: var(--f-titulo); font-size: 0.75rem; letter-spacing: 0.06em; color: #e0a15e; }
+.fx-ligada { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.1rem 0.2rem 0.1rem 0.55rem; font-size: 0.9rem; color: var(--osso-claro); background: rgba(194, 86, 43, 0.25); border: 1px solid rgba(194, 86, 43, 0.6); border-radius: 999px; }
+.fx-ligada button { width: 1.4rem; height: 1.4rem; padding: 0; font-size: 1rem; line-height: 1; color: var(--osso-claro); background: none; border: 0; cursor: pointer; }
+.fx-sit-lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 0.4rem; margin: 0.4rem 0 0; padding: 0; list-style: none; }
+.fx-sit { display: flex; align-items: flex-start; gap: 0.55rem; height: 100%; padding: 0.45rem 0.6rem; background: rgba(14, 13, 12, 0.45); border: 1px solid var(--ouro-fio); cursor: pointer; }
+.fx-sit:has(input:checked) { background: rgba(194, 86, 43, 0.18); border-color: var(--brasa); }
+.fx-sit input { margin-top: 0.3rem; accent-color: var(--brasa); }
+.fx-sit strong { display: block; font-size: 0.95rem; color: var(--osso-claro); }
+.fx-sit-cond { display: block; font-size: 0.88rem; color: #c4b89f; }
+.fx-atual td { color: var(--ouro-claro); font-weight: 700; background: rgba(110, 31, 26, 0.25); }
+.fx-forca { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); gap: 0.3rem 1rem; margin: 0.7rem 0 0; padding: 0; list-style: none; font-size: 0.93rem; }
+.fx-forca li { display: flex; justify-content: space-between; gap: 0.5rem; border-bottom: 1px solid var(--ouro-fio); }
+.fx-usos { display: inline-flex; align-items: center; gap: 0.25rem; white-space: nowrap; }
+.fx-usos .btn-link { width: 1.6rem; font-size: 1.05rem; text-decoration: none; border: 1px solid var(--ouro-fio); }
+.fx-usos .btn-link:disabled { opacity: 0.35; cursor: default; }
+.fx-local { max-width: 11rem; padding: 0.15rem 0.3rem; font-family: var(--f-corpo); font-size: 0.88rem; color: var(--osso-claro); background: rgba(0, 0, 0, 0.4); border: 1px solid var(--ouro-linha); }
+.fx-local option { background: var(--pedra); }
+.fx-dentro { margin-right: 0.2rem; color: var(--osso-fosco); }
+.app-item.item-guardado { opacity: 0.6; }
+@media print { .fx-ligadas, .fx-local, .fx-usos .btn-link { display: none !important; } }

@@ -2173,5 +2173,93 @@
         "defesa": "normal (−4 se atordoado)"
       }
     ]
+  },
+  "qualidade_itens": {
+    "resumo": "Qualidade do item: 0 é o normal; abaixo de 0 é pior e mais barato, acima de 0 é melhor e mais caro. Proposta da mesa, baseada nas regras de qualidade de armas e de equipamento do livro.",
+    "proposta": true,
+    "ref": {
+      "livro": "modulo-basico",
+      "pagina": 274
+    },
+    "armas": [
+      {
+        "nivel": -1,
+        "nome": "Barata",
+        "preco": 0.4,
+        "nota": "quebra com mais facilidade quando apara ou é aparada (o narrador decide)"
+      },
+      {
+        "nivel": 0,
+        "nome": "Normal",
+        "preco": 1
+      },
+      {
+        "nivel": 1,
+        "nome": "Boa",
+        "preco": 4,
+        "dano": 1,
+        "nota": "+1 no dano dos ataques corpo a corpo"
+      },
+      {
+        "nivel": 2,
+        "nome": "Excelente",
+        "preco": 20,
+        "dano": 2,
+        "nota": "+2 no dano dos ataques corpo a corpo"
+      }
+    ],
+    "armaduras": [
+      {
+        "nivel": -1,
+        "nome": "Barata",
+        "preco": 0.5,
+        "nota": "remendada; o narrador pode achar pontos fracos"
+      },
+      {
+        "nivel": 0,
+        "nome": "Normal",
+        "preco": 1
+      },
+      {
+        "nivel": 1,
+        "nome": "Boa",
+        "preco": 3,
+        "nota": "bem ajustada ao corpo"
+      },
+      {
+        "nivel": 2,
+        "nome": "Excelente",
+        "preco": 10,
+        "nota": "feita sob medida por um mestre armeiro"
+      }
+    ],
+    "equipamento": [
+      {
+        "nivel": -1,
+        "nome": "Improvisada",
+        "preco": 0.5,
+        "nh": -1,
+        "nota": "-1 na perícia que usa o item"
+      },
+      {
+        "nivel": 0,
+        "nome": "Normal",
+        "preco": 1
+      },
+      {
+        "nivel": 1,
+        "nome": "Boa",
+        "preco": 5,
+        "nh": 1,
+        "nota": "+1 na perícia que usa o item"
+      },
+      {
+        "nivel": 2,
+        "nome": "Excelente",
+        "preco": 20,
+        "nh": 2,
+        "nota": "+2 na perícia que usa o item"
+      }
+    ]
   }
 }

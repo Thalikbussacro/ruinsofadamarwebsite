@@ -407,6 +407,38 @@
     var v = parseInt(inputLivre.value, 10);
     if (!isNaN(v) && v >= 0 && v <= 1000) { ficha.orcamento = v; mudou(); }
   });
+  // retrato: a imagem escolhida é reduzida (lado maior 256 px) e guardada na ficha como data URL
+  var caixaRetrato = document.getElementById('c-retrato');
+  var tirarRetrato = document.getElementById('c-retrato-tirar');
+  function mostrarRetrato() {
+    caixaRetrato.style.backgroundImage = ficha.retrato ? 'url("' + ficha.retrato + '")' : '';
+    caixaRetrato.classList.toggle('vazio', !ficha.retrato);
+    tirarRetrato.hidden = !ficha.retrato;
+  }
+  document.getElementById('c-retrato-arquivo').addEventListener('change', function (ev) {
+    var arq = ev.target.files && ev.target.files[0];
+    ev.target.value = '';
+    if (!arq) return;
+    var img = new Image();
+    var url = URL.createObjectURL(arq);
+    img.onload = function () {
+      var lado = 256, esc = Math.min(1, lado / Math.max(img.width, img.height));
+      var cv = document.createElement('canvas');
+      cv.width = Math.round(img.width * esc);
+      cv.height = Math.round(img.height * esc);
+      cv.getContext('2d').drawImage(img, 0, 0, cv.width, cv.height);
+      ficha.retrato = cv.toDataURL('image/jpeg', 0.82);
+      URL.revokeObjectURL(url);
+      mostrarRetrato();
+      mudou();
+    };
+    img.onerror = function () { URL.revokeObjectURL(url); };
+    img.src = url;
+  });
+  tirarRetrato.addEventListener('click', function () { ficha.retrato = ''; mostrarRetrato(); mudou(); });
+  atualizadores.push(function () { if ((caixaRetrato.style.backgroundImage !== '') !== !!ficha.retrato) mostrarRetrato(); });
+  mostrarRetrato();
+
   var camposTexto = Array.prototype.slice.call(document.querySelectorAll('[data-campo]'));
   camposTexto.forEach(function (c) {
     c.addEventListener('input', function () { ficha[c.getAttribute('data-campo')] = c.value; mudou(); });
@@ -1426,7 +1458,7 @@
       infosPericia.push(function (r) {
         var item = r.pericias[i];
         if (!item) return;
-        nh.textContent = item.nh == null ? 'NH —' : 'NH ' + item.nh;
+        nh.textContent = item.nh == null ? 'NH —' : 'NH ' + item.nh + ' · ' + item.nivel_relativo;
         nh.title = item.nh == null ? '' : p.atributo + (item.relativo ? sinal(item.relativo) : '') + (item.bonus.length ? ' com bônus' : '');
         Efeitos.desenharEfeitos(bonus, item.bonus.map(function (b) {
           return { tipo: 'aplicado', texto: sinal(b.valor) + ' de ' + b.origem };
@@ -1497,20 +1529,58 @@
       topo.appendChild(el('span', 'app-item-cat', textoPreco(it)));
       var custoItem = el('span', 'criador-custo');
       topo.appendChild(custoItem);
-      topo.appendChild(botaoRemover(it.nome, function () { ficha.equipamento.splice(i, 1); desenharEquipamento(); catalogoEquip.desenhar(); mudou(); }));
+      topo.appendChild(botaoRemover(it.nome, function () {
+        ficha.equipamento.splice(i, 1);
+        ficha.equipamento.forEach(function (x) { if (x.dentro === sel.uid) delete x.dentro; }); // o que estava dentro fica solto
+        desenharEquipamento(); catalogoEquip.desenhar(); mudou();
+      }));
       row.appendChild(topo);
       var campos = el('div', 'criador-campos');
       campos.appendChild(campoRotulado('Quantidade', inteiro(sel.quantidade || 1, 1, 999, function (v) { sel.quantidade = v; })));
+      // qualidade: 0 é o normal; abaixo, pior e mais barato; acima, melhor e mais caro
+      var tabelaQ = (R.qualidade_itens || {})[classeEquip(it)] || [];
+      if (tabelaQ.length) {
+        var qual = selectCom(tabelaQ.map(function (q) {
+          return [q.nivel, (q.nivel > 0 ? '+' : '') + q.nivel + ' ' + q.nome + (q.preco !== 1 ? ' (×' + num(q.preco) + ')' : '')];
+        }), sel.qualidade || 0, 'Qualidade de ' + it.nome);
+        qual.addEventListener('change', function () { sel.qualidade = parseInt(qual.value, 10) || 0; mudou(); });
+        campos.appendChild(campoRotulado('Qualidade', qual));
+      }
+      // onde está: equipado (pronto para usar), levado (na mochila) ou guardado em casa; ou dentro de outro item
+      var recipientes = ficha.equipamento.filter(function (x) {
+        var ix = porId(G.equipamento, x.id);
+        return x !== sel && ix && RECIPIENTE.test(ix.nome) && x.dentro !== sel.uid;
+      });
+      var onde = selectCom([['equipado', 'Equipado']].concat(recipientes.map(function (x) {
+        return ['dentro:' + x.uid, 'Dentro de: ' + porId(G.equipamento, x.id).nome];
+      })).concat([['levado', 'Levado'], ['guardado', 'Guardado em casa']]), sel.dentro ? 'dentro:' + sel.dentro : (sel.local || 'levado'), 'Onde está ' + it.nome);
+      onde.addEventListener('change', function () {
+        if (onde.value.indexOf('dentro:') === 0) { sel.dentro = onde.value.slice(7); sel.local = 'levado'; }
+        else { delete sel.dentro; sel.local = onde.value; }
+        mudou();
+      });
+      campos.appendChild(campoRotulado('Onde', onde));
       row.appendChild(campos);
+      var notaQ = el('p', 'app-item-meta');
+      row.appendChild(notaQ);
       infosEquip.push(function (r) {
         var x = r.equipamento[i];
         custoItem.textContent = x && x.preco != null ? moeda(x.preco) : '—';
+        notaQ.textContent = x && x.qualidade && x.qualidade.nivel && x.qualidade.nota ? x.qualidade.nome + ': ' + x.qualidade.nota + '.' : '';
+        notaQ.hidden = !notaQ.textContent;
+        row.classList.toggle('item-guardado', !!x && x.local === 'guardado');
       });
       box.appendChild(row);
     });
     if (!box.children.length) box.appendChild(el('p', 'pericia-vazio', 'Nada na mochila ainda.'));
   }
   function precoDe(i) { return i.preco ? i.preco.valor : null; }
+  var RECIPIENTE = /mochila|bolsa|algibeira|aljava|saco|bainha|bornal|cesto|caixa|baú|alforje/i;
+  function classeEquip(it) {
+    if (it.combate && it.combate.modos && it.combate.modos.length) return 'armas';
+    if (it.protecao || it.escudo) return 'armaduras';
+    return 'equipamento';
+  }
   var catalogoEquip = criarCatalogo(document.getElementById('c-equipamento-catalogo'), {
     itens: function () { return (G.equipamento || []).filter(function (i) { return i.adamar !== 'nao'; }); },
     texto: function (i) { return i.nome + ' ' + (i.subcategoria || '') + ' ' + (i.resumo || ''); },
@@ -1534,7 +1604,7 @@
       ['preco-desc', 'mais caro', function (a, b) { return (precoDe(b) || 0) - (precoDe(a) || 0); }]
     ],
     jaTem: function (i) { return ficha.equipamento.some(function (s) { return s.id === i.id; }); },
-    adicionar: function (i) { ficha.equipamento.push({ id: i.id, quantidade: 1 }); desenharEquipamento(); }
+    adicionar: function (i) { ficha.equipamento.push(criador.novoItem(i.id)); desenharEquipamento(); }
   });
   atualizadores.push(function (r) {
     infosEquip.forEach(function (f) { f(r); });

@@ -9,6 +9,8 @@ Coisas que dependem de você (decisão, acesso ou teste no seu aparelho). Vou ac
 
 ## Decisões de regra (a mesa decide)
 
+- [ ] **Qualidade dos itens (proposta minha, confirmar):** escala em que 0 é normal. Armas: −1 Barata (preço ×0,4, quebra mais fácil), +1 Boa (×4, +1 no dano corpo a corpo), +2 Excelente (×20, +2 no dano). Armaduras: −1 ×0,5, +1 ×3, +2 ×10 (só preço e descrição). Ferramentas e equipamento: −1 Improvisada (×0,5, −1 na perícia), +1 Boa (×5, +1), +2 Excelente (×20, +2). Os números ficam em `data/gurps/regras.json` → `qualidade_itens`; é só mudar lá.
+- [ ] **Recipientes:** hoje só itens com nome de mochila, bolsa, algibeira, aljava, saco, bainha, bornal, cesto, caixa, baú ou alforje aparecem como "Dentro de…". Faltou algum?
 - [ ] **Dano: +4 vira +1d?** Regra opcional do livro (ex.: 1d+4 passa a 2d). Hoje o site **não** converte.
 - [ ] **Peso da munição conta na carga?** Hoje flechas, virotes e pedras **não** entram no peso.
 - [ ] **Armaduras em camadas:** hoje a proteção de peças no mesmo lugar **só soma**. O livro tem regras mais finas (camadas flexíveis, só frente). Somar está bom?

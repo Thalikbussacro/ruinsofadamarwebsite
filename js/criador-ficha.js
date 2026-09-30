@@ -11,7 +11,8 @@
       id_salvo: '',
       nome: '', jogador: '', conceito: '', era: '', origem: '', aparencia_fisica: '', historia: '',
       idade: '', altura: '', peso_corporal: '',
-      em_jogo: {},       // { pv, pf, pontos, dinheiro, notas } — estado durante as sessões
+      retrato: '',       // imagem pequena (data URL) do rosto do personagem
+      em_jogo: {},       // { pv, pf, pontos, dinheiro, notas, usados: { uid: n }, situacoes: [chave] } — estado durante as sessões
       orcamento: pontos.padrao,
       atributos: { st: 10, dx: 10, iq: 10, ht: 10 },
       ajustes: {},
@@ -23,7 +24,7 @@
       qualidades: [],    // textos; +1 ponto cada
       peculiaridades: [], // textos; -1 ponto cada, até 5
       pericias: [],      // { id, especializacao, pontos }
-      equipamento: [],   // { id, quantidade }
+      equipamento: [],   // { id, quantidade, uid, local: equipado|levado|guardado, dentro: uid, qualidade }
       notas: ''
     };
   }
@@ -157,6 +158,97 @@
       return st == null ? null : { nh: st + (uso.mod || 0), como: p.nome + ' sem treino' };
     }
 
+    // ---------- equipamento: onde está (equipado, levado, guardado ou dentro de outro), quanto sobrou e qualidade ----------
+    function classeDoItem(it) {
+      if (it && it.combate && it.combate.modos && it.combate.modos.length) return 'armas';
+      if (it && (it.protecao || it.escudo)) return 'armaduras';
+      return 'equipamento';
+    }
+    function qualidadeDe(sel, it) {
+      var tabela = (R.qualidade_itens || {})[classeDoItem(it)] || [];
+      var n = sel.qualidade || 0;
+      return tabela.filter(function (q) { return q.nivel === n; })[0] || { nivel: 0, nome: 'Normal', preco: 1 };
+    }
+    function localPadrao(it) { return classeDoItem(it) === 'equipamento' ? 'levado' : 'equipado'; }
+    function novoUid() { return 'i' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+    function novoItem(id) { return { id: id, quantidade: 1, uid: novoUid(), local: localPadrao(ITEM[id]), qualidade: 0 }; }
+    // fichas antigas: cada item ganha um uid, um local e qualidade 0
+    function normalizarEquipamento(lista) {
+      (lista || []).forEach(function (sel) {
+        if (!sel.uid) sel.uid = novoUid();
+        if (!sel.local) sel.local = localPadrao(ITEM[sel.id]);
+        if (sel.qualidade == null) sel.qualidade = 0;
+      });
+    }
+    // dentro de algo guardado, está guardado; dentro de algo carregado, está só levado (não pronto para usar)
+    function localEfetivo(sel, lista) {
+      var vistos = {};
+      var atual = sel;
+      while (atual) {
+        if (atual.local === 'guardado') return 'guardado';
+        if (!atual.dentro || vistos[atual.dentro]) break;
+        vistos[atual.dentro] = true;
+        atual = lista.filter(function (x) { return x.uid === atual.dentro; })[0];
+      }
+      return sel.dentro ? 'levado' : (sel.local || 'levado');
+    }
+    // quantidade que ainda existe (flechas, rações e tochas gastam em jogo)
+    function quantidadeAtual(sel, ficha) {
+      var usados = (((ficha.em_jogo || {}).usados) || {})[sel.uid] || 0;
+      return Math.max(0, (sel.quantidade || 1) - usados);
+    }
+
+    // ---------- situações: bônus que só valem em certos momentos; a ficha liga e desliga, a rolagem soma ----------
+    // testes do catálogo que são um atributo com outro nome (Visão é Per, Verificação de Pânico é Vontade…)
+    var TESTE_BASE = {
+      visao: 'per', audicao: 'per', olfato_paladar: 'per', tato: 'per',
+      verificacao_panico: 'vontade', resistir_medo: 'vontade', resistir_influencia: 'vontade', resistir_tortura: 'vontade',
+      vontade_autocontrole: 'vontade', autocontrole: 'vontade', perceber_interrupcao: 'vontade', resistir_telepatia: 'vontade',
+      testes_ht: 'ht', ht_morte: 'ht', ht_nocaute: 'ht', ht_sangramento: 'ht', ht_bebida: 'ht', ht_alcoolismo: 'ht',
+      ht_comida_bebida: 'ht', ht_resistir_suscetibilidade: 'ht', resistir_doenca: 'ht', resistir_veneno: 'ht',
+      resistir_elixires: 'ht', resistir_categoria_escolhida: 'ht', recuperar_doenca_veneno: 'ht',
+      recuperar_lesao_incapacitante: 'ht', ressaca: 'ht',
+      testes_iq: 'iq', pericias_iq: 'iq', recuperar_surpresa: 'iq', interpretar_visoes: 'iq', aprender_assunto: 'iq',
+      st_resistir_derrubada: 'st', manter_equilibrio: 'dx', nao_ser_derrubado: 'dx', destreza_manual: 'dx', escapar_agarrao: 'dx'
+    };
+    var TESTE_ALVO = { ataque_distancia: 'ataque:distancia', pericias_combate: 'ataque', iniciativa: 'iniciativa' };
+    function semAcentos(t) { return String(t || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }
+    var PERICIA_POR_NOME = {};
+    (G.pericias || []).forEach(function (p) { PERICIA_POR_NOME[semAcentos(p.nome)] = p; });
+    function situacoes(ficha) {
+      var lista = [];
+      ficha.tracos.forEach(function (sel) {
+        var t = TRACO[sel.id];
+        if (!t) return;
+        var nivel = nivelDoTraco(sel);
+        var origem = nomeVariante(t, (sel.escolha || {}).opcao) || t.nome;
+        (t.efeitos || []).forEach(function (e, k) {
+          if (!e.condicao || typeof e.valor !== 'number' || !efeitoValeParaEscolha(e, sel)) return;
+          var valor = e.por_nivel ? e.valor * nivel : e.valor;
+          if (!valor) return;
+          var alvos = [];
+          if (e.alvo === 'pericia' || e.alvo === 'grupo_pericias') [].concat(e.ref).forEach(function (id) { alvos.push('pericia:' + id); });
+          else if (e.alvo === 'atributo' || e.alvo === 'secundaria') alvos.push('atributo:' + e.ref);
+          else if (e.alvo === 'defesa') (e.ref === 'todas' ? ['esquiva', 'aparar', 'bloqueio'] : [e.ref]).forEach(function (d) { alvos.push('defesa:' + d); });
+          else if (e.alvo === 'dano') alvos.push('dano');
+          else if (e.alvo === 'reacao') alvos.push('reacao');
+          else if (e.alvo === 'teste') alvos.push(TESTE_BASE[e.ref] ? 'atributo:' + TESTE_BASE[e.ref] : TESTE_ALVO[e.ref] || 'qualquer');
+          else return;
+          lista.push({ chave: sel.id + '#' + k, origem: origem, condicao: e.condicao, valor: valor, alvos: alvos, por_dado: /por dado/.test(e.condicao) });
+        });
+      });
+      // equipamento bom ou improvisado: soma na perícia do item quando ele é usado
+      ficha.equipamento.forEach(function (sel) {
+        var it = ITEM[sel.id];
+        if (!it || !sel.qualidade || classeDoItem(it) !== 'equipamento') return;
+        var q = qualidadeDe(sel, it);
+        if (!q.nh) return;
+        var p = PERICIA_POR_NOME[semAcentos(it.pericia)];
+        lista.push({ chave: 'item:' + sel.uid, origem: it.nome + ' (' + q.nome.toLowerCase() + ')', condicao: 'usando este item', valor: q.nh, alvos: p ? ['pericia:' + p.id] : ['qualquer'] });
+      });
+      return lista;
+    }
+
     function textoDano(d, basico) {
       if (!d) return '—';
       if (d.especial) return 'especial';
@@ -192,8 +284,11 @@
       ficha.equipamento.forEach(function (sel) {
         var it = ITEM[sel.id];
         if (!it) return;
-        var q = sel.quantidade || 1;
+        var onde = localEfetivo(sel, ficha.equipamento);
+        if (onde === 'guardado') return; // ficou em casa: não pesa nem protege
+        var q = quantidadeAtual(sel, ficha);
         if (it.peso) pesoTotal += it.peso.kg * q;
+        if (onde !== 'equipado') return; // levado na mochila: pesa, mas não está pronto
         if (it.escudo) {
           db = Math.max(db, it.escudo.bd || 0);
           var usoEsc = nhParaUso({ tipo: 'pericia', id: 'escudo' }, valores, nhTreinado);
@@ -209,16 +304,19 @@
             protecao[l] = atual;
           });
         }
-        if (it.combate) adicionarArma(it);
+        if (it.combate) adicionarArma(it, false, qualidadeDe(sel, it));
       });
       // ataques desarmados: todo mundo tem soco e chute (com botas, o chute é mais forte)
-      var calcado = ficha.equipamento.some(function (sel) { return /^(botas|sollerets)$/.test(sel.id); });
+      var calcado = ficha.equipamento.some(function (sel) { return /^(botas|sollerets)$/.test(sel.id) && localEfetivo(sel, ficha.equipamento) === 'equipado'; });
       [ITEM.soco, calcado ? ITEM['chute-com-botas'] : ITEM.chute].forEach(function (it) {
         if (it && it.combate) adicionarArma(it, true);
       });
-      function adicionarArma(it, natural) {
+      function adicionarArma(it, natural, qualidade) {
         {
           it.combate.modos.forEach(function (m) {
+            // qualidade boa ou excelente soma no dano dos ataques corpo a corpo
+            var extra = qualidade && qualidade.dano && m.alcance && m.alcance.min != null ? qualidade.dano : 0;
+            var dano = extra && m.dano ? Object.assign({}, m.dano, { mod: (m.dano.mod || 0) + extra }) : m.dano;
             var melhor = null;
             (it.combate.pericias || []).forEach(function (u) {
               var r = nhParaUso(u, valores, nhTreinado);
@@ -231,7 +329,8 @@
               if (nh != null) nh -= stMin - valores.st;
             }
             armas.push({
-              item: it, nome: it.nome + (m.nome ? ' — ' + m.nome : ''), dano: textoDano(m.dano, basico),
+              item: it, nome: it.nome + (qualidade && qualidade.nivel ? ' (' + qualidade.nome.toLowerCase() + ')' : '') + (m.nome ? ' — ' + m.nome : ''), dano: textoDano(dano, basico),
+              distancia: !!(m.alcance && (m.alcance.meio_st != null || m.alcance.max_st != null)),
               alcance: textoAlcance(m.alcance, valores.st), nh: nh, pericia: melhor ? melhor.como : 'sem perícia',
               aparar: m.aparar && m.aparar.mod != null && nh != null ? Math.floor(nh / 2) + 3 + m.aparar.mod + (m.aparar.desbalanceada ? 'D' : '') : null,
               st: stMin || null, precisao: m.precisao != null ? m.precisao : null, natural: !!natural
@@ -266,6 +365,7 @@
     }
 
     function resumir(ficha) {
+      normalizarEquipamento(ficha.equipamento);
       var base = calc.calcularFicha({ atributos: ficha.atributos, ajustes: ficha.ajustes, social: ficha.social });
       var fixos = efeitosFixos(ficha);
       var atrEfetivo = {};
@@ -376,6 +476,7 @@
         if (rel == null) erro('pericias', rotulo + ': pontos insuficientes para o primeiro nível.');
         return {
           sel: sel, pericia: p, relativo: rel, nh: nh, atributo: p.atributo,
+          nivel_relativo: nh == null ? null : p.atributo + (nh - atributo > 0 ? '+' + (nh - atributo) : nh - atributo < 0 ? '−' + (atributo - nh) : ''),
           bonus: bonus.fixos[p.id] || [], situacional: bonus.situacionais[p.id] || []
         };
       });
@@ -413,9 +514,10 @@
         else if (it.adamar === 'nao') erro('equipamento', it.nome + ' não existe em Adamar.');
         else if (it.adamar === 'narrador') aviso('equipamento', it.nome + ': só com o narrador.');
         if (!(sel.quantidade >= 1)) erro('equipamento', (it ? it.nome : sel.id) + ': quantidade inválida.');
-        var preco = it && it.preco ? it.preco.valor * (sel.quantidade || 1) : null;
+        var qualidade = it ? qualidadeDe(sel, it) : null;
+        var preco = it && it.preco ? Math.round(it.preco.valor * (sel.quantidade || 1) * (qualidade ? qualidade.preco : 1) * 100) / 100 : null;
         if (preco != null) gasto += preco;
-        return { sel: sel, item: it, preco: preco };
+        return { sel: sel, item: it, preco: preco, qualidade: qualidade, local: localEfetivo(sel, ficha.equipamento), atual: quantidadeAtual(sel, ficha) };
       });
       gasto = Math.round(gasto * 100) / 100;
       if (gasto > base.recursos) {
@@ -443,6 +545,7 @@
         gasto_equipamento: gasto,
         dinheiro_restante: Math.round((base.recursos - gasto) * 100) / 100,
         equipamento: equipamento,
+        situacoes: situacoes(ficha),
         efeitos_fixos: fixos.origens,
         tracos: tracos,
         talentos: talentos,
@@ -605,7 +708,7 @@
     function aplicarModelo(atual, modelo) {
       var m = modelo.ficha || {};
       var f = carregar(JSON.parse(JSON.stringify(m)));
-      ['id_salvo', 'nome', 'jogador', 'era', 'origem', 'aparencia_fisica', 'historia', 'notas', 'orcamento', 'idioma_materno', 'idade', 'altura', 'peso_corporal'].forEach(function (k) {
+      ['id_salvo', 'nome', 'jogador', 'era', 'origem', 'aparencia_fisica', 'historia', 'notas', 'orcamento', 'idioma_materno', 'idade', 'altura', 'peso_corporal', 'retrato'].forEach(function (k) {
         if (atual[k] != null && atual[k] !== '') f[k] = atual[k];
       });
       if (atual.conceito) f.conceito = atual.conceito;
@@ -623,6 +726,7 @@
         else if (typeof f[k] === 'object') f[k] = Object.assign({}, f[k], obj[k]);
         else f[k] = obj[k];
       });
+      normalizarEquipamento(f.equipamento);
       f.versao = 1;
       return f;
     }
@@ -633,6 +737,8 @@
       aplicarModelo: aplicarModelo,
       estadoEmJogo: estadoEmJogo,
       resumir: resumir,
+      novoItem: novoItem,
+      qualidadeDe: qualidadeDe,
       textoFicha: textoFicha,
       custoDoTraco: custoDoTraco,
       efeitosDoTraco: efeitosDoTraco,

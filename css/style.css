@@ -2395,6 +2395,77 @@ body.modo-app .deco { display: none; }
 @media print { .item-dialogo { display: none !important; } }
 @media print { .detalhes-item { display: none !important; } }
 
+/* ---------- ficha em tela cheia (Cofre › personagem): barra no topo, seções à esquerda, conteúdo filtrado ---------- */
+body.modo-ficha .site-header { display: none; }
+body.modo-ficha main.page { flex: 1; min-height: 0; max-width: none; margin: 0; padding: 0; display: flex; }
+body.modo-ficha .fx { flex: 1; min-width: 0; min-height: 0; display: grid; grid-template-rows: auto minmax(0, 1fr); }
+.fx-topo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(180deg, #221f1b, #161412);
+  border-bottom: 1px solid var(--ouro-linha);
+}
+.fx-voltar { flex: none; padding: 0.3rem 0.5rem; font-family: var(--f-titulo); font-size: 0.9rem; color: var(--ouro-claro); text-decoration: none; border: 1px solid var(--ouro-fio); }
+.fx-voltar:hover, .fx-voltar:focus-visible { color: var(--osso-claro); border-color: var(--ouro); text-decoration: none; }
+.fx-menu-btn { display: none; flex: none; width: 2.4rem; height: 2.2rem; font-size: 1.2rem; color: var(--osso-claro); background: none; border: 1px solid var(--ouro-fio); cursor: pointer; }
+.fx-quem { flex: 1 1 auto; min-width: 0; }
+.fx-quem h1 { margin: 0; overflow: hidden; font-size: 1.35rem; line-height: 1.15; color: var(--ouro-claro); text-overflow: ellipsis; white-space: nowrap; }
+.fx-kicker { margin: 0; overflow: hidden; font-size: 0.85rem; color: var(--osso-fosco); text-overflow: ellipsis; white-space: nowrap; }
+.fx-pontos { display: flex; flex: none; align-items: baseline; gap: 0.6rem; font-size: 0.9rem; color: var(--osso-fosco); }
+.fx-pontos strong { font-family: var(--f-titulo); font-size: 1.1rem; color: var(--osso-claro); }
+.fx-mais { position: relative; flex: none; }
+.fx-mais summary { display: grid; place-items: center; width: 2.4rem; height: 2.2rem; font-size: 1.3rem; line-height: 1; color: var(--osso-claro); list-style: none; border: 1px solid var(--ouro-fio); cursor: pointer; }
+.fx-mais summary::-webkit-details-marker { display: none; }
+.fx-mais[open] summary { border-color: var(--ouro); background: rgba(110, 31, 26, 0.3); }
+.fx-mais-menu { position: absolute; top: calc(100% + 0.35rem); right: 0; z-index: 30; display: grid; gap: 0.4rem; min-width: 14rem; padding: 0.6rem; background: #1a1815; border: 1px solid var(--ouro-linha); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6); }
+.fx-mais-menu .btn { justify-content: center; }
+.fx-mais-menu .copiado { font-size: 0.85rem; }
+.fx-corpo { display: grid; grid-template-columns: 13.5rem minmax(0, 1fr); min-height: 0; }
+.fx-nav { display: flex; flex-direction: column; gap: 0.15rem; padding: 0.8rem 0.6rem; overflow: auto; background: linear-gradient(180deg, rgba(28, 26, 23, 0.95), rgba(14, 13, 12, 0.95)); border-right: 1px solid var(--ouro-linha); }
+.fx-nav-item { display: flex; align-items: center; gap: 0.55rem; width: 100%; padding: 0.55rem 0.65rem; font-family: var(--f-titulo); font-size: 0.9rem; text-align: left; color: var(--osso); background: none; border: 1px solid transparent; border-left: 3px solid transparent; cursor: pointer; }
+.fx-nav-item:hover, .fx-nav-item:focus-visible { color: var(--osso-claro); background: rgba(168, 136, 74, 0.08); }
+.fx-nav-item.ativo { color: var(--ouro-claro); background: rgba(110, 31, 26, 0.28); border-color: var(--ouro-fio); border-left-color: var(--ouro); }
+.fx-nav-item span:first-of-type { flex: 1 1 auto; }
+.fx-nav-icone { flex: none; width: 1.15rem; height: 1.15rem; color: var(--ouro-claro); }
+.fx-nav-conta { min-width: 1.6rem; padding: 0 0.35rem; font-size: 0.78rem; text-align: center; color: var(--osso-fosco); border: 1px solid var(--ouro-fio); border-radius: 999px; }
+.fx-nav-alerta { display: grid; place-items: center; width: 1.2rem; height: 1.2rem; font-size: 0.75rem; font-weight: 700; color: #1a1210; background: #e08a5e; border-radius: 50%; }
+.fx-veu { display: none; }
+.fx-conteudo { min-width: 0; overflow: auto; padding: 1rem 1.25rem 6rem; }
+.fx-conteudo > .lede { margin: 0 0 0.8rem; }
+.fx-sec-titulo { margin: 0 0 0.8rem; font-size: 1.3rem; color: var(--ouro-claro); }
+.fx-sec > .ficha-bloco, .fx-sec > .em-jogo, .fx-sec > .ficha-grade { margin-bottom: 1rem; }
+.fx-sec .ficha-grade { margin-top: 0; }
+.fx-busca { width: 100%; margin: 0 0 0.6rem; padding: 0.4rem 0.6rem; font-family: var(--f-corpo); font-size: 1rem; color: var(--osso-claro); background: rgba(0, 0, 0, 0.4); border: 1px solid var(--ouro-linha); }
+.fx-nome-item { display: inline-flex; align-items: center; gap: 0.35rem; }
+.fx-nh { font-family: var(--f-titulo); font-size: 1.05rem; }
+.fx-eq-resumo { margin: 0 0 1rem; }
+.fx-sec [data-busca][hidden] { display: none; }
+
+/* celular: o menu de seções vira gaveta que desliza da esquerda */
+@media (max-width: 899px) {
+  .fx-topo { gap: 0.4rem; padding: 0.4rem 10px; }
+  .fx-voltar span { display: none; }
+  .fx-menu-btn { display: block; }
+  .fx-quem h1 { font-size: 1.1rem; }
+  .fx-kicker { display: none; }
+  .fx-pontos { flex-direction: column; align-items: flex-end; gap: 0; font-size: 0.75rem; }
+  .fx-pontos strong { font-size: 0.95rem; }
+  .fx-pontos .personagem-selo { display: none; }
+  .fx-corpo { grid-template-columns: minmax(0, 1fr); position: relative; }
+  .fx-nav { position: fixed; top: 0; bottom: 0; left: 0; z-index: 60; width: min(17rem, 82vw); padding-top: calc(0.8rem + env(safe-area-inset-top)); transform: translateX(-102%); transition: transform 0.2s ease; background: #171513; box-shadow: 8px 0 30px rgba(0, 0, 0, 0.6); }
+  .fx-nav.aberta { transform: none; }
+  .fx-veu:not([hidden]) { display: block; position: fixed; inset: 0; z-index: 55; background: rgba(5, 4, 3, 0.6); }
+  .fx-nav-item { padding: 0.75rem 0.7rem; font-size: 1rem; }
+  .fx-conteudo { padding: 0.7rem 10px 7rem; }
+  .fx-mais-menu { position: fixed; top: 3.2rem; right: 10px; left: 10px; min-width: 0; }
+  /* armas: no celular ficam nome, dano, NH e aparar (alcance, ST e perícia estão no detalhe do item) */
+  .fx .combate-armas th:nth-child(n+5), .fx .combate-armas td:nth-child(n+5) { display: none; }
+  .fx .table-wrap th:nth-child(n+4):not(:last-child), .fx .table-wrap td:nth-child(n+4):not(:last-child) { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .fx-nav { transition: none; } }
+
 /* Celular: a tela também fica parada. Em cima, o saldo numa linha e as etapas; embaixo, Voltar · Salvar · Continuar;
    no meio, só o conteúdo rola. */
 @media (max-width: 899px) {
@@ -2471,5 +2542,14 @@ html:has(body.modo-app) { height: 100%; overflow: hidden; }
   .icone { color: #000 !important; }
   a { text-decoration: none !important; }
   .table-wrap table, .table-wrap thead, .table-wrap tbody, .table-wrap tr, .table-wrap th { background: none !important; }
+  /* ficha em tela cheia: imprime todas as seções, sem barra nem menu */
+  html:has(body.modo-ficha), body.modo-ficha { height: auto !important; overflow: visible !important; display: block !important; }
+  body.modo-ficha main.page, body.modo-ficha .fx, .fx-corpo { display: block !important; }
+  .fx-nav, .fx-veu, .fx-menu-btn, .fx-voltar, .fx-mais, .fx-pontos, .fx-sec-titulo, .fx-busca, .fx-sec[data-sec="jogo"], .fx-so-tela { display: none !important; }
+  .fx-sec[hidden] { display: block !important; }
+  .fx-topo { display: block !important; padding: 0 0 2mm !important; margin: 0 0 3mm !important; background: none !important; border-bottom: 1.5pt solid #000 !important; }
+  .fx-quem h1 { font-size: 20pt !important; color: #000 !important; white-space: normal !important; }
+  .fx-kicker { display: block !important; font-size: 9.5pt !important; color: #000 !important; white-space: normal !important; }
+  .fx-conteudo { overflow: visible !important; padding: 0 !important; }
   .ornament, .page-head::before, .page-head::after, .page-head > *::after { display: none !important; }
 }

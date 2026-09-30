@@ -212,6 +212,7 @@
       if (alvo && dd) rolavel(dd, 'teste', alvo, dd.textContent);
     });
     Array.prototype.forEach.call(raiz.querySelectorAll('.ficha-bloco:not(.ficha-combate) .table-wrap tbody tr'), function (tr) {
+      if (tr.querySelector('[data-rolar]')) return; // a linha já traz o número rolável
       var tds = tr.querySelectorAll('td');
       if (tds.length >= 3 && /^\d+$/.test(tds[2].textContent.trim())) rolavel(tds[2], 'teste', (tds[0].querySelector('strong') || tds[0]).textContent, tds[2].textContent);
     });
@@ -744,15 +745,105 @@
     return w;
   }
 
+  // lista de traços (vantagens ou desvantagens), com o nome abrindo os detalhes
+  function listaTracos(itens, extras) {
+    var b = el('div', 'fx-lista');
+    if (!itens.length && !extras.length) { b.appendChild(el('p', 'pericia-vazio', 'Nenhuma.')); return b; }
+    itens.forEach(function (x) {
+      var t = x.traco;
+      var d = el('div', 'ficha-traco');
+      var topo = el('div', 'pericia-topo');
+      var e = x.sel.escolha || {};
+      var c = t.custo_estruturado || {};
+      var nome = t.nome + (c.tipo === 'niveis' ? ' ' + (e.nivel || 0) : '');
+      var variante = criador.nomeVariante(t, e.opcao);
+      if (c.tipo === 'opcoes' && variante && variante !== t.nome) nome += ' (' + variante + ')';
+      if (x.sel.nota) nome += ' — ' + x.sel.nota;
+      d.setAttribute('data-busca', semAcento(nome + ' ' + t.resumo));
+      var forte = el('button', 'pericia-nome app-item-nome-btn', nome);
+      forte.type = 'button';
+      forte.title = 'Ver detalhes de ' + t.nome;
+      forte.setAttribute('aria-haspopup', 'dialog');
+      forte.addEventListener('click', function () { if (window.ItemUI) window.ItemUI.abrir(t, { link: false }); });
+      var icT = window.iconeSvg && window.iconeSvg(t.icone, 'icone-item');
+      if (icT) forte.insertBefore(icT, forte.firstChild);
+      topo.appendChild(forte);
+      topo.appendChild(el('span', 'criador-custo', sinal(x.custo) + ' pts'));
+      d.appendChild(topo);
+      var ul = el('ul', 'efeitos');
+      Efeitos.desenharEfeitos(ul, criador.efeitosDoTraco(x.sel));
+      if (ul.hidden) d.appendChild(el('p', 'pericia-resumo', t.resumo));
+      else d.appendChild(ul);
+      b.appendChild(d);
+    });
+    extras.forEach(function (x) {
+      var d = el('div', 'ficha-traco');
+      d.setAttribute('data-busca', semAcento(x[0] + ' ' + (x[2] || '')));
+      var topo = el('div', 'pericia-topo');
+      topo.appendChild(el('strong', 'pericia-nome', x[0]));
+      topo.appendChild(el('span', 'criador-custo', x[1]));
+      d.appendChild(topo);
+      if (x[2]) d.appendChild(el('p', 'pericia-resumo', x[2]));
+      b.appendChild(d);
+    });
+    return b;
+  }
+  // caixa de busca que filtra os itens [data-busca] de uma seção
+  function buscaNaSecao(sec, dica) {
+    var i = el('input', 'fx-busca');
+    i.type = 'search';
+    i.placeholder = dica;
+    i.setAttribute('aria-label', dica);
+    i.addEventListener('input', function () {
+      var q = semAcento(i.value.trim());
+      Array.prototype.forEach.call(sec.querySelectorAll('[data-busca]'), function (n) {
+        n.hidden = !!q && n.getAttribute('data-busca').indexOf(q) === -1;
+      });
+    });
+    return i;
+  }
+  function nomeComIcone(item, texto) {
+    var s = el('span', 'fx-nome-item');
+    var ic = window.iconeSvg && window.iconeSvg(item.icone, 'icone-item');
+    if (ic) s.appendChild(ic);
+    var b = el('button', 'app-item-nome-btn', texto || item.nome);
+    b.type = 'button';
+    b.setAttribute('aria-haspopup', 'dialog');
+    b.addEventListener('click', function () { if (window.ItemUI) window.ItemUI.abrir(item, { link: false }); });
+    s.appendChild(b);
+    return s;
+  }
+  // arma, armadura/escudo ou mochila
+  function tipoDeItem(item) {
+    if (item.combate && item.combate.modos && item.combate.modos.length) return 'arma';
+    if (item.protecao || item.escudo) return 'protecao';
+    return 'mochila';
+  }
+
+  var SECOES = [
+    ['geral', 'Visão geral', 'book'],
+    ['combate', 'Combate', 'sword'],
+    ['pericias', 'Perícias', 'tools'],
+    ['vantagens', 'Vantagens', 'star'],
+    ['desvantagens', 'Desvantagens', 'alert-triangle'],
+    ['equipamento', 'Equipamento', 'backpack'],
+    ['jogo', 'Em jogo', 'heart'],
+    ['historia', 'História e notas', 'custom:pergaminho']
+  ];
+
   function mostrarFicha(idFicha) {
-    document.getElementById('modo-lista').hidden = true;
-    document.getElementById('modo-ficha').hidden = false;
+    var artigo = document.querySelector('.page-cofre > article');
+    if (artigo) artigo.hidden = true;
+    var tela = document.getElementById('modo-ficha');
+    tela.hidden = false;
+    document.body.classList.add('modo-app', 'modo-ficha');
     var salvo = arquivo.obter(idFicha);
     var box = document.getElementById('f-ficha');
     if (!salvo) {
       document.getElementById('f-nome').textContent = 'Personagem não encontrado';
       document.getElementById('f-conceito').textContent = 'Ele pode ter sido apagado, ou foi salvo em outro navegador.';
-      document.querySelector('.ficha-acoes').hidden = true;
+      document.querySelector('.fx-mais').hidden = true;
+      document.getElementById('fx-menu-btn').hidden = true;
       return;
     }
     var f = criador.carregar(salvo);
@@ -761,7 +852,8 @@
     document.title = (f.nome || 'Personagem') + ' — Ruínas de Adamar';
     document.getElementById('f-nome').textContent = f.nome || 'Sem nome';
     document.getElementById('f-kicker').textContent = [f.era, f.origem, f.idade ? f.idade + ' anos' : '', f.altura, f.peso_corporal].filter(Boolean).join(' · ') || 'Personagem';
-    document.getElementById('f-conceito').textContent = f.conceito || '';
+    var conceito = document.getElementById('f-conceito');
+    conceito.textContent = f.conceito || '';
     document.getElementById('f-editar').href = 'criador.html?editar=' + encodeURIComponent(idFicha);
     var cfg = (window.SITE_CONFIG && window.SITE_CONFIG.whatsapp) || { numero: '' };
     document.getElementById('f-whats').addEventListener('click', function (ev) {
@@ -769,199 +861,311 @@
     });
     document.getElementById('f-whats').href = window.buildWhatsAppUrl
       ? window.buildWhatsAppUrl(cfg.numero, 'Olá! Montei meu personagem de Adamar:\n\n' + criador.textoFicha(f, r)) : '#';
+    if (!r.valida) document.getElementById('f-whats').classList.add('is-disabled');
     document.getElementById('f-baixar').addEventListener('click', function () { baixar(f); });
-    document.getElementById('f-imprimir').addEventListener('click', function () { window.print(); });
+    document.getElementById('f-imprimir').addEventListener('click', function () {
+      document.querySelector('.fx-mais').open = false;
+      window.print();
+    });
 
-    // pontos
-    var pts = el('div', 'ficha-pontos');
-    // o topo se refaz quando o painel "Em jogo" muda os pontos ganhos
+    // pontos no topo: se refazem quando o painel "Em jogo" muda os pontos ganhos
+    var topoPontos = document.getElementById('fx-pontos');
     function desenharPontos() {
       var fx = criador.carregar(arquivo.obter(idFicha) || salvo), rx = criador.resumir(fx);
-      pts.textContent = '';
-      pts.appendChild(el('strong', null, String(fx.orcamento + (rx.pontos_ganhos || 0))));
-      pts.appendChild(el('span', null, 'pontos' + (rx.pontos_ganhos ? ' (' + fx.orcamento + ' iniciais + ' + rx.pontos_ganhos + ' ganhos em jogo)' : ' iniciais') + ' · gastou ' + rx.pontos_gastos + ' · desvantagens devolveram ' + rx.pontos_devolvidos + (fx.jogador ? ' · jogador: ' + fx.jogador : '')));
-      pts.appendChild(el('span', rx.restante < 0 ? 'calc-estourou' : null, rx.restante >= 0 ? (rx.restante ? rx.restante + ' guardados para depois' : 'todos usados') : 'saldo negativo: ' + rx.restante));
-      pts.appendChild(el('span', 'personagem-selo ' + (rx.valida ? 'pronta' : 'rascunho'), rx.valida ? 'Pronta' : 'Rascunho'));
+      topoPontos.textContent = '';
+      topoPontos.appendChild(el('strong', null, String(fx.orcamento + (rx.pontos_ganhos || 0)) + ' pts'));
+      topoPontos.appendChild(el('span', rx.restante < 0 ? 'calc-estourou' : null, rx.restante >= 0 ? (rx.restante ? rx.restante + ' guardados' : 'todos usados') : 'saldo ' + rx.restante));
+      topoPontos.appendChild(el('span', 'personagem-selo ' + (rx.valida ? 'pronta' : 'rascunho'), rx.valida ? 'Pronta' : 'Rascunho'));
+      topoPontos.title = (rx.pontos_ganhos ? fx.orcamento + ' iniciais + ' + rx.pontos_ganhos + ' ganhos em jogo' : fx.orcamento + ' iniciais') +
+        ' · gastou ' + rx.pontos_gastos + ' · desvantagens devolveram ' + rx.pontos_devolvidos + (fx.jogador ? ' · jogador: ' + fx.jogador : '');
     }
     desenharPontos();
-    if (!r.valida) document.getElementById('f-whats').classList.add('is-disabled');
-    box.appendChild(pts);
 
-    box.appendChild(painelEmJogo(idFicha, false, desenharPontos));
-
-    var grade = el('div', 'ficha-grade');
-    box.appendChild(grade);
-
-    var atr = bloco('Atributos');
-    atr.appendChild(linhas(R.atributos.map(function (a) {
-      return [a.sigla, String(v[a.id]), sinal(calc.custoAtributo(a.id, f.atributos[a.id]))];
-    })));
-    grade.appendChild(atr);
-
-    var sec = bloco('Secundárias');
-    sec.appendChild(linhas(R.secundarias.map(function (s) {
-      var aj = f.ajustes[s.id] || 0;
-      return [s.sigla, num(v[s.id]), aj ? sinal(calc.custoSecundaria(s.id, aj)) : ''];
-    }).concat([['Base de Carga', num(r.base_carga) + ' kg']])));
-    grade.appendChild(sec);
-
-    var so = f.social;
-    var ap = porId(R.aparencia.niveis, so.aparencia);
-    var rq = porId(R.riqueza.niveis, so.riqueza);
-    var alf = porId(R.idiomas.alfabetizacao_materna, so.alfabetizacao);
-    var soc = bloco('Lugar no mundo');
-    soc.appendChild(linhas([
-      ['Aparência', ap ? ap.nome : so.aparencia, sinal(calc.custoAparencia(so.aparencia))],
-      ['Status', sinal(so.status), sinal(calc.custoStatus(so.status))],
-      ['Riqueza', so.multimilionario ? 'Multimilionário ' + so.multimilionario : (rq ? rq.nome : so.riqueza), sinal(calc.custoRiqueza(so.riqueza, so.multimilionario))],
-      ['Leitura', alf ? alf.nome : so.alfabetizacao, sinal(calc.custoAlfabetizacao(so.alfabetizacao))],
-      ['Dinheiro', moeda(r.recursos)]
-    ].concat(f.idioma_materno ? [['Língua materna', f.idioma_materno]] : [])
-      .concat(f.idiomas.map(function (i) {
-        var nf = porId(R.idiomas.niveis, i.fala), ne = porId(R.idiomas.niveis, i.escrita);
-        return [i.nome || 'Idioma', 'fala ' + (nf ? nf.nome : i.fala) + ', escrita ' + (ne ? ne.nome : i.escrita), sinal(calc.custoIdioma(i.fala, i.escrita))];
-      }))));
-    grade.appendChild(soc);
-
-    var comb = bloco('Combate', 'ficha-largo ficha-combate');
-    comb.appendChild(blocoCombate(r, false));
-    box.appendChild(comb);
-
-    // traços
-    function listaTracos(titulo, itens, extras) {
-      var b = bloco(titulo, 'ficha-largo');
-      if (!itens.length && !extras.length) { b.appendChild(el('p', 'pericia-vazio', 'Nenhuma.')); return b; }
-      itens.forEach(function (x) {
-        var t = x.traco;
-        var d = el('div', 'ficha-traco');
-        var topo = el('div', 'pericia-topo');
-        var e = x.sel.escolha || {};
-        var c = t.custo_estruturado || {};
-        var nome = t.nome + (c.tipo === 'niveis' ? ' ' + (e.nivel || 0) : '');
-        var variante = criador.nomeVariante(t, e.opcao);
-        if (c.tipo === 'opcoes' && variante && variante !== t.nome) nome += ' (' + variante + ')';
-        if (x.sel.nota) nome += ' — ' + x.sel.nota;
-        var forte = el('button', 'pericia-nome app-item-nome-btn', nome);
-        forte.type = 'button';
-        forte.title = 'Ver detalhes de ' + t.nome;
-        forte.setAttribute('aria-haspopup', 'dialog');
-        forte.addEventListener('click', function () { if (window.ItemUI) window.ItemUI.abrir(t, { link: false }); });
-        var icT = window.iconeSvg && window.iconeSvg(t.icone, 'icone-item');
-        if (icT) forte.insertBefore(icT, forte.firstChild);
-        topo.appendChild(forte);
-        topo.appendChild(el('span', 'criador-custo', sinal(x.custo) + ' pts'));
-        d.appendChild(topo);
-        var ul = el('ul', 'efeitos');
-        Efeitos.desenharEfeitos(ul, criador.efeitosDoTraco(x.sel));
-        if (ul.hidden) d.appendChild(el('p', 'pericia-resumo', t.resumo));
-        else d.appendChild(ul);
-        b.appendChild(d);
-      });
-      extras.forEach(function (x) {
-        var d = el('div', 'ficha-traco');
-        var topo = el('div', 'pericia-topo');
-        topo.appendChild(el('strong', 'pericia-nome', x[0]));
-        topo.appendChild(el('span', 'criador-custo', x[1]));
-        d.appendChild(topo);
-        if (x[2]) d.appendChild(el('p', 'pericia-resumo', x[2]));
-        b.appendChild(d);
-      });
-      return b;
-    }
+    var comPericia = r.pericias.filter(function (x) { return x.pericia; });
+    var vantagens = r.tracos.filter(function (x) { return x.traco && x.custo >= 0; });
+    var desvantagens = r.tracos.filter(function (x) { return x.traco && x.custo < 0; });
     var talentos = r.talentos.filter(function (x) { return x.talento; }).map(function (x) {
       return ['Talento ' + x.talento.nome + ' ' + x.sel.nivel, sinal(x.custo) + ' pts', '+' + x.sel.nivel + ' em ' + x.talento.pericias.map(function (p) { var q = porId(G.pericias, p); return q ? q.nome : p; }).join(', ') + '.'];
     });
     var qualidades = f.qualidades.filter(Boolean).map(function (q) { return [q, '+1 pt', 'Qualidade']; });
     var peculiaridades = f.peculiaridades.filter(Boolean).map(function (q) { return [q, '-1 pt', 'Peculiaridade']; });
-    box.appendChild(listaTracos('Vantagens', r.tracos.filter(function (x) { return x.traco && x.custo >= 0; }), talentos.concat(qualidades)));
-    box.appendChild(listaTracos('Desvantagens', r.tracos.filter(function (x) { return x.traco && x.custo < 0; }), peculiaridades));
+    var itens = r.equipamento.filter(function (x) { return x.item; });
 
-    // perícias
-    var per = bloco('Perícias', 'ficha-largo');
-    var comPericia = r.pericias.filter(function (x) { return x.pericia; });
-    if (!comPericia.length) per.appendChild(el('p', 'pericia-vazio', 'Nenhuma.'));
-    else {
-      per.appendChild(tabela(['Perícia', 'Tipo', 'NH', 'Pontos'], comPericia.map(function (x) {
-        var nome = el('span');
-        var icP = window.iconeSvg && window.iconeSvg(x.pericia.icone, 'icone-item');
-        if (icP) nome.appendChild(icP);
-        nome.appendChild(el('strong', null, x.pericia.nome + (x.sel.especializacao ? ' (' + x.sel.especializacao + ')' : '')));
+    // ---------- conteúdo de cada seção ----------
+    function blocoAtributos() {
+      var g = el('div', 'ficha-grade');
+      var atr = bloco('Atributos');
+      atr.appendChild(linhas(R.atributos.map(function (a) {
+        return [a.sigla, String(v[a.id]), sinal(calc.custoAtributo(a.id, f.atributos[a.id]))];
+      })));
+      g.appendChild(atr);
+      var sec = bloco('Secundárias');
+      sec.appendChild(linhas(R.secundarias.map(function (s) {
+        var aj = f.ajustes[s.id] || 0;
+        return [s.sigla, num(v[s.id]), aj ? sinal(calc.custoSecundaria(s.id, aj)) : ''];
+      }).concat([['Base de Carga', num(r.base_carga) + ' kg']])));
+      g.appendChild(sec);
+      var so = f.social;
+      var ap = porId(R.aparencia.niveis, so.aparencia);
+      var rq = porId(R.riqueza.niveis, so.riqueza);
+      var alf = porId(R.idiomas.alfabetizacao_materna, so.alfabetizacao);
+      var soc = bloco('Lugar no mundo');
+      soc.appendChild(linhas([
+        ['Aparência', ap ? ap.nome : so.aparencia, sinal(calc.custoAparencia(so.aparencia))],
+        ['Status', sinal(so.status), sinal(calc.custoStatus(so.status))],
+        ['Riqueza', so.multimilionario ? 'Multimilionário ' + so.multimilionario : (rq ? rq.nome : so.riqueza), sinal(calc.custoRiqueza(so.riqueza, so.multimilionario))],
+        ['Leitura', alf ? alf.nome : so.alfabetizacao, sinal(calc.custoAlfabetizacao(so.alfabetizacao))],
+        ['Dinheiro', moeda(r.recursos)]
+      ].concat(f.idioma_materno ? [['Língua materna', f.idioma_materno]] : [])
+        .concat(f.idiomas.map(function (i) {
+          var nf = porId(R.idiomas.niveis, i.fala), ne = porId(R.idiomas.niveis, i.escrita);
+          return [i.nome || 'Idioma', 'fala ' + (nf ? nf.nome : i.fala) + ', escrita ' + (ne ? ne.nome : i.escrita), sinal(calc.custoIdioma(i.fala, i.escrita))];
+        }))));
+      g.appendChild(soc);
+      return g;
+    }
+    function blocoPendencias() {
+      if (!r.erros.length) return null;
+      var pe = bloco('Pendências: ficha incompleta', 'ficha-largo');
+      var ule = el('ul', 'calc-avisos');
+      r.erros.forEach(function (a) { ule.appendChild(el('li', null, a.texto)); });
+      pe.appendChild(ule);
+      var ed = el('a', 'btn btn-ghost', 'Resolver no criador');
+      ed.href = 'criador.html?editar=' + encodeURIComponent(idFicha);
+      pe.appendChild(ed);
+      return pe;
+    }
+    function tabelaPericias(lista) {
+      return tabela(['Perícia', 'Tipo', 'NH', 'Pontos'], lista.map(function (x) {
+        var nome = nomeComIcone(x.pericia, x.pericia.nome + (x.sel.especializacao ? ' (' + x.sel.especializacao + ')' : ''));
         if (x.bonus.length || x.situacional.length) {
           var ul = el('ul', 'efeitos');
           Efeitos.desenharEfeitos(ul, x.bonus.map(function (b) { return { tipo: 'aplicado', texto: sinal(b.valor) + ' de ' + b.origem }; })
             .concat(x.situacional.map(function (b) { return { tipo: 'condicional', texto: sinal(b.valor) + ' de ' + b.origem + ' — ' + b.condicao }; })));
           nome.appendChild(ul);
         }
-        return [nome, x.atributo + '/' + x.pericia.dificuldade, x.nh == null ? '—' : String(x.nh), String(x.sel.pontos || 0)];
-      })));
-    }
-    box.appendChild(per);
-
-    // perícias sem treino: o que o personagem ainda consegue tentar (as melhores entre as de Adamar)
-    var compradas = {};
-    r.pericias.forEach(function (x) { if (x.pericia) compradas[x.pericia.id] = true; });
-    var semTreino = G.pericias.filter(function (p) { return p.adamar === 'livre' && !compradas[p.id]; })
-      .map(function (p) { return { p: p, nh: r.combate.sem_treino(p) }; })
-      .filter(function (x) { return x.nh != null; })
-      .sort(function (a, b) { return b.nh - a.nh || a.p.nome.localeCompare(b.p.nome, 'pt-BR'); })
-      .slice(0, 15);
-    if (semTreino.length) {
-      var st = bloco('Sem treino (as melhores)', 'ficha-largo');
-      st.appendChild(el('p', 'combate-nota', 'Perícias que o personagem não comprou, mas pode tentar pelo valor pré-definido do livro.'));
-      var ul = el('ul', 'cofre-lista sem-treino');
-      semTreino.forEach(function (x) {
-        var li = el('li');
-        var ic = window.iconeSvg && window.iconeSvg(x.p.icone, 'icone-item');
-        if (ic) li.appendChild(ic);
-        li.appendChild(el('span', 'cofre-item-nome', x.p.nome));
-        li.appendChild(rolavel(el('span', 'cofre-item-valor', String(x.nh)), 'teste', x.p.nome + ' (sem treino)', x.nh));
-        ul.appendChild(li);
-      });
-      st.appendChild(ul);
-      box.appendChild(st);
+        var nh = el('strong', 'fx-nh', x.nh == null ? '—' : String(x.nh));
+        rolavel(nh, 'teste', x.pericia.nome + (x.sel.especializacao ? ' (' + x.sel.especializacao + ')' : ''), x.nh);
+        return [nome, x.atributo + '/' + x.pericia.dificuldade, nh, String(x.sel.pontos || 0)];
+      }));
     }
 
-    // equipamento
-    var eq = bloco('Equipamento', 'ficha-largo');
-    var itens = r.equipamento.filter(function (x) { return x.item; });
-    if (!itens.length) eq.appendChild(el('p', 'pericia-vazio', 'Nada.'));
-    else {
-      eq.appendChild(tabela(['Item', 'Qtd.', 'Preço'], itens.map(function (x) {
-        var nomeItem = el('span');
-        var icE = window.iconeSvg && window.iconeSvg(x.item.icone, 'icone-item');
-        if (icE) nomeItem.appendChild(icE);
-        nomeItem.appendChild(document.createTextNode(x.item.nome));
-        return [nomeItem, String(x.sel.quantidade || 1), x.preco == null ? '—' : moeda(x.preco)];
-      })));
-      eq.appendChild(el('p', 'calc-detalhe', 'Gasto ' + moeda(r.gasto_equipamento) + ' de ' + moeda(r.recursos) + ' · ' +
-        (r.dinheiro_restante >= 0 ? 'sobram ' + moeda(r.dinheiro_restante) : 'faltam ' + moeda(-r.dinheiro_restante))));
-    }
-    box.appendChild(eq);
+    var construtores = {
+      geral: function (s) {
+        var pend = blocoPendencias();
+        if (pend) s.appendChild(pend);
+        s.appendChild(painelEmJogo(idFicha, true, aoMudarEmJogo));
+        s.appendChild(blocoAtributos());
+        var comb = bloco('Combate', 'ficha-largo ficha-combate fx-so-tela');
+        comb.appendChild(blocoCombate(r, true));
+        s.appendChild(comb);
+        // as melhores perícias, para rolar sem trocar de seção
+        var melhores = comPericia.filter(function (x) { return x.nh != null; }).sort(function (a, b) { return b.nh - a.nh; }).slice(0, 6);
+        if (melhores.length) {
+          var bp = bloco('Melhores perícias', 'ficha-largo fx-so-tela');
+          bp.appendChild(tabelaPericias(melhores));
+          s.appendChild(bp);
+        }
+      },
+      combate: function (s) {
+        var comb = bloco('Combate', 'ficha-largo ficha-combate');
+        comb.appendChild(blocoCombate(r, false));
+        s.appendChild(comb);
+      },
+      pericias: function (s) {
+        var per = bloco('Perícias', 'ficha-largo');
+        if (!comPericia.length) per.appendChild(el('p', 'pericia-vazio', 'Nenhuma.'));
+        else {
+          per.appendChild(buscaNaSecao(per, 'Buscar perícia…'));
+          var t = tabelaPericias(comPericia);
+          Array.prototype.forEach.call(t.querySelectorAll('tbody tr'), function (tr, k) {
+            var x = comPericia[k];
+            tr.setAttribute('data-busca', semAcento(x.pericia.nome + ' ' + (x.sel.especializacao || '')));
+          });
+          per.appendChild(t);
+        }
+        s.appendChild(per);
+        // perícias sem treino: o que o personagem ainda consegue tentar (as melhores entre as de Adamar)
+        var compradas = {};
+        comPericia.forEach(function (x) { compradas[x.pericia.id] = true; });
+        var semTreino = G.pericias.filter(function (p) { return p.adamar === 'livre' && !compradas[p.id]; })
+          .map(function (p) { return { p: p, nh: r.combate.sem_treino(p) }; })
+          .filter(function (x) { return x.nh != null; })
+          .sort(function (a, b) { return b.nh - a.nh || a.p.nome.localeCompare(b.p.nome, 'pt-BR'); })
+          .slice(0, 15);
+        if (semTreino.length) {
+          var st = bloco('Sem treino (as melhores)', 'ficha-largo');
+          st.appendChild(el('p', 'combate-nota', 'Perícias que o personagem não comprou, mas pode tentar pelo valor pré-definido do livro.'));
+          var ul = el('ul', 'cofre-lista sem-treino');
+          semTreino.forEach(function (x) {
+            var li = el('li');
+            li.appendChild(nomeComIcone(x.p));
+            li.appendChild(rolavel(el('span', 'cofre-item-valor', String(x.nh)), 'teste', x.p.nome + ' (sem treino)', x.nh));
+            ul.appendChild(li);
+          });
+          st.appendChild(ul);
+          s.appendChild(st);
+        }
+      },
+      vantagens: function (s) {
+        var b = bloco('Vantagens', 'ficha-largo');
+        if (vantagens.length + talentos.length + qualidades.length > 6) b.appendChild(buscaNaSecao(b, 'Buscar vantagem…'));
+        b.appendChild(listaTracos(vantagens, talentos.concat(qualidades)));
+        s.appendChild(b);
+      },
+      desvantagens: function (s) {
+        var b = bloco('Desvantagens', 'ficha-largo');
+        if (desvantagens.length + peculiaridades.length > 6) b.appendChild(buscaNaSecao(b, 'Buscar desvantagem…'));
+        b.appendChild(listaTracos(desvantagens, peculiaridades));
+        s.appendChild(b);
+      },
+      equipamento: function (s) {
+        var cb = r.combate;
+        var resumo = el('p', 'calc-detalhe fx-eq-resumo', num(cb.peso_total) + ' kg · carga ' + cb.carga.nome + ' (deslocamento ' + cb.carga.deslocamento + ') · gasto ' + moeda(r.gasto_equipamento) + ' de ' + moeda(r.recursos) + ' · ' +
+          (r.dinheiro_restante >= 0 ? 'sobram ' + moeda(r.dinheiro_restante) : 'faltam ' + moeda(-r.dinheiro_restante)));
+        s.appendChild(resumo);
+        if (!itens.length) { s.appendChild(el('p', 'pericia-vazio', 'Nada.')); return; }
+        var grupos = { arma: [], protecao: [], mochila: [] };
+        itens.forEach(function (x) { grupos[tipoDeItem(x.item)].push(x); });
+        function peso(x) {
+          var kg = x.item.peso && x.item.peso.kg;
+          return kg ? num(Math.round(kg * (x.sel.quantidade || 1) * 100) / 100) + ' kg' : '—';
+        }
+        // armas: prontas para rolar acerto e dano
+        var ba = bloco('Armas', 'ficha-largo');
+        if (!grupos.arma.length) ba.appendChild(el('p', 'pericia-vazio', 'Nenhuma arma. Os ataques desarmados estão em Combate.'));
+        else {
+          var linhasArma = [];
+          grupos.arma.forEach(function (x) {
+            cb.armas.filter(function (a) { return a.item && a.item.id === x.item.id; }).forEach(function (a) {
+              var nh = el('strong', 'fx-nh', a.nh == null ? '—' : String(a.nh));
+              rolavel(nh, 'teste', a.nome, a.nh);
+              var dano = el('span', null, a.dano);
+              rolavel(dano, 'dano', a.nome, a.dano);
+              linhasArma.push([nomeComIcone(x.item, a.nome), nh, dano, a.alcance || '—', a.pericia || '—']);
+            });
+          });
+          ba.appendChild(tabela(['Arma', 'NH', 'Dano', 'Alcance', 'Perícia'], linhasArma));
+        }
+        s.appendChild(ba);
+        // armadura e escudo: proteção fixa, não rola
+        if (grupos.protecao.length) {
+          var bp = bloco('Armadura e escudo', 'ficha-largo');
+          bp.appendChild(tabela(['Peça', 'Proteção', 'Peso'], grupos.protecao.map(function (x) {
+            var p = x.item.protecao, e = x.item.escudo;
+            var prot = p ? 'RD ' + (p.texto || p.rd) + (p.local ? ' · ' + p.local : '') : e ? 'Defesa +' + e.bd + ' (escudo)' : '—';
+            return [nomeComIcone(x.item), prot, peso(x)];
+          })));
+          var locais = Object.keys(cb.protecao);
+          if (locais.length) bp.appendChild(el('p', 'combate-nota', 'Somando tudo: ' + locais.map(function (l) { return l + ' RD ' + cb.protecao[l].rd; }).join(' · ')));
+          s.appendChild(bp);
+        }
+        // mochila: o resto
+        var bm = bloco('Mochila', 'ficha-largo');
+        if (!grupos.mochila.length) bm.appendChild(el('p', 'pericia-vazio', 'Vazia.'));
+        else {
+          if (grupos.mochila.length > 8) bm.appendChild(buscaNaSecao(bm, 'Buscar na mochila…'));
+          var tm = tabela(['Item', 'Qtd.', 'Peso', 'Preço'], grupos.mochila.map(function (x) {
+            return [nomeComIcone(x.item), String(x.sel.quantidade || 1), peso(x), x.preco == null ? '—' : moeda(x.preco)];
+          }));
+          Array.prototype.forEach.call(tm.querySelectorAll('tbody tr'), function (tr, k) { tr.setAttribute('data-busca', semAcento(grupos.mochila[k].item.nome)); });
+          bm.appendChild(tm);
+        }
+        s.appendChild(bm);
+      },
+      jogo: function (s) {
+        s.appendChild(painelEmJogo(idFicha, false, aoMudarEmJogo));
+      },
+      historia: function (s) {
+        var algum = false;
+        [['Aparência', f.aparencia_fisica], ['História', f.historia], ['Recado para o narrador', f.notas]].forEach(function (x) {
+          if (!x[1]) return;
+          algum = true;
+          var b = bloco(x[0], 'ficha-largo');
+          x[1].split(/\n+/).forEach(function (par) { b.appendChild(el('p', null, par)); });
+          s.appendChild(b);
+        });
+        if (r.avisos.length) {
+          algum = true;
+          var av = bloco('Para conversar com o narrador', 'ficha-largo');
+          var ul = el('ul', 'app-pendencias');
+          r.avisos.forEach(function (a) { ul.appendChild(el('li', null, a.texto)); });
+          av.appendChild(ul);
+          s.appendChild(av);
+        }
+        if (!algum) s.appendChild(el('p', 'pericia-vazio', 'Sem história nem notas ainda. Dá para escrever no criador, na etapa Conceito.'));
+      }
+    };
+    var contagens = {
+      pericias: comPericia.length, vantagens: vantagens.length + talentos.length + qualidades.length,
+      desvantagens: desvantagens.length + peculiaridades.length, equipamento: itens.length
+    };
 
-    // texto livre
-    [['Aparência', f.aparencia_fisica], ['História', f.historia], ['Recado para o narrador', f.notas]].forEach(function (x) {
-      if (!x[1]) return;
-      var b = bloco(x[0], 'ficha-largo');
-      x[1].split(/\n+/).forEach(function (par) { b.appendChild(el('p', null, par)); });
-      box.appendChild(b);
+    // ---------- seções: cada uma é montada ao entrar (assim PV/PF e diário estão sempre em dia) ----------
+    var secoes = {};
+    SECOES.forEach(function (x) {
+      var s = el('section', 'fx-sec');
+      s.setAttribute('data-sec', x[0]);
+      s.setAttribute('aria-label', x[1]);
+      s.hidden = true;
+      secoes[x[0]] = s;
+      box.appendChild(s);
     });
-
-    if (r.erros.length) {
-      var pe = bloco('Pendências: ficha incompleta', 'ficha-largo');
-      var ule = el('ul', 'calc-avisos');
-      r.erros.forEach(function (a) { ule.appendChild(el('li', null, a.texto)); });
-      pe.appendChild(ule);
-      box.insertBefore(pe, box.children[1]);
+    function montar(id) {
+      var s = secoes[id];
+      s.textContent = '';
+      construtores[id](s);
+      marcarRolaveis(s);
     }
-    marcarRolaveis(box);
-
-    if (r.avisos.length) {
-      var av = bloco('Para conversar com o narrador', 'ficha-largo');
-      var ul = el('ul', 'app-pendencias');
-      r.avisos.forEach(function (a) { ul.appendChild(el('li', null, a.texto)); });
-      av.appendChild(ul);
-      box.appendChild(av);
+    function aoMudarEmJogo() {
+      desenharPontos();
     }
+
+    var nav = document.getElementById('fx-nav');
+    var botaoMenu = document.getElementById('fx-menu-btn');
+    var veu = document.getElementById('fx-veu');
+    function gaveta(aberta) {
+      nav.classList.toggle('aberta', aberta);
+      veu.hidden = !aberta;
+      botaoMenu.setAttribute('aria-expanded', String(aberta));
+    }
+    botaoMenu.addEventListener('click', function () { gaveta(!nav.classList.contains('aberta')); });
+    veu.addEventListener('click', function () { gaveta(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && nav.classList.contains('aberta')) gaveta(false); });
+
+    var botoes = {};
+    SECOES.forEach(function (x) {
+      var b = el('button', 'fx-nav-item');
+      b.type = 'button';
+      var ic = window.iconeSvg && window.iconeSvg(x[2], 'fx-nav-icone');
+      if (ic) b.appendChild(ic);
+      b.appendChild(el('span', null, x[1]));
+      if (contagens[x[0]] != null) b.appendChild(el('span', 'fx-nav-conta', String(contagens[x[0]])));
+      if (x[0] === 'geral' && r.erros.length) b.appendChild(el('span', 'fx-nav-alerta', '!'));
+      b.addEventListener('click', function () { abrirSecao(x[0]); gaveta(false); });
+      botoes[x[0]] = b;
+      nav.appendChild(b);
+    });
+    var atual = null;
+    function abrirSecao(id) {
+      if (!secoes[id]) id = 'geral';
+      if (atual) secoes[atual].hidden = true;
+      montar(id);
+      secoes[id].hidden = false;
+      conceito.hidden = id !== 'geral';
+      Object.keys(botoes).forEach(function (k) {
+        botoes[k].classList.toggle('ativo', k === id);
+        if (k === id) botoes[k].setAttribute('aria-current', 'true'); else botoes[k].removeAttribute('aria-current');
+      });
+      atual = id;
+      box.scrollTop = 0;
+      if (history.replaceState) history.replaceState(null, '', location.pathname + location.search + (id === 'geral' ? '' : '#' + id));
+    }
+    // o diário recebe rolagens de qualquer seção: a seção "Em jogo" fica montada por baixo
+    montar('jogo');
+    // para imprimir, todas as seções aparecem
+    window.addEventListener('beforeprint', function () { SECOES.forEach(function (x) { if (x[0] !== atual && x[0] !== 'geral') montar(x[0]); }); });
+    abrirSecao(decodeURIComponent(location.hash.slice(1)) || 'geral');
   }
   // ?id=<id> abre a ficha completa; sem isso, o cofre
   var id = (/[?&]id=([^&]+)/.exec(location.search) || [])[1];

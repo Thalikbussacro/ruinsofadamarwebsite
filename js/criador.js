@@ -1558,10 +1558,10 @@
     irPara(0);
   });
 
-  // salvar: só salva como pronta se não houver pendências; rascunho só de forma explícita
+  // salvar: só entra no cofre sem inconsistência (pontos sobrando pode); enquanto isso, o rascunho fica guardado sozinho
   var botaoSalvar = document.getElementById('c-salvar');
   var statusSalvo = document.getElementById('c-salvo');
-  var pedindoRascunho = false;
+  var tentouSalvar = false;
   if (!arquivo) botaoSalvar.hidden = true;
   var salvarMovel = document.getElementById('c-salvar-movel');
   salvarMovel.hidden = !arquivo;
@@ -1574,13 +1574,13 @@
     if (!id) { statusSalvo.textContent = 'Não deu para salvar (navegador sem espaço ou bloqueado).'; return; }
     ficha.id_salvo = id;
     versaoSalva = assinatura(arquivo.obter(id));
-    pedindoRascunho = false;
+    tentouSalvar = false;
     guardarRascunho();
     atualizar();
   }
   botaoSalvar.addEventListener('click', function () {
-    if (ultimo.valida || pedindoRascunho) { gravar(); return; }
-    pedindoRascunho = true;
+    if (ultimo.valida) { gravar(); return; }
+    tentouSalvar = true;
     mostrarIncompletos = true;
     atualizar();
   });
@@ -1589,10 +1589,10 @@
     statusSalvo.textContent = '';
     statusSalvo.className = 'app-status';
     var salvaIgual = ficha.id_salvo && versaoSalva === assinatura(ficha);
-    if (pedindoRascunho && !r.valida) {
-      botaoSalvar.textContent = 'Salvar como rascunho';
-      salvarMovel.textContent = 'Salvar rascunho';
-      statusSalvo.appendChild(document.createTextNode(r.erros.length + (r.erros.length === 1 ? ' pendência' : ' pendências') + ': a ficha ainda não está pronta. '));
+    if (tentouSalvar && !r.valida) {
+      botaoSalvar.textContent = 'Salvar';
+      salvarMovel.textContent = 'Salvar';
+      statusSalvo.appendChild(document.createTextNode('Não dá para salvar com ' + r.erros.length + (r.erros.length === 1 ? ' pendência' : ' pendências') + ' (o rascunho continua guardado). '));
       var ver = el('button', 'btn-link', 'Ver pendências');
       ver.type = 'button';
       ver.addEventListener('click', function () { irParaEtapa('revisao'); });
@@ -1600,7 +1600,7 @@
       statusSalvo.classList.add('tem-erro');
       return;
     }
-    pedindoRascunho = false;
+    tentouSalvar = false;
     botaoSalvar.textContent = ficha.id_salvo && versaoSalva ? 'Salvar alterações' : 'Salvar';
     salvarMovel.textContent = ficha.id_salvo && versaoSalva === assinatura(ficha) ? 'Salvo ✓' : 'Salvar';
     if (salvaIgual) {

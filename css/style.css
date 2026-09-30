@@ -2553,3 +2553,53 @@ html:has(body.modo-app) { height: 100%; overflow: hidden; }
   .fx-conteudo { overflow: visible !important; padding: 0 !important; }
   .ornament, .page-head::before, .page-head::after, .page-head > *::after { display: none !important; }
 }
+
+/* ---------- criador em dois painéis: ficha viva à esquerda, etapas em abas com os catálogos à direita ---------- */
+.app { grid-template-columns: minmax(19rem, 25rem) minmax(0, 1fr); }
+.app-alterna { display: none; }
+.app-abas { display: flex; gap: 0.15rem; padding: 0.35rem 0.8rem 0; overflow-x: auto; scrollbar-width: thin; border-bottom: 1px solid var(--ouro-linha); }
+.app-abas .app-etapa-botao { flex: none; width: auto; display: inline-flex; gap: 0.35rem; padding: 0.45rem 0.7rem; border: 1px solid transparent; border-bottom: 0; border-left: 0; border-top: 2px solid transparent; }
+.app-abas .app-etapa-botao.is-current { color: var(--ouro-claro); background: rgba(110, 31, 26, 0.3); border-color: var(--ouro-fio); border-top-color: var(--ouro); }
+.app-abas .app-etapa-num { display: none; }
+.app-etapa-lista .app-duplo { grid-template-columns: minmax(0, 1fr); }
+.ficha-viva { display: grid; gap: 0.9rem; }
+.fv-secao .painel-cab, .fv-resumo .painel-cab { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; padding: 0.3rem 0 0.4rem; }
+.fv-ir { padding: 0; font: inherit; font-family: var(--f-titulo); font-size: 0.95rem; letter-spacing: 0.04em; color: var(--ouro-claro); background: none; border: 0; cursor: pointer; }
+.fv-ir:hover, .fv-ir:focus-visible { color: var(--osso-claro); text-decoration: underline; }
+.fv-atributos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.25rem; width: 100%; margin-bottom: 0.6rem; padding: 0; font: inherit; background: none; border: 0; cursor: pointer; }
+.fv-atr { display: grid; justify-items: center; padding: 0.3rem 0.2rem; background: rgba(14, 13, 12, 0.55); border: 1px solid var(--ouro-fio); }
+.fv-atributos:hover .fv-atr { border-color: var(--ouro-linha); }
+.fv-atr small { font-family: var(--f-titulo); font-size: 0.66rem; letter-spacing: 0.06em; color: var(--osso-fosco); }
+.fv-atr strong { font-family: var(--f-titulo); font-size: 1.05rem; color: var(--osso-claro); }
+.fv-armas { display: grid; gap: 0.3rem; margin: 0; padding: 0; list-style: none; }
+.fv-armas li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.15rem 0.6rem; padding: 0.35rem 0.5rem; background: rgba(14, 13, 12, 0.45); border: 1px solid var(--ouro-fio); }
+.fv-arma-nome { flex: 1 1 auto; font-weight: 700; color: var(--osso-claro); }
+.fv-arma-nh { font-family: var(--f-titulo); font-size: 0.9rem; color: var(--ouro-claro); }
+.fv-arma-dano { font-size: 0.92rem; color: var(--osso); }
+.fv-arma-per { flex-basis: 100%; font-size: 0.85rem; color: var(--osso-fosco); }
+.fv-comprar { flex-basis: 100%; text-align: left; font-size: 0.88rem; color: #e0a15e; }
+.fv-vazio { margin: 0; font-size: 0.92rem; font-style: italic; color: var(--osso-fosco); }
+/* arrastar: a ficha se ilumina para receber */
+body.arrastando .app-lado { outline: 2px dashed var(--ouro-linha); outline-offset: -6px; }
+.app-lado.recebe { outline: 2px dashed var(--ouro) !important; background: linear-gradient(180deg, rgba(110, 31, 26, 0.35), rgba(14, 13, 12, 0.95)); }
+.app-cat-item[draggable="true"] { cursor: grab; }
+.app-cat-item[draggable="true"]:active { cursor: grabbing; }
+
+@media (max-width: 899px) {
+  /* celular: um seletor Ficha | Montar no topo; cada lado ocupa a tela */
+  body.modo-app .app { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); }
+  .app-alterna { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; padding: 0.4rem 10px; background: #13110f; border-bottom: 1px solid var(--ouro-linha); }
+  .app-alterna button { padding: 0.5rem; font-family: var(--f-titulo); font-size: 0.9rem; color: var(--osso); background: rgba(14, 13, 12, 0.6); border: 1px solid var(--ouro-fio); cursor: pointer; }
+  .app-alterna button[aria-selected="true"] { color: var(--ouro-claro); background: rgba(110, 31, 26, 0.35); border-color: var(--ouro); }
+  .app-alterna button.pulsa { animation: pulsa-ficha 0.6s ease; }
+  .app[data-lado="montar"] .app-lado { display: none; }
+  .app[data-lado="ficha"] .app-principal { display: none; }
+  .app[data-lado="ficha"] .app-lado { display: flex; overflow: auto; padding: 0.7rem 10px 1.5rem; border-bottom: 0; }
+  .app[data-lado="ficha"] .app-quem, .app[data-lado="ficha"] .app-salvar { display: grid; }
+  .app[data-lado="ficha"] .app-pontos { display: block; }
+  .app-abas { padding: 0.3rem 8px 0; scrollbar-width: none; }
+  .app-abas::-webkit-scrollbar { display: none; }
+  .app-abas .app-etapa-botao { padding: 0.4rem 0.55rem; font-size: 0.9rem; }
+}
+@keyframes pulsa-ficha { 0% { box-shadow: 0 0 0 0 rgba(201, 171, 107, 0.7); } 100% { box-shadow: 0 0 0 10px rgba(201, 171, 107, 0); } }
+@media (prefers-reduced-motion: reduce) { .app-alterna button.pulsa { animation: none; } }

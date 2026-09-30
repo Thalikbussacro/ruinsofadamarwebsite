@@ -206,6 +206,109 @@
     raiz.classList.toggle('mostrar-incompletos', mostrarIncompletos);
   });
 
+  // ---------- ficha viva (coluna da esquerda) ----------
+  var app = document.querySelector('main.app');
+  var lado = document.getElementById('c-lado');
+  var arrastando = null; // o que fazer quando um item do catálogo cai na ficha
+  function fimDoArraste() {
+    arrastando = null;
+    document.body.classList.remove('arrastando');
+    lado.classList.remove('recebe');
+  }
+  lado.addEventListener('dragover', function (ev) {
+    if (!arrastando) return;
+    ev.preventDefault();
+    ev.dataTransfer.dropEffect = 'copy';
+    lado.classList.add('recebe');
+  });
+  lado.addEventListener('dragleave', function (ev) { if (!lado.contains(ev.relatedTarget)) lado.classList.remove('recebe'); });
+  lado.addEventListener('drop', function (ev) {
+    if (!arrastando) return;
+    ev.preventDefault();
+    var fazer = arrastando;
+    fimDoArraste();
+    fazer();
+  });
+  // celular: "Ficha" mostra a coluna da esquerda; "Montar", as etapas com os catálogos
+  var botoesLado = Array.prototype.slice.call(document.querySelectorAll('.app-alterna [data-lado]'));
+  function mostrarLado(qual) {
+    app.setAttribute('data-lado', qual);
+    botoesLado.forEach(function (b) { b.setAttribute('aria-selected', String(b.getAttribute('data-lado') === qual)); });
+    if (qual === 'ficha') lado.scrollTop = 0;
+  }
+  botoesLado.forEach(function (b) { b.addEventListener('click', function () { mostrarLado(b.getAttribute('data-lado')); }); });
+  mostrarLado('montar');
+  // no celular, um aviso rápido no botão "Ficha" quando algo entra nela
+  function avisarFicha() {
+    var b = document.querySelector('.app-alterna [data-lado="ficha"]');
+    if (!b) return;
+    b.classList.remove('pulsa');
+    void b.offsetWidth;
+    b.classList.add('pulsa');
+  }
+  // os títulos das seções da ficha levam ao catálogo da etapa
+  Array.prototype.forEach.call(document.querySelectorAll('.fv-ir'), function (b) {
+    b.addEventListener('click', function () { irParaEtapa(b.getAttribute('data-ir')); mostrarLado('montar'); });
+  });
+  // topo da ficha: atributos e armas (com o NH de agora e, se faltar, a perícia para comprar)
+  atualizadores.push(function (r) {
+    var box = document.getElementById('c-ficha-resumo');
+    if (!box) return;
+    box.textContent = '';
+    document.getElementById('c-alterna-pontos').textContent = '· ' + r.restante;
+    var v = r.valores;
+    var atr = el('button', 'fv-atributos');
+    atr.type = 'button';
+    atr.title = 'Mudar atributos';
+    [['ST', v.st], ['DX', v.dx], ['IQ', v.iq], ['HT', v.ht], ['PV', v.pv], ['Vont', v.vontade], ['Per', v.per], ['PF', v.pf]].forEach(function (x) {
+      var c = el('span', 'fv-atr');
+      c.appendChild(el('small', null, x[0]));
+      c.appendChild(el('strong', null, String(x[1])));
+      atr.appendChild(c);
+    });
+    atr.addEventListener('click', function () { irParaEtapa('atributos'); mostrarLado('montar'); });
+    box.appendChild(atr);
+    var cb = r.combate;
+    var armas = cb.armas.filter(function (a) { return !a.natural; });
+    var cab = el('div', 'painel-cab');
+    var h = el('h2');
+    var irEq = el('button', 'fv-ir', 'Armas');
+    irEq.type = 'button';
+    irEq.addEventListener('click', function () { irParaEtapa('equipamento'); mostrarLado('montar'); });
+    h.appendChild(irEq);
+    cab.appendChild(h);
+    cab.appendChild(el('span', 'painel-conta', 'Esquiva ' + cb.defesas.esquiva + (cb.defesas.aparar != null ? ' · Aparar ' + cb.defesas.aparar : '') + (cb.defesas.bloqueio != null ? ' · Bloqueio ' + cb.defesas.bloqueio : '')));
+    box.appendChild(cab);
+    if (!armas.length) { box.appendChild(el('p', 'fv-vazio', 'Nenhuma arma. Arraste uma do Equipamento, ou use o +.')); return; }
+    var ul = el('ul', 'fv-armas');
+    var vistas = {};
+    armas.forEach(function (a) {
+      var chave = a.item.id + '|' + a.pericia;
+      if (vistas[chave]) return; // um item com dois modos (golpe e estocada) mostra uma linha
+      vistas[chave] = true;
+      var li = el('li');
+      li.appendChild(el('span', 'fv-arma-nome', a.nome));
+      li.appendChild(el('span', 'fv-arma-nh', a.nh == null ? 'NH —' : 'NH ' + a.nh));
+      li.appendChild(el('span', 'fv-arma-dano', a.dano));
+      // a perícia da arma ainda não está na ficha: oferece comprar (e os pontos dela sobem o NH da arma)
+      var ids = ((a.item.combate && a.item.combate.pericias) || []).filter(function (x) { return x.tipo === 'pericia'; }).map(function (x) { return x.id; });
+      var tem = ficha.pericias.some(function (s) { return ids.indexOf(s.id) !== -1; });
+      var alvo = ids.length && porId(G.pericias, ids[0]);
+      if (!tem && alvo) {
+        var comprar = el('button', 'btn-link fv-comprar', 'sem treino · comprar ' + alvo.nome);
+        comprar.type = 'button';
+        comprar.addEventListener('click', function () {
+          if (catalogoPericias.adicionarItem(alvo)) mudou();
+        });
+        li.appendChild(comprar);
+      } else if (tem) {
+        li.appendChild(el('span', 'fv-arma-per', a.pericia));
+      }
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+  });
+
   // ---------- coluna lateral ----------
   atualizadores.push(function (r) {
     document.getElementById('lado-nome').textContent = ficha.nome || 'Sem nome';
@@ -610,6 +713,17 @@
           desenhar();
         });
         li.appendChild(b);
+        if (!jaTem) {
+          li.draggable = true;
+          li.addEventListener('dragstart', function (ev) {
+            arrastando = function () { b.click(); };
+            ev.dataTransfer.effectAllowed = 'copy';
+            ev.dataTransfer.setData('text/plain', it.nome);
+            document.body.classList.add('arrastando');
+          });
+          li.addEventListener('dragend', fimDoArraste);
+        }
+        b.addEventListener('click', avisarFicha);
         texto.addEventListener('click', function () {
           verDetalhes(it, jaTem ? { rotulo: 'Já está na ficha', desabilitado: true, fazer: function () {} } : { rotulo: 'Adicionar à ficha', fazer: function () { b.click(); } });
         });
@@ -619,7 +733,14 @@
     }
     busca.addEventListener('input', desenhar);
     desenhar();
-    return { desenhar: desenhar };
+    // adiciona um item como o botão "+" faria (usado pela ficha viva, ex.: comprar a perícia de uma arma)
+    function adicionarItem(it) {
+      if (opcoes.jaTem(it)) return false;
+      if (opcoes.adicionar(it, function () { mudou(); desenhar(); }) === false) return false;
+      desenhar();
+      return true;
+    }
+    return { desenhar: desenhar, adicionarItem: adicionarItem };
   }
 
   // custo "típico" de um traço, para ordenar e filtrar (variável fica por último)

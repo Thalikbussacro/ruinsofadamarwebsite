@@ -1,1 +1,64 @@
-{}
+{
+  "_proposta": "Adamar RPG 0.1 — proposta; ver docs/jogo/adamar-rpg.md",
+  "atributos": [
+    {
+      "id": "st",
+      "sigla": "ST",
+      "nome": "Força",
+      "base": 10,
+      "custo_por_nivel": 10,
+      "resumo": "Poder físico: dano corpo a corpo, peso que carrega, Pontos de Vida.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 14
+      }
+    },
+    {
+      "id": "dx",
+      "sigla": "DX",
+      "nome": "Destreza",
+      "base": 10,
+      "custo_por_nivel": 15,
+      "resumo": "Agilidade e coordenação: combate, esportes, trabalhos manuais finos.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 15
+      }
+    },
+    {
+      "id": "iq",
+      "sigla": "IQ",
+      "nome": "Inteligência",
+      "base": 10,
+      "custo_por_nivel": 15,
+      "resumo": "Capacidade mental: perícias de saber, sociais e magia; base de Vontade e Percepção.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 15
+      }
+    },
+    {
+      "id": "ht",
+      "sigla": "HT",
+      "nome": "Vitalidade",
+      "base": 10,
+      "custo_por_nivel": 10,
+      "resumo": "Saúde e resistência: doenças, venenos, fadiga; base dos Pontos de Fadiga.",
+      "ref": {
+        "livro": "modulo-basico",
+        "pagina": 15
+      }
+    }
+  ],
+  "custo_pericias": {
+    "resumo": "Adamar RPG: o primeiro nível custa 1 ponto e cada nível acima custa mais 2 (1, 3, 5, 7…). Aprender é constante: ninguém fica caro demais para melhorar, e a experiência do jogo (usar a perícia) rende de forma previsível.",
+    "custos": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "acrescimo_por_nivel": 2,
+    "ref": null
+  }
+}

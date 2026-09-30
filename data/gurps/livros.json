@@ -10,6 +10,12 @@
       "sha256": "7d56d7c53117e06fe24ccf0157f0c50a02d45abc1113ae602763fa037e58a298",
       "deslocamento_pdf": 1,
       "observacao": "Páginas citadas são as do livro impresso; no PDF, página + 1."
+    },
+    {
+      "id": "adamar-rpg",
+      "titulo": "Adamar RPG (regras próprias)",
+      "sem_paginas": true,
+      "observacao": "Itens criados para o Adamar RPG; não vêm de livro."
     }
   ]
 }

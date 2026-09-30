@@ -99,7 +99,7 @@ assert.deepEqual(sim.consertar({ atual: 20, maximo: 100 }, false), { atual: 20, 
 // receitas: faltas, recurso do bioma e o que se gasta
 const ferver = sim.RECEITAS.find((x) => x.id === 'ferver-agua');
 assert.equal(sim.avaliarReceita(ferver, {}, 'floresta-temperada').pode, false);
-assert.equal(sim.avaliarReceita(ferver, { 'agua-suja': 2, lenha: 1, isqueiro: 1 }, 'floresta-temperada').pode, true);
+assert.equal(sim.avaliarReceita(ferver, { 'agua-suja': 2, lenha: 1, 'pederneira-e-isca': 1 }, 'floresta-temperada').pode, true);
 const lenha = sim.RECEITAS.find((x) => x.id === 'cortar-lenha');
 assert.ok(sim.avaliarReceita(lenha, { machadinha: 1 }, 'deserto').faltam.some((x) => x.tipo === 'recurso'));
 assert.equal(sim.avaliarReceita(lenha, { machadinha: 1 }, 'floresta-temperada').pode, true);

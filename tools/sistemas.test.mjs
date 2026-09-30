@@ -38,4 +38,33 @@ assert.match(validarAdamarRpg(dados, { pericias: { remover: ['nao-existe'] } }).
 assert.match(validarAdamarRpg(dados, { pericias: { itens: [{ id: 'nova', nome: 'Nova' }] } }).join('\n'), /adamar-rpg: pericias\/nova: falta/);
 assert.deepEqual(validarAdamarRpg(dados, { pericias: { itens: [{ id: 'arco', resumo: 'Atirar com arco, do jeito de Adamar.' }] } }), []);
 
+// remover por regra e poda das referências ao que saiu
+{
+  const base2 = {
+    regras: { talentos: [{ id: 't', pericias: ['a', 'b'] }] },
+    pericias: [
+      { id: 'a', nome: 'A', adamar: 'livre', predefinidos: { caminhos: [{ tipo: 'pericia', id: 'b', mod: -2 }, { tipo: 'atributo', atributo: 'dx', mod: -4 }] }, relacionados: ['b'] },
+      { id: 'b', nome: 'B', adamar: 'nao' }
+    ],
+    vantagens: [{ id: 'v', nome: 'V', adamar: 'livre', efeitos: [{ alvo: 'grupo_pericias', ref: ['a', 'b'], valor: 1 }, { alvo: 'pericia', ref: 'b', valor: 1 }], prerequisitos: [{ tipo: 'exclui', id: 'b' }] }],
+    desvantagens: [], equipamento: []
+  };
+  const M = S.montar(base2, { pericias: { remover_se: { adamar: 'nao' } } });
+  assert.deepEqual(M.pericias.map((i) => i.id), ['a']);
+  assert.deepEqual(M.pericias[0].predefinidos.caminhos.map((c) => c.id || c.atributo), ['dx']);
+  assert.deepEqual(M.pericias[0].relacionados, []);
+  assert.deepEqual(M.vantagens[0].efeitos, [{ alvo: 'grupo_pericias', ref: ['a'], valor: 1 }]);
+  assert.deepEqual(M.vantagens[0].prerequisitos, []);
+  assert.deepEqual(M.regras.talentos[0].pericias, ['a']);
+  assert.deepEqual(base2.pericias[0].predefinidos.caminhos.length, 2); // o GURPS fica intacto
+  // o que foi mudado de propósito não é removido pela regra
+  const M2 = S.montar(base2, { pericias: { remover_se: { adamar: 'nao' }, itens: [{ id: 'b', adamar: 'livre' }] } });
+  assert.deepEqual(M2.pericias.map((i) => i.id), ['a', 'b']);
+}
+// o Adamar RPG de verdade (data/adamar-rpg) é válido
+{
+  const { carregarAdamarRpg } = await import('./gerar-dados.mjs');
+  assert.deepEqual(validarAdamarRpg(dados, carregarAdamarRpg()), []);
+}
+
 console.log('sistemas ok');

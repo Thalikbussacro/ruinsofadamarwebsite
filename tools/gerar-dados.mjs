@@ -78,7 +78,8 @@ export function validar(dados) {
       }
       if (it.adamar && !ADAMAR.includes(it.adamar)) erros.push(`${onde}: adamar inválido "${it.adamar}"`);
       if (!it.ref || !livros.has(it.ref.livro)) erros.push(`${onde}: livro desconhecido "${it.ref && it.ref.livro}"`);
-      if (!it.ref || !Number.isInteger(it.ref.pagina) || it.ref.pagina < 1) erros.push(`${onde}: página inválida`);
+      const semPaginas = it.ref && (dados.livros.itens || []).some((l) => l.id === it.ref.livro && l.sem_paginas);
+      if (!semPaginas && (!it.ref || !Number.isInteger(it.ref.pagina) || it.ref.pagina < 1)) erros.push(`${onde}: página inválida`);
       if (CATEGORIAS[lista]) {
         if (!CATEGORIAS[lista].includes(it.categoria)) erros.push(`${onde}: categoria inválida "${it.categoria}"`);
         for (const t of it.tipo || []) if (!TIPOS.includes(t)) erros.push(`${onde}: tipo inválido "${t}"`);

@@ -42,10 +42,11 @@ if (pedida) {
   for (const l of LISTAS) {
     const mudados = A[l].filter((i) => i.proprio === 'mudado').length;
     const novos = A[l].filter((i) => i.proprio === 'novo').length;
-    const removidos = ((dif[l] && dif[l].remover) || []).length;
+    const ficaram = new Set(A[l].map((i) => i.id));
+    const removidos = base[l].filter((i) => !ficaram.has(i.id)).length;
     const iguais = A[l].filter((i) => !i.proprio).length;
-    propriosTotal += mudados + novos;
-    itensTotal += A[l].length;
+    propriosTotal += mudados + novos + removidos;
+    itensTotal += A[l].length + removidos;
     console.log(l.padEnd(13) + String(mudados).padStart(5) + ' mudados · ' + novos + ' novos · ' + removidos + ' removidos · ' + iguais + ' iguais ao GURPS');
   }
   const tabela = dif.tabela_dano ? 'própria' : 'igual ao GURPS';

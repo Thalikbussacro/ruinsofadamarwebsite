@@ -1,4 +1,121 @@
 {
-  "itens": [],
+  "remover_se": {
+    "adamar": "nao"
+  },
+  "itens": [
+    {
+      "id": "pesca",
+      "nome": "Pesca",
+      "atributo": "Per",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Percepção-4 ou Sobrevivência-3",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "icone": "fish",
+      "ref": {
+        "livro": "adamar-rpg"
+      },
+      "resumo": "Pescar com linha, rede, armadilha ou arpão, e saber onde e quando o peixe está.",
+      "predefinidos": {
+        "caminhos": [
+          {
+            "tipo": "atributo",
+            "atributo": "per",
+            "mod": -4
+          },
+          {
+            "tipo": "pericia",
+            "id": "sobrevivencia",
+            "mod": -3
+          }
+        ]
+      },
+      "descricao": "Cobre achar o lugar certo (remanso, sombra, boca de rio), a hora certa (manhã e fim de tarde), a isca e o jeito de pescar: linha e anzol, rede, armadilha de vime ou arpão na água rasa. Um sucesso rende peixe para uma refeição; a margem de sucesso diz quantas.\n\nNo jogo, é o jeito mais barato de comer perto da água, mas pede tempo parado e atenção: quem pesca não está vigiando.",
+      "exemplos": [
+        "Montar uma armadilha de vime no rio antes de dormir e tirar dois peixes de manhã.",
+        "Pescar com linha num lago gelado, abrindo um buraco no gelo.",
+        "Achar o remanso onde os peixes se juntam depois da chuva."
+      ]
+    },
+    {
+      "id": "acampamento",
+      "nome": "Acampamento",
+      "atributo": "IQ",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "IQ-4 ou Sobrevivência-2",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "icone": "tent",
+      "ref": {
+        "livro": "adamar-rpg"
+      },
+      "resumo": "Acender e manter fogo, montar abrigo e escolher onde dormir sem ser pego pela chuva, pelo frio ou por visitas.",
+      "predefinidos": {
+        "caminhos": [
+          {
+            "tipo": "atributo",
+            "atributo": "iq",
+            "mod": -4
+          },
+          {
+            "tipo": "pericia",
+            "id": "sobrevivencia",
+            "mod": -2
+          }
+        ]
+      },
+      "descricao": "Acender fogo com pederneira e isca, mesmo com vento ou madeira úmida; manter a fogueira a noite toda gastando pouca lenha; montar uma barraca ou um abrigo de galhos; escolher o lugar do acampamento (seco, protegido do vento, longe do caminho dos bichos).\n\nSobrevivência é saber viver num tipo de terreno; Acampamento é o ofício da noite fora de casa, igual em qualquer lugar.",
+      "exemplos": [
+        "Acender fogo na chuva, com a isca guardada seca dentro da camisa.",
+        "Montar um abrigo de galhos e folhas antes que a neve aperte.",
+        "Escolher a clareira certa: longe do rio que sobe à noite e fora da trilha dos lobos."
+      ]
+    },
+    {
+      "id": "coleta",
+      "nome": "Coleta",
+      "atributo": "Per",
+      "dificuldade": "Fácil",
+      "nt": false,
+      "especializacao": false,
+      "predefinido": "Percepção-4, Naturalista-2 ou Sobrevivência-2",
+      "grupo": "natureza",
+      "adamar": "livre",
+      "icone": "leaf",
+      "ref": {
+        "livro": "adamar-rpg"
+      },
+      "resumo": "Achar o que a terra dá: frutos, raízes, ervas, cogumelos, lenha seca, gravetos e pedras boas.",
+      "predefinidos": {
+        "caminhos": [
+          {
+            "tipo": "atributo",
+            "atributo": "per",
+            "mod": -4
+          },
+          {
+            "tipo": "pericia",
+            "id": "naturalista",
+            "mod": -2
+          },
+          {
+            "tipo": "pericia",
+            "id": "sobrevivencia",
+            "mod": -2
+          }
+        ]
+      },
+      "descricao": "Olhar o chão e as árvores e saber o que se aproveita: o que se come, o que cura, o que queima bem e o que é veneno. Uma falha pode trazer a coisa errada (cogumelo que faz mal, erva inútil); o narrador ou o jogo decide o que se acha em cada bioma e estação.\n\nNaturalista explica a natureza; Coleta é pôr a mão nela e voltar com a cesta cheia.",
+      "exemplos": [
+        "Juntar gravetos secos embaixo das árvores grandes depois de dois dias de chuva.",
+        "Achar frutos e raízes suficientes para o dia na floresta de verão.",
+        "Separar a erva que alivia a febre da que só parece com ela."
+      ]
+    }
+  ],
   "remover": []
 }

@@ -18,6 +18,8 @@
   var arquivo = window.criarArquivo(window.localStorage);
   var Efeitos = window.GurpsEfeitos;
 
+  // termos do sistema da ficha aberta (o Adamar RPG troca NH, GdP, GeB, RD, PV e PF pelos seus nomes)
+  function termo(t) { return (G && G.termos && G.termos[t]) || t; }
   function el(tag, classe, texto) {
     var n = document.createElement(tag);
     if (classe) n.className = classe;
@@ -271,13 +273,13 @@
     var cb = r.combate;
     var box = el('div', 'combate-resumo');
     var linha = el('div', 'combate-linha');
-    [['GdP', cb.dano_basico ? cb.dano_basico.gdp : '—'], ['GeB', cb.dano_basico ? cb.dano_basico.geb : '—'],
+    [[termo('GdP'), cb.dano_basico ? cb.dano_basico.gdp : '—'], [termo('GeB'), cb.dano_basico ? cb.dano_basico.geb : '—'],
       ['Esquiva', cb.defesas.esquiva], ['Aparar', cb.defesas.aparar == null ? '—' : cb.defesas.aparar],
       ['Bloqueio', cb.defesas.bloqueio == null ? '—' : cb.defesas.bloqueio], ['Carga', cb.carga.nome]].forEach(function (x) {
       var c = el('div', 'combate-caixa');
       c.appendChild(el('span', null, x[0]));
       c.appendChild(el('strong', null, String(x[1])));
-      if (x[0] === 'GdP' || x[0] === 'GeB') rolavel(c, 'dano', 'Dano ' + x[0], x[1], ['dano']);
+      if (x[0] === termo('GdP') || x[0] === termo('GeB')) rolavel(c, 'dano', 'Dano ' + x[0], x[1], ['dano']);
       else if (x[0] !== 'Carga') rolavel(c, 'teste', x[0], x[1], ['defesa:' + { Esquiva: 'esquiva', Aparar: 'aparar', Bloqueio: 'bloqueio' }[x[0]]]);
       linha.appendChild(c);
     });
@@ -286,7 +288,7 @@
     if (cb.armas.length) {
       var t = el('table', 'combate-armas');
       var h = el('tr');
-      (compacto ? ['Arma', 'Dano', 'NH', 'Aparar'] : ['Arma', 'Dano', 'NH', 'Aparar', 'Alcance', 'ST', 'Perícia']).forEach(function (x) { h.appendChild(el('th', null, x)); });
+      (compacto ? ['Arma', 'Dano', termo('NH'), 'Aparar'] : ['Arma', 'Dano', termo('NH'), 'Aparar', 'Alcance', 'ST', 'Perícia']).forEach(function (x) { h.appendChild(el('th', null, x)); });
       t.appendChild(h);
       cb.armas.forEach(function (a) {
         var tr = el('tr');
@@ -310,7 +312,7 @@
       box.appendChild(t);
     }
     var locais = Object.keys(cb.protecao);
-    if (locais.length) box.appendChild(el('p', 'combate-nota', 'Proteção (RD): ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd + (cb.protecao[l].so_frente ? ' (só frente)' : ''); }).join(' · ')));
+    if (locais.length) box.appendChild(el('p', 'combate-nota', 'Proteção (' + termo('RD') + '): ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd + (cb.protecao[l].so_frente ? ' (só frente)' : ''); }).join(' · ')));
     if (!compacto) {
       box.appendChild(el('p', 'combate-nota', 'Ordem de ação: Velocidade ' + num(r.valores.velocidade) + ' (no empate, DX ' + r.valores.dx + '). ' + (R.iniciativa ? R.iniciativa.resumo : '')));
       if (R.manobras) {
@@ -402,8 +404,8 @@
       cab.appendChild(descansar);
       box.appendChild(cab);
       var grade = el('div', 'em-jogo-grade');
-      grade.appendChild(contador('PV', e.pv, e.pv_max, 'pv'));
-      grade.appendChild(contador('PF', e.pf, e.pf_max, 'pf'));
+      grade.appendChild(contador(termo('PV'), e.pv, e.pv_max, 'pv'));
+      grade.appendChild(contador(termo('PF'), e.pf, e.pf_max, 'pf'));
       if (!compacto) {
         grade.appendChild(contador('Pontos ganhos', e.pontos, null, 'pontos'));
         grade.appendChild(contador('Coroas', e.dinheiro, null, 'dinheiro'));
@@ -1090,7 +1092,7 @@
       return pe;
     }
     function tabelaPericias(lista) {
-      return tabela(['Perícia', 'Tipo', 'NH', 'Nível', 'Pontos'], lista.map(function (x) {
+      return tabela(['Perícia', 'Tipo', termo('NH'), 'Relativo', 'Pontos'], lista.map(function (x) {
         var nome = nomeComIcone(x.pericia, x.pericia.nome + (x.sel.especializacao ? ' (' + x.sel.especializacao + ')' : ''));
         if (x.bonus.length || x.situacional.length) {
           var ul = el('ul', 'efeitos');
@@ -1174,7 +1176,7 @@
       var pr = r.combate.protecao;
       var b = bloco('Locais de acerto', 'ficha-largo');
       b.appendChild(el('p', 'combate-nota', 'Sem escolher, o golpe vai no tronco. Mirar num lugar tira o valor da coluna do NH do ataque; a proteção é a soma das peças equipadas que cobrem aquele lugar.'));
-      b.appendChild(tabela(['Local', 'Para acertar', 'Proteção (RD)'], LOCAIS.map(function (l) {
+      b.appendChild(tabela(['Local', 'Para acertar', termo('RD') === 'RD' ? 'Proteção (RD)' : termo('RD')], LOCAIS.map(function (l) {
         var rd = l[2].reduce(function (t, k) { return t + ((pr[k] && pr[k].rd) || 0); }, 0);
         return [l[0], l[1] ? String(l[1]).replace('-', '−') : '0', rd ? String(rd) : '—'];
       })));
@@ -1789,7 +1791,7 @@
           });
         });
         if (!linhasArma.length) ba.appendChild(el('p', 'pericia-vazio', 'Nenhuma arma equipada. Os ataques desarmados estão em Combate.'));
-        else ba.appendChild(tabela(['Arma', 'NH', 'Dano', 'Alcance', 'Onde'], linhasArma));
+        else ba.appendChild(tabela(['Arma', termo('NH'), 'Dano', 'Alcance', 'Onde'], linhasArma));
         s.appendChild(ba);
         // armadura e escudo vestidos: proteção fixa, não rola
         var vestidas = equipadas.filter(function (x) { return tipoDeItem(x.item) === 'protecao'; });
@@ -1797,11 +1799,11 @@
           var bp = bloco('Armadura e escudo', 'ficha-largo');
           bp.appendChild(tabela(['Peça', 'Proteção', 'Peso', 'Onde'], vestidas.map(function (x) {
             var p0 = x.item.protecao, e0 = x.item.escudo;
-            var prot = p0 ? 'RD ' + (p0.texto || p0.rd) + (p0.local ? ' · ' + p0.local : '') : e0 ? 'Defesa +' + e0.bd + ' (escudo)' : '—';
+            var prot = p0 ? termo('RD') + ' ' + (p0.texto || p0.rd) + (p0.local ? ' · ' + p0.local : '') : e0 ? 'Defesa +' + e0.bd + ' (escudo)' : '—';
             return [nomeDoItem(x), prot, pesoDe(x), seletorLocal(x)];
           })));
           var locais = Object.keys(cb.protecao);
-          if (locais.length) bp.appendChild(el('p', 'combate-nota', 'Somando tudo: ' + locais.map(function (l) { return l + ' RD ' + cb.protecao[l].rd; }).join(' · ')));
+          if (locais.length) bp.appendChild(el('p', 'combate-nota', 'Somando tudo: ' + locais.map(function (l) { return l + ' ' + termo('RD') + ' ' + cb.protecao[l].rd; }).join(' · ')));
           s.appendChild(bp);
         }
         // com você: o resto do que está equipado, o que vai levado e o que está dentro de cada coisa

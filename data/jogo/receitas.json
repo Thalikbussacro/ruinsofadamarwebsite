@@ -2,26 +2,203 @@
   "descricao": "Receitas do jogo (sistema próprio, proposta). Ingredientes são gastos; ferramentas, não. A perícia é testada: falha gasta metade dos ingredientes; falha crítica gasta tudo.",
   "proposta": true,
   "receitas": [
-    { "id": "juntar-gravetos", "nome": "Juntar gravetos", "tempo_min": 20, "ingredientes": [], "ferramentas": [], "resultado": { "id": "gravetos", "quantidade": 4 }, "requer_recurso": "gravetos", "atividade": "caminhando" },
-    { "id": "cortar-lenha", "nome": "Cortar lenha", "tempo_min": 60, "ingredientes": [], "ferramentas": [["machadinha", "machado", "machado-duas-maos", "serra"]], "resultado": { "id": "lenha", "quantidade": 3 }, "requer_recurso": "lenha", "atividade": "trabalho" },
-    { "id": "pegar-agua", "nome": "Encher água no rio", "tempo_min": 10, "ingredientes": [], "ferramentas": [["odre-de-vinho", "cantil"]], "resultado": { "id": "agua-suja", "quantidade": 2 }, "requer_recurso": "agua-suja", "atividade": "caminhando" },
-    { "id": "ferver-agua", "nome": "Ferver água", "tempo_min": 20, "ingredientes": [{ "id": "agua-suja", "quantidade": 2 }, { "id": "lenha", "quantidade": 1 }], "ferramentas": [["isqueiro"]], "resultado": { "id": "agua-fervida", "quantidade": 2 }, "pericia": "sobrevivencia", "modificador": 4, "atividade": "repouso" },
-    { "id": "assar-carne", "nome": "Assar carne", "tempo_min": 40, "ingredientes": [{ "id": "carne-crua", "quantidade": 1 }, { "id": "lenha", "quantidade": 1 }], "ferramentas": [["isqueiro"]], "resultado": { "id": "carne-assada", "quantidade": 1 }, "pericia": "culinaria", "modificador": 2, "atividade": "repouso" },
-    { "id": "bandagem", "nome": "Rasgar bandagens", "tempo_min": 10, "ingredientes": [{ "id": "pano", "quantidade": 1 }], "ferramentas": [], "resultado": { "id": "bandagem-improvisada", "quantidade": 2 }, "atividade": "repouso" },
-    { "id": "tala", "nome": "Fazer uma tala", "tempo_min": 15, "ingredientes": [{ "id": "gravetos", "quantidade": 2 }, { "id": "pano", "quantidade": 1 }], "ferramentas": [], "resultado": { "id": "tala", "quantidade": 1 }, "pericia": "primeiros-socorros", "modificador": 2, "atividade": "repouso" },
-    { "id": "curtir-couro", "nome": "Raspar e secar couro", "tempo_min": 240, "ingredientes": [{ "id": "couro-cru", "quantidade": 1 }], "ferramentas": [["faca", "adaga"]], "resultado": { "id": "luvas-de-couro", "quantidade": 1 }, "pericia": "trabalhos-em-couro", "modificador": -1, "atividade": "trabalho" }
+    {
+      "id": "juntar-gravetos",
+      "nome": "Juntar gravetos",
+      "tempo_min": 20,
+      "ingredientes": [],
+      "ferramentas": [],
+      "resultado": {
+        "id": "gravetos",
+        "quantidade": 4
+      },
+      "requer_recurso": "gravetos",
+      "atividade": "caminhando"
+    },
+    {
+      "id": "cortar-lenha",
+      "nome": "Cortar lenha",
+      "tempo_min": 60,
+      "ingredientes": [],
+      "ferramentas": [
+        [
+          "machadinha",
+          "machado",
+          "machado-duas-maos",
+          "serra"
+        ]
+      ],
+      "resultado": {
+        "id": "lenha",
+        "quantidade": 3
+      },
+      "requer_recurso": "lenha",
+      "atividade": "trabalho"
+    },
+    {
+      "id": "pegar-agua",
+      "nome": "Encher água no rio",
+      "tempo_min": 10,
+      "ingredientes": [],
+      "ferramentas": [
+        [
+          "odre-de-vinho"
+        ]
+      ],
+      "resultado": {
+        "id": "agua-suja",
+        "quantidade": 2
+      },
+      "requer_recurso": "agua-suja",
+      "atividade": "caminhando"
+    },
+    {
+      "id": "ferver-agua",
+      "nome": "Ferver água",
+      "tempo_min": 20,
+      "ingredientes": [
+        {
+          "id": "agua-suja",
+          "quantidade": 2
+        },
+        {
+          "id": "lenha",
+          "quantidade": 1
+        }
+      ],
+      "ferramentas": [
+        [
+          "pederneira-e-isca"
+        ]
+      ],
+      "resultado": {
+        "id": "agua-fervida",
+        "quantidade": 2
+      },
+      "pericia": "sobrevivencia",
+      "modificador": 4,
+      "atividade": "repouso"
+    },
+    {
+      "id": "assar-carne",
+      "nome": "Assar carne",
+      "tempo_min": 40,
+      "ingredientes": [
+        {
+          "id": "carne-crua",
+          "quantidade": 1
+        },
+        {
+          "id": "lenha",
+          "quantidade": 1
+        }
+      ],
+      "ferramentas": [
+        [
+          "pederneira-e-isca"
+        ]
+      ],
+      "resultado": {
+        "id": "carne-assada",
+        "quantidade": 1
+      },
+      "pericia": "culinaria",
+      "modificador": 2,
+      "atividade": "repouso"
+    },
+    {
+      "id": "bandagem",
+      "nome": "Rasgar bandagens",
+      "tempo_min": 10,
+      "ingredientes": [
+        {
+          "id": "pano",
+          "quantidade": 1
+        }
+      ],
+      "ferramentas": [],
+      "resultado": {
+        "id": "bandagem-improvisada",
+        "quantidade": 2
+      },
+      "atividade": "repouso"
+    },
+    {
+      "id": "tala",
+      "nome": "Fazer uma tala",
+      "tempo_min": 15,
+      "ingredientes": [
+        {
+          "id": "gravetos",
+          "quantidade": 2
+        },
+        {
+          "id": "pano",
+          "quantidade": 1
+        }
+      ],
+      "ferramentas": [],
+      "resultado": {
+        "id": "tala",
+        "quantidade": 1
+      },
+      "pericia": "primeiros-socorros",
+      "modificador": 2,
+      "atividade": "repouso"
+    },
+    {
+      "id": "curtir-couro",
+      "nome": "Raspar e secar couro",
+      "tempo_min": 240,
+      "ingredientes": [
+        {
+          "id": "couro-cru",
+          "quantidade": 1
+        }
+      ],
+      "ferramentas": [
+        [
+          "faca",
+          "adaga"
+        ]
+      ],
+      "resultado": {
+        "id": "luvas-de-couro",
+        "quantidade": 1
+      },
+      "pericia": "trabalhos-em-couro",
+      "modificador": -1,
+      "atividade": "trabalho"
+    }
   ],
   "conserto": {
     "descricao": "Consertar um item: perícia pelo tipo do item; sucesso recupera condição, mas o máximo cai um pouco a cada conserto.",
-    "pericia_por_classe": { "armas": "armeiro", "armaduras": "armeiro", "equipamento": "costura" },
-    "ferramentas": [["caixa-de-ferramentas-portatil", "cinturao-de-ferramentas", "linha-e-agulha"]],
+    "pericia_por_classe": {
+      "armas": "armeiro",
+      "armaduras": "armeiro",
+      "equipamento": "costura"
+    },
+    "ferramentas": [
+      [
+        "caixa-de-ferramentas-portatil",
+        "linha-e-agulha"
+      ]
+    ],
     "tempo_min": 60,
     "recupera": 35,
     "maximo_cai": 5
   },
   "desgaste": {
     "descricao": "Chance de perder condição a cada uso (ataque, aparar, bloqueio, receber golpe na armadura).",
-    "por_qualidade": { "-1": 0.35, "0": 0.15, "1": 0.08, "2": 0.04 },
-    "perde": [2, 8]
+    "por_qualidade": {
+      "-1": 0.35,
+      "0": 0.15,
+      "1": 0.08,
+      "2": 0.04
+    },
+    "perde": [
+      2,
+      8
+    ]
   }
 }

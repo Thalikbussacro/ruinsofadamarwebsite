@@ -2,24 +2,211 @@
   "descricao": "Materiais e comida do jogo que não estão na lista de equipamento do livro (itens próprios). Peso em kg; comida em calorias (1 porção ≈ 1/3 de uma refeição) e água em porções de meio litro.",
   "proposta": true,
   "itens": [
-    { "id": "lenha", "nome": "Lenha", "categoria": "material", "icone": "flame", "peso_kg": 2, "grade": { "largura": 2, "altura": 1 }, "resumo": "Achas de madeira seca para fogueira." },
-    { "id": "gravetos", "nome": "Gravetos", "categoria": "material", "icone": "flame", "peso_kg": 0.3, "grade": { "largura": 1, "altura": 1, "empilha": 5 }, "resumo": "Galhos finos, para acender o fogo e fazer talas." },
-    { "id": "pedra", "nome": "Pedra", "categoria": "material", "icone": "hammer", "peso_kg": 1, "grade": { "largura": 1, "altura": 1 }, "resumo": "Pedra do tamanho da mão." },
-    { "id": "pano", "nome": "Pano", "categoria": "material", "icone": "custom:pergaminho", "peso_kg": 0.2, "grade": { "largura": 1, "altura": 1, "empilha": 3 }, "resumo": "Retalho de tecido limpo." },
-    { "id": "couro-cru", "nome": "Couro cru", "categoria": "material", "icone": "custom:pergaminho", "peso_kg": 1.5, "grade": { "largura": 2, "altura": 2 }, "resumo": "Pele de animal ainda por curtir." },
-    { "id": "linha-e-agulha", "nome": "Linha e agulha", "categoria": "ferramenta", "icone": "pencil", "peso_kg": 0.05, "grade": { "largura": 1, "altura": 1 }, "resumo": "Para costurar roupa e, com cuidado, uma ferida." },
-    { "id": "bandagem-improvisada", "nome": "Bandagem improvisada", "categoria": "cura", "icone": "heart", "peso_kg": 0.05, "grade": { "largura": 1, "altura": 1, "empilha": 4 }, "resumo": "Tiras de pano para enfaixar." },
-    { "id": "tala", "nome": "Tala", "categoria": "cura", "icone": "heart", "peso_kg": 0.3, "grade": { "largura": 1, "altura": 2 }, "resumo": "Gravetos e pano para imobilizar uma fratura." },
-    { "id": "alcool", "nome": "Aguardente", "categoria": "cura", "icone": "heart", "peso_kg": 0.5, "grade": { "largura": 1, "altura": 2 }, "resumo": "Forte o bastante para limpar uma ferida.", "agua": 0 },
-    { "id": "agua-suja", "nome": "Água de rio", "categoria": "comida", "icone": "heart", "peso_kg": 0.5, "grade": { "largura": 1, "altura": 1, "empilha": 2 }, "agua": 1, "risco": 0.3, "resumo": "Meio litro. Beber sem ferver pode dar dor de barriga." },
-    { "id": "agua-fervida", "nome": "Água fervida", "categoria": "comida", "icone": "heart", "peso_kg": 0.5, "grade": { "largura": 1, "altura": 1, "empilha": 2 }, "agua": 1, "resumo": "Meio litro de água segura." },
-    { "id": "carne-crua", "nome": "Carne crua", "categoria": "comida", "icone": "heart", "peso_kg": 0.5, "grade": { "largura": 1, "altura": 1 }, "calorias": 300, "validade_h": 24, "risco": 0.4, "resumo": "Estraga em um dia. Crua, faz mal." },
-    { "id": "carne-assada", "nome": "Carne assada", "categoria": "comida", "icone": "heart", "peso_kg": 0.4, "grade": { "largura": 1, "altura": 1 }, "calorias": 450, "validade_h": 72, "resumo": "Dura três dias." },
-    { "id": "pao", "nome": "Pão", "categoria": "comida", "icone": "heart", "peso_kg": 0.4, "grade": { "largura": 1, "altura": 1 }, "calorias": 600, "validade_h": 120, "resumo": "Endurece depois de uns dias." }
+    {
+      "id": "pederneira-e-isca",
+      "nome": "Pederneira e isca",
+      "categoria": "ferramenta",
+      "icone": "flame",
+      "peso_kg": 0.1,
+      "grade": {
+        "largura": 1,
+        "altura": 1
+      },
+      "resumo": "Pedra, aço e isca seca numa latinha: faz fogo em qualquer lugar, com paciência."
+    },
+    {
+      "id": "lenha",
+      "nome": "Lenha",
+      "categoria": "material",
+      "icone": "flame",
+      "peso_kg": 2,
+      "grade": {
+        "largura": 2,
+        "altura": 1
+      },
+      "resumo": "Achas de madeira seca para fogueira."
+    },
+    {
+      "id": "gravetos",
+      "nome": "Gravetos",
+      "categoria": "material",
+      "icone": "flame",
+      "peso_kg": 0.3,
+      "grade": {
+        "largura": 1,
+        "altura": 1,
+        "empilha": 5
+      },
+      "resumo": "Galhos finos, para acender o fogo e fazer talas."
+    },
+    {
+      "id": "pedra",
+      "nome": "Pedra",
+      "categoria": "material",
+      "icone": "hammer",
+      "peso_kg": 1,
+      "grade": {
+        "largura": 1,
+        "altura": 1
+      },
+      "resumo": "Pedra do tamanho da mão."
+    },
+    {
+      "id": "pano",
+      "nome": "Pano",
+      "categoria": "material",
+      "icone": "custom:pergaminho",
+      "peso_kg": 0.2,
+      "grade": {
+        "largura": 1,
+        "altura": 1,
+        "empilha": 3
+      },
+      "resumo": "Retalho de tecido limpo."
+    },
+    {
+      "id": "couro-cru",
+      "nome": "Couro cru",
+      "categoria": "material",
+      "icone": "custom:pergaminho",
+      "peso_kg": 1.5,
+      "grade": {
+        "largura": 2,
+        "altura": 2
+      },
+      "resumo": "Pele de animal ainda por curtir."
+    },
+    {
+      "id": "linha-e-agulha",
+      "nome": "Linha e agulha",
+      "categoria": "ferramenta",
+      "icone": "pencil",
+      "peso_kg": 0.05,
+      "grade": {
+        "largura": 1,
+        "altura": 1
+      },
+      "resumo": "Para costurar roupa e, com cuidado, uma ferida."
+    },
+    {
+      "id": "bandagem-improvisada",
+      "nome": "Bandagem improvisada",
+      "categoria": "cura",
+      "icone": "heart",
+      "peso_kg": 0.05,
+      "grade": {
+        "largura": 1,
+        "altura": 1,
+        "empilha": 4
+      },
+      "resumo": "Tiras de pano para enfaixar."
+    },
+    {
+      "id": "tala",
+      "nome": "Tala",
+      "categoria": "cura",
+      "icone": "heart",
+      "peso_kg": 0.3,
+      "grade": {
+        "largura": 1,
+        "altura": 2
+      },
+      "resumo": "Gravetos e pano para imobilizar uma fratura."
+    },
+    {
+      "id": "alcool",
+      "nome": "Aguardente",
+      "categoria": "cura",
+      "icone": "heart",
+      "peso_kg": 0.5,
+      "grade": {
+        "largura": 1,
+        "altura": 2
+      },
+      "resumo": "Forte o bastante para limpar uma ferida.",
+      "agua": 0
+    },
+    {
+      "id": "agua-suja",
+      "nome": "Água de rio",
+      "categoria": "comida",
+      "icone": "heart",
+      "peso_kg": 0.5,
+      "grade": {
+        "largura": 1,
+        "altura": 1,
+        "empilha": 2
+      },
+      "agua": 1,
+      "risco": 0.3,
+      "resumo": "Meio litro. Beber sem ferver pode dar dor de barriga."
+    },
+    {
+      "id": "agua-fervida",
+      "nome": "Água fervida",
+      "categoria": "comida",
+      "icone": "heart",
+      "peso_kg": 0.5,
+      "grade": {
+        "largura": 1,
+        "altura": 1,
+        "empilha": 2
+      },
+      "agua": 1,
+      "resumo": "Meio litro de água segura."
+    },
+    {
+      "id": "carne-crua",
+      "nome": "Carne crua",
+      "categoria": "comida",
+      "icone": "heart",
+      "peso_kg": 0.5,
+      "grade": {
+        "largura": 1,
+        "altura": 1
+      },
+      "calorias": 300,
+      "validade_h": 24,
+      "risco": 0.4,
+      "resumo": "Estraga em um dia. Crua, faz mal."
+    },
+    {
+      "id": "carne-assada",
+      "nome": "Carne assada",
+      "categoria": "comida",
+      "icone": "heart",
+      "peso_kg": 0.4,
+      "grade": {
+        "largura": 1,
+        "altura": 1
+      },
+      "calorias": 450,
+      "validade_h": 72,
+      "resumo": "Dura três dias."
+    },
+    {
+      "id": "pao",
+      "nome": "Pão",
+      "categoria": "comida",
+      "icone": "heart",
+      "peso_kg": 0.4,
+      "grade": {
+        "largura": 1,
+        "altura": 1
+      },
+      "calorias": 600,
+      "validade_h": 120,
+      "resumo": "Endurece depois de uns dias."
+    }
   ],
   "comida_da_lista": {
     "descricao": "Itens da lista de equipamento que também são comida ou bebida.",
-    "racao-de-viagem": { "calorias": 700, "validade_h": 720 },
-    "odre-de-vinho": { "agua": 2 }
+    "racao-de-viagem": {
+      "calorias": 700,
+      "validade_h": 720
+    },
+    "odre-de-vinho": {
+      "agua": 2
+    }
   }
 }

@@ -27,7 +27,13 @@
   var ARMAZENAMENTO = 'adamar-criador';
   var ARMAZENAMENTO_ETAPA = 'adamar-criador-etapa';
   var ADAMAR = { livre: 'Livre', narrador: 'Com o narrador', nao: 'Não existe' };
-  var PONTOS_PERICIA = [1, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40];
+  // pontos que dá para pôr numa perícia: vêm da curva do sistema (GURPS 1, 2, 4, 8, +4…; Adamar RPG 1, 3, 5, 7, +2…)
+  var PONTOS_PERICIA = (function () {
+    var c = R.custo_pericias, l = c.custos.slice();
+    while (l.length < 12) l.push(l[l.length - 1] + c.acrescimo_por_nivel);
+    return l;
+  })();
+  function termo(t) { return (G.termos && G.termos[t]) || t; }
   var TALENTO_TRACO = 'talento'; // Talentos têm lista própria (regras.json)
   var TIPOS = { mental: 'Mental', fisica: 'Física', social: 'Social', exotica: 'Exótica', sobrenatural: 'Sobrenatural' };
   var GRUPOS = {
@@ -311,7 +317,7 @@
     var atr = el('button', 'fv-atributos');
     atr.type = 'button';
     atr.title = 'Mudar atributos';
-    [['ST', v.st], ['DX', v.dx], ['IQ', v.iq], ['HT', v.ht], ['PV', v.pv], ['Vont', v.vontade], ['Per', v.per], ['PF', v.pf]].forEach(function (x) {
+    [['ST', v.st], ['DX', v.dx], ['IQ', v.iq], ['HT', v.ht], [termo('PV'), v.pv], ['Vont', v.vontade], ['Per', v.per], [termo('PF'), v.pf]].forEach(function (x) {
       var c = el('span', 'fv-atr');
       c.appendChild(el('small', null, x[0]));
       c.appendChild(el('strong', null, String(x[1])));
@@ -339,7 +345,7 @@
       vistas[chave] = true;
       var li = el('li');
       li.appendChild(el('span', 'fv-arma-nome', a.nome));
-      li.appendChild(el('span', 'fv-arma-nh', a.nh == null ? 'NH —' : 'NH ' + a.nh));
+      li.appendChild(el('span', 'fv-arma-nh', termo('NH') + ' ' + (a.nh == null ? '—' : a.nh)));
       li.appendChild(el('span', 'fv-arma-dano', a.dano));
       // a perícia da arma ainda não está na ficha: oferece comprar (e os pontos dela sobem o NH da arma)
       var ids = ((a.item.combate && a.item.combate.pericias) || []).filter(function (x) { return x.tipo === 'pericia'; }).map(function (x) { return x.id; });
@@ -1198,7 +1204,7 @@
       var rel = calc.nivelPorPontos(p.dificuldade, sel.pontos);
       var base = (ultimo || criador.resumir(ficha)).valores;
       var mapa = { DX: 'dx', IQ: 'iq', HT: 'ht', Per: 'per', Vontade: 'vontade' };
-      return 'Custa ' + sel.pontos + (sel.pontos === 1 ? ' ponto' : ' pontos') + (rel == null ? '' : ' · NH ' + (base[mapa[p.atributo]] + rel) + ' (antes de bônus)');
+      return 'Custa ' + sel.pontos + (sel.pontos === 1 ? ' ponto' : ' pontos') + (rel == null ? '' : ' · ' + termo('NH') + ' ' + (base[mapa[p.atributo]] + rel) + ' (antes de bônus)');
     }
     abrirJanela(p.nome, p.icone, p.resumo + ' ' + p.atributo + '/' + p.dificuldade + '.', function (corpo, atualizar) {
       var lista = (p.especializacoes || []).filter(function (x) { return x.adamar !== 'nao'; });
@@ -1482,6 +1488,8 @@
     ficha.pericias.forEach(function (sel, i) {
       var p = porId(G.pericias, sel.id);
       if (!p) return;
+      // pontos fora da curva deste sistema (ex.: modelo feito no GURPS) descem para o valor válido mais próximo
+      if (PONTOS_PERICIA.indexOf(sel.pontos) === -1) sel.pontos = PONTOS_PERICIA.filter(function (v) { return v <= (sel.pontos || 1); }).pop() || 1;
       var row = el('div', 'app-item st-' + p.adamar);
       var topo = el('div', 'app-item-topo');
       var icP = window.iconeSvg && window.iconeSvg(p.icone, 'icone-item');
@@ -1524,7 +1532,7 @@
       infosPericia.push(function (r) {
         var item = r.pericias[i];
         if (!item) return;
-        nh.textContent = item.nh == null ? 'NH —' : 'NH ' + item.nh + ' · ' + item.nivel_relativo;
+        nh.textContent = termo('NH') + ' ' + (item.nh == null ? '—' : item.nh + ' · ' + item.nivel_relativo);
         nh.title = item.nh == null ? '' : p.atributo + (item.relativo ? sinal(item.relativo) : '') + (item.bonus.length ? ' com bônus' : '');
         Efeitos.desenharEfeitos(bonus, item.bonus.map(function (b) {
           return { tipo: 'aplicado', texto: sinal(b.valor) + ' de ' + b.origem };
@@ -1710,7 +1718,7 @@
     var cb = r.combate;
     box.textContent = '';
     var linha = el('div', 'combate-linha');
-    [['GdP', cb.dano_basico ? cb.dano_basico.gdp : '—'], ['GeB', cb.dano_basico ? cb.dano_basico.geb : '—'],
+    [[termo('GdP'), cb.dano_basico ? cb.dano_basico.gdp : '—'], [termo('GeB'), cb.dano_basico ? cb.dano_basico.geb : '—'],
       ['Esquiva', cb.defesas.esquiva], ['Aparar', cb.defesas.aparar == null ? '—' : cb.defesas.aparar],
       ['Bloqueio', cb.defesas.bloqueio == null ? '—' : cb.defesas.bloqueio], ['Carga', cb.carga.nome]].forEach(function (x) {
       var c = el('div', 'combate-caixa');
@@ -1723,7 +1731,7 @@
     if (cb.armas.length) {
       var t = el('table', 'combate-armas');
       var h = el('tr');
-      ['Arma', 'Dano', 'NH', 'Aparar', 'Alcance'].forEach(function (x) { h.appendChild(el('th', null, x)); });
+      ['Arma', 'Dano', termo('NH'), 'Aparar', 'Alcance'].forEach(function (x) { h.appendChild(el('th', null, x)); });
       t.appendChild(h);
       cb.armas.forEach(function (a) {
         var tr = el('tr');
@@ -1739,7 +1747,7 @@
       box.appendChild(t);
     }
     var locais = Object.keys(cb.protecao);
-    if (locais.length) box.appendChild(el('p', 'combate-nota', 'Proteção (RD): ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd + (cb.protecao[l].so_frente ? ' (só frente)' : ''); }).join(' · ')));
+    if (locais.length) box.appendChild(el('p', 'combate-nota', 'Proteção (' + termo('RD') + '): ' + locais.map(function (l) { return l + ' ' + cb.protecao[l].rd + (cb.protecao[l].so_frente ? ' (só frente)' : ''); }).join(' · ')));
   }
   atualizadores.push(function (r) { desenharCombate(document.getElementById('c-combate'), r); });
 

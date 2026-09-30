@@ -25,6 +25,13 @@
     dif = dif || {};
     var remover = {};
     (dif.remover || []).forEach(function (id) { remover[id] = true; });
+    // remover por regra: todo item cujos campos batem (ex.: { "adamar": "nao" } tira o que não existe no cenário)
+    if (dif.remover_se) {
+      (base || []).forEach(function (i) {
+        if (Object.keys(dif.remover_se).every(function (k) { return i[k] === dif.remover_se[k]; })) remover[i.id] = true;
+      });
+      (dif.itens || []).forEach(function (d) { delete remover[d.id]; }); // o que foi mudado de propósito fica
+    }
     var mudancas = {};
     (dif.itens || []).forEach(function (d) { mudancas[d.id] = d; });
     var existentes = {};
@@ -45,7 +52,50 @@
       tabela_dano: dif.tabela_dano || base.tabela_dano
     });
     LISTAS.forEach(function (l) { g[l] = mesclarLista(base[l], dif[l]); });
+    podar(g, base);
     return g;
+  }
+  // o que saiu do sistema sai também das referências: pré-definidos, efeitos, pré-requisitos e talentos
+  function podar(g, base) {
+    var existe = {}, saiu = {};
+    LISTAS.forEach(function (l) { g[l].forEach(function (i) { existe[i.id] = true; }); });
+    LISTAS.forEach(function (l) { (base[l] || []).forEach(function (i) { if (!existe[i.id]) saiu[i.id] = true; }); });
+    if (!Object.keys(saiu).length) return;
+    function copiaSeMudar(item, campo, novo) {
+      if (JSON.stringify(item[campo]) === JSON.stringify(novo)) return item;
+      var c = Object.assign({}, item);
+      c[campo] = novo;
+      return c;
+    }
+    g.pericias = g.pericias.map(function (p) {
+      var pr = p.predefinidos;
+      if (!pr || !pr.caminhos) return p;
+      return copiaSeMudar(p, 'predefinidos', Object.assign({}, pr, { caminhos: pr.caminhos.filter(function (c) { return !(c.tipo === 'pericia' && saiu[c.id]); }) }));
+    });
+    ['vantagens', 'desvantagens'].forEach(function (l) {
+      g[l] = g[l].map(function (t) {
+        var novo = t;
+        if (t.efeitos) {
+          var ef = t.efeitos.map(function (e) {
+            return Array.isArray(e.ref) ? Object.assign({}, e, { ref: e.ref.filter(function (id) { return !saiu[id]; }) }) : e;
+          }).filter(function (e) { return Array.isArray(e.ref) ? e.ref.length > 0 : !saiu[e.ref]; });
+          novo = copiaSeMudar(novo, 'efeitos', ef);
+        }
+        if (t.prerequisitos) novo = copiaSeMudar(novo, 'prerequisitos', t.prerequisitos.filter(function (q) { return !saiu[q.id]; }));
+        return novo;
+      });
+    });
+    // "veja também" das descrições
+    LISTAS.forEach(function (l) {
+      g[l] = g[l].map(function (i) {
+        return i.relacionados ? copiaSeMudar(i, 'relacionados', i.relacionados.filter(function (id) { return !saiu[id]; })) : i;
+      });
+    });
+    if (g.regras && g.regras.talentos) {
+      g.regras = Object.assign({}, g.regras, {
+        talentos: g.regras.talentos.map(function (t) { return Object.assign({}, t, { pericias: t.pericias.filter(function (id) { return !saiu[id]; }) }); })
+      });
+    }
   }
 
   var cache = {};

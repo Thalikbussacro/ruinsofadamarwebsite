@@ -132,7 +132,7 @@
     }
     if (item.raridade) m.push(['Raridade', item.raridade]);
     var livro = (G.livros || {})[item.ref && item.ref.livro];
-    if (item.ref) m.push(['Livro', (livro ? livro.titulo + ', ' : '') + 'pág. ' + item.ref.pagina]);
+    if (item.ref) m.push(['Livro', (livro ? livro.titulo : '') + (item.ref.pagina ? (livro ? ', ' : '') + 'pág. ' + item.ref.pagina : '')]);
     if (item.gcs) m.push(['No GCS', item.gcs.nome + (item.gcs.ref ? ' (' + item.gcs.ref + ')' : '')]);
     return m.filter(function (x) { return x[1]; });
   }

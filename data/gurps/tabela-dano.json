@@ -1,0 +1,272 @@
+{
+  "descricao": "Tabela de Dano do GURPS 4e (ST → dano por golpe de ponta e em balanço). Uso local; não publicar.",
+  "ref": {
+    "livro": "modulo-basico",
+    "pagina": 16
+  },
+  "regra_acima_de_100": "Some 1d ao GdP e ao GeB para cada 10 pontos inteiros de ST acima de 100.",
+  "nota_intervalos": "Entre 40 e 100 o livro lista de 5 em 5; para um valor intermediário, use a linha de ST imediatamente abaixo.",
+  "conferencia": "Valores legíveis no PDF em PT (ST 7–20, 22–24, 26–40 e 45–100) conferidos com o texto extraído; linhas com OCR corrompido (ST 1–6, 21, 25) vêm do Basic Set original, que tem os mesmos números.",
+  "linhas": [
+    {
+      "st": 1,
+      "gdp": "1d-6",
+      "geb": "1d-5"
+    },
+    {
+      "st": 2,
+      "gdp": "1d-6",
+      "geb": "1d-5"
+    },
+    {
+      "st": 3,
+      "gdp": "1d-5",
+      "geb": "1d-4"
+    },
+    {
+      "st": 4,
+      "gdp": "1d-5",
+      "geb": "1d-4"
+    },
+    {
+      "st": 5,
+      "gdp": "1d-4",
+      "geb": "1d-3"
+    },
+    {
+      "st": 6,
+      "gdp": "1d-4",
+      "geb": "1d-3"
+    },
+    {
+      "st": 7,
+      "gdp": "1d-3",
+      "geb": "1d-2"
+    },
+    {
+      "st": 8,
+      "gdp": "1d-3",
+      "geb": "1d-2"
+    },
+    {
+      "st": 9,
+      "gdp": "1d-2",
+      "geb": "1d-1"
+    },
+    {
+      "st": 10,
+      "gdp": "1d-2",
+      "geb": "1d"
+    },
+    {
+      "st": 11,
+      "gdp": "1d-1",
+      "geb": "1d+1"
+    },
+    {
+      "st": 12,
+      "gdp": "1d-1",
+      "geb": "1d+2"
+    },
+    {
+      "st": 13,
+      "gdp": "1d",
+      "geb": "2d-1"
+    },
+    {
+      "st": 14,
+      "gdp": "1d",
+      "geb": "2d"
+    },
+    {
+      "st": 15,
+      "gdp": "1d+1",
+      "geb": "2d+1"
+    },
+    {
+      "st": 16,
+      "gdp": "1d+1",
+      "geb": "2d+2"
+    },
+    {
+      "st": 17,
+      "gdp": "1d+2",
+      "geb": "3d-1"
+    },
+    {
+      "st": 18,
+      "gdp": "1d+2",
+      "geb": "3d"
+    },
+    {
+      "st": 19,
+      "gdp": "2d-1",
+      "geb": "3d+1"
+    },
+    {
+      "st": 20,
+      "gdp": "2d-1",
+      "geb": "3d+2"
+    },
+    {
+      "st": 21,
+      "gdp": "2d",
+      "geb": "4d-1"
+    },
+    {
+      "st": 22,
+      "gdp": "2d",
+      "geb": "4d"
+    },
+    {
+      "st": 23,
+      "gdp": "2d+1",
+      "geb": "4d+1"
+    },
+    {
+      "st": 24,
+      "gdp": "2d+1",
+      "geb": "4d+2"
+    },
+    {
+      "st": 25,
+      "gdp": "2d+2",
+      "geb": "5d-1"
+    },
+    {
+      "st": 26,
+      "gdp": "2d+2",
+      "geb": "5d"
+    },
+    {
+      "st": 27,
+      "gdp": "3d-1",
+      "geb": "5d+1"
+    },
+    {
+      "st": 28,
+      "gdp": "3d-1",
+      "geb": "5d+1"
+    },
+    {
+      "st": 29,
+      "gdp": "3d",
+      "geb": "5d+2"
+    },
+    {
+      "st": 30,
+      "gdp": "3d",
+      "geb": "5d+2"
+    },
+    {
+      "st": 31,
+      "gdp": "3d+1",
+      "geb": "6d-1"
+    },
+    {
+      "st": 32,
+      "gdp": "3d+1",
+      "geb": "6d-1"
+    },
+    {
+      "st": 33,
+      "gdp": "3d+2",
+      "geb": "6d"
+    },
+    {
+      "st": 34,
+      "gdp": "3d+2",
+      "geb": "6d"
+    },
+    {
+      "st": 35,
+      "gdp": "4d-1",
+      "geb": "6d+1"
+    },
+    {
+      "st": 36,
+      "gdp": "4d-1",
+      "geb": "6d+1"
+    },
+    {
+      "st": 37,
+      "gdp": "4d",
+      "geb": "6d+2"
+    },
+    {
+      "st": 38,
+      "gdp": "4d",
+      "geb": "6d+2"
+    },
+    {
+      "st": 39,
+      "gdp": "4d+1",
+      "geb": "7d-1"
+    },
+    {
+      "st": 40,
+      "gdp": "4d+1",
+      "geb": "7d-1"
+    },
+    {
+      "st": 45,
+      "gdp": "5d",
+      "geb": "7d+1"
+    },
+    {
+      "st": 50,
+      "gdp": "5d+2",
+      "geb": "8d-1"
+    },
+    {
+      "st": 55,
+      "gdp": "6d",
+      "geb": "8d+1"
+    },
+    {
+      "st": 60,
+      "gdp": "7d-1",
+      "geb": "9d"
+    },
+    {
+      "st": 65,
+      "gdp": "7d+1",
+      "geb": "9d+2"
+    },
+    {
+      "st": 70,
+      "gdp": "8d",
+      "geb": "10d"
+    },
+    {
+      "st": 75,
+      "gdp": "8d+2",
+      "geb": "10d+2"
+    },
+    {
+      "st": 80,
+      "gdp": "9d",
+      "geb": "11d"
+    },
+    {
+      "st": 85,
+      "gdp": "9d+2",
+      "geb": "11d+2"
+    },
+    {
+      "st": 90,
+      "gdp": "10d",
+      "geb": "12d"
+    },
+    {
+      "st": 95,
+      "gdp": "10d+2",
+      "geb": "12d+2"
+    },
+    {
+      "st": 100,
+      "gdp": "11d",
+      "geb": "13d"
+    }
+  ]
+}

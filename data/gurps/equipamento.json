@@ -27,6 +27,38 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 2
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 11
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "maca-machado",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -50,6 +82,37 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 1
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 0,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 8
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "maca-machado",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -73,6 +136,38 @@
       },
       "preco": {
         "valor": 60
+      },
+      "peso": {
+        "kg": 2
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 11
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "maca-machado",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -96,6 +191,38 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 3,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 12
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "maca-machado",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -119,6 +246,38 @@
       },
       "preco": {
         "valor": 35
+      },
+      "peso": {
+        "kg": 1.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 10
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "maca-machado",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -142,6 +301,38 @@
       },
       "preco": {
         "valor": 70
+      },
+      "peso": {
+        "kg": 1.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 10
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "maca-machado",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -158,7 +349,47 @@
         "pagina": 271
       },
       "icone": "hand-grab",
-      "grade": null
+      "grade": null,
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": -1,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            },
+            "aparar": {
+              "mod": 0
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "boxe",
+            "mod": 0
+          },
+          {
+            "tipo": "pericia",
+            "id": "briga",
+            "mod": 0
+          },
+          {
+            "tipo": "pericia",
+            "id": "carate",
+            "mod": 0
+          },
+          {
+            "tipo": "atributo",
+            "atributo": "dx",
+            "mod": 0
+          }
+        ]
+      }
     },
     {
       "id": "soco-ingles",
@@ -177,6 +408,49 @@
       "grade": null,
       "preco": {
         "valor": 10
+      },
+      "peso": {
+        "kg": 0.125
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            },
+            "aparar": {
+              "mod": 0
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "boxe",
+            "mod": 0
+          },
+          {
+            "tipo": "pericia",
+            "id": "briga",
+            "mod": 0
+          },
+          {
+            "tipo": "pericia",
+            "id": "carate",
+            "mod": 0
+          },
+          {
+            "tipo": "atributo",
+            "atributo": "dx",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -193,7 +467,39 @@
         "pagina": 271
       },
       "icone": "footsteps",
-      "grade": null
+      "grade": null,
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 1
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "briga",
+            "mod": -2
+          },
+          {
+            "tipo": "pericia",
+            "id": "carate",
+            "mod": -2
+          },
+          {
+            "tipo": "atributo",
+            "atributo": "dx",
+            "mod": -2
+          }
+        ]
+      }
     },
     {
       "id": "chute-com-botas",
@@ -209,7 +515,39 @@
         "pagina": 271
       },
       "icone": "footsteps",
-      "grade": null
+      "grade": null,
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 1
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "briga",
+            "mod": -2
+          },
+          {
+            "tipo": "pericia",
+            "id": "carate",
+            "mod": -2
+          },
+          {
+            "tipo": "atributo",
+            "atributo": "dx",
+            "mod": -2
+          }
+        ]
+      }
     },
     {
       "id": "dentes-rombos",
@@ -225,7 +563,34 @@
         "pagina": 271
       },
       "icone": "dental",
-      "grade": null
+      "grade": null,
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": -1,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "briga",
+            "mod": 0
+          },
+          {
+            "tipo": "atributo",
+            "atributo": "dx",
+            "mod": 0
+          }
+        ]
+      }
     },
     {
       "id": "presas",
@@ -241,7 +606,34 @@
         "pagina": 271
       },
       "icone": "dental",
-      "grade": null
+      "grade": null,
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": -1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "briga",
+            "mod": 0
+          },
+          {
+            "tipo": "atributo",
+            "atributo": "dx",
+            "mod": 0
+          }
+        ]
+      }
     },
     {
       "id": "bico-afiado",
@@ -257,7 +649,34 @@
         "pagina": 271
       },
       "icone": "dental",
-      "grade": null
+      "grade": null,
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": -1,
+              "tipo": "perfurante-grande"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "briga",
+            "mod": 0
+          },
+          {
+            "tipo": "atributo",
+            "atributo": "dx",
+            "mod": 0
+          }
+        ]
+      }
     },
     {
       "id": "dentes-afiados",
@@ -273,7 +692,34 @@
         "pagina": 271
       },
       "icone": "dental",
-      "grade": null
+      "grade": null,
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": -1,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "briga",
+            "mod": 0
+          },
+          {
+            "tipo": "atributo",
+            "atributo": "dx",
+            "mod": 0
+          }
+        ]
+      }
     },
     {
       "id": "golpeador",
@@ -289,7 +735,35 @@
         "pagina": 271
       },
       "icone": "paw",
-      "grade": null
+      "grade": null,
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "especial": true
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            },
+            "aparar": {
+              "especial": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "briga",
+            "mod": 0
+          },
+          {
+            "tipo": "atributo",
+            "atributo": "dx",
+            "mod": 0
+          }
+        ]
+      }
     },
     {
       "id": "cassetete",
@@ -312,6 +786,42 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 0.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 7
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "briga",
+            "mod": 0
+          },
+          {
+            "tipo": "atributo",
+            "atributo": "dx",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -351,6 +861,54 @@
       },
       "preco": {
         "valor": 5
+      },
+      "peso": {
+        "kg": 1.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 1,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-lamina-larga",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -374,6 +932,54 @@
       },
       "preco": {
         "valor": 500
+      },
+      "peso": {
+        "kg": 1.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 1,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-lamina-larga",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -397,6 +1003,54 @@
       },
       "preco": {
         "valor": 600
+      },
+      "peso": {
+        "kg": 1.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 1,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 2,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-lamina-larga",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -420,6 +1074,56 @@
       },
       "preco": {
         "valor": 650
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 1,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 11
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 11
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-lamina-larga",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -443,6 +1147,54 @@
       },
       "preco": {
         "valor": 650
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 1,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 11
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 11
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-lamina-larga",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -466,6 +1218,56 @@
       },
       "preco": {
         "valor": 750
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 1,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 11
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 2,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 11
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-lamina-larga",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -489,6 +1291,38 @@
       },
       "preco": {
         "valor": 80
+      },
+      "peso": {
+        "kg": 3
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 3,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 12
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "mangual",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -512,6 +1346,38 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 1
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 1,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 7
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "mangual",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -551,6 +1417,29 @@
       },
       "preco": {
         "valor": 2
+      },
+      "peso": {
+        "kg": 0
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "especial": true
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "garrote",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -574,6 +1463,54 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 0.25
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": -3,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 1
+            },
+            "aparar": {
+              "mod": -1
+            },
+            "st": {
+              "min": 6
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            },
+            "aparar": {
+              "mod": -1
+            },
+            "st": {
+              "min": 6
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "faca",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -597,6 +1534,54 @@
       },
       "preco": {
         "valor": 30
+      },
+      "peso": {
+        "kg": 0.25
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": -3,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 1
+            },
+            "aparar": {
+              "mod": -1
+            },
+            "st": {
+              "min": 5
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": -1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            },
+            "aparar": {
+              "mod": -1
+            },
+            "st": {
+              "min": 5
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "faca",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -620,6 +1605,38 @@
       },
       "preco": {
         "valor": 4
+      },
+      "peso": {
+        "kg": 0.25
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "perfuracao",
+              "divisor_armadura": 0.5
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            },
+            "aparar": {
+              "mod": -1
+            },
+            "st": {
+              "min": 5
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "faca",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -643,6 +1660,37 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 0.125
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": -1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 0,
+              "max": 0
+            },
+            "aparar": {
+              "mod": -1
+            },
+            "st": {
+              "min": 5
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "faca",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -666,6 +1714,39 @@
       },
       "preco": {
         "valor": 70
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 4,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": -2,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 11
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "kusari",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -687,6 +1768,34 @@
       },
       "preco": {
         "valor": 60
+      },
+      "peso": {
+        "kg": 3
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 3,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 4,
+              "max": 4
+            },
+            "st": {
+              "min": 12
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "lanca-de-justa",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -724,6 +1833,61 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 4
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 3,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 3,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 11,
+              "duas_maos": true,
+              "despreparada": true
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 3,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 3,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 11,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "armas-de-haste",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -745,6 +1909,58 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 3
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 9,
+              "duas_maos": true
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 3,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 9,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "armas-de-haste",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -766,6 +1982,82 @@
       },
       "preco": {
         "valor": 150
+      },
+      "peso": {
+        "kg": 6
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 5,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 3,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 13,
+              "duas_maos": true,
+              "despreparada": true
+            }
+          },
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 4,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 3,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 13,
+              "duas_maos": true,
+              "despreparada": true
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 3,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 3,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 12,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "armas-de-haste",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -787,6 +2079,62 @@
       },
       "preco": {
         "valor": 120
+      },
+      "peso": {
+        "kg": 5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 4,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 3,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 12,
+              "duas_maos": true,
+              "despreparada": true
+            }
+          },
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 4,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 3,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 12,
+              "duas_maos": true,
+              "despreparada": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "armas-de-haste",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -810,6 +2158,38 @@
       },
       "preco": {
         "valor": 500
+      },
+      "peso": {
+        "kg": 1.3
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0,
+              "esgrima": true
+            },
+            "st": {
+              "min": 9
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "rapieira",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -833,6 +2213,56 @@
       },
       "preco": {
         "valor": 700
+      },
+      "peso": {
+        "kg": 1
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": -1,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "esgrima": true
+            },
+            "st": {
+              "min": 8
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "esgrima": true
+            },
+            "st": {
+              "min": 8
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "sabre",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -849,7 +2279,29 @@
         "pagina": 273
       },
       "icone": "shield",
-      "grade": null
+      "grade": null,
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "escudo",
+            "mod": 0
+          }
+        ]
+      }
     },
     {
       "id": "golpe-com-escudo-de-espiculos",
@@ -869,6 +2321,31 @@
       "preco": {
         "valor": 20,
         "adicional": true
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "escudo",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -892,6 +2369,54 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 0.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 0,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 6
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 6
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espadas-curtas",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -915,6 +2440,54 @@
       },
       "preco": {
         "valor": 400
+      },
+      "peso": {
+        "kg": 1
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 0,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 8
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 8
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espadas-curtas",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -938,6 +2511,54 @@
       },
       "preco": {
         "valor": 300
+      },
+      "peso": {
+        "kg": 1
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 0,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 8
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 8
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espadas-curtas",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -977,6 +2598,56 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 0.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 0,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "esgrima": true
+            },
+            "st": {
+              "min": 6
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "esgrima": true
+            },
+            "st": {
+              "min": 6
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "tercado",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1000,6 +2671,38 @@
       },
       "preco": {
         "valor": 400
+      },
+      "peso": {
+        "kg": 0.75
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "esgrima": true
+            },
+            "st": {
+              "min": 5
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "tercado",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1021,6 +2724,57 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 2
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 2,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 9
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 3,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 9,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "lanca",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1044,6 +2798,37 @@
       },
       "preco": {
         "valor": 30
+      },
+      "peso": {
+        "kg": 1
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 6
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "lanca",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1065,6 +2850,58 @@
       },
       "preco": {
         "valor": 60
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 2,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 3,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 10
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 3,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 3,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "lanca",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1086,6 +2923,56 @@
       },
       "preco": {
         "valor": 10
+      },
+      "peso": {
+        "kg": 2
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 2
+            },
+            "st": {
+              "min": 7,
+              "duas_maos": true
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 2,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 2
+            },
+            "st": {
+              "min": 7,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "bastao",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1107,6 +2994,57 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 3
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 9,
+              "duas_maos": true
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 2,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 9,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "bastao",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1130,6 +3068,41 @@
       },
       "preco": {
         "valor": 80
+      },
+      "peso": {
+        "kg": 6
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 4,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 13,
+              "duas_maos": true,
+              "despreparada": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "maca-machado-de-duas-maos",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1153,6 +3126,41 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 4
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 3,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 12,
+              "duas_maos": true,
+              "despreparada": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "maca-machado-de-duas-maos",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1176,6 +3184,60 @@
       },
       "preco": {
         "valor": 15
+      },
+      "peso": {
+        "kg": 2
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 3,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 11,
+              "duas_maos": true,
+              "despreparada": true
+            }
+          },
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 0,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 11,
+              "duas_maos": true,
+              "despreparada": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "maca-machado-de-duas-maos",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1199,6 +3261,41 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 3.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 3,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 12,
+              "duas_maos": true,
+              "despreparada": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "maca-machado-de-duas-maos",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1238,6 +3335,41 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 4
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 4,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 13,
+              "duas_maos": true,
+              "despreparada": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "mangual-de-duas-maos",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1259,6 +3391,56 @@
       },
       "preco": {
         "valor": 10
+      },
+      "peso": {
+        "kg": 2
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 9,
+              "duas_maos": true
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 9,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-duas-maos",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1280,6 +3462,57 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 3
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 3,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0,
+              "desbalanceada": true
+            },
+            "st": {
+              "min": 9,
+              "duas_maos": true
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 3,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 9,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-duas-maos",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1303,6 +3536,56 @@
       },
       "preco": {
         "valor": 650
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10,
+              "duas_maos": true
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 2,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-duas-maos",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1326,6 +3609,56 @@
       },
       "preco": {
         "valor": 800
+      },
+      "peso": {
+        "kg": 3.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 3,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 12,
+              "duas_maos": true
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 2,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 12,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-duas-maos",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1349,6 +3682,56 @@
       },
       "preco": {
         "valor": 650
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10,
+              "duas_maos": true
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 1
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-duas-maos",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1372,6 +3755,56 @@
       },
       "preco": {
         "valor": 750
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10,
+              "duas_maos": true
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 3,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 10,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-duas-maos",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1395,6 +3828,56 @@
       },
       "preco": {
         "valor": 900
+      },
+      "peso": {
+        "kg": 3.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 3,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "min": 1,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 12,
+              "duas_maos": true
+            }
+          },
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 3,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 2,
+              "max": 2
+            },
+            "aparar": {
+              "mod": 0
+            },
+            "st": {
+              "min": 12,
+              "duas_maos": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "espada-de-duas-maos",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1418,6 +3901,37 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 1
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": -2,
+              "tipo": "contusao",
+              "divisor_armadura": 0.5
+            },
+            "alcance": {
+              "min": 1,
+              "max": 7,
+              "preparar": true
+            },
+            "aparar": {
+              "mod": -2,
+              "desbalanceada": true
+            }
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "chicote",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1441,6 +3955,38 @@
       },
       "preco": {
         "valor": 30
+      },
+      "peso": {
+        "kg": 0.5,
+        "municao": 0.025
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "dados": 1,
+              "mod": -3,
+              "tipo": "perfurante-pequeno"
+            },
+            "alcance": {
+              "max_st": 4
+            },
+            "st": {
+              "min": 2
+            },
+            "precisao": 1,
+            "cdt": "1",
+            "tiros": "1(2)",
+            "magnitude": -6
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "zarabatana",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1464,6 +4010,37 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 1
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": -1,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "max_st": 3
+            },
+            "st": {
+              "min": 7
+            },
+            "precisao": 0,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -2
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "boleadeira",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1485,6 +4062,40 @@
       },
       "preco": {
         "valor": 200
+      },
+      "peso": {
+        "kg": 1.5,
+        "municao": 0.05
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 2,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 15,
+              "max_st": 20
+            },
+            "st": {
+              "min": 11,
+              "duas_maos": true
+            },
+            "precisao": 3,
+            "cdt": "1",
+            "tiros": "1(2)",
+            "magnitude": -8
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arco",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1508,6 +4119,40 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 1,
+        "municao": 0.05
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 15,
+              "max_st": 20
+            },
+            "st": {
+              "min": 10,
+              "duas_maos": true
+            },
+            "precisao": 2,
+            "cdt": "1",
+            "tiros": "1(2)",
+            "magnitude": -7
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arco",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1531,6 +4176,40 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 1,
+        "municao": 0.05
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 10,
+              "max_st": 15
+            },
+            "st": {
+              "min": 7,
+              "duas_maos": true
+            },
+            "precisao": 1,
+            "cdt": "1",
+            "tiros": "1(2)",
+            "magnitude": -6
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arco",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1554,6 +4233,40 @@
       },
       "preco": {
         "valor": 900
+      },
+      "peso": {
+        "kg": 2,
+        "municao": 0.05
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 3,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 20,
+              "max_st": 25
+            },
+            "st": {
+              "min": 10,
+              "duas_maos": true
+            },
+            "precisao": 3,
+            "cdt": "1",
+            "tiros": "1(2)",
+            "magnitude": -7
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arco",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1577,6 +4290,36 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "especial": true
+            },
+            "alcance": {
+              "min": 2,
+              "max": 2
+            },
+            "st": {
+              "min": 8
+            },
+            "precisao": 1,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -6
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "capa",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1600,6 +4343,36 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 1
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "especial": true
+            },
+            "alcance": {
+              "min": 2,
+              "max": 2
+            },
+            "st": {
+              "min": 5
+            },
+            "precisao": 1,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -4
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "capa",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1623,6 +4396,40 @@
       },
       "preco": {
         "valor": 150
+      },
+      "peso": {
+        "kg": 3,
+        "municao": 0.03
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 4,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 20,
+              "max_st": 25
+            },
+            "st": {
+              "min": 7,
+              "duas_maos": true
+            },
+            "precisao": 4,
+            "cdt": "1",
+            "tiros": "1(4)",
+            "magnitude": -6
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "besta",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1646,6 +4453,39 @@
       },
       "preco": {
         "valor": 150
+      },
+      "peso": {
+        "kg": 2,
+        "municao": 0.03
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 2,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 15,
+              "max_st": 20
+            },
+            "st": {
+              "min": 7
+            },
+            "precisao": 1,
+            "cdt": "1",
+            "tiros": "1(4)",
+            "magnitude": -4
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "besta",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1669,6 +4509,40 @@
       },
       "preco": {
         "valor": 150
+      },
+      "peso": {
+        "kg": 3,
+        "municao": 0.03
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 4,
+              "tipo": "perfurante"
+            },
+            "alcance": {
+              "meio_st": 20,
+              "max_st": 25
+            },
+            "st": {
+              "min": 7,
+              "duas_maos": true
+            },
+            "precisao": 2,
+            "cdt": "1",
+            "tiros": "1(4)",
+            "magnitude": -6
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "besta",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1692,6 +4566,9 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 1
       }
     },
     {
@@ -1715,6 +4592,36 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 1.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "especial": true
+            },
+            "alcance": {
+              "especial": true
+            },
+            "st": {
+              "min": 7,
+              "duas_maos": true
+            },
+            "precisao": 0,
+            "cdt": "1",
+            "tiros": "A(espec.)",
+            "magnitude": -2
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "laco",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1738,6 +4645,35 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 10
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "especial": true
+            },
+            "alcance": {
+              "especial": true
+            },
+            "st": {
+              "min": 11
+            },
+            "precisao": 1,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -6
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "rede",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1761,6 +4697,35 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "especial": true
+            },
+            "alcance": {
+              "especial": true
+            },
+            "st": {
+              "min": 8
+            },
+            "precisao": 1,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -4
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "rede",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1784,6 +4749,39 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 0.25,
+        "municao": 0.025
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 0,
+              "tipo": "perfurante"
+            },
+            "alcance": {
+              "meio_st": 6,
+              "max_st": 10
+            },
+            "st": {
+              "min": 6
+            },
+            "precisao": 0,
+            "cdt": "1",
+            "tiros": "1(2)",
+            "magnitude": -4
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "funda",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1805,6 +4803,40 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 1,
+        "municao": 0.025
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 1,
+              "tipo": "perfurante"
+            },
+            "alcance": {
+              "meio_st": 10,
+              "max_st": 15
+            },
+            "st": {
+              "min": 7,
+              "duas_maos": true
+            },
+            "precisao": 1,
+            "cdt": "1",
+            "tiros": "1(2)",
+            "magnitude": -6
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "funda",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1828,6 +4860,58 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 0.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "nome": "Sem projétil (o bastão em si)",
+            "dano": {
+              "base": "geb",
+              "mod": 1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 3,
+              "max_st": 4
+            },
+            "st": {
+              "min": 5
+            },
+            "precisao": 1,
+            "cdt": "—",
+            "tiros": "—",
+            "magnitude": -3
+          },
+          {
+            "nome": "Com dardo",
+            "dano": {
+              "base": "geb",
+              "mod": -1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 2,
+              "max_st": 3
+            },
+            "st": {
+              "min": 6
+            },
+            "precisao": 3,
+            "cdt": "—",
+            "tiros": "—",
+            "magnitude": -4
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arremessador-de-lanca",
+            "mod": 0
+          }
+        ]
       }
     },
     {
@@ -1851,6 +4935,38 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 1
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 0,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "meio_st": 1.5,
+              "max_st": 2.5
+            },
+            "st": {
+              "min": 8
+            },
+            "precisao": 1,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -2
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arma-de-arremesso",
+            "especializacao": "Maça/Machado"
+          }
+        ]
       }
     },
     {
@@ -1874,6 +4990,38 @@
       },
       "preco": {
         "valor": 60
+      },
+      "peso": {
+        "kg": 2
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "meio_st": 1,
+              "max_st": 1.5
+            },
+            "st": {
+              "min": 11
+            },
+            "precisao": 2,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -3
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arma-de-arremesso",
+            "especializacao": "Maça/Machado"
+          }
+        ]
       }
     },
     {
@@ -1897,6 +5045,38 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 3,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "meio_st": 0.5,
+              "max_st": 1
+            },
+            "st": {
+              "min": 12
+            },
+            "precisao": 1,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -4
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arma-de-arremesso",
+            "especializacao": "Maça/Machado"
+          }
+        ]
       }
     },
     {
@@ -1920,6 +5100,38 @@
       },
       "preco": {
         "valor": 35
+      },
+      "peso": {
+        "kg": 1.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "geb",
+              "mod": 2,
+              "tipo": "contusao"
+            },
+            "alcance": {
+              "meio_st": 1,
+              "max_st": 1.5
+            },
+            "st": {
+              "min": 10
+            },
+            "precisao": 1,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -3
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arma-de-arremesso",
+            "especializacao": "Maça/Machado"
+          }
+        ]
       }
     },
     {
@@ -1941,6 +5153,38 @@
       },
       "preco": {
         "valor": 60
+      },
+      "peso": {
+        "kg": 3
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 5,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 1,
+              "max_st": 1.5
+            },
+            "st": {
+              "min": 11
+            },
+            "precisao": 2,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -6
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arma-de-arremesso",
+            "especializacao": "Arpão"
+          }
+        ]
       }
     },
     {
@@ -1964,6 +5208,38 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 0.5
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 0.8,
+              "max_st": 1.5
+            },
+            "st": {
+              "min": 6
+            },
+            "precisao": 0,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -2
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arma-de-arremesso",
+            "especializacao": "Faca"
+          }
+        ]
       }
     },
     {
@@ -1987,6 +5263,38 @@
       },
       "preco": {
         "valor": 30
+      },
+      "peso": {
+        "kg": 0.25
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": -1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 0.5,
+              "max_st": 1
+            },
+            "st": {
+              "min": 5
+            },
+            "precisao": 0,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -1
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arma-de-arremesso",
+            "especializacao": "Faca"
+          }
+        ]
       }
     },
     {
@@ -2010,6 +5318,39 @@
       },
       "preco": {
         "valor": 4
+      },
+      "peso": {
+        "kg": 0.25
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 0,
+              "tipo": "perfuracao",
+              "divisor_armadura": 0.5
+            },
+            "alcance": {
+              "meio_st": 0.5,
+              "max_st": 1
+            },
+            "st": {
+              "min": 5
+            },
+            "precisao": 0,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -2
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arma-de-arremesso",
+            "especializacao": "Faca"
+          }
+        ]
       }
     },
     {
@@ -2033,6 +5374,38 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 0.125
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": -1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 0.5,
+              "max_st": 1
+            },
+            "st": {
+              "min": 5
+            },
+            "precisao": 0,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -1
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arma-de-arremesso",
+            "especializacao": "Faca"
+          }
+        ]
       }
     },
     {
@@ -2056,6 +5429,38 @@
       },
       "preco": {
         "valor": 3
+      },
+      "peso": {
+        "kg": 0.05
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": -1,
+              "tipo": "corte"
+            },
+            "alcance": {
+              "meio_st": 0.5,
+              "max_st": 1
+            },
+            "st": {
+              "min": 5
+            },
+            "precisao": 1,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": 0
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arma-de-arremesso",
+            "especializacao": "Shuriken"
+          }
+        ]
       }
     },
     {
@@ -2077,6 +5482,38 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 2
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 3,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 1,
+              "max_st": 1.5
+            },
+            "st": {
+              "min": 9
+            },
+            "precisao": 2,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -6
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arma-de-arremesso",
+            "especializacao": "Lança"
+          }
+        ]
       }
     },
     {
@@ -2100,6 +5537,38 @@
       },
       "preco": {
         "valor": 30
+      },
+      "peso": {
+        "kg": 1
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "base": "gdp",
+              "mod": 1,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "meio_st": 1.5,
+              "max_st": 2.5
+            },
+            "st": {
+              "min": 6
+            },
+            "precisao": 3,
+            "cdt": "1",
+            "tiros": "A(1)",
+            "magnitude": -4
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "arma-de-arremesso",
+            "especializacao": "Lança"
+          }
+        ]
       }
     },
     {
@@ -3097,6 +6566,39 @@
       },
       "preco": {
         "valor": 5000
+      },
+      "peso": {
+        "kg": 55,
+        "municao": 0.45
+      },
+      "combate": {
+        "modos": [
+          {
+            "dano": {
+              "dados": 6,
+              "mod": 0,
+              "tipo": "perfuracao"
+            },
+            "alcance": {
+              "min": 415,
+              "max": 415
+            },
+            "st": {
+              "min": 45
+            },
+            "precisao": 3,
+            "cdt": "1",
+            "tiros": "1(30)",
+            "magnitude": -10
+          }
+        ],
+        "pericias": [
+          {
+            "tipo": "pericia",
+            "id": "canhoneiro",
+            "especializacao": "Catapulta"
+          }
+        ]
       }
     },
     {
@@ -3282,6 +6784,15 @@
       },
       "preco": {
         "valor": 10
+      },
+      "peso": {
+        "kg": 0
+      },
+      "protecao": {
+        "local": "virilha",
+        "texto": "1*",
+        "rd": 1,
+        "flexivel": true
       }
     },
     {
@@ -3307,6 +6818,15 @@
       },
       "preco": {
         "valor": 25
+      },
+      "peso": {
+        "kg": 1
+      },
+      "protecao": {
+        "local": "tronco",
+        "texto": "1*",
+        "rd": 1,
+        "flexivel": true
       }
     },
     {
@@ -3332,6 +6852,15 @@
       },
       "preco": {
         "valor": 400
+      },
+      "peso": {
+        "kg": 10
+      },
+      "protecao": {
+        "local": "tronco",
+        "texto": "4D",
+        "rd": 4,
+        "so_frente": true
       }
     },
     {
@@ -3357,6 +6886,14 @@
       },
       "preco": {
         "valor": 1300
+      },
+      "peso": {
+        "kg": 20
+      },
+      "protecao": {
+        "local": "tronco, virilha",
+        "texto": "5",
+        "rd": 5
       }
     },
     {
@@ -3382,6 +6919,15 @@
       },
       "preco": {
         "valor": 30
+      },
+      "peso": {
+        "kg": 3
+      },
+      "protecao": {
+        "local": "tronco, virilha",
+        "texto": "1*",
+        "rd": 1,
+        "flexivel": true
       }
     },
     {
@@ -3407,6 +6953,15 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 2
+      },
+      "protecao": {
+        "local": "braços, tronco",
+        "texto": "1*",
+        "rd": 1,
+        "flexivel": true
       }
     },
     {
@@ -3432,6 +6987,14 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 5
+      },
+      "protecao": {
+        "local": "tronco, virilha",
+        "texto": "2",
+        "rd": 2
       }
     },
     {
@@ -3457,6 +7020,14 @@
       },
       "preco": {
         "valor": 150
+      },
+      "peso": {
+        "kg": 7.5
+      },
+      "protecao": {
+        "local": "tronco",
+        "texto": "3",
+        "rd": 3
       }
     },
     {
@@ -3482,6 +7053,14 @@
       },
       "preco": {
         "valor": 680
+      },
+      "peso": {
+        "kg": 13
+      },
+      "protecao": {
+        "local": "tronco",
+        "texto": "5",
+        "rd": 5
       }
     },
     {
@@ -3507,6 +7086,16 @@
       },
       "preco": {
         "valor": 230
+      },
+      "peso": {
+        "kg": 12.5
+      },
+      "protecao": {
+        "local": "tronco, virilha",
+        "texto": "4/2*",
+        "rd": 4,
+        "contusao": 2,
+        "flexivel": true
       }
     },
     {
@@ -3532,6 +7121,16 @@
       },
       "preco": {
         "valor": 150
+      },
+      "peso": {
+        "kg": 8
+      },
+      "protecao": {
+        "local": "tronco",
+        "texto": "4/2*",
+        "rd": 4,
+        "contusao": 2,
+        "flexivel": true
       }
     },
     {
@@ -3557,6 +7156,14 @@
       },
       "preco": {
         "valor": 420
+      },
+      "peso": {
+        "kg": 17.5
+      },
+      "protecao": {
+        "local": "tronco, virilha",
+        "texto": "4",
+        "rd": 4
       }
     },
     {
@@ -3582,6 +7189,16 @@
       },
       "preco": {
         "valor": 520
+      },
+      "peso": {
+        "kg": 22
+      },
+      "protecao": {
+        "local": "tronco, virilha",
+        "texto": "5/3*",
+        "rd": 5,
+        "contusao": 3,
+        "flexivel": true
       }
     },
     {
@@ -3607,6 +7224,14 @@
       },
       "preco": {
         "valor": 2300
+      },
+      "peso": {
+        "kg": 22.5
+      },
+      "protecao": {
+        "local": "tronco, virilha",
+        "texto": "7",
+        "rd": 7
       }
     },
     {
@@ -3632,6 +7257,15 @@
       },
       "preco": {
         "valor": 500
+      },
+      "peso": {
+        "kg": 9
+      },
+      "protecao": {
+        "local": "tronco",
+        "texto": "5D",
+        "rd": 5,
+        "so_frente": true
       }
     },
     {
@@ -3657,6 +7291,14 @@
       },
       "preco": {
         "valor": 1300
+      },
+      "peso": {
+        "kg": 17.5
+      },
+      "protecao": {
+        "local": "tronco, virilha",
+        "texto": "6",
+        "rd": 6
       }
     },
     {
@@ -3682,6 +7324,14 @@
       },
       "preco": {
         "valor": 900
+      },
+      "peso": {
+        "kg": 15
+      },
+      "protecao": {
+        "local": "tronco, virilha",
+        "texto": "5",
+        "rd": 5
       }
     },
     {
@@ -3707,6 +7357,15 @@
       },
       "preco": {
         "valor": 210
+      },
+      "peso": {
+        "kg": 8
+      },
+      "protecao": {
+        "local": "corpo, membros",
+        "texto": "2*",
+        "rd": 2,
+        "flexivel": true
       }
     },
     {
@@ -3732,6 +7391,14 @@
       },
       "preco": {
         "valor": 180
+      },
+      "peso": {
+        "kg": 4.5
+      },
+      "protecao": {
+        "local": "braços",
+        "texto": "3",
+        "rd": 3
       }
     },
     {
@@ -3757,6 +7424,14 @@
       },
       "preco": {
         "valor": 270
+      },
+      "peso": {
+        "kg": 8.5
+      },
+      "protecao": {
+        "local": "pernas",
+        "texto": "3",
+        "rd": 3
       }
     },
     {
@@ -3782,6 +7457,15 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 1
+      },
+      "protecao": {
+        "local": "braços",
+        "texto": "1*",
+        "rd": 1,
+        "flexivel": true
       }
     },
     {
@@ -3807,6 +7491,14 @@
       },
       "preco": {
         "valor": 60
+      },
+      "peso": {
+        "kg": 2
+      },
+      "protecao": {
+        "local": "pernas",
+        "texto": "2",
+        "rd": 2
       }
     },
     {
@@ -3832,6 +7524,14 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 1
+      },
+      "protecao": {
+        "local": "braços",
+        "texto": "2",
+        "rd": 2
       }
     },
     {
@@ -3857,6 +7557,15 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 1
+      },
+      "protecao": {
+        "local": "pernas",
+        "texto": "1*",
+        "rd": 1,
+        "flexivel": true
       }
     },
     {
@@ -3882,6 +7591,15 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 1.5
+      },
+      "protecao": {
+        "local": "pernas, virilha",
+        "texto": "1*",
+        "rd": 1,
+        "flexivel": true
       }
     },
     {
@@ -3907,6 +7625,16 @@
       },
       "preco": {
         "valor": 60
+      },
+      "peso": {
+        "kg": 2
+      },
+      "protecao": {
+        "local": "virilha, pernas",
+        "texto": "3/2*",
+        "rd": 3,
+        "contusao": 2,
+        "flexivel": true
       }
     },
     {
@@ -3932,6 +7660,16 @@
       },
       "preco": {
         "valor": 110
+      },
+      "peso": {
+        "kg": 7.5
+      },
+      "protecao": {
+        "local": "pernas",
+        "texto": "4/2*",
+        "rd": 4,
+        "contusao": 2,
+        "flexivel": true
       }
     },
     {
@@ -3957,6 +7695,16 @@
       },
       "preco": {
         "valor": 70
+      },
+      "peso": {
+        "kg": 4.5
+      },
+      "protecao": {
+        "local": "braços",
+        "texto": "4/2*",
+        "rd": 4,
+        "contusao": 2,
+        "flexivel": true
       }
     },
     {
@@ -3982,6 +7730,14 @@
       },
       "preco": {
         "valor": 250
+      },
+      "peso": {
+        "kg": 10.5
+      },
+      "protecao": {
+        "local": "pernas",
+        "texto": "4",
+        "rd": 4
       }
     },
     {
@@ -4007,6 +7763,14 @@
       },
       "preco": {
         "valor": 210
+      },
+      "peso": {
+        "kg": 7
+      },
+      "protecao": {
+        "local": "braços",
+        "texto": "4",
+        "rd": 4
       }
     },
     {
@@ -4032,6 +7796,14 @@
       },
       "preco": {
         "valor": 1500
+      },
+      "peso": {
+        "kg": 10
+      },
+      "protecao": {
+        "local": "braços",
+        "texto": "7",
+        "rd": 7
       }
     },
     {
@@ -4057,6 +7829,14 @@
       },
       "preco": {
         "valor": 1600
+      },
+      "peso": {
+        "kg": 12.5
+      },
+      "protecao": {
+        "local": "pernas",
+        "texto": "7",
+        "rd": 7
       }
     },
     {
@@ -4082,6 +7862,14 @@
       },
       "preco": {
         "valor": 1000
+      },
+      "peso": {
+        "kg": 7.5
+      },
+      "protecao": {
+        "local": "braços",
+        "texto": "6",
+        "rd": 6
       }
     },
     {
@@ -4107,6 +7895,14 @@
       },
       "preco": {
         "valor": 1100
+      },
+      "peso": {
+        "kg": 10
+      },
+      "protecao": {
+        "local": "pernas",
+        "texto": "6",
+        "rd": 6
       }
     },
     {
@@ -4132,6 +7928,15 @@
       },
       "preco": {
         "valor": 5
+      },
+      "peso": {
+        "kg": 0
+      },
+      "protecao": {
+        "local": "crânio",
+        "texto": "1*",
+        "rd": 1,
+        "flexivel": true
       }
     },
     {
@@ -4157,6 +7962,15 @@
       },
       "preco": {
         "valor": 32
+      },
+      "peso": {
+        "kg": 0
+      },
+      "protecao": {
+        "local": "crânio",
+        "texto": "1*",
+        "rd": 1,
+        "flexivel": true
       }
     },
     {
@@ -4182,6 +7996,14 @@
       },
       "preco": {
         "valor": 160
+      },
+      "peso": {
+        "kg": 3.7
+      },
+      "protecao": {
+        "local": "crânio, rosto",
+        "texto": "3",
+        "rd": 3
       }
     },
     {
@@ -4207,6 +8029,14 @@
       },
       "preco": {
         "valor": 60
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "protecao": {
+        "local": "crânio",
+        "texto": "3",
+        "rd": 3
       }
     },
     {
@@ -4232,6 +8062,14 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 0.25
+      },
+      "protecao": {
+        "local": "crânio, rosto",
+        "texto": "2",
+        "rd": 2
       }
     },
     {
@@ -4257,6 +8095,14 @@
       },
       "preco": {
         "valor": 150
+      },
+      "peso": {
+        "kg": 3
+      },
+      "protecao": {
+        "local": "crânio, rosto",
+        "texto": "4",
+        "rd": 4
       }
     },
     {
@@ -4282,6 +8128,16 @@
       },
       "preco": {
         "valor": 55
+      },
+      "peso": {
+        "kg": 2
+      },
+      "protecao": {
+        "local": "crânio, pescoço",
+        "texto": "4/2*",
+        "rd": 4,
+        "contusao": 2,
+        "flexivel": true
       }
     },
     {
@@ -4307,6 +8163,14 @@
       },
       "preco": {
         "valor": 240
+      },
+      "peso": {
+        "kg": 5
+      },
+      "protecao": {
+        "local": "crânio, rosto",
+        "texto": "6",
+        "rd": 6
       }
     },
     {
@@ -4332,6 +8196,14 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 1
+      },
+      "protecao": {
+        "local": "rosto",
+        "texto": "4",
+        "rd": 4
       }
     },
     {
@@ -4357,6 +8229,14 @@
       },
       "preco": {
         "valor": 340
+      },
+      "peso": {
+        "kg": 5
+      },
+      "protecao": {
+        "local": "crânio, rosto, pescoço",
+        "texto": "7",
+        "rd": 7
       }
     },
     {
@@ -4382,6 +8262,14 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "protecao": {
+        "local": "crânio",
+        "texto": "4",
+        "rd": 4
       }
     },
     {
@@ -4407,6 +8295,15 @@
       },
       "preco": {
         "valor": 15
+      },
+      "peso": {
+        "kg": 0
+      },
+      "protecao": {
+        "local": "mãos",
+        "texto": "1*",
+        "rd": 1,
+        "flexivel": true
       }
     },
     {
@@ -4432,6 +8329,15 @@
       },
       "preco": {
         "valor": 30
+      },
+      "peso": {
+        "kg": 0
+      },
+      "protecao": {
+        "local": "mãos",
+        "texto": "2*",
+        "rd": 2,
+        "flexivel": true
       }
     },
     {
@@ -4457,6 +8363,14 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 1
+      },
+      "protecao": {
+        "local": "mãos",
+        "texto": "4",
+        "rd": 4
       }
     },
     {
@@ -4482,6 +8396,14 @@
       },
       "preco": {
         "valor": 250
+      },
+      "peso": {
+        "kg": 1.2
+      },
+      "protecao": {
+        "local": "mãos",
+        "texto": "5",
+        "rd": 5
       }
     },
     {
@@ -4507,6 +8429,14 @@
       },
       "preco": {
         "valor": 25
+      },
+      "peso": {
+        "kg": 0.25
+      },
+      "protecao": {
+        "local": "pés",
+        "texto": "0",
+        "rd": 0
       }
     },
     {
@@ -4532,6 +8462,15 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 1
+      },
+      "protecao": {
+        "local": "pés",
+        "texto": "1*",
+        "rd": 1,
+        "flexivel": true
       }
     },
     {
@@ -4557,6 +8496,15 @@
       },
       "preco": {
         "valor": 80
+      },
+      "peso": {
+        "kg": 1.5
+      },
+      "protecao": {
+        "local": "pés",
+        "texto": "2*",
+        "rd": 2,
+        "flexivel": true
       }
     },
     {
@@ -4582,6 +8530,14 @@
       },
       "preco": {
         "valor": 150
+      },
+      "peso": {
+        "kg": 3.5
+      },
+      "protecao": {
+        "local": "pés",
+        "texto": "4",
+        "rd": 4
       }
     },
     {
@@ -5051,6 +9007,14 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 1.5
+      },
+      "protecao": {
+        "local": "rosto",
+        "texto": "2",
+        "rd": 2
       }
     },
     {
@@ -5072,6 +9036,16 @@
       },
       "preco": {
         "valor": 60
+      },
+      "peso": {
+        "kg": 3.5
+      },
+      "protecao": {
+        "local": "rosto",
+        "texto": "4/2*",
+        "rd": 4,
+        "contusao": 2,
+        "flexivel": true
       }
     },
     {
@@ -5093,6 +9067,14 @@
       },
       "preco": {
         "valor": 200
+      },
+      "peso": {
+        "kg": 6
+      },
+      "protecao": {
+        "local": "rosto",
+        "texto": "4",
+        "rd": 4
       }
     },
     {
@@ -5114,6 +9096,14 @@
       },
       "preco": {
         "valor": 200
+      },
+      "peso": {
+        "kg": 6
+      },
+      "protecao": {
+        "local": "rosto",
+        "texto": "5",
+        "rd": 5
       }
     },
     {
@@ -5135,6 +9125,14 @@
       },
       "preco": {
         "valor": 80
+      },
+      "peso": {
+        "kg": 2
+      },
+      "protecao": {
+        "local": "pescoço, crânio",
+        "texto": "2",
+        "rd": 2
       }
     },
     {
@@ -5156,6 +9154,16 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 15
+      },
+      "protecao": {
+        "local": "pescoço, crânio",
+        "texto": "4/2*",
+        "rd": 4,
+        "contusao": 2,
+        "flexivel": true
       }
     },
     {
@@ -5177,6 +9185,14 @@
       },
       "preco": {
         "valor": 320
+      },
+      "peso": {
+        "kg": 10
+      },
+      "protecao": {
+        "local": "pescoço, crânio",
+        "texto": "4",
+        "rd": 4
       }
     },
     {
@@ -5198,6 +9214,14 @@
       },
       "preco": {
         "valor": 330
+      },
+      "peso": {
+        "kg": 9
+      },
+      "protecao": {
+        "local": "pescoço, crânio",
+        "texto": "5",
+        "rd": 5
       }
     },
     {
@@ -5219,6 +9243,15 @@
       },
       "preco": {
         "valor": 260
+      },
+      "peso": {
+        "kg": 6
+      },
+      "protecao": {
+        "local": "tronco",
+        "texto": "2D",
+        "rd": 2,
+        "so_frente": true
       }
     },
     {
@@ -5240,6 +9273,17 @@
       },
       "preco": {
         "valor": 440
+      },
+      "peso": {
+        "kg": 10
+      },
+      "protecao": {
+        "local": "tronco",
+        "texto": "4/2D*",
+        "rd": 4,
+        "contusao": 2,
+        "so_frente": true,
+        "flexivel": true
       }
     },
     {
@@ -5261,6 +9305,15 @@
       },
       "preco": {
         "valor": 480
+      },
+      "peso": {
+        "kg": 30
+      },
+      "protecao": {
+        "local": "tronco",
+        "texto": "4D",
+        "rd": 4,
+        "so_frente": true
       }
     },
     {
@@ -5282,6 +9335,14 @@
       },
       "preco": {
         "valor": 345
+      },
+      "peso": {
+        "kg": 15
+      },
+      "protecao": {
+        "local": "tronco, virilha",
+        "texto": "2",
+        "rd": 2
       }
     },
     {
@@ -5303,6 +9364,16 @@
       },
       "preco": {
         "valor": 670
+      },
+      "peso": {
+        "kg": 29.5
+      },
+      "protecao": {
+        "local": "tronco, virilha",
+        "texto": "4/2*",
+        "rd": 4,
+        "contusao": 2,
+        "flexivel": true
       }
     },
     {
@@ -5324,6 +9395,14 @@
       },
       "preco": {
         "valor": 1650
+      },
+      "peso": {
+        "kg": 45
+      },
+      "protecao": {
+        "local": "tronco, virilha",
+        "texto": "5",
+        "rd": 5
       }
     },
     {
@@ -5345,6 +9424,14 @@
       },
       "preco": {
         "valor": 400
+      },
+      "peso": {
+        "kg": 10
+      },
+      "protecao": {
+        "local": "pernas",
+        "texto": "5",
+        "rd": 5
       }
     },
     {
@@ -5368,6 +9455,13 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 1
+      },
+      "escudo": {
+        "bd": 1,
+        "rd_pv": "1/3"
       }
     },
     {
@@ -5391,6 +9485,13 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 2.5
+      },
+      "escudo": {
+        "bd": 2,
+        "rd_pv": "1/5"
       }
     },
     {
@@ -5414,6 +9515,13 @@
       },
       "preco": {
         "valor": 25
+      },
+      "peso": {
+        "kg": 1
+      },
+      "escudo": {
+        "bd": 1,
+        "rd_pv": "5/20"
       }
     },
     {
@@ -5437,6 +9545,13 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 4
+      },
+      "escudo": {
+        "bd": 1,
+        "rd_pv": "6/30"
       }
     },
     {
@@ -5460,6 +9575,13 @@
       },
       "preco": {
         "valor": 60
+      },
+      "peso": {
+        "kg": 7.5
+      },
+      "escudo": {
+        "bd": 2,
+        "rd_pv": "7/40"
       }
     },
     {
@@ -5483,6 +9605,13 @@
       },
       "preco": {
         "valor": 90
+      },
+      "peso": {
+        "kg": 12.5
+      },
+      "escudo": {
+        "bd": 3,
+        "rd_pv": "9/60"
       }
     },
     {
@@ -5522,6 +9651,9 @@
       },
       "preco": {
         "valor": 10
+      },
+      "peso": {
+        "kg": 0
       }
     },
     {
@@ -5545,6 +9677,9 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 0
       }
     },
     {
@@ -5569,6 +9704,9 @@
       "nota_adamar": "Decisão da mesa: livre, apesar do NT5 do livro.",
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 1
       }
     },
     {
@@ -5590,6 +9728,9 @@
       },
       "preco": {
         "valor": 300
+      },
+      "peso": {
+        "kg": 50
       }
     },
     {
@@ -5613,6 +9754,9 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 2.5
       }
     },
     {
@@ -5636,6 +9780,9 @@
       },
       "preco": {
         "valor": 80
+      },
+      "peso": {
+        "kg": 6
       }
     },
     {
@@ -5657,6 +9804,9 @@
       },
       "preco": {
         "valor": 150
+      },
+      "peso": {
+        "kg": 15
       }
     },
     {
@@ -5728,6 +9878,9 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 2
       }
     },
     {
@@ -5768,6 +9921,10 @@
       "preco": {
         "valor": 25,
         "por": "cada 10 m"
+      },
+      "peso": {
+        "kg": 2.5,
+        "por": "cada 10 m"
       }
     },
     {
@@ -5791,6 +9948,10 @@
       },
       "preco": {
         "valor": 5,
+        "por": "cada 10 m"
+      },
+      "peso": {
+        "kg": 0.75,
         "por": "cada 10 m"
       }
     },
@@ -5816,6 +9977,10 @@
       "preco": {
         "valor": 1,
         "por": "cada 10 m"
+      },
+      "peso": {
+        "kg": 0.25,
+        "por": "cada 10 m"
       }
     },
     {
@@ -5839,6 +10004,9 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 10
       }
     },
     {
@@ -5862,6 +10030,9 @@
       },
       "preco": {
         "valor": 5
+      },
+      "peso": {
+        "kg": 0.5
       }
     },
     {
@@ -5885,6 +10056,9 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 2
       }
     },
     {
@@ -5924,6 +10098,9 @@
       },
       "preco": {
         "valor": 1
+      },
+      "peso": {
+        "kg": 0.25
       }
     },
     {
@@ -5979,6 +10156,9 @@
       },
       "preco": {
         "valor": 3
+      },
+      "peso": {
+        "kg": 0.5
       }
     },
     {
@@ -6050,6 +10230,9 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 1
       }
     },
     {
@@ -6121,6 +10304,9 @@
       },
       "preco": {
         "valor": 60
+      },
+      "peso": {
+        "kg": 1.5
       }
     },
     {
@@ -6144,6 +10330,9 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 5
       }
     },
     {
@@ -6167,6 +10356,9 @@
       },
       "preco": {
         "valor": 10
+      },
+      "peso": {
+        "kg": 0.125
       }
     },
     {
@@ -6190,6 +10382,10 @@
       },
       "preco": {
         "valor": 2,
+        "por": "cada 0,5 l"
+      },
+      "peso": {
+        "kg": 0.5,
         "por": "cada 0,5 l"
       }
     },
@@ -6246,6 +10442,9 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 4
       }
     },
     {
@@ -6286,6 +10485,9 @@
       },
       "preco": {
         "valor": 2
+      },
+      "peso": {
+        "kg": 0.25
       }
     },
     {
@@ -6373,6 +10575,9 @@
       },
       "preco": {
         "valor": 3
+      },
+      "peso": {
+        "kg": 0.5
       }
     },
     {
@@ -6394,6 +10599,9 @@
       },
       "preco": {
         "valor": 5
+      },
+      "peso": {
+        "kg": 1.5
       }
     },
     {
@@ -6415,6 +10623,9 @@
       },
       "preco": {
         "valor": 8
+      },
+      "peso": {
+        "kg": 2.5
       }
     },
     {
@@ -6438,6 +10649,9 @@
       },
       "preco": {
         "valor": 5
+      },
+      "peso": {
+        "kg": 0.5
       }
     },
     {
@@ -6541,6 +10755,9 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 1
       }
     },
     {
@@ -6676,6 +10893,9 @@
       },
       "preco": {
         "valor": 10
+      },
+      "peso": {
+        "kg": 1
       }
     },
     {
@@ -6699,6 +10919,9 @@
       },
       "preco": {
         "valor": 40
+      },
+      "peso": {
+        "kg": 1
       }
     },
     {
@@ -6736,6 +10959,9 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 1.5
       }
     },
     {
@@ -6759,6 +10985,9 @@
       },
       "preco": {
         "valor": 35
+      },
+      "peso": {
+        "kg": 1.5
       }
     },
     {
@@ -6782,6 +11011,9 @@
       },
       "preco": {
         "valor": 25
+      },
+      "peso": {
+        "kg": 0
       }
     },
     {
@@ -6803,6 +11035,10 @@
       },
       "preco": {
         "valor": 125,
+        "por": "com sela comum"
+      },
+      "peso": {
+        "kg": 10,
         "por": "com sela comum"
       }
     },
@@ -6828,6 +11064,10 @@
       "preco": {
         "valor": 50,
         "por": "conjunto com 4"
+      },
+      "peso": {
+        "kg": 2,
+        "por": "conjunto com 4"
       }
     },
     {
@@ -6850,6 +11090,10 @@
       "preco": {
         "valor": 250,
         "por": "com estribos"
+      },
+      "peso": {
+        "kg": 17.5,
+        "por": "com estribos"
       }
     },
     {
@@ -6871,6 +11115,9 @@
       },
       "preco": {
         "valor": 150
+      },
+      "peso": {
+        "kg": 7.5
       }
     },
     {
@@ -6958,6 +11205,9 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 0
       }
     },
     {
@@ -7077,6 +11327,9 @@
       },
       "preco": {
         "valor": 10
+      },
+      "peso": {
+        "kg": 1
       }
     },
     {
@@ -7100,6 +11353,9 @@
       },
       "preco": {
         "valor": 300
+      },
+      "peso": {
+        "kg": 7.5
       }
     },
     {
@@ -7139,6 +11395,9 @@
       },
       "preco": {
         "valor": 200
+      },
+      "peso": {
+        "kg": 5
       }
     },
     {
@@ -7162,6 +11421,9 @@
       },
       "preco": {
         "valor": 50
+      },
+      "peso": {
+        "kg": 1
       }
     },
     {
@@ -7297,6 +11559,9 @@
       },
       "preco": {
         "valor": 500
+      },
+      "peso": {
+        "kg": 3
       }
     },
     {
@@ -7321,6 +11586,9 @@
       "preco": {
         "valor": 5,
         "por": "o par"
+      },
+      "peso": {
+        "kg": 0
       }
     },
     {
@@ -7342,6 +11610,9 @@
       },
       "preco": {
         "valor": 220
+      },
+      "peso": {
+        "kg": 60
       }
     },
     {
@@ -7363,6 +11634,9 @@
       },
       "preco": {
         "valor": 55
+      },
+      "peso": {
+        "kg": 30
       }
     },
     {
@@ -7386,6 +11660,9 @@
       },
       "preco": {
         "valor": 35
+      },
+      "peso": {
+        "kg": 1.5
       }
     },
     {
@@ -7410,6 +11687,10 @@
       "preco": {
         "valor": 300,
         "nota": "de Carpintaria; a de Armeiro custa 600"
+      },
+      "peso": {
+        "kg": 10,
+        "por": "de Carpintaria"
       }
     },
     {
@@ -7431,6 +11712,9 @@
       },
       "preco": {
         "valor": 60
+      },
+      "peso": {
+        "kg": 9
       }
     },
     {
@@ -7454,6 +11738,9 @@
       },
       "preco": {
         "valor": 3000
+      },
+      "peso": {
+        "kg": 5
       }
     },
     {
@@ -7491,6 +11778,9 @@
       },
       "preco": {
         "valor": 12
+      },
+      "peso": {
+        "kg": 3
       }
     },
     {
@@ -7514,6 +11804,9 @@
       },
       "preco": {
         "valor": 20
+      },
+      "peso": {
+        "kg": 1.5
       }
     },
     {
@@ -7537,6 +11830,9 @@
       },
       "preco": {
         "valor": 5
+      },
+      "peso": {
+        "kg": 0.5
       }
     },
     {
@@ -7560,6 +11856,9 @@
       },
       "preco": {
         "valor": 15
+      },
+      "peso": {
+        "kg": 4
       }
     },
     {
@@ -7581,6 +11880,9 @@
       },
       "preco": {
         "valor": 100
+      },
+      "peso": {
+        "kg": 20
       }
     },
     {
@@ -7604,6 +11906,9 @@
       },
       "preco": {
         "valor": 150
+      },
+      "peso": {
+        "kg": 1.5
       }
     },
     {
@@ -7643,6 +11948,9 @@
       },
       "preco": {
         "valor": 15
+      },
+      "peso": {
+        "kg": 0.5
       }
     },
     {
@@ -7666,6 +11974,9 @@
       },
       "preco": {
         "valor": 10
+      },
+      "peso": {
+        "kg": 0.25
       }
     },
     {
@@ -7737,6 +12048,14 @@
       },
       "preco": {
         "valor": 1
+      },
+      "peso": {
+        "kg": 0
+      },
+      "protecao": {
+        "local": "",
+        "texto": "2",
+        "rd": 2
       }
     },
     {

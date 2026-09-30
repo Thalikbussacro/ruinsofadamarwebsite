@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { validar, montarJs, juntarEnriquecimento } from './gerar-dados.mjs';
+import { validar, montarJs, montarTextos, juntarEnriquecimento } from './gerar-dados.mjs';
 import { mkdtempSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -117,6 +117,12 @@ assert.deepEqual(window.GURPS.adamar, {});
   juntarEnriquecimento(e, pasta);
   assert.equal(e.pericias.itens[0].descricao, texto);
   assert.equal(e.pericias.itens[0].exemplos.length, 2);
+  // os textos longos saem do arquivo principal e vão para o de textos (com endereço versionado)
+  const principal = new Function('window', montarJs(e) + 'return window;')({}).GURPS;
+  assert.equal(principal.pericias[0].descricao, undefined);
+  assert.match(principal.textos_url, /^js\/dados-textos\.js\?v=[0-9a-f]{8}$/);
+  const T = new Function('window', montarTextos(e) + 'return window;')({}).GURPS_TEXTOS;
+  assert.equal(T.pericias.arco.descricao, texto);
   const erros = validar(e).join('\n');
   assert.match(erros, /P1.json: item inexistente "fantasma"/);
   assert.match(erros, /V1.json\/carisma: campo desconhecido "cor"/);

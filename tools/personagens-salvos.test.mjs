@@ -46,4 +46,27 @@ st.setItem(CHAVE, '{nada');
 assert.deepEqual(criarArquivo(st).listar(), []);
 const cheio = { getItem: () => null, setItem: () => { throw new Error('cheio'); } };
 assert.equal(criarArquivo(cheio).salvar({ nome: 'A' }), null);
+// cópia de segurança: exporta tudo, restaura mesclando pela data
+{
+  const mem = {}; const st = { getItem: (k) => mem[k] ?? null, setItem: (k, v) => { mem[k] = String(v); } };
+  const a1 = criarArquivo(st);
+  const id1 = a1.salvar({ nome: 'Um' }, 100);
+  const id2 = a1.salvar({ nome: 'Dois' }, 200);
+  const copia = JSON.parse(JSON.stringify(a1.exportar(300)));
+  assert.equal(copia.tipo, 'adamar-cofre');
+  assert.equal(copia.personagens.length, 2);
+  // noutro aparelho: um personagem já existe mais novo, outro não existe
+  const mem2 = {}; const st2 = { getItem: (k) => mem2[k] ?? null, setItem: (k, v) => { mem2[k] = String(v); } };
+  const a2 = criarArquivo(st2);
+  mem2['adamar-personagens'] = JSON.stringify([{ id: id1, atualizado: 999, ficha: { nome: 'Um editado', id_salvo: id1 } }]);
+  const conta = a2.importar(copia);
+  assert.deepEqual(conta, { novos: 1, atualizados: 0, mantidos: 1 });
+  assert.equal(a2.obter(id1).nome, 'Um editado');
+  assert.equal(a2.obter(id2).nome, 'Dois');
+  assert.equal(a2.importar({ tipo: 'outra-coisa' }), null);
+  assert.ok(a2.espaco() > 0);
+  // sem espaço: importar devolve null
+  const cheio = criarArquivo({ getItem: () => null, setItem: () => { throw new Error('cheio'); } });
+  assert.equal(cheio.importar(copia), null);
+}
 console.log('personagens-salvos ok');

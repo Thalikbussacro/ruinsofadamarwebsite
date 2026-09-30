@@ -25,6 +25,33 @@
   };
   var NOMES_LISTA = { pericias: 'Perícia', vantagens: 'Vantagem', desvantagens: 'Desvantagem', equipamento: 'Equipamento' };
 
+  // textos longos (descrição, exemplos, Adamar, dica) ficam em js/dados-textos.js: carregados uma vez e juntados aos itens
+  var textosProntos = !G.textos_url;
+  var esperando = [];
+  function carregarTextos(pronto) {
+    if (textosProntos) { if (pronto) pronto(); return; }
+    if (pronto) esperando.push(pronto);
+    if (carregarTextos.pedido) return;
+    carregarTextos.pedido = true;
+    var sc = document.createElement('script');
+    sc.src = (document.body.getAttribute('data-root') || '') + G.textos_url;
+    sc.onload = function () {
+      var T = window.GURPS_TEXTOS || {};
+      Object.keys(T).forEach(function (lista) {
+        (G[lista] || []).forEach(function (it) { if (T[lista][it.id]) Object.assign(it, T[lista][it.id]); });
+      });
+      textosProntos = true;
+      esperando.splice(0).forEach(function (f) { f(); });
+    };
+    sc.onerror = function () { textosProntos = true; esperando.splice(0).forEach(function (f) { f(); }); };
+    document.head.appendChild(sc);
+  }
+  // em segundo plano, logo depois que a página abre
+  if (G.textos_url) {
+    var cedo = function () { carregarTextos(); };
+    if (window.requestIdleCallback) window.requestIdleCallback(cedo, { timeout: 2500 }); else setTimeout(cedo, 800);
+  }
+
   function el(tag, classe, texto) {
     var n = document.createElement(tag);
     if (classe) n.className = classe;
@@ -209,6 +236,7 @@
 
   function abrir(item, opcoes) {
     opcoes = opcoes || {};
+    if (!textosProntos) { carregarTextos(function () { abrir(item, opcoes); }); return; }
     var d = dialogo();
     d.textContent = '';
     var st = ADAMAR[item.adamar] || ADAMAR.livre;
@@ -300,7 +328,7 @@
   }
 
   window.ItemUI = {
-    card: card, abrir: abrir, selo: selo, meta: meta, categoria: categoria, lista: lista, porId: porId,
+    card: card, abrir: abrir, carregarTextos: carregarTextos, selo: selo, meta: meta, categoria: categoria, lista: lista, porId: porId,
     GRUPOS: GRUPOS, TIPOS_TRACO: TIPOS_TRACO, CATEGORIAS_EQUIP: CATEGORIAS_EQUIP, ADAMAR: ADAMAR
   };
 })();

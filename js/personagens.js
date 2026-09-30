@@ -37,7 +37,10 @@
     var acoes = document.querySelector('.ficha-acoes');
     var n = acoes.querySelector('.copiado') || acoes.appendChild(el('span', 'copiado'));
     n.textContent = msg;
+    var menu = document.querySelector('.fx-mais');
+    if (menu) menu.open = true;
   }
+  var SEM_ESPACO = 'Não deu para salvar: o navegador está sem espaço. No cofre, baixe uma cópia de todos e apague personagens antigos ou retratos grandes.';
 
 
   // ---------- rolador: clicar num número rola 3d contra ele (ou o dano); quadro com as últimas rolagens ----------
@@ -328,7 +331,7 @@
       var salvo = arquivo.obter(idFicha);
       if (!salvo) return;
       salvo.em_jogo = Object.assign({}, salvo.em_jogo || {}, mudanca);
-      arquivo.salvar(salvo);
+      if (!arquivo.salvar(salvo)) { alertaInline(SEM_ESPACO); return; }
       desenhar();
       if (aoMudar) aoMudar();
     }
@@ -728,16 +731,48 @@
       var leitor = new FileReader();
       leitor.onload = function () {
         try {
-          var f = criador.carregar(JSON.parse(leitor.result));
-          var novoId = arquivo.salvar(f);
-          aviso.textContent = novoId ? (f.nome || 'Personagem') + ' entrou no cofre.' : 'Não deu para salvar no navegador.';
-          if (novoId) selecionado = novoId;
+          var dados = JSON.parse(leitor.result);
+          if (dados && dados.tipo === 'adamar-cofre') {
+            // cópia de todos: junta com o que já está aqui (fica a versão mais recente de cada um)
+            var conta = arquivo.importar(dados);
+            aviso.textContent = !conta ? 'Não deu para restaurar: o navegador está sem espaço.' :
+              'Cópia restaurada: ' + conta.novos + ' novo(s), ' + conta.atualizados + ' atualizado(s), ' + conta.mantidos + ' já estava(m) em dia.';
+          } else {
+            var f = criador.carregar(dados);
+            var novoId = arquivo.salvar(f);
+            aviso.textContent = novoId ? (f.nome || 'Personagem') + ' entrou no cofre.' : 'Não deu para salvar: o navegador está sem espaço. Baixe uma cópia de todos e apague personagens antigos.';
+            if (novoId) selecionado = novoId;
+          }
           desenhar();
-        } catch (e) { aviso.textContent = 'Esse arquivo não é uma ficha válida.'; }
+          mostrarEspaco();
+        } catch (e) { aviso.textContent = 'Esse arquivo não é uma ficha nem uma cópia do cofre.'; }
         ev.target.value = '';
       };
       leitor.readAsText(arq);
     });
+    // cópia de segurança de todos os personagens
+    document.getElementById('p-copia').addEventListener('click', function () {
+      var dados = arquivo.exportar();
+      var a = el('a');
+      a.href = URL.createObjectURL(new Blob([JSON.stringify(dados)], { type: 'application/json' }));
+      a.download = 'cofre-adamar-' + new Date().toISOString().slice(0, 10) + '.json';
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 0);
+      aviso.textContent = 'Cópia baixada com ' + dados.personagens.length + ' personagem(ns).';
+    });
+    // quanto o cofre ocupa: perto do limite do navegador, avisa
+    function mostrarEspaco() {
+      var usado = arquivo.espaco();
+      var dica = document.getElementById('p-espaco');
+      var kb = Math.round(usado / 1024);
+      var cheio = usado > 3500000;
+      dica.classList.toggle('tem-erro', cheio);
+      dica.textContent = (cheio ? 'O cofre está quase cheio (' + kb + ' KB de uns 5.000). Baixe uma cópia de todos e apague personagens antigos ou retratos grandes. ' :
+        'O cofre ocupa ' + kb + ' KB neste navegador. ') +
+        'Para não perder nada (trocar de celular, limpar o navegador), baixe uma cópia de todos de vez em quando; para restaurar, traga o arquivo aqui.';
+    }
+    mostrarEspaco();
     desenhar();
   }
 
@@ -906,7 +941,7 @@
       var sv = arquivo.obter(idFicha);
       if (!sv) return;
       mexer(sv);
-      arquivo.salvar(sv);
+      if (!arquivo.salvar(sv)) { alertaInline(SEM_ESPACO); return; }
       recalcular();
       desenharPontos();
       desenharLigadas();

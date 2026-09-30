@@ -4,12 +4,15 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import { conferirEfeito, conferirPrerequisito } from './importar-efeitos.mjs';
 
 const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
 const ARQUIVOS = ['livros', 'pericias', 'vantagens', 'desvantagens', 'regras'];
 const OPCIONAIS = ['equipamento', 'icones', 'tabela-dano'];
 const SAIDA = join(RAIZ, 'js', 'dados-gurps.js');
+// os textos longos (descrição, exemplos…) vão num arquivo à parte, carregado depois que a página abre
+const SAIDA_TEXTOS = join(RAIZ, 'js', 'dados-textos.js');
 
 const ADAMAR = ['livre', 'narrador', 'nao'];
 const TIPOS = ['mental', 'fisica', 'social', 'exotica', 'sobrenatural'];
@@ -138,13 +141,36 @@ export function validar(dados) {
   return erros;
 }
 
+// separa os textos longos de cada item: { pericias: { id: { descricao, exemplos, … } }, … }
+export function montarTextos(dados) {
+  const textos = {};
+  for (const lista of LISTAS) {
+    for (const it of (dados[lista] && dados[lista].itens) || []) {
+      const t = {};
+      for (const k of CAMPOS_ENRIQUECIMENTO) if (it[k] != null) t[k] = it[k];
+      if (Object.keys(t).length) (textos[lista] = textos[lista] || {})[it.id] = t;
+    }
+  }
+  return '// ARQUIVO GERADO por tools/gerar-dados.mjs: textos longos dos itens (carregados depois, por js/detalhes.js). Não edite à mão.\n' +
+    'window.GURPS_TEXTOS = ' + JSON.stringify(textos) + ';\n';
+}
+function semTextos(itens) {
+  return (itens || []).map((it) => {
+    const c = Object.assign({}, it);
+    for (const k of CAMPOS_ENRIQUECIMENTO) delete c[k];
+    return c;
+  });
+}
+
 export function montarJs(dados) {
   const livros = {};
   for (const l of dados.livros.itens) livros[l.id] = l;
   const GURPS = {
     livros, regras: dados.regras || null,
-    pericias: dados.pericias.itens, vantagens: dados.vantagens.itens, desvantagens: dados.desvantagens.itens,
-    equipamento: dados.equipamento ? dados.equipamento.itens : [],
+    pericias: semTextos(dados.pericias.itens), vantagens: semTextos(dados.vantagens.itens), desvantagens: semTextos(dados.desvantagens.itens),
+    equipamento: dados.equipamento ? semTextos(dados.equipamento.itens) : [],
+    // endereço do arquivo de textos, com a versão pelo conteúdo (o navegador não usa um velho do cache)
+    textos_url: 'js/dados-textos.js?v=' + createHash('sha256').update(montarTextos(dados)).digest('hex').slice(0, 8),
     adamar: dados.adamar || {},
     tabela_dano: dados['tabela-dano'] || null,
     // só o desenho: nome do ícone → miolo do SVG 24×24
@@ -219,15 +245,18 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     process.exit(1);
   }
   const js = montarJs(dados);
+  const textos = montarTextos(dados);
   if (process.argv.includes('--check')) {
     const atual = existsSync(SAIDA) ? readFileSync(SAIDA, 'utf8') : '';
-    if (atual !== js) {
+    const atualTextos = existsSync(SAIDA_TEXTOS) ? readFileSync(SAIDA_TEXTOS, 'utf8') : '';
+    if (atual !== js || atualTextos !== textos) {
       console.error('js/dados-gurps.js está desatualizado: rode node tools/gerar-dados.mjs');
       process.exit(1);
     }
     console.log('dados em dia');
   } else {
     writeFileSync(SAIDA, js);
+    writeFileSync(SAIDA_TEXTOS, textos);
     const n = (k) => dados[k].itens.length;
     const eq = dados.equipamento ? dados.equipamento.itens.length : 0;
     console.log(`js/dados-gurps.js gerado: ${n('pericias')} perícias, ${n('vantagens')} vantagens, ${n('desvantagens')} desvantagens, ${eq} itens de equipamento`);

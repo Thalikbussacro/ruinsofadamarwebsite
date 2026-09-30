@@ -44,7 +44,32 @@
       return gravar(ler().filter(function (x) { return x.id !== id; }));
     }
 
-    return { listar: listar, obter: obter, salvar: salvar, remover: remover };
+    // Cópia de segurança: todos os personagens num arquivo só.
+    function exportar(agora) {
+      return { tipo: 'adamar-cofre', versao: 1, gerado: agora || Date.now(), personagens: ler() };
+    }
+    // Restaura uma cópia: personagem novo entra; o que já existe fica com a versão mais recente.
+    // Devolve { novos, atualizados, mantidos } ou null se o arquivo não é uma cópia do cofre ou não coube.
+    function importar(copia) {
+      if (!copia || copia.tipo !== 'adamar-cofre' || !Array.isArray(copia.personagens)) return null;
+      var lista = ler();
+      var conta = { novos: 0, atualizados: 0, mantidos: 0 };
+      copia.personagens.forEach(function (reg) {
+        if (!reg || !reg.id || !reg.ficha || typeof reg.ficha !== 'object') return;
+        reg.ficha.id_salvo = reg.id;
+        var i = lista.map(function (x) { return x.id; }).indexOf(reg.id);
+        if (i === -1) { lista.push(reg); conta.novos++; }
+        else if ((reg.atualizado || 0) > (lista[i].atualizado || 0)) { lista[i] = reg; conta.atualizados++; }
+        else conta.mantidos++;
+      });
+      return gravar(lista) ? conta : null;
+    }
+    // Quanto o cofre ocupa (em caracteres; os navegadores guardam por volta de 5 milhões por site).
+    function espaco() {
+      try { return (storage.getItem(CHAVE) || '').length; } catch (e) { return 0; }
+    }
+
+    return { listar: listar, obter: obter, salvar: salvar, remover: remover, exportar: exportar, importar: importar, espaco: espaco };
   }
 
   root.criarArquivo = criarArquivo;

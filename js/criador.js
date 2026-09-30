@@ -1762,7 +1762,7 @@
     var noCofre = ficha.id_salvo && arquivo.obter(ficha.id_salvo);
     if (noCofre && noCofre.em_jogo) ficha.em_jogo = noCofre.em_jogo;
     var id = arquivo.salvar(ficha);
-    if (!id) { statusSalvo.textContent = 'Não deu para salvar (navegador sem espaço ou bloqueado).'; return; }
+    if (!id) { statusSalvo.textContent = 'Não deu para salvar: o navegador está sem espaço ou bloqueado. No cofre, baixe uma cópia de todos e apague personagens antigos ou retratos grandes.'; statusSalvo.className = 'app-status tem-erro'; return; }
     ficha.id_salvo = id;
     versaoSalva = assinatura(arquivo.obter(id));
     tentouSalvar = false;

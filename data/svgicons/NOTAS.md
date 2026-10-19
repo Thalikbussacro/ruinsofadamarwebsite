@@ -616,3 +616,110 @@ Faixas de luz: o próprio contorno deslocado (clip aninhado), então seguem a fo
 - Perfil de sapato de placas: colar do tornozelo, quatro lâminas articuladas com filete claro e rebites, bico pontudo, sola de couro.
 - Correção: perfil em cunha (parecia broca); peito do pé rebaixado.
 - Pendente: margem vertical grande.
+
+# Lote: armaduras de tronco e cabeça
+
+# Lote F1-tronco-cabeca
+
+Gerador: os SVGs saíram de um script Python (`scratchpad/f1/items.py` + `f1/lib.py`) com uma silhueta-base de tronco comum (`torso()`), padrões de malha (anéis), escamas (U por coluna clara/média/escura) e um passo final que centraliza o desenho com `translate`. Peças de tronco: vista frontal, plana, sem corpo. Grade de "guardado" da `lista.txt`.
+
+## tanga-de-pele (3 iterações)
+- Cordão de couro cru com nó e pontas soltas, faixa de pele dobrada sobre o cordão, aba da frente com barra irregular e aba de trás mais larga e escura.
+- Pendente: com 2x2 a peça fica larga e baixa; a 64 px lê como "avental de pele", não necessariamente tanga.
+
+## tunica-de-pele (1 iteração)
+- Túnica sem mangas de pele, barra irregular, poucos traços de pelo, cordão na cintura.
+- Pendente: nada relevante; é mais estreita que as outras peças 2x2.
+
+## peitoral-de-bronze (3 iterações)
+- Couraça anatômica (peitorais, linha alba, abdômen) só da frente: pescoço aberto (sem costas), alças de ombro de couro presas na frente e correias laterais soltas que viriam das costas.
+- Pendente: as correias laterais ainda lembram bracinhos à distância; o volume em faixas verticais é duro.
+
+## corselete-de-bronze (3 iterações)
+- Mesma couraça anatômica, mais larga; a placa das costas aparece escura dentro do decote (diferença para o peitoral), dobradiças laterais, e duas camadas de pteruges de couro cobrindo a virilha.
+- Pendente: ombros um pouco quadrados; os pteruges a 64 px viram uma faixa listrada.
+
+## tunica-armadura (2 iterações)
+- Gambeson de linho com costuras verticais, mangas curtas, gola enrolada e três presilhas de couro; comprimento até a coxa.
+- Pendente: nada relevante.
+
+## jaqueta-de-couro (2 iterações)
+- Jaqueta de couro natural, mangas longas afastadas do corpo, gola com lapelas e três tiras com fivela.
+- Pendente: a 64 px pode passar por casaco comum (é o que ela é).
+
+## armadura-de-couro (1 iteração)
+- Couraça de couro rígido com abas de ombro rebitadas, cinto vinho com fivela e seis faldas largas com costura tracejada.
+- Pendente: a silhueta é próxima à do corselete de bronze; a cor e o cinto separam.
+
+## armadura-de-escamas-leve (2 iterações)
+- Colete sem mangas, curto, escamas pequenas de ferro claro (coluna clara/média/escura) com bordas de couro.
+- Pendente: nada relevante.
+
+## loriga-segmentada (3 iterações)
+- Estilo romano: ombreiras em lâminas curvas sobrepostas, cintas horizontais, abertura frontal com tiras de couro e fivelas de bronze, rebites de bronze.
+- Pendente: as ombreiras ficaram "arco-íris" largas e há um vão escuro entre elas e o peito; legível, mas esquemático.
+
+## cota-de-malha-longa (3 iterações)
+- Cota até o joelho, mangas curtas, gola de couro, cinto. Tirei a fenda frontal, que fazia parecer bermuda.
+- Pendente: nada relevante.
+
+## camisa-de-cota-de-malha (2 iterações)
+- Mesma malha (anéis em fileiras, tom escuro do ferro), corpo curto até o quadril, mangas curtas, sem cinto.
+- Pendente: a diferença para a cota longa depende do comprimento e do cinto.
+
+## armadura-de-escamas (1 iteração)
+- Escamas maiores e mais escuras (médio/escuro/sombra do ferro), mangas curtas, mais longa, cinto de couro escuro.
+- Pendente: nada relevante.
+
+## peitoral-de-aco (1 iteração)
+- Peito de aço medieval: quilha central, borda enrolada no pescoço e nas cavas, lâmina de cintura; mesmas alças e correias do peitoral de bronze (só frente).
+- Pendente: quilha parece um pouco um zíper de perto.
+
+## corselete-de-aco (5 iterações)
+- Peito de aço com a placa das costas visível no decote e saia de quatro lâminas em sino (faldas) cobrindo a virilha.
+- Tentei escarcelas separadas (2 placas): pareciam bermuda; troquei por saia de lâminas.
+- Pendente: nada relevante.
+
+## armadura-de-placas-laminadas-de-aco (2 iterações)
+- Tronco todo em lâminas horizontais sobrepostas (sombra sob cada borda) com rebites nas pontas, alças de ombro.
+- Pendente: lê um pouco como regata listrada; difere da loriga por não ter ombreiras nem fivelas de bronze.
+
+## barrete-de-tecido (2 iterações)
+- Gorro acolchoado de linho com costuras em gomos, abas de orelha e cordões de amarrar.
+- Pendente: nada relevante.
+
+## barrete-de-couro (3 iterações)
+- Gorro rígido de couro em gomos com costura tracejada, aro e botão no topo. Ampliado com `scale(1.2)` (traço compensado para 6).
+- Pendente: nada relevante.
+
+## elmo-de-bronze (2 iterações)
+- Coríntio de frente: olhos amendoados ligados à fenda entre as bochechas, nasal, borda incisa.
+- Pendente: sem crista; a leitura depende do recorte em T.
+
+## celada-de-bronze (2 iterações)
+- Suposição: gorro cônico de bronze (tipo pilos), com aro e botão; só crânio. A forma alta ajuda a grade 2x3.
+- Pendente: pode ler como sino/funil fora de contexto.
+
+## elmo-de-couro (1 iteração)
+- Calota de couro em gomos, aro costurado, nasal de couro rebitado e abas de bochecha.
+- Pendente: nada relevante.
+
+## elmo-de-legionario (4 iterações)
+- Perfil 3/4 olhando para a esquerda: calota de ferro, reforço de testa em bronze, reforço cruzado, recorte da orelha, protetor de nuca largo, protetor de bochecha articulado, botão de crista.
+- Pendente: o protetor de nuca parece um pouco solto da calota; a 64 px a leitura "elmo romano" é razoável.
+
+## coifa-de-cota-de-malha (2 iterações)
+- Capuz de malha de frente, abertura do rosto com borda de couro, mantelete sobre os ombros.
+- Pendente: nada relevante.
+
+## elmo-circular (1 iteração)
+- Elmo arredondado (globo) com viseira curva de quilha central, duas fendas por lado e respiros só do lado direito, pinos da viseira, gola.
+- Pendente: nada relevante; difere do elmo-grande pelo topo redondo e pela viseira em arco.
+
+## mascara-facial-nt3 (2 iterações)
+- Máscara de ferro só do rosto, olhos amendoados, nariz em quilha, fenda da boca, duas tiras de couro com fivela de cada lado. Na 1ª versão as tiras curvas pareciam patas de inseto.
+- Pendente: expressão um pouco sinistra (inevitável numa máscara).
+
+## celada (2 iterações)
+- Salada (sallet) de aço de perfil, olhando para a esquerda: crânio com quilha e aba de nuca longa; sem viseira (só crânio).
+- Pendente: perfil largo numa grade 2x3: sobra muito espaço vertical e o ícone fica pequeno a 64 px.

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" role="img">
+  <title>Nunchaku</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- corrente curta (traço duplo por elo) -->
+    <g fill="none">
+      <ellipse cx="78.5" cy="135.9" rx="19.8" ry="10.0" transform="rotate(-92.7 78.5 135.9)" stroke="#0a0806" stroke-width="16"/>
+      <ellipse cx="78.5" cy="135.9" rx="19.8" ry="10.0" transform="rotate(-92.7 78.5 135.9)" stroke="#8a8579" stroke-width="7"/>
+      <path d="M77.4 120.6 L83.2 89.4" stroke="#0a0806" stroke-width="16.0"/>
+      <path d="M77.4 120.6 L83.2 89.4" stroke="#8a8579" stroke-width="6.0"/>
+      <ellipse cx="90.8" cy="76.3" rx="19.8" ry="10.0" transform="rotate(-58.4 90.8 76.3)" stroke="#0a0806" stroke-width="16"/>
+      <ellipse cx="90.8" cy="76.3" rx="19.8" ry="10.0" transform="rotate(-58.4 90.8 76.3)" stroke="#8a8579" stroke-width="7"/>
+      <path d="M98.6 62.2 L127.9 49.9" stroke="#0a0806" stroke-width="16.0"/>
+      <path d="M98.6 62.2 L127.9 49.9" stroke="#8a8579" stroke-width="6.0"/>
+      <ellipse cx="143.2" cy="56.2" rx="19.8" ry="10.0" transform="rotate(23.5 143.2 56.2)" stroke="#0a0806" stroke-width="16"/>
+      <ellipse cx="143.2" cy="56.2" rx="19.8" ry="10.0" transform="rotate(23.5 143.2 56.2)" stroke="#8a8579" stroke-width="7"/>
+      <path d="M157.3 63.2 L173.7 90.4" stroke="#0a0806" stroke-width="16.0"/>
+      <path d="M157.3 63.2 L173.7 90.4" stroke="#8a8579" stroke-width="6.0"/>
+      <ellipse cx="175.8" cy="105.8" rx="19.8" ry="10.0" transform="rotate(80.0 175.8 105.8)" stroke="#0a0806" stroke-width="16"/>
+      <ellipse cx="175.8" cy="105.8" rx="19.8" ry="10.0" transform="rotate(80.0 175.8 105.8)" stroke="#8a8579" stroke-width="7"/>
+      <path d="M178.3 120.9 L176.6 152.6" stroke="#0a0806" stroke-width="16.0"/>
+      <path d="M178.3 120.9 L176.6 152.6" stroke="#8a8579" stroke-width="6.0"/>
+    </g>
+    <!-- clavas de madeira com ponteira de ferro -->
+    <g transform="rotate(2 80 312)">
+      <rect x="57" y="152" width="46" height="320" rx="14" fill="#7a5a3a"/>
+      <path d="M68 192 V458" fill="none" stroke="#9a7448" stroke-width="8"/>
+      <path d="M92 192 V458" fill="none" stroke="#55391f" stroke-width="6"/>
+      <path d="M57 372 H103 M57 412 H103" fill="none" stroke-width="4"/>
+      <rect x="55" y="148" width="50" height="36" rx="10" fill="#8a8579"/>
+      <path d="M65 156 V176" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+      <path d="M95 156 V176" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    </g>
+    <g transform="rotate(-2 176 312)">
+      <rect x="153" y="152" width="46" height="320" rx="14" fill="#7a5a3a"/>
+      <path d="M164 192 V458" fill="none" stroke="#9a7448" stroke-width="8"/>
+      <path d="M188 192 V458" fill="none" stroke="#55391f" stroke-width="6"/>
+      <path d="M153 372 H199 M153 412 H199" fill="none" stroke-width="4"/>
+      <rect x="151" y="148" width="50" height="36" rx="10" fill="#8a8579"/>
+      <path d="M161 156 V176" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+      <path d="M191 156 V176" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    </g>
+  </g>
+</svg>

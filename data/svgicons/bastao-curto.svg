@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171 512" role="img">
+  <title>Bastão curto</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- haste de madeira -->
+    <rect x="65" y="50" width="40" height="412" rx="12" fill="#7a5a3a"/>
+    <path d="M75 80 V430" fill="none" stroke="#9a7448" stroke-width="8"/>
+    <path d="M97 80 V430" fill="none" stroke="#55391f" stroke-width="6"/>
+    <!-- empunhadura de couro -->
+    <rect x="62" y="318" width="46" height="96" rx="8" fill="#6b2a24"/>
+    <path d="M71 326 V406" fill="none" stroke="#8a3a32" stroke-width="5"/>
+    <path d="M62 340 L108 328 M62 364 L108 352 M62 388 L108 376 M62 412 L108 400" fill="none" stroke-width="4"/>
+    <!-- ponteiras de ferro -->
+    <rect x="61" y="42" width="48" height="36" rx="10" fill="#8a8579"/>
+    <path d="M70 50 V70" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M100 50 V70" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    <rect x="61" y="434" width="48" height="36" rx="10" fill="#8a8579"/>
+    <path d="M70 442 V462" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M100 442 V462" fill="none" stroke="#5f5b52" stroke-width="5"/>
+  </g>
+</svg>

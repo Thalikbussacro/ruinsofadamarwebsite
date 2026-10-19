@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 512" role="img">
+  <title>Faca</title>
+  <defs>
+    <path id="lamina" d="M150 276 V104 Q150 70 140 44 Q104 98 100 176 L104 276 Z"/>
+    <clipPath id="c-lamina"><use xlink:href="#lamina"/></clipPath>
+  </defs>
+  <g transform="translate(3 0)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- lâmina de um gume -->
+    <use xlink:href="#lamina" fill="#8a8579"/>
+    <g clip-path="url(#c-lamina)" stroke="none">
+      <path d="M90 40 H130 L120 280 H90 Z" fill="#b5ae9c"/>
+    </g>
+    <use xlink:href="#lamina" fill="none"/>
+    <!-- cabo de madeira -->
+    <path d="M100 276 H154 L156 446 Q156 468 134 468 H120 Q98 468 98 446 Z" fill="#7a5a3a"/>
+    <path d="M110 286 V452" fill="none" stroke="#9a7448" stroke-width="8"/>
+    <path d="M145 286 V452" fill="none" stroke="#55391f" stroke-width="6"/>
+    <path d="M100 276 H154 L156 446 Q156 468 134 468 H120 Q98 468 98 446 Z" fill="none"/>
+    <circle cx="127" cy="320" r="7" fill="#8a8579" stroke-width="4"/>
+    <circle cx="127" cy="420" r="7" fill="#8a8579" stroke-width="4"/>
+  </g>
+</svg>

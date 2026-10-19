@@ -355,3 +355,76 @@ Observação: `stroke-dasharray` em paths longos (polilinhas) não aparece no ca
 ## correia-de-couro (1 iteração)
 - Laço de couro vinho com passador, preso à ponteira de ferro de um cabo de madeira curto (contexto mínimo, sem cabeça de arma).
 - Pendente: o cabo pode ser lido como cabo de ferramenta genérica.
+
+# Lote: lâminas, porretes e armas flexíveis
+
+# Lote A-laminas
+
+Aviso geral: o cairosvg (render.py) parece herdar `stroke-linecap="round"` do `<g>` pai mesmo quando o filho declara `butt` (traços tracejados viram bolinhas, emendas mostram arcos). Para corda/corrente com `butt` ou dasharray, colocar fora de um `<g>` com linecap round. Gerador de corrente (elos alternando plano/de lado ao longo de cúbicas): `scratchpad/alam/chain.py` (+ `nunchaku.py`, `kusari.py`).
+
+## espada-larga (1 iteração)
+- 128x512. Lâmina reta 26 de largura, ponta em ogiva, empunhadura curta (uma mão), pomo redondo.
+- Pendente: nada relevante; a diferença para a bastarda é só a proporção cabo/lâmina e o pomo.
+
+## espada-bastarda (1 iteração)
+- 102x512. Empunhadura ~40% mais longa (mão e meia, 5 voltas), pomo em pera.
+- Pendente: a 64 px é difícil distinguir da espada larga (esperado: são parecidas).
+
+## katana (2 iterações)
+- Lâmina curva com fio à esquerda (convexo), linha do shinogi, habaki dourado, tsuba como elipse escura, cabo vinho com amarração em losangos, kashira de ferro.
+- Pendente: nada relevante.
+
+## espada-curta (1 iteração)
+- 171x512. Lâmina larga (44) com ponta longa estilo gládio, guarda curta, pomo grande ovalado.
+- Pendente: nada relevante.
+
+## facao (2 iterações)
+- Lâmina larga de um gume, barriga larga perto da ponta, dorso reto escuro à direita, reforço de ferro, cabo de madeira com 2 rebites.
+- Pendente: nada relevante.
+
+## faca (1 iteração)
+- Faca comum: lâmina de um gume, cabo de madeira longo com 2 rebites, sem guarda.
+- Pendente: formato próximo ao facão; diferença pela proporção (cabo ≈ lâmina) e lâmina mais estreita.
+
+## adaga (3 iterações)
+- Lâmina triangular simétrica de dois gumes com nervura central (metade clara/metade média), guarda pequena, cabo vinho, pomo. Iterações só de largura e centralização.
+- Pendente: nada relevante.
+
+## estaca-de-madeira (3 iterações)
+- Galho grosso, irregular, com toco de galho cortado ao lado, ponta talhada em facetas de madeira crua. Tons de madeira crua derivados: #c4a070 / #a88456 / #86663e.
+- Primeira versão parecia lápis; o toco e o contorno irregular resolveram.
+- Pendente: nada relevante.
+
+## cassetete (3 iterações)
+- Porrete de couro recheado: cabeça em gota, costura de borda com pontos, amarração vinho no pescoço, cabo e alça de pulso (traço duplo). Couro escuro derivado: #7a6450 / #5c4836 / #3f3125 (o couro natural lia como madeira/colher).
+- Pendente: nada relevante.
+
+## porrete (1 iteração)
+- Clava de madeira afinando para o cabo, dois nós, tira de couro vinho enrolada na empunhadura (traço duplo).
+- Pendente: os nós lembram furos de leve.
+
+## bastao-curto (1 iteração)
+- Haste reta de madeira com ponteiras de ferro nas duas pontas e empunhadura de couro.
+- Pendente: nada relevante.
+
+## soco-ingles (3 iterações)
+- Sem grade: 512x341. Ferro forjado com 4 anéis, barra de palma e cravos piramidais (toque medieval).
+- Tirei rebites da barra (com o vão curvo parecia rosto sorrindo); vão agora retangular.
+- Pendente: a forma é a clássica de soco inglês; medieval só pelo ferro e cravos.
+
+## garrote (5 iterações)
+- Corda com dois cabos de madeira, formando laço cruzado (perna esquerda por cima). Corda com tracejado de torção como em corda-3-4.
+- Iterações para limpar a emenda do cruzamento (ver aviso do linecap no cairosvg).
+- Pendente: nada relevante.
+
+## chicote (4 iterações)
+- Cabo vinho trançado na diagonal inferior esquerda; trança de couro natural em espiral (volta interna por cima), ponta fina pendendo.
+- Pendente: a passagem da trança grossa para a ponta fina é abrupta.
+
+## nunchaku (2 iterações)
+- Duas clavas de madeira quase paralelas com ponteiras de ferro, corrente curta em arco no topo.
+- Pendente: nada relevante.
+
+## kusari (3 iterações)
+- Corrente em S com peso octogonal grande na ponta de baixo (pendurado por argola) e peso menor em barra na outra ponta (kusari-fundo).
+- Pendente: a 64 px os elos ficam finos; lê como corrente, mas sem detalhe.

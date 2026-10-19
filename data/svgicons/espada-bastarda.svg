@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 512" role="img">
+  <title>Espada bastarda</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- lâmina -->
+    <path d="M40 316 V104 Q40 66 51 38 Q62 66 62 104 V316 Z" fill="#8a8579"/>
+    <path d="M40 316 V104 Q40 66 51 38 V316 Z" fill="#b5ae9c" stroke="none"/>
+    <path d="M40 316 V104 Q40 66 51 38 Q62 66 62 104 V316 Z" fill="none"/>
+    <path d="M51 96 V300" fill="none" stroke="#5f5b52" stroke-width="4"/>
+    <!-- guarda -->
+    <rect x="11" y="312" width="80" height="16" rx="7" fill="#8a8579"/>
+    <path d="M18 317 H40" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+    <!-- empunhadura de mão e meia -->
+    <rect x="42" y="328" width="18" height="114" rx="5" fill="#6b2a24"/>
+    <path d="M47 334 V436" fill="none" stroke="#8a3a32" stroke-width="4"/>
+    <path d="M42 352 L60 344 M42 374 L60 366 M42 396 L60 388 M42 418 L60 410 M42 440 L60 432" fill="none" stroke-width="3.5"/>
+    <!-- pomo em pera -->
+    <path d="M51 442 Q67 446 66 460 Q64 474 51 474 Q38 474 36 460 Q35 446 51 442 Z" fill="#8a8579"/>
+    <path d="M42 458 Q43 450 50 448" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Garrote</title>
+  <!-- corda cruzada formando o laço (traço duplo); o trecho da esquerda passa por cima -->
+  <g fill="none" stroke="#0a0806" stroke-linejoin="round">
+      <path d="M256 79.5 C195.5 79.5 135 97 128 132 C108 236 364 250 364 398" stroke-width="30" stroke-linecap="butt"/>
+      <path d="M256 79.5 C195.5 79.5 135 97 128 132 C108 236 364 250 364 398" stroke="#b5a98a" stroke-width="18" stroke-linecap="butt"/>
+      <path d="M256 79.5 C195.5 79.5 135 97 128 132 C108 236 364 250 364 398" stroke="#8f8468" stroke-width="18" stroke-dasharray="4 14" stroke-linecap="butt"/>
+      <path d="M136 112 Q156 80 200 74" stroke="#d8cdb0" stroke-width="5" stroke-linecap="round"/>
+      <path d="M148 398 C148 250 404 236 384 132 C377 97 316.5 79.5 256 79.5" stroke-width="30" stroke-linecap="butt"/>
+      <path d="M148 398 C148 250 404 236 384 132 C377 97 316.5 79.5 256 79.5" stroke="#b5a98a" stroke-width="18" stroke-linecap="butt"/>
+      <path d="M148 398 C148 250 404 236 384 132 C377 97 316.5 79.5 256 79.5" stroke="#8f8468" stroke-width="18" stroke-dasharray="4 14" stroke-linecap="butt"/>
+      <path d="M162 330 Q200 268 280 238" stroke="#d8cdb0" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabos de madeira -->
+    <rect x="86" y="396" width="124" height="38" rx="16" fill="#7a5a3a"/>
+    <path d="M100 405 H170" fill="none" stroke="#9a7448" stroke-width="7"/>
+    <path d="M120 426 H196" fill="none" stroke="#55391f" stroke-width="5"/>
+    <rect x="302" y="396" width="124" height="38" rx="16" fill="#7a5a3a"/>
+    <path d="M316 405 H386" fill="none" stroke="#9a7448" stroke-width="7"/>
+    <path d="M336 426 H412" fill="none" stroke="#55391f" stroke-width="5"/>
+    <!-- amarração da corda no cabo -->
+    <rect x="136" y="390" width="24" height="50" rx="6" fill="#b5a98a"/>
+    <rect x="352" y="390" width="24" height="50" rx="6" fill="#b5a98a"/>
+  </g>
+</svg>

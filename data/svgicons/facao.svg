@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 171 512" role="img">
+  <title>Facão</title>
+  <defs>
+    <path id="lamina" d="M114 318 V78 Q114 50 102 42 Q56 52 42 118 Q38 140 44 160 L70 318 Z"/>
+    <clipPath id="c-lamina"><use xlink:href="#lamina"/></clipPath>
+  </defs>
+  <g transform="translate(4 8)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- lâmina larga de um gume (fio à esquerda, dorso à direita) -->
+    <use xlink:href="#lamina" fill="#8a8579"/>
+    <g clip-path="url(#c-lamina)" stroke="none">
+      <path d="M30 30 H70 L80 330 H30 Z" fill="#b5ae9c"/>
+      <rect x="100" y="30" width="20" height="300" fill="#5f5b52"/>
+    </g>
+    <use xlink:href="#lamina" fill="none"/>
+    <!-- reforço -->
+    <rect x="66" y="314" width="52" height="18" rx="6" fill="#8a8579"/>
+    <path d="M73 320 H90" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+    <!-- cabo de madeira -->
+    <path d="M72 332 H114 L116 432 Q116 456 96 456 H88 Q70 456 70 440 Z" fill="#7a5a3a"/>
+    <path d="M81 340 L80 444" fill="none" stroke="#9a7448" stroke-width="7"/>
+    <path d="M106 340 L108 440" fill="none" stroke="#55391f" stroke-width="5"/>
+    <path d="M72 332 H114 L116 432 Q116 456 96 456 H88 Q70 456 70 440 Z" fill="none"/>
+    <circle cx="93" cy="362" r="6" fill="#8a8579" stroke-width="3.5"/>
+    <circle cx="93" cy="420" r="6" fill="#8a8579" stroke-width="3.5"/>
+  </g>
+</svg>

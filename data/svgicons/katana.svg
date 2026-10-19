@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 102 512" role="img">
+  <title>Katana</title>
+  <defs>
+    <path id="lamina" d="M35 330 Q26 170 50 82 Q60 56 74 38 Q57 170 59 330 Z"/>
+    <clipPath id="c-lamina"><use xlink:href="#lamina"/></clipPath>
+    <path id="cabo" d="M38 350 H58 L61 454 H41 Z"/>
+    <clipPath id="c-cabo"><use xlink:href="#cabo"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- lâmina curva, fio à esquerda -->
+    <use xlink:href="#lamina" fill="#8a8579"/>
+    <g clip-path="url(#c-lamina)" stroke="none">
+      <path d="M10 340 Q14 170 50 50 L54 50 Q38 170 44 340 Z" fill="#b5ae9c"/>
+    </g>
+    <path d="M53 322 Q48 180 62 80" fill="none" stroke="#5f5b52" stroke-width="3.5"/>
+    <use xlink:href="#lamina" fill="none"/>
+    <!-- habaki -->
+    <rect x="34" y="320" width="27" height="14" rx="3" fill="#c9a45c"/>
+    <!-- tsuba redonda -->
+    <ellipse cx="48" cy="342" rx="27" ry="10" fill="#5f5b52"/>
+    <path d="M28 340 Q36 334 48 334" fill="none" stroke="#8a8579" stroke-width="4"/>
+    <!-- empunhadura com amarração -->
+    <use xlink:href="#cabo" fill="#8a3a32"/>
+    <g clip-path="url(#c-cabo)" stroke="#4a1b17" stroke-width="7" fill="none">
+      <path d="M34 352 L64 378 L34 404 L64 430 L34 456"/>
+      <path d="M64 352 L34 378 L64 404 L34 430 L64 456"/>
+    </g>
+    <use xlink:href="#cabo" fill="none"/>
+    <!-- kashira -->
+    <rect x="39" y="452" width="24" height="16" rx="6" fill="#5f5b52"/>
+    <path d="M44 458 H52" fill="none" stroke="#8a8579" stroke-width="3.5"/>
+  </g>
+</svg>

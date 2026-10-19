@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Tambor</title>
+  <defs>
+    <path id="corpo" d="M96 166 V386 A160 46 0 0 0 416 386 V166 Z"/>
+    <clipPath id="c-corpo"><use xlink:href="#corpo"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <use xlink:href="#corpo" fill="#7a5a3a"/>
+    <g clip-path="url(#c-corpo)" stroke="none">
+      <rect x="90" y="100" width="56" height="400" fill="#9a7448"/>
+      <rect x="360" y="100" width="60" height="400" fill="#55391f"/>
+    </g>
+    <use xlink:href="#corpo" fill="none"/>
+    <!-- cordas tensoras -->
+    <path d="M415 196 L405 382 L387 216 L362 401 L330 231 L294 411 L256 236 L218 411 L182 231 L150 401 L125 216 L107 382 L97 196" fill="none" stroke-width="13"/>
+    <path d="M415 196 L405 382 L387 216 L362 401 L330 231 L294 411 L256 236 L218 411 L182 231 L150 401 L125 216 L107 382 L97 196" fill="none" stroke="#d8cdb0" stroke-width="5"/>
+    <!-- aros -->
+    <path d="M96 170 A160 46 0 0 0 416 170" fill="none" stroke-width="30"/>
+    <path d="M96 170 A160 46 0 0 0 416 170" fill="none" stroke="#55391f" stroke-width="18"/>
+    <path d="M98 170 A158 44 0 0 0 200 212" fill="none" stroke="#7a5a3a" stroke-width="6"/>
+    <path d="M96 380 A160 46 0 0 0 416 380" fill="none" stroke-width="30"/>
+    <path d="M96 380 A160 46 0 0 0 416 380" fill="none" stroke="#55391f" stroke-width="18"/>
+    <path d="M98 380 A158 44 0 0 0 200 422" fill="none" stroke="#7a5a3a" stroke-width="6"/>
+    <!-- pele -->
+    <ellipse cx="256" cy="166" rx="160" ry="46" fill="#b5a98a"/>
+    <ellipse cx="236" cy="158" rx="110" ry="26" fill="#d8cdb0" stroke="none"/>
+    <ellipse cx="256" cy="166" rx="160" ry="46" fill="none"/>
+    <!-- baquetas -->
+    <path d="M150 182 L362 64" fill="none" stroke-width="22"/>
+    <path d="M150 182 L362 64" fill="none" stroke="#7a5a3a" stroke-width="10"/>
+    <circle cx="364" cy="62" r="16" fill="#9a7448"/>
+    <path d="M196 70 L376 178" fill="none" stroke-width="22"/>
+    <path d="M196 70 L376 178" fill="none" stroke="#9a7448" stroke-width="10"/>
+    <circle cx="192" cy="68" r="16" fill="#9a7448"/>
+  </g>
+</svg>

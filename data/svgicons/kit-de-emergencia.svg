@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 341" role="img">
+  <title>Kit de emergência</title>
+  <defs>
+    <g id="frasco">
+      <path d="M-14 -70 H14 V-52 Q38 -42 38 -14 V30 H-38 V-14 Q-38 -42 -14 -52 Z" fill="#8c5c40"/>
+      <path d="M-30 -24 Q-26 -40 -14 -46 V30 H-30 Z" fill="#b07a58" stroke="none"/>
+      <path d="M20 -42 Q32 -32 32 -14 V30 H20 Z" fill="#64402c" stroke="none"/>
+      <path d="M-14 -70 H14 V-52 Q38 -42 38 -14 V30 H-38 V-14 Q-38 -42 -14 -52 Z" fill="none"/>
+      <rect x="-18" y="-86" width="36" height="22" rx="6" fill="#9a7448"/>
+    </g>
+    <g id="rolo">
+      <circle r="38" fill="#b5a98a"/>
+      <path d="M-30 -14 A32 32 0 0 1 10 -32" fill="none" stroke="#d8cdb0" stroke-width="7"/>
+      <path d="M0 0 m-5 0 a5 5 0 1 1 10 0 a12 12 0 1 1 -24 0 a20 20 0 1 1 40 0" fill="none" stroke="#8f8468" stroke-width="4"/>
+    </g>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- tampa aberta -->
+    <path d="M78 190 L96 50 Q98 38 112 38 H400 Q414 38 416 50 L434 190 Z" fill="#55391f"/>
+    <path d="M106 60 H406" fill="none" stroke="#7a5a3a" stroke-width="6"/>
+    <path d="M96 96 H416" fill="none" stroke-width="4"/>
+    <!-- conteúdo -->
+    <use xlink:href="#rolo" transform="translate(140 176)"/>
+    <use xlink:href="#rolo" transform="translate(214 184)"/>
+    <use xlink:href="#frasco" transform="translate(298 178)"/>
+    <use xlink:href="#frasco" transform="translate(364 190) scale(0.8)"/>
+    <!-- faca pequena -->
+    <path d="M396 200 L414 96 Q420 86 424 98 L416 204 Z" fill="#b5ae9c"/>
+    <path d="M406 196 L418 104" fill="none" stroke="#8a8579" stroke-width="4"/>
+    <!-- caixa -->
+    <rect x="64" y="196" width="384" height="110" rx="10" fill="#7a5a3a"/>
+    <path d="M74 208 H438" fill="none" stroke="#9a7448" stroke-width="8"/>
+    <path d="M74 296 H438" fill="none" stroke="#55391f" stroke-width="7"/>
+    <path d="M70 252 H442" fill="none" stroke-width="4"/>
+    <!-- cantoneiras e fecho de ferro -->
+    <g fill="#8a8579">
+      <path d="M64 232 V206 Q64 196 74 196 H110 V216 H86 V232 Z"/>
+      <path d="M448 232 V206 Q448 196 438 196 H402 V216 H426 V232 Z"/>
+      <path d="M64 270 V296 Q64 306 74 306 H110 V286 H86 V270 Z"/>
+      <path d="M448 270 V296 Q448 306 438 306 H402 V286 H426 V270 Z"/>
+      <rect x="236" y="196" width="40" height="46" rx="6"/>
+    </g>
+    <circle cx="256" cy="224" r="6" fill="#0a0806" stroke="none"/>
+  </g>
+</svg>

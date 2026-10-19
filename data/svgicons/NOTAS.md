@@ -132,3 +132,115 @@ Cabeça/pescoço: 512x512, perfil virado para a direita, com o pescoço cortado 
 ## barda-perneiras-placas (4 iterações)
 - Placas nas quatro canelas (as do lado oposto mais escuras), cada uma com junta na altura do joelho ou jarrete; os cascos ficam à mostra.
 - Pendente: as placas são pequenas no ícone inteiro; em 64 px leem como "pernas cinza".
+
+# Lote: ferramentas, kits e montaria
+
+# Lote E-ferramentas
+
+## kit-de-escriba (2 iterações)
+- Pergaminho com rolos, tinteiro de cerâmica e pena de ganso enfiada no tinteiro.
+- Pendente: nada relevante.
+
+## tablete-de-cera (2 iterações)
+- Díptico de madeira com cera (paleta cera/sebo), riscos ondulados (não é texto) e estilete de ferro.
+- Pendente: nada relevante.
+
+## tambor (1 iteração)
+- Caixa de madeira, pele de linho claro, aros escuros, cordas tensoras em zigue-zague, duas baquetas cruzadas.
+- Pendente: nada relevante.
+
+## alforjes (1 iteração)
+- Par de bolsas de couro natural com aba e fivela, unidas por faixa no alto. viewBox 512x384.
+- Pendente: nada relevante.
+
+## bridao-e-redea (1 iteração)
+- Freio articulado de ferro com duas argolas e rédea de couro em laço.
+- Pendente: nada relevante.
+
+## esporas (2 iterações)
+- Uma espora de roseta vista de cima (arco do calcanhar, pescoço, roseta de 8 pontas, correia vinho). Mostrei uma só para legibilidade.
+- Pendente: a roseta fica fina no 64 px.
+
+## estribos (2 iterações)
+- Par de estribos de ferro com loro de couro e fivela, em alturas diferentes.
+- Pendente: nada relevante.
+
+## ferraduras (2 iterações)
+- Par de ferraduras sobrepostas com furos de cravo. Tirei os cravos soltos (pareciam lixo).
+- Pendente: nada relevante.
+
+## sela-de-combate (2 iterações)
+- Mesma base da sela comum, com arções altos e curvos na frente e atrás, reforçados com ferro; manta de lã, cilha, estribo. viewBox 512x384.
+- Pendente: arções lembram um pouco "chifres"; aceitável.
+
+## sela-e-arreios (2 iterações)
+- Sela baixa de couro, manta, cilha, aba e estribo. viewBox 512x384.
+- Pendente: "arreios" representados só pela cilha e loro.
+
+## gazuas (1 iteração)
+- Argola de ferro com quatro gazuas de pontas diferentes.
+- Pendente: pode ser lido como molho de chaves finas.
+
+## bandagens (3 iterações)
+- Dois rolos de linho empilhados (espiral no topo) e uma faixa desenrolada.
+- Pendente: rolos podem lembrar latas/queijos no 64 px.
+
+## instrumentos-cirurgicos (3 iterações)
+- Estojo de couro com bolsos e bisturi, pinça, serra de osso e sonda com gancho.
+- Pendente: instrumentos pequenos no 64 px; o estojo domina.
+
+## kit-de-emergencia (2 iterações)
+- Baú de madeira aberto (cantoneiras de ferro) com rolos de pano, dois frascos de cerâmica e faca. viewBox 512x341. Sem cruz.
+- Pendente: nada relevante.
+
+## kit-de-primeiros-socorros (2 iterações)
+- Bolsa de couro aberta com rolo de pano e frasco de cerâmica. Sem cruz.
+- Pendente: nada relevante.
+
+## agulhas-de-tricot (2 iterações)
+- Novelo de lã (tecido escuro/lã) com duas agulhas de madeira cruzadas e ponta de fio solta.
+- Pendente: nada relevante.
+
+## arado-de-ferro (1 iteração)
+- Vista lateral; timão, rabiça e sola de madeira; relha, aiveca e sega (faca) de ferro. viewBox 512x341.
+- Pendente: no 64 px é pequeno, mas a silhueta lê.
+
+## arado-de-madeira (1 iteração)
+- Mesmo arado, só madeira, relha de madeira simples amarrada com corda.
+- Pendente: relha pequena no 64 px.
+
+## balanca-e-pesos (2 iterações)
+- Balança de pratos em bronze com coluna, travessão, correntes e pilha de pesos de ferro; base de madeira.
+- Pendente: nada relevante.
+
+## caixa-de-ferramentas-portatil (1 iteração)
+- Caixa de madeira com alça central, martelo e formão saindo.
+- Pendente: nada relevante.
+
+## carrinho-de-mao (2 iterações)
+- Carrinho medieval de madeira, roda de raios de madeira, caixa de tábuas, varais e perna. viewBox 512x341.
+- Pendente: nada relevante.
+
+## laboratorio-portatil (2 iterações)
+- Caixa de madeira aberta com alambique de bronze, frasco recebedor e frasco alto de cerâmica, almofariz e pilão de pedra na frente.
+- Pendente: nada relevante.
+
+## pa (2 iterações)
+- Pá com punho em D, diagonal 45° com lâmina no alto à direita (ferramenta longa sem grade).
+- Pendente: nada relevante.
+
+## pe-de-cabra-1m (2 iterações)
+- Barra de ferro em pé, pescoço de ganso no alto com unha fendida, ponta inferior achatada dobrada.
+- Pendente: lembra um pouco uma bengala de ferro.
+
+## picareta-equipamento (2 iterações)
+- Em pé, cabo de madeira, cabeça de ferro com ponta curva à esquerda e enxó larga à direita.
+- Pendente: nada relevante.
+
+## roca-de-tear (2 iterações)
+- Roda de fiar grande sobre banco de três pernas, correia até o fuso com fio enrolado.
+- Pendente: cabeçote do fuso pequeno.
+
+## serra (1 iteração)
+- Serra traçadora de lenhador em pé, dentes à direita, cabos de madeira nas duas pontas.
+- Pendente: cabos parecem "rolinhos" no 512, mas a leitura no 64 é boa.

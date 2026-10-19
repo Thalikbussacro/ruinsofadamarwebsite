@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 512" role="img">
+  <title>Bandagens</title>
+  <defs>
+    <path id="rolo" d="M-84 0 V84 A84 28 0 0 0 84 84 V0 Z"/>
+    <clipPath id="c-rolo"><use xlink:href="#rolo"/></clipPath>
+    <g id="r">
+      <use xlink:href="#rolo" fill="#b5a98a"/>
+      <g clip-path="url(#c-rolo)" stroke="none">
+        <rect x="-90" y="-10" width="44" height="140" fill="#d8cdb0"/>
+        <rect x="50" y="-10" width="40" height="140" fill="#8f8468"/>
+      </g>
+      <use xlink:href="#rolo" fill="none"/>
+      <path d="M-80 42 A84 28 0 0 0 80 42" fill="none" stroke="#8f8468" stroke-width="4"/>
+      <ellipse cx="0" cy="0" rx="84" ry="28" fill="#d8cdb0"/>
+      <path d="M0 0 m-10 0 a10 4 0 1 1 20 0 a20 8 0 1 1 -40 0 a32 12 0 1 1 64 0 a46 17 0 1 1 -92 0 a60 22 0 1 1 120 0" fill="none" stroke="#8f8468" stroke-width="4"/>
+    </g>
+  </defs>
+  <g transform="translate(0 -30)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- faixa desenrolada -->
+    <path d="M200 330 Q214 380 170 410 Q130 440 186 476 L150 488 Q96 446 136 404 Q170 380 160 340 Z" fill="#b5a98a"/>
+    <path d="M200 330 Q214 380 170 410 L150 400 Q176 376 160 340 Z" fill="#d8cdb0" stroke="none"/>
+    <path d="M200 330 Q214 380 170 410 Q130 440 186 476 L150 488 Q96 446 136 404 Q170 380 160 340 Z" fill="none"/>
+    <use xlink:href="#r" transform="translate(128 236)"/>
+    <use xlink:href="#r" transform="translate(128 114) scale(0.86)"/>
+  </g>
+</svg>

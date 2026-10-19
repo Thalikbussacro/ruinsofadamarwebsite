@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Balança e pesos</title>
+  <g transform="translate(24 0)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- base e coluna -->
+    <path d="M150 438 L170 404 H286 L306 438 Z" fill="#7a5a3a"/>
+    <path d="M160 432 L176 410" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <rect x="216" y="112" width="24" height="296" rx="6" fill="#9a7a46"/>
+    <path d="M223 122 V398" fill="none" stroke="#c4a066" stroke-width="5"/>
+    <!-- correntes -->
+    <path d="M70 130 L42 290 M70 130 L98 290 M386 130 L358 290 M386 130 L414 290" fill="none" stroke-width="11"/>
+    <path d="M70 130 L42 290 M70 130 L98 290 M386 130 L358 290 M386 130 L414 290" fill="none" stroke="#9a7a46" stroke-width="4"/>
+    <!-- travessão -->
+    <rect x="56" y="114" width="344" height="24" rx="10" fill="#9a7a46"/>
+    <path d="M66 121 H390" fill="none" stroke="#c4a066" stroke-width="5"/>
+    <circle cx="228" cy="126" r="16" fill="#c4a066"/>
+    <path d="M228 108 L218 70 H238 Z" fill="#9a7a46"/>
+    <!-- pratos -->
+    <path d="M22 290 H118 Q112 330 70 330 Q28 330 22 290 Z" fill="#9a7a46"/>
+    <path d="M34 298 Q46 320 66 322" fill="none" stroke="#c4a066" stroke-width="5"/>
+    <path d="M338 290 H434 Q428 330 386 330 Q344 330 338 290 Z" fill="#9a7a46"/>
+    <path d="M350 298 Q362 320 382 322" fill="none" stroke="#c4a066" stroke-width="5"/>
+    <!-- pesos -->
+    <path d="M330 440 V400 Q330 390 346 390 H426 Q442 390 442 400 V440 Z" fill="#8a8579"/>
+    <path d="M338 400 V432" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M346 390 V376 Q346 366 360 366 H412 Q426 366 426 376 V390" fill="#8a8579"/>
+    <path d="M362 368 V344 Q362 336 374 336 H398 Q410 336 410 344 V366" fill="#8a8579"/>
+    <path d="M372 344 V360 M354 376 V386" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+  </g>
+</svg>

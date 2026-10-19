@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 341" role="img">
+  <title>Arado de ferro</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- rabiça (cabo traseiro) -->
+    <path d="M372 270 L444 74 L478 66" fill="none" stroke-width="30"/>
+    <path d="M372 270 L444 74 L478 66" fill="none" stroke="#7a5a3a" stroke-width="18"/>
+
+    <path d="M366 262 L436 76" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <!-- montante -->
+    <path d="M268 168 L268 270" fill="none" stroke-width="30"/>
+    <path d="M268 168 L268 270" fill="none" stroke="#7a5a3a" stroke-width="18"/>
+
+    <path d="M263 176 V262" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <!-- timão -->
+    <path d="M42 112 Q210 124 400 200" fill="none" stroke-width="34"/>
+    <path d="M42 112 Q210 124 400 200" fill="none" stroke="#7a5a3a" stroke-width="22"/>
+
+    <path d="M44 103 Q210 114 396 189" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <path d="M48 120 Q210 132 392 206" fill="none" stroke="#55391f" stroke-width="4"/>
+    <!-- cavilha de engate -->
+    <rect x="34" y="84" width="16" height="56" rx="6" fill="#55391f"/>
+    <!-- sola / dente -->
+    <path d="M190 274 H392" fill="none" stroke-width="34"/>
+    <path d="M190 274 H392" fill="none" stroke="#7a5a3a" stroke-width="22"/>
+
+    <path d="M194 266 H386" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <!-- sega (faca) -->
+    <path d="M196 116 L210 120 L184 252 L170 248 Z" fill="#8a8579"/>
+    <path d="M198 124 L176 244" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+    <!-- aiveca de ferro -->
+    <path d="M196 284 Q218 220 300 214 L310 222 Q256 236 252 290 Z" fill="#8a8579"/>
+    <path d="M204 270 Q228 226 296 218" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M252 290 Q256 244 300 224" fill="none" stroke="#5f5b52" stroke-width="4"/>
+    <!-- relha de ferro -->
+    <path d="M100 298 Q160 266 214 258 L222 296 Q160 300 100 298 Z" fill="#8a8579"/>
+    <path d="M110 294 Q160 270 212 264" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M140 297 Q180 298 218 292" fill="none" stroke="#5f5b52" stroke-width="4"/>
+    <circle cx="198" cy="280" r="4" fill="#5f5b52" stroke-width="3.5"/>
+  </g>
+</svg>

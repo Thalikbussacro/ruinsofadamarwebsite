@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" role="img">
+  <title>Pé-de-cabra, 1 m</title>
+  <g stroke="#0a0806" stroke-linejoin="round" stroke-linecap="round" fill="none">
+    <!-- barra -->
+    <path d="M70 460 L70 112 Q70 58 48 52 Q32 50 30 66" stroke-width="32"/>
+    <path d="M70 460 L70 112 Q70 58 48 52 Q32 50 30 66" stroke="#8a8579" stroke-width="20"/>
+    <!-- unha achatada com fenda -->
+    <path d="M18 66 L44 64 L40 96 L31 88 L22 96 Z" fill="#5f5b52" stroke-width="6"/>
+    <path d="M64 440 L64 112 Q64 72 50 62 Q40 58 36 62" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M77 450 L77 112" stroke="#5f5b52" stroke-width="5"/>
+    <!-- ponta achatada inferior, dobrada -->
+    <path d="M70 448 Q72 470 88 478" stroke-width="32"/>
+    <path d="M70 448 Q72 470 88 478" stroke="#8a8579" stroke-width="20"/>
+    <path d="M65 450 Q68 466 80 474" stroke="#b5ae9c" stroke-width="5"/>
+  </g>
+</svg>

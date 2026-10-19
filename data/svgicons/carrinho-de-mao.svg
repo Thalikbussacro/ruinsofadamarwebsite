@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 341" role="img">
+  <title>Carrinho de mão</title>
+  <g transform="translate(0 -50)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- varais -->
+    <path d="M104 252 L480 160" fill="none" stroke-width="30"/>
+    <path d="M104 252 L480 160" fill="none" stroke="#7a5a3a" stroke-width="18"/>
+    <path d="M150 236 L470 158" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <!-- perna -->
+    <path d="M362 196 L374 300 H398" fill="none" stroke-width="28"/>
+    <path d="M362 196 L374 300 H398" fill="none" stroke="#55391f" stroke-width="16"/>
+    <!-- caixa -->
+    <path d="M150 118 H382 L352 230 H176 Z" fill="#7a5a3a"/>
+    <path d="M150 118 H382 L376 140 H156 Z" fill="#9a7448" stroke="none"/>
+    <path d="M358 212 L352 230 H176 L171 212 Z" fill="#55391f" stroke="none"/>
+    <path d="M150 118 H382 L352 230 H176 Z" fill="none"/>
+    <path d="M160 156 H372 M166 194 H362" fill="none" stroke="#55391f" stroke-width="5"/>
+    <path d="M206 118 V230 M330 118 V230" fill="none" stroke-width="5"/>
+    <!-- roda de madeira -->
+    <circle cx="104" cy="252" r="62" fill="#7a5a3a" stroke-width="22"/>
+    <circle cx="104" cy="252" r="62" fill="none" stroke="#55391f" stroke-width="12"/>
+    <path d="M58 228 A54 54 0 0 1 128 200" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <path d="M104 196 V308 M48 252 H160 M64 212 L144 292 M144 212 L64 292" fill="none" stroke="#55391f" stroke-width="9"/>
+    <circle cx="104" cy="252" r="62" fill="none" stroke-width="6"/>
+    <circle cx="104" cy="252" r="16" fill="#8a8579"/>
+  </g>
+</svg>

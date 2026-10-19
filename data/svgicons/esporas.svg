@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Esporas</title>
+  <g transform="translate(256 256) scale(0.86) translate(-252 -301)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" fill="none">
+    <!-- correia de couro -->
+    <path d="M86 150 Q214 80 342 150" stroke-width="40"/>
+    <path d="M86 150 Q214 80 342 150" stroke="#6b2a24" stroke-width="28"/>
+    <path d="M100 136 Q214 82 328 136" stroke="#8a3a32" stroke-width="6"/>
+    <!-- arco do calcanhar -->
+    <path d="M86 150 Q86 340 214 340 Q342 340 342 150" stroke-width="40"/>
+    <path d="M86 150 Q86 340 214 340 Q342 340 342 150" stroke="#8a8579" stroke-width="28"/>
+    <path d="M80 170 Q86 300 170 330" stroke="#b5ae9c" stroke-width="6"/>
+    <path d="M348 170 Q340 300 260 334" stroke="#5f5b52" stroke-width="6"/>
+    <!-- pescoço -->
+    <path d="M232 336 L322 404" stroke-width="34"/>
+    <path d="M232 336 L322 404" stroke="#8a8579" stroke-width="22"/>
+    <path d="M238 330 L316 390" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- roseta -->
+    <path d="M358 336 L368 400 L420 362 L382 414 L446 424 L382 434 L420 486 L368 448 L358 512 L348 448 L296 486 L334 434 L270 424 L334 414 L296 362 L348 400 Z" transform="translate(358 424) scale(0.9) translate(-358 -424)" fill="#8a8579" stroke-width="6.5"/>
+    <circle cx="358" cy="424" r="18" fill="#b5ae9c" stroke-width="6"/>
+    <!-- fivelas -->
+    <rect x="66" y="128" width="40" height="40" rx="8" fill="#5f5b52" stroke-width="6"/>
+    <rect x="322" y="128" width="40" height="40" rx="8" fill="#5f5b52" stroke-width="6"/>
+  </g>
+</svg>

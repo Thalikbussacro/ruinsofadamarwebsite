@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Kit de primeiros socorros</title>
+  <defs>
+    <path id="bolsa" d="M74 236 H438 L420 418 Q416 446 388 446 H124 Q96 446 92 418 Z"/>
+    <clipPath id="c-bolsa"><use xlink:href="#bolsa"/></clipPath>
+  </defs>
+  <g transform="translate(0 -15)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- aba aberta (interior) -->
+    <path d="M96 240 L118 150 Q122 136 138 136 H374 Q390 136 394 150 L416 240 Z" fill="#573d26"/>
+    <path d="M130 150 H382" fill="none" stroke="#7c5a3a" stroke-width="6"/>
+    <!-- frasco de cerâmica -->
+    <path d="M304 118 H344 V146 Q376 158 376 196 V246 H272 V196 Q272 158 304 146 Z" fill="#8c5c40"/>
+    <path d="M284 172 Q290 158 304 152 V246 H284 Z" fill="#b07a58" stroke="none"/>
+    <path d="M352 158 Q370 170 370 196 V246 H354 Z" fill="#64402c" stroke="none"/>
+    <path d="M304 118 H344 V146 Q376 158 376 196 V246 H272 V196 Q272 158 304 146 Z" fill="none"/>
+    <rect x="298" y="96" width="52" height="28" rx="8" fill="#9a7448"/>
+    <!-- rolo de pano -->
+    <rect x="128" y="176" width="140" height="74" rx="10" fill="#b5a98a"/>
+    <path d="M136 188 H232" fill="none" stroke="#d8cdb0" stroke-width="8"/>
+    <ellipse cx="146" cy="213" rx="22" ry="37" fill="#d8cdb0"/>
+    <path d="M146 213 m-4 0 a4 8 0 1 1 8 0 a9 17 0 1 1 -18 0 a14 26 0 1 1 28 0" fill="none" stroke="#8f8468" stroke-width="3.5"/>
+    <!-- bolsa de couro -->
+    <use xlink:href="#bolsa" fill="#7c5a3a"/>
+    <g clip-path="url(#c-bolsa)" stroke="none">
+      <rect x="60" y="230" width="60" height="230" fill="#a07850"/>
+      <rect x="380" y="230" width="70" height="230" fill="#573d26"/>
+      <rect x="60" y="230" width="400" height="22" fill="#a07850"/>
+    </g>
+    <use xlink:href="#bolsa" fill="none"/>
+    <path d="M74 256 H438" fill="none" stroke-width="5"/>
+    <!-- correia e fivela -->
+    <rect x="238" y="250" width="36" height="110" rx="6" fill="#573d26"/>
+    <rect x="230" y="318" width="52" height="38" rx="8" fill="none" stroke-width="14"/>
+    <rect x="230" y="318" width="52" height="38" rx="8" fill="none" stroke="#8a8579" stroke-width="6"/>
+  </g>
+</svg>

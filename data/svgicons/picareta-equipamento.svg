@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 512" role="img">
+  <title>Picareta</title>
+  <defs>
+    <path id="cabo" d="M114 92 H142 L146 470 Q146 486 128 486 Q110 486 110 470 Z"/>
+    <clipPath id="c-cabo"><use xlink:href="#cabo"/></clipPath>
+    <path id="cab" d="M20 132 Q60 70 112 64 H150 Q206 66 236 90 L232 146 Q204 110 150 106 H112 Q66 104 20 132 Z"/>
+    <clipPath id="c-cab"><use xlink:href="#cab"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo de madeira -->
+    <use xlink:href="#cabo" fill="#7a5a3a"/>
+    <g clip-path="url(#c-cabo)" stroke="none">
+      <rect x="100" y="80" width="20" height="420" fill="#9a7448"/>
+      <rect x="134" y="80" width="20" height="420" fill="#55391f"/>
+    </g>
+    <use xlink:href="#cabo" fill="none"/>
+    <!-- cabeça: ponta à esquerda, enxó à direita -->
+    <use xlink:href="#cab" fill="#8a8579"/>
+    <g clip-path="url(#c-cab)" stroke="none">
+      <path d="M10 130 Q60 60 112 58 H150 Q206 60 246 86 L240 100 Q200 80 150 80 H112 Q66 84 20 138 Z" fill="#b5ae9c"/>
+      <path d="M10 140 Q66 96 112 96 H150 Q206 100 246 140 V160 H10 Z" fill="#5f5b52"/>
+    </g>
+    <use xlink:href="#cab" fill="none"/>
+    <!-- olho / colar -->
+    <rect x="106" y="54" width="44" height="64" rx="8" fill="#8a8579"/>
+    <path d="M114 66 V108" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M142 66 V108" fill="none" stroke="#5f5b52" stroke-width="5"/>
+  </g>
+</svg>

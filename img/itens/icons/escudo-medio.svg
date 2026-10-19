@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384 512" role="img">
+  <title>Escudo médio</title>
+  <defs>
+    <path id="escudo" d="M46 64 Q192 38 338 64 V236 Q338 398 192 472 Q46 398 46 236 Z"/>
+    <clipPath id="c-escudo"><use xlink:href="#escudo"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <use xlink:href="#escudo" fill="#7a5a3a"/>
+    <g clip-path="url(#c-escudo)">
+      <rect x="30" y="30" width="88" height="460" fill="#9a7448" stroke="none"/>
+      <rect x="266" y="30" width="90" height="460" fill="#55391f" stroke="none"/>
+      <!-- tábuas -->
+      <path d="M118 40 V480 M192 40 V480 M266 40 V480" fill="none" stroke-width="5"/>
+    </g>
+    <!-- aro de ferro (traço duplo) -->
+    <use xlink:href="#escudo" fill="none" stroke-width="24"/>
+    <use xlink:href="#escudo" fill="none" stroke="#8a8579" stroke-width="12"/>
+    <path d="M46 228 V72 Q120 56 180 52" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M338 120 V236 Q338 380 230 450" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    <!-- rebites das travessas -->
+    <g fill="#8a8579" stroke-width="3.5">
+      <circle cx="82" cy="150" r="7"/><circle cx="155" cy="146" r="7"/><circle cx="229" cy="146" r="7"/><circle cx="302" cy="150" r="7"/>
+      <circle cx="82" cy="300" r="7"/><circle cx="155" cy="300" r="7"/><circle cx="229" cy="300" r="7"/><circle cx="302" cy="300" r="7"/>
+    </g>
+  </g>
+</svg>

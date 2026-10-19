@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Elmo grande</title>
+  <defs>
+    <path id="casco" d="M118 146 Q118 72 256 66 Q394 72 394 146 V404 Q394 432 366 436 Q256 458 146 436 Q118 432 118 404 Z"/>
+    <clipPath id="c-casco"><use xlink:href="#casco"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <use xlink:href="#casco" fill="#8a8579"/>
+    <g clip-path="url(#c-casco)" stroke="none">
+      <rect x="100" y="60" width="72" height="400" fill="#b5ae9c"/>
+      <rect x="336" y="60" width="72" height="400" fill="#5f5b52"/>
+    </g>
+    <!-- junção da calota -->
+    <path d="M118 146 Q256 120 394 146" fill="none"/>
+    <!-- cruz de reforço -->
+    <path d="M242 134 H270 V432 Q256 434 242 432 Z" fill="#8a8579"/>
+    <path d="M249 144 V424" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M120 176 Q256 152 392 176 V198 Q256 176 120 198 Z" fill="#8a8579"/>
+    <path d="M130 182 Q190 170 236 166" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- fendas dos olhos -->
+    <path d="M132 214 Q188 204 236 202 V220 Q188 222 132 230 Z" fill="#0a0806"/>
+    <path d="M276 202 Q324 204 380 214 V230 Q324 222 276 220 Z" fill="#0a0806"/>
+    <!-- respiros -->
+    <g fill="#0a0806" stroke="none">
+      <circle cx="294" cy="300" r="5"/><circle cx="316" cy="300" r="5"/><circle cx="338" cy="302" r="5"/>
+      <circle cx="294" cy="324" r="5"/><circle cx="316" cy="324" r="5"/><circle cx="338" cy="326" r="5"/>
+      <circle cx="294" cy="348" r="5"/><circle cx="316" cy="348" r="5"/><circle cx="338" cy="350" r="5"/>
+    </g>
+    <!-- rebites -->
+    <g fill="#5f5b52" stroke-width="3.5">
+      <circle cx="160" cy="138" r="6"/><circle cx="208" cy="132" r="6"/><circle cx="304" cy="132" r="6"/><circle cx="352" cy="138" r="6"/>
+      <circle cx="256" cy="270" r="6"/><circle cx="256" cy="400" r="6"/>
+    </g>
+  </g>
+</svg>

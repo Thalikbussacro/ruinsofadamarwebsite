@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 512" role="img">
+  <title>Malho</title>
+  <defs>
+    <path id="bloco" d="M62 58 H194 Q204 58 204 68 V150 Q204 160 194 160 H62 Q52 160 52 150 V68 Q52 58 62 58 Z"/>
+    <clipPath id="c-bloco"><use xlink:href="#bloco"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo longo -->
+    <rect x="114" y="140" width="28" height="330" rx="10" fill="#7a5a3a"/>
+    <path d="M121 170 V460" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M135 170 V460" fill="none" stroke="#55391f" stroke-width="4"/>
+    <!-- empunhaduras (duas mãos) -->
+    <rect x="111" y="260" width="34" height="46" rx="7" fill="#6b2a24"/>
+    <path d="M111 278 L145 268 M111 298 L145 288" fill="none" stroke-width="4"/>
+    <rect x="111" y="380" width="34" height="84" rx="8" fill="#6b2a24"/>
+    <path d="M118 388 V456" fill="none" stroke="#8a3a32" stroke-width="6"/>
+    <path d="M111 400 L145 390 M111 424 L145 414 M111 448 L145 438" fill="none" stroke-width="4"/>
+    <!-- lingüetas -->
+    <rect x="110" y="150" width="36" height="56" rx="6" fill="#8a8579"/>
+    <path d="M118 160 V196" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <!-- cabeça -->
+    <use xlink:href="#bloco" fill="#8a8579"/>
+    <g clip-path="url(#c-bloco)" stroke="none">
+      <rect x="40" y="50" width="180" height="26" fill="#b5ae9c"/>
+      <rect x="40" y="134" width="180" height="40" fill="#5f5b52"/>
+    </g>
+    <use xlink:href="#bloco" fill="none"/>
+    <!-- faces de batida -->
+    <rect x="30" y="50" width="30" height="118" rx="8" fill="#b5ae9c"/>
+    <rect x="196" y="50" width="30" height="118" rx="8" fill="#5f5b52"/>
+    <path d="M204 60 V156" fill="none" stroke="#8a8579" stroke-width="5"/>
+  </g>
+</svg>

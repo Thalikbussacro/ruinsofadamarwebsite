@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Lança longa</title>
+  <!-- Desenhado na vertical; rotate(45) leva a cabeça para o alto à direita
+       e faz a luz local (vinda da esquerda) cair de cima à esquerda. -->
+  <g transform="translate(258 254) scale(0.96) rotate(45)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-11.0" y="-180" width="22" height="476" rx="10" fill="#7a5a3a"/>
+    <path d="M-4.0 -168 V284" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M5.0 -168 V284" fill="none" stroke="#55391f" stroke-width="4"/>
+    <rect x="-14.0" y="70" width="28" height="60" rx="8" fill="#6b2a24"/>
+    <path d="M-7.0 78 V122" fill="none" stroke="#8a3a32" stroke-width="6"/>
+    <path d="M-14.0 88 L14.0 78 M-14.0 112 L14.0 102" fill="none" stroke-width="4"/>
+    <rect x="-14.0" y="200" width="28" height="60" rx="8" fill="#6b2a24"/>
+    <path d="M-7.0 208 V252" fill="none" stroke="#8a3a32" stroke-width="6"/>
+    <path d="M-14.0 218 L14.0 208 M-14.0 242 L14.0 232" fill="none" stroke-width="4"/>
+    <path d="M-10 288 H10 L4 308 H-4 Z" fill="#8a8579"/>
+    <path d="M-11 -200 H11 L13 -170 H-13 Z" fill="#8a8579"/>
+    <rect x="-14" y="-172" width="28" height="96" rx="5" fill="#8a8579"/>
+    <path d="M-7 -164 V-84" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M-15 -176 H15" fill="none" stroke-width="4"/>
+    <path d="M0 -306 L23 -232 L12 -196 H-12 L-23 -232 Z" fill="#8a8579"/>
+    <path d="M0 -302 L-21 -232 L-11 -199 H0 Z" fill="#b5ae9c" stroke="none"/>
+    <path d="M0 -302 L21 -232 L11 -199 H4 Z" fill="#5f5b52" stroke="none"/>
+    <path d="M0 -306 L23 -232 L12 -196 H-12 L-23 -232 Z" fill="none"/>
+    <path d="M0 -290 V-204" fill="none" stroke-width="4"/>
+  </g>
+</svg>

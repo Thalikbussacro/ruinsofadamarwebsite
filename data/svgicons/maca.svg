@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341 512" role="img">
+  <title>Maça</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo -->
+    <rect x="156" y="150" width="30" height="300" rx="9" fill="#7a5a3a"/>
+    <path d="M164 210 V440" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M178 210 V440" fill="none" stroke="#55391f" stroke-width="4"/>
+    <!-- empunhadura -->
+    <rect x="152" y="330" width="38" height="112" rx="8" fill="#6b2a24"/>
+    <path d="M160 338 V434" fill="none" stroke="#8a3a32" stroke-width="6"/>
+    <path d="M152 356 L190 346 M152 380 L190 370 M152 404 L190 394 M152 428 L190 418" fill="none" stroke-width="4"/>
+    <!-- pomo -->
+    <path d="M150 440 H192 L186 466 Q171 474 156 466 Z" fill="#8a8579"/>
+    <path d="M158 448 L161 460" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- colar -->
+    <rect x="148" y="196" width="46" height="26" rx="7" fill="#8a8579"/>
+    <path d="M156 204 H174" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- núcleo -->
+    <rect x="146" y="62" width="50" height="150" rx="10" fill="#5f5b52"/>
+    <!-- flanges -->
+    <path d="M152 76 L110 54 Q88 100 104 132 Q88 170 110 216 L152 194 Z" fill="#b5ae9c"/>
+    <path d="M190 76 L232 54 Q254 100 238 132 Q254 170 232 216 L190 194 Z" fill="#4a463f"/>
+    <path d="M158 70 L134 44 Q118 96 132 132 Q118 172 134 224 L158 200 Z" fill="#8a8579"/>
+    <path d="M150 64 L134 44 Q118 96 132 132 L140 132 Q130 96 140 60 Z" fill="#b5ae9c" stroke="none"/>
+    <path d="M158 70 L134 44 Q118 96 132 132 Q118 172 134 224 L158 200 Z" fill="none"/>
+    <path d="M184 70 L208 44 Q224 96 210 132 Q224 172 208 224 L184 200 Z" fill="#5f5b52"/>
+    <path d="M161 74 L171 34 L181 74 V200 L171 232 L161 200 Z" fill="#8a8579"/>
+    <path d="M167 66 L171 50 M167 80 V194" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+  </g>
+</svg>

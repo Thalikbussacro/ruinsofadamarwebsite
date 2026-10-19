@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Alabarda</title>
+  <!-- Desenhado na vertical; rotate(45) leva a cabeça para o alto à direita
+       e faz a luz local (vinda da esquerda) cair de cima à esquerda. -->
+  <g transform="translate(253 262) scale(0.93) rotate(45)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <defs><clipPath id="c-lamina"><path d="M-14 -210 L-58 -216 Q-80 -222 -94 -244 Q-110 -176 -88 -112 Q-70 -132 -56 -138 L-14 -144 Z"/></clipPath></defs>
+    <rect x="-13.0" y="-200" width="26" height="496" rx="10" fill="#7a5a3a"/>
+    <path d="M-6.0 -188 V284" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M7.0 -188 V284" fill="none" stroke="#55391f" stroke-width="4"/>
+    <rect x="-16.0" y="150" width="32" height="90" rx="8" fill="#6b2a24"/>
+    <path d="M-9.0 158 V232" fill="none" stroke="#8a3a32" stroke-width="6"/>
+    <path d="M-16.0 168 L16.0 158 M-16.0 192 L16.0 182 M-16.0 216 L16.0 206" fill="none" stroke-width="4"/>
+    <path d="M-15.0 286 H15.0 L10.0 306 Q0 312 -10.0 306 Z" fill="#8a8579"/>
+    <path d="M-7.0 294 L-5.0 300" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- lingüetas -->
+    <rect x="-17" y="-150" width="34" height="96" rx="6" fill="#8a8579"/>
+    <path d="M-9 -140 V-64" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <!-- espigão (ponta de lança) -->
+    <path d="M-13 -200 L0 -326 L13 -200 Z" fill="#8a8579"/>
+    <path d="M-11 -202 L0 -318 V-202 Z" fill="#b5ae9c" stroke="none"/>
+    <path d="M-13 -200 L0 -326 L13 -200 Z" fill="none"/>
+    <!-- gancho traseiro -->
+    <path d="M12 -204 L44 -200 Q74 -190 92 -150 Q62 -170 12 -168 Z" fill="#5f5b52"/>
+    <path d="M12 -204 L44 -200 Q74 -190 92 -150 Q64 -184 12 -190 Z" fill="#8a8579" stroke="none"/>
+    <path d="M12 -204 L44 -200 Q74 -190 92 -150 Q62 -170 12 -168 Z" fill="none"/>
+    <!-- lâmina de machado -->
+    <path d="M-14 -210 L-58 -216 Q-80 -222 -94 -244 Q-110 -176 -88 -112 Q-70 -132 -56 -138 L-14 -144 Z" fill="#8a8579"/>
+    <g clip-path="url(#c-lamina)" stroke="none">
+      <path d="M-120 -260 L-80 -250 Q-96 -180 -70 -110 L-110 -100 Z" fill="#b5ae9c"/>
+      <path d="M-120 -150 L-56 -152 L-10 -160 V-130 H-120 Z" fill="#5f5b52"/>
+    </g>
+    <path d="M-14 -210 L-58 -216 Q-80 -222 -94 -244 Q-110 -176 -88 -112 Q-70 -132 -56 -138 L-14 -144 Z" fill="none"/>
+    <path d="M-66 -214 Q-76 -176 -62 -136" fill="none" stroke="#5f5b52" stroke-width="4"/>
+    <!-- alvado -->
+    <rect x="-18" y="-216" width="36" height="82" rx="7" fill="#8a8579"/>
+    <path d="M-9 -206 V-144" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <path d="M10 -206 V-144" fill="none" stroke="#5f5b52" stroke-width="5"/>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341 512" role="img">
+  <title>Mangual</title>
+  <defs><clipPath id="c-bola"><circle cx="124" cy="128" r="60"/></clipPath></defs>
+  <g transform="translate(170 256) scale(0.92) translate(-147 -263)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- corrente -->
+    <g transform="translate(238 197) rotate(-85)"><ellipse rx="18.0" ry="11.0" fill="none" stroke="#0a0806" stroke-width="13"/><ellipse rx="18.0" ry="11.0" fill="none" stroke="#8a8579" stroke-width="5"/></g>
+    <g transform="translate(236 179) rotate(-111)"><rect x="-19.0" y="-6" width="38" height="12" rx="6" fill="#b5ae9c"/></g>
+    <g transform="translate(226 166) rotate(-144)"><ellipse rx="18.0" ry="11.0" fill="none" stroke="#0a0806" stroke-width="13"/><ellipse rx="18.0" ry="11.0" fill="none" stroke="#8a8579" stroke-width="5"/></g>
+    <g transform="translate(209 159) rotate(-167)"><rect x="-19.0" y="-6" width="38" height="12" rx="6" fill="#b5ae9c"/></g>
+    <g transform="translate(183 157) rotate(179)"><ellipse rx="18.0" ry="11.0" fill="none" stroke="#0a0806" stroke-width="13"/><ellipse rx="18.0" ry="11.0" fill="none" stroke="#8a8579" stroke-width="5"/></g>
+    <!-- cabo longo -->
+    <rect x="220" y="218" width="32" height="250" rx="10" fill="#7a5a3a"/>
+    <path d="M228 236 V458" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M244 236 V458" fill="none" stroke="#55391f" stroke-width="4"/>
+    <rect x="216" y="290" width="40" height="52" rx="7" fill="#6b2a24"/>
+    <path d="M216 310 L256 300 M216 332 L256 322" fill="none" stroke-width="4"/>
+    <rect x="216" y="384" width="40" height="80" rx="8" fill="#6b2a24"/>
+    <path d="M225 392 V456" fill="none" stroke="#8a3a32" stroke-width="6"/>
+    <path d="M216 404 L256 394 M216 428 L256 418 M216 452 L256 442" fill="none" stroke-width="4"/>
+    <path d="M214 462 H258 L252 482 Q236 490 220 482 Z" fill="#8a8579"/>
+    <!-- ponteira -->
+    <rect x="214" y="206" width="44" height="36" rx="7" fill="#8a8579"/>
+    <path d="M222 214 H244" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- cravos -->
+    <path d="M136 72 L124 40 L112 72 Z" fill="#b5ae9c"/>
+    <path d="M162 86 L168 52 L142 74 Z" fill="#8a8579"/>
+    <path d="M178 110 L200 84 L166 90 Z" fill="#8a8579"/>
+    <path d="M180 140 L212 128 L180 116 Z" fill="#5f5b52"/>
+    <path d="M166 166 L200 172 L178 146 Z" fill="#5f5b52"/>
+    <path d="M142 182 L168 204 L162 170 Z" fill="#5f5b52"/>
+    <path d="M112 184 L124 216 L136 184 Z" fill="#5f5b52"/>
+    <path d="M86 170 L80 204 L106 182 Z" fill="#8a8579"/>
+    <path d="M70 146 L48 172 L82 166 Z" fill="#8a8579"/>
+    <path d="M68 116 L36 128 L68 140 Z" fill="#b5ae9c"/>
+    <path d="M82 90 L48 84 L70 110 Z" fill="#b5ae9c"/>
+    <path d="M106 74 L80 52 L86 86 Z" fill="#b5ae9c"/>
+    <!-- bola -->
+    <circle cx="124" cy="128" r="60" fill="#8a8579"/>
+    <g clip-path="url(#c-bola)" stroke="none">
+      <circle cx="124" cy="128" r="60" fill="#5f5b52"/>
+      <circle cx="115" cy="119" r="55" fill="#8a8579"/>
+      <circle cx="101" cy="105" r="30" fill="#b5ae9c"/>
+    </g>
+    <circle cx="124" cy="128" r="60" fill="none"/>
+    <!-- aro de reforço -->
+    <path d="M64 128 Q124 150 184 128" fill="none" stroke-width="5"/>
+  </g>
+</svg>

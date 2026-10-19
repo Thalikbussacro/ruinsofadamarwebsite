@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 512" role="img">
+  <title>Segadeira</title>
+  <defs>
+    <path id="lamina" d="M190 56 Q100 30 22 132 Q100 88 190 110 Z"/>
+    <clipPath id="c-lamina"><use xlink:href="#lamina"/></clipPath>
+    <path id="cabo" d="M184 56 H210 Q200 260 214 470 H188 Q174 260 184 56 Z"/>
+    <clipPath id="c-cabo"><use xlink:href="#cabo"/></clipPath>
+  </defs>
+  <g transform="translate(6 0)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo (gadanho) -->
+    <use xlink:href="#cabo" fill="#7a5a3a"/>
+    <g clip-path="url(#c-cabo)" stroke="none">
+      <path d="M180 50 H192 Q182 260 196 476 H180 Z" fill="#9a7448"/>
+      <path d="M202 50 H216 V476 H206 Q192 260 202 50 Z" fill="#55391f"/>
+    </g>
+    <use xlink:href="#cabo" fill="none"/>
+    <!-- punho lateral -->
+    <path d="M186 276 Q150 270 128 252" fill="none" stroke="#0a0806" stroke-width="30"/>
+    <path d="M186 276 Q150 270 128 252" fill="none" stroke="#7a5a3a" stroke-width="18"/>
+    <path d="M178 268 Q152 264 134 250" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <!-- lâmina -->
+    <use xlink:href="#lamina" fill="#8a8579"/>
+    <g clip-path="url(#c-lamina)" stroke="none">
+      <path d="M200 40 Q100 16 10 130 L30 132 Q104 50 200 72 Z" fill="#b5ae9c"/>
+      <path d="M200 98 Q100 78 20 142 L14 150 L200 150 Z" fill="#5f5b52"/>
+    </g>
+    <use xlink:href="#lamina" fill="none"/>
+    <!-- anel de fixação -->
+    <rect x="178" y="56" width="38" height="56" rx="7" fill="#8a8579"/>
+    <path d="M186 66 V102" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+  </g>
+</svg>

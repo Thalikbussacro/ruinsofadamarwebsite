@@ -428,3 +428,89 @@ Aviso geral: o cairosvg (render.py) parece herdar `stroke-linecap="round"` do `<
 ## kusari (3 iterações)
 - Corrente em S com peso octogonal grande na ponta de baixo (pendurado por argola) e peso menor em barra na outra ponta (kusari-fundo).
 - Pendente: a 64 px os elos ficam finos; lê como corrente, mas sem detalhe.
+
+# Lote: machados, maças e armas de haste
+
+# Lote B-hastes
+
+Hastes diagonais geradas por scripts em `scratchpad/gen/` (pole.py + um script por item); o SVG final é estático.
+
+## machado (1 iteração)
+- 2x4 em pé. Lâmina barbada à esquerda, talão quadrado à direita, empunhadura de couro vinho.
+- Pendente: nada relevante.
+
+## machadinha (3 iterações)
+- 1x3. Cabo simples de madeira sem couro, com dilatação na ponta (estilo machadinha de lenhador); cabeça pequena com olho estreito.
+- Pendente: na grade 1x3 o cabo fica longo em relação à cabeça; a diferença para o machado vem do cabo sem couro e da cabeça menor.
+
+## machado-de-arremesso (2 iterações)
+- 2x3. Cabeça tipo francisca, compacta e inclinada para cima, cabo curto levemente curvo com amarração de couro.
+- Pendente: nada relevante.
+
+## maca (2 iterações)
+- 2x3. Maça de flanges: 5 flanges visíveis (frontal, duas a ±60°, duas laterais) em tons do claro (esq.) ao escuro (dir.).
+- Pendente: a 64 px as flanges viram uma cabeça serrilhada; a primeira versão parecia machado duplo e foi descartada.
+
+## maca-pequena (2 iterações)
+- 1x3. Para diferenciar da maça, cabeça de gomos (ovoide com 3 nervuras) e botão no topo.
+- Pendente: nada relevante.
+
+## picareta (2 iterações)
+- 1x3. Picareta de guerra: bico perfurante reto e grosso levemente caído, martelete curto atrás, lingüetas e empunhadura.
+- Pendente: o bico curvo da primeira versão lembrava martelo de unha; ficou reto, mas ainda pode lembrar um martelo à primeira vista.
+
+## maca-estrela (2 iterações)
+- 2x3. Cabo curto de uma mão, corrente de elos alternados (traço duplo + barras), bola com 10 cravos.
+- Pendente: elos finos a 64 px (aparecem como traço pontilhado).
+
+## malho (2 iterações)
+- 2x4. Marreta: bloco grande com faces de batida, cabo longo com duas empunhaduras.
+- Pendente: nada relevante.
+
+## machado-duas-maos (1 iteração)
+- 2x4. Lâmina grande barbada, espigão traseiro, cabo longo com duas empunhaduras e lingüetas.
+- Pendente: nada relevante.
+
+## segadeira (2 iterações)
+- 2x4. Gadanha: cabo comprido levemente curvo, punho lateral de madeira, lâmina longa curva saindo para a esquerda no topo. Sem couro, para ler como ferramenta.
+- Pendente: nada relevante.
+
+## mangual-duas-maos (2 iterações)
+- 2x3. Mesmo vocabulário da maça-estrela, mas cabo longo com duas empunhaduras, bola maior com 12 cravos e um aro de reforço.
+- Pendente: na mesma grade 2x3 fica parecido com a maça-estrela; a diferença é o cabo longo e a bola maior.
+
+## lanca (2 iterações)
+- Diagonal 45°. Ponta em folha larga com nervura, alvado, empunhadura de couro no meio, ponteira.
+- Pendente: nada relevante.
+
+## lanca-longa (3 iterações)
+- Diagonal 45°. Ponta estreita em losango com lingüetas longas (estilo pique), haste mais fina, duas empunhaduras.
+- Pendente: a cabeça é menor que a da lança por definição; ainda legível a 64 px.
+
+## lanca-de-justa (2 iterações)
+- Diagonal 45°. Haste grossa afunilando até uma ponta pequena, vamplate cônico de ferro protegendo a mão, empunhadura estreita, contrapeso grosso.
+- Pendente: nada relevante.
+
+## azagaia (1 iteração)
+- Grade 1x5 → em pé, viewBox 102x512 (a lista dá grade, então não é diagonal). Haste fina, ponta em folha pequena, amarração de corda de arremesso.
+- Pendente: nada relevante.
+
+## glaive (4 iterações)
+- Diagonal 45°. Lâmina larga de um gume (gume convexo à direita local), pequeno esporão traseiro, alvado.
+- Pendente: o esporão é pequeno a 64 px.
+
+## naginata-armas-de-haste (4 iterações)
+- Diagonal 45°. Lâmina curva, tsuba, colar metálico, haste de madeira mais escura (derivei #7a5a3a / #5a3f26 / #3e2915) e ponteira longa de metal.
+- Pendente: nada relevante.
+
+## alabarda (2 iterações)
+- Diagonal 45°. Lâmina de machado para cima-esquerda, gancho para baixo-direita, espigão de lança no topo.
+- Pendente: nada relevante.
+
+## machado-de-haste (4 iterações)
+- Diagonal 45°. Lâmina grande em meia-lua (machado dinamarquês), talão pequeno, haste longa com duas empunhaduras; sem espigão, para diferenciar da alabarda.
+- Pendente: nada relevante.
+
+## bordao-bastao (3 iterações)
+- Diagonal 45°. Bastão liso de madeira com ponteiras de ferro nas duas pontas. Faixas de couro removidas para ficar liso.
+- Pendente: por ser só um cilindro, depende da faixa de luz e das ponteiras para ser lido.

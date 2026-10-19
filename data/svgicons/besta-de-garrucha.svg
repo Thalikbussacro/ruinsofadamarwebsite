@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Besta de garrucha</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- coronha curta com cabo de pistola -->
+    <path d="M236 116 H276 L280 290 Q288 318 316 340 L374 388 Q392 406 376 424 L356 444 Q338 460 322 444 L262 380 Q232 346 232 296 Z" fill="#7a5a3a"/>
+    <path d="M243 126 L240 296 Q242 336 270 366" fill="none" stroke="#9a7448" stroke-width="7"/>
+    <path d="M271 128 L273 290 Q280 320 304 340" fill="none" stroke="#55391f" stroke-width="5"/>
+    <!-- empunhadura de couro -->
+    <path d="M300 346 L364 400 Q372 410 364 418 L344 438 Q336 446 326 438 L272 382 Z" fill="#6b2a24"/>
+    <path d="M288 362 L336 412" fill="none" stroke="#8a3a32" stroke-width="7"/>
+    <path d="M318 352 L284 388 M338 370 L304 406 M356 386 L322 422" fill="none" stroke-width="4"/>
+    <circle cx="352" cy="438" r="20" fill="#8a8579"/>
+    <path d="M340 432 Q342 424 350 422" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+    <!-- gatilho -->
+    <path d="M238 318 Q214 346 226 378" fill="none" stroke-width="17"/>
+    <path d="M238 318 Q214 346 226 378" fill="none" stroke="#8a8579" stroke-width="7"/>
+    <!-- arco de aço -->
+    <path d="M58 166 Q256 80 454 166 L450 194 Q256 112 62 194 Z" fill="#8a8579"/>
+    <path d="M68 167 Q256 96 444 167" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M80 188 Q256 118 432 188" fill="none" stroke="#5f5b52" stroke-width="4"/>
+    <path d="M58 166 Q256 80 454 166 L450 194 Q256 112 62 194 Z" fill="none"/>
+    <!-- presilha -->
+    <rect x="228" y="112" width="56" height="34" rx="7" fill="#8a8579"/>
+    <path d="M236 120 V138" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+    <!-- corda armada -->
+    <path d="M62 180 L256 290 L450 180" fill="none" stroke-width="9"/>
+    <path d="M62 180 L256 290 L450 180" fill="none" stroke="#d8cdb0" stroke-width="3.5"/>
+    <circle cx="256" cy="292" r="15" fill="#b89c66"/>
+    <path d="M246 287 Q249 280 256 279" fill="none" stroke="#d6bf8a" stroke-width="4"/>
+    <!-- virote curto -->
+    <rect x="250" y="84" width="12" height="202" rx="5" fill="#9a7448"/>
+    <path d="M254 96 V276" fill="none" stroke="#d8cdb0" stroke-width="3.5"/>
+    <path d="M250 238 L236 278 H250 Z M262 238 L276 278 H262 Z" fill="#b5a98a"/>
+    <path d="M256 46 L270 80 L264 92 H248 L242 80 Z" fill="#8a8579"/>
+    <path d="M254 56 L247 80" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Capa leve</title>
+  <defs>
+    <path id="corpo" d="M212 118 Q170 220 104 444 Q140 468 180 452 Q218 474 256 458 Q294 474 332 452 Q372 468 408 444 Q342 220 300 118 Z"/>
+    <clipPath id="c-corpo"><use xlink:href="#corpo"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- capuz caído nas costas -->
+    <path d="M186 134 Q180 72 256 38 Q332 72 326 134 Z" fill="#b5a98a"/>
+    <path d="M198 124 Q196 80 246 50" fill="none" stroke="#d8cdb0" stroke-width="8"/>
+    <path d="M214 134 Q216 96 256 74 Q296 96 298 134 Z" fill="#6e6552"/>
+    <!-- corpo da capa -->
+    <use xlink:href="#corpo" fill="#b5a98a"/>
+    <g clip-path="url(#c-corpo)" stroke="none">
+      <path d="M200 100 Q140 230 40 480 H150 Q170 300 222 120 Z" fill="#d8cdb0"/>
+      <path d="M312 100 Q372 230 472 480 H372 Q342 300 290 120 Z" fill="#8f8468"/>
+      <!-- abertura frontal mostrando o forro -->
+      <path d="M256 124 Q236 300 226 470 H286 Q276 300 256 124 Z" fill="#8f8468"/>
+    </g>
+    <!-- dobras -->
+    <path d="M226 150 Q196 300 158 452 M286 150 Q316 300 354 452 M256 140 Q240 300 232 462 M256 140 Q272 300 280 462" fill="none" stroke-width="4.5"/>
+    <use xlink:href="#corpo" fill="none"/>
+    <!-- cordão -->
+    <path d="M226 128 Q256 142 286 128" fill="none" stroke-width="10"/>
+    <path d="M226 128 Q256 142 286 128" fill="none" stroke="#b5a98a" stroke-width="4"/>
+    <path d="M256 136 Q248 160 240 182 M256 136 Q266 160 272 184" fill="none" stroke-width="10"/>
+    <path d="M256 136 Q248 160 240 182 M256 136 Q266 160 272 184" fill="none" stroke="#b5a98a" stroke-width="4"/>
+    <circle cx="256" cy="136" r="8" fill="#b5a98a" stroke-width="4"/>
+  </g>
+</svg>

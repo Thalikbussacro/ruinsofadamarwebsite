@@ -723,3 +723,100 @@ Gerador: os SVGs saíram de um script Python (`scratchpad/f1/items.py` + `f1/lib
 ## celada (2 iterações)
 - Salada (sallet) de aço de perfil, olhando para a esquerda: crânio com quilha e aba de nuca longa; sem viseira (só crânio).
 - Pendente: perfil largo numa grade 2x3: sobra muito espaço vertical e o ícone fica pequeno a 64 px.
+
+# Lote: armas de distância, redes, capas e escudos
+
+# Lote C-distancia
+
+Geradores auxiliares (não fazem parte do site) em `scratchpad/cdist/` (bows.py, shields.py, capas.py, redes.py, laco.py, bola.py, funda.py, fusti.py, arpao.py, rope.py, geo.py). Os SVGs finais estão em `data/svgicons/`.
+
+## arco-comum (3 iterações)
+- Em pé, corda reta à esquerda, haste afilada nas pontas (forma gerada por offset de curva), empunhadura de couro vinho.
+- Pendente: a 64 px o arco fica fino (é natural do objeto numa grade 1x5).
+
+## arco-curto (3 iterações)
+- Viewbox 128x512 (1x4), curvatura bem mais funda que a do comum, haste um pouco mais grossa.
+- Pendente: nada relevante.
+
+## arco-longo (3 iterações)
+- Sem grade: viewBox 96x512, alto e esguio, curvatura rasa, empunhadura curta.
+- Pendente: a 64 px é quase uma linha; a diferença para o comum está mais na proporção da célula do que no desenho.
+
+## arco-composto (4 iterações)
+- Perfil recurvo: pontas viram para a frente e a corda encosta nelas. Ventre em chifre (#d6bf8a/#b89c66), dorso em madeira, linha de junção entre as camadas.
+- Pendente: a 64 px lê como "arco ondulado"; as camadas só aparecem no tamanho grande.
+
+## besta (2 iterações)
+- Vista de cima coerente com besta-de-alavanca: estribo na frente, verga de madeira, amarração de corda, corda armada na noz, virote carregado, gatilho longo ao lado.
+- Pendente: nada relevante.
+
+## besta-de-garrucha (2 iterações)
+- Pequena, de uma mão: verga de aço, sem estribo, coronha curta que vira cabo de pistola com couro e pomo de ferro, gatilho em gancho.
+- Pendente: mistura leve de vista (cabo em ângulo) para indicar "de uma mão".
+
+## besta-de-pelouro (2 iterações)
+- Mesma base da besta, com corda dupla, espaçadores de chifre, bolsa de couro com a pedra no lugar do virote e mira em forquilha na frente.
+- Pendente: nada relevante.
+
+## escudo-leve (3 iterações)
+- Broquel redondo com face de couro natural (costura tracejada), aro de ferro e umbo grande com aba rebitada. Volume da face em crescentes (clip + evenodd).
+- Pendente: nada relevante.
+
+## escudo-pequeno (3 iterações)
+- Redondo de tábuas verticais, tábua da esquerda clara e da direita escura (como no escudo-medio), aro e umbo de ferro.
+- Pendente: nada relevante.
+
+## escudo-grande (3 iterações)
+- 4x5 (410x512). Pavês/escudo longo de topo arredondado e ponta baixa, nervura central, tábuas, duas cintas de ferro com rebites, aro de ferro.
+- A primeira versão (retangular) parecia porta ou barril; trocada pela forma longa de lágrima.
+- Pendente: nada relevante.
+
+## capa-pesada (3 iterações)
+- Capa com capuz, pendurada, em tecido escuro, gola de pele e fecho de bronze. Interior do capuz em #2c2823 (sombra derivada do tecido escuro, fora da paleta).
+- Pendente: a silhueta lembra um pouco um sino; o capuz ajuda.
+
+## capa-leve (3 iterações)
+- Mesma estrutura, em linho claro, mais estreita, fechada com cordão. Interior do capuz em #6e6552 (derivado).
+- Pendente: igual à pesada.
+
+## rede-grande (3 iterações)
+- Rede quadrada de bordas côncavas, malha diagonal levemente caída, corda de borda grossa e 8 pesos de chumbo (tons de pedra).
+- Pendente: a 64 px a malha vira textura; a leitura vem dos pesos e da borda.
+
+## rede-de-combate (2 iterações)
+- Menor, 7 pesos, malha mais aberta e corda de recolher terminando em laço de pulso.
+- Pendente: nada relevante.
+
+## laco (3 iterações)
+- Rolo de três voltas de corda e laço corrediço com olhal. Testei textura de torção com dasharray e removi (quase invisível).
+- Pendente: nada relevante.
+
+## boleadeira (3 iterações)
+- Três bolas envoltas em couro natural com costura, presas por cordas sinuosas a um nó central.
+- A versão com pedras cinzas lia como molécula; trocada por couro e cordas curvas.
+- Pendente: ainda lembra levemente um diagrama de moléculas no 64 px.
+
+## funda (3 iterações)
+- Pendurada: alça para o dedo e nó no alto, duas cordas, bolsa de couro em crescente com a pedra bem visível.
+- Pendente: nada relevante.
+
+## fustibalo (3 iterações)
+- Sem grade, diagonal: bastão com empunhadura de couro e ponteira de ferro com gancho; a funda pende da ponta com a pedra.
+- Pendente: o gancho fica pouco visível atrás da corda.
+
+## arremessador-de-lanca (4 iterações)
+- Propulsor em pé com empunhadura e presilha de couro; a ponta de baixo vira um gancho que encaixa a base do dardo, que corre ao lado até o alto.
+- As duas primeiras versões (dardo por cima da tábua, presilhas dos dois lados) pareciam espada com guarda.
+- Pendente: o dardo com penas lembra uma flecha; é aceitável.
+
+## arpao (3 iterações)
+- Diagonal, ponta no alto à direita, girado 45° como o martelo-de-guerra. Ponta de ferro grande com duas farpas, amarração de corda no alvado, corda solta com uma volta.
+- Pendente: nada relevante.
+
+## zarabatana (2 iterações)
+- Tubo longo de madeira com amarrações de couro e bocal de chifre embaixo; dardo-agulha com tufo de linho ao lado.
+- Pendente: o dardo é fino no 64 px.
+
+## scorpion (3 iterações)
+- Sem grade, 512. Vista lateral 3/4: tripé de madeira escura (para destacar a máquina), coronha inclinada, quadro de torção com feixe de corda e chapas de ferro, dois braços, corda armada na garra, virote carregado e molinete atrás.
+- Pendente: o braço inferior cruza o tripé; está legível, mas um pouco cheio.

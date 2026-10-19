@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" role="img">
+  <title>Arremessador de lança</title>
+  <g transform="translate(128 256) scale(0.9) translate(-142 -264)" stroke="#0a0806" stroke-width="6.5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- dardo -->
+    <rect x="94" y="78" width="14" height="384" rx="5" fill="#9a7448"/>
+    <path d="M98 90 V450" fill="none" stroke="#d8cdb0" stroke-width="3.5"/>
+    <path d="M94 364 L74 412 L78 432 L94 420 Z M108 364 L128 412 L124 432 L108 420 Z" fill="#b5a98a"/>
+    <path d="M91 376 L80 408" fill="none" stroke="#d8cdb0" stroke-width="4"/>
+    <path d="M101 30 L118 74 L110 90 H92 L84 74 Z" fill="#8a8579"/>
+    <path d="M99 42 L90 74" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+    <!-- propulsor: haste com gancho na ponta -->
+    <path d="M160 190 V440 Q160 482 122 482 Q96 482 94 456" fill="none" stroke-width="38"/>
+    <path d="M160 190 V440 Q160 482 122 482 Q96 482 94 456" fill="none" stroke="#7a5a3a" stroke-width="26"/>
+    <path d="M154 200 V438 Q154 470 128 474" fill="none" stroke="#9a7448" stroke-width="7"/>
+    <path d="M168 210 V444" fill="none" stroke="#55391f" stroke-width="5"/>
+    <!-- empunhadura -->
+    <rect x="140" y="172" width="40" height="96" rx="12" fill="#6b2a24"/>
+    <path d="M150 184 V256" fill="none" stroke="#8a3a32" stroke-width="7"/>
+    <path d="M140 200 L180 192 M140 224 L180 216 M140 248 L180 240" fill="none" stroke-width="4.5"/>
+    <path d="M180 196 Q206 200 204 222 Q202 242 180 240" fill="none" stroke-width="18"/>
+    <path d="M180 196 Q206 200 204 222 Q202 242 180 240" fill="none" stroke="#6b2a24" stroke-width="8"/>
+  </g>
+</svg>

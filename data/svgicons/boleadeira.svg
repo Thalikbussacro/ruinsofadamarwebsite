@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Boleadeira</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cordas -->
+    <path d="M250 236 C210 160 130 200 102 108" fill="none" stroke-width="25"/>
+    <path d="M250 236 C210 160 130 200 102 108" fill="none" stroke="#b5a98a" stroke-width="14"/>
+    <path d="M250 236 C210 160 130 200 102 108" fill="none" stroke="#d8cdb0" stroke-width="3.5" transform="translate(-2.8 -2.8)"/>
+    <path d="M250 236 C320 250 350 140 414 170" fill="none" stroke-width="25"/>
+    <path d="M250 236 C320 250 350 140 414 170" fill="none" stroke="#b5a98a" stroke-width="14"/>
+    <path d="M250 236 C320 250 350 140 414 170" fill="none" stroke="#d8cdb0" stroke-width="3.5" transform="translate(-2.8 -2.8)"/>
+    <path d="M250 236 C200 300 290 340 214 410" fill="none" stroke-width="25"/>
+    <path d="M250 236 C200 300 290 340 214 410" fill="none" stroke="#b5a98a" stroke-width="14"/>
+    <path d="M250 236 C200 300 290 340 214 410" fill="none" stroke="#d8cdb0" stroke-width="3.5" transform="translate(-2.8 -2.8)"/>
+    <!-- pedras envoltas -->
+    <defs><clipPath id="c-b0"><circle cx="102" cy="108" r="50"/></clipPath></defs>
+    <circle cx="102" cy="108" r="50" fill="#7c5a3a"/>
+    <g clip-path="url(#c-b0)" stroke="none">
+      <path d="M50 108 a52 52 0 1 0 104 0 a52 52 0 1 0 -104 0 Z M62 118 a50 50 0 1 0 100 0 a50 50 0 1 0 -100 0 Z" fill="#a07850" fill-rule="evenodd"/>
+      <path d="M50 108 a52 52 0 1 0 104 0 a52 52 0 1 0 -104 0 Z M42 98 a50 50 0 1 0 100 0 a50 50 0 1 0 -100 0 Z" fill="#573d26" fill-rule="evenodd"/>
+    </g>
+    <circle cx="102" cy="108" r="50" fill="none"/>
+    <path d="M60 102 Q102 130 144 102" fill="none" stroke-width="4"/>
+    <circle cx="132" cy="134" r="15" fill="#b5a98a"/>
+    <path d="M124 135 Q123 125 133 123" fill="none" stroke="#d8cdb0" stroke-width="4"/>
+    <defs><clipPath id="c-b1"><circle cx="414" cy="170" r="50"/></clipPath></defs>
+    <circle cx="414" cy="170" r="50" fill="#7c5a3a"/>
+    <g clip-path="url(#c-b1)" stroke="none">
+      <path d="M362 170 a52 52 0 1 0 104 0 a52 52 0 1 0 -104 0 Z M374 180 a50 50 0 1 0 100 0 a50 50 0 1 0 -100 0 Z" fill="#a07850" fill-rule="evenodd"/>
+      <path d="M362 170 a52 52 0 1 0 104 0 a52 52 0 1 0 -104 0 Z M354 160 a50 50 0 1 0 100 0 a50 50 0 1 0 -100 0 Z" fill="#573d26" fill-rule="evenodd"/>
+    </g>
+    <circle cx="414" cy="170" r="50" fill="none"/>
+    <path d="M372 164 Q414 192 456 164" fill="none" stroke-width="4"/>
+    <circle cx="377" cy="185" r="15" fill="#b5a98a"/>
+    <path d="M369 186 Q368 176 378 174" fill="none" stroke="#d8cdb0" stroke-width="4"/>
+    <defs><clipPath id="c-b2"><circle cx="214" cy="410" r="50"/></clipPath></defs>
+    <circle cx="214" cy="410" r="50" fill="#7c5a3a"/>
+    <g clip-path="url(#c-b2)" stroke="none">
+      <path d="M162 410 a52 52 0 1 0 104 0 a52 52 0 1 0 -104 0 Z M174 420 a50 50 0 1 0 100 0 a50 50 0 1 0 -100 0 Z" fill="#a07850" fill-rule="evenodd"/>
+      <path d="M162 410 a52 52 0 1 0 104 0 a52 52 0 1 0 -104 0 Z M154 400 a50 50 0 1 0 100 0 a50 50 0 1 0 -100 0 Z" fill="#573d26" fill-rule="evenodd"/>
+    </g>
+    <circle cx="214" cy="410" r="50" fill="none"/>
+    <path d="M172 404 Q214 432 256 404" fill="none" stroke-width="4"/>
+    <circle cx="222" cy="371" r="15" fill="#b5a98a"/>
+    <path d="M214 372 Q213 362 223 360" fill="none" stroke="#d8cdb0" stroke-width="4"/>
+    <!-- nó central -->
+    <circle cx="250" cy="236" r="17" fill="#b5a98a"/>
+    <path d="M241 237 Q243 228 251 227" fill="none" stroke="#d8cdb0" stroke-width="4.5"/>
+  </g>
+</svg>

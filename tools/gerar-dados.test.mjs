@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { validar, montarJs, montarTextos, juntarEnriquecimento } from './gerar-dados.mjs';
+import { validar, montarJs, montarTextos, juntarEnriquecimento, juntarIlustracoes } from './gerar-dados.mjs';
 import { mkdtempSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -131,6 +131,25 @@ assert.deepEqual(window.GURPS.adamar, {});
   const erros2 = validar(e).join('\n');
   assert.match(erros2, /pericias\/arco: relacionado inexistente "nada"/);
   assert.match(erros2, /vantagens\/carisma: descrição curta demais/);
+}
+
+// ilustrações: <id>.svg ou apelido viram o campo "ilustracao"; SVG ou apelido sem item viram erro
+{
+  const pasta = mkdtempSync(join(tmpdir(), 'svg-'));
+  writeFileSync(join(pasta, 'espada.svg'), '<svg/>');
+  writeFileSync(join(pasta, 'sumida.svg'), '<svg/>');
+  writeFileSync(join(pasta, 'apelidos.json'), JSON.stringify({ apelidos: { 'espada-duas-maos': 'espada', 'tocha': 'nada', 'fantasma': 'espada' } }));
+  const e = { equipamento: { itens: [{ id: 'espada' }, { id: 'espada-duas-maos' }, { id: 'tocha' }, { id: 'corda' }] } };
+  juntarIlustracoes(e, pasta);
+  const [espada, duasMaos, tocha, corda] = e.equipamento.itens;
+  assert.equal(espada.ilustracao, 'data/svgicons/espada.svg');
+  assert.equal(duasMaos.ilustracao, 'data/svgicons/espada.svg');
+  assert.equal(tocha.ilustracao, undefined);
+  assert.equal(corda.ilustracao, undefined);
+  const erros = e.erros_enriquecimento.join('\n');
+  assert.match(erros, /svgicons\/sumida.svg: item inexistente/);
+  assert.match(erros, /apelidos.json: "tocha" aponta para SVG inexistente "nada"/);
+  assert.match(erros, /apelidos.json: item inexistente "fantasma"/);
 }
 
 console.log('gerar-dados ok');

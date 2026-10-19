@@ -253,6 +253,27 @@ export function juntarGcs(dados, arquivo = join(RAIZ, 'data', 'gurps', 'gcs.json
   }
 }
 
+// data/svgicons/<id>.svg: ilustração colorida do item de equipamento, mostrada na janela de detalhes.
+// apelidos.json aponta itens que são o mesmo objeto de outro para o SVG dele. Vira o campo "ilustracao" do item.
+export function juntarIlustracoes(dados, pasta = join(RAIZ, 'data', 'svgicons')) {
+  const itens = (dados.equipamento && dados.equipamento.itens) || [];
+  if (!existsSync(pasta)) return;
+  const erros = (dados.erros_enriquecimento = dados.erros_enriquecimento || []);
+  const svgs = new Set(readdirSync(pasta).filter((x) => x.endsWith('.svg')).map((x) => x.replace(/\.svg$/, '')));
+  const arqApelidos = join(pasta, 'apelidos.json');
+  const apelidos = existsSync(arqApelidos) ? JSON.parse(readFileSync(arqApelidos, 'utf8')).apelidos || {} : {};
+  const ids = new Set(itens.map((it) => it.id));
+  for (const id of svgs) if (!ids.has(id)) erros.push(`svgicons/${id}.svg: item inexistente`);
+  for (const [id, alvo] of Object.entries(apelidos)) {
+    if (!ids.has(id)) erros.push(`svgicons/apelidos.json: item inexistente "${id}"`);
+    if (!svgs.has(alvo)) erros.push(`svgicons/apelidos.json: "${id}" aponta para SVG inexistente "${alvo}"`);
+  }
+  for (const it of itens) {
+    const nome = svgs.has(it.id) ? it.id : apelidos[it.id];
+    if (nome && svgs.has(nome)) it.ilustracao = 'data/svgicons/' + nome + '.svg';
+  }
+}
+
 function carregar() {
   const dados = {};
   for (const nome of ARQUIVOS) dados[nome] = JSON.parse(readFileSync(join(RAIZ, 'data', 'gurps', nome + '.json'), 'utf8'));
@@ -262,6 +283,7 @@ function carregar() {
   }
   juntarEnriquecimento(dados);
   juntarGcs(dados);
+  juntarIlustracoes(dados);
   // regras próprias do jogo (simulação): data/jogo/<nome>.json → GURPS.jogo.<nome>
   const pastaJogo = join(RAIZ, 'data', 'jogo');
   dados.jogo = {};

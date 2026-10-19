@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384 512" role="img">
+  <title>Grevas de bronze</title>
+  <defs>
+    <path id="f1" d="M-46 40 Q-46 -4 0 -6 Q46 -4 48 40 C52 80 68 120 64 176 C60 240 38 290 32 336 L42 380 Q0 394 -42 380 L-32 336 C-38 290 -62 240 -62 176 C-66 120 -48 80 -46 40 Z"/>
+    <clipPath id="c2"><use xlink:href="#f1"/></clipPath>
+    <clipPath id="c3"><use xlink:href="#f1" transform="translate(26 0)"/></clipPath>
+    <path id="f4" d="M-46 40 Q-46 -4 0 -6 Q46 -4 48 40 C52 80 68 120 64 176 C60 240 38 290 32 336 L42 380 Q0 394 -42 380 L-32 336 C-38 290 -62 240 -62 176 C-66 120 -48 80 -46 40 Z"/>
+    <clipPath id="c5"><use xlink:href="#f4"/></clipPath>
+    <clipPath id="c6"><use xlink:href="#f4" transform="translate(26 0)"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <g transform="translate(236 64)">
+    <use xlink:href="#f1" fill="#9a7a46"/>
+    <g clip-path="url(#c2)" stroke="none"><g clip-path="url(#c3)"><use xlink:href="#f1" fill="#54401f"/><use xlink:href="#f1" transform="translate(-24 0)" fill="#6e5530"/></g></g>
+    <g clip-path="url(#c2)"><path d="M-30 96 Q0 116 32 96 M-30 40 Q0 20 30 40" fill="none" stroke="#54401f" stroke-width="4.5"/><path d="M-52 130 Q-36 190 -10 230 M52 130 Q36 190 10 230" fill="none" stroke="#54401f" stroke-width="4.5"/><path d="M-3 120 V360" fill="none" stroke="#9a7a46" stroke-width="7"/><path d="M4 120 V360" fill="none" stroke="#54401f" stroke-width="4.5"/></g>
+    <use xlink:href="#f1" fill="none" stroke-width="6"/>
+    <path d="M44 28 C50 80 68 120 64 176 C60 240 38 290 32 336 L42 380 L30 376 L20 336 C26 290 48 240 52 176 C56 120 40 80 32 24 Z" fill="#241b0d" stroke-width="4.5"/>
+    </g>
+    <g transform="translate(148 82)">
+    <use xlink:href="#f4" fill="#c4a066"/>
+    <g clip-path="url(#c5)" stroke="none"><g clip-path="url(#c6)"><use xlink:href="#f4" fill="#6e5530"/><use xlink:href="#f4" transform="translate(-24 0)" fill="#9a7a46"/></g></g>
+    <g clip-path="url(#c5)"><path d="M-30 96 Q0 116 32 96 M-30 40 Q0 20 30 40" fill="none" stroke="#6e5530" stroke-width="4.5"/><path d="M-52 130 Q-36 190 -10 230 M52 130 Q36 190 10 230" fill="none" stroke="#6e5530" stroke-width="4.5"/><path d="M-3 120 V360" fill="none" stroke="#c4a066" stroke-width="7"/><path d="M4 120 V360" fill="none" stroke="#6e5530" stroke-width="4.5"/></g>
+    <use xlink:href="#f4" fill="none" stroke-width="6"/>
+    <path d="M44 28 C50 80 68 120 64 176 C60 240 38 290 32 336 L42 380 L30 376 L20 336 C26 290 48 240 52 176 C56 120 40 80 32 24 Z" fill="#322612" stroke-width="4.5"/>
+    </g>
+  </g>
+</svg>

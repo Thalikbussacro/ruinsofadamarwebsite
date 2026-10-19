@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Braçadeira de placas</title>
+  <defs>
+    <path id="f1" d="M-60 12 Q-58 -24 -18 -28 Q40 -26 62 4 C66 70 58 150 42 250 L48 290 Q0 306 -48 290 L-40 250 C-56 150 -66 70 -60 12 Z"/>
+    <clipPath id="c2"><use xlink:href="#f1"/></clipPath>
+    <clipPath id="c3"><use xlink:href="#f1" transform="translate(28 0)"/></clipPath>
+    <path id="f4" d="M-60 12 Q-58 -24 -18 -28 Q40 -26 62 4 C66 70 58 150 42 250 L48 290 Q0 306 -48 290 L-40 250 C-56 150 -66 70 -60 12 Z"/>
+    <clipPath id="c5"><use xlink:href="#f4"/></clipPath>
+    <clipPath id="c6"><use xlink:href="#f4" transform="translate(28 0)"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <g transform="translate(284 140) rotate(-14)">
+    <use xlink:href="#f1" fill="#8a8579"/>
+    <g clip-path="url(#c2)" stroke="none"><g clip-path="url(#c3)"><use xlink:href="#f1" fill="#4a463f"/><use xlink:href="#f1" transform="translate(-24 0)" fill="#5f5b52"/></g></g>
+    <g clip-path="url(#c2)"><path d="M-66 40 Q0 34 66 22 M-50 256 Q0 270 50 252" fill="none" stroke-width="4.5"/><path d="M-6 52 V250" fill="none" stroke="#8a8579" stroke-width="7"/><path d="M2 52 V250" fill="none" stroke-width="4"/></g>
+    <use xlink:href="#f1" fill="none" stroke-width="6"/>
+    <path d="M-50 190 Q0 204 50 188" fill="none" stroke-width="18"/><path d="M-50 190 Q0 204 50 188" fill="none" stroke="#573d26" stroke-width="7"/>
+    <rect x="-37.0" y="183.0" width="18" height="24" rx="4" fill="none" stroke-width="12"/>
+    <rect x="-37.0" y="183.0" width="18" height="24" rx="4" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    <path d="M-37.0 187.0 V203.0" fill="none" stroke="#8a8579" stroke-width="5"/>
+    <g><circle cx="-40" cy="66" r="5" fill="#5f5b52" stroke-width="3.5"/><circle cx="40" cy="58" r="5" fill="#4a463f" stroke-width="3.5"/><circle cx="-34" cy="238" r="5" fill="#5f5b52" stroke-width="3.5"/><circle cx="34" cy="236" r="5" fill="#4a463f" stroke-width="3.5"/></g>
+    <path d="M-64 14 Q-62 -14 -22 -18 Q40 -16 66 8 L68 -12 Q42 -40 -20 -42 Q-64 -38 -66 -6 Z" fill="#5f5b52"/>
+    <path d="M-58 -10 Q-52 -30 -22 -34" fill="none" stroke="#8a8579" stroke-width="6"/>
+    <path d="M-66 -6 Q-64 -38 -20 -42 Q42 -40 68 -12 L66 -30 Q40 -62 -18 -64 Q-60 -60 -64 -24 Z" fill="#5f5b52"/>
+    <path d="M-56 -28 Q-50 -50 -20 -56" fill="none" stroke="#8a8579" stroke-width="6"/>
+    <path d="M-64 -24 Q-60 -60 -18 -64 Q40 -62 66 -30 Q20 -44 -64 -24 Z" fill="#1f1e1b" stroke-width="4.5"/>
+    <g><circle cx="-52" cy="-14" r="4.5" fill="#5f5b52" stroke-width="3.5"/><circle cx="54" cy="-12" r="4.5" fill="#4a463f" stroke-width="3.5"/></g>
+    </g>
+    <g transform="translate(180 160) rotate(-14)">
+    <use xlink:href="#f4" fill="#b5ae9c"/>
+    <g clip-path="url(#c5)" stroke="none"><g clip-path="url(#c6)"><use xlink:href="#f4" fill="#5f5b52"/><use xlink:href="#f4" transform="translate(-24 0)" fill="#8a8579"/></g></g>
+    <g clip-path="url(#c5)"><path d="M-66 40 Q0 34 66 22 M-50 256 Q0 270 50 252" fill="none" stroke-width="4.5"/><path d="M-6 52 V250" fill="none" stroke="#b5ae9c" stroke-width="7"/><path d="M2 52 V250" fill="none" stroke-width="4"/></g>
+    <use xlink:href="#f4" fill="none" stroke-width="6"/>
+    <path d="M-50 190 Q0 204 50 188" fill="none" stroke-width="18"/><path d="M-50 190 Q0 204 50 188" fill="none" stroke="#7c5a3a" stroke-width="7"/>
+    <rect x="-37.0" y="183.0" width="18" height="24" rx="4" fill="none" stroke-width="12"/>
+    <rect x="-37.0" y="183.0" width="18" height="24" rx="4" fill="none" stroke="#8a8579" stroke-width="5"/>
+    <path d="M-37.0 187.0 V203.0" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <g><circle cx="-40" cy="66" r="5" fill="#8a8579" stroke-width="3.5"/><circle cx="40" cy="58" r="5" fill="#5f5b52" stroke-width="3.5"/><circle cx="-34" cy="238" r="5" fill="#8a8579" stroke-width="3.5"/><circle cx="34" cy="236" r="5" fill="#5f5b52" stroke-width="3.5"/></g>
+    <path d="M-64 14 Q-62 -14 -22 -18 Q40 -16 66 8 L68 -12 Q42 -40 -20 -42 Q-64 -38 -66 -6 Z" fill="#8a8579"/>
+    <path d="M-58 -10 Q-52 -30 -22 -34" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <path d="M-66 -6 Q-64 -38 -20 -42 Q42 -40 68 -12 L66 -30 Q40 -62 -18 -64 Q-60 -60 -64 -24 Z" fill="#8a8579"/>
+    <path d="M-56 -28 Q-50 -50 -20 -56" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <path d="M-64 -24 Q-60 -60 -18 -64 Q40 -62 66 -30 Q20 -44 -64 -24 Z" fill="#2c2a25" stroke-width="4.5"/>
+    <g><circle cx="-52" cy="-14" r="4.5" fill="#8a8579" stroke-width="3.5"/><circle cx="54" cy="-12" r="4.5" fill="#5f5b52" stroke-width="3.5"/></g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Sapatos</title>
+  <defs>
+    <path id="f1" d="M6 -14 H290 Q308 -14 304 2 Q296 16 272 16 H20 Q4 16 6 2 Z"/>
+    <clipPath id="c2"><use xlink:href="#f1"/></clipPath>
+    <clipPath id="c3"><use xlink:href="#f1" transform="translate(0 8)"/></clipPath>
+    <path id="f4" d="M14 -10 C0 -60 4 -130 22 -168 L92 -172 Q118 -130 160 -114 C226 -100 276 -92 296 -62 Q310 -34 294 -10 Z"/>
+    <clipPath id="c5"><use xlink:href="#f4"/></clipPath>
+    <clipPath id="c6"><use xlink:href="#f4" transform="translate(12 22)"/></clipPath>
+    <path id="f7" d="M6 -14 H290 Q308 -14 304 2 Q296 16 272 16 H20 Q4 16 6 2 Z"/>
+    <clipPath id="c8"><use xlink:href="#f7"/></clipPath>
+    <clipPath id="c9"><use xlink:href="#f7" transform="translate(0 8)"/></clipPath>
+    <path id="f10" d="M14 -10 C0 -60 4 -130 22 -168 L92 -172 Q118 -130 160 -114 C226 -100 276 -92 296 -62 Q310 -34 294 -10 Z"/>
+    <clipPath id="c11"><use xlink:href="#f10"/></clipPath>
+    <clipPath id="c12"><use xlink:href="#f10" transform="translate(12 22)"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <g transform="translate(124 296)">
+    <use xlink:href="#f1" fill="#573d26"/>
+    <g clip-path="url(#c2)" stroke="none"><g clip-path="url(#c3)"><use xlink:href="#f1" fill="#2e1f13"/><use xlink:href="#f1" transform="translate(0 -7)" fill="#3f2b1a"/></g></g>
+    <use xlink:href="#f1" fill="none" stroke-width="6"/>
+    <use xlink:href="#f4" fill="#7c5a3a"/>
+    <g clip-path="url(#c5)" stroke="none"><g clip-path="url(#c6)"><use xlink:href="#f4" fill="#3f2b1a"/><use xlink:href="#f4" transform="translate(-10 -18)" fill="#573d26"/></g></g>
+    <g clip-path="url(#c5)"><path d="M142 -122 Q158 -70 142 -10" fill="none" stroke="#2d1e12" stroke-width="4.5"/></g>
+    <use xlink:href="#f4" fill="none" stroke-width="6"/>
+    <path d="M24 -164 Q58 -184 94 -170 Q58 -158 24 -164 Z" fill="#1b120a" stroke-width="4.5"/>
+    <path d="M16 -118 Q76 -124 126 -134" fill="none" stroke-width="20"/><path d="M16 -118 Q76 -124 126 -134" fill="none" stroke="#3f2b1a" stroke-width="9"/>
+    <rect x="98.0" y="-141.0" width="20" height="26" rx="4" fill="none" stroke-width="12"/>
+    <rect x="98.0" y="-141.0" width="20" height="26" rx="4" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    <path d="M98.0 -137.0 V-119.0" fill="none" stroke="#8a8579" stroke-width="5"/>
+    </g>
+    <g transform="translate(80 376)">
+    <use xlink:href="#f7" fill="#7c5a3a"/>
+    <g clip-path="url(#c8)" stroke="none"><g clip-path="url(#c9)"><use xlink:href="#f7" fill="#3f2b1a"/><use xlink:href="#f7" transform="translate(0 -7)" fill="#573d26"/></g></g>
+    <use xlink:href="#f7" fill="none" stroke-width="6"/>
+    <use xlink:href="#f10" fill="#a07850"/>
+    <g clip-path="url(#c11)" stroke="none"><g clip-path="url(#c12)"><use xlink:href="#f10" fill="#573d26"/><use xlink:href="#f10" transform="translate(-10 -18)" fill="#7c5a3a"/></g></g>
+    <g clip-path="url(#c11)"><path d="M142 -122 Q158 -70 142 -10" fill="none" stroke="#3f2b1a" stroke-width="4.5"/></g>
+    <use xlink:href="#f10" fill="none" stroke-width="6"/>
+    <path d="M24 -164 Q58 -184 94 -170 Q58 -158 24 -164 Z" fill="#25190f" stroke-width="4.5"/>
+    <path d="M16 -118 Q76 -124 126 -134" fill="none" stroke-width="20"/><path d="M16 -118 Q76 -124 126 -134" fill="none" stroke="#573d26" stroke-width="9"/>
+    <rect x="98.0" y="-141.0" width="20" height="26" rx="4" fill="none" stroke-width="12"/>
+    <rect x="98.0" y="-141.0" width="20" height="26" rx="4" fill="none" stroke="#8a8579" stroke-width="5"/>
+    <path d="M98.0 -137.0 V-119.0" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Braçadeiras de bronze</title>
+  <defs>
+    <path id="f1" d="M-60 12 Q-58 -24 -18 -28 Q40 -26 62 4 C66 70 58 150 42 250 L48 290 Q0 306 -48 290 L-40 250 C-56 150 -66 70 -60 12 Z"/>
+    <clipPath id="c2"><use xlink:href="#f1"/></clipPath>
+    <clipPath id="c3"><use xlink:href="#f1" transform="translate(28 0)"/></clipPath>
+    <path id="f4" d="M-60 12 Q-58 -24 -18 -28 Q40 -26 62 4 C66 70 58 150 42 250 L48 290 Q0 306 -48 290 L-40 250 C-56 150 -66 70 -60 12 Z"/>
+    <clipPath id="c5"><use xlink:href="#f4"/></clipPath>
+    <clipPath id="c6"><use xlink:href="#f4" transform="translate(28 0)"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <g transform="translate(274 112) rotate(-14)">
+    <use xlink:href="#f1" fill="#9a7a46"/>
+    <g clip-path="url(#c2)" stroke="none"><g clip-path="url(#c3)"><use xlink:href="#f1" fill="#54401f"/><use xlink:href="#f1" transform="translate(-24 0)" fill="#6e5530"/></g></g>
+    <g clip-path="url(#c2)"><path d="M-18 40 C-22 110 -18 180 -10 250" fill="none" stroke="#9a7a46" stroke-width="9"/><path d="M-50 256 Q0 270 50 252" fill="none" stroke="#54401f" stroke-width="4.5"/></g>
+    <use xlink:href="#f1" fill="none" stroke-width="6"/>
+    <path d="M-52 10 Q-50 -16 -16 -20 Q36 -18 54 6 Q10 -4 -52 10 Z" fill="#241b0d" stroke-width="4.5"/>
+    </g>
+    <g transform="translate(180 132) rotate(-14)">
+    <use xlink:href="#f4" fill="#c4a066"/>
+    <g clip-path="url(#c5)" stroke="none"><g clip-path="url(#c6)"><use xlink:href="#f4" fill="#6e5530"/><use xlink:href="#f4" transform="translate(-24 0)" fill="#9a7a46"/></g></g>
+    <g clip-path="url(#c5)"><path d="M-18 40 C-22 110 -18 180 -10 250" fill="none" stroke="#c4a066" stroke-width="9"/><path d="M-50 256 Q0 270 50 252" fill="none" stroke="#6e5530" stroke-width="4.5"/></g>
+    <use xlink:href="#f4" fill="none" stroke-width="6"/>
+    <path d="M-52 10 Q-50 -16 -16 -20 Q36 -18 54 6 Q10 -4 -52 10 Z" fill="#322612" stroke-width="4.5"/>
+    </g>
+  </g>
+</svg>

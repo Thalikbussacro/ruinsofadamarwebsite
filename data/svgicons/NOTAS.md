@@ -514,3 +514,105 @@ Hastes diagonais geradas por scripts em `scratchpad/gen/` (pole.py + um script p
 ## bordao-bastao (3 iterações)
 - Diagonal 45°. Bastão liso de madeira com ponteiras de ferro nas duas pontas. Faixas de couro removidas para ficar liso.
 - Pendente: por ser só um cilindro, depende da faixa de luz e das ponteiras para ser lido.
+
+# Lote: armaduras de membros, mãos e pés
+
+# Lote F2-membros
+
+Geração: os SVGs saem de um gerador Python com formas-base compartilhadas
+(`scratchpad/f2/lib.py`, `items.py`, `feet.py`) para garantir o mesmo vocabulário:
+todas as perneiras usam a mesma perna (LEG), todas as mangas a mesma manga dobrada no cotovelo (SLEEVE),
+braçadeiras a mesma braçadeira (VAMB), luvas a mesma mão, calçados a mesma sola.
+Pares: peça de trás deslocada para cima/direita e um tom abaixo (claro->médio, médio->escuro, escuro->escuro*0.72).
+Interiores ocos (abertura de braçadeira, sapato, bota, solleret, borda interna da greva) usam o tom profundo do material escurecido (x0.6), como as fendas pretas do elmo.
+Couro escuro de reforço/cintos/solas: `#7c5a3a / #573d26 / #3f2b1a` (couro natural um tom abaixo).
+Faixas de luz: o próprio contorno deslocado (clip aninhado), então seguem a forma; nos calçados o deslocamento é diagonal (luz de cima-esquerda).
+
+## perneiras-de-couro (3 iterações)
+- Par de pernas inteiras (coxa a tornozelo), aba com ilhó no topo para amarrar ao cinto, duas correias finas com fivela, marca do joelho.
+- Pendente: no 2x2 o par fica estreito (muita margem lateral); a forma das pernas é algo cilíndrica.
+
+## perneiras-de-couro-reforcado (1 iteração)
+- Mesma perna em couro natural com placa de coxa, joelheira redonda e talas da canela em couro escuro rebitado, uma correia.
+- Pendente: nada relevante; a 64 px os rebites viram pontinhos.
+
+## perneiras-de-cota-de-malha (1 iteração)
+- Mesma perna em ferro com fileiras de arcos (malha), faixa de couro no topo + aba.
+- Pendente: no 2x2 o par fica estreito; a 64 px a malha vira textura cinza (lê como malha/tecido metálico).
+
+## perneiras-de-escamas (2 iterações)
+- Mesma perna com escamas em U (cor por posição: claras à esquerda), faixa de couro no topo.
+- Correção: tom profundo da peça de trás estava igual ao escuro e sumia o contorno das escamas.
+- Pendente: nada relevante.
+
+## perneiras-de-placas (2 iterações)
+- Coxote com lâmina articulada, joelheira em cúpula com asa em leque no lado externo, greva com aresta central.
+- Pendente: a 64 px as asas dos joelhos parecem um nó/engrenagem pequena.
+
+## calcas-de-couro (2 iterações)
+- Calças inteiras com cós de couro escuro, braguilha com cordão cruzado em linho, costuras laterais e marcas dos joelhos.
+- Correção: faixas por deslocamento faziam triângulos estranhos no gancho; trocadas por faixas retas.
+- Pendente: nada relevante.
+
+## saiote-de-couro-batido (3 iterações)
+- Cinto com fivela e duas camadas de tiras (pteruges) levemente em leque, tachas de ferro.
+- Pendente: pode lembrar franja/vassoura em vez de saia; 7 tiras finas a 64 px viram listras.
+
+## mangas-de-tecido (2 iterações)
+- Manga inteira (cabeça do ombro em cúpula, cotovelo dobrado) em linho, costuras acolchoadas tracejadas transversais, punho mais escuro.
+- Pendente: tracejado some a 64 px (fica só manga clara).
+
+## mangas-de-couro-reforcado (2 iterações)
+- Couro natural com ombreira, cotoveleira e talas do antebraço em couro escuro rebitado, correia com fivela.
+- Pendente: nada relevante.
+
+## mangas-de-cota-de-malha (1 iteração)
+- Mesma manga em malha com debrum de couro no ombro.
+- Pendente: nada relevante.
+
+## mangas-de-escamas (2 iterações)
+- Mesma manga com escamas sobre couro, debrum de couro no ombro.
+- Pendente: o claro/escuro das escamas segue x fixo, não acompanha a inclinação do antebraço.
+
+## bracadeiras-de-bronze (3 iterações)
+- Par de braçadeiras (antebraço) inclinadas, borda do cotovelo oblíqua com interior escuro, filete de brilho, borda do punho.
+- Correção: aros/cordões de couro faziam parecer barril; removidos.
+- Pendente: sem contexto pode lembrar canos de bota; bronze ainda puxa para madeira/couro claro.
+
+## bracadeira-de-placas (3 iterações)
+- Nome no singular, mas desenhado em par (seguindo a orientação do lote). Duas metades articuladas (aresta central), duas lâminas na ponta do cotovelo, correia com fivela, rebites.
+- Correção: cotoveleira em cúpula com leque no topo parecia tampa/cogumelo; trocada por lâminas.
+- Pendente: nada relevante.
+
+## grevas-de-bronze (3 iterações)
+- Par de grevas anatômicas (joelho em cúpula, relevo da panturrilha, aresta da canela), interior escuro visível na borda direita para mostrar a casca.
+- Pendente: ainda um pouco "chapada" (lembra tampa de sarcófago); poderia ganhar mais volume.
+
+## luvas-de-tecido (2 iterações)
+- Par sobreposto em linho, punho curto canelado, três costuras no dorso.
+- Pendente: nada relevante.
+
+## luvas-de-couro (2 iterações)
+- Par em couro natural, cano largo, costuras do dorso, correia com fivela no punho.
+- Pendente: nada relevante.
+
+## manoplas (2 iterações)
+- Par em ferro: dedos segmentados em lâminas, placa dos nós dos dedos, lâminas do dorso, cano em sino com borda clara e rebites.
+- Pendente: dedos finos a 64 px viram listras, mas a silhueta de mão lê bem.
+
+## sandalias (2 iterações)
+- Perfil, bico à direita: sola grossa, tira do calcanhar, laço do tornozelo, tira em T até a tira dos dedos.
+- Pendente: as tiras sem pé dentro ficam "em pé" de forma pouco realista; muita margem vertical (formato largo no 2x2).
+
+## sapatos (2 iterações)
+- Sapato baixo de couro até o tornozelo, bico arredondado, abertura escura, correia com fivela, costura da gáspea.
+- Pendente: margem vertical grande (objeto largo no 2x2).
+
+## botas (2 iterações)
+- Botas altas com cano dobrado em couro escuro, duas correias com fivela (reforçadas), sola escura.
+- Pendente: bico algo anguloso.
+
+## sollerets (3 iterações)
+- Perfil de sapato de placas: colar do tornozelo, quatro lâminas articuladas com filete claro e rebites, bico pontudo, sola de couro.
+- Correção: perfil em cunha (parecia broca); peito do pé rebaixado.
+- Pendente: margem vertical grande.

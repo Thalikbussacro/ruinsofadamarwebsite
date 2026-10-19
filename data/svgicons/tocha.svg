@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171 512" role="img">
+  <title>Tocha</title>
+  <g stroke="#0a0806" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo -->
+    <path d="M68 230 H104 L98 462 Q86 472 74 462 Z" fill="#7a5a3a"/>
+    <path d="M76 244 L80 452" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M96 244 L92 452" fill="none" stroke="#55391f" stroke-width="5"/>
+    <!-- chama -->
+    <path d="M86 42 Q100 76 122 92 Q148 120 140 160 Q134 196 86 204 Q38 196 32 160 Q26 120 52 98 Q56 120 66 124 Q64 84 86 42 Z" fill="#c98a3c"/>
+    <path d="M88 104 Q98 128 112 144 Q120 168 104 184 Q86 194 70 184 Q56 168 64 146 Q72 154 78 152 Q78 128 88 104 Z" fill="#e6c878" stroke="none"/>
+    <!-- trapo embebido amarrado -->
+    <path d="M54 176 H118 L112 244 H60 Z" fill="#5e574b"/>
+    <path d="M54 176 H76 L74 244 H60 Z" fill="#7a7264" stroke="none"/>
+    <path d="M100 176 H118 L112 244 H98 Z" fill="#433e35" stroke="none"/>
+    <path d="M54 176 H118 L112 244 H60 Z" fill="none"/>
+    <path d="M56 198 L116 190 M58 222 L114 214" fill="none" stroke-width="4"/>
+  </g>
+</svg>

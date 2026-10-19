@@ -244,3 +244,114 @@ Cabeça/pescoço: 512x512, perfil virado para a direita, com o pescoço cortado 
 ## serra (1 iteração)
 - Serra traçadora de lenhador em pé, dentes à direita, cabos de madeira nas duas pontas.
 - Pendente: cabos parecem "rolinhos" no 512, mas a leitura no 64 é boa.
+
+# Lote: acampamento, iluminação e aljavas
+
+# Lote D-acampamento
+
+Materiais derivados (fora da paleta): lã tingida (cobertor, rolos de cobertor) `#a8634a / #85493a / #5e3329`; linho escuro para linhas `#6e6450` / `#7a705a`; óleo `#c9a24e` (brilho `#e6c878`); pão `#c08e56 / #9a6c3c / #6e4a26`; queijo `#dcbc66 / #b8963e / #8c6c2a` (furos `#6e5420`); carne seca `#8a4a36 / #6a3424`; miolo escuro de caldeirão `#2a2620`.
+Observação: `stroke-dasharray` em paths longos (polilinhas) não aparece no cairosvg; na corda troquei por traços de torção explícitos.
+
+## algibeira-bolsa-pequena (1 iteração)
+- Bolsa de couro natural com boca franzida, cordão de linho com pontas e alça para o cinto.
+- Pendente: nada relevante.
+
+## anzol-e-linha (2 iterações)
+- Carretel de madeira com linha enrolada + anzol de ferro com farpa e olhal; linha liga o carretel ao olhal.
+- Pendente: a linha fina some no 64 px (o anzol e o carretel bastam).
+
+## arpeu (2 iterações)
+- 4 garras (2 laterais, 1 frontal, 1 de trás mais escura), haste curta, olhal com corda de cânhamo.
+- Pendente: ainda lembra levemente uma âncora; a corda ajuda a distinguir.
+
+## corda-3-4 (4 iterações)
+- Rolo em espiral grossa com ponta solta e traços oblíquos de torção (gerados por script).
+- Pendente: nada relevante.
+
+## cordel-3-16 (2 iterações)
+- Novelo de cordel fino com fio solto, para contrastar com o rolo grosso da corda.
+- Pendente: pode ser lido como novelo de lã; aceitável.
+
+## barraca-1-pessoa (2 iterações)
+- Grade 2x4 (retrato) não comporta uma barraca baixa armada: desenhei a lona ENROLADA em pé, amarrada com duas tiras, com duas estacas de madeira atrás e uma corda de esticar.
+- Pendente: lê como "rolo de lona/saco de dormir", não necessariamente como barraca. Se a grade puder ser paisagem, trocar por barraca baixa armada.
+
+## barraca-4-pessoas (1 iteração)
+- Sem grade: viewBox 512x400. Barraca de cumeeira em 3/4, entrada aberta, duas varas (frente e fundo), cordas e estacas.
+- Pendente: nada relevante.
+
+## barraca-20-pessoas (2 iterações)
+- Sem grade: viewBox 512x440. Pavilhão cônico com sanefa recortada, entrada aberta, mastro central com flâmula lisa (sem heráldica), cordas e estacas.
+- Pendente: nada relevante.
+
+## cobertor (2 iterações)
+- Cobertor de lã tingida dobrado em três, com duas listras de linho e franja. A 1ª versão em lã cinza parecia pilha de tábuas.
+- Pendente: nada relevante.
+
+## pelagem-de-animal (1 iteração)
+- Pele de animal esticada vista de cima (silhueta com patas e cauda), faixa escura do lombo e tufos.
+- Pendente: nada relevante.
+
+## equipamento-basico-para-grupo (1 iteração)
+- Caldeirão de ferro com alça e concha de madeira + tigela de madeira com colher.
+- Pendente: nada relevante.
+
+## equipamento-basico-pessoal (2 iterações)
+- Cobertor enrolado e amarrado, odre de couro, pederneira (fuzil de aço + pedra).
+- Pendente: o fuzil é pequeno no 64 px.
+
+## equipamento-de-alpinismo (2 iterações)
+- Rolo de corda, dois cravos (um com argola) e martelo curto de cabo de madeira.
+- Pendente: cravos finos no 64 px.
+
+## espigoes-de-ferro-escalador (2 iterações)
+- Um cravo de ferro achatado com olhal e argola, inclinado. Título corrigido para "Espigões de ferro (escalador)" (nome na lista tem erro de digitação).
+- Pendente: ponta fina no 64 px.
+
+## garrafa-ceramica (1 iteração)
+- Garrafa de barro de gargalo longo, rolha, faixas incisas e cordão no gargalo.
+- Pendente: nada relevante.
+
+## mochila-pequena (1 iteração)
+- Mochila simples de couro natural com aba, correia e fivela, alça de mão.
+- Pendente: nada relevante.
+
+## mochila (1 iteração)
+- Mochila grande: bolsos laterais, cobertor enrolado por cima, duas correias com fivelas.
+- Pendente: nada relevante.
+
+## odre-de-vinho (1 iteração)
+- Bolsa de couro em gota com gargalo amarrado, bocal de madeira com tampa e cordão de carregar.
+- Pendente: nada relevante.
+
+## oleo (3 iterações)
+- Jarrinha de cerâmica com asa, metade de baixo vidrada escura, tampa de pano amarrada e escorrido de óleo no gargalo (diferencia da garrafa).
+- Pendente: nada relevante.
+
+## racao-de-viagem (2 iterações)
+- Pano de linho aberto com pão duro, cunha de queijo e duas tiras de carne seca.
+- Pendente: a ponta dobrada do pano lembra um pouco uma vela de barco.
+
+## tocha (1 iteração)
+- Cabo de madeira, trapo embebido amarrado, chama chapada.
+- Pendente: nada relevante.
+
+## vara-2m (2 iterações)
+- Vara lisa de madeira a 45°, com alguns nós.
+- Pendente: nós quase invisíveis; é simplesmente uma vara.
+
+## vela-de-sebo (1 iteração)
+- Vela de sebo com escorridos, pavio aceso, em prato de ferro com argola.
+- Pendente: nada relevante.
+
+## aljava-de-cintura (2 iterações)
+- Tubo de couro levemente cônico com flechas aparecendo; presilhas e pedaço de cinto (couro vinho) atravessado na parte de cima.
+- Pendente: penas das flechas se sobrepõem um pouco.
+
+## aljava-de-ombro (2 iterações)
+- Tubo reto mais estreito com flechas; correia longa de ombro (couro vinho) presa por argolas no topo e na base.
+- Pendente: nada relevante.
+
+## correia-de-couro (1 iteração)
+- Laço de couro vinho com passador, preso à ponteira de ferro de um cabo de madeira curto (contexto mínimo, sem cabeça de arma).
+- Pendente: o cabo pode ser lido como cabo de ferramenta genérica.

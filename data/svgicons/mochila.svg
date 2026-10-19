@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Mochila</title>
+  <defs>
+    <path id="corpo" d="M124 190 Q124 160 154 160 H358 Q388 160 388 190 V436 Q388 464 358 464 H154 Q124 464 124 436 Z"/>
+    <clipPath id="c-corpo"><use xlink:href="#corpo"/></clipPath>
+    <path id="aba" d="M116 176 Q116 146 154 144 H358 Q396 146 396 176 V286 Q396 318 358 322 H154 Q116 318 116 286 Z"/>
+    <clipPath id="c-aba"><use xlink:href="#aba"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- bolsos laterais -->
+    <rect x="66" y="270" width="80" height="170" rx="22" fill="#7c5a3a"/>
+    <path d="M78 290 V420" fill="none" stroke="#a07850" stroke-width="8"/>
+    <path d="M66 310 Q106 322 146 310" fill="none" stroke-width="5"/>
+    <rect x="366" y="270" width="80" height="170" rx="22" fill="#573d26"/>
+    <path d="M366 310 Q406 322 446 310" fill="none" stroke-width="5"/>
+    <!-- corpo -->
+    <use xlink:href="#corpo" fill="#7c5a3a"/>
+    <g clip-path="url(#c-corpo)" stroke="none">
+      <rect x="114" y="150" width="44" height="330" fill="#a07850"/>
+      <rect x="352" y="150" width="44" height="330" fill="#573d26"/>
+      <rect x="114" y="432" width="290" height="40" fill="#573d26"/>
+    </g>
+    <use xlink:href="#corpo" fill="none"/>
+    <!-- cobertor enrolado por cima -->
+    <rect x="96" y="74" width="320" height="84" rx="40" fill="#85493a"/>
+    <path d="M132 90 H380" fill="none" stroke="#a8634a" stroke-width="10"/>
+    <path d="M132 146 H380" fill="none" stroke="#5e3329" stroke-width="8"/>
+    <!-- aba -->
+    <use xlink:href="#aba" fill="#7c5a3a"/>
+    <g clip-path="url(#c-aba)" stroke="none">
+      <rect x="108" y="136" width="300" height="34" fill="#a07850"/>
+      <rect x="108" y="136" width="40" height="200" fill="#a07850"/>
+      <rect x="362" y="136" width="40" height="200" fill="#573d26"/>
+    </g>
+    <use xlink:href="#aba" fill="none"/>
+    <path d="M138 304 Q256 316 374 304" fill="none" stroke="#573d26" stroke-width="5" stroke-dasharray="10 11"/>
+    <!-- correias com fivelas (prendem o cobertor) -->
+    <g id="correia">
+      <rect x="176" y="66" width="36" height="340" rx="6" fill="#573d26"/>
+      <path d="M184 80 V392" fill="none" stroke="#7c5a3a" stroke-width="6"/>
+      <rect x="166" y="320" width="56" height="44" rx="6" fill="none" stroke-width="18"/>
+      <rect x="166" y="320" width="56" height="44" rx="6" fill="none" stroke="#8a8579" stroke-width="8"/>
+    </g>
+    <rect x="300" y="66" width="36" height="340" rx="6" fill="#573d26"/>
+    <path d="M308 80 V392" fill="none" stroke="#7c5a3a" stroke-width="6"/>
+    <rect x="290" y="320" width="56" height="44" rx="6" fill="none" stroke-width="18"/>
+    <rect x="290" y="320" width="56" height="44" rx="6" fill="none" stroke="#8a8579" stroke-width="8"/>
+  </g>
+</svg>

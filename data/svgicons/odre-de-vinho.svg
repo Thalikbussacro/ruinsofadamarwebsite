@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Odre de vinho</title>
+  <defs>
+    <path id="odre" d="M318 150 Q260 130 190 160 Q90 210 80 320 Q74 420 170 448 Q270 470 350 400 Q420 330 384 222 Z"/>
+    <clipPath id="c-odre"><use xlink:href="#odre"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cordão de carregar -->
+    <path d="M110 220 Q120 64 330 92" fill="none" stroke-width="22"/>
+    <path d="M110 220 Q120 64 330 92" fill="none" stroke="#b5a98a" stroke-width="10"/>
+    <!-- bolsa de couro -->
+    <use xlink:href="#odre" fill="#7c5a3a"/>
+    <g clip-path="url(#c-odre)" stroke="none">
+      <path d="M60 120 H300 Q190 160 150 260 Q120 360 170 470 H60 Z" fill="#a07850"/>
+      <path d="M440 200 Q400 360 260 450 H440 Z" fill="#573d26"/>
+    </g>
+    <use xlink:href="#odre" fill="none"/>
+    <!-- costura -->
+    <path d="M130 300 Q200 330 320 260" fill="none" stroke="#573d26" stroke-width="5" stroke-dasharray="10 12"/>
+    <!-- gargalo amarrado -->
+    <path d="M318 150 L350 124 L404 178 L384 222 Z" fill="#7c5a3a"/>
+    <path d="M330 150 L366 196" fill="none" stroke-width="16"/>
+    <path d="M330 150 L366 196" fill="none" stroke="#b5a98a" stroke-width="7"/>
+    <!-- bocal de madeira e tampa -->
+    <path d="M346 116 L376 88 L428 140 L400 168 Z" fill="#7a5a3a"/>
+    <path d="M352 112 L376 90 L392 106 L366 128 Z" fill="#9a7448" stroke="none"/>
+    <path d="M346 116 L376 88 L428 140 L400 168 Z" fill="none"/>
+    <rect x="390" y="78" width="36" height="46" rx="8" transform="rotate(45 408 101)" fill="#55391f"/>
+  </g>
+</svg>

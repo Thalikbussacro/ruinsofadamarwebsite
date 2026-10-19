@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Ração de viagem</title>
+  <!-- pão (derivado): #c08e56 / #9a6c3c / #6e4a26; queijo: #dcbc66 / #b8963e / #8c6c2a; carne seca: #8a4a36 / #6a3424 / #4a2418 -->
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- pano aberto -->
+    <path d="M40 300 L230 170 L472 250 L300 450 Z" fill="#b5a98a"/>
+    <path d="M40 300 L230 170 L250 200 L80 310 Z" fill="#d8cdb0" stroke="none"/>
+    <path d="M300 450 L472 250 L440 250 L290 420 Z" fill="#8f8468" stroke="none"/>
+    <path d="M40 300 L230 170 L472 250 L300 450 Z" fill="none"/>
+    <!-- ponta dobrada do pano -->
+    <path d="M230 170 L262 70 L340 150 Z" fill="#b5a98a"/>
+    <path d="M230 170 L262 70 L280 104 Z" fill="#d8cdb0" stroke="none"/>
+    <path d="M230 170 L262 70 L340 150 Z" fill="none"/>
+    <!-- pão duro -->
+    <path d="M150 240 Q150 160 250 156 Q350 160 350 240 Q350 268 250 270 Q150 268 150 240 Z" fill="#9a6c3c"/>
+    <path d="M164 226 Q172 172 250 166 Q200 190 190 240 Z" fill="#c08e56" stroke="none"/>
+    <path d="M300 266 Q340 256 344 230 Q330 250 290 256 Z" fill="#6e4a26" stroke="none"/>
+    <path d="M150 240 Q150 160 250 156 Q350 160 350 240 Q350 268 250 270 Q150 268 150 240 Z" fill="none"/>
+    <path d="M206 180 L222 210 M250 172 L264 204 M294 180 L308 210" fill="none" stroke="#6e4a26" stroke-width="7"/>
+    <!-- queijo em cunha -->
+    <path d="M100 352 L250 382 L250 414 L104 384 Z" fill="#8c6c2a"/>
+    <path d="M100 352 L232 296 L250 382 Z" fill="#b8963e"/>
+    <path d="M100 352 L232 296 L222 318 L120 356 Z" fill="#dcbc66" stroke="none"/>
+    <path d="M100 352 L232 296 L250 382 Z" fill="none"/>
+    <path d="M232 296 L250 382 L250 414 L234 330 Z" fill="#dcbc66"/>
+    <ellipse cx="150" cy="378" rx="9" ry="6" fill="#6e5420" stroke="none"/>
+    <ellipse cx="204" cy="392" rx="8" ry="6" fill="#6e5420" stroke="none"/>
+    <!-- tiras de carne seca -->
+    <path d="M290 330 Q340 300 410 296 L414 320 Q350 326 300 352 Z" fill="#6a3424"/>
+    <path d="M292 334 Q340 306 408 302" fill="none" stroke="#8a4a36" stroke-width="6"/>
+    <path d="M286 370 Q344 340 404 344 L404 368 Q350 366 298 392 Z" fill="#6a3424"/>
+    <path d="M290 374 Q344 348 400 350" fill="none" stroke="#8a4a36" stroke-width="6"/>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 341 512" role="img">
+  <title>Mochila pequena</title>
+  <defs>
+    <path id="corpo" d="M66 170 Q66 140 96 140 H246 Q276 140 276 170 V430 Q276 458 246 458 H96 Q66 458 66 430 Z"/>
+    <clipPath id="c-corpo"><use xlink:href="#corpo"/></clipPath>
+    <path id="aba" d="M58 150 Q58 120 96 118 H246 Q284 120 284 150 V264 Q284 300 246 304 H96 Q58 300 58 264 Z"/>
+    <clipPath id="c-aba"><use xlink:href="#aba"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- alça de mão -->
+    <path d="M140 124 Q140 62 171 62 Q202 62 202 124" fill="none" stroke-width="28"/>
+    <path d="M140 124 Q140 62 171 62 Q202 62 202 124" fill="none" stroke="#7c5a3a" stroke-width="17"/>
+    <path d="M146 112 Q146 74 164 70" fill="none" stroke="#a07850" stroke-width="5"/>
+    <!-- corpo -->
+    <use xlink:href="#corpo" fill="#7c5a3a"/>
+    <g clip-path="url(#c-corpo)" stroke="none">
+      <rect x="56" y="130" width="40" height="340" fill="#a07850"/>
+      <rect x="246" y="130" width="40" height="340" fill="#573d26"/>
+      <rect x="56" y="430" width="240" height="40" fill="#573d26"/>
+    </g>
+    <use xlink:href="#corpo" fill="none"/>
+    <!-- aba -->
+    <use xlink:href="#aba" fill="#7c5a3a"/>
+    <g clip-path="url(#c-aba)" stroke="none">
+      <rect x="50" y="110" width="250" height="34" fill="#a07850"/>
+      <rect x="50" y="110" width="36" height="200" fill="#a07850"/>
+      <rect x="254" y="110" width="40" height="200" fill="#573d26"/>
+    </g>
+    <use xlink:href="#aba" fill="none"/>
+    <path d="M78 284 Q171 296 264 284" fill="none" stroke="#573d26" stroke-width="4" stroke-dasharray="9 10"/>
+    <!-- correia com fivela -->
+    <rect x="154" y="236" width="34" height="166" rx="6" fill="#573d26"/>
+    <path d="M162 248 V392" fill="none" stroke="#7c5a3a" stroke-width="5"/>
+    <rect x="144" y="314" width="54" height="42" rx="6" fill="none" stroke-width="16"/>
+    <rect x="144" y="314" width="54" height="42" rx="6" fill="none" stroke="#8a8579" stroke-width="7"/>
+  </g>
+</svg>

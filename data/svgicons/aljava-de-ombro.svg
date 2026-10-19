@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 512" role="img">
+  <title>Aljava de ombro</title>
+  <defs>
+    <path id="tubo" d="M20 150 H82 L80 446 Q51 462 22 446 Z"/>
+    <clipPath id="c-tubo"><use xlink:href="#tubo"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <!-- correia de ombro -->
+    <path d="M70 168 Q110 180 106 300 Q102 420 70 430" fill="none" stroke-width="20"/>
+    <path d="M70 168 Q110 180 106 300 Q102 420 70 430" fill="none" stroke="#6b2a24" stroke-width="11"/>
+    <path d="M84 186 Q102 210 102 280" fill="none" stroke="#8a3a32" stroke-width="4"/>
+    <!-- flechas -->
+    <path d="M36 114 V204" fill="none" stroke-width="13"/>
+    <path d="M36 114 V204" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <path d="M36 62 Q18 74 20 124 L36 136 Z" fill="#d8cdb0"/>
+    <path d="M36 62 Q54 74 52 124 L36 136 Z" fill="#b5a98a"/>
+    <path d="M36 54 V144" fill="none" stroke-width="10"/>
+    <path d="M36 56 V142" fill="none" stroke="#9a7448" stroke-width="4"/>
+    <path d="M66 120 V210" fill="none" stroke-width="13"/>
+    <path d="M66 120 V210" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <path d="M66 68 Q48 80 50 130 L66 142 Z" fill="#d8cdb0"/>
+    <path d="M66 68 Q84 80 82 130 L66 142 Z" fill="#b5a98a"/>
+    <path d="M66 60 V150" fill="none" stroke-width="10"/>
+    <path d="M66 62 V148" fill="none" stroke="#9a7448" stroke-width="4"/>
+    <path d="M51 102 V192" fill="none" stroke-width="13"/>
+    <path d="M51 102 V192" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <path d="M51 50 Q33 62 35 112 L51 124 Z" fill="#d8cdb0"/>
+    <path d="M51 50 Q69 62 67 112 L51 124 Z" fill="#b5a98a"/>
+    <path d="M51 42 V132" fill="none" stroke-width="10"/>
+    <path d="M51 44 V130" fill="none" stroke="#9a7448" stroke-width="4"/>
+    <!-- tubo de couro -->
+    <use xlink:href="#tubo" fill="#7c5a3a"/>
+    <g clip-path="url(#c-tubo)" stroke="none">
+      <rect x="16" y="140" width="22" height="340" fill="#a07850"/>
+      <rect x="66" y="140" width="22" height="340" fill="#573d26"/>
+    </g>
+    <use xlink:href="#tubo" fill="none"/>
+    <rect x="14" y="140" width="74" height="22" rx="6" fill="#573d26"/>
+    <rect x="18" y="414" width="66" height="20" rx="6" fill="#573d26"/>
+    <!-- argolas da correia -->
+    <rect x="70" y="160" width="16" height="24" rx="4" fill="#8a8579"/>
+    <rect x="68" y="418" width="16" height="24" rx="4" fill="#8a8579"/>
+  </g>
+</svg>

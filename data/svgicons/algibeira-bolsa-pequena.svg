@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Algibeira ou bolsa pequena</title>
+  <defs>
+    <path id="corpo" d="M200 196 Q146 236 134 316 Q124 410 206 438 Q256 452 306 438 Q388 410 378 316 Q366 236 312 196 Z"/>
+    <clipPath id="c-corpo"><use xlink:href="#corpo"/></clipPath>
+    <path id="boca" d="M208 198 L182 130 Q256 112 330 130 L304 198 Z"/>
+    <clipPath id="c-boca"><use xlink:href="#boca"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- alça de pendurar no cinto -->
+    <path d="M226 134 Q226 60 256 60 Q286 60 286 134" fill="none" stroke-width="30"/>
+    <path d="M226 134 Q226 60 256 60 Q286 60 286 134" fill="none" stroke="#7c5a3a" stroke-width="18"/>
+    <path d="M232 120 Q232 72 252 68" fill="none" stroke="#a07850" stroke-width="5"/>
+    <!-- boca franzida -->
+    <use xlink:href="#boca" fill="#7c5a3a"/>
+    <g clip-path="url(#c-boca)" stroke="none">
+      <path d="M170 110 H232 L240 210 H170 Z" fill="#a07850"/>
+      <path d="M290 110 H350 V210 H284 Z" fill="#573d26"/>
+    </g>
+    <use xlink:href="#boca" fill="none"/>
+    <path d="M226 140 L232 194 M256 132 V196 M286 140 L280 194" fill="none" stroke-width="4"/>
+    <!-- corpo -->
+    <use xlink:href="#corpo" fill="#7c5a3a"/>
+    <g clip-path="url(#c-corpo)" stroke="none">
+      <path d="M100 180 H210 Q170 300 200 460 H100 Z" fill="#a07850"/>
+      <path d="M412 180 H330 Q370 320 300 460 H412 Z" fill="#573d26"/>
+    </g>
+    <use xlink:href="#corpo" fill="none"/>
+    <!-- costura -->
+    <path d="M166 330 Q256 362 346 330" fill="none" stroke="#573d26" stroke-width="5" stroke-dasharray="10 12"/>
+    <!-- cordão -->
+    <path d="M190 202 Q256 222 322 202" fill="none" stroke-width="22"/>
+    <path d="M190 202 Q256 222 322 202" fill="none" stroke="#d8cdb0" stroke-width="11"/>
+    <path d="M300 210 Q318 250 300 288" fill="none" stroke-width="18"/>
+    <path d="M300 210 Q318 250 300 288" fill="none" stroke="#b5a98a" stroke-width="8"/>
+    <path d="M318 206 Q350 236 350 272" fill="none" stroke-width="18"/>
+    <path d="M318 206 Q350 236 350 272" fill="none" stroke="#b5a98a" stroke-width="8"/>
+    <circle cx="300" cy="292" r="11" fill="#b5a98a"/>
+    <circle cx="350" cy="276" r="11" fill="#b5a98a"/>
+  </g>
+</svg>

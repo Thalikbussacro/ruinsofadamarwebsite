@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Cordel de 3/16"</title>
+  <defs>
+    <circle id="bola" cx="236" cy="240" r="164"/>
+    <clipPath id="c-bola"><use xlink:href="#bola"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- ponta solta -->
+    <path d="M370 330 Q420 360 400 410 Q384 446 436 458" fill="none" stroke-width="16"/>
+    <path d="M370 330 Q420 360 400 410 Q384 446 436 458" fill="none" stroke="#b5a98a" stroke-width="7"/>
+    <!-- novelo -->
+    <use xlink:href="#bola" fill="#b5a98a"/>
+    <g clip-path="url(#c-bola)" fill="none" stroke-width="4">
+      <path d="M60 200 A190 120 -30 0 1 400 120 M60 250 A190 120 -30 0 1 420 160 M70 300 A190 120 -30 0 1 420 210 M90 350 A190 120 -30 0 1 420 260" stroke="#8f8468"/>
+      <path d="M150 90 Q240 260 160 410 M200 80 Q290 260 220 420 M250 76 Q340 250 290 420 M300 84 Q390 240 350 400" stroke="#8f8468"/>
+    </g>
+    <g clip-path="url(#c-bola)" stroke="none">
+      <path d="M60 60 H200 Q120 160 120 300 Q120 360 140 420 H60 Z" fill="#d8cdb0"/>
+      <path d="M420 60 V430 H200 Q330 400 360 260 Q380 160 330 60 Z" fill="#8f8468"/>
+    </g>
+    <g clip-path="url(#c-bola)" fill="none" stroke-width="4" stroke="#8f8468">
+      <path d="M90 200 Q110 140 160 104 M84 260 Q100 180 170 130 M96 320 Q110 220 190 160"/>
+    </g>
+    <g clip-path="url(#c-bola)" fill="none" stroke-width="4" stroke="#6e6450">
+      <path d="M380 180 Q370 300 280 380 M396 240 Q380 330 320 390 M350 120 Q350 250 240 380"/>
+    </g>
+    <use xlink:href="#bola" fill="none"/>
+    <!-- fio que sai do novelo -->
+    <path d="M300 380 Q340 360 370 330" fill="none" stroke-width="16"/>
+    <path d="M300 380 Q340 360 370 330" fill="none" stroke="#b5a98a" stroke-width="7"/>
+  </g>
+</svg>

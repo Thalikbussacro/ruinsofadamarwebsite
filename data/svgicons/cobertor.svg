@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 341" role="img">
+  <title>Cobertor</title>
+  <!-- lã tingida (derivada): #a8634a / #85493a / #5e3329 -->
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- dobra de baixo -->
+    <path d="M74 206 Q60 236 74 266 Q84 284 120 282 H392 Q432 284 440 262 Q450 236 438 206 Z" fill="#85493a"/>
+    <path d="M90 270 H420" fill="none" stroke="#5e3329" stroke-width="7"/>
+    <!-- dobra do meio -->
+    <path d="M70 146 Q56 176 70 206 Q82 222 116 222 H396 Q434 222 442 202 Q452 176 440 146 Z" fill="#85493a"/>
+    <path d="M86 160 Q80 180 88 200" fill="none" stroke="#a8634a" stroke-width="7"/>
+    <!-- dobra de cima com face superior -->
+    <path d="M76 140 Q66 110 96 86 Q110 76 140 76 H380 Q414 76 428 90 Q448 110 438 140 Q428 162 396 162 H116 Q84 162 76 140 Z" fill="#85493a"/>
+    <path d="M96 100 Q112 84 144 84 H380 Q406 84 418 96 Q392 108 360 108 H140 Q110 108 96 100 Z" fill="#a8634a" stroke="none"/>
+    <path d="M90 150 Q120 156 160 156 H392 Q420 154 432 140" fill="none" stroke="#5e3329" stroke-width="7"/>
+    <!-- listras de linho -->
+    <path d="M136 80 H166 V160 H136 Z M136 160 H166 V222 H136 Z M136 222 H166 V282 H136 Z" fill="#b5a98a"/>
+    <path d="M330 80 H360 V160 H330 Z M330 160 H360 V222 H330 Z M330 222 H360 V282 H330 Z" fill="#b5a98a"/>
+    <path d="M142 88 V150 M336 88 V150" fill="none" stroke="#d8cdb0" stroke-width="5"/>
+    <!-- franja -->
+    <path d="M110 284 V302 M140 284 V304 M170 284 V302 M200 284 V304 M230 284 V302 M260 284 V304 M290 284 V302 M320 284 V304 M350 284 V302 M380 284 V304 M408 284 V300" fill="none" stroke-width="13"/>
+    <path d="M110 284 V302 M140 284 V304 M170 284 V302 M200 284 V304 M230 284 V302 M260 284 V304 M290 284 V302 M320 284 V304 M350 284 V302 M380 284 V304 M408 284 V300" fill="none" stroke="#b5a98a" stroke-width="5"/>
+  </g>
+</svg>

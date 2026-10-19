@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Pedra de amolar</title>
+  <g transform="translate(256 256) scale(1.06) translate(-260 -314)" stroke="#0a0806" stroke-width="5.7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- base de madeira -->
+    <path d="M60 330 L124 274 H460 L396 330 Z" fill="#9a7448"/>
+    <path d="M60 330 H396 V392 H60 Z" fill="#7a5a3a"/>
+    <path d="M396 330 L460 274 V336 L396 392 Z" fill="#55391f"/>
+    <!-- pedra -->
+    <path d="M104 318 L152 276 H420 L372 318 Z" fill="#8f9294"/>
+    <path d="M104 318 H372 V270" fill="none"/>
+    <path d="M104 318 L152 276 V236 L104 278 Z" fill="#6e7173"/>
+    <path d="M104 278 L152 236 H420 L372 278 Z" fill="#8f9294"/>
+    <path d="M104 278 H372 V318 H104 Z" fill="#6e7173"/>
+    <path d="M372 278 L420 236 V276 L372 318 Z" fill="#4f5254"/>
+    <path d="M118 272 L156 240" fill="none" stroke="#b2b4b3" stroke-width="5"/>
+    <!-- faca sobre a pedra -->
+    <path d="M196 262 L352 240 Q372 238 386 246 Q370 256 352 258 L198 276 Z" fill="#b5ae9c"/>
+    <path d="M198 270 L352 252 Q370 254 386 246 Q370 256 352 258 L198 276 Z" fill="#8a8579" stroke="none"/>
+    <path d="M196 262 L352 240 Q372 238 386 246 Q370 256 352 258 L198 276 Z" fill="none"/>
+    <rect x="100" y="256" width="102" height="26" rx="10" transform="rotate(-8 151 269)" fill="#7a5a3a"/>
+    <path d="M110 264 L186 254" fill="none" stroke="#9a7448" stroke-width="5"/>
+  </g>
+</svg>

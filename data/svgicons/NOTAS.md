@@ -36,3 +36,30 @@ Não usei imagens de referência da web: as ferramentas de busca desta sessão d
 - Material novo, o chifre translúcido dos painéis: `#d6bf8a` / `#b89c66` / `#8c7346`. A chama é chapada (`#c98a3c` com miolo `#e6c878`), sem brilho em volta. Ela ficou porque sem chama a lanterna parece uma gaiola.
 - Iteração 2: tirei o montante central, que cortava a chama ao meio, e aumentei a chama para ela sobreviver a 64 px.
 - Pendente: a chama ficou grande e um pouco "desenho animado" perto do resto. Pela forma, o objeto ocupa só uns 40% da largura da tela.
+
+## espada-grande (2 iterações)
+- Grade 1x6, `viewBox` 96×576. A grade tem prioridade sobre a regra da diagonal: espada em pé, ponta para cima. Lâmina com duas faces (clara à esquerda) e sulco central, guarda reta, empunhadura longa de duas mãos em couro vinho e pomo oval.
+- Iteração 2: encurtei a guarda, que quase encostava nas bordas da tela estreita.
+- Pendente: a 11×64 px só a cor da empunhadura separa a espada de uma lança curta. É o limite da grade 1x6.
+
+## pistola-auto-45 (2 iterações)
+- Sem grade no catálogo; `viewBox` 472×308, cano para a direita. Silhueta genérica de pistola .45 clássica: ferrolho com estrias atrás, cão exposto, trava de empunhadura, guarda-mato e placas de madeira na empunhadura.
+- Iteração 2: a trava da empunhadura estava pontuda e parecia um espinho; arredondei.
+- Pendente: o cão ainda lê como uma "orelha" pequena no canto superior esquerdo.
+
+## lanca-chama (3 iterações)
+- Sem grade; `viewBox` 512×400. Mochila com dois tanques de combustível e o tanque de pressão no meio (inspirado no tipo da Segunda Guerra, sem copiar um modelo), cinta de couro, mangueira e lança horizontal com bico para a direita.
+- Cor nova, verde-oliva militar fosco: `#7d7a55` / `#5f5d41` / `#44432f`.
+- Iteração 2: sem fogo, parecia lavadora de pressão ou cilindro de mergulho. Pus uma língua de chama chapada saindo do bico, nas mesmas cores da chama do lampião. Iteração 3: reenquadrei para a chama não encostar na borda.
+- Pendente: a chama é o elemento que faz a leitura; sem ela o ícone não funciona. A lança fica fina a 64 px.
+
+## pedra-de-amolar (3 iterações)
+- Grade 1x1. Uma pedra solta é só um retângulo cinza; para mostrar a função, pus a pedra numa base de madeira, em vista oblíqua, com uma faca de cozinha deitada em cima.
+- Cor nova, pedra cinza-azulada para não confundir com o ferro: `#b2b4b3` (só no brilho) / `#8f9294` / `#6e7173` / `#4f5254`.
+- Iterações 2 e 3: centralização vertical (a base pesava embaixo).
+- Pendente: a faca é uma lâmina num ícone de ferramenta; mantive pequena e sem ponta agressiva. Se incomodar, a alternativa é a pedra sozinha com uma gota d'água, que fica menos legível. A 64 px a faca vira um risco.
+
+## pastilhas-purificar-agua (1 iteração)
+- Sem grade; tela quadrada. Frasco de vidro âmbar com tampa de rosca e rótulo liso (sem texto), mais duas pastilhas com vinco na frente.
+- Cor nova, vidro âmbar: `#9c7444` / `#7a5734` / `#573c22`; o reflexo do vidro é uma faixa creme fina.
+- Pendente: o ícone diz "comprimidos", não "purificar água". Não pus gota d'água porque seria símbolo, não objeto. Se o catálogo precisar diferenciar de remédios, dá para pôr um cantil ao lado.

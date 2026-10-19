@@ -2,6 +2,8 @@
 
 Um SVG por item, com o nome igual ao `id` em `data/gurps/equipamento.json`. Os previews PNG não ficam no repositório: são gerados só na hora da revisão.
 
+Itens que são o mesmo objeto de outro com outra regra de uso (ex.: `espada-bastarda-duas-maos`) não têm SVG próprio: `apelidos.json` aponta cada um para o SVG que ele usa. Ataques naturais e desarmados (soco, chute, dentes, presas, bico, golpeador) e golpes com escudo não são objetos e ficam sem ícone desenhado.
+
 Renderização com `cairosvg` 2.9.1 (Python). Previews gerados a partir de cada SVG com o lado maior em 512 px (`-512`, `-dark` sobre `#14110e`) e em 64 px (`-64`).
 
 Não usei imagens de referência da web: as ferramentas de busca desta sessão devolvem só texto, não imagens. Silhuetas e proporções vêm de conhecimento geral dos objetos.

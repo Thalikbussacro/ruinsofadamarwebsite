@@ -65,3 +65,70 @@ Não usei imagens de referência da web: as ferramentas de busca desta sessão d
 - Sem grade; tela quadrada. Frasco de vidro âmbar com tampa de rosca e rótulo liso (sem texto), mais duas pastilhas com vinco na frente.
 - Cor nova, vidro âmbar: `#9c7444` / `#7a5734` / `#573c22`; o reflexo do vidro é uma faixa creme fina.
 - Pendente: o ícone diz "comprimidos", não "purificar água". Não pus gota d'água porque seria símbolo, não objeto. Se o catálogo precisar diferenciar de remédios, dá para pôr um cantil ao lado.
+
+# Lote: armaduras de cavalo
+
+# Lote G-bardas
+
+Geral: todos os SVGs foram gerados por script (`scratchpad/gbardas/gen.py`, `heads.py`, `bodies.py`) para que a silhueta do cavalo seja exatamente a mesma em toda a série. Cavalo chapado em marrom-acinzentado escuro (`#4a4038`, com `#372f29` para cauda e pernas do lado oposto). Esse tom foi derivado do pelo, mais escuro e menos saturado, para não competir com a peça. Luz e sombra nas peças vêm de uma borda clara no alto à esquerda e escura embaixo à direita, feitas com clipPath de cópias deslocadas da própria forma. Malha: arcos em ∩ pequenos. Escamas: fileiras de U maiores, com arco claro. Couro e tecido: couro natural com borda de tecido claro em traço duplo. Peças de malha e escamas da cabeça e da barda parcial levam bainha de couro.
+Cabeça/pescoço: 512x512, perfil virado para a direita, com o pescoço cortado reto embaixo (como busto). Cavalo inteiro: viewBox `-22 -25 568 444` (proporção 512x400 com margem; o contorno fica com ~5,4 px efetivos).
+
+## barda-mascara-couro-tecido (4 iterações)
+- Máscara cobre testa, olho e chanfro até acima das narinas, com furo do olho e uma correia vinho atrás para mostrar que está vestida.
+- Pendente: nada relevante.
+
+## barda-mascara-malha (4 iterações)
+- Mesma forma da máscara, preenchida com malha.
+- Pendente: em 64 px a malha vira cinza liso; só se distingue das escamas em tamanho grande.
+
+## barda-mascara-escamas (4 iterações)
+- Mesma forma, com escamas.
+- Pendente: nada relevante.
+
+## barda-mascara-placas (4 iterações)
+- Chanfron de uma lâmina, com aresta central, anel no olho e 3 rebites.
+- Pendente: nada relevante.
+
+## barda-cabeca-pescoco-couro-tecido (4 iterações)
+- Capuz que cobre cabeça e pescoço. Deixa à mostra orelha, focinho e base do pescoço, com borda de tecido em todo o contorno e uma costura.
+- Pendente: o tecido ao redor do canto da ganacha forma um "tubo" um pouco estranho.
+
+## barda-cabeca-pescoco-malha (4 iterações)
+- Capuz de malha com bainha de couro na frente e embaixo.
+- Pendente: em 64 px lê como "cavalo cinza"; a bainha e o focinho escuro ajudam, mas pouco.
+
+## barda-cabeca-pescoco-escamas (4 iterações)
+- Capuz de escamas com bainha de couro.
+- Pendente: nada relevante.
+
+## barda-cabeca-pescoco-placas (4 iterações)
+- Chanfron, mais crinet de 5 lâminas articuladas que cobrem o pescoço.
+- Pendente: nada relevante.
+
+## barda-parcial-couro-tecido (2 iterações)
+- Peitoral que cobre peito, espádua e frente do tronco até a altura da barriga, com borda de tecido embaixo e atrás.
+- Pendente: a faixa de tecido vertical atrás parece um pouco uma "cinta".
+
+## barda-parcial-malha (2 iterações)
+- Mesma forma, em malha, com bainha de couro.
+- Pendente: nada relevante.
+
+## barda-parcial-escamas (2 iterações)
+- Mesma forma, em escamas.
+- Pendente: nada relevante.
+
+## barda-completa-couro-tecido (2 iterações)
+- Gualdrapa (caparazão) que cobre tronco e garupa até abaixo da barriga, com gomos costurados e barra de tecido. A cauda fica por cima.
+- Pendente: nada relevante.
+
+## barda-completa-malha (2 iterações)
+- Mesma forma, em malha, com barra de couro.
+- Pendente: a 64 px é um bloco cinza; lê como "cavalo coberto", mas o material não aparece.
+
+## barda-completa-placas (3 iterações)
+- Peitoral, flanqueira e garupeira como três placas separadas. O dorso aparece entre elas, onde iria a sela.
+- Pendente: a flanqueira retangular no meio parece um pouco uma caixa.
+
+## barda-perneiras-placas (4 iterações)
+- Placas nas quatro canelas (as do lado oposto mais escuras), cada uma com junta na altura do joelho ou jarrete; os cascos ficam à mostra.
+- Pendente: as placas são pequenas no ícone inteiro; em 64 px leem como "pernas cinza".

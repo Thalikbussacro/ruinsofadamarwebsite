@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Cabeça e Pescoço de Couro e Tecido (Barda)</title>
+  <defs>
+    <path id="p1" d="M98 434 C102 330 152 196 228 126 L262 104 C300 132 346 174 390 214 Q398 282 352 334 Q322 324 300 304 Q280 286 278 264 C282 330 296 392 308 434 Z"/><clipPath id="cp1"><use xlink:href="#p1"/></clipPath><clipPath id="ap1"><use xlink:href="#p1" transform="translate(18 18)"/></clipPath><clipPath id="bp1"><use xlink:href="#p1" transform="translate(-18 -18)"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" transform="translate(-9 -13)">
+    <path d="M92 474 C96 330 146 196 230 122 L224 64 Q240 72 262 106 C304 138 364 198 420 262 Q446 292 440 324 Q432 350 400 348 L372 340 Q326 330 298 304 Q276 284 274 264 C276 340 300 410 320 474 Z" fill="#4a4038"/>
+    <path d="M420 300 Q432 304 432 318" fill="none" stroke-width="5"/>
+    <path d="M222 140 L226 72" fill="none" stroke="#372f29" stroke-width="5"/>
+    <use xlink:href="#p1" fill="#a07850"/><g clip-path="url(#cp1)" stroke="none"><g clip-path="url(#ap1)"><rect x="-50" y="-50" width="700" height="700" fill="#573d26"/><g clip-path="url(#bp1)"><rect x="-50" y="-50" width="700" height="700" fill="#7c5a3a"/></g></g></g><use xlink:href="#p1" fill="none" stroke-width="6"/>
+    <path d="M98 434 C102 330 152 196 228 126 L262 104 C300 132 346 174 390 214 Q398 282 352 334 Q322 324 300 304 Q280 286 278 264 C282 330 296 392 308 434 Z" fill="none" stroke-width="26"/><path d="M98 434 C102 330 152 196 228 126 L262 104 C300 132 346 174 390 214 Q398 282 352 334 Q322 324 300 304 Q280 286 278 264 C282 330 296 392 308 434 Z" fill="none" stroke="#b5a98a" stroke-width="14"/>
+    <path d="M180 260 Q220 360 214 440" fill="none" stroke="#573d26" stroke-width="5"/>
+    <circle cx="298" cy="184" r="24" fill="#b5a98a" stroke-width="5"/>
+    <circle cx="298" cy="184" r="14" fill="#0a0806"/>
+  </g>
+</svg>

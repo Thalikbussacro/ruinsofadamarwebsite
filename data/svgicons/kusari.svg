@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341 512" role="img">
+  <title>Kusari</title>
+  <g transform="translate(8 -8)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- peso menor da outra ponta -->
+    <g transform="rotate(-20 98 86)">
+      <rect x="62" y="66" width="62" height="38" rx="12" fill="#8a8579"/>
+      <path d="M72 77 H104" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+      <path d="M80 95 H116" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    </g>
+    <!-- corrente (traço duplo por elo) -->
+    <g fill="none">
+      <ellipse cx="145.5" cy="93.2" rx="21.1" ry="11.0" transform="rotate(6.3 145.5 93.2)" stroke="#0a0806" stroke-width="16"/>
+      <ellipse cx="145.5" cy="93.2" rx="21.1" ry="11.0" transform="rotate(6.3 145.5 93.2)" stroke="#8a8579" stroke-width="7"/>
+      <path d="M163.4 95.0 L195.4 105.7" stroke="#0a0806" stroke-width="17.6"/>
+      <path d="M163.4 95.0 L195.4 105.7" stroke="#8a8579" stroke-width="7.6"/>
+      <ellipse cx="209.8" cy="116.3" rx="21.1" ry="11.0" transform="rotate(39.1 209.8 116.3)" stroke="#0a0806" stroke-width="16"/>
+      <ellipse cx="209.8" cy="116.3" rx="21.1" ry="11.0" transform="rotate(39.1 209.8 116.3)" stroke="#8a8579" stroke-width="7"/>
+      <path d="M224.8 128.2 L232.6 161.0" stroke="#0a0806" stroke-width="17.6"/>
+      <path d="M224.8 128.2 L232.6 161.0" stroke="#8a8579" stroke-width="7.6"/>
+      <ellipse cx="223.4" cy="178.4" rx="21.1" ry="11.0" transform="rotate(118.6 223.4 178.4)" stroke="#0a0806" stroke-width="16"/>
+      <ellipse cx="223.4" cy="178.4" rx="21.1" ry="11.0" transform="rotate(118.6 223.4 178.4)" stroke="#8a8579" stroke-width="7"/>
+      <path d="M214.0 193.7 L186.9 213.8" stroke="#0a0806" stroke-width="17.6"/>
+      <path d="M214.0 193.7 L186.9 213.8" stroke="#8a8579" stroke-width="7.6"/>
+      <ellipse cx="170.2" cy="220.3" rx="21.1" ry="11.0" transform="rotate(157.9 170.2 220.3)" stroke="#0a0806" stroke-width="16"/>
+      <ellipse cx="170.2" cy="220.3" rx="21.1" ry="11.0" transform="rotate(157.9 170.2 220.3)" stroke="#8a8579" stroke-width="7"/>
+      <path d="M153.1 226.1 L123.7 242.7" stroke="#0a0806" stroke-width="17.6"/>
+      <path d="M153.1 226.1 L123.7 242.7" stroke="#8a8579" stroke-width="7.6"/>
+      <ellipse cx="112.2" cy="256.2" rx="21.1" ry="11.0" transform="rotate(125.4 112.2 256.2)" stroke="#0a0806" stroke-width="16"/>
+      <ellipse cx="112.2" cy="256.2" rx="21.1" ry="11.0" transform="rotate(125.4 112.2 256.2)" stroke="#8a8579" stroke-width="7"/>
+      <path d="M101.4 273.9 L115.3 304.6" stroke="#0a0806" stroke-width="17.6"/>
+      <path d="M101.4 273.9 L115.3 304.6" stroke="#8a8579" stroke-width="7.6"/>
+      <ellipse cx="131.9" cy="313.9" rx="21.1" ry="11.0" transform="rotate(32.7 131.9 313.9)" stroke="#0a0806" stroke-width="16"/>
+      <ellipse cx="131.9" cy="313.9" rx="21.1" ry="11.0" transform="rotate(32.7 131.9 313.9)" stroke="#8a8579" stroke-width="7"/>
+      <path d="M147.3 323.1 L179.4 333.6" stroke="#0a0806" stroke-width="17.6"/>
+      <path d="M147.3 323.1 L179.4 333.6" stroke="#8a8579" stroke-width="7.6"/>
+      <ellipse cx="197.3" cy="336.2" rx="21.1" ry="11.0" transform="rotate(8.3 197.3 336.2)" stroke="#0a0806" stroke-width="16"/>
+      <ellipse cx="197.3" cy="336.2" rx="21.1" ry="11.0" transform="rotate(8.3 197.3 336.2)" stroke="#8a8579" stroke-width="7"/>
+    </g>
+    <!-- argola e peso principal -->
+    <ellipse cx="234" cy="344" rx="14" ry="12" fill="none" stroke-width="16"/>
+    <ellipse cx="234" cy="344" rx="14" ry="12" fill="none" stroke="#8a8579" stroke-width="7"/>
+    <path d="M216 360 H252 L266 376 V452 L252 468 H216 L202 452 V376 Z" fill="#8a8579"/>
+    <path d="M216 360 H226 V468 H216 L202 452 V376 Z" fill="#b5ae9c" stroke="none"/>
+    <path d="M244 360 H252 L266 376 V452 L252 468 H244 Z" fill="#5f5b52" stroke="none"/>
+    <path d="M216 360 H252 L266 376 V452 L252 468 H216 L202 452 V376 Z" fill="none"/>
+    <path d="M226 362 V466 M244 362 V466" fill="none" stroke-width="3.5"/>
+  </g>
+</svg>

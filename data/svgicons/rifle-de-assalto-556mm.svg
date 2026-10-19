@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 26 512 210" role="img">
+  <title>Rifle de assalto 5,56 mm</title>
+  <defs>
+    <path id="stock" d="M50 80 L152 90 V124 L76 152 H50 Q42 152 42 144 V88 Q42 80 50 80 Z"/>
+    <path id="grip" d="M198 124 H230 L216 188 Q214 196 206 196 H190 Q182 196 183 188 Z"/>
+    <path id="mag" d="M248 124 H284 Q290 166 316 200 L282 214 Q256 178 248 124 Z"/>
+    <rect id="upper" x="150" y="76" width="146" height="34" rx="5"/>
+    <path id="lower" d="M156 106 H284 V128 H156 Z"/>
+    <rect id="guard" x="290" y="74" width="114" height="48" rx="8"/>
+    <clipPath id="c-stock"><use xlink:href="#stock"/></clipPath>
+    <clipPath id="c-grip"><use xlink:href="#grip"/></clipPath>
+    <clipPath id="c-mag"><use xlink:href="#mag"/></clipPath>
+    <clipPath id="c-upper"><use xlink:href="#upper"/></clipPath>
+    <clipPath id="c-guard"><use xlink:href="#guard"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cano e supressor de chama -->
+    <rect x="398" y="92" width="52" height="14" rx="3" fill="#5f5b52"/>
+    <path d="M404 95 H446" fill="none" stroke="#8a8579" stroke-width="4"/>
+    <rect x="446" y="86" width="28" height="26" rx="4" fill="#5f5b52"/>
+    <path d="M452 90 H470" fill="none" stroke="#8a8579" stroke-width="4"/>
+    <path d="M456 102 H468" fill="none" stroke-width="4"/>
+    <!-- massa de mira -->
+    <path d="M386 76 L392 46 H402 L410 76 Z" fill="#4a463f"/>
+    <!-- coronha -->
+    <use xlink:href="#stock" fill="#4a463f"/>
+    <g clip-path="url(#c-stock)" stroke="none">
+      <path d="M40 78 L156 88 V104 L40 100 Z" fill="#5f5a50"/>
+      <path d="M40 146 L156 118 V160 H40 Z" fill="#322f29"/>
+    </g>
+    <use xlink:href="#stock" fill="none"/>
+    <rect x="38" y="78" width="14" height="76" rx="4" fill="#322f29"/>
+    <!-- empunhadura -->
+    <use xlink:href="#grip" fill="#4a463f"/>
+    <path d="M205 128 L194 188" fill="none" stroke="#5f5a50" stroke-width="8"/>
+    <use xlink:href="#grip" fill="none"/>
+    <!-- guarda-mato -->
+    <path d="M200 128 V144 H246 V128" fill="none" stroke-width="11"/>
+    <path d="M200 128 V144 H246 V128" fill="none" stroke="#5f5b52" stroke-width="4"/>
+    <!-- carregador curvo -->
+    <use xlink:href="#mag" fill="#4a463f"/>
+    <g clip-path="url(#c-mag)" stroke="none">
+      <path d="M244 120 H262 Q268 170 296 208 H270 Q248 172 244 120 Z" fill="#5f5a50"/>
+    </g>
+    <use xlink:href="#mag" fill="none"/>
+    <!-- caixa da culatra -->
+    <use xlink:href="#lower" fill="#5f5b52"/>
+    <use xlink:href="#upper" fill="#8a8579"/>
+    <g clip-path="url(#c-upper)" stroke="none">
+      <rect x="150" y="76" width="146" height="9" fill="#b5ae9c"/>
+      <rect x="150" y="100" width="146" height="12" fill="#5f5b52"/>
+    </g>
+    <use xlink:href="#upper" fill="none"/>
+    <rect x="232" y="84" width="40" height="14" rx="3" fill="#4a463f"/>
+    <!-- trilho e alça de mira -->
+    <rect x="160" y="64" width="132" height="14" rx="3" fill="#5f5b52"/>
+    <path d="M178 64 V72 M198 64 V72 M218 64 V72 M238 64 V72 M258 64 V72 M276 64 V72" fill="none" stroke-width="4"/>
+    <path d="M166 64 V48 H186 L190 64" fill="#5f5b52"/>
+    <!-- guarda-mão -->
+    <use xlink:href="#guard" fill="#4a463f"/>
+    <g clip-path="url(#c-guard)" stroke="none">
+      <rect x="290" y="74" width="114" height="14" fill="#5f5a50"/>
+      <rect x="290" y="110" width="114" height="12" fill="#322f29"/>
+    </g>
+    <use xlink:href="#guard" fill="none"/>
+    <path d="M308 92 H322 M336 92 H350 M364 92 H378 M308 104 H322 M336 104 H350 M364 104 H378" fill="none" stroke-width="6"/>
+  </g>
+</svg>

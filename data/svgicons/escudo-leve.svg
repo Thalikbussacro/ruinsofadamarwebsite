@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Escudo leve</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- face de couro sobre madeira -->
+    <defs><clipPath id="c-face"><circle cx="256" cy="256" r="186"/></clipPath></defs>
+    <circle cx="256" cy="256" r="186" fill="#7c5a3a"/>
+    <g clip-path="url(#c-face)" stroke="none">
+      <path d="M68 256 a188 188 0 1 0 376 0 a188 188 0 1 0 -376 0 Z M97 283 a186 186 0 1 0 372 0 a186 186 0 1 0 -372 0 Z" fill="#a07850" fill-rule="evenodd"/>
+      <path d="M68 256 a188 188 0 1 0 376 0 a188 188 0 1 0 -376 0 Z M43 229 a186 186 0 1 0 372 0 a186 186 0 1 0 -372 0 Z" fill="#573d26" fill-rule="evenodd"/>
+    </g>
+    <circle cx="256" cy="256" r="186" fill="none"/>
+    <!-- costura -->
+    <circle cx="256" cy="256" r="160" fill="none" stroke="#573d26" stroke-width="4" stroke-dasharray="10 12"/>
+    <!-- aro de ferro -->
+    <circle cx="256" cy="256" r="190" fill="none" stroke-width="26"/>
+    <circle cx="256" cy="256" r="190" fill="none" stroke="#8a8579" stroke-width="13"/>
+    <path d="M84.7 335.9 A189 189 0 0 1 239.5 67.7" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M439.5 206.8 A190 190 0 0 1 239.4 445.3" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    <!-- umbo -->
+    <defs><clipPath id="c-aba"><circle cx="256" cy="256" r="104"/></clipPath></defs>
+    <circle cx="256" cy="256" r="104" fill="#8a8579"/>
+    <g clip-path="url(#c-aba)" stroke="none">
+      <path d="M150 256 a106 106 0 1 0 212 0 a106 106 0 1 0 -212 0 Z M158 262 a104 104 0 1 0 208 0 a104 104 0 1 0 -208 0 Z" fill="#b5ae9c" fill-rule="evenodd"/>
+      <path d="M150 256 a106 106 0 1 0 212 0 a106 106 0 1 0 -212 0 Z M146 250 a104 104 0 1 0 208 0 a104 104 0 1 0 -208 0 Z" fill="#5f5b52" fill-rule="evenodd"/>
+    </g>
+    <circle cx="256" cy="256" r="104" fill="none"/>
+    <circle cx="256" cy="168" r="8" fill="#8a8579" stroke-width="3.5"/>
+    <circle cx="344" cy="256" r="8" fill="#8a8579" stroke-width="3.5"/>
+    <circle cx="256" cy="344" r="8" fill="#8a8579" stroke-width="3.5"/>
+    <circle cx="168" cy="256" r="8" fill="#8a8579" stroke-width="3.5"/>
+    <defs><clipPath id="c-umbo"><circle cx="256" cy="256" r="68"/></clipPath></defs>
+    <circle cx="256" cy="256" r="68" fill="#8a8579"/>
+    <g clip-path="url(#c-umbo)" stroke="none">
+      <path d="M186 256 a70 70 0 1 0 140 0 a70 70 0 1 0 -140 0 Z M198 266 a68 68 0 1 0 136 0 a68 68 0 1 0 -136 0 Z" fill="#b5ae9c" fill-rule="evenodd"/>
+      <path d="M186 256 a70 70 0 1 0 140 0 a70 70 0 1 0 -140 0 Z M178 246 a68 68 0 1 0 136 0 a68 68 0 1 0 -136 0 Z" fill="#5f5b52" fill-rule="evenodd"/>
+    </g>
+    <circle cx="256" cy="256" r="68" fill="none"/>
+  </g>
+</svg>

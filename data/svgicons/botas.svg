@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 341 512" role="img">
+  <title>Botas</title>
+  <defs>
+    <path id="f1" d="M6 -14 H224 Q242 -14 238 2 Q230 16 206 16 H20 Q4 16 6 2 Z"/>
+    <clipPath id="c2"><use xlink:href="#f1"/></clipPath>
+    <clipPath id="c3"><use xlink:href="#f1" transform="translate(0 8)"/></clipPath>
+    <path id="f4" d="M12 -10 C4 -60 8 -120 14 -170 L18 -350 Q20 -368 40 -368 H110 Q124 -366 122 -350 L118 -200 Q120 -150 140 -122 C180 -96 214 -80 228 -50 Q238 -24 226 -10 Z"/>
+    <clipPath id="c5"><use xlink:href="#f4"/></clipPath>
+    <clipPath id="c6"><use xlink:href="#f4" transform="translate(16 6)"/></clipPath>
+    <path id="f7" d="M10 -374 Q66 -382 128 -374 L126 -314 Q68 -306 14 -314 Z"/>
+    <clipPath id="c8"><use xlink:href="#f7"/></clipPath>
+    <clipPath id="c9"><use xlink:href="#f7" transform="translate(14 6)"/></clipPath>
+    <path id="f10" d="M6 -14 H224 Q242 -14 238 2 Q230 16 206 16 H20 Q4 16 6 2 Z"/>
+    <clipPath id="c11"><use xlink:href="#f10"/></clipPath>
+    <clipPath id="c12"><use xlink:href="#f10" transform="translate(0 8)"/></clipPath>
+    <path id="f13" d="M12 -10 C4 -60 8 -120 14 -170 L18 -350 Q20 -368 40 -368 H110 Q124 -366 122 -350 L118 -200 Q120 -150 140 -122 C180 -96 214 -80 228 -50 Q238 -24 226 -10 Z"/>
+    <clipPath id="c14"><use xlink:href="#f13"/></clipPath>
+    <clipPath id="c15"><use xlink:href="#f13" transform="translate(16 6)"/></clipPath>
+    <path id="f16" d="M10 -374 Q66 -382 128 -374 L126 -314 Q68 -306 14 -314 Z"/>
+    <clipPath id="c17"><use xlink:href="#f16"/></clipPath>
+    <clipPath id="c18"><use xlink:href="#f16" transform="translate(14 6)"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <g transform="translate(66 424)">
+    <use xlink:href="#f1" fill="#573d26"/>
+    <g clip-path="url(#c2)" stroke="none"><g clip-path="url(#c3)"><use xlink:href="#f1" fill="#2e1f13"/><use xlink:href="#f1" transform="translate(0 -7)" fill="#3f2b1a"/></g></g>
+    <use xlink:href="#f1" fill="none" stroke-width="6"/>
+    <use xlink:href="#f4" fill="#7c5a3a"/>
+    <g clip-path="url(#c5)" stroke="none"><g clip-path="url(#c6)"><use xlink:href="#f4" fill="#3f2b1a"/><use xlink:href="#f4" transform="translate(-14 -6)" fill="#573d26"/></g></g>
+    <g clip-path="url(#c5)"><path d="M130 -150 Q150 -80 136 -10" fill="none" stroke="#2d1e12" stroke-width="4.5"/></g>
+    <use xlink:href="#f4" fill="none" stroke-width="6"/>
+    <use xlink:href="#f7" fill="#573d26"/>
+    <g clip-path="url(#c8)" stroke="none"><g clip-path="url(#c9)"><use xlink:href="#f7" fill="#2e1f13"/><use xlink:href="#f7" transform="translate(-12 -6)" fill="#3f2b1a"/></g></g>
+    <use xlink:href="#f7" fill="none" stroke-width="6"/>
+    <path d="M14 -374 Q68 -390 128 -374 Q68 -364 14 -374 Z" fill="#130d07" stroke-width="4.5"/>
+    <path d="M12 -262 Q70 -254 124 -262" fill="none" stroke-width="20"/><path d="M12 -262 Q70 -254 124 -262" fill="none" stroke="#3f2b1a" stroke-width="9"/>
+    <rect x="90.0" y="-271.0" width="20" height="26" rx="4" fill="none" stroke-width="12"/>
+    <rect x="90.0" y="-271.0" width="20" height="26" rx="4" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    <path d="M90.0 -267.0 V-249.0" fill="none" stroke="#8a8579" stroke-width="5"/>
+    <path d="M12 -198 Q70 -190 124 -198" fill="none" stroke-width="20"/><path d="M12 -198 Q70 -190 124 -198" fill="none" stroke="#3f2b1a" stroke-width="9"/>
+    <rect x="90.0" y="-207.0" width="20" height="26" rx="4" fill="none" stroke-width="12"/>
+    <rect x="90.0" y="-207.0" width="20" height="26" rx="4" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    <path d="M90.0 -203.0 V-185.0" fill="none" stroke="#8a8579" stroke-width="5"/>
+    </g>
+    <g transform="translate(30 450)">
+    <use xlink:href="#f10" fill="#7c5a3a"/>
+    <g clip-path="url(#c11)" stroke="none"><g clip-path="url(#c12)"><use xlink:href="#f10" fill="#3f2b1a"/><use xlink:href="#f10" transform="translate(0 -7)" fill="#573d26"/></g></g>
+    <use xlink:href="#f10" fill="none" stroke-width="6"/>
+    <use xlink:href="#f13" fill="#a07850"/>
+    <g clip-path="url(#c14)" stroke="none"><g clip-path="url(#c15)"><use xlink:href="#f13" fill="#573d26"/><use xlink:href="#f13" transform="translate(-14 -6)" fill="#7c5a3a"/></g></g>
+    <g clip-path="url(#c14)"><path d="M130 -150 Q150 -80 136 -10" fill="none" stroke="#3f2b1a" stroke-width="4.5"/></g>
+    <use xlink:href="#f13" fill="none" stroke-width="6"/>
+    <use xlink:href="#f16" fill="#7c5a3a"/>
+    <g clip-path="url(#c17)" stroke="none"><g clip-path="url(#c18)"><use xlink:href="#f16" fill="#3f2b1a"/><use xlink:href="#f16" transform="translate(-12 -6)" fill="#573d26"/></g></g>
+    <use xlink:href="#f16" fill="none" stroke-width="6"/>
+    <path d="M14 -374 Q68 -390 128 -374 Q68 -364 14 -374 Z" fill="#1b120b" stroke-width="4.5"/>
+    <path d="M12 -262 Q70 -254 124 -262" fill="none" stroke-width="20"/><path d="M12 -262 Q70 -254 124 -262" fill="none" stroke="#573d26" stroke-width="9"/>
+    <rect x="90.0" y="-271.0" width="20" height="26" rx="4" fill="none" stroke-width="12"/>
+    <rect x="90.0" y="-271.0" width="20" height="26" rx="4" fill="none" stroke="#8a8579" stroke-width="5"/>
+    <path d="M90.0 -267.0 V-249.0" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M12 -198 Q70 -190 124 -198" fill="none" stroke-width="20"/><path d="M12 -198 Q70 -190 124 -198" fill="none" stroke="#573d26" stroke-width="9"/>
+    <rect x="90.0" y="-207.0" width="20" height="26" rx="4" fill="none" stroke-width="12"/>
+    <rect x="90.0" y="-207.0" width="20" height="26" rx="4" fill="none" stroke="#8a8579" stroke-width="5"/>
+    <path d="M90.0 -203.0 V-185.0" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    </g>
+  </g>
+</svg>

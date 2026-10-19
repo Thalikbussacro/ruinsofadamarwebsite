@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-22 -25 568 444" role="img">
+  <title>Perneiras de Placas (Barda)</title>
+  <defs>
+    <path id="p1" d="M308 248 Q330 242 352 244 L354 350 Q334 354 314 350 Z"/><clipPath id="cp1"><use xlink:href="#p1"/></clipPath><clipPath id="ap1"><use xlink:href="#p1" transform="translate(8 8)"/></clipPath><clipPath id="bp1"><use xlink:href="#p1" transform="translate(-8 -8)"/></clipPath>
+    <path id="p2" d="M188 262 Q212 256 236 260 L224 350 Q204 354 182 350 Z"/><clipPath id="cp2"><use xlink:href="#p2"/></clipPath><clipPath id="ap2"><use xlink:href="#p2" transform="translate(8 8)"/></clipPath><clipPath id="bp2"><use xlink:href="#p2" transform="translate(-8 -8)"/></clipPath>
+    <path id="p3" d="M356 250 Q378 244 402 246 L400 350 Q382 354 360 350 Z"/><clipPath id="cp3"><use xlink:href="#p3"/></clipPath><clipPath id="ap3"><use xlink:href="#p3" transform="translate(8 8)"/></clipPath><clipPath id="bp3"><use xlink:href="#p3" transform="translate(-8 -8)"/></clipPath>
+    <path id="p4" d="M136 290 Q166 282 196 284 L190 350 Q170 354 146 350 Z"/><clipPath id="cp4"><use xlink:href="#p4"/></clipPath><clipPath id="ap4"><use xlink:href="#p4" transform="translate(8 8)"/></clipPath><clipPath id="bp4"><use xlink:href="#p4" transform="translate(-8 -8)"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M112 136 Q74 150 62 204 Q56 236 48 256 Q60 264 74 240 Q92 204 104 180 Z" fill="#372f29"/>
+    <path d="M340 236 L344 292 L344 340 L348 372 L322 372 L322 340 L320 292 L316 240 Z M228 246 L218 292 L214 340 L216 372 L192 372 L192 340 L194 292 L200 248 Z" fill="#372f29"/>
+    <use xlink:href="#p1" fill="#a29b8a"/><g clip-path="url(#cp1)" stroke="none"><g clip-path="url(#ap1)"><rect x="-50" y="-50" width="700" height="700" fill="#55514a"/><g clip-path="url(#bp1)"><rect x="-50" y="-50" width="700" height="700" fill="#76716a"/></g></g></g><use xlink:href="#p1" fill="none" stroke-width="6"/>
+    <use xlink:href="#p2" fill="#a29b8a"/><g clip-path="url(#cp2)" stroke="none"><g clip-path="url(#ap2)"><rect x="-50" y="-50" width="700" height="700" fill="#55514a"/><g clip-path="url(#bp2)"><rect x="-50" y="-50" width="700" height="700" fill="#76716a"/></g></g></g><use xlink:href="#p2" fill="none" stroke-width="6"/>
+    <path d="M114 130 Q160 118 220 128 Q290 134 326 112 C346 84 372 56 398 44 L398 22 Q414 28 422 46 Q440 58 458 86 L476 116 Q480 134 464 140 Q448 144 436 134 L418 118 Q404 118 400 130 C398 152 404 176 408 198 Q410 222 394 236 L390 292 L392 340 L396 372 L368 372 L368 340 L366 292 L364 246 Q344 252 316 252 Q250 260 196 248 L186 290 L180 316 L180 340 L182 372 L156 372 L156 340 L148 312 Q120 270 108 226 Q98 176 114 130 Z" fill="#4a4038"/>
+    <circle cx="432" cy="76" r="7" fill="#0a0806" stroke="none"/>
+    <path d="M462 120 Q470 122 470 130" fill="none" stroke-width="4"/>
+    <use xlink:href="#p3" fill="#b5ae9c"/><g clip-path="url(#cp3)" stroke="none"><g clip-path="url(#ap3)"><rect x="-50" y="-50" width="700" height="700" fill="#5f5b52"/><g clip-path="url(#bp3)"><rect x="-50" y="-50" width="700" height="700" fill="#8a8579"/></g></g></g><use xlink:href="#p3" fill="none" stroke-width="6"/>
+    <use xlink:href="#p4" fill="#b5ae9c"/><g clip-path="url(#cp4)" stroke="none"><g clip-path="url(#ap4)"><rect x="-50" y="-50" width="700" height="700" fill="#5f5b52"/><g clip-path="url(#bp4)"><rect x="-50" y="-50" width="700" height="700" fill="#8a8579"/></g></g></g><use xlink:href="#p4" fill="none" stroke-width="6"/>
+    <path d="M312 298 Q331.0 306 350 296" fill="none" stroke-width="4.5"/>
+    <path d="M186 306 Q207.0 314 228 304" fill="none" stroke-width="4.5"/>
+    <path d="M360 298 Q380.0 306 400 296" fill="none" stroke-width="4.5"/>
+    <path d="M142 318 Q167.0 326 192 316" fill="none" stroke-width="4.5"/>
+  </g>
+</svg>

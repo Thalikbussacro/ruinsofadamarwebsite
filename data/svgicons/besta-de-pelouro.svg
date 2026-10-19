@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Besta de pelouro</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- mira em forquilha -->
+    <path d="M238 100 V50 M274 100 V50" fill="none" stroke-width="20"/>
+    <path d="M238 100 V50 M274 100 V50" fill="none" stroke="#8a8579" stroke-width="9"/>
+    <path d="M238 60 H274" fill="none" stroke-width="7"/>
+    <path d="M238 60 H274" fill="none" stroke="#d8cdb0" stroke-width="2.5"/>
+    <circle cx="256" cy="60" r="7" fill="#b89c66" stroke-width="4"/>
+    <!-- coronha -->
+    <path d="M234 92 H278 L286 400 L290 460 Q290 478 272 478 H240 Q222 478 222 460 L226 400 Z" fill="#7a5a3a"/>
+    <path d="M241 104 L234 400 L231 460" fill="none" stroke="#9a7448" stroke-width="7"/>
+    <path d="M272 108 L279 400 L282 460" fill="none" stroke="#55391f" stroke-width="5"/>
+    <!-- gatilho -->
+    <path d="M286 340 Q304 384 302 440" fill="none" stroke-width="18"/>
+    <path d="M286 340 Q304 384 302 440" fill="none" stroke="#8a8579" stroke-width="8"/>
+    <!-- arco -->
+    <path d="M36 124 Q256 40 476 124 L472 150 Q256 88 40 150 Z" fill="#7a5a3a"/>
+    <path d="M46 124 Q256 52 466 124" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <path d="M60 144 Q256 92 452 144" fill="none" stroke="#55391f" stroke-width="4"/>
+    <path d="M36 124 Q256 40 476 124 L472 150 Q256 88 40 150 Z" fill="none"/>
+    <rect x="226" y="80" width="60" height="34" rx="7" fill="#b5a98a"/>
+    <path d="M238 82 V112 M256 82 V112 M274 82 V112" fill="none" stroke-width="3.5"/>
+    <path d="M232 87 V107" fill="none" stroke="#d8cdb0" stroke-width="4"/>
+    <!-- corda dupla -->
+    <path d="M44 128 L224 266 M40 144 L224 316 M468 128 L288 266 M472 144 L288 316" fill="none" stroke-width="9"/>
+    <path d="M44 128 L224 266 M40 144 L224 316 M468 128 L288 266 M472 144 L288 316" fill="none" stroke="#d8cdb0" stroke-width="3.5"/>
+    <!-- espaçadores -->
+    <path d="M150 210 L148 238 M362 210 L364 238" fill="none" stroke-width="14"/>
+    <path d="M150 210 L148 238 M362 210 L364 238" fill="none" stroke="#b89c66" stroke-width="6"/>
+    <!-- bolsa com a pedra -->
+    <rect x="214" y="256" width="84" height="70" rx="20" fill="#7c5a3a"/>
+    <path d="M222 272 V310" fill="none" stroke="#a07850" stroke-width="5"/>
+    <path d="M290 274 V310" fill="none" stroke="#573d26" stroke-width="5"/>
+    <circle cx="256" cy="291" r="26" fill="#6e7173"/>
+    <path d="M238 290 Q240 272 256 268" fill="none" stroke="#b2b4b3" stroke-width="5"/>
+    <path d="M274 302 Q266 312 254 314" fill="none" stroke="#4f5254" stroke-width="5"/>
+  </g>
+</svg>

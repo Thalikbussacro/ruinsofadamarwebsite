@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 512" role="img">
+  <title>Porrete</title>
+  <defs>
+    <path id="corpo" d="M54 468 Q50 464 51 452 L48 310 Q40 190 34 112 Q32 44 64 40 Q96 44 94 112 Q88 190 80 310 L77 452 Q78 464 74 468 Q64 474 54 468 Z"/>
+    <clipPath id="c-corpo"><use xlink:href="#corpo"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <use xlink:href="#corpo" fill="#7a5a3a"/>
+    <g clip-path="url(#c-corpo)" stroke="none">
+      <path d="M20 30 H54 Q46 80 50 160 L60 480 H20 Z" fill="#9a7448"/>
+      <path d="M108 30 H80 Q88 90 82 170 L70 480 H108 Z" fill="#55391f"/>
+    </g>
+    <use xlink:href="#corpo" fill="none"/>
+    <!-- nós da madeira -->
+    <ellipse cx="72" cy="130" rx="7" ry="10" fill="#55391f" stroke-width="3.5"/>
+    <ellipse cx="54" cy="230" rx="6" ry="9" fill="#55391f" stroke-width="3.5"/>
+    <!-- tira de couro na empunhadura -->
+    <path d="M50 380 L78 370 M50 404 L78 394 M50 428 L78 418 M50 452 L77 442" fill="none" stroke-width="13"/>
+    <path d="M50 380 L78 370 M50 404 L78 394 M50 428 L78 418 M50 452 L77 442" fill="none" stroke="#6b2a24" stroke-width="5"/>
+  </g>
+</svg>

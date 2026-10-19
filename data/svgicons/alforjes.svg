@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 384" role="img">
+  <title>Alforjes</title>
+  <defs>
+    <path id="bolsa" d="M0 0 H180 Q196 0 196 16 V196 Q196 230 162 230 H34 Q0 230 0 196 Z"/>
+    <path id="aba" d="M-6 -4 H202 V82 Q202 112 172 112 H24 Q-6 112 -6 82 Z"/>
+    <clipPath id="c-bolsa"><use xlink:href="#bolsa"/></clipPath>
+    <clipPath id="c-aba"><use xlink:href="#aba"/></clipPath>
+    <g id="alf">
+      <use xlink:href="#bolsa" fill="#7c5a3a"/>
+      <g clip-path="url(#c-bolsa)" stroke="none">
+        <rect x="-10" y="0" width="36" height="240" fill="#a07850"/>
+        <rect x="160" y="0" width="40" height="240" fill="#573d26"/>
+        <rect x="-10" y="206" width="220" height="30" fill="#573d26"/>
+      </g>
+      <use xlink:href="#bolsa" fill="none"/>
+      <use xlink:href="#aba" fill="#7c5a3a"/>
+      <g clip-path="url(#c-aba)" stroke="none">
+        <rect x="-10" y="-10" width="220" height="26" fill="#a07850"/>
+        <rect x="-10" y="-10" width="30" height="130" fill="#a07850"/>
+        <rect x="-10" y="92" width="220" height="30" fill="#573d26"/>
+      </g>
+      <use xlink:href="#aba" fill="none"/>
+      <!-- correia e fivela -->
+      <rect x="84" y="60" width="28" height="104" rx="5" fill="#573d26"/>
+      <rect x="78" y="118" width="40" height="30" rx="5" fill="none" stroke-width="12"/>
+      <rect x="78" y="118" width="40" height="30" rx="5" fill="none" stroke="#8a8579" stroke-width="5"/>
+    </g>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- faixa que une as bolsas -->
+    <rect x="150" y="56" width="212" height="60" rx="10" fill="#7c5a3a"/>
+    <path d="M160 68 H352" fill="none" stroke="#a07850" stroke-width="7"/>
+    <path d="M160 106 H352" fill="none" stroke="#573d26" stroke-width="5"/>
+    <use xlink:href="#alf" transform="translate(42 104)"/>
+    <use xlink:href="#alf" transform="translate(274 104)"/>
+  </g>
+</svg>

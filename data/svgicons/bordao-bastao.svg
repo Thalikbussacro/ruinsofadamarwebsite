@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Bordão</title>
+  <!-- Desenhado na vertical; rotate(45) leva a cabeça para o alto à direita
+       e faz a luz local (vinda da esquerda) cair de cima à esquerda. -->
+  <g transform="translate(256 256) scale(0.88) rotate(45)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-17.0" y="-292" width="34" height="584" rx="10" fill="#7a5a3a"/>
+    <path d="M-10.0 -280 V280" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M11.0 -280 V280" fill="none" stroke="#55391f" stroke-width="4"/>
+    <!-- ponteiras de ferro -->
+    <path d="M-19 -312 Q0 -322 19 -312 V-262 H-19 Z" fill="#8a8579"/>
+    <path d="M-10 -306 V-270" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <path d="M-19 -276 H19" fill="none" stroke-width="4"/>
+    <path d="M-19 262 H19 V312 Q0 322 -19 312 Z" fill="#8a8579"/>
+    <path d="M-10 270 V306" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <path d="M-19 276 H19" fill="none" stroke-width="4"/>
+  </g>
+</svg>

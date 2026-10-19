@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 171 512" role="img">
+  <title>Machadinha</title>
+  <defs>
+    <path id="lamina" d="M96 74 L40 52 Q14 116 26 186 L96 140 Z"/>
+    <clipPath id="c-lamina"><use xlink:href="#lamina"/></clipPath>
+    <path id="cabo" d="M100 60 H126 V380 Q126 430 140 456 Q144 470 128 472 H106 Q96 472 96 460 Q100 420 100 380 Z"/>
+    <clipPath id="c-cabo"><use xlink:href="#cabo"/></clipPath>
+  </defs>
+  <g transform="translate(6 0)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo de madeira simples -->
+    <use xlink:href="#cabo" fill="#7a5a3a"/>
+    <g clip-path="url(#c-cabo)" stroke="none">
+      <rect x="96" y="56" width="11" height="420" fill="#9a7448"/>
+      <path d="M118 56 H130 V380 Q130 430 150 470 L130 476 Q120 430 118 380 Z" fill="#55391f"/>
+    </g>
+    <use xlink:href="#cabo" fill="none"/>
+    <!-- lâmina -->
+    <use xlink:href="#lamina" fill="#8a8579"/>
+    <g clip-path="url(#c-lamina)" stroke="none">
+      <path d="M10 40 Q12 110 20 196 L44 180 Q30 110 50 40 Z" fill="#b5ae9c"/>
+      <path d="M14 172 L104 116 V150 L14 206 Z" fill="#5f5b52"/>
+    </g>
+    <use xlink:href="#lamina" fill="none"/>
+    <!-- olho com talão -->
+    <rect x="90" y="56" width="44" height="92" rx="8" fill="#8a8579"/>
+    <path d="M99 66 V138" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <path d="M126 66 V138" fill="none" stroke="#5f5b52" stroke-width="6"/>
+  </g>
+</svg>

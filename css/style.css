@@ -2380,6 +2380,8 @@ body.modo-app .deco { display: none; }
 .item-dialogo-chips { display: flex; flex-wrap: wrap; gap: 0.4rem 0.8rem; margin-top: 0.5rem; }
 .item-dialogo-resumo { margin: 0.6rem 0 0; font-size: 1.05rem; font-style: italic; color: #d8ccb4; }
 .item-dialogo-corpo { font-size: 1rem; line-height: 1.55; }
+.item-dialogo-ilustracao { margin: 0.9rem 0 0.3rem; text-align: center; }
+.item-dialogo-ilustracao img { display: inline-block; max-width: 100%; height: 11rem; }
 .item-dialogo-corpo p { margin: 0.6rem 0 0; }
 .item-dialogo-corpo h4 { margin: 0.9rem 0 0.1rem; font-family: var(--f-titulo); font-size: 0.78rem; letter-spacing: 0.08em; color: #a39780; }
 .item-dialogo-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 0.35rem 1rem; margin: 1rem 0 0; padding-top: 0.7rem; border-top: 1px solid var(--ouro-fio); font-size: 0.9rem; }

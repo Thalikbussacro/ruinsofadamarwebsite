@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" role="img">
+  <title>Espada larga</title>
+  <g transform="translate(0 12)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- lâmina reta de uma mão -->
+    <path d="M51 318 V112 Q51 70 64 42 Q77 70 77 112 V318 Z" fill="#8a8579"/>
+    <path d="M51 318 V112 Q51 70 64 42 V318 Z" fill="#b5ae9c" stroke="none"/>
+    <path d="M51 318 V112 Q51 70 64 42 Q77 70 77 112 V318 Z" fill="none"/>
+    <path d="M64 100 V300" fill="none" stroke="#5f5b52" stroke-width="4"/>
+    <!-- guarda -->
+    <rect x="22" y="314" width="84" height="18" rx="8" fill="#8a8579"/>
+    <path d="M29 319 H54" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+    <!-- empunhadura curta -->
+    <rect x="55" y="332" width="18" height="78" rx="5" fill="#6b2a24"/>
+    <path d="M60 338 V404" fill="none" stroke="#8a3a32" stroke-width="4"/>
+    <path d="M55 356 L73 348 M55 378 L73 370 M55 400 L73 392" fill="none" stroke-width="3.5"/>
+    <!-- pomo -->
+    <ellipse cx="64" cy="426" rx="17" ry="17" fill="#8a8579"/>
+    <path d="M55 420 Q57 413 64 412" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+  </g>
+</svg>

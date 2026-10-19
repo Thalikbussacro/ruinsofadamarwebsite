@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 341 512" role="img">
+  <title>Celada</title>
+<g transform="translate(-4 16)">
+<g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><defs><path id="sl" d="M32 320 Q12 130 150 124 Q250 124 260 240 Q270 310 320 348 Q260 362 210 346 Q130 330 32 320 Z"/><clipPath id="c-sl"><use xlink:href="#sl"/></clipPath></defs><use xlink:href="#sl" fill="#8a8579"/><g clip-path="url(#c-sl)" stroke="none"><rect x="-10" y="-10" width="96" height="600" fill="#b5ae9c"/><rect x="200" y="-10" width="600" height="600" fill="#5f5b52"/></g><path d="M56 176 Q140 118 238 176" fill="none" stroke-width="18"/><path d="M56 176 Q140 118 238 176" fill="none" stroke="#b5ae9c" stroke-width="8"/><path d="M34 300 Q130 312 214 328 Q270 340 310 344" fill="none" stroke-width="4.5"/><use xlink:href="#sl" fill="none"/><circle cx="60" cy="296" r="6" fill="#b5ae9c" stroke-width="3.5"/><circle cx="130" cy="304" r="6" fill="#8a8579" stroke-width="3.5"/><circle cx="200" cy="316" r="6" fill="#8a8579" stroke-width="3.5"/></g>
+</g>
+</svg>

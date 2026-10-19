@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Pá</title>
+  <g transform="translate(246 268) rotate(-135) translate(-256 -256)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo de madeira -->
+    <rect x="242" y="96" width="28" height="270" rx="8" fill="#7a5a3a"/>
+    <path d="M250 108 V360" fill="none" stroke="#55391f" stroke-width="7"/>
+    <path d="M263 108 V360" fill="none" stroke="#9a7448" stroke-width="7"/>
+    <!-- punho em D -->
+    <path d="M236 98 L224 70 Q222 56 236 56 H276 Q290 56 288 70 L276 98" fill="none" stroke-width="22"/>
+    <path d="M236 98 L224 70 Q222 56 236 56 H276 Q290 56 288 70 L276 98" fill="none" stroke="#7a5a3a" stroke-width="11"/>
+    <!-- lâmina de ferro -->
+    <path d="M240 356 H272 L276 372 H318 Q326 372 326 382 V440 Q326 476 256 492 Q186 476 186 440 V382 Q186 372 194 372 H236 Z" fill="#8a8579"/>
+    <path d="M210 380 H234 V470 Q200 456 196 440 V384 Z" fill="#5f5b52" stroke="none"/>
+    <path d="M288 380 H316 V440 Q314 460 290 472 Z" fill="#b5ae9c" stroke="none"/>
+    <path d="M240 356 H272 L276 372 H318 Q326 372 326 382 V440 Q326 476 256 492 Q186 476 186 440 V382 Q186 372 194 372 H236 Z" fill="none"/>
+    <path d="M256 380 V470" fill="none" stroke="#5f5b52" stroke-width="4"/>
+  </g>
+</svg>

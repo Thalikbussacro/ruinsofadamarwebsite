@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Roca de tear</title>
+  <g transform="translate(0 -18)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- pernas -->
+    <path d="M80 360 L52 466 M140 360 L156 466 M420 360 L448 466" fill="none" stroke-width="28"/>
+    <path d="M80 360 L52 466 M140 360 L156 466 M420 360 L448 466" fill="none" stroke="#55391f" stroke-width="16"/>
+    <!-- banco -->
+    <rect x="36" y="340" width="440" height="34" rx="10" fill="#7a5a3a"/>
+    <path d="M48 350 H464" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <!-- poste da roda -->
+    <path d="M326 342 L330 214" fill="none" stroke-width="32"/>
+    <path d="M326 342 L330 214" fill="none" stroke="#7a5a3a" stroke-width="20"/>
+    <!-- raios -->
+    <g fill="none">
+      <path d="M330 80 V320 M210 200 H450 M245 115 L415 285 M415 115 L245 285" stroke-width="16"/>
+      <path d="M330 80 V320 M210 200 H450 M245 115 L415 285 M415 115 L245 285" stroke="#7a5a3a" stroke-width="6"/>
+    </g>
+    <!-- aro -->
+    <circle cx="330" cy="200" r="120" fill="none" stroke-width="24"/>
+    <circle cx="330" cy="200" r="120" fill="none" stroke="#7a5a3a" stroke-width="12"/>
+    <path d="M222 168 A112 112 0 0 1 298 92" fill="none" stroke="#9a7448" stroke-width="4"/>
+    <path d="M438 232 A112 112 0 0 1 362 308" fill="none" stroke="#55391f" stroke-width="4"/>
+    <circle cx="330" cy="200" r="20" fill="#7a5a3a"/>
+    <!-- manivela -->
+    <path d="M330 200 L372 228" fill="none" stroke-width="14"/>
+    <path d="M330 200 L372 228" fill="none" stroke="#8a8579" stroke-width="5"/>
+    <!-- correia de transmissão -->
+    <path d="M100 232 L330 80 M100 250 L330 320" fill="none" stroke-width="9"/>
+    <path d="M100 232 L330 80 M100 250 L330 320" fill="none" stroke="#d8cdb0" stroke-width="3.5"/>
+    <!-- cabeçote do fuso -->
+    <path d="M108 342 L104 240" fill="none" stroke-width="30"/>
+    <path d="M108 342 L104 240" fill="none" stroke="#7a5a3a" stroke-width="18"/>
+    <rect x="80" y="222" width="46" height="34" rx="8" fill="#9a7448"/>
+    <!-- fuso e fio -->
+    <path d="M100 240 H40" fill="none" stroke-width="12"/>
+    <path d="M100 240 H40" fill="none" stroke="#8a8579" stroke-width="4"/>
+    <path d="M52 216 Q72 214 76 240 Q72 266 52 264 Q44 240 52 216 Z" fill="#b5a98a"/>
+    <path d="M56 224 Q66 226 68 236" fill="none" stroke="#d8cdb0" stroke-width="4"/>
+  </g>
+</svg>

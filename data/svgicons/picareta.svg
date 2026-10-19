@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171 512" role="img">
+  <title>Picareta</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo -->
+    <rect x="94" y="60" width="26" height="394" rx="9" fill="#7a5a3a"/>
+    <path d="M101 160 V446" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M113 160 V446" fill="none" stroke="#55391f" stroke-width="4"/>
+    <!-- empunhadura -->
+    <rect x="91" y="350" width="32" height="98" rx="8" fill="#6b2a24"/>
+    <path d="M98 358 V440" fill="none" stroke="#8a3a32" stroke-width="6"/>
+    <path d="M91 374 L123 365 M91 398 L123 389 M91 422 L123 413" fill="none" stroke-width="4"/>
+    <path d="M89 446 H125 L120 466 Q107 474 94 466 Z" fill="#8a8579"/>
+    <!-- lingüetas -->
+    <rect x="91" y="96" width="32" height="80" rx="6" fill="#8a8579"/>
+    <path d="M99 106 V166" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <!-- bico perfurante -->
+    <path d="M96 62 Q56 74 16 122 Q56 104 96 108 Z" fill="#5f5b52"/>
+    <path d="M96 62 Q56 74 16 122 Q56 88 96 84 Z" fill="#b5ae9c" stroke="none"/>
+    <path d="M96 62 Q56 74 16 122 Q56 104 96 108 Z" fill="none"/>
+    <path d="M88 86 Q58 92 36 110" fill="none" stroke="#8a8579" stroke-width="5"/>
+    <!-- martelete traseiro -->
+    <rect x="114" y="68" width="36" height="32" rx="5" fill="#8a8579"/>
+    <path d="M122 76 H142" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- alvado -->
+    <rect x="88" y="52" width="38" height="62" rx="8" fill="#8a8579"/>
+    <path d="M97 62 V104" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <path d="M117 62 V104" fill="none" stroke="#5f5b52" stroke-width="5"/>
+  </g>
+</svg>

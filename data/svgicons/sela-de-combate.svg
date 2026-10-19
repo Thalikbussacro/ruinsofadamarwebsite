@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 384" role="img">
+  <title>Sela de combate</title>
+  <defs>
+    <path id="assento" d="M110 64 Q140 58 146 84 Q150 150 186 186 Q256 214 320 186 Q366 150 374 80 Q382 54 410 62 Q418 140 404 212 Q396 250 366 256 H150 Q118 250 110 210 Q100 140 110 64 Z"/>
+    <clipPath id="c-assento"><use xlink:href="#assento"/></clipPath>
+  </defs>
+  <g transform="translate(0 -19)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- manta de lã -->
+    <path d="M70 222 H442 Q452 222 450 234 L440 298 Q438 310 426 310 H86 Q74 310 72 298 L62 234 Q60 222 70 222 Z" fill="#5e574b"/>
+    <path d="M70 232 H440" fill="none" stroke="#7a7264" stroke-width="7"/>
+    <path d="M82 300 H430" fill="none" stroke="#433e35" stroke-width="6"/>
+    <!-- cilha -->
+    <rect x="236" y="250" width="40" height="104" rx="6" fill="#6b2a24"/>
+    <path d="M244 258 V346" fill="none" stroke="#8a3a32" stroke-width="5"/>
+    <!-- assento -->
+    <use xlink:href="#assento" fill="#7c5a3a"/>
+    <g clip-path="url(#c-assento)" stroke="none">
+      <rect x="90" y="40" width="40" height="240" fill="#a07850"/>
+      <path d="M100 120 Q186 196 256 204 Q330 204 420 140 V170 Q330 222 256 222 Q186 222 100 170 Z" fill="#a07850"/>
+      <rect x="380" y="40" width="50" height="240" fill="#573d26"/>
+      <rect x="90" y="236" width="340" height="30" fill="#573d26"/>
+    </g>
+    <use xlink:href="#assento" fill="none"/>
+    <!-- aba lateral -->
+    <path d="M176 214 Q256 232 336 214 L330 292 Q256 306 182 292 Z" fill="#7c5a3a"/>
+    <path d="M184 224 L188 286" fill="none" stroke="#a07850" stroke-width="6"/>
+    <path d="M324 226 L320 286" fill="none" stroke="#573d26" stroke-width="5"/>
+    <!-- loro e estribo -->
+    <rect x="200" y="226" width="24" height="88" rx="5" fill="#573d26"/>
+    <path d="M182 352 Q178 296 212 286 Q246 296 242 352" fill="none" stroke-width="22"/>
+    <path d="M182 352 Q178 296 212 286 Q246 296 242 352" fill="none" stroke="#8a8579" stroke-width="11"/>
+    <rect x="168" y="342" width="88" height="20" rx="6" fill="#8a8579"/>
+    <path d="M176 349 H220" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+    <!-- reforços de ferro nos arções -->
+    <path d="M112 72 Q140 66 144 90" fill="none" stroke-width="20"/>
+    <path d="M112 72 Q140 66 144 90" fill="none" stroke="#8a8579" stroke-width="9"/>
+    <path d="M408 70 Q382 62 376 86" fill="none" stroke-width="20"/>
+    <path d="M408 70 Q382 62 376 86" fill="none" stroke="#8a8579" stroke-width="9"/>
+  </g>
+</svg>

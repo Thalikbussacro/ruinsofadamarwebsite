@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Lança de justa</title>
+  <!-- Desenhado na vertical; rotate(45) leva a cabeça para o alto à direita
+       e faz a luz local (vinda da esquerda) cair de cima à esquerda. -->
+  <g transform="translate(258 254) scale(0.96) rotate(45)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-14.0" y="0" width="28" height="300" rx="10" fill="#7a5a3a"/>
+    <path d="M-7.0 12 V288" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M8.0 12 V288" fill="none" stroke="#55391f" stroke-width="4"/>
+    <rect x="-17.0" y="40" width="34" height="100" rx="8" fill="#6b2a24"/>
+    <path d="M-10.0 48 V132" fill="none" stroke="#8a3a32" stroke-width="6"/>
+    <path d="M-17.0 58 L17.0 48 M-17.0 82 L17.0 72 M-17.0 106 L17.0 96" fill="none" stroke-width="4"/>
+    <path d="M-20 140 Q-24 200 -16 290 H16 Q24 200 20 140 Z" fill="#7a5a3a"/>
+    <path d="M-10 150 Q-14 200 -8 280" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M-15.0 286 H15.0 L10.0 306 Q0 312 -10.0 306 Z" fill="#8a8579"/>
+    <path d="M-7.0 294 L-5.0 300" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M-9 -290 Q-12 -200 -22 -60 H22 Q12 -200 9 -290 Z" fill="#7a5a3a"/>
+    <path d="M-4 -280 Q-7 -200 -14 -70" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M6 -280 Q8 -200 14 -70" fill="none" stroke="#55391f" stroke-width="4"/>
+    <path d="M-10 -292 L0 -312 L10 -292 L9 -270 H-9 Z" fill="#8a8579"/>
+    <path d="M-5 -292 L0 -304 M-5 -288 V-276" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+    <path d="M-22 -64 L-62 6 Q0 26 62 6 L22 -64 Z" fill="#8a8579"/>
+    <path d="M-22 -62 L-62 6 Q-40 14 -30 16 L-8 -62 Z" fill="#b5ae9c" stroke="none"/>
+    <path d="M14 -62 L44 14 Q56 10 62 6 L22 -64 Z" fill="#5f5b52" stroke="none"/>
+    <path d="M-22 -64 L-62 6 Q0 26 62 6 L22 -64 Z" fill="none"/>
+    <path d="M-62 6 Q0 -10 62 6" fill="none" stroke-width="4"/>
+  </g>
+</svg>

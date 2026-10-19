@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171 512" role="img">
+  <title>Espada curta</title>
+  <g transform="translate(0 8)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- lâmina larga com ponta longa -->
+    <path d="M64 300 L62 150 L85 50 L108 150 L106 300 Z" fill="#8a8579"/>
+    <path d="M64 300 L62 150 L85 50 V300 Z" fill="#b5ae9c" stroke="none"/>
+    <path d="M64 300 L62 150 L85 50 L108 150 L106 300 Z" fill="none"/>
+    <path d="M85 120 V284" fill="none" stroke="#5f5b52" stroke-width="4.5"/>
+    <!-- guarda curta -->
+    <rect x="44" y="296" width="82" height="22" rx="9" fill="#8a8579"/>
+    <path d="M52 302 H80" fill="none" stroke="#b5ae9c" stroke-width="4.5"/>
+    <!-- empunhadura -->
+    <rect x="74" y="318" width="22" height="90" rx="6" fill="#6b2a24"/>
+    <path d="M80 324 V402" fill="none" stroke="#8a3a32" stroke-width="4.5"/>
+    <path d="M74 342 L96 333 M74 366 L96 357 M74 390 L96 381" fill="none" stroke-width="3.5"/>
+    <!-- pomo -->
+    <ellipse cx="85" cy="426" rx="25" ry="19" fill="#8a8579"/>
+    <path d="M70 420 Q74 412 84 411" fill="none" stroke="#b5ae9c" stroke-width="4.5"/>
+  </g>
+</svg>

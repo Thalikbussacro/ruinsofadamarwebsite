@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 512" role="img">
+  <title>Garrafa cerâmica</title>
+  <defs>
+    <path id="garrafa" d="M104 96 H152 V196 Q214 228 214 330 Q214 440 186 456 Q128 470 70 456 Q42 440 42 330 Q42 228 104 196 Z"/>
+    <clipPath id="c-garrafa"><use xlink:href="#garrafa"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <use xlink:href="#garrafa" fill="#8c5c40"/>
+    <g clip-path="url(#c-garrafa)" stroke="none">
+      <path d="M30 80 H122 V200 Q78 240 82 330 Q86 420 104 470 H30 Z" fill="#b07a58"/>
+      <path d="M230 80 H142 V200 Q190 250 184 340 Q180 420 150 470 H230 Z" fill="#64402c"/>
+    </g>
+    <use xlink:href="#garrafa" fill="none"/>
+    <!-- faixas incisas -->
+    <path d="M50 290 Q128 306 206 290 M46 316 Q128 332 210 316" fill="none" stroke="#64402c" stroke-width="5"/>
+    <!-- lábio -->
+    <rect x="94" y="88" width="68" height="24" rx="10" fill="#8c5c40"/>
+    <path d="M102 96 H128" fill="none" stroke="#b07a58" stroke-width="5"/>
+    <!-- rolha -->
+    <path d="M108 88 L104 54 Q128 44 152 54 L148 88 Z" fill="#9a7448"/>
+    <path d="M136 52 L140 88 H148 L152 54 Z" fill="#55391f" stroke="none"/>
+    <path d="M108 88 L104 54 Q128 44 152 54 L148 88 Z" fill="none"/>
+    <!-- cordão no gargalo -->
+    <path d="M100 168 Q128 178 156 168" fill="none" stroke-width="16"/>
+    <path d="M100 168 Q128 178 156 168" fill="none" stroke="#b5a98a" stroke-width="7"/>
+  </g>
+</svg>

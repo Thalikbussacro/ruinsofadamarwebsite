@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 400" role="img">
+  <title>Barraca, 4 pessoas</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cordas de esticar e estacas -->
+    <path d="M384 64 L462 286 M168 92 L52 322" fill="none" stroke-width="10"/>
+    <path d="M384 64 L462 286 M168 92 L52 322" fill="none" stroke="#d8cdb0" stroke-width="4"/>
+    <path d="M454 276 L470 274 L466 320 Z M44 312 L60 312 L54 352 Z" fill="#7a5a3a"/>
+    <!-- lateral (telhado) -->
+    <path d="M168 104 L384 76 L446 300 L270 334 Z" fill="#b5a98a"/>
+    <path d="M276 318 L444 288 L446 300 L270 334 Z" fill="#8f8468" stroke="none"/>
+    <path d="M168 104 L384 76 L446 300 L270 334 Z" fill="none"/>
+    <path d="M222 98 L310 326 M276 90 L358 316 M330 84 L404 306" fill="none" stroke="#8f8468" stroke-width="4"/>
+    <!-- frente -->
+    <path d="M168 104 L66 330 L270 334 Z" fill="#d8cdb0"/>
+    <path d="M168 104 L270 334 L232 334 L168 150 Z" fill="#b5a98a" stroke="none"/>
+    <path d="M168 104 L66 330 L270 334 Z" fill="none"/>
+    <!-- entrada -->
+    <path d="M168 168 L124 332 H212 Z" fill="#433e35"/>
+    <path d="M168 168 L124 332 Q146 280 150 220 Z" fill="#b5a98a"/>
+    <path d="M168 168 L212 332 Q198 300 188 250 Z" fill="#8f8468"/>
+    <!-- varas -->
+    <path d="M168 60 V332" fill="none" stroke-width="18"/>
+    <path d="M168 60 V332" fill="none" stroke="#7a5a3a" stroke-width="9"/>
+    <path d="M384 40 V86" fill="none" stroke-width="18"/>
+    <path d="M384 40 V86" fill="none" stroke="#7a5a3a" stroke-width="9"/>
+    <path d="M168 104 L384 76" fill="none" stroke-width="7"/>
+  </g>
+</svg>

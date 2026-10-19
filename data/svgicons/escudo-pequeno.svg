@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Escudo pequeno</title>
+  <defs><clipPath id="c-tab"><circle cx="256" cy="256" r="210"/></clipPath></defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="256" cy="256" r="210" fill="#7a5a3a"/>
+    <g clip-path="url(#c-tab)">
+      <g stroke="none">
+        <rect x="30" y="30" width="110" height="460" fill="#9a7448"/>
+        <rect x="372" y="30" width="110" height="460" fill="#55391f"/>
+      </g>
+      <!-- tábuas -->
+      <path d="M140 30 V490 M214 30 V490 M298 30 V490 M372 30 V490" fill="none" stroke-width="5"/>
+    </g>
+    <!-- aro de ferro -->
+    <circle cx="256" cy="256" r="206" fill="none" stroke-width="26"/>
+    <circle cx="256" cy="256" r="206" fill="none" stroke="#8a8579" stroke-width="13"/>
+    <path d="M70.2 342.6 A205 205 0 0 1 238.1 51.8" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M455.0 202.7 A206 206 0 0 1 238.0 461.2" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    <!-- umbo -->
+    <defs><clipPath id="c-aba"><circle cx="256" cy="256" r="82"/></clipPath></defs>
+    <circle cx="256" cy="256" r="82" fill="#8a8579"/>
+    <g clip-path="url(#c-aba)" stroke="none">
+      <path d="M172 256 a84 84 0 1 0 168 0 a84 84 0 1 0 -168 0 Z M178 260 a82 82 0 1 0 164 0 a82 82 0 1 0 -164 0 Z" fill="#b5ae9c" fill-rule="evenodd"/>
+      <path d="M172 256 a84 84 0 1 0 168 0 a84 84 0 1 0 -168 0 Z M170 252 a82 82 0 1 0 164 0 a82 82 0 1 0 -164 0 Z" fill="#5f5b52" fill-rule="evenodd"/>
+    </g>
+    <circle cx="256" cy="256" r="82" fill="none"/>
+    <circle cx="256" cy="188" r="7" fill="#8a8579" stroke-width="3.5"/>
+    <circle cx="324" cy="256" r="7" fill="#8a8579" stroke-width="3.5"/>
+    <circle cx="256" cy="324" r="7" fill="#8a8579" stroke-width="3.5"/>
+    <circle cx="188" cy="256" r="7" fill="#8a8579" stroke-width="3.5"/>
+    <defs><clipPath id="c-umbo"><circle cx="256" cy="256" r="52"/></clipPath></defs>
+    <circle cx="256" cy="256" r="52" fill="#8a8579"/>
+    <g clip-path="url(#c-umbo)" stroke="none">
+      <path d="M202 256 a54 54 0 1 0 108 0 a54 54 0 1 0 -108 0 Z M213 265 a52 52 0 1 0 104 0 a52 52 0 1 0 -104 0 Z" fill="#b5ae9c" fill-rule="evenodd"/>
+      <path d="M202 256 a54 54 0 1 0 108 0 a54 54 0 1 0 -108 0 Z M195 247 a52 52 0 1 0 104 0 a52 52 0 1 0 -104 0 Z" fill="#5f5b52" fill-rule="evenodd"/>
+    </g>
+    <circle cx="256" cy="256" r="52" fill="none"/>
+  </g>
+</svg>

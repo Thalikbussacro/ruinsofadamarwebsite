@@ -278,6 +278,15 @@
     d.appendChild(el('p', 'item-dialogo-resumo', item.resumo));
 
     var corpo = el('div', 'item-dialogo-corpo');
+    // ilustração colorida do item (data/svgicons), quando houver
+    if (item.ilustracao) {
+      var fig = el('figure', 'item-dialogo-ilustracao');
+      var ilu = el('img');
+      ilu.src = raiz() + item.ilustracao;
+      ilu.alt = item.nome;
+      fig.appendChild(ilu);
+      corpo.appendChild(fig);
+    }
     corpoDetalhes(item, corpo, function (r) { abrir(r, opcoes.relacionados ? opcoes.relacionados(r) : {}); });
 
     if (item.variantes && item.variantes.length) {

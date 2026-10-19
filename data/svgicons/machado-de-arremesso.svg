@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 341 512" role="img">
+  <title>Machado de arremesso</title>
+  <defs>
+    <path id="lamina" d="M204 112 Q150 108 96 46 Q60 104 108 178 Q150 148 204 150 Z"/>
+    <clipPath id="c-lamina"><use xlink:href="#lamina"/></clipPath>
+    <path id="cabo" d="M206 84 H232 Q236 280 226 468 H202 Q210 280 206 84 Z"/>
+    <clipPath id="c-cabo"><use xlink:href="#cabo"/></clipPath>
+  </defs>
+  <g transform="translate(12 0)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo curto de madeira -->
+    <use xlink:href="#cabo" fill="#7a5a3a"/>
+    <g clip-path="url(#c-cabo)" stroke="none">
+      <path d="M200 80 H214 Q218 280 210 472 H196 Z" fill="#9a7448"/>
+      <path d="M226 80 H240 V472 H218 Q228 280 226 80 Z" fill="#55391f"/>
+    </g>
+    <use xlink:href="#cabo" fill="none"/>
+    <!-- amarração de couro no punho -->
+    <path d="M205 396 L229 388 M205 414 L229 406 M204 432 L228 424 M204 450 L228 442" fill="none" stroke="#0a0806" stroke-width="9"/>
+    <path d="M205 396 L229 388 M205 414 L229 406 M204 432 L228 424 M204 450 L228 442" fill="none" stroke="#7c5a3a" stroke-width="4"/>
+    <!-- lâmina curva -->
+    <use xlink:href="#lamina" fill="#8a8579"/>
+    <g clip-path="url(#c-lamina)" stroke="none">
+      <path d="M70 30 Q64 110 104 200 L126 180 Q90 110 116 30 Z" fill="#b5ae9c"/>
+      <path d="M90 176 Q140 136 214 134 V170 L90 210 Z" fill="#5f5b52"/>
+    </g>
+    <use xlink:href="#lamina" fill="none"/>
+    <!-- olho -->
+    <path d="M198 100 H238 Q244 130 238 162 H198 Z" fill="#8a8579"/>
+    <path d="M206 110 V152" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <path d="M231 112 Q235 130 231 150" fill="none" stroke="#5f5b52" stroke-width="5"/>
+  </g>
+</svg>

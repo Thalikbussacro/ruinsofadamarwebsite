@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 440" role="img">
+  <title>Barraca, 20 pessoas</title>
+  <defs>
+    <path id="parede" d="M88 210 H424 V364 Q256 392 88 364 Z"/>
+    <clipPath id="c-parede"><use xlink:href="#parede"/></clipPath>
+    <path id="teto" d="M256 74 L462 228 Q256 262 50 228 Z"/>
+    <clipPath id="c-teto"><use xlink:href="#teto"/></clipPath>
+  </defs>
+  <g transform="translate(256 220) scale(0.93) translate(-256 -222)" stroke="#0a0806" stroke-width="6.4" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cordas e estacas -->
+    <path d="M58 232 L40 382 M454 232 L472 382" fill="none" stroke-width="10"/>
+    <path d="M58 232 L40 382 M454 232 L472 382" fill="none" stroke="#d8cdb0" stroke-width="4"/>
+    <path d="M32 372 H48 L42 408 Z M464 372 H480 L474 408 Z" fill="#7a5a3a"/>
+    <!-- parede -->
+    <use xlink:href="#parede" fill="#b5a98a"/>
+    <g clip-path="url(#c-parede)" stroke="none">
+      <rect x="80" y="200" width="70" height="200" fill="#d8cdb0"/>
+      <rect x="362" y="200" width="70" height="200" fill="#8f8468"/>
+    </g>
+    <use xlink:href="#parede" fill="none"/>
+    <path d="M168 240 V378 M344 240 V378" fill="none" stroke="#8f8468" stroke-width="4"/>
+    <!-- entrada aberta -->
+    <path d="M256 236 L214 382 Q256 386 298 382 Z" fill="#433e35"/>
+    <path d="M256 236 L214 382 Q226 320 232 260 Z" fill="#d8cdb0"/>
+    <path d="M256 236 L298 382 Q288 320 280 260 Z" fill="#8f8468"/>
+    <!-- teto cônico -->
+    <use xlink:href="#teto" fill="#b5a98a"/>
+    <g clip-path="url(#c-teto)" stroke="none">
+      <path d="M256 60 L40 240 H190 Z" fill="#d8cdb0"/>
+      <path d="M256 60 L470 240 H330 Z" fill="#8f8468"/>
+    </g>
+    <path d="M256 74 L190 246 M256 74 L322 246" fill="none" stroke="#8f8468" stroke-width="4"/>
+    <use xlink:href="#teto" fill="none"/>
+    <!-- sanefa recortada -->
+    <path d="M50 228 Q256 262 462 228 L456 254 Q440 270 422 258 Q404 278 382 264 Q362 284 338 270 Q316 288 292 274 Q268 292 244 274 Q220 290 196 272 Q174 286 152 266 Q130 280 110 260 Q90 272 74 254 Q60 262 50 250 Z" fill="#8f8468"/>
+    <path d="M60 236 Q160 254 240 256" fill="none" stroke="#b5a98a" stroke-width="5"/>
+    <!-- mastro central -->
+    <path d="M256 36 V80" fill="none" stroke-width="20"/>
+    <path d="M256 36 V80" fill="none" stroke="#7a5a3a" stroke-width="10"/>
+    <path d="M262 40 L316 54 L262 68 Z" fill="#8a3a32"/>
+  </g>
+</svg>

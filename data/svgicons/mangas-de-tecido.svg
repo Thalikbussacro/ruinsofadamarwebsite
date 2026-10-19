@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Mangas de tecido</title>
+  <defs>
+    <path id="f1" d="M-60 34 Q-56 -12 0 -14 Q56 -12 60 34 C58 110 50 160 46 198 C66 260 86 320 102 372 L104 384 Q78 404 46 400 L42 390 C24 330 -12 280 -46 226 C-56 160 -62 100 -60 34 Z"/>
+    <clipPath id="c2"><use xlink:href="#f1"/></clipPath>
+    <clipPath id="c3"><use xlink:href="#f1" transform="translate(24 0)"/></clipPath>
+    <path id="f4" d="M-60 34 Q-56 -12 0 -14 Q56 -12 60 34 C58 110 50 160 46 198 C66 260 86 320 102 372 L104 384 Q78 404 46 400 L42 390 C24 330 -12 280 -46 226 C-56 160 -62 100 -60 34 Z"/>
+    <clipPath id="c5"><use xlink:href="#f4"/></clipPath>
+    <clipPath id="c6"><use xlink:href="#f4" transform="translate(24 0)"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <g transform="translate(276 54)">
+    <use xlink:href="#f1" fill="#b5a98a"/>
+    <g clip-path="url(#c2)" stroke="none"><g clip-path="url(#c3)"><use xlink:href="#f1" fill="#6f6650"/><use xlink:href="#f1" transform="translate(-22 0)" fill="#8f8468"/></g></g>
+    <g clip-path="url(#c2)"><path d="M-70 44 Q0 56 70 44 M-70 82 Q0 94 70 82 M-70 120 Q0 132 70 120 M-70 158 Q0 170 70 158 M-42 272 L68 225 M-25 312 L85 265 M-9 352 L102 305" fill="none" stroke="#6f6650" stroke-width="4.5" stroke-dasharray="10 8"/><path d="M-62 194 Q-10 176 60 196" fill="none" stroke="#6f6650" stroke-width="4.5"/></g>
+    <g clip-path="url(#c2)"><path d="M8 392 L119 345 L144 407 L34 454 Z" fill="#6f6650" stroke-width="4.5"/><path d="M-62 34 Q0 14 62 34" fill="none" stroke-width="4.5"/></g>
+    <use xlink:href="#f1" fill="none" stroke-width="6"/>
+    </g>
+    <g transform="translate(194 72)">
+    <use xlink:href="#f4" fill="#d8cdb0"/>
+    <g clip-path="url(#c5)" stroke="none"><g clip-path="url(#c6)"><use xlink:href="#f4" fill="#8f8468"/><use xlink:href="#f4" transform="translate(-22 0)" fill="#b5a98a"/></g></g>
+    <g clip-path="url(#c5)"><path d="M-70 44 Q0 56 70 44 M-70 82 Q0 94 70 82 M-70 120 Q0 132 70 120 M-70 158 Q0 170 70 158 M-42 272 L68 225 M-25 312 L85 265 M-9 352 L102 305" fill="none" stroke="#8f8468" stroke-width="4.5" stroke-dasharray="10 8"/><path d="M-62 194 Q-10 176 60 196" fill="none" stroke="#8f8468" stroke-width="4.5"/></g>
+    <g clip-path="url(#c5)"><path d="M8 392 L119 345 L144 407 L34 454 Z" fill="#8f8468" stroke-width="4.5"/><path d="M-62 34 Q0 14 62 34" fill="none" stroke-width="4.5"/></g>
+    <use xlink:href="#f4" fill="none" stroke-width="6"/>
+    </g>
+  </g>
+</svg>

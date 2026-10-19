@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-22 -25 568 444" role="img">
+  <title>Barda Completa de Placas</title>
+  <defs>
+    <path id="p1" d="M196 178 Q252 186 306 178 L306 288 Q252 296 196 290 Z"/><clipPath id="cp1"><use xlink:href="#p1"/></clipPath><clipPath id="ap1"><use xlink:href="#p1" transform="translate(12 12)"/></clipPath><clipPath id="bp1"><use xlink:href="#p1" transform="translate(-12 -12)"/></clipPath>
+    <path id="p2" d="M112 126 Q160 112 218 122 Q228 124 236 126 Q230 210 238 282 Q160 286 102 272 Q90 222 98 172 Q102 144 112 126 Z"/><clipPath id="cp2"><use xlink:href="#p2"/></clipPath><clipPath id="ap2"><use xlink:href="#p2" transform="translate(14 14)"/></clipPath><clipPath id="bp2"><use xlink:href="#p2" transform="translate(-14 -14)"/></clipPath>
+    <path id="p3" d="M290 130 Q308 126 326 110 Q344 94 360 82 Q384 118 404 150 Q420 192 414 232 Q410 256 398 276 Q344 286 292 276 Q282 204 290 130 Z"/><clipPath id="cp3"><use xlink:href="#p3"/></clipPath><clipPath id="ap3"><use xlink:href="#p3" transform="translate(14 14)"/></clipPath><clipPath id="bp3"><use xlink:href="#p3" transform="translate(-14 -14)"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M340 236 L344 292 L344 340 L348 372 L322 372 L322 340 L320 292 L316 240 Z M228 246 L218 292 L214 340 L216 372 L192 372 L192 340 L194 292 L200 248 Z" fill="#372f29"/>
+    <path d="M114 130 Q160 118 220 128 Q290 134 326 112 C346 84 372 56 398 44 L398 22 Q414 28 422 46 Q440 58 458 86 L476 116 Q480 134 464 140 Q448 144 436 134 L418 118 Q404 118 400 130 C398 152 404 176 408 198 Q410 222 394 236 L390 292 L392 340 L396 372 L368 372 L368 340 L366 292 L364 246 Q344 252 316 252 Q250 260 196 248 L186 290 L180 316 L180 340 L182 372 L156 372 L156 340 L148 312 Q120 270 108 226 Q98 176 114 130 Z" fill="#4a4038"/>
+    <circle cx="432" cy="76" r="7" fill="#0a0806" stroke="none"/>
+    <path d="M462 120 Q470 122 470 130" fill="none" stroke-width="4"/>
+    <use xlink:href="#p1" fill="#b5ae9c"/><g clip-path="url(#cp1)" stroke="none"><g clip-path="url(#ap1)"><rect x="-50" y="-50" width="700" height="700" fill="#5f5b52"/><g clip-path="url(#bp1)"><rect x="-50" y="-50" width="700" height="700" fill="#8a8579"/></g></g></g><use xlink:href="#p1" fill="none" stroke-width="6"/>
+    <use xlink:href="#p2" fill="#b5ae9c"/><g clip-path="url(#cp2)" stroke="none"><g clip-path="url(#ap2)"><rect x="-50" y="-50" width="700" height="700" fill="#5f5b52"/><g clip-path="url(#bp2)"><rect x="-50" y="-50" width="700" height="700" fill="#8a8579"/></g></g></g><use xlink:href="#p2" fill="none" stroke-width="6"/>
+    <use xlink:href="#p3" fill="#b5ae9c"/><g clip-path="url(#cp3)" stroke="none"><g clip-path="url(#ap3)"><rect x="-50" y="-50" width="700" height="700" fill="#5f5b52"/><g clip-path="url(#bp3)"><rect x="-50" y="-50" width="700" height="700" fill="#8a8579"/></g></g></g><use xlink:href="#p3" fill="none" stroke-width="6"/>
+    <path d="M300 140 Q382 120 404 160" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M124 150 Q170 136 220 142" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <g fill="#b5ae9c" stroke-width="3.5"><circle cx="130" cy="256" r="5"/><circle cx="220" cy="258" r="5"/><circle cx="306" cy="256" r="5"/><circle cx="392" cy="258" r="5"/></g>
+    <path d="M112 136 Q74 150 62 204 Q56 236 48 256 Q60 264 74 240 Q92 204 104 180 Z" fill="#372f29"/>
+  </g>
+</svg>

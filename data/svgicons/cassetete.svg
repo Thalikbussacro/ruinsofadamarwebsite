@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 512" role="img">
+  <title>Cassetete</title>
+  <defs>
+    <path id="corpo" d="M128 40 Q178 42 178 110 Q178 190 150 262 L148 372 Q160 378 160 392 Q160 406 128 406 Q96 406 96 392 Q96 378 108 372 L106 262 Q78 190 78 110 Q78 42 128 40 Z"/>
+    <clipPath id="c-corpo"><use xlink:href="#corpo"/></clipPath>
+  </defs>
+  <g transform="translate(0 0)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- alça de pulso (traço duplo) -->
+    <path d="M116 400 Q94 466 128 466 Q162 466 140 400" fill="none" stroke-width="18"/>
+    <path d="M116 400 Q94 466 128 466 Q162 466 140 400" fill="none" stroke="#6b2a24" stroke-width="8"/>
+    <!-- corpo de couro escuro recheado -->
+    <use xlink:href="#corpo" fill="#5c4836"/>
+    <g clip-path="url(#c-corpo)" stroke="none">
+      <path d="M60 30 H114 Q96 90 100 170 Q106 230 120 270 V420 H60 Z" fill="#7a6450"/>
+      <path d="M196 30 H160 Q166 120 156 190 Q148 240 138 276 V420 H196 Z" fill="#3f3125"/>
+    </g>
+    <!-- costura da borda -->
+    <path d="M128 54 Q164 56 164 112 Q164 180 140 248 M128 54 Q92 56 92 112 Q92 180 116 248" fill="none" stroke="#3f3125" stroke-width="4"/>
+    <path d="M98 86 L88 82 M96 124 L86 124 M100 162 L90 166 M106 200 L97 206 M158 86 L168 82 M160 124 L170 124 M156 162 L166 166 M150 200 L159 206" fill="none" stroke-width="3.5"/>
+    <use xlink:href="#corpo" fill="none"/>
+    <!-- amarração do pescoço -->
+    <rect x="101" y="254" width="54" height="22" rx="8" fill="#6b2a24"/>
+    <path d="M109 260 H125" fill="none" stroke="#8a3a32" stroke-width="4"/>
+    <path d="M102 300 L154 292 M102 330 L154 322 M102 360 L154 352" fill="none" stroke="#3f3125" stroke-width="4"/>
+  </g>
+</svg>

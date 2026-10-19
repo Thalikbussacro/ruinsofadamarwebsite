@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 512" role="img">
+  <title>Aljava de cintura</title>
+  <defs>
+    <path id="tubo" d="M24 150 H104 L94 452 Q64 470 34 452 Z"/>
+    <clipPath id="c-tubo"><use xlink:href="#tubo"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <!-- flechas -->
+    <path d="M46 112 V202" fill="none" stroke-width="13"/>
+    <path d="M46 112 V202" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <path d="M46 60 Q28 72 30 122 L46 134 Z" fill="#d8cdb0"/>
+    <path d="M46 60 Q64 72 62 122 L46 134 Z" fill="#b5a98a"/>
+    <path d="M46 52 V142" fill="none" stroke-width="10"/>
+    <path d="M46 54 V140" fill="none" stroke="#9a7448" stroke-width="4"/>
+    <path d="M80 118 V208" fill="none" stroke-width="13"/>
+    <path d="M80 118 V208" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <path d="M80 66 Q62 78 64 128 L80 140 Z" fill="#d8cdb0"/>
+    <path d="M80 66 Q98 78 96 128 L80 140 Z" fill="#b5a98a"/>
+    <path d="M80 58 V148" fill="none" stroke-width="10"/>
+    <path d="M80 60 V146" fill="none" stroke="#9a7448" stroke-width="4"/>
+    <path d="M63 100 V190" fill="none" stroke-width="13"/>
+    <path d="M63 100 V190" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <path d="M63 48 Q45 60 47 110 L63 122 Z" fill="#d8cdb0"/>
+    <path d="M63 48 Q81 60 79 110 L63 122 Z" fill="#b5a98a"/>
+    <path d="M63 40 V130" fill="none" stroke-width="10"/>
+    <path d="M63 42 V128" fill="none" stroke="#9a7448" stroke-width="4"/>
+    <!-- tubo de couro -->
+    <use xlink:href="#tubo" fill="#7c5a3a"/>
+    <g clip-path="url(#c-tubo)" stroke="none">
+      <rect x="20" y="140" width="26" height="340" fill="#a07850"/>
+      <rect x="84" y="140" width="26" height="340" fill="#573d26"/>
+    </g>
+    <use xlink:href="#tubo" fill="none"/>
+    <rect x="20" y="140" width="88" height="22" rx="6" fill="#573d26"/>
+    <rect x="30" y="420" width="70" height="20" rx="6" fill="#573d26"/>
+    <!-- presilhas e pedaço do cinto -->
+    <rect x="12" y="196" width="104" height="32" rx="6" fill="#6b2a24"/>
+    <path d="M20 204 H108" fill="none" stroke="#8a3a32" stroke-width="5"/>
+    <rect x="34" y="184" width="18" height="56" rx="4" fill="#573d26"/>
+    <rect x="76" y="184" width="18" height="56" rx="4" fill="#573d26"/>
+  </g>
+</svg>

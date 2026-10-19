@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171 512" role="img">
+  <title>Maça pequena</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo -->
+    <rect x="72" y="160" width="27" height="294" rx="9" fill="#7a5a3a"/>
+    <path d="M79 200 V446" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M92 200 V446" fill="none" stroke="#55391f" stroke-width="4"/>
+    <!-- empunhadura -->
+    <rect x="69" y="350" width="33" height="96" rx="8" fill="#6b2a24"/>
+    <path d="M76 358 V438" fill="none" stroke="#8a3a32" stroke-width="6"/>
+    <path d="M69 374 L102 365 M69 398 L102 389 M69 422 L102 413" fill="none" stroke-width="4"/>
+    <!-- pomo -->
+    <path d="M67 444 H104 L99 466 Q85 474 72 466 Z" fill="#8a8579"/>
+    <!-- colar -->
+    <rect x="65" y="186" width="41" height="22" rx="6" fill="#8a8579"/>
+    <path d="M72 193 H86" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- cabeça de gomos -->
+    <ellipse cx="85.5" cy="122" rx="44" ry="56" fill="#5f5b52"/>
+    <ellipse cx="59" cy="122" rx="21" ry="48" fill="#b5ae9c"/>
+    <ellipse cx="112" cy="122" rx="21" ry="48" fill="#4a463f"/>
+    <ellipse cx="85.5" cy="122" rx="23" ry="58" fill="#8a8579"/>
+    <path d="M76 86 Q74 110 77 150" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <!-- botão do topo -->
+    <rect x="76" y="50" width="19" height="18" rx="5" fill="#8a8579"/>
+  </g>
+</svg>

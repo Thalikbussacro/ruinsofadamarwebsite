@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Kit de escriba</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- pergaminho -->
+    <path d="M60 236 H300 V430 H60 Z" fill="#d8cdb0"/>
+    <path d="M290 246 V430 H60 V420 H290 Z" fill="#b5a98a" stroke="none"/>
+    <path d="M60 236 H300 V430 H60 Z" fill="none"/>
+    <path d="M88 280 H270 M88 318 H250 M88 356 H264 M88 394 H200" fill="none" stroke="#8f8468" stroke-width="5"/>
+    <!-- rolos -->
+    <rect x="44" y="210" width="272" height="40" rx="20" fill="#d8cdb0"/>
+        <path d="M60 238 H300" fill="none" stroke="#b5a98a" stroke-width="5"/>
+    <rect x="44" y="418" width="272" height="40" rx="20" fill="#d8cdb0"/>
+    <path d="M60 446 H300" fill="none" stroke="#b5a98a" stroke-width="5"/>
+    <!-- pena -->
+    <path d="M396 312 L172 52" fill="none" stroke-width="12"/>
+    <path d="M396 312 L172 52" fill="none" stroke="#d8cdb0" stroke-width="4"/>
+    <path d="M318 222 Q306 92 176 56 Q196 182 318 222 Z" fill="#b5a98a"/>
+    <path d="M318 222 L176 56 Q196 182 318 222 Z" fill="#d8cdb0" stroke="none"/>
+    <path d="M318 222 Q306 92 176 56 Q196 182 318 222 Z" fill="none"/>
+    <path d="M314 216 L180 60" fill="none" stroke="#8f8468" stroke-width="4"/>
+    <!-- tinteiro de cerâmica -->
+    <path d="M336 316 H436 Q470 330 470 380 Q470 436 386 440 Q302 436 302 380 Q302 330 336 316 Z" fill="#8c5c40"/>
+    <path d="M320 334 Q306 360 312 400 Q324 424 346 432 Q324 384 344 330 Z" fill="#b07a58" stroke="none"/>
+    <path d="M450 340 Q470 380 452 420 Q434 436 410 438 Q450 400 438 336 Z" fill="#64402c" stroke="none"/>
+    <path d="M336 316 H436 Q470 330 470 380 Q470 436 386 440 Q302 436 302 380 Q302 330 336 316 Z" fill="none"/>
+    <rect x="344" y="294" width="84" height="30" rx="8" fill="#8c5c40"/>
+    <ellipse cx="386" cy="300" rx="30" ry="9" fill="#0a0806" stroke="none"/>
+  </g>
+</svg>

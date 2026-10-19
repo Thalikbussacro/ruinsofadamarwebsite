@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341 512" role="img">
+  <title>Maça-estrela</title>
+  <defs><clipPath id="c-bola"><circle cx="150" cy="138" r="58"/></clipPath></defs>
+  <g transform="translate(10 -8)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- corrente -->
+    <g transform="translate(215 284) rotate(-87)"><ellipse rx="16.0" ry="10.0" fill="none" stroke="#0a0806" stroke-width="13"/><ellipse rx="16.0" ry="10.0" fill="none" stroke="#8a8579" stroke-width="5"/></g>
+    <g transform="translate(214 261) rotate(-98)"><rect x="-17.0" y="-6" width="34" height="12" rx="6" fill="#b5ae9c"/></g>
+    <g transform="translate(209 238) rotate(-108)"><ellipse rx="16.0" ry="10.0" fill="none" stroke="#0a0806" stroke-width="13"/><ellipse rx="16.0" ry="10.0" fill="none" stroke="#8a8579" stroke-width="5"/></g>
+    <g transform="translate(200 217) rotate(-118)"><rect x="-17.0" y="-6" width="34" height="12" rx="6" fill="#b5ae9c"/></g>
+    <g transform="translate(186 196) rotate(-127)"><ellipse rx="16.0" ry="10.0" fill="none" stroke="#0a0806" stroke-width="13"/><ellipse rx="16.0" ry="10.0" fill="none" stroke="#8a8579" stroke-width="5"/></g>
+    <!-- cabo -->
+    <rect x="198" y="308" width="32" height="150" rx="9" fill="#7a5a3a"/>
+    <path d="M206 320 V450" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <rect x="194" y="362" width="40" height="92" rx="8" fill="#6b2a24"/>
+    <path d="M203 370 V446" fill="none" stroke="#8a3a32" stroke-width="6"/>
+    <path d="M194 386 L234 376 M194 410 L234 400 M194 434 L234 424" fill="none" stroke-width="4"/>
+    <path d="M192 452 H236 L230 474 Q214 482 198 474 Z" fill="#8a8579"/>
+    <!-- ponteira com argola -->
+    <path d="M214 304 Q214 284 214 284" fill="none"/>
+    <rect x="194" y="296" width="40" height="30" rx="7" fill="#8a8579"/>
+    <path d="M202 304 H222" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- cravos -->
+    <path d="M163 84 L150 48 L137 84 Z" fill="#b5ae9c"/>
+    <path d="M192 102 L203 65 L171 87 Z" fill="#8a8579"/>
+    <path d="M205 134 L236 110 L197 109 Z" fill="#5f5b52"/>
+    <path d="M197 167 L236 166 L205 142 Z" fill="#5f5b52"/>
+    <path d="M171 189 L203 211 L192 174 Z" fill="#5f5b52"/>
+    <path d="M137 192 L150 228 L163 192 Z" fill="#5f5b52"/>
+    <path d="M108 174 L97 211 L129 189 Z" fill="#8a8579"/>
+    <path d="M95 142 L64 166 L103 167 Z" fill="#b5ae9c"/>
+    <path d="M103 109 L64 110 L95 134 Z" fill="#b5ae9c"/>
+    <path d="M129 87 L97 65 L108 102 Z" fill="#b5ae9c"/>
+    <!-- bola -->
+    <circle cx="150" cy="138" r="58" fill="#8a8579"/>
+    <g clip-path="url(#c-bola)" stroke="none">
+      <circle cx="150" cy="138" r="58" fill="#5f5b52"/>
+      <circle cx="141" cy="129" r="53" fill="#8a8579"/>
+      <circle cx="128" cy="116" r="30" fill="#b5ae9c"/>
+    </g>
+    <circle cx="150" cy="138" r="58" fill="none"/>
+  </g>
+</svg>

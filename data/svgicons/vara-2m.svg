@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Vara, 2 m</title>
+  <g transform="translate(256 256) rotate(45)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-17" y="-285" width="34" height="570" rx="16" fill="#7a5a3a"/>
+    <path d="M-7 -280 V280" fill="none" stroke="#9a7448" stroke-width="8"/>
+    <path d="M9 -280 V280" fill="none" stroke="#55391f" stroke-width="6"/>
+    <!-- nós da madeira -->
+    <path d="M-17 -120 Q-28 -110 -17 -98 M17 60 Q28 72 17 82 M-17 180 Q-27 190 -17 200" fill="#7a5a3a"/>
+    <ellipse cx="0" cy="-285" rx="15" ry="4" fill="#9a7448" stroke-width="4"/>
+  </g>
+</svg>

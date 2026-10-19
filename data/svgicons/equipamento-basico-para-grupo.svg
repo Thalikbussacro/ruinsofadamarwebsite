@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Equipamento básico para grupo</title>
+  <defs>
+    <path id="panela" d="M64 214 Q60 400 214 412 Q368 400 364 214 Z"/>
+    <clipPath id="c-panela"><use xlink:href="#panela"/></clipPath>
+    <path id="tigela" d="M300 352 H468 Q462 446 384 450 Q306 446 300 352 Z"/>
+    <clipPath id="c-tigela"><use xlink:href="#tigela"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- alça do caldeirão -->
+    <path d="M74 224 Q90 70 214 70 Q338 70 354 224" fill="none" stroke-width="22"/>
+    <path d="M74 224 Q90 70 214 70 Q338 70 354 224" fill="none" stroke="#5f5b52" stroke-width="10"/>
+    <!-- concha de madeira -->
+    <path d="M250 214 L408 76" fill="none" stroke-width="28"/>
+    <path d="M250 214 L408 76" fill="none" stroke="#7a5a3a" stroke-width="16"/>
+    <path d="M286 176 L396 80" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <!-- caldeirão de ferro -->
+    <use xlink:href="#panela" fill="#5f5b52"/>
+    <g clip-path="url(#c-panela)" stroke="none">
+      <path d="M50 200 H150 Q110 300 160 420 H50 Z" fill="#8a8579"/>
+      <path d="M380 200 H310 Q340 330 250 420 H380 Z" fill="#4a463f"/>
+    </g>
+    <use xlink:href="#panela" fill="none"/>
+    <ellipse cx="214" cy="214" rx="154" ry="36" fill="#8a8579"/>
+    <ellipse cx="214" cy="218" rx="130" ry="24" fill="#2a2620"/>
+    <path d="M262 206 L250 214" fill="none" stroke-width="22"/>
+    <path d="M262 206 L250 214" fill="none" stroke="#7a5a3a" stroke-width="12"/>
+    <path d="M90 208 Q140 186 200 182" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- pés -->
+    <path d="M118 380 L112 420 L138 404 Z M296 384 L306 420 L282 402 Z" fill="#5f5b52"/>
+    <!-- tigela de madeira com colher -->
+    <path d="M330 362 L452 290" fill="none" stroke-width="20"/>
+    <path d="M330 362 L452 290" fill="none" stroke="#9a7448" stroke-width="9"/>
+    <use xlink:href="#tigela" fill="#7a5a3a"/>
+    <g clip-path="url(#c-tigela)" stroke="none">
+      <path d="M290 340 H340 Q330 400 360 460 H290 Z" fill="#9a7448"/>
+      <path d="M480 340 H430 Q440 410 390 460 H480 Z" fill="#55391f"/>
+    </g>
+    <use xlink:href="#tigela" fill="none"/>
+    <ellipse cx="384" cy="352" rx="84" ry="18" fill="#55391f"/>
+  </g>
+</svg>

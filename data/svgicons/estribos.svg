@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Estribos</title>
+  <defs>
+    <g id="est">
+      <!-- loro de couro -->
+      <rect x="-16" y="-232" width="32" height="132" rx="6" fill="#7c5a3a"/>
+      <path d="M-8 -224 V-108" fill="none" stroke="#a07850" stroke-width="5"/>
+      <rect x="-26" y="-180" width="52" height="30" rx="6" fill="none" stroke-width="12"/>
+      <rect x="-26" y="-180" width="52" height="30" rx="6" fill="none" stroke="#8a8579" stroke-width="5"/>
+      <!-- arco de ferro -->
+      <path d="M-62 56 Q-70 -60 0 -96 Q70 -60 62 56" fill="none" stroke-width="36"/>
+      <path d="M-62 56 Q-70 -60 0 -96 Q70 -60 62 56" fill="none" stroke="#8a8579" stroke-width="24"/>
+      <path d="M-66 30 Q-68 -50 -12 -88" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+      <path d="M68 30 Q68 -40 30 -76" fill="none" stroke="#5f5b52" stroke-width="5"/>
+      <!-- olhal -->
+      <rect x="-28" y="-122" width="56" height="34" rx="10" fill="#8a8579"/>
+      <rect x="-14" y="-112" width="28" height="12" rx="4" fill="#0a0806" stroke="none"/>
+      <!-- piso -->
+      <rect x="-86" y="44" width="172" height="34" rx="10" fill="#8a8579"/>
+      <path d="M-76 54 H40" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+      <path d="M-74 70 H76" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    </g>
+  </defs>
+  <g transform="translate(0 29)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <use xlink:href="#est" transform="translate(158 290)"/>
+    <use xlink:href="#est" transform="translate(354 318)"/>
+  </g>
+</svg>

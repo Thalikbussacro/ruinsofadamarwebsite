@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 512" role="img">
+  <title>Azagaia</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- haste leve -->
+    <rect x="42" y="120" width="18" height="346" rx="8" fill="#7a5a3a"/>
+    <path d="M47 136 V456" fill="none" stroke="#9a7448" stroke-width="5"/>
+    <!-- amarração de corda para arremesso -->
+    <path d="M40 262 L62 254 M40 276 L62 268 M40 290 L62 282 M40 304 L62 296" fill="none" stroke="#0a0806" stroke-width="11"/>
+    <path d="M40 262 L62 254 M40 276 L62 268 M40 290 L62 282 M40 304 L62 296" fill="none" stroke="#b5a98a" stroke-width="5"/>
+    <path d="M42 258 L60 252" fill="none" stroke="#d8cdb0" stroke-width="3"/>
+    <!-- ponteira -->
+    <path d="M41 460 H61 L56 476 H46 Z" fill="#8a8579"/>
+    <!-- alvado -->
+    <path d="M42 108 H60 L62 150 H40 Z" fill="#8a8579"/>
+    <path d="M47 116 L46 142" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- ponta em folha -->
+    <path d="M51 36 Q76 80 70 104 Q64 114 58 112 H44 Q38 114 32 104 Q26 80 51 36 Z" fill="#8a8579"/>
+    <path d="M51 40 Q28 80 33 102 Q38 110 44 110 H51 Z" fill="#b5ae9c" stroke="none"/>
+    <path d="M51 40 Q74 80 69 102 Q64 110 58 110 H55 Z" fill="#5f5b52" stroke="none"/>
+    <path d="M51 36 Q76 80 70 104 Q64 114 58 112 H44 Q38 114 32 104 Q26 80 51 36 Z" fill="none"/>
+    <path d="M51 54 V104" fill="none" stroke-width="3.5"/>
+  </g>
+</svg>

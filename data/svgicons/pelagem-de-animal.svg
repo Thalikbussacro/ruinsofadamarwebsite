@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Pelagem de animal</title>
+  <defs>
+    <path id="pele" d="M226 58 L256 70 L286 58 L300 108 Q340 112 380 88 L428 72 L438 98 L398 128 Q368 150 364 182 Q384 236 376 300 Q404 330 426 362 L448 400 L420 410 L384 380 Q346 380 318 398 L282 404 L268 460 L256 470 L244 460 L230 404 L194 398 Q166 380 128 380 L92 410 L64 400 L86 362 Q108 330 136 300 Q128 236 148 182 Q144 150 114 128 L74 98 L84 72 L132 88 Q172 112 212 108 Z"/>
+    <clipPath id="c-pele"><use xlink:href="#pele"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <use xlink:href="#pele" fill="#7e6a4e"/>
+    <g clip-path="url(#c-pele)" stroke="none">
+      <path d="M40 40 H200 Q160 140 170 260 Q180 360 140 480 H40 Z" fill="#a08a6a"/>
+      <path d="M472 40 H360 Q330 200 352 300 Q380 400 300 480 H472 Z" fill="#5a4a36"/>
+      <!-- faixa do lombo -->
+      <path d="M240 100 Q234 260 246 420 H266 Q278 260 272 100 Z" fill="#5a4a36"/>
+    </g>
+    <use xlink:href="#pele" fill="none"/>
+    <!-- tufos de pelo -->
+    <g fill="none" stroke-width="4" stroke="#5a4a36">
+      <path d="M190 200 l-14 16 M206 260 l-14 16 M188 320 l-14 16 M314 220 l-14 16 M326 280 l-14 16 M304 340 l-14 16"/>
+    </g>
+    <g fill="none" stroke-width="4" stroke="#a08a6a">
+      <path d="M210 160 l-12 14 M300 160 l-12 14 M226 360 l-12 14"/>
+    </g>
+  </g>
+</svg>

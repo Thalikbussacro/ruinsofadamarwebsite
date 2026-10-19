@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-22 -25 568 444" role="img">
+  <title>Barda Parcial de Couro e Tecido</title>
+  <defs>
+    <path id="p1" d="M282 136 Q306 130 326 112 Q344 94 360 82 Q384 118 404 150 Q420 192 414 232 Q410 256 398 276 Q340 286 282 276 Q272 206 282 136 Z"/><clipPath id="cp1"><use xlink:href="#p1"/></clipPath><clipPath id="ap1"><use xlink:href="#p1" transform="translate(14 14)"/></clipPath><clipPath id="bp1"><use xlink:href="#p1" transform="translate(-14 -14)"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M112 136 Q74 150 62 204 Q56 236 48 256 Q60 264 74 240 Q92 204 104 180 Z" fill="#372f29"/>
+    <path d="M340 236 L344 292 L344 340 L348 372 L322 372 L322 340 L320 292 L316 240 Z M228 246 L218 292 L214 340 L216 372 L192 372 L192 340 L194 292 L200 248 Z" fill="#372f29"/>
+    <path d="M114 130 Q160 118 220 128 Q290 134 326 112 C346 84 372 56 398 44 L398 22 Q414 28 422 46 Q440 58 458 86 L476 116 Q480 134 464 140 Q448 144 436 134 L418 118 Q404 118 400 130 C398 152 404 176 408 198 Q410 222 394 236 L390 292 L392 340 L396 372 L368 372 L368 340 L366 292 L364 246 Q344 252 316 252 Q250 260 196 248 L186 290 L180 316 L180 340 L182 372 L156 372 L156 340 L148 312 Q120 270 108 226 Q98 176 114 130 Z" fill="#4a4038"/>
+    <circle cx="432" cy="76" r="7" fill="#0a0806" stroke="none"/>
+    <path d="M462 120 Q470 122 470 130" fill="none" stroke-width="4"/>
+    <use xlink:href="#p1" fill="#a07850"/><g clip-path="url(#cp1)" stroke="none"><g clip-path="url(#ap1)"><rect x="-50" y="-50" width="700" height="700" fill="#573d26"/><g clip-path="url(#bp1)"><rect x="-50" y="-50" width="700" height="700" fill="#7c5a3a"/></g></g></g><use xlink:href="#p1" fill="none" stroke-width="6"/>
+    <path d="M318 150 Q340 210 330 270 M362 128 Q384 196 368 272" fill="none" stroke="#573d26" stroke-width="4"/>
+    <path d="M398 276 Q340 286 282 276" fill="none" stroke-width="26"/><path d="M398 276 Q340 286 282 276" fill="none" stroke="#b5a98a" stroke-width="14"/>
+    <path d="M282 276 Q272 206 282 136" fill="none" stroke-width="24"/><path d="M282 276 Q272 206 282 136" fill="none" stroke="#b5a98a" stroke-width="12"/>
+  </g>
+</svg>

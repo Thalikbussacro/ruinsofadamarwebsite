@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Tablete de cera</title>
+  <g transform="translate(0 -17)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- tábuas de madeira (díptico) -->
+    <rect x="52" y="104" width="196" height="290" rx="12" fill="#7a5a3a"/>
+    <path d="M62 116 H236 M62 116 V382" fill="none" stroke="#9a7448" stroke-width="7"/>
+    <rect x="264" y="104" width="196" height="290" rx="12" fill="#7a5a3a"/>
+    <path d="M274 116 H448 M274 116 V382" fill="none" stroke="#9a7448" stroke-width="7"/>
+    <!-- cera -->
+    <rect x="80" y="134" width="140" height="230" rx="4" fill="#c2ac72"/>
+    <path d="M80 134 H220 L208 146 H92 V364 L80 364 Z" fill="#968254" stroke="none"/>
+    <rect x="80" y="134" width="140" height="230" rx="4" fill="none"/>
+    <rect x="292" y="134" width="140" height="230" rx="4" fill="#c2ac72"/>
+    <path d="M292 134 H432 L420 146 H304 V364 L292 364 Z" fill="#968254" stroke="none"/>
+    <rect x="292" y="134" width="140" height="230" rx="4" fill="none"/>
+    <!-- riscos de escrita -->
+    <path d="M106 178 Q120 170 134 180 T166 176 T196 180 M106 218 Q120 210 134 220 T164 216 M106 258 Q120 250 134 260 T166 256 T196 260 M106 298 Q118 292 130 300 T158 296 M318 178 Q332 170 346 180 T378 176 T408 180 M318 218 Q332 210 346 220 T376 216" fill="none" stroke="#968254" stroke-width="5"/>
+    <!-- cordões da dobradiça -->
+    <path d="M240 170 H272 M240 330 H272" fill="none" stroke-width="16"/>
+    <path d="M240 170 H272 M240 330 H272" fill="none" stroke="#b5a98a" stroke-width="6"/>
+    <!-- estilete -->
+    <path d="M330 424 L448 222" fill="none" stroke-width="22"/>
+    <path d="M330 424 L448 222" fill="none" stroke="#8a8579" stroke-width="10"/>
+    <path d="M334 410 L436 236" fill="none" stroke="#b5ae9c" stroke-width="3.5"/>
+    <path d="M442 214 L466 188 L470 202 L456 228 Z" fill="#8a8579"/>
+    <path d="M318 432 L332 404 L348 414 L336 440 Q324 446 318 432 Z" fill="#5f5b52"/>
+  </g>
+</svg>

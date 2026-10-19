@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 512" role="img">
+  <title>Machado</title>
+  <defs>
+    <path id="lamina" d="M150 82 Q112 76 66 52 Q34 120 52 214 Q100 180 150 150 Z"/>
+    <clipPath id="c-lamina"><use xlink:href="#lamina"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo -->
+    <rect x="152" y="70" width="28" height="402" rx="10" fill="#7a5a3a"/>
+    <path d="M160 160 V460" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <path d="M173 160 V460" fill="none" stroke="#55391f" stroke-width="4"/>
+    <!-- empunhadura -->
+    <rect x="149" y="352" width="34" height="108" rx="8" fill="#6b2a24"/>
+    <path d="M157 360 V452" fill="none" stroke="#8a3a32" stroke-width="6"/>
+    <path d="M149 378 L183 368 M149 402 L183 392 M149 426 L183 416 M149 450 L183 440" fill="none" stroke-width="4"/>
+    <!-- lâmina -->
+    <use xlink:href="#lamina" fill="#8a8579"/>
+    <g clip-path="url(#c-lamina)" stroke="none">
+      <path d="M30 40 Q40 130 60 230 L82 220 Q62 130 74 40 Z" fill="#b5ae9c"/>
+      <path d="M40 210 Q100 168 160 130 V170 L40 240 Z" fill="#5f5b52"/>
+    </g>
+    <use xlink:href="#lamina" fill="none"/>
+    <path d="M78 66 Q66 130 76 196" fill="none" stroke="#5f5b52" stroke-width="4"/>
+    <!-- alvado e talão -->
+    <rect x="178" y="94" width="34" height="42" rx="6" fill="#8a8579"/>
+    <path d="M186 102 H204" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <rect x="144" y="70" width="44" height="92" rx="8" fill="#8a8579"/>
+    <path d="M154 82 V150" fill="none" stroke="#b5ae9c" stroke-width="7"/>
+    <path d="M178 82 V150" fill="none" stroke="#5f5b52" stroke-width="6"/>
+  </g>
+</svg>

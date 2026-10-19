@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" role="img">
+  <title>Zarabatana</title>
+  <g transform="translate(-5 0)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- tubo -->
+    <rect x="31" y="34" width="30" height="430" rx="10" fill="#7a5a3a"/>
+    <path d="M39 46 V452" fill="none" stroke="#9a7448" stroke-width="7"/>
+    <path d="M54 46 V452" fill="none" stroke="#55391f" stroke-width="5"/>
+    <!-- boca -->
+    <ellipse cx="46" cy="38" rx="11" ry="4" fill="#0a0806" stroke="none"/>
+    <!-- amarrações -->
+    <g fill="#6b2a24">
+      <rect x="28" y="120" width="36" height="18" rx="5"/>
+      <rect x="28" y="250" width="36" height="18" rx="5"/>
+    </g>
+    <path d="M33 125 V133 M33 255 V263" fill="none" stroke="#8a3a32" stroke-width="4"/>
+    <!-- bocal de chifre -->
+    <rect x="26" y="420" width="40" height="56" rx="10" fill="#b89c66"/>
+    <path d="M35 430 V466" fill="none" stroke="#d6bf8a" stroke-width="6"/>
+    <path d="M58 432 V466" fill="none" stroke="#8c7346" stroke-width="5"/>
+    <!-- dardo -->
+    <path d="M98 244 V384" fill="none" stroke-width="11"/>
+    <path d="M98 244 V384" fill="none" stroke="#8a8579" stroke-width="4"/>
+    <path d="M98 220 L103 246 H93 Z" fill="#b5ae9c" stroke-width="4"/>
+    <path d="M98 366 L113 428 Q98 438 83 428 Z" fill="#b5a98a"/>
+    <path d="M95 378 L87 422" fill="none" stroke="#d8cdb0" stroke-width="4"/>
+  </g>
+</svg>

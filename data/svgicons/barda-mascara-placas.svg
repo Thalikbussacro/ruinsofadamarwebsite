@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img">
+  <title>Máscara de Placas (Barda)</title>
+  <defs>
+    <path id="p1" d="M246 126 L266 100 C310 130 370 190 428 254 Q438 274 420 290 Q380 298 338 284 Q294 268 270 232 Q252 196 246 160 Z"/><clipPath id="cp1"><use xlink:href="#p1"/></clipPath><clipPath id="ap1"><use xlink:href="#p1" transform="translate(18 18)"/></clipPath><clipPath id="bp1"><use xlink:href="#p1" transform="translate(-18 -18)"/></clipPath>
+  </defs>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" transform="translate(-9 -13)">
+    <path d="M92 474 C96 330 146 196 230 122 L224 64 Q240 72 262 106 C304 138 364 198 420 262 Q446 292 440 324 Q432 350 400 348 L372 340 Q326 330 298 304 Q276 284 274 264 C276 340 300 410 320 474 Z" fill="#4a4038"/>
+    <path d="M420 300 Q432 304 432 318" fill="none" stroke-width="5"/>
+    <path d="M222 140 L226 72" fill="none" stroke="#372f29" stroke-width="5"/>
+    <path d="M238 116 Q216 196 268 262" fill="none" stroke-width="22"/>
+    <path d="M238 116 Q216 196 268 262" fill="none" stroke="#6b2a24" stroke-width="10"/>
+    <use xlink:href="#p1" fill="#b5ae9c"/><g clip-path="url(#cp1)" stroke="none"><g clip-path="url(#ap1)"><rect x="-50" y="-50" width="700" height="700" fill="#5f5b52"/><g clip-path="url(#bp1)"><rect x="-50" y="-50" width="700" height="700" fill="#8a8579"/></g></g></g><use xlink:href="#p1" fill="none" stroke-width="6"/>
+    <path d="M268 118 C312 148 366 202 418 262" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M262 134 C306 164 360 214 410 272" fill="none" stroke-width="4"/>
+    <circle cx="298" cy="184" r="24" fill="#8a8579" stroke-width="5"/>
+    <circle cx="298" cy="184" r="14" fill="#0a0806"/>
+    <g fill="#b5ae9c" stroke-width="3.5"><circle cx="262" cy="170" r="6"/><circle cx="330" cy="262" r="6"/><circle cx="394" cy="276" r="6"/></g>
+  </g>
+</svg>

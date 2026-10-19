@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 341 512" role="img">
+  <title>Celada de Bronze</title>
+<g transform="translate(0 12)">
+<g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><defs><path id="cbz" d="M170.5 116 Q200.5 120 230.5 190 Q272.5 280 282.5 356 Q170.5 372 58.5 356 Q68.5 280 110.5 190 Q140.5 120 170.5 116 Z"/><clipPath id="c-cbz"><use xlink:href="#cbz"/></clipPath></defs><use xlink:href="#cbz" fill="#9a7a46"/><g clip-path="url(#c-cbz)" stroke="none"><rect x="-10" y="-10" width="130.5" height="600" fill="#c4a066"/><rect x="224.5" y="-10" width="600" height="600" fill="#6e5530"/></g><path d="M120.5 220 Q130.5 170 156.5 136" fill="none" stroke="#c4a066" stroke-width="8"/><use xlink:href="#cbz" fill="none"/><defs><path id="cbr" d="M34.5 352 Q170.5 330 306.5 352 Q312.5 378 296.5 384 Q170.5 366 44.5 384 Q28.5 378 34.5 352 Z"/><clipPath id="c-cbr"><use xlink:href="#cbr"/></clipPath></defs><use xlink:href="#cbr" fill="#9a7a46"/><g clip-path="url(#c-cbr)" stroke="none"><rect x="-10" y="-10" width="110.5" height="600" fill="#c4a066"/><rect x="244.5" y="-10" width="600" height="600" fill="#6e5530"/></g><use xlink:href="#cbr" fill="none"/><path d="M156.5 116 Q170.5 92 184.5 116 Z" fill="#9a7a46"/></g>
+</g>
+</svg>

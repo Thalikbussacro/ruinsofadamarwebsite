@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Agulhas de tricô</title>
+  <g transform="translate(17 0)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- agulha de trás -->
+    <path d="M400 70 L130 440" fill="none" stroke-width="26"/>
+    <path d="M400 70 L130 440" fill="none" stroke="#7a5a3a" stroke-width="14"/>
+    <circle cx="404" cy="64" r="20" fill="#7a5a3a"/>
+    <!-- novelo de lã -->
+    <circle cx="246" cy="296" r="128" fill="#5e574b"/>
+    <path d="M146 262 Q184 192 264 182" fill="none" stroke="#7a7264" stroke-width="16"/>
+    <path d="M128 300 Q160 200 260 180 M150 360 Q170 250 290 200 M196 404 Q200 300 330 230 M262 420 Q270 340 360 280" fill="none" stroke="#433e35" stroke-width="7"/>
+    <path d="M140 250 Q240 300 290 410 M180 196 Q300 240 350 380" fill="none" stroke="#433e35" stroke-width="7"/>
+    <circle cx="246" cy="296" r="128" fill="none"/>
+    <!-- fio solto -->
+    <path d="M150 382 Q100 420 70 400 Q50 386 66 360" fill="none" stroke-width="15"/>
+    <path d="M150 382 Q100 420 70 400 Q50 386 66 360" fill="none" stroke="#5e574b" stroke-width="6"/>
+    <!-- agulha da frente -->
+    <path d="M110 92 L410 430" fill="none" stroke-width="26"/>
+    <path d="M110 92 L410 430" fill="none" stroke="#9a7448" stroke-width="14"/>
+    <circle cx="104" cy="86" r="20" fill="#9a7448"/>
+    <path d="M94 80 A10 10 0 0 1 104 74" fill="none" stroke="#c4a066" stroke-width="4"/>
+  </g>
+</svg>

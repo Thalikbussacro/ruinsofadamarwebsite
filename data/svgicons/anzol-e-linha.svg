@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Anzol e linha</title>
+  <g transform="translate(24 30)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- linha até o anzol -->
+    <path d="M194 150 Q230 60 300 90 Q340 106 346 124" fill="none" stroke-width="12"/>
+    <path d="M194 150 Q230 60 300 90 Q340 106 346 124" fill="none" stroke="#d8cdb0" stroke-width="5"/>
+    <!-- carretel de madeira -->
+    <rect x="96" y="70" width="112" height="44" rx="12" fill="#7a5a3a"/>
+    <path d="M108 82 H190" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <rect x="116" y="104" width="72" height="200" rx="6" fill="#7a5a3a"/>
+    <rect x="96" y="294" width="112" height="44" rx="12" fill="#7a5a3a"/>
+    <path d="M108 306 H190" fill="none" stroke="#9a7448" stroke-width="6"/>
+    <!-- linha enrolada -->
+    <rect x="110" y="124" width="84" height="160" rx="16" fill="#b5a98a"/>
+    <path d="M122 136 V272" fill="none" stroke="#d8cdb0" stroke-width="12" stroke-linecap="butt"/>
+    <path d="M182 136 V272" fill="none" stroke="#8f8468" stroke-width="10" stroke-linecap="butt"/>
+    <path d="M112 156 L192 146 M112 184 L192 174 M112 212 L192 202 M112 240 L192 230 M112 268 L192 258" fill="none" stroke="#8f8468" stroke-width="4"/>
+    <rect x="110" y="124" width="84" height="160" rx="16" fill="none"/>
+    <!-- anzol -->
+    <path d="M350 160 V360 Q350 430 296 430 Q246 430 246 372 L262 340" fill="none" stroke-width="30"/>
+    <path d="M350 160 V360 Q350 430 296 430 Q246 430 246 372 L262 340" fill="none" stroke="#8a8579" stroke-width="17"/>
+    <path d="M344 176 V352" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M250 334 L282 368 L250 380" fill="#8a8579" stroke-width="6"/>
+    <!-- olhal -->
+    <circle cx="350" cy="140" r="22" fill="none" stroke-width="28"/>
+    <circle cx="350" cy="140" r="22" fill="none" stroke="#8a8579" stroke-width="15"/>
+    <path d="M334 128 Q340 120 350 118" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+  </g>
+</svg>

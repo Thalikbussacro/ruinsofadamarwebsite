@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Martelo de guerra</title>
+  <!-- Desenhado com o cabo na vertical; rotate(45) leva a cabeça para o alto à direita
+       e faz a luz local (vinda da esquerda) cair de cima à esquerda. -->
+  <g transform="translate(256 256) scale(0.82) translate(-30 26) rotate(45)"
+     stroke="#0a0806" stroke-width="7.3" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo -->
+    <rect x="-16" y="-230" width="32" height="515" rx="10" fill="#7a5a3a"/>
+    <path d="M-7 -120 V145" fill="none" stroke="#9a7448" stroke-width="7"/>
+    <path d="M9 -120 V145" fill="none" stroke="#55391f" stroke-width="5"/>
+    <!-- empunhadura de couro -->
+    <rect x="-19" y="148" width="38" height="132" rx="9" fill="#6b2a24"/>
+    <path d="M-10 160 V270" fill="none" stroke="#8a3a32" stroke-width="7"/>
+    <path d="M-19 180 L19 166 M-19 208 L19 194 M-19 236 L19 222 M-19 264 L19 250" fill="none" stroke-width="5"/>
+    <!-- ponteira -->
+    <path d="M-20 281 H20 L15 304 H-15 Z" fill="#8a8579"/>
+    <path d="M-12 288 L-9 298" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- lingüetas -->
+    <rect x="-18" y="-215" width="36" height="96" rx="6" fill="#8a8579"/>
+    <path d="M-8 -205 V-130" fill="none" stroke="#b5ae9c" stroke-width="7"/>
+    <!-- espigão -->
+    <path d="M24 -270 Q82 -266 138 -214 Q80 -234 24 -224 Z" fill="#5f5b52"/>
+    <path d="M24 -270 Q82 -266 138 -214 Q80 -250 24 -248 Z" fill="#8a8579" stroke="none"/>
+    <path d="M24 -270 Q82 -266 138 -214 Q80 -234 24 -224 Z" fill="none"/>
+    <!-- cabeça de contusão -->
+    <rect x="-96" y="-276" width="76" height="60" rx="5" fill="#8a8579"/>
+    <path d="M-92 -232 H-24 V-222 Q-24 -219 -28 -219 H-92 Z" fill="#5f5b52" stroke="none"/>
+    <rect x="-96" y="-276" width="76" height="60" rx="5" fill="none"/>
+    <rect x="-114" y="-286" width="24" height="80" rx="6" fill="#b5ae9c"/>
+    <!-- alvado -->
+    <rect x="-28" y="-290" width="56" height="84" rx="8" fill="#8a8579"/>
+    <path d="M-16 -278 V-218" fill="none" stroke="#b5ae9c" stroke-width="8"/>
+    <path d="M16 -278 V-218" fill="none" stroke="#5f5b52" stroke-width="8"/>
+  </g>
+</svg>

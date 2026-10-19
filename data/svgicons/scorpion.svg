@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Scorpion</title>
+  <g transform="translate(-4 -17)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- tripé -->
+    <path d="M244 270 L100 452 M244 270 L388 452" fill="none" stroke-width="32"/>
+    <path d="M244 270 L100 452 M244 270 L388 452" fill="none" stroke="#55391f" stroke-width="20"/>
+    <path d="M238 278 L102 449" fill="none" stroke="#7a5a3a" stroke-width="5"/>
+    <path d="M244 260 V458" fill="none" stroke-width="36"/>
+    <path d="M244 260 V458" fill="none" stroke="#55391f" stroke-width="24"/>
+    <path d="M238 270 V452" fill="none" stroke="#7a5a3a" stroke-width="6"/>
+    <rect x="214" y="238" width="60" height="40" rx="8" fill="#8a8579"/>
+    <path d="M222 246 V270" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <!-- máquina, levemente inclinada para cima -->
+    <g transform="translate(244 214) rotate(-9)">
+      <!-- braço de trás -->
+      <path d="M112 -70 L-20 -128" fill="none" stroke-width="28"/>
+      <path d="M112 -70 L-20 -128" fill="none" stroke="#55391f" stroke-width="16"/>
+      <!-- coronha -->
+      <rect x="-170" y="-14" width="330" height="32" rx="8" fill="#7a5a3a"/>
+      <path d="M-160 -6 H150" fill="none" stroke="#9a7448" stroke-width="6"/>
+      <path d="M-160 12 H150" fill="none" stroke="#55391f" stroke-width="5"/>
+      <!-- molinete -->
+      <circle cx="-150" cy="2" r="24" fill="#7a5a3a"/>
+      <path d="M-150 -34 V38 M-186 2 H-114" fill="none" stroke-width="16"/>
+      <path d="M-150 -34 V38 M-186 2 H-114" fill="none" stroke="#9a7448" stroke-width="7"/>
+      <circle cx="-150" cy="2" r="10" fill="#8a8579" stroke-width="4"/>
+      <!-- quadro de torção -->
+      <rect x="84" y="-104" width="64" height="208" rx="8" fill="#7a5a3a"/>
+      <rect x="84" y="-104" width="18" height="208" rx="6" fill="#9a7448"/>
+      <rect x="130" y="-104" width="18" height="208" rx="6" fill="#55391f"/>
+      <!-- feixe de corda -->
+      <rect x="102" y="-86" width="28" height="172" rx="6" fill="#b5a98a"/>
+      <path d="M102 -60 L130 -70 M102 -30 L130 -40 M102 0 L130 -10 M102 30 L130 20 M102 60 L130 50" fill="none" stroke="#8f8468" stroke-width="5"/>
+      <path d="M107 -80 V80" fill="none" stroke="#d8cdb0" stroke-width="4"/>
+      <!-- chapas de ferro -->
+      <rect x="78" y="-118" width="76" height="22" rx="6" fill="#8a8579"/>
+      <rect x="78" y="96" width="76" height="22" rx="6" fill="#8a8579"/>
+      <path d="M86 -110 H120 M86 104 H120" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+      <!-- braço da frente -->
+      <path d="M112 70 L-20 128" fill="none" stroke-width="30"/>
+      <path d="M112 70 L-20 128" fill="none" stroke="#7a5a3a" stroke-width="18"/>
+      <path d="M106 66 L-16 120" fill="none" stroke="#9a7448" stroke-width="5"/>
+      <!-- corda armada -->
+      <path d="M-20 -128 L-112 -20 L-20 128" fill="none" stroke-width="9"/>
+      <path d="M-20 -128 L-112 -20 L-20 128" fill="none" stroke="#d8cdb0" stroke-width="3.5"/>
+      <!-- virote -->
+      <rect x="-114" y="-30" width="300" height="14" rx="5" fill="#9a7448"/>
+      <path d="M-100 -26 H170" fill="none" stroke="#d8cdb0" stroke-width="3.5"/>
+      <path d="M-104 -30 L-80 -48 H-56 L-70 -30 Z" fill="#b5a98a"/>
+      <path d="M180 -38 L226 -23 L180 -8 L188 -23 Z" fill="#8a8579"/>
+      <path d="M186 -32 L214 -25" fill="none" stroke="#b5ae9c" stroke-width="4"/>
+      <!-- garra -->
+      <rect x="-128" y="-34" width="26" height="30" rx="6" fill="#8a8579"/>
+    </g>
+  </g>
+</svg>

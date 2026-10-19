@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Arpéu</title>
+  <g stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- corda presa ao olhal -->
+    <path d="M256 150 Q236 92 180 84 Q110 76 96 140 Q88 190 130 208" fill="none" stroke-width="36"/>
+    <path d="M256 150 Q236 92 180 84 Q110 76 96 140 Q88 190 130 208" fill="none" stroke="#b5a98a" stroke-width="24"/>
+    <path d="M256 150 Q236 92 180 84 Q110 76 96 140 Q88 190 130 208" fill="none" stroke="#7a705a" stroke-width="24" stroke-dasharray="5 13" stroke-linecap="butt"/>
+    <path d="M128 198 L150 202 M126 210 L148 218 M132 220 L150 230" fill="none" stroke-width="5"/>
+    <!-- garra de trás -->
+    <path d="M256 370 Q300 360 318 320 Q330 290 318 260" fill="none" stroke-width="32"/>
+    <path d="M256 370 Q300 360 318 320 Q330 290 318 260" fill="none" stroke="#5f5b52" stroke-width="19"/>
+    <path d="M306 266 L314 228 L334 262 Z" fill="#5f5b52"/>
+    <!-- haste -->
+    <rect x="234" y="160" width="44" height="220" rx="10" fill="#8a8579"/>
+    <path d="M246 174 V360" fill="none" stroke="#b5ae9c" stroke-width="8"/>
+    <path d="M268 174 V366" fill="none" stroke="#5f5b52" stroke-width="6"/>
+    <!-- garras laterais -->
+    <path d="M256 384 Q256 446 186 436 Q120 424 124 330" fill="none" stroke-width="36"/>
+    <path d="M256 384 Q256 446 186 436 Q120 424 124 330" fill="none" stroke="#8a8579" stroke-width="23"/>
+    <path d="M230 424 Q170 430 136 380" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M102 336 L122 290 L146 336 Z" fill="#b5ae9c"/>
+    <path d="M256 384 Q256 446 326 436 Q392 424 388 330" fill="none" stroke-width="36"/>
+    <path d="M256 384 Q256 446 326 436 Q392 424 388 330" fill="none" stroke="#8a8579" stroke-width="23"/>
+    <path d="M300 440 Q356 434 382 370" fill="none" stroke="#5f5b52" stroke-width="5"/>
+    <path d="M366 336 L390 290 L410 336 Z" fill="#8a8579"/>
+    <!-- garra da frente -->
+    <path d="M256 390 Q210 380 196 340 Q186 306 200 282" fill="none" stroke-width="32"/>
+    <path d="M256 390 Q210 380 196 340 Q186 306 200 282" fill="none" stroke="#8a8579" stroke-width="19"/>
+    <path d="M190 290 L200 252 L218 288 Z" fill="#b5ae9c"/>
+    <circle cx="256" cy="396" r="30" fill="#8a8579"/>
+    <path d="M238 388 Q244 376 256 374" fill="none" stroke="#b5ae9c" stroke-width="6"/>
+    <!-- olhal -->
+    <circle cx="256" cy="148" r="24" fill="none" stroke-width="32"/>
+    <circle cx="256" cy="148" r="24" fill="none" stroke="#8a8579" stroke-width="19"/>
+    <path d="M236 138 Q242 126 256 124" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+  </g>
+</svg>

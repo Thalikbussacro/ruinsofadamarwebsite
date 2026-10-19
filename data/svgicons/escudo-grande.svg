@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 410 512" role="img">
+  <title>Escudo grande</title>
+  <defs>
+    <path id="paves" d="M58 116 Q58 46 205 40 Q352 46 352 116 L342 330 Q334 420 205 478 Q76 420 68 330 Z"/>
+    <clipPath id="c-paves"><use xlink:href="#paves"/></clipPath>
+  </defs>
+  <g transform="translate(205 259) scale(0.92) translate(-205 -259)" stroke="#0a0806" stroke-width="6.5" stroke-linejoin="round" stroke-linecap="round">
+    <use xlink:href="#paves" fill="#7a5a3a"/>
+    <g clip-path="url(#c-paves)">
+      <rect x="30" y="30" width="100" height="470" fill="#9a7448" stroke="none"/>
+      <rect x="280" y="30" width="100" height="470" fill="#55391f" stroke="none"/>
+      <!-- tábuas -->
+      <path d="M130 30 V500 M280 30 V500" fill="none" stroke-width="5"/>
+      <!-- nervura central -->
+      <path d="M182 30 L188 500 H205 V30 Z" fill="#9a7448" stroke="none"/>
+      <path d="M205 30 V500 H222 L228 30 Z" fill="#55391f" stroke="none"/>
+      <path d="M182 30 L188 500 M228 30 L222 500" fill="none" stroke-width="5"/>
+      <!-- cintas de ferro -->
+      <path d="M30 150 Q205 122 380 150 V180 Q205 152 30 180 Z M30 330 Q205 306 380 330 V360 Q205 336 30 360 Z" fill="#8a8579"/>
+      <path d="M50 154 Q120 140 190 135 M50 334 Q120 322 190 318" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    </g>
+    <!-- rebites -->
+    <g fill="#8a8579" stroke-width="3.5">
+      <circle cx="98" cy="155" r="7"/><circle cx="205" cy="151" r="7"/><circle cx="312" cy="155" r="7"/>
+      <circle cx="98" cy="336" r="7"/><circle cx="205" cy="333" r="7"/><circle cx="312" cy="336" r="7"/>
+    </g>
+    <!-- aro de ferro -->
+    <use xlink:href="#paves" fill="none" stroke-width="24"/>
+    <use xlink:href="#paves" fill="none" stroke="#8a8579" stroke-width="12"/>
+    <path d="M60 280 L58 116 Q58 52 180 42" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    <path d="M351 150 L342 330 Q334 410 240 462" fill="none" stroke="#5f5b52" stroke-width="5"/>
+  </g>
+</svg>

@@ -272,9 +272,10 @@ Observação: `stroke-dasharray` em paths longos (polilinhas) não aparece no ca
 - Novelo de cordel fino com fio solto, para contrastar com o rolo grosso da corda.
 - Pendente: pode ser lido como novelo de lã; aceitável.
 
-## barraca-1-pessoa (2 iterações)
-- Grade 2x4 (retrato) não comporta uma barraca baixa armada: desenhei a lona ENROLADA em pé, amarrada com duas tiras, com duas estacas de madeira atrás e uma corda de esticar.
-- Pendente: lê como "rolo de lona/saco de dormir", não necessariamente como barraca. Se a grade puder ser paisagem, trocar por barraca baixa armada.
+## barraca-1-pessoa (refeita)
+- A grade do item passou de 2x4 para 4x2 (deitada), em `equipamento.json` e na regra de `tools/icones-e-grade.mjs`. `viewBox` 512x256.
+- Barraca baixa de cumeeira em 3/4, sem varas (o item "não precisa de varas"): a corda da cumeeira desce até duas estacas, mais estacas na base. Isso também a separa da barraca de 4 pessoas, que tem varas.
+- Pendente: `barraca-2-pessoas` usa este SVG por apelido, mas a grade dela continua 3x4 (retrato).
 
 ## barraca-4-pessoas (1 iteração)
 - Sem grade: viewBox 512x400. Barraca de cumeeira em 3/4, entrada aberta, duas varas (frente e fundo), cordas e estacas.
@@ -475,9 +476,9 @@ Hastes diagonais geradas por scripts em `tools/icones-svg/hastes/` (pole.py + um
 - 2x4. Gadanha: cabo comprido levemente curvo, punho lateral de madeira, lâmina longa curva saindo para a esquerda no topo. Sem couro, para ler como ferramenta.
 - Pendente: nada relevante.
 
-## mangual-duas-maos (2 iterações)
-- 2x3. Mesmo vocabulário da maça-estrela, mas cabo longo com duas empunhaduras, bola maior com 12 cravos e um aro de reforço.
-- Pendente: na mesma grade 2x3 fica parecido com a maça-estrela; a diferença é o cabo longo e a bola maior.
+## mangual-duas-maos (refeito)
+- Desenhado fora da grade 2x3, na diagonal como as outras armas de duas mãos (`viewBox` 512x512): cabo longo com duas empunhaduras, corrente e bola com cravos pendurada à direita. Na grade, ficava igual à maça-estrela.
+- Pendente: nada relevante.
 
 ## lanca (2 iterações)
 - Diagonal 45°. Ponta em folha larga com nervura, alvado, empunhadura de couro no meio, ponteira.

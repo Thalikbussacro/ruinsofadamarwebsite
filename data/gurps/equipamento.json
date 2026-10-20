@@ -9749,8 +9749,8 @@
       "icone": "tent",
       "grade": {
         "porte": "grade",
-        "largura": 2,
-        "altura": 4
+        "largura": 4,
+        "altura": 2
       },
       "preco": {
         "valor": 50

@@ -4,7 +4,7 @@ Um SVG por item, com o nome igual ao `id` em `data/gurps/equipamento.json`. Os p
 
 Itens que são o mesmo objeto de outro com outra regra de uso (ex.: `espada-bastarda-duas-maos`) não têm SVG próprio: `apelidos.json` aponta cada um para o SVG que ele usa. Ataques naturais e desarmados (soco, chute, dentes, presas, bico, golpeador) e golpes com escudo não são objetos e ficam sem ícone desenhado.
 
-Renderização com `cairosvg` 2.9.1 (Python). Previews gerados a partir de cada SVG com o lado maior em 512 px (`-512`, `-dark` sobre `#14110e`) e em 64 px (`-64`).
+Renderização com `cairosvg` 2.9.1 (Python), por `tools/icones-svg/render.py`. Previews gerados a partir de cada SVG com o lado maior em 512 px (`-512`, `-dark` sobre `#14110e`) e em 64 px (`-64`).
 
 Não usei imagens de referência da web: as ferramentas de busca desta sessão devolvem só texto, não imagens. Silhuetas e proporções vêm de conhecimento geral dos objetos.
 
@@ -70,7 +70,7 @@ Não usei imagens de referência da web: as ferramentas de busca desta sessão d
 
 # Lote G-bardas
 
-Geral: todos os SVGs foram gerados por script (`scratchpad/gbardas/gen.py`, `heads.py`, `bodies.py`) para que a silhueta do cavalo seja exatamente a mesma em toda a série. Cavalo chapado em marrom-acinzentado escuro (`#4a4038`, com `#372f29` para cauda e pernas do lado oposto). Esse tom foi derivado do pelo, mais escuro e menos saturado, para não competir com a peça. Luz e sombra nas peças vêm de uma borda clara no alto à esquerda e escura embaixo à direita, feitas com clipPath de cópias deslocadas da própria forma. Malha: arcos em ∩ pequenos. Escamas: fileiras de U maiores, com arco claro. Couro e tecido: couro natural com borda de tecido claro em traço duplo. Peças de malha e escamas da cabeça e da barda parcial levam bainha de couro.
+Geral: todos os SVGs foram gerados por script (`tools/icones-svg/bardas/` (`gen.py`, `heads.py`, `bodies.py`)) para que a silhueta do cavalo seja exatamente a mesma em toda a série. Cavalo chapado em marrom-acinzentado escuro (`#4a4038`, com `#372f29` para cauda e pernas do lado oposto). Esse tom foi derivado do pelo, mais escuro e menos saturado, para não competir com a peça. Luz e sombra nas peças vêm de uma borda clara no alto à esquerda e escura embaixo à direita, feitas com clipPath de cópias deslocadas da própria forma. Malha: arcos em ∩ pequenos. Escamas: fileiras de U maiores, com arco claro. Couro e tecido: couro natural com borda de tecido claro em traço duplo. Peças de malha e escamas da cabeça e da barda parcial levam bainha de couro.
 Cabeça/pescoço: 512x512, perfil virado para a direita, com o pescoço cortado reto embaixo (como busto). Cavalo inteiro: viewBox `-22 -25 568 444` (proporção 512x400 com margem; o contorno fica com ~5,4 px efetivos).
 
 ## barda-mascara-couro-tecido (4 iterações)
@@ -433,7 +433,7 @@ Aviso geral: o cairosvg (render.py) parece herdar `stroke-linecap="round"` do `<
 
 # Lote B-hastes
 
-Hastes diagonais geradas por scripts em `scratchpad/gen/` (pole.py + um script por item); o SVG final é estático.
+Hastes diagonais geradas por scripts em `tools/icones-svg/hastes/` (pole.py + um script por item); o SVG final é estático.
 
 ## machado (1 iteração)
 - 2x4 em pé. Lâmina barbada à esquerda, talão quadrado à direita, empunhadura de couro vinho.
@@ -520,7 +520,7 @@ Hastes diagonais geradas por scripts em `scratchpad/gen/` (pole.py + um script p
 # Lote F2-membros
 
 Geração: os SVGs saem de um gerador Python com formas-base compartilhadas
-(`scratchpad/f2/lib.py`, `items.py`, `feet.py`) para garantir o mesmo vocabulário:
+(`tools/icones-svg/membros/`: `lib.py`, `items.py`, `feet.py`) para garantir o mesmo vocabulário:
 todas as perneiras usam a mesma perna (LEG), todas as mangas a mesma manga dobrada no cotovelo (SLEEVE),
 braçadeiras a mesma braçadeira (VAMB), luvas a mesma mão, calçados a mesma sola.
 Pares: peça de trás deslocada para cima/direita e um tom abaixo (claro->médio, médio->escuro, escuro->escuro*0.72).
@@ -621,7 +621,7 @@ Faixas de luz: o próprio contorno deslocado (clip aninhado), então seguem a fo
 
 # Lote F1-tronco-cabeca
 
-Gerador: os SVGs saíram de um script Python (`scratchpad/f1/items.py` + `f1/lib.py`) com uma silhueta-base de tronco comum (`torso()`), padrões de malha (anéis), escamas (U por coluna clara/média/escura) e um passo final que centraliza o desenho com `translate`. Peças de tronco: vista frontal, plana, sem corpo. Grade de "guardado" da `lista.txt`.
+Gerador: os SVGs saíram de um script Python (`tools/icones-svg/tronco-cabeca/items.py` + `lib.py`) com uma silhueta-base de tronco comum (`torso()`), padrões de malha (anéis), escamas (U por coluna clara/média/escura) e um passo final que centraliza o desenho com `translate`. Peças de tronco: vista frontal, plana, sem corpo. Grade de "guardado" da `lista.txt`.
 
 ## tanga-de-pele (3 iterações)
 - Cordão de couro cru com nó e pontas soltas, faixa de pele dobrada sobre o cordão, aba da frente com barra irregular e aba de trás mais larga e escura.
@@ -728,7 +728,7 @@ Gerador: os SVGs saíram de um script Python (`scratchpad/f1/items.py` + `f1/lib
 
 # Lote C-distancia
 
-Geradores auxiliares (não fazem parte do site) em `scratchpad/cdist/` (bows.py, shields.py, capas.py, redes.py, laco.py, bola.py, funda.py, fusti.py, arpao.py, rope.py, geo.py). Os SVGs finais estão em `data/svgicons/`.
+Geradores auxiliares (não fazem parte do site) em `tools/icones-svg/distancia/` (bows.py, shields.py, capas.py, redes.py, laco.py, bola.py, funda.py, fusti.py, arpao.py, rope.py, geo.py). Os SVGs finais estão em `data/svgicons/`.
 
 ## arco-comum (3 iterações)
 - Em pé, corda reta à esquerda, haste afilada nas pontas (forma gerada por offset de curva), empunhadura de couro vinho.

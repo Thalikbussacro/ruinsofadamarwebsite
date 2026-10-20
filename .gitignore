@@ -2,3 +2,5 @@
 referencias/
 # Dados completos com estatísticas do livro: só nesta máquina.
 data-local/
+# Cache do Python (geradores de tools/icones-svg/).
+__pycache__/

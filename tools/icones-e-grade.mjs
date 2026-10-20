@@ -47,7 +47,7 @@ const POR_NOME = [
   [/boleadeira|laco|chicote|rede de combate|odre|lampiao|balanca|ferraduras|bridao|tablete de cera|kit de escriba|equipamento basico pessoal|arpeu|corda, 3\/8|kit de primeiros socorros/, { largura: 2, altura: 2 }],
   [/rede grande|pelagem de animal|equipamento de alpinismo|corda, 3\/4|tambor|instrumentos cirurgicos|caixa de ferramentas|laboratorio portatil/, { largura: 3, altura: 3 }],
   [/cobertor|kit de emergencia/, { largura: 3, altura: 2 }],
-  [/barraca, 1 pessoa/, { largura: 2, altura: 4 }],
+  [/barraca, 1 pessoa/, { largura: 4, altura: 2 }], // deitada: barraca baixa, armada só com a corda da cumeeira
   [/barraca, 2 pessoas/, { largura: 3, altura: 4 }],
   [/equipamento basico para grupo/, { largura: 4, altura: 4 }],
   [/racao de viagem/, { largura: 1, altura: 1, empilha: 3 }],

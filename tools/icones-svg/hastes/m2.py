@@ -1,36 +1,39 @@
 from flail import *
-cx,cy,r=124,128,60
-s=f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341 512" role="img">
-  <title>Mangual</title>
+# Mangual de duas mãos: fora da grade 2x3, na diagonal como as outras armas de duas mãos,
+# para o cabo longo separá-lo da maça-estrela (me.py).
+cx,cy,r=404,292,46
+s=f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <title>Mangual de duas mãos</title>
   <defs><clipPath id="c-bola"><circle cx="{cx}" cy="{cy}" r="{r}"/></clipPath></defs>
-  <g transform="translate(170 256) scale(0.92) translate(-147 -263)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+  <g transform="translate(0 -40)" stroke="#0a0806" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cabo longo: desenhado em pé e girado 45° (a luz local da esquerda vira cima-esquerda) -->
+    <g transform="translate(200 300) rotate(45)">
+      <rect x="-15" y="-196" width="30" height="400" rx="10" fill="#7a5a3a"/>
+      <path d="M-7 -160 V30" fill="none" stroke="#9a7448" stroke-width="6"/>
+      <path d="M8 -160 V30" fill="none" stroke="#55391f" stroke-width="4"/>
+      <rect x="-19" y="30" width="38" height="56" rx="7" fill="#6b2a24"/>
+      <path d="M-19 52 L19 42 M-19 76 L19 66" fill="none" stroke-width="4"/>
+      <rect x="-19" y="112" width="38" height="84" rx="8" fill="#6b2a24"/>
+      <path d="M-10 120 V188" fill="none" stroke="#8a3a32" stroke-width="6"/>
+      <path d="M-19 134 L19 124 M-19 158 L19 148 M-19 182 L19 172" fill="none" stroke-width="4"/>
+      <path d="M-21 194 H21 L16 214 Q0 222 -16 214 Z" fill="#8a8579"/>
+      <!-- ponteira -->
+      <rect x="-21" y="-214" width="42" height="40" rx="7" fill="#8a8579"/>
+      <path d="M-12 -206 V-182" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    </g>
     <!-- corrente -->
-    {chain((236,208),(250,150),(cx+44,cy+30),5,30,16)}
-    <!-- cabo longo -->
-    <rect x="220" y="218" width="32" height="250" rx="10" fill="#7a5a3a"/>
-    <path d="M228 236 V458" fill="none" stroke="#9a7448" stroke-width="6"/>
-    <path d="M244 236 V458" fill="none" stroke="#55391f" stroke-width="4"/>
-    <rect x="216" y="290" width="40" height="52" rx="7" fill="#6b2a24"/>
-    <path d="M216 310 L256 300 M216 332 L256 322" fill="none" stroke-width="4"/>
-    <rect x="216" y="384" width="40" height="80" rx="8" fill="#6b2a24"/>
-    <path d="M225 392 V456" fill="none" stroke="#8a3a32" stroke-width="6"/>
-    <path d="M216 404 L256 394 M216 428 L256 418 M216 452 L256 442" fill="none" stroke-width="4"/>
-    <path d="M214 462 H258 L252 482 Q236 490 220 482 Z" fill="#8a8579"/>
-    <!-- ponteira -->
-    <rect x="214" y="206" width="44" height="36" rx="7" fill="#8a8579"/>
-    <path d="M222 214 H244" fill="none" stroke="#b5ae9c" stroke-width="5"/>
+    {chain((352,150),(404,160),(cx,cy-r-8),5,28,15)}
     <!-- cravos -->
-    {spikes(cx,cy,r,12,28,12,-90)}
+    {spikes(cx,cy,r,12,22,10,-90)}
     <!-- bola -->
     <circle cx="{cx}" cy="{cy}" r="{r}" fill="#8a8579"/>
     <g clip-path="url(#c-bola)" stroke="none">
       <circle cx="{cx}" cy="{cy}" r="{r}" fill="#5f5b52"/>
-      <circle cx="{cx-9}" cy="{cy-9}" r="{r-5}" fill="#8a8579"/>
-      <circle cx="{cx-23}" cy="{cy-23}" r="{r-30}" fill="#b5ae9c"/>
+      <circle cx="{cx-7}" cy="{cy-7}" r="{r-4}" fill="#8a8579"/>
+      <circle cx="{cx-18}" cy="{cy-18}" r="{r-24}" fill="#b5ae9c"/>
     </g>
     <circle cx="{cx}" cy="{cy}" r="{r}" fill="none"/>
-    <!-- aro de reforço -->
-    <path d="M{cx-r} {cy} Q{cx} {cy+22} {cx+r} {cy}" fill="none" stroke-width="5"/>
+    <path d="M{cx-r} {cy} Q{cx} {cy+18} {cx+r} {cy}" fill="none" stroke-width="5"/>
   </g>
 </svg>
 '''
